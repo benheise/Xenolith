@@ -583,12 +583,36 @@ async function showWanted(focus) {
     <a href="${REPO}/blob/main/catalog/wanted.yaml" target="_blank" rel="noopener">catalog/wanted.yaml</a></p>
     ${fulfilled.length ? `<h2>Now verified</h2><div class="list">${fulfilled.map(card).join("")}</div>` : ""}
     <h2>${fmt(open.length)} products wanted</h2>
-    <div class="list">${open.map(card).join("")}</div>`;
+    <div class="list">${open.map(card).join("")}</div>
+    ${queueSection(WANTED.queue)}`;
   $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
   if (focus && focus !== "all") {
     const el = document.getElementById(`w-${focus}`);
     if (el) { el.scrollIntoView(); el.style.borderColor = "var(--accent)"; }
   }
+}
+
+function queueSection(queue) {
+  if (!queue || !queue.items || !queue.items.length) return "";
+  const srcName = Object.fromEntries((queue.sources || []).map(x => [x.id, x]));
+  const short = id => ({ kev: "CISA KEV", "gartner-hmf-2025": "Gartner MQ Firewall", "gartner-bdpp-2025": "Gartner MQ Backup",
+    "gartner-pam-2025": "Gartner MQ PAM", "gartner-siem-2025": "Gartner MQ SIEM", "gartner-lan-2025": "Gartner MQ LAN",
+    "gartner-itsm-2026": "Gartner MQ ITSM", "peer-insights-mft": "Peer Insights / G2 MFT", "g2-remote-support": "G2 Remote Support" })[id] || id;
+  const rows = queue.items.map(i => `<div class="card">
+      <div class="supplier">${esc(i.s)} · <span class="muted">${esc(i.cat)}</span></div>
+      <h3 style="margin:2px 0 4px">${i.k ? `<a href="#p=${encodeURIComponent(i.k)}">${esc(i.p)}</a>` : esc(i.p)}</h3>
+      <div class="small"><span class="badge ${i.status === "lead-found" ? "v-present" : i.status === "partial" ? "v-workaround" : "v-unknown"}">${esc(queue.statuses[i.status] || i.status)}</span>
+        ${i.kev ? ` <span class="kbd">${fmt(i.kev)} in CISA KEV</span>` : ""}
+        ${i.why.filter(w => w !== "kev").map(w => ` <span class="kbd">${esc(short(w))}</span>`).join("")}</div>
+      ${i.lead ? `<div class="small muted" style="margin-top:6px">${esc(i.lead)}${i.url ? ` ${link(i.url, "link")}` : ""}</div>` : ""}
+    </div>`).join("");
+  const srcs = (queue.sources || []).map(x => `<li>${link(x.url, x.name)}</li>`).join("");
+  return `<h2>Research queue</h2>
+    <p class="small">Widely deployed, customer-run products we haven't researched yet, picked from analyst and review-site
+    rankings and from products with actively exploited (CISA KEV) vulnerabilities but no component data. Know where one of
+    these vendors publishes its notices? <a href="${REPO}/blob/main/catalog/research_queue.yaml" target="_blank" rel="noopener">catalog/research_queue.yaml</a>.</p>
+    <div class="list">${rows}</div>
+    <p class="small muted" style="margin-top:10px">Ranking sources:</p><ul class="small">${srcs}</ul>`;
 }
 
 function renderFooter() {

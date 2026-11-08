@@ -85,6 +85,7 @@ def cmd_community(args) -> int:
     sboms, sbom_errors = community_sbom.load_all(ROOT)
     errors += sbom_errors
     errors += wanted_mod.validate(wanted_mod.load(ROOT / "catalog" / "wanted.yaml"), set(cat.components))
+    errors += wanted_mod.validate_queue(wanted_mod.load(ROOT / "catalog" / "research_queue.yaml"))
     for e in errors:
         print(f"::error::{e}")
     if errors:

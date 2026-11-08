@@ -31,6 +31,15 @@ REASONS = {
 }
 CONFIDENCE = ("named", "likely", "possible")
 KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$")
+VENDOR_FIELDS = {"supplier", "blocked", "detail", "where", "products"}
+PRODUCT_FIELDS = {"product", "key", "blocked", "detail", "where", "guesses"}
+GUESS_FIELDS = {"component", "name", "confidence", "basis", "version", "source"}
+QUEUE_FIELDS = {"supplier", "product", "key", "category", "why", "status", "lead", "url"}
+
+
+def _unknown(item: dict, allowed: set[str], where: str) -> list[str]:
+    extra = sorted(str(k) for k in item if k not in allowed)
+    return [f"{where}: unexpected field(s) {', '.join(extra)} (a comma in an unquoted value splits it; quote the value)"] if extra else []
 
 
 def load(path: Path) -> dict:
@@ -41,12 +50,14 @@ def validate(cfg: dict, component_ids: set[str]) -> list[str]:
     errors = []
     for vi, vendor in enumerate(cfg.get("vendors") or []):
         where = f"wanted.yaml vendor {vi + 1} ({vendor.get('supplier', '?')})"
+        errors += _unknown(vendor, VENDOR_FIELDS, where)
         if not vendor.get("supplier"):
             errors.append(f"{where}: supplier is required")
         if not vendor.get("products"):
             errors.append(f"{where}: products is empty")
         for product in vendor.get("products") or []:
             pw = f"{where} / {product.get('product', '?')}"
+            errors += _unknown(product, PRODUCT_FIELDS, pw)
             if not product.get("product"):
                 errors.append(f"{pw}: product is required")
             reason = product.get("blocked") or vendor.get("blocked")
@@ -58,6 +69,7 @@ def validate(cfg: dict, component_ids: set[str]) -> list[str]:
                 errors.append(f"{pw}: at least one guess is required")
             for gi, g in enumerate(product.get("guesses") or []):
                 gw = f"{pw} guess {gi + 1}"
+                errors += _unknown(g, GUESS_FIELDS, gw)
                 if bool(g.get("component")) == bool(g.get("name")):
                     errors.append(f"{gw}: give exactly one of component (watchlist id) or name")
                 if g.get("component") and g["component"] not in component_ids:
@@ -116,3 +128,50 @@ def build(cfg: dict, *, component_names: dict[str, str], remap: dict[str, str],
             "guesses": sum(len(e["guesses"]) for e in entries if e["status"] == "wanted"),
         },
     }
+
+
+QUEUE_STATUS = {
+    "lead-found": "Public list or likely source found",
+    "partial": "Something public, incomplete or hard to get",
+    "nothing-found": "Searched, nothing public found",
+    "not-checked": "Not searched yet",
+}
+
+
+def validate_queue(cfg: dict) -> list[str]:
+    errors = []
+    source_ids = {s.get("id") for s in cfg.get("sources") or []}
+    for i, item in enumerate(cfg.get("products") or []):
+        where = f"research_queue.yaml entry {i + 1} ({item.get('supplier', '?')} {item.get('product', '')})"
+        errors += _unknown(item, QUEUE_FIELDS, where)
+        for field in ("supplier", "product", "category"):
+            if not item.get(field):
+                errors.append(f"{where}: {field} is required")
+        if item.get("status") not in QUEUE_STATUS:
+            errors.append(f"{where}: status must be one of {', '.join(QUEUE_STATUS)}")
+        for sid in item.get("why") or []:
+            if sid not in source_ids:
+                errors.append(f"{where}: unknown source id '{sid}' in why")
+        if item.get("key") and not KEY_RE.match(item["key"]):
+            errors.append(f"{where}: key must look like supplier-slug/product-slug")
+        if item.get("url") and not str(item["url"]).startswith("https://"):
+            errors.append(f"{where}: url must be an https:// link")
+    return errors
+
+
+def build_queue(cfg: dict, *, products: dict[str, dict], remap: dict[str, str]) -> dict:
+    """products: product key -> products.json entry (for KEV counts and links)."""
+    items = []
+    for item in cfg.get("products") or []:
+        key = item.get("key") or product_key(item["supplier"], item["product"])
+        key = remap.get(key, key)
+        prod = products.get(key)
+        items.append({k: v for k, v in {
+            "s": item["supplier"], "p": item["product"], "k": key if prod else None,
+            "cat": item["category"], "why": item.get("why") or [], "status": item["status"],
+            "lead": item.get("lead"), "url": item.get("url"),
+            "kev": (prod or {}).get("kev", 0), "has_data": bool(prod and (prod.get("n") or prod.get("inv"))),
+        }.items() if v is not None})
+    order = {"lead-found": 0, "partial": 1, "not-checked": 2, "nothing-found": 3}
+    items.sort(key=lambda x: (order[x["status"]], -x["kev"], x["s"].lower()))
+    return {"statuses": QUEUE_STATUS, "sources": cfg.get("sources") or [], "items": items}

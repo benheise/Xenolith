@@ -233,6 +233,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
     for prod in products:
         if prod["k"] in open_keys:
             prod["w"] = 1
+    wanted["queue"] = wanted_mod.build_queue(wanted_mod.load(CATALOG / "research_queue.yaml"),
+                                             products={p["k"]: p for p in products}, remap=remap)
     (out_dir / "wanted.json").write_text(json.dumps(wanted, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (out_dir / "products.json").write_text(json.dumps(products, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 

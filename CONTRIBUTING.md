@@ -156,6 +156,8 @@ python -m xenolith prepare scan.cdx.json \
 | `likely` | Strong inference: the platform or runtime makes it near-certain (a Photon OS appliance has glibc and OpenSSL; an Electron app has Chromium's libwebp) |
 | `possible` | Weaker inference worth checking |
 
+**The research queue.** [`catalog/research_queue.yaml`](catalog/research_queue.yaml) lists widely deployed, customer-run products nobody has researched yet, picked from analyst and review-site rankings (Gartner Magic Quadrants and Peer Insights, G2) and from products with CISA KEV entries but no component data. If you know where one of them publishes its notices, add the notices to `catalog/notices.yaml` and remove the queue entry; if it turns out to be blocked, move it to `wanted.yaml` with guesses. Quote any value that contains a comma.
+
 **Adding an entry.** Add the product under its vendor with `product`, `key` (the product key from the site's URL, `#p=<key>`, so the entry links to the existing page), and at least one guess. Use `component:` for watchlist ids and `name:` for anything else. If a vendor statement already settles a component, add it to `community/assertions.csv` instead of guessing. `python -m xenolith community --check` validates the file.
 
 ---

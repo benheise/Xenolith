@@ -27,7 +27,7 @@ Everything is contributed by pull request and checked automatically. Pick whiche
 
 The exact field lists, examples and the commands to check your change locally are in **[CONTRIBUTING.md](CONTRIBUTING.md)**. Pull requests run `python -m xenolith community --check`, which names the file, line and field of any problem.
 
-**Wanted list.** [Some widely deployed products](https://benheise.github.io/Xenolith/#w=all) keep their component lists behind a login, inside the product, or unpublished. The [wanted list](catalog/wanted.yaml) says what's blocking each one, where the list lives for someone with access, and our best guesses at its contents (shown only on that page, never as data). Entries move to verified automatically when a real list arrives ([details](CONTRIBUTING.md#the-wanted-list)).
+**Wanted list.** [Some widely deployed products](https://benheise.github.io/Xenolith/#w=all) keep their component lists behind a login, inside the product, or unpublished. The [wanted list](catalog/wanted.yaml) says what's blocking each one, where the list lives for someone with access, and our best guesses at its contents (shown only on that page, never as data). Entries move to verified automatically when a real list arrives ([details](CONTRIBUTING.md#the-wanted-list)). A [research queue](catalog/research_queue.yaml) of about 45 more products, picked from Gartner and G2 rankings and actively exploited (KEV) products, is shown on the same page.
 
 **Don't submit** anything confidential, anything you aren't permitted to share, or statements you can't link to. If you work for a vendor, the best contribution of all is publishing your product's SBOM or notices at a stable public URL and adding that URL.
 

@@ -752,3 +752,25 @@ class WantedTest(unittest.TestCase):
                 rows = json.loads((out / "components" / f"{cid}.json").read_text())
                 keys = {r["k"] for r in (rows if isinstance(rows, list) else rows.get("rows", []))}
                 self.assertFalse({k for k, c in guessed if c == cid} & keys, cid)
+
+
+class ResearchQueueTest(unittest.TestCase):
+    def test_shipped_queue_is_valid(self):
+        cfg = wanted_mod.load(ROOT / "catalog" / "research_queue.yaml")
+        self.assertEqual(wanted_mod.validate_queue(cfg), [])
+        self.assertGreater(len(cfg["products"]), 30)
+
+    def test_unquoted_comma_is_caught(self):
+        import yaml
+        cfg = yaml.safe_load("sources: [{id: kev, name: x, url: 'https://x'}]\n"
+                             "products:\n  - {supplier: A, product: B (one, two), category: C, why: [kev], status: not-checked}\n")
+        self.assertTrue(any("unexpected field" in e for e in wanted_mod.validate_queue(cfg)))
+
+    def test_queue_ordering_and_links(self):
+        cfg = {"sources": [{"id": "kev"}], "products": [
+            {"supplier": "A", "product": "Low", "key": "a/low", "category": "x", "why": ["kev"], "status": "not-checked"},
+            {"supplier": "B", "product": "High", "key": "b/high", "category": "x", "why": ["kev"], "status": "not-checked"},
+            {"supplier": "C", "product": "Lead", "category": "x", "why": [], "status": "lead-found"}]}
+        q = wanted_mod.build_queue(cfg, products={"a/low": {"kev": 1}, "b/high": {"kev": 9}}, remap={})
+        self.assertEqual([i["p"] for i in q["items"]], ["Lead", "High", "Low"])
+        self.assertNotIn("k", q["items"][0])                 # not in the registry: no link
