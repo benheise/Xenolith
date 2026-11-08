@@ -1,14 +1,14 @@
 {
- "built": "2026-11-08T02:14:39Z",
+ "built": "2026-11-08T02:17:24Z",
  "counts": {
-  "assertions": 12943,
+  "assertions": 12921,
   "products_with_data": 7136,
   "inventories": 97,
   "inventory_components": 38754,
-  "cpe_linked_clusters": 11,
-  "cpe_linked_entries": 13,
-  "spine_products": 15784,
-  "spine_only_shown": 4652,
+  "cpe_linked_clusters": 22,
+  "cpe_linked_entries": 24,
+  "spine_products": 15962,
+  "spine_only_shown": 4742,
   "components": 13
  },
  "components": [
@@ -291,16 +291,16 @@
      ]
     }
    ],
-   "assertions": 7377,
+   "assertions": 7357,
    "products": 6131,
    "contains": 2539,
    "in_range": 3,
    "verdicts": {
-    "not_affected": 4277,
+    "not_affected": 4258,
     "unknown": 401,
     "affected": 926,
     "fixed": 1356,
-    "under_investigation": 160,
+    "under_investigation": 159,
     "workaround": 251,
     "present": 6
    }
@@ -337,12 +337,12 @@
      ]
     }
    ],
-   "assertions": 3910,
+   "assertions": 3908,
    "products": 3808,
    "contains": 90,
    "in_range": 0,
    "verdicts": {
-    "not_affected": 3811,
+    "not_affected": 3809,
     "workaround": 11,
     "fixed": 62,
     "under_investigation": 9,
@@ -714,7 +714,7 @@
    "url": "https://github.com/NCSC-NL/log4shell",
    "license": "MIT",
    "notes": "Archived June 2022. Statuses reflect vendor statements at the time.",
-   "assertions": 9540,
+   "assertions": 9521,
    "latest": "2022-06-15"
   },
   {
@@ -724,7 +724,7 @@
    "url": "https://github.com/cisagov/log4j-affected-db",
    "license": "CC0-1.0",
    "notes": "Archived February 2023. Statuses reflect vendor statements at the time.",
-   "assertions": 1349,
+   "assertions": 1346,
    "latest": "2022-11-01"
   },
   {
@@ -778,7 +778,7 @@
    "notes": "Vendor/product names from CNA-published CVE records, ranked by CVE and KEV counts. Records for package-ecosystem components are excluded.",
    "assertions": 0,
    "latest": "",
-   "products": 15784
+   "products": 15962
   }
  ],
  "comparables": [

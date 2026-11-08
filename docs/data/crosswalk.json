@@ -23,6 +23,56 @@
 ]
 },
 {
+"key": "atlassian/bamboo",
+"keys": [
+"atlassian/bamboo",
+"atlassian/bamboo-server"
+],
+"cpes": [
+"atlassian:bamboo"
+]
+},
+{
+"key": "atlassian/jira-data-center",
+"keys": [
+"atlassian/jira-data-center",
+"atlassian/jira-software-data-center"
+],
+"cpes": [
+"atlassian:jira_data_center"
+]
+},
+{
+"key": "atlassian/jira-server",
+"keys": [
+"atlassian/jira-server",
+"atlassian/jira-software-server"
+],
+"cpes": [
+"atlassian:jira_server"
+]
+},
+{
+"key": "bmc/control-m",
+"keys": [
+"bmc/control-m",
+"bmc/control-m-server"
+],
+"cpes": [
+"bmc:control-m"
+]
+},
+{
+"key": "fuji-electric/tellus-lite",
+"keys": [
+"fuji-electric-co-ltd-and-hakko-electronics/tellus-lite",
+"fuji-electric/tellus-lite"
+],
+"cpes": [
+"fujielectric:tellus_lite"
+]
+},
+{
 "key": "ibm/business-automation-workflow",
 "keys": [
 "ibm/business-automation-workflow",
@@ -30,6 +80,16 @@
 ],
 "cpes": [
 "ibm:business_automation_workflow"
+]
+},
+{
+"key": "ibm/cloud-pak-for-business-automation",
+"keys": [
+"ibm/cloud-pak-for-automation",
+"ibm/cloud-pak-for-business-automation"
+],
+"cpes": [
+"ibm:cloud_pak_for_business_automation"
 ]
 },
 {
@@ -103,6 +163,36 @@
 ]
 },
 {
+"key": "progress/openedge",
+"keys": [
+"progress-software/openedge",
+"progress/openedge"
+],
+"cpes": [
+"progress:openedge"
+]
+},
+{
+"key": "projectworlds-pvt/online-examination-system",
+"keys": [
+"projectworlds-pvt/online-examination-system",
+"projectworlds/online-examination-system"
+],
+"cpes": [
+"projectworlds:online_examination_system"
+]
+},
+{
+"key": "purestorage/flasharray",
+"keys": [
+"pure-storage/flasharray",
+"purestorage/flasharray"
+],
+"cpes": [
+"purestorage:flasharray"
+]
+},
+{
 "key": "red-hat/jboss-data-virtualization-6-4-8-sp2",
 "keys": [
 "red-hat/jboss-data-virtualization-6-4-8-sp1",
@@ -110,6 +200,26 @@
 ],
 "cpes": [
 "redhat:jboss_data_virtualization"
+]
+},
+{
+"key": "sailpoint/identityiq",
+"keys": [
+"sailpoint-technologies/identityiq",
+"sailpoint/identityiq"
+],
+"cpes": [
+"sailpoint:identityiq"
+]
+},
+{
+"key": "sante/dicom-viewer-pro",
+"keys": [
+"sante/dicom-viewer-pro",
+"santesoft/sante-dicom-viewer-pro"
+],
+"cpes": [
+"santesoft:dicom_viewer_pro"
 ]
 }
 ]
