@@ -29,6 +29,60 @@
 "html_table"
 ]
 },
+"https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom232/Third-party-product-terms-of-use/": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 532,
+"sha": "f59624f98079eb3e5dc5d306d77967f4d7fb110d571bcbf6be25a4cf89473725",
+"status": "ok",
+"via": [
+"jar_names",
+"name_version_lines"
+]
+},
+"https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom233/Third-party-product-terms-of-use/": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 878,
+"sha": "6aefb99f6005722c5265d78cd0d89ae6b9f706af07c076c1b98a6434f3306d3c",
+"status": "ok",
+"via": [
+"jar_names",
+"name_version_lines"
+]
+},
+"https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is252/Third-party-product-terms-of-use/": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 919,
+"sha": "c57f4877ad7e7668833b0d39a7e1158eb31f9963ff9802e69402d4ebdb177a0c",
+"status": "ok",
+"via": [
+"html_table",
+"jar_names"
+]
+},
+"https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is261/Third-party-product-terms-of-use/": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 935,
+"sha": "8013186cad58b683d15045dea9e98d7b6e47a17bcdc5352f47af24d85ab9d7c1",
+"status": "ok",
+"via": [
+"html_table",
+"jar_names"
+]
+},
+"https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is262/Third-party-product-terms-of-use/": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 1108,
+"sha": "defb294c1617b73c0aa1465928f4d0e79fbc6788e48883c53483952d5b14e462",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/cn-series-oss-listings/cn-series-10-0-open-source-software-oss-listing.html": {
 "fetched": "2026-11-08",
 "kind": "html",
@@ -849,6 +903,36 @@
 "dropdown_heads"
 ]
 },
+"https://documentation.commvault.com/11.42/commcell-console/third_party_applications_installed_by_commvault_installer.html": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 10,
+"sha": "72b35fc9aa20bcb80d4d4e16e480e13f516adbe8acdd90d6893fef8ade30d98d",
+"status": "ok",
+"via": [
+"name_version_lines"
+]
+},
+"https://documentation.commvault.com/2023e/commcell-console/third_party_applications_installed_by_commvault_installer.html": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 11,
+"sha": "4d35b762a1058e2e49c7ac0b98adcd3f11919d8e3e16f7d6a69271ace6e1866a",
+"status": "ok",
+"via": [
+"name_version_lines"
+]
+},
+"https://documentation.commvault.com/2024e/commcell-console/third_party_applications_installed_by_commvault_installer.html": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 10,
+"sha": "c62635419a74847671a0782262e01db3a1f52dce85093968240ecde78b8b559d",
+"status": "ok",
+"via": [
+"name_version_lines"
+]
+},
 "https://documentation.solarwinds.com/en/Success_Center/dameware/Content/dameware_third_party_software_list.htm": {
 "fetched": "2026-11-08",
 "kind": "html",
@@ -1643,6 +1727,49 @@
 "license_groups"
 ]
 },
+"https://files.zimbra.com/website/docs/10.0.0/open_source_licenses_10.0.0.txt": {
+"fetched": "2026-11-08",
+"kind": "text",
+"n": 3234,
+"sha": "3c650558a341cdadd8b22e538e893f9b0cc8f1d0321904f3708be3636c433201",
+"status": "ok",
+"via": [
+"gt_list",
+"jar_names"
+]
+},
+"https://files.zimbra.com/website/docs/10.1.0/open_source_licenses_10.1.0.txt": {
+"fetched": "2026-11-08",
+"kind": "text",
+"n": 481,
+"sha": "f012acdc008855c6b893f7343cf2ed01b535195d78f774844a3a93b7ab845130",
+"status": "ok",
+"via": [
+"gt_list",
+"jar_names"
+]
+},
+"https://files.zimbra.com/website/docs/9.0/open_source_licenses_9.0.txt": {
+"fetched": "2026-11-08",
+"kind": "text",
+"n": 2902,
+"sha": "526490436d9806e84cc8ec0acf58661fa11425d0ea5f031fcaa11182f7dc807a",
+"status": "ok",
+"via": [
+"gt_list",
+"jar_names"
+]
+},
+"https://help.ivanti.com/ht/help/en_US/ISM/2024/ITSM_AttributionReport__Q22024.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 89,
+"sha": "a237c4485035382474bb1c6bf65527c8c6a9ac5cee9ecc391bd83525283885a9",
+"status": "ok",
+"via": [
+"bd_components"
+]
+},
 "https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions-22.4R1.pdf": {
 "fetched": "2026-11-08",
 "kind": "pdf",
@@ -1681,6 +1808,17 @@
 "status": "ok",
 "via": [
 "dotted_toc"
+]
+},
+"https://help.ivanti.com/ps/help/en_US/SD/25.x/SD%20Attribution.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 54,
+"sha": "2ef67080bc1d23b90f6c352bd236094cdb01445e7173638eafe2f3027b8fad92",
+"status": "ok",
+"via": [
+"bd_components",
+"url_lines"
 ]
 },
 "https://opensource.netapp.com/Active_IQ_Unified_Manager/AIQUM-9.18GA-Release/NOTICE.pdf": {
@@ -2167,6 +2305,18 @@
 "status": "ok",
 "via": [
 "component_license"
+]
+},
+"https://support.axway.com/fr/articles/download-attachment/hash/7331c59682b7507655685cce49664d46-1/kb/194100": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 76,
+"sha": "303dc4c15f24703e517c2c7d1043287990d0cfb2bdf26f51d38ed8b684ae26cd",
+"status": "ok",
+"via": [
+"dotted_toc",
+"table_lines",
+"jar_names"
 ]
 },
 "https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html": {

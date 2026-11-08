@@ -1,0 +1,320 @@
+{
+"components": [
+{
+"name": "activation",
+"version": "1.1.1"
+},
+{
+"name": "args4j",
+"version": "2.33"
+},
+{
+"name": "atl110",
+"version": "11.0.60610.1"
+},
+{
+"name": "bcprov-jdk15on",
+"version": "1.69"
+},
+{
+"name": "C Libraries for Gateway",
+"version": "6.17.3 SP10"
+},
+{
+"name": "charset",
+"version": "1.15.0.0"
+},
+{
+"name": "commons-lang3",
+"version": "3.8.1"
+},
+{
+"name": "commons-logging",
+"version": "1.2"
+},
+{
+"name": "commons-pool",
+"version": "1.6"
+},
+{
+"name": "dbghelp",
+"version": "6.1.7601.17514"
+},
+{
+"name": "dbghelp",
+"version": "6.3.0017.0"
+},
+{
+"name": "entrust-toolkit",
+"version": "8.1.1"
+},
+{
+"name": "ex25",
+"version": "2.1.0.0"
+},
+{
+"name": "fpxapi",
+"version": "2.0.0.3"
+},
+{
+"name": "Gateway",
+"version": "6.17.3"
+},
+{
+"name": "iaik_jce_full",
+"version": "5.61"
+},
+{
+"name": "iconv",
+"version": "1.15.0.0"
+},
+{
+"name": "istack-commons-runtime",
+"version": "2.21"
+},
+{
+"name": "Java libraries for Gateway",
+"version": "6.17.3 SP10"
+},
+{
+"name": "javax.jms",
+"version": "1.1"
+},
+{
+"name": "javax.mail",
+"version": "1.6.2"
+},
+{
+"name": "jaxb-api",
+"version": "2.2.12"
+},
+{
+"name": "jaxb-core",
+"version": "2.2.11"
+},
+{
+"name": "jaxb-runtime",
+"version": "2.2.11"
+},
+{
+"name": "jmxri",
+"version": "1.2.1"
+},
+{
+"name": "jmxtools",
+"version": "1.2.1"
+},
+{
+"name": "jsr173-osgi",
+"version": "1.0"
+},
+{
+"name": "kmpapi3",
+"version": "6.0.300.506"
+},
+{
+"name": "libcrypto",
+"version": "1.0.2r"
+},
+{
+"name": "libcurl",
+"version": "4.2.0"
+},
+{
+"name": "libeay32",
+"version": "1.0.2r"
+},
+{
+"name": "libgcc",
+"version": "3.4.2"
+},
+{
+"name": "libssl",
+"version": "1.0.2r"
+},
+{
+"name": "libxml2",
+"version": "2.9.4"
+},
+{
+"name": "log4j",
+"version": "1.2-api-2.14.0"
+},
+{
+"name": "log4j",
+"version": "1.2.16"
+},
+{
+"name": "log4j",
+"version": "2.14.0"
+},
+{
+"name": "log4j-1.2-api",
+"version": "2.14.0"
+},
+{
+"name": "log4j-api",
+"version": "2.10.0"
+},
+{
+"name": "log4j-api",
+"version": "2.14.0"
+},
+{
+"name": "log4j-core",
+"version": "2.10.0"
+},
+{
+"name": "log4j-core",
+"version": "2.14.0"
+},
+{
+"name": "mfc110",
+"version": "11.0.60610.1"
+},
+{
+"name": "mfcm110",
+"version": "11.0.60610.1"
+},
+{
+"name": "mfrts32",
+"version": "1.752.1.416"
+},
+{
+"name": "mip32",
+"version": "2.10.0.0"
+},
+{
+"name": "msvcirt",
+"version": "6.1.7600.16385"
+},
+{
+"name": "msvcp110",
+"version": "11.00.51106.1"
+},
+{
+"name": "msvcp70",
+"version": "7.0.9466.0"
+},
+{
+"name": "msvcp71",
+"version": "7.10.3077.0"
+},
+{
+"name": "msvcr110",
+"version": "11.00.51106.1"
+},
+{
+"name": "msvcr120",
+"version": "12.0.21005.1"
+},
+{
+"name": "msvcr70",
+"version": "7.0.9466.0"
+},
+{
+"name": "msvcr71",
+"version": "7.10.3052.4"
+},
+{
+"name": "msvcrt",
+"version": "7.0.7601.17744"
+},
+{
+"name": "org.apache.servicemix.bundles.dom4j",
+"version": "2.1.3_1"
+},
+{
+"name": "org.apache.servicemix.bundles.xalan",
+"version": "2.7.2_3"
+},
+{
+"name": "org.apache.servicemix.bundles.xerces",
+"version": "2.12.0_1"
+},
+{
+"name": "psapi",
+"version": "5.1.2600.2180"
+},
+{
+"name": "psapi",
+"version": "6.1.7600.16385"
+},
+{
+"name": "roboex32",
+"version": "8.0.133.0"
+},
+{
+"name": "Secure Relay libraries",
+"version": ""
+},
+{
+"name": "sqlite3",
+"version": "3.29.0"
+},
+{
+"name": "ssleay32",
+"version": "1.0.2r"
+},
+{
+"name": "trc32",
+"version": "2.5.0.0"
+},
+{
+"name": "vccorlib110",
+"version": "11.0.51106.1"
+},
+{
+"name": "wdbgUtil",
+"version": "1.0.0.1"
+},
+{
+"name": "x25",
+"version": "3.0.0.1"
+},
+{
+"name": "xalan-c",
+"version": "1.10.0.0"
+},
+{
+"name": "XalanMessages",
+"version": "1.10.0.0"
+},
+{
+"name": "xerces",
+"version": "1.4.4"
+},
+{
+"name": "xerces-c",
+"version": "2.7.0.0"
+},
+{
+"name": "xerces-depdom",
+"version": "2.7.0.0"
+},
+{
+"name": "xercesimpl",
+"version": "2.9.0"
+},
+{
+"name": "xml-apis",
+"version": "1.4.1"
+},
+{
+"name": "zlib",
+"version": "1.2.11"
+}
+],
+"extractors": [
+"dotted_toc",
+"table_lines",
+"jar_names"
+],
+"kind": "pdf",
+"product": "Axway Gateway",
+"retrieved": "2026-11-08",
+"sha256": "303dc4c15f24703e517c2c7d1043287990d0cfb2bdf26f51d38ed8b684ae26cd",
+"supplier": "Axway",
+"url": "https://support.axway.com/fr/articles/download-attachment/hash/7331c59682b7507655685cce49664d46-1/kb/194100",
+"version": "6.17.3 SP10"
+}

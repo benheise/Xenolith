@@ -1,0 +1,2143 @@
+{
+"components": [
+{
+"name": "@ngx-translate/core",
+"version": "11.0.1"
+},
+{
+"name": "@ngx-translate/http-loader",
+"version": "4.0.0"
+},
+{
+"name": "activation",
+"version": "1.1.1"
+},
+{
+"name": "angus-activation",
+"version": "2.0.1"
+},
+{
+"name": "Ant",
+"version": "1.6.5"
+},
+{
+"name": "antlr-runtime",
+"version": "3.5"
+},
+{
+"name": "antlr4-runtime",
+"version": "4.5.3"
+},
+{
+"name": "Apache Kafka",
+"version": "2.3.1"
+},
+{
+"name": "Apache Lucene",
+"version": "8.5.2"
+},
+{
+"name": "Apache mime4j",
+"version": "0.6"
+},
+{
+"name": "Apache XercesImpl",
+"version": "2.12.2"
+},
+{
+"name": "Apache-caffeine",
+"version": "2.8.4"
+},
+{
+"name": "asm-debug-all",
+"version": "5.1"
+},
+{
+"name": "aspectjrt",
+"version": "1.9.20.1"
+},
+{
+"name": "aspectjweaver",
+"version": "1.9.20.1"
+},
+{
+"name": "aws-java-sdk-core",
+"version": "1.11.1034"
+},
+{
+"name": "aws-java-sdk-kms",
+"version": "1.11.1034"
+},
+{
+"name": "aws-java-sdk-s3",
+"version": "1.11.1034"
+},
+{
+"name": "bcpkix-jdk15on",
+"version": "157"
+},
+{
+"name": "bcpkix-jdk15on-157.jar",
+"version": "1.0.00"
+},
+{
+"name": "bcprov-jdk15on",
+"version": "1.65"
+},
+{
+"name": "BMC Helix Operations Management",
+"version": "23.2"
+},
+{
+"name": "btf",
+"version": "1.2"
+},
+{
+"name": "byte-buddy",
+"version": "1.14.8"
+},
+{
+"name": "byte-buddy-agent",
+"version": "1.14.8"
+},
+{
+"name": "Cassandra",
+"version": "3.11.5"
+},
+{
+"name": "cassandra-driver-core",
+"version": "3.8.0"
+},
+{
+"name": "cassandra-driver-mapping",
+"version": "3.8.0"
+},
+{
+"name": "cassandra-unit",
+"version": "3.1.1.0"
+},
+{
+"name": "Cement",
+"version": "2.10.2"
+},
+{
+"name": "checker",
+"version": "2.5.6"
+},
+{
+"name": "classmate",
+"version": "1.3.3"
+},
+{
+"name": "client",
+"version": "1.0.2"
+},
+{
+"name": "clover",
+"version": "4.0.4"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-annotations",
+"version": "2.10.0"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-core",
+"version": "2.10.4"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-databind",
+"version": "2.6.2"
+},
+{
+"name": "com.sun.jersey:jersey-core",
+"version": "1.19.2"
+},
+{
+"name": "commons-beanutils",
+"version": "1.9.4"
+},
+{
+"name": "commons-codec",
+"version": "1.1"
+},
+{
+"name": "commons-codec",
+"version": "1.11"
+},
+{
+"name": "commons-codec",
+"version": "1.14"
+},
+{
+"name": "commons-collections",
+"version": "3.2.2"
+},
+{
+"name": "commons-collections-3.2.2.jar",
+"version": "1.0.00"
+},
+{
+"name": "commons-io",
+"version": "2.6"
+},
+{
+"name": "commons-io",
+"version": "2.7"
+},
+{
+"name": "commons-lang3",
+"version": "3.11"
+},
+{
+"name": "commons-lang3",
+"version": "3.4"
+},
+{
+"name": "commons-logging",
+"version": "1.1.1"
+},
+{
+"name": "commons-logging",
+"version": "1.1.3"
+},
+{
+"name": "commons-logging",
+"version": "1.2"
+},
+{
+"name": "commons-math",
+"version": "2.2"
+},
+{
+"name": "commons-pool2",
+"version": "2.8.1"
+},
+{
+"name": "compiler",
+"version": "0.9.3"
+},
+{
+"name": "connect-api",
+"version": "2.0.1"
+},
+{
+"name": "connect-json",
+"version": "2.0.1"
+},
+{
+"name": "Core-js",
+"version": "2.6.9"
+},
+{
+"name": "Curator",
+"version": "2.9.0"
+},
+{
+"name": "curator-client",
+"version": "2.9.0"
+},
+{
+"name": "curator-framework",
+"version": "2.9.0"
+},
+{
+"name": "curator-recipes",
+"version": "2.9.0"
+},
+{
+"name": "curator-test",
+"version": "2.9.0"
+},
+{
+"name": "curator-x-discovery",
+"version": "2.9.0"
+},
+{
+"name": "domain",
+"version": "1.0.00"
+},
+{
+"name": "drools-compiler",
+"version": "6.4.0.Final"
+},
+{
+"name": "drools-core",
+"version": "6.4.0.Final"
+},
+{
+"name": "drools-reteoo",
+"version": "6.4.0.Final"
+},
+{
+"name": "eclipse-collections",
+"version": "9.0.0.M3"
+},
+{
+"name": "eclipse-collections-api",
+"version": "9.0.0.M3"
+},
+{
+"name": "ElasticSearch",
+"version": "6.4.2"
+},
+{
+"name": "ElasticSearch",
+"version": "7.7.0"
+},
+{
+"name": "elasticsearch-cli",
+"version": "6.4.2"
+},
+{
+"name": "elasticsearch-cli",
+"version": "7.7.0"
+},
+{
+"name": "elasticsearch-core",
+"version": "6.4.2"
+},
+{
+"name": "elasticsearch-core",
+"version": "7.7.0"
+},
+{
+"name": "elasticsearch-rest-client",
+"version": "7.7.0"
+},
+{
+"name": "elasticsearch-rest-high-level-client",
+"version": "7.7.0"
+},
+{
+"name": "elasticsearch-ssl-config",
+"version": "7.7.0"
+},
+{
+"name": "elasticsearch-x-content",
+"version": "6.4.2"
+},
+{
+"name": "elasticsearch-x-content",
+"version": "7.7.0"
+},
+{
+"name": "error_prone_annotations",
+"version": "2.0.19"
+},
+{
+"name": "flyway-core",
+"version": "7.2.1"
+},
+{
+"name": "grok",
+"version": "7.7.0"
+},
+{
+"name": "grpc-context",
+"version": "1.6.1"
+},
+{
+"name": "grpc-core",
+"version": "1.6.1"
+},
+{
+"name": "grpc-netty",
+"version": "1.6.1"
+},
+{
+"name": "grpc-protobuf",
+"version": "1.6.1"
+},
+{
+"name": "grpc-protobuf-lite",
+"version": "1.6.1"
+},
+{
+"name": "grpc-stub",
+"version": "1.6.1"
+},
+{
+"name": "gson",
+"version": "2.8.1"
+},
+{
+"name": "Guava",
+"version": "19.0"
+},
+{
+"name": "h2",
+"version": "1.4.196"
+},
+{
+"name": "hammerjs",
+"version": "2.0.8"
+},
+{
+"name": "hibernate-validator",
+"version": "5.4.2.Final"
+},
+{
+"name": "hppc",
+"version": "0.8.1"
+},
+{
+"name": "httpasyncclient",
+"version": "4.1.2"
+},
+{
+"name": "httpasyncclient",
+"version": "4.1.4"
+},
+{
+"name": "httpclient",
+"version": "4.5.5"
+},
+{
+"name": "httpclient",
+"version": "4.5.6"
+},
+{
+"name": "httpclient",
+"version": "4.5.7"
+},
+{
+"name": "httpclient5",
+"version": "5.0.4"
+},
+{
+"name": "httpcore",
+"version": "4.4.10"
+},
+{
+"name": "httpcore",
+"version": "4.4.11"
+},
+{
+"name": "httpcore",
+"version": "4.4.5"
+},
+{
+"name": "httpcore",
+"version": "4.4.9"
+},
+{
+"name": "httpcore-nio",
+"version": "4.4.11"
+},
+{
+"name": "httpcore-nio",
+"version": "4.4.16"
+},
+{
+"name": "httpcore-nio",
+"version": "4.4.5"
+},
+{
+"name": "httpcore5",
+"version": "5.0.4"
+},
+{
+"name": "httpcore5-h2",
+"version": "5.0.4"
+},
+{
+"name": "hypersistence-utils-hibernate-60",
+"version": "3.5.2"
+},
+{
+"name": "ingest-common",
+"version": "7.7.0"
+},
+{
+"name": "instrumentation-api",
+"version": "0.4.3"
+},
+{
+"name": "io.netty:netty-codec-haproxy:jar",
+"version": "4.1.100.Final"
+},
+{
+"name": "istack-commons-runtime",
+"version": "4.1.2"
+},
+{
+"name": "jackson-annotations",
+"version": "2.10.4"
+},
+{
+"name": "jackson-core",
+"version": "2.10.4"
+},
+{
+"name": "jackson-core-asl",
+"version": "1.9.13"
+},
+{
+"name": "jackson-coreutils",
+"version": "1.8"
+},
+{
+"name": "jackson-databind",
+"version": "2.10.0"
+},
+{
+"name": "jackson-databind",
+"version": "2.10.4"
+},
+{
+"name": "jackson-dataformat-cbor",
+"version": "2.10.0"
+},
+{
+"name": "jackson-dataformat-cbor",
+"version": "2.15.2"
+},
+{
+"name": "jackson-dataformat-csv",
+"version": "2.14.3"
+},
+{
+"name": "jackson-dataformat-smile",
+"version": "2.10.0"
+},
+{
+"name": "jackson-dataformat-smile",
+"version": "2.13.5"
+},
+{
+"name": "jackson-dataformat-yaml",
+"version": "2.10.0"
+},
+{
+"name": "jackson-dataformat-yaml",
+"version": "2.15.2"
+},
+{
+"name": "jackson-datatype-protobuf",
+"version": "0.9.10-jackson2.9-proto3"
+},
+{
+"name": "jackson-datatype-protobuf",
+"version": "0.9.14"
+},
+{
+"name": "jackson-jaxrs-base",
+"version": "2.10.0"
+},
+{
+"name": "jackson-jaxrs-base",
+"version": "2.14.3"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.10.0"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.14.3"
+},
+{
+"name": "jackson-mapper-asl",
+"version": "1.9.13"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.10.0"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.14.3"
+},
+{
+"name": "jacorb-omgapi",
+"version": "3.9"
+},
+{
+"name": "jakarta.servlet-api",
+"version": "5.0.0"
+},
+{
+"name": "jakarta.servlet-api",
+"version": "5.0.0-M2"
+},
+{
+"name": "jakarta.websocket-api",
+"version": "2.1.1"
+},
+{
+"name": "jakarta.websocket-client-api",
+"version": "2.1.1"
+},
+{
+"name": "jakarta.xml.bind-api",
+"version": "4.0.1"
+},
+{
+"name": "Janino",
+"version": "2.6.1"
+},
+{
+"name": "jarchivelib",
+"version": "1.0.0"
+},
+{
+"name": "Java driver for Apache Cassandra",
+"version": "3.1.4"
+},
+{
+"name": "javaassist",
+"version": "3.18.1-GA"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.3.2"
+},
+{
+"name": "javax.transaction-api",
+"version": "1.2"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.1"
+},
+{
+"name": "jaxb-api",
+"version": "2.1"
+},
+{
+"name": "jaxb-api",
+"version": "2.2.11"
+},
+{
+"name": "jaxb-api",
+"version": "2.2.3"
+},
+{
+"name": "jaxb-api",
+"version": "2.3.0"
+},
+{
+"name": "jaxb-core",
+"version": "2.2.11"
+},
+{
+"name": "jaxb-core",
+"version": "2.3.0"
+},
+{
+"name": "jaxb-core",
+"version": "4.0.3"
+},
+{
+"name": "jaxb-impl",
+"version": "2.2.11"
+},
+{
+"name": "jaxb-impl",
+"version": "2.3.0"
+},
+{
+"name": "jaxb-impl",
+"version": "2.3.8"
+},
+{
+"name": "jaxb-runtime",
+"version": "4.0.3"
+},
+{
+"name": "jboss-annotations-api_1.2_spec",
+"version": "1.0.0.Final"
+},
+{
+"name": "jboss-jaxrs-api_2.1_spec",
+"version": "1.0.1.Final"
+},
+{
+"name": "jboss-jaxrs-api_2.1_spec",
+"version": "2.0.0.Final"
+},
+{
+"name": "jboss-logging",
+"version": "3.3.1"
+},
+{
+"name": "jboss-marshalling",
+"version": "2.0.14-Final"
+},
+{
+"name": "jcl-over-slf4j",
+"version": "1.7.25"
+},
+{
+"name": "jersey-client",
+"version": "1.19.2"
+},
+{
+"name": "jersey-common",
+"version": "3.1.3"
+},
+{
+"name": "jersey-json",
+"version": "1.19.2"
+},
+{
+"name": "jersey-multipart",
+"version": "1.19.2"
+},
+{
+"name": "jersey-server",
+"version": "1.19.2"
+},
+{
+"name": "jersey-servlet",
+"version": "1.19.2"
+},
+{
+"name": "jersey-spring",
+"version": "1.19.2"
+},
+{
+"name": "jetty-alpn-client",
+"version": "11.0.14"
+},
+{
+"name": "jetty-annotations",
+"version": "11.0.14"
+},
+{
+"name": "jetty-client",
+"version": "11.0.14"
+},
+{
+"name": "jetty-http",
+"version": "11.0.14"
+},
+{
+"name": "Jetty-io",
+"version": "11.0.14"
+},
+{
+"name": "jetty-jakarta-servlet-api",
+"version": "5.0.2"
+},
+{
+"name": "jetty-jndi",
+"version": "11.0.14"
+},
+{
+"name": "jetty-plus",
+"version": "11.0.14"
+},
+{
+"name": "jetty-security",
+"version": "11.0.14"
+},
+{
+"name": "jetty-server",
+"version": "11.0.14"
+},
+{
+"name": "jetty-servlet",
+"version": "11.0.14"
+},
+{
+"name": "jetty-servlets",
+"version": "11.0.14"
+},
+{
+"name": "jetty-util",
+"version": "11.0.14"
+},
+{
+"name": "jetty-webapp",
+"version": "11.0.14"
+},
+{
+"name": "jetty-xml",
+"version": "11.0.14"
+},
+{
+"name": "jffi",
+"version": "1.2.16"
+},
+{
+"name": "jjwt-api",
+"version": "0.11.2"
+},
+{
+"name": "jjwt-impl",
+"version": "0.11.2"
+},
+{
+"name": "jjwt-jackson",
+"version": "0.11.2"
+},
+{
+"name": "jjwt-json",
+"version": "0.11.2"
+},
+{
+"name": "jmespath-java",
+"version": "1.11.1034"
+},
+{
+"name": "joda-time",
+"version": "2.10.2"
+},
+{
+"name": "joni",
+"version": "2.1.6"
+},
+{
+"name": "jopt-simple",
+"version": "5.0.2"
+},
+{
+"name": "jopt-simple",
+"version": "5.0.3"
+},
+{
+"name": "jopt-simple",
+"version": "5.0.4"
+},
+{
+"name": "jQuery",
+"version": "1.12.4"
+},
+{
+"name": "jQuery",
+"version": "3.4.1"
+},
+{
+"name": "jQuery-ui",
+"version": "1.11.2"
+},
+{
+"name": "JQWidgets Library",
+"version": "8.3.2"
+},
+{
+"name": "json-patch",
+"version": "1.9"
+},
+{
+"name": "json-path",
+"version": "4.0.0"
+},
+{
+"name": "json-path",
+"version": "5.3.2"
+},
+{
+"name": "json-schema-core",
+"version": "1.2.8"
+},
+{
+"name": "json-schema-validator",
+"version": "2.2.8"
+},
+{
+"name": "json-simple",
+"version": "1.1.1"
+},
+{
+"name": "jsr305",
+"version": "3.0.0"
+},
+{
+"name": "jul-to-slf4j",
+"version": "2.0.9"
+},
+{
+"name": "JUnit",
+"version": "4.12"
+},
+{
+"name": "junit-jupiter-api",
+"version": "5.6.0-M1"
+},
+{
+"name": "junit-jupiter-engine",
+"version": "5.4.2"
+},
+{
+"name": "junit-platform-commons",
+"version": "1.4.2"
+},
+{
+"name": "junit-platform-engine",
+"version": "1.4.2"
+},
+{
+"name": "kafka-clients",
+"version": "2.0.1"
+},
+{
+"name": "kafka-clients",
+"version": "2.3.1"
+},
+{
+"name": "kafka-streams",
+"version": "2.0.1"
+},
+{
+"name": "kafka-streams",
+"version": "2.3.1"
+},
+{
+"name": "kafka_2.11",
+"version": "1.0.0"
+},
+{
+"name": "kafka_2.11",
+"version": "2.3.1"
+},
+{
+"name": "kazoo",
+"version": "2.6.1"
+},
+{
+"name": "kie-api-6.4.0",
+"version": "6.4.0.Final"
+},
+{
+"name": "kie-internal-6.4.0",
+"version": "6.4.0.Final"
+},
+{
+"name": "knowledge-api",
+"version": "6.4.0.Final"
+},
+{
+"name": "Kryo",
+"version": "5.5.0"
+},
+{
+"name": "lang-mustache-client",
+"version": "6.4.2"
+},
+{
+"name": "lang-mustache-client",
+"version": "7.7.0"
+},
+{
+"name": "lang-painless",
+"version": "7.7.0"
+},
+{
+"name": "libphonenumber",
+"version": "8.0.0"
+},
+{
+"name": "log4j-api",
+"version": "2.11.1"
+},
+{
+"name": "log4j-api",
+"version": "2.12.1"
+},
+{
+"name": "log4j-core",
+"version": "2.12.1"
+},
+{
+"name": "Logback-access",
+"version": "1.4.11"
+},
+{
+"name": "logback-classic",
+"version": "1.1.3"
+},
+{
+"name": "logback-classic",
+"version": "1.4.11"
+},
+{
+"name": "logback-core",
+"version": "1.1.3"
+},
+{
+"name": "logback-core",
+"version": "1.2.3"
+},
+{
+"name": "logback-core",
+"version": "1.4.11"
+},
+{
+"name": "lombok",
+"version": "1.18.30"
+},
+{
+"name": "lucene-analyzers-common",
+"version": "8.5.2"
+},
+{
+"name": "lucene-backward-codecs",
+"version": "8.5.2"
+},
+{
+"name": "lucene-core",
+"version": "8.5.2"
+},
+{
+"name": "lucene-grouping",
+"version": "8.5.2"
+},
+{
+"name": "lucene-highlighter",
+"version": "8.5.2"
+},
+{
+"name": "lucene-join",
+"version": "8.5.2"
+},
+{
+"name": "lucene-memory",
+"version": "8.5.2"
+},
+{
+"name": "lucene-misc",
+"version": "8.5.2"
+},
+{
+"name": "lucene-queries",
+"version": "8.5.2"
+},
+{
+"name": "lucene-queryparser",
+"version": "8.5.2"
+},
+{
+"name": "lucene-sandbox",
+"version": "8.5.2"
+},
+{
+"name": "lucene-spatial",
+"version": "8.4.1"
+},
+{
+"name": "lucene-spatial-extras",
+"version": "8.5.2"
+},
+{
+"name": "lucene-suggest",
+"version": "8.5.2"
+},
+{
+"name": "lz4-java",
+"version": "1.4.1"
+},
+{
+"name": "mailapi",
+"version": "1.4.3"
+},
+{
+"name": "mailapi",
+"version": "1.5.2"
+},
+{
+"name": "metrics-core",
+"version": "3.2.4"
+},
+{
+"name": "metrics-core",
+"version": "3.2.6"
+},
+{
+"name": "micrometer-commons",
+"version": "1.10.11"
+},
+{
+"name": "micrometer-commons",
+"version": "1.11.4"
+},
+{
+"name": "micrometer-core",
+"version": "1.10.11"
+},
+{
+"name": "micrometer-core",
+"version": "1.11.4"
+},
+{
+"name": "micrometer-observation",
+"version": "1.10.11"
+},
+{
+"name": "micrometer-observation",
+"version": "1.11.4"
+},
+{
+"name": "micrometer-registry-prometheus",
+"version": "1.10.11"
+},
+{
+"name": "minlog",
+"version": "1.3.1"
+},
+{
+"name": "moment",
+"version": "2.12.0"
+},
+{
+"name": "moment",
+"version": "2.24.0"
+},
+{
+"name": "moment-timezone",
+"version": "0.5.23"
+},
+{
+"name": "moment-timezone-with-data-2010-2020",
+"version": "0.5.5"
+},
+{
+"name": "msg-simple",
+"version": "1.1"
+},
+{
+"name": "MVEL",
+"version": "2.2.8.Final"
+},
+{
+"name": "mvel2",
+"version": "2.2.8.Final"
+},
+{
+"name": "Netty",
+"version": "3.10.6"
+},
+{
+"name": "netty-all",
+"version": "4.1.39.Final"
+},
+{
+"name": "netty-all",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-all",
+"version": "4.1.48.Final"
+},
+{
+"name": "netty-buffer",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-buffer",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-codec",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-codec-dns",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-http",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-http",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-codec-http2",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-http2",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-codec-memcache",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-mqtt",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-redis",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-smtp",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-socks",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-socks",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-codec-stomp",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-codec-xml",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-common",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-common",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-handler",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-handler",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-handler-proxy",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-handler-proxy",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-handler-ssl-ocsp",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-resolver",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-resolver",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-resolver-dns",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-resolver-dns-classes-macos",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-transport",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-transport",
+"version": "4.1.46.Final"
+},
+{
+"name": "netty-transport-classes-epoll",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-transport-native-epoll",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-transport-native-unix-common",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-transport-rxtx",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-transport-sctp",
+"version": "4.1.100.Final"
+},
+{
+"name": "netty-transport-udt",
+"version": "4.1.100.Final"
+},
+{
+"name": "ng-dynamic-component",
+"version": "5.0.0"
+},
+{
+"name": "Nginx",
+"version": "1.10.3"
+},
+{
+"name": "node-sass",
+"version": "4.12.0"
+},
+{
+"name": "opencensus-api",
+"version": "0.5.1"
+},
+{
+"name": "org.apache.batik.xml",
+"version": "1.6.0.v201011041432"
+},
+{
+"name": "org.apache.tomcat.embed:tomcat-embed-core",
+"version": "10.1.13"
+},
+{
+"name": "org.apache.tomcat.embed:tomcat-embed-websocket",
+"version": "10.1.13"
+},
+{
+"name": "org.apache.xerces",
+"version": "2.9.0"
+},
+{
+"name": "org.springframework.boot:spring-boot-autoconfigure",
+"version": "1.5.6"
+},
+{
+"name": "org.springframework.boot:spring-boot-autoconfigure",
+"version": "3.1.4"
+},
+{
+"name": "org.springframework.boot:spring-boot-starter",
+"version": "3.0.11"
+},
+{
+"name": "org.springframework.boot:spring-boot-starter",
+"version": "3.1.4"
+},
+{
+"name": "org.springframework:spring-expression",
+"version": "4.3.24.RELEASE"
+},
+{
+"name": "org.springframework:spring-test",
+"version": "6.0.12"
+},
+{
+"name": "org.springframework:spring-tx",
+"version": "6.0.12"
+},
+{
+"name": "org.springframework:spring-web",
+"version": "6.0.12"
+},
+{
+"name": "org.springframework:spring-webmvc",
+"version": "6.0.12"
+},
+{
+"name": "Owasp Encoder",
+"version": "1.2.1"
+},
+{
+"name": "parent-join-client",
+"version": "7.7.0"
+},
+{
+"name": "percolator-client",
+"version": "6.4.2"
+},
+{
+"name": "percolator-client",
+"version": "7.7.0"
+},
+{
+"name": "postgresql",
+"version": "42.4.3"
+},
+{
+"name": "powermock-api-mockito",
+"version": "1.7.3"
+},
+{
+"name": "powermock-api-mockito2",
+"version": "2.0.9"
+},
+{
+"name": "powermock-api-support",
+"version": "2.0.9"
+},
+{
+"name": "powermock-core",
+"version": "2.0.9"
+},
+{
+"name": "powermock-module-junit4",
+"version": "1.7.3"
+},
+{
+"name": "powermock-module-junit4",
+"version": "2.0.9"
+},
+{
+"name": "powermock-module-junit4-common",
+"version": "2.0.9"
+},
+{
+"name": "powermock-reflect",
+"version": "2.0.9"
+},
+{
+"name": "primeng",
+"version": "8.0.2"
+},
+{
+"name": "proto-google-common-protos",
+"version": "0.1.9"
+},
+{
+"name": "protobuf-java",
+"version": "3.21.12"
+},
+{
+"name": "protobuf-java",
+"version": "3.3.1"
+},
+{
+"name": "protobuf-java-util",
+"version": "3.21.12"
+},
+{
+"name": "protobuf-java-util",
+"version": "3.3.1"
+},
+{
+"name": "Python",
+"version": "2.7"
+},
+{
+"name": "rank-eval-client",
+"version": "7.7.0"
+},
+{
+"name": "Reactive Streams",
+"version": "1.0.3"
+},
+{
+"name": "reactor-core",
+"version": "3.5.3"
+},
+{
+"name": "Redisson",
+"version": "3.22.1"
+},
+{
+"name": "Redisson",
+"version": "3.24.2"
+},
+{
+"name": "reflectASM",
+"version": "1.11.9"
+},
+{
+"name": "reflections",
+"version": "0.9.10"
+},
+{
+"name": "reindex-client",
+"version": "6.4.2"
+},
+{
+"name": "reindex-client",
+"version": "7.7.0"
+},
+{
+"name": "rest",
+"version": "7.7.0"
+},
+{
+"name": "rest-assured",
+"version": "5.3.2"
+},
+{
+"name": "rest-assured-common",
+"version": "5.3.2"
+},
+{
+"name": "RESTEasy",
+"version": "3.6.1.FINAL"
+},
+{
+"name": "resteasy-client",
+"version": "3.15.6.Final"
+},
+{
+"name": "resteasy-client",
+"version": "3.6.1.Final"
+},
+{
+"name": "resteasy-jackson2-provider",
+"version": "3.15.6.Final"
+},
+{
+"name": "resteasy-jackson2-provider",
+"version": "3.6.1.Final"
+},
+{
+"name": "resteasy-jaxb-provider",
+"version": "3.15.1.Final"
+},
+{
+"name": "resteasy-jaxb-provider",
+"version": "3.6.1.Final"
+},
+{
+"name": "resteasy-jaxrs",
+"version": "3.15.6.Final"
+},
+{
+"name": "resteasy-jaxrs",
+"version": "3.6.1.Final"
+},
+{
+"name": "resteasy-multipart-provider",
+"version": "3.6.1.Final"
+},
+{
+"name": "resteasy-netty4",
+"version": "3.15.6.Final"
+},
+{
+"name": "resteasy-netty4",
+"version": "3.6.1.Final"
+},
+{
+"name": "resteasy-servlet-initializer",
+"version": "3.6.1.Final"
+},
+{
+"name": "rocksdbjni",
+"version": "5.17.2"
+},
+{
+"name": "rocksdbjni",
+"version": "5.7.3"
+},
+{
+"name": "rocksdbjni",
+"version": "6.0.1"
+},
+{
+"name": "rxjava",
+"version": "3.1.6"
+},
+{
+"name": "rxjs",
+"version": "6.3.3"
+},
+{
+"name": "scala-library",
+"version": "2.12.6"
+},
+{
+"name": "scala-library",
+"version": "2.13.12"
+},
+{
+"name": "scala-logging_2.12",
+"version": "3.9.0"
+},
+{
+"name": "scala-parser-combinators_2.12",
+"version": "1.1.1"
+},
+{
+"name": "scala-reflect",
+"version": "2.12.6"
+},
+{
+"name": "scala-reflect",
+"version": "2.13.12"
+},
+{
+"name": "scripting-painless-spi",
+"version": "7.7.0"
+},
+{
+"name": "servlet-api",
+"version": "3.1.0"
+},
+{
+"name": "shiro-cache",
+"version": "1.4.2"
+},
+{
+"name": "shiro-config-core",
+"version": "1.4.2"
+},
+{
+"name": "shiro-config-ogdl",
+"version": "1.4.2"
+},
+{
+"name": "shiro-core",
+"version": "1.4.2"
+},
+{
+"name": "shiro-crypto-cipher",
+"version": "1.4.2"
+},
+{
+"name": "shiro-crypto-core",
+"version": "1.4.2"
+},
+{
+"name": "shiro-crypto-hash",
+"version": "1.4.2"
+},
+{
+"name": "shiro-event",
+"version": "1.4.2"
+},
+{
+"name": "shiro-jaxrs",
+"version": "1.4.2"
+},
+{
+"name": "shiro-lang",
+"version": "1.4.2"
+},
+{
+"name": "six",
+"version": "1.11.0"
+},
+{
+"name": "slf4j-api",
+"version": "2.0.9"
+},
+{
+"name": "slf4j-simple",
+"version": "2.0.9"
+},
+{
+"name": "smiley-http-proxy-servlet",
+"version": "1.1"
+},
+{
+"name": "snakeyaml",
+"version": "1.26"
+},
+{
+"name": "snappy-java",
+"version": "1.1.10.4"
+},
+{
+"name": "snappy-java",
+"version": "1.1.10.5"
+},
+{
+"name": "snappy-java",
+"version": "1.1.7.1"
+},
+{
+"name": "Spring Beans",
+"version": "4.3.24"
+},
+{
+"name": "Spring Beans",
+"version": "5.1.5"
+},
+{
+"name": "Spring Boot",
+"version": "1.5.6.RELEASE"
+},
+{
+"name": "Spring Data Commons",
+"version": "1.13.22"
+},
+{
+"name": "spring-aop",
+"version": "4.3.24.RELEASE"
+},
+{
+"name": "spring-aop",
+"version": "5.1.5.RELEASE"
+},
+{
+"name": "spring-aop",
+"version": "6.0.12"
+},
+{
+"name": "spring-aspects",
+"version": "6.0.12"
+},
+{
+"name": "Spring-beans",
+"version": "5.0.12.RELEASE"
+},
+{
+"name": "spring-beans",
+"version": "6.0.12"
+},
+{
+"name": "spring-boot",
+"version": "1.5.21.RELEASE"
+},
+{
+"name": "spring-boot",
+"version": "2.1.3.RELEASE"
+},
+{
+"name": "spring-boot",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-actuator",
+"version": "3.011"
+},
+{
+"name": "spring-boot-actuator",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-actuator-autoconfigure",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-actuator-autoconfigure",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-autoconfigure",
+"version": "1.5.21.RELEASE"
+},
+{
+"name": "spring-boot-autoconfigure",
+"version": "1.5.6.RELEASE"
+},
+{
+"name": "spring-boot-autoconfigure",
+"version": "2.1.3.RELEASE"
+},
+{
+"name": "spring-boot-autoconfigure",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-actuator",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-actuator",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-starter-aop",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-cache",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-data-jdbc",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-data-jpa",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-jdbc",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-jetty",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-starter-json",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-json",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-starter-logging",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-logging",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-starter-security",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-starter-test",
+"version": "1.5.6.RELEASE"
+},
+{
+"name": "spring-boot-starter-test",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-test",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-starter-tomcat",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-web",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-starter-web",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-test",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-test",
+"version": "3.1.4"
+},
+{
+"name": "spring-boot-test-autoconfigure",
+"version": "3.0.11"
+},
+{
+"name": "spring-boot-test-autoconfigure",
+"version": "3.1.4"
+},
+{
+"name": "spring-context",
+"version": "4.3.24.RELEASE"
+},
+{
+"name": "spring-context",
+"version": "5.0.12.RELEASE"
+},
+{
+"name": "Spring-context",
+"version": "5.1.5.RELEASE"
+},
+{
+"name": "spring-context",
+"version": "6.0.12"
+},
+{
+"name": "spring-context-support",
+"version": "6.0.12"
+},
+{
+"name": "Spring-core",
+"version": "4.3.10.RELEASE"
+},
+{
+"name": "Spring-core",
+"version": "4.3.24.RELEASE"
+},
+{
+"name": "spring-core",
+"version": "5.1.5.RELEASE"
+},
+{
+"name": "spring-core",
+"version": "6.0.12"
+},
+{
+"name": "spring-cql",
+"version": "1.5.6"
+},
+{
+"name": "spring-data-cassandra",
+"version": "1.5.6"
+},
+{
+"name": "spring-data-commons",
+"version": "3.0.10"
+},
+{
+"name": "spring-data-jdbc",
+"version": "3.0.10"
+},
+{
+"name": "spring-data-jpa",
+"version": "3.0.10"
+},
+{
+"name": "spring-data-relational",
+"version": "3.0.10"
+},
+{
+"name": "spring-expression",
+"version": "5.1.5.RELEASE"
+},
+{
+"name": "spring-expressions",
+"version": "6.0.12"
+},
+{
+"name": "spring-jcl",
+"version": "6.0.12"
+},
+{
+"name": "spring-jdbc",
+"version": "6.0.12"
+},
+{
+"name": "spring-orm",
+"version": "6.0.12"
+},
+{
+"name": "spring-oxm",
+"version": "6.0.12"
+},
+{
+"name": "spring-security-config",
+"version": "6.4.1"
+},
+{
+"name": "spring-security-core",
+"version": "6.1.4"
+},
+{
+"name": "spring-security-crypto",
+"version": "6.1.4"
+},
+{
+"name": "spring-security-web",
+"version": "6.1.4"
+},
+{
+"name": "spring-tx",
+"version": "4.3.24.RELEASE"
+},
+{
+"name": "spring-tx",
+"version": "5.1.5.RELEASE"
+},
+{
+"name": "svg-dom-java",
+"version": "1.1"
+},
+{
+"name": "Swagger Annotations",
+"version": "1.5.12"
+},
+{
+"name": "swagger-core",
+"version": "1.5.12"
+},
+{
+"name": "swagger-core",
+"version": "2.2.14"
+},
+{
+"name": "swagger-jaxrs",
+"version": "1.5.12"
+},
+{
+"name": "swagger-models",
+"version": "1.5.12"
+},
+{
+"name": "swagger-models",
+"version": "2.2.14"
+},
+{
+"name": "swagger-parser",
+"version": "1.0.32"
+},
+{
+"name": "swagger-parser-core",
+"version": "2.1.16"
+},
+{
+"name": "swagger-parser-safe-url-resolver",
+"version": "2.1.16"
+},
+{
+"name": "swagger-parser-v3",
+"version": "2.1.16"
+},
+{
+"name": "swagger-request-validator-core",
+"version": "1.3.3"
+},
+{
+"name": "swagger-request-validator-core",
+"version": "2.31.1"
+},
+{
+"name": "system-rules",
+"version": "1.16.1"
+},
+{
+"name": "t-digest",
+"version": "3.2"
+},
+{
+"name": "tabulate",
+"version": "0.8.3"
+},
+{
+"name": "tomcat-annotations-api",
+"version": "10.1.13"
+},
+{
+"name": "tomcat-embed-el",
+"version": "10.1.13"
+},
+{
+"name": "transport",
+"version": "6.4.2"
+},
+{
+"name": "transport",
+"version": "7.7.0"
+},
+{
+"name": "transport-netty3-client",
+"version": "7.7.0"
+},
+{
+"name": "transport-netty4-client",
+"version": "6.4.2"
+},
+{
+"name": "transport-netty4-client",
+"version": "7.7.0"
+},
+{
+"name": "tslib",
+"version": "1.9.0"
+},
+{
+"name": "txw2",
+"version": "4.0.3"
+},
+{
+"name": "uuid",
+"version": "3.3.3"
+},
+{
+"name": "validation-api",
+"version": "1.1.0.Final"
+},
+{
+"name": "web-animations-js",
+"version": "2.3.2"
+},
+{
+"name": "websocket-api",
+"version": "1.0.00"
+},
+{
+"name": "websocket-core-client",
+"version": "11.0.14"
+},
+{
+"name": "websocket-core-common",
+"version": "11.0.14"
+},
+{
+"name": "websocket-core-server",
+"version": "11.0.14"
+},
+{
+"name": "websocket-jakarta-client",
+"version": "11.0.14"
+},
+{
+"name": "websocket-jakarta-common",
+"version": "11.0.14"
+},
+{
+"name": "websocket-jakarta-server",
+"version": "11.0.14"
+},
+{
+"name": "websocket-jetty-api",
+"version": "11.0.14"
+},
+{
+"name": "websocket-jetty-common",
+"version": "11.0.14"
+},
+{
+"name": "websocket-jetty-server",
+"version": "11.0.14"
+},
+{
+"name": "websocket-servlet",
+"version": "11.0.14"
+},
+{
+"name": "wiremock-standalone",
+"version": "2.19.0"
+},
+{
+"name": "xercesImpl",
+"version": "2.11.0.SP5"
+},
+{
+"name": "xml-path",
+"version": "5.3.2"
+},
+{
+"name": "XMLPull",
+"version": "1.1.3.1"
+},
+{
+"name": "XStream",
+"version": "1.4.11.1"
+},
+{
+"name": "zkclient",
+"version": "0.1"
+},
+{
+"name": "zone.js",
+"version": "0.9.1"
+},
+{
+"name": "zookeeper",
+"version": "3.5.10"
+},
+{
+"name": "Zookeeper",
+"version": "3.5.6"
+},
+{
+"name": "zookeeper",
+"version": "3.8.3"
+},
+{
+"name": "zookeeper-jute",
+"version": "3.5.10"
+},
+{
+"name": "zookeeper-jute",
+"version": "3.8.3"
+}
+],
+"extractors": [
+"jar_names",
+"name_version_lines"
+],
+"kind": "html",
+"product": "BMC Helix Operations Management",
+"retrieved": "2026-11-08",
+"sha256": "f59624f98079eb3e5dc5d306d77967f4d7fb110d571bcbf6be25a4cf89473725",
+"supplier": "BMC",
+"url": "https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom232/Third-party-product-terms-of-use/",
+"version": "23.2"
+}

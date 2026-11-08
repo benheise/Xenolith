@@ -91,7 +91,7 @@ components:
     cpe: cpe:2.3:a:apache:log4j
     aliases: [log4j, log4j2, log4shell]
     notices_names:
-      - '^log4j[-_ ]?core$'
+      - '^(?:apache[-_ ])?log4j[-_ ]?core$'
       - '^log4j[-_ ]?2$'
       - {pattern: '^(?:apache )?log4j(?: 2)?$', version: '^2'}
       - '^org\.apache\.logging\.log4j:log4j-core$'
@@ -229,6 +229,8 @@ components:
       - {pattern: '^openssl$', version: '^(?!v?0\.1\d)'}   # the Rust 'openssl' crate is 0.10.x
       - '^openssl[-_ ](?:libs|fips|toolkit)$'
       - '^libssl\d*(?:\.\d+)*$'
+      - '^libcrypto\d*(?:\.\d+)*$'
+      - '^(?:lib|ss)eay32$'     # OpenSSL's Windows DLL names
       - '^openssl\d+$'
     incidents:
       - name: OpenSSL 3.0 punycode overflows

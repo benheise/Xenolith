@@ -684,6 +684,52 @@ class NewNoticesFormatsTest(unittest.TestCase):
         self.assertEqual(notices.ex_license_groups(text), [("acl (access control list)", "2.3.1"), ("D-Bus", "1.14.8"),
                                                            ("OpenSSL", "3.0.10")])
 
+    def test_black_duck_components(self):
+        text = ("Components:\n\ngreenlet 3.2.5: http://pypi.python.org/pypi/greenlet : (Python Software\nFoundation License 2.0 AND MIT License)\n"
+                "CRaSH 1.0.0-beta21 : GNU Lesser General Public License v2.1 or later\n"
+                "ISeC AC User Controls vNext : Ivanti Internal\n"
+                "JamesNK/Newtonsoft.Json 13.0.1 : MIT License\nMeeting at 10:30 : room 4\n\nLicenses:\n")
+        rows = notices.ex_bd_components(text)
+        self.assertEqual(rows, [("greenlet", "3.2.5"), ("CRaSH", "1.0.0-beta21"), ("JamesNK/Newtonsoft.Json", "13.0.1")])
+        comps, used, kind = notices.extract(text.encode(), "text/plain", "https://help.example.com/attribution.txt")
+        self.assertIn("bd_components", used)
+        self.assertNotIn("component_license", used)     # the NetApp parser is skipped on Black Duck reports
+
+    def test_table_lines(self):
+        text = ("C Libraries for Gateway 6.17.3 SP10\nComponent Library/Dependency License\n"
+                "Gateway Server libcrypto 1.0.2r OpenSSL License\nGateway\nNavigator charset 1.15.0.0 LGPL\n"
+                "Gateway 6.17.3\n Axway Inc. 2022  4\n\nName Version License\n"
+                "log4j-core-2.10.0.jar 2.10.0 Apache 2.0 License\njmxri-1.2.1.jar 1.2.1\nOracle Binary (Java SE and\nJavaFX)\n"
+                "iaik_jce_full-5.61.jar 5,61 IAIK Commercial License\n")
+        rows = notices.ex_table_lines(text)
+        self.assertIn(("libcrypto", "1.0.2r"), rows)
+        self.assertIn(("charset", "1.15.0.0"), rows)
+        self.assertIn(("log4j-core", "2.10.0"), rows)
+        self.assertIn(("jmxri", "1.2.1"), rows)
+        self.assertIn(("iaik_jce_full", "5.61"), rows)
+        self.assertNotIn(("Inc.", "2022"), rows)
+
+    def test_name_version_lines(self):
+        html = ("<html><body><p>The installer installs the following third party applications:</p><ul>"
+                "<li><p>.NET Core 8.0.11</p></li><li><p>Apache Tomcat 10.1.48</p></li><li><p>Eclipse Temurin JRE 21.0.4+7</p></li>"
+                "<li><p>IIS Server Roles (using Server Manager on Windows)</p></li><li><p>MongoDB 7.0</p><p>For more information see KB 1.</p></li>"
+                "<li><p>Document Version 3.0</p></li><li><p>Putty 0.81</p></li></ul></body></html>").encode()
+        comps, used, kind = notices.extract(html, "text/html", "https://documentation.example.com/third_party.html")
+        self.assertEqual(used, ["name_version_lines"])
+        self.assertEqual({(c["name"], c["version"]) for c in comps},
+                         {(".NET Core", "8.0.11"), ("Apache Tomcat", "10.1.48"), ("Eclipse Temurin JRE", "21.0.4+7"),
+                          ("MongoDB", "7.0"), ("Putty", "0.81")})
+        # Without the third-party gate, or with structured data present, it stays quiet.
+        self.assertEqual(notices.ex_name_version_lines("Apache Tomcat 10.1.48\nMongoDB 7.0\nPutty 0.81\n"), [])
+
+    def test_bmc_product_library_table(self):
+        html = ("<table><tr><th>Product/Library</th><th>Version</th><th>License terms and conditions</th><td></td></tr>"
+                "<tr><td>@angular/core</td><td>18.2.13</td><td><a href='x'>@angular/core license text</a></td><td></td></tr>"
+                "<tr><td>log4j-core</td><td>2.24.3</td><td>Apache 2.0</td><td></td></tr></table>").encode()
+        comps, used, kind = notices.extract(html, "text/html", "https://docs.helixops.ai/bin/x/Third-party-product-terms-of-use/")
+        self.assertEqual(used, ["html_table"])
+        self.assertEqual([(c["name"], c["version"]) for c in comps], [("@angular/core", "18.2.13"), ("log4j-core", "2.24.3")])
+
     def test_jar_names_and_component_json(self):
         self.assertEqual(notices.ex_jar_names("commons-lang3-3. 18.0.jar 3.18.0 strings\ncommons-text-\n1.10.0.jar"),
                          [("commons-lang3", "3.18.0"), ("commons-text", "1.10.0")])

@@ -48,82 +48,109 @@ sources:
 
 products:
   # Highest KEV counts without component data
-  - {supplier: Apple, product: macOS and iOS, key: apple/macos, category: Operating system, why: [kev], status: lead-found,
-     lead: "opensource.apple.com/releases lists the open source projects in every macOS/iOS release (Apple's own project versions, e.g. curl-151), mirrored as GitHub repos under apple-oss-distributions. Needs a mapping from Apple project versions to upstream versions.",
+  - {supplier: Apple, product: macOS and iOS, key: apple/macos, category: Operating system, why: [kev], status: partial,
+     lead: "Crawlable but needs a parser: the release list is embedded in opensource.apple.com's JavaScript bundle as a JS object of Apple project versions (OpenSSH-271 ...) that must be mapped to upstream versions via github.com/apple-oss-distributions. On the wanted list meanwhile.",
      url: https://opensource.apple.com/releases/}
   - {supplier: Citrix, product: "NetScaler ADC and Gateway (13.1, 14.1)", key: citrix/netscaler-adc, category: Application delivery / SSL VPN, why: [kev], status: partial,
      lead: "Only the 11.1 Third Party Notices PDF is public so far; look for per-release notices on docs.netscaler.com or the download pages."}
-  - {supplier: Microsoft, product: Exchange Server and SharePoint Server, key: microsoft/exchange-server, category: Collaboration, why: [kev], status: not-checked,
-     lead: "Microsoft's CSAF feed already gives statements; look for ThirdPartyNotices files in the installation media."}
-  - {supplier: Synacor, product: Zimbra Collaboration, key: synacor/zimbra-collaboration-suite, category: Email and collaboration, why: [kev], status: not-checked,
-     lead: "Mostly open source components (zimbra-* packages); the third-party package versions may be listed in release notes."}
-  - {supplier: SAP, product: NetWeaver AS Java, key: sap/netweaver, category: Application server, why: [kev], status: not-checked}
-  - {supplier: Ivanti, product: Endpoint Manager Mobile (EPMM), key: ivanti/endpoint-manager-mobile, category: Mobile device management, why: [kev], status: not-checked,
-     lead: "Ivanti publishes third-party notices for Connect Secure (already parsed); check whether EPMM has an equivalent on the Ivanti help site."}
-  - {supplier: Ivanti, product: Endpoint Manager (EPM), key: ivanti/endpoint-manager, category: Endpoint management, why: [kev, gartner-itsm-2026], status: not-checked}
-  - {supplier: Trend Micro, product: Apex One, key: trend-micro/apex-one, category: Endpoint protection, why: [kev], status: not-checked}
-  - {supplier: Zyxel, product: ATP and USG FLEX firewalls, key: zyxel/atp-series-firmware, category: Firewall, why: [kev], status: not-checked,
-     lead: "Zyxel publishes GPL source per firmware; a source-archive listing (as with NetApp) may be enough."}
-  - {supplier: Ubiquiti, product: UniFi OS and UniFi Network, key: ubiquiti/unifi-os, category: Network management, why: [kev], status: not-checked,
-     lead: "Ubiquiti posts GPL archives per firmware release; check for a component listing."}
-  - {supplier: QNAP, product: QTS and QuTS hero, key: qnap-systems/qts, category: NAS operating system, why: [kev], status: not-checked}
-  - {supplier: PaperCut, product: PaperCut NG/MF, key: papercut/ng-mf, category: Print management, why: [kev], status: not-checked}
-  - {supplier: SimpleHelp, product: SimpleHelp, key: simplehelp/simplehelp, category: Remote support, why: [kev], status: not-checked}
-  - {supplier: Gladinet, product: CentreStack and Triofox, key: gladinet/centrestack-and-triofox, category: File sharing, why: [kev], status: not-checked}
-  - {supplier: Samsung, product: MagicINFO 9 Server, key: samsung/magicinfo-9-server, category: Digital signage server, why: [kev], status: not-checked}
-  - {supplier: Kaseya, product: VSA (on-premises), key: kaseya/vsa-saas-and-vsa-on-premises, category: Remote monitoring and management, why: [kev], status: not-checked}
+  - {supplier: Microsoft, product: Exchange Server and SharePoint Server, key: microsoft/exchange-server, category: Collaboration, why: [kev], status: nothing-found,
+     lead: "Microsoft's third-party notices archive (3rdpartycode.microsoft.com) renders client-side and no Exchange/SharePoint notices file is linked from the legal page; on the wanted list."}
+  - {supplier: Synacor, product: Zimbra Collaboration, key: synacor/zimbra-collaboration-suite, category: Email and collaboration, why: [kev], status: lead-found,
+     lead: "Crawled: open_source_licenses_<version>.txt on files.zimbra.com, discovered from the downloads page (8.8, 9.0, 10.0, 10.1)."}
+  - {supplier: SAP, product: NetWeaver AS Java, key: sap/netweaver, category: Application server, why: [kev], status: nothing-found,
+     lead: "SAP ships FOSS terms as documents inside the product and via SAP Notes (login); nothing per release on help.sap.com. On the wanted list."}
+  - {supplier: Ivanti, product: Endpoint Manager Mobile (EPMM), key: ivanti/endpoint-manager-mobile, category: Mobile device management, why: [kev], status: nothing-found,
+     lead: "No attribution report for EPMM (Ivanti has them for Connect Secure, Neurons for ITSM and Service Director, all crawled). On the wanted list."}
+  - {supplier: Ivanti, product: Endpoint Manager (EPM), key: ivanti/endpoint-manager, category: Endpoint management, why: [kev, gartner-itsm-2026], status: nothing-found,
+     lead: "No attribution report found under help.ivanti.com/ld; on the wanted list."}
+  - {supplier: Trend Micro, product: Apex One, key: trend-micro/apex-one, category: Endpoint protection, why: [kev], status: nothing-found,
+     lead: "docs.trendmicro.com has open source license PDFs for other products (TippingPoint SMS) but none for Apex One; on the wanted list."}
+  - {supplier: Zyxel, product: ATP and USG FLEX firewalls, key: zyxel/atp-series-firmware, category: Firewall, why: [kev], status: nothing-found,
+     lead: "GPL source only through Zyxel's request form; on the wanted list."}
+  - {supplier: Ubiquiti, product: UniFi OS and UniFi Network, key: ubiquiti/unifi-os, category: Network management, why: [kev], status: nothing-found,
+     lead: "GPL archives without a component list; on the wanted list."}
+  - {supplier: QNAP, product: QTS and QuTS hero, key: qnap-systems/qts, category: NAS operating system, why: [kev], status: partial,
+     lead: "sourceforge.net/projects/qosgpl has GPL tarballs per QTS release (needs a listing parser and covers GPL parts only); on the wanted list."}
+  - {supplier: PaperCut, product: PaperCut NG/MF, key: papercut/ng-mf, category: Print management, why: [kev], status: nothing-found,
+     lead: "Nothing in the documentation or knowledge base; on the wanted list."}
+  - {supplier: SimpleHelp, product: SimpleHelp, key: simplehelp/simplehelp, category: Remote support, why: [kev], status: nothing-found,
+     lead: "Nothing on simple-help.com; on the wanted list."}
+  - {supplier: Gladinet, product: CentreStack and Triofox, key: gladinet/centrestack-and-triofox, category: File sharing, why: [kev], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
+  - {supplier: Samsung, product: MagicINFO 9 Server, key: samsung/magicinfo-9-server, category: Digital signage server, why: [kev], status: nothing-found,
+     lead: "Nothing public (Samsung's open source site covers devices); on the wanted list."}
+  - {supplier: Kaseya, product: VSA (on-premises), key: kaseya/vsa-saas-and-vsa-on-premises, category: Remote monitoring and management, why: [kev], status: nothing-found,
+     lead: "Nothing in helpdesk.kaseya.com; on the wanted list."}
 
   # Backup and data protection
   - {supplier: Commvault, product: "Commvault Backup & Recovery (CommServe, Command Center)", key: commvault/command-center, category: Backup, why: [gartner-bdpp-2025, kev], status: lead-found,
-     lead: "Each release documents 'Third Party Applications Installed by the Commvault Installer' (Tomcat, Temurin JRE, MongoDB, Python, PHP in older releases); a bullet-list extractor would parse it.",
+     lead: "Crawled: 'Third Party Applications Installed by the Commvault Installer' for 11.42, 2024E and 2023E (name/version bullet list).",
      url: https://documentation.commvault.com/2024e/commcell-console/third_party_applications_installed_by_commvault_installer.html}
-  - {supplier: Rubrik, product: Rubrik Security Cloud appliances (CDM), key: rubrik/all, category: Backup, why: [gartner-bdpp-2025], status: not-checked}
-  - {supplier: Cohesity, product: DataProtect (on-premises), key: cohesity/all, category: Backup, why: [gartner-bdpp-2025], status: not-checked,
-     lead: "Cohesity now also owns NetBackup (on the wanted list)."}
-  - {supplier: Dell Technologies, product: PowerProtect Data Manager, key: dell/powerprotect-data-manager, category: Backup, why: [gartner-bdpp-2025], status: not-checked,
-     lead: "Dell posts 'Open Source Software' notice PDFs on product support pages; check whether they're fetchable."}
+  - {supplier: Rubrik, product: Rubrik Security Cloud appliances (CDM), key: rubrik/all, category: Backup, why: [gartner-bdpp-2025], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
+  - {supplier: Cohesity, product: DataProtect (on-premises), key: cohesity/all, category: Backup, why: [gartner-bdpp-2025], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
+  - {supplier: Dell Technologies, product: PowerProtect Data Manager, key: dell/powerprotect-data-manager, category: Backup, why: [gartner-bdpp-2025], status: partial,
+     lead: "Dell's DSA advisories name third-party components with versions (OpenSSL, Go, git in DSA-2022-296) but no notices document is public; on the wanted list."}
 
   # Privileged access and remote support
-  - {supplier: BeyondTrust, product: Remote Support and Privileged Remote Access, key: beyondtrust/remote-support, category: Privileged access / remote support, why: [gartner-pam-2025, g2-remote-support, kev], status: partial,
-     lead: "BeyondTrust's Open Source Statement page carries license texts; check whether it names components and versions.",
+  - {supplier: BeyondTrust, product: Remote Support and Privileged Remote Access, key: beyondtrust/remote-support, category: Privileged access / remote support, why: [gartner-pam-2025, g2-remote-support, kev], status: nothing-found,
+     lead: "BeyondTrust's copyright/open source page answers automated clients with HTTP 403; on the wanted list.",
      url: https://www.beyondtrust.com/customer-copyright-mac-win}
-  - {supplier: CyberArk, product: "Self-Hosted PAM (Vault, PVWA, PSM)", category: Privileged access, why: [gartner-pam-2025], status: not-checked}
-  - {supplier: Delinea, product: Secret Server (on-premises), key: delinea/secret-server, category: Privileged access, why: [gartner-pam-2025], status: not-checked}
-  - {supplier: ManageEngine, product: PAM360 and Password Manager Pro, category: Privileged access, why: [gartner-pam-2025], status: not-checked,
-     lead: "Try the same 'third-party components' PDF pattern ADSelfService Plus uses."}
-  - {supplier: ConnectWise, product: ScreenConnect (on-premises), key: connectwise/screenconnect, category: Remote support, why: [g2-remote-support, kev], status: not-checked}
-  - {supplier: TeamViewer, product: TeamViewer, key: teamviewer/desktop, category: Remote support, why: [g2-remote-support, kev], status: not-checked}
-  - {supplier: AnyDesk, product: AnyDesk, category: Remote support, why: [g2-remote-support], status: not-checked}
+  - {supplier: CyberArk, product: "Self-Hosted PAM (Vault, PVWA, PSM)", category: Privileged access, why: [gartner-pam-2025], status: partial,
+     lead: "The Common Criteria Security Target for PAM 14.0 lists third-party DLLs (log4net, Newtonsoft.Json, BouncyCastle, Autofac, Quartz, RabbitMQ.Client) without versions; on the wanted list."}
+  - {supplier: Delinea, product: Secret Server (on-premises), key: delinea/secret-server, category: Privileged access, why: [gartner-pam-2025], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
+  - {supplier: ManageEngine, product: PAM360 and Password Manager Pro, category: Privileged access, why: [gartner-pam-2025], status: nothing-found,
+     lead: "The ADSelfService Plus PDF pattern doesn't exist for the PAM products; on the wanted list."}
+  - {supplier: ConnectWise, product: ScreenConnect (on-premises), key: connectwise/screenconnect, category: Remote support, why: [g2-remote-support, kev], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
+  - {supplier: TeamViewer, product: TeamViewer, key: teamviewer/desktop, category: Remote support, why: [g2-remote-support, kev], status: nothing-found,
+     lead: "Notices only inside the client (About > Open source); on the wanted list."}
+  - {supplier: AnyDesk, product: AnyDesk, category: Remote support, why: [g2-remote-support], status: nothing-found,
+     lead: "A copyright file ships in the Linux tarball; Gentoo's ebuild lists OpenSSL and zlib licenses. On the wanted list."}
 
   # Managed file transfer (heavily exploited category)
   - {supplier: Fortra, product: GoAnywhere MFT, key: fortra/goanywhere-mft, category: Managed file transfer, why: [peer-insights-mft, kev], status: nothing-found,
-     lead: "No public component list found in docs or datasheets; likely in-product only (wanted-list candidate)."}
-  - {supplier: Fortra, product: Globalscape EFT, category: Managed file transfer, why: [peer-insights-mft], status: not-checked}
-  - {supplier: Cleo, product: "Harmony, VLTrader and LexiCom", key: cleo/multiple-products, category: Managed file transfer, why: [peer-insights-mft, kev], status: not-checked}
-  - {supplier: Axway, product: SecureTransport, category: Managed file transfer, why: [peer-insights-mft], status: not-checked}
-  - {supplier: CrushFTP, product: CrushFTP, key: crushftp/crushftp, category: Managed file transfer, why: [kev], status: not-checked}
-  - {supplier: Kiteworks, product: Kiteworks (Accellion FTA successor), key: accellion/fta, category: Secure file sharing, why: [peer-insights-mft, kev], status: not-checked}
-  - {supplier: JSCAPE, product: JSCAPE MFT Server, category: Managed file transfer, why: [peer-insights-mft], status: not-checked}
+     lead: "No public component list found in docs or datasheets; in-product only. On the wanted list."}
+  - {supplier: Fortra, product: Globalscape EFT, category: Managed file transfer, why: [peer-insights-mft], status: nothing-found,
+     lead: "Only a copyright page in the archived help; on the wanted list."}
+  - {supplier: Cleo, product: "Harmony, VLTrader and LexiCom", key: cleo/multiple-products, category: Managed file transfer, why: [peer-insights-mft, kev], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
+  - {supplier: Axway, product: SecureTransport, category: Managed file transfer, why: [peer-insights-mft], status: partial,
+     lead: "Axway attaches 'Third party open source and commercial software' PDFs to public support KB articles: the Gateway 6.17.3 one is crawled, SecureTransport's not found yet (wanted)."}
+  - {supplier: CrushFTP, product: CrushFTP, key: crushftp/crushftp, category: Managed file transfer, why: [kev], status: partial,
+     lead: "No notices file, but the public changelogs name libraries (log4j 2.17.1, Jackson, Bouncy Castle, Jakarta Mail); on the wanted list."}
+  - {supplier: Kiteworks, product: Kiteworks (Accellion FTA successor), key: accellion/fta, category: Secure file sharing, why: [peer-insights-mft, kev], status: nothing-found,
+     lead: "Nothing public for the hardened appliance; on the wanted list."}
+  - {supplier: JSCAPE, product: JSCAPE MFT Server, category: Managed file transfer, why: [peer-insights-mft], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
 
   # SIEM
-  - {supplier: IBM, product: QRadar SIEM, key: ibm/security-qradar-siem, category: SIEM, why: [gartner-siem-2025], status: not-checked,
-     lead: "IBM license documents (L/N notices) often list third-party components; QRadar appliances are RHEL-based."}
-  - {supplier: Fortinet, product: FortiSIEM, key: fortinet/fortisiem, category: SIEM, why: [gartner-siem-2025], status: not-checked,
-     lead: "Fortinet keeps lists in-product (see the wanted list); FortiSIEM may be the same."}
-  - {supplier: Exabeam, product: LogRhythm SIEM (self-hosted), key: logrhythm/siem, category: SIEM, why: [gartner-siem-2025], status: not-checked}
+  - {supplier: IBM, product: QRadar SIEM, key: ibm/security-qradar-siem, category: SIEM, why: [gartner-siem-2025], status: partial,
+     lead: "IBM's license information documents require an IBM ID; the public bulletins name components as they are patched (curl, GnuTLS, Jackson, open-vm-tools). On the wanted list."}
+  - {supplier: Fortinet, product: FortiSIEM, key: fortinet/fortisiem, category: SIEM, why: [gartner-siem-2025], status: nothing-found,
+     lead: "Same in-product Legal Third Party panel as FortiOS; release notes name Rocky Linux, PostgreSQL and ClickHouse. On the wanted list."}
+  - {supplier: Exabeam, product: LogRhythm SIEM (self-hosted), key: logrhythm/siem, category: SIEM, why: [gartner-siem-2025], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
 
   # IT service and endpoint management
-  - {supplier: ManageEngine, product: ServiceDesk Plus, key: manageengine/servicedesk-plus, category: IT service management, why: [gartner-itsm-2026, kev], status: not-checked,
-     lead: "ManageEngine says Commons Text ships in all its on-premises products; look for a third-party PDF like ADSelfService Plus's."}
-  - {supplier: ManageEngine, product: Endpoint Central, key: zoho/desktop-central, category: Endpoint management, why: [kev], status: not-checked}
-  - {supplier: SysAid, product: SysAid On-Prem, key: sysaid/on-prem, category: IT service management, why: [gartner-itsm-2026, kev], status: not-checked}
-  - {supplier: BMC Helix, product: Helix ITSM / Remedy (on-premises), key: bmc/remedy-itsm-it-service-management, category: IT service management, why: [gartner-itsm-2026], status: not-checked}
+  - {supplier: ManageEngine, product: ServiceDesk Plus, key: manageengine/servicedesk-plus, category: IT service management, why: [gartner-itsm-2026, kev], status: nothing-found,
+     lead: "No third-party list for ServiceDesk Plus; on the wanted list."}
+  - {supplier: ManageEngine, product: Endpoint Central, key: zoho/desktop-central, category: Endpoint management, why: [kev], status: nothing-found,
+     lead: "No third-party list for Endpoint Central; on the wanted list."}
+  - {supplier: SysAid, product: SysAid On-Prem, key: sysaid/on-prem, category: IT service management, why: [gartner-itsm-2026, kev], status: nothing-found,
+     lead: "Nothing public; on the wanted list."}
+  - {supplier: BMC Helix, product: Helix ITSM / Remedy (on-premises), key: bmc/remedy-itsm-it-service-management, category: IT service management, why: [gartner-itsm-2026], status: lead-found,
+     lead: "Crawled: docs.bmc.com blocks automated clients (HTTP 403) but docs.helixops.ai serves the same 'Third-party product terms of use' pages; Innovation Suite 25.2/26.1/26.2 and Operations Management 23.2/23.3 are in."}
 
   # Network infrastructure
-  - {supplier: Sophos, product: Sophos Firewall, key: sophos/firewall, category: Firewall, why: [kev], status: not-checked}
+  - {supplier: Sophos, product: Sophos Firewall, key: sophos/firewall, category: Firewall, why: [kev], status: nothing-found,
+     lead: "Nothing public for SFOS; on the wanted list."}
   - {supplier: Huawei, product: CloudEngine switches and USG firewalls, category: Network infrastructure, why: [gartner-lan-2025], status: partial,
-     lead: "Huawei publishes an 'Open Source Software Notice' per product release ('Software: name version' entries), but enterprise downloads go through its support portal."}
+     lead: "Huawei's per-release 'Open Source Software Notice' documents sit behind the support.huawei.com login; on the wanted list."}
   - {supplier: NVIDIA, product: UFM and networking software, category: Network management, why: [], status: lead-found,
      lead: "NVIDIA networking docs publish third-party dependency tables per product release (e.g. NVIDIA Firmware Tools 4.27).",
      url: https://docs.nvidia.com/networking/display/mftv4270/3rd+part+mft+dependencies}
-  - {supplier: TIBCO, product: JasperReports Server (commercial), category: Reporting server, why: [kev], status: not-checked}
+  - {supplier: TIBCO, product: JasperReports Server (commercial), category: Reporting server, why: [kev], status: nothing-found,
+     lead: "docs.tibco.com publishes EULAs (TIB_*_license.pdf) only; on the wanted list."}

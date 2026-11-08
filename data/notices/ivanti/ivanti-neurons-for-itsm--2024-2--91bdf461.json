@@ -1,0 +1,370 @@
+{
+"components": [
+{
+"name": "Analogy.CommonControls.Dependencies.net472",
+"version": "0.9.0"
+},
+{
+"name": "autofac",
+"version": "4.9.4"
+},
+{
+"name": "AutoMapper",
+"version": "v8.0.0"
+},
+{
+"name": "azure-activedirectory-identitymodel-extensions-for-dotnet",
+"version": "6.21.0"
+},
+{
+"name": "Boost C++ Libraries - boost",
+"version": "1.71.0"
+},
+{
+"name": "boost1.71",
+"version": "1.71.0"
+},
+{
+"name": "boost_1_71_0-gnu-mvapich2-hpc",
+"version": "1.71.0"
+},
+{
+"name": "Castle Project",
+"version": "4.4.1"
+},
+{
+"name": "Clowd.Squirrel",
+"version": "2.6.25-pre"
+},
+{
+"name": "cpprestsdk",
+"version": "2.6.0"
+},
+{
+"name": "cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn",
+"version": "2.8.0"
+},
+{
+"name": "CRaSH",
+"version": "1.0.0-beta21"
+},
+{
+"name": "DevExpress.WinForms",
+"version": "21.2.7"
+},
+{
+"name": "DocumentFormat.OpenXml",
+"version": "2.12.1"
+},
+{
+"name": "docx-populator",
+"version": "1.3.6"
+},
+{
+"name": "dotcall",
+"version": "0.2.15"
+},
+{
+"name": "DotNetZip",
+"version": "1.9.0"
+},
+{
+"name": "fmtlib/fmt",
+"version": "5.1.0"
+},
+{
+"name": "Gcef.Data.ExpressionInfo",
+"version": "3.0.3"
+},
+{
+"name": "GrapeCity.ActiveReports.Chart",
+"version": "16.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Core.DataProviders",
+"version": "2.0.7"
+},
+{
+"name": "GrapeCity.ActiveReports.Core.Document.Drawing.Gc",
+"version": "3.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Core.Document.Drawing.Gdi",
+"version": "3.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Core.Drawing.Gc",
+"version": "3.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Core.Drawing.Gdi",
+"version": "3.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Core.Export.Excel.Page",
+"version": "3.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Core.Export.Pdf.Page",
+"version": "3.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Core.Rdl",
+"version": "3.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Design.Win",
+"version": "16.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Document",
+"version": "16.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Export.Image",
+"version": "16.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.Export.Pdf",
+"version": "16.0.0"
+},
+{
+"name": "GrapeCity.ActiveReports.SpreadBuilder",
+"version": "1.0.1"
+},
+{
+"name": "GrapeCity.ActiveReports.Viewer.Common",
+"version": "16.0.0"
+},
+{
+"name": "GrapeCity.Documents.DX.Windows",
+"version": "5.0.0.762"
+},
+{
+"name": "GrapeCity.Documents.Imaging",
+"version": "5.0.0.762"
+},
+{
+"name": "GrapeCity.Documents.Imaging.Windows",
+"version": "5.0.0.762"
+},
+{
+"name": "GrapeCity.Documents.Pdf",
+"version": "5.0.0.762"
+},
+{
+"name": "ICSharpCode.TextEditor",
+"version": "3.2.1.6466"
+},
+{
+"name": "ICU for C/C++ (ICU4C)",
+"version": "60.3"
+},
+{
+"name": "IP*Works! SSH V9 .NET Edition",
+"version": "20.0.8162"
+},
+{
+"name": "JamesNK/Newtonsoft.Json",
+"version": "13.0.1"
+},
+{
+"name": "JamesNK/Newtonsoft.Json",
+"version": "7.0.1"
+},
+{
+"name": "jQuery Masked Input",
+"version": "1.3.1"
+},
+{
+"name": "JSON Web Token Handler For the Microsoft .Net Framework 4.5",
+"version": "6.21.0"
+},
+{
+"name": "libboost-type-erasure1.74.0",
+"version": "1.74.0"
+},
+{
+"name": "libboost1.71-tools-dev",
+"version": "1.71.0"
+},
+{
+"name": "libcrypto++-dev",
+"version": "5.6.3"
+},
+{
+"name": "Liberator.Driver",
+"version": "0.9.0"
+},
+{
+"name": "libicu",
+"version": "60.3"
+},
+{
+"name": "libxml2",
+"version": "2.9.7"
+},
+{
+"name": "lua",
+"version": "5.4.3"
+},
+{
+"name": "LZMA-SDK",
+"version": "19.00"
+},
+{
+"name": "Microsoft Application Insights",
+"version": "2.20.0"
+},
+{
+"name": "Microsoft ASP.NET Web API Client Libraries",
+"version": "5.2.9"
+},
+{
+"name": "Microsoft ASP.NET Web API Core Libraries",
+"version": "5.2.9"
+},
+{
+"name": "Microsoft ASP.NET Web API OWIN",
+"version": "5.2.9"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Extensions.Options",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Extensions.Primitives",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "6.21.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "6.21.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "6.21.0"
+},
+{
+"name": "Microsoft.Owin",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft.Owin.Security",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft.Owin.Security.Jwt",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft.Owin.Security.OAuth",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft.SqlServer.Types",
+"version": "10.50.1600.1"
+},
+{
+"name": "OpenSSL",
+"version": "1.1.1k"
+},
+{
+"name": "Openwall crypt_blowfish",
+"version": "4.1.2"
+},
+{
+"name": "OWIN",
+"version": "1.0.0"
+},
+{
+"name": "System.Buffers",
+"version": "4.5.1"
+},
+{
+"name": "System.Diagnostics.DiagnosticSource",
+"version": "5.0.0"
+},
+{
+"name": "System.Memory",
+"version": "4.5.4"
+},
+{
+"name": "System.Numerics.Vectors",
+"version": "4.5.0"
+},
+{
+"name": "System.Runtime.CompilerServices.Unsafe",
+"version": "5.0.0"
+},
+{
+"name": "System.Text.Encodings.Web",
+"version": "5.0.1"
+},
+{
+"name": "System.Text.Json",
+"version": "5.0.2"
+},
+{
+"name": "System.Threading.Tasks.Extensions",
+"version": "4.5.4"
+},
+{
+"name": "System.ValueTuple",
+"version": "4.5.0"
+},
+{
+"name": "WebSocket++",
+"version": "0.8.2"
+},
+{
+"name": "websocketpp-devel",
+"version": "0.8.1"
+},
+{
+"name": "websocketpp-devel",
+"version": "0.8.2"
+},
+{
+"name": "zlib",
+"version": "1.2.11"
+}
+],
+"extractors": [
+"bd_components"
+],
+"kind": "pdf",
+"product": "Ivanti Neurons for ITSM",
+"retrieved": "2026-11-08",
+"sha256": "a237c4485035382474bb1c6bf65527c8c6a9ac5cee9ecc391bd83525283885a9",
+"supplier": "Ivanti",
+"url": "https://help.ivanti.com/ht/help/en_US/ISM/2024/ITSM_AttributionReport__Q22024.pdf",
+"version": "2024.2"
+}

@@ -1,0 +1,1939 @@
+{
+"components": [
+{
+"name": "@apollo/client",
+"version": "3.4.16"
+},
+{
+"name": "@babel/preset-env",
+"version": "7.11.5"
+},
+{
+"name": "@dabeng/react-orgchart",
+"version": "1.0.3"
+},
+{
+"name": "@electron/notarize",
+"version": "2.3.2"
+},
+{
+"name": "@graphql-tools/schema",
+"version": "10.0.3"
+},
+{
+"name": "@popperjs/core",
+"version": "2.11.8"
+},
+{
+"name": "@xmldom/xmldom",
+"version": "0.8.10"
+},
+{
+"name": "altermime",
+"version": "0.3-20100505"
+},
+{
+"name": "amavis-logwatch",
+"version": "1.51.03"
+},
+{
+"name": "amavisd",
+"version": "2.13.0"
+},
+{
+"name": "ant",
+"version": "1.7.1"
+},
+{
+"name": "ant-contrib",
+"version": "1.0b2"
+},
+{
+"name": "ant-junit",
+"version": "1.7.1"
+},
+{
+"name": "apache-ant",
+"version": "1.6.5"
+},
+{
+"name": "apache-ant-ziputil",
+"version": "1.7.0"
+},
+{
+"name": "apache-apr",
+"version": "1.5.2"
+},
+{
+"name": "apache-apr-util",
+"version": "1.6.1"
+},
+{
+"name": "apache-commons-beanutils",
+"version": "1.7.0"
+},
+{
+"name": "apache-commons-cli",
+"version": "1.2"
+},
+{
+"name": "apache-commons-codec",
+"version": "1.14"
+},
+{
+"name": "apache-commons-codec",
+"version": "1.7"
+},
+{
+"name": "apache-commons-collection",
+"version": "3.2.2"
+},
+{
+"name": "apache-commons-compress",
+"version": "1.20"
+},
+{
+"name": "apache-commons-csv",
+"version": "1.2"
+},
+{
+"name": "apache-commons-dbcp",
+"version": "1.4"
+},
+{
+"name": "apache-commons-fileupload",
+"version": "1.4"
+},
+{
+"name": "apache-commons-httpclient",
+"version": "4.5.13"
+},
+{
+"name": "apache-commons-httpclient",
+"version": "4.5.8"
+},
+{
+"name": "apache-commons-io",
+"version": "2.6"
+},
+{
+"name": "apache-commons-logging",
+"version": "1.1.1"
+},
+{
+"name": "apache-commons-net",
+"version": "3.3"
+},
+{
+"name": "apache-commons-pool",
+"version": "1.6"
+},
+{
+"name": "apache-cxf",
+"version": "2.7.18"
+},
+{
+"name": "apache-helix",
+"version": "0.6.1"
+},
+{
+"name": "apache-httpasyncclient",
+"version": "4.1.4"
+},
+{
+"name": "apache-httpcomponents-core",
+"version": "4.4.11"
+},
+{
+"name": "apache-httpcomponents-core",
+"version": "4.4.12"
+},
+{
+"name": "apache-httpcomponents-core-4.4.11 (httpcore, httpcore-nio)",
+"version": ""
+},
+{
+"name": "apache-httpd",
+"version": "2.4.57"
+},
+{
+"name": "apache-jcs",
+"version": "1.3"
+},
+{
+"name": "apache-log4j",
+"version": "2.17.1"
+},
+{
+"name": "apache-log4j-api",
+"version": "2.17.1"
+},
+{
+"name": "apache-log4j-core",
+"version": "2.17.1"
+},
+{
+"name": "apache-log4j-extras",
+"version": "1.0"
+},
+{
+"name": "apache-neethi",
+"version": "3.0.2"
+},
+{
+"name": "apollo-link-debounce",
+"version": "3.0.0"
+},
+{
+"name": "apollo3-cache-persist",
+"version": "0.15.0"
+},
+{
+"name": "asm",
+"version": "3.3.1"
+},
+{
+"name": "aspell",
+"version": "0.60.7-rc1"
+},
+{
+"name": "auto-archive",
+"version": "1.0.0"
+},
+{
+"name": "babbler",
+"version": "0.4.0"
+},
+{
+"name": "babbler-0.4.0 (xmpp-core)",
+"version": ""
+},
+{
+"name": "babel-polyfill",
+"version": "6.26.0"
+},
+{
+"name": "bdb",
+"version": "5.2.42"
+},
+{
+"name": "better-queue",
+"version": "3.8.12"
+},
+{
+"name": "better-queue-sqlite",
+"version": "1.0.7"
+},
+{
+"name": "bndtask",
+"version": "0.2.0"
+},
+{
+"name": "bouncycastle",
+"version": "1.64"
+},
+{
+"name": "bouncycastle-zimbra",
+"version": "20110708"
+},
+{
+"name": "cglib-nodep",
+"version": "2.2"
+},
+{
+"name": "check-disk-space",
+"version": "3.3.1"
+},
+{
+"name": "choose-files",
+"version": "1.0.2"
+},
+{
+"name": "clamav",
+"version": "1.0.1"
+},
+{
+"name": "classnames",
+"version": "2.2.6"
+},
+{
+"name": "classnames",
+"version": "2.3.2"
+},
+{
+"name": "classnames",
+"version": "2.5.1"
+},
+{
+"name": "clipboard-polyfill",
+"version": "2.8.6"
+},
+{
+"name": "clipboard.js",
+"version": "0.2.0"
+},
+{
+"name": "cluebringer",
+"version": "2.1.0.0.cf484f1b93cf9965886cc89d33bdeee9c26426cb"
+},
+{
+"name": "cobertura",
+"version": "1.9.4.1"
+},
+{
+"name": "com.sun.el",
+"version": "1.0.0.v201105211818"
+},
+{
+"name": "commons-beanutils",
+"version": "1.7.0"
+},
+{
+"name": "commons-collections",
+"version": "3.1"
+},
+{
+"name": "commons-compress",
+"version": "1.0"
+},
+{
+"name": "commons-digester",
+"version": "1.7"
+},
+{
+"name": "commons-lang",
+"version": "2.6"
+},
+{
+"name": "commons-logging",
+"version": "1.0.4"
+},
+{
+"name": "concurrentlinkedhashmap-lru",
+"version": "1.3.1"
+},
+{
+"name": "core-js",
+"version": "3.33.1"
+},
+{
+"name": "curator",
+"version": "2.0.1"
+},
+{
+"name": "curl",
+"version": "7.49.1"
+},
+{
+"name": "cyrus-sasl-zimbra",
+"version": "2.1.28"
+},
+{
+"name": "dataloader",
+"version": "2.2.2"
+},
+{
+"name": "deepmerge",
+"version": "4.3.1"
+},
+{
+"name": "detect-browser",
+"version": "5.3.0"
+},
+{
+"name": "dlv",
+"version": "1.1.3"
+},
+{
+"name": "dom-helpers",
+"version": "5.2.1"
+},
+{
+"name": "dom-serializer",
+"version": "0.2.2"
+},
+{
+"name": "dom4j",
+"version": "2.1.1"
+},
+{
+"name": "domelementtype",
+"version": "1.3.1"
+},
+{
+"name": "domelementtype",
+"version": "2.0.1"
+},
+{
+"name": "domhandler",
+"version": "2.4.2"
+},
+{
+"name": "dompurify",
+"version": "3.0.11"
+},
+{
+"name": "domutils",
+"version": "1.7.0"
+},
+{
+"name": "dropbox",
+"version": "4.0.30"
+},
+{
+"name": "ehcache-core",
+"version": "2.5.1"
+},
+{
+"name": "electron-context-menu",
+"version": "3.6.1"
+},
+{
+"name": "electron-json-storage",
+"version": "4.6.0"
+},
+{
+"name": "electron-log",
+"version": "4.4.8"
+},
+{
+"name": "electron-serve",
+"version": "1.1.0"
+},
+{
+"name": "electron-windows-badge",
+"version": "1.1.0"
+},
+{
+"name": "emailjs-mime-builder",
+"version": "2.0.5"
+},
+{
+"name": "emailjs-mime-parser",
+"version": "2.0.7"
+},
+{
+"name": "entities",
+"version": "1.1.2"
+},
+{
+"name": "entities",
+"version": "2.0.0"
+},
+{
+"name": "erlang",
+"version": "25.0.3"
+},
+{
+"name": "escape-string-regexp",
+"version": "4.0.0"
+},
+{
+"name": "escape-string-regexp",
+"version": "5.0.0"
+},
+{
+"name": "eslint-plugin-react-hooks",
+"version": "4.6.2"
+},
+{
+"name": "ext.ux.touchcalendar",
+"version": "0.1"
+},
+{
+"name": "fastjson",
+"version": "1.1.2"
+},
+{
+"name": "favico.js",
+"version": "0.3.10"
+},
+{
+"name": "firefox-nspr",
+"version": "22-zimbra"
+},
+{
+"name": "firefox-nss",
+"version": "22-zimbra"
+},
+{
+"name": "flatted",
+"version": "3.2.9"
+},
+{
+"name": "focusable",
+"version": "2.3.0"
+},
+{
+"name": "freetype",
+"version": "2.6.3"
+},
+{
+"name": "ganymed-ssh2-build210-none",
+"version": ""
+},
+{
+"name": "gifencoder",
+"version": "0.9"
+},
+{
+"name": "google-caja-r4817",
+"version": ""
+},
+{
+"name": "google-guice",
+"version": "2.0"
+},
+{
+"name": "gperftools",
+"version": "2.4"
+},
+{
+"name": "graphiql",
+"version": "3.2.0"
+},
+{
+"name": "graphql",
+"version": "15.8.0"
+},
+{
+"name": "groovy",
+"version": "1.7.4"
+},
+{
+"name": "gson",
+"version": "2.8.2"
+},
+{
+"name": "gson",
+"version": "2.9.1"
+},
+{
+"name": "guava",
+"version": "23.0"
+},
+{
+"name": "guava",
+"version": "28.1-jre"
+},
+{
+"name": "heimdal",
+"version": "1.5.3"
+},
+{
+"name": "htmlparser2",
+"version": "3.10.1"
+},
+{
+"name": "htmlparser2",
+"version": "8.0.0"
+},
+{
+"name": "ical4j",
+"version": "0.9.16"
+},
+{
+"name": "icu4j",
+"version": "4.8.1.1"
+},
+{
+"name": "idb-keyval",
+"version": "6.2.1"
+},
+{
+"name": "immutability-helper",
+"version": "3.1.1"
+},
+{
+"name": "inherits",
+"version": "2.0.4"
+},
+{
+"name": "innotop",
+"version": "1.9.1"
+},
+{
+"name": "is-plain-object",
+"version": "5.0.0"
+},
+{
+"name": "is-valid-domain",
+"version": "0.1.6"
+},
+{
+"name": "iscroll",
+"version": "3.5.1"
+},
+{
+"name": "jackson",
+"version": "2.9.2"
+},
+{
+"name": "jackson-annotations",
+"version": "2.10.1"
+},
+{
+"name": "jackson-core",
+"version": "2.10.1"
+},
+{
+"name": "jackson-core-asl",
+"version": "1.9.2"
+},
+{
+"name": "jackson-databind",
+"version": "2.10.1"
+},
+{
+"name": "jackson-jaxrs",
+"version": "1.9.2"
+},
+{
+"name": "jackson-mapper-asl",
+"version": "1.9.2"
+},
+{
+"name": "jakarta-oro",
+"version": "2.0.8"
+},
+{
+"name": "jakarta-regexp",
+"version": "1.4"
+},
+{
+"name": "javamail",
+"version": "1.4.5"
+},
+{
+"name": "javax.activation",
+"version": "1.1.0.v201105071233"
+},
+{
+"name": "javax.annotation",
+"version": "1.1.0.v201108011116"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.2"
+},
+{
+"name": "javax.el",
+"version": "2.1.0.v201105211819"
+},
+{
+"name": "javax.mail.glassfish",
+"version": "1.4.1.v201005082020"
+},
+{
+"name": "javax.servlet.jsp",
+"version": "2.1.0.v201105211820"
+},
+{
+"name": "javax.servlet.jsp.jstl",
+"version": "1.2.0.v201105211821"
+},
+{
+"name": "javax.transaction",
+"version": "1.1.1.v201105210645"
+},
+{
+"name": "javax.transaction-api",
+"version": "1.2"
+},
+{
+"name": "javax.websocket-api",
+"version": "1.0"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0-m10"
+},
+{
+"name": "jax-ws",
+"version": "2.2.6"
+},
+{
+"name": "jaxen",
+"version": "1.1.3"
+},
+{
+"name": "jcommon",
+"version": "1.0.20"
+},
+{
+"name": "jdom",
+"version": "1.1"
+},
+{
+"name": "jersey",
+"version": "1.11"
+},
+{
+"name": "jersey-apache-client",
+"version": "1.11"
+},
+{
+"name": "jersey-atom-abdera",
+"version": "1.11"
+},
+{
+"name": "jersey-client",
+"version": "1.11"
+},
+{
+"name": "jersey-core",
+"version": "1.1.5"
+},
+{
+"name": "jersey-core",
+"version": "1.11"
+},
+{
+"name": "jersey-guice",
+"version": "1.11"
+},
+{
+"name": "jersey-json",
+"version": "1.11"
+},
+{
+"name": "jersey-multipart",
+"version": "1.11"
+},
+{
+"name": "jersey-multipart",
+"version": "1.12"
+},
+{
+"name": "jersey-server",
+"version": "1.1.5"
+},
+{
+"name": "jersey-server",
+"version": "1.11"
+},
+{
+"name": "jersey-servlet",
+"version": "1.11"
+},
+{
+"name": "jersey-simple-server",
+"version": "1.11"
+},
+{
+"name": "jersey-spring",
+"version": "1.11"
+},
+{
+"name": "jettison",
+"version": "1.1"
+},
+{
+"name": "jetty",
+"version": "9.3.5"
+},
+{
+"name": "jetty",
+"version": "9.4.46.v20220331"
+},
+{
+"name": "jetty-schemas",
+"version": "3.1"
+},
+{
+"name": "jfreechart",
+"version": "1.0.16"
+},
+{
+"name": "jjwt",
+"version": "0.7.0"
+},
+{
+"name": "jna",
+"version": "3.4.0"
+},
+{
+"name": "joda-time",
+"version": "1.5.2"
+},
+{
+"name": "jquery",
+"version": "3.5.1"
+},
+{
+"name": "jsch",
+"version": "0.1.53"
+},
+{
+"name": "jsieve",
+"version": "0.5"
+},
+{
+"name": "json",
+"version": "1.0"
+},
+{
+"name": "json",
+"version": "20200518"
+},
+{
+"name": "json-simple",
+"version": "1.1.1"
+},
+{
+"name": "jsr311-api",
+"version": "1.1.1"
+},
+{
+"name": "jsrsasign",
+"version": "11.0.0"
+},
+{
+"name": "jstl",
+"version": "1.1.0-d13"
+},
+{
+"name": "jszip",
+"version": "3.10.1"
+},
+{
+"name": "juh",
+"version": "6.2.3"
+},
+{
+"name": "junit",
+"version": "4.7"
+},
+{
+"name": "junit",
+"version": "4.8.2"
+},
+{
+"name": "juniversalchardet",
+"version": "1.0.3"
+},
+{
+"name": "junixsocket",
+"version": "1.3"
+},
+{
+"name": "jurt",
+"version": "6.2.3"
+},
+{
+"name": "jython",
+"version": "2.5.2"
+},
+{
+"name": "jython_installer",
+"version": "2.5.2"
+},
+{
+"name": "jzlib",
+"version": "1.0.7"
+},
+{
+"name": "keyview",
+"version": "10.13.0.0"
+},
+{
+"name": "knex",
+"version": "2.5.1"
+},
+{
+"name": "libart_lgpl",
+"version": "2.3.21"
+},
+{
+"name": "libbsd",
+"version": "0.7.0"
+},
+{
+"name": "libevent",
+"version": "2.0.22"
+},
+{
+"name": "libidn",
+"version": "1.24"
+},
+{
+"name": "libpng",
+"version": "1.6.19"
+},
+{
+"name": "libpng",
+"version": "1.6.23"
+},
+{
+"name": "libsodium",
+"version": "1.0.6"
+},
+{
+"name": "libtool",
+"version": "2.2.6b"
+},
+{
+"name": "libwww-perl",
+"version": "6.05"
+},
+{
+"name": "libwww-perl",
+"version": "6.13"
+},
+{
+"name": "libxml2",
+"version": "2.9.4"
+},
+{
+"name": "linkify-element",
+"version": "3.0.4"
+},
+{
+"name": "linkifyjs",
+"version": "3.0.5"
+},
+{
+"name": "linkref",
+"version": "1.1.0"
+},
+{
+"name": "linkstate",
+"version": "2.0.1"
+},
+{
+"name": "lodash",
+"version": "4.17.20"
+},
+{
+"name": "lodash",
+"version": "4.17.21"
+},
+{
+"name": "lodash-es",
+"version": "4.17.15"
+},
+{
+"name": "lodash-es",
+"version": "4.17.21"
+},
+{
+"name": "lombok",
+"version": "1.18.24"
+},
+{
+"name": "lucene",
+"version": "3.5.0"
+},
+{
+"name": "lunr",
+"version": "2.3.9"
+},
+{
+"name": "mac-ca",
+"version": "3.1.0"
+},
+{
+"name": "mariadb",
+"version": "10.1.25"
+},
+{
+"name": "mariadb-java-client",
+"version": "2.4.3"
+},
+{
+"name": "marked",
+"version": "4.3.0"
+},
+{
+"name": "maven-ant-tasks",
+"version": "2.0.10"
+},
+{
+"name": "md5.js",
+"version": "2.1"
+},
+{
+"name": "memcached",
+"version": "1.4.37"
+},
+{
+"name": "mime",
+"version": "3.0.0"
+},
+{
+"name": "mimemessage",
+"version": "1.0.5"
+},
+{
+"name": "mitt",
+"version": "3.0.1"
+},
+{
+"name": "mixpanel-browser",
+"version": "2.47.0"
+},
+{
+"name": "modernizr",
+"version": "2.8.3"
+},
+{
+"name": "moment",
+"version": "2.29.4"
+},
+{
+"name": "moment-timezone",
+"version": "0.5.43"
+},
+{
+"name": "msdn-signing-code-zimbra",
+"version": "20120125"
+},
+{
+"name": "nanoid",
+"version": "3.3.8"
+},
+{
+"name": "nekohtml",
+"version": "1.9.13"
+},
+{
+"name": "net-snmp",
+"version": "5.8"
+},
+{
+"name": "nginx",
+"version": "1.20.0-zimbra"
+},
+{
+"name": "nginx",
+"version": "1.7.1-zimbra"
+},
+{
+"name": "nist-sip",
+"version": "1.2"
+},
+{
+"name": "node-abort-controller",
+"version": "3.1.1"
+},
+{
+"name": "node-fetch",
+"version": "2.7.0"
+},
+{
+"name": "noggit",
+"version": "0.7"
+},
+{
+"name": "normalize.css",
+"version": "8.0.1"
+},
+{
+"name": "nviennot-nginx-tcp-keepalive",
+"version": "4d7186d"
+},
+{
+"name": "oauth",
+"version": "1.4"
+},
+{
+"name": "oauth-client",
+"version": "1.11"
+},
+{
+"name": "oauth-server",
+"version": "1.11"
+},
+{
+"name": "oauth-signature",
+"version": "1.11"
+},
+{
+"name": "objenesis",
+"version": "2.1"
+},
+{
+"name": "opencsv",
+"version": "1.8"
+},
+{
+"name": "opendkim",
+"version": "2.10.3"
+},
+{
+"name": "openfire",
+"version": "3.10.2"
+},
+{
+"name": "openjdk",
+"version": "1.8.0u172b1"
+},
+{
+"name": "openjdk",
+"version": "17.0.2"
+},
+{
+"name": "openjdk-cacerts",
+"version": "1.0.8"
+},
+{
+"name": "openldap",
+"version": "2.4.59"
+},
+{
+"name": "openssl",
+"version": "3.0.9"
+},
+{
+"name": "org.apache.jasper.glassfish",
+"version": "2.1.0.v201110031002"
+},
+{
+"name": "org.apache.mina",
+"version": "2.1.6"
+},
+{
+"name": "org.apache.taglibs.standard.glassfish",
+"version": "1.2.0.v201112081803"
+},
+{
+"name": "org.eclipse.jdt.core",
+"version": "3.7.1"
+},
+{
+"name": "org.objectweb.asm",
+"version": "3.1.0.v200803061910"
+},
+{
+"name": "org.openid4java",
+"version": "1.0.0"
+},
+{
+"name": "owasp-java-html-sanitizer.jar",
+"version": "20190610.5z"
+},
+{
+"name": "parse-srcset",
+"version": "1.0.2"
+},
+{
+"name": "perl-archive-zip",
+"version": "1.53"
+},
+{
+"name": "perl-berkeleydb",
+"version": "0.55"
+},
+{
+"name": "perl-bit-vector",
+"version": "7.4"
+},
+{
+"name": "perl-cache-fastmmap",
+"version": "1.43"
+},
+{
+"name": "perl-canary-stability",
+"version": "2006"
+},
+{
+"name": "perl-carp-clan",
+"version": "6.04"
+},
+{
+"name": "perl-class-inspector",
+"version": "1.28"
+},
+{
+"name": "perl-compress-raw-bzip2",
+"version": "2.069"
+},
+{
+"name": "perl-compress-raw-zlib",
+"version": "2.103"
+},
+{
+"name": "perl-config-inifiles",
+"version": "2.86"
+},
+{
+"name": "perl-convert-asn1",
+"version": "0.27"
+},
+{
+"name": "perl-convert-binhex",
+"version": "1.124"
+},
+{
+"name": "perl-convert-tnef",
+"version": "0.18"
+},
+{
+"name": "perl-convert-uulib",
+"version": "1.5"
+},
+{
+"name": "perl-crypt-openssl-random",
+"version": "0.11"
+},
+{
+"name": "perl-crypt-openssl-rsa",
+"version": "0.33"
+},
+{
+"name": "perl-crypt-saltedhash",
+"version": "0.09"
+},
+{
+"name": "perl-data-uuid",
+"version": "1.221"
+},
+{
+"name": "perl-date-calc",
+"version": "6.4"
+},
+{
+"name": "perl-date-manip",
+"version": "6.90"
+},
+{
+"name": "perl-db_file",
+"version": "1.835"
+},
+{
+"name": "perl-dbd-mysql",
+"version": "4.050"
+},
+{
+"name": "perl-dbd-sqlite",
+"version": "1.48"
+},
+{
+"name": "perl-dbi",
+"version": "1.634"
+},
+{
+"name": "perl-digest-hmac",
+"version": "1.03"
+},
+{
+"name": "perl-digest-sha1",
+"version": "2.13"
+},
+{
+"name": "perl-email-date-format",
+"version": "1.005"
+},
+{
+"name": "perl-encode-detect",
+"version": "1.01"
+},
+{
+"name": "perl-encode-locale",
+"version": "1.05"
+},
+{
+"name": "perl-error",
+"version": "0.17024"
+},
+{
+"name": "perl-exporter-tiny",
+"version": "0.042"
+},
+{
+"name": "perl-extutils-constant",
+"version": "0.23"
+},
+{
+"name": "perl-file-grep",
+"version": "0.02"
+},
+{
+"name": "perl-file-libmagic",
+"version": "1.15"
+},
+{
+"name": "perl-file-listing",
+"version": "6.04"
+},
+{
+"name": "perl-file-tail",
+"version": "1.3"
+},
+{
+"name": "perl-filesys-df",
+"version": "0.92"
+},
+{
+"name": "perl-geography-countries",
+"version": "2009041301"
+},
+{
+"name": "perl-html-parser",
+"version": "3.71"
+},
+{
+"name": "perl-http-cookies",
+"version": "6.01"
+},
+{
+"name": "perl-http-daemon",
+"version": "6.01"
+},
+{
+"name": "perl-http-date",
+"version": "6.02"
+},
+{
+"name": "perl-http-message",
+"version": "6.11"
+},
+{
+"name": "perl-http-negotiate",
+"version": "6.01"
+},
+{
+"name": "perl-io-compress",
+"version": "2.069"
+},
+{
+"name": "perl-io-html",
+"version": "1.001"
+},
+{
+"name": "perl-io-sessiondata",
+"version": "1.03"
+},
+{
+"name": "perl-io-socket-inet6",
+"version": "2.72"
+},
+{
+"name": "perl-io-socket-ip",
+"version": "0.37"
+},
+{
+"name": "perl-io-socket-ssl",
+"version": "2.083"
+},
+{
+"name": "perl-io-stringy",
+"version": "2.111"
+},
+{
+"name": "perl-ip-country",
+"version": "2.28"
+},
+{
+"name": "perl-json-pp",
+"version": "2.27300"
+},
+{
+"name": "perl-ldap",
+"version": "0.65"
+},
+{
+"name": "perl-list-moreutils",
+"version": "0.413"
+},
+{
+"name": "perl-lwp-mediatypes",
+"version": "6.02"
+},
+{
+"name": "perl-lwp-protocol-https",
+"version": "6.10"
+},
+{
+"name": "perl-mail-dkim",
+"version": "0.43"
+},
+{
+"name": "perl-mail-spf",
+"version": "2.9.0"
+},
+{
+"name": "perl-mailtools",
+"version": "2.14"
+},
+{
+"name": "perl-math-bigint",
+"version": "1.99708"
+},
+{
+"name": "perl-mime-lite",
+"version": "3.030"
+},
+{
+"name": "perl-mime-tools",
+"version": "5.507"
+},
+{
+"name": "perl-mime-types",
+"version": "2.11"
+},
+{
+"name": "perl-mozilla-ca",
+"version": "20150826"
+},
+{
+"name": "perl-net-cidr",
+"version": "0.18"
+},
+{
+"name": "perl-net-cidr-lite",
+"version": "0.21"
+},
+{
+"name": "perl-net-dns",
+"version": "1.04"
+},
+{
+"name": "perl-net-dns-resolver-programmable",
+"version": "0.003"
+},
+{
+"name": "perl-net-http",
+"version": "6.09"
+},
+{
+"name": "perl-net-ldapapi",
+"version": "3.0.3"
+},
+{
+"name": "perl-net-libidn",
+"version": "0.12"
+},
+{
+"name": "perl-net-server",
+"version": "2.008"
+},
+{
+"name": "perl-net-ssleay",
+"version": "1.92"
+},
+{
+"name": "perl-netaddr-ip",
+"version": "4.078"
+},
+{
+"name": "perl-parent",
+"version": "0.234"
+},
+{
+"name": "perl-proc-processtable",
+"version": "0.53"
+},
+{
+"name": "perl-soap-lite",
+"version": "1.19"
+},
+{
+"name": "perl-socket",
+"version": "2.020"
+},
+{
+"name": "perl-socket-linux",
+"version": "0.01"
+},
+{
+"name": "perl-storable",
+"version": "2.51"
+},
+{
+"name": "perl-task-weaken",
+"version": "1.04"
+},
+{
+"name": "perl-term-readkey",
+"version": "2.33"
+},
+{
+"name": "perl-timedate",
+"version": "2.30"
+},
+{
+"name": "perl-unix-getrusage",
+"version": "0.03"
+},
+{
+"name": "perl-unix-syslog",
+"version": "1.1"
+},
+{
+"name": "perl-uri",
+"version": "1.69"
+},
+{
+"name": "perl-www-robotrules",
+"version": "6.02"
+},
+{
+"name": "perl-xml-namespace-support",
+"version": "1.11"
+},
+{
+"name": "perl-xml-parser",
+"version": "2.44"
+},
+{
+"name": "perl-xml-parser-lite",
+"version": "0.721"
+},
+{
+"name": "perl-xml-sax",
+"version": "0.99"
+},
+{
+"name": "perl-xml-sax-base",
+"version": "1.08"
+},
+{
+"name": "perl-xml-sax-expat",
+"version": "0.51"
+},
+{
+"name": "perl-xml-simple",
+"version": "2.25"
+},
+{
+"name": "perl-zmq-constants",
+"version": "1.04"
+},
+{
+"name": "perl-zmq-libzmq3",
+"version": "1.19"
+},
+{
+"name": "pflogsumm",
+"version": "1.1.5"
+},
+{
+"name": "php",
+"version": "7.4.27"
+},
+{
+"name": "picocolors",
+"version": "1.1.1"
+},
+{
+"name": "postcss",
+"version": "8.5.1"
+},
+{
+"name": "postfix",
+"version": "3.6.1"
+},
+{
+"name": "postfix-logwatch",
+"version": "1.40.03"
+},
+{
+"name": "preact",
+"version": "10.18.1"
+},
+{
+"name": "preact",
+"version": "10.5.4"
+},
+{
+"name": "preact-context-provider",
+"version": "1.2.0"
+},
+{
+"name": "preact-context-provider",
+"version": "2.0.0-preactx.2"
+},
+{
+"name": "preact-i18n",
+"version": "1.5.0"
+},
+{
+"name": "preact-i18n",
+"version": "2.0.0-preactx.2"
+},
+{
+"name": "preact-i18n",
+"version": "2.4.0-preactx"
+},
+{
+"name": "preact-markup",
+"version": "2.1.1"
+},
+{
+"name": "preact-pwa-install",
+"version": "0.0.4"
+},
+{
+"name": "preact-render-to-string",
+"version": "6.2.2"
+},
+{
+"name": "preact-router",
+"version": "3.1.1"
+},
+{
+"name": "preact-virtual-list",
+"version": "0.3.1"
+},
+{
+"name": "preconf",
+"version": "1.1.0"
+},
+{
+"name": "pretty-bytes",
+"version": "6.1.1"
+},
+{
+"name": "prop-types",
+"version": "15.8.1"
+},
+{
+"name": "qrcode",
+"version": "1.5.3"
+},
+{
+"name": "query-string",
+"version": "8.1.0"
+},
+{
+"name": "querystring",
+"version": "0.2.0"
+},
+{
+"name": "querystring",
+"version": "0.2.1"
+},
+{
+"name": "rabbitmq-server",
+"version": "3.10.7"
+},
+{
+"name": "rc-time-picker",
+"version": "3.7.3"
+},
+{
+"name": "react-big-calendar",
+"version": "1.8.1"
+},
+{
+"name": "react-cropper",
+"version": "2.3.3"
+},
+{
+"name": "react-dropzone-component",
+"version": "3.2.0"
+},
+{
+"name": "react-ds",
+"version": "1.13.0"
+},
+{
+"name": "react-gtm-module",
+"version": "2.0.11"
+},
+{
+"name": "react-html-parser",
+"version": "2.0.2"
+},
+{
+"name": "react-popper",
+"version": "2.3.0"
+},
+{
+"name": "react-redux",
+"version": "8.1.3"
+},
+{
+"name": "react-string-replace",
+"version": "1.1.1"
+},
+{
+"name": "readable-stream",
+"version": "3.6.2"
+},
+{
+"name": "recompose",
+"version": "0.30.0"
+},
+{
+"name": "redux",
+"version": "4.2.1"
+},
+{
+"name": "redux-actions",
+"version": "2.6.5"
+},
+{
+"name": "redux-actions",
+"version": "3.0.0"
+},
+{
+"name": "redux-persist",
+"version": "6.0.0"
+},
+{
+"name": "redux-persist-indexeddb-storage",
+"version": "1.0.4"
+},
+{
+"name": "redux-promise-middleware",
+"version": "6.1.3"
+},
+{
+"name": "redux-thunk",
+"version": "2.4.2"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.13.11"
+},
+{
+"name": "ridl",
+"version": "6.2.3"
+},
+{
+"name": "rocksdbjni",
+"version": "8.1.1"
+},
+{
+"name": "rrdtool",
+"version": "1.2.30"
+},
+{
+"name": "rsync",
+"version": "3.1.2"
+},
+{
+"name": "safe-buffer",
+"version": "5.2.1"
+},
+{
+"name": "sanitize-html",
+"version": "2.14.0"
+},
+{
+"name": "scroll-into-view-if-needed",
+"version": "2.2.31"
+},
+{
+"name": "selenium",
+"version": "2.51.0"
+},
+{
+"name": "sendmail",
+"version": "8.15.2"
+},
+{
+"name": "servlet-api",
+"version": "2.4"
+},
+{
+"name": "servlet-api",
+"version": "3.1"
+},
+{
+"name": "sirv-cli",
+"version": "1.0.14"
+},
+{
+"name": "slf4j",
+"version": "1.7.36"
+},
+{
+"name": "smack",
+"version": "3.2.1"
+},
+{
+"name": "source-map-js",
+"version": "1.2.1"
+},
+{
+"name": "spamassassin",
+"version": "3.4.6"
+},
+{
+"name": "spring-framework",
+"version": "5.3.18"
+},
+{
+"name": "spymemcached",
+"version": "2.12.1"
+},
+{
+"name": "sqlite3",
+"version": "5.1.6"
+},
+{
+"name": "sqlitejdbc",
+"version": "3.7.5-1"
+},
+{
+"name": "stax2-api",
+"version": "3.1.1"
+},
+{
+"name": "string-strip-html",
+"version": "7.0.3"
+},
+{
+"name": "string_decoder",
+"version": "1.3.0"
+},
+{
+"name": "svg-inline-loader",
+"version": "0.8.2"
+},
+{
+"name": "swatchdog",
+"version": "3.2.4"
+},
+{
+"name": "sync",
+"version": "1.0.0"
+},
+{
+"name": "syslog4j",
+"version": "0.9.46"
+},
+{
+"name": "tar",
+"version": "6.2.1"
+},
+{
+"name": "testng",
+"version": "5.12.1"
+},
+{
+"name": "tiny-js-md5",
+"version": "1.2.0"
+},
+{
+"name": "tinymce",
+"version": "4.2.6"
+},
+{
+"name": "tinymce",
+"version": "7.1.1"
+},
+{
+"name": "tnef",
+"version": "1.8.0"
+},
+{
+"name": "unbound",
+"version": "1.17.1"
+},
+{
+"name": "unbound-ldap-sdk",
+"version": "2.3.5"
+},
+{
+"name": "unoil",
+"version": "6.2.3"
+},
+{
+"name": "use-resize-observer",
+"version": "6.1.0"
+},
+{
+"name": "util-deprecate",
+"version": "1.0.2"
+},
+{
+"name": "uuid",
+"version": "3.4.0"
+},
+{
+"name": "uuid",
+"version": "8.3.2"
+},
+{
+"name": "webex-time-zones",
+"version": "0.2.2"
+},
+{
+"name": "webservices-rt",
+"version": "2.3.1"
+},
+{
+"name": "win-ca",
+"version": "3.5.1"
+},
+{
+"name": "winston",
+"version": "3.11.0"
+},
+{
+"name": "winston-daily-rotate-file",
+"version": "4.7.1"
+},
+{
+"name": "wiretie",
+"version": "1.1.2"
+},
+{
+"name": "woodstox-core",
+"version": "4.2.0"
+},
+{
+"name": "workbox-window",
+"version": "7.1.0"
+},
+{
+"name": "wsdl4j",
+"version": "1.6.3"
+},
+{
+"name": "xerces-j",
+"version": "2.9.1"
+},
+{
+"name": "xercesImpl-2.9.1-patched-XERCESJ",
+"version": "1257"
+},
+{
+"name": "xmlschema-core",
+"version": "2.0.3"
+},
+{
+"name": "yui-compressor",
+"version": "2.4.2"
+},
+{
+"name": "zeroclipboard",
+"version": "1.0.7"
+},
+{
+"name": "zeromq",
+"version": "4.1.4"
+},
+{
+"name": "zkclient",
+"version": "0.1.0"
+},
+{
+"name": "zookeeper",
+"version": "3.4.5"
+},
+{
+"name": "zstd-jni@1.5.5",
+"version": "9"
+},
+{
+"name": "zulip",
+"version": "9.2"
+}
+],
+"extractors": [
+"gt_list",
+"jar_names"
+],
+"kind": "text",
+"product": "Zimbra Collaboration",
+"retrieved": "2026-11-08",
+"sha256": "f012acdc008855c6b893f7343cf2ed01b535195d78f774844a3a93b7ab845130",
+"supplier": "Zimbra",
+"url": "https://files.zimbra.com/website/docs/10.1.0/open_source_licenses_10.1.0.txt",
+"version": "10.1.0"
+}

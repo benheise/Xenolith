@@ -1,0 +1,58 @@
+{
+"components": [
+{
+"name": ".NET",
+"version": "4.6.2"
+},
+{
+"name": ".NET Core",
+"version": "8.0.8"
+},
+{
+"name": "Apache Tomcat",
+"version": "10.1.48"
+},
+{
+"name": "Eclipse Temurin JRE",
+"version": "17.0.12+7"
+},
+{
+"name": "Info-Zip",
+"version": "3.0"
+},
+{
+"name": "LibreOffice",
+"version": "7.1"
+},
+{
+"name": "MongoDB",
+"version": "6.0"
+},
+{
+"name": "PsExec",
+"version": "1.21"
+},
+{
+"name": "Putty",
+"version": "0.75"
+},
+{
+"name": "Web Deploy",
+"version": "3.0"
+},
+{
+"name": "wkhtmltopdf",
+"version": "0.12.6"
+}
+],
+"extractors": [
+"name_version_lines"
+],
+"kind": "html",
+"product": "Commvault Backup & Recovery",
+"retrieved": "2026-11-08",
+"sha256": "4d35b762a1058e2e49c7ac0b98adcd3f11919d8e3e16f7d6a69271ace6e1866a",
+"supplier": "Commvault",
+"url": "https://documentation.commvault.com/2023e/commcell-console/third_party_applications_installed_by_commvault_installer.html",
+"version": "2023E"
+}

@@ -95,6 +95,15 @@ discover:
     exclude_products: '(?i)community edition|FREE$'
     latest: 2
 
+  # Zimbra links a "3rd Party Open Source Licenses" text file per release from
+  # its downloads page (8.8, 9.0, 10.0.0, 10.1.0 ...).
+  - supplier: Zimbra
+    index: https://www.zimbra.com/downloads/zimbra-collaboration/
+    link: 'files\.zimbra\.com/website/docs/[^/]+/open_source_licenses_(?!zcs-windows)[\d.]+\.txt$'
+    title: '.'
+    product: Zimbra Collaboration
+    version_from_url: 'open_source_licenses_(?P<version>[\d.]+)\.txt$'
+
 documents:
   # ManageEngine: ADSelfService Plus publishes a "third-party components" PDF
   # (bundled JARs with versions), updated per build.
@@ -206,6 +215,68 @@ documents:
     version: "11.1"
     url: https://www.citrix.com/content/dam/citrix/en_us/documents/downloads/netscaler-adc/NetScaler_11.1_Third_Party_Notices.pdf
 
+  # Commvault: each release documents the third-party applications the installer
+  # ships (Tomcat, Temurin JRE, MongoDB, Python, PuTTY ...). 11.42 is the current
+  # innovation release; 2023E/2024E are the long-term releases.
+  - supplier: Commvault
+    product: Commvault Backup & Recovery
+    version: "11.42"
+    url: https://documentation.commvault.com/11.42/commcell-console/third_party_applications_installed_by_commvault_installer.html
+  - supplier: Commvault
+    product: Commvault Backup & Recovery
+    version: "2024E"
+    url: https://documentation.commvault.com/2024e/commcell-console/third_party_applications_installed_by_commvault_installer.html
+  - supplier: Commvault
+    product: Commvault Backup & Recovery
+    version: "2023E"
+    url: https://documentation.commvault.com/2023e/commcell-console/third_party_applications_installed_by_commvault_installer.html
+
+  # BMC Helix: docs.bmc.com answers automated clients with HTTP 403, but the same
+  # XWiki content is served from docs.helixops.ai. Innovation Suite is the platform
+  # under BMC Helix ITSM; 26.x pages are a Product/Library|Version|License table,
+  # 25.2/26.1 list libraries without versions. Operations Management pages up to
+  # 23.3 list "name version" lines per license; 25.x pages render client-side.
+  - supplier: BMC
+    product: BMC Helix Innovation Suite
+    version: "26.2"
+    url: https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is262/Third-party-product-terms-of-use/
+  - supplier: BMC
+    product: BMC Helix Innovation Suite
+    version: "26.1"
+    url: https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is261/Third-party-product-terms-of-use/
+  - supplier: BMC
+    product: BMC Helix Innovation Suite
+    version: "25.2"
+    url: https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is252/Third-party-product-terms-of-use/
+  - supplier: BMC
+    product: BMC Helix Operations Management
+    version: "23.3"
+    url: https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom233/Third-party-product-terms-of-use/
+  - supplier: BMC
+    product: BMC Helix Operations Management
+    version: "23.2"
+    url: https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom232/Third-party-product-terms-of-use/
+
+  # Ivanti: Black Duck attribution reports ("Components:" name version : license).
+  # Neurons for ITSM publishes one per quarterly release (only the 2024.2 one is still
+  # online); Service Director one per major release. None found for EPM or EPMM.
+  - supplier: Ivanti
+    product: Ivanti Neurons for ITSM
+    version: "2024.2"
+    url: https://help.ivanti.com/ht/help/en_US/ISM/2024/ITSM_AttributionReport__Q22024.pdf
+  - supplier: Ivanti
+    product: Ivanti Service Director
+    version: "25.1"
+    url: https://help.ivanti.com/ps/help/en_US/SD/25.x/SD%20Attribution.pdf
+
+  # Axway: "Third party open source and commercial/proprietary software and licenses"
+  # PDFs are attached to public support KB articles, one per product release.
+  # Only the Gateway one has been found so far (SecureTransport's is still wanted).
+  - supplier: Axway
+    product: Axway Gateway
+    version: "6.17.3 SP10"
+    url: https://support.axway.com/fr/articles/download-attachment/hash/7331c59682b7507655685cce49664d46-1/kb/194100
+
 # Vendors checked and not crawlable (November 2026):
 #   Cisco "Open Source Used In" PDFs: blocked for automated clients (HTTP 403).
 #   VMware/Broadcom open_source_licenses.txt: behind the Broadcom support login.
@@ -224,3 +295,13 @@ documents:
 #   ManageEngine OpManager: thirdparty-library-dependency.html renders client-side.
 #   Veritas NetBackup: notices are an HTML book of license texts without versions.
 #   Progress MOVEit Transfer: since 2020 only in notice.txt inside the installation.
+#   docs.bmc.com: HTTP 403 for automated clients (the docs.helixops.ai mirror works, see above).
+#   BeyondTrust: the open source/copyright page answers HTTP 403.
+#   Microsoft: 3rdpartycode.microsoft.com renders its disclosures client-side.
+#   IBM QRadar: license information documents need an IBM ID.
+#   Huawei: per-release Open Source Software Notices sit behind the support login.
+#   Apple: opensource.apple.com embeds the release list in a JS bundle (Apple project versions, not upstream).
+#   SAP, Ivanti EPM/EPMM, Trend Micro Apex One, Zyxel, Ubiquiti, QNAP, PaperCut, SimpleHelp, Gladinet, Samsung
+#   MagicINFO, Kaseya, Rubrik, Cohesity, Dell PPDM, CyberArk, Delinea, ManageEngine (SDP, Endpoint Central,
+#   PAM360/PMP), ConnectWise, TeamViewer, AnyDesk, Fortra, Cleo, CrushFTP, Kiteworks, JSCAPE, FortiSIEM,
+#   LogRhythm, SysAid, Sophos Firewall, TIBCO JasperReports Server: no public component list (see wanted.yaml).

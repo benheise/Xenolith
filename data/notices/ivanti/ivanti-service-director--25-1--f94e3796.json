@@ -1,0 +1,231 @@
+{
+"components": [
+{
+"name": "augeas-libs",
+"version": "1.0.0"
+},
+{
+"name": "backports.tarfile",
+"version": "1.2.0"
+},
+{
+"name": "botocore",
+"version": "1.40.1"
+},
+{
+"name": "ca-certificates",
+"version": "2024.2.69_v8.0.303"
+},
+{
+"name": "chardet",
+"version": "4.0.0"
+},
+{
+"name": "colorama",
+"version": "0.4.4"
+},
+{
+"name": "Cython",
+"version": "3.0.10"
+},
+{
+"name": "django/asgiref",
+"version": "3.7.2"
+},
+{
+"name": "Docutils",
+"version": "0.22.4"
+},
+{
+"name": "embedded-tz",
+"version": "0.5.2"
+},
+{
+"name": "gevent",
+"version": "25.8.2"
+},
+{
+"name": "greenlet",
+"version": "3.2.5"
+},
+{
+"name": "idna",
+"version": "2.10"
+},
+{
+"name": "javax-servletapi2.3",
+"version": "4.0"
+},
+{
+"name": "jsonschema-specifications",
+"version": "2025.9.1"
+},
+{
+"name": "lxml",
+"version": "4.6.5"
+},
+{
+"name": "madsci.event_manager",
+"version": "0.4.4"
+},
+{
+"name": "MariaDB",
+"version": "3.2.6"
+},
+{
+"name": "meson",
+"version": "0.63.3"
+},
+{
+"name": "Meson build system",
+"version": "0.63.3"
+},
+{
+"name": "ncurses",
+"version": "6.2"
+},
+{
+"name": "Net::TacacsPlus",
+"version": "1.08"
+},
+{
+"name": "NSS",
+"version": "3.112.0"
+},
+{
+"name": "pexpect",
+"version": "4.8.0"
+},
+{
+"name": "py-markdown",
+"version": "3.4.4"
+},
+{
+"name": "py-setproctitle",
+"version": "1.2.3"
+},
+{
+"name": "py3-jaraco.context",
+"version": "6.1.1"
+},
+{
+"name": "pyasn1",
+"version": "0.1.6"
+},
+{
+"name": "PyJWT",
+"version": "2.4.0"
+},
+{
+"name": "pymysql",
+"version": "1.1.1"
+},
+{
+"name": "pysnmp",
+"version": "4.2.5"
+},
+{
+"name": "Python SNMP framework",
+"version": "4.2.5"
+},
+{
+"name": "python-bottle",
+"version": "0.12.21"
+},
+{
+"name": "python-hyper/uritemplate",
+"version": "4.1.1"
+},
+{
+"name": "python-json-pointer",
+"version": "2.0"
+},
+{
+"name": "Python-Markdown",
+"version": "3.4.4"
+},
+{
+"name": "python-webencodings",
+"version": "0.5.1"
+},
+{
+"name": "python3-hawkey",
+"version": "0.69.0"
+},
+{
+"name": "python3-lxml",
+"version": "4.6.5"
+},
+{
+"name": "python3-pytz",
+"version": "2021.1"
+},
+{
+"name": "python3-setuptools",
+"version": "53.0.0"
+},
+{
+"name": "PyTZ - Python Time Zone Library",
+"version": "2024.1"
+},
+{
+"name": "PyYAML",
+"version": "5.4.1"
+},
+{
+"name": "repoze.lru",
+"version": "0.7"
+},
+{
+"name": "reschema",
+"version": "2.0"
+},
+{
+"name": "Routes",
+"version": "2.5.1"
+},
+{
+"name": "rsyslog",
+"version": "8.2506.0"
+},
+{
+"name": "simplejson",
+"version": "3.20.1"
+},
+{
+"name": "SQLAlchemy",
+"version": "1.4.45"
+},
+{
+"name": "sqlparse",
+"version": "0.4.2"
+},
+{
+"name": "Stingray Traffic Manager",
+"version": "9.8r1"
+},
+{
+"name": "Time Zone Database",
+"version": "2026b"
+},
+{
+"name": "verigak/progress",
+"version": "1.6"
+},
+{
+"name": "WebSocket-for-Python",
+"version": "0.5.1"
+}
+],
+"extractors": [
+"bd_components",
+"url_lines"
+],
+"kind": "pdf",
+"product": "Ivanti Service Director",
+"retrieved": "2026-11-08",
+"sha256": "2ef67080bc1d23b90f6c352bd236094cdb01445e7173638eafe2f3027b8fad92",
+"supplier": "Ivanti",
+"url": "https://help.ivanti.com/ps/help/en_US/SD/25.x/SD%20Attribution.pdf",
+"version": "25.1"
+}

@@ -66,9 +66,13 @@ def split_name_version(body: str) -> tuple[str, str]:
     for i in range(1, len(tokens)):
         if VERSION_TOKEN.match(tokens[i]):
             return " ".join(tokens[:i]), " ".join(tokens[i:])
-    m = re.match(r"^(.+?)[-_]v?(\d[\w.\-+~]*)$", body)
-    if m and len(tokens) == 1:
-        return m.group(1), m.group(2)
+    if len(tokens) == 1:
+        m = re.match(r"^(.+?)@[\^~>=<]*v?(\d[\w.\-+~]*)$", body)     # npm style: name@1.2.3, @scope/name@^1.2.3
+        if m:
+            return m.group(1), m.group(2)
+        m = re.match(r"^(.+?)[-_]v?(\d[\w.\-+~]*)$", body)
+        if m:
+            return m.group(1), m.group(2)
     return body, ""
 
 
@@ -112,7 +116,8 @@ class _Tables(HTMLParser):
 
 NAME_HEADERS = {"name", "component", "component(s)", "components", "component name", "package", "package name", "software", "library",
                 "open source component", "open source software", "project", "module", "third party software",
-                "third-party software", "oss component", "software name"}
+                "third-party software", "oss component", "software name", "product/library", "product / library",
+                "library/dependency", "library name", "third-party component", "third party component", "tps name"}
 VERSION_HEADERS = {"version", "component version", "package version", "version number", "release"}
 
 
@@ -467,6 +472,87 @@ def ex_jar_names(text: str) -> list[tuple[str, str]]:
     return out
 
 
+BD_LINE = re.compile(r"(?m)^\s*(?P<n>[A-Za-z@][^:\n]{0,120}?)\s+(?P<v>v?\d[\w.\-+~]*)\s*:\s+(?P<rest>\S.*)$")
+BD_REST = re.compile(r"(?i)licen|gpl|\bmit\b|bsd|apache|public domain|https?://|commercial|proprietary|unspecified|unknown|"
+                     r"artistic|cddl|\bepl\b|\bmpl\b|internal|\bfree\b|zlib|\bisc\b|openssl|boost|unicode|w3c|eula|agreement|"
+                     r"permissive|ms-pl|bouncy|creative|python|eclipse|mozilla|oracle|microsoft|sun\b")
+
+
+def ex_bd_components(text: str) -> list[tuple[str, str]]:
+    """Black Duck notices reports (Ivanti): after "Components:", one entry per line as
+    "name version : license" or "name version: https://home : license"."""
+    if not text or not CL_START.search(text):
+        return []
+    out = []
+    for m in BD_LINE.finditer(text):
+        name, rest = m.group("n").strip(), m.group("rest")
+        if BD_REST.search(rest) and plausible(name) and not name.lower().startswith(("http", "see ", "note")):
+            out.append((name, m.group("v")))
+    return out
+
+
+TABLE_HEAD = re.compile(r"(?im)^\s*(?:component\s+)?(?:name|library(?:/dependency)?)\s+(?:version\s+)?licen[cs]e\s*$")
+JUNK_NAMES = {"inc", "inc.", "ltd", "ltd.", "llc", "corp", "corp.", "gmbh", "co.", "version", "release", "page", "copyright"}
+
+
+def ex_table_lines(text: str) -> list[tuple[str, str]]:
+    """PDF tables flattened to lines under a "Name Version License" header (Axway):
+    "log4j-core-2.10.0.jar 2.10.0 Apache 2.0 License" or
+    "Gateway Server libcrypto 1.0.2r OpenSSL License" (a leading component column)."""
+    out = []
+    for m in TABLE_HEAD.finditer(text or ""):
+        misses = 0
+        for raw in text[m.end():].splitlines():
+            line = raw.strip()
+            if not line:
+                continue
+            if TABLE_HEAD.match(line):
+                break
+            tokens = line.split()
+            vi = next((i for i in range(1, min(len(tokens), 5))
+                       if VERSION_TOKEN.match(tokens[i].replace(",", ".")) and re.search(r"\d", tokens[i])), None)
+            if vi is None or not re.search(r"[A-Za-z]", tokens[vi - 1]) \
+                    or (len(tokens) == 2 and not re.search(r"[._-]", tokens[0])):     # "Gateway 6.17.3" page headers
+                misses += 1
+                if misses > 8:
+                    break
+                continue
+            misses = 0
+            name, version = tokens[vi - 1], tokens[vi].replace(",", ".")
+            if name.lower().endswith((".jar", ".dll", ".so")):
+                nv = archive_name_version(name) if name.lower().endswith(".jar") else None
+                name = nv[0] if nv else re.sub(r"\.(jar|dll|so)$", "", name, flags=re.I)
+            if plausible(name) and name.lower() not in JUNK_NAMES and not re.fullmatch(r"(?:19|20)\d\d", version):
+                out.append((name, version))
+    return out
+
+
+NV_LINE = re.compile(r"^(?P<n>[A-Za-z.@][\w.+/:@()\-]*(?: [A-Za-z][\w.+/:@()\-]*){0,5})\s+v?(?P<v>\d+(?:\.\d+)+(?:[\w.\-+~]*)?)$")
+NV_GATE = re.compile(r"(?i)third[- ]party (?:software|applications?|components?|products?|librar(?:y|ies)|programs?)|"
+                     r"open[- ]source (?:software|components?|librar(?:y|ies))|list of components")
+NV_STOP_LAST = {"version", "release", "revision", "chapter", "section", "page", "step", "figure", "table", "part", "build",
+                "document", "copyright", "edition", "volume", "issue", "rev", "draft", "update", "patch", "hotfix", "pack",
+                "v", "ver", "guide", "manual", "notes", "since", "than", "to", "of", "for", "and", "or", "in", "on", "at", "by"}
+
+
+def ex_name_version_lines(text: str) -> list[tuple[str, str]]:
+    """Plain "name version" lines in a document that talks about third-party software:
+    Commvault's installed-applications list, BMC's per-license component lists.
+    Used only when no structured extractor found anything."""
+    if not text or not NV_GATE.search(text):
+        return []
+    out = []
+    for raw in text.splitlines():
+        m = NV_LINE.match(raw.strip())
+        if not m:
+            continue
+        name = m.group("n").strip()
+        if name.split()[-1].lower() in NV_STOP_LAST or not plausible(name):
+            continue
+        out.append((name, m.group("v")))
+    return out if len(out) >= 3 else []
+
+
 def ex_includes_prose(text: str) -> list[tuple[str, str]]:
     flat = re.sub(r"\s+", " ", text)
     out = []
@@ -580,10 +666,18 @@ def extract(body: bytes, content_type: str, url: str) -> tuple[list[dict], list[
         results["dotted_toc"] = ex_dotted_toc(text)
         results["gt_list"] = ex_gt_list(text)
         results["tpn_list"] = ex_tpn_list(text)
-        results["component_license"] = ex_component_license(text)
+        results["bd_components"] = ex_bd_components(text)
+        # Black Duck reports share the "Components:" heading with NetApp's format but
+        # the NetApp parser only produces noise on them.
+        results["component_license"] = [] if len(results["bd_components"]) >= 3 else ex_component_license(text)
         results["url_lines"] = ex_url_lines(text)
         results["license_groups"] = ex_license_groups(text)
+        results["table_lines"] = ex_table_lines(text)
         results["jar_names"] = ex_jar_names(text)
+        structured = [k for k in ("html_table", "pipe_table", "spdx_tag", "numbered_toc", "dotted_toc", "gt_list", "tpn_list",
+                                  "bd_components", "component_license", "url_lines", "license_groups", "table_lines") if results.get(k)]
+        if not structured:
+            results["name_version_lines"] = ex_name_version_lines(text)
         if not any(results.values()):
             results["dropdown_heads"] = ex_dropdown_heads(html)
         # Prose is the weakest signal; only use it when nothing structured was found.
@@ -617,11 +711,14 @@ def discover(rule: dict, log=print) -> list[dict]:
     """Find notices documents linked from an index page.
 
     rule: {supplier, index, link (regex on absolute URL), title (regex with
-    named groups product and version, applied to the link text)}.
+    named groups product and version, applied to the link text), optional
+    product_prefix, product (fixed name), version_from_url (regex with group
+    version applied to the URL when the link text has none)}.
     """
     page = fetch.get_text(rule["index"], timeout=90)
     link_re = re.compile(rule["link"], re.I)
     title_re = re.compile(rule["title"], re.I)
+    url_ver = re.compile(rule["version_from_url"], re.I) if rule.get("version_from_url") else None
     docs: dict[str, dict] = {}
     for url, text in _anchor_links(page, rule["index"]):
         if not link_re.search(url):
@@ -629,9 +726,11 @@ def discover(rule: dict, log=print) -> list[dict]:
         m = title_re.search(text)
         if not m:
             continue
-        product = (rule.get("product_prefix", "") + m.group("product")).strip()
-        docs.setdefault(url, {"supplier": rule["supplier"], "product": product,
-                              "version": m.groupdict().get("version") or "", "url": url,
+        product = rule.get("product") or (rule.get("product_prefix", "") + (m.groupdict().get("product") or "")).strip()
+        version = m.groupdict().get("version") or ""
+        if not version and url_ver and (vm := url_ver.search(url)):
+            version = vm.group("version")
+        docs.setdefault(url, {"supplier": rule["supplier"], "product": product, "version": version, "url": url,
                               "discovered_by": rule["index"]})
     log(f"  {rule['supplier']}: {len(docs)} documents linked from {rule['index']}")
     return list(docs.values())
