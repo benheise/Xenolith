@@ -1,0 +1,26 @@
+{
+"components": [
+{
+"name": "OpenSSL",
+"version": "1.0.2q"
+},
+{
+"name": "QT",
+"version": "5.12"
+},
+{
+"name": "SSZipArchive",
+"version": "0.2.2"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "GlobalProtect App",
+"retrieved": "2026-11-08",
+"sha256": "996cb8b34af9ebc67fa24b50828fd3cad33f3a85146572df9cad91bf18cc26d3",
+"supplier": "Palo Alto Networks",
+"url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/globalprotect-app-oss-listings/globalprotect-app-5-2-open-source-software-oss-listing.html",
+"version": "5.2"
+}

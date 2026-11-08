@@ -1,0 +1,274 @@
+{
+"components": [
+{
+"name": "Antlr",
+"version": "3.4.1.9004"
+},
+{
+"name": "ASP.NET MVC",
+"version": "4.0.30506.0"
+},
+{
+"name": "ASP.NET Razor",
+"version": "2.0.30506.0"
+},
+{
+"name": "Automapper",
+"version": "3.0.0.0"
+},
+{
+"name": "BEA Engine",
+"version": "4 rev 172"
+},
+{
+"name": "boost",
+"version": "1.6.0"
+},
+{
+"name": "BoringSSL",
+"version": "BoringSSL of gRPC 1.0.0"
+},
+{
+"name": "Cassia",
+"version": "1.0.0.0"
+},
+{
+"name": "CommonServiceLocator",
+"version": "1.0.0.0"
+},
+{
+"name": "CommonServiceLocator.SimpleInjectorAdapter",
+"version": "2.3.0"
+},
+{
+"name": "DbgHelp.dll",
+"version": "6.12.2.633"
+},
+{
+"name": "DotNetZipLib",
+"version": "1.9.1.8"
+},
+{
+"name": "Extended.WpfToolkit",
+"version": "2.0.0"
+},
+{
+"name": "Fluent NHibernate",
+"version": "2.0.1.0"
+},
+{
+"name": "FluentMigrator",
+"version": "1.1.1.0"
+},
+{
+"name": "gflags",
+"version": "2.1.1"
+},
+{
+"name": "googlemock",
+"version": "1.7.0"
+},
+{
+"name": "googletest",
+"version": "1.7.0"
+},
+{
+"name": "gRPC",
+"version": "1.0.0"
+},
+{
+"name": "jQuery",
+"version": "1.9.1"
+},
+{
+"name": "Json.net",
+"version": "6.0.8"
+},
+{
+"name": "knockout",
+"version": "3.2.0"
+},
+{
+"name": "lesi.collections",
+"version": "3.3.1.4000"
+},
+{
+"name": "LevelDB",
+"version": "1.18"
+},
+{
+"name": "LINQ",
+"version": "3.3.3.GA"
+},
+{
+"name": "Microsoft.AspNet.Identity.Core",
+"version": "2.2.0"
+},
+{
+"name": "Microsoft.AspNet.Identity.Owin",
+"version": "2.2.0"
+},
+{
+"name": "Microsoft.AspNet.Web.Optimization",
+"version": "1.1.0"
+},
+{
+"name": "Microsoft.AspNet.WebApi",
+"version": "5.2.3"
+},
+{
+"name": "Microsoft.AspNet.WebPages",
+"version": "2.0.30506"
+},
+{
+"name": "Microsoft.Owin",
+"version": "3.0.1"
+},
+{
+"name": "Microsoft.Tpl.Dataflow",
+"version": "4.5.24"
+},
+{
+"name": "Microsoft.Web.Infrastructure",
+"version": "1.0.0"
+},
+{
+"name": "miniz",
+"version": "1.15"
+},
+{
+"name": "Mvc4Futures",
+"version": "4.0.20710"
+},
+{
+"name": "MvcContrib",
+"version": "3.0.0.99"
+},
+{
+"name": "MvcSitemapProvider",
+"version": "4.4.0"
+},
+{
+"name": "MvvmLight",
+"version": "4.2.30.23173"
+},
+{
+"name": "Nanopb",
+"version": "0.3.4"
+},
+{
+"name": "Newtonsoft.Json",
+"version": "7.0.1"
+},
+{
+"name": "NHibernate",
+"version": "4.0.3.GA"
+},
+{
+"name": "NLog",
+"version": "2.0.0.0"
+},
+{
+"name": "Nlog.Targets.Syslog",
+"version": "2.0.0.0"
+},
+{
+"name": "openssl",
+"version": "1.0.2k"
+},
+{
+"name": "OWIN",
+"version": "1.0.0"
+},
+{
+"name": "PixelLab",
+"version": "6.0.2"
+},
+{
+"name": "POCO",
+"version": "1.7.8"
+},
+{
+"name": "POLE",
+"version": "0.5.3"
+},
+{
+"name": "Prism",
+"version": "1.4.4"
+},
+{
+"name": "protobuf",
+"version": "3.2.0"
+},
+{
+"name": "protobuf-net",
+"version": "2.0.0.668"
+},
+{
+"name": "RazorEngine",
+"version": "3.3.0"
+},
+{
+"name": "re2",
+"version": ""
+},
+{
+"name": "RestSharp",
+"version": "104.1.0.0"
+},
+{
+"name": "Security Framework",
+"version": "57337.60.2"
+},
+{
+"name": "Sharp Serializer",
+"version": "2.18.0.0"
+},
+{
+"name": "SharpBITS",
+"version": "2.1.0"
+},
+{
+"name": "Simple Injector",
+"version": "1.61, 2.8.0"
+},
+{
+"name": "snappy",
+"version": "1.1.3"
+},
+{
+"name": "sqlite",
+"version": "1.0.86.0, 1.0.82.0"
+},
+{
+"name": "TaskScheduler (4.1.2 & later releases)",
+"version": "2.6.5"
+},
+{
+"name": "WebActivator",
+"version": "1.4.4"
+},
+{
+"name": "WebGrease",
+"version": "1.5.2"
+},
+{
+"name": "WPFToolkit",
+"version": "3.4.40211.1"
+},
+{
+"name": "zlib",
+"version": "1.2.8"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "Traps Agent and Traps Endpoint Security Manager",
+"retrieved": "2026-11-08",
+"sha256": "cea4147e61e24e54fa68157afcd2fa760be2b6121886be6c7179374564e656fb",
+"supplier": "Palo Alto Networks",
+"url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/traps-oss-listings/traps-4-1-open-source-software-oss-listing.html",
+"version": "4.1"
+}

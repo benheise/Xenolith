@@ -1,0 +1,2178 @@
+{
+"components": [
+{
+"name": "acl",
+"version": "2.2.53"
+},
+{
+"name": "acpid",
+"version": "2.0.30"
+},
+{
+"name": "apr",
+"version": "1.6.3"
+},
+{
+"name": "apr-util",
+"version": "1.6.1"
+},
+{
+"name": "audit",
+"version": "3"
+},
+{
+"name": "audit-libs",
+"version": "3"
+},
+{
+"name": "basesystem",
+"version": "11"
+},
+{
+"name": "bash",
+"version": "4.4.19"
+},
+{
+"name": "beecrypt",
+"version": "4.2.1"
+},
+{
+"name": "bind",
+"version": "9.11.36"
+},
+{
+"name": "bind-export-libs",
+"version": "9.11.36"
+},
+{
+"name": "bind-libs",
+"version": "9.11.36"
+},
+{
+"name": "bind-libs-lite",
+"version": "9.11.36"
+},
+{
+"name": "bind-utils",
+"version": "9.11.36"
+},
+{
+"name": "binutils",
+"version": "2.3"
+},
+{
+"name": "bonnie++",
+"version": "1.98"
+},
+{
+"name": "brotli",
+"version": "1.0.6"
+},
+{
+"name": "busybox-dp",
+"version": "11.1.8.1"
+},
+{
+"name": "bzip2",
+"version": "1.0.6"
+},
+{
+"name": "bzip2-libs",
+"version": "1.0.6"
+},
+{
+"name": "c-ares",
+"version": "1.13.0"
+},
+{
+"name": "CADP_for_C",
+"version": "8.14.1.001"
+},
+{
+"name": "chicken",
+"version": "3.0.0"
+},
+{
+"name": "chkconfig",
+"version": "1.13"
+},
+{
+"name": "cjose",
+"version": "0.6.1"
+},
+{
+"name": "cjson",
+"version": "1"
+},
+{
+"name": "coreutils",
+"version": "8.3"
+},
+{
+"name": "coreutils-common",
+"version": "8.3"
+},
+{
+"name": "corosync",
+"version": "3.0.3"
+},
+{
+"name": "corosynclib",
+"version": "3.0.3"
+},
+{
+"name": "cpio",
+"version": "2.12"
+},
+{
+"name": "cpp",
+"version": "7.3.0"
+},
+{
+"name": "cpp",
+"version": "8.3.1"
+},
+{
+"name": "cracklib",
+"version": "2.9.6"
+},
+{
+"name": "cracklib-dicts",
+"version": "2.9.6"
+},
+{
+"name": "crontabs",
+"version": "1.11"
+},
+{
+"name": "crypto-policies",
+"version": "20200713"
+},
+{
+"name": "crypto-policies-scripts",
+"version": "20200713"
+},
+{
+"name": "CUnit",
+"version": "2.1.3"
+},
+{
+"name": "curl-minimal",
+"version": "7.61.1"
+},
+{
+"name": "dejavu-fonts-common",
+"version": "2.35"
+},
+{
+"name": "dejavu-sans-fonts",
+"version": "2.35"
+},
+{
+"name": "device-mapper",
+"version": "1.02.171"
+},
+{
+"name": "device-mapper-libs",
+"version": "1.02.171"
+},
+{
+"name": "device-nodes",
+"version": "8.0.0"
+},
+{
+"name": "dhcp-client",
+"version": "4.3.6"
+},
+{
+"name": "dhcp-common",
+"version": "4.3.6"
+},
+{
+"name": "dhcp-devel",
+"version": "4.3.6"
+},
+{
+"name": "dhcp-libs",
+"version": "4.3.6"
+},
+{
+"name": "dhcp-server",
+"version": "4.3.6"
+},
+{
+"name": "diffutils",
+"version": "3.6"
+},
+{
+"name": "dmidecode",
+"version": "3.2"
+},
+{
+"name": "dosfstools",
+"version": "4.1"
+},
+{
+"name": "dpdk",
+"version": "20.11.2"
+},
+{
+"name": "dpdk-vm",
+"version": "22.11.5"
+},
+{
+"name": "dpdk_2211",
+"version": "22.11.1"
+},
+{
+"name": "dpdk_7500_800g",
+"version": "20.11.1"
+},
+{
+"name": "dpdk_7500_dpc",
+"version": "20.11.1"
+},
+{
+"name": "dracut",
+"version": "49"
+},
+{
+"name": "dracut-network",
+"version": "49"
+},
+{
+"name": "dracut-squash",
+"version": "49"
+},
+{
+"name": "e2fsprogs",
+"version": "1.45.6"
+},
+{
+"name": "e2fsprogs-libs",
+"version": "1.45.6"
+},
+{
+"name": "efitools",
+"version": "1.9.2"
+},
+{
+"name": "efivar",
+"version": "37"
+},
+{
+"name": "efivar-libs",
+"version": "37"
+},
+{
+"name": "elfutils-default-yama-scope",
+"version": "0.18"
+},
+{
+"name": "elfutils-libelf",
+"version": "0.18"
+},
+{
+"name": "elfutils-libs",
+"version": "0.18"
+},
+{
+"name": "envoy-proxy",
+"version": "v2"
+},
+{
+"name": "ethtool",
+"version": "5"
+},
+{
+"name": "eventlog",
+"version": "0.2.12"
+},
+{
+"name": "expat",
+"version": "2.2.5"
+},
+{
+"name": "fastlz",
+"version": "0.1.0"
+},
+{
+"name": "file",
+"version": "5.33"
+},
+{
+"name": "file-libs",
+"version": "5.33"
+},
+{
+"name": "filesystem",
+"version": "3.8"
+},
+{
+"name": "findutils",
+"version": "4.6.0"
+},
+{
+"name": "fipscheck",
+"version": "1.5.0"
+},
+{
+"name": "fipscheck-lib",
+"version": "1.5.0"
+},
+{
+"name": "flashrom",
+"version": "1.2"
+},
+{
+"name": "flatcc",
+"version": "0.6.1"
+},
+{
+"name": "fontconfig",
+"version": "2.13.1"
+},
+{
+"name": "fontpackages-filesystem",
+"version": "1.44"
+},
+{
+"name": "fping",
+"version": "4.2"
+},
+{
+"name": "freetype",
+"version": "2.9.1"
+},
+{
+"name": "frr",
+"version": "8.0_dpd"
+},
+{
+"name": "fuse",
+"version": "2.9.7"
+},
+{
+"name": "fuse-common",
+"version": "3.2.1"
+},
+{
+"name": "fuse-libs",
+"version": "2.9.7"
+},
+{
+"name": "gawk",
+"version": "4.2.1"
+},
+{
+"name": "gc",
+"version": "7.6.4"
+},
+{
+"name": "gdb",
+"version": "8.2"
+},
+{
+"name": "gdb-headless",
+"version": "8.2"
+},
+{
+"name": "gdbm",
+"version": "1.18"
+},
+{
+"name": "gdbm-libs",
+"version": "1.18"
+},
+{
+"name": "gdisk",
+"version": "1.0.3"
+},
+{
+"name": "glib2",
+"version": "2.56.4"
+},
+{
+"name": "glibc",
+"version": "2.27"
+},
+{
+"name": "glibc",
+"version": "2.28"
+},
+{
+"name": "glibc-common",
+"version": "2.27"
+},
+{
+"name": "glibc-common",
+"version": "2.28"
+},
+{
+"name": "glibc-langpack-en",
+"version": "2.28"
+},
+{
+"name": "gmp",
+"version": "6.1.2"
+},
+{
+"name": "gnupg2",
+"version": "2.2.20"
+},
+{
+"name": "gnutls",
+"version": "3.6.16"
+},
+{
+"name": "google-api-python-client",
+"version": "1.12.8"
+},
+{
+"name": "google-auth",
+"version": "1.26.1"
+},
+{
+"name": "google-auth-httplib2",
+"version": "0.0.4"
+},
+{
+"name": "google-cloud-core",
+"version": "1.6.0"
+},
+{
+"name": "google-cloud-monitoring",
+"version": "2.0.0"
+},
+{
+"name": "google-cloud-storage",
+"version": "1.36.0"
+},
+{
+"name": "googleapis-common-protos",
+"version": "1.52.0"
+},
+{
+"name": "gperftools-devel",
+"version": "2.4"
+},
+{
+"name": "gperftools-libs",
+"version": "2.4"
+},
+{
+"name": "gpgme",
+"version": "1.13.1"
+},
+{
+"name": "grep",
+"version": "3.1"
+},
+{
+"name": "grpc",
+"version": "v1.30.0"
+},
+{
+"name": "grub",
+"version": "6.0.97"
+},
+{
+"name": "grub",
+"version": "7.0.97"
+},
+{
+"name": "grub-cfg",
+"version": "11.1.8.1"
+},
+{
+"name": "grub2-efi-aa64",
+"version": "2.02"
+},
+{
+"name": "grub2-efi-x64",
+"version": "2.02"
+},
+{
+"name": "grub2-noraid-efi-x64",
+"version": "2.02"
+},
+{
+"name": "gsoap",
+"version": "2.8.6"
+},
+{
+"name": "guile",
+"version": "2.0.14"
+},
+{
+"name": "gzip",
+"version": "1.9"
+},
+{
+"name": "hiredis",
+"version": "1.0.2"
+},
+{
+"name": "hostname",
+"version": "3.2"
+},
+{
+"name": "httpd",
+"version": "2.4.37"
+},
+{
+"name": "httpd-filesystem",
+"version": "2.4.37"
+},
+{
+"name": "httpd-tools",
+"version": "2.4.37"
+},
+{
+"name": "hwdata",
+"version": "0.314"
+},
+{
+"name": "hyperscan",
+"version": "4.2.0"
+},
+{
+"name": "hyperscan5",
+"version": "5.3.0"
+},
+{
+"name": "i2c-tools",
+"version": "4.3"
+},
+{
+"name": "ima-evm-utils",
+"version": "1.1"
+},
+{
+"name": "info",
+"version": "6.5"
+},
+{
+"name": "initscripts",
+"version": "8.45.17"
+},
+{
+"name": "initscripts-utils",
+"version": "8.45.17"
+},
+{
+"name": "insydeh2offt_x86_linux64",
+"version": "200.01.00.02"
+},
+{
+"name": "insydeh2offt_x86_linux64",
+"version": "200.02.00.06"
+},
+{
+"name": "intel-ipsec-mb",
+"version": "1.3.0"
+},
+{
+"name": "intel-ipsec-mb-devel",
+"version": "1.3.0"
+},
+{
+"name": "intel-nvm",
+"version": "1"
+},
+{
+"name": "Intel-Qat",
+"version": "1.1.1a"
+},
+{
+"name": "ipcalc",
+"version": "0.2.4"
+},
+{
+"name": "iproute",
+"version": "5.3.0"
+},
+{
+"name": "iptables",
+"version": "1.4.21"
+},
+{
+"name": "iptables",
+"version": "1.8.4"
+},
+{
+"name": "iptables-libs",
+"version": "1.8.4"
+},
+{
+"name": "iptables-utils",
+"version": "1.4.21"
+},
+{
+"name": "iptables-utils",
+"version": "1.8.4"
+},
+{
+"name": "iputils",
+"version": "20180629"
+},
+{
+"name": "iputils-dp",
+"version": "20180629"
+},
+{
+"name": "irqbalance",
+"version": "1.4.0"
+},
+{
+"name": "ivykis",
+"version": "0.42.4"
+},
+{
+"name": "jansson",
+"version": "2.11"
+},
+{
+"name": "json-c",
+"version": "0.13.1"
+},
+{
+"name": "kernel-core",
+"version": "4.18.0"
+},
+{
+"name": "kernel-kdump-kdump",
+"version": "5.14.0"
+},
+{
+"name": "kernel-modules",
+"version": "4.18.0"
+},
+{
+"name": "kernel-modules-extra",
+"version": "4.18.0"
+},
+{
+"name": "kernel-octeon2-dp",
+"version": "3.10.87"
+},
+{
+"name": "kernel-octeon2-lfp",
+"version": "3.10.87"
+},
+{
+"name": "kernel-octeon2-mp",
+"version": "3.10.87"
+},
+{
+"name": "kexec-tools",
+"version": "2.0.20"
+},
+{
+"name": "keyutils",
+"version": "1.5.10"
+},
+{
+"name": "keyutils-libs",
+"version": "1.5.10"
+},
+{
+"name": "kmod",
+"version": "25"
+},
+{
+"name": "kmod-libs",
+"version": "25"
+},
+{
+"name": "krb5-libs",
+"version": "1.18.2"
+},
+{
+"name": "krb5-workstation",
+"version": "1.18.2"
+},
+{
+"name": "lcms2",
+"version": "2.9"
+},
+{
+"name": "less",
+"version": "530"
+},
+{
+"name": "leveldb",
+"version": "1.22"
+},
+{
+"name": "libacl",
+"version": "2.2.53"
+},
+{
+"name": "libamdsecrng",
+"version": "3.1.0"
+},
+{
+"name": "libamqp",
+"version": "1.0.0"
+},
+{
+"name": "libarchive",
+"version": "3.3.2"
+},
+{
+"name": "libassuan",
+"version": "2.5.1"
+},
+{
+"name": "libatomic_ops",
+"version": "7.6.2"
+},
+{
+"name": "libattr",
+"version": "2.4.48"
+},
+{
+"name": "libbabeltrace",
+"version": "1.5.4"
+},
+{
+"name": "libblkid",
+"version": "2.32.1"
+},
+{
+"name": "libbpf",
+"version": "0.2.0"
+},
+{
+"name": "libbson",
+"version": "1.17.6"
+},
+{
+"name": "libcap",
+"version": "2.48"
+},
+{
+"name": "libcap-ng",
+"version": "0.7.9"
+},
+{
+"name": "libcom_err",
+"version": "1.45.6"
+},
+{
+"name": "libcurl-minimal",
+"version": "7.61.1"
+},
+{
+"name": "libdb",
+"version": "5.3.28"
+},
+{
+"name": "libdb-utils",
+"version": "5.3.28"
+},
+{
+"name": "libdrng",
+"version": "1.0.4"
+},
+{
+"name": "libedit",
+"version": "3.1"
+},
+{
+"name": "libedit1",
+"version": "2.11"
+},
+{
+"name": "libev",
+"version": "4.24"
+},
+{
+"name": "libevent",
+"version": "2.1.8"
+},
+{
+"name": "libfdisk",
+"version": "2.32.1"
+},
+{
+"name": "libffi",
+"version": "3.1"
+},
+{
+"name": "libftdi",
+"version": "1.4"
+},
+{
+"name": "libgcc",
+"version": "7.3.0"
+},
+{
+"name": "libgcc",
+"version": "8.3.1"
+},
+{
+"name": "libgcrypt",
+"version": "1.8.5"
+},
+{
+"name": "libgomp",
+"version": "8.3.1"
+},
+{
+"name": "libgpg-error",
+"version": "1.31"
+},
+{
+"name": "libi2c",
+"version": "4.3"
+},
+{
+"name": "libibverbs",
+"version": "29"
+},
+{
+"name": "libicu",
+"version": "60.3"
+},
+{
+"name": "libidn",
+"version": "1.34"
+},
+{
+"name": "libidn2",
+"version": "2.2.0"
+},
+{
+"name": "libipt",
+"version": "1.6.1"
+},
+{
+"name": "libjpeg-turbo",
+"version": "1.5.3"
+},
+{
+"name": "libkadm5",
+"version": "1.18.2"
+},
+{
+"name": "libknet1",
+"version": "1.16"
+},
+{
+"name": "libknet1-crypto-nss-plugin",
+"version": "1.16"
+},
+{
+"name": "libksba",
+"version": "1.3.5"
+},
+{
+"name": "libldb",
+"version": "2.3.0"
+},
+{
+"name": "liblog4shib2",
+"version": "2.0.0"
+},
+{
+"name": "libmaxminddb",
+"version": "1.2.0"
+},
+{
+"name": "libmcrypt",
+"version": "2.5.8"
+},
+{
+"name": "libmetalink",
+"version": "0.1.3"
+},
+{
+"name": "libmnl",
+"version": "1.0.4"
+},
+{
+"name": "libmongocrypt",
+"version": "1.2.0"
+},
+{
+"name": "libmount",
+"version": "2.32.1"
+},
+{
+"name": "libmpc",
+"version": "1.0.2"
+},
+{
+"name": "libnet",
+"version": "1.1.6"
+},
+{
+"name": "libnetfilter_conntrack",
+"version": "1.0.6"
+},
+{
+"name": "libnfnetlink",
+"version": "1.0.1"
+},
+{
+"name": "libnfsidmap",
+"version": "2.3.3"
+},
+{
+"name": "libnftnl",
+"version": "1.1.5"
+},
+{
+"name": "libnghttp2",
+"version": "1.33.0"
+},
+{
+"name": "libnl3",
+"version": "3.5.0"
+},
+{
+"name": "libnsl",
+"version": "2.28"
+},
+{
+"name": "libnsl2",
+"version": "1.2.0"
+},
+{
+"name": "libpcap",
+"version": "1.9.1"
+},
+{
+"name": "libpkgconf",
+"version": "1.4.2"
+},
+{
+"name": "libpng",
+"version": "1.6.34"
+},
+{
+"name": "libpsl",
+"version": "0.20.2"
+},
+{
+"name": "libpwquality",
+"version": "1.4.0"
+},
+{
+"name": "libqb",
+"version": "1.0.3"
+},
+{
+"name": "libradius",
+"version": "1"
+},
+{
+"name": "libsaml12",
+"version": "3.2.0"
+},
+{
+"name": "libseccomp",
+"version": "2.4.3"
+},
+{
+"name": "libsecret",
+"version": "0.18.6"
+},
+{
+"name": "libselinux",
+"version": "2.9"
+},
+{
+"name": "libselinux-utils",
+"version": "2.9"
+},
+{
+"name": "libsemanage",
+"version": "2.9"
+},
+{
+"name": "libsepol",
+"version": "2.9"
+},
+{
+"name": "libsigsegv",
+"version": "2.11"
+},
+{
+"name": "libsmartcols",
+"version": "2.32.1"
+},
+{
+"name": "libsmbclient",
+"version": "4.14.5"
+},
+{
+"name": "libss",
+"version": "1.45.6"
+},
+{
+"name": "libstdc++",
+"version": "7.3.0"
+},
+{
+"name": "libstdc++",
+"version": "8.3.1"
+},
+{
+"name": "libsysfs",
+"version": "2.1.0"
+},
+{
+"name": "libtalloc",
+"version": "2.3.2"
+},
+{
+"name": "libtasn1",
+"version": "4.13"
+},
+{
+"name": "libtdb",
+"version": "1.4.3"
+},
+{
+"name": "libtecla",
+"version": "1.6.1"
+},
+{
+"name": "libtevent",
+"version": "0.10.2"
+},
+{
+"name": "libtiff",
+"version": "4.0.9"
+},
+{
+"name": "libtirpc",
+"version": "1.1.4"
+},
+{
+"name": "libtool-ltdl",
+"version": "2.4.6"
+},
+{
+"name": "libunistring",
+"version": "0.9.9"
+},
+{
+"name": "libunwind",
+"version": "1.3.1"
+},
+{
+"name": "libusbx",
+"version": "1.0.23"
+},
+{
+"name": "libuser",
+"version": "0.62"
+},
+{
+"name": "libuuid",
+"version": "2.32.1"
+},
+{
+"name": "libverto",
+"version": "0.3.0"
+},
+{
+"name": "libvolume_id",
+"version": "127"
+},
+{
+"name": "libwbclient",
+"version": "4.14.5"
+},
+{
+"name": "libwsman1",
+"version": "2.6.5"
+},
+{
+"name": "libxcrypt",
+"version": "4.1.1"
+},
+{
+"name": "libxerces-c-3_2",
+"version": "3.2.3"
+},
+{
+"name": "libxml-security-c20",
+"version": "2.0.2"
+},
+{
+"name": "libxml2",
+"version": "2.9.7"
+},
+{
+"name": "libxmltooling10",
+"version": "3.2.0"
+},
+{
+"name": "libxslt",
+"version": "1.1.32"
+},
+{
+"name": "libyaml",
+"version": "0.1.7"
+},
+{
+"name": "libyang2",
+"version": "2.0.7"
+},
+{
+"name": "libzip",
+"version": "1.6.1"
+},
+{
+"name": "libzstd",
+"version": "1.4.4"
+},
+{
+"name": "linux-firmware",
+"version": "20200619"
+},
+{
+"name": "lm_sensors",
+"version": "3.4.0"
+},
+{
+"name": "lm_sensors-libs",
+"version": "3.4.0"
+},
+{
+"name": "lmdb-libs",
+"version": "0.9.24"
+},
+{
+"name": "lockdev",
+"version": "1.0.4"
+},
+{
+"name": "logrotate",
+"version": "3.14.0"
+},
+{
+"name": "lrzsz",
+"version": "0.12.20"
+},
+{
+"name": "lsof",
+"version": "4.93.2"
+},
+{
+"name": "lua",
+"version": "5.3.4"
+},
+{
+"name": "lua-libs",
+"version": "5.3.4"
+},
+{
+"name": "lz4",
+"version": "1.8.3"
+},
+{
+"name": "lz4-libs",
+"version": "1.8.3"
+},
+{
+"name": "lzo",
+"version": "2.08"
+},
+{
+"name": "mailx",
+"version": "12.5"
+},
+{
+"name": "make",
+"version": "4.2.1"
+},
+{
+"name": "MAKEDEV",
+"version": "3.23"
+},
+{
+"name": "mariadb-connector-c",
+"version": "3.1.11"
+},
+{
+"name": "mariadb-connector-c-config",
+"version": "3.1.11"
+},
+{
+"name": "mcelog",
+"version": "194"
+},
+{
+"name": "mdadm",
+"version": "4.1"
+},
+{
+"name": "mingetty",
+"version": "1.07"
+},
+{
+"name": "minicom",
+"version": "2.7.1"
+},
+{
+"name": "mlnx-ofa_kernel-modules",
+"version": "4.9"
+},
+{
+"name": "mmc-utils",
+"version": "1"
+},
+{
+"name": "modules-intel-mp",
+"version": "11.1.8.1"
+},
+{
+"name": "modules-intel-mp-vm",
+"version": "11.1.8.1"
+},
+{
+"name": "mongo",
+"version": "1"
+},
+{
+"name": "mongo-c-driver-libs",
+"version": "1.17.6"
+},
+{
+"name": "mongodb",
+"version": "3.6.19"
+},
+{
+"name": "mpfr",
+"version": "3.1.6"
+},
+{
+"name": "ms2frr",
+"version": "11.0.828"
+},
+{
+"name": "mtdutils",
+"version": "1.0.0"
+},
+{
+"name": "ncurses",
+"version": "6.1"
+},
+{
+"name": "ncurses-base",
+"version": "6.1"
+},
+{
+"name": "ncurses-libs",
+"version": "6.1"
+},
+{
+"name": "ncurses-term",
+"version": "6.1"
+},
+{
+"name": "net-snmp",
+"version": "5.8"
+},
+{
+"name": "net-snmp-agent-libs",
+"version": "5.8"
+},
+{
+"name": "net-snmp-libs",
+"version": "5.8"
+},
+{
+"name": "net-snmp-utils",
+"version": "5.8"
+},
+{
+"name": "net-tools",
+"version": "2"
+},
+{
+"name": "nettle",
+"version": "3.4.1"
+},
+{
+"name": "nfs-utils",
+"version": "2.3.3"
+},
+{
+"name": "nginx-bin",
+"version": "1.20.1"
+},
+{
+"name": "nginx-filesystem",
+"version": "1.20.1"
+},
+{
+"name": "npth",
+"version": "1.5"
+},
+{
+"name": "nspr",
+"version": "4.35.0"
+},
+{
+"name": "nss",
+"version": "3.90.0"
+},
+{
+"name": "nss-pam-ldapd",
+"version": "0.9.9"
+},
+{
+"name": "nss-softokn",
+"version": "3.90.0"
+},
+{
+"name": "nss-softokn-freebl",
+"version": "3.90.0"
+},
+{
+"name": "nss-sysinit",
+"version": "3.90.0"
+},
+{
+"name": "nss-tools",
+"version": "3.90.0"
+},
+{
+"name": "nss-util",
+"version": "3.90.0"
+},
+{
+"name": "nss_nis",
+"version": "3"
+},
+{
+"name": "ntfs-3g",
+"version": "2017.3.23"
+},
+{
+"name": "ntfsprogs",
+"version": "2017.3.23"
+},
+{
+"name": "ntp",
+"version": "4.2.8p15"
+},
+{
+"name": "ntp-dp",
+"version": "4.2.8p15"
+},
+{
+"name": "ntpdate",
+"version": "4.2.8p15"
+},
+{
+"name": "ntpstat",
+"version": "0.5"
+},
+{
+"name": "numactl-libs",
+"version": "2.0.12"
+},
+{
+"name": "oniguruma5php",
+"version": "6.9.7.1"
+},
+{
+"name": "open-vm-tools",
+"version": "12.1.0"
+},
+{
+"name": "openjpeg2",
+"version": "2.4.0"
+},
+{
+"name": "openldap",
+"version": "2.4.46"
+},
+{
+"name": "openldap-clients",
+"version": "2.4.46"
+},
+{
+"name": "opensaml-schemas",
+"version": "3.2.0"
+},
+{
+"name": "openssh",
+"version": "8.0p1"
+},
+{
+"name": "openssh-clients",
+"version": "8.0p1"
+},
+{
+"name": "openssh-server",
+"version": "8.0p1"
+},
+{
+"name": "openssl",
+"version": "1.1.1g"
+},
+{
+"name": "openssl-dp",
+"version": "1.1.1g"
+},
+{
+"name": "openssl-dp-libs",
+"version": "1.1.1g"
+},
+{
+"name": "openssl-dpt13",
+"version": "1.1.1a"
+},
+{
+"name": "openssl-libs",
+"version": "1.1.1g"
+},
+{
+"name": "openwsman-client",
+"version": "2.6.5"
+},
+{
+"name": "openwsman-server",
+"version": "2.6.5"
+},
+{
+"name": "oprofile",
+"version": "0.9.9"
+},
+{
+"name": "p11-kit",
+"version": "0.23.22"
+},
+{
+"name": "p11-kit-trust",
+"version": "0.23.22"
+},
+{
+"name": "pam",
+"version": "1.3.1"
+},
+{
+"name": "pam_krb5",
+"version": "2.4.8"
+},
+{
+"name": "panos-release",
+"version": "8.3"
+},
+{
+"name": "parted",
+"version": "3.2"
+},
+{
+"name": "passwd",
+"version": "0.8"
+},
+{
+"name": "pciutils",
+"version": "3.6.4"
+},
+{
+"name": "pciutils-libs",
+"version": "3.6.4"
+},
+{
+"name": "pcre",
+"version": "8.42"
+},
+{
+"name": "pcre2",
+"version": "10.32"
+},
+{
+"name": "perf",
+"version": "4.18.0"
+},
+{
+"name": "phantomjs",
+"version": "1.9.8"
+},
+{
+"name": "php",
+"version": "7.4.33"
+},
+{
+"name": "php-bcmath",
+"version": "7.4.33"
+},
+{
+"name": "php-cli",
+"version": "7.4.33"
+},
+{
+"name": "php-common",
+"version": "7.4.33"
+},
+{
+"name": "php-embedded",
+"version": "7.4.33"
+},
+{
+"name": "php-fpm",
+"version": "7.4.33"
+},
+{
+"name": "php-gmp",
+"version": "7.4.33"
+},
+{
+"name": "php-json",
+"version": "7.4.33"
+},
+{
+"name": "php-mbstring",
+"version": "7.4.33"
+},
+{
+"name": "php-mysqlnd",
+"version": "7.4.33"
+},
+{
+"name": "php-pdo",
+"version": "7.4.33"
+},
+{
+"name": "php-pecl-mongodb",
+"version": "1.9.1"
+},
+{
+"name": "php-xml",
+"version": "7.4.33"
+},
+{
+"name": "pinentry",
+"version": "1.1.0"
+},
+{
+"name": "pkgconf",
+"version": "1.4.2"
+},
+{
+"name": "pkgconf-m4",
+"version": "1.4.2"
+},
+{
+"name": "pkgconf-pkg-config",
+"version": "1.4.2"
+},
+{
+"name": "platform-python",
+"version": "3.6.8"
+},
+{
+"name": "platform-python-pip",
+"version": "9.0.3"
+},
+{
+"name": "platform-python-setuptools",
+"version": "39.2.0"
+},
+{
+"name": "policycoreutils",
+"version": "2.9"
+},
+{
+"name": "popt",
+"version": "1.16"
+},
+{
+"name": "pprof",
+"version": "2.4"
+},
+{
+"name": "procps-ng",
+"version": "3.3.15"
+},
+{
+"name": "protobuf",
+"version": "3.5.0"
+},
+{
+"name": "psmisc",
+"version": "23.1"
+},
+{
+"name": "pth",
+"version": "2.0.7"
+},
+{
+"name": "publicsuffix-list-dafsa",
+"version": "20180723"
+},
+{
+"name": "pybloomfiltermmap3",
+"version": "0.4.15"
+},
+{
+"name": "pycrypto",
+"version": "2.6.1"
+},
+{
+"name": "python-collectd-cloudwatch",
+"version": "0.0.2"
+},
+{
+"name": "python-libevent",
+"version": "0.9.2"
+},
+{
+"name": "python3-asn1crypto",
+"version": "0.24.0"
+},
+{
+"name": "python3-audit",
+"version": "3"
+},
+{
+"name": "python3-bind",
+"version": "9.11.36"
+},
+{
+"name": "python3-bloom",
+"version": "0.10.0"
+},
+{
+"name": "python3-boto3",
+"version": "1.15.15"
+},
+{
+"name": "python3-botocore",
+"version": "1.18.15"
+},
+{
+"name": "python3-bson",
+"version": "3.7.0"
+},
+{
+"name": "python3-catkin_pkg",
+"version": "0.4.23"
+},
+{
+"name": "python3-cffi",
+"version": "1.11.5"
+},
+{
+"name": "python3-chardet",
+"version": "3.0.4"
+},
+{
+"name": "python3-cryptography",
+"version": "3.2.1"
+},
+{
+"name": "python3-dateutil",
+"version": "2.6.1"
+},
+{
+"name": "python3-distro",
+"version": "1.4.0"
+},
+{
+"name": "python3-docutils",
+"version": "0.14"
+},
+{
+"name": "python3-empy",
+"version": "3.3.4"
+},
+{
+"name": "python3-fasteners",
+"version": "0.14.1"
+},
+{
+"name": "python3-httplib2",
+"version": "0.10.3"
+},
+{
+"name": "python3-idna",
+"version": "2.5"
+},
+{
+"name": "python3-jmespath",
+"version": "0.9.0"
+},
+{
+"name": "python3-libs",
+"version": "3.6.8"
+},
+{
+"name": "python3-libxml2",
+"version": "2.9.7"
+},
+{
+"name": "python3-m2crypto",
+"version": "0.35.2"
+},
+{
+"name": "python3-oauth2client",
+"version": "4.1.3"
+},
+{
+"name": "python3-pexpect",
+"version": "4.3.1"
+},
+{
+"name": "python3-pillow",
+"version": "5.1.1"
+},
+{
+"name": "python3-pip",
+"version": "9.0.3"
+},
+{
+"name": "python3-pip-wheel",
+"version": "9.0.3"
+},
+{
+"name": "python3-ply",
+"version": "3.9"
+},
+{
+"name": "python3-psutil",
+"version": "5.6.4"
+},
+{
+"name": "python3-ptyprocess",
+"version": "0.5.2"
+},
+{
+"name": "python3-pyasn1",
+"version": "0.3.7"
+},
+{
+"name": "python3-pyasn1-modules",
+"version": "0.3.7"
+},
+{
+"name": "python3-pycparser",
+"version": "2.14"
+},
+{
+"name": "python3-pycurl",
+"version": "7.43.0.2"
+},
+{
+"name": "python3-pymongo",
+"version": "3.7.0"
+},
+{
+"name": "python3-pyOpenSSL",
+"version": "18.0.0"
+},
+{
+"name": "python3-pyparsing",
+"version": "2.1.10"
+},
+{
+"name": "python3-pypdf2",
+"version": "1.26.0"
+},
+{
+"name": "python3-pytz",
+"version": "2019.3"
+},
+{
+"name": "python3-pyyaml",
+"version": "3.12"
+},
+{
+"name": "python3-reportlab",
+"version": "3.4.0"
+},
+{
+"name": "python3-requests",
+"version": "2.20.0"
+},
+{
+"name": "python3-rosdep",
+"version": "0.19.0"
+},
+{
+"name": "python3-rosdistro",
+"version": "0.8.3"
+},
+{
+"name": "python3-rospkg",
+"version": "1.2.8"
+},
+{
+"name": "python3-rpm",
+"version": "4.14.3"
+},
+{
+"name": "python3-s3transfer",
+"version": "0.3.4"
+},
+{
+"name": "python3-setuptools",
+"version": "39.2.0"
+},
+{
+"name": "python3-setuptools-wheel",
+"version": "39.2.0"
+},
+{
+"name": "python3-six",
+"version": "1.11.0"
+},
+{
+"name": "python3-uritemplate",
+"version": "3.0.0"
+},
+{
+"name": "python3-urlgrabber",
+"version": "4.1.0"
+},
+{
+"name": "python3-urllib3",
+"version": "1.24.2"
+},
+{
+"name": "python3-vcstool",
+"version": "0.2.15"
+},
+{
+"name": "python3-vcstools",
+"version": "0.1.42"
+},
+{
+"name": "python36",
+"version": "3.6.8"
+},
+{
+"name": "quota",
+"version": "4.04"
+},
+{
+"name": "quota-nls",
+"version": "4.04"
+},
+{
+"name": "rcs",
+"version": "5.10.0"
+},
+{
+"name": "rdma-core",
+"version": "29"
+},
+{
+"name": "readline",
+"version": "7"
+},
+{
+"name": "redis",
+"version": "6.2.6"
+},
+{
+"name": "rootfiles",
+"version": "8.1"
+},
+{
+"name": "rpcbind",
+"version": "1.2.5"
+},
+{
+"name": "rpm",
+"version": "4.14.3"
+},
+{
+"name": "rpm-build-libs",
+"version": "4.14.3"
+},
+{
+"name": "rpm-libs",
+"version": "4.14.3"
+},
+{
+"name": "rpm-plugin-selinux",
+"version": "4.14.3"
+},
+{
+"name": "rsa",
+"version": "4.8"
+},
+{
+"name": "rsync",
+"version": "3.1.3"
+},
+{
+"name": "samba-client-libs",
+"version": "4.14.5"
+},
+{
+"name": "samba-common",
+"version": "4.14.5"
+},
+{
+"name": "samba-common-libs",
+"version": "4.14.5"
+},
+{
+"name": "sbsigntools",
+"version": "0.9.2"
+},
+{
+"name": "scrub",
+"version": "2.5.2"
+},
+{
+"name": "sed",
+"version": "4.5"
+},
+{
+"name": "selinux-policy",
+"version": "3.14.3"
+},
+{
+"name": "selinux-policy-targeted",
+"version": "3.14.3"
+},
+{
+"name": "setup",
+"version": "2.12.2"
+},
+{
+"name": "shadow-utils",
+"version": "4.6"
+},
+{
+"name": "shim-x64",
+"version": "15"
+},
+{
+"name": "smartmontools",
+"version": "7.1"
+},
+{
+"name": "snappy",
+"version": "1.1.8"
+},
+{
+"name": "sqlite",
+"version": "3.26.0"
+},
+{
+"name": "sqlite-libs",
+"version": "3.26.0"
+},
+{
+"name": "squashfs-tools",
+"version": "4.3"
+},
+{
+"name": "sscep",
+"version": "0.9.0"
+},
+{
+"name": "sshpass",
+"version": "1.06"
+},
+{
+"name": "sysfsutils",
+"version": "2.1.0"
+},
+{
+"name": "syslinux",
+"version": "6.04"
+},
+{
+"name": "syslog-ng",
+"version": "3.29.1"
+},
+{
+"name": "sysstat",
+"version": "11.7.3"
+},
+{
+"name": "SysVinit",
+"version": "2.86"
+},
+{
+"name": "tacacs",
+"version": "1"
+},
+{
+"name": "tar",
+"version": "1.3"
+},
+{
+"name": "tcp_wrappers",
+"version": "7.6"
+},
+{
+"name": "tcp_wrappers-libs",
+"version": "7.6"
+},
+{
+"name": "tcpdump",
+"version": "4.9.3"
+},
+{
+"name": "td-agent-bit",
+"version": "1.8.110"
+},
+{
+"name": "tecla",
+"version": "1.6.3"
+},
+{
+"name": "telnet",
+"version": "0.17"
+},
+{
+"name": "telnet-server",
+"version": "0.17"
+},
+{
+"name": "tftp",
+"version": "5.2"
+},
+{
+"name": "tftp-server",
+"version": "5.2"
+},
+{
+"name": "timedatex",
+"version": "0.5"
+},
+{
+"name": "tpm2-tss",
+"version": "2.3.2"
+},
+{
+"name": "traceroute",
+"version": "2.1.0"
+},
+{
+"name": "tzdata",
+"version": "2023c"
+},
+{
+"name": "udev",
+"version": "127"
+},
+{
+"name": "unixODBC",
+"version": "2.3.7"
+},
+{
+"name": "ustr",
+"version": "1.0.4"
+},
+{
+"name": "util-linux",
+"version": "2.32.1"
+},
+{
+"name": "util-linux-dp",
+"version": "2.32.1"
+},
+{
+"name": "util-linux-user",
+"version": "2.32.1"
+},
+{
+"name": "vconfig",
+"version": "1.9"
+},
+{
+"name": "vectorscan",
+"version": "5.4.6"
+},
+{
+"name": "vim-minimal",
+"version": "8.0.1763"
+},
+{
+"name": "virt-what",
+"version": "1.18"
+},
+{
+"name": "vixie-cron",
+"version": "4.1"
+},
+{
+"name": "waofflinevmod",
+"version": "4.3.3.501"
+},
+{
+"name": "wget",
+"version": "1.19.5"
+},
+{
+"name": "which",
+"version": "2.21"
+},
+{
+"name": "wmi",
+"version": "1.3.13"
+},
+{
+"name": "wpaeapol",
+"version": "2.9"
+},
+{
+"name": "xdelta",
+"version": "3.1.0"
+},
+{
+"name": "xe-guest-utilities-latest",
+"version": "7.21.0"
+},
+{
+"name": "xinetd",
+"version": "2.3.15"
+},
+{
+"name": "xmlsec1",
+"version": "1.2.25"
+},
+{
+"name": "xmlsec1-openssl",
+"version": "1.2.25"
+},
+{
+"name": "xmltodict",
+"version": "0.12.0"
+},
+{
+"name": "xmltooling-schemas",
+"version": "3.2.0"
+},
+{
+"name": "xz",
+"version": "5.2.4"
+},
+{
+"name": "xz-libs",
+"version": "5.2.4"
+},
+{
+"name": "zlib",
+"version": "1.2.11"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "PAN-OS",
+"retrieved": "2026-11-08",
+"sha256": "e9982ade80dcf171ae3270fbaca2a6c2a2835cd2ab60335cfd833262f9b5924d",
+"supplier": "Palo Alto Networks",
+"url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-11-1-open-source-software-oss-listing.html",
+"version": "11.1"
+}

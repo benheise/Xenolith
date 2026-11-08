@@ -1,0 +1,1202 @@
+{
+"components": [
+{
+"name": "ajv",
+"version": ""
+},
+{
+"name": "Amazon AutoScaling Command Line Tool",
+"version": ""
+},
+{
+"name": "Amazon CloudWatch Command Line Tools",
+"version": ""
+},
+{
+"name": "angular",
+"version": ""
+},
+{
+"name": "angular-animate",
+"version": ""
+},
+{
+"name": "angular-drag-and-drop-lists",
+"version": ""
+},
+{
+"name": "angular-moment",
+"version": ""
+},
+{
+"name": "angular-recursion",
+"version": ""
+},
+{
+"name": "angular-resource",
+"version": ""
+},
+{
+"name": "angular-sanitize",
+"version": ""
+},
+{
+"name": "angular-sortable-view",
+"version": ""
+},
+{
+"name": "angular-touch",
+"version": ""
+},
+{
+"name": "angular-ui",
+"version": ""
+},
+{
+"name": "angular-ui-router",
+"version": ""
+},
+{
+"name": "angular-ui-router-tabs",
+"version": ""
+},
+{
+"name": "Apache Ant",
+"version": ""
+},
+{
+"name": "Apache Thrift",
+"version": ""
+},
+{
+"name": "Apache Tomcat 7.0",
+"version": ""
+},
+{
+"name": "apache-tomcat-apis",
+"version": ""
+},
+{
+"name": "AppSecInc. Community MSI Extensions",
+"version": ""
+},
+{
+"name": "argtable3",
+"version": ""
+},
+{
+"name": "atmel-mxt-ts-mod",
+"version": ""
+},
+{
+"name": "avahi-libs",
+"version": ""
+},
+{
+"name": "AWS CLI 2.2.29",
+"version": ""
+},
+{
+"name": "AWS CLI tools",
+"version": ""
+},
+{
+"name": "aws-cfn-bootstrap",
+"version": ""
+},
+{
+"name": "axios",
+"version": ""
+},
+{
+"name": "azure-arm-compute",
+"version": ""
+},
+{
+"name": "azure-arm-network",
+"version": ""
+},
+{
+"name": "azure-arm-resource",
+"version": ""
+},
+{
+"name": "babel-0.9.6",
+"version": ""
+},
+{
+"name": "babel-polyfill",
+"version": ""
+},
+{
+"name": "base-files",
+"version": ""
+},
+{
+"name": "base-passwd 3.5.26",
+"version": ""
+},
+{
+"name": "basic-auth",
+"version": ""
+},
+{
+"name": "binutils",
+"version": ""
+},
+{
+"name": "body-parser",
+"version": ""
+},
+{
+"name": "Boost",
+"version": ""
+},
+{
+"name": "bootchart2",
+"version": ""
+},
+{
+"name": "bootstrap",
+"version": ""
+},
+{
+"name": "Bower",
+"version": ""
+},
+{
+"name": "ca-certificates",
+"version": ""
+},
+{
+"name": "cairo",
+"version": ""
+},
+{
+"name": "Chai",
+"version": ""
+},
+{
+"name": "Chalk",
+"version": ""
+},
+{
+"name": "Chosen",
+"version": ""
+},
+{
+"name": "classpathx-jaf",
+"version": ""
+},
+{
+"name": "clone",
+"version": ""
+},
+{
+"name": "Cloud-Init-18.5",
+"version": ""
+},
+{
+"name": "CMPv2",
+"version": ""
+},
+{
+"name": "CodeMirror",
+"version": ""
+},
+{
+"name": "commander",
+"version": ""
+},
+{
+"name": "Commons IO",
+"version": ""
+},
+{
+"name": "compat-db",
+"version": ""
+},
+{
+"name": "concurrent-trees",
+"version": ""
+},
+{
+"name": "concurrent.futures",
+"version": ""
+},
+{
+"name": "config.guess",
+"version": ""
+},
+{
+"name": "ConsoleKit",
+"version": ""
+},
+{
+"name": "core-js",
+"version": ""
+},
+{
+"name": "crypto.js",
+"version": ""
+},
+{
+"name": "cryptographic",
+"version": ""
+},
+{
+"name": "cups-libs",
+"version": ""
+},
+{
+"name": "curl",
+"version": ""
+},
+{
+"name": "D3",
+"version": ""
+},
+{
+"name": "data",
+"version": ""
+},
+{
+"name": "dbus and dbus-glib",
+"version": ""
+},
+{
+"name": "device-mapper-persistent-data",
+"version": ""
+},
+{
+"name": "dfu-util",
+"version": ""
+},
+{
+"name": "diameter",
+"version": ""
+},
+{
+"name": "Docker.IO",
+"version": ""
+},
+{
+"name": "dom4j",
+"version": ""
+},
+{
+"name": "dosfstools",
+"version": ""
+},
+{
+"name": "DPDK",
+"version": ""
+},
+{
+"name": "DPDK kernel",
+"version": ""
+},
+{
+"name": "ec2-tools",
+"version": ""
+},
+{
+"name": "efivar-libs",
+"version": ""
+},
+{
+"name": "eggdbus",
+"version": ""
+},
+{
+"name": "Ethtool",
+"version": ""
+},
+{
+"name": "exabgp",
+"version": ""
+},
+{
+"name": "Expect",
+"version": ""
+},
+{
+"name": "express",
+"version": ""
+},
+{
+"name": "external-linaro-toolchain",
+"version": ""
+},
+{
+"name": "extract-text-webpack-plugin",
+"version": ""
+},
+{
+"name": "Flashrom",
+"version": "0.9.5.1"
+},
+{
+"name": "Font Awesome",
+"version": ""
+},
+{
+"name": "fontawesome-svg-core 1.2.25",
+"version": ""
+},
+{
+"name": "fontconfig",
+"version": ""
+},
+{
+"name": "fortuna algorithm",
+"version": ""
+},
+{
+"name": "free-solid-svg-icons 5.11.2",
+"version": ""
+},
+{
+"name": "FreeRTOS",
+"version": ""
+},
+{
+"name": "freetype2",
+"version": ""
+},
+{
+"name": "gamin",
+"version": ""
+},
+{
+"name": "GConf2",
+"version": ""
+},
+{
+"name": "gd-libgd",
+"version": ""
+},
+{
+"name": "girdList.js",
+"version": ""
+},
+{
+"name": "google-gson",
+"version": ""
+},
+{
+"name": "google_compute_engine_init",
+"version": ""
+},
+{
+"name": "googletest",
+"version": ""
+},
+{
+"name": "gperftools",
+"version": ""
+},
+{
+"name": "GRand Unified Bootloader",
+"version": ""
+},
+{
+"name": "grub2-efi",
+"version": ""
+},
+{
+"name": "grub2-efi-modules",
+"version": ""
+},
+{
+"name": "gson",
+"version": ""
+},
+{
+"name": "guava",
+"version": ""
+},
+{
+"name": "Guice",
+"version": ""
+},
+{
+"name": "http-parser",
+"version": ""
+},
+{
+"name": "http-status-codes",
+"version": ""
+},
+{
+"name": "Hypersonic SQL. This product includes",
+"version": ""
+},
+{
+"name": "i2c-tools",
+"version": ""
+},
+{
+"name": "icu",
+"version": ""
+},
+{
+"name": "Idapjs",
+"version": ""
+},
+{
+"name": "init-ifupdown",
+"version": ""
+},
+{
+"name": "initscripts",
+"version": ""
+},
+{
+"name": "Intel PCM",
+"version": ""
+},
+{
+"name": "Intel SSD Firmware Updater",
+"version": ""
+},
+{
+"name": "ipaddr.js",
+"version": ""
+},
+{
+"name": "IPMItool",
+"version": ""
+},
+{
+"name": "iptables",
+"version": ""
+},
+{
+"name": "IPwatchD",
+"version": ""
+},
+{
+"name": "ixgbevf Intel Gigabit Linux driver",
+"version": ""
+},
+{
+"name": "jakarta-commons-discovery",
+"version": ""
+},
+{
+"name": "java-xmlbuilder",
+"version": ""
+},
+{
+"name": "javax.inject",
+"version": ""
+},
+{
+"name": "jclouds",
+"version": ""
+},
+{
+"name": "JCraft Jsch",
+"version": ""
+},
+{
+"name": "Jetty",
+"version": ""
+},
+{
+"name": "Jetty 9.4.49",
+"version": ""
+},
+{
+"name": "jingja2-2.7.2",
+"version": ""
+},
+{
+"name": "Jitterentropy",
+"version": ""
+},
+{
+"name": "jitterentropy and jitterentropy-rngd",
+"version": ""
+},
+{
+"name": "JNA",
+"version": ""
+},
+{
+"name": "Joda-Time",
+"version": ""
+},
+{
+"name": "jq",
+"version": ""
+},
+{
+"name": "jQuery custom content scroller",
+"version": ""
+},
+{
+"name": "jquery-mousewheel",
+"version": ""
+},
+{
+"name": "JSON-C",
+"version": ""
+},
+{
+"name": "jsr250-api",
+"version": ""
+},
+{
+"name": "jsr311-api",
+"version": ""
+},
+{
+"name": "jwt-cpp",
+"version": ""
+},
+{
+"name": "jxrlib",
+"version": ""
+},
+{
+"name": "LAME",
+"version": ""
+},
+{
+"name": "LevelDB",
+"version": ""
+},
+{
+"name": "libbloom",
+"version": ""
+},
+{
+"name": "libcap-ng",
+"version": ""
+},
+{
+"name": "Libdrm",
+"version": ""
+},
+{
+"name": "libffi",
+"version": ""
+},
+{
+"name": "libftdi-0.20",
+"version": ""
+},
+{
+"name": "libftdispi",
+"version": ""
+},
+{
+"name": "libgraphqlparser",
+"version": ""
+},
+{
+"name": "libgssglue",
+"version": ""
+},
+{
+"name": "libhs",
+"version": ""
+},
+{
+"name": "libIDL",
+"version": ""
+},
+{
+"name": "libjs-jquery",
+"version": ""
+},
+{
+"name": "libjson",
+"version": ""
+},
+{
+"name": "libkmod2",
+"version": ""
+},
+{
+"name": "libmagic",
+"version": ""
+},
+{
+"name": "libnih",
+"version": ""
+},
+{
+"name": "libpam",
+"version": ""
+},
+{
+"name": "libpcap standalone",
+"version": ""
+},
+{
+"name": "libpciaccess",
+"version": ""
+},
+{
+"name": "libpng",
+"version": ""
+},
+{
+"name": "librdkafka",
+"version": ""
+},
+{
+"name": "libreadline-java",
+"version": ""
+},
+{
+"name": "libssh",
+"version": ""
+},
+{
+"name": "libssh2 1.9.0",
+"version": ""
+},
+{
+"name": "libtalloc",
+"version": ""
+},
+{
+"name": "libtasn1",
+"version": ""
+},
+{
+"name": "libtdb",
+"version": ""
+},
+{
+"name": "libtirpc",
+"version": ""
+},
+{
+"name": "libusb-0.1.12",
+"version": ""
+},
+{
+"name": "libusb1",
+"version": ""
+},
+{
+"name": "libutempter",
+"version": ""
+},
+{
+"name": "libwebp",
+"version": ""
+},
+{
+"name": "libxslt C",
+"version": ""
+},
+{
+"name": "libzip",
+"version": ""
+},
+{
+"name": "Logback",
+"version": ""
+},
+{
+"name": "LuaJIT",
+"version": ""
+},
+{
+"name": "LuaJIT FFI Reflection",
+"version": ""
+},
+{
+"name": "lxml-XML and HTML with Python",
+"version": ""
+},
+{
+"name": "lzo",
+"version": ""
+},
+{
+"name": "m4",
+"version": ""
+},
+{
+"name": "Markupsafe-0.11",
+"version": ""
+},
+{
+"name": "Material Design Icons",
+"version": ""
+},
+{
+"name": "Mellanox FreeBSD driver",
+"version": ""
+},
+{
+"name": "memtester",
+"version": ""
+},
+{
+"name": "method-override",
+"version": ""
+},
+{
+"name": "Microsoft-hyper-v",
+"version": ""
+},
+{
+"name": "mii-diag",
+"version": ""
+},
+{
+"name": "mod_security",
+"version": ""
+},
+{
+"name": "Modernizr",
+"version": ""
+},
+{
+"name": "mokutil",
+"version": ""
+},
+{
+"name": "moment-timezone extension for moment.js",
+"version": ""
+},
+{
+"name": "moment.js",
+"version": ""
+},
+{
+"name": "mongoose",
+"version": ""
+},
+{
+"name": "morgan",
+"version": ""
+},
+{
+"name": "ms-rest-azure",
+"version": ""
+},
+{
+"name": "msgpack-c",
+"version": ""
+},
+{
+"name": "mtd-utils",
+"version": ""
+},
+{
+"name": "MurmurHash",
+"version": ""
+},
+{
+"name": "ncurses",
+"version": ""
+},
+{
+"name": "Net-SNMP",
+"version": ""
+},
+{
+"name": "Netaddr-0.7.5",
+"version": ""
+},
+{
+"name": "netbase",
+"version": ""
+},
+{
+"name": "nghttp2",
+"version": ""
+},
+{
+"name": "node-uuid",
+"version": ""
+},
+{
+"name": "node-xml2js",
+"version": ""
+},
+{
+"name": "node.js",
+"version": ""
+},
+{
+"name": "nss-pam-ldapd",
+"version": ""
+},
+{
+"name": "odata-v4-service-metadata",
+"version": ""
+},
+{
+"name": "OpenDDR Resources",
+"version": ""
+},
+{
+"name": "OpenJDK",
+"version": ""
+},
+{
+"name": "OpenLDAP",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": ""
+},
+{
+"name": "openvswitch",
+"version": ""
+},
+{
+"name": "opkg-utils",
+"version": ""
+},
+{
+"name": "ORBit2",
+"version": ""
+},
+{
+"name": "pango",
+"version": ""
+},
+{
+"name": "pem",
+"version": ""
+},
+{
+"name": "perl-Carp-Clan",
+"version": ""
+},
+{
+"name": "perl-Email-Date-Format",
+"version": ""
+},
+{
+"name": "perl-PHP-Serialization",
+"version": ""
+},
+{
+"name": "perl-YAML-Syck",
+"version": ""
+},
+{
+"name": "phpseclib",
+"version": ""
+},
+{
+"name": "pixman",
+"version": ""
+},
+{
+"name": "pkgconfig",
+"version": ""
+},
+{
+"name": "plotly.js",
+"version": ""
+},
+{
+"name": "poco C++",
+"version": ""
+},
+{
+"name": "pointercal",
+"version": ""
+},
+{
+"name": "polkit",
+"version": ""
+},
+{
+"name": "py-gql",
+"version": ""
+},
+{
+"name": "Pyserial-2.6",
+"version": ""
+},
+{
+"name": "python",
+"version": ""
+},
+{
+"name": "python 3.8.12",
+"version": ""
+},
+{
+"name": "python-evdev",
+"version": ""
+},
+{
+"name": "python-pyzmq",
+"version": ""
+},
+{
+"name": "python-spilib",
+"version": ""
+},
+{
+"name": "Python3.6.8",
+"version": ""
+},
+{
+"name": "qrcodejs",
+"version": ""
+},
+{
+"name": "qt4-embedded",
+"version": ""
+},
+{
+"name": "Racoon 2",
+"version": ""
+},
+{
+"name": "radix_tree",
+"version": ""
+},
+{
+"name": "raw-socket",
+"version": ""
+},
+{
+"name": "readline",
+"version": ""
+},
+{
+"name": "redhat-logos",
+"version": ""
+},
+{
+"name": "request",
+"version": ""
+},
+{
+"name": "request-promise",
+"version": ""
+},
+{
+"name": "request-promise-native",
+"version": ""
+},
+{
+"name": "rocoto",
+"version": ""
+},
+{
+"name": "rpcbind",
+"version": ""
+},
+{
+"name": "RRDtool",
+"version": ""
+},
+{
+"name": "run-postinsts",
+"version": ""
+},
+{
+"name": "safe-buffer",
+"version": ""
+},
+{
+"name": "semver",
+"version": ""
+},
+{
+"name": "sgml-common",
+"version": ""
+},
+{
+"name": "SHA-265 JavaScript",
+"version": ""
+},
+{
+"name": "shadow",
+"version": ""
+},
+{
+"name": "shadow-securetty 4.2.1",
+"version": ""
+},
+{
+"name": "shared-mime-info",
+"version": ""
+},
+{
+"name": "shim",
+"version": ""
+},
+{
+"name": "sjcl",
+"version": ""
+},
+{
+"name": "snakeyaml",
+"version": ""
+},
+{
+"name": "Snort Community Rules",
+"version": ""
+},
+{
+"name": "socket.io",
+"version": ""
+},
+{
+"name": "software based on oprofile",
+"version": ""
+},
+{
+"name": "software with glib",
+"version": ""
+},
+{
+"name": "software with grub2 bootloader functions",
+"version": ""
+},
+{
+"name": "software written",
+"version": ""
+},
+{
+"name": "spdlog",
+"version": ""
+},
+{
+"name": "sshj",
+"version": ""
+},
+{
+"name": "standard version of Perl",
+"version": ""
+},
+{
+"name": "STM32CubeF7",
+"version": ""
+},
+{
+"name": "sudo",
+"version": ""
+},
+{
+"name": "sysvinit",
+"version": ""
+},
+{
+"name": "sysvinit-inittab",
+"version": ""
+},
+{
+"name": "Texas Instruments 3.14.43 Kernel",
+"version": ""
+},
+{
+"name": "tslib",
+"version": ""
+},
+{
+"name": "udev",
+"version": ""
+},
+{
+"name": "unbound",
+"version": ""
+},
+{
+"name": "upstart",
+"version": ""
+},
+{
+"name": "uriparser",
+"version": ""
+},
+{
+"name": "ustr",
+"version": ""
+},
+{
+"name": "util-linux",
+"version": ""
+},
+{
+"name": "utilities",
+"version": ""
+},
+{
+"name": "uuid",
+"version": ""
+},
+{
+"name": "vboxjws",
+"version": ""
+},
+{
+"name": "vmbus drivers",
+"version": ""
+},
+{
+"name": "VMware Infrastructure",
+"version": ""
+},
+{
+"name": "watchdog",
+"version": ""
+},
+{
+"name": "websocket",
+"version": ""
+},
+{
+"name": "Windows Azure Linux Agent",
+"version": ""
+},
+{
+"name": "winston",
+"version": ""
+},
+{
+"name": "wsdl4j",
+"version": ""
+},
+{
+"name": "xml-commons-resolver",
+"version": ""
+},
+{
+"name": "xml2js",
+"version": ""
+},
+{
+"name": "xterm.js",
+"version": ""
+},
+{
+"name": "Zend Engine",
+"version": ""
+},
+{
+"name": "zeromq",
+"version": ""
+}
+],
+"extractors": [
+"includes_prose"
+],
+"kind": "html",
+"product": "BIG-IP",
+"retrieved": "2026-11-08",
+"sha256": "011134d646a07a766d38e7805b40b0a679faca18af4233a94432710143ae24c0",
+"supplier": "F5",
+"url": "https://techdocs.f5.com/en-us/bigip-17-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html",
+"version": "17.1"
+}

@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "OpenSSL",
+"version": "1.1.1g"
+},
+{
+"name": "QT",
+"version": "Display Manager dependent"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "GlobalProtect App",
+"retrieved": "2026-11-08",
+"sha256": "30acb1b09888804327ba2486770ca236ec8ae538522fe97da1e2ae1fa7f75af6",
+"supplier": "Palo Alto Networks",
+"url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/globalprotect-app-oss-listings/globalprotect-app-6-2-open-source-software-oss-listing.html",
+"version": "6.2"
+}

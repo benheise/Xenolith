@@ -197,3 +197,103 @@ class BuildTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+from xenolith.sources import notices  # noqa: E402
+
+
+class NoticesExtractTest(unittest.TestCase):
+    def comps(self, body, ctype="text/plain", url="https://v.example/notices.txt"):
+        comps, used, kind = notices.extract(body.encode() if isinstance(body, str) else body, ctype, url)
+        return {(c["name"], c["version"]) for c in comps}, used
+
+    def test_html_table(self):
+        html = """<html><body><table><tr><th>NAME</th><th>VERSION</th><th>LICENSE TYPE</th></tr>
+        <tr><td>brotli</td><td>1.0.6</td><td>MIT</td></tr><tr><td>php</td><td>7.4.33</td><td>PHP</td></tr></table></body></html>"""
+        got, used = self.comps(html, "text/html", "https://v.example/x.html")
+        self.assertEqual(got, {("brotli", "1.0.6"), ("php", "7.4.33")})
+        self.assertEqual(used, ["html_table"])
+
+    def test_dotted_toc_skips_license_entries(self):
+        text = ("Table of Contents\n7-Zip (win32) 9.20 ........................ 12\n"
+                "Apache Xerces-C++ XML Parser 2.7.0 ............ 12\ncURL 7.13.1 ............ 13\n"
+                "BSD 3-Clause License ............ 40\n")
+        got, _ = self.comps(text)
+        self.assertEqual(got, {("7-Zip (win32)", "9.20"), ("Apache Xerces-C++ XML Parser", "2.7.0"), ("cURL", "7.13.1")})
+
+    def test_numbered_toc_needs_license_subentry(self):
+        text = ("1.12 e2fsprogs 1.41.14 :30\n     1.12.1 Available under license\n"
+                "1.13 HK2 Implementation Utilities 2.4.0-b31\n 1.13.1 Available under license\n"
+                "1.14 openssl 1.0.2k\n 1.14.1 Notifications\n"
+                "1. Redistributions of source code must retain\n")
+        got, used = self.comps(text)
+        self.assertEqual(got, {("e2fsprogs", "1.41.14"), ("HK2 Implementation Utilities", "2.4.0-b31"), ("openssl", "1.0.2k")})
+        self.assertIn("numbered_toc", used)
+
+    def test_gt_list_and_tpn(self):
+        got, _ = self.comps("   >>> libcurl-7.56.1\n   >>> expat-2.2.0\n   >>> GNU General Public License, V2.0\n")
+        self.assertEqual(got, {("libcurl", "7.56.1"), ("expat", "2.2.0")})
+        got, _ = self.comps("%% brotli version 1.0.9 (https://github.com/google/brotli) NOTICES AND INFORMATION BEGIN HERE\n"
+                            "%% zlib 1.2.13 NOTICES, INFORMATION, AND LICENSE BEGIN HERE\n")
+        self.assertEqual(got, {("brotli", "1.0.9"), ("zlib", "1.2.13")})
+
+    def test_prose_only_when_nothing_structured(self):
+        html = "<html><body><p>This product includes OpenSSL, developed by the OpenSSL Project.</p><p>This product includes curl software, copyright Daniel.</p></body></html>"
+        got, used = self.comps(html, "text/html", "https://v.example/ack.html")
+        self.assertEqual(got, {("OpenSSL", ""), ("curl", "")})
+        self.assertEqual(used, ["includes_prose"])
+
+    def test_sboms(self):
+        cdx = json.dumps({"bomFormat": "CycloneDX", "components": [
+            {"name": "log4j-core", "group": "org.apache.logging.log4j", "version": "2.14.1"},
+            {"name": "outer", "version": "1", "components": [{"name": "brotli", "version": "1.1.0"}]}]})
+        got, used = self.comps(cdx, "application/json", "https://v.example/bom.json")
+        self.assertIn(("org.apache.logging.log4j:log4j-core", "2.14.1"), got)
+        self.assertIn(("brotli", "1.1.0"), got)
+        self.assertEqual(used, ["sbom"])
+        spdx = json.dumps({"spdxVersion": "SPDX-2.3", "packages": [{"name": "php", "versionInfo": "8.3.1"}]})
+        got, _ = self.comps(spdx, "application/json", "https://v.example/sbom.spdx.json")
+        self.assertEqual(got, {("php", "8.3.1")})
+
+    def test_split_name_version(self):
+        self.assertEqual(notices.split_name_version("Datejs 1.0 Alpha-1"), ("Datejs", "1.0 Alpha-1"))
+        self.assertEqual(notices.split_name_version("stblinux-3.3-1.3 3.3-x.x"), ("stblinux-3.3-1.3", "3.3-x.x"))
+        self.assertEqual(notices.split_name_version("ethtool 3.4.1 :June 13, 2012"), ("ethtool", "3.4.1"))
+
+
+class NoticesMatchTest(unittest.TestCase):
+    def test_matching(self):
+        cat = catalog.load()
+        self.assertEqual(cat.match_component("curl-minimal", "7.61.1"), "curl")
+        self.assertEqual(cat.match_component("log4j", "1.2.17"), "log4j-1")
+        self.assertEqual(cat.match_component("Apache Log4j", "2.17.1"), "log4j-core")
+        self.assertEqual(cat.match_component("org.apache.logging.log4j:log4j-core", "2.14.1"), "log4j-core")
+        self.assertEqual(cat.match_component("libbrotlidec", ""), "brotli")
+        self.assertIsNone(cat.match_component("phpseclib", ""))
+        self.assertIsNone(cat.match_component("zlib", "1.2.13"))
+
+    def test_assertions_and_inventory_build(self):
+        cat = catalog.load()
+        with tempfile.TemporaryDirectory() as d:
+            data, out = Path(d) / "data", Path(d) / "out"
+            inv = {"supplier": "Acme", "product": "Gateway OS", "version": "7.2", "url": "https://acme.example/oss.html",
+                   "retrieved": "2026-11-08", "extractors": ["html_table"],
+                   "components": [{"name": "php", "version": "7.4.33"}, {"name": "php-cli", "version": "7.4.33"},
+                                  {"name": "zlib", "version": "1.2.11"}]}
+            path = notices.inventory_path(data, inv)
+            path.parent.mkdir(parents=True)
+            path.write_text(json.dumps(inv))
+            rows, stats = notices.assertions(cat, data)
+            self.assertEqual(stats["components"], 3)
+            self.assertEqual(len(rows), 1)
+            a = rows[0]
+            self.assertEqual((a["component"], a["verdict"], a["contains"], a["evidence"]), ("php", "present", True, "notices-file"))
+            self.assertEqual(a["component_version"], "7.4.33")
+            check_schema(self, a)
+            write_ndjson(data / "assertions" / "notices.ndjson", rows)
+            build.build(cat, data, out)
+            products = {p["k"]: p for p in json.loads((out / "products.json").read_text())}
+            self.assertEqual(products["acme/gateway-os"]["inv"], 3)
+            index = json.loads((out / "inventory_index.json").read_text())
+            self.assertIn("zlib", index["n"])
+            self.assertTrue((out / "inventory" / "acme__gateway-os.json").exists())

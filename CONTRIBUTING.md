@@ -2,6 +2,21 @@
 
 The census is only as good as its evidence. The most useful contribution is a **sourced statement** about what a commercial product embeds.
 
+## Add a vendor's open source notices document (easiest)
+
+If a vendor publishes an "Open Source Used In", OSS listing, third-party notices or SBOM document for a product, add it to [`catalog/notices.yaml`](catalog/notices.yaml):
+
+```yaml
+  - supplier: Example Networks
+    product: Example Gateway OS
+    version: "7.2"
+    url: https://example.com/docs/gateway-os-7.2-open-source.pdf
+```
+
+PDF, HTML, plain text, CycloneDX and SPDX all work. The next scheduled run extracts every component in it. If the vendor has an index page linking all its documents, add a `discover` rule instead so new product versions are picked up automatically. Run `python -m xenolith notices --only "Example Networks"` locally to check what gets extracted.
+
+Some vendors block automated downloads or put notices behind a login; those can't be crawled. Don't add copies hosted by third parties.
+
 ## Add a statement
 
 Edit [`community/assertions.csv`](community/assertions.csv) and open a pull request. One row per product and component:

@@ -1,0 +1,1078 @@
+{
+"components": [
+{
+"name": "7-Zip (win32)",
+"version": "9.20"
+},
+{
+"name": "Apache HTTP Server",
+"version": "2.2.14"
+},
+{
+"name": "Apache Tomcat",
+"version": "7.0.69"
+},
+{
+"name": "Apache Xalan-C",
+"version": "1.10.0"
+},
+{
+"name": "Apache Xerces-C++ XML Parser",
+"version": "2.7.0"
+},
+{
+"name": "Boost C++ Libraries",
+"version": "1.60.0"
+},
+{
+"name": "BSD Revised (uthash)",
+"version": ""
+},
+{
+"name": "Citrix NetScaler SDX NITRO",
+"version": ""
+},
+{
+"name": "CodeIgniter",
+"version": "2.0.3"
+},
+{
+"name": "cURL",
+"version": "7.13.1"
+},
+{
+"name": "Datejs",
+"version": "1.0 Alpha-1"
+},
+{
+"name": "dragtable",
+"version": "2.0.9"
+},
+{
+"name": "dynatree",
+"version": "1.1.1"
+},
+{
+"name": "Evenement",
+"version": ""
+},
+{
+"name": "Expat XML Parser",
+"version": "2.0.1"
+},
+{
+"name": "ExplorerCanvas r3",
+"version": ""
+},
+{
+"name": "Flot",
+"version": "0.7"
+},
+{
+"name": "Fontconfig",
+"version": "2.9.0"
+},
+{
+"name": "FreeBSD",
+"version": "8.4"
+},
+{
+"name": "FreeTDS",
+"version": "0.64"
+},
+{
+"name": "FreeTDS",
+"version": "0.82"
+},
+{
+"name": "FreeType",
+"version": "2.4.11"
+},
+{
+"name": "GeoIP",
+"version": "1.5.1"
+},
+{
+"name": "GIFLIB",
+"version": "4.1.6"
+},
+{
+"name": "GMP",
+"version": "5.1.1"
+},
+{
+"name": "GNU Bash",
+"version": "2.05b"
+},
+{
+"name": "GNU Binutils",
+"version": "2.11.2"
+},
+{
+"name": "GNU gettext",
+"version": "0.18.1.1"
+},
+{
+"name": "GNU libmicrohttpd",
+"version": "0.9.27"
+},
+{
+"name": "gSOAP Toolkit",
+"version": "2.7.15"
+},
+{
+"name": "Guzzle",
+"version": "3.7.4"
+},
+{
+"name": "Heimdal",
+"version": "1.5.3"
+},
+{
+"name": "IPMItool",
+"version": "1.8.11"
+},
+{
+"name": "JobScheduler",
+"version": "1.7.0"
+},
+{
+"name": "Joyent http-parser",
+"version": "1.0"
+},
+{
+"name": "jQRangeSlider",
+"version": "5.7.1"
+},
+{
+"name": "jQuery JavaScript Library",
+"version": "1.12.0"
+},
+{
+"name": "jQuery JavaScript Library",
+"version": "1.5.2"
+},
+{
+"name": "jQuery selectbox plugin",
+"version": "0.5"
+},
+{
+"name": "jQuery Splitter Plugin",
+"version": "1.5.1"
+},
+{
+"name": "jQuery UI",
+"version": "1.11.4"
+},
+{
+"name": "jQuery UI",
+"version": "1.8.17"
+},
+{
+"name": "jQuery UI for iPad and iPhone",
+"version": ""
+},
+{
+"name": "JSON-C",
+"version": "0.10"
+},
+{
+"name": "JSON-Perl",
+"version": "2.21"
+},
+{
+"name": "jsPlumb",
+"version": "1.5.2"
+},
+{
+"name": "jVectorMap",
+"version": "0.1"
+},
+{
+"name": "Leptonica",
+"version": "1.69"
+},
+{
+"name": "libevent (Linux)",
+"version": "2.0.22-stable"
+},
+{
+"name": "libexecinfo",
+"version": "1.1"
+},
+{
+"name": "libiconv",
+"version": "1.11"
+},
+{
+"name": "libiconv",
+"version": "1.14"
+},
+{
+"name": "libiconv (win32)",
+"version": "1.9.2"
+},
+{
+"name": "libiodbc",
+"version": "3.52.8"
+},
+{
+"name": "libIPFIX",
+"version": "1.0"
+},
+{
+"name": "libjpeg",
+"version": "8d"
+},
+{
+"name": "libpng",
+"version": "1.2.47"
+},
+{
+"name": "libssh2",
+"version": "1.4.3"
+},
+{
+"name": "libxml2",
+"version": "2.9.3"
+},
+{
+"name": "libxml2 (win32)",
+"version": "2.4.12-1"
+},
+{
+"name": "lrzsz",
+"version": "0.12.20"
+},
+{
+"name": "lsof",
+"version": "4.88D"
+},
+{
+"name": "Lua",
+"version": "5.2.2"
+},
+{
+"name": "LuaLogging",
+"version": "1.3.0"
+},
+{
+"name": "Lynx",
+"version": "2.8.6"
+},
+{
+"name": "md5",
+"version": ""
+},
+{
+"name": "micro_proxy",
+"version": ""
+},
+{
+"name": "Minicom",
+"version": "2.6.2"
+},
+{
+"name": "mod_auth_pam",
+"version": "2.0-1.1.1"
+},
+{
+"name": "mod_authnz_external",
+"version": "3.2.5"
+},
+{
+"name": "mod_gsoap",
+"version": "0.7"
+},
+{
+"name": "mod_perl",
+"version": "2.0.4"
+},
+{
+"name": "monit",
+"version": "5.0.3"
+},
+{
+"name": "MySQL client",
+"version": "5.1.68"
+},
+{
+"name": "ncurses",
+"version": "5.9"
+},
+{
+"name": "net-snmp",
+"version": "5.5"
+},
+{
+"name": "NTP",
+"version": "4.2.8p8"
+},
+{
+"name": "open-vm-tools",
+"version": "9.10.2-2822639"
+},
+{
+"name": "OpenLDAP",
+"version": "2.4.25"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.1t"
+},
+{
+"name": "OpenSSL (win32)",
+"version": "1.0.1l"
+},
+{
+"name": "OptiPNG",
+"version": "0.7.3"
+},
+{
+"name": "PARI/GP",
+"version": "2.3.5"
+},
+{
+"name": "PCI Utilities",
+"version": "2.2.8"
+},
+{
+"name": "PCRE",
+"version": "4.5"
+},
+{
+"name": "PCRE",
+"version": "8.30"
+},
+{
+"name": "Perl",
+"version": "5.14.2"
+},
+{
+"name": "Perl Module - Apache::Reload",
+"version": "0.10"
+},
+{
+"name": "Perl Module - Apache::Session",
+"version": "1.90"
+},
+{
+"name": "Perl Module - AppConfig",
+"version": "1.66"
+},
+{
+"name": "Perl Module - Authen::NTLM",
+"version": "1.09"
+},
+{
+"name": "Perl Module - Authen::Radius",
+"version": "0.22"
+},
+{
+"name": "Perl Module - Authen::SASL",
+"version": "2.16"
+},
+{
+"name": "Perl Module - Authen::TacacsPlus",
+"version": "0.24"
+},
+{
+"name": "Perl Module - Class::ErrorHandler",
+"version": "0.01"
+},
+{
+"name": "Perl Module - Class::Inspector",
+"version": "1.28"
+},
+{
+"name": "Perl Module - Class::Loader",
+"version": "2.03"
+},
+{
+"name": "Perl Module - Clone",
+"version": "0.34"
+},
+{
+"name": "Perl Module - Compression::Raw::Zlib",
+"version": "2.0060"
+},
+{
+"name": "Perl Module - Convert::ASCII::Armour",
+"version": "1.4"
+},
+{
+"name": "Perl Module - Convert::ASN1",
+"version": "0.26"
+},
+{
+"name": "Perl Module - Convert::PEM",
+"version": "0.08"
+},
+{
+"name": "Perl Module - Crypt::CBC",
+"version": "2.32"
+},
+{
+"name": "Perl Module - Crypt::DES",
+"version": "2.05"
+},
+{
+"name": "Perl Module - Crypt::DH",
+"version": "0.07"
+},
+{
+"name": "Perl Module - Crypt::DSA",
+"version": "1.17"
+},
+{
+"name": "Perl Module - Crypt::Primes",
+"version": "0.50"
+},
+{
+"name": "Perl Module - Crypt::Random",
+"version": "1.25"
+},
+{
+"name": "Perl Module - Crypt::RSA",
+"version": "1.99"
+},
+{
+"name": "Perl Module - Crypt::SSLeay",
+"version": "0.64"
+},
+{
+"name": "Perl Module - CSS::Tiny",
+"version": "1.19"
+},
+{
+"name": "Perl Module - Data::Dump",
+"version": "1.21"
+},
+{
+"name": "Perl Module - Data::HexDump",
+"version": "0.02"
+},
+{
+"name": "Perl Module - DBD::LDAP",
+"version": "0.20"
+},
+{
+"name": "Perl Module - DBD::mysql51",
+"version": "4.021"
+},
+{
+"name": "Perl Module - DBD::ODBC",
+"version": "1.43"
+},
+{
+"name": "Perl Module - DBD::Sybase",
+"version": "1.14"
+},
+{
+"name": "Perl Module - DBI",
+"version": "1.625"
+},
+{
+"name": "Perl Module - Digest",
+"version": "1.17"
+},
+{
+"name": "Perl Module - Digest::HMAC",
+"version": "1.03"
+},
+{
+"name": "Perl Module - Digest::MD5",
+"version": "2.52"
+},
+{
+"name": "Perl Module - Digest::SHA1",
+"version": "2.13"
+},
+{
+"name": "Perl Module - Encode::Locale",
+"version": "1.03"
+},
+{
+"name": "Perl Module - File::Which",
+"version": "1.09"
+},
+{
+"name": "Perl Module - Filter",
+"version": "1.46"
+},
+{
+"name": "Perl Module - HTML::Parser",
+"version": "3.69"
+},
+{
+"name": "Perl Module - HTML::Tagset",
+"version": "3.20"
+},
+{
+"name": "Perl Module - HTTP::Cookies",
+"version": "6.01"
+},
+{
+"name": "Perl Module - HTTP::Date",
+"version": "6.02"
+},
+{
+"name": "Perl Module - HTTP::Message",
+"version": "6.06"
+},
+{
+"name": "Perl Module - Image::Size",
+"version": "3.232"
+},
+{
+"name": "Perl Module - IO: Socket::SSL",
+"version": "1.84"
+},
+{
+"name": "Perl Module - IO::Socket::INET6",
+"version": "2.69"
+},
+{
+"name": "Perl Module - IO::stringy",
+"version": "2.110"
+},
+{
+"name": "Perl Module - IO::Tty",
+"version": "1.10"
+},
+{
+"name": "Perl Module - LWP",
+"version": "6.05"
+},
+{
+"name": "Perl Module - LWP::Protocol::connect",
+"version": "6.05"
+},
+{
+"name": "Perl Module - LWP::Protocol::https",
+"version": "6.03"
+},
+{
+"name": "Perl Module - Mail::Tools",
+"version": "2.12"
+},
+{
+"name": "Perl Module - Math::BigInt",
+"version": "1.997"
+},
+{
+"name": "Perl Module - Math::BigInt::GMP",
+"version": "1.37"
+},
+{
+"name": "Perl Module - Math::Pari",
+"version": "2.01080605"
+},
+{
+"name": "Perl Module - MIME::Base64",
+"version": "3.13"
+},
+{
+"name": "Perl Module - MIME::Lite",
+"version": "3.02.9"
+},
+{
+"name": "Perl Module - MIME::Tools",
+"version": "5.504"
+},
+{
+"name": "Perl Module - Mozilla::CA",
+"version": "20130114"
+},
+{
+"name": "Perl Module - Net",
+"version": "1.22"
+},
+{
+"name": "Perl Module - Net::DNS",
+"version": "0.72"
+},
+{
+"name": "Perl Module - Net::HTTP",
+"version": "6.06"
+},
+{
+"name": "Perl Module - Net::INET6Glue",
+"version": "0.5"
+},
+{
+"name": "Perl Module - Net::IP",
+"version": "1.26"
+},
+{
+"name": "Perl Module - Net::Radius",
+"version": "2.103"
+},
+{
+"name": "Perl Module - Net::SFTP-Foreign",
+"version": "1.73"
+},
+{
+"name": "Perl Module - Net::SNMP",
+"version": "6.0.1"
+},
+{
+"name": "Perl Module - Net::SSH::Perl",
+"version": "1.35"
+},
+{
+"name": "Perl Module - Net::SSLeay",
+"version": "1.54"
+},
+{
+"name": "Perl Module - Net::SSLGlue",
+"version": "1.054"
+},
+{
+"name": "Perl Module - Net::TFTP",
+"version": "0.19"
+},
+{
+"name": "Perl Module - Parse::RecDescent",
+"version": "1.967.009"
+},
+{
+"name": "Perl Module - PathTools",
+"version": "3.4000"
+},
+{
+"name": "Perl Module - Scalar::List::Utils",
+"version": "1.27"
+},
+{
+"name": "Perl Module - SOAP::Lite",
+"version": "0.715"
+},
+{
+"name": "Perl Module - Socket6",
+"version": "0.23"
+},
+{
+"name": "Perl Module - Switch",
+"version": "2.16"
+},
+{
+"name": "Perl Module - Template::Toolkit",
+"version": "2.24"
+},
+{
+"name": "Perl Module - Text::Balanced",
+"version": "2.02"
+},
+{
+"name": "Perl Module - Tie::EncryptedHash",
+"version": "1.24"
+},
+{
+"name": "Perl Module - Unix::Syslog",
+"version": "1.1"
+},
+{
+"name": "Perl Module - URI",
+"version": "1.60"
+},
+{
+"name": "Perl Module - XML::NamespaceSupport",
+"version": "1.11"
+},
+{
+"name": "Perl Module - XML::Parser",
+"version": "2.41"
+},
+{
+"name": "Perl Module - XML::SAX",
+"version": "0.99"
+},
+{
+"name": "Perl Module - XML::SAX::Base",
+"version": "1.08"
+},
+{
+"name": "Perl Module - XML::SAX::Expat",
+"version": "0.40"
+},
+{
+"name": "Perl Module - XML::Simple",
+"version": "2.20"
+},
+{
+"name": "Perl Module - XML::Writer",
+"version": "0.615"
+},
+{
+"name": "Perl Module – Net::LDAP",
+"version": "0.4400"
+},
+{
+"name": "PhantomJS",
+"version": "1.9.2"
+},
+{
+"name": "PHP",
+"version": "5.3.17"
+},
+{
+"name": "POCO C++ Libraries",
+"version": "1.4.6.p1"
+},
+{
+"name": "Postgres-XL",
+"version": "9.2"
+},
+{
+"name": "PostgreSQL",
+"version": "9.4.5"
+},
+{
+"name": "Precision Time Protocol daemon",
+"version": "1.0.0"
+},
+{
+"name": "protobuf",
+"version": "2.4.1"
+},
+{
+"name": "protobuf-c",
+"version": "0.15"
+},
+{
+"name": "PSQL ODBC",
+"version": "09.03.0400"
+},
+{
+"name": "Python",
+"version": "2.6.6"
+},
+{
+"name": "Python Module - argparse",
+"version": "1.2.1"
+},
+{
+"name": "Python Module - Babel",
+"version": "1.3"
+},
+{
+"name": "Python Module - bambou",
+"version": "2.1.0"
+},
+{
+"name": "Python Module - boto",
+"version": "2.38.0"
+},
+{
+"name": "Python Module - ConcurrentLogHandler",
+"version": "0.9.1"
+},
+{
+"name": "Python Module - enums34",
+"version": "1.0.4"
+},
+{
+"name": "Python Module - eventlet",
+"version": "0.14.0"
+},
+{
+"name": "Python Module - feedparser",
+"version": "5.2.1"
+},
+{
+"name": "Python Module - Flask",
+"version": "0.10.1"
+},
+{
+"name": "Python Module - greenlet",
+"version": "0.4.1"
+},
+{
+"name": "Python Module - httplib2",
+"version": "0.8"
+},
+{
+"name": "Python Module - i18n",
+"version": "0.2"
+},
+{
+"name": "Python Module - iso8601",
+"version": "0.1.10"
+},
+{
+"name": "Python Module - itsdangerous",
+"version": "0.24"
+},
+{
+"name": "Python Module - Jinja2",
+"version": "2.8"
+},
+{
+"name": "Python Module - MarkupSafe",
+"version": "0.23"
+},
+{
+"name": "Python Module - netifaces",
+"version": "0.8"
+},
+{
+"name": "Python Module - numpy",
+"version": "1.9.2"
+},
+{
+"name": "Python Module - openstack",
+"version": "2014.1"
+},
+{
+"name": "Python Module - oslo.config",
+"version": "1.2.1"
+},
+{
+"name": "Python Module - paramiko",
+"version": "1.10.1"
+},
+{
+"name": "Python Module - Paste",
+"version": "1.7.5.1"
+},
+{
+"name": "Python Module - PasteDeploy",
+"version": "1.5.0"
+},
+{
+"name": "Python Module - pbr",
+"version": "0.10.0"
+},
+{
+"name": "Python Module - pg8000",
+"version": "1.10.1"
+},
+{
+"name": "Python Module - pip",
+"version": "1.5.4"
+},
+{
+"name": "Python Module - ply",
+"version": "3.2"
+},
+{
+"name": "Python Module - psutil",
+"version": "2.2.1"
+},
+{
+"name": "Python Module - py",
+"version": "1.4.31"
+},
+{
+"name": "Python Module - pyasn1",
+"version": "0.1.8"
+},
+{
+"name": "Python Module - pyjwt",
+"version": "1.4.0"
+},
+{
+"name": "Python Module - pymongo",
+"version": "3.2.1"
+},
+{
+"name": "Python Module - pytz",
+"version": "2013.9"
+},
+{
+"name": "Python Module - PyYAML",
+"version": "3.11"
+},
+{
+"name": "Python Module - pyzmq",
+"version": "14.3.0"
+},
+{
+"name": "Python Module - reportlab",
+"version": "2.6"
+},
+{
+"name": "Python Module - repoze.lru",
+"version": "0.6"
+},
+{
+"name": "Python Module - Routes",
+"version": "1.13"
+},
+{
+"name": "Python Module - rsa",
+"version": "3.1.4"
+},
+{
+"name": "Python Module - setuptools",
+"version": "0.6c11"
+},
+{
+"name": "Python Module - six",
+"version": "1.5.2"
+},
+{
+"name": "Python Module - SQLAlchemy",
+"version": "0.8.1"
+},
+{
+"name": "Python Module - vspk",
+"version": "4.0.1"
+},
+{
+"name": "Python Module - WebOb",
+"version": "1.2.3"
+},
+{
+"name": "Python Module - Werkzeug",
+"version": "0.11.3"
+},
+{
+"name": "Python Module - xmltodict",
+"version": "0.9.2"
+},
+{
+"name": "Python Module – netaddr",
+"version": "0.7.15"
+},
+{
+"name": "Python Module – ordereddict",
+"version": "1.1"
+},
+{
+"name": "R Project",
+"version": "3.2.3"
+},
+{
+"name": "R Project Package – chron",
+"version": "2.3-47"
+},
+{
+"name": "R Project Package – data.table",
+"version": "1.9.6"
+},
+{
+"name": "R Project Package – DBI",
+"version": "0.3.1"
+},
+{
+"name": "R Project Package – gsubfn",
+"version": "0.6-6"
+},
+{
+"name": "R Project Package – proto",
+"version": "0.3-10"
+},
+{
+"name": "R Project Package – RPostgreSQL",
+"version": "0.4"
+},
+{
+"name": "R Project Package – RSQLite",
+"version": "1.0.0"
+},
+{
+"name": "R Project Package – sqldf",
+"version": "0.4-10"
+},
+{
+"name": "Racoon2",
+"version": "20100526a"
+},
+{
+"name": "Ratchet",
+"version": "0.3.0"
+},
+{
+"name": "react",
+"version": ""
+},
+{
+"name": "RRDTOOL",
+"version": "1.4.4"
+},
+{
+"name": "rsync",
+"version": "3.0.6"
+},
+{
+"name": "Samba-TNG",
+"version": "0.4"
+},
+{
+"name": "smartmontools",
+"version": "6.3"
+},
+{
+"name": "Spectrum",
+"version": "1.7.0"
+},
+{
+"name": "srm",
+"version": "1.2.14"
+},
+{
+"name": "SSLeay",
+"version": ""
+},
+{
+"name": "Symfony",
+"version": "2.4.0"
+},
+{
+"name": "The Coolest DHTML Calendar",
+"version": "0.9.6"
+},
+{
+"name": "unixODBC",
+"version": "2.3.0"
+},
+{
+"name": "uthash",
+"version": ""
+},
+{
+"name": "webp",
+"version": "0.4.1"
+},
+{
+"name": "xe-guest-utilities",
+"version": "6.0.2"
+},
+{
+"name": "Xen Server SDK",
+"version": "6.1.0"
+},
+{
+"name": "XenStore (part of Xen)",
+"version": "4.1.3"
+},
+{
+"name": "Yahoo User Interface",
+"version": "2.9.0"
+},
+{
+"name": "zeromq",
+"version": "4.1.0"
+},
+{
+"name": "zlib",
+"version": "1.2.3"
+},
+{
+"name": "zlib (win32)",
+"version": "1.2.4"
+}
+],
+"extractors": [
+"dotted_toc"
+],
+"kind": "pdf",
+"product": "NetScaler ADC",
+"retrieved": "2026-11-08",
+"sha256": "d0d6836c275e10963d40d802ecabab7d98984b6af75f0e4b9d0f0c7d2ff4ee08",
+"supplier": "Citrix",
+"url": "https://www.citrix.com/content/dam/citrix/en_us/documents/downloads/netscaler-adc/NetScaler_11.1_Third_Party_Notices.pdf",
+"version": "11.1"
+}

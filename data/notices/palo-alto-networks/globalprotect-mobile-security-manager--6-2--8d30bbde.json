@@ -1,0 +1,682 @@
+{
+"components": [
+{
+"name": "aight",
+"version": "1.2.1"
+},
+{
+"name": "amplifyjs",
+"version": "1.1.2"
+},
+{
+"name": "basesystem",
+"version": "8"
+},
+{
+"name": "bash",
+"version": "3.1"
+},
+{
+"name": "beecrypt",
+"version": "4.1.2"
+},
+{
+"name": "bind-libs",
+"version": "9.3.3"
+},
+{
+"name": "bind-utils",
+"version": "9.3.3"
+},
+{
+"name": "bonnie++",
+"version": "1.03d"
+},
+{
+"name": "bootstrap",
+"version": "3.1.1"
+},
+{
+"name": "bootstrap-select",
+"version": "1.5.4"
+},
+{
+"name": "bzip2",
+"version": "1.0.3"
+},
+{
+"name": "bzip2-libs",
+"version": "1.0.3"
+},
+{
+"name": "CFPropertyList",
+"version": "2"
+},
+{
+"name": "chkconfig",
+"version": "1.3.30.1"
+},
+{
+"name": "coreutils",
+"version": "5.97"
+},
+{
+"name": "cpio",
+"version": "2.6"
+},
+{
+"name": "cpp",
+"version": "4.1.1"
+},
+{
+"name": "cracklib",
+"version": "2.8.9"
+},
+{
+"name": "cracklib-dicts",
+"version": "2.8.9"
+},
+{
+"name": "crontabs",
+"version": "1.1"
+},
+{
+"name": "curl",
+"version": "7.20.1"
+},
+{
+"name": "davisjs",
+"version": "0.9.9"
+},
+{
+"name": "dhclient",
+"version": "3.0.5"
+},
+{
+"name": "diffutils",
+"version": "2.8.1"
+},
+{
+"name": "e2fsprogs",
+"version": "1.39"
+},
+{
+"name": "e2fsprogs-libs",
+"version": "1.39"
+},
+{
+"name": "e4fsprogs",
+"version": "1.41.12"
+},
+{
+"name": "e4fsprogs-libs",
+"version": "1.41.12"
+},
+{
+"name": "elfutils-libelf",
+"version": "0.128"
+},
+{
+"name": "ethtool",
+"version": "5"
+},
+{
+"name": "eventlog",
+"version": "0.2.12"
+},
+{
+"name": "expat",
+"version": "1.95.8"
+},
+{
+"name": "fastlz",
+"version": "0.1.0"
+},
+{
+"name": "file",
+"version": "5.04"
+},
+{
+"name": "file-libs",
+"version": "5.04"
+},
+{
+"name": "filesystem",
+"version": "2.4.0"
+},
+{
+"name": "findutils",
+"version": "4.2.27"
+},
+{
+"name": "fipscheck",
+"version": "1.2.0"
+},
+{
+"name": "fipscheck-lib",
+"version": "1.2.0"
+},
+{
+"name": "gawk",
+"version": "3.1.5"
+},
+{
+"name": "gdb",
+"version": "7.0.1"
+},
+{
+"name": "glib",
+"version": "2.12.9"
+},
+{
+"name": "glib2",
+"version": "2.12.3"
+},
+{
+"name": "glibc",
+"version": "2.5"
+},
+{
+"name": "glibc-common",
+"version": "2.5"
+},
+{
+"name": "gmp",
+"version": "4.3.1"
+},
+{
+"name": "gnupg",
+"version": "1.4.5"
+},
+{
+"name": "gperftools",
+"version": "2"
+},
+{
+"name": "grep",
+"version": "2.5.1"
+},
+{
+"name": "grub",
+"version": "6.0.97"
+},
+{
+"name": "gzip",
+"version": "1.3.5"
+},
+{
+"name": "inetutils",
+"version": "1.5"
+},
+{
+"name": "info",
+"version": "4.8"
+},
+{
+"name": "initscripts",
+"version": "8.45.15"
+},
+{
+"name": "ipmitool",
+"version": "1.8.11"
+},
+{
+"name": "iproute",
+"version": "2.6.18"
+},
+{
+"name": "iptables",
+"version": "1.3.5"
+},
+{
+"name": "iptables-ipv6",
+"version": "1.3.5"
+},
+{
+"name": "iputils",
+"version": "20020927"
+},
+{
+"name": "irqbalance",
+"version": "1.13"
+},
+{
+"name": "jQuery",
+"version": "2.1.0"
+},
+{
+"name": "knockout",
+"version": "3.1.0"
+},
+{
+"name": "krb5-libs",
+"version": "1.8.1"
+},
+{
+"name": "krb5-workstation",
+"version": "1.8.1"
+},
+{
+"name": "less",
+"version": "394"
+},
+{
+"name": "leveldb",
+"version": "1.15.0"
+},
+{
+"name": "libattr",
+"version": "2.4.32"
+},
+{
+"name": "libcurl4",
+"version": "7.20.1"
+},
+{
+"name": "libevent",
+"version": "2.0.19"
+},
+{
+"name": "libgcc",
+"version": "4.1.1"
+},
+{
+"name": "libgethostbyname",
+"version": "1"
+},
+{
+"name": "libgssapi",
+"version": "0.1"
+},
+{
+"name": "libjpeg",
+"version": "6b"
+},
+{
+"name": "libmcrypt",
+"version": "2.5.8"
+},
+{
+"name": "libpcap",
+"version": "0.9.4"
+},
+{
+"name": "libpng",
+"version": "1.2.44"
+},
+{
+"name": "libstdc++",
+"version": "4.1.1"
+},
+{
+"name": "libsysfs",
+"version": "2.0.0"
+},
+{
+"name": "libtecla",
+"version": "1.6.1"
+},
+{
+"name": "libtermcap",
+"version": "2.0.8"
+},
+{
+"name": "libunwind",
+"version": "1.1"
+},
+{
+"name": "libuser",
+"version": "0.54.7"
+},
+{
+"name": "libvolume_id",
+"version": "127"
+},
+{
+"name": "libxml2",
+"version": "2.6.30"
+},
+{
+"name": "libxml2-python",
+"version": "2.6.30"
+},
+{
+"name": "libxslt",
+"version": "1.1.22"
+},
+{
+"name": "lockdev",
+"version": "1.0.1"
+},
+{
+"name": "logrotate",
+"version": "3.7.4"
+},
+{
+"name": "m2crypto",
+"version": "0.16"
+},
+{
+"name": "mailx",
+"version": "8.1.1"
+},
+{
+"name": "MAKEDEV",
+"version": "3.23"
+},
+{
+"name": "mdadm",
+"version": "2.6.9"
+},
+{
+"name": "mingetty",
+"version": "1.07"
+},
+{
+"name": "mktemp",
+"version": "1.5"
+},
+{
+"name": "module-init-tools",
+"version": "3.3"
+},
+{
+"name": "momentjs",
+"version": "2.5.1"
+},
+{
+"name": "mongo-php-driver",
+"version": "1.2.12"
+},
+{
+"name": "mongodb",
+"version": "2.4.3"
+},
+{
+"name": "ncurses",
+"version": "5.5"
+},
+{
+"name": "net-snmp",
+"version": "5.4.4"
+},
+{
+"name": "net-tools",
+"version": "1.6"
+},
+{
+"name": "nfs-utils",
+"version": "1.0.9"
+},
+{
+"name": "nfs-utils-lib",
+"version": "1.0.8"
+},
+{
+"name": "ntp",
+"version": "4.2.6p5"
+},
+{
+"name": "ntpdate",
+"version": "4.2.6p5"
+},
+{
+"name": "openldap",
+"version": "2.4.23"
+},
+{
+"name": "openldap-clients",
+"version": "2.4.23"
+},
+{
+"name": "openssh",
+"version": "5.2p1"
+},
+{
+"name": "openssh-clients",
+"version": "5.2p1"
+},
+{
+"name": "openssh-server",
+"version": "5.2p1"
+},
+{
+"name": "openssl",
+"version": "0.9.8p"
+},
+{
+"name": "pam",
+"version": "1.0.2"
+},
+{
+"name": "pam_krb5",
+"version": "2.2.14"
+},
+{
+"name": "pam_ldap",
+"version": "1.8.4"
+},
+{
+"name": "panos-release",
+"version": "2"
+},
+{
+"name": "passwd",
+"version": "0.73"
+},
+{
+"name": "pcre",
+"version": "6.6"
+},
+{
+"name": "pexpect",
+"version": "2.3"
+},
+{
+"name": "php",
+"version": "5.3.17"
+},
+{
+"name": "php-cli",
+"version": "5.3.17"
+},
+{
+"name": "php-ext",
+"version": "5.3.17"
+},
+{
+"name": "popt",
+"version": "1.12"
+},
+{
+"name": "portmap",
+"version": "4"
+},
+{
+"name": "procps",
+"version": "3.2.7"
+},
+{
+"name": "psmisc",
+"version": "22.2"
+},
+{
+"name": "python",
+"version": "2.4.3"
+},
+{
+"name": "python-bloom",
+"version": "0.1.12"
+},
+{
+"name": "python-elementtree",
+"version": "1.2.6"
+},
+{
+"name": "python-imaging",
+"version": "1.1.5"
+},
+{
+"name": "python-sqlite",
+"version": "1.1.7"
+},
+{
+"name": "python-urlgrabber",
+"version": "3.1.0"
+},
+{
+"name": "rcs",
+"version": "5.7"
+},
+{
+"name": "readline",
+"version": "5.1"
+},
+{
+"name": "redhat-logos",
+"version": "4.9.8"
+},
+{
+"name": "reportlab",
+"version": "2.2"
+},
+{
+"name": "RequireJS",
+"version": "2.1.11"
+},
+{
+"name": "rootfiles",
+"version": "8.1"
+},
+{
+"name": "rpm",
+"version": "4.4.2"
+},
+{
+"name": "rpm-libs",
+"version": "4.4.2"
+},
+{
+"name": "rpm-python",
+"version": "4.4.2"
+},
+{
+"name": "scrub",
+"version": "2.1"
+},
+{
+"name": "sed",
+"version": "4.1.5"
+},
+{
+"name": "setup",
+"version": "2.5.58"
+},
+{
+"name": "shadow-utils",
+"version": "4.0.17"
+},
+{
+"name": "snappy",
+"version": "1.0.1"
+},
+{
+"name": "sqlite",
+"version": "3.6.12"
+},
+{
+"name": "sshpass",
+"version": "1.05"
+},
+{
+"name": "sysfsutils",
+"version": "2.0.0"
+},
+{
+"name": "sysklogd",
+"version": "1.4.1"
+},
+{
+"name": "syslog-ng",
+"version": "3.2.5"
+},
+{
+"name": "SysVinit",
+"version": "2.86"
+},
+{
+"name": "tar",
+"version": "1.15.1"
+},
+{
+"name": "tcpdump",
+"version": "3.9.4"
+},
+{
+"name": "termcap",
+"version": "5.5"
+},
+{
+"name": "tftp",
+"version": "0.48"
+},
+{
+"name": "traceroute",
+"version": "2.0.1"
+},
+{
+"name": "tzdata",
+"version": "2011l"
+},
+{
+"name": "udev",
+"version": "127"
+},
+{
+"name": "underscore",
+"version": "1.6.0"
+},
+{
+"name": "unzip",
+"version": "6"
+},
+{
+"name": "util-linux",
+"version": "2.13"
+},
+{
+"name": "vim-minimal",
+"version": "7.0.109"
+},
+{
+"name": "vixie-cron",
+"version": "4.1"
+},
+{
+"name": "wget",
+"version": "1.12"
+},
+{
+"name": "xinetd",
+"version": "2.3.14"
+},
+{
+"name": "zip",
+"version": "3"
+},
+{
+"name": "zlib",
+"version": "1.2.3"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "GlobalProtect Mobile Security Manager",
+"retrieved": "2026-11-08",
+"sha256": "18cdd387b48c9495a47fa24cd2965013abe79f037aa2c4dde16976dcf47d91e4",
+"supplier": "Palo Alto Networks",
+"url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/globalprotect-mobile-security-manager-oss-listings/globalprotect-mobile-security-manager-6-2-open-source-software-oss-listing.html",
+"version": "6.2"
+}

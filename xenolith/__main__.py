@@ -12,7 +12,7 @@ from . import build as build_mod
 from . import catalog as catalog_mod
 from .catalog import ROOT
 from .model import dedupe, write_ndjson
-from .sources import cisa_log4j, community, csaf, cvelist, ncsc_markdown
+from .sources import cisa_log4j, community, csaf, cvelist, ncsc_markdown, notices
 
 DATA = ROOT / "data"
 DOCS_DATA = ROOT / "docs" / "data"
@@ -63,6 +63,18 @@ def cmd_csaf(args) -> int:
     return 0
 
 
+def cmd_notices(args) -> int:
+    cat = catalog_mod.load()
+    if not args.match_only:
+        stats = notices.crawl(ROOT / "catalog" / "notices.yaml", data_dir=DATA, max_fetch=args.max_fetch,
+                              refresh_days=args.refresh_days, only=args.only, discover_docs=not args.no_discover)
+        print(f"notices crawl: {json.dumps(stats)}")
+    rows, stats = notices.assertions(cat, DATA)
+    n = write_ndjson(DATA / "assertions" / "notices.ndjson", dedupe(rows))
+    print(f"notices: {n} assertions from {stats['inventories']} inventories ({stats['components']} components)")
+    return 0
+
+
 def cmd_community(args) -> int:
     cat = catalog_mod.load()
     rows, errors = community.load(ROOT / "community" / "assertions.csv", cat)
@@ -104,6 +116,14 @@ def main(argv: list[str] | None = None) -> int:
     c.add_argument("--max-fetch", type=int, help="override per-provider fetch cap for this run")
     c.add_argument("--no-discover", action="store_true", help="skip aggregator discovery")
     c.set_defaults(fn=cmd_csaf)
+
+    n = sub.add_parser("notices", help="parse vendor third-party notices into component inventories")
+    n.add_argument("--only", nargs="*", help="only documents whose supplier/product contains one of these strings")
+    n.add_argument("--max-fetch", type=int, default=80, help="documents fetched per run")
+    n.add_argument("--refresh-days", type=int, default=14, help="re-fetch documents older than this")
+    n.add_argument("--no-discover", action="store_true", help="skip index-page discovery")
+    n.add_argument("--match-only", action="store_true", help="re-match stored inventories without fetching")
+    n.set_defaults(fn=cmd_notices)
 
     m = sub.add_parser("community", help="validate and ingest community/assertions.csv")
     m.add_argument("--check", action="store_true", help="validate only, write nothing")

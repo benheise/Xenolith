@@ -57,7 +57,7 @@ EVIDENCE = (
 ASSERTION_FIELDS = (
     "id", "component", "supplier", "product", "product_key", "version",
     "cves", "verdict", "contains", "evidence", "source", "publisher",
-    "source_url", "references", "notes", "category", "updated",
+    "source_url", "references", "notes", "category", "updated", "component_version",
 )
 
 
@@ -109,6 +109,7 @@ def make_assertion(
     category: str | None = None,
     status: str | None = None,
     publisher: str = "",
+    component_version: str = "",
 ) -> dict:
     """Build a normalized assertion.
 
@@ -135,7 +136,7 @@ def make_assertion(
     for ref in references:
         if ref and ref not in refs:
             refs.append(ref)
-    return {
+    out = {
         "id": ident,
         "component": component,
         "supplier": supplier,
@@ -154,6 +155,9 @@ def make_assertion(
         "category": category,
         "updated": updated,
     }
+    if component_version:
+        out["component_version"] = clean_text(component_version, 200)
+    return out
 
 
 def dedupe(assertions: Iterable[dict]) -> list[dict]:

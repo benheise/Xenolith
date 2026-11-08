@@ -1,0 +1,47 @@
+# Vendor third-party notices documents ("Open Source Used In", OSS listings,
+# third-party notices, acknowledgments, published SBOMs).
+#
+# Adding a document is the easiest way to contribute: paste its URL with the
+# supplier, product and product version. PDF, HTML, plain text, CycloneDX and
+# SPDX all work. The crawler extracts the full component list, stores it under
+# data/notices/, and matches it against catalog/components.yaml.
+#
+# `discover` rules find documents automatically from an index page: `link` is a
+# regex on the document URL, `title` a regex on the link text with named groups
+# `product` and `version`.
+#
+# Documents are re-fetched every two weeks; a document whose content hasn't
+# changed is not re-parsed.
+
+discover:
+  - supplier: Palo Alto Networks
+    index: https://docs.paloaltonetworks.com/oss-listings
+    link: '/oss-listings/.+/[^/]+oss-listing[^/]*\.html$'
+    title: '^(?P<product>.+?)\s+(?P<version>\d[\w.\-]*)\s+OSS Listing$'
+
+documents:
+  - supplier: F5
+    product: BIG-IP
+    version: "17.5"
+    url: https://techdocs.f5.com/en-us/bigip-17-5-0/big-ip-open-source-notices-and-software-acknowledgments/02.html
+
+  - supplier: F5
+    product: BIG-IP
+    version: "17.1"
+    url: https://techdocs.f5.com/en-us/bigip-17-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html
+
+  - supplier: F5
+    product: BIG-IP
+    version: "16.1"
+    url: https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html
+
+  - supplier: Citrix
+    product: NetScaler ADC
+    version: "11.1"
+    url: https://www.citrix.com/content/dam/citrix/en_us/documents/downloads/netscaler-adc/NetScaler_11.1_Third_Party_Notices.pdf
+
+# Known vendors that can't be crawled from cloud machines (add documents by
+# hand only if their URLs become reachable):
+#   Cisco "Open Source Used In" PDFs: blocked for automated clients (HTTP 403).
+#   VMware/Broadcom open_source_licenses.txt: behind the Broadcom support login.
+#   Fortinet: exported from the FortiOS GUI (System > Legal Third Party), not published.

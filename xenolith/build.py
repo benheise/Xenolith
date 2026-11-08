@@ -13,20 +13,22 @@ Outputs (served by GitHub Pages):
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .catalog import Catalog
-from .model import dedupe, read_ndjson
+from .catalog import Catalog, normalize_name
+from .model import dedupe, product_key, read_ndjson
+from .sources.notices import iter_inventories
 
 EVIDENCE_RANK = {
     "vendor-advisory": 0,
     "vendor-sbom": 1,
     "binary-scan": 2,
-    "notices-file": 3,
-    "community": 4,
-    "tracker": 5,
+    "community": 3,
+    "tracker": 4,
+    "notices-file": 5,   # proves presence, says nothing about CVE status; never the headline if anything else exists
 }
 
 COMPARABLES = [
@@ -104,8 +106,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
 
     components_meta = []
     for comp in catalog.components.values():
-        rows = sorted(by_component.get(comp.id, []),
-                      key=lambda a: (a["supplier"].lower(), a["product"].lower(), a["version"]))
+        rows = sorted(by_component.get(comp.id, []), key=lambda a: _version_key(a["version"]), reverse=True)
+        rows.sort(key=lambda a: (a["supplier"].lower(), a["product"].lower()))   # stable: newest version first per product
         slim = []
         for a in rows:
             slim.append({
@@ -114,6 +116,7 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
                 "pub": a.get("publisher", ""), "u": a["source_url"],
                 "r": a["references"][:FRONTEND_REFS_LIMIT],
                 "n": a["notes"][:FRONTEND_NOTES_LIMIT], "cat": a.get("category"), "d": a["updated"],
+                **({"cv": a["component_version"]} if a.get("component_version") else {}),
             })
         (comp_dir / f"{comp.id}.json").write_text(json.dumps(slim, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         verdicts = Counter(a["verdict"] for a in rows)
@@ -125,8 +128,13 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             "verdicts": dict(verdicts),
         })
 
+    inventories = build_inventories(data_dir, out_dir)
+    for key, inv in inventories.items():
+        names.setdefault(key, (inv["s"], inv["p"]))
+
     products = []
-    for key, comps in by_product.items():
+    for key in sorted(set(by_product) | set(inventories)):
+        comps = by_product.get(key, {})
         supplier, product = names[key]
         sp = spine_by_key.get(key)
         products.append({
@@ -134,10 +142,11 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             "c": {cid: _best(rows)["verdict"] for cid, rows in sorted(comps.items())},
             "n": sum(len(r) for r in comps.values()),
             **({"cv": sp["cve_count"], "kev": sp["kev_count"]} if sp else {}),
+            **({"inv": inventories[key]["count"]} if key in inventories else {}),
         })
     spine_only = 0
     for sp in spine:
-        if sp["key"] in by_product:
+        if sp["key"] in by_product or sp["key"] in inventories:
             continue
         if sp["kev_count"] == 0 and sp["cve_count"] < spine_min_cves:
             continue
@@ -166,7 +175,9 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
         "built": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "counts": {
             "assertions": len(assertions),
-            "products_with_data": len(by_product),
+            "products_with_data": len(set(by_product) | set(inventories)),
+            "inventories": sum(i["docs"] for i in inventories.values()),
+            "inventory_components": sum(i["rows"] for i in inventories.values()),
             "spine_products": len(spine),
             "spine_only_shown": spine_only,
             "components": len(catalog.components),
@@ -177,3 +188,49 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
     }
     (out_dir / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     return meta["counts"]
+
+
+def _version_key(v: str):
+    return [(0, int(t)) if t.isdigit() else (1, t) for t in re.findall(r"\d+|[a-z]+", (v or "").lower())]
+
+
+def build_inventories(data_dir: Path, out_dir: Path) -> dict[str, dict]:
+    """Write per-product component lists from notices files, plus a name index for search.
+
+    docs/data/inventory/<product_key>.json   [{v, u, d, x, c: [[name, version], ...]}], newest version first
+    docs/data/inventory_index.json           {p: [product_key, ...], n: {name: [[product idx, product version, component version], ...]}}
+    """
+    inv_dir = out_dir / "inventory"
+    inv_dir.mkdir(parents=True, exist_ok=True)
+    grouped: dict[str, dict] = {}
+    for _, inv in iter_inventories(data_dir):
+        key = product_key(inv["supplier"], inv["product"])
+        g = grouped.setdefault(key, {"s": inv["supplier"], "p": inv["product"], "docs": []})
+        g["docs"].append(inv)
+    written = set()
+    keys = sorted(grouped)
+    index: dict[str, list] = defaultdict(list)
+    out: dict[str, dict] = {}
+    for pi, key in enumerate(keys):
+        g = grouped[key]
+        g["docs"].sort(key=lambda d: _version_key(d.get("version", "")), reverse=True)
+        payload = [{"v": d.get("version", ""), "u": d["url"], "d": d.get("retrieved", ""),
+                    "x": d.get("extractors", []), "c": [[c["name"], c.get("version", "")] for c in d["components"]]}
+                   for d in g["docs"]]
+        fname = key.replace("/", "__") + ".json"
+        (inv_dir / fname).write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        written.add(fname)
+        unique = {normalize_name(c["name"]) for d in g["docs"] for c in d["components"]}
+        rows = 0
+        for d in g["docs"]:
+            for c in d["components"]:
+                index[normalize_name(c["name"])].append([pi, d.get("version", ""), c.get("version", "")])
+                rows += 1
+        out[key] = {"s": g["s"], "p": g["p"], "count": len(unique), "docs": len(g["docs"]), "rows": rows}
+    for old in inv_dir.glob("*.json"):
+        if old.name not in written:
+            old.unlink()
+    (out_dir / "inventory_index.json").write_text(
+        json.dumps({"p": keys, "n": dict(sorted(index.items()))}, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8")
+    return out

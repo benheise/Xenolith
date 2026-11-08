@@ -1,0 +1,26 @@
+{
+"components": [
+{
+"name": "OpenSSL",
+"version": "1.1.1g"
+},
+{
+"name": "QT",
+"version": "5.12"
+},
+{
+"name": "SSZipAchieve",
+"version": "0.2.2"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "GlobalProtect App",
+"retrieved": "2026-11-08",
+"sha256": "67b3d71bdf3ee45016c1988c014bc602a3bcfd73aa4c70f5fdbf299a4900b1b5",
+"supplier": "Palo Alto Networks",
+"url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/globalprotect-app-oss-listings/globalprotect-app-6-1-open-source-software-oss-listing.html",
+"version": "6.1"
+}

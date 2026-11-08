@@ -41,6 +41,16 @@ sources:
       Only facts are extracted (product, version, status, link). Advisory documents
       are not redistributed. See catalog/csaf_providers.yaml for the provider list.
 
+  - id: notices
+    name: Vendor third-party notices and OSS listings
+    kind: vendor-advisory
+    url: https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml
+    license: Per vendor (public documents)
+    notes: >-
+      Component names and versions extracted from vendors' published open source
+      notices. Only the component list is stored, not the license texts. "Present"
+      means the vendor lists the component; it says nothing about which CVEs apply.
+
   - id: community
     name: Xenolith community submissions
     kind: community

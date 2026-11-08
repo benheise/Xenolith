@@ -1,0 +1,2366 @@
+{
+"components": [
+{
+"name": "@epelc/gridstack",
+"version": "0.3.0-dev"
+},
+{
+"name": "ACL",
+"version": "2.2.51"
+},
+{
+"name": "androguard",
+"version": "3.1.0~rc1"
+},
+{
+"name": "Apache Felix Gogo Command",
+"version": "0.10.0. v201209301215"
+},
+{
+"name": "Apache Felix Gogo Runtime",
+"version": "0.10.0. v201209301036"
+},
+{
+"name": "Apache Felix Gogo Shell",
+"version": "0.10.0. v201212101605"
+},
+{
+"name": "Apache Felix Http Api",
+"version": "2.3.2"
+},
+{
+"name": "Apache Felix Log Service",
+"version": "1.0.1"
+},
+{
+"name": "Apache Felix Metatype Service",
+"version": "1.0.12"
+},
+{
+"name": "Apache Geronimo",
+"version": "1.2-beta"
+},
+{
+"name": "Apache HTTP Server",
+"version": "2.4.6"
+},
+{
+"name": "Apache HttpComponents Client",
+"version": "4.2.6"
+},
+{
+"name": "Apache HttpComponents Core",
+"version": "4.2.5"
+},
+{
+"name": "Apache HttpMime",
+"version": "4.2.6"
+},
+{
+"name": "Apache Lucene Analysis",
+"version": "3.5.0. v20120725-1805"
+},
+{
+"name": "Apache Portable Runtime",
+"version": "1.4.8"
+},
+{
+"name": "Apache XML Commons",
+"version": "1.4.01"
+},
+{
+"name": "appflower_studio",
+"version": "1.0beta-preview"
+},
+{
+"name": "apr-util",
+"version": "1.5.2"
+},
+{
+"name": "attr",
+"version": "2.4.46"
+},
+{
+"name": "attr-lib",
+"version": "2.4.47"
+},
+{
+"name": "Audit",
+"version": "2.4.1"
+},
+{
+"name": "audit-libs",
+"version": "2.4.1"
+},
+{
+"name": "backports.lzma",
+"version": "0.0.2"
+},
+{
+"name": "base-files",
+"version": "10ubuntu1"
+},
+{
+"name": "Bash",
+"version": "4.2.46"
+},
+{
+"name": "Batik XML utility library",
+"version": "1.7"
+},
+{
+"name": "beecrypt",
+"version": "4.2.1"
+},
+{
+"name": "Bidirectional Text Support",
+"version": "1.0.0"
+},
+{
+"name": "BIND (Berkeley Internet Name Domain)",
+"version": "9.9.4"
+},
+{
+"name": "bind-libs",
+"version": "9.9.4"
+},
+{
+"name": "bind-libs-lite",
+"version": "9.9.4"
+},
+{
+"name": "bind-utils",
+"version": "9.9.4"
+},
+{
+"name": "binutils",
+"version": "2.24"
+},
+{
+"name": "Bluebird JS",
+"version": "3.5.0"
+},
+{
+"name": "bluemusic",
+"version": "2.5.14"
+},
+{
+"name": "Boost C++ Libraries",
+"version": "1.53.0"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "3.3.5"
+},
+{
+"name": "bootstrap-multiselect",
+"version": "20180515 -snapshot -63a9191d"
+},
+{
+"name": "bridge-utils",
+"version": "1.5"
+},
+{
+"name": "bsdutils",
+"version": "2.30.2"
+},
+{
+"name": "Bundle for Workbench APIs available in e4",
+"version": "0.14.100"
+},
+{
+"name": "bzip2",
+"version": "1.0.6"
+},
+{
+"name": "bzip2-libs",
+"version": "1.0.6"
+},
+{
+"name": "cavaliercoder/go-rpm",
+"version": "20170617 -snapshot -c7209c35"
+},
+{
+"name": "centos-release",
+"version": "7"
+},
+{
+"name": "chart",
+"version": "3.2.0"
+},
+{
+"name": "chkconfig",
+"version": "1.3.61"
+},
+{
+"name": "ci-node-server",
+"version": "0.0.6"
+},
+{
+"name": "cloudinary_js",
+"version": "1.0.4"
+},
+{
+"name": "CodeMirror",
+"version": "3.23.0"
+},
+{
+"name": "com-sun-tools-visualvm-api-caching",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-application",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-application-views",
+"version": "RELEASE138"
+},
+{
+"name": "com-sun-tools-visualvm-attach",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-charts",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-core",
+"version": "RELEASE135"
+},
+{
+"name": "com-sun-tools-visualvm-coredump",
+"version": "RELEASE138"
+},
+{
+"name": "com-sun-tools-visualvm-heapdump",
+"version": "RELEASE138"
+},
+{
+"name": "com-sun-tools-visualvm-host",
+"version": "RELEASE135"
+},
+{
+"name": "com-sun-tools-visualvm-host-remote",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-host-views",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-jvmstat",
+"version": "RELEASE138"
+},
+{
+"name": "com-sun-tools-visualvm-modules-appui",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-modules-startup",
+"version": "RELEASE138"
+},
+{
+"name": "com-sun-tools-visualvm-profiler",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-profiling",
+"version": "RELEASE139"
+},
+{
+"name": "com-sun-tools-visualvm-sa",
+"version": "RELEASE135"
+},
+{
+"name": "com-sun-tools-visualvm-sampler",
+"version": "RELEASE138"
+},
+{
+"name": "com-sun-tools-visualvm-threaddump",
+"version": "RELEASE135"
+},
+{
+"name": "com.sun.tools.visualvm.host",
+"version": "1.0.0"
+},
+{
+"name": "com.sun.tools.visualvm.jmx",
+"version": "1.0.0"
+},
+{
+"name": "com.sun.tools.visualvm.jvm",
+"version": "2.1.0"
+},
+{
+"name": "Console plug-in",
+"version": "1.1.200"
+},
+{
+"name": "Control System Studio",
+"version": "20181203 -snapshot -1b86455b"
+},
+{
+"name": "cpp",
+"version": "4.8.5"
+},
+{
+"name": "cracklib",
+"version": "2.9.0"
+},
+{
+"name": "cracklib2",
+"version": "2.8.16"
+},
+{
+"name": "crontabs",
+"version": "1.11"
+},
+{
+"name": "D3.js",
+"version": "3.4.11"
+},
+{
+"name": "DB",
+"version": "5.3.21"
+},
+{
+"name": "Debian Php",
+"version": "5.3.3"
+},
+{
+"name": "decorator",
+"version": "4.0.10"
+},
+{
+"name": "dejavu-fonts-common",
+"version": "2.33"
+},
+{
+"name": "dejavu-sans-fonts",
+"version": "2.33"
+},
+{
+"name": "device-mapper",
+"version": "1.02.107"
+},
+{
+"name": "device-mapper-libs",
+"version": "1.02.107"
+},
+{
+"name": "devtoolset-3-binutils",
+"version": "2.24"
+},
+{
+"name": "dhclient",
+"version": "4.2.5"
+},
+{
+"name": "dhcp-common",
+"version": "4.2.5"
+},
+{
+"name": "dhcp-doc",
+"version": "4.3.4"
+},
+{
+"name": "dhcp-libs",
+"version": "4.2.5"
+},
+{
+"name": "dicompyler",
+"version": "0.4.2"
+},
+{
+"name": "diff",
+"version": "3.3"
+},
+{
+"name": "diskscrub",
+"version": "2.5.2"
+},
+{
+"name": "DOMjudge",
+"version": "4.0-dev-end"
+},
+{
+"name": "drozer",
+"version": "2.4.4"
+},
+{
+"name": "e2fsprogs",
+"version": "1.42.9"
+},
+{
+"name": "Eclipse",
+"version": "4.4.1"
+},
+{
+"name": "Eclipse Bindings Support",
+"version": "0.11+E114:E133.100"
+},
+{
+"name": "Eclipse Content Mechanism",
+"version": "3.4.200. v20140207-1251"
+},
+{
+"name": "Eclipse CSS Core Support",
+"version": "0.12.101"
+},
+{
+"name": "Eclipse CSS SWT Support",
+"version": "0.12.100"
+},
+{
+"name": "Eclipse CSS SWT Theme Support",
+"version": "0.12.0"
+},
+{
+"name": "Eclipse Dependency Injection",
+"version": "1.7.0"
+},
+{
+"name": "Eclipse Dependency Injection Annotations",
+"version": "1.5.0"
+},
+{
+"name": "Eclipse Dependency Injection Extensions",
+"version": "0.14.0"
+},
+{
+"name": "Eclipse e4 Workbench Add-ons",
+"version": "1.2.101"
+},
+{
+"name": "Eclipse ECJ",
+"version": "3.7.2"
+},
+{
+"name": "eclipse equinox security",
+"version": "1.2.0. v20130424-1801"
+},
+{
+"name": "Eclipse Help System Base",
+"version": "4.0.201. v20150204"
+},
+{
+"name": "Eclipse Jobs Mechanism",
+"version": "3.6.0. v20140424-0053"
+},
+{
+"name": "Eclipse Preferences Mechanism",
+"version": "3.5.200. v20140224-1527"
+},
+{
+"name": "Eclipse SDK Themes",
+"version": "1.1.300"
+},
+{
+"name": "Eclipse touchpoint bundle",
+"version": "2.1.200. v20130327-2119"
+},
+{
+"name": "Eclipse UI",
+"version": "3.5.0. I20090604-2000"
+},
+{
+"name": "Eclipse UI Dependency Injection",
+"version": "1.1.100"
+},
+{
+"name": "Eclipse Workbench Model",
+"version": "1.2.0"
+},
+{
+"name": "eclipse.equinox.event",
+"version": "1.3.100. v20140115-1647"
+},
+{
+"name": "elfutils",
+"version": "0.163"
+},
+{
+"name": "Equinox",
+"version": "1.4.100. v20140514-1614"
+},
+{
+"name": "Equinox Framework Admin",
+"version": "2.0.300"
+},
+{
+"name": "Equinox Provisioning Director Application",
+"version": "1.0.500"
+},
+{
+"name": "Equinox Provisioning JAR Processor",
+"version": "1.0.500"
+},
+{
+"name": "Equinox Provisioning Operations API",
+"version": "2.4.200"
+},
+{
+"name": "Equinox Provisioning Platform Update Support",
+"version": "1.0.400"
+},
+{
+"name": "Equinox Security Default UI",
+"version": "1.1.300"
+},
+{
+"name": "erlang",
+"version": "18.2.2"
+},
+{
+"name": "erlang-base",
+"version": "18.2-dfsg"
+},
+{
+"name": "erlang-erts",
+"version": "18.2.2"
+},
+{
+"name": "erlang-kernel",
+"version": "18.2.2"
+},
+{
+"name": "erlang-otp_mibs",
+"version": "18.3"
+},
+{
+"name": "erlang-stdlib",
+"version": "18.2.2"
+},
+{
+"name": "erlang-syntax_tools",
+"version": "18.3"
+},
+{
+"name": "es5-shim",
+"version": "4.0.3"
+},
+{
+"name": "EventLog Library",
+"version": "0.2.12"
+},
+{
+"name": "Expat XML Parser",
+"version": "2.1.0"
+},
+{
+"name": "Expression Language",
+"version": "3.4.600. v20140128-0851"
+},
+{
+"name": "Ext JS",
+"version": "3.2.0"
+},
+{
+"name": "Ext JS - Jangaroo Packaged",
+"version": "0.8.10"
+},
+{
+"name": "Ext JS Ext.ux.YoutubePlayer",
+"version": "20080327"
+},
+{
+"name": "Ext.ux.Livegrid Extension",
+"version": "0.5"
+},
+{
+"name": "famfamfam-silk",
+"version": "1.3"
+},
+{
+"name": "fastlz",
+"version": "0.1.0"
+},
+{
+"name": "file",
+"version": "5.11"
+},
+{
+"name": "file-libs",
+"version": "5.11"
+},
+{
+"name": "FileSaver.js",
+"version": "d8c81c105 f3f952326 ead7700c8 cf6da2690 eba0"
+},
+{
+"name": "findutils",
+"version": "4.5.11"
+},
+{
+"name": "fipscheck",
+"version": "1.4.1"
+},
+{
+"name": "fipscheck-lib",
+"version": "1.4.1"
+},
+{
+"name": "firepad",
+"version": "0.1.4"
+},
+{
+"name": "Flot",
+"version": "0.8.1"
+},
+{
+"name": "FluidDB-Explorer",
+"version": "20110203 -snapshot -820c771f"
+},
+{
+"name": "fontconfig",
+"version": "2.10.95"
+},
+{
+"name": "FUSE",
+"version": "2.7.4"
+},
+{
+"name": "Gawk",
+"version": "4.0.2"
+},
+{
+"name": "GDB",
+"version": "7.12"
+},
+{
+"name": "gdisk",
+"version": "0.8.10"
+},
+{
+"name": "gearmand",
+"version": "1.1.8"
+},
+{
+"name": "Genius-Android",
+"version": "CAPRICE-V2.1.1"
+},
+{
+"name": "GitHub's jsPDF",
+"version": "1.2.61"
+},
+{
+"name": "gkernel: rng-tools / ethtool",
+"version": "4.5"
+},
+{
+"name": "GLib2",
+"version": "2.42.2"
+},
+{
+"name": "global-store",
+"version": "0.7.1"
+},
+{
+"name": "GMP",
+"version": "6.0.0"
+},
+{
+"name": "GNU awk",
+"version": "4.0.2"
+},
+{
+"name": "GNU Binutils",
+"version": "2.23.52.0.1"
+},
+{
+"name": "GNU C Library",
+"version": "2.17"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "4.8.5"
+},
+{
+"name": "GNU Core Utilities",
+"version": "8.22"
+},
+{
+"name": "GNU cpio",
+"version": "2.11"
+},
+{
+"name": "GNU grep",
+"version": "2.2"
+},
+{
+"name": "GNU Libtool",
+"version": "2.4.2"
+},
+{
+"name": "GNU Ncurses",
+"version": "5.9"
+},
+{
+"name": "GNU Parted",
+"version": "3.1"
+},
+{
+"name": "GNU tar",
+"version": "1.26"
+},
+{
+"name": "GnuPG",
+"version": "2.0.22"
+},
+{
+"name": "google-perftools",
+"version": "2.4"
+},
+{
+"name": "google-snappy",
+"version": "1.1.0"
+},
+{
+"name": "gpxe-roms-qemu",
+"version": "0.9.7"
+},
+{
+"name": "graphael",
+"version": "1.1.0"
+},
+{
+"name": "grub",
+"version": "0.97"
+},
+{
+"name": "gzip",
+"version": "1.5"
+},
+{
+"name": "Help System UI",
+"version": "4.0.200"
+},
+{
+"name": "Help System Webapp",
+"version": "3.9.0"
+},
+{
+"name": "Highcharts JS",
+"version": "4.2.5"
+},
+{
+"name": "hiredis",
+"version": "0.2.0"
+},
+{
+"name": "Http Service Registry Extensions",
+"version": "1.1.300. v20130402-1529"
+},
+{
+"name": "Http Services Servlet",
+"version": "1.1.500"
+},
+{
+"name": "httpd-tools",
+"version": "2.4.6"
+},
+{
+"name": "httplib2",
+"version": "0.9.2"
+},
+{
+"name": "IBM ICU",
+"version": "52.1.0. v201404241930"
+},
+{
+"name": "initscripts",
+"version": "8.45.14.EL"
+},
+{
+"name": "IPMI Tool",
+"version": "1.8.13"
+},
+{
+"name": "iproute2",
+"version": "3.10.0"
+},
+{
+"name": "IPTables",
+"version": "1.4.21"
+},
+{
+"name": "iputils",
+"version": "s20121221"
+},
+{
+"name": "IPython",
+"version": "2.4.1"
+},
+{
+"name": "irqbalance",
+"version": "1.13"
+},
+{
+"name": "is-loading",
+"version": "1.0.1"
+},
+{
+"name": "iterate-ch/cyberduck",
+"version": "release-4-7-7"
+},
+{
+"name": "Jasper Jsp Registry Support Plug-in",
+"version": "1.0.300. v20130327"
+},
+{
+"name": "Java API for XML Processing",
+"version": "1.4"
+},
+{
+"name": "Java API for XML Web Services 2.2",
+"version": "2.0.4.Final"
+},
+{
+"name": "Java Architecture for XML Binding",
+"version": "2.3.0"
+},
+{
+"name": "Java Platform Standard Edition (JRE) (J2RE)",
+"version": "8u181"
+},
+{
+"name": "Java Servlet API",
+"version": "2.1-rev-1"
+},
+{
+"name": "Java(TM) API for XML-Based Web Services 2.3",
+"version": "1.0.0.Final"
+},
+{
+"name": "JavaBeans Activation Framework",
+"version": "1.2.0"
+},
+{
+"name": "JavaMail",
+"version": "1.4.6"
+},
+{
+"name": "JavaMail API dsn support",
+"version": "1.4.7"
+},
+{
+"name": "JavaMail API Gmail IMAP provider",
+"version": "1.4.6"
+},
+{
+"name": "JavaMail API pop3 provider",
+"version": "1.4.6"
+},
+{
+"name": "JavaMail API smtp provider",
+"version": "1.4.6"
+},
+{
+"name": "JavaScript-Canvas-to-Blob",
+"version": "2.0.5"
+},
+{
+"name": "Javax Inject from the JSR-330 Expert Group",
+"version": "1"
+},
+{
+"name": "javax.servlet",
+"version": "3.0.0. v201112011016"
+},
+{
+"name": "javax.servlet API v.2.5",
+"version": "3.1-b41"
+},
+{
+"name": "javax.servlet.jsp",
+"version": "2.2.0. v201112011158"
+},
+{
+"name": "JBoss Drools",
+"version": "5.2.0.015"
+},
+{
+"name": "Jetty :: Servlet Handling",
+"version": "8.1.14. v20131031"
+},
+{
+"name": "Jetty Orbit :: EL",
+"version": "2.2.0. v201303151357"
+},
+{
+"name": "Jetty Orbit :: javax el",
+"version": "2.2.0. v201303151357"
+},
+{
+"name": "Jetty Orbit :: JSP Impl",
+"version": "2.2.2. v201501141630"
+},
+{
+"name": "Jetty: Java based HTTP, Servlet, SPDY, WebSocket Server",
+"version": "8.1.14. v20131031"
+},
+{
+"name": "JFace Data Binding",
+"version": "1.2.0"
+},
+{
+"name": "JFace Data Binding for JavaBeans",
+"version": "1.3.100"
+},
+{
+"name": "jQuery",
+"version": "1.12.2"
+},
+{
+"name": "jQuery Mousewheel",
+"version": "3.1.6"
+},
+{
+"name": "jQuery UI",
+"version": "1.11.0-1"
+},
+{
+"name": "jquery-ejs",
+"version": "master-20101212"
+},
+{
+"name": "jQuery-Knob",
+"version": "1.2.2"
+},
+{
+"name": "JSON2",
+"version": "0.01.0"
+},
+{
+"name": "JSONPath",
+"version": "0.8.0"
+},
+{
+"name": "jspdf-autotable",
+"version": "2.3.0"
+},
+{
+"name": "jspm-resolve",
+"version": "1.0.6"
+},
+{
+"name": "Jython",
+"version": "2.7.5"
+},
+{
+"name": "keyutils",
+"version": "1.5.8"
+},
+{
+"name": "keyutils-libs",
+"version": "1.5.8"
+},
+{
+"name": "knottie-sammy",
+"version": "0.7.6"
+},
+{
+"name": "Less",
+"version": "458"
+},
+{
+"name": "libaio",
+"version": "0.3.109"
+},
+{
+"name": "libaio-dev",
+"version": "0.3.109"
+},
+{
+"name": "libarchive",
+"version": "3.1.2"
+},
+{
+"name": "libassuan",
+"version": "2.1.0"
+},
+{
+"name": "libcap-dev",
+"version": "2.22"
+},
+{
+"name": "libcap-ng",
+"version": "0.7.5"
+},
+{
+"name": "libcomerr2",
+"version": "1.42.9"
+},
+{
+"name": "libdb",
+"version": "5.3.21"
+},
+{
+"name": "libdb-utils",
+"version": "5.3.21"
+},
+{
+"name": "libevent",
+"version": "2.0.21"
+},
+{
+"name": "libffi",
+"version": "3.2.1"
+},
+{
+"name": "libgcc",
+"version": "4.8.5"
+},
+{
+"name": "libgearman",
+"version": "1.1.8"
+},
+{
+"name": "libgssglue",
+"version": "0.1"
+},
+{
+"name": "libgssglue1",
+"version": "0.1"
+},
+{
+"name": "libguestfs",
+"version": "1.16.19"
+},
+{
+"name": "libidn",
+"version": "1.28"
+},
+{
+"name": "libjpeg",
+"version": "1.2.90"
+},
+{
+"name": "libjpeg-turbo",
+"version": "1.2.90"
+},
+{
+"name": "libksba",
+"version": "1.3.5"
+},
+{
+"name": "liblockdev1",
+"version": "1.0.4"
+},
+{
+"name": "libmount",
+"version": "2.23.2"
+},
+{
+"name": "libnfnetlink",
+"version": "1.0.1"
+},
+{
+"name": "libnfsidmap",
+"version": "0.25"
+},
+{
+"name": "libnfsidmap-dev",
+"version": "0.25"
+},
+{
+"name": "libntfs-3g-dev",
+"version": "2012.1.15AR.5"
+},
+{
+"name": "libpcap",
+"version": "1.5.3"
+},
+{
+"name": "libpng",
+"version": "1.5.13"
+},
+{
+"name": "libpth-dbg",
+"version": "2.0.7"
+},
+{
+"name": "libpwquality",
+"version": "1.2.3"
+},
+{
+"name": "libselinux",
+"version": "2.2.2"
+},
+{
+"name": "libsemanage",
+"version": "2.1.10"
+},
+{
+"name": "libss",
+"version": "1.42.9"
+},
+{
+"name": "libstdc++",
+"version": "4.8.5"
+},
+{
+"name": "libtirpc",
+"version": "0.2.4"
+},
+{
+"name": "libunwind",
+"version": "1.1"
+},
+{
+"name": "libuser",
+"version": "0.6"
+},
+{
+"name": "libxml2-python",
+"version": "2.9.4"
+},
+{
+"name": "libxslt",
+"version": "1.1.28"
+},
+{
+"name": "Linux Diagnostic Tools",
+"version": "2.1.0"
+},
+{
+"name": "Linux kernel",
+"version": "3.10.0"
+},
+{
+"name": "Linux NTFS file system support",
+"version": "2.0.0"
+},
+{
+"name": "Linux-Pam",
+"version": "1.1.8"
+},
+{
+"name": "logrotate",
+"version": "3.8.6"
+},
+{
+"name": "Lucene Analyzers",
+"version": "3.5.0"
+},
+{
+"name": "LVM2",
+"version": "2.02.130"
+},
+{
+"name": "lvm2-sysvinit",
+"version": "2.02.130"
+},
+{
+"name": "LZO real-time data compression library",
+"version": "2.06"
+},
+{
+"name": "M2Crypto",
+"version": "0.21.1"
+},
+{
+"name": "magda-io/magda",
+"version": "v0.0.32"
+},
+{
+"name": "Magic Assistant",
+"version": "1.3.1.13"
+},
+{
+"name": "mailx",
+"version": "12.5"
+},
+{
+"name": "MAKEDEV",
+"version": "3.23"
+},
+{
+"name": "Maven definition for updater.jar - external part of NetBeans module.",
+"version": "RELEASE802"
+},
+{
+"name": "mcrypt",
+"version": "2.5.8"
+},
+{
+"name": "Metro OSGi API bundle for GlassFish V3",
+"version": "2.4.2"
+},
+{
+"name": "mingetty",
+"version": "1.07"
+},
+{
+"name": "Modernizr",
+"version": "2.0.6"
+},
+{
+"name": "module-init-tools",
+"version": "3.3"
+},
+{
+"name": "MongoDB",
+"version": "2.4.8"
+},
+{
+"name": "Mozilla NSS",
+"version": "3.16.2.3"
+},
+{
+"name": "ms-amqp-transport",
+"version": "9.0.0"
+},
+{
+"name": "mumble-django",
+"version": "2.5"
+},
+{
+"name": "Mura CMS",
+"version": "6.0.5375"
+},
+{
+"name": "MySQL",
+"version": "5.5.28"
+},
+{
+"name": "MySQL for Python",
+"version": "1.2.3"
+},
+{
+"name": "mythtv-doc",
+"version": "29.0+fixes. 20170728. 696806310a"
+},
+{
+"name": "nbd",
+"version": "2.9.20"
+},
+{
+"name": "ncurses-libs",
+"version": "5.9"
+},
+{
+"name": "ncurses-term",
+"version": "5.9"
+},
+{
+"name": "Net-SNMP",
+"version": "5.7.2"
+},
+{
+"name": "net-tools",
+"version": "2"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p6"
+},
+{
+"name": "NFS",
+"version": "1.3.0"
+},
+{
+"name": "nginx",
+"version": "1.0.15"
+},
+{
+"name": "NSS",
+"version": "3.19.1"
+},
+{
+"name": "nss-softokn",
+"version": "3.19.1"
+},
+{
+"name": "nss-softokn-freebl",
+"version": "3.19.1"
+},
+{
+"name": "nss-tools",
+"version": "3.19.1"
+},
+{
+"name": "nss-utils",
+"version": "3.19.1"
+},
+{
+"name": "ntfs-3g-dev",
+"version": "2012.1.15"
+},
+{
+"name": "nvidia-visual-profiler",
+"version": "9.1.85"
+},
+{
+"name": "object-assign-shim",
+"version": "1.0.0"
+},
+{
+"name": "OIUE TOOLS",
+"version": "1.0.0"
+},
+{
+"name": "oletools",
+"version": "0.5"
+},
+{
+"name": "OpenChrom",
+"version": "0.8.0"
+},
+{
+"name": "OpenJDK",
+"version": "8.17.0.3"
+},
+{
+"name": "OpenJFX",
+"version": "8u161-b12"
+},
+{
+"name": "OpenLDAP",
+"version": "2.4.40"
+},
+{
+"name": "openldap-clients",
+"version": "2.4.40"
+},
+{
+"name": "openpilot-drive",
+"version": "v0.3.4"
+},
+{
+"name": "OpenSAML 2.0",
+"version": "2.5.5"
+},
+{
+"name": "OpenSSH",
+"version": "6.4p1"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.1e"
+},
+{
+"name": "openwsman",
+"version": "2.3.6"
+},
+{
+"name": "org-netbeans-api-annotations-common",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-api-progress",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-api-search",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-api-visual",
+"version": "RELEASE73-BETA2"
+},
+{
+"name": "org-netbeans-bootstrap",
+"version": "RELEASE802"
+},
+{
+"name": "org-netbeans-core-execution",
+"version": "RELEASE81"
+},
+{
+"name": "org-netbeans-core-io-ui",
+"version": "RELEASE81"
+},
+{
+"name": "org-netbeans-core-multitabs",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-core-multiview",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-core-output2",
+"version": "RELEASE80-BETA"
+},
+{
+"name": "org-netbeans-core-startup",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-core-ui",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-core-windows",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-lib-profiler",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-lib-profiler-charts",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-lib-profiler-common",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-lib-profiler-ui",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-lib-uihandler",
+"version": "RELEASE80"
+},
+{
+"name": "org-netbeans-modules-applemenu",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-modules-autoupdate-cli",
+"version": "RELEASE74"
+},
+{
+"name": "org-netbeans-modules-autoupdate-services",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-autoupdate-ui",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-core-kit",
+"version": "RELEASE82"
+},
+{
+"name": "org-netbeans-modules-editor-mimelookup",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-editor-mimelookup-impl",
+"version": "RELEASE72"
+},
+{
+"name": "org-netbeans-modules-favorites",
+"version": "RELEASE80-BETA"
+},
+{
+"name": "org-netbeans-modules-javahelp",
+"version": "RELEASE801"
+},
+{
+"name": "org-netbeans-modules-keyring",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-keyring-fallback",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-masterfs",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-masterfs-nio2",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-modules-options-api",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-modules-options-keymap",
+"version": "RELEASE80"
+},
+{
+"name": "org-netbeans-modules-print",
+"version": "RELEASE74-BETA"
+},
+{
+"name": "org-netbeans-modules-profiler",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-profiler-api",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-modules-profiler-attach",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-profiler-heapwalker",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-profiler-oql",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-modules-profiler-selector-api",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-modules-profiler-selector-ui",
+"version": "RELEASE801"
+},
+{
+"name": "org-netbeans-modules-profiler-snaptracer",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-profiler-utilities",
+"version": "RELEASE711"
+},
+{
+"name": "org-netbeans-modules-queries",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-sampler",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-sendopts",
+"version": "RELEASE139"
+},
+{
+"name": "org-netbeans-modules-settings",
+"version": "RELEASE138"
+},
+{
+"name": "org-netbeans-modules-templates",
+"version": "RELEASE802"
+},
+{
+"name": "org-netbeans-modules-uihandler",
+"version": "RELEASE80"
+},
+{
+"name": "org-netbeans-spi-quicksearch",
+"version": "RELEASE81"
+},
+{
+"name": "org-netbeans-swing-outline",
+"version": "RELEASE74"
+},
+{
+"name": "org-netbeans-swing-plaf",
+"version": "RELEASE80"
+},
+{
+"name": "org-netbeans-swing-tabcontrol",
+"version": "RELEASE80"
+},
+{
+"name": "org-openide-actions",
+"version": "RELEASE80"
+},
+{
+"name": "org-openide-awt",
+"version": "RELEASE711"
+},
+{
+"name": "org-openide-compat",
+"version": "RELEASE691"
+},
+{
+"name": "org-openide-dialogs",
+"version": "RELEASE80-BETA"
+},
+{
+"name": "org-openide-execution",
+"version": "RELEASE712"
+},
+{
+"name": "org-openide-explorer",
+"version": "RELEASE712"
+},
+{
+"name": "org-openide-filesystems",
+"version": "RELEASE80-BETA"
+},
+{
+"name": "org-openide-io",
+"version": "RELEASE138"
+},
+{
+"name": "org-openide-loaders",
+"version": "RELEASE138"
+},
+{
+"name": "org-openide-modules",
+"version": "RELEASE139"
+},
+{
+"name": "org-openide-nodes",
+"version": "RELEASE80"
+},
+{
+"name": "org-openide-options",
+"version": "RELEASE69"
+},
+{
+"name": "org-openide-text",
+"version": "RELEASE801"
+},
+{
+"name": "org-openide-util",
+"version": "RELEASE138"
+},
+{
+"name": "org-openide-util-enumerations",
+"version": "RELEASE80"
+},
+{
+"name": "org-openide-util-lookup",
+"version": "RELEASE138"
+},
+{
+"name": "org-openide-windows",
+"version": "RELEASE138"
+},
+{
+"name": "org.apache.commons.logging",
+"version": "1.1.1. v201101211721"
+},
+{
+"name": "org.apache.jasper.glassfish",
+"version": "2.2.2. v201205150955"
+},
+{
+"name": "org.apache.lucene.core_3.5.0.v20120725-1805.jar",
+"version": "3.5.0. v20120725-1805"
+},
+{
+"name": "org.eclipse.core.net",
+"version": "1.2.200. v20140124-2013"
+},
+{
+"name": "org.eclipse.ecf",
+"version": "3.1.300. v20120610-1946"
+},
+{
+"name": "org.eclipse.ecf.filetransfer",
+"version": "5.0.0. v20130604-1622"
+},
+{
+"name": "org.eclipse.ecf.provider.filetransfer",
+"version": "3.2.0. v20130604-1622"
+},
+{
+"name": "org.eclipse.equinox.common",
+"version": "3.6.200. v20130402-1505"
+},
+{
+"name": "org.eclipse.equinox.concurrent",
+"version": "1.1.0. v20130327-1442"
+},
+{
+"name": "org.eclipse.equinox.ds",
+"version": "1.4.101. v20130813-1853"
+},
+{
+"name": "org.eclipse.equinox.frameworkadmin",
+"version": "2.0.100. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.frameworkadmin.equinox",
+"version": "1.0.500. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.http.servlet",
+"version": "1.1.400. v20130418-1354"
+},
+{
+"name": "org.eclipse.equinox.jsp.jasper",
+"version": "1.0.400. v20130327-1442"
+},
+{
+"name": "org.eclipse.equinox.launcher",
+"version": "1.3.0. v20130327-1440"
+},
+{
+"name": "org.eclipse.equinox.p2.artifact.repository",
+"version": "1.1.200. v20130515-2028"
+},
+{
+"name": "org.eclipse.equinox.p2.console",
+"version": "1.0.300. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.p2.core",
+"version": "2.3.0. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.p2.director",
+"version": "2.3.1. v20140221-1852"
+},
+{
+"name": "org.eclipse.equinox.p2.directorywatcher",
+"version": "1.0.300. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.p2.engine",
+"version": "2.3.0. v20130526-2122"
+},
+{
+"name": "org.eclipse.equinox.p2.garbagecollector",
+"version": "1.0.200. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.p2.jarprocessor",
+"version": "1.0.300. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.p2.metadata",
+"version": "2.2.0. v20130523-1557"
+},
+{
+"name": "org.eclipse.equinox.p2.metadata.repository",
+"version": "1.2.100. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.p2.publisher",
+"version": "1.3.0. v20140129-1405"
+},
+{
+"name": "org.eclipse.equinox.p2.publisher.eclipse",
+"version": "1.1.200. v20130516-1953"
+},
+{
+"name": "org.eclipse.equinox.p2.reconciler.dropins",
+"version": "1.1.200. v20130419-1850"
+},
+{
+"name": "org.eclipse.equinox.p2.repository",
+"version": "2.3.0. v20130412-2032"
+},
+{
+"name": "org.eclipse.equinox.p2.touchpoint.natives",
+"version": "1.1.100. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.p2.transport.ecf",
+"version": "1.1.0. v20130516-1858"
+},
+{
+"name": "org.eclipse.equinox.p2.updatechecker",
+"version": "1.1.200. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.registry",
+"version": "3.5.400. v20140428-1507"
+},
+{
+"name": "org.eclipse.equinox.simpleconfigurator.manipulator",
+"version": "2.0.0. v20130327-2119"
+},
+{
+"name": "org.eclipse.equinox.util",
+"version": "1.0.500. v20130404-1337"
+},
+{
+"name": "org.eclipse.help_3.6.0.v20130326-1254.jar",
+"version": "3.6.0. v20130326-1254"
+},
+{
+"name": "org.eclipse.osgi",
+"version": "3.10.1. v20140909-1633"
+},
+{
+"name": "org.eclipse.update.configurator",
+"version": "3.3.300. v20140518-1928"
+},
+{
+"name": "org.openide.modules",
+"version": "1.0.0"
+},
+{
+"name": "org.openide.util",
+"version": "1.0.0"
+},
+{
+"name": "org.osgi:org.osgi.service.log",
+"version": "1.3.0"
+},
+{
+"name": "org.sat4j.core",
+"version": "2.3.5. v201308161310"
+},
+{
+"name": "org.sat4j.pb",
+"version": "2.3.5"
+},
+{
+"name": "org.w3c.dom.events",
+"version": "3.0.0. draft20060413_ v201105210656"
+},
+{
+"name": "org.w3c.dom.smil_1.0.0.v200806040011.jar",
+"version": "1.0.0"
+},
+{
+"name": "org.w3c.dom.svg_1.1.0.v201011041433.jar",
+"version": "1.1.0"
+},
+{
+"name": "osFighter",
+"version": "master-20140421"
+},
+{
+"name": "osgi.core",
+"version": "6.0.0"
+},
+{
+"name": "otj-pg-embedded",
+"version": "0.11.4"
+},
+{
+"name": "pam_krb5",
+"version": "2.4.8"
+},
+{
+"name": "parted",
+"version": "3.1"
+},
+{
+"name": "passwd",
+"version": "0.79"
+},
+{
+"name": "pciutils-libs",
+"version": "3.2.1"
+},
+{
+"name": "PCRE",
+"version": "8.32"
+},
+{
+"name": "Percona XtraDB Cluster",
+"version": "5.5.34-25.9+dfsg"
+},
+{
+"name": "pexpect",
+"version": "2.3"
+},
+{
+"name": "phantomjs",
+"version": "1.9.8"
+},
+{
+"name": "PHP",
+"version": "5.6.25"
+},
+{
+"name": "php-mongodb",
+"version": "1.1.2"
+},
+{
+"name": "php-pecl-jsonc",
+"version": "1.3.6"
+},
+{
+"name": "php-tcpdf-gnu-free-mono-fonts",
+"version": "6.2.26"
+},
+{
+"name": "picard",
+"version": "2.8.2"
+},
+{
+"name": "pika AMQP Module for RabbitMQ",
+"version": "0.10.0"
+},
+{
+"name": "pinentry",
+"version": "0.8.1"
+},
+{
+"name": "pinentry-gtk2",
+"version": "0.8.1"
+},
+{
+"name": "Poedit",
+"version": "1.6.10"
+},
+{
+"name": "popt",
+"version": "1.13"
+},
+{
+"name": "PrettyTable",
+"version": "0.7.2"
+},
+{
+"name": "prismic.io",
+"version": "1.1.4"
+},
+{
+"name": "procps-ng",
+"version": "3.3.10"
+},
+{
+"name": "psmisc",
+"version": "22.2"
+},
+{
+"name": "psutil",
+"version": "3.4.1"
+},
+{
+"name": "pth",
+"version": "2.0.7"
+},
+{
+"name": "PUPA",
+"version": "0.97"
+},
+{
+"name": "py-rarfile",
+"version": "3"
+},
+{
+"name": "py-requests",
+"version": "2.13.0"
+},
+{
+"name": "py-setproctitle",
+"version": "1.1.9"
+},
+{
+"name": "py-urlgrabber-doc",
+"version": "3.10.1"
+},
+{
+"name": "PyCrypto",
+"version": "2.6.1"
+},
+{
+"name": "PycURL",
+"version": "7.43.0"
+},
+{
+"name": "PyMongo",
+"version": "3.0.3"
+},
+{
+"name": "pyrabbit",
+"version": "1.1.0"
+},
+{
+"name": "Python programming language",
+"version": "2.7.5"
+},
+{
+"name": "python-crypto",
+"version": "2.6.1"
+},
+{
+"name": "python-dpkt",
+"version": "1.8.r98"
+},
+{
+"name": "python-gearman",
+"version": "2.0.2"
+},
+{
+"name": "python-hiredis",
+"version": "0.2.0"
+},
+{
+"name": "python-libevent",
+"version": "0.9.2"
+},
+{
+"name": "python-M2Crypto",
+"version": "0.22.5"
+},
+{
+"name": "python-oletools",
+"version": "0.51"
+},
+{
+"name": "python-pefile",
+"version": "1.2.10.139"
+},
+{
+"name": "python-pillow",
+"version": "2.0.0"
+},
+{
+"name": "python-reportlab",
+"version": "2.5"
+},
+{
+"name": "python-rsa",
+"version": "3.4.2"
+},
+{
+"name": "python-simplejson",
+"version": "3.8.2"
+},
+{
+"name": "python-urlgrabber",
+"version": "3.1"
+},
+{
+"name": "python-urwid",
+"version": "0.9.8.3"
+},
+{
+"name": "PyTZ - Python Time Zone Library",
+"version": "2015.7"
+},
+{
+"name": "qemu-kvm",
+"version": "0.12.1.2"
+},
+{
+"name": "rabbitmq-server",
+"version": "3.6.1"
+},
+{
+"name": "rcs",
+"version": "5.9.0"
+},
+{
+"name": "Readline",
+"version": "6.2"
+},
+{
+"name": "Redis",
+"version": "3.2.4"
+},
+{
+"name": "ReportLab",
+"version": "2.5"
+},
+{
+"name": "requests",
+"version": "2.12.4"
+},
+{
+"name": "rh-redis32-redis",
+"version": "3.2.4"
+},
+{
+"name": "rootfiles",
+"version": "8.1"
+},
+{
+"name": "RPCBind",
+"version": "0.2.0"
+},
+{
+"name": "RPM",
+"version": "4.11.3"
+},
+{
+"name": "rpm-libs",
+"version": "4.11.3"
+},
+{
+"name": "rsync",
+"version": "3.0.9"
+},
+{
+"name": "Ruby",
+"version": "2.4.1"
+},
+{
+"name": "runtime",
+"version": "3.10.0. v20140318-2214"
+},
+{
+"name": "sammyjs",
+"version": "0.7.6"
+},
+{
+"name": "Saros - Distributed Party Programming",
+"version": "20181129 -snapshot -544d8fe8"
+},
+{
+"name": "Scout SDK org.eclipse.core.commands dependency (Incubation)",
+"version": "3.7.0. v20150422-0725"
+},
+{
+"name": "Scout SDK org.eclipse.jface.text dependency (Incubation)",
+"version": "3.10.0. v20150603-1752"
+},
+{
+"name": "Scout SDK org.eclipse.text dependency (Incubation)",
+"version": "3.5.400. v20150505-1044"
+},
+{
+"name": "Scout SDK org.eclipse.ui dependency (Incubation)",
+"version": "3.107.0. v20150507-1945"
+},
+{
+"name": "Scout SDK org.eclipse.ui.views dependency (Incubation)",
+"version": "3.8.0. v20150422-0725"
+},
+{
+"name": "Scout SDK org.eclipse.ui.workbench dependency (Incubation)",
+"version": "3.107.0. v20150510-1732"
+},
+{
+"name": "seabios",
+"version": "1.7.0"
+},
+{
+"name": "sed",
+"version": "4.2.2"
+},
+{
+"name": "semanticdbScalacPlugin",
+"version": "4.0.0-M8"
+},
+{
+"name": "setup",
+"version": "2.8.71-6.el7"
+},
+{
+"name": "sgabios",
+"version": "0"
+},
+{
+"name": "Shadow Tool Suite",
+"version": "4.1.5.1"
+},
+{
+"name": "simogeo's Filemanager",
+"version": "2.2.0"
+},
+{
+"name": "Simple API for CSS (org.w3c.css.sac)",
+"version": "1.3.1. v200903091627"
+},
+{
+"name": "six Compatibility Utility",
+"version": "1.10.0"
+},
+{
+"name": "smart_proxy_dhcp_remote_isc",
+"version": "0.0.2.1"
+},
+{
+"name": "snappy",
+"version": "1.1.0"
+},
+{
+"name": "socket.io-browserify",
+"version": "0.9.11"
+},
+{
+"name": "SQLite",
+"version": "3.7.17"
+},
+{
+"name": "StAX",
+"version": "1"
+},
+{
+"name": "stomp-websocket",
+"version": "2.3.4"
+},
+{
+"name": "strongSwan",
+"version": "5.6.0"
+},
+{
+"name": "Subrion",
+"version": "2.3.5"
+},
+{
+"name": "SVEditor",
+"version": "1.4"
+},
+{
+"name": "SWT (Standard Widget Toolkit)",
+"version": "4.4.2"
+},
+{
+"name": "sysfsutils",
+"version": "2.1.0"
+},
+{
+"name": "sysklogd",
+"version": "1.4.1"
+},
+{
+"name": "syslog-ng",
+"version": "3.8.1"
+},
+{
+"name": "syslog-ng-incubator",
+"version": "3.8.1"
+},
+{
+"name": "syslog-ng-python",
+"version": "3.8.1"
+},
+{
+"name": "sysstat",
+"version": "v10.1.5"
+},
+{
+"name": "sysvinit",
+"version": "2.86"
+},
+{
+"name": "Tadpole DB Hub",
+"version": "v1.1.1"
+},
+{
+"name": "tcp_wrappers",
+"version": "7.6"
+},
+{
+"name": "tcp_wrappers-libs",
+"version": "7.6"
+},
+{
+"name": "TCPDF",
+"version": "6.2.8"
+},
+{
+"name": "tcpdump",
+"version": "4.5.1"
+},
+{
+"name": "telnet",
+"version": "0.17"
+},
+{
+"name": "telnet-server",
+"version": "0.17"
+},
+{
+"name": "testing-postgresql-server",
+"version": "0.4"
+},
+{
+"name": "texinfo - GNU documentation system",
+"version": "5.1"
+},
+{
+"name": "tftp",
+"version": "5.2"
+},
+{
+"name": "The FreeType Project",
+"version": "2.4.11"
+},
+{
+"name": "Time Zone Database",
+"version": "2018g"
+},
+{
+"name": "Tor",
+"version": "0.2.3.25"
+},
+{
+"name": "traceroute",
+"version": "2.0.19"
+},
+{
+"name": "Tycho org.eclipse.osgi.compatibility.state dependency (Incubation)",
+"version": "1.0.100. v20150402-1551"
+},
+{
+"name": "unixODBC",
+"version": "2.3.1"
+},
+{
+"name": "Unofficial OpenJDK build",
+"version": "1.6.0-unofficial -b27"
+},
+{
+"name": "ustr",
+"version": "1.0.4"
+},
+{
+"name": "util-linux",
+"version": "2.23.2"
+},
+{
+"name": "VasSonic",
+"version": "1"
+},
+{
+"name": "vgabios",
+"version": "0.6b"
+},
+{
+"name": "vim-minimal",
+"version": "7.4.160"
+},
+{
+"name": "Visionmedia Debug",
+"version": "3.2.0"
+},
+{
+"name": "VisualVM",
+"version": "1.3.8"
+},
+{
+"name": "vixie-cron",
+"version": "4.1"
+},
+{
+"name": "vrl",
+"version": "0.4.3.1.0"
+},
+{
+"name": "Webtoolkit Javascript base64",
+"version": "20090123"
+},
+{
+"name": "Welcome Framework",
+"version": "3.5.2"
+},
+{
+"name": "Wget",
+"version": "1.16.2"
+},
+{
+"name": "when",
+"version": "3.7.3"
+},
+{
+"name": "xinetd",
+"version": "2.3.15"
+},
+{
+"name": "XMLTooling-C",
+"version": "1.6.4"
+},
+{
+"name": "XZ Utils",
+"version": "5.1.2"
+},
+{
+"name": "zlib",
+"version": "1.2.7"
+},
+{
+"name": "Zulu Builds of OpenJDK for Windows",
+"version": "8.33.0.1"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "WildFire",
+"retrieved": "2026-11-08",
+"sha256": "79aee703f4ae94fda59ee0e4a73dfae9ce0aea4e4ee319c4447c21688eab5a0d",
+"supplier": "Palo Alto Networks",
+"url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/wildfire-oss-listings/wildfire-9-1-open-source-software-oss-listing.html",
+"version": "9.1"
+}

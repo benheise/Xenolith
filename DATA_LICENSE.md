@@ -8,6 +8,7 @@ Xenolith's code is licensed under Apache-2.0 (see `LICENSE`). The data is not on
 | `ncsc-nl-log4shell` | [NCSC-NL/log4shell](https://github.com/NCSC-NL/log4shell) | MIT |
 | `cisa-log4j` | [cisagov/log4j-affected-db](https://github.com/cisagov/log4j-affected-db) | CC0-1.0 |
 | `csaf` | Vendors' public (TLP:CLEAR) CSAF advisories | Each vendor's terms of use. Only factual statements (product, version, status, date, link) are extracted; advisory documents are not redistributed |
+| `notices` | Vendors' public open source notices / OSS listings (see `catalog/notices.yaml`) | Each vendor's terms of use. Only component names and versions are extracted, as facts; license texts and documents are not redistributed |
 | `community` | `community/assertions.csv` in this repository | CC-BY-4.0 |
 | `cvelist` (product registry) | [CVE Program cvelistV5](https://github.com/CVEProject/cvelistV5) and [CISA KEV](https://github.com/cisagov/kev-data) | [CVE Terms of Use](https://www.cve.org/Legal/TermsOfUse); KEV is CC0-1.0 |
 

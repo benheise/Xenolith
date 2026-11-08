@@ -1,0 +1,138 @@
+{
+"components": [
+{
+"name": "ASP.NET MVC",
+"version": "4.0.30506.0"
+},
+{
+"name": "ASP.NET Razor",
+"version": "2.0.30506.0"
+},
+{
+"name": "Automapper",
+"version": "3.0.0.0"
+},
+{
+"name": "BEA Engine",
+"version": "4 rev 172"
+},
+{
+"name": "Cassia",
+"version": "1.0.0.0"
+},
+{
+"name": "CommonServiceLocator",
+"version": "1.0.0"
+},
+{
+"name": "DotNetZipLib",
+"version": "1.9.1.8"
+},
+{
+"name": "Fluent NHibernate",
+"version": "2.0.1.0"
+},
+{
+"name": "FluentMigrator",
+"version": "1.1.1.0"
+},
+{
+"name": "jQuery",
+"version": "1.9.1"
+},
+{
+"name": "Json.net",
+"version": "6.0.8"
+},
+{
+"name": "knockout",
+"version": "3.2.0"
+},
+{
+"name": "lesi.collections",
+"version": "3.3.1.4000"
+},
+{
+"name": "LINQ",
+"version": "3.3.3.GA"
+},
+{
+"name": "MvcContrib",
+"version": "3.0.0.99"
+},
+{
+"name": "MvcSitemapProvider",
+"version": "4.4.0"
+},
+{
+"name": "MvvmLight",
+"version": "4.2.30.23173"
+},
+{
+"name": "Nhibernate",
+"version": "4.0.3.GA"
+},
+{
+"name": "NLog",
+"version": "2.0.0.0"
+},
+{
+"name": "Nlog.Targets.Syslog",
+"version": "2.0.0.0"
+},
+{
+"name": "OWIN",
+"version": "1.0.0"
+},
+{
+"name": "PixelLab",
+"version": "6.0.2"
+},
+{
+"name": "Prism",
+"version": "1.4.4"
+},
+{
+"name": "RazorEngine",
+"version": "3.3.0"
+},
+{
+"name": "RestSharp",
+"version": "104.1.0.0"
+},
+{
+"name": "Sharp Serializer",
+"version": "2.18.0.0"
+},
+{
+"name": "Simple Injector",
+"version": "1.61, 2.8.0"
+},
+{
+"name": "sqlite",
+"version": "1.0.86.0, 1.0.82.0"
+},
+{
+"name": "WebActivator",
+"version": "1.4.4"
+},
+{
+"name": "WebGrease",
+"version": "1.5.2"
+},
+{
+"name": "WPFToolkit",
+"version": "3.4.40211.1"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "Traps Agent and Traps Endpoint Security Manager",
+"retrieved": "2026-11-08",
+"sha256": "9721e9241e22a04502dc1662128a4bd83576948240a9df78f50a1ce858bdbbd7",
+"supplier": "Palo Alto Networks",
+"url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/traps-oss-listings/traps-3-4-open-source-software-oss-listing.html",
+"version": "3.4"
+}

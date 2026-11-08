@@ -1,10 +1,12 @@
 {
- "built": "2026-11-08T00:58:27Z",
+ "built": "2026-11-08T01:11:14Z",
  "counts": {
-  "assertions": 12493,
-  "products_with_data": 7419,
+  "assertions": 12896,
+  "products_with_data": 7425,
+  "inventories": 80,
+  "inventory_components": 23059,
   "spine_products": 16524,
-  "spine_only_shown": 4987,
+  "spine_only_shown": 4986,
   "components": 13
  },
  "components": [
@@ -33,15 +35,16 @@
      ]
     }
    ],
-   "assertions": 757,
-   "products": 738,
-   "contains": 379,
+   "assertions": 821,
+   "products": 742,
+   "contains": 443,
    "verdicts": {
     "fixed": 170,
     "workaround": 9,
     "affected": 200,
     "under_investigation": 79,
     "not_affected": 201,
+    "present": 64,
     "absent": 96,
     "runtime_dependent": 2
    }
@@ -71,11 +74,12 @@
      ]
     }
    ],
-   "assertions": 149,
-   "products": 149,
-   "contains": 130,
+   "assertions": 169,
+   "products": 153,
+   "contains": 150,
    "verdicts": {
     "fixed": 115,
+    "present": 20,
     "not_affected": 11,
     "workaround": 15,
     "absent": 8
@@ -136,16 +140,17 @@
      ]
     }
    ],
-   "assertions": 7373,
-   "products": 6401,
-   "contains": 2535,
+   "assertions": 7376,
+   "products": 6402,
+   "contains": 2538,
    "verdicts": {
     "not_affected": 4277,
     "unknown": 401,
     "affected": 926,
     "fixed": 1358,
     "under_investigation": 160,
-    "workaround": 251
+    "workaround": 251,
+    "present": 3
    }
   },
   {
@@ -197,11 +202,12 @@
      ]
     }
    ],
-   "assertions": 7,
-   "products": 7,
-   "contains": 0,
+   "assertions": 55,
+   "products": 11,
+   "contains": 48,
    "verdicts": {
-    "not_affected": 7
+    "not_affected": 7,
+    "present": 48
    }
   },
   {
@@ -223,12 +229,13 @@
      ]
     }
    ],
-   "assertions": 41,
-   "products": 31,
-   "contains": 34,
+   "assertions": 104,
+   "products": 36,
+   "contains": 97,
    "verdicts": {
     "workaround": 15,
     "fixed": 19,
+    "present": 63,
     "not_affected": 7
    }
   },
@@ -250,10 +257,11 @@
      ]
     }
    ],
-   "assertions": 32,
-   "products": 28,
-   "contains": 31,
+   "assertions": 35,
+   "products": 29,
+   "contains": 34,
    "verdicts": {
+    "present": 3,
     "fixed": 30,
     "workaround": 1,
     "not_affected": 1
@@ -277,11 +285,12 @@
      ]
     }
    ],
-   "assertions": 63,
-   "products": 41,
-   "contains": 56,
+   "assertions": 121,
+   "products": 48,
+   "contains": 114,
    "verdicts": {
     "fixed": 45,
+    "present": 58,
     "not_affected": 3,
     "workaround": 11,
     "absent": 4
@@ -307,10 +316,11 @@
      ]
     }
    ],
-   "assertions": 54,
-   "products": 29,
-   "contains": 33,
+   "assertions": 131,
+   "products": 39,
+   "contains": 110,
    "verdicts": {
+    "present": 77,
     "workaround": 5,
     "fixed": 28,
     "under_investigation": 1,
@@ -336,12 +346,13 @@
      ]
     }
    ],
-   "assertions": 31,
-   "products": 31,
-   "contains": 31,
+   "assertions": 34,
+   "products": 32,
+   "contains": 34,
    "verdicts": {
     "fixed": 26,
-    "workaround": 5
+    "workaround": 5,
+    "present": 3
    }
   },
   {
@@ -390,11 +401,12 @@
      ]
     }
    ],
-   "assertions": 31,
-   "products": 24,
-   "contains": 29,
+   "assertions": 95,
+   "products": 29,
+   "contains": 93,
    "verdicts": {
     "fixed": 19,
+    "present": 64,
     "not_affected": 2,
     "workaround": 10
    }
@@ -452,6 +464,16 @@
     "Open-Xchange GmbH": 1,
     "Intevation GmbH": 1
    }
+  },
+  {
+   "id": "notices",
+   "name": "Vendor third-party notices and OSS listings",
+   "kind": "vendor-advisory",
+   "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
+   "license": "Per vendor (public documents)",
+   "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
+   "assertions": 403,
+   "latest": "2026-11-08"
   },
   {
    "id": "community",

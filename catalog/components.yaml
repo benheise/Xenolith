@@ -8,6 +8,11 @@
 # To add a component, open a pull request. Required: id, name, cves.
 # `purl` and `cpe` describe the upstream component itself (not the products
 # that embed it) and are used for cross-referencing only.
+#
+# `notices_names` are regular expressions matched (case-insensitively, whole
+# string) against component names found in vendors' third-party notices and
+# SBOMs. An entry can also be {pattern: ..., version: ...} when the name is
+# ambiguous and only the version tells components apart (Log4j 1 vs 2).
 
 components:
   - id: php
@@ -16,6 +21,12 @@ components:
     purl: pkg:github/php/php-src
     cpe: cpe:2.3:a:php:php
     aliases: [php-src, php-fpm, mod_php, php-cgi]
+    notices_names:
+      - '^php(?:\d[\d.]*)?$'
+      - '^php[-_ ]?(?:src|fpm|cgi|cli|common|embed|libs?|devel)$'
+      - '^mod[-_]?php\d*$'
+      - '^(?:the )?php (?:group )?php$'
+      - '^php[-_ ]?(?:language|runtime|interpreter)$'
     incidents:
       - name: PHP2Shell
         year: 2026
@@ -29,6 +40,12 @@ components:
     purl: pkg:github/google/brotli
     cpe: cpe:2.3:a:google:brotli
     aliases: [libbrotli, brotlidec, node2shell, http2shell, broccoli2shell]
+    notices_names:
+      - '^(?:google[- ])?brotli$'
+      - '^libbrotli(?:common|dec|enc)?\d*$'
+      - '^brotli[-_ ]?(?:c|lib|libs|cffi|py|python|decoder|common)$'
+      - '^brotli(?:cffi|py)$'
+      - '^github\.com/google/brotli$'
     incidents:
       - name: Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)
         year: 2026
@@ -41,6 +58,8 @@ components:
     upstream: https://github.com/facebook/react
     purl: pkg:npm/react-server-dom-webpack
     aliases: [react2shell, react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack]
+    notices_names:
+      - '^react-server-dom-(?:webpack|parcel|turbopack|esm)$'
     incidents:
       - name: React2Shell
         year: 2025
@@ -52,6 +71,11 @@ components:
     purl: pkg:maven/org.apache.logging.log4j/log4j-core
     cpe: cpe:2.3:a:apache:log4j
     aliases: [log4j, log4j2, log4shell]
+    notices_names:
+      - '^log4j[-_ ]?core$'
+      - '^log4j[-_ ]?2$'
+      - {pattern: '^(?:apache )?log4j(?: 2)?$', version: '^2'}
+      - '^org\.apache\.logging\.log4j:log4j-core$'
     incidents:
       - name: Log4Shell
         year: 2021
@@ -66,6 +90,10 @@ components:
     purl: pkg:maven/log4j/log4j
     cpe: cpe:2.3:a:apache:log4j
     aliases: [log4j1, log4j 1.2]
+    notices_names:
+      - {pattern: '^(?:apache )?log4j$', version: '^1'}
+      - '^log4j[-_ ]?1(?:\.\d+)*$'
+      - '^log4j:log4j$'
     incidents:
       - name: Log4j 1.x JMSAppender
         year: 2021
@@ -77,6 +105,10 @@ components:
     purl: pkg:github/tukaani-project/xz
     cpe: cpe:2.3:a:tukaani:xz
     aliases: [liblzma, xz-utils]
+    notices_names:
+      - '^xz$'
+      - '^xz[-_ ]?(?:utils|libs)$'
+      - '^liblzma\d*$'
     incidents:
       - name: XZ Utils backdoor
         year: 2024
@@ -88,6 +120,8 @@ components:
     purl: pkg:github/openssh/openssh-portable
     cpe: cpe:2.3:a:openbsd:openssh
     aliases: [sshd, regresshion]
+    notices_names:
+      - '^openssh(?:[-_ ](?:portable|server|clients|client|sftp-server))?$'
     incidents:
       - name: regreSSHion
         year: 2024
@@ -99,6 +133,9 @@ components:
     purl: pkg:github/webmproject/libwebp
     cpe: cpe:2.3:a:webmproject:libwebp
     aliases: [webp]
+    notices_names:
+      - '^libwebp\d*$'
+      - '^libwebp[-_ ](?:tools|devel)$'
     incidents:
       - name: libwebp heap overflow
         year: 2023
@@ -110,6 +147,11 @@ components:
     purl: pkg:github/curl/curl
     cpe: cpe:2.3:a:haxx:curl
     aliases: [libcurl]
+    notices_names:
+      - '^curl$'
+      - '^libcurl\d*$'
+      - '^(?:lib)?curl[-_ ]minimal$'
+      - '^curl[-_ ]libs$'
     incidents:
       - name: curl SOCKS5 heap overflow
         year: 2023
@@ -121,6 +163,11 @@ components:
     purl: pkg:github/openssl/openssl
     cpe: cpe:2.3:a:openssl:openssl
     aliases: [libssl, libcrypto]
+    notices_names:
+      - '^openssl$'
+      - '^openssl[-_ ](?:libs|fips|toolkit)$'
+      - '^libssl\d*(?:\.\d+)*$'
+      - '^openssl\d+$'
     incidents:
       - name: OpenSSL 3.0 punycode overflows
         year: 2022
@@ -132,6 +179,9 @@ components:
     purl: pkg:maven/org.springframework/spring-beans
     cpe: cpe:2.3:a:vmware:spring_framework
     aliases: [spring4shell, spring-beans]
+    notices_names:
+      - '^spring[-_ ](?:core|beans|webmvc|web|context|framework|expression|aop)$'
+      - '^org\.springframework:spring-(?:core|beans|webmvc|web|context)$'
     incidents:
       - name: Spring4Shell
         year: 2022
@@ -143,6 +193,9 @@ components:
     purl: pkg:maven/org.apache.commons/commons-text
     cpe: cpe:2.3:a:apache:commons_text
     aliases: [text4shell]
+    notices_names:
+      - '^(?:apache )?commons[-_ ]text$'
+      - '^org\.apache\.commons:commons-text$'
     incidents:
       - name: Text4Shell
         year: 2022
@@ -154,6 +207,11 @@ components:
     purl: pkg:github/bminor/glibc
     cpe: cpe:2.3:a:gnu:glibc
     aliases: [libc, looney tunables]
+    notices_names:
+      - '^glibc$'
+      - '^glibc[-_ ](?:common|devel|minimal-langpack)$'
+      - '^gnu c library$'
+      - '^libc6$'
     incidents:
       - name: Looney Tunables
         year: 2023

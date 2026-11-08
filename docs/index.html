@@ -124,7 +124,8 @@ const FILTERS = [
 const PAGE = 50;
 const REPO = "https://github.com/benheise/Xenolith";
 
-let META = null, PRODUCTS = [], PINDEX = [], SOURCES = {};
+let META = null, PRODUCTS = [], PINDEX = [], SOURCES = {}, PBYKEY = new Map();
+let INVINDEX = null;   // lazy: component name -> products listing it in their notices
 const compCache = new Map();
 const $ = s => document.querySelector(s);
 const app = $("#app"), input = $("#q"), statusEl = $("#status");
@@ -221,11 +222,50 @@ function matchProducts(q, limit = 60) {
   return { total: out.length, items: out.slice(0, limit) };
 }
 
-function showSearch(q) {
+async function inventoryIndex() {
+  if (!INVINDEX) INVINDEX = loadJSON("data/inventory_index.json").catch(() => ({ p: [], n: {} }));
+  return INVINDEX;
+}
+function noticeMatches(idx, q) {
+  const n = norm(q).trim();
+  if (n.length < 2) return [];
+  const names = Object.keys(idx.n);
+  const exact = names.filter(x => x === n);
+  const partial = n.length >= 3 ? names.filter(x => x !== n && (x.startsWith(n) || x.includes(n))).slice(0, 15) : [];
+  return [...exact, ...partial].slice(0, 16);
+}
+function noticesSection(idx, hits) {
+  if (!hits.length) return "";
+  const blocks = hits.map(name => {
+    const rows = idx.n[name];
+    const byProduct = new Map();
+    for (const [pi, pv, cv] of rows) {
+      const key = idx.p[pi];
+      if (!byProduct.has(key)) byProduct.set(key, []);
+      byProduct.get(key).push([pv, cv]);
+    }
+    const items = [...byProduct.entries()].map(([key, vs]) => {
+      const p = PBYKEY.get(key) || { s: "", p: key };
+      const list = vs.slice(0, 6).map(([pv, cv]) => `${esc(pv || "?")}${cv ? ` → ${esc(cv)}` : ""}`).join(", ");
+      return `<li><a href="#p=${encodeURIComponent(key)}">${esc(p.s)} ${esc(p.p)}</a> <span class="muted small">${list}${vs.length > 6 ? ` … +${vs.length - 6}` : ""}</span></li>`;
+    }).join("");
+    return `<div class="card"><h3><span class="kbd">${esc(name)}</span></h3>
+      <div class="small muted">Listed by ${fmt(byProduct.size)} product${byProduct.size === 1 ? "" : "s"} (product version → component version)</div>
+      <ul class="small" style="margin:6px 0 0;padding-left:18px">${items}</ul></div>`;
+  }).join("");
+  return `<h2>In vendor open source notices</h2>
+    <p class="small muted">Any component name, not just the watchlist: these come from the full component lists vendors publish.</p>
+    <div class="list">${blocks}</div>`;
+}
+
+async function showSearch(q) {
   const exact = exactComponent(q);
   const comps = matchComponents(q);
   const prods = matchProducts(q);
-  statusEl.textContent = `${comps.length} component${comps.length === 1 ? "" : "s"}, ${fmt(prods.total)} product${prods.total === 1 ? "" : "s"} match`;
+  const idx = await inventoryIndex();
+  if (input.value.trim() !== q) return;   // a newer search replaced this one
+  const nhits = noticeMatches(idx, q);
+  statusEl.textContent = `${comps.length} component${comps.length === 1 ? "" : "s"}, ${fmt(prods.total)} product${prods.total === 1 ? "" : "s"}, ${nhits.length} notices name${nhits.length === 1 ? "" : "s"} match`;
   let html = "";
   if (exact) {
     html += `<div class="notice">“${esc(q)}” is <b>${esc(exact.name)}</b>. <a href="#c=${encodeURIComponent(exact.id)}">See every product that embeds it →</a></div>`;
@@ -233,11 +273,12 @@ function showSearch(q) {
   if (comps.length) {
     html += `<h2>Components</h2><div class="grid">${comps.map(compCard).join("")}</div>`;
   }
+  html += noticesSection(idx, nhits);
   if (prods.total) {
     html += `<h2>Products${prods.total > prods.items.length ? ` <span class="muted small">(first ${prods.items.length} of ${fmt(prods.total)})</span>` : ""}</h2>`;
     html += `<div class="list">${prods.items.map(productCard).join("")}</div>`;
   }
-  if (!comps.length && !prods.total) {
+  if (!comps.length && !prods.total && !nhits.length) {
     html += `<p class="muted">Nothing matches “${esc(q)}”. The census only covers commercial products and the components on the
       <a href="${REPO}/blob/main/catalog/components.yaml" target="_blank" rel="noopener">watchlist</a>.
       For open source packages, try <a href="https://deps.dev/" target="_blank" rel="noopener">deps.dev</a> or
@@ -259,8 +300,11 @@ function productCard(p) {
   const comps = Object.entries(p.c || {});
   const badges = comps.length
     ? comps.map(([cid, st]) => `<span class="badge v-${esc(st)}" title="${esc(VERDICTS[st] || st)}">${esc(compName(cid))}: ${esc(VERDICTS[st] || st)}</span>`).join("")
-    : `<span class="small muted">No composition data yet</span>`;
-  const spine = p.cv ? `<div class="meta">${fmt(p.cv)} CVE${p.cv === 1 ? "" : "s"}${p.kev ? ` · ${fmt(p.kev)} in CISA KEV` : ""}</div>` : "";
+    : `<span class="small muted">${p.inv ? "No watchlist components listed" : "No composition data yet"}</span>`;
+  const facts = [];
+  if (p.inv) facts.push(`${fmt(p.inv)} components in vendor notices`);
+  if (p.cv) facts.push(`${fmt(p.cv)} CVE${p.cv === 1 ? "" : "s"}${p.kev ? ` · ${fmt(p.kev)} in CISA KEV` : ""}`);
+  const spine = facts.length ? `<div class="meta">${facts.join(" · ")}</div>` : "";
   return `<button class="card" data-p="${esc(p.k)}">
     <div class="supplier">${esc(p.s)}</div><div class="product">${esc(p.p)}</div>
     <div class="comp-badges">${badges}</div>${spine}
@@ -342,7 +386,8 @@ function statementCard(r, opts = {}) {
       <a class="product" href="#p=${encodeURIComponent(r.k)}" data-p="${esc(r.k)}">${esc(r.p)}</a>`;
   return `<div class="card">
     <div class="row"><div class="grow">${head}</div>${badge(r.st)}</div>
-    ${r.v ? `<div class="meta">Versions: ${esc(r.v)}</div>` : ""}
+    ${r.v ? `<div class="meta">${r.e === "notices-file" ? "Product version" : "Versions"}: ${esc(r.v)}</div>` : ""}
+    ${r.cv ? `<div class="meta">Component version: <b>${esc(r.cv)}</b></div>` : ""}
     ${cves ? `<div class="cves">${cves}</div>` : ""}
     <div class="meta">${esc(EVIDENCE[r.e] || r.e)} · ${link(r.u, who)}${r.d ? ` · as of ${esc(r.d)}` : ""}${r.cat && r.src !== "csaf" ? ` · ${esc(r.cat)}` : ""}</div>
     ${(r.n || refs) ? `<details><summary>Notes and references</summary>
@@ -352,7 +397,7 @@ function statementCard(r, opts = {}) {
 
 // ---------------------------------------------------------------- product view
 async function showProduct(key) {
-  const p = PRODUCTS.find(x => x.k === key);
+  const p = PBYKEY.get(key);
   if (!p) { app.innerHTML = `<p class="muted">Unknown product.</p>`; return; }
   statusEl.textContent = `Loading ${p.p}…`;
   const comps = Object.keys(p.c || {});
@@ -371,9 +416,42 @@ async function showProduct(key) {
       <div class="stat"><b>${fmt(p.kev || 0)}</b><span>in CISA KEV</span></div></div>` : ""}
     ${sections.map(s => `<h2><a href="#c=${encodeURIComponent(s.cid)}">${esc(s.name)}</a></h2>
       <div class="list">${s.rows.map(r => statementCard(r, { inProduct: true })).join("")}</div>`).join("")}
-    ${comps.length ? "" : `<p class="notice">No composition data for this product yet. It is listed because it appears in CVE records or the CISA KEV catalog.</p>`}
+    ${comps.length || p.inv ? "" : `<p class="notice">No composition data for this product yet. It is listed because it appears in CVE records or the CISA KEV catalog.</p>`}
+    <div id="inventory"></div>
     <p class="small muted" style="margin-top:18px">Know what this product embeds? <a href="${esc(issue)}" target="_blank" rel="noopener">Submit a sourced statement</a>.</p>`;
   $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
+  if (p.inv) renderInventory(key);
+}
+
+async function renderInventory(key) {
+  const box = $("#inventory");
+  let docs;
+  try { docs = await loadJSON(`data/inventory/${encodeURIComponent(key.replace("/", "__"))}.json`); }
+  catch { return; }
+  if (!box || !docs.length) return;
+  box.innerHTML = `<h2>Everything the vendor lists</h2>
+    <p class="small muted">From the vendor's own open source notices. Pick a product version, then filter.</p>
+    <div class="chips" role="group" aria-label="Product version">${docs.map((d, i) =>
+      `<button class="chip" data-doc="${i}" aria-pressed="${i === 0}">${esc(d.v || "all")} <span class="muted">${fmt(d.c.length)}</span></button>`).join("")}</div>
+    <input class="filter" id="invfilter" type="search" placeholder="Filter components…">
+    <div class="meta" id="invsrc"></div>
+    <div class="card"><table class="small" style="width:100%;border-collapse:collapse" id="invtable"></table></div>`;
+  let cur = 0;
+  const draw = () => {
+    const d = docs[cur], t = norm($("#invfilter").value);
+    const rows = d.c.filter(([n]) => !t || norm(n).includes(t));
+    $("#invsrc").innerHTML = `Source: ${link(d.u)} · retrieved ${esc(d.d)} · ${fmt(rows.length)} of ${fmt(d.c.length)} shown`;
+    $("#invtable").innerHTML = rows.slice(0, 400).map(([n, v]) =>
+      `<tr><td style="padding:3px 6px 3px 0;overflow-wrap:anywhere">${esc(n)}</td><td style="padding:3px 0;text-align:right;white-space:nowrap" class="muted">${esc(v)}</td></tr>`).join("")
+      + (rows.length > 400 ? `<tr><td colspan="2" class="muted">… ${fmt(rows.length - 400)} more; use the filter</td></tr>` : "");
+  };
+  box.querySelectorAll("[data-doc]").forEach(el => el.addEventListener("click", () => {
+    cur = Number(el.dataset.doc);
+    box.querySelectorAll("[data-doc]").forEach(b => b.setAttribute("aria-pressed", String(b === el)));
+    draw();
+  }));
+  $("#invfilter").addEventListener("input", draw);
+  draw();
 }
 
 // ---------------------------------------------------------------- home
@@ -383,12 +461,14 @@ function showHome() {
   const comps = [...META.components].sort((a, b) => b.products - a.products);
   app.innerHTML = `
     <p>When a vulnerability lands in a widely embedded component, the hard question is which <b>vendor products</b> ship it inside.
-    Asset scanners can't see into appliances and SaaS. Xenolith collects vendor CSAF/VEX statements and community incident trackers
-    into one searchable, permanent index, organized by component.</p>
+    Asset scanners can't see into appliances and SaaS. Xenolith collects vendor CSAF/VEX statements, vendors' own open source notices
+    and community incident trackers into one searchable, permanent index, organized by component. Search any library name to see which
+    products list it in their notices.</p>
     <div class="stats">
       <div class="stat"><b>${fmt(k.assertions)}</b><span>sourced statements</span></div>
       <div class="stat"><b>${fmt(k.products_with_data)}</b><span>products with data</span></div>
       <div class="stat"><b>${fmt(k.components)}</b><span>components tracked</span></div>
+      <div class="stat"><b>${fmt(k.inventories || 0)}</b><span>vendor notices parsed</span></div>
       <div class="stat"><b>${fmt(k.spine_products)}</b><span>products in the registry</span></div>
     </div>
     <h2>Components</h2>
@@ -429,6 +509,7 @@ function renderFooter() {
     return;
   }
   PINDEX = PRODUCTS.map(p => norm(`${p.s} ${p.p} ${p.k}`));
+  for (const p of PRODUCTS) PBYKEY.set(p.k, p);
   for (const s of META.sources) SOURCES[s.id] = s;
   renderFooter();
   route();

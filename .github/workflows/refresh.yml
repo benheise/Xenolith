@@ -49,6 +49,9 @@ jobs:
       - name: Crawl vendor CSAF feeds (incremental)
         run: python -m xenolith csaf
 
+      - name: Parse vendor third-party notices (incremental)
+        run: python -m xenolith notices
+
       - name: Ingest community submissions
         run: python -m xenolith community
 

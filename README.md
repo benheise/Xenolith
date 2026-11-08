@@ -29,8 +29,9 @@ Xenolith covers **products**: appliances, firmware, enterprise and hosted softwa
 catalog/components.yaml       watchlist: components + the CVEs that identify them
         │
         ├─ Vendor CSAF/VEX feeds ──────────┐  "Product P is fixed / known_affected /
-        ├─ NCSC-NL and CISA trackers ──────┤   not affected by CVE-X", where CVE-X
-        ├─ community/assertions.csv ───────┤   belongs to a watchlist component
+        ├─ Vendor open source notices ─────┤   not affected by CVE-X", or "P lists
+        ├─ NCSC-NL and CISA trackers ──────┤   component C 1.0.6 in its notices"
+        ├─ community/assertions.csv ───────┤
         │                                  ▼
         │                     data/assertions/**/*.ndjson   (open data, one sourced claim per line)
         │                                  │
@@ -42,10 +43,11 @@ CVE records + CISA KEV ──► data/spine/products.ndjson       (product regis
 
 1. **Component watchlist.** [`catalog/components.yaml`](catalog/components.yaml) lists widely embedded components and the CVEs that identify them (for example CVE-2026-111497 means Brotli).
 2. **Vendor advisories (automated).** A crawler reads CSAF 2.x feeds from Cisco, Microsoft, Red Hat, Siemens, Schneider Electric, ABB, SICK, CISA and every provider on BSI's CSAF aggregator. When a vendor's advisory states a product's status for a watchlist CVE, that's a statement about whether the product embeds the component. The crawl is incremental: unchanged advisories are never fetched twice.
-3. **Incident trackers (seed data).** The NCSC-NL php2shell and log4shell repositories and CISA's log4j-affected-db are imported with full provenance.
-4. **Community submissions.** Anyone can add a sourced statement (vendor advisory, SBOM, third-party notices file, binary scan) by pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
-5. **Product registry.** Vendor/product names from CNA-published CVE records and the CISA KEV catalog, ranked by exploitation. Products with no composition data yet are listed too, which makes the gaps visible.
-6. **Static site.** `python -m xenolith build` writes JSON for the single-page search UI in `docs/`. A daily GitHub Actions run refreshes everything and republishes.
+3. **Vendor open source notices (automated).** Vendors publish "Open Source Used In" documents, OSS listings and third-party notices for their products: the closest public stand-in for an SBOM of a closed product. `python -m xenolith notices` fetches the documents listed or discovered by [`catalog/notices.yaml`](catalog/notices.yaml) (PDF, HTML, text, CycloneDX or SPDX), extracts the **full** component list with versions, stores it under `data/notices/`, and matches it against the watchlist. Every Palo Alto Networks OSS listing (PAN-OS, Panorama, WildFire, GlobalProtect, CN-Series and more) is discovered automatically. Because the full lists are kept, you can search *any* library name on the site, not just watchlist components, and adding a component to the watchlist re-matches every stored document instantly.
+4. **Incident trackers (seed data).** The NCSC-NL php2shell and log4shell repositories and CISA's log4j-affected-db are imported with full provenance.
+5. **Community submissions.** Anyone can add a sourced statement (vendor advisory, SBOM, third-party notices file, binary scan) by pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
+6. **Product registry.** Vendor/product names from CNA-published CVE records and the CISA KEV catalog, ranked by exploitation. Products with no composition data yet are listed too, which makes the gaps visible.
+7. **Static site.** `python -m xenolith build` writes JSON for the single-page search UI in `docs/`. A daily GitHub Actions run refreshes everything and republishes.
 
 ### Reading a statement
 
@@ -58,7 +60,7 @@ Each record is one claim from one source, with a link back to it and the date of
 | Fix released | Product contained the component; vendor has shipped a fixed version |
 | Investigating | Vendor or tracker hasn't concluded |
 | Uses host runtime | Product runs on a copy you install and patch yourself (e.g. a PHP app) |
-| Contains (not assessed) | Component is known to be embedded; no CVE assessed |
+| Contains (not assessed) | Component is listed in the vendor's notices or SBOM; no CVE assessed. Check the component version against the CVE's affected range, and remember vendors backport fixes |
 | Not affected | Vendor says the product isn't affected |
 | Not present | Vendor says the component isn't in the product at all |
 
@@ -78,6 +80,7 @@ git clone --depth 1 https://github.com/cisagov/log4j-affected-db src/cisagov_log
 python -m xenolith trackers --src src
 
 python -m xenolith csaf --only Cisco --max-fetch 200   # vendor CSAF feeds (incremental)
+python -m xenolith notices                             # vendor open source notices (incremental)
 python -m xenolith community                           # validate + ingest community/assertions.csv
 python -m xenolith spine                               # KEV-only registry; add --cves <cvelistV5/cves> for the full one
 python -m xenolith build                               # write docs/data/
@@ -90,9 +93,10 @@ python -m unittest discover -s tests
 
 | Path | What |
 |---|---|
-| `catalog/` | Component watchlist, data source registry, CSAF provider list |
+| `catalog/` | Component watchlist, data source registry, CSAF provider list, notices document list |
 | `community/assertions.csv` | Community-contributed statements (edit by pull request) |
 | `data/assertions/` | Normalized statements per source (NDJSON). The open data dump |
+| `data/notices/` | Full component inventories extracted from vendor notices (one JSON file per document) |
 | `data/spine/products.ndjson` | Product registry |
 | `data/state/csaf/` | Crawl state so CSAF documents are only re-fetched when they change |
 | `docs/` | The GitHub Pages site (`index.html` + generated `data/`) |
@@ -106,7 +110,8 @@ python -m unittest discover -s tests
 - [x] Product registry from CVE records + KEV
 - [x] Static search site and daily refresh
 - [ ] Transparency Exchange API (TEA) client to collect vendor SBOMs as vendors publish them
-- [ ] Parse vendor third-party notices / "open source used in" documents into component lists
+- [x] Parse vendor third-party notices / "open source used in" documents into component lists
+- [ ] More notices sources: per-vendor discovery rules for vendors that publish index pages (add yours to `catalog/notices.yaml`)
 - [ ] Binary composition scans (Syft, cdxgen) of freely downloadable appliance images, with vendored-copy fingerprints like the Brotli fix check
 - [ ] Product identity crosswalk (CVE vendor/product strings ↔ CPE ↔ CSAF product IDs ↔ purl) so the same product from different sources merges into one entry
 - [ ] Export as CycloneDX/SPDX so tools like GUAC or Dependency-Track can ingest it
