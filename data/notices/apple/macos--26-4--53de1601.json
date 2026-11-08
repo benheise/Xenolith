@@ -1,0 +1,870 @@
+{
+"components": [
+{
+"apple": "adv_cmds-237",
+"name": "adv_cmds",
+"version": ""
+},
+{
+"apple": "apache-884",
+"name": "Apache HTTP Server",
+"version": "2.4.66"
+},
+{
+"apple": "apache_mod_hfs_apple-20",
+"name": "apache_mod_hfs_apple",
+"version": ""
+},
+{
+"apple": "apache_mod_perl-117",
+"name": "apache_mod_perl",
+"version": ""
+},
+{
+"apple": "AppleFileSystemDriver-31",
+"name": "AppleFileSystemDriver",
+"version": ""
+},
+{
+"apple": "AppleRAID-26",
+"name": "AppleRAID",
+"version": ""
+},
+{
+"apple": "apr-46",
+"name": "apr",
+"version": ""
+},
+{
+"apple": "architecture-282",
+"name": "architecture",
+"version": ""
+},
+{
+"apple": "autofs-322",
+"name": "autofs",
+"version": ""
+},
+{
+"apple": "AvailabilityVersions-157.2",
+"name": "AvailabilityVersions",
+"version": ""
+},
+{
+"apple": "awk-40",
+"name": "awk",
+"version": ""
+},
+{
+"apple": "bash-144",
+"name": "bash",
+"version": ""
+},
+{
+"apple": "basic_cmds-70",
+"name": "basic_cmds",
+"version": ""
+},
+{
+"apple": "bc-35",
+"name": "bc",
+"version": ""
+},
+{
+"apple": "BerkeleyDB-29",
+"name": "BerkeleyDB",
+"version": ""
+},
+{
+"apple": "bind9-65",
+"name": "bind9",
+"version": ""
+},
+{
+"apple": "bless-331.100.3",
+"name": "bless",
+"version": ""
+},
+{
+"apple": "BootCache-162",
+"name": "BootCache",
+"version": ""
+},
+{
+"apple": "bootp-534.100.6",
+"name": "bootp",
+"version": ""
+},
+{
+"apple": "bootstrap_cmds-138",
+"name": "bootstrap_cmds",
+"version": ""
+},
+{
+"apple": "bzip2-47",
+"name": "bzip2",
+"version": "1.0.8"
+},
+{
+"apple": "cddafs-272",
+"name": "cddafs",
+"version": ""
+},
+{
+"apple": "Chess-570.1",
+"name": "Chess",
+"version": ""
+},
+{
+"apple": "CommonCrypto-600035",
+"name": "CommonCrypto",
+"version": ""
+},
+{
+"apple": "configd-1405.100.8",
+"name": "configd",
+"version": ""
+},
+{
+"apple": "copyfile-240",
+"name": "copyfile",
+"version": ""
+},
+{
+"apple": "CPAN-105",
+"name": "CPAN",
+"version": ""
+},
+{
+"apple": "CrackLib-37766",
+"name": "CrackLib",
+"version": ""
+},
+{
+"apple": "cron-52",
+"name": "cron",
+"version": ""
+},
+{
+"apple": "cups-522.3",
+"name": "cups",
+"version": ""
+},
+{
+"apple": "curl-164",
+"name": "curl",
+"version": "8.7.1"
+},
+{
+"apple": "dcerpc-96",
+"name": "dcerpc",
+"version": ""
+},
+{
+"apple": "DiskArbitration-535.100.31",
+"name": "DiskArbitration",
+"version": ""
+},
+{
+"apple": "diskdev_cmds-757",
+"name": "diskdev_cmds",
+"version": ""
+},
+{
+"apple": "disklabel-7",
+"name": "disklabel",
+"version": ""
+},
+{
+"apple": "doc_cmds-69",
+"name": "doc_cmds",
+"version": ""
+},
+{
+"apple": "dtrace-413",
+"name": "dtrace",
+"version": ""
+},
+{
+"apple": "dyld-1376.6",
+"name": "dyld",
+"version": ""
+},
+{
+"apple": "eap8021x-368.101.1",
+"name": "eap8021x",
+"version": ""
+},
+{
+"apple": "expat-45",
+"name": "expat",
+"version": ""
+},
+{
+"apple": "file-106",
+"name": "file",
+"version": ""
+},
+{
+"apple": "file_cmds-479",
+"name": "file_cmds",
+"version": ""
+},
+{
+"apple": "files-972",
+"name": "files",
+"version": ""
+},
+{
+"apple": "gpt-24",
+"name": "gpt",
+"version": ""
+},
+{
+"apple": "gssd-85",
+"name": "gssd",
+"version": ""
+},
+{
+"apple": "Heimdal-710.100.4",
+"name": "Heimdal",
+"version": ""
+},
+{
+"apple": "hfs-715.100.10",
+"name": "hfs",
+"version": ""
+},
+{
+"apple": "hunspell-16",
+"name": "hunspell",
+"version": ""
+},
+{
+"apple": "ICU-76142.4.7",
+"name": "ICU",
+"version": ""
+},
+{
+"apple": "IOATAFamily-264",
+"name": "IOATAFamily",
+"version": ""
+},
+{
+"apple": "IOATAPIProtocolTransport-354",
+"name": "IOATAPIProtocolTransport",
+"version": ""
+},
+{
+"apple": "IOAudioFamily-740.1",
+"name": "IOAudioFamily",
+"version": ""
+},
+{
+"apple": "IOBDStorageFamily-26",
+"name": "IOBDStorageFamily",
+"version": ""
+},
+{
+"apple": "IOCDStorageFamily-62",
+"name": "IOCDStorageFamily",
+"version": ""
+},
+{
+"apple": "iodbc-42.6",
+"name": "iodbc",
+"version": ""
+},
+{
+"apple": "IODVDStorageFamily-46",
+"name": "IODVDStorageFamily",
+"version": ""
+},
+{
+"apple": "IOFireWireAVC-436",
+"name": "IOFireWireAVC",
+"version": ""
+},
+{
+"apple": "IOFireWireFamily-492",
+"name": "IOFireWireFamily",
+"version": ""
+},
+{
+"apple": "IOFireWireSBP2-454",
+"name": "IOFireWireSBP2",
+"version": ""
+},
+{
+"apple": "IOFireWireSerialBusProtocolTransport-262",
+"name": "IOFireWireSerialBusProtocolTransport",
+"version": ""
+},
+{
+"apple": "IOGraphics-600",
+"name": "IOGraphics",
+"version": ""
+},
+{
+"apple": "IOHIDFamily-2238.100.59",
+"name": "IOHIDFamily",
+"version": ""
+},
+{
+"apple": "IOKitTools-125",
+"name": "IOKitTools",
+"version": ""
+},
+{
+"apple": "IOKitUser-100231.100.18.0.1",
+"name": "IOKitUser",
+"version": ""
+},
+{
+"apple": "IONetworkingFamily-188",
+"name": "IONetworkingFamily",
+"version": ""
+},
+{
+"apple": "IOPCIFamily-726.100.6",
+"name": "IOPCIFamily",
+"version": ""
+},
+{
+"apple": "IOSCSIParallelFamily-352",
+"name": "IOSCSIParallelFamily",
+"version": ""
+},
+{
+"apple": "IOStorageFamily-337.100.1",
+"name": "IOStorageFamily",
+"version": ""
+},
+{
+"apple": "ipsec-1125",
+"name": "ipsec",
+"version": ""
+},
+{
+"apple": "KerberosHelper-165",
+"name": "KerberosHelper",
+"version": ""
+},
+{
+"apple": "kext_tools-779",
+"name": "kext_tools",
+"version": ""
+},
+{
+"apple": "keymgr-31",
+"name": "keymgr",
+"version": ""
+},
+{
+"apple": "ksh-42",
+"name": "ksh",
+"version": ""
+},
+{
+"apple": "less-50",
+"name": "less",
+"version": ""
+},
+{
+"apple": "libarchive-167",
+"name": "libarchive",
+"version": ""
+},
+{
+"apple": "Libc-1752.100.10",
+"name": "Libc",
+"version": ""
+},
+{
+"apple": "libclosure-96",
+"name": "libclosure",
+"version": ""
+},
+{
+"apple": "libdispatch-1542.100.32",
+"name": "libdispatch",
+"version": ""
+},
+{
+"apple": "libedit-65",
+"name": "libedit",
+"version": ""
+},
+{
+"apple": "libevent-13",
+"name": "libevent",
+"version": ""
+},
+{
+"apple": "libffi-40",
+"name": "libffi",
+"version": ""
+},
+{
+"apple": "libfs-35",
+"name": "libfs",
+"version": ""
+},
+{
+"apple": "libiconv-115.100.1",
+"name": "libiconv",
+"version": ""
+},
+{
+"apple": "Libinfo-600",
+"name": "Libinfo",
+"version": ""
+},
+{
+"apple": "libmalloc-812.100.31",
+"name": "libmalloc",
+"version": ""
+},
+{
+"apple": "libmd-7",
+"name": "libmd",
+"version": ""
+},
+{
+"apple": "Libnotify-348.100.7",
+"name": "Libnotify",
+"version": ""
+},
+{
+"apple": "libpcap-146",
+"name": "libpcap",
+"version": "1.10.1"
+},
+{
+"apple": "libplatform-375.100.10",
+"name": "libplatform",
+"version": ""
+},
+{
+"apple": "libpthread-539.100.4",
+"name": "libpthread",
+"version": ""
+},
+{
+"apple": "libresolv-96",
+"name": "libresolv",
+"version": ""
+},
+{
+"apple": "Librpcsvc-31",
+"name": "Librpcsvc",
+"version": ""
+},
+{
+"apple": "libsecurity_ldap_dl-55005.0.2",
+"name": "libsecurity_ldap_dl",
+"version": ""
+},
+{
+"apple": "Libsystem-1356",
+"name": "Libsystem",
+"version": ""
+},
+{
+"apple": "libutil-73",
+"name": "libutil",
+"version": ""
+},
+{
+"apple": "libxml2-39.10",
+"name": "libxml2",
+"version": "2.9.13"
+},
+{
+"apple": "libxslt-21.13",
+"name": "libxslt",
+"version": ""
+},
+{
+"apple": "Liby-21",
+"name": "Liby",
+"version": ""
+},
+{
+"apple": "llvmCore-3425.0.36",
+"name": "llvmCore",
+"version": ""
+},
+{
+"apple": "lsof-76",
+"name": "lsof",
+"version": ""
+},
+{
+"apple": "mail_cmds-43",
+"name": "mail_cmds",
+"version": ""
+},
+{
+"apple": "man-62",
+"name": "man",
+"version": ""
+},
+{
+"apple": "mDNSResponder-2881.100.56.0.1",
+"name": "mDNSResponder",
+"version": ""
+},
+{
+"apple": "misc_cmds-45",
+"name": "misc_cmds",
+"version": ""
+},
+{
+"apple": "MITKerberosShim-88",
+"name": "MITKerberosShim",
+"version": ""
+},
+{
+"apple": "modemccl-34",
+"name": "modemccl",
+"version": ""
+},
+{
+"apple": "msdosfs-788.100.31",
+"name": "msdosfs",
+"version": ""
+},
+{
+"apple": "ncurses-79",
+"name": "ncurses",
+"version": ""
+},
+{
+"apple": "net_snmp-1723",
+"name": "net_snmp",
+"version": ""
+},
+{
+"apple": "netcat-56",
+"name": "netcat",
+"version": ""
+},
+{
+"apple": "network_cmds-741.100.2",
+"name": "network_cmds",
+"version": ""
+},
+{
+"apple": "NFS-343.100.5",
+"name": "NFS",
+"version": ""
+},
+{
+"apple": "ntfs-168",
+"name": "ntfs",
+"version": ""
+},
+{
+"apple": "objc4-951.7",
+"name": "objc4",
+"version": ""
+},
+{
+"apple": "OpenAL-71",
+"name": "OpenAL",
+"version": ""
+},
+{
+"apple": "OpenLDAP-561",
+"name": "OpenLDAP",
+"version": ""
+},
+{
+"apple": "OpenPAM-35",
+"name": "OpenPAM",
+"version": ""
+},
+{
+"apple": "OpenSSH-354.100.6",
+"name": "OpenSSH",
+"version": "10.2p1"
+},
+{
+"apple": "OpenSSL098-85",
+"name": "OpenSSL098",
+"version": ""
+},
+{
+"apple": "pam_modules-217.100.6",
+"name": "pam_modules",
+"version": ""
+},
+{
+"apple": "passwordserver_sasl-215",
+"name": "passwordserver_sasl",
+"version": ""
+},
+{
+"apple": "patch_cmds-75",
+"name": "patch_cmds",
+"version": ""
+},
+{
+"apple": "pcre-21",
+"name": "PCRE",
+"version": ""
+},
+{
+"apple": "pdisk-10",
+"name": "pdisk",
+"version": ""
+},
+{
+"apple": "perl-175",
+"name": "perl",
+"version": ""
+},
+{
+"apple": "postfix-1636",
+"name": "postfix",
+"version": ""
+},
+{
+"apple": "PowerManagement-1846.101.2",
+"name": "PowerManagement",
+"version": ""
+},
+{
+"apple": "ppp-1025",
+"name": "ppp",
+"version": ""
+},
+{
+"apple": "pyobjc-63",
+"name": "pyobjc",
+"version": ""
+},
+{
+"apple": "python-184",
+"name": "python",
+"version": ""
+},
+{
+"apple": "python_modules-92",
+"name": "python_modules",
+"version": ""
+},
+{
+"apple": "remote_cmds-308",
+"name": "remote_cmds",
+"version": ""
+},
+{
+"apple": "removefile-85.100.6",
+"name": "removefile",
+"version": ""
+},
+{
+"apple": "rsync-182",
+"name": "rsync",
+"version": ""
+},
+{
+"apple": "ruby-175",
+"name": "ruby",
+"version": ""
+},
+{
+"apple": "RubyGems-38",
+"name": "RubyGems",
+"version": ""
+},
+{
+"apple": "screen-29",
+"name": "screen",
+"version": ""
+},
+{
+"apple": "Security-61901.101.4",
+"name": "Security",
+"version": ""
+},
+{
+"apple": "security_authtrampoline-55106",
+"name": "security_authtrampoline",
+"version": ""
+},
+{
+"apple": "security_certificates-55349.100.37",
+"name": "security_certificates",
+"version": ""
+},
+{
+"apple": "security_certtool-55121",
+"name": "security_certtool",
+"version": ""
+},
+{
+"apple": "security_crlrefresh-55103",
+"name": "security_crlrefresh",
+"version": ""
+},
+{
+"apple": "security_ocspd-55148",
+"name": "security_ocspd",
+"version": ""
+},
+{
+"apple": "security_systemkeychain-55214.100.2",
+"name": "security_systemkeychain",
+"version": ""
+},
+{
+"apple": "SecurityTokend-55113",
+"name": "SecurityTokend",
+"version": ""
+},
+{
+"apple": "shell_cmds-329",
+"name": "shell_cmds",
+"version": ""
+},
+{
+"apple": "SmartcardCCID-55036",
+"name": "SmartcardCCID",
+"version": ""
+},
+{
+"apple": "SMBClient-538.100.12",
+"name": "SMBClient",
+"version": ""
+},
+{
+"apple": "sudo-114.100.11",
+"name": "sudo",
+"version": "1.9.17p2"
+},
+{
+"apple": "swig-15",
+"name": "swig",
+"version": ""
+},
+{
+"apple": "syslog-406",
+"name": "syslog",
+"version": ""
+},
+{
+"apple": "system_cmds-1042.100.6.0.1",
+"name": "system_cmds",
+"version": ""
+},
+{
+"apple": "system_config-57",
+"name": "system_config",
+"version": ""
+},
+{
+"apple": "tcl-152",
+"name": "tcl",
+"version": ""
+},
+{
+"apple": "tcpdump-158",
+"name": "tcpdump",
+"version": "4.99.1"
+},
+{
+"apple": "tcsh-75",
+"name": "tcsh",
+"version": ""
+},
+{
+"apple": "text_cmds-199",
+"name": "text_cmds",
+"version": ""
+},
+{
+"apple": "tidy-20.1",
+"name": "tidy",
+"version": ""
+},
+{
+"apple": "TimeZoneData-107",
+"name": "TimeZoneData",
+"version": ""
+},
+{
+"apple": "top-144",
+"name": "top",
+"version": ""
+},
+{
+"apple": "UserNotification-31",
+"name": "UserNotification",
+"version": ""
+},
+{
+"apple": "usertemplate-109",
+"name": "usertemplate",
+"version": ""
+},
+{
+"apple": "uucp-22",
+"name": "uucp",
+"version": ""
+},
+{
+"apple": "vim-167",
+"name": "vim",
+"version": ""
+},
+{
+"apple": "webdavfs-403.0.0.0.1",
+"name": "webdavfs",
+"version": ""
+},
+{
+"apple": "WebKit-7624.1.16.11.4",
+"name": "WebKit",
+"version": ""
+},
+{
+"apple": "xar-503",
+"name": "xar",
+"version": ""
+},
+{
+"apple": "xnu-12377.101.15",
+"name": "xnu",
+"version": ""
+},
+{
+"apple": "zip-29",
+"name": "zip",
+"version": ""
+},
+{
+"apple": "zlib-100",
+"name": "zlib",
+"version": "1.2.12"
+},
+{
+"apple": "zsh-118",
+"name": "zsh",
+"version": ""
+}
+],
+"extractors": [
+"apple_releases",
+"upstream_headers"
+],
+"kind": "apple-release",
+"product": "macOS",
+"retrieved": "2026-11-08",
+"sha256": "5c5d4f84fa1b3b73bd45188ca2016f48308fb4471e797ca0a18d572ad2f82b94",
+"supplier": "Apple",
+"url": "https://opensource.apple.com/releases/#macos-26.4",
+"version": "26.4"
+}

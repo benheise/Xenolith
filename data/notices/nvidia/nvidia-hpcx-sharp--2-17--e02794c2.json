@@ -1,0 +1,170 @@
+{
+"components": [
+{
+"name": "bytedance/byteps",
+"version": "0.2.5.post15"
+},
+{
+"name": "gjs",
+"version": "1.48.3"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "20200525"
+},
+{
+"name": "libdime",
+"version": "20170623-snapshot-61b04325"
+},
+{
+"name": "libexpat",
+"version": "2.2.7"
+},
+{
+"name": "libsmbios",
+"version": "2.2.0"
+},
+{
+"name": "Mellanox/libvma",
+"version": "8.0.3"
+},
+{
+"name": "Mellanox/libvma",
+"version": "8.1.1"
+},
+{
+"name": "Mellanox/libvma",
+"version": "8.1.2"
+},
+{
+"name": "Mellanox/libvma",
+"version": "8.2.5"
+},
+{
+"name": "Microsoft/Freeflow",
+"version": "20181114-snapshot-cb35573d"
+},
+{
+"name": "MuPDF",
+"version": "1.19.0.20220326.1214"
+},
+{
+"name": "mvapich2",
+"version": "2.2"
+},
+{
+"name": "Netlink Protocol Library Suite (libnl)",
+"version": "3.1"
+},
+{
+"name": "NumPy",
+"version": "0.3.2"
+},
+{
+"name": "Open Computer Vision Library (OpenCV)",
+"version": "2.3.0"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.0"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.0.8"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.4_1"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.5"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "3.2.2"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "3.2.4"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "3.5-2-rc1"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "3.5.0"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "3.7.0+1.18.gcdb9f80"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "4.1"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "4.8.0"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "5.6.2"
+},
+{
+"name": "openucx",
+"version": "0~git1727"
+},
+{
+"name": "openucx/ucx",
+"version": "v1.2.0"
+},
+{
+"name": "openucx/ucx",
+"version": "v1.3.0-rc1"
+},
+{
+"name": "openucx/ucx",
+"version": "v1.5.0-rc1"
+},
+{
+"name": "OSU Micro-Benchmarks (OMB)",
+"version": "5.3.1"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "2.1.0rc1"
+},
+{
+"name": "sockperf",
+"version": "v1"
+},
+{
+"name": "vergecurrency/VERGE",
+"version": "v5.0.0-alpha0"
+},
+{
+"name": "Watt-32 TCP/IP Stack",
+"version": "2.2-dev.10"
+},
+{
+"name": "xnu",
+"version": "4903.270.47"
+},
+{
+"name": "Zarafa Community Edition",
+"version": "7.2.0"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA HPCX sharp",
+"retrieved": "2026-11-08",
+"sha256": "0dc6a645f5dd238cb003642f9ce8dc3e6639b5285d3d218eb020e44aeb9e37e9",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_HPCX_sharp_hpcx2.17.pdf",
+"version": "2.17"
+}

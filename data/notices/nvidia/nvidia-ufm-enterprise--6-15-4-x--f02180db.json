@@ -1,0 +1,66 @@
+{
+"components": [
+{
+"name": "Bootstrap (Twitter)",
+"version": "3.3.7"
+},
+{
+"name": "docker-zabbix-sender",
+"version": "0.2"
+},
+{
+"name": "Globus Toolkit",
+"version": "4.0.2"
+},
+{
+"name": "Kubernetes",
+"version": "0.2"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.4"
+},
+{
+"name": "otale/tale",
+"version": "v2.0.0"
+},
+{
+"name": "pdb2pqr",
+"version": "2.1.1"
+},
+{
+"name": "Python SNMP framework",
+"version": "4.3.6"
+},
+{
+"name": "python-astor",
+"version": "0.8.0"
+},
+{
+"name": "react-rev-slider",
+"version": "1.0.0"
+},
+{
+"name": "storj-nodejs",
+"version": "0.10.0"
+},
+{
+"name": "ydk-models-cisco-ios-xe",
+"version": "16.5.1"
+},
+{
+"name": "Zope",
+"version": "3.3.0b1"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA UFM Enterprise",
+"retrieved": "2026-11-08",
+"sha256": "99a0ef602e1924beb34478842f98dc6ce5824a33129b272d6bd13bf6a3ad79a2",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_UFM_6.15.4-X.pdf",
+"version": "6.15.4-X"
+}

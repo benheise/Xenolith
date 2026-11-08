@@ -1,0 +1,34 @@
+{
+"components": [
+{
+"name": "Chapel",
+"version": "0.9"
+},
+{
+"name": "curl",
+"version": "7.54.0"
+},
+{
+"name": "mpitests",
+"version": "5.4"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "7.1"
+},
+{
+"name": "openucx/ucx",
+"version": "v1.2.0"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA HPCX mpi tests",
+"retrieved": "2026-11-08",
+"sha256": "be2d9370c148947201c21759624da66c1bb18542ae0dd8dec9ca522b2868fe28",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_HPCX_mpi_tests_hpcx2.17.pdf",
+"version": "2.17"
+}

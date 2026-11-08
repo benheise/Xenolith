@@ -743,6 +743,94 @@ class NewNoticesFormatsTest(unittest.TestCase):
         self.assertEqual(cat.match_component("xz", "5.2.4"), "xz")
 
 
+from xenolith.sources import apple as apple_src  # noqa: E402
+from xenolith import fetch as fetch_mod  # noqa: E402
+
+
+class MoreNoticesFormatsTest(unittest.TestCase):
+    def test_homepage_table(self):
+        text = ("MLNX_OFED:23.10-2 - Embedded Software Components\n"
+                "Component name Component version name Home Page License names\n"
+                "DPDK 22.11 https://www.dpdk.org BSD 3-clause \"New\" or \"Revised\" License\n"
+                "OpenFabrics Enterprise Distribution - OFED 0.12, 4.16.0 https://www.openfabrics.org/downloads/rdmac\nm/\n"
+                "(BSD 2-clause \"Simplified\" License OR GNU\nGeneral Public License v2.0 only)\n"
+                "iproute2 6.1.0, 6.4.0 http://www.linuxfoundation.org/collaborate/wo\nrkgroups/networking/iproute2\n")
+        rows = notices.ex_homepage_table(text)
+        self.assertEqual(rows, [("DPDK", "22.11"), ("OpenFabrics Enterprise Distribution - OFED", "0.12"),
+                                ("OpenFabrics Enterprise Distribution - OFED", "4.16.0"), ("iproute2", "6.1.0"), ("iproute2", "6.4.0")])
+
+    def test_dll_names_and_toc_cleanup(self):
+        text = ("Contents\n1 ST Introduction ........ 5\n2 Conformance Claims ........ 7\n"
+                "Appendix B: List of Third-Party Libraries ........ 39\n\nAppendix B: List of Third-Party Libraries\nPVWA\n"
+                "Autofac.dll\nBouncyCastle.Crypto.dll\nlog4net.dll\nCyberArk Security Target\nPage 40 of 41\nNewtonsoft.Json.dll\n")
+        rows = notices.ex_dll_names(text)
+        self.assertEqual(rows, [("Autofac", ""), ("BouncyCastle.Crypto", ""), ("log4net", ""), ("Newtonsoft.Json", "")])
+        comps, used, kind = notices.extract(text.encode(), "text/plain", "https://example.com/security-target.txt")
+        self.assertEqual(used, ["dll_names"])            # the numbered section headings are not components
+        self.assertEqual(sorted(c["name"] for c in comps), ["Autofac", "BouncyCastle.Crypto", "Newtonsoft.Json", "log4net"])
+
+    def test_siemens_numbered_toc(self):
+        text = ("1. Third Party Software Components ............ 4\n1.1 Apache Xerces – Version 1.0.3 ............ 4\n"
+                "1.12 libHaru – Version 2.3.0 RC2 ............ 41\n1.8 Angular 19.2.14 ............ 8\n")
+        self.assertEqual(notices.ex_dotted_toc(text), [("Apache Xerces", "1.0.3"), ("libHaru", "2.3.0 RC2"), ("Angular", "19.2.14")])
+
+    def test_discover_product_and_version_from_url(self):
+        page = ('<a href="https://content.mellanox.com/Legal/MLNX_OFED/license_MLNX_OFED_24.10-0.pdf">License</a>'
+                '<a href="https://content.mellanox.com/Legal/MFT/license_MFT_LINUX_mft-4.30.0.pdf">License</a>'
+                '<a href="https://content.mellanox.com/Legal/license_HPCX_ucx_hpcx_v2.21.pdf">License</a>'
+                '<a href="https://content.mellanox.com/Legal/3rdPartyNotice_MLNX_OFED_24.10-0.pdf">Notice</a>')
+        rule = {"supplier": "NVIDIA", "index": "https://docs.nvidia.com/x", "link": r"/Legal/(?:[^/]+/)?license_[^/]+\.pdf$",
+                "title": ".", "product_prefix": "NVIDIA ",
+                "product_from_url": r"license_(?P<product>[A-Za-z][A-Za-z0-9_\-]*?)_(?:hpcx_?|mft-|open_sm_)?v?\d[\w.\-]*\.pdf$",
+                "version_from_url": r"_(?:hpcx_?|mft-|open_sm_)?v?(?P<version>\d[\w.\-]*)\.pdf$"}
+        original = fetch_mod.get_text
+        fetch_mod.get_text = lambda url, **kw: page
+        try:
+            docs = notices.discover(rule, log=lambda *a: None)
+        finally:
+            fetch_mod.get_text = original
+        self.assertEqual([(d["product"], d["version"]) for d in docs],
+                         [("NVIDIA MLNX OFED", "24.10-0"), ("NVIDIA MFT LINUX", "4.30.0"), ("NVIDIA HPCX ucx", "2.21")])
+
+
+class AppleSourceTest(unittest.TestCase):
+    def test_releases_object_and_resolvers(self):
+        js = ('!function(){}({1:[function(e,i,s){i.exports={macOS:{"macOS Tahoe 26":{"macOS 26.5":{AppleFileSystemDriver:"31",'
+              'OpenSSH:"354.120.2",curl:"166.0.0.0.1"},"macOS 26.4":{OpenSSH:"354.100.6"}}},iOS:{"iOS 26":{"iOS 26.5":{WebKit:"7626.1"}}}}},{}]})')
+        html = '<script src="/scripts/head.js"></script><script src="/scripts/main.built.abc.js"></script>'
+        files = {
+            "https://opensource.apple.com/releases/": html, "https://opensource.apple.com/scripts/main.built.abc.js": js,
+            apple_src.RAW.format(project="OpenSSH", tag="354.120.2", path="openssh/version.h"):
+                '#define SSH_VERSION\t"OpenSSH_10.2"\n#define SSH_PORTABLE\t"p1"\n',
+            apple_src.RAW.format(project="OpenSSH", tag="354.100.6", path="openssh/version.h"): '#define SSH_VERSION "OpenSSH_10.2"\n',
+            apple_src.RAW.format(project="curl", tag="166.0.0.0.1", path="curl/include/curl/curlver.h"): '#define LIBCURL_VERSION "8.7.1"\n',
+        }
+
+        def fake_get_text(url, **kw):
+            if url in files:
+                return files[url]
+            raise fetch_mod.FetchError(url)
+
+        original, cache = fetch_mod.get_text, apple_src.CACHE
+        fetch_mod.get_text = fake_get_text
+        apple_src.CACHE = Path(tempfile.mkdtemp()) / "apple_resolve.json"
+        try:
+            data = apple_src.releases_data()
+            self.assertEqual(data["macOS"]["macOS Tahoe 26"]["macOS 26.5"]["OpenSSH"], "354.120.2")
+            docs = apple_src.discover({"supplier": "Apple", "products": {"macOS": {"latest": 2}, "iOS": {"latest": 1}}}, log=lambda *a: None)
+        finally:
+            fetch_mod.get_text = original
+            apple_src.CACHE = cache
+        self.assertEqual([(d["product"], d["version"]) for d in docs], [("macOS", "26.5"), ("macOS", "26.4"), ("iOS", "26.5")])
+        comps = {c["name"]: c for c in docs[0]["components"]}
+        self.assertEqual(comps["OpenSSH"]["version"], "10.2p1")
+        self.assertEqual(comps["curl"]["version"], "8.7.1")
+        self.assertEqual(comps["AppleFileSystemDriver"]["version"], "")      # Apple tags are never versions
+        self.assertEqual(comps["AppleFileSystemDriver"]["apple"], "AppleFileSystemDriver-31")
+        self.assertEqual(docs[1]["components"][0], {"name": "OpenSSH", "version": "10.2", "apple": "OpenSSH-354.100.6"})
+        self.assertTrue(docs[0]["url"].startswith("https://opensource.apple.com/releases/#macos-26.5"))
+
+
 from xenolith import wanted as wanted_mod  # noqa: E402
 
 

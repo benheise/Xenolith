@@ -1,0 +1,102 @@
+{
+"components": [
+{
+"name": "DPDK",
+"version": "22.11"
+},
+{
+"name": "gkernel: rng-tools / ethtool",
+"version": "6.5"
+},
+{
+"name": "iproute2",
+"version": "6.1.0"
+},
+{
+"name": "iproute2",
+"version": "6.4.0"
+},
+{
+"name": "libiniparser1",
+"version": "4.1"
+},
+{
+"name": "libpmix2",
+"version": "3.2.3"
+},
+{
+"name": "mlnx-tools",
+"version": "23.07"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "0.12"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "4.16.0"
+},
+{
+"name": "openmpi",
+"version": "4.1.4"
+},
+{
+"name": "openmpi-common",
+"version": "4.1.6"
+},
+{
+"name": "openucx/ucx",
+"version": "v1.16.0-rc5"
+},
+{
+"name": "OVN (Open Virtual Network)",
+"version": "v2.17.8"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "4.0.2"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "4.1.6"
+},
+{
+"name": "rdma-core",
+"version": "46.0"
+},
+{
+"name": "rdma-core",
+"version": "47.0"
+},
+{
+"name": "rdma-core",
+"version": "v44.0"
+},
+{
+"name": "rdma-core",
+"version": "v46.0"
+},
+{
+"name": "sockperf",
+"version": "3.10"
+},
+{
+"name": "ucx",
+"version": "1.15.0"
+},
+{
+"name": "ucx",
+"version": "1.16.0~rc4+ds"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA MLNX OFED",
+"retrieved": "2026-11-08",
+"sha256": "b602cfd8403737bff59666dca18766caeb662ead4dbed57f38e17e9a098faaf9",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/MLNX_OFED/license_MLNX_OFED_23.10-2.pdf",
+"version": "23.10-2"
+}

@@ -1,0 +1,218 @@
+{
+"components": [
+{
+"name": "Adobe Reader",
+"version": "11.0.5"
+},
+{
+"name": "Apache Xerces",
+"version": "1.0.3"
+},
+{
+"name": "Bosrup overLIB",
+"version": "3.5"
+},
+{
+"name": "BSQUARE winRT Toolkit",
+"version": "4.0"
+},
+{
+"name": "Cimetrics BACstac",
+"version": "6.4-i"
+},
+{
+"name": "Code Guru – Drawing a Bitmap Transparently",
+"version": ""
+},
+{
+"name": "Code Guru – Editables Subitems",
+"version": ""
+},
+{
+"name": "Code Guru – Setting Color and Font Attribute",
+"version": ""
+},
+{
+"name": "Code Guru – Sort Order in Header Control",
+"version": ""
+},
+{
+"name": "Code Guru – Static control to display DIBs",
+"version": ""
+},
+{
+"name": "Code Project CxImage (subset: CxImage, png, zlib)",
+"version": "6.0"
+},
+{
+"name": "Code Project Flicker Free Drawing in MFC",
+"version": "1.0"
+},
+{
+"name": "Code Project Layout Manager",
+"version": "1.0"
+},
+{
+"name": "CrypKey SDK for Windows",
+"version": "8.0"
+},
+{
+"name": "Customized MFC Multithreaded Extensions",
+"version": "4.1"
+},
+{
+"name": "Dialogic System Release PCI for Windows",
+"version": "6.0"
+},
+{
+"name": "FactorySoft OPC Server Development Toolkit",
+"version": "1997"
+},
+{
+"name": "FarPoint Technologies TabPro",
+"version": "2.0"
+},
+{
+"name": "Flexera Software InstallShield",
+"version": "2013 (Version 20)"
+},
+{
+"name": "FM Software GIFDecoder Class",
+"version": "1.01"
+},
+{
+"name": "FOSS Software Prof-UIS",
+"version": "2.23"
+},
+{
+"name": "IEC Intelligent Technologies PEAK",
+"version": "3.0"
+},
+{
+"name": "Infragistics ScheduleX",
+"version": "8.0"
+},
+{
+"name": "libHaru",
+"version": "2.3.0 RC2"
+},
+{
+"name": "Microsoft .NET Framework",
+"version": "2.0 SP2"
+},
+{
+"name": "Microsoft .NET Framework",
+"version": "4.0"
+},
+{
+"name": "Microsoft ASPnet_setreg.exe",
+"version": "1.0.3705.410"
+},
+{
+"name": "Microsoft DCOMPerm",
+"version": "7.1"
+},
+{
+"name": "Microsoft MSDN Query Status Dialog Sample Code",
+"version": "4.1"
+},
+{
+"name": "Microsoft MSDN RowList Sample Code",
+"version": "4.1"
+},
+{
+"name": "Microsoft OPC Category Helper",
+"version": "1997"
+},
+{
+"name": "Microsoft Visual Studio",
+"version": "2008 Redistributables 2008"
+},
+{
+"name": "Microsoft Visual Studio",
+"version": "2010 Redistributables 2010"
+},
+{
+"name": "Microsoft Visual Studio",
+"version": "98 Redistributables 98"
+},
+{
+"name": "Naughter Software EnumSerialPorts",
+"version": "1.01"
+},
+{
+"name": "Objectivity/DB",
+"version": "11.2.7"
+},
+{
+"name": "Objectivity/DB",
+"version": "9.4.0_a9"
+},
+{
+"name": "OPC Foundation AE Redistributables",
+"version": "1.00"
+},
+{
+"name": "OPC Foundation AE SDK",
+"version": "1.00"
+},
+{
+"name": "OPC Foundation Common Redistributable",
+"version": "1.00"
+},
+{
+"name": "OPC Foundation Common SDK",
+"version": "1.00"
+},
+{
+"name": "OPC Foundation DA Redistributables",
+"version": "2.00"
+},
+{
+"name": "OPC Foundation DA SDK",
+"version": "2.00"
+},
+{
+"name": "Oracle Java SE Development Kit",
+"version": "1.7.0_71"
+},
+{
+"name": "PixieLib",
+"version": "1998"
+},
+{
+"name": "ProtoView Data Table Custom Control",
+"version": "2.0"
+},
+{
+"name": "Rainbow Technologies Sentinel LM",
+"version": "7.2.0"
+},
+{
+"name": "Rogue Wave Tools.h++ Professional",
+"version": "6.1.0"
+},
+{
+"name": "Sheridan Calendar Widgets",
+"version": "1.0f"
+},
+{
+"name": "Software FX Chart FX",
+"version": "3.0"
+},
+{
+"name": "Software FX Chart FX",
+"version": "98"
+}
+],
+"extractors": [
+"dotted_toc"
+],
+"kind": "pdf",
+"product": "APOGEE Commissioning Tool",
+"retrieved": "2026-11-08",
+"sha256": "8e65f67ae60430ac92d0b98e860d961381d26a0dcc19a90b3c7830fc9e66f538",
+"supplier": "Siemens",
+"url": "https://assets.new.siemens.com/siemens/assets/api/uuid:79e20062-cd0c-4084-ba7d-c2225838996d/Readme-OSS-CT.pdf",
+"version": "3.16"
+}

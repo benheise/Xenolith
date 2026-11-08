@@ -29,6 +29,272 @@
 "html_table"
 ]
 },
+"https://assets.new.siemens.com/siemens/assets/api/uuid:17118f27-1442-4bac-8aa2-6993beacb871/readme-for-3rd-party-software-desigo-fire-cloud-apps-modular-con.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 24,
+"sha": "d86ef70716419af4f4a454710fb85807290aa37548700ee3487fbae9687a2d80",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://assets.new.siemens.com/siemens/assets/api/uuid:3d6916aa-d8b7-4cdb-b075-c7f9fcd04bf9/Readme-OSS-Desigo-Optic-3.0.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 152,
+"sha": "e45a7dd80577036cb799286c1266d8b2445b1951d99ccc8deb785b0ab8c2c561",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://assets.new.siemens.com/siemens/assets/api/uuid:3eb9325c-2f05-4a48-880a-5bebc4939f4a/readme-oss-msib-3-3.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 128,
+"sha": "6352678a4b030f35d918db31a746a68fc22689482540418b28c3eb41b63b2d80",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://assets.new.siemens.com/siemens/assets/api/uuid:79e20062-cd0c-4084-ba7d-c2225838996d/Readme-OSS-CT.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 51,
+"sha": "8e65f67ae60430ac92d0b98e860d961381d26a0dcc19a90b3c7830fc9e66f538",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://assets.new.siemens.com/siemens/assets/api/uuid:8614afdc-319c-4daa-9949-afc8be5f296d/Readme-OSS-Desigo-Optic-3.1.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 152,
+"sha": "61cc0dce291981a70b19b7f4e16ee208123838f064db680f69c0ee0fbf4d313c",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://content.mellanox.com/Legal/MFT/license_MFT_LINUX_mft-4.26.1.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 19,
+"sha": "a16e0b332642c701094bd2ce3bb41c32c32201b668759fa3ed016c6aac974706",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/MFT/license_MFT_LINUX_mft-4.30.0.pdf": {
+"error": "https://content.mellanox.com/Legal/MFT/license_MFT_LINUX_mft-4.30.0.pdf: HTTP Error 404: Not Found",
+"fetched": "2026-11-08",
+"status": "error"
+},
+"https://content.mellanox.com/Legal/MLNX_OFED/license_MLNX_OFED_23.10-2.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 22,
+"sha": "b602cfd8403737bff59666dca18766caeb662ead4dbed57f38e17e9a098faaf9",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_ConnectX_Firmware_39.3004.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "3fba2f1322a408cac46ec68343bc2a87ead4da13963deb666e49a6f0b7d232ac",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_ConnectX_Firmware_43.1000.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "dde47eb8829881c1be95b25797b78d7cee9133c093c5d42b798ade003508874b",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_DPCP_1.1.43.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 8,
+"sha": "553c8ab05b3bcae3917684250bdced2eb8dc8b9a33ec789c024d4b5534735ace",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_DPCP_1.1.48.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 8,
+"sha": "97113a3aba2804871490482d7d4353d2008f37611fb2145301e94ec7bb71625b",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_HPCX_clusterkit_hpcx2.17.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 3,
+"sha": "2cb6e4b556633d698b06bb74b3e46dd56f9e3040766cdfa9c26ca0c020d7a412",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_HPCX_clusterkit_hpcx_v2.21.pdf": {
+"error": "https://content.mellanox.com/Legal/license_HPCX_clusterkit_hpcx_v2.21.pdf: HTTP Error 404: Not Found",
+"fetched": "2026-11-08",
+"status": "error"
+},
+"https://content.mellanox.com/Legal/license_HPCX_hcoll_hpcx2.17.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 48,
+"sha": "312ad94d7f507c7adce57e6a04016abdac8467edba77eb3b9eed5ee48c371558",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_HPCX_hcoll_hpcx_v2.21.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 0,
+"sha": "15f4b02f15ef250f49fff60ef2410f79cb0996af1152a9603baaa2f45a520c08",
+"status": "empty",
+"via": []
+},
+"https://content.mellanox.com/Legal/license_HPCX_mpi_tests_hpcx2.17.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 5,
+"sha": "be2d9370c148947201c21759624da66c1bb18542ae0dd8dec9ca522b2868fe28",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_HPCX_mpi_tests_hpcx_v2.21.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "1b90cd816c9254bcac8dfd2371cba776dbea0de5a2be5d986a9360656ccdca94",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_HPCX_ompi_hpcx_v2.21.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 3,
+"sha": "e728fde0b4419937d0ad959a233c8c4e5826d04c9173f3074cf45b6a1dae0581",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_HPCX_sharp_hpcx2.17.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 39,
+"sha": "0dc6a645f5dd238cb003642f9ce8dc3e6639b5285d3d218eb020e44aeb9e37e9",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_HPCX_sharp_hpcx_v2.21.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 0,
+"sha": "0ee08231506afc04f120e25f69668c6247a74e23b863ccfc29f8bac3eda24817",
+"status": "empty",
+"via": []
+},
+"https://content.mellanox.com/Legal/license_HPCX_ucx_hpcx_v2.21.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "d6e1edb4cddf51d670477a554f171fb53c6c58a96eb7bf63cb51457e27aa5882",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_MLNX_OFED_24.10-0.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 19,
+"sha": "d102d2ebd7390d6da4aa1e3641931be8a27038e55a4109c06c18159323d57c98",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_UFM_6.15.4-X.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 13,
+"sha": "99a0ef602e1924beb34478842f98dc6ce5824a33129b272d6bd13bf6a3ad79a2",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_libvma_9.8.60.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "fad2a33376e5a5d0837283d6770f15374f08b777d61293bc9de0049c570e8e29",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_libxlio_3.20.8.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "fb1f221b777227e93772ac514d8e262844416f669fccdd1d98d55c96845648f1",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://content.mellanox.com/Legal/license_libxlio_3.30.5.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "7ed7ca38c85e67ed94b39f1ddb56eab728592749df046f02691c4328c02b8430",
+"status": "ok",
+"via": [
+"homepage_table"
+]
+},
+"https://dl.microfocus.com/documentation/fortify-webinspect/1810/Fortify_OpenSrc_18.10.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 169,
+"sha": "742f265db3e25aa784f20584b547523fca8ad0de191556d9606a5638cd384477",
+"status": "ok",
+"via": [
+"name_version_lines"
+]
+},
 "https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom232/Third-party-product-terms-of-use/": {
 "fetched": "2026-11-08",
 "kind": "html",
@@ -1821,6 +2087,94 @@
 "url_lines"
 ]
 },
+"https://opensource.apple.com/releases/#ios-26.2": {
+"fetched": "2026-11-08",
+"kind": "apple-release",
+"n": 2,
+"sha": "bbd670a55506918c679ceb52355d64a9315d453d0c668431374354deb57119fa",
+"status": "ok",
+"via": [
+"apple_releases",
+"upstream_headers"
+]
+},
+"https://opensource.apple.com/releases/#ios-26.3": {
+"fetched": "2026-11-08",
+"kind": "apple-release",
+"n": 2,
+"sha": "a76be068e14b19ef18a2ac86c7a43400e53feb5f5324bb2cde9c6f9687f5e7ac",
+"status": "ok",
+"via": [
+"apple_releases",
+"upstream_headers"
+]
+},
+"https://opensource.apple.com/releases/#ios-26.4": {
+"fetched": "2026-11-08",
+"kind": "apple-release",
+"n": 2,
+"sha": "2d6c262585109c28accf0f5a12c7d450af91a9875b8d7f193fa456eee87c5e99",
+"status": "ok",
+"via": [
+"apple_releases",
+"upstream_headers"
+]
+},
+"https://opensource.apple.com/releases/#ios-26.5": {
+"fetched": "2026-11-08",
+"kind": "apple-release",
+"n": 2,
+"sha": "b3df7d17ad49261040d5f6b3c4488d2bfa3d5897623e3948e440313e18a45595",
+"status": "ok",
+"via": [
+"apple_releases",
+"upstream_headers"
+]
+},
+"https://opensource.apple.com/releases/#macos-26.2": {
+"fetched": "2026-11-08",
+"kind": "apple-release",
+"n": 171,
+"sha": "58cc7542bc481e0461ce5ea368f4f7c2dba8f61b67b1e10fb1ecfc23b823ac38",
+"status": "ok",
+"via": [
+"apple_releases",
+"upstream_headers"
+]
+},
+"https://opensource.apple.com/releases/#macos-26.3": {
+"fetched": "2026-11-08",
+"kind": "apple-release",
+"n": 171,
+"sha": "bd747be4149dfb7f0cad927a7d4acb53d523901c2616a4de4619048de0590f6d",
+"status": "ok",
+"via": [
+"apple_releases",
+"upstream_headers"
+]
+},
+"https://opensource.apple.com/releases/#macos-26.4": {
+"fetched": "2026-11-08",
+"kind": "apple-release",
+"n": 171,
+"sha": "5c5d4f84fa1b3b73bd45188ca2016f48308fb4471e797ca0a18d572ad2f82b94",
+"status": "ok",
+"via": [
+"apple_releases",
+"upstream_headers"
+]
+},
+"https://opensource.apple.com/releases/#macos-26.5": {
+"fetched": "2026-11-08",
+"kind": "apple-release",
+"n": 171,
+"sha": "7439e933843209faca2abfe12bf8c75a5dec6e7749a6e7db6388ca79f7ba657f",
+"status": "ok",
+"via": [
+"apple_releases",
+"upstream_headers"
+]
+},
 "https://opensource.netapp.com/Active_IQ_Unified_Manager/AIQUM-9.18GA-Release/NOTICE.pdf": {
 "fetched": "2026-11-08",
 "kind": "pdf",
@@ -2357,6 +2711,17 @@
 "status": "ok",
 "via": [
 "dotted_toc"
+]
+},
+"https://www.commoncriteriaportal.org/nfs/ccpfiles/files/epfiles/NSCIB-CC-2400012-01-ST_1.8.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 73,
+"sha": "7187b6330feac804958afa3b85ac3f75144bc484b28d44ff76bb188d2dbe8dd3",
+"status": "ok",
+"via": [
+"dotted_toc",
+"dll_names"
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-ibm-aix-4.6-4.6.0.1762&lang=en": {

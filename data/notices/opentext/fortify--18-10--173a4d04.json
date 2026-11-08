@@ -1,0 +1,690 @@
+{
+"components": [
+{
+"name": "angular",
+"version": "1.2.16"
+},
+{
+"name": "angular-base64",
+"version": "2.0.1"
+},
+{
+"name": "angular-bower-angular-aria",
+"version": "1.4.7"
+},
+{
+"name": "angular-breadcrumbs",
+"version": "0.0.7"
+},
+{
+"name": "angular-cache",
+"version": "2.3.3"
+},
+{
+"name": "angular-cookies",
+"version": "1.2.16"
+},
+{
+"name": "angular-grid",
+"version": "2.0.7"
+},
+{
+"name": "angular-ui-select2",
+"version": "0.0.5"
+},
+{
+"name": "angular-ui-utils",
+"version": "0.1.1"
+},
+{
+"name": "angular-uidate",
+"version": "1.2.16"
+},
+{
+"name": "angularjs-nvd3-directives",
+"version": "0.0.7"
+},
+{
+"name": "antlr",
+"version": "2.7.7"
+},
+{
+"name": "aopalliance",
+"version": "2.4.0-b10"
+},
+{
+"name": "apache-commons-compress",
+"version": "1.9"
+},
+{
+"name": "apache-commons-csv",
+"version": "1.5"
+},
+{
+"name": "apache-jakarta-commons-io",
+"version": "2.0.1"
+},
+{
+"name": "apache-kafka",
+"version": "0.8.1.1"
+},
+{
+"name": "apache-log4j",
+"version": "2.10"
+},
+{
+"name": "apache-zookeeper",
+"version": "3.3.6"
+},
+{
+"name": "apple-swift-compiler-rt",
+"version": "4.0.3"
+},
+{
+"name": "aspect",
+"version": "1.6.6"
+},
+{
+"name": "AspectJ",
+"version": "1.6"
+},
+{
+"name": "AvalonDock",
+"version": "2.0.2000"
+},
+{
+"name": "BCEL",
+"version": "5.1"
+},
+{
+"name": "bcel-java",
+"version": "5.20"
+},
+{
+"name": "bean-validator",
+"version": "2.2.0-b22"
+},
+{
+"name": "BigInteger",
+"version": "1.03"
+},
+{
+"name": "BlaseDS",
+"version": "3.2"
+},
+{
+"name": "bootstrap",
+"version": "2.3.1"
+},
+{
+"name": "bouncycastle-crypto",
+"version": "1.53"
+},
+{
+"name": "cairngorm",
+"version": "2.2.1"
+},
+{
+"name": "cairngorm3-observer",
+"version": "1.13"
+},
+{
+"name": "cassandra",
+"version": "2.1.4"
+},
+{
+"name": "cassandra-driver-core",
+"version": "2.1.4"
+},
+{
+"name": "chieffancypants-angular-hotkeys",
+"version": "1.2.5"
+},
+{
+"name": "codehaus-gpars",
+"version": "1.1.0"
+},
+{
+"name": "codemirror",
+"version": "4.0.3"
+},
+{
+"name": "commons-beanutils",
+"version": "1.8.3"
+},
+{
+"name": "commons-compress",
+"version": "1.41"
+},
+{
+"name": "commons-email",
+"version": "1.4.1"
+},
+{
+"name": "commons-httpclient",
+"version": "4.6.4"
+},
+{
+"name": "commons-lang3",
+"version": "3.2.1"
+},
+{
+"name": "commonsdbcp",
+"version": "1.4"
+},
+{
+"name": "Creative Commons CC-BY-SA",
+"version": "3.0"
+},
+{
+"name": "datatables",
+"version": "1.10.0"
+},
+{
+"name": "derby",
+"version": "10.4.2.0"
+},
+{
+"name": "display taglib",
+"version": "1.2"
+},
+{
+"name": "DotNetZip",
+"version": "1.9"
+},
+{
+"name": "Eclipse",
+"version": "1.0"
+},
+{
+"name": "Eclipse-birt",
+"version": "3.4.1"
+},
+{
+"name": "es5-shim",
+"version": "2.1.0"
+},
+{
+"name": "eval-math",
+"version": "0.4"
+},
+{
+"name": "facebook-react",
+"version": "0.13.3"
+},
+{
+"name": "fasterxml-jackson-annotations",
+"version": "2.9.4"
+},
+{
+"name": "fasterxml-jackson-core",
+"version": "2.9.4"
+},
+{
+"name": "fasterxml-jackson-databind",
+"version": "2.4.4"
+},
+{
+"name": "fasterxml-jackson-databind",
+"version": "2.9.4"
+},
+{
+"name": "fasterxml-jackson-dataformat-xml",
+"version": "2.9.4"
+},
+{
+"name": "findbugs",
+"version": "1.3.7"
+},
+{
+"name": "flexlib",
+"version": "2.4+"
+},
+{
+"name": "flyway-core",
+"version": "3.1"
+},
+{
+"name": "goatslacker-alt",
+"version": "0.17.3"
+},
+{
+"name": "grails-web",
+"version": "2.4.0.M2"
+},
+{
+"name": "guava",
+"version": "5.0"
+},
+{
+"name": "guava-libraries",
+"version": "1.5"
+},
+{
+"name": "hibernate",
+"version": "3.5.4"
+},
+{
+"name": "hibernate-hibernate-validator",
+"version": "5.1.3"
+},
+{
+"name": "hibernate-search",
+"version": "5.5.2"
+},
+{
+"name": "hk2-api",
+"version": "2.4.0.b10"
+},
+{
+"name": "hk2-locator",
+"version": "2.4.0-b10"
+},
+{
+"name": "hk2-utils",
+"version": "2.4.0.b31"
+},
+{
+"name": "hoverintent",
+"version": "0.7.0"
+},
+{
+"name": "http-builder",
+"version": "0.7.1"
+},
+{
+"name": "httpclient",
+"version": "4.3.6"
+},
+{
+"name": "icsharpcode-ilspy",
+"version": "2.3.1"
+},
+{
+"name": "iText",
+"version": "2.0.8"
+},
+{
+"name": "iTextAsian",
+"version": "2.0.8"
+},
+{
+"name": "Jackson",
+"version": "1.7.4"
+},
+{
+"name": "jackson-jaxrs",
+"version": "2.3.2"
+},
+{
+"name": "jackson-mapper-asl",
+"version": "1.9.4"
+},
+{
+"name": "jakarta-oro",
+"version": "2.0.8"
+},
+{
+"name": "jasper reports",
+"version": "3.7.3"
+},
+{
+"name": "javassist",
+"version": "3.18.1-GA"
+},
+{
+"name": "javassist",
+"version": "3.4"
+},
+{
+"name": "javax-inject",
+"version": "2.3.0-b10"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.2"
+},
+{
+"name": "javax.mail",
+"version": "1.5.2"
+},
+{
+"name": "JAXB/JAXP",
+"version": "2.1"
+},
+{
+"name": "jersey",
+"version": "2.17"
+},
+{
+"name": "jersey-core",
+"version": "1.19"
+},
+{
+"name": "jersey-json",
+"version": "1.19"
+},
+{
+"name": "jettison",
+"version": "1.3.5"
+},
+{
+"name": "jfreechart",
+"version": "1.0.13"
+},
+{
+"name": "jgm-cmark",
+"version": "0.22.0"
+},
+{
+"name": "jquery",
+"version": "2.1.4"
+},
+{
+"name": "jquery-file-upload",
+"version": "5.40.1"
+},
+{
+"name": "jquery-maskedinputs",
+"version": "1.3.1"
+},
+{
+"name": "jquery-outside-events",
+"version": "1.1"
+},
+{
+"name": "Jradius-client",
+"version": "2.0.0"
+},
+{
+"name": "json-simple",
+"version": "1.1"
+},
+{
+"name": "json3",
+"version": "3.2.6"
+},
+{
+"name": "Jsoup",
+"version": "1.8.1"
+},
+{
+"name": "jsr311-api",
+"version": "1.1.1"
+},
+{
+"name": "jstl",
+"version": "1.1"
+},
+{
+"name": "jta",
+"version": "1.1"
+},
+{
+"name": "jtar",
+"version": "1.1"
+},
+{
+"name": "lodash-lodash",
+"version": "3.10.1"
+},
+{
+"name": "log4net",
+"version": "1.2.10"
+},
+{
+"name": "MacroScope",
+"version": "2.1"
+},
+{
+"name": "mbostock-d3",
+"version": "3.4.13"
+},
+{
+"name": "moment-js",
+"version": "2.5.1"
+},
+{
+"name": "Mozilla Rhino",
+"version": "1.7R2"
+},
+{
+"name": "NewtonSoft libnewtonsoft-json4.5-cil",
+"version": "4.5"
+},
+{
+"name": "ninjatronic-angular-base64",
+"version": "2.0.2"
+},
+{
+"name": "numeral",
+"version": "1.5.3"
+},
+{
+"name": "org.eclipse.core.commands",
+"version": "3.6.0"
+},
+{
+"name": "org.eclipse.core.contenttype",
+"version": "3.4.100.v20100505-1235"
+},
+{
+"name": "org.eclipse.core.expressions",
+"version": "3.4.300"
+},
+{
+"name": "org.eclipse.core.filesystem",
+"version": "1.3.100"
+},
+{
+"name": "org.eclipse.core.jobs",
+"version": "3.5.100"
+},
+{
+"name": "org.eclipse.core.resources",
+"version": "3.7.100"
+},
+{
+"name": "org.eclipse.core.runtime",
+"version": "3.7.0"
+},
+{
+"name": "org.eclipse.equinox.app",
+"version": "1.3.100"
+},
+{
+"name": "org.eclipse.equinox.common",
+"version": "3.6.0"
+},
+{
+"name": "org.eclipse.equinox.preferences",
+"version": "3.4.1"
+},
+{
+"name": "org.eclipse.equinox.registry",
+"version": "3.5.101"
+},
+{
+"name": "org.eclipse.jdt.core",
+"version": "3.7.1"
+},
+{
+"name": "org.eclipse.osgi",
+"version": "3.7.1"
+},
+{
+"name": "org.eclipse.text",
+"version": "3.5.101"
+},
+{
+"name": "osgi-resource-locator",
+"version": "1.0.1"
+},
+{
+"name": "postgresql",
+"version": "9.3-1101-jdbc41"
+},
+{
+"name": "postgreSQL",
+"version": "9.3.5"
+},
+{
+"name": "react-bootstrap-react-bootstrap",
+"version": "0.24"
+},
+{
+"name": "RSS Util informa.jar and jdom.jar",
+"version": "0.7.0"
+},
+{
+"name": "saxon",
+"version": "9.2.0.3"
+},
+{
+"name": "select2",
+"version": "3.4.6"
+},
+{
+"name": "SharpDevelop",
+"version": "2.1"
+},
+{
+"name": "slf4j-api",
+"version": "1.7.5"
+},
+{
+"name": "snakeyaml",
+"version": "1.11"
+},
+{
+"name": "Software Version",
+"version": "18.10"
+},
+{
+"name": "spring flex",
+"version": "1.0.3"
+},
+{
+"name": "spring ldap java",
+"version": "1.30"
+},
+{
+"name": "spring web services",
+"version": "1.5.6"
+},
+{
+"name": "spring-boot-vaadin",
+"version": "0.0.4.RELEASE"
+},
+{
+"name": "spring-security-core",
+"version": "2.0.3"
+},
+{
+"name": "spring-security-kerberos",
+"version": "1.0.0"
+},
+{
+"name": "spring_ws",
+"version": "2.2.2"
+},
+{
+"name": "springfox",
+"version": "2.1.0"
+},
+{
+"name": "springframework",
+"version": "3.2.8.RELEASE"
+},
+{
+"name": "storm",
+"version": "0.9.4"
+},
+{
+"name": "swf object",
+"version": "2.2"
+},
+{
+"name": "Swingworker",
+"version": "1.2"
+},
+{
+"name": "Testing",
+"version": "5.11"
+},
+{
+"name": "twtbs-bootstrap-sass",
+"version": "3.3.5"
+},
+{
+"name": "ui-bootstrap",
+"version": "0.11.0"
+},
+{
+"name": "vaadin",
+"version": "7.2.6"
+},
+{
+"name": "vaadin-client-compiled",
+"version": "7.4.3"
+},
+{
+"name": "vaadin-themes",
+"version": "7.4.3"
+},
+{
+"name": "vertex-hazelcast",
+"version": "2.1.5"
+},
+{
+"name": "vertx-core",
+"version": "2.1.2"
+},
+{
+"name": "vertx-platform",
+"version": "2.1.5"
+},
+{
+"name": "visionmedia-superagent",
+"version": "1.2.0"
+},
+{
+"name": "WebSocket4Net",
+"version": "0.14.1"
+},
+{
+"name": "wix-angular-tree-control",
+"version": "0.2.2"
+},
+{
+"name": "WSDL4J",
+"version": "1.6"
+},
+{
+"name": "wss4j",
+"version": "1.5.8"
+},
+{
+"name": "xalan-j",
+"version": "2.7.1"
+},
+{
+"name": "xmlbeans",
+"version": "2.2.0"
+},
+{
+"name": "Xmlsec1",
+"version": "1.2.16"
+}
+],
+"extractors": [
+"name_version_lines"
+],
+"kind": "pdf",
+"product": "Fortify",
+"retrieved": "2026-11-08",
+"sha256": "742f265db3e25aa784f20584b547523fca8ad0de191556d9606a5638cd384477",
+"supplier": "OpenText",
+"url": "https://dl.microfocus.com/documentation/fortify-webinspect/1810/Fortify_OpenSrc_18.10.pdf",
+"version": "18.10"
+}

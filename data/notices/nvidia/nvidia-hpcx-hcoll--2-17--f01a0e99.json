@@ -1,0 +1,206 @@
+{
+"components": [
+{
+"name": "ACL",
+"version": "2.2.53"
+},
+{
+"name": "Apache Stratos",
+"version": "4.0.0-incubating-alpha"
+},
+{
+"name": "Chapel",
+"version": "1.12.0"
+},
+{
+"name": "Debian",
+"version": "2.21"
+},
+{
+"name": "GNU Automake",
+"version": "v1.10b"
+},
+{
+"name": "GNU Automake",
+"version": "v1.11.2b"
+},
+{
+"name": "GNU Automake",
+"version": "v1.13.1b"
+},
+{
+"name": "jQuery",
+"version": "1.7.1"
+},
+{
+"name": "kmod",
+"version": "21"
+},
+{
+"name": "libdime",
+"version": "20170623-snapshot-61b04325"
+},
+{
+"name": "Microsoft/Freeflow",
+"version": "20181114-snapshot-cb35573d"
+},
+{
+"name": "Open MPI",
+"version": "v1.1.0"
+},
+{
+"name": "Open MPI",
+"version": "v1.2.1"
+},
+{
+"name": "Open MPI",
+"version": "v1.3.0"
+},
+{
+"name": "Open MPI",
+"version": "v1.5.0"
+},
+{
+"name": "Open MPI",
+"version": "v2.x-dev"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.0"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.4"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.4_1"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.5"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.5.2"
+},
+{
+"name": "OpenFabrics Enterprise Distribution - OFED",
+"version": "1.5.3"
+},
+{
+"name": "OpenFOAM",
+"version": "1.3"
+},
+{
+"name": "OpenFOAM",
+"version": "1.4"
+},
+{
+"name": "OpenFOAM",
+"version": "2.3.1"
+},
+{
+"name": "OpenFOAM",
+"version": "2.4.0"
+},
+{
+"name": "openucx/ucx",
+"version": "v1.2.0"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.10.0"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.10.3"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.5.4"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.5.5rc2"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.7"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.7.1"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.7.2"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.7.3"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.7.4"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.7.5"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "1.8.5"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "2.0.0"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "2.0.2~git.20161225"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "2.1.0"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "2.1.0rc1"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "4.1.1"
+},
+{
+"name": "RethinkDB",
+"version": "v0.0-internal"
+},
+{
+"name": "sudo",
+"version": "1.6.9p17"
+},
+{
+"name": "TensorFlow",
+"version": "v1.14.0"
+},
+{
+"name": "XZ Utils",
+"version": "5.0.6"
+},
+{
+"name": "XZ Utils",
+"version": "5.2.2"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA HPCX hcoll",
+"retrieved": "2026-11-08",
+"sha256": "312ad94d7f507c7adce57e6a04016abdac8467edba77eb3b9eed5ee48c371558",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_HPCX_hcoll_hpcx2.17.pdf",
+"version": "2.17"
+}

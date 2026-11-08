@@ -1,0 +1,26 @@
+{
+"components": [
+{
+"name": "Chapel",
+"version": "0.9"
+},
+{
+"name": "openucx/ucx",
+"version": "v1.2.0"
+},
+{
+"name": "openucx/ucx",
+"version": "v1.7.0-rc2"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA HPCX clusterkit",
+"retrieved": "2026-11-08",
+"sha256": "2cb6e4b556633d698b06bb74b3e46dd56f9e3040766cdfa9c26ca0c020d7a412",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_HPCX_clusterkit_hpcx2.17.pdf",
+"version": "2.17"
+}

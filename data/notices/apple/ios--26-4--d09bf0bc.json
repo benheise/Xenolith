@@ -1,0 +1,25 @@
+{
+"components": [
+{
+"apple": "libiconv-115.100.1",
+"name": "libiconv",
+"version": ""
+},
+{
+"apple": "WebKit-7624.1.16.10.6",
+"name": "WebKit",
+"version": ""
+}
+],
+"extractors": [
+"apple_releases",
+"upstream_headers"
+],
+"kind": "apple-release",
+"product": "iOS",
+"retrieved": "2026-11-08",
+"sha256": "2d6c262585109c28accf0f5a12c7d450af91a9875b8d7f193fa456eee87c5e99",
+"supplier": "Apple",
+"url": "https://opensource.apple.com/releases/#ios-26.4",
+"version": "26.4"
+}

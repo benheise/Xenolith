@@ -62,3 +62,7 @@ products:
   tenable:
     security center: [tenable sc, sc, securitycenter]
     nessus: [tenable nessus]
+  cyberark:
+    pas self hosted vault pvwa cpm psm psmp: [privileged access manager self hosted, pam self hosted, privileged access security]
+  commvault:
+    command center: [commvault backup recovery, backup recovery]

@@ -1,0 +1,90 @@
+{
+"components": [
+{
+"name": "Boost C++ Libraries - boost",
+"version": "1.65.1"
+},
+{
+"name": "curl",
+"version": "8.1.2"
+},
+{
+"name": "curl",
+"version": "8.2.1"
+},
+{
+"name": "Editline Library - libedit",
+"version": "3.1-20221030"
+},
+{
+"name": "iniparser",
+"version": "4.1"
+},
+{
+"name": "JsonCpp",
+"version": "0.6.0"
+},
+{
+"name": "libexpat",
+"version": "2.5.0"
+},
+{
+"name": "libssh",
+"version": "0.10.4"
+},
+{
+"name": "libssh",
+"version": "0.10.5"
+},
+{
+"name": "libxml2",
+"version": "2.10.4"
+},
+{
+"name": "linenoise",
+"version": "1.0"
+},
+{
+"name": "OpenSSL",
+"version": "1.1.1m"
+},
+{
+"name": "OpenSSL",
+"version": "1.1.1t"
+},
+{
+"name": "OpenSSL",
+"version": "3.1.2"
+},
+{
+"name": "Perl",
+"version": "5.32.0"
+},
+{
+"name": "SQLite",
+"version": "3.40.1"
+},
+{
+"name": "XZ Utils",
+"version": "v5.2.7"
+},
+{
+"name": "zlib",
+"version": "1.2.12"
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA MFT LINUX",
+"retrieved": "2026-11-08",
+"sha256": "a16e0b332642c701094bd2ce3bb41c32c32201b668759fa3ed016c6aac974706",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/MFT/license_MFT_LINUX_mft-4.26.1.pdf",
+"version": "4.26.1"
+}

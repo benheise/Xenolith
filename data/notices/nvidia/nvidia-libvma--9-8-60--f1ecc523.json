@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "libvma",
+"version": "9.8.40"
+},
+{
+"name": "Mellanox/libvma",
+"version": "9.8.60"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA libvma",
+"retrieved": "2026-11-08",
+"sha256": "fad2a33376e5a5d0837283d6770f15374f08b777d61293bc9de0049c570e8e29",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_libvma_9.8.60.pdf",
+"version": "9.8.60"
+}

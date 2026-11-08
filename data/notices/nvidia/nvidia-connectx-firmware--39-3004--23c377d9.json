@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "crypto-algorithms",
+"version": "20150427-snapshot-cfbde484"
+},
+{
+"name": "ogay/sha2",
+"version": "20130304-snapshot-79116b5d"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA ConnectX Firmware",
+"retrieved": "2026-11-08",
+"sha256": "3fba2f1322a408cac46ec68343bc2a87ead4da13963deb666e49a6f0b7d232ac",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_ConnectX_Firmware_39.3004.pdf",
+"version": "39.3004"
+}

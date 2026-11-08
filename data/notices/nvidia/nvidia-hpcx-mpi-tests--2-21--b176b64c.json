@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "mpitests",
+"version": "5.4"
+},
+{
+"name": "OSU Micro-Benchmarks (OMB)",
+"version": "7.4"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA HPCX mpi tests",
+"retrieved": "2026-11-08",
+"sha256": "1b90cd816c9254bcac8dfd2371cba776dbea0de5a2be5d986a9360656ccdca94",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_HPCX_mpi_tests_hpcx_v2.21.pdf",
+"version": "2.21"
+}

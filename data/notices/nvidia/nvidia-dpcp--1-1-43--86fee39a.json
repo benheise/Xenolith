@@ -1,0 +1,46 @@
+{
+"components": [
+{
+"name": "Debian",
+"version": "0.0-1"
+},
+{
+"name": "libexpat",
+"version": "2.2.7"
+},
+{
+"name": "libffi",
+"version": "3.3-rc0"
+},
+{
+"name": "Mellanox/libvma",
+"version": "8.0.4"
+},
+{
+"name": "Mellanox/libvma",
+"version": "8.2.1"
+},
+{
+"name": "Mellanox/libvma",
+"version": "8.3.4"
+},
+{
+"name": "Mellanox/libvma",
+"version": "9.1.0"
+},
+{
+"name": "ngtcp2",
+"version": "20180930-snapshot-c0cd7642"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA DPCP",
+"retrieved": "2026-11-08",
+"sha256": "553c8ab05b3bcae3917684250bdced2eb8dc8b9a33ec789c024d4b5534735ace",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_DPCP_1.1.43.pdf",
+"version": "1.1.43"
+}

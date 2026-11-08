@@ -1,0 +1,307 @@
+{
+"components": [
+{
+"name": "Autofac.Extras.DynamicProxy",
+"version": ""
+},
+{
+"name": "AutoMapper",
+"version": ""
+},
+{
+"name": "AWSSDK.CognitoIdentityProvider",
+"version": ""
+},
+{
+"name": "AWSSDK.Core",
+"version": ""
+},
+{
+"name": "AWSSDK.IdentityManagement",
+"version": ""
+},
+{
+"name": "AWSSDK.SecretsManager",
+"version": ""
+},
+{
+"name": "BouncyCastle.Crypto",
+"version": ""
+},
+{
+"name": "Castle.Core",
+"version": ""
+},
+{
+"name": "Castle.Windsor",
+"version": ""
+},
+{
+"name": "Common.Logging",
+"version": ""
+},
+{
+"name": "Common.Logging.Core",
+"version": ""
+},
+{
+"name": "ComponentSpace.SAML2",
+"version": ""
+},
+{
+"name": "ComponentSpaceWrapper",
+"version": ""
+},
+{
+"name": "ComponentSpaceWrapperDotNet",
+"version": ""
+},
+{
+"name": "DocumentFormat.OpenXml",
+"version": ""
+},
+{
+"name": "Eagle",
+"version": ""
+},
+{
+"name": "EasyNetQ",
+"version": ""
+},
+{
+"name": "Expect.NET",
+"version": ""
+},
+{
+"name": "IdentityModel",
+"version": ""
+},
+{
+"name": "InventoryReports",
+"version": ""
+},
+{
+"name": "Ionic.Zip",
+"version": ""
+},
+{
+"name": "log4net",
+"version": ""
+},
+{
+"name": "Marvin.JsonPatch",
+"version": ""
+},
+{
+"name": "Microsoft.AspNet.SignalR.Core",
+"version": ""
+},
+{
+"name": "Microsoft.AspNet.SignalR.SystemWeb",
+"version": ""
+},
+{
+"name": "Microsoft.Diagnostics.Tracing.EventSource",
+"version": ""
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": ""
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": ""
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": ""
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": ""
+},
+{
+"name": "Microsoft.Owin",
+"version": ""
+},
+{
+"name": "Microsoft.Owin.Host.SystemWeb",
+"version": ""
+},
+{
+"name": "Microsoft.Owin.Security",
+"version": ""
+},
+{
+"name": "Microsoft.Web.UI.WebControls",
+"version": ""
+},
+{
+"name": "msvcp140",
+"version": ""
+},
+{
+"name": "Newtonsoft.Json",
+"version": ""
+},
+{
+"name": "Owin",
+"version": ""
+},
+{
+"name": "PIMSuiteData",
+"version": ""
+},
+{
+"name": "PowerCollections",
+"version": ""
+},
+{
+"name": "Quartz",
+"version": ""
+},
+{
+"name": "RabbitMQ.Client",
+"version": ""
+},
+{
+"name": "Swashbuckle.Core",
+"version": ""
+},
+{
+"name": "Swashbuckle.Examples",
+"version": ""
+},
+{
+"name": "System.Buffers",
+"version": ""
+},
+{
+"name": "System.ComponentModel.Annotations",
+"version": ""
+},
+{
+"name": "System.Diagnostics.DiagnosticSource",
+"version": ""
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": ""
+},
+{
+"name": "System.Memory",
+"version": ""
+},
+{
+"name": "System.Net.Http.Formatting",
+"version": ""
+},
+{
+"name": "System.Numerics.Vectors",
+"version": ""
+},
+{
+"name": "System.Runtime.CompilerServices.Unsafe",
+"version": ""
+},
+{
+"name": "System.Text.Encodings.Web",
+"version": ""
+},
+{
+"name": "System.ValueTuple",
+"version": ""
+},
+{
+"name": "System.Web.Extensions",
+"version": ""
+},
+{
+"name": "System.Web.Http",
+"version": ""
+},
+{
+"name": "System.Web.Http.WebHost",
+"version": ""
+},
+{
+"name": "Table",
+"version": "10: SFR Fulfilment / TOE Summary Specification"
+},
+{
+"name": "Table",
+"version": "11: Cryptographic Algorithms"
+},
+{
+"name": "Table",
+"version": "12: HMAC"
+},
+{
+"name": "Table",
+"version": "13: Security Objectives Rationale"
+},
+{
+"name": "Table",
+"version": "1: Evaluation identifiers"
+},
+{
+"name": "Table",
+"version": "2: Terminology"
+},
+{
+"name": "Table",
+"version": "3: NIAP Technical Decisions"
+},
+{
+"name": "Table",
+"version": "4: Threats"
+},
+{
+"name": "Table",
+"version": "5: Assumptions"
+},
+{
+"name": "Table",
+"version": "6: Security Objectives"
+},
+{
+"name": "Table",
+"version": "7: Operational environment objectives"
+},
+{
+"name": "Table",
+"version": "8: Summary of SFRs"
+},
+{
+"name": "Table",
+"version": "9: Assurance Requirements"
+},
+{
+"name": "utofac",
+"version": ""
+},
+{
+"name": "VimService",
+"version": ""
+},
+{
+"name": "VimService.XmlSerializers",
+"version": ""
+},
+{
+"name": "WebChart",
+"version": ""
+}
+],
+"extractors": [
+"dotted_toc",
+"dll_names"
+],
+"kind": "pdf",
+"product": "Privileged Access Manager Self-Hosted",
+"retrieved": "2026-11-08",
+"sha256": "7187b6330feac804958afa3b85ac3f75144bc484b28d44ff76bb188d2dbe8dd3",
+"supplier": "CyberArk",
+"url": "https://www.commoncriteriaportal.org/nfs/ccpfiles/files/epfiles/NSCIB-CC-2400012-01-ST_1.8.pdf",
+"version": "14.0"
+}

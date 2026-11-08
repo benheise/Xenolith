@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "libvma",
+"version": "9.6.4"
+},
+{
+"name": "sockperf",
+"version": "3.8"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA libxlio",
+"retrieved": "2026-11-08",
+"sha256": "fb1f221b777227e93772ac514d8e262844416f669fccdd1d98d55c96845648f1",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_libxlio_3.20.8.pdf",
+"version": "3.20.8"
+}

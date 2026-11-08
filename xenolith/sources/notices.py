@@ -235,7 +235,16 @@ def ex_dotted_toc(text: str) -> list[tuple[str, str]]:
             continue   # a license section ("BSD 3-Clause License"), not a component
         if body.lower() in TOC_WORDS or re.match(r"^\d+ lines\b", body) or not plausible(body):
             continue
+        # Siemens: "1.12 libHaru – Version 2.3.0" -> "libHaru 2.3.0"; a bare section heading
+        # ("1. Third Party Software Components") carries no component.
+        numbered = re.match(r"^\d+(?:\.\d+)+\s+(?P<rest>\S.*)$", body)
+        if numbered:
+            body = re.sub(r"\s+[–\-]?\s*version\s+(?=v?\d)", " ", numbered.group("rest"), flags=re.I)
+        elif re.match(r"^\d+\.\s", body):
+            continue
         name, ver = split_name_version(body)
+        if not ver and re.match(r"^\d{1,2}\s+[A-Za-z][A-Za-z ]{2,40}$", body):
+            continue   # "6 TOE Summary Specification": a numbered section heading
         if plausible(name):
             out.append((name, ver))
     return out
@@ -527,6 +536,49 @@ def ex_table_lines(text: str) -> list[tuple[str, str]]:
     return out
 
 
+HOMEPAGE_HEAD = re.compile(r"(?im)^\s*component name\s+component version name\s+home page\s+licen[cs]e names?\s*$")
+
+
+def ex_homepage_table(text: str) -> list[tuple[str, str]]:
+    """Black Duck "Embedded Software Components" tables (NVIDIA networking):
+    "DPDK 22.11 https://www.dpdk.org BSD 3-clause" / "iproute2 6.1.0, 6.4.0 http://..."."""
+    out = []
+    for m in HOMEPAGE_HEAD.finditer(text or ""):
+        for raw in text[m.end():].splitlines():
+            tokens = raw.split()
+            hi = next((i for i, t in enumerate(tokens) if t.lower().startswith(("http://", "https://"))), None)
+            if hi is None or hi < 2:
+                if HOMEPAGE_HEAD.match(raw):
+                    break
+                continue
+            versions, vi = [], hi
+            while vi >= 1 and VERSION_TOKEN.match(tokens[vi - 1].rstrip(",")):
+                versions.insert(0, tokens[vi - 1].rstrip(","))
+                vi -= 1
+            name = " ".join(tokens[:vi])
+            if versions and plausible(name):
+                out.extend((name, v) for v in versions)
+    return out
+
+
+DLL_HEAD = re.compile(r"(?i)list of third[- ]party (?:libraries|components|software)")
+DLL_LINE = re.compile(r"^\s*([A-Za-z][\w.\-]*)\.(?:dll|so|dylib)\s*$", re.I)
+
+
+def ex_dll_names(text: str) -> list[tuple[str, str]]:
+    """Common Criteria Security Targets list an application's third-party libraries as bare
+    DLL names, one per line, under "Appendix X: List of Third-Party Libraries" (CyberArk)."""
+    m = DLL_HEAD.search(text or "")
+    if not m:
+        return []
+    out = []
+    for raw in text[m.end():].splitlines():
+        lm = DLL_LINE.match(raw)
+        if lm and plausible(lm.group(1)):
+            out.append((lm.group(1), ""))
+    return out if len(out) >= 3 else []
+
+
 NV_LINE = re.compile(r"^(?P<n>[A-Za-z.@][\w.+/:@()\-]*(?: [A-Za-z][\w.+/:@()\-]*){0,5})\s+v?(?P<v>\d+(?:\.\d+)+(?:[\w.\-+~]*)?)$")
 NV_GATE = re.compile(r"(?i)third[- ]party (?:software|applications?|components?|products?|librar(?:y|ies)|programs?)|"
                      r"open[- ]source (?:software|components?|librar(?:y|ies))|list of components")
@@ -673,9 +725,16 @@ def extract(body: bytes, content_type: str, url: str) -> tuple[list[dict], list[
         results["url_lines"] = ex_url_lines(text)
         results["license_groups"] = ex_license_groups(text)
         results["table_lines"] = ex_table_lines(text)
+        results["homepage_table"] = ex_homepage_table(text)
+        results["dll_names"] = ex_dll_names(text)
+        if results["dll_names"]:
+            # A Security Target's table of contents is section headings, not components.
+            results["dotted_toc"] = [r for r in results["dotted_toc"] if r[1]]
+            results["numbered_toc"] = [r for r in results["numbered_toc"] if r[1]]
         results["jar_names"] = ex_jar_names(text)
         structured = [k for k in ("html_table", "pipe_table", "spdx_tag", "numbered_toc", "dotted_toc", "gt_list", "tpn_list",
-                                  "bd_components", "component_license", "url_lines", "license_groups", "table_lines") if results.get(k)]
+                                  "bd_components", "component_license", "url_lines", "license_groups", "table_lines",
+                                  "homepage_table", "dll_names") if results.get(k)]
         if not structured:
             results["name_version_lines"] = ex_name_version_lines(text)
         if not any(results.values()):
@@ -713,13 +772,16 @@ def discover(rule: dict, log=print) -> list[dict]:
     rule: {supplier, index, link (regex on absolute URL), title (regex with
     named groups product and version, applied to the link text), optional
     product_prefix, product (fixed name), version_from_url (regex with group
-    version applied to the URL when the link text has none)}.
+    version applied to the URL when the link text has none), product_from_url
+    (regex with group product applied to the URL; underscores become spaces)}.
     """
     page = fetch.get_text(rule["index"], timeout=90)
     link_re = re.compile(rule["link"], re.I)
     title_re = re.compile(rule["title"], re.I)
     url_ver = re.compile(rule["version_from_url"], re.I) if rule.get("version_from_url") else None
+    url_prod = re.compile(rule["product_from_url"], re.I) if rule.get("product_from_url") else None
     docs: dict[str, dict] = {}
+    seen_index = False
     for url, text in _anchor_links(page, rule["index"]):
         if not link_re.search(url):
             continue
@@ -727,9 +789,13 @@ def discover(rule: dict, log=print) -> list[dict]:
         if not m:
             continue
         product = rule.get("product") or (rule.get("product_prefix", "") + (m.groupdict().get("product") or "")).strip()
+        if url_prod and (pm := url_prod.search(url)):
+            product = (rule.get("product_prefix", "") + pm.group("product").replace("_", " ")).strip()
         version = m.groupdict().get("version") or ""
         if not version and url_ver and (vm := url_ver.search(url)):
             version = vm.group("version")
+        if (url_prod and not product.strip(rule.get("product_prefix", ""))) or (url_ver and not version):
+            continue                       # the URL didn't carry what the rule expects
         docs.setdefault(url, {"supplier": rule["supplier"], "product": product, "version": version, "url": url,
                               "discovered_by": rule["index"]})
     log(f"  {rule['supplier']}: {len(docs)} documents linked from {rule['index']}")
@@ -914,11 +980,15 @@ def load_registry(path: Path, *, discover_docs: bool = True, log=print) -> list[
         for rule in cfg.get("discover") or []:
             try:
                 kind = rule.get("type")
-                found = (discover_versions(rule, log=log) if kind == "versions_json"
-                         else discover_autoindex(rule, log=log) if kind == "autoindex"
-                         else discover_table(rule, log=log) if kind == "table"
-                         else discover_embedded_json(rule, log=log) if kind == "embedded_json"
-                         else discover(rule, log=log))
+                if kind == "apple_releases":
+                    from . import apple
+                    found = apple.discover(rule, log=log)
+                else:
+                    found = (discover_versions(rule, log=log) if kind == "versions_json"
+                             else discover_autoindex(rule, log=log) if kind == "autoindex"
+                             else discover_table(rule, log=log) if kind == "table"
+                             else discover_embedded_json(rule, log=log) if kind == "embedded_json"
+                             else discover(rule, log=log))
                 for d in found:
                     docs.setdefault(d["url"], d)
             except fetch.FetchError as e:
@@ -954,13 +1024,17 @@ def crawl(registry_path: Path, *, data_dir: Path, max_fetch: int = 80, refresh_d
              "empty": 0, "errors": 0}
     for d in todo[:max_fetch]:
         url = d["url"]
-        try:
-            body, ctype = _get(url)
-        except fetch.FetchError as e:
-            stats["errors"] += 1
-            state[url] = {**state.get(url, {}), "fetched": today.isoformat(), "status": "error", "error": str(e)[:200]}
-            log(f"  ! {e}")
-            continue
+        inline = d.get("components")        # discovery that already produced the component list (Apple)
+        if inline is not None:
+            body, ctype = json.dumps(inline, sort_keys=True).encode(), "application/json"
+        else:
+            try:
+                body, ctype = _get(url)
+            except fetch.FetchError as e:
+                stats["errors"] += 1
+                state[url] = {**state.get(url, {}), "fetched": today.isoformat(), "status": "error", "error": str(e)[:200]}
+                log(f"  ! {e}")
+                continue
         stats["fetched"] += 1
         sha = hashlib.sha256(body).hexdigest()
         inv = inventory_path(data_dir, d)
@@ -969,7 +1043,10 @@ def crawl(registry_path: Path, *, data_dir: Path, max_fetch: int = 80, refresh_d
             stats["unchanged"] += 1
             continue
         try:
-            comps, used, kind = extract(body, ctype, url)
+            if inline is not None:
+                comps, used, kind = inline, list(d.get("via") or ["inline"]), d.get("kind", "inline")
+            else:
+                comps, used, kind = extract(body, ctype, url)
         except Exception as e:  # noqa: BLE001 - one bad document must not stop the crawl
             stats["errors"] += 1
             state[url] = {"fetched": today.isoformat(), "status": "error", "error": f"parse: {e}"[:200], "sha": sha}

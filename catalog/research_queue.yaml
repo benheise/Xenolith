@@ -48,8 +48,8 @@ sources:
 
 products:
   # Highest KEV counts without component data
-  - {supplier: Apple, product: macOS and iOS, key: apple/macos, category: Operating system, why: [kev], status: partial,
-     lead: "Crawlable but needs a parser: the release list is embedded in opensource.apple.com's JavaScript bundle as a JS object of Apple project versions (OpenSSH-271 ...) that must be mapped to upstream versions via github.com/apple-oss-distributions. On the wanted list meanwhile.",
+  - {supplier: Apple, product: macOS and iOS, key: apple/macos, category: Operating system, why: [kev], status: lead-found,
+     lead: "Crawled: xenolith/sources/apple.py reads the release list from opensource.apple.com's JavaScript bundle and resolves upstream versions (OpenSSH, curl, zlib, libxml2, httpd, sudo ...) from github.com/apple-oss-distributions; latest 4 macOS and iOS releases.",
      url: https://opensource.apple.com/releases/}
   - {supplier: Citrix, product: "NetScaler ADC and Gateway (13.1, 14.1)", key: citrix/netscaler-adc, category: Application delivery / SSL VPN, why: [kev], status: partial,
      lead: "Only the 11.1 Third Party Notices PDF is public so far; look for per-release notices on docs.netscaler.com or the download pages."}
@@ -69,8 +69,8 @@ products:
      lead: "GPL source only through Zyxel's request form; on the wanted list."}
   - {supplier: Ubiquiti, product: UniFi OS and UniFi Network, key: ubiquiti/unifi-os, category: Network management, why: [kev], status: nothing-found,
      lead: "GPL archives without a component list; on the wanted list."}
-  - {supplier: QNAP, product: QTS and QuTS hero, key: qnap-systems/qts, category: NAS operating system, why: [kev], status: partial,
-     lead: "sourceforge.net/projects/qosgpl has GPL tarballs per QTS release (needs a listing parser and covers GPL parts only); on the wanted list."}
+  - {supplier: QNAP, product: QTS and QuTS hero, key: qnap-systems/qts, category: NAS operating system, why: [kev], status: nothing-found,
+     lead: "sourceforge.net/projects/qosgpl holds one monolithic QTS_OSS / QTS_Kernel tarball per release, no per-component listing; on the wanted list."}
   - {supplier: PaperCut, product: PaperCut NG/MF, key: papercut/ng-mf, category: Print management, why: [kev], status: nothing-found,
      lead: "Nothing in the documentation or knowledge base; on the wanted list."}
   - {supplier: SimpleHelp, product: SimpleHelp, key: simplehelp/simplehelp, category: Remote support, why: [kev], status: nothing-found,
@@ -97,8 +97,8 @@ products:
   - {supplier: BeyondTrust, product: Remote Support and Privileged Remote Access, key: beyondtrust/remote-support, category: Privileged access / remote support, why: [gartner-pam-2025, g2-remote-support, kev], status: nothing-found,
      lead: "BeyondTrust's copyright/open source page answers automated clients with HTTP 403; on the wanted list.",
      url: https://www.beyondtrust.com/customer-copyright-mac-win}
-  - {supplier: CyberArk, product: "Self-Hosted PAM (Vault, PVWA, PSM)", category: Privileged access, why: [gartner-pam-2025], status: partial,
-     lead: "The Common Criteria Security Target for PAM 14.0 lists third-party DLLs (log4net, Newtonsoft.Json, BouncyCastle, Autofac, Quartz, RabbitMQ.Client) without versions; on the wanted list."}
+  - {supplier: CyberArk, product: "Self-Hosted PAM (Vault, PVWA, PSM)", category: Privileged access, why: [gartner-pam-2025], status: lead-found,
+     lead: "Crawled: the Common Criteria Security Target for PAM 14.0 lists the PVWA's third-party libraries by DLL name (no versions); the wanted entry is fulfilled by it."}
   - {supplier: Delinea, product: Secret Server (on-premises), key: delinea/secret-server, category: Privileged access, why: [gartner-pam-2025], status: nothing-found,
      lead: "Nothing public; on the wanted list."}
   - {supplier: ManageEngine, product: PAM360 and Password Manager Pro, category: Privileged access, why: [gartner-pam-2025], status: nothing-found,
@@ -150,7 +150,7 @@ products:
   - {supplier: Huawei, product: CloudEngine switches and USG firewalls, category: Network infrastructure, why: [gartner-lan-2025], status: partial,
      lead: "Huawei's per-release 'Open Source Software Notice' documents sit behind the support.huawei.com login; on the wanted list."}
   - {supplier: NVIDIA, product: UFM and networking software, category: Network management, why: [], status: lead-found,
-     lead: "NVIDIA networking docs publish third-party dependency tables per product release (e.g. NVIDIA Firmware Tools 4.27).",
+     lead: "Crawled: every MLNX_OFED/UFM 'Legal Notices and 3rd Party Licenses' page links a license_<product>_<version>.pdf per bundled component (MLNX_OFED, ConnectX firmware, MFT, HPC-X, UFM, DPCP, libvma, libxlio); 18 inventories.",
      url: https://docs.nvidia.com/networking/display/mftv4270/3rd+part+mft+dependencies}
   - {supplier: TIBCO, product: JasperReports Server (commercial), category: Reporting server, why: [kev], status: nothing-found,
      lead: "docs.tibco.com publishes EULAs (TIB_*_license.pdf) only; on the wanted list."}

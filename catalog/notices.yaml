@@ -104,6 +104,44 @@ discover:
     product: Zimbra Collaboration
     version_from_url: 'open_source_licenses_(?P<version>[\d.]+)\.txt$'
 
+  # NVIDIA networking (Mellanox): every release's "Legal Notices and 3rd Party
+  # Licenses" page links a license_<product>_<version>.pdf ("Embedded Software
+  # Components" table with versions) per bundled component: MLNX_OFED, ConnectX
+  # firmware, MFT, HPC-X, UFM, OpenSM, DPCP ... One index page per release.
+  - supplier: NVIDIA
+    index: https://docs.nvidia.com/networking/display/mlnxofedv24100700/legal-notices-and-3rd-party-licenses
+    link: '(?:content\.mellanox\.com|storage\.googleapis\.com/mlnxwwstor|storage\.cloud\.google\.com/mlnxwwstor)/Legal/(?:[^/]+/)?license_[^/]+\.pdf$'
+    title: '.'
+    product_prefix: 'NVIDIA '
+    product_from_url: 'license_(?P<product>[A-Za-z][A-Za-z0-9_\-]*?)_(?:hpcx_?|mft-|open_sm_)?v?\d[\w.\-]*\.pdf$'
+    version_from_url: '_(?:hpcx_?|mft-|open_sm_)?v?(?P<version>\d[\w.\-]*)\.pdf$'
+  - supplier: NVIDIA
+    index: https://docs.nvidia.com/networking/display/mlnxenv23102131201lts/legal-notices-and-3rd-party-licenses
+    link: '(?:content\.mellanox\.com|storage\.googleapis\.com/mlnxwwstor|storage\.cloud\.google\.com/mlnxwwstor)/Legal/(?:[^/]+/)?license_[^/]+\.pdf$'
+    title: '.'
+    product_prefix: 'NVIDIA '
+    product_from_url: 'license_(?P<product>[A-Za-z][A-Za-z0-9_\-]*?)_(?:hpcx_?|mft-|open_sm_)?v?\d[\w.\-]*\.pdf$'
+    version_from_url: '_(?:hpcx_?|mft-|open_sm_)?v?(?P<version>\d[\w.\-]*)\.pdf$'
+  - supplier: NVIDIA
+    index: https://networking-docs.nvidia.com/ufmenterprisearum/6156/eula-legal-notices-and-3rd-party-licenses
+    link: 'content\.mellanox\.com/Legal/license_UFM_[^/]+\.pdf$'
+    title: '.'
+    product: NVIDIA UFM Enterprise
+    version_from_url: 'license_UFM_(?P<version>\d[\w.\-]*)\.pdf$'
+
+  # Apple: opensource.apple.com/releases lists the open source projects in every
+  # macOS and iOS release, embedded in the site's JavaScript bundle as Apple project
+  # tags. xenolith/sources/apple.py reads upstream versions for the projects that
+  # wrap a known component (OpenSSH, curl, zlib, libxml2, PHP, httpd, sudo, expat,
+  # libpcap, tcpdump, bzip2, PCRE, LibreSSL) from github.com/apple-oss-distributions;
+  # every other project is recorded by name with its Apple tag, never as a version.
+  - supplier: Apple
+    type: apple_releases
+    index: https://opensource.apple.com/releases/
+    products:
+      macOS: {latest: 4}
+      iOS: {latest: 4}
+
 documents:
   # ManageEngine: ADSelfService Plus publishes a "third-party components" PDF
   # (bundled JARs with versions), updated per build.
@@ -268,6 +306,43 @@ documents:
     product: Ivanti Service Director
     version: "25.1"
     url: https://help.ivanti.com/ps/help/en_US/SD/25.x/SD%20Attribution.pdf
+
+  # Siemens Smart Infrastructure: "Readme OSS" PDFs (Third-Party Software Information)
+  # with a numbered table of contents "1.8 Angular 19.2.14 ..... 8" per component.
+  - supplier: Siemens
+    product: Desigo Optic
+    version: "3.1"
+    url: https://assets.new.siemens.com/siemens/assets/api/uuid:8614afdc-319c-4daa-9949-afc8be5f296d/Readme-OSS-Desigo-Optic-3.1.pdf
+  - supplier: Siemens
+    product: Desigo Optic
+    version: "3.0"
+    url: https://assets.new.siemens.com/siemens/assets/api/uuid:3d6916aa-d8b7-4cdb-b075-c7f9fcd04bf9/Readme-OSS-Desigo-Optic-3.0.pdf
+  - supplier: Siemens
+    product: APOGEE Commissioning Tool
+    version: "3.16"
+    url: https://assets.new.siemens.com/siemens/assets/api/uuid:79e20062-cd0c-4084-ba7d-c2225838996d/Readme-OSS-CT.pdf
+  - supplier: Siemens
+    product: Desigo Fire Cloud Apps Modular Connection
+    version: "MP6"
+    url: https://assets.new.siemens.com/siemens/assets/api/uuid:17118f27-1442-4bac-8aa2-6993beacb871/readme-for-3rd-party-software-desigo-fire-cloud-apps-modular-con.pdf
+  - supplier: Siemens
+    product: Mobile Service Information Board (MSIB)
+    version: "3.3"
+    url: https://assets.new.siemens.com/siemens/assets/api/uuid:3eb9325c-2f05-4a48-880a-5bebc4939f4a/readme-oss-msib-3-3.pdf
+
+  # OpenText (Micro Focus) Fortify: "Open Source and Third-Party License Agreements"
+  # PDF per release; newer releases publish it only on the documentation portal.
+  - supplier: OpenText
+    product: Fortify
+    version: "18.10"
+    url: https://dl.microfocus.com/documentation/fortify-webinspect/1810/Fortify_OpenSrc_18.10.pdf
+
+  # CyberArk: no notices document, but the Common Criteria Security Target for PAM 14.0
+  # (NSCIB-CC-2400012-01) lists the PVWA's third-party libraries by DLL name in Appendix B.
+  - supplier: CyberArk
+    product: Privileged Access Manager Self-Hosted
+    version: "14.0"
+    url: https://www.commoncriteriaportal.org/nfs/ccpfiles/files/epfiles/NSCIB-CC-2400012-01-ST_1.8.pdf
 
   # Axway: "Third party open source and commercial/proprietary software and licenses"
   # PDFs are attached to public support KB articles, one per product release.

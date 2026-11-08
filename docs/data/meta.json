@@ -1,17 +1,17 @@
 {
- "built": "2026-11-08T04:14:43Z",
+ "built": "2026-11-08T04:38:41Z",
  "counts": {
-  "assertions": 13352,
-  "products_with_data": 7228,
-  "inventories": 268,
-  "inventory_components": 160929,
+  "assertions": 13371,
+  "products_with_data": 7247,
+  "inventories": 301,
+  "inventory_components": 162571,
   "cpe_linked_clusters": 21,
   "cpe_linked_entries": 23,
   "spine_products": 15962,
-  "spine_only_shown": 4731,
+  "spine_only_shown": 4728,
   "components": 13,
-  "wanted": 89,
-  "wanted_fulfilled": 0
+  "wanted": 86,
+  "wanted_fulfilled": 3
  },
  "components": [
   {
@@ -384,12 +384,12 @@
      ]
     }
    ],
-   "assertions": 99,
-   "products": 35,
-   "contains": 92,
+   "assertions": 101,
+   "products": 37,
+   "contains": 94,
    "in_range": 1,
    "verdicts": {
-    "present": 92,
+    "present": 94,
     "not_affected": 7
    }
   },
@@ -425,15 +425,15 @@
      ]
     }
    ],
-   "assertions": 155,
-   "products": 67,
-   "contains": 143,
+   "assertions": 159,
+   "products": 68,
+   "contains": 147,
    "in_range": 23,
    "verdicts": {
     "workaround": 15,
+    "present": 111,
     "not_affected": 12,
-    "fixed": 21,
-    "present": 107
+    "fixed": 21
    }
   },
   {
@@ -509,12 +509,12 @@
      ]
     }
    ],
-   "assertions": 186,
-   "products": 80,
-   "contains": 178,
-   "in_range": 23,
+   "assertions": 192,
+   "products": 83,
+   "contains": 184,
+   "in_range": 24,
    "verdicts": {
-    "present": 122,
+    "present": 128,
     "fixed": 45,
     "not_affected": 4,
     "workaround": 11,
@@ -555,12 +555,12 @@
      ]
     }
    ],
-   "assertions": 238,
-   "products": 98,
-   "contains": 217,
+   "assertions": 245,
+   "products": 102,
+   "contains": 224,
    "in_range": 1,
    "verdicts": {
-    "present": 184,
+    "present": 191,
     "workaround": 5,
     "fixed": 28,
     "under_investigation": 1,
@@ -759,7 +759,7 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 867,
+   "assertions": 886,
    "latest": "2026-11-08"
   },
   {

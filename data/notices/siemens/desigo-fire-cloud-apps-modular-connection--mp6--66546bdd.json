@@ -1,0 +1,110 @@
+{
+"components": [
+{
+"name": "ajv",
+"version": "6.5.2"
+},
+{
+"name": "alpine-base-project",
+"version": "3.11.5 Report approved"
+},
+{
+"name": "alpine-baselayout",
+"version": "3.2.0"
+},
+{
+"name": "apk-tools",
+"version": "2.10.5"
+},
+{
+"name": "bt-fire-fhp-gw-fs20m-pmi-bridge, MP6",
+"version": ""
+},
+{
+"name": "bt-horizon-gw-fs20m-cloud-connector, MP6",
+"version": ""
+},
+{
+"name": "BusyBox",
+"version": "1.31.1"
+},
+{
+"name": "ca-certificates",
+"version": "20191127"
+},
+{
+"name": "cron",
+"version": "1.8.2"
+},
+{
+"name": "express",
+"version": "4.16.3"
+},
+{
+"name": "getmac",
+"version": "1.4.6"
+},
+{
+"name": "jsonwebtoken",
+"version": "8.4.0"
+},
+{
+"name": "LibreSSL",
+"version": "2.9.1"
+},
+{
+"name": "moment",
+"version": "2.19.1"
+},
+{
+"name": "musl",
+"version": "1.1.24"
+},
+{
+"name": "Node.js",
+"version": "12.13.0"
+},
+{
+"name": "node.js module request-promise",
+"version": "4.2.4"
+},
+{
+"name": "node.js module winston",
+"version": "2.4.2"
+},
+{
+"name": "OpenSSL",
+"version": "1.1.1d"
+},
+{
+"name": "Rapidjson",
+"version": "1.1.0"
+},
+{
+"name": "request",
+"version": "2.88.0"
+},
+{
+"name": "scanelf",
+"version": "1.2.4"
+},
+{
+"name": "uuid",
+"version": "8.3.2"
+},
+{
+"name": "zlib",
+"version": "1.2.11"
+}
+],
+"extractors": [
+"dotted_toc"
+],
+"kind": "pdf",
+"product": "Desigo Fire Cloud Apps Modular Connection",
+"retrieved": "2026-11-08",
+"sha256": "d86ef70716419af4f4a454710fb85807290aa37548700ee3487fbae9687a2d80",
+"supplier": "Siemens",
+"url": "https://assets.new.siemens.com/siemens/assets/api/uuid:17118f27-1442-4bac-8aa2-6993beacb871/readme-for-3rd-party-software-desigo-fire-cloud-apps-modular-con.pdf",
+"version": "MP6"
+}

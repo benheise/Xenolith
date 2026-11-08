@@ -1,0 +1,26 @@
+{
+"components": [
+{
+"name": "libpmix2",
+"version": "3.2.2~rc1"
+},
+{
+"name": "openmpi-common",
+"version": "4.0.3~rc3"
+},
+{
+"name": "Portable Hardware Locality (hwloc)",
+"version": "4.1.6"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA HPCX ompi",
+"retrieved": "2026-11-08",
+"sha256": "e728fde0b4419937d0ad959a233c8c4e5826d04c9173f3074cf45b6a1dae0581",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_HPCX_ompi_hpcx_v2.21.pdf",
+"version": "2.21"
+}

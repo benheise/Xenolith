@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "GNU Binutils",
+"version": "2.37"
+},
+{
+"name": "ucx",
+"version": "1.17.0"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA HPCX ucx",
+"retrieved": "2026-11-08",
+"sha256": "d6e1edb4cddf51d670477a554f171fb53c6c58a96eb7bf63cb51457e27aa5882",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_HPCX_ucx_hpcx_v2.21.pdf",
+"version": "2.21"
+}

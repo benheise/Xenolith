@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "Mellanox/libvma",
+"version": "6.7.1"
+},
+{
+"name": "Mellanox/libvma",
+"version": "8.8.1.really.8.7.7"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA libxlio",
+"retrieved": "2026-11-08",
+"sha256": "7ed7ca38c85e67ed94b39f1ddb56eab728592749df046f02691c4328c02b8430",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_libxlio_3.30.5.pdf",
+"version": "3.30.5"
+}

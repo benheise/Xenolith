@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "metasploit-framework",
+"version": "4.17.62"
+},
+{
+"name": "QEMU",
+"version": "4.2"
+}
+],
+"extractors": [
+"homepage_table"
+],
+"kind": "pdf",
+"product": "NVIDIA ConnectX Firmware",
+"retrieved": "2026-11-08",
+"sha256": "dde47eb8829881c1be95b25797b78d7cee9133c093c5d42b798ade003508874b",
+"supplier": "NVIDIA",
+"url": "https://content.mellanox.com/Legal/license_ConnectX_Firmware_43.1000.pdf",
+"version": "43.1000"
+}
