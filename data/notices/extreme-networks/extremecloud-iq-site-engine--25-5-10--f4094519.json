@@ -1,0 +1,5556 @@
+{
+"components": [
+{
+"name": "\"Java Concurrency in Practice\" book annotations",
+"version": "1.0"
+},
+{
+"name": "(CAL10N) - API",
+"version": "0.8.1"
+},
+{
+"name": "(J2RE)",
+"version": "8u181"
+},
+{
+"name": "(JBeret implementation)",
+"version": "10.1.0.Final"
+},
+{
+"name": "@gusmano/reext",
+"version": "0.0.177"
+},
+{
+"name": "@gusmano/reext",
+"version": "0.0.398"
+},
+{
+"name": "@nicferrier/pgmaker",
+"version": "1.1.1"
+},
+{
+"name": "@sencha/ext-classic-runtime",
+"version": "7.5.0"
+},
+{
+"name": "@sencha/ext-classic-theme-neptune",
+"version": "7.5.1"
+},
+{
+"name": "@sencha/ext-ux",
+"version": "7.4.0"
+},
+{
+"name": "a JAVA-PDF library",
+"version": "1.3"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-010"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-011"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-013"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-014"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-015"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-016"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-017"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-018"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-019"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-020"
+},
+{
+"name": "ActiveMQ Artemis",
+"version": "1.1.0.wildfly-024"
+},
+{
+"name": "ActiveMQ Artemis WildFly Integration",
+"version": "1.0.2"
+},
+{
+"name": "adal4j",
+"version": "1.6.2"
+},
+{
+"name": "Adapter: RxJava",
+"version": "2.4.0"
+},
+{
+"name": "Adobe Granite CRXDE Lite",
+"version": "1.0.48"
+},
+{
+"name": "AEsh",
+"version": "0.66.8"
+},
+{
+"name": "analyzers-common",
+"version": "5.3.1_1"
+},
+{
+"name": "and CRMF APIs",
+"version": "1.52"
+},
+{
+"name": "and CRMF APIs",
+"version": "1.54"
+},
+{
+"name": "and CRMF APIs",
+"version": "1.55"
+},
+{
+"name": "and CRMF APIs",
+"version": "1.57"
+},
+{
+"name": "annogen",
+"version": "0.1.0"
+},
+{
+"name": "Annotation",
+"version": "1.0 1.1"
+},
+{
+"name": "Annotation 1.0",
+"version": "1.1"
+},
+{
+"name": "annotations",
+"version": "1.0"
+},
+{
+"name": "Ant Web Start Task",
+"version": "0.9"
+},
+{
+"name": "antlr",
+"version": "2.7.5"
+},
+{
+"name": "antlr",
+"version": "2.7.5H3"
+},
+{
+"name": "antlr",
+"version": "2.7.7"
+},
+{
+"name": "antlr",
+"version": "3.1.3"
+},
+{
+"name": "antlr",
+"version": "4.7.1"
+},
+{
+"name": "AOP Alliance (Java/J2EE AOP standard)",
+"version": "1.0"
+},
+{
+"name": "Aopalliance Version",
+"version": "1.0 Repackaged As A Module 2.5.0-b14"
+},
+{
+"name": "Aopalliance Version",
+"version": "1.0 Repackaged As A Module 2.5.0-b32"
+},
+{
+"name": "Apache ActiveMQ",
+"version": "5.14.5"
+},
+{
+"name": "Apache Avro",
+"version": "1.7.6"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - ADB Codegen 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - Addressing 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - JAXB-RI Data Binding 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - JAXWS API 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - JWS API 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - Java2WSDL 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - MEX 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - MEX-Module 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - Metadata 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - SAAJ 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - SAAJ API 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - spring 1.3"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - tool - Ant Plugin 1.2"
+},
+{
+"name": "Apache Axis",
+"version": "2.0 - tool - Ant Plugin 1.3"
+},
+{
+"name": "Apache Axis 2.0 - ADB Codegen",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - Addressing",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - Java2WSDL",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - JAXB-RI Data Binding",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - JAXWS API",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - JWS API",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - Metadata",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - MEX",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - MEX-Module",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - SAAJ",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - SAAJ API",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - spring",
+"version": "1.3"
+},
+{
+"name": "Apache Axis 2.0 - tool - Ant Plugin",
+"version": "1.2"
+},
+{
+"name": "Apache Axis 2.0 - tool - Ant Plugin",
+"version": "1.3"
+},
+{
+"name": "Apache Axis2 - Clustering",
+"version": "1.3"
+},
+{
+"name": "Apache Axis2 - Fast Infoset",
+"version": "1.3"
+},
+{
+"name": "Apache Axis2 - JSON",
+"version": "1.3"
+},
+{
+"name": "Apache Axis2 - MTOM Policy",
+"version": "1.3"
+},
+{
+"name": "Apache Axis2 - Ping",
+"version": "1.3"
+},
+{
+"name": "Apache Axis2 - Scripting",
+"version": "1.3"
+},
+{
+"name": "Apache Axis2 - SOAP Monitor",
+"version": "1.3"
+},
+{
+"name": "Apache Commons BeanUtils",
+"version": "1.6.1"
+},
+{
+"name": "Apache Commons BeanUtils",
+"version": "1.9.2"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.10"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.3"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1_6"
+},
+{
+"name": "Apache Commons Collections",
+"version": "2.1"
+},
+{
+"name": "Apache Commons Collections",
+"version": "3.2.1"
+},
+{
+"name": "Apache Commons Collections",
+"version": "3.2.2"
+},
+{
+"name": "Apache Commons Compress",
+"version": "1.14"
+},
+{
+"name": "Apache Commons Configuration",
+"version": "1.10"
+},
+{
+"name": "Apache Commons Daemon",
+"version": "1.4.1"
+},
+{
+"name": "Apache Commons Digester",
+"version": "2.0"
+},
+{
+"name": "Apache Commons Discovery",
+"version": "0.5"
+},
+{
+"name": "Apache Commons FileUpload",
+"version": "1.1.1"
+},
+{
+"name": "Apache Commons FileUpload",
+"version": "1.5"
+},
+{
+"name": "Apache Commons IO",
+"version": "1.2"
+},
+{
+"name": "Apache Commons IO",
+"version": "2.4"
+},
+{
+"name": "Apache Commons IO",
+"version": "2.5"
+},
+{
+"name": "Apache Commons JXPath",
+"version": "1.2"
+},
+{
+"name": "Apache Commons Lang",
+"version": "2.1"
+},
+{
+"name": "Apache Commons Lang",
+"version": "2.4"
+},
+{
+"name": "Apache Commons Lang",
+"version": "2.6"
+},
+{
+"name": "Apache Commons Lang",
+"version": "3.2.1"
+},
+{
+"name": "Apache Commons Lang",
+"version": "3.3.2"
+},
+{
+"name": "Apache Commons Lang",
+"version": "3.8.1"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.0.4"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.1"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.2"
+},
+{
+"name": "Apache Commons Pool",
+"version": "1.0.1"
+},
+{
+"name": "Apache Commons Pool",
+"version": "1.6"
+},
+{
+"name": "Apache Commons Pool",
+"version": "2.5.0"
+},
+{
+"name": "Apache Commons Text",
+"version": "1.6"
+},
+{
+"name": "Apache CXF",
+"version": "3.1.6"
+},
+{
+"name": "Apache CXF",
+"version": "3.5.9"
+},
+{
+"name": "Apache CXF STS Core",
+"version": "3.1.6"
+},
+{
+"name": "Apache CXF WS-Discovery API",
+"version": "3.1.6"
+},
+{
+"name": "Apache CXF XJC Boolean Getter Plugin",
+"version": "3.0.5"
+},
+{
+"name": "Apache CXF XJC Plugin To Workaround JAXB Bug",
+"version": "986 3.0.5"
+},
+{
+"name": "Apache CXF XJC Runtime",
+"version": "3.0.5"
+},
+{
+"name": "Apache CXF Xjcplugins",
+"version": "3.0.5"
+},
+{
+"name": "Apache Derby",
+"version": "10.12.1.1"
+},
+{
+"name": "Apache Derby",
+"version": "10.12.1.1_1"
+},
+{
+"name": "Apache Derby Client JDBC Driver",
+"version": "10.12.1.1"
+},
+{
+"name": "Apache Derby Network Server",
+"version": "10.12.1.1"
+},
+{
+"name": "Apache Derby Tools",
+"version": "10.12.1.1"
+},
+{
+"name": "Apache Felix Servlet API",
+"version": "6.1.0"
+},
+{
+"name": "Apache Geronimo JPA Spec",
+"version": "2.1 1.0-alpha-1"
+},
+{
+"name": "Apache HttpClient",
+"version": "2.0.2"
+},
+{
+"name": "Apache HttpClient",
+"version": "3.0.1"
+},
+{
+"name": "Apache HttpClient",
+"version": "3.1"
+},
+{
+"name": "Apache HttpClient",
+"version": "4.5"
+},
+{
+"name": "Apache HttpClient",
+"version": "4.5.2"
+},
+{
+"name": "Apache HttpClient",
+"version": "4.5.4"
+},
+{
+"name": "Apache HttpClient",
+"version": "4.5.9"
+},
+{
+"name": "Apache HttpComponents AsyncClient",
+"version": "4.1"
+},
+{
+"name": "Apache HttpComponents AsyncClient",
+"version": "4.1.2"
+},
+{
+"name": "Apache HttpMime",
+"version": "4.5"
+},
+{
+"name": "Apache HttpMime",
+"version": "4.5.2"
+},
+{
+"name": "Apache JAMES mime4j",
+"version": "0.6"
+},
+{
+"name": "Apache JempBox",
+"version": "1.8.2"
+},
+{
+"name": "Apache Log4j",
+"version": "1.2.16"
+},
+{
+"name": "Apache Log4j",
+"version": "2.17.2"
+},
+{
+"name": "Apache Log4J API",
+"version": "2.17.2"
+},
+{
+"name": "Apache Lucene",
+"version": "5.3.1"
+},
+{
+"name": "Apache Neethi",
+"version": "2.0.2"
+},
+{
+"name": "Apache Neethi",
+"version": "3.0.3"
+},
+{
+"name": "Apache Neethi",
+"version": "3.1.0"
+},
+{
+"name": "Apache Neethi",
+"version": "3.2.0"
+},
+{
+"name": "Apache PDFBox",
+"version": "1.8.2"
+},
+{
+"name": "Apache Regexp",
+"version": "1.2"
+},
+{
+"name": "Apache Santuario (Java)",
+"version": "1.3.0"
+},
+{
+"name": "Apache Santuario (Java)",
+"version": "2.0.6"
+},
+{
+"name": "Apache ServiceMix :: Bundles :: FastInfoset",
+"version": "1.2.13_1"
+},
+{
+"name": "Apache ServiceMix :: Bundles :: jfreechart",
+"version": "1.0.12_1"
+},
+{
+"name": "Apache ServiceMix :: Bundles :: spring-aop",
+"version": "3.2.11.RELEASE_1"
+},
+{
+"name": "Apache ServiceMix :: Bundles :: spring-aop",
+"version": "3.2.14.RELEASE_1"
+},
+{
+"name": "Apache ServiceMix :: Bundles :: xercesImpl",
+"version": "2.11.0_1"
+},
+{
+"name": "Apache ServiceMix Bundles: xstream-1.3",
+"version": "1.4.7_1"
+},
+{
+"name": "Apache ServiceMix Bundles: xstream-1.3",
+"version": "1.4.9_1"
+},
+{
+"name": "Apache Standard Taglib Implementation",
+"version": "1.0.4"
+},
+{
+"name": "Apache Struts",
+"version": "1.3.10"
+},
+{
+"name": "Apache Struts",
+"version": "2.3.37"
+},
+{
+"name": "Apache Struts",
+"version": "6.3.0.2"
+},
+{
+"name": "Apache Taglibs",
+"version": "1.2.5"
+},
+{
+"name": "Apache Taglibs",
+"version": "1.2.6-RC1"
+},
+{
+"name": "Apache Tika",
+"version": "1.28.3"
+},
+{
+"name": "Apache Tomcat",
+"version": "4.1.36"
+},
+{
+"name": "Apache Tomcat",
+"version": "8.5.43"
+},
+{
+"name": "Apache Tomcat",
+"version": "9.0.100"
+},
+{
+"name": "Apache Tomcat",
+"version": "9.0.102"
+},
+{
+"name": "Apache Tomcat",
+"version": "9.0.104"
+},
+{
+"name": "Apache Tomcat",
+"version": "9.0.97"
+},
+{
+"name": "Apache V elocity",
+"version": "1.3"
+},
+{
+"name": "Apache V elocity",
+"version": "1.4"
+},
+{
+"name": "Apache V elocity",
+"version": "1.5"
+},
+{
+"name": "Apache V elocity",
+"version": "1.7"
+},
+{
+"name": "Apache Velocity",
+"version": "1.3"
+},
+{
+"name": "Apache Velocity",
+"version": "1.4"
+},
+{
+"name": "Apache Velocity",
+"version": "1.5"
+},
+{
+"name": "Apache Velocity",
+"version": "1.7"
+},
+{
+"name": "Apache WSS4J Bindings",
+"version": "2.1.5"
+},
+{
+"name": "Apache WSS4J DOM WS-Security",
+"version": "2.1.5"
+},
+{
+"name": "Apache WSS4J Streaming WS-Security",
+"version": "2.1.5"
+},
+{
+"name": "Apache WSS4J Streaming WS-SecurityPolicy",
+"version": "2.1.5"
+},
+{
+"name": "Apache WSS4J WS-Security Common",
+"version": "2.1.5"
+},
+{
+"name": "Apache WSS4J WS-SecurityPolicy model",
+"version": "2.1.5"
+},
+{
+"name": "Apache Xalan (Java)",
+"version": "2.7.0"
+},
+{
+"name": "Apache Xalan (Java)",
+"version": "2.7.1"
+},
+{
+"name": "Apache Xerces2 J",
+"version": "2.11.0"
+},
+{
+"name": "Apache Xerces2 J",
+"version": "2.11.0.SP4"
+},
+{
+"name": "Apache Xerces2 J",
+"version": "2.8.1"
+},
+{
+"name": "Apache XML Commons",
+"version": "1.0.b2"
+},
+{
+"name": "Apache XML Commons",
+"version": "1.3.03"
+},
+{
+"name": "Apache XML Commons",
+"version": "1.3.04"
+},
+{
+"name": "Apache XML Commons",
+"version": "1.4.01"
+},
+{
+"name": "Apache XML-RPC Client Library",
+"version": "3.1"
+},
+{
+"name": "Apache XML-RPC Common Library",
+"version": "3.1"
+},
+{
+"name": "Apache XmpBox",
+"version": "1.8.2"
+},
+{
+"name": "apache/tomcat-native",
+"version": "1.3.1"
+},
+{
+"name": "API",
+"version": "1.0.0.Final"
+},
+{
+"name": "arjunacore",
+"version": "5.3.3.Final"
+},
+{
+"name": "ArjunaCore txoj module",
+"version": "5.3.3.Final"
+},
+{
+"name": "ARSnova",
+"version": "20180827-snapshot-cde12aa1"
+},
+{
+"name": "ASM",
+"version": "1.5.3"
+},
+{
+"name": "ASM",
+"version": "3.3.1"
+},
+{
+"name": "ASM",
+"version": "5.0.3"
+},
+{
+"name": "ASM",
+"version": "5.0.4"
+},
+{
+"name": "ASM",
+"version": "5.2"
+},
+{
+"name": "ASM",
+"version": "9.7"
+},
+{
+"name": "ASM based accessors helper used by json-smart",
+"version": "1.1"
+},
+{
+"name": "ASM based accessors helper used by json-smart",
+"version": "1.2"
+},
+{
+"name": "ASM Commons",
+"version": "5.2"
+},
+{
+"name": "ASM Debug All",
+"version": "5.0.4"
+},
+{
+"name": "ASM Util",
+"version": "5.2"
+},
+{
+"name": "asm-attrs",
+"version": "1.5.3"
+},
+{
+"name": "AssertJ - Fluent Assertions for Java",
+"version": "2.6.0"
+},
+{
+"name": "atif-afridi/imsdroid",
+"version": "20150730-snapshot-2b50706c"
+},
+{
+"name": "autodeployment",
+"version": "2.1.2"
+},
+{
+"name": "AWS Java SDK for Amazon EC2",
+"version": "1.11.288"
+},
+{
+"name": "AWS SDK for Java",
+"version": "1.11.288"
+},
+{
+"name": "Axiom API",
+"version": "1.2.5"
+},
+{
+"name": "Axiom DOM",
+"version": "1.2.5"
+},
+{
+"name": "axiom-impl",
+"version": "1.2.5"
+},
+{
+"name": "Axis (Java)",
+"version": "1.2-RC3"
+},
+{
+"name": "Axis (Java)",
+"version": "1.4"
+},
+{
+"name": "Axis (Java)",
+"version": "1.5.1"
+},
+{
+"name": "Axis2 (Java)",
+"version": "1.3"
+},
+{
+"name": "axis2-jibx",
+"version": "1.3"
+},
+{
+"name": "axis2-xmlbeans",
+"version": "1.3"
+},
+{
+"name": "axoloti/axoloti",
+"version": "2.0.0"
+},
+{
+"name": "Backport JSR",
+"version": "166 2.2"
+},
+{
+"name": "Backport JSR 166",
+"version": "2.2"
+},
+{
+"name": "ballroom",
+"version": "1.0.0.Beta4"
+},
+{
+"name": "Batch Applications for the Java Platform",
+"version": "1.0.0.Beta1"
+},
+{
+"name": "Batik XML utility library",
+"version": "1.6.1-1"
+},
+{
+"name": "bcmail-jdk15on",
+"version": "1.49.wso2v1"
+},
+{
+"name": "beans",
+"version": "3.2.14.RELEASE_1"
+},
+{
+"name": "BeanShell",
+"version": "2.0b4"
+},
+{
+"name": "bell-sw/Liberica",
+"version": "8u452+11"
+},
+{
+"name": "BlackBelt JUDO Eclipse JDK Zulu",
+"version": "8.0.242"
+},
+{
+"name": "Bouncy Castle",
+"version": "1.52"
+},
+{
+"name": "Bouncy Castle",
+"version": "1.54"
+},
+{
+"name": "Bouncy Castle",
+"version": "1.55"
+},
+{
+"name": "Bouncy Castle",
+"version": "1.57"
+},
+{
+"name": "Bouncy Castle JavaMail S/MIME APIs (FIPS Distribution)",
+"version": "1.0.0"
+},
+{
+"name": "Bridge between REST-AT and JTA",
+"version": "5.3.3.Final"
+},
+{
+"name": "browserlauncher2",
+"version": "1.3"
+},
+{
+"name": "Byte Buddy",
+"version": "1.6.0"
+},
+{
+"name": "c3p0:JDBC DataSources/Resource Pools",
+"version": "0.8.5.2"
+},
+{
+"name": "camunda BPM - BPMN Model API",
+"version": "7.9.0-alpha4"
+},
+{
+"name": "camunda BPM - CMMN Model API",
+"version": "7.10.0-alpha4"
+},
+{
+"name": "camunda BPM - DMN Model API",
+"version": "7.10.0-alpha4"
+},
+{
+"name": "camunda BPM - engine",
+"version": "7.9.0"
+},
+{
+"name": "camunda BPM - XML Model API",
+"version": "7.10.0-alpha2"
+},
+{
+"name": "camunda Commons - Typed Values",
+"version": "1.5.0"
+},
+{
+"name": "camunda Commons - Utils",
+"version": "1.6.0"
+},
+{
+"name": "camunda DMN - engine",
+"version": "7.10.0-alpha1"
+},
+{
+"name": "camunda-bpm-spring-boot-starter-example-autodeployment",
+"version": "2.1.2"
+},
+{
+"name": "camunda-bpm-spring-boot-starter-example-cloud",
+"version": "1.2.0"
+},
+{
+"name": "camunda-bpm-spring-boot-starter-example-koala",
+"version": "2.2.0"
+},
+{
+"name": "CDI APIs",
+"version": "1.2"
+},
+{
+"name": "cglib",
+"version": "2.1"
+},
+{
+"name": "cglib",
+"version": "2.1_2"
+},
+{
+"name": "chardet",
+"version": "2.3.0"
+},
+{
+"name": "Class Model for Hk2",
+"version": "2.5.0-b32"
+},
+{
+"name": "classfilewriter",
+"version": "1.1.2"
+},
+{
+"name": "Client",
+"version": "5.1.5.Final"
+},
+{
+"name": "Client Library for Java.",
+"version": "1.21.0"
+},
+{
+"name": "Client Library for Java.",
+"version": "1.22.0"
+},
+{
+"name": "Client Library for Java.",
+"version": "1.23.0"
+},
+{
+"name": "cloud",
+"version": "1.2.0"
+},
+{
+"name": "Codemodel Core",
+"version": "2.2.11"
+},
+{
+"name": "collections-generic",
+"version": "4.01"
+},
+{
+"name": "colorama",
+"version": "0.4.6"
+},
+{
+"name": "colt",
+"version": "1.2.0"
+},
+{
+"name": "com.ctc.wstx",
+"version": "3.2.4.LIFERAY-PATCHED-1"
+},
+{
+"name": "com.github.spullara.mustache.java:compiler",
+"version": "0.8.13"
+},
+{
+"name": "com.google.api.grpc:grpc-google-cloud-pubsub-v1",
+"version": "0.1.13"
+},
+{
+"name": "com.google.api.grpc:grpc-google-common-protos",
+"version": "0.1.5"
+},
+{
+"name": "com.google.api.grpc:proto- google-longrunning-v1",
+"version": "0.1.10"
+},
+{
+"name": "com.google.api.grpc:proto-google-cloud-pubsub-v1",
+"version": "0.1.11"
+},
+{
+"name": "com.google.api.grpc:proto-google-common-protos",
+"version": "0.1.11"
+},
+{
+"name": "com.google.api.grpc:proto-google-iam-v1",
+"version": "0.1.10"
+},
+{
+"name": "com.lowagie:itext",
+"version": "0.99"
+},
+{
+"name": "com.lowagie:itext",
+"version": "1.3"
+},
+{
+"name": "com.nimbusds.jwt",
+"version": "9.40.LIFERAY- PATCHED-1"
+},
+{
+"name": "com.perfma.wrapped:com.sun.tools",
+"version": "1.8.0_jdk8u275-b01_linux_x64"
+},
+{
+"name": "com.springsource.bsh",
+"version": "2.0.0.b4"
+},
+{
+"name": "com.springsource.javax.jws",
+"version": "2.0.0"
+},
+{
+"name": "com.springsource.javax.xml.bind",
+"version": "2.0.0"
+},
+{
+"name": "com.springsource.org.antlr",
+"version": "3.1.3"
+},
+{
+"name": "com.springsource.org.apache.axis",
+"version": "1.4.0"
+},
+{
+"name": "com.springsource.org.codehaus.annogen",
+"version": "0.1.0"
+},
+{
+"name": "com.springsource.org.cyberneko.html",
+"version": "1.9.11"
+},
+{
+"name": "com.springsource.tcl.lang",
+"version": "1.4.1"
+},
+{
+"name": "com.springsource.tcl.lang.jacl",
+"version": "1.4.1"
+},
+{
+"name": "com.sun.xml.bind:jaxb-impl",
+"version": "2.0.5"
+},
+{
+"name": "com.sun.xml.bind:jaxb-impl",
+"version": "2.2.11"
+},
+{
+"name": "com.sun.xml.bind:jaxb-impl",
+"version": "2.3.5"
+},
+{
+"name": "com.sun.xml.bind:jaxb-xjc",
+"version": "2.0.5"
+},
+{
+"name": "com.sun.xml.bind:jaxb-xjc",
+"version": "2.2.11"
+},
+{
+"name": "CometD :: Java :: Benchmark :: Server",
+"version": "3.1.0-RC0"
+},
+{
+"name": "common",
+"version": "5.3.3.Final"
+},
+{
+"name": "Common Annotations",
+"version": "1.2 API 1.0.0.Final"
+},
+{
+"name": "Common Annotations 1.2 API",
+"version": "1.0.0.Final"
+},
+{
+"name": "Commons Chain",
+"version": "1.2"
+},
+{
+"name": "commons-bcel",
+"version": "5.0"
+},
+{
+"name": "commons-cli",
+"version": "1.2"
+},
+{
+"name": "commons-dbcp",
+"version": "1.0"
+},
+{
+"name": "commons-dbcp",
+"version": "1.1"
+},
+{
+"name": "commons-dbcp",
+"version": "2.9.0"
+},
+{
+"name": "commons-net",
+"version": "3.3"
+},
+{
+"name": "commons-net",
+"version": "3.5"
+},
+{
+"name": "commons-net",
+"version": "3.6"
+},
+{
+"name": "compiler - com.github.spullara.mustache.java:compiler",
+"version": "0.8.13"
+},
+{
+"name": "Compiler assisted localization library (CAL10N) - API",
+"version": "0.8.1"
+},
+{
+"name": "compression",
+"version": "3.3.3"
+},
+{
+"name": "Compute Engine API",
+"version": "v1beta13 (revision 19) v1-rev214-1.25.0"
+},
+{
+"name": "Compute Engine API v1beta13 (revision 19)",
+"version": "v1-rev214-1.25.0"
+},
+{
+"name": "Concurrency Utilities for JavaEE",
+"version": "1.0.0.Final"
+},
+{
+"name": "concurrent",
+"version": "1.3.4"
+},
+{
+"name": "connector-http-base",
+"version": "2.3.0"
+},
+{
+"name": "Containers 1.1 API",
+"version": "1.0.0.Final"
+},
+{
+"name": "context",
+"version": "3.2.14.RELEASE_1"
+},
+{
+"name": "Converter: Jackson",
+"version": "2.4.0"
+},
+{
+"name": "corretto/corretto-8",
+"version": "8.432.06.1"
+},
+{
+"name": "cpptasks",
+"version": "1.0b5"
+},
+{
+"name": "cpptasks-parallel",
+"version": "20121119"
+},
+{
+"name": "cryptacular",
+"version": "1.0"
+},
+{
+"name": "Data Mapper for Jackson",
+"version": "1.9.13"
+},
+{
+"name": "Direct Web Remoting",
+"version": "3.0.2"
+},
+{
+"name": "DNSJA V A Pom",
+"version": "2.1.3"
+},
+{
+"name": "dnsjava",
+"version": "2.1.7"
+},
+{
+"name": "DNSJAVA Pom",
+"version": "2.1.3"
+},
+{
+"name": "docker-compose-testkit-templates",
+"version": "0.0.4"
+},
+{
+"name": "dom4j: flexible XML framework for Java",
+"version": "1.6"
+},
+{
+"name": "dom4j: flexible XML framework for Java",
+"version": "1.6.1"
+},
+{
+"name": "dtd-parser",
+"version": "1.0"
+},
+{
+"name": "eap7-picketlink-idm- simple-schema",
+"version": "2.5.5"
+},
+{
+"name": "eap7-picketlink-idm-simple-schema",
+"version": "2.5.5"
+},
+{
+"name": "Easy Rules core module",
+"version": "3.1.0"
+},
+{
+"name": "Easy Rules core module",
+"version": "3.2.0"
+},
+{
+"name": "Easy Rules MVEL module",
+"version": "3.1.0"
+},
+{
+"name": "easymockobjenesis",
+"version": "2.1"
+},
+{
+"name": "Eclipse Compiler for Java(TM)",
+"version": "3.26.0"
+},
+{
+"name": "Eclipse ECJ",
+"version": "4.5.1"
+},
+{
+"name": "Eclipse Java Development Tools (JDT)",
+"version": "3.11.1"
+},
+{
+"name": "Eclipse JDT compiler",
+"version": "4.5.2-201602121500"
+},
+{
+"name": "eclipse/yasson",
+"version": "1.0.0-M1"
+},
+{
+"name": "Ehcache",
+"version": "1.1"
+},
+{
+"name": "Ehcache",
+"version": "1.6.0"
+},
+{
+"name": "ElasticSearch :: Core",
+"version": "1.3.0-incubating"
+},
+{
+"name": "Enterprise JavaBeans(TM)",
+"version": "3.2 API 1.0.0.Final"
+},
+{
+"name": "Enterprise JavaBeans(TM) 3.2 API",
+"version": "1.0.0.Final"
+},
+{
+"name": "expression",
+"version": "3.2.14.RELEASE_1"
+},
+{
+"name": "Expression Language",
+"version": "2.2 Implementation 2.2.4"
+},
+{
+"name": "Expression Language",
+"version": "3.0 3.0.1-b09"
+},
+{
+"name": "Expression Language",
+"version": "3.0 IMPL 3.0.1-b08-jbossorg-1"
+},
+{
+"name": "Expression Language 2.2 Implementation",
+"version": "2.2.4"
+},
+{
+"name": "Expression Language 3.0",
+"version": "3.0.1-b09"
+},
+{
+"name": "Expression Language API",
+"version": "1.0.7.Final"
+},
+{
+"name": "Expression Language API",
+"version": "2.2.4"
+},
+{
+"name": "extensions",
+"version": "5.64.4"
+},
+{
+"name": "external-objenesis",
+"version": "1.0.4"
+},
+{
+"name": "Fast Infoset",
+"version": "1.2.13"
+},
+{
+"name": "FastChar-ExtJs",
+"version": "2.0.2"
+},
+{
+"name": "FastChar-ExtJs",
+"version": "2.2.0"
+},
+{
+"name": "FasterXML/jackson-modules-java8",
+"version": "2.9.6"
+},
+{
+"name": "FindBugs jsr305",
+"version": "1.3.9"
+},
+{
+"name": "Flowable - Identity Link Service",
+"version": "6.3.0"
+},
+{
+"name": "Flowable - IDM Engine",
+"version": "6.3.0"
+},
+{
+"name": "Flowable - Job Service",
+"version": "6.2.1-PETALS-0"
+},
+{
+"name": "Flowable - Task Service",
+"version": "6.3.0"
+},
+{
+"name": "Flowable - Variable Service",
+"version": "6.3.1"
+},
+{
+"name": "Font-Awesome",
+"version": "4.4.0"
+},
+{
+"name": "freeradius",
+"version": "3.0.25"
+},
+{
+"name": "freeradius",
+"version": "3.0.26"
+},
+{
+"name": "freeradius",
+"version": "3.0.27"
+},
+{
+"name": "freeradius",
+"version": "3.2.0"
+},
+{
+"name": "freeradius",
+"version": "3.2.2"
+},
+{
+"name": "freeradius",
+"version": "3.2.5"
+},
+{
+"name": "GeAnTyRef",
+"version": "1.3.6"
+},
+{
+"name": "generic",
+"version": "4.01_1"
+},
+{
+"name": "getopt",
+"version": "1.0.13"
+},
+{
+"name": "glassfish-corba-omgapi",
+"version": "4.0.2-b002"
+},
+{
+"name": "gnu-regexp",
+"version": "1.1.4"
+},
+{
+"name": "Go programming language",
+"version": "20220108-snapshot"
+},
+{
+"name": "Google API Common",
+"version": "1.1.0"
+},
+{
+"name": "Google APIs Client Library for Java",
+"version": "1.22.0"
+},
+{
+"name": "Google APIs Client Library for Java",
+"version": "1.23.0"
+},
+{
+"name": "Google Auth Library for Java",
+"version": "0.7.0"
+},
+{
+"name": "Google Auth Library for Java",
+"version": "0.8.0"
+},
+{
+"name": "Google HTTP Client Library for Java",
+"version": "1.21.0"
+},
+{
+"name": "Google HTTP Client Library for Java",
+"version": "1.22.0"
+},
+{
+"name": "Google HTTP Client Library for Java",
+"version": "1.23.0"
+},
+{
+"name": "google-oauth- java-client",
+"version": "1.22.0"
+},
+{
+"name": "google-oauth-java-client",
+"version": "1.22.0"
+},
+{
+"name": "google-oauth-java-client",
+"version": "1.23.0"
+},
+{
+"name": "googlegson",
+"version": "2.2.4"
+},
+{
+"name": "googleguava",
+"version": "17.0"
+},
+{
+"name": "googleguava",
+"version": "18.0"
+},
+{
+"name": "googleguava",
+"version": "18.0-rc2"
+},
+{
+"name": "googleguava",
+"version": "20.0"
+},
+{
+"name": "googleguava",
+"version": "21.0"
+},
+{
+"name": "googleguava",
+"version": "22.0"
+},
+{
+"name": "googleguava",
+"version": "v28.1"
+},
+{
+"name": "goorm-io",
+"version": "1.0.2-r192"
+},
+{
+"name": "Graalpython Resources",
+"version": "24.0.1"
+},
+{
+"name": "GraphQL SPQR",
+"version": "0.9.7"
+},
+{
+"name": "GraphQL SPQR",
+"version": "0.9.8"
+},
+{
+"name": "graphql-java",
+"version": "2018-06-13T01-43-44-50a2a13"
+},
+{
+"name": "graphql-java",
+"version": "8.0"
+},
+{
+"name": "h2",
+"version": "1.3.172_1"
+},
+{
+"name": "H2 Database Engine",
+"version": "1.3.163"
+},
+{
+"name": "H2 Database Engine",
+"version": "1.3.173"
+},
+{
+"name": "H2 Database Engine",
+"version": "1.4.197"
+},
+{
+"name": "HAL Guided Tour",
+"version": "0.0.6"
+},
+{
+"name": "HAL Release Stream",
+"version": "2.8.27.Final"
+},
+{
+"name": "Hamcrest",
+"version": "1.3"
+},
+{
+"name": "Hamcrest",
+"version": "2.2.0"
+},
+{
+"name": "HawtBuf",
+"version": "1.11"
+},
+{
+"name": "HawtJNI Runtime",
+"version": "1.10"
+},
+{
+"name": "Hibernate Commons Annotations",
+"version": "5.0.1"
+},
+{
+"name": "Hibernate Commons Annotations",
+"version": "5.1.0.Final"
+},
+{
+"name": "Hibernate Entity Manager",
+"version": "5.0.10.Final"
+},
+{
+"name": "Hibernate JPA",
+"version": "2.1 API 1.0.0"
+},
+{
+"name": "Hibernate JPA 2.1 API",
+"version": "1.0.0"
+},
+{
+"name": "Hibernate ORM",
+"version": "2.1.6"
+},
+{
+"name": "Hibernate ORM",
+"version": "3.2.0.cr5"
+},
+{
+"name": "Hibernate ORM",
+"version": "5.0.10"
+},
+{
+"name": "Hibernate ORM",
+"version": "5.2.7"
+},
+{
+"name": "Hibernate ORM modules for WildFly",
+"version": "10 5.2.7.Final"
+},
+{
+"name": "Hibernate ORM modules for WildFly 10",
+"version": "5.2.7.Final"
+},
+{
+"name": "Hibernate Search",
+"version": "5.5.4.Final"
+},
+{
+"name": "Hibernate Search Avro Serialization",
+"version": "5.5.4.Final"
+},
+{
+"name": "Hibernate Search JGroups Backend",
+"version": "5.5.4.Final"
+},
+{
+"name": "Hibernate Search JMS Backend",
+"version": "5.5.4.Final"
+},
+{
+"name": "Hibernate Validator",
+"version": "5.2.4.Final"
+},
+{
+"name": "Hibernate Validator",
+"version": "5.3.6"
+},
+{
+"name": "hibernate-tools-hibernate",
+"version": "3.0.0.alpha4a"
+},
+{
+"name": "hibernate-types-52",
+"version": "2.21.1"
+},
+{
+"name": "hibernate-validator-annotation",
+"version": "0.0.1"
+},
+{
+"name": "HK2 API module",
+"version": "2.5.0-b05"
+},
+{
+"name": "HK2 API module",
+"version": "2.5.0-b30"
+},
+{
+"name": "HK2 API module",
+"version": "2.5.0-b32"
+},
+{
+"name": "HK2 API module",
+"version": "2.6.1"
+},
+{
+"name": "HK2 configuration module",
+"version": "2.5.0-b30"
+},
+{
+"name": "HK2 configuration module",
+"version": "2.5.0-b32"
+},
+{
+"name": "HK2 core module",
+"version": "2.5.0-b25"
+},
+{
+"name": "HK2 core module",
+"version": "2.5.0-b32"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.5.0-b04"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.5.0-b31"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.5.0-b32"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.6.1"
+},
+{
+"name": "HK2 module of HK2 itself",
+"version": "2.5.0-b18"
+},
+{
+"name": "HK2 module of HK2 itself",
+"version": "2.5.0-b32"
+},
+{
+"name": "HK2 Spring Bridge",
+"version": "2.5.0-b32"
+},
+{
+"name": "HK2 Spring Bridge",
+"version": "2.5.0-b33"
+},
+{
+"name": "HornetQ",
+"version": "2.4.7.Final"
+},
+{
+"name": "HornetQ Commons",
+"version": "2.4.7.Final"
+},
+{
+"name": "HornetQ JMS Client",
+"version": "2.4.7.Final"
+},
+{
+"name": "hornetq- proton-plug",
+"version": "2.5.0.Beta1"
+},
+{
+"name": "hornetq-proton-plug",
+"version": "2.5.0.Beta1"
+},
+{
+"name": "http transport",
+"version": "5.1.5.Final"
+},
+{
+"name": "httpcomponents-core",
+"version": "4.0-alpha4"
+},
+{
+"name": "httpcomponents-core",
+"version": "4.0-alpha5"
+},
+{
+"name": "httpcomponents-core",
+"version": "4.4.1"
+},
+{
+"name": "httpcomponents-core",
+"version": "4.4.11"
+},
+{
+"name": "httpcomponents-core",
+"version": "4.4.4"
+},
+{
+"name": "httpcomponents-core",
+"version": "4.4.5"
+},
+{
+"name": "httpcomponents-core",
+"version": "4.4.7"
+},
+{
+"name": "httpcore",
+"version": "4.0-alpha4"
+},
+{
+"name": "httpcore",
+"version": "4.0-alpha5"
+},
+{
+"name": "HttpCore - httpcomponents-httpcore:jakarta-httpcore",
+"version": "4.0-alpha4"
+},
+{
+"name": "httpcore-nio",
+"version": "4.0-alpha5"
+},
+{
+"name": "ICU4J",
+"version": "59.1"
+},
+{
+"name": "idna",
+"version": "2.6"
+},
+{
+"name": "Implementation",
+"version": "2.5.5.SP2"
+},
+{
+"name": "implementations",
+"version": "1.4.26.Final"
+},
+{
+"name": "implementations",
+"version": "1.4.28.Final"
+},
+{
+"name": "Infinispan",
+"version": "8.2.4"
+},
+{
+"name": "Infinispan Client Hotrod Module",
+"version": "8.2.4.Final"
+},
+{
+"name": "Infinispan Common Parent",
+"version": "8.2.4.Final"
+},
+{
+"name": "Infinispan JDBC CacheStore",
+"version": "8.2.4.Final"
+},
+{
+"name": "Infinispan remote CacheStore",
+"version": "8.2.4.Final"
+},
+{
+"name": "Injection API (JSR 330) version",
+"version": "1 repackaged as OSGi bundle 2.4.0-b15"
+},
+{
+"name": "Injection API (JSR 330) version",
+"version": "1 repackaged as OSGi bundle 2.5.0-b30"
+},
+{
+"name": "Injection API (JSR 330) version",
+"version": "1 repackaged as OSGi bundle 2.5.0-b32"
+},
+{
+"name": "integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "Invocation API",
+"version": "1.4.1.Final"
+},
+{
+"name": "io.github.cao2068959:sun-tools-javac",
+"version": "8.0.0"
+},
+{
+"name": "io.swagger:swagger- annotations",
+"version": "2.0.2"
+},
+{
+"name": "io.swagger:swagger-annotations",
+"version": "1.5.10"
+},
+{
+"name": "ion-java",
+"version": "1.0.2"
+},
+{
+"name": "ironjacamar-common-api",
+"version": "1.3.4.Final"
+},
+{
+"name": "ironjacamar-common-impl",
+"version": "1.3.4.Final"
+},
+{
+"name": "ironjacamar-core-api",
+"version": "1.3.4.Final"
+},
+{
+"name": "ironjacamar-core-impl",
+"version": "1.3.4.Final"
+},
+{
+"name": "ironjacamar-core-spi",
+"version": "1.3.4.Final"
+},
+{
+"name": "ironjacamar-validator",
+"version": "1.3.4.Final"
+},
+{
+"name": "istack common utility code runtime",
+"version": "2.21"
+},
+{
+"name": "istack common utility code runtime",
+"version": "3.0.12"
+},
+{
+"name": "istack-commons- tools",
+"version": "2.21"
+},
+{
+"name": "istack-commons-tools",
+"version": "2.21"
+},
+{
+"name": "iText, a JA VA-PDF library",
+"version": "1.3"
+},
+{
+"name": "J2EE Connector Architecture",
+"version": "1.0"
+},
+{
+"name": "J2EE Management",
+"version": "1.0.1"
+},
+{
+"name": "JACC",
+"version": "1.5 API 1.0.0.Final"
+},
+{
+"name": "JACC 1.5 API",
+"version": "1.0.0.Final"
+},
+{
+"name": "Jackson",
+"version": "2 extensions to the Google HTTP Client Library for Java. 1.21.0"
+},
+{
+"name": "Jackson",
+"version": "2 extensions to the Google HTTP Client Library for Java. 1.22.0"
+},
+{
+"name": "Jackson",
+"version": "2 extensions to the Google HTTP Client Library for Java. 1.23.0"
+},
+{
+"name": "jackson- core",
+"version": "2.8.1"
+},
+{
+"name": "jackson-annotations",
+"version": "2.13.3"
+},
+{
+"name": "jackson-annotations",
+"version": "2.16.0-rc1"
+},
+{
+"name": "jackson-annotations",
+"version": "2.7.3"
+},
+{
+"name": "jackson-annotations",
+"version": "2.8.0"
+},
+{
+"name": "jackson-annotations",
+"version": "2.9.6"
+},
+{
+"name": "jackson-core",
+"version": "1.9.13"
+},
+{
+"name": "jackson-core",
+"version": "2.13.3"
+},
+{
+"name": "jackson-core",
+"version": "2.16.0-rc1"
+},
+{
+"name": "jackson-core",
+"version": "2.7.0"
+},
+{
+"name": "jackson-core",
+"version": "2.8.1"
+},
+{
+"name": "jackson-core",
+"version": "2.8.11"
+},
+{
+"name": "jackson-core",
+"version": "2.9.6"
+},
+{
+"name": "jackson-databind",
+"version": "2.13.3"
+},
+{
+"name": "jackson-databind",
+"version": "2.16.0-rc1"
+},
+{
+"name": "jackson-databind",
+"version": "2.7.0"
+},
+{
+"name": "jackson-databind",
+"version": "2.8.1"
+},
+{
+"name": "jackson-databind",
+"version": "2.8.11.3"
+},
+{
+"name": "jackson-databind",
+"version": "2.9.6"
+},
+{
+"name": "jackson-dataformat-binary",
+"version": "2.6.7"
+},
+{
+"name": "jackson-dataformat-xml",
+"version": "2.9.6"
+},
+{
+"name": "jackson-dataformat-yaml",
+"version": "2.8.11"
+},
+{
+"name": "jackson-dataformat-yaml",
+"version": "2.9.5"
+},
+{
+"name": "jackson-dataformat-yaml",
+"version": "2.9.7"
+},
+{
+"name": "jackson-datatype-joda",
+"version": "2.9.4"
+},
+{
+"name": "Jackson-datatype-json.org",
+"version": "2.9.6"
+},
+{
+"name": "Jackson-datatype-JSR-353",
+"version": "2.13.3"
+},
+{
+"name": "Jackson-datatype-JSR-353",
+"version": "2.9.6"
+},
+{
+"name": "Jackson-Datatype-JSR310",
+"version": "2.9.6"
+},
+{
+"name": "jackson-jaxrs- json-provider",
+"version": "2.9.5"
+},
+{
+"name": "Jackson-JAXRS-base",
+"version": "2.8.11"
+},
+{
+"name": "Jackson-JAXRS-base",
+"version": "2.8.4"
+},
+{
+"name": "Jackson-JAXRS-base",
+"version": "2.9.5"
+},
+{
+"name": "Jackson-JAXRS-base",
+"version": "2.9.6"
+},
+{
+"name": "Jackson-JAXRS-Datatypes",
+"version": "2.9.6"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.8.11"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.8.4"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.9.3"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.9.5"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.9.6"
+},
+{
+"name": "jackson-module- jaxb-annotations",
+"version": "1.9.13"
+},
+{
+"name": "jackson-module-jaxb- annotations",
+"version": "2.8.4"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "1.9.13"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.5.4"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.8.11"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.8.4"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.9.5"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.9.6"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.9.7"
+},
+{
+"name": "Jakarta Activation",
+"version": "1.1"
+},
+{
+"name": "Jakarta Activation",
+"version": "1.1.1"
+},
+{
+"name": "Jakarta Activation",
+"version": "1.2.0"
+},
+{
+"name": "Jakarta Activation",
+"version": "1.2.1"
+},
+{
+"name": "Jakarta Activation",
+"version": "1.2.2"
+},
+{
+"name": "Jakarta Activation API",
+"version": "1.2.0"
+},
+{
+"name": "Jakarta Activation API",
+"version": "1.2.2"
+},
+{
+"name": "Jakarta Annotations API",
+"version": "2.1.1"
+},
+{
+"name": "Jakarta Dependency Injection",
+"version": "2.0.1"
+},
+{
+"name": "Jakarta JSON Processing API",
+"version": "1.1.0-EDR1"
+},
+{
+"name": "Jakarta JSON Processing API",
+"version": "1.1.2"
+},
+{
+"name": "Jakarta Mail",
+"version": "1.4"
+},
+{
+"name": "Jakarta Mail",
+"version": "1.4.5"
+},
+{
+"name": "Jakarta Mail",
+"version": "1.5.1"
+},
+{
+"name": "Jakarta Mail",
+"version": "1.5.5"
+},
+{
+"name": "Jakarta Mail",
+"version": "1.5.6"
+},
+{
+"name": "Jakarta ORO",
+"version": "2.0.8"
+},
+{
+"name": "Jakarta XML RPC API",
+"version": "1.0.1.Final"
+},
+{
+"name": "jakarta.xml.bind:jakarta.xml.bind-api",
+"version": "2.3.3"
+},
+{
+"name": "jakartaee/rest",
+"version": "2.1.4"
+},
+{
+"name": "jakartaeevalidation",
+"version": "1.1.0"
+},
+{
+"name": "Jalopy Java Source Code Formatter",
+"version": "1.5rc3"
+},
+{
+"name": "jansi",
+"version": "1.11"
+},
+{
+"name": "jansi",
+"version": "1.12"
+},
+{
+"name": "jansi-native",
+"version": "1.5"
+},
+{
+"name": "jansi-native",
+"version": "1.6"
+},
+{
+"name": "Jar Jar Links",
+"version": "1.4"
+},
+{
+"name": "Jastow",
+"version": "2.1.0.Final"
+},
+{
+"name": "Jasypt",
+"version": "1.9.1"
+},
+{
+"name": "Java / Jython wrapper for pyWinRM",
+"version": "0.6.1"
+},
+{
+"name": "Java Annotation Indexer",
+"version": "2.0.2.Final"
+},
+{
+"name": "Java API for Processing JSON (JSON-P)",
+"version": "1.0.3"
+},
+{
+"name": "Java API for XML Web Services",
+"version": "2.2 2.0.2.Beta2"
+},
+{
+"name": "Java API for XML Web Services",
+"version": "2.2 2.0.3.Final"
+},
+{
+"name": "Java API for XML Web Services",
+"version": "2.3.1"
+},
+{
+"name": "Java API for XML Web Services 2.2",
+"version": "2.0.2.Beta2"
+},
+{
+"name": "Java API for XML Web Services 2.2",
+"version": "2.0.3.Final"
+},
+{
+"name": "Java Architecture For XML Binding",
+"version": "1.1"
+},
+{
+"name": "Java Architecture for XML Binding",
+"version": "2.2 1.0.0.Beta1"
+},
+{
+"name": "Java Architecture for XML Binding",
+"version": "2.2 1.0.4.Final"
+},
+{
+"name": "Java Architecture for XML Binding",
+"version": "2.3 2.0.1.Final"
+},
+{
+"name": "Java Architecture for XML Binding 2.2",
+"version": "1.0.0.Beta1"
+},
+{
+"name": "Java Architecture for XML Binding 2.2",
+"version": "1.0.4.Final"
+},
+{
+"name": "Java Architecture for XML Binding 2.3",
+"version": "2.0.1.Final"
+},
+{
+"name": "Java Authorization Contract for Containers",
+"version": "1.0"
+},
+{
+"name": "Java EE Management",
+"version": "1.1 API 1.0.1.Final"
+},
+{
+"name": "Java EE Management 1.1 API",
+"version": "1.0.1.Final"
+},
+{
+"name": "Java Native Access (JNA)",
+"version": "4.2.1"
+},
+{
+"name": "Java Platform Standard Edition (JRE) (J2RE)",
+"version": "8u181"
+},
+{
+"name": "Java port of GNU getopt",
+"version": "1.0.13"
+},
+{
+"name": "Java Servlet",
+"version": "3.1 API 1.0.0.Final"
+},
+{
+"name": "Java Servlet 3.1 API",
+"version": "1.0.0.Final"
+},
+{
+"name": "Java Servlet API",
+"version": "2.5"
+},
+{
+"name": "Java Servlet API",
+"version": "3.1.0"
+},
+{
+"name": "Java Servlet API",
+"version": "5.0.0"
+},
+{
+"name": "Java UUID Generator",
+"version": "3.1.3"
+},
+{
+"name": "Java web resources bundling and compression",
+"version": "3.3.3"
+},
+{
+"name": "Java(TM) EE Connector Architecture",
+"version": "1.7 API 1.0.0.Final"
+},
+{
+"name": "Java(TM) EE Interceptors",
+"version": "1.2 API 1.0.0.Final"
+},
+{
+"name": "Java(TM) EE Interceptors 1.2 API",
+"version": "1.0.0.Final"
+},
+{
+"name": "Java(TM) EE Specification APIs",
+"version": "7.0"
+},
+{
+"name": "Java(TM) Message Service (JMS)",
+"version": "2.0 API 1.0.0.Final"
+},
+{
+"name": "Java(TM) Message Service (JMS) 2.0 API",
+"version": "1.0.0.Final"
+},
+{
+"name": "Java(TM) Persistence API Specification",
+"version": "1.0"
+},
+{
+"name": "java-classmate",
+"version": "1.3.1"
+},
+{
+"name": "java-classmate",
+"version": "1.3.4"
+},
+{
+"name": "java-classmate",
+"version": "1.4.0"
+},
+{
+"name": "java-sizeof",
+"version": "0.0.5"
+},
+{
+"name": "java-support",
+"version": "7.1.1"
+},
+{
+"name": "Java8-specific Hibernate O/RM functionality",
+"version": "5.0.10.Final"
+},
+{
+"name": "Javac compiler",
+"version": "0.10"
+},
+{
+"name": "javafx-web",
+"version": "11-ea+19"
+},
+{
+"name": "JavaHelp API",
+"version": "2.0.06"
+},
+{
+"name": "JavaHelp Search",
+"version": "2.0"
+},
+{
+"name": "JavaMail API pop3 provider",
+"version": "1.5.1"
+},
+{
+"name": "JavaMail API pop3 provider",
+"version": "1.5.5"
+},
+{
+"name": "JavaMail API pop3 provider",
+"version": "1.5.6"
+},
+{
+"name": "JavaMail API smtp provider",
+"version": "1.5.1"
+},
+{
+"name": "JavaMail API smtp provider",
+"version": "1.5.5"
+},
+{
+"name": "JavaMail API smtp provider",
+"version": "1.5.6"
+},
+{
+"name": "JavaServer Faces",
+"version": "2.2.0-m13"
+},
+{
+"name": "JavaServer Faces",
+"version": "2.2.13"
+},
+{
+"name": "JavaServer Faces",
+"version": "2.2.13.SP1"
+},
+{
+"name": "Javassist",
+"version": "3.16.1"
+},
+{
+"name": "Javassist",
+"version": "3.18.1"
+},
+{
+"name": "Javassist",
+"version": "3.20.0-GA"
+},
+{
+"name": "Javassist",
+"version": "3.21.0"
+},
+{
+"name": "Javassist",
+"version": "3.22.0-GA"
+},
+{
+"name": "JavaTM Platform",
+"version": "1.0"
+},
+{
+"name": "javax.annotation API",
+"version": "1.2"
+},
+{
+"name": "javax.annotation API",
+"version": "1.3.2"
+},
+{
+"name": "javax.batch-api",
+"version": "1.0"
+},
+{
+"name": "javax.enterprise.concurrent-api",
+"version": "1.0"
+},
+{
+"name": "javax.enterprise.deploy API",
+"version": "3.1.2"
+},
+{
+"name": "javax.inject:javax.inject",
+"version": "1"
+},
+{
+"name": "javax.json.bind- api",
+"version": "1.0.0-M1"
+},
+{
+"name": "javax.json.bind-api",
+"version": "1.0.0-M1"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0.1"
+},
+{
+"name": "javax.wsdl",
+"version": "1.6.1"
+},
+{
+"name": "javax.xml.soap API",
+"version": "1.4.0"
+},
+{
+"name": "javolution",
+"version": "5.2.6"
+},
+{
+"name": "jax-rpc",
+"version": "1.1"
+},
+{
+"name": "JAX-RPC API OSGi Bundle",
+"version": "1.1-b01"
+},
+{
+"name": "JAX-RS",
+"version": "2.0: The Java(TM) API for RESTful Web Services 1.0.0.Alpha1"
+},
+{
+"name": "JAX-RS",
+"version": "2.0: The Java(TM) API for RESTful Web Services 1.0.0.Final"
+},
+{
+"name": "JAX-RS",
+"version": "2.0: The Java(TM) API for RESTful Web Services 1.0.1.Beta1"
+},
+{
+"name": "JAX-RS Analyzer",
+"version": "0.12"
+},
+{
+"name": "JAX-RS provider for JSON content type",
+"version": "1.9.13"
+},
+{
+"name": "JAXB Bug 986",
+"version": "3.0.5"
+},
+{
+"name": "JAXB CORE",
+"version": "2.2.11"
+},
+{
+"name": "JAXB CORE",
+"version": "3.0.0-M2"
+},
+{
+"name": "JAXB JXC",
+"version": "2.2.11"
+},
+{
+"name": "JAXB Runtime",
+"version": "2.2.11"
+},
+{
+"name": "JAXB Runtime",
+"version": "2.3.5"
+},
+{
+"name": "jaxb- api",
+"version": "2.0"
+},
+{
+"name": "jaxb-api",
+"version": "2.0"
+},
+{
+"name": "jaxb-api",
+"version": "2.2.7"
+},
+{
+"name": "jaxb-api",
+"version": "2.3.0"
+},
+{
+"name": "jaxb-api",
+"version": "2.3.1"
+},
+{
+"name": "jaxen",
+"version": "1.1-beta-4"
+},
+{
+"name": "jaxen",
+"version": "1.1.1"
+},
+{
+"name": "jaxen",
+"version": "1.1.6"
+},
+{
+"name": "jberet-core",
+"version": "1.2.1.Final"
+},
+{
+"name": "JBoss Application Server Cluster",
+"version": "5.0.0.CR1"
+},
+{
+"name": "JBoss Application Server Main",
+"version": "6.0.0.20100911-M5"
+},
+{
+"name": "JBoss Common Beans",
+"version": "2.0.0.Final"
+},
+{
+"name": "JBoss Dynamic Model Representation",
+"version": "1.3.0.Final"
+},
+{
+"name": "JBoss EJB",
+"version": "3 External API 2.2.0.Beta1"
+},
+{
+"name": "JBoss EJB 3 External API",
+"version": "2.2.0.Beta1"
+},
+{
+"name": "JBoss EJB client",
+"version": "2.1.4.Final"
+},
+{
+"name": "JBoss Generic JMS RA JAR",
+"version": "1.0.7.Final"
+},
+{
+"name": "JBoss IIOP Client",
+"version": "1.0.0.Beta2"
+},
+{
+"name": "JBoss Java Authentication SPI for Containers",
+"version": "1.0 API 1.0.1.Final"
+},
+{
+"name": "JBoss Java Authentication SPI for Containers",
+"version": "1.1 API 1.0.0.Final"
+},
+{
+"name": "JBoss Java Server Pages",
+"version": "2.2 API 1.0.1.Final"
+},
+{
+"name": "JBoss Java Server Pages 2.2 API",
+"version": "1.0.1.Final"
+},
+{
+"name": "JBoss JSTL",
+"version": "1.2 API 1.1.3.Final"
+},
+{
+"name": "JBoss JSTL 1.2 API",
+"version": "1.1.3.Final"
+},
+{
+"name": "JBoss Logging",
+"version": "3 3.3.0.Beta1"
+},
+{
+"name": "JBoss Logging",
+"version": "3 3.3.0.Final"
+},
+{
+"name": "JBoss Logging",
+"version": "3 3.3.2.Final"
+},
+{
+"name": "JBoss Logging 3",
+"version": "3.3.0.Beta1"
+},
+{
+"name": "JBoss Logging 3",
+"version": "3.3.0.Final"
+},
+{
+"name": "JBoss Logging 3",
+"version": "3.3.2.Final"
+},
+{
+"name": "JBoss Marshalling API",
+"version": "1.4.11.Final"
+},
+{
+"name": "JBoss Metadata Appclient",
+"version": "10.0.0.Beta3"
+},
+{
+"name": "JBoss Metadata Client",
+"version": "10.0.0.Final"
+},
+{
+"name": "JBoss Metadata EAR",
+"version": "10.0.0.Final"
+},
+{
+"name": "JBoss Metadata EJB",
+"version": "10.0.0.Beta3"
+},
+{
+"name": "JBoss Metadata Web",
+"version": "10.0.0.Final"
+},
+{
+"name": "JBoss Modular Service Container",
+"version": "1.2.6.Final"
+},
+{
+"name": "JBoss Modules",
+"version": "1.5.2.Final"
+},
+{
+"name": "JBoss Naming Client",
+"version": "4.0.4.GA"
+},
+{
+"name": "JBoss Negotiation Common",
+"version": "3.0.2.Final"
+},
+{
+"name": "JBoss Negotiation Extras",
+"version": "3.0.2.Final"
+},
+{
+"name": "JBoss Negotiation NTLM",
+"version": "3.0.2.Final"
+},
+{
+"name": "JBoss Negotiation SPNEGO",
+"version": "3.0.2.Final"
+},
+{
+"name": "JBoss patch-gen tool",
+"version": "2.0.1.Alpha5"
+},
+{
+"name": "JBoss port of sunxacml",
+"version": "2.0.8.Final"
+},
+{
+"name": "JBoss Remoting",
+"version": "1.4.1_final"
+},
+{
+"name": "JBoss Remoting",
+"version": "4.0.21.Final"
+},
+{
+"name": "JBoss Remoting",
+"version": "4.0.24.Final"
+},
+{
+"name": "JBoss Seam Int JBossAS",
+"version": "7.0.0.GA"
+},
+{
+"name": "JBoss Security Client - jboss:jbosssx-client",
+"version": "4.0.4.GA"
+},
+{
+"name": "JBoss Transaction SPI",
+"version": "7.3.0.Final"
+},
+{
+"name": "JBoss VFS",
+"version": "3.2.12.Final"
+},
+{
+"name": "JBoss Web Services - API",
+"version": "1.0.3.Final"
+},
+{
+"name": "JBoss Web Services - Common",
+"version": "3.1.3.Final"
+},
+{
+"name": "JBoss Web Services - Endorsed factories",
+"version": "5.1.5.Final"
+},
+{
+"name": "JBoss Web Services - SPI",
+"version": "3.1.2.Final"
+},
+{
+"name": "JBoss Web Services - Stack CXF JASPI",
+"version": "5.1.5.Final"
+},
+{
+"name": "JBoss Web Services - Stack CXF Resources",
+"version": "5.1.5.Final"
+},
+{
+"name": "JBoss Web Services - Stack CXF Runtime Client",
+"version": "5.1.5.Final"
+},
+{
+"name": "JBoss Web Services - Stack CXF Runtime Server",
+"version": "5.1.5.Final"
+},
+{
+"name": "JBoss Web Services - Stack CXF UDP transport",
+"version": "5.1.5.Final"
+},
+{
+"name": "JBoss Web Services - Stack CXF Undertow http transport",
+"version": "5.1.5.Final"
+},
+{
+"name": "JBoss Web Services - Tools Integration",
+"version": "1.2.2.Final"
+},
+{
+"name": "JBoss XACML",
+"version": "2.0.8.Final"
+},
+{
+"name": "JBoss XACML- Assembly",
+"version": "2.0.8.Final"
+},
+{
+"name": "jboss-client",
+"version": "4.0.2"
+},
+{
+"name": "jboss-common",
+"version": "1.0.3.GA"
+},
+{
+"name": "jboss-common",
+"version": "4.0.4.GA"
+},
+{
+"name": "jboss-j2ee",
+"version": "4.0.4.GA"
+},
+{
+"name": "jboss-jaxb-intros",
+"version": "1.0.2.GA"
+},
+{
+"name": "jboss-jaxrpc-jdk14",
+"version": "1.0.4.GA"
+},
+{
+"name": "jboss-jmx",
+"version": "4.0.4.GA"
+},
+{
+"name": "jboss-jmx",
+"version": "4.3.0.GA_CP03"
+},
+{
+"name": "jboss-logmanager",
+"version": "2.0.4.Final"
+},
+{
+"name": "jboss-saaj",
+"version": "1.0.4.GA"
+},
+{
+"name": "jboss-sasl",
+"version": "1.0.5.Final"
+},
+{
+"name": "jboss-serialization",
+"version": "4.2.2.GA"
+},
+{
+"name": "jboss-stdio",
+"version": "1.0.2.GA"
+},
+{
+"name": "jboss-system",
+"version": "4.0.4.GA"
+},
+{
+"name": "jboss-threads",
+"version": "2.2.1.Final"
+},
+{
+"name": "jboss-transaction",
+"version": "4.0.4.GA"
+},
+{
+"name": "jboss-transaction- api_1.2_spec",
+"version": "1.0.0.Final"
+},
+{
+"name": "jboss-transaction-api_1.2_spec",
+"version": "1.0.0.Beta1"
+},
+{
+"name": "jboss-transaction-api_1.2_spec",
+"version": "1.0.0.Final"
+},
+{
+"name": "jbossall-client",
+"version": "4.0.5.GA"
+},
+{
+"name": "JBossJTA jta module",
+"version": "5.3.3.Final"
+},
+{
+"name": "JBossJTA packaged module",
+"version": "5.3.3.Final"
+},
+{
+"name": "JBossJTS A TX module",
+"version": "5.3.3.Final"
+},
+{
+"name": "JBossJTS ATX module",
+"version": "5.3.3.Final"
+},
+{
+"name": "JBossJTS packaged module",
+"version": "5.3.3.Final"
+},
+{
+"name": "JBossTS: ArjunaJTS jts",
+"version": "4.17.30.Final-redhat-1"
+},
+{
+"name": "JBossTS: ArjunaJTS orbportability",
+"version": "4.17.30.Final-redhat-1"
+},
+{
+"name": "jbosstxbridge",
+"version": "5.3.3.Final"
+},
+{
+"name": "JBossWS JBoss WildFly",
+"version": "10.0.0.Final Server Side Integration 5.1.4.Final"
+},
+{
+"name": "JBossWS JBoss WildFly",
+"version": "10.1.0.Final Server Side Integration 5.2.0.Final"
+},
+{
+"name": "jbossxts",
+"version": "5.3.3.Final"
+},
+{
+"name": "JCL",
+"version": "1.2 Implemented Over SLF4J 1.7.26"
+},
+{
+"name": "JCL",
+"version": "1.2 Implemented Over SLF4J 1.7.36"
+},
+{
+"name": "JCL",
+"version": "1.2 Implemented Over SLF4J 1.7.7"
+},
+{
+"name": "JCL 1.2 Implemented Over SLF4J",
+"version": "1.7.26"
+},
+{
+"name": "JCL 1.2 Implemented Over SLF4J",
+"version": "1.7.36"
+},
+{
+"name": "JCL 1.2 Implemented Over SLF4J",
+"version": "1.7.7"
+},
+{
+"name": "JCommon",
+"version": "1.0.15"
+},
+{
+"name": "JDBC",
+"version": "2.0 Optional Package 2.0"
+},
+{
+"name": "JDBC 2.0 Optional Package",
+"version": "2.0"
+},
+{
+"name": "jdbc-stdext",
+"version": "2.0"
+},
+{
+"name": "jdic",
+"version": "0.9.4"
+},
+{
+"name": "JDOM",
+"version": "1.1"
+},
+{
+"name": "JDOM",
+"version": "1.1.3"
+},
+{
+"name": "Jersey",
+"version": "1.19.3"
+},
+{
+"name": "Jersey",
+"version": "2.23.2"
+},
+{
+"name": "Jersey",
+"version": "2.25.1"
+},
+{
+"name": "Jersey",
+"version": "2.37"
+},
+{
+"name": "Jersey Inject HK2",
+"version": "2.37"
+},
+{
+"name": "jersey- container-servlet-core",
+"version": "2.25.1"
+},
+{
+"name": "jersey- core-server",
+"version": "2.25.1"
+},
+{
+"name": "jersey- server",
+"version": "1.19.3"
+},
+{
+"name": "jersey-bundle",
+"version": "2.22.2"
+},
+{
+"name": "jersey-container-servlet",
+"version": "2.25.1"
+},
+{
+"name": "jersey-container-servlet",
+"version": "2.37"
+},
+{
+"name": "jersey-container-servlet-core",
+"version": "2.25.1"
+},
+{
+"name": "jersey-container-servlet-core",
+"version": "2.37"
+},
+{
+"name": "jersey-core-server",
+"version": "2.23.2"
+},
+{
+"name": "jersey-core-server",
+"version": "2.25.1"
+},
+{
+"name": "jersey-core-server",
+"version": "2.37"
+},
+{
+"name": "jersey-ext-bean-validation",
+"version": "2.25.1"
+},
+{
+"name": "jersey-ext-entity- filtering",
+"version": "2.25.1"
+},
+{
+"name": "jersey-ext-entity-filtering",
+"version": "2.25.1"
+},
+{
+"name": "jersey-ext-entity-filtering",
+"version": "2.37"
+},
+{
+"name": "jersey-media- json-jackson",
+"version": "2.24.1"
+},
+{
+"name": "jersey-media- multipart",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.37"
+},
+{
+"name": "jersey-media-json-jackson",
+"version": "2.24.1"
+},
+{
+"name": "jersey-media-json-jackson",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-json-jackson",
+"version": "2.37"
+},
+{
+"name": "jersey-media-multipart",
+"version": "2.25.1"
+},
+{
+"name": "jersey-repackaged-guava",
+"version": "2.25.1"
+},
+{
+"name": "jersey-server",
+"version": "1.19.3"
+},
+{
+"name": "jersey-spring3",
+"version": "2.25.1"
+},
+{
+"name": "Jettison - Json Stax implementation",
+"version": "1.0-RC1"
+},
+{
+"name": "Jettison - Json Stax implementation",
+"version": "1.3.3"
+},
+{
+"name": "Jettison - Json Stax implementation",
+"version": "1.3.8"
+},
+{
+"name": "Jetty Orbit :: Servlet API",
+"version": "3.0.0.v201112011016"
+},
+{
+"name": "jffi - Java Foreign Function Interface",
+"version": "1.2.15"
+},
+{
+"name": "JFreeChart",
+"version": "1.0.12"
+},
+{
+"name": "JGoodies Binding",
+"version": "2.0.6"
+},
+{
+"name": "JGoodies Forms",
+"version": "1.0.7"
+},
+{
+"name": "JGoodies V alidation",
+"version": "2.0.0"
+},
+{
+"name": "JGoodies Validation",
+"version": "2.0.0"
+},
+{
+"name": "JGroups",
+"version": "3.6.10"
+},
+{
+"name": "JGroups Azure: Protocols",
+"version": "1.0.0.Final"
+},
+{
+"name": "jibx-bind",
+"version": "1.1.5"
+},
+{
+"name": "jibx-run",
+"version": "1.1.5"
+},
+{
+"name": "jipijapa EclipseLink integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "jipijapa Hibernate",
+"version": "4.1.x + 4.2.x (JPA 2.0) integration 10.1.0.Final"
+},
+{
+"name": "jipijapa Hibernate",
+"version": "4.3.x (JPA 2.1) integration 10.1.0.Final"
+},
+{
+"name": "jipijapa Hibernate",
+"version": "5.x (JPA 2.1) integration 10.1.0.Final"
+},
+{
+"name": "jipijapa OpenJPA integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "jipijapa SPI",
+"version": "1.0.0.Alpha1"
+},
+{
+"name": "jipijapa SPI",
+"version": "10.1.0.Final"
+},
+{
+"name": "JLibDiff",
+"version": "1.0"
+},
+{
+"name": "JLine - Java Console input Library",
+"version": "2.14.5"
+},
+{
+"name": "JLine - Java Console input Library",
+"version": "2.14.6"
+},
+{
+"name": "JMES Path Query library",
+"version": "1.11.288"
+},
+{
+"name": "JMockit",
+"version": "1.18"
+},
+{
+"name": "JMS",
+"version": "1.1 1.1"
+},
+{
+"name": "JMS",
+"version": "1.1 1.1-rc4"
+},
+{
+"name": "JMS",
+"version": "1.1 1.1.1"
+},
+{
+"name": "JMS 1.1",
+"version": "1.1"
+},
+{
+"name": "JMS 1.1",
+"version": "1.1-rc4"
+},
+{
+"name": "JMS 1.1",
+"version": "1.1.1"
+},
+{
+"name": "jnr-constants",
+"version": "0.9.9"
+},
+{
+"name": "jnr-ffi",
+"version": "2.1.5"
+},
+{
+"name": "jnr-netdb",
+"version": "1.1.6"
+},
+{
+"name": "jnr-posix",
+"version": "3.0.41"
+},
+{
+"name": "Joda Time",
+"version": "1.6"
+},
+{
+"name": "Joda Time",
+"version": "2.10"
+},
+{
+"name": "Joda Time",
+"version": "2.7"
+},
+{
+"name": "jolokia-core",
+"version": "1.7.0"
+},
+{
+"name": "jolokia-jmx",
+"version": "1.7.0"
+},
+{
+"name": "JPA Entity Model",
+"version": "2.5.5.SP1"
+},
+{
+"name": "jpcap",
+"version": "0.7"
+},
+{
+"name": "JSch",
+"version": "0.1.53"
+},
+{
+"name": "JSch",
+"version": "0.1.54"
+},
+{
+"name": "JSDT compat",
+"version": "1.0.0"
+},
+{
+"name": "JSON library from Android SDK",
+"version": "0.0.20131108.vaadin1"
+},
+{
+"name": "JSON-java",
+"version": "20080701"
+},
+{
+"name": "JSON-java",
+"version": "20180813"
+},
+{
+"name": "json-simple",
+"version": "1.1.1"
+},
+{
+"name": "json-smart",
+"version": "1.3.1"
+},
+{
+"name": "json-smart",
+"version": "2.2.1"
+},
+{
+"name": "json-smart",
+"version": "2.3"
+},
+{
+"name": "JSONassert",
+"version": "1.4.0"
+},
+{
+"name": "jsondoc-core",
+"version": "1.2.16"
+},
+{
+"name": "jsoup",
+"version": "1.8.3"
+},
+{
+"name": "JSR-181 Maintenance Release",
+"version": "1 1.0-MR1"
+},
+{
+"name": "JSR-181 Maintenance Release 1",
+"version": "1.0-MR1"
+},
+{
+"name": "JSR-250 Common Annotations for the JavaTM Platform",
+"version": "1.0"
+},
+{
+"name": "jsr173_api",
+"version": "1.0"
+},
+{
+"name": "jsr181-api",
+"version": "2.1.1"
+},
+{
+"name": "jsr311-api",
+"version": "1.1.1"
+},
+{
+"name": "jtransactions",
+"version": "2.0.2"
+},
+{
+"name": "JUL to SLF4J bridge",
+"version": "1.7.26"
+},
+{
+"name": "jul-to-slf4j-stub",
+"version": "1.0.1.Final"
+},
+{
+"name": "jung- graph-impl",
+"version": "2.0.1"
+},
+{
+"name": "jung-algorithms",
+"version": "2.0.1"
+},
+{
+"name": "jung-api",
+"version": "2.0.1"
+},
+{
+"name": "jung-graph-impl",
+"version": "2.0.1"
+},
+{
+"name": "jung-io",
+"version": "2.0.1"
+},
+{
+"name": "jung-jai",
+"version": "2.0.1"
+},
+{
+"name": "JUnit",
+"version": "3.8.1"
+},
+{
+"name": "JUnit",
+"version": "4.10"
+},
+{
+"name": "JUnit",
+"version": "4.12"
+},
+{
+"name": "jws-api",
+"version": "2.1.0"
+},
+{
+"name": "Jython",
+"version": "2.7.1-rc2"
+},
+{
+"name": "Jython",
+"version": "v2.5.1rc1"
+},
+{
+"name": "koala",
+"version": "2.2.0"
+},
+{
+"name": "larvalabs collections",
+"version": "4.01"
+},
+{
+"name": "Legato OpenLayers",
+"version": "1.4.0"
+},
+{
+"name": "libffi7",
+"version": "3.3"
+},
+{
+"name": "libicu66",
+"version": "66.1"
+},
+{
+"name": "libllvm10",
+"version": "10.0.0"
+},
+{
+"name": "Library for Java",
+"version": "1.6.2"
+},
+{
+"name": "Libspring",
+"version": "3.2.13"
+},
+{
+"name": "LittleProxy",
+"version": "2.0.8"
+},
+{
+"name": "llvm-libs",
+"version": "18.1.8"
+},
+{
+"name": "Log4J Compatibility API",
+"version": "2.17.2"
+},
+{
+"name": "Log4j Implemented Over SLF4J",
+"version": "1.7.26"
+},
+{
+"name": "log4j-jboss-logmanager",
+"version": "1.1.2"
+},
+{
+"name": "Logback",
+"version": "1.1.11"
+},
+{
+"name": "longrunning-v1",
+"version": "0.1.10"
+},
+{
+"name": "Lucene Analyzers",
+"version": "5.3.1"
+},
+{
+"name": "Lucene Facets",
+"version": "5.3.1"
+},
+{
+"name": "Lucene Miscellaneous",
+"version": "5.3.1"
+},
+{
+"name": "Lucene Queries",
+"version": "5.3.1"
+},
+{
+"name": "Lucene Query Parser",
+"version": "5.3.1"
+},
+{
+"name": "lucene-backward-codecs",
+"version": "5.3.1"
+},
+{
+"name": "MapStruct Core",
+"version": "1.0.0.Final"
+},
+{
+"name": "MawinFrameworkExtjs",
+"version": "1.0.1"
+},
+{
+"name": "MessagePack for Java",
+"version": "0.6.7"
+},
+{
+"name": "Metro OSGi API bundle for GlassFish",
+"version": "V3 2.3-b259"
+},
+{
+"name": "Metro OSGi API bundle for GlassFish V3",
+"version": "2.3-b259"
+},
+{
+"name": "micrometer- commons",
+"version": "1.10.12"
+},
+{
+"name": "micrometer-observation",
+"version": "1.10.12"
+},
+{
+"name": "Microsoft AutoRest Runtime for Java",
+"version": "1.6.2"
+},
+{
+"name": "Microsoft Azure AutoRest Authentication Library for Java",
+"version": "1.6.2"
+},
+{
+"name": "Microsoft Azure AutoRest Runtime for Java",
+"version": "1.6.2"
+},
+{
+"name": "Microsoft Azure SDK annotations",
+"version": "1.7.0"
+},
+{
+"name": "Microsoft Azure SDK for App Service Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Batch Account Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for BatchAI Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for CDN Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Compute Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Container Instance Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Container Registry Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Container Service Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for CosmosDB Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for DNS Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for EventHub Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Graph RBAC Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Key Vault",
+"version": "0.8.0"
+},
+{
+"name": "Microsoft Azure SDK for Key Vault",
+"version": "1.0.0"
+},
+{
+"name": "Microsoft Azure SDK for Key Vault Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Key Vault WebKey",
+"version": "1.0.0"
+},
+{
+"name": "Microsoft Azure SDK for Locks Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Managed Service Identity (MSI) Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Monitor Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Network Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Redis Cache Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Resources Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Search Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Service Bus Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for SQL Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Storage Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK for Traffic Manager Management",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Azure SDK Parent",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Windows Azure Storage Client SDK",
+"version": "4.0.0"
+},
+{
+"name": "Microsoft Windows Azure Storage Client SDK",
+"version": "6.1.0"
+},
+{
+"name": "MiGLayout",
+"version": "3.6.1"
+},
+{
+"name": "MIME streaming extension",
+"version": "1.9.6"
+},
+{
+"name": "Mockito_",
+"version": "1.10.19"
+},
+{
+"name": "Mockrunner",
+"version": "0.4.1"
+},
+{
+"name": "mod_cluster-container-spi",
+"version": "1.3.3.Final"
+},
+{
+"name": "mod_cluster-core",
+"version": "1.3.3.Final"
+},
+{
+"name": "Module",
+"version": "2.5.0-b14"
+},
+{
+"name": "Module",
+"version": "2.5.0-b32"
+},
+{
+"name": "mqtt-client",
+"version": "0.4.0"
+},
+{
+"name": "MVFLEX Expression Language (MVEL)",
+"version": "2.4.0"
+},
+{
+"name": "MyBatis",
+"version": "3.5.13"
+},
+{
+"name": "MySQL-python",
+"version": "1.2.5"
+},
+{
+"name": "mysqlclient-python",
+"version": "1.2.5"
+},
+{
+"name": "Narayana: ArjunaJTA jdbc",
+"version": "5.3.3.Final"
+},
+{
+"name": "Narayana: compensations",
+"version": "5.3.3.Final"
+},
+{
+"name": "NekoHTML",
+"version": "1.9.7"
+},
+{
+"name": "Netty Project",
+"version": "4.0.33.Final"
+},
+{
+"name": "Netty Project",
+"version": "4.1.11.Final"
+},
+{
+"name": "netty-xnio-transport",
+"version": "0.1.1.Final"
+},
+{
+"name": "Nimbus LangTag",
+"version": "1.7"
+},
+{
+"name": "Nimbus-JOSE- JWT",
+"version": "10.0.2"
+},
+{
+"name": "Nimbus-JOSE-JWT",
+"version": "10.0.2"
+},
+{
+"name": "Nimbus-JOSE-JWT",
+"version": "5.9"
+},
+{
+"name": "node-redis",
+"version": "2.9.0"
+},
+{
+"name": "nyancat",
+"version": "0.1.2"
+},
+{
+"name": "OAuth",
+"version": "2.0 SDK with OpenID Connect extensions 5.64.4"
+},
+{
+"name": "OkHttp",
+"version": "3.11.0"
+},
+{
+"name": "OkHttp Logging Interceptor",
+"version": "3.11.0"
+},
+{
+"name": "OkHttp URLConnection",
+"version": "3.11.0"
+},
+{
+"name": "OkIO",
+"version": "1.14.0"
+},
+{
+"name": "openfire",
+"version": "3.6.4"
+},
+{
+"name": "OpenJDK",
+"version": "1.8.0.432.b06"
+},
+{
+"name": "OpenJDK",
+"version": "1.8.0.452.b09"
+},
+{
+"name": "OpenJDK",
+"version": "8u442-ga"
+},
+{
+"name": "OpenJDK ORB",
+"version": "8.0.6.Final"
+},
+{
+"name": "OpenJDK8 javabeans for android.",
+"version": "1.0.1"
+},
+{
+"name": "OpenJFX",
+"version": "8.0.202"
+},
+{
+"name": "OpenJFX",
+"version": "8u171-b11"
+},
+{
+"name": "OpenLayers",
+"version": "2.13.1"
+},
+{
+"name": "OpenSAML",
+"version": "2.0 3.1.1"
+},
+{
+"name": "OpenSAML 2.0",
+"version": "3.1.1"
+},
+{
+"name": "org.apache.batik.ext.awt",
+"version": "1.6.0"
+},
+{
+"name": "org.apache.batik.transcoder",
+"version": "1.6.0"
+},
+{
+"name": "org.apache.geronimo.runtime.common",
+"version": "2.1.5"
+},
+{
+"name": "org.apache.ws.commons:XmlSchema",
+"version": "1.3.1"
+},
+{
+"name": "org.apache.ws.commons:XmlSchema",
+"version": "1.3.2"
+},
+{
+"name": "org.glassfish.jakarta.enterprise.concurrent",
+"version": "1.1.1"
+},
+{
+"name": "org.glassfish.javax.enterprise.concurrent",
+"version": "1.0"
+},
+{
+"name": "org.objectweb.asm.all version",
+"version": "3.1 repackaged as a module 2.5.0-b22"
+},
+{
+"name": "org.objectweb.asm.all version",
+"version": "3.1 repackaged as a module 2.5.0-b32"
+},
+{
+"name": "org.springframework.context",
+"version": "3.2.4.RELEASE"
+},
+{
+"name": "org.springframework.context",
+"version": "4.3.30.LIFERAY-PATCHED-2"
+},
+{
+"name": "org.springframework.orm",
+"version": "5.2.24.LIFERAY-PATCHED-2"
+},
+{
+"name": "org.springframework.web",
+"version": "4.3.30.LIFERAY-PATCHED-1"
+},
+{
+"name": "org.w3c.css.sac",
+"version": "1.3.0.v200706111724-birt-custom"
+},
+{
+"name": "org.wildfly.core:wildfly-cli",
+"version": "2.2.0.Final"
+},
+{
+"name": "org.xmlunit:xmlunit-core",
+"version": "2.3.0"
+},
+{
+"name": "org.xmlunit:xmlunit-matchers",
+"version": "2.3.0"
+},
+{
+"name": "OSGi R4 core",
+"version": "1.4.0"
+},
+{
+"name": "OSGi resource locator bundle",
+"version": "1.0.1"
+},
+{
+"name": "osgi.core",
+"version": "4.2.0"
+},
+{
+"name": "PathJson",
+"version": "2.2.0"
+},
+{
+"name": "PathJson",
+"version": "2.4.0-fixed"
+},
+{
+"name": "pbandk-protos",
+"version": "0.12.1"
+},
+{
+"name": "Persistence Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "Picketbox",
+"version": "4.9.6.Final"
+},
+{
+"name": "Picketbox Commons",
+"version": "1.0.0.final"
+},
+{
+"name": "PicketBox Identity Implementation",
+"version": "4.9.6.Final"
+},
+{
+"name": "Picketbox Infinispan",
+"version": "4.9.6.Final"
+},
+{
+"name": "PicketLink API",
+"version": "2.5.5.CR1"
+},
+{
+"name": "PicketLink Common",
+"version": "2.5.5.SP2"
+},
+{
+"name": "PicketLink Config",
+"version": "2.5.5.SP1"
+},
+{
+"name": "PicketLink Distribution - WildFly8",
+"version": "2.5.5.SP2"
+},
+{
+"name": "PicketLink Federation Core",
+"version": "2.5.5.SP2"
+},
+{
+"name": "PicketLink Federation XML Security Model",
+"version": "2.0.1.1.final"
+},
+{
+"name": "PicketLink Identity Management - Simple JPA Entity Model",
+"version": "2.5.5.SP1"
+},
+{
+"name": "PicketLink Identity Management Implementation",
+"version": "2.5.5.SP2"
+},
+{
+"name": "PicketLink IDM API",
+"version": "2.5.5.SP1"
+},
+{
+"name": "PicketLink Main Implementation",
+"version": "2.5.5.SP2"
+},
+{
+"name": "pimcore-property-color-type",
+"version": "1.0.0"
+},
+{
+"name": "pip",
+"version": "23.1.1"
+},
+{
+"name": "pip",
+"version": "23.1.2"
+},
+{
+"name": "pip",
+"version": "9.0.1"
+},
+{
+"name": "Pip.Services3 Commons",
+"version": "3.0.0"
+},
+{
+"name": "Piranha Servlet - API",
+"version": "20.12.0"
+},
+{
+"name": "PKCS, OCSP, CMP, and CRMF APIs",
+"version": "1.52"
+},
+{
+"name": "PKCS, OCSP, CMP, and CRMF APIs",
+"version": "1.54"
+},
+{
+"name": "PKCS, OCSP, CMP, and CRMF APIs",
+"version": "1.55"
+},
+{
+"name": "PKCS, OCSP, CMP, and CRMF APIs",
+"version": "1.57"
+},
+{
+"name": "PostgreSQL Database Server",
+"version": "17.2"
+},
+{
+"name": "PostgreSQL JDBC Driver (pgjdbc)",
+"version": "42.1.1.jre7"
+},
+{
+"name": "PostgreSQL JDBC Driver (pgjdbc)",
+"version": "42.2.6"
+},
+{
+"name": "PostgreSQL JDBC Driver (pgjdbc)",
+"version": "42.5.3"
+},
+{
+"name": "postgresql-17",
+"version": "17.2"
+},
+{
+"name": "postgresql-client-17",
+"version": "17.2"
+},
+{
+"name": "postgresql-common",
+"version": "256"
+},
+{
+"name": "postgresql-common",
+"version": "267"
+},
+{
+"name": "protobuf-java",
+"version": "3.0.0"
+},
+{
+"name": "protos",
+"version": "0.1.5"
+},
+{
+"name": "provider",
+"version": "10.1.0.Final"
+},
+{
+"name": "psf-requests",
+"version": "2.11.1"
+},
+{
+"name": "psf-requests",
+"version": "2.27.1"
+},
+{
+"name": "py3-distlib",
+"version": "0.3.6"
+},
+{
+"name": "pygtail",
+"version": "0.6.1"
+},
+{
+"name": "pypi/setuptools",
+"version": "28.8.0"
+},
+{
+"name": "pypi/setuptools",
+"version": "65.6.3"
+},
+{
+"name": "python-certifi",
+"version": "2017.11.5"
+},
+{
+"name": "python-webencodings",
+"version": "0.5.1"
+},
+{
+"name": "python-wheel",
+"version": "0.30.0"
+},
+{
+"name": "python-wheel",
+"version": "0.44.0"
+},
+{
+"name": "qpid-proton",
+"version": "0.8"
+},
+{
+"name": "Quartz Enterprise Job Scheduler",
+"version": "2.2.0"
+},
+{
+"name": "quartz-jobs",
+"version": "2.2.2"
+},
+{
+"name": "queryparser",
+"version": "5.3.1_1"
+},
+{
+"name": "RabbitMQ amqp-client",
+"version": "4.1.0"
+},
+{
+"name": "RabbitMQ amqp-client",
+"version": "5.7.3"
+},
+{
+"name": "rapidpm-microservice-modules-core-testutils",
+"version": "0.0.4"
+},
+{
+"name": "reactive-streams",
+"version": "1.0.2"
+},
+{
+"name": "relaxngDatatype",
+"version": "2.2"
+},
+{
+"name": "relaxngDatatype",
+"version": "2011.1"
+},
+{
+"name": "remoting-jmx",
+"version": "2.0.1"
+},
+{
+"name": "repackaged as a module",
+"version": "2.5.0-b22"
+},
+{
+"name": "repackaged as a module",
+"version": "2.5.0-b32"
+},
+{
+"name": "repackaged as OSGi bundle",
+"version": "2.4.0-b15"
+},
+{
+"name": "repackaged as OSGi bundle",
+"version": "2.5.0-b30"
+},
+{
+"name": "repackaged as OSGi bundle",
+"version": "2.5.0-b32"
+},
+{
+"name": "resolver",
+"version": "2.9.1"
+},
+{
+"name": "resolver",
+"version": "20050927"
+},
+{
+"name": "REST-AT Integration",
+"version": "5.3.3.Final"
+},
+{
+"name": "RestaBuild",
+"version": "0.1.1"
+},
+{
+"name": "RESTEasy",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy Atom Provider",
+"version": "3.0.24.Final"
+},
+{
+"name": "RESTEasy CDI integration module",
+"version": "3.0.24.Final"
+},
+{
+"name": "RESTEasy Crypto",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy Jackson",
+"version": "2 Provider 3.0.24.Final"
+},
+{
+"name": "Resteasy Jackson Provider",
+"version": "3.0.24.Final"
+},
+{
+"name": "RESTEasy JAX-RS Client",
+"version": "3.0.24.Final"
+},
+{
+"name": "RESTEasy JAX-RS JSAPI",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy JBoss Modules",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy Jettison Provider",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy JOSE JWT",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy JSON-P EE7 Provider",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy Multipart Provider",
+"version": "3.0.24.Final"
+},
+{
+"name": "RESTEasy Skeleton Key AS7 Integration",
+"version": "3.0.24.Final"
+},
+{
+"name": "RESTEasy Skeleton Key Core",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy Spring integration",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy Validator Provider BV",
+"version": "1.1 3.0.24.Final"
+},
+{
+"name": "Resteasy Validator Provider BV 1.1",
+"version": "3.0.24.Final"
+},
+{
+"name": "Resteasy YAML Provider",
+"version": "3.0.24.Final"
+},
+{
+"name": "RESTful API for Atomic Transactions",
+"version": "5.3.3.Final"
+},
+{
+"name": "RESTful Web Services",
+"version": "1.0.0.Alpha1"
+},
+{
+"name": "RESTful Web Services",
+"version": "1.0.0.Final"
+},
+{
+"name": "RESTful Web Services",
+"version": "1.0.1.Beta1"
+},
+{
+"name": "river",
+"version": "1.4.10.Final"
+},
+{
+"name": "river",
+"version": "1.4.11.Final"
+},
+{
+"name": "RNGOM",
+"version": "2.2.11"
+},
+{
+"name": "rngom",
+"version": "20061207"
+},
+{
+"name": "RocksDB JNI",
+"version": "5.13.2"
+},
+{
+"name": "ronmamoreflections",
+"version": "0.9.11"
+},
+{
+"name": "Run Level Service",
+"version": "2.5.0-b29"
+},
+{
+"name": "Run Level Service",
+"version": "2.5.0-b32"
+},
+{
+"name": "RxJava",
+"version": "1.3.8"
+},
+{
+"name": "saaj-impl",
+"version": "1.3.16"
+},
+{
+"name": "sac",
+"version": "1.3.0"
+},
+{
+"name": "saxpath",
+"version": "1.0 FCS"
+},
+{
+"name": "SDK",
+"version": "4.0.0"
+},
+{
+"name": "SDK",
+"version": "6.1.0"
+},
+{
+"name": "SecurityPolicy",
+"version": "2.1.5"
+},
+{
+"name": "Sencha Touch Framework",
+"version": "2.2.1-1"
+},
+{
+"name": "Server",
+"version": "5.1.5.Final"
+},
+{
+"name": "ServiceLocator Default Implementation",
+"version": "2.5.0-b04"
+},
+{
+"name": "ServiceLocator Default Implementation",
+"version": "2.5.0-b32"
+},
+{
+"name": "ServiceLocator Default Implementation",
+"version": "2.6.1"
+},
+{
+"name": "ServiceLocator Default Implementation",
+"version": "3.0.4"
+},
+{
+"name": "services",
+"version": "10.1.0.Final"
+},
+{
+"name": "Servlet, WebSocket Server",
+"version": "9.3.4.v20151007"
+},
+{
+"name": "Servlet, WebSocket Server",
+"version": "9.3.5.v20151012"
+},
+{
+"name": "Servlet, WebSocket Server",
+"version": "9.3.6.v20151106"
+},
+{
+"name": "Servlet, WebSocket Server",
+"version": "9.4.0.RC0"
+},
+{
+"name": "Servlet, WebSocket Server",
+"version": "9.4.0.RC1"
+},
+{
+"name": "shibboleth-java-support-shaded",
+"version": "7.2.0.wso2v1-m3"
+},
+{
+"name": "Side Integration",
+"version": "5.1.4.Final"
+},
+{
+"name": "Side Integration",
+"version": "5.2.0.Final"
+},
+{
+"name": "Simple Logging Facade for Java (SLF4J)",
+"version": "1.7.7"
+},
+{
+"name": "Simple XML",
+"version": "2.3.3"
+},
+{
+"name": "simplesocks",
+"version": "1.0.1"
+},
+{
+"name": "Skin Look and Feel",
+"version": "6.7"
+},
+{
+"name": "skinlf",
+"version": "1.2.3"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.6.6"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.21"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.25"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.26"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.7"
+},
+{
+"name": "SLF4J LOG4J-12 Binding",
+"version": "1.6.6"
+},
+{
+"name": "slf4j-jboss-logmanager",
+"version": "1.0.3.GA"
+},
+{
+"name": "smart",
+"version": "1.1"
+},
+{
+"name": "smart",
+"version": "1.2"
+},
+{
+"name": "SnakeYAML",
+"version": "1.15"
+},
+{
+"name": "SnakeYAML",
+"version": "1.17"
+},
+{
+"name": "SnakeYAML",
+"version": "1.18"
+},
+{
+"name": "SnakeYAML",
+"version": "1.19"
+},
+{
+"name": "SNMP4J",
+"version": "1.8.1"
+},
+{
+"name": "SNMP4J",
+"version": "2.2.2"
+},
+{
+"name": "snmp4j",
+"version": "2.2.3"
+},
+{
+"name": "SOAP with Attachments API for Java",
+"version": "1.3 1.0.3.Final"
+},
+{
+"name": "SOAP with Attachments API for Java 1.3",
+"version": "1.0.3.Final"
+},
+{
+"name": "sphinx-maven-plugin",
+"version": "2.1"
+},
+{
+"name": "spring",
+"version": "6.5.5"
+},
+{
+"name": "Spring Beans",
+"version": "5.3.41"
+},
+{
+"name": "Spring Boot",
+"version": "1.5.22.RELEASE"
+},
+{
+"name": "Spring Boot ActiveMQ Starter",
+"version": "1.5.22.RELEASE"
+},
+{
+"name": "Spring Boot Test",
+"version": "1.5.22.RELEASE"
+},
+{
+"name": "Spring Boot Test Auto-Configure",
+"version": "1.5.22.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "2.5.6"
+},
+{
+"name": "Spring Framework",
+"version": "3.2.14"
+},
+{
+"name": "Spring Framework",
+"version": "4.3.25.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "4.3.28.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.13.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.14.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.15.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.16.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.17.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.18.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.19.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.21.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.24.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "5.2.25.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "6.0.13"
+},
+{
+"name": "Spring Plugin Core",
+"version": "1.2.0.RELEASE"
+},
+{
+"name": "spring-boot-actuator",
+"version": "1.5.22.RELEASE"
+},
+{
+"name": "SpringFox",
+"version": "2.4.0"
+},
+{
+"name": "SpringFox",
+"version": "2.6.1"
+},
+{
+"name": "square- retrofit",
+"version": "2.4.0"
+},
+{
+"name": "square-retrofit",
+"version": "2.4.0"
+},
+{
+"name": "sshlib",
+"version": "2.2.20"
+},
+{
+"name": "StAX",
+"version": "1.0-2"
+},
+{
+"name": "StAX",
+"version": "1.0.1"
+},
+{
+"name": "StAX Mapper",
+"version": "1.2.0.Final"
+},
+{
+"name": "StAX Utilities Project",
+"version": "20060502"
+},
+{
+"name": "stax2",
+"version": "2.1"
+},
+{
+"name": "stax2-api",
+"version": "3.1.1"
+},
+{
+"name": "stax2-api",
+"version": "3.1.4"
+},
+{
+"name": "stax2-api",
+"version": "4.2.1"
+},
+{
+"name": "SteelSeries",
+"version": "3.9.3"
+},
+{
+"name": "stringtemplate4",
+"version": "3.2"
+},
+{
+"name": "Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "subsystems",
+"version": "10.1.0.Final"
+},
+{
+"name": "Support utils for using the REST-AT",
+"version": "5.3.3.Final"
+},
+{
+"name": "swagger-core",
+"version": "1.5.15"
+},
+{
+"name": "swagger-core",
+"version": "2.0.2"
+},
+{
+"name": "swagger-integration",
+"version": "2.0.2"
+},
+{
+"name": "swagger-jaxrs",
+"version": "1.5.15"
+},
+{
+"name": "swagger-jaxrs2",
+"version": "2.0.2"
+},
+{
+"name": "swagger-jaxrs2-servlet-initializer",
+"version": "2.0.2"
+},
+{
+"name": "swagger-jersey2-jaxrs (Jersey",
+"version": "2.x support) 1.5.15"
+},
+{
+"name": "swagger-models",
+"version": "1.5.10"
+},
+{
+"name": "swagger-models",
+"version": "2.0.2"
+},
+{
+"name": "swaggervel",
+"version": "v2.0.2"
+},
+{
+"name": "SwingX",
+"version": "1.6"
+},
+{
+"name": "syslog-java-client",
+"version": "1.0.8"
+},
+{
+"name": "sysstat",
+"version": "v12.2.0"
+},
+{
+"name": "tacacs_plus",
+"version": "2.6"
+},
+{
+"name": "template generate utilities based velocity",
+"version": "3.4.0"
+},
+{
+"name": "TinyRadius Java Radius Library",
+"version": "1.0.1"
+},
+{
+"name": "TinyRadius Java Radius Library",
+"version": "1.1.0"
+},
+{
+"name": "TinyRadius TinyRadius",
+"version": "0.9.9"
+},
+{
+"name": "tomcat-coyote-ffm",
+"version": "9.0.102"
+},
+{
+"name": "TOTP lib RFC",
+"version": "6283 1.0"
+},
+{
+"name": "TOTP lib RFC 6283",
+"version": "1.0"
+},
+{
+"name": "transport",
+"version": "5.1.5.Final"
+},
+{
+"name": "ttf-opensans",
+"version": "1.10"
+},
+{
+"name": "txframework",
+"version": "5.3.3.Final"
+},
+{
+"name": "TXW2 Runtime",
+"version": "2.2.11"
+},
+{
+"name": "TXW2 Runtime",
+"version": "2.3.5"
+},
+{
+"name": "Type arithmetic library for Java5",
+"version": "1.4"
+},
+{
+"name": "undertow",
+"version": "1.4.26.Final"
+},
+{
+"name": "undertow",
+"version": "1.4.28"
+},
+{
+"name": "undertow",
+"version": "2.0.9"
+},
+{
+"name": "Undertow Javascript API",
+"version": "1.0.3.Final"
+},
+{
+"name": "Undertow Servlet",
+"version": "1.4.26.Final"
+},
+{
+"name": "Undertow to JAXWS",
+"version": "2.2 HTTP SPI bridge 1.0.1.Final"
+},
+{
+"name": "Undertow to JAXWS 2.2 HTTP SPI bridge",
+"version": "1.0.1.Final"
+},
+{
+"name": "Undertow WebSockets JSR356 implementations",
+"version": "1.4.26.Final"
+},
+{
+"name": "Undertow WebSockets JSR356 implementations",
+"version": "1.4.28.Final"
+},
+{
+"name": "urllib3",
+"version": "1.16"
+},
+{
+"name": "urllib3",
+"version": "1.26.14"
+},
+{
+"name": "urllib3",
+"version": "1.26.15"
+},
+{
+"name": "V alidation",
+"version": "1.0.3"
+},
+{
+"name": "webmvc",
+"version": "3.2.14.RELEASE_1"
+},
+{
+"name": "WebSocket API",
+"version": "1.0.0.Beta1"
+},
+{
+"name": "WebSocket API",
+"version": "1.1.1.Final"
+},
+{
+"name": "WebSocket Server",
+"version": "9.3.4.v20151007"
+},
+{
+"name": "WebSocket Server",
+"version": "9.3.5.v20151012"
+},
+{
+"name": "WebSocket Server",
+"version": "9.3.6.v20151106"
+},
+{
+"name": "WebSocket Server",
+"version": "9.4.0.RC0"
+},
+{
+"name": "WebSocket Server",
+"version": "9.4.0.RC1"
+},
+{
+"name": "Weld Core",
+"version": "2.3.5.Final"
+},
+{
+"name": "Weld Parent",
+"version": "2.3.SP2"
+},
+{
+"name": "Weld SPIs for container integration",
+"version": "2.3.SP2"
+},
+{
+"name": "WildFly Elytron",
+"version": "1.0.2.Final"
+},
+{
+"name": "wildfly-common",
+"version": "1.1.0.Final"
+},
+{
+"name": "WildFly: Application Client Bootstrap",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Batch Integration Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Batch Integration Subsystem (JBeret implementation)",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Bean Validation",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Clustered service provider registry services",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Clustering API implementation",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Clustering integration with JBoss Marshalling",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Clustering marshalling API",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Clustering Public API",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Clustering SPI",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Common code for clustering subsystems",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Config Admin",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Connector Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Controller Client",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Controller Core",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Core Security API",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Core Security Utilities",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Deployment Repository",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Deployment Scanner",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Distributed Web Session Infinispan provider",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Distributed Web Session SPI",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Domain HTTP Error Context",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Domain HTTP Interface",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Domain Management",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: EE",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: EE clustering - Infinispan service provider",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: EE clustering SPI",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: EJB and JMS client combined jar",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: EJB Container Managed Persistence Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: EJB Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Embedded",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Host Controller",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: IIOP Openjdk Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Infinispan SPI",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Infinispan SPI",
+"version": "7.1.0.Alpha1-redhat-16"
+},
+{
+"name": "WildFly: Infinispan subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: IO Subsystem",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: JacORB Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JAX-RS Integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JAXR Client",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JBeret Integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JDR",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JGroups API",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JGroups SPI",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JGroups Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JMX Subsystem",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: JPA Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JSF Injection Handlers",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JSF Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: JSR-77 Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Launcher API",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Logging Subsystem",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Mail subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Management Client Content",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Messaging Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Messaging Subsystem With ActiveMQ Artemis",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: mod_cluster extension",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: mod_cluster Undertow integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Naming Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Network",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Patching Core",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: PicketLink Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Platform MBean integration",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: POJO Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Process Controller",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Protocol Utilities",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Remoting Subsystem",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Request Controller",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: RTS Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Security Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Security Subsystem API",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Self-Contained",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Server",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Service Archive Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: SFSB clustering - Infinispan integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: SFSB clustering - SPI",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Shared Security Utilities",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Singleton API",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Singleton extension",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: System JMX Module",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Threading Subsystem",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Transaction Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Undertow",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Version",
+"version": "2.2.0.Final"
+},
+{
+"name": "WildFly: Web Common Classes",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Web Services Server Integration Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Web session clustering - Undertow integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Web session clustering API",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Web session clustering SPI",
+"version": "7.0.4.GA-redhat-2"
+},
+{
+"name": "WildFly: Web Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: Weld Integration",
+"version": "10.1.0.Final"
+},
+{
+"name": "WildFly: XTS Subsystem",
+"version": "10.1.0.Final"
+},
+{
+"name": "Windup Web - Wildfly Distribution",
+"version": "4.2.0.Alpha1"
+},
+{
+"name": "WinRM Client",
+"version": "0.6.1"
+},
+{
+"name": "WinRM Service",
+"version": "0.6.1"
+},
+{
+"name": "Wireshark",
+"version": "v4.4.1"
+},
+{
+"name": "Woden",
+"version": "1.0-incubating-M7b"
+},
+{
+"name": "Woodstox",
+"version": "3.2.1"
+},
+{
+"name": "Woodstox",
+"version": "4.4.1"
+},
+{
+"name": "Woodstox",
+"version": "6.4.0"
+},
+{
+"name": "ws-commons-neethi",
+"version": "2.0.4"
+},
+{
+"name": "ws-commons-util",
+"version": "1.0.2"
+},
+{
+"name": "WSDL4J",
+"version": "1.6.2"
+},
+{
+"name": "WSDL4J",
+"version": "1.6.3"
+},
+{
+"name": "WSO2 Carbon - X509Certificate Revocation Validation",
+"version": "1.0.3"
+},
+{
+"name": "Xalan Java Serializer",
+"version": "2.7.1"
+},
+{
+"name": "XMLBeans",
+"version": "2.2.0"
+},
+{
+"name": "xmlbeans maven plugin",
+"version": "2.4.0"
+},
+{
+"name": "xmlParserAPIs",
+"version": "3.6.0.16995"
+},
+{
+"name": "xmlpull",
+"version": "1.1.3.1"
+},
+{
+"name": "xmlpull-xpp3",
+"version": "3.0.0.20130526"
+},
+{
+"name": "XmlSchema Core",
+"version": "2.0.1"
+},
+{
+"name": "XmlSchema Core",
+"version": "2.2.1"
+},
+{
+"name": "XmlSchema Core",
+"version": "2.3.1"
+},
+{
+"name": "xnio",
+"version": "3.4.0.Beta3"
+},
+{
+"name": "xnio",
+"version": "3.4.0.Final"
+},
+{
+"name": "xnio",
+"version": "3.4.6.Final"
+},
+{
+"name": "XOM",
+"version": "1.2.10"
+},
+{
+"name": "XPP3",
+"version": "1.1.4c"
+},
+{
+"name": "xpp3_xpath",
+"version": "1.1.4c"
+},
+{
+"name": "xsom",
+"version": "20140925"
+},
+{
+"name": "XStream",
+"version": "1.4.7"
+},
+{
+"name": "XStream",
+"version": "1.4.9"
+},
+{
+"name": "YUI",
+"version": "2.9.0"
+},
+{
+"name": "zip4j",
+"version": "1.3.1"
+},
+{
+"name": "ZXing Core",
+"version": "3.5.3"
+},
+{
+"name": "ZXing Java SE extensions",
+"version": "3.5.3"
+}
+],
+"extractors": [
+"url_lines",
+"license_groups",
+"jar_names"
+],
+"kind": "pdf",
+"product": "ExtremeCloud IQ - Site Engine",
+"retrieved": "2026-11-08",
+"sha256": "e0577e1e1052090d23f56007f3324ec4e5979f73b05c04decda099dce86f1a83",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8a691c2641ef490892aeadaf2a1d371b?v=c5c87105",
+"version": "25.5.10"
+}

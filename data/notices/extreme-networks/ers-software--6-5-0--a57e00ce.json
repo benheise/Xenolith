@@ -1,0 +1,386 @@
+{
+"components": [
+{
+"name": "ACE",
+"version": "6.5.0"
+},
+{
+"name": "ACE-TAO-CIAO",
+"version": "6.3.3"
+},
+{
+"name": "Amazon FreeRTOS",
+"version": "v1.3.0"
+},
+{
+"name": "apache mbed TLS",
+"version": "2.16.3"
+},
+{
+"name": "are permitted provided that the following conditions are met",
+"version": "1. Redistributions of source code must retain the above copyright notice"
+},
+{
+"name": "Berkeley and its contributors.",
+"version": "4. Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES"
+},
+{
+"name": "CiscoDevNet/ydk-go",
+"version": "0.7.2"
+},
+{
+"name": "curl",
+"version": "7.12.0"
+},
+{
+"name": "curl",
+"version": "7.19.4"
+},
+{
+"name": "curl",
+"version": "7.19.6"
+},
+{
+"name": "curl",
+"version": "7.21.0"
+},
+{
+"name": "curl",
+"version": "7.21.2"
+},
+{
+"name": "curl",
+"version": "7.21.7"
+},
+{
+"name": "curl",
+"version": "7.22.0"
+},
+{
+"name": "curl",
+"version": "7.23.0"
+},
+{
+"name": "curl",
+"version": "7.25.0"
+},
+{
+"name": "curl",
+"version": "7.27.0"
+},
+{
+"name": "curl",
+"version": "7.29.0"
+},
+{
+"name": "curl",
+"version": "7.32.0"
+},
+{
+"name": "curl",
+"version": "7.35.0"
+},
+{
+"name": "curl",
+"version": "7.38.0"
+},
+{
+"name": "curl",
+"version": "7.41.0"
+},
+{
+"name": "curl",
+"version": "7.42.0"
+},
+{
+"name": "curl",
+"version": "7.46.0"
+},
+{
+"name": "curl",
+"version": "7.47.1"
+},
+{
+"name": "curl",
+"version": "7.48.0"
+},
+{
+"name": "curl",
+"version": "7.49.0"
+},
+{
+"name": "curl",
+"version": "7.50.2"
+},
+{
+"name": "curl",
+"version": "7.52.0"
+},
+{
+"name": "curl",
+"version": "7.54.0"
+},
+{
+"name": "curl",
+"version": "7.56.0"
+},
+{
+"name": "curl",
+"version": "7.56.1"
+},
+{
+"name": "curl",
+"version": "7.57.0"
+},
+{
+"name": "curl",
+"version": "7.58.0"
+},
+{
+"name": "curl",
+"version": "7.59.0"
+},
+{
+"name": "curl",
+"version": "7.6.1"
+},
+{
+"name": "curl",
+"version": "7.60.0"
+},
+{
+"name": "curl",
+"version": "7.61.0"
+},
+{
+"name": "DISTRIBUTION AND MODIFICATION",
+"version": "0. This License applies to any program or other work which contains a notice placed by the copyright holder saying it may be distributed under the terms of this General Public License. The \"Program\""
+},
+{
+"name": "FreeB FreeBSD",
+"version": "4.7"
+},
+{
+"name": "FreeBSD",
+"version": "1.0"
+},
+{
+"name": "FreeBSD",
+"version": "2.0.5"
+},
+{
+"name": "FreeBSD",
+"version": "2.2.2"
+},
+{
+"name": "FreeBSD",
+"version": "2.2.8"
+},
+{
+"name": "FreeBSD",
+"version": "3.0"
+},
+{
+"name": "FreeBSD",
+"version": "3.1"
+},
+{
+"name": "FreeBSD",
+"version": "3.2"
+},
+{
+"name": "FreeBSD",
+"version": "3.3"
+},
+{
+"name": "FreeBSD",
+"version": "4.0"
+},
+{
+"name": "FreeBSD",
+"version": "4.2"
+},
+{
+"name": "FreeBSD",
+"version": "4.3"
+},
+{
+"name": "FreeBSD",
+"version": "4.4"
+},
+{
+"name": "FreeBSD",
+"version": "4.8"
+},
+{
+"name": "FreeBSD",
+"version": "5.0"
+},
+{
+"name": "FreeBSD",
+"version": "5.2"
+},
+{
+"name": "FreeBSD",
+"version": "5.3"
+},
+{
+"name": "FreeBSD",
+"version": "7.0"
+},
+{
+"name": "FreeBSD",
+"version": "8.1"
+},
+{
+"name": "getdp",
+"version": "2.1.0"
+},
+{
+"name": "GNU C Library",
+"version": "2.23"
+},
+{
+"name": "Godot Game Engine",
+"version": "3.2-stable"
+},
+{
+"name": "Inc.",
+"version": "59 Temple Place"
+},
+{
+"name": "json-c",
+"version": "0.13.99"
+},
+{
+"name": "JuliaLang",
+"version": "v0.5.0-rc0"
+},
+{
+"name": "JuliaLang",
+"version": "v1.3.0-alpha"
+},
+{
+"name": "June",
+"version": "1991 -------------------- Copyright (C) 1989"
+},
+{
+"name": "kame",
+"version": "v0_5"
+},
+{
+"name": "Kerberos",
+"version": "1.0-beta5"
+},
+{
+"name": "kfreebsd-kernel-headers",
+"version": "0.83"
+},
+{
+"name": "MA",
+"version": "02111-1307 USA Everyone is permitted to copy and distribute verbatim copies of this license document"
+},
+{
+"name": "mbed TLS",
+"version": "2.16.4"
+},
+{
+"name": "MicroMonitor - uMON",
+"version": "1.18"
+},
+{
+"name": "NetBSD",
+"version": "1.5"
+},
+{
+"name": "NetBSD",
+"version": "1.6"
+},
+{
+"name": "NetBSD",
+"version": "2.0"
+},
+{
+"name": "NetBSD",
+"version": "5.0.1"
+},
+{
+"name": "openip",
+"version": "1.0.0"
+},
+{
+"name": "OpenSLP",
+"version": "1.3.0 a"
+},
+{
+"name": "OpenSSH",
+"version": "7.2p2"
+},
+{
+"name": "org.wintersleep.snmp:wintersleep-snmp-test",
+"version": "0.25"
+},
+{
+"name": "OSS_SNMP",
+"version": "v1.0.1"
+},
+{
+"name": "pimd",
+"version": "2.1.4"
+},
+{
+"name": "pysnmp-mibs",
+"version": "0.1.5"
+},
+{
+"name": "Suite",
+"version": "330"
+},
+{
+"name": "TensorFlow",
+"version": "2.0.0a0"
+},
+{
+"name": "VirgilSecurity/virgil-sdk-go",
+"version": "v6.0.0"
+},
+{
+"name": "xboot/xboot",
+"version": "v1.10"
+},
+{
+"name": "xrn",
+"version": "9.02"
+},
+{
+"name": "ydk-models-cisco-ios-xe",
+"version": "16.9.3"
+},
+{
+"name": "zlib",
+"version": "0.95"
+},
+{
+"name": "zlib",
+"version": "1.0.3"
+},
+{
+"name": "zlib",
+"version": "1.0.9"
+},
+{
+"name": "zlib",
+"version": "1.1.1"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "ERS Software",
+"retrieved": "2026-11-08",
+"sha256": "39f9ddf4d2c1573e1707f1ff3714fddedda3393ae1acec8e09317470ceebe1d5",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ab2144655789424f8be7e7feb8c182cc?v=a647bfda",
+"version": "6.5.0"
+}

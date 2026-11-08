@@ -1,0 +1,90 @@
+{
+"components": [
+{
+"name": "Boost",
+"version": "1.62"
+},
+{
+"name": "Boost",
+"version": "1.76"
+},
+{
+"name": "cpprestsdk",
+"version": "2.9.0"
+},
+{
+"name": "libdevmapper",
+"version": ""
+},
+{
+"name": "libgcc",
+"version": ""
+},
+{
+"name": "liblvm",
+"version": ""
+},
+{
+"name": "libstdc++",
+"version": ""
+},
+{
+"name": "LZ4",
+"version": "1.9.2"
+},
+{
+"name": "Microsoft Azure Storage Client Library for C++",
+"version": "3.0.0"
+},
+{
+"name": "Oat++",
+"version": "1.2.5"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2w"
+},
+{
+"name": "SQLite",
+"version": "3.38.5"
+},
+{
+"name": "tinyxml2",
+"version": "6.0.0"
+},
+{
+"name": "uri-encode-c",
+"version": "0.03"
+},
+{
+"name": "utf8.h, utf8/checked.h, utf8/unchecked.h, utf8/core.h",
+"version": ""
+},
+{
+"name": "util-linux/libuuid",
+"version": ""
+},
+{
+"name": "WebSocket++",
+"version": "0.5.1"
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+},
+{
+"name": "zstd",
+"version": "1.5.2"
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam Agent for Linux",
+"retrieved": "2026-11-08",
+"sha256": "fa128440f9be4907bef597b0c43340d09c9da6a7c48d50dd8195800ad4fbcffa",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=veeam_agent_for_linux_6_0&lang=en",
+"version": "6.0"
+}

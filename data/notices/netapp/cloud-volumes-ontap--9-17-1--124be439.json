@@ -1,0 +1,2086 @@
+{
+"components": [
+{
+"name": "Abseil",
+"version": "20220623.1"
+},
+{
+"name": "acl (access control list)",
+"version": "2.3.1"
+},
+{
+"name": "adduser",
+"version": "3.134"
+},
+{
+"name": "Algorithm::Diff",
+"version": "1.201"
+},
+{
+"name": "AppArmor: Application Armor",
+"version": "3.0.8"
+},
+{
+"name": "apt - Advanced Package Tool",
+"version": "2.6.1"
+},
+{
+"name": "apt-listchanges",
+"version": "3.24"
+},
+{
+"name": "Archive::Zip Perl Module",
+"version": "1.68"
+},
+{
+"name": "argon2",
+"version": "0~20171227"
+},
+{
+"name": "audit-userspace",
+"version": "3.0.9"
+},
+{
+"name": "autotools-dev",
+"version": "20220109.1"
+},
+{
+"name": "aws-crt-python",
+"version": "0.16.4"
+},
+{
+"name": "aws-crt-python",
+"version": "0.16.8"
+},
+{
+"name": "aws/amazon-ec2-utils",
+"version": "v2.0.1"
+},
+{
+"name": "awscli",
+"version": "2.9.19"
+},
+{
+"name": "B-Hooks-EndOfScope",
+"version": "0.26"
+},
+{
+"name": "B::Hooks::OP::Check",
+"version": "0.22"
+},
+{
+"name": "base-files",
+"version": "12.4+deb12u11"
+},
+{
+"name": "base-passwd",
+"version": "3.6.1"
+},
+{
+"name": "Bash",
+"version": "5.2.15"
+},
+{
+"name": "bash-completion",
+"version": "2.11"
+},
+{
+"name": "Berkeley DB",
+"version": "5.3.28"
+},
+{
+"name": "blinker-pypi",
+"version": "1.5"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "4.6.1"
+},
+{
+"name": "botocore",
+"version": "1.29.27+repack"
+},
+{
+"name": "brotli",
+"version": "1.0.9"
+},
+{
+"name": "brotli",
+"version": "v1.0.9"
+},
+{
+"name": "bsdutils",
+"version": "2.38.1"
+},
+{
+"name": "build-essential",
+"version": "12.9"
+},
+{
+"name": "Bzip2",
+"version": "1.0.8"
+},
+{
+"name": "ca-certificates",
+"version": "20230311+deb12u1"
+},
+{
+"name": "can-utils",
+"version": "v2023.03"
+},
+{
+"name": "CGI.pm",
+"version": "4.55"
+},
+{
+"name": "chardet",
+"version": "5.1.0"
+},
+{
+"name": "Class-Method-Modifiers",
+"version": "2.14"
+},
+{
+"name": "cloud-init",
+"version": "22.4.2"
+},
+{
+"name": "cloud-utils",
+"version": "0.33"
+},
+{
+"name": "cloud-utils-ec2metadata",
+"version": "0.33"
+},
+{
+"name": "colorama",
+"version": "0.4.6"
+},
+{
+"name": "common-sense",
+"version": "3.75"
+},
+{
+"name": "Compress::Raw::Zlib",
+"version": "2.105"
+},
+{
+"name": "ConfigObj",
+"version": "5.0.8"
+},
+{
+"name": "CPAN::Meta",
+"version": "2.150010"
+},
+{
+"name": "Cpanel::JSON::XS",
+"version": "4.35"
+},
+{
+"name": "Crypt::Random::Source",
+"version": "0.14"
+},
+{
+"name": "curl",
+"version": "7.88.1"
+},
+{
+"name": "Cyan4973/xxHash",
+"version": "v0.8.1"
+},
+{
+"name": "Cyrus SASL",
+"version": "2.1.28"
+},
+{
+"name": "D-Bus",
+"version": "1.14.10"
+},
+{
+"name": "DASH",
+"version": "0.5.12"
+},
+{
+"name": "Data::Validate::Domain",
+"version": "0.10"
+},
+{
+"name": "Data::Validate::IP",
+"version": "0.31"
+},
+{
+"name": "dav1d",
+"version": "1.0.0"
+},
+{
+"name": "dbus-python",
+"version": "1.3.2"
+},
+{
+"name": "debconf",
+"version": "1.5.82"
+},
+{
+"name": "debfoster",
+"version": "2.5"
+},
+{
+"name": "debhelper",
+"version": "13.11.4"
+},
+{
+"name": "Debian",
+"version": "0.270"
+},
+{
+"name": "Debian",
+"version": "20230607+deb12u11"
+},
+{
+"name": "Debian",
+"version": "20250803"
+},
+{
+"name": "Debian devscripts",
+"version": "2.23.4+deb12u2"
+},
+{
+"name": "debian-archive-keyring",
+"version": "2023.3+deb12u2"
+},
+{
+"name": "debian-keyring",
+"version": "2022.12.24"
+},
+{
+"name": "debianutils",
+"version": "5.7"
+},
+{
+"name": "DejaVu fonts",
+"version": "2.37"
+},
+{
+"name": "devmapper",
+"version": "1.02.185"
+},
+{
+"name": "dh-autoreconf",
+"version": "20"
+},
+{
+"name": "dh-runit",
+"version": "2.15.2"
+},
+{
+"name": "DHCP (ISC)",
+"version": "4.4.3"
+},
+{
+"name": "diffstat",
+"version": "1.65"
+},
+{
+"name": "DirMngr",
+"version": "2.2.40"
+},
+{
+"name": "distro-info",
+"version": "1.5+deb12u1"
+},
+{
+"name": "distro-info-data",
+"version": "0.58+deb12u4"
+},
+{
+"name": "distro-info-data",
+"version": "0.58+deb12u5"
+},
+{
+"name": "Docutils",
+"version": "0.19"
+},
+{
+"name": "dpkg",
+"version": "1.21.22"
+},
+{
+"name": "dput",
+"version": "1.1.3"
+},
+{
+"name": "duktape",
+"version": "v2.7.0"
+},
+{
+"name": "e2fsprogs",
+"version": "v1.47.0"
+},
+{
+"name": "efibootmgr",
+"version": "37"
+},
+{
+"name": "efivar",
+"version": "37"
+},
+{
+"name": "eject utility for removable media",
+"version": "2.38.1"
+},
+{
+"name": "elfutils",
+"version": "0.188"
+},
+{
+"name": "equivs",
+"version": "2.3.1"
+},
+{
+"name": "EV",
+"version": "4.33"
+},
+{
+"name": "Exporter::Tiny",
+"version": "1.006000"
+},
+{
+"name": "ExtUtils::ParseXS",
+"version": "3.35"
+},
+{
+"name": "file",
+"version": "0.4.26"
+},
+{
+"name": "file",
+"version": "5.44"
+},
+{
+"name": "File::Temp",
+"version": "0.2311"
+},
+{
+"name": "findutils",
+"version": "4.9.0"
+},
+{
+"name": "fontconfig",
+"version": "2.14.1"
+},
+{
+"name": "FUSE",
+"version": "2.9.9"
+},
+{
+"name": "gcc-10",
+"version": "10.2.1"
+},
+{
+"name": "gcc-12-base",
+"version": "12.2.0"
+},
+{
+"name": "GD",
+"version": "2.3.3"
+},
+{
+"name": "gdisk",
+"version": "1.0.9"
+},
+{
+"name": "gerbv a Gerber (RS-274X) viewer",
+"version": "2.7.0"
+},
+{
+"name": "gkernel: rng-tools / ethtool",
+"version": "6.1"
+},
+{
+"name": "gkernel: rng-tools / ethtool",
+"version": "v5.9"
+},
+{
+"name": "GLib",
+"version": "2.74.6"
+},
+{
+"name": "GMP",
+"version": "6.2.1"
+},
+{
+"name": "GNU Autoconf",
+"version": "v2.71"
+},
+{
+"name": "GNU C Library",
+"version": "2.2.3pre1"
+},
+{
+"name": "GNU C Library",
+"version": "2.36"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "12.2.0"
+},
+{
+"name": "GNU Core Utilities",
+"version": "9.1"
+},
+{
+"name": "GNU cpio",
+"version": "2.13"
+},
+{
+"name": "GNU Diff Utilities",
+"version": "3.7"
+},
+{
+"name": "GNU ed",
+"version": "1.19"
+},
+{
+"name": "GNU grep",
+"version": "v3.8"
+},
+{
+"name": "GNU GRUB",
+"version": "2.06"
+},
+{
+"name": "GNU Libtool",
+"version": "v2.4.7"
+},
+{
+"name": "GNU MPC",
+"version": "1.3.1"
+},
+{
+"name": "GNU MPFR",
+"version": "4.2.0"
+},
+{
+"name": "GNU nano",
+"version": "7.2"
+},
+{
+"name": "GNU tar",
+"version": "1.34"
+},
+{
+"name": "gnubik",
+"version": "2.2"
+},
+{
+"name": "GnuPG",
+"version": "1.6"
+},
+{
+"name": "GnuPG Made Easy",
+"version": ""
+},
+{
+"name": "GnuTLS",
+"version": "3.7.9"
+},
+{
+"name": "GPL 2.0 with OpenSSL Exception List::SomeUtils",
+"version": "0.59"
+},
+{
+"name": "gpm",
+"version": "1.20.7"
+},
+{
+"name": "Graalpython Resources",
+"version": "24.0.0"
+},
+{
+"name": "Graalpython Resources",
+"version": "24.1.2"
+},
+{
+"name": "groff",
+"version": "1.22.4"
+},
+{
+"name": "grub-cloud",
+"version": "0.0.5"
+},
+{
+"name": "grub-efi-amd64-signed",
+"version": "1+2.06+13+deb12u1"
+},
+{
+"name": "gtick",
+"version": "0.5.0"
+},
+{
+"name": "gzip",
+"version": "1.12"
+},
+{
+"name": "hddtemp",
+"version": "0.3-beta13"
+},
+{
+"name": "hostname",
+"version": "3.23+nmu1"
+},
+{
+"name": "ICU for C/C++ (ICU4C)",
+"version": "72-1"
+},
+{
+"name": "idna",
+"version": "3.3"
+},
+{
+"name": "indirect",
+"version": "0.39"
+},
+{
+"name": "Info-Zip",
+"version": "6.0"
+},
+{
+"name": "init-system-helpers",
+"version": "1.65.2"
+},
+{
+"name": "initramfs-tools",
+"version": "0.142+deb12u3"
+},
+{
+"name": "IO::Compress",
+"version": "2.105"
+},
+{
+"name": "IO::HTML",
+"version": "1.004"
+},
+{
+"name": "IO::Interactive",
+"version": "1.023"
+},
+{
+"name": "IO::Socket::Socks",
+"version": "0.74"
+},
+{
+"name": "IO::String",
+"version": "1.08"
+},
+{
+"name": "IO::Tty",
+"version": "1.18"
+},
+{
+"name": "IPC::System::Simple",
+"version": "1.30"
+},
+{
+"name": "iproute2",
+"version": "6.1.0"
+},
+{
+"name": "IPTables",
+"version": "1.8.9"
+},
+{
+"name": "iputils",
+"version": "20221126"
+},
+{
+"name": "isl",
+"version": "0.25"
+},
+{
+"name": "jansson",
+"version": "2.14"
+},
+{
+"name": "jaraco.context",
+"version": "4.2.0"
+},
+{
+"name": "javascript-common",
+"version": "11+nmu1"
+},
+{
+"name": "JBIG-KIT lossless image compression library",
+"version": "2.1"
+},
+{
+"name": "jinjapython",
+"version": "3.1.2"
+},
+{
+"name": "jmespath",
+"version": "1.0.1"
+},
+{
+"name": "jQuery",
+"version": "3.6.1"
+},
+{
+"name": "json-c",
+"version": "0.16"
+},
+{
+"name": "keyutils",
+"version": "1.6.3"
+},
+{
+"name": "klibc-kinit",
+"version": ""
+},
+{
+"name": "klibc-utils",
+"version": "2.0.12"
+},
+{
+"name": "kmod",
+"version": "30+20221128"
+},
+{
+"name": "krb5/krb5",
+"version": "1.20.1"
+},
+{
+"name": "lerc",
+"version": "4.0.0"
+},
+{
+"name": "Less",
+"version": "590"
+},
+{
+"name": "libaom",
+"version": "3.6.0"
+},
+{
+"name": "libapt-pkg-perl",
+"version": "0.1.40+b2"
+},
+{
+"name": "libapt-pkg6.0",
+"version": "2.6.1"
+},
+{
+"name": "libasan8",
+"version": "12.2.0"
+},
+{
+"name": "libatomic1",
+"version": "12.2.0"
+},
+{
+"name": "libavif",
+"version": "0.11.1"
+},
+{
+"name": "libberkeleydb-perl",
+"version": "0.64"
+},
+{
+"name": "libbpf",
+"version": "1.1.0"
+},
+{
+"name": "libbsd",
+"version": "0.11.7"
+},
+{
+"name": "libcap",
+"version": "2.66"
+},
+{
+"name": "libcap-ng",
+"version": "0.8.3"
+},
+{
+"name": "libcapture-tiny-perl",
+"version": "0.48"
+},
+{
+"name": "libcbor",
+"version": "v0.8.0"
+},
+{
+"name": "libcgi-pm-perl",
+"version": "4.55"
+},
+{
+"name": "libclone-perl",
+"version": "0.46"
+},
+{
+"name": "libcpan-meta-yaml-perl",
+"version": "0.018"
+},
+{
+"name": "libcpanel-json-xs-perl",
+"version": "4.35"
+},
+{
+"name": "libcrypt1",
+"version": "4.4.33"
+},
+{
+"name": "libctf-nobfd0",
+"version": "2.40"
+},
+{
+"name": "libdata-dump-perl",
+"version": "1.25"
+},
+{
+"name": "libdata-messagepack-perl",
+"version": "1.02"
+},
+{
+"name": "libdata-optlist-perl",
+"version": "0.113"
+},
+{
+"name": "libde265",
+"version": "1.0.11"
+},
+{
+"name": "libdeflate",
+"version": "1.14"
+},
+{
+"name": "libdigest-sha-perl",
+"version": "6.02"
+},
+{
+"name": "libedit2",
+"version": "3.1"
+},
+{
+"name": "libefi",
+"version": "0.1.0"
+},
+{
+"name": "libev",
+"version": "4.33"
+},
+{
+"name": "libexception-class-perl",
+"version": "1.45"
+},
+{
+"name": "libexpat",
+"version": "2.5.0"
+},
+{
+"name": "libexporter-tiny-perl",
+"version": "1.006000"
+},
+{
+"name": "libfcgi-dev",
+"version": "2.4.2"
+},
+{
+"name": "libfcgi-perl",
+"version": "0.82+ds"
+},
+{
+"name": "libfeature-compat-class-perl",
+"version": "0.05"
+},
+{
+"name": "libfeature-compat-try-perl",
+"version": "0.05"
+},
+{
+"name": "libffi",
+"version": "3.4.4"
+},
+{
+"name": "libfido2",
+"version": "1.12.0"
+},
+{
+"name": "libfido2-1",
+"version": "1.12.0"
+},
+{
+"name": "libfile-basedir-perl",
+"version": "0.09"
+},
+{
+"name": "libfile-touch-perl",
+"version": "0.12"
+},
+{
+"name": "libfont-afm-perl",
+"version": "1.20"
+},
+{
+"name": "libfont-ttf-perl",
+"version": "1.06"
+},
+{
+"name": "libfreezethaw-perl",
+"version": "0.5001"
+},
+{
+"name": "libfuture-asyncawait-perl",
+"version": "0.63"
+},
+{
+"name": "libfuture-perl",
+"version": "0.49"
+},
+{
+"name": "libgav1-0",
+"version": "0.18.0"
+},
+{
+"name": "libgcc-s1",
+"version": "12.2.0"
+},
+{
+"name": "libgcrypt",
+"version": "1.10.1"
+},
+{
+"name": "libgdbm",
+"version": "v1.23"
+},
+{
+"name": "libgpg-error",
+"version": "1.4"
+},
+{
+"name": "libgpg-error",
+"version": "1.46"
+},
+{
+"name": "libheif1",
+"version": "1.15.1"
+},
+{
+"name": "libhogweed6",
+"version": "3.8.1"
+},
+{
+"name": "libhtml-format-perl",
+"version": "2.16"
+},
+{
+"name": "Libidn",
+"version": "2.3.3"
+},
+{
+"name": "libio-pty-perl",
+"version": "1.17"
+},
+{
+"name": "libio-socket-ssl-perl",
+"version": "2.016"
+},
+{
+"name": "libio-socket-ssl-perl",
+"version": "2.081"
+},
+{
+"name": "libip6tc2",
+"version": "1.8.9"
+},
+{
+"name": "libipc-run-perl",
+"version": "20220807.0"
+},
+{
+"name": "libipc-run3-perl",
+"version": "0.048"
+},
+{
+"name": "libitm1",
+"version": "12.2.0"
+},
+{
+"name": "libjpeg-turbo",
+"version": "2.1.5"
+},
+{
+"name": "libjs-popper.js",
+"version": "1.16.1+ds"
+},
+{
+"name": "libjson-maybexs-perl",
+"version": "1.004004"
+},
+{
+"name": "libklibc",
+"version": "2.0.12"
+},
+{
+"name": "libksba",
+"version": "1.6.3"
+},
+{
+"name": "liblz-dbg",
+"version": "1.13"
+},
+{
+"name": "libmail-sendmail-perl",
+"version": "0.80"
+},
+{
+"name": "libmarkdown2",
+"version": "2.2.7"
+},
+{
+"name": "libmath-random-secure-perl",
+"version": "0.080001"
+},
+{
+"name": "libmd0",
+"version": "1.0.4"
+},
+{
+"name": "libmime-perl",
+"version": "5.510"
+},
+{
+"name": "libmnl",
+"version": "1.0.4"
+},
+{
+"name": "libmoo-perl",
+"version": "2.005005"
+},
+{
+"name": "libmouse-perl",
+"version": "2.5.10"
+},
+{
+"name": "libnet-domain-tld-perl",
+"version": "1.75"
+},
+{
+"name": "libnet-ipv6addr-perl",
+"version": "1.02"
+},
+{
+"name": "libnet-ssleay-perl",
+"version": "1.92"
+},
+{
+"name": "libnetaddr-ip-perl",
+"version": "4.079"
+},
+{
+"name": "libnetfilter-conntrack-dev",
+"version": "1.0.9"
+},
+{
+"name": "libnettle8",
+"version": "3.8.1"
+},
+{
+"name": "libnfnetlink",
+"version": "1.0.2"
+},
+{
+"name": "libnftnl",
+"version": "1.2.4"
+},
+{
+"name": "libnpth0",
+"version": "1.6"
+},
+{
+"name": "libnsl",
+"version": "1.3.0"
+},
+{
+"name": "libnss-db",
+"version": "2.2.3pre1"
+},
+{
+"name": "libnss-myhostname",
+"version": "252.38"
+},
+{
+"name": "libnuma1",
+"version": "2.0.16"
+},
+{
+"name": "libobject-pad-perl",
+"version": "0.78"
+},
+{
+"name": "libp11-kit0",
+"version": "0.24.1"
+},
+{
+"name": "libpackage-stash-perl",
+"version": "0.30"
+},
+{
+"name": "libpackage-stash-perl",
+"version": "0.40"
+},
+{
+"name": "libpam-systemd",
+"version": "252.38"
+},
+{
+"name": "libpath-iterator-rule-perl",
+"version": "1.015"
+},
+{
+"name": "libpath-tiny-perl",
+"version": "0.144"
+},
+{
+"name": "libpcap",
+"version": "1.10.3"
+},
+{
+"name": "libpipeline - pipeline manipulation library",
+"version": "1.5.7"
+},
+{
+"name": "libpng",
+"version": "v1.6.39"
+},
+{
+"name": "libpod-parser-perl",
+"version": "1.65"
+},
+{
+"name": "libpolkit-agent-1-0",
+"version": "122"
+},
+{
+"name": "libpsl",
+"version": "0.21.2"
+},
+{
+"name": "libre-engine-re2-perl",
+"version": "0.17+ds"
+},
+{
+"name": "libref-util-xs-perl",
+"version": "0.117"
+},
+{
+"name": "libregexp-wildcards-perl",
+"version": "1.05"
+},
+{
+"name": "librtmp",
+"version": "2.4+20151223.gitfa8646d.1"
+},
+{
+"name": "libscalar-list-utils-perl",
+"version": "1.62"
+},
+{
+"name": "libsemanage1",
+"version": "3.4"
+},
+{
+"name": "libsepol",
+"version": "3.4"
+},
+{
+"name": "libset-intspan-perl",
+"version": "1.19"
+},
+{
+"name": "libsocket6-perl",
+"version": "0.29"
+},
+{
+"name": "libsodium",
+"version": "1.0.18"
+},
+{
+"name": "libss",
+"version": "1.47.0"
+},
+{
+"name": "libssh2",
+"version": "1.10.0"
+},
+{
+"name": "libstdc++6",
+"version": "12.2.0"
+},
+{
+"name": "libsub-exporter-perl",
+"version": "0.989"
+},
+{
+"name": "libsub-install-perl",
+"version": "0.929"
+},
+{
+"name": "libsub-quote-perl",
+"version": "2.006008"
+},
+{
+"name": "libsyntax-keyword-try-perl",
+"version": "0.28"
+},
+{
+"name": "libsystemd0",
+"version": "252.38"
+},
+{
+"name": "Libtasn1",
+"version": "4.19.0"
+},
+{
+"name": "libtest-simple-perl",
+"version": "1.302190"
+},
+{
+"name": "libtirpc",
+"version": "1.3.3"
+},
+{
+"name": "libtype-tiny-perl",
+"version": "2.002001"
+},
+{
+"name": "libtype-tiny-xs-perl",
+"version": "0.025"
+},
+{
+"name": "libuchardet0",
+"version": "0.0.7"
+},
+{
+"name": "libunistring",
+"version": "v1.0"
+},
+{
+"name": "libunwind",
+"version": "v1.6.2"
+},
+{
+"name": "libwant-perl",
+"version": "0.29"
+},
+{
+"name": "libwebp",
+"version": "1.2.4"
+},
+{
+"name": "libwww-mechanize-perl",
+"version": "2.16"
+},
+{
+"name": "libwww-perl",
+"version": "6.68"
+},
+{
+"name": "libx11-data",
+"version": "1.8.4"
+},
+{
+"name": "libxcrypt",
+"version": "4.4.33"
+},
+{
+"name": "libXdmcp",
+"version": "1.1.2"
+},
+{
+"name": "libxml-libxml-perl",
+"version": "2.0207"
+},
+{
+"name": "libxml2",
+"version": "2.9.14"
+},
+{
+"name": "libxpm4",
+"version": "3.5.12"
+},
+{
+"name": "libxs-parse-keyword-perl",
+"version": "0.33"
+},
+{
+"name": "libxs-parse-sublike-perl",
+"version": "0.16"
+},
+{
+"name": "libxstring-perl",
+"version": "0.005"
+},
+{
+"name": "LibYAML",
+"version": "0.2.5"
+},
+{
+"name": "libyuv",
+"version": "0.0~git20230123.b2528b0"
+},
+{
+"name": "licensecheck",
+"version": "3.3.5"
+},
+{
+"name": "Lintian",
+"version": "2.116.3"
+},
+{
+"name": "Linux Extended Attributes",
+"version": ""
+},
+{
+"name": "Linux Unified Key Setup",
+"version": "2.6.1"
+},
+{
+"name": "linux-base",
+"version": "4.9"
+},
+{
+"name": "Linux-Pam",
+"version": "v1.5.2"
+},
+{
+"name": "List::UtilsBy",
+"version": "0.12"
+},
+{
+"name": "Locales",
+"version": "2.36"
+},
+{
+"name": "Log::Any",
+"version": "1.713"
+},
+{
+"name": "logsave",
+"version": "1.47.0"
+},
+{
+"name": "lsb-release",
+"version": "12.0"
+},
+{
+"name": "lsb-release-minimal",
+"version": "12.0"
+},
+{
+"name": "LWP::Protocol::https",
+"version": "6.10"
+},
+{
+"name": "lz4",
+"version": "1.9.4"
+},
+{
+"name": "man-db",
+"version": "2.11.2"
+},
+{
+"name": "man-pages",
+"version": "6.03"
+},
+{
+"name": "markdown-it-py",
+"version": "2.1.0"
+},
+{
+"name": "MarkupSafe",
+"version": "2.1.2"
+},
+{
+"name": "Math::Base85",
+"version": "0.5"
+},
+{
+"name": "Math::Random::ISAAC",
+"version": "1.004"
+},
+{
+"name": "mawk",
+"version": "1.3.4.20200120"
+},
+{
+"name": "mcrypt",
+"version": "2.5.13"
+},
+{
+"name": "media-types",
+"version": "10.0.0"
+},
+{
+"name": "MIME::Base64",
+"version": "3.16"
+},
+{
+"name": "MLDBM",
+"version": "2.05"
+},
+{
+"name": "Module::Find",
+"version": "0.16"
+},
+{
+"name": "Module::Metadata",
+"version": "1.000037"
+},
+{
+"name": "Mojo Framework",
+"version": "9.31"
+},
+{
+"name": "Mojo::Server::FastCGI",
+"version": "0.50"
+},
+{
+"name": "mokutil",
+"version": "0.6.0"
+},
+{
+"name": "more-itertools",
+"version": "9.0.0"
+},
+{
+"name": "mountall",
+"version": "2.36.4ubuntu0.1"
+},
+{
+"name": "ncurses",
+"version": "6.4"
+},
+{
+"name": "ncurses-bin",
+"version": "6.4"
+},
+{
+"name": "ncurses-utils",
+"version": "6.4.20230128"
+},
+{
+"name": "net-http",
+"version": "6.22"
+},
+{
+"name": "Net::Netmask",
+"version": "2.0002"
+},
+{
+"name": "NetBase",
+"version": "6.4"
+},
+{
+"name": "netifaces",
+"version": "0.11.0"
+},
+{
+"name": "nghttp2",
+"version": "v1.52.0"
+},
+{
+"name": "node-jquery",
+"version": "3.6.1"
+},
+{
+"name": "nplan",
+"version": "0.106"
+},
+{
+"name": "oauthlib/oauthlib",
+"version": "3.2.2"
+},
+{
+"name": "OpenLDAP",
+"version": "2.5.13"
+},
+{
+"name": "OpenSSH",
+"version": "9.2p1"
+},
+{
+"name": "OpenSSH",
+"version": "9.9p1"
+},
+{
+"name": "OpenSSL",
+"version": "3.0.16"
+},
+{
+"name": "orcupine.org/pub/security/index.html",
+"version": ""
+},
+{
+"name": "p11-kit-trust",
+"version": "0.24.1"
+},
+{
+"name": "Parallel BZIP2 (PBZIP2)",
+"version": "1.1.13"
+},
+{
+"name": "pci.ids",
+"version": "0.0~2023.04.11"
+},
+{
+"name": "PCRE2",
+"version": "10.42"
+},
+{
+"name": "Perl",
+"version": "v5.36.0"
+},
+{
+"name": "Perl TimeDate",
+"version": "2.31"
+},
+{
+"name": "perl-Class-Struct",
+"version": "0.66"
+},
+{
+"name": "perl-DBM_Filter",
+"version": "0.06"
+},
+{
+"name": "perl-Error",
+"version": "0.17029"
+},
+{
+"name": "perl-ExtUtils-Constant",
+"version": "0.25"
+},
+{
+"name": "perl-File-Basename",
+"version": "2.85"
+},
+{
+"name": "perl-File-DosGlob",
+"version": "1.12"
+},
+{
+"name": "perl-Filter-Simple",
+"version": "0.96"
+},
+{
+"name": "perl-future-doc",
+"version": "0.49"
+},
+{
+"name": "perl-http-message",
+"version": "6.44"
+},
+{
+"name": "perl-IPC-Cmd",
+"version": "1.04"
+},
+{
+"name": "perl-libnetcfg",
+"version": "5.40.2"
+},
+{
+"name": "perl-libwww",
+"version": "6.68"
+},
+{
+"name": "perl-Locale-Maketext-Simple",
+"version": "0.21"
+},
+{
+"name": "perl-moo-doc",
+"version": "2.005005"
+},
+{
+"name": "perl-openssl-defaults",
+"version": "7+b1"
+},
+{
+"name": "perl-overloading",
+"version": "0.02"
+},
+{
+"name": "perl-Params-Check",
+"version": "0.38"
+},
+{
+"name": "perl-Term-ANSIColor",
+"version": "5.01"
+},
+{
+"name": "perl-Term-Complete",
+"version": "1.403"
+},
+{
+"name": "perl-Term-ReadLine",
+"version": "1.17"
+},
+{
+"name": "perl-Thread-Semaphore",
+"version": "2.13"
+},
+{
+"name": "perl-Tie",
+"version": "4.6"
+},
+{
+"name": "perl-Tie-File",
+"version": "1.06"
+},
+{
+"name": "perl-Tie-Memoize",
+"version": "1.1"
+},
+{
+"name": "perl-URI",
+"version": "5.17"
+},
+{
+"name": "perl-User-pwent",
+"version": "1.03"
+},
+{
+"name": "PerlIO::gzip",
+"version": "0.20"
+},
+{
+"name": "PerlIO::utf8_strict",
+"version": "0.010"
+},
+{
+"name": "pinentry-curses",
+"version": "1.2.1"
+},
+{
+"name": "pixz",
+"version": "1.0.7"
+},
+{
+"name": "platformdirs",
+"version": "2.6.0"
+},
+{
+"name": "plzip",
+"version": "1.10"
+},
+{
+"name": "PNG Reference Library version",
+"version": "2"
+},
+{
+"name": "Pod::Escapes",
+"version": "1.07"
+},
+{
+"name": "Pod::Perldoc",
+"version": "3.28.01"
+},
+{
+"name": "podlators",
+"version": "4.14"
+},
+{
+"name": "PolicyKit",
+"version": "122"
+},
+{
+"name": "popper.js",
+"version": "0.0.0"
+},
+{
+"name": "popt",
+"version": "1.19"
+},
+{
+"name": "pristine-tar",
+"version": "1.50"
+},
+{
+"name": "Proc::ProcessTable",
+"version": "0.634"
+},
+{
+"name": "Procps",
+"version": "4.0.2"
+},
+{
+"name": "prompt-toolkit/python-prompt -toolkit",
+"version": "3.0.36"
+},
+{
+"name": "psf-requests",
+"version": "2.28.1"
+},
+{
+"name": "psmisc",
+"version": "23.6"
+},
+{
+"name": "py3-platformdirs",
+"version": "2.6.2"
+},
+{
+"name": "pyasn1",
+"version": "0.4.8"
+},
+{
+"name": "pyca/cryptography",
+"version": "38.0.4"
+},
+{
+"name": "PyJWT",
+"version": "2.6.0"
+},
+{
+"name": "pypi/setuptools",
+"version": "66.1.1"
+},
+{
+"name": "pyrsistent",
+"version": "0.18.1"
+},
+{
+"name": "pySerial",
+"version": "3.5"
+},
+{
+"name": "python cffi",
+"version": "1.15.1"
+},
+{
+"name": "Python programming language",
+"version": "3.11.2"
+},
+{
+"name": "Python six",
+"version": "1.10.0"
+},
+{
+"name": "Python six",
+"version": "1.16.0"
+},
+{
+"name": "python-apt",
+"version": "2.6.0"
+},
+{
+"name": "python-attrs",
+"version": "22.2.0"
+},
+{
+"name": "python-bcdoc",
+"version": "0.16.0"
+},
+{
+"name": "python-certifi",
+"version": "2022.9.24"
+},
+{
+"name": "python-cryptography",
+"version": "38.0.4"
+},
+{
+"name": "python-dateutil",
+"version": "2.8.2"
+},
+{
+"name": "python-debian",
+"version": "0.1.49"
+},
+{
+"name": "python-distro",
+"version": "1.8.0"
+},
+{
+"name": "python-json-patch",
+"version": "1.32"
+},
+{
+"name": "python-json-pointer",
+"version": "2.3"
+},
+{
+"name": "python-jsonschema",
+"version": "4.10.3"
+},
+{
+"name": "python-magic",
+"version": "0.4.26"
+},
+{
+"name": "python-prompt-toolkit",
+"version": "3.0.36"
+},
+{
+"name": "python-pygments",
+"version": "2.14.0"
+},
+{
+"name": "python-pygments",
+"version": "2.17.2"
+},
+{
+"name": "python-pyparsing",
+"version": "3.0.9"
+},
+{
+"name": "Python-Roman",
+"version": "3.3"
+},
+{
+"name": "python-typing-extensions",
+"version": "4.4.0"
+},
+{
+"name": "python-unidiff",
+"version": "0.7.3"
+},
+{
+"name": "python-xdg",
+"version": "0.28"
+},
+{
+"name": "python3-charset-normalizer",
+"version": "3.0.1"
+},
+{
+"name": "python3-importlib-resources",
+"version": "5.4.0"
+},
+{
+"name": "python3-mdurl",
+"version": "0.1.2"
+},
+{
+"name": "python3-pyrsistent",
+"version": "0.18.1"
+},
+{
+"name": "python3-rich",
+"version": "13.3.1"
+},
+{
+"name": "python3-ruamel.yaml.clib",
+"version": "0.2.7"
+},
+{
+"name": "python3-six",
+"version": "1.16.0"
+},
+{
+"name": "python3-stdlib-extensions",
+"version": "3.11.2"
+},
+{
+"name": "PyYAML",
+"version": "6.0"
+},
+{
+"name": "rav1e",
+"version": "0.5.1"
+},
+{
+"name": "Readline",
+"version": "8.1"
+},
+{
+"name": "Readline",
+"version": "8.2"
+},
+{
+"name": "Ref::Util",
+"version": "0.204"
+},
+{
+"name": "Regexp::IPv6",
+"version": "0.03"
+},
+{
+"name": "Role::Tiny",
+"version": "2.002004"
+},
+{
+"name": "rtmpdump",
+"version": "2.4+20151223.gitfa8646d.1"
+},
+{
+"name": "ruamel-yaml",
+"version": "0.17.21"
+},
+{
+"name": "s3transfer",
+"version": "0.5.2"
+},
+{
+"name": "Seccomp Library",
+"version": "2.5.4"
+},
+{
+"name": "selinux",
+"version": "3.4"
+},
+{
+"name": "sensible-utils",
+"version": "0.0.17+nmu1"
+},
+{
+"name": "sgml-base",
+"version": "1.31"
+},
+{
+"name": "Shadow Tool Suite",
+"version": "4.13"
+},
+{
+"name": "shim-helpers-amd64-signed",
+"version": "1+15.8+1~deb12u1"
+},
+{
+"name": "shim-signed",
+"version": "1.44~1+deb12u1+15.8"
+},
+{
+"name": "socat",
+"version": "1.7.4.4"
+},
+{
+"name": "software.amazon.awscdk:cd k-asset-awscli-v2",
+"version": "0.0.3"
+},
+{
+"name": "SQLite",
+"version": "3.40.1"
+},
+{
+"name": "strace",
+"version": "6.1"
+},
+{
+"name": "strip-nondeterminism",
+"version": "1.13.1"
+},
+{
+"name": "sudo",
+"version": "1.9.13p3"
+},
+{
+"name": "SVT-AV1",
+"version": "1.2.1"
+},
+{
+"name": "SVT-AV1",
+"version": "1.4.1"
+},
+{
+"name": "systemd",
+"version": "252.38"
+},
+{
+"name": "systemd-sysvinit",
+"version": "208"
+},
+{
+"name": "systemd-timesyncd",
+"version": "252.38"
+},
+{
+"name": "sysvinit",
+"version": "3.06"
+},
+{
+"name": "t1utils",
+"version": "1.41"
+},
+{
+"name": "tcp-wrappers",
+"version": "7.6.q: ftp://ftp.p"
+},
+{
+"name": "tcpdump",
+"version": "4.99.3"
+},
+{
+"name": "Test::Harness",
+"version": "3.44"
+},
+{
+"name": "Text::Markdown::Discount",
+"version": "0.16"
+},
+{
+"name": "The FreeType Project",
+"version": "2.12.1"
+},
+{
+"name": "The PCI Utilities",
+"version": "3.9.0"
+},
+{
+"name": "thkukuk/rpcsvc-proto",
+"version": "v1.4.3"
+},
+{
+"name": "Thread::Queue",
+"version": "3.14"
+},
+{
+"name": "Time Zone Database",
+"version": "2023c"
+},
+{
+"name": "Time Zone Database",
+"version": "2025b"
+},
+{
+"name": "tinycss2",
+"version": "1.1.1"
+},
+{
+"name": "traceroute",
+"version": "2.1.2"
+},
+{
+"name": "traceroute",
+"version": "2.1.3"
+},
+{
+"name": "try-tiny",
+"version": "0.31"
+},
+{
+"name": "twitter-bootstrap4",
+"version": "4.6.1"
+},
+{
+"name": "Types::Serialiser",
+"version": "1.01"
+},
+{
+"name": "ucf",
+"version": "3.0043+nmu1+deb12u1"
+},
+{
+"name": "uchardet",
+"version": "0.0.7"
+},
+{
+"name": "udev",
+"version": "252.38"
+},
+{
+"name": "UEFI shim loader",
+"version": "15+1533136590.3beb971"
+},
+{
+"name": "UEFI shim loader",
+"version": "15.8"
+},
+{
+"name": "unattended-upgrades",
+"version": "2.9.1+nmu3"
+},
+{
+"name": "urllib3",
+"version": "1.26.12"
+},
+{
+"name": "usrmerge",
+"version": "37~deb12u1"
+},
+{
+"name": "util-linux",
+"version": "2.38.1"
+},
+{
+"name": "util-linux-script",
+"version": "2.41.1"
+},
+{
+"name": "Variable::Magic",
+"version": "0.63"
+},
+{
+"name": "Vim",
+"version": "9.0.1378"
+},
+{
+"name": "wcwidth",
+"version": "0.2.5"
+},
+{
+"name": "wdiff",
+"version": "1.2.2"
+},
+{
+"name": "willmcgugan/rich",
+"version": "v13.3.1"
+},
+{
+"name": "wireguard-tools",
+"version": "1.0.20200729"
+},
+{
+"name": "x265",
+"version": "3.5"
+},
+{
+"name": "XCB",
+"version": "1.15"
+},
+{
+"name": "xml-core",
+"version": "0.18+nmu1"
+},
+{
+"name": "XML-Parser",
+"version": "2.46"
+},
+{
+"name": "XML::LibXML",
+"version": "2.0134"
+},
+{
+"name": "xorg-x11",
+"version": "1.0.9"
+},
+{
+"name": "xorg-x11",
+"version": "1.8.4"
+},
+{
+"name": "XZ Utils",
+"version": "5.4.1"
+},
+{
+"name": "YAML::LibYAML",
+"version": "0.86"
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+},
+{
+"name": "zstd",
+"version": "1.5.4"
+}
+],
+"extractors": [
+"component_license"
+],
+"kind": "pdf",
+"product": "Cloud Volumes ONTAP",
+"retrieved": "2026-11-08",
+"sha256": "2a14421e091a8dd4f7c6356f32c94b4147609fdc100018d5180ef4cab421de3e",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/Cloud_Volumes_ONTAP/9.17.1GA_on_Debian/NOTICE.pdf",
+"version": "9.17.1"
+}

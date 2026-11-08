@@ -1,0 +1,66 @@
+{
+"components": [
+{
+"name": "ant-contrib",
+"version": "1.0b3"
+},
+{
+"name": "Apache Commons Collections",
+"version": "3.2.2"
+},
+{
+"name": "chaki",
+"version": "0.1.0"
+},
+{
+"name": "Direct Web Remoting",
+"version": "2.0.4"
+},
+{
+"name": "Eclipse ECJ",
+"version": "4.4.1"
+},
+{
+"name": "Ext JS - Jangaroo Packaged",
+"version": "0.9.10"
+},
+{
+"name": "Ext.i18n.Bundle",
+"version": "v1.0.0"
+},
+{
+"name": "JavaMail",
+"version": "1.4.6"
+},
+{
+"name": "JavaMail API pop3 provider",
+"version": "1.4.6"
+},
+{
+"name": "JavaMail API smtp provider",
+"version": "1.4.6-rc1"
+},
+{
+"name": "JBoss Community Application Server",
+"version": "6.0.0.Final"
+},
+{
+"name": "JSch",
+"version": "0.1.49"
+},
+{
+"name": "mxgraph",
+"version": "v3.3.1.1"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "vSensor",
+"retrieved": "2026-11-08",
+"sha256": "dfd21ff3a394de5ecd9620db28aa3cb10d8e0cfb5a9c417d61cee29778ce2c02",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/3f6cb944648140e5806ce8aedab0d8ea?v=a974130f",
+"version": "8.3"
+}

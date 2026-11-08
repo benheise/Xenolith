@@ -1,0 +1,2034 @@
+{
+"components": [
+{
+"name": "@babel/runtime",
+"version": "7.26.10"
+},
+{
+"name": "@emotion/is-prop-valid",
+"version": "1.2.2"
+},
+{
+"name": "@emotion/memoize",
+"version": "0.8.1"
+},
+{
+"name": "@emotion/unitless",
+"version": "0.8.1"
+},
+{
+"name": "@microsoft/signalr",
+"version": "6.0.15"
+},
+{
+"name": "@react-aria/focus",
+"version": "3.21.2"
+},
+{
+"name": "@react-aria/interactions",
+"version": "3.25.6"
+},
+{
+"name": "@react-aria/ssr",
+"version": "3.9.10"
+},
+{
+"name": "@react-aria/utils",
+"version": "3.31.0"
+},
+{
+"name": "@react-dnd/asap",
+"version": "5.0.2"
+},
+{
+"name": "@react-dnd/invariant",
+"version": "4.0.2"
+},
+{
+"name": "@react-dnd/shallowequal",
+"version": "4.0.2"
+},
+{
+"name": "@react-stately/flags",
+"version": "3.1.2"
+},
+{
+"name": "@react-stately/utils",
+"version": "3.10.8"
+},
+{
+"name": "@react-types/shared",
+"version": "3.32.1"
+},
+{
+"name": "@swc/helpers",
+"version": "0.5.15"
+},
+{
+"name": "@types/element-resize-event",
+"version": "3.0.2"
+},
+{
+"name": "@types/prop-types",
+"version": "15.7.5"
+},
+{
+"name": "@types/react",
+"version": "18.0.23"
+},
+{
+"name": "@types/react-window",
+"version": "1.8.8"
+},
+{
+"name": "@types/scheduler",
+"version": "0.16.2"
+},
+{
+"name": "@types/stylis",
+"version": "4.2.5"
+},
+{
+"name": "@types/trusted-types",
+"version": "2.0.7"
+},
+{
+"name": "abort-controller",
+"version": "3.0.0"
+},
+{
+"name": "Abseil Common Libraries (C++)",
+"version": "20220623.1"
+},
+{
+"name": "Antlr3.Runtime",
+"version": "3.5.0.2"
+},
+{
+"name": "Autofac",
+"version": "6.5.0"
+},
+{
+"name": "Autofac.Extensions.DependencyInjection",
+"version": "8.0.0"
+},
+{
+"name": "AutoMapper",
+"version": "10.1.1"
+},
+{
+"name": "AutoMapper",
+"version": "12.0.1"
+},
+{
+"name": "AutoMapper",
+"version": "13.0.1"
+},
+{
+"name": "Azure.Core",
+"version": "1.38.0"
+},
+{
+"name": "Azure.Core",
+"version": "1.44.1"
+},
+{
+"name": "Azure.Identity",
+"version": "1.11.4"
+},
+{
+"name": "Azure.Identity",
+"version": "1.13.2"
+},
+{
+"name": "Boost",
+"version": "1.89"
+},
+{
+"name": "BouncyCastle.Cryptography",
+"version": "2.4.0"
+},
+{
+"name": "breakpad",
+"version": "2019-04-01"
+},
+{
+"name": "camelize",
+"version": "1.0.1"
+},
+{
+"name": "canvas-toBlob",
+"version": "1.0.0"
+},
+{
+"name": "canvg-browser",
+"version": "1.0.0"
+},
+{
+"name": "Castle.Core",
+"version": "5.1.0"
+},
+{
+"name": "CefSharp.Common",
+"version": "117.2.40"
+},
+{
+"name": "CefSharp.OffScreen",
+"version": "117.2.40"
+},
+{
+"name": "clsx",
+"version": "1.2.1"
+},
+{
+"name": "clsx",
+"version": "2.1.1"
+},
+{
+"name": "commander",
+"version": "2.20.1"
+},
+{
+"name": "css-color-keywords",
+"version": "1.0.0"
+},
+{
+"name": "css-to-react-native",
+"version": "3.2.0"
+},
+{
+"name": "csstype",
+"version": "3.1.1"
+},
+{
+"name": "csstype",
+"version": "3.1.3"
+},
+{
+"name": "d3-array",
+"version": "1.2.1"
+},
+{
+"name": "d3-array",
+"version": "1.2.4"
+},
+{
+"name": "d3-brush",
+"version": "1.1.3"
+},
+{
+"name": "d3-collection",
+"version": "1.0.1"
+},
+{
+"name": "d3-collection",
+"version": "1.0.7"
+},
+{
+"name": "d3-color",
+"version": "1.4.0"
+},
+{
+"name": "d3-dispatch",
+"version": "1.0.5"
+},
+{
+"name": "d3-drag",
+"version": "1.2.4"
+},
+{
+"name": "d3-dsv",
+"version": "1.1.1"
+},
+{
+"name": "d3-ease",
+"version": "1.0.5"
+},
+{
+"name": "d3-format",
+"version": "1.4.1"
+},
+{
+"name": "d3-hierarchy",
+"version": "1.0.0"
+},
+{
+"name": "d3-interpolate",
+"version": "1.3.2"
+},
+{
+"name": "d3-interpolate-path",
+"version": "2.1.1"
+},
+{
+"name": "d3-path",
+"version": "1.0.8"
+},
+{
+"name": "d3-polygon",
+"version": "1.0.5"
+},
+{
+"name": "d3-queue",
+"version": "3.0.7"
+},
+{
+"name": "d3-request",
+"version": "1.0.6"
+},
+{
+"name": "d3-scale",
+"version": "2.0.0"
+},
+{
+"name": "d3-scale",
+"version": "2.2.2"
+},
+{
+"name": "d3-selection",
+"version": "1.4.0"
+},
+{
+"name": "d3-shape",
+"version": "1.0.3"
+},
+{
+"name": "d3-shape",
+"version": "1.3.5"
+},
+{
+"name": "d3-time",
+"version": "1.1.0"
+},
+{
+"name": "d3-time-format",
+"version": "2.1.3"
+},
+{
+"name": "d3-timer",
+"version": "1.0.9"
+},
+{
+"name": "d3-transition",
+"version": "1.2.0"
+},
+{
+"name": "d3-zoom",
+"version": "1.8.3"
+},
+{
+"name": "d3plus-axis",
+"version": "0.3.53"
+},
+{
+"name": "d3plus-axis",
+"version": "0.4.16"
+},
+{
+"name": "d3plus-color",
+"version": "0.6.6"
+},
+{
+"name": "d3plus-common",
+"version": "0.6.57"
+},
+{
+"name": "d3plus-export",
+"version": "0.3.16"
+},
+{
+"name": "d3plus-form",
+"version": "0.2.8"
+},
+{
+"name": "d3plus-format",
+"version": "0.1.16"
+},
+{
+"name": "d3plus-legend",
+"version": "0.8.24"
+},
+{
+"name": "d3plus-shape",
+"version": "0.14.9"
+},
+{
+"name": "d3plus-shape",
+"version": "0.16.11"
+},
+{
+"name": "d3plus-text",
+"version": "0.9.50"
+},
+{
+"name": "d3plus-timeline",
+"version": "0.3.8"
+},
+{
+"name": "d3plus-tooltip",
+"version": "0.2.7"
+},
+{
+"name": "d3plus-viz",
+"version": "0.10.14"
+},
+{
+"name": "date-fns",
+"version": "4.1.0"
+},
+{
+"name": "dnd-core",
+"version": "16.0.1"
+},
+{
+"name": "dotnet-svcutil.xmlserializer",
+"version": "8.0.0-preview1.24067.4"
+},
+{
+"name": "element-resize-event",
+"version": "3.0.6"
+},
+{
+"name": "event-target-shim",
+"version": "5.0.1"
+},
+{
+"name": "eventsource",
+"version": "1.1.2"
+},
+{
+"name": "ExCSS",
+"version": "4.2.3"
+},
+{
+"name": "fast-deep-equal",
+"version": "3.1.3"
+},
+{
+"name": "fast-equals",
+"version": "4.0.3"
+},
+{
+"name": "FastColoredTextBox.Net5",
+"version": "2.16.26"
+},
+{
+"name": "fetch-cookie",
+"version": "0.11.0"
+},
+{
+"name": "file-saver",
+"version": "1.3.3"
+},
+{
+"name": "FluentValidation",
+"version": "8.6.2"
+},
+{
+"name": "FluentValidation.AspNetCore",
+"version": "8.6.2"
+},
+{
+"name": "FluentValidation.DependencyInjectionExtensions",
+"version": "8.6.2"
+},
+{
+"name": "fmt",
+"version": "9.1.0"
+},
+{
+"name": "Google.Protobuf",
+"version": "3.21.0"
+},
+{
+"name": "Google.Protobuf",
+"version": "3.22.0"
+},
+{
+"name": "Google.Protobuf",
+"version": "3.32.0"
+},
+{
+"name": "grpc",
+"version": "1.46.6"
+},
+{
+"name": "Grpc.AspNetCore.Server",
+"version": "2.71.0"
+},
+{
+"name": "Grpc.AspNetCore.Web",
+"version": "2.71.0"
+},
+{
+"name": "Grpc.Core.Api",
+"version": "2.71.0"
+},
+{
+"name": "Grpc.Net.Client",
+"version": "2.71.0"
+},
+{
+"name": "Grpc.Net.Client.Web",
+"version": "2.71.0"
+},
+{
+"name": "Grpc.Net.Common",
+"version": "2.71.0"
+},
+{
+"name": "Handlebars.Net",
+"version": "2.1.4"
+},
+{
+"name": "HarfBuzzSharp",
+"version": "7.3.0.2"
+},
+{
+"name": "HarfBuzzSharp.NativeAssets.Win32",
+"version": "7.3.0.2"
+},
+{
+"name": "history",
+"version": "5.3.0"
+},
+{
+"name": "hoist-non-react-statics",
+"version": "3.3.2"
+},
+{
+"name": "html2canvas",
+"version": "0.5.0-beta4"
+},
+{
+"name": "HTMLayout",
+"version": "3.3.3.13"
+},
+{
+"name": "Humanizer.Core",
+"version": "2.14.1"
+},
+{
+"name": "iconv-lite",
+"version": "0.4.24"
+},
+{
+"name": "immer",
+"version": "10.1.3"
+},
+{
+"name": "Inter Tight",
+"version": ""
+},
+{
+"name": "iso639-codes",
+"version": "1.0.1"
+},
+{
+"name": "J2N",
+"version": "2.0.0"
+},
+{
+"name": "js-tokens",
+"version": "4.0.0"
+},
+{
+"name": "Json.More.Net",
+"version": "2.0.2"
+},
+{
+"name": "JsonPointer.Net",
+"version": "5.0.2"
+},
+{
+"name": "JsonSchema.Net",
+"version": "7.0.4"
+},
+{
+"name": "JsonSubTypes",
+"version": "2.0.1"
+},
+{
+"name": "LevelDB",
+"version": "1.2"
+},
+{
+"name": "Lextm.SharpSnmpLib",
+"version": "12.5.2"
+},
+{
+"name": "LiteDB",
+"version": "5.0.17"
+},
+{
+"name": "loose-envify",
+"version": "1.4.0"
+},
+{
+"name": "lrucache",
+"version": "1.0.3"
+},
+{
+"name": "Lucene.Net",
+"version": "4.8.0-beta00016"
+},
+{
+"name": "Lucene.Net.Analysis.Common",
+"version": "4.8.0-beta00016"
+},
+{
+"name": "Lucene.Net.Queries",
+"version": "4.8.0-beta00016"
+},
+{
+"name": "Lucene.Net.QueryParser",
+"version": "4.8.0-beta00016"
+},
+{
+"name": "Lucene.Net.Sandbox",
+"version": "4.8.0-beta00016"
+},
+{
+"name": "MailKit",
+"version": "4.8.0"
+},
+{
+"name": "Markdig",
+"version": "0.40.0"
+},
+{
+"name": "Markdig.Signed",
+"version": "0.33.0"
+},
+{
+"name": "memoize-one",
+"version": "5.2.1"
+},
+{
+"name": "Microsoft OLE DB Driver for SQL Server",
+"version": "18.4.0"
+},
+{
+"name": "Microsoft Visual C++ 2015-2022 Redistributable (x64)",
+"version": ""
+},
+{
+"name": "Microsoft.ApplicationInsights",
+"version": "2.21.0"
+},
+{
+"name": "Microsoft.AspNet.FriendlyUrls.Core",
+"version": "1.0.2"
+},
+{
+"name": "Microsoft.AspNet.Mvc",
+"version": "5.2.9"
+},
+{
+"name": "Microsoft.AspNet.Razor",
+"version": "3.2.9"
+},
+{
+"name": "Microsoft.AspNet.Web.Optimization",
+"version": "1.1.3"
+},
+{
+"name": "Microsoft.AspNet.Web.Optimization.WebForms",
+"version": "1.1.3"
+},
+{
+"name": "Microsoft.AspNet.WebPages",
+"version": "3.2.9"
+},
+{
+"name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+"version": "6.0.13"
+},
+{
+"name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+"version": "8.0.16"
+},
+{
+"name": "Microsoft.AspNetCore.Authentication.Negotiate",
+"version": "6.0.13"
+},
+{
+"name": "Microsoft.AspNetCore.JsonPatch",
+"version": "6.0.13"
+},
+{
+"name": "Microsoft.AspNetCore.JsonPatch",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+"version": "6.0.13"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.Versioning",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.Versioning",
+"version": "5.1.0"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer",
+"version": "5.1.0"
+},
+{
+"name": "Microsoft.AspNetCore.SpaServices.Extensions",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.AspNetCore.SystemWebAdapters",
+"version": "1.3.0"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Bcl.TimeProvider",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.CodeAnalysis.Common",
+"version": "4.5.0"
+},
+{
+"name": "Microsoft.CodeAnalysis.Common",
+"version": "4.9.2"
+},
+{
+"name": "Microsoft.CodeAnalysis.CSharp",
+"version": "4.5.0"
+},
+{
+"name": "Microsoft.CodeAnalysis.CSharp",
+"version": "4.9.2"
+},
+{
+"name": "Microsoft.CodeAnalysis.CSharp.Workspaces",
+"version": "4.5.0"
+},
+{
+"name": "Microsoft.CodeAnalysis.Workspaces.Common",
+"version": "4.5.0"
+},
+{
+"name": "Microsoft.Data.SqlClient",
+"version": "5.2.3"
+},
+{
+"name": "Microsoft.Data.SqlClient.SNI",
+"version": "5.2.0"
+},
+{
+"name": "Microsoft.Data.Sqlite.Core",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore",
+"version": "8.0.17"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Abstractions",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Abstractions",
+"version": "8.0.17"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Design",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Design",
+"version": "8.0.17"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.DynamicLinq",
+"version": "8.3.10"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.InMemory",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Proxies",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Relational",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Relational",
+"version": "8.0.17"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Sqlite.Core",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.SqlServer",
+"version": "7.0.20"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.SqlServer",
+"version": "8.0.17"
+},
+{
+"name": "Microsoft.Extensions.Caching.Abstractions",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Extensions.Caching.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Caching.Abstractions",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Caching.Memory",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Extensions.Caching.Memory",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Configuration",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Binder",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Binder",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Configuration.CommandLine",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.FileExtensions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Json",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.UserSecrets",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.DependencyModel",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyModel",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics.Abstractions",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Embedded",
+"version": "8.0.4"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Physical",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.FileSystemGlobbing",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Hosting",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Hosting.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Hosting.Abstractions",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Hosting.WindowsServices",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Http",
+"version": "3.0.3"
+},
+{
+"name": "Microsoft.Extensions.Http",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "8.0.3"
+},
+{
+"name": "Microsoft.Extensions.Logging.Configuration",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Console",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Debug",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.EventLog",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.EventSource",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.ObjectPool",
+"version": "6.0.16"
+},
+{
+"name": "Microsoft.Extensions.ObjectPool",
+"version": "8.0.12"
+},
+{
+"name": "Microsoft.Extensions.Options",
+"version": "7.0.1"
+},
+{
+"name": "Microsoft.Extensions.Options",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Options",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Primitives",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Extensions.Primitives",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Primitives",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Identity.Client",
+"version": "4.61.3"
+},
+{
+"name": "Microsoft.Identity.Client",
+"version": "4.67.2"
+},
+{
+"name": "Microsoft.Identity.Client.Extensions.Msal",
+"version": "4.61.3"
+},
+{
+"name": "Microsoft.Identity.Client.Extensions.Msal",
+"version": "4.67.2"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "7.0.3"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "7.3.0"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "8.12.0"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "8.2.0"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "7.0.3"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "7.3.0"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "8.12.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "7.0.3"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "7.3.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "8.12.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "8.2.0"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols",
+"version": "7.0.3"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols",
+"version": "7.1.2"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+"version": "7.0.3"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+"version": "7.1.2"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols.WsTrust",
+"version": "6.8.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "7.0.3"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "7.3.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "8.12.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "8.2.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens.Saml",
+"version": "8.2.0"
+},
+{
+"name": "Microsoft.IdentityModel.Xml",
+"version": "8.2.0"
+},
+{
+"name": "Microsoft.Management.Infrastructure.CimCmdlets",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.Management.Infrastructure.Runtime.Unix",
+"version": "3.0.0"
+},
+{
+"name": "Microsoft.Management.Infrastructure.Runtime.Win",
+"version": "3.0.0"
+},
+{
+"name": "Microsoft.OpenApi",
+"version": "1.2.3"
+},
+{
+"name": "Microsoft.OpenApi",
+"version": "1.6.25"
+},
+{
+"name": "Microsoft.PowerShell.Commands.Diagnostics",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.PowerShell.Commands.Management",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.PowerShell.Commands.Utility",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.PowerShell.ConsoleHost",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.PowerShell.CoreCLR.Eventing",
+"version": "7.4.2"
+},
+{
+"name": "Microsoft.PowerShell.CoreCLR.Eventing",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.PowerShell.MarkdownRender",
+"version": "7.2.1"
+},
+{
+"name": "Microsoft.PowerShell.Native",
+"version": "7.4.0"
+},
+{
+"name": "Microsoft.PowerShell.SDK",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.PowerShell.Security",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.ReportingServices.ReportViewerControl.WebForms",
+"version": "150.1400.0"
+},
+{
+"name": "Microsoft.ReportingServices.ReportViewerControl.WebForms",
+"version": "150.1537.0"
+},
+{
+"name": "Microsoft.ReportingServices.ReportViewerControl.Winforms",
+"version": "150.1537.0"
+},
+{
+"name": "Microsoft.SqlServer.Server",
+"version": "1.0.0"
+},
+{
+"name": "Microsoft.SqlServer.Types",
+"version": "14.0.1016.290"
+},
+{
+"name": "Microsoft.SqlServer.Types",
+"version": "160.1000.6"
+},
+{
+"name": "Microsoft.Web.Infrastructure",
+"version": "2.0.0"
+},
+{
+"name": "Microsoft.Win32.Registry",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Win32.Registry.AccessControl",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Win32.SystemEvents",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.WSMan.Management",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.WSMan.Runtime",
+"version": "7.4.7"
+},
+{
+"name": "Microsoft.XmlSerializer.Generator",
+"version": "9.0.0"
+},
+{
+"name": "MimeKit",
+"version": "4.8.0"
+},
+{
+"name": "Mono.TextTemplating",
+"version": "2.2.1"
+},
+{
+"name": "nanoid",
+"version": "3.3.8"
+},
+{
+"name": "Newtonsoft.Json",
+"version": "13.0.2"
+},
+{
+"name": "Newtonsoft.Json",
+"version": "13.0.3"
+},
+{
+"name": "Newtonsoft.Json.Bson",
+"version": "1.0.2"
+},
+{
+"name": "NLog",
+"version": "4.7.14"
+},
+{
+"name": "node-fetch",
+"version": "2.6.9"
+},
+{
+"name": "Npgsql",
+"version": "8.0.4"
+},
+{
+"name": "Npgsql.EntityFrameworkCore.PostgreSQL",
+"version": "8.0.8"
+},
+{
+"name": "NSspi",
+"version": "0.3.1"
+},
+{
+"name": "object-assign",
+"version": "4.1.1"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2zi"
+},
+{
+"name": "picocolors",
+"version": "1.1.1"
+},
+{
+"name": "postcss",
+"version": "8.4.49"
+},
+{
+"name": "postcss-value-parser",
+"version": "4.2.0"
+},
+{
+"name": "PowerShell",
+"version": "7.4.0"
+},
+{
+"name": "prop-types",
+"version": "15.8.1"
+},
+{
+"name": "protobuf-net",
+"version": "3.2.46"
+},
+{
+"name": "protobuf-net.Core",
+"version": "3.2.46"
+},
+{
+"name": "psl",
+"version": "1.9.0"
+},
+{
+"name": "punycode",
+"version": "2.1.1"
+},
+{
+"name": "Putty",
+"version": "0.83"
+},
+{
+"name": "querystringify",
+"version": "2.2.0"
+},
+{
+"name": "re2",
+"version": "2023-02-01"
+},
+{
+"name": "react",
+"version": "19.1.1"
+},
+{
+"name": "react-dnd",
+"version": "16.0.1"
+},
+{
+"name": "react-dnd-html5-backend",
+"version": "16.0.1"
+},
+{
+"name": "react-dom",
+"version": "19.1.1"
+},
+{
+"name": "react-draggable",
+"version": "4.4.5"
+},
+{
+"name": "react-draggable",
+"version": "4.4.6"
+},
+{
+"name": "react-grid-layout",
+"version": "1.4.4"
+},
+{
+"name": "react-is",
+"version": "16.13.1"
+},
+{
+"name": "react-resizable",
+"version": "3.0.4"
+},
+{
+"name": "react-resizable",
+"version": "3.0.5"
+},
+{
+"name": "react-window",
+"version": "1.8.11"
+},
+{
+"name": "Rebex.Common",
+"version": "6.0.8432"
+},
+{
+"name": "Rebex.Networking",
+"version": "6.0.8432"
+},
+{
+"name": "Rebex.SshShell",
+"version": "6.0.8432"
+},
+{
+"name": "Rebex.Terminal",
+"version": "6.0.8432"
+},
+{
+"name": "redux",
+"version": "4.2.1"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.13.10"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.14.1"
+},
+{
+"name": "Remotion.Linq",
+"version": "2.2.0"
+},
+{
+"name": "requires-port",
+"version": "1.0.0"
+},
+{
+"name": "resize-observer-polyfill",
+"version": "1.5.1"
+},
+{
+"name": "rgbcolor",
+"version": "0.0.4"
+},
+{
+"name": "RocksDB",
+"version": "8.5.3.42578"
+},
+{
+"name": "runtime.win-x64.runtime.native.System.Data.SqlClient.sni",
+"version": "4.4.0"
+},
+{
+"name": "rw",
+"version": "1.3.3"
+},
+{
+"name": "rxjs",
+"version": "7.8.1"
+},
+{
+"name": "safer-buffer",
+"version": "2.1.2"
+},
+{
+"name": "scheduler",
+"version": "0.26.0"
+},
+{
+"name": "Serilog",
+"version": "4.0.0"
+},
+{
+"name": "Serilog.Extensions.Hosting",
+"version": "8.0.0"
+},
+{
+"name": "Serilog.Extensions.Logging",
+"version": "8.0.0"
+},
+{
+"name": "Serilog.Settings.Configuration",
+"version": "8.0.0"
+},
+{
+"name": "SerilogWeb.Classic",
+"version": "5.1.66"
+},
+{
+"name": "shallowequal",
+"version": "1.1.0"
+},
+{
+"name": "SharpZipLib",
+"version": "1.3.3"
+},
+{
+"name": "SharpZipLib",
+"version": "1.4.2"
+},
+{
+"name": "ShimSkiaSharp",
+"version": "2.0.0.4"
+},
+{
+"name": "SkiaSharp",
+"version": "3.116.1"
+},
+{
+"name": "SkiaSharp.HarfBuzz",
+"version": "2.88.8"
+},
+{
+"name": "SkiaSharp.NativeAssets.Win32",
+"version": "3.116.1"
+},
+{
+"name": "source-map-js",
+"version": "1.2.1"
+},
+{
+"name": "SQLitePCLRaw.bundle_e_sqlite3",
+"version": "2.1.4"
+},
+{
+"name": "SQLitePCLRaw.core",
+"version": "2.1.4"
+},
+{
+"name": "SQLitePCLRaw.lib.e_sqlite3",
+"version": "2.1.4"
+},
+{
+"name": "SQLitePCLRaw.provider.e_sqlite3",
+"version": "2.1.4"
+},
+{
+"name": "stackblur",
+"version": "1.0.0"
+},
+{
+"name": "Stateless",
+"version": "5.13.0"
+},
+{
+"name": "Stateless",
+"version": "5.15.0"
+},
+{
+"name": "styled-components",
+"version": "6.1.19"
+},
+{
+"name": "stylis",
+"version": "4.3.2"
+},
+{
+"name": "Svg.Custom",
+"version": "2.0.0.4"
+},
+{
+"name": "Svg.Model",
+"version": "2.0.0.4"
+},
+{
+"name": "Svg.Skia",
+"version": "2.0.0.4"
+},
+{
+"name": "Swashbuckle.AspNetCore.Annotations",
+"version": "9.0.4"
+},
+{
+"name": "Swashbuckle.AspNetCore.Swagger",
+"version": "6.5.0"
+},
+{
+"name": "Swashbuckle.AspNetCore.Swagger",
+"version": "9.0.4"
+},
+{
+"name": "Swashbuckle.AspNetCore.SwaggerGen",
+"version": "6.5.0"
+},
+{
+"name": "Swashbuckle.AspNetCore.SwaggerGen",
+"version": "9.0.4"
+},
+{
+"name": "Swashbuckle.AspNetCore.SwaggerUI",
+"version": "6.5.0"
+},
+{
+"name": "Swashbuckle.AspNetCore.SwaggerUI",
+"version": "9.0.4"
+},
+{
+"name": "System.Buffers",
+"version": "4.5.1"
+},
+{
+"name": "System.ClientModel",
+"version": "1.0.0"
+},
+{
+"name": "System.ClientModel",
+"version": "1.1.0"
+},
+{
+"name": "System.CodeDom",
+"version": "4.4.0"
+},
+{
+"name": "System.CodeDom",
+"version": "8.0.0"
+},
+{
+"name": "System.CodeDom",
+"version": "9.0.0"
+},
+{
+"name": "System.ComponentModel.Annotations",
+"version": "5.0.0"
+},
+{
+"name": "System.ComponentModel.Composition",
+"version": "8.0.0"
+},
+{
+"name": "System.ComponentModel.Composition.Registration",
+"version": "8.0.0"
+},
+{
+"name": "System.Composition.AttributedModel",
+"version": "6.0.0"
+},
+{
+"name": "System.Composition.Convention",
+"version": "6.0.0"
+},
+{
+"name": "System.Composition.Hosting",
+"version": "6.0.0"
+},
+{
+"name": "System.Composition.Runtime",
+"version": "6.0.0"
+},
+{
+"name": "System.Composition.TypedParts",
+"version": "6.0.0"
+},
+{
+"name": "System.Configuration.ConfigurationManager",
+"version": "7.0.0"
+},
+{
+"name": "System.Configuration.ConfigurationManager",
+"version": "8.0.0"
+},
+{
+"name": "System.Configuration.ConfigurationManager",
+"version": "8.0.1"
+},
+{
+"name": "System.Data.Odbc",
+"version": "8.0.1"
+},
+{
+"name": "System.Data.OleDb",
+"version": "8.0.1"
+},
+{
+"name": "System.Data.SqlClient",
+"version": "4.8.6"
+},
+{
+"name": "System.Diagnostics.DiagnosticSource",
+"version": "8.0.1"
+},
+{
+"name": "System.Diagnostics.EventLog",
+"version": "8.0.0"
+},
+{
+"name": "System.Diagnostics.EventLog",
+"version": "8.0.1"
+},
+{
+"name": "System.Diagnostics.PerformanceCounter",
+"version": "8.0.1"
+},
+{
+"name": "System.DirectoryServices",
+"version": "7.0.0"
+},
+{
+"name": "System.DirectoryServices",
+"version": "8.0.0"
+},
+{
+"name": "System.DirectoryServices.AccountManagement",
+"version": "7.0.0"
+},
+{
+"name": "System.DirectoryServices.AccountManagement",
+"version": "8.0.1"
+},
+{
+"name": "System.DirectoryServices.Protocols",
+"version": "7.0.0"
+},
+{
+"name": "System.DirectoryServices.Protocols",
+"version": "8.0.0"
+},
+{
+"name": "System.Drawing.Common",
+"version": "7.0.0"
+},
+{
+"name": "System.Drawing.Common",
+"version": "8.0.12"
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": "6.35.0"
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": "7.0.3"
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": "7.1.2"
+},
+{
+"name": "System.Interactive.Async",
+"version": "6.0.1"
+},
+{
+"name": "System.IO.Packaging",
+"version": "8.0.1"
+},
+{
+"name": "System.IO.Ports",
+"version": "8.0.0"
+},
+{
+"name": "System.Linq.Async",
+"version": "6.0.1"
+},
+{
+"name": "System.Linq.Async.Queryable",
+"version": "6.0.1"
+},
+{
+"name": "System.Linq.Dynamic.Core",
+"version": "1.6.4"
+},
+{
+"name": "System.Management",
+"version": "8.0.0"
+},
+{
+"name": "System.Management",
+"version": "9.0.0"
+},
+{
+"name": "System.Management.Automation",
+"version": "7.4.2"
+},
+{
+"name": "System.Management.Automation",
+"version": "7.4.7"
+},
+{
+"name": "System.Memory",
+"version": "4.5.5"
+},
+{
+"name": "System.Memory.Data",
+"version": "1.0.2"
+},
+{
+"name": "System.Memory.Data",
+"version": "6.0.0"
+},
+{
+"name": "System.Net.Http.WinHttpHandler",
+"version": "8.0.0"
+},
+{
+"name": "System.Net.Http.WinHttpHandler",
+"version": "8.0.2"
+},
+{
+"name": "System.Numerics.Vectors",
+"version": "4.5.0"
+},
+{
+"name": "System.Private.ServiceModel",
+"version": "4.10.3"
+},
+{
+"name": "System.Reactive",
+"version": "5.0.0"
+},
+{
+"name": "System.Reactive.Linq",
+"version": "5.0.0"
+},
+{
+"name": "System.Reflection.Context",
+"version": "8.0.0"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "8.0.0"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "8.0.1"
+},
+{
+"name": "System.Runtime.CompilerServices.Unsafe",
+"version": "6.0.0"
+},
+{
+"name": "System.Security.AccessControl",
+"version": "6.0.0"
+},
+{
+"name": "System.Security.Cryptography.Cng",
+"version": "5.0.0"
+},
+{
+"name": "System.Security.Cryptography.Pkcs",
+"version": "8.0.0"
+},
+{
+"name": "System.Security.Cryptography.Pkcs",
+"version": "8.0.1"
+},
+{
+"name": "System.Security.Cryptography.ProtectedData",
+"version": "8.0.0"
+},
+{
+"name": "System.Security.Cryptography.Xml",
+"version": "8.0.1"
+},
+{
+"name": "System.Security.Cryptography.Xml",
+"version": "8.0.2"
+},
+{
+"name": "System.Security.Permissions",
+"version": "7.0.0"
+},
+{
+"name": "System.Security.Permissions",
+"version": "8.0.0"
+},
+{
+"name": "System.Security.Principal.Windows",
+"version": "5.0.0"
+},
+{
+"name": "System.ServiceModel.Federation",
+"version": "8.1.0"
+},
+{
+"name": "System.ServiceModel.Http",
+"version": "8.0.0"
+},
+{
+"name": "System.ServiceModel.Http",
+"version": "8.1.0"
+},
+{
+"name": "System.ServiceModel.NetFramingBase",
+"version": "8.0.0"
+},
+{
+"name": "System.ServiceModel.NetTcp",
+"version": "8.0.0"
+},
+{
+"name": "System.ServiceModel.Primitives",
+"version": "8.0.0"
+},
+{
+"name": "System.ServiceModel.Primitives",
+"version": "8.1.0"
+},
+{
+"name": "System.ServiceModel.Syndication",
+"version": "8.0.0"
+},
+{
+"name": "System.ServiceProcess.ServiceController",
+"version": "7.0.0"
+},
+{
+"name": "System.ServiceProcess.ServiceController",
+"version": "8.0.0"
+},
+{
+"name": "System.ServiceProcess.ServiceController",
+"version": "8.0.1"
+},
+{
+"name": "System.Speech",
+"version": "8.0.0"
+},
+{
+"name": "System.Text.Encodings.Web",
+"version": "8.0.0"
+},
+{
+"name": "System.Text.Json",
+"version": "8.0.6"
+},
+{
+"name": "System.Threading.Channels",
+"version": "8.0.0"
+},
+{
+"name": "System.Threading.Tasks.Extensions",
+"version": "4.5.4"
+},
+{
+"name": "System.ValueTuple",
+"version": "4.5.0"
+},
+{
+"name": "System.Web.Services.Description",
+"version": "4.10.3"
+},
+{
+"name": "System.Windows.Extensions",
+"version": "7.0.0"
+},
+{
+"name": "System.Windows.Extensions",
+"version": "8.0.0"
+},
+{
+"name": "tinyxml",
+"version": "2.6.2"
+},
+{
+"name": "tough-cookie",
+"version": "4.1.3"
+},
+{
+"name": "tr46",
+"version": "0.0.3"
+},
+{
+"name": "tslib",
+"version": "2.6.2"
+},
+{
+"name": "tslib",
+"version": "2.8.1"
+},
+{
+"name": "universalify",
+"version": "0.2.0"
+},
+{
+"name": "url-parse",
+"version": "1.5.10"
+},
+{
+"name": "uuid",
+"version": "10.0.0"
+},
+{
+"name": "WebGrease",
+"version": "1.6.0"
+},
+{
+"name": "webidl-conversions",
+"version": "3.0.1"
+},
+{
+"name": "whatwg-url",
+"version": "5.0.0"
+},
+{
+"name": "Windows Template Library",
+"version": "10.0.10320"
+},
+{
+"name": "windows-locale",
+"version": "1.0.1"
+},
+{
+"name": "ws",
+"version": "7.5.10"
+},
+{
+"name": "xmldom",
+"version": "0.1.27"
+},
+{
+"name": "xmlhttprequest",
+"version": "1.8.0"
+},
+{
+"name": "YamlDotNet",
+"version": "16.1.2"
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam ONE",
+"retrieved": "2026-11-08",
+"sha256": "5a90190d574e57f6ecf872eafb0528231fe94f65084844aef6e3f6d97151d268",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=licenses.veeamone_rs_13.0.1.5821&lang=en",
+"version": "13"
+}

@@ -1,7 +1,7 @@
 """Turn a scanner's SBOM into a Xenolith submission: python -m xenolith prepare.
 
-Takes the CycloneDX or SPDX JSON written by Syft, cdxgen, cve-bin-tool, blint,
-Trivy or similar, and writes a CycloneDX 1.6 file under community/sboms/ that
+Takes the CycloneDX or SPDX JSON written by `python -m xenolith fingerprint`,
+Syft, cdxgen, cve-bin-tool, blint, Trivy or similar, and writes a CycloneDX 1.6 file under community/sboms/ that
 passes `python -m xenolith community --check`:
 
   * the product (supplier, name, version) goes in metadata.component
@@ -70,10 +70,12 @@ def _clean_component(c: dict) -> dict | None:
     for key in ("group", "version", "purl", "cpe"):
         if c.get(key):
             out[key] = str(c[key])[:300]
-    found_by = next((p.get("value") for p in c.get("properties") or []
-                     if isinstance(p, dict) and p.get("name") in ("syft:package:foundBy", "cdx:found_by")), None)
-    if found_by:
-        out["properties"] = [{"name": "xenolith:found_by", "value": str(found_by)[:100]}]
+    props = {p.get("name"): p.get("value") for p in c.get("properties") or [] if isinstance(p, dict)}
+    found_by = props.get("xenolith:found_by") or props.get("syft:package:foundBy") or props.get("cdx:found_by")
+    keep = [("xenolith:found_by", found_by)] + [(k, props.get(k)) for k in ("xenolith:confidence", "xenolith:note")]
+    keep = [{"name": k, "value": str(v)[:200]} for k, v in keep if v]
+    if keep:
+        out["properties"] = keep
     return out
 
 

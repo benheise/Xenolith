@@ -1,0 +1,102 @@
+{
+"components": [
+{
+"name": "Boost",
+"version": "1.81"
+},
+{
+"name": "crc32-vpmsum",
+"version": "452155439389311fc7d143621eaf56a258e02476"
+},
+{
+"name": "curl",
+"version": "8.8.0"
+},
+{
+"name": "curlcpp",
+"version": "3.1"
+},
+{
+"name": "JSON for Modern C++",
+"version": "3.11.3"
+},
+{
+"name": "libblkid",
+"version": "2.32.1"
+},
+{
+"name": "libgcc",
+"version": "9.2.0"
+},
+{
+"name": "libiconv",
+"version": "1.16.0"
+},
+{
+"name": "libstdc++",
+"version": "9.2.0"
+},
+{
+"name": "libunistring",
+"version": "1.1"
+},
+{
+"name": "lz4",
+"version": "1.9.4"
+},
+{
+"name": "magic_enum",
+"version": "0.8.2"
+},
+{
+"name": "ncurses",
+"version": "6.2"
+},
+{
+"name": "OpenSSL",
+"version": "3.0.13"
+},
+{
+"name": "sha2",
+"version": "79116b5d5d449311c27a24e16c99d8bccb4d1301"
+},
+{
+"name": "SQLite",
+"version": "3.46.0"
+},
+{
+"name": "tinyxml",
+"version": "2.5.3"
+},
+{
+"name": "tinyxml2",
+"version": "9.0.0"
+},
+{
+"name": "utf8.h, utf8/checked.h, utf8/unchecked.h, utf8/core.h",
+"version": ""
+},
+{
+"name": "util-linux/libuuid",
+"version": ""
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+},
+{
+"name": "zstd",
+"version": "1.5.2"
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam Agent for IBM AIX",
+"retrieved": "2026-11-08",
+"sha256": "73fe907f804df7f7eea3483c4b7495b81d4ad326d0d05bd1dce006ffc84a8d58",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-ibm-aix-4.6-4.6.0.1762&lang=en",
+"version": "4.6"
+}

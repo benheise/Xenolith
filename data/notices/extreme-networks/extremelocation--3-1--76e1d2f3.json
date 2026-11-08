@@ -1,0 +1,1358 @@
+{
+"components": [
+{
+"name": "\"Java Concurrency in Practice\" book annotations",
+"version": "1.0"
+},
+{
+"name": "a JAVA-PDF library",
+"version": "2.1.7.js5"
+},
+{
+"name": "aalto-xml",
+"version": "0.9.10"
+},
+{
+"name": "adal4j",
+"version": "1.3.0"
+},
+{
+"name": "akka-actor",
+"version": "2.3.10"
+},
+{
+"name": "akka-persistence_2.11",
+"version": "2.5.5"
+},
+{
+"name": "and CRMF APIs",
+"version": "1.53"
+},
+{
+"name": "android",
+"version": "4.4.2_r4"
+},
+{
+"name": "android",
+"version": "5.0_r1"
+},
+{
+"name": "Android AppCompat Library",
+"version": "v7 26.1.0"
+},
+{
+"name": "Android Support Library",
+"version": "v13 26.1.0"
+},
+{
+"name": "Android Support Library",
+"version": "v4 26.0.1"
+},
+{
+"name": "Android Support Library Annotations",
+"version": "26.0.2"
+},
+{
+"name": "Android Support Library compat",
+"version": "26.0.1"
+},
+{
+"name": "Android Support Library core UI",
+"version": "26.0.0"
+},
+{
+"name": "Android Support Library core utils",
+"version": "26.0.0"
+},
+{
+"name": "Android Support Library media compat",
+"version": "26.0.1"
+},
+{
+"name": "Android Support RecyclerView",
+"version": "v7 26.0.1"
+},
+{
+"name": "Android Support VectorDrawable",
+"version": "26.0.0"
+},
+{
+"name": "Android Transition Support Library",
+"version": "26.0.2"
+},
+{
+"name": "android-google-firebase-analytics- impl",
+"version": "11.0.2"
+},
+{
+"name": "AndroidPdfViewer",
+"version": "2.7.0"
+},
+{
+"name": "AndroidPdfViewer",
+"version": "3.1.0-beta.1"
+},
+{
+"name": "Aopalliance Version",
+"version": "1.0 Repackaged As A Module 2.4.0-b34"
+},
+{
+"name": "Aopalliance Version",
+"version": "1.0 Repackaged As A Module 2.5.0"
+},
+{
+"name": "Aopalliance Version",
+"version": "1.0 Repackaged As A Module 2.5.0-b37"
+},
+{
+"name": "Apache Commons BeanUtils",
+"version": "1.9.3"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.6"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.7"
+},
+{
+"name": "Apache Commons Collections",
+"version": "3.2.2"
+},
+{
+"name": "Apache Commons Collections",
+"version": "4.1"
+},
+{
+"name": "Apache Commons Compress",
+"version": "1.18"
+},
+{
+"name": "Apache Commons Configuration",
+"version": "1.10"
+},
+{
+"name": "Apache Commons CSV",
+"version": "1.5"
+},
+{
+"name": "Apache Commons Daemon",
+"version": "1.0.15"
+},
+{
+"name": "Apache Commons Digester",
+"version": "2.1"
+},
+{
+"name": "Apache Commons Lang",
+"version": "2.6"
+},
+{
+"name": "Apache Commons Lang",
+"version": "3.1"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.1.1"
+},
+{
+"name": "Apache Commons Pool",
+"version": "2.4.2"
+},
+{
+"name": "Apache Commons Pool",
+"version": "2.6.0"
+},
+{
+"name": "Apache Derby",
+"version": "10.13.1.1"
+},
+{
+"name": "Apache Derby Client JDBC Driver",
+"version": "10.13.1.1"
+},
+{
+"name": "Apache Flink",
+"version": "0.7.0"
+},
+{
+"name": "Apache HttpComponents Client",
+"version": "4.2.5"
+},
+{
+"name": "Apache HttpComponents Client",
+"version": "4.5.6"
+},
+{
+"name": "Apache HttpComponents Core",
+"version": "4.2.4"
+},
+{
+"name": "Apache HttpComponents Core",
+"version": "4.4.10"
+},
+{
+"name": "Apache HttpMime",
+"version": "4.2.5"
+},
+{
+"name": "Apache Kafka",
+"version": "0.10.0.0"
+},
+{
+"name": "Apache log4j",
+"version": "1.2.16"
+},
+{
+"name": "Apache log4j",
+"version": "1.2.17"
+},
+{
+"name": "Apache Standard Taglib Implementation",
+"version": "1.2.5"
+},
+{
+"name": "Apache Taglibs",
+"version": "1.2.5"
+},
+{
+"name": "Apache Tika",
+"version": "1.19"
+},
+{
+"name": "Apache Tomcat",
+"version": "8.0.35"
+},
+{
+"name": "Apache Tomcat",
+"version": "8.5.9"
+},
+{
+"name": "Apache Tomcat Native Library",
+"version": "1.2.7"
+},
+{
+"name": "Apache Velocity",
+"version": "1.7"
+},
+{
+"name": "Apache XML Commons",
+"version": "2.0.2"
+},
+{
+"name": "Apache XML Graphics Commons",
+"version": "2.2"
+},
+{
+"name": "Apache ZooKeeper",
+"version": "3.4.6"
+},
+{
+"name": "Appcelerator Titanium Mobile",
+"version": "6_2_2_GA"
+},
+{
+"name": "Appcelerator Titanium Mobile",
+"version": "8_0_0_GA"
+},
+{
+"name": "argparse4j",
+"version": "0.5.0"
+},
+{
+"name": "ASM",
+"version": "7.0"
+},
+{
+"name": "ASM Commons",
+"version": "7.0"
+},
+{
+"name": "ASM Tree",
+"version": "7.0"
+},
+{
+"name": "asm-analysis",
+"version": "7.0"
+},
+{
+"name": "AssertJ",
+"version": "1.2.0"
+},
+{
+"name": "avalon-framework-impl",
+"version": "4.2.0"
+},
+{
+"name": "Barcode4J",
+"version": "2.0"
+},
+{
+"name": "Batik XML utility library",
+"version": "1.9"
+},
+{
+"name": "Batik XML utility library",
+"version": "1.9.1"
+},
+{
+"name": "beanvalidation-api",
+"version": "1.1.0.Final"
+},
+{
+"name": "beanvalidation-api",
+"version": "2.0.1.Final"
+},
+{
+"name": "binary100100",
+"version": "2.3"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "3.3.7"
+},
+{
+"name": "Bouncy Castle",
+"version": "1.53"
+},
+{
+"name": "Brooklyn REST JavaScript Web GUI",
+"version": "0.6.0-rc.3"
+},
+{
+"name": "BSON",
+"version": "3.10.1"
+},
+{
+"name": "bson4jackson",
+"version": "2.9.2"
+},
+{
+"name": "c3p0:JDBC DataSources/Resource Pools",
+"version": "0.9.5.2"
+},
+{
+"name": "ccw.clojure",
+"version": "1.7.0"
+},
+{
+"name": "Commons IO",
+"version": "2.5"
+},
+{
+"name": "config - com.typesafe:config",
+"version": "1.2.1"
+},
+{
+"name": "dandar3/android-support-vector-drawable",
+"version": "26.1.0"
+},
+{
+"name": "dom-to-image",
+"version": "2.5.2"
+},
+{
+"name": "dom4j: flexible XML framework for Java",
+"version": "1.6.1"
+},
+{
+"name": "dxkite/suda",
+"version": "v1.2.11"
+},
+{
+"name": "DynamicReports",
+"version": "5.1.0"
+},
+{
+"name": "DynamicReports - adhoc",
+"version": "5.1.0"
+},
+{
+"name": "DynamicReports - googlecharts",
+"version": "5.1.0"
+},
+{
+"name": "Eclipse ECJ",
+"version": "4.4.2"
+},
+{
+"name": "Eclipse ECJ",
+"version": "4.5"
+},
+{
+"name": "Eclipse Jetty",
+"version": "9.4.15.v20190215"
+},
+{
+"name": "Embedded MongoDB",
+"version": "2.2.0"
+},
+{
+"name": "FindBugs-Annotations",
+"version": "2.0.1"
+},
+{
+"name": "firebase- common",
+"version": "11.0.4"
+},
+{
+"name": "firebase-analytics",
+"version": "11.0.1"
+},
+{
+"name": "firebase-crash",
+"version": "11.0.2"
+},
+{
+"name": "firebase-iid",
+"version": "11.0.2"
+},
+{
+"name": "Flapdoodle Embedded Process Util",
+"version": "2.1.2"
+},
+{
+"name": "flatpickr",
+"version": "2.0.0-rc.2"
+},
+{
+"name": "flyway-commandline",
+"version": "5.2.1"
+},
+{
+"name": "FOKProjects Parent Pom",
+"version": "0.0.17"
+},
+{
+"name": "funkygao/gafka",
+"version": "0.2.7rc"
+},
+{
+"name": "GitHub's jsPDF",
+"version": "v1.3.2"
+},
+{
+"name": "Go programming language",
+"version": "20170801-snapshot"
+},
+{
+"name": "Google Android android-policy Library",
+"version": "5.1.1_r9-robolectric-r2"
+},
+{
+"name": "Google Android Library Test Framework",
+"version": "2.1_r1"
+},
+{
+"name": "google-ar/arcore-unity-sdk",
+"version": "v1.9.0"
+},
+{
+"name": "google-gson",
+"version": "2.2.4"
+},
+{
+"name": "google-gson",
+"version": "2.3"
+},
+{
+"name": "google-gson",
+"version": "2.8.2"
+},
+{
+"name": "GraphView",
+"version": "4.2.1"
+},
+{
+"name": "Guava: Google Core Libraries for Java",
+"version": "18.0"
+},
+{
+"name": "Guava: Google Core Libraries for Java",
+"version": "19.0"
+},
+{
+"name": "gvr-android-sdk",
+"version": "v1.100.0"
+},
+{
+"name": "gvr-android-sdk",
+"version": "v1.140.0"
+},
+{
+"name": "gvr-unity-sdk",
+"version": "v1.110.0"
+},
+{
+"name": "Handlebars.js",
+"version": "4.0.5"
+},
+{
+"name": "HikariCP",
+"version": "2.3.13"
+},
+{
+"name": "HikariCP-java6",
+"version": "2.3.13"
+},
+{
+"name": "HK2 API module",
+"version": "2.4.0-b34"
+},
+{
+"name": "HK2 API module",
+"version": "2.5.0"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.4.0-b34"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.5.0"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.5.0-b04"
+},
+{
+"name": "Injection API (JSR 330) version",
+"version": "1 repackaged as OSGi bundle 2.4.0-b34"
+},
+{
+"name": "io.opentracing.contrib.specialagent:opentracing-specialagent",
+"version": "1.1.2"
+},
+{
+"name": "io.swagger:swagger-annotations",
+"version": "1.5.0"
+},
+{
+"name": "iServe Integrated Engine",
+"version": "3.2.8.RELEASE"
+},
+{
+"name": "jackson-annotations",
+"version": "2.2.0"
+},
+{
+"name": "jackson-annotations",
+"version": "2.6.0"
+},
+{
+"name": "jackson-annotations",
+"version": "2.9.8"
+},
+{
+"name": "jackson-core",
+"version": "2.2.0"
+},
+{
+"name": "jackson-core",
+"version": "2.6.3"
+},
+{
+"name": "jackson-core",
+"version": "2.9.8"
+},
+{
+"name": "jackson-databind",
+"version": "2.2.0"
+},
+{
+"name": "jackson-databind",
+"version": "2.6.3"
+},
+{
+"name": "jackson-databind",
+"version": "2.9.8"
+},
+{
+"name": "jackson-dataformat-xml",
+"version": "2.7.8"
+},
+{
+"name": "jackson-dataformat-yaml",
+"version": "2.4.2"
+},
+{
+"name": "jackson-datatype-joda",
+"version": "2.4.2"
+},
+{
+"name": "jackson-jaxrs- json-provider",
+"version": "2.6.3"
+},
+{
+"name": "Jackson-JAXRS-base",
+"version": "2.6.3"
+},
+{
+"name": "Jackson-JAXRS-base",
+"version": "2.9.8"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.9.8"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.6.3"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.9.8"
+},
+{
+"name": "jakarta.jws API",
+"version": "1.1.1"
+},
+{
+"name": "jansi",
+"version": "1.11"
+},
+{
+"name": "jansi-native",
+"version": "1.5"
+},
+{
+"name": "jaspernode",
+"version": "1.1.0"
+},
+{
+"name": "JasperReports Library",
+"version": "6.5.1"
+},
+{
+"name": "Java API for XML Processing",
+"version": "1.4"
+},
+{
+"name": "Java API for XML Web Services",
+"version": "2.2 2.0.4.Final"
+},
+{
+"name": "Java Architecture for XML Binding",
+"version": "2.2.3"
+},
+{
+"name": "Java Architecture for XML Binding",
+"version": "2.3.0.redhat-00003"
+},
+{
+"name": "Java Native Access (JNA)",
+"version": "4.0.0"
+},
+{
+"name": "Java Platform Standard Edition (JRE) (J2RE)",
+"version": "8u181"
+},
+{
+"name": "Java Platform Standard Edition SDK (J2SDK) (JDK)",
+"version": "8u60"
+},
+{
+"name": "Java Servlet API",
+"version": "3.1.0"
+},
+{
+"name": "Java(TM) API for XML-Based Web Services",
+"version": "2.3 1.0.0.Final"
+},
+{
+"name": "JavaBeans Activation Framework",
+"version": "1.1"
+},
+{
+"name": "JavaBeans Activation Framework fork for Android",
+"version": "1.6.2"
+},
+{
+"name": "JavaMail",
+"version": "1.4.7"
+},
+{
+"name": "JavaMail API pop3 provider",
+"version": "1.4.6"
+},
+{
+"name": "JavaMail API smtp provider",
+"version": "1.4.7"
+},
+{
+"name": "JavaServer Pages (TM) TagLib Implementation",
+"version": "1.2-impl"
+},
+{
+"name": "Javassist",
+"version": "3.18.1-GA"
+},
+{
+"name": "Javassist",
+"version": "3.18.2-GA"
+},
+{
+"name": "Javassist",
+"version": "3.21.0-GA"
+},
+{
+"name": "Javax Inject from the JSR-330 Expert Group",
+"version": "1"
+},
+{
+"name": "javax.activation",
+"version": "0.67.0.7"
+},
+{
+"name": "javax.annotation API",
+"version": "1.2"
+},
+{
+"name": "javax.annotation API",
+"version": "1.3"
+},
+{
+"name": "javax.annotation API",
+"version": "1.3.4"
+},
+{
+"name": "javax.inject:1 as OSGi bundle",
+"version": "2.5.0"
+},
+{
+"name": "javax.transaction API",
+"version": "1.3"
+},
+{
+"name": "javax.ws.rs- api",
+"version": "2.0.1"
+},
+{
+"name": "javax.ws.rs- api",
+"version": "2.1.5"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.1.5"
+},
+{
+"name": "JAXB XML Binding Code Generator Package",
+"version": "2.1"
+},
+{
+"name": "jaxen",
+"version": "1.1.6"
+},
+{
+"name": "JBSE",
+"version": "20181215-snapshot-11eda2b7"
+},
+{
+"name": "JCommon",
+"version": "1.0.23"
+},
+{
+"name": "jedis",
+"version": "2.4.2"
+},
+{
+"name": "jedis",
+"version": "2.8.2"
+},
+{
+"name": "jedis",
+"version": "2.9.0"
+},
+{
+"name": "Jersey",
+"version": "2.22.2"
+},
+{
+"name": "Jersey",
+"version": "2.28"
+},
+{
+"name": "jersey- media-json-jackson",
+"version": "2.28"
+},
+{
+"name": "jersey-bundle",
+"version": "2.22.2"
+},
+{
+"name": "jersey-connectors-apache",
+"version": "2.28"
+},
+{
+"name": "jersey-container-servlet",
+"version": "2.22.2"
+},
+{
+"name": "jersey-container-servlet",
+"version": "2.28"
+},
+{
+"name": "jersey-container-servlet- core",
+"version": "2.28"
+},
+{
+"name": "jersey-container-servlet-core",
+"version": "2.22.2"
+},
+{
+"name": "jersey-core-server",
+"version": "2.22.2"
+},
+{
+"name": "jersey-core-server",
+"version": "2.28"
+},
+{
+"name": "jersey-ext-entity-filtering",
+"version": "2.28"
+},
+{
+"name": "jersey-inject-hk2",
+"version": "2.28"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.22.2"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.28"
+},
+{
+"name": "jersey-media-json-jackson",
+"version": "2.28"
+},
+{
+"name": "jersey-media-multipart",
+"version": "2.23.1"
+},
+{
+"name": "jersey-media-multipart",
+"version": "2.28"
+},
+{
+"name": "jersey-repackaged-guava",
+"version": "2.22.2"
+},
+{
+"name": "jersey-repackaged-guava",
+"version": "2.26-b01"
+},
+{
+"name": "JFreeChart",
+"version": "1.0.19"
+},
+{
+"name": "jjoe64/GraphView",
+"version": "v4.2.1"
+},
+{
+"name": "JLine - Java Console input Library",
+"version": "2.12.1"
+},
+{
+"name": "JMeterPackListener",
+"version": "1.2"
+},
+{
+"name": "jmh-benchmarks",
+"version": "1.0.0.2.6.5.144-8"
+},
+{
+"name": "Joda Time",
+"version": "2.2"
+},
+{
+"name": "Jongo",
+"version": "1.4.0"
+},
+{
+"name": "JOpt Simple",
+"version": "4.9"
+},
+{
+"name": "jQuery",
+"version": "1.8.2"
+},
+{
+"name": "jQuery",
+"version": "1.9.0"
+},
+{
+"name": "jQuery",
+"version": "2.2.1"
+},
+{
+"name": "jQuery",
+"version": "3.1.0"
+},
+{
+"name": "jQuery UI",
+"version": "1.11.3"
+},
+{
+"name": "jquery.panzoom",
+"version": "3.2.2"
+},
+{
+"name": "json-smart-v1",
+"version": "1.1.1"
+},
+{
+"name": "jspdf-autotable",
+"version": "2.1.0"
+},
+{
+"name": "Leaflet",
+"version": "0.7.7"
+},
+{
+"name": "Leaflet",
+"version": "v1.0.3"
+},
+{
+"name": "leaflet-easyprint",
+"version": "2.1.9"
+},
+{
+"name": "leaflet-indoor",
+"version": "1.0.3"
+},
+{
+"name": "leaflet.path.drag",
+"version": "0.0.6"
+},
+{
+"name": "Lettuce",
+"version": "5.1.6.RELEASE"
+},
+{
+"name": "libitext-java",
+"version": "2.1.7"
+},
+{
+"name": "lipangit/JiaoZiVideoPlayer",
+"version": "v4.6.2"
+},
+{
+"name": "list.js",
+"version": "v1.3.0"
+},
+{
+"name": "LZ4 Java",
+"version": "1.3.0"
+},
+{
+"name": "make",
+"version": "3.81"
+},
+{
+"name": "mchange-commons-java",
+"version": "0.2.11"
+},
+{
+"name": "Metrics Core Library",
+"version": "2.2.0"
+},
+{
+"name": "Metro OSGi API bundle for GlassFish",
+"version": "V3 2.4.2"
+},
+{
+"name": "Microsoft Azure SDK for Key Vault",
+"version": "1.0.0"
+},
+{
+"name": "Microsoft Azure Service Bus Client API",
+"version": "1.2.8"
+},
+{
+"name": "Microsoft Windows Azure Storage Client SDK",
+"version": "7.0.0"
+},
+{
+"name": "MIME streaming extension",
+"version": "1.9.11"
+},
+{
+"name": "MIME streaming extension",
+"version": "1.9.7"
+},
+{
+"name": "Mongo Java Driver",
+"version": "3.10.1"
+},
+{
+"name": "MongoDB Driver",
+"version": "3.10.1"
+},
+{
+"name": "MPAndroidChart",
+"version": "3.0.2"
+},
+{
+"name": "Nimbus LangTag",
+"version": "1.4.4"
+},
+{
+"name": "Nimbus-JOSE-JWT",
+"version": "2.13.1"
+},
+{
+"name": "node-semver",
+"version": "4.3.3"
+},
+{
+"name": "npm-apidoc",
+"version": "0.17.6"
+},
+{
+"name": "npm-apidoc",
+"version": "20170519-snapshot-ae652811"
+},
+{
+"name": "OAuth",
+"version": "2.0 SDK with OpenID Connect extensions 5.24.1"
+},
+{
+"name": "odata- client-api",
+"version": "4.5.0"
+},
+{
+"name": "odata-client-core",
+"version": "4.5.0"
+},
+{
+"name": "odata-commons-api",
+"version": "4.5.0"
+},
+{
+"name": "odata-commons-core",
+"version": "4.5.0"
+},
+{
+"name": "OIUE TOOLS",
+"version": "1.0.0"
+},
+{
+"name": "OpenJDK",
+"version": "8"
+},
+{
+"name": "OpenJDK",
+"version": "8u181-b13"
+},
+{
+"name": "openpilot-drive",
+"version": "v0.5.1"
+},
+{
+"name": "org.apache.xmlgraphics:batik-constants",
+"version": "1.9.1"
+},
+{
+"name": "org.apache.xmlgraphics:batik-i18n",
+"version": "1.11"
+},
+{
+"name": "org.lucee:commons-io",
+"version": "2.5.0"
+},
+{
+"name": "org.w3c:dom",
+"version": "2.3.0-jaxb-1.0.6"
+},
+{
+"name": "PdfiumAndroid",
+"version": "1.5.0"
+},
+{
+"name": "perfx-jasper- report",
+"version": "0.0.8"
+},
+{
+"name": "play-services-basement",
+"version": "11.0.2"
+},
+{
+"name": "play-services-tasks",
+"version": "11.0.4"
+},
+{
+"name": "Protocol Buffer Java API",
+"version": "2.4.1"
+},
+{
+"name": "qpid-proton",
+"version": "0.22.0"
+},
+{
+"name": "Quartz Enterprise Job Scheduler",
+"version": "2.3.0"
+},
+{
+"name": "quartz-jobs",
+"version": "2.3.0"
+},
+{
+"name": "quartz-mongodb",
+"version": "2.0.0"
+},
+{
+"name": "react-native-pdf",
+"version": "1.0.0"
+},
+{
+"name": "reactive-streams",
+"version": "1.0.2"
+},
+{
+"name": "reflections",
+"version": "0.9.10"
+},
+{
+"name": "reflections",
+"version": "0.9.9"
+},
+{
+"name": "RocksDB JNI",
+"version": "4.4.1"
+},
+{
+"name": "Scala",
+"version": "2.11.0"
+},
+{
+"name": "Scala",
+"version": "2.11.8"
+},
+{
+"name": "Scala Distribution Artifacts",
+"version": "2.11.8"
+},
+{
+"name": "Scala Swing library",
+"version": "1.0.2"
+},
+{
+"name": "scala-actors-migration",
+"version": "1.1.0"
+},
+{
+"name": "scala-asm",
+"version": "5.0.4-scala-3"
+},
+{
+"name": "scala-compiler",
+"version": "2.11.8"
+},
+{
+"name": "scala-continuations-library",
+"version": "1.0.2"
+},
+{
+"name": "scala-continuations-plugin",
+"version": "1.0.2"
+},
+{
+"name": "scala-parser- combinators",
+"version": "1.0.4"
+},
+{
+"name": "scala-xml",
+"version": "1.0.4"
+},
+{
+"name": "scalap",
+"version": "2.11.8"
+},
+{
+"name": "seeds-base",
+"version": "16.0.1"
+},
+{
+"name": "semanticdbScalacPlugin",
+"version": "4.0.0"
+},
+{
+"name": "ServiceLocator Default Implementation",
+"version": "2.4.0-b34"
+},
+{
+"name": "ServiceLocator Default Implementation",
+"version": "2.5.0"
+},
+{
+"name": "Simple API for CSS (org.w3c.css.sac)",
+"version": "1.3.1.v200903091627"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.21"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.24"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.25"
+},
+{
+"name": "SLF4J LOG4J-12 Binding",
+"version": "1.7.21"
+},
+{
+"name": "SLF4J LOG4J-12 Binding",
+"version": "1.7.24"
+},
+{
+"name": "SLF4J LOG4J-12 Binding",
+"version": "1.7.25"
+},
+{
+"name": "snappy-java",
+"version": "1.1.2.4"
+},
+{
+"name": "spray-util",
+"version": "1.3.3"
+},
+{
+"name": "StAX",
+"version": "1.0"
+},
+{
+"name": "StAX",
+"version": "1.0-2"
+},
+{
+"name": "Stax2 API",
+"version": "3.1.4"
+},
+{
+"name": "Swagger API",
+"version": "1.5.0"
+},
+{
+"name": "swagger- jaxrs",
+"version": "1.5.0"
+},
+{
+"name": "swagger-jersey2-jaxrs (Jersey",
+"version": "2.x support) 1.5.0"
+},
+{
+"name": "swagger-models",
+"version": "1.5.0"
+},
+{
+"name": "swagger-ui",
+"version": "3.20.9"
+},
+{
+"name": "tanzhenxing/educms",
+"version": "1.0.2"
+},
+{
+"name": "The Legacy MongoDB Driver",
+"version": "3.10.1"
+},
+{
+"name": "Type arithmetic library for Java5",
+"version": "1.3"
+},
+{
+"name": "tz- lookup",
+"version": "6.1.5"
+},
+{
+"name": "tz-lookup",
+"version": "6.1.0"
+},
+{
+"name": "ub-jsdoc",
+"version": "1.7.2"
+},
+{
+"name": "Underscore.js",
+"version": "1.8.3"
+},
+{
+"name": "volley",
+"version": "1.1.1-rc1"
+},
+{
+"name": "webfontloader",
+"version": "1.6.24"
+},
+{
+"name": "WebSocket API jar",
+"version": "1.0"
+},
+{
+"name": "WebSocket client API",
+"version": "1.0"
+},
+{
+"name": "WebSocket Server",
+"version": "9.2.15.20160210"
+},
+{
+"name": "WebSocket Server",
+"version": "9.4.15.v20190215"
+},
+{
+"name": "Xamarin Firebase - Analytics Impl",
+"version": "57.1104.0-beta1"
+},
+{
+"name": "Xamarin Firebase - Common",
+"version": "57.1104.0-beta1"
+},
+{
+"name": "Xamarin Firebase - Iid",
+"version": "57.1104.0-beta1"
+},
+{
+"name": "Xamarin Support Library",
+"version": "v13 28.0.0-preview7"
+},
+{
+"name": "XML Commons External Components XML APIs Extensions",
+"version": "1.3.04"
+},
+{
+"name": "ybq/Android-SpinKit",
+"version": "1.1.0"
+},
+{
+"name": "zkclient",
+"version": "0.8"
+},
+{
+"name": "zwwill/yanxuan-weex-demo",
+"version": "20181030-snapshot-b8dc3afb"
+},
+{
+"name": "ZXing Core",
+"version": "3.2.1"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "ExtremeLocation",
+"retrieved": "2026-11-08",
+"sha256": "07de317a1df298fb278bfe7b6bf15f3f81970caf17bfa4717705c461a518d7f0",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/6690be7f89cd4c708e9c4926135f1b1e?v=c27038ec",
+"version": "3.1"
+}

@@ -849,6 +849,800 @@
 "dropdown_heads"
 ]
 },
+"https://documentation.solarwinds.com/en/Success_Center/dameware/Content/dameware_third_party_software_list.htm": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 17,
+"sha": "09bf8f8a698e833f53a4991da700be29b37938ef7d87f6fa9d2c11580e469fff",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://documentation.solarwinds.com/en/success_center/servu/content/servu_third_party_software_list.htm": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 11,
+"sha": "8db92f793e030f0a2b2e3896fd2788547c686fedee1b88d2db41887327b0e905",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://download.manageengine.com/products/self-service-password/adselfservice-plus-third-party-apps-list.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 124,
+"sha": "715bc233ca4781428f1ce932c2863d9024b6c5ab4e56b7c771de78bdb40736f9",
+"status": "ok",
+"via": [
+"jar_names"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/0b0e7a98ed064fb8a692521856a48f76?v=5866e3a2": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2911,
+"sha": "0e03bdea2d9a6be2e9a710ba9fb036c0866a6c71c1ff93a660d63c9b0a227acd",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/0c3a778a279b4df6b33ad7f8ebd1b034?v=308ba137": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 804,
+"sha": "9acb91646886f6698e4cf35812b0889da71f776d615a15d53a9584b84fbc38d9",
+"status": "ok",
+"via": [
+"license_groups",
+"jar_names"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/10f13bfc745147de92bd9691b147aeac?v=b307ec54": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 326,
+"sha": "0a967a19828f397e083286d4d6d81ace0cfe43cf7c67a43b49c94778e8d01738",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/14b22755847b46cfbb4c283e14db5ebf?v=e7b171d7": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 0,
+"sha": "7ad7b992622ffd0293538ee651af9adc433222aba47b1771ef177d1be161d7e4",
+"status": "empty",
+"via": []
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1825be0a48cd4bdbb1735338ff66f4cd?v=76a56f5f": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 439,
+"sha": "2ea912fbddc8ff92bd2f560bd86fd67bf8abf7de7bcfd071d909c65b88a4ac38",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/19f23bb8dfd349d4984e49021184e54a?v=6afa9c7c": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2388,
+"sha": "c714f6a37b25ec473c08d981d1a54f67501be363d79cb43d7f95f9e9695659ef",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1da44d69b281430790aa4a1f330f4acd?v=15cf3d8a": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 624,
+"sha": "a1f530dd5ddcba2cb53bb1a45bc22790e9cf6d0b05b0e0deaa6fe01c97220229",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1eb0d3a471db4213b50ed329564f74bd?v=cef5539a": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 486,
+"sha": "26a537f6012d9fb59aef0859ed776a4bf91419e382ba2968edf7a8fc1828f84f",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1ebc41ca5d39438393bce6edb0f6ab19?v=84025e66": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 0,
+"sha": "76ca0990303a54d4dc56b0b69dc019fb7aa9f2fd87d6d7fb2659621bfc461102",
+"status": "empty",
+"via": []
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1f97e0ca1be94be7b2fbdba712e44a55?v=f0b27619": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 213,
+"sha": "6801cc71e2183d392acd9192cfed3a8dba77df694ef37f91c17ed1f003667c51",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/2914979e57444ff297a417dd62080456?v=15e54c73": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 677,
+"sha": "4bf8b27d279a6b184ed0cb0f34864321e5cf9897c943d53efe62b08374d5173a",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/3206721469304311bdec936bc661301d?v=2485208d": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 236,
+"sha": "a2f613dfc76139ea3e815a28d019a46b6b079542b5c94cc1d1b12056bd6b3399",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/3f6cb944648140e5806ce8aedab0d8ea?v=a974130f": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 13,
+"sha": "dfd21ff3a394de5ecd9620db28aa3cb10d8e0cfb5a9c417d61cee29778ce2c02",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/4389fb417d074aeaa00fee7f1896367a?v=91a0e46d": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2270,
+"sha": "95501eff0d7207e139096c3cb274d1c9daf8a3c962188d516cc4fa411e9898d3",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/4fd65189fa1949e98573df2f4f37c685?v=f16f464c": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 728,
+"sha": "9d319c1926ac6fda12f60b9601345f75ea4b77e3d7c4e89fe467fa5746e9d50a",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/54244712360c4b6297055ccc78287389?v=bf2e0ac1": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 253,
+"sha": "261bea73cf2404a43c7bf923d23bbd079a292fe1d5f9576fe591c44341297a79",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/581f266c864a472ab60ab5d4c0a194fa?v=80590889": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 498,
+"sha": "7e71da1343462d115a770582c79b33be84b3c22bca0cf7fbb7b5e89b5fff804a",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/59e6403139c94afdb58b7dcba171e23a?v=32b0edbc": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 317,
+"sha": "6055a5ee50b32c0549d0e703435fbe66af5e78de32c43ca8f758c26511fb63a6",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/62ff92a4e52e43f5bdf94f6b0093b88a?v=46abe1b3": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 161,
+"sha": "c79ef36f690da122a59f50a5eadd5b1b4929236d32739a3b3b39a73cef86ca13",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/6486e738216a4b5d92faada4819699c0?v=91a7f874": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 499,
+"sha": "d949cd6e3a28464cc404baca17a54076fb4d1dac4f6fb450645494057b7094b8",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/663459c46bf54d99b4bf5a5c2644f6a8?v=3ab78169": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "1c3081527da7a1718526e5b5f58e3729e3072d30eebc4a5099e9ed43743a414b",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/6690be7f89cd4c708e9c4926135f1b1e?v=c27038ec": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 336,
+"sha": "07de317a1df298fb278bfe7b6bf15f3f81970caf17bfa4717705c461a518d7f0",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/6758641cddba45d6873af24e4c2bb1e7?v=2a19b534": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 160,
+"sha": "1ae110e2ef846e31e09b48cb9e8ad106e26330465950c31daf5fb32a466a2bd4",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/67d634179b964d69b2a142d600d2e2b1?v=076dd30d": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 494,
+"sha": "11bc2be37bb240a035e9bf717c9758fdb35fa1ac01c702e3c2e2622885089127",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/69db1d7727e6445584fd4dcc5a44f6db?v=c544852a": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 20,
+"sha": "a66a8e49ee2de4fd06c05ed577918f65f868b51723735f5e7bd87de90b492a51",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/7739c9ba94354e318c518df32ef45440?v=5563cea7": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 498,
+"sha": "f7b5f8178f6ef9ffcd1694fc3211f5cf63a38056e52b10a21fab843bab9e0f2e",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/78cb85c69c3c477fb704335be8023728?v=bf597e16": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1457,
+"sha": "b78405aad52b65f60ecc24a994741bf7a2999e0b2218c5300928141439fa62ca",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/7a1268841ff24e4ba97a5422d30a8d86?v=b4b07220": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 787,
+"sha": "1aa0d22a596504acd8f0c42b29fca48c964e036dbec5b4b5a4762ab1e74d8280",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/7ba79acf88474bb597e3cd458df0b063?v=f88c91df": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 372,
+"sha": "41c8e41fcd23fce465283824f0f0b4c266afea79011eb49457867e34fc4b8d74",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/7be2734ac22b47728ac081549d4822ba?v=e4a41ab4": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 289,
+"sha": "02c3c0368914212cd68d2d5312db5f3f91823ea590ff3804a5d4606c9a1dfac6",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/7bf04ab97eb8402b9ef3c5e0656bea7d?v=d10c20f0": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1671,
+"sha": "3c79bb5d7bfbaa0b5c8c6cbdbca7a5668ed718efe2fa3f33342934988681adc8",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/808a09a869d6450583bdad6684f67200?v=72b43d5f": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1069,
+"sha": "4bc739bb731f81ebe6fdfc5e69d44a85f450b8726732dce040e000cefc6b8434",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/81dd8f77fb364dcb8ea8033ff91d42a4?v=2c1d9685": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 236,
+"sha": "abc73aaa53fbf1b933f1de313a9224eba6438a2847e047cac75cc643ba5e6f99",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8221f26e099045bbae0f0696ed08a947?v=8580af56": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1751,
+"sha": "fe6d95be667ab4c84e467e045d02c72f73e62cef5c81d8ef83fd93405ab867f2",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8319845a33334d93b9a7624eae123837?v=f414da87": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 372,
+"sha": "04e2417694bd7316857a11527a6cb01dca2410bb3dc8afb5633e35c339ca0d0b",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8349d42934ec47ea829fa036d5d34915?v=dee4568a": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2556,
+"sha": "e9fef0e7e4c63337cf521c2050c2159123888c1584acf2ed6336a7661ec1c400",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8484d7706991460aa3d3112dc8d43fc4?v=da84554e": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1516,
+"sha": "544eb367f6005d047515265da43da5298ef905ae9bdc09f1c761b9f5096c23d9",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/84e7f23f208a4b8182ad481e29950f9f?v=c247f866": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 257,
+"sha": "66ab91d475c5bbc4663d7cfc2e16f44922230f0fd3eaf2a2b6a9df845fe6c25e",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/88510fb7848249c99fbbeb1489cb6f38?v=d0c639bd": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 201,
+"sha": "27f5e8f2535af11a9ea592b9224cfcd0e3c3c6af76c8c246ee34e59cb80f4021",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8a691c2641ef490892aeadaf2a1d371b?v=c5c87105": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1385,
+"sha": "e0577e1e1052090d23f56007f3324ec4e5979f73b05c04decda099dce86f1a83",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups",
+"jar_names"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8be18afd6c5f4207819af541835338e3?v=c354b78f": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 23,
+"sha": "7c594629debc46f77ebd193c5b494b2ecff76345592d94a65b1d1116aea0e617",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8d80e74ec49149a4bac6e7fe4c5e6070?v=0a9e15f8": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1534,
+"sha": "ee5f6723f65c914db5d83ac83bef4095ae1401d94bcb2853ed4368c6e2cba081",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/9504eac65aaf46b5a5ad1dddf41501a9?v=bdfa264e": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 44,
+"sha": "74218e90adb0b02a0a26fc3523adde7b7b316cda74bc2e0c3dc3c1f513593ddf",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/96dbaf49a7224ad5b269bcd0b952f580?v=21d26112": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1382,
+"sha": "24051db1dbc090c95d3c80a114d810aa05a40ac3028524142238c0dde6df654f",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/98aea157762b48da9d830582eea83387?v=fb7a9059": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 13,
+"sha": "abc100f0f60a13c5c9d29cb1cea2320d63197602e902e4461fb7a8bb6925c7f4",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/98dd0c2185654c75b44df27fcfaef449?v=4c79b587": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2,
+"sha": "ca397eb88d4d007f78994bbe2bfd5f163c55f7aac29dd30f1c77b12085c1a127",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/9adb1972a9bd4b9e9f08bfe06e9b26b3?v=e5c8c4c2": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2425,
+"sha": "a1210432049e1f5a15311fede28b482e2f879a12764ea5d70450260937212afc",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/a2491dda5bc14f05b38bb89650bf9778?v=75e3c838": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 13,
+"sha": "7023307dff0047c90353037ae8c8f4ef747647757da1d4d4e38c6e8747b9d34c",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/a72f378cb34d4bd8b5148ac0ef5c0c53?v=859df4c8": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 44,
+"sha": "fe7f6f31787c536c4be2f07beda68b8707ebcb1c65b0773b5e46ac2e90f4897c",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/a84b15782dd04a66953228fcd55bfc9b?v=e03b2c6f": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 206,
+"sha": "a865225b99eb4819e9aa4e9bb0ae03bba4d2ec8b95121db2f3a30ff5636cb37f",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/a861b94cbd8b42b7936d9b0ad1971607?v=97048b35": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 0,
+"sha": "0b89d17af306a27fcc4a3c1604a0f12ce92f7c212ccf1a32dc9a93bbc49e9805",
+"status": "empty",
+"via": []
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ab2144655789424f8be7e7feb8c182cc?v=a647bfda": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 93,
+"sha": "39f9ddf4d2c1573e1707f1ff3714fddedda3393ae1acec8e09317470ceebe1d5",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ab30070f220b4d308cdd7fce4fd03fa9?v=67d7ec31": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 777,
+"sha": "c645d9e4fa67cc9de97dcd5f6f630ba10e0476006e940f7d0172124f1219f56d",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/abed77c02fc14541af2314af2177ad53?v=a317c294": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 102,
+"sha": "958ada675cf67c97172674f3ad634705d1a1dd4769ae13eaf19d4258041bce8b",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/af1f3b57429344ab95746c47458a5509?v=f7437ddd": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 434,
+"sha": "f921f20fd60cabf436baea0169fbe97fbbb8fbddba730cf59ca9249d5827d36a",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b0967ba1894b4ce1bb88afcf55de47d6?v=b1d67a9f": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 471,
+"sha": "6e59b958f823ff5e681121d75258ebd0298e5eb16cfebb7aad12e1b990cb0b3f",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b0f0c55a6fb44c06aaf859ea7097a712?v=a0ead476": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 328,
+"sha": "cb85a988da98134ae5c1365840ea3f9b09a86fa19777f07917ca0ef2f52e75d7",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b2be4ea90a0847b89dd2150e0d3e0c25?v=b5552ff7": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 20,
+"sha": "76469475b0a834fdbc875402dc2c4191a12ee6445d862e2f130627efcc4a6aad",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b980c68d1e3c4c7caf64bbb054eb696d?v=5f12bb87": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1,
+"sha": "90e8f675f731633903a10afccdfda1cee24cb7e6c241663f0b1c127548d28691",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ba50efacc75d4c6f97074e2359bc2d15?v=21a69c32": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 56,
+"sha": "7be2c6d0c7d3a73bb20d92437a10a0086315608df5628cbb43118b3b77ff84b8",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/c09426706dcc4a4582d577b8d2aa0fe9?v=5d6d9801": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 805,
+"sha": "75963332690587339ecd5910fd4b38941705b4329cec3438c6ce41e435b17326",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/c3580e81203a46df8ee4ea5e7814807c?v=6f1c5e22": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 284,
+"sha": "3edac7212861d8f7cf68bd35b5e34b7db54c3b2890438e9b6f745b06671f2b38",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/d368c4e1647e4aac997ef26fab8e7ce1?v=1c757c22": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 116,
+"sha": "f22b5b0461a57393fd30d9cbb8c3d9c286e53051c8e9bb543c9be9073dd42ff6",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/d72a127cb33d48a0bfa7491826e75b0c?v=e30f3c4e": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 644,
+"sha": "a2c8e8e31dff69839869dbf75bc22263114a80232abece391757ed5d7e613e6f",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/d82262df65a443229db9b96554130edd?v=58e76f2a": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 351,
+"sha": "f4b3a001eb6063a98dddbb9d48618488d36aa2d79b1e4cdeeeaad693e3d397eb",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/d9fb59b046a24b5e8df1551f53622181?v=72e09a85": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1370,
+"sha": "8c49b3c2c055b2cb8f4d4b2a5e1c4e53365eef375f849d195e26f9563b355b31",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/de3848641bbe4f16b71504b6ab1c164e?v=28e3adce": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 155,
+"sha": "225d49ff1f682eab6cbad50681eb4e188bab667e14fc978acc6b9da9a8a9b648",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/e3d10077304a457991634601672ce839?v=51800695": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 364,
+"sha": "01171a3d4475084c3384a4c3c308ad2b876a5f7fd5404fa484b0aaacaa20768f",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/e5fb22ac90194c63b6e71b3ce0a9809d?v=262ea443": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1500,
+"sha": "f3e2e15fb5d27e7bec874dd7781adf0a07213b8b88018c2779c4d656c24503ea",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/e8585f3cf69c49479226d3f806e5f666?v=4ea5d376": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 636,
+"sha": "bf942746a89472917b777e9768382b03f308511662d343ee6afd1bd0494307b8",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/eb3106286c7d4fb2a2a04deac8c32761?v=4d69401e": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2498,
+"sha": "b3475058e21ac9189207f4d09d17f8c00958360987150baa9e1edbd6a631e901",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ec140bb810ef4280899693a8aa01d945?v=f55c96e6": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 808,
+"sha": "a2c497fb133a303f9c172b7ea51e02309743a572ac79668adaf3e82892dc30cc",
+"status": "ok",
+"via": [
+"url_lines",
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ee6078d15e8b42928fa471f736b20446?v=b90ea8bd": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 631,
+"sha": "7953825cdcaa3fe2a5a451583958ee4f912fd3192a8a9d86437a1a427aa3f15e",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/f151d560870c479eb833a23ca904c8d4?v=6b663bde": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 13,
+"sha": "89fe400585ab28b8dde76f35d0d4727acb4b3c0d29f2f0a5902eafb928bb85ad",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
+"https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ff120cab4b324aaca816017957032c8b?v=715aa5ed": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 198,
+"sha": "40c5f2da76c616f82334e2260cf432146c76833fa059f40aa7b7a105b81b74fd",
+"status": "ok",
+"via": [
+"license_groups"
+]
+},
 "https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions-22.4R1.pdf": {
 "fetched": "2026-11-08",
 "kind": "pdf",
@@ -889,6 +1683,492 @@
 "dotted_toc"
 ]
 },
+"https://opensource.netapp.com/Active_IQ_Unified_Manager/AIQUM-9.18GA-Release/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 4294,
+"sha": "4ee9325bcdbe828884162e3d9777bebeedeef9183b48cf9f3b6737fb76590836",
+"status": "ok",
+"via": [
+"component_license",
+"jar_names"
+]
+},
+"https://opensource.netapp.com/Active_IQ_Unified_Manager/AIQUM-9.18P1-Release/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 4192,
+"sha": "776118eb8c29d44f9cf2fb298da0416ee6683e0ec42e1e4e26eaadea0854881b",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Active_IQ_Unified_Manager/AIQUM-9.18P2-Release/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 4186,
+"sha": "bf8d6e8b1e4948b36bcb974943e079e02c96b9e50649f87891c97760c189ea58",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Astra_Control_Center/23.04.2/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1457,
+"sha": "cb4ef35693e9e2f3f9e9a99c14a34d9e7e8a8977eafac573c1b3fead76fd1b20",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Astra_Control_Center/23.04/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1446,
+"sha": "a052af03347a1c7c616c7812f518094234c998bae2e3a78aea170c5f483fc5cf",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Astra_Control_Center/24.02/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1469,
+"sha": "54d801a9e60ce1423a917afa29f44b2c0f5b149a7eef917460eb899157ad9e44",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Cloud_Volumes_ONTAP/9.16.1P5_on_Debian/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 488,
+"sha": "536dc4667cde1f804fdbd5b63c9ad40a5d6e5f630db6bc62ff0c241c096ebaa6",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Cloud_Volumes_ONTAP/9.16.1P6_on_Debian/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 538,
+"sha": "47d25730b9805d90d8d5f1b6a9f7eb8c15601fde368bcff0eff19b6fdc588c54",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Cloud_Volumes_ONTAP/9.17.1GA_on_Debian/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 518,
+"sha": "2a14421e091a8dd4f7c6356f32c94b4147609fdc100018d5180ef4cab421de3e",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Config_Advisor/5.3/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 13,
+"sha": "1480170d9f18ef78c30ff8d747b6d712827bba049376acf6883fbc398a69930a",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/Config_Advisor/5.4/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 13,
+"sha": "5f919325d0047067e30a6c41207d8b1a17a5e49d13a571d55774ab4cb19ed765",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/Config_Advisor/5.5/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 17,
+"sha": "796ade11bdf42b578d8c7eff75da0f58225fe67703c65d75bed26c94f3f984bf",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/ESeries_EFSeries_SANtricity_OS/v11.60.2/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 51,
+"sha": "8a2ca6f8ce8a5e2756af0aa56dd6ee3de0529aec34f6526b2e50811444c75fd3",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/ESeries_EFSeries_SANtricity_OS/v11.60.3/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 57,
+"sha": "2819b14e529e25138f186d8c989a097f280681732ec63b8336fd893c52bad3be",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/ESeries_EFSeries_SANtricity_OS/v11.70/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 55,
+"sha": "9b358dbff4064ac6e773041bf848a08ecedb112bbdfc542357f96f72a41982fc",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/Element_OS/11.8/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 3,
+"sha": "ad00a6c8dd5369180e67cbe9c5794070450b1ed21a2c5a6f084eb0606977c897",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/Element_OS/12.0/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 4,
+"sha": "bf872c88f7bb3072ebfb73a007ceecc362e7329467f1323dae73ee4fcf1f6470",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/Element_OS/12.2/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 4,
+"sha": "dd214b3799388ff67e237c65dc539ca6f555e8f521924cc4b936dac0563d7ee2",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/Element_Software/12.8/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2079,
+"sha": "00e1bc6280f15d0d272a68ed517713d377c0db1b2903520e408972da3921fbb8",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/MetroCluster_Tiebreaker/1.6/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 46,
+"sha": "3baac4e2626e2407d5800ecc8e0ab5c09a64e90f797f2114e4b7cf4839ff007a",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/MetroCluster_Tiebreaker/1.6P1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 40,
+"sha": "dc49fa1cd9ad01a34398226c1bc9ba442035d04b09f819d8e21c7d9af02ae01a",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/MetroCluster_Tiebreaker/1.7/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 40,
+"sha": "6b5823e04356234b3eb35f8daee5b644780d535a8cf85988a113b65ab9ab24aa",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP/9.14.0/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2893,
+"sha": "04fadb5adae46ec1f93c4e73d4feee9c0ee8da4ec6caedf2c0324aa5d77570ab",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP/9.14.1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2970,
+"sha": "9e2bb35ae1a6a00a3af4302046fb99772279cdc5d87189e4de2a7341aea53721",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP/9.17.1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 3362,
+"sha": "5535b3b1ca1ff636dd78a5061d1f1fb00712d4482a4f4ace7bd6314399003ed2",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP_Mediator/1.11/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 96,
+"sha": "b71f6e31c9b3efb9d520830b7ac55eaae06c0d666a9e06fb7afb9bfb9d4519d6",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP_Mediator/1.12.1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 94,
+"sha": "8be8d2c060c33d75f8bedfa72482f762060e624a4170ee5c24d11446444d4172",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP_Mediator/1.12/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 79,
+"sha": "f005ad04627b57a2198f94f83ae7c17ea6c35e710e93ab22d4111c0f30a13701",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP_Select_Deploy/9.17.1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 926,
+"sha": "38fb733eacfc051b9b21be52b9558bd64c85bb49286387e8a1f7e39e2dd6275c",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP_Select_Deploy/9.18.1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 921,
+"sha": "87f2c872cbc5cd94c062405e37ad4a398d75c3263061d4daae6dd2698b236114",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP_Select_Deploy/9.19.1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 768,
+"sha": "fc4b21fd062e7ba983258b6848163501bac7c5469a5d87ad0505a55a12027647",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/ONTAP_Tools_for_VMware_vSphere/9.13P2/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1766,
+"sha": "ded0676633c6fe9f4989ff5c9f22be866e68bc4bb34e21fe4617c50e5c000d2b",
+"status": "ok",
+"via": [
+"gt_list",
+"component_license",
+"jar_names"
+]
+},
+"https://opensource.netapp.com/ONTAP_Tools_for_VMware_vSphere/9.8D1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1691,
+"sha": "2f97f49c87632ad3d62dc5004ed7c953678bef010c6613a38415ddf6d2c0a766",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/SANtricity_Storage_Manager/v11.50/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 37,
+"sha": "e59ad16f2e0ca43fb11c22ea20ca00dde689d267332bc2a35d669bd99727c70d",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/SANtricity_Web_Services_Proxy/4.1/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 38,
+"sha": "23a9c7acf098754697629934efc4e3b26ea1f75ddfc48755683987a3aedf610c",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/SANtricity_Web_Services_Proxy/4.2/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 37,
+"sha": "cd804e074f840cdd301de0727e4836907b3e2c21e61d0666c68ce9e85e032775",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/SANtricity_Web_Services_Proxy/v5.0/": {
+"fetched": "2026-11-08",
+"kind": "listing",
+"n": 41,
+"sha": "a91ba3b7a4900d553e23aa9843ef0c6f6bb16078255985129709aa72f0e8bebd",
+"status": "ok",
+"via": [
+"source_archives"
+]
+},
+"https://opensource.netapp.com/Service_Processor/4.11P1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 121,
+"sha": "8512e3125110a4513452e307c74adc2bf2d4b4bdba929f166bb258a6f11bc543",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/Service_Processor/5.11P2/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 118,
+"sha": "9ed52af398d4721605b51c50caef523a9385795319377f0b313ae85c4b516d3b",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/SnapCenter/6.2.2/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1759,
+"sha": "dab160f16b54b370bb5260608e5d89b3924ac9f5a4a6863a5a120272888a7a0b",
+"status": "ok",
+"via": [
+"tpn_list",
+"component_license"
+]
+},
+"https://opensource.netapp.com/SnapCenter/6.2.3/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1456,
+"sha": "8730497c35a45d0e90dc158124ab9078b2e3206ee3a946202dde6aac1d681105",
+"status": "ok",
+"via": [
+"tpn_list",
+"component_license"
+]
+},
+"https://opensource.netapp.com/SnapCenter/6.2P1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1903,
+"sha": "72ccf407a87556d5dc722ebd2b35299268e8d5dec955723c1f2554689291aa73",
+"status": "ok",
+"via": [
+"tpn_list",
+"component_license"
+]
+},
+"https://opensource.netapp.com/SnapCenter_Plug-in_for_VMware_vSphere/4.9/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2064,
+"sha": "b6e95a081dba11618c78f5065f7186658081797d8abc014ba212b80b572106db",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/SnapCenter_Plug-in_for_VMware_vSphere/5.0/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2221,
+"sha": "7b706a7f469c895c1e2463077b6c0195a3622f74eaefc7e2a391fd29922a2827",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/SnapCenter_Plug-in_for_VMware_vSphere/6.0.1/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 2287,
+"sha": "3b678bda40205bde251703e6f3b7725dba95fe5ee6fc007fc6c564670cb35e39",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/XCP/1.9.2/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 523,
+"sha": "ffb52babc305e2f8d17e3fbe2285b7594d97a377276475cc2690f6fac63f75dc",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/XCP/1.9.3/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 508,
+"sha": "4b17d1d8aeb614d18ae07348471d497857b0307505ecad67ac98bd52af99b5ef",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
+"https://opensource.netapp.com/XCP/1.9.4/NOTICE.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 1117,
+"sha": "82699ee0bb7a509fe704370028f812a3cb67579faad80c1f59cff6cd8008c92f",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
 "https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html": {
 "fetched": "2026-11-08",
 "kind": "html",
@@ -927,6 +2207,346 @@
 "status": "ok",
 "via": [
 "dotted_toc"
+]
+},
+"https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-ibm-aix-4.6-4.6.0.1762&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 22,
+"sha": "73fe907f804df7f7eea3483c4b7495b81d4ad326d0d05bd1dce006ffc84a8d58",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-oracle-solaris-4.6-4.6.0.1762&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 24,
+"sha": "fe83fba14673e0e4efeba9972a36e4888a12613a66fc29657c55bda6feff8bc8",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-windows-6.2-6.2.0.115&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 59,
+"sha": "5bb6e39b6b88db3427f4d374bf0493391cb1c3707e9b4f53e78c48efff55b06f",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-windows-6.3-6.3.0.125&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 58,
+"sha": "24cf459fc58407929bf8572ec8b91c5196d78684a3433b12027ad405aa7ae961",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components-export-veeam-backup-and-replication-12.3-12.3.0.288&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 1117,
+"sha": "f9d3f0f2824b8f5db36ff598276810cbd9c07d9356ae6294e7549de514ad9e0d",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components-export-veeam-backup-for-microsoft-365-8.0-13.0.1.43&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 486,
+"sha": "2e865ae566ef9186750babed55d352eff5d2f9edcca494080c99ae2c0f3164f3",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components-export-veeam-backup-for-salesforce-3.1-3.1.0-2198&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 505,
+"sha": "8296da5f5df902a4eaea8f88eaa376f2b72d10afdcdb2327da1bacad38c9c726",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components-export-veeam-one-12.3-12.3.0.4522&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 302,
+"sha": "7e56e9b3bc3161c4a169cdd4bd160b6eae78db62d417f6050a6d512daf672c31",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_ovirt_kvm_plug_in_for_veeam_backup_and_replication_12.5&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 240,
+"sha": "870df2bd38487aac29f538bd624720f7208f56122ece113013ca77b3db1b7327",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_red_hat_virtualization_plug_in_for_veeam_backup_and_replication_4_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 249,
+"sha": "99844a1f74c6ed37c4d6a5e3a97438fda8ba888b3e1dd59874e978b1918721d5",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_ibm_aix_4.5&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 22,
+"sha": "0b20d58a936003ebea1902036e9f4239b15198fe3ed639dbe3cebc23c96cda43",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_linux_6_1&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 27,
+"sha": "af3ed2ab724c06d67178f569844018413cc8599a88d9b977e2de421286bdf8b6",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_mac_2_1&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 28,
+"sha": "e642ff564880503b4b033bfcd10ac92b6370698de3397293a952b8af885e759d",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_oracle_solaris_4.5&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 24,
+"sha": "e03f5d62ada1c179b2d1718a09a2a4df92cfd2b1701dc2e90628497f4dfe9887",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_aws_7_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 336,
+"sha": "616fcb16d7854771c8c2617331b3aca67ac8e35229c33de18df598f4f8a6134d",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_aws_8.0_8.0.0.814&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 375,
+"sha": "438420b6da3690a07fc35deacc7b446099b0befb000cedcbc6cbca705afacf8a",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_google_cloud_5_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 366,
+"sha": "0ddcc6b848c89cb243a4985a62cb8d6b45e8b0bbc91f6d540a01de4da9c176a5",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_microsoft_azure_6_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 375,
+"sha": "5b869e0c4352f275e42bfcc769171f6475fa65de553043c5db008df84b60181c",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_microsoft_azure_7.0_7.0.0.451&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 486,
+"sha": "9bc92eee8c9703af10645f471423dd2cdefe84a19949717fc88ab06939590077",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_nutanix_ahv_4_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 191,
+"sha": "d6ed852a13c16f15e4e3fd6c0f765e28d160579c5b5dbd2e58131d2633dca845",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_nutanix_ahv_5_1&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 303,
+"sha": "8a5d9123a9e02c42d4f99a7d710a4a3895e47412100151c2b33cbd47167828f4",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_salesforce_2_1&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 580,
+"sha": "290252d22fb9ab13ed4fec4d41e9985bf444ca8c6a66283aad3114c9255df79b",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_recovery-orchestrator_7_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 755,
+"sha": "61f7cb3eedef76be477818e068add1402ec532ce42a2b3872fcf2df4c4d1593d",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=components_export_veeam_service_provider_console_8_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 678,
+"sha": "42d8589af1d09c02c1d38ddd4f98f7d4b3998a0185bd1e994b6632cf8da1eaf9",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=licenses.vbr_13.0.1.163&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 1067,
+"sha": "32e3fba2f24f232356413c0540a168b032df643d0dd188c2fd213993a81da74b",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=licenses.veeamone_rs_13.0.1.5821&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 505,
+"sha": "5a90190d574e57f6ecf872eafb0528231fe94f65084844aef6e3f6d97151d268",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=licenses.vro_13.0.0.977&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 1267,
+"sha": "1629f59579710ef90a7058ce993550e168420fb0d6ff56ddac4cb0e8dd5c4f33",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=licenses.vspc_9.0.0.2824&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 531,
+"sha": "bf194d230676fe392ccb153cc4b514c0df0cc823cc128f0b471d815d35bd9991",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=licenses.vspc_9.1.0.30125&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 417,
+"sha": "2e5466981e6b0cf88825b95dbc066db6ac05e6df4830d2e2baca17dd4d8129b5",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=veeam_agent_for_linux_6_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 19,
+"sha": "fa128440f9be4907bef597b0c43340d09c9da6a7c48d50dd8195800ad4fbcffa",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=veeam_agent_for_mac_2_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 17,
+"sha": "2cba2ee267548e561c81691f5cff425f5227ff8c84fe77862a1cbaa35b03a131",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=veeam_backup_for_google_cloud_platform_4_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 851,
+"sha": "c4bd1d966f2e67f580a22805fbed2f04a26b824683ae5aa5cbd521234e774063",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=veeam_backup_for_microsoft_365_7_0&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 79,
+"sha": "905fc8c677a4bdd6f960dcfadf21587e2bd903a8a86f890a62ec6aa5050d98e5",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://www.veeam.com/services/license/content?file=veeam_management_pack_for_microsoft_system_center_9_0_components_summary&lang=en": {
+"fetched": "2026-11-08",
+"kind": "sbom",
+"n": 4,
+"sha": "68d2c58d51b42802edde97c057381ae8473d4aeb446f4486807b17f12f67fa8d",
+"status": "ok",
+"via": [
+"sbom"
 ]
 },
 "https://www.watchguard.com/help/docs/fireware/12/en-US/v12_10_copyright-licensing_guide.pdf": {

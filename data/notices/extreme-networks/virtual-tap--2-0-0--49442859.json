@@ -1,0 +1,94 @@
+{
+"components": [
+{
+"name": "DPDK",
+"version": "1.7.0"
+},
+{
+"name": "DPDK",
+"version": "1.7.1"
+},
+{
+"name": "DPDK",
+"version": "2.1.0"
+},
+{
+"name": "DPDK",
+"version": "2.2.0"
+},
+{
+"name": "json-c",
+"version": "0.10"
+},
+{
+"name": "libcli",
+"version": "1.9.7"
+},
+{
+"name": "libdb",
+"version": "5.3.21"
+},
+{
+"name": "libpcap",
+"version": "1.4.0"
+},
+{
+"name": "libpcap0.8-dev",
+"version": "1.5.3"
+},
+{
+"name": "libssh",
+"version": "0.6.0"
+},
+{
+"name": "Net-SNMP",
+"version": "5.7.2"
+},
+{
+"name": "nginx",
+"version": "1.10.0"
+},
+{
+"name": "nginx",
+"version": "1.10.1"
+},
+{
+"name": "Open vSwitch",
+"version": "2.9.0"
+},
+{
+"name": "OpenPGM",
+"version": "5.2.122"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.1e"
+},
+{
+"name": "PCRE",
+"version": "8.32"
+},
+{
+"name": "selinux",
+"version": "2.2.2"
+},
+{
+"name": "TinyXML",
+"version": "2.6.1"
+},
+{
+"name": "ZeroMQ",
+"version": "4.0.3"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "Virtual TAP",
+"retrieved": "2026-11-08",
+"sha256": "a66a8e49ee2de4fd06c05ed577918f65f868b51723735f5e7bd87de90b492a51",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/69db1d7727e6445584fd4dcc5a44f6db?v=c544852a",
+"version": "2.0.0"
+}

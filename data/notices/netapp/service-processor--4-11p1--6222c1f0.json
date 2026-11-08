@@ -1,0 +1,498 @@
+{
+"components": [
+{
+"name": "AGPGART Driver Routines",
+"version": ""
+},
+{
+"name": "Aladdin MD5",
+"version": ""
+},
+{
+"name": "AMI GPL",
+"version": "1.0"
+},
+{
+"name": "Apache Thrift",
+"version": "0.9.0"
+},
+{
+"name": "at",
+"version": "3.1.8"
+},
+{
+"name": "BOOST testsuite",
+"version": ""
+},
+{
+"name": "busybox",
+"version": "1_13_2"
+},
+{
+"name": "bzip2 deflate implementation",
+"version": ""
+},
+{
+"name": "DASH",
+"version": "0.5.8"
+},
+{
+"name": "dhcpcd",
+"version": "1.3.22pl4"
+},
+{
+"name": "diffutils-doc",
+"version": ""
+},
+{
+"name": "e2fsprogs",
+"version": "1.39"
+},
+{
+"name": "findutils",
+"version": "4.1.20"
+},
+{
+"name": "Flexcop",
+"version": ""
+},
+{
+"name": "ForeRunnerHE ATM Adapter driver for ATM on Linux",
+"version": ""
+},
+{
+"name": "FreeBSD",
+"version": ""
+},
+{
+"name": "FreeRTOS Real Time Kernel",
+"version": "7.6.0"
+},
+{
+"name": "Gawk",
+"version": "3.1.4"
+},
+{
+"name": "GCC C++ / libstdc++",
+"version": "3.0.97"
+},
+{
+"name": "Gladman SHA2 HMAC and Key Derivation",
+"version": ""
+},
+{
+"name": "GNU C Library",
+"version": "2.3.2"
+},
+{
+"name": "GNU Core Utilities",
+"version": "5.2.1"
+},
+{
+"name": "GNU Diff Utilities",
+"version": "2.8.1"
+},
+{
+"name": "GNU grep",
+"version": "2.5.1"
+},
+{
+"name": "GNU sed",
+"version": "4.1.2"
+},
+{
+"name": "GNU Sh Tool",
+"version": "2.0.8"
+},
+{
+"name": "HP Media Vault mv2120",
+"version": ""
+},
+{
+"name": "hugetlb",
+"version": ""
+},
+{
+"name": "Info-ZIP",
+"version": "2.3"
+},
+{
+"name": "Info-Zip",
+"version": "6.0"
+},
+{
+"name": "iniparser",
+"version": "2.17"
+},
+{
+"name": "IPMI Tool",
+"version": "1.8.10"
+},
+{
+"name": "IPTables",
+"version": "1.2.11"
+},
+{
+"name": "IPTables",
+"version": "1.4.2"
+},
+{
+"name": "IPtables apply",
+"version": ""
+},
+{
+"name": "iputils",
+"version": "20020927"
+},
+{
+"name": "KTH-KRB - Kerberos",
+"version": "4"
+},
+{
+"name": "LGPL 2.1 contribution to Linux Kernel",
+"version": ""
+},
+{
+"name": "libcomerr2",
+"version": "2.1-1.39+1.40-WI"
+},
+{
+"name": "libexpat",
+"version": "1.95.8"
+},
+{
+"name": "libgcrypt",
+"version": "1.2.0"
+},
+{
+"name": "libgpg-error",
+"version": "1.0"
+},
+{
+"name": "libpcap",
+"version": "1.7.3"
+},
+{
+"name": "Library for programming with the Connectix QuickCam.",
+"version": ""
+},
+{
+"name": "libstdc++6",
+"version": "3.4.3"
+},
+{
+"name": "libthrift-perl",
+"version": "0.9.2"
+},
+{
+"name": "linux drm files",
+"version": ""
+},
+{
+"name": "Linux Kernel",
+"version": "2.6.39.4"
+},
+{
+"name": "Linux-Pam",
+"version": "0.76"
+},
+{
+"name": "logrotate",
+"version": "3.7"
+},
+{
+"name": "lsof",
+"version": "4.74"
+},
+{
+"name": "Lzma decompressor for Linux kernel",
+"version": ""
+},
+{
+"name": "LZO real-time data compression library",
+"version": "2.10"
+},
+{
+"name": "makedepend",
+"version": ""
+},
+{
+"name": "makedev",
+"version": "2.3.1"
+},
+{
+"name": "MD4 Message-Digest Algorithm",
+"version": ""
+},
+{
+"name": "MegaRac SP",
+"version": ""
+},
+{
+"name": "mii tool",
+"version": "1.9.1.1"
+},
+{
+"name": "MIT contribution to OpenSSL",
+"version": ""
+},
+{
+"name": "MTD and JFFS2 improvements",
+"version": ""
+},
+{
+"name": "mtd-utils",
+"version": "1.0.0"
+},
+{
+"name": "mtd-utils",
+"version": "20080508"
+},
+{
+"name": "ncurses",
+"version": "5.4"
+},
+{
+"name": "Net-SNMP",
+"version": "4.2.3"
+},
+{
+"name": "NetApp Original Code",
+"version": ""
+},
+{
+"name": "NFS",
+"version": "1.0.6"
+},
+{
+"name": "nilfs2-tools",
+"version": ""
+},
+{
+"name": "Nova38/openEvidence",
+"version": ""
+},
+{
+"name": "nvidia drivers in Linux Kernel",
+"version": ""
+},
+{
+"name": "nvidia-common",
+"version": ""
+},
+{
+"name": "OCaml Magic",
+"version": "0.7.3"
+},
+{
+"name": "OpenSSH",
+"version": "7.9p1"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2zi"
+},
+{
+"name": "OpenSSL",
+"version": "2.0.9-fips"
+},
+{
+"name": "P",
+"version": "2006.11.14+dfsg"
+},
+{
+"name": "p9 transactions",
+"version": ""
+},
+{
+"name": "PHY related functions",
+"version": ""
+},
+{
+"name": "popt",
+"version": "1.13"
+},
+{
+"name": "popt",
+"version": "1.7"
+},
+{
+"name": "portmap",
+"version": "5"
+},
+{
+"name": "protocol definitions",
+"version": ""
+},
+{
+"name": "psmisc",
+"version": "21.5"
+},
+{
+"name": "Radeon",
+"version": "8500 driver"
+},
+{
+"name": "Register values for Atheros 52xx cards",
+"version": ""
+},
+{
+"name": "RF Buffer handling functions",
+"version": ""
+},
+{
+"name": "RFC1321-based (RSA-free) MD5 library",
+"version": "2002-03-11"
+},
+{
+"name": "RSA md4/md5 algorithms",
+"version": ""
+},
+{
+"name": "sgi-gru",
+"version": ""
+},
+{
+"name": "SHA-1 in C",
+"version": "1.2"
+},
+{
+"name": "SHA256-based Unix crypt implementation by Ulrich Drepper",
+"version": ""
+},
+{
+"name": "Shadow Tool Suite",
+"version": "4.0.3"
+},
+{
+"name": "SLICOSS driver",
+"version": ""
+},
+{
+"name": "Speakup Users Guide",
+"version": ""
+},
+{
+"name": "start-stop-daemon",
+"version": ""
+},
+{
+"name": "strace",
+"version": "4.5.8"
+},
+{
+"name": "sudo",
+"version": "1.8.29"
+},
+{
+"name": "Sun RPC",
+"version": ""
+},
+{
+"name": "Support for HW Rev C1",
+"version": ""
+},
+{
+"name": "sysklogd",
+"version": "1.4.1"
+},
+{
+"name": "sysvinit",
+"version": "2.86"
+},
+{
+"name": "talitos headers",
+"version": ""
+},
+{
+"name": "tcp-wrappers",
+"version": "7.6"
+},
+{
+"name": "tcp-wrappers",
+"version": "7.6.dbs"
+},
+{
+"name": "tcpdump",
+"version": "4.7.4"
+},
+{
+"name": "Texas Instruments Tiva Peripheral Driver Library revision",
+"version": "2.1.0.12573"
+},
+{
+"name": "Texas Instruments Tiva Utility Library and Firmware Package",
+"version": "2.1.0.12573"
+},
+{
+"name": "thttpd - tiny/turbo/throttling HTTP server",
+"version": "2.23beta1"
+},
+{
+"name": "TinyXML",
+"version": "2.6.1"
+},
+{
+"name": "U-Boot",
+"version": "1.1.6"
+},
+{
+"name": "U-Boot U-Boot-1.1.5",
+"version": ""
+},
+{
+"name": "udbachk",
+"version": "0.11"
+},
+{
+"name": "unifdef unifdef-2.5",
+"version": ""
+},
+{
+"name": "USB skeleton driver",
+"version": ""
+},
+{
+"name": "util-linux",
+"version": "1.37"
+},
+{
+"name": "Visual Studio Autogenerated Code VSAutogenerated_Additions",
+"version": ""
+},
+{
+"name": "vixie-cron",
+"version": "3.0.1"
+},
+{
+"name": "vixie-cron",
+"version": "4.1"
+},
+{
+"name": "Wireless device driver for Linux (wlags49)",
+"version": ""
+},
+{
+"name": "xtensa regs",
+"version": ""
+},
+{
+"name": "Yarrow",
+"version": "0.8.71"
+},
+{
+"name": "zlib",
+"version": "1.2.2"
+}
+],
+"extractors": [
+"component_license"
+],
+"kind": "pdf",
+"product": "Service Processor",
+"retrieved": "2026-11-08",
+"sha256": "8512e3125110a4513452e307c74adc2bf2d4b4bdba929f166bb258a6f11bc543",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/Service_Processor/4.11P1/NOTICE.pdf",
+"version": "4.11P1"
+}

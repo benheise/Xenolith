@@ -1,0 +1,82 @@
+{
+"components": [
+{
+"name": "adodbapi",
+"version": "2.0"
+},
+{
+"name": "Cheetah3",
+"version": "3.0.0"
+},
+{
+"name": "Django",
+"version": "1.8"
+},
+{
+"name": "Django",
+"version": "1.8.4"
+},
+{
+"name": "jquery",
+"version": "1.11.1"
+},
+{
+"name": "jquery",
+"version": "1.11.3"
+},
+{
+"name": "jquery",
+"version": "1.4.4"
+},
+{
+"name": "jquery",
+"version": "3.2.1"
+},
+{
+"name": "node-js",
+"version": "6.11.2"
+},
+{
+"name": "paramiko",
+"version": "2.4.0"
+},
+{
+"name": "Python",
+"version": "3.4.4"
+},
+{
+"name": "pywbem",
+"version": "0.9.0"
+},
+{
+"name": "pyzmq",
+"version": "17.0.0"
+},
+{
+"name": "reportlab",
+"version": "3.3.0"
+},
+{
+"name": "typing",
+"version": "3.5.3.0"
+},
+{
+"name": "xlwt",
+"version": "1.1.2"
+},
+{
+"name": "xmldom",
+"version": "0.1.27"
+}
+],
+"extractors": [
+"source_archives"
+],
+"kind": "listing",
+"product": "Active IQ Config Advisor",
+"retrieved": "2026-11-08",
+"sha256": "796ade11bdf42b578d8c7eff75da0f58225fe67703c65d75bed26c94f3f984bf",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/Config_Advisor/5.5/",
+"version": "5.5"
+}

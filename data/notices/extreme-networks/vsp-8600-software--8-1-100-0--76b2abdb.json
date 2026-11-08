@@ -1,0 +1,866 @@
+{
+"components": [
+{
+"name": "Apache XML Commons",
+"version": "1.3.04"
+},
+{
+"name": "Archive-Tar",
+"version": "2.32"
+},
+{
+"name": "bacula-fd",
+"version": "2.4.4"
+},
+{
+"name": "Berkeley DB",
+"version": "6.0.30"
+},
+{
+"name": "Bzip2",
+"version": "1.0.6"
+},
+{
+"name": "Carp",
+"version": "1.36"
+},
+{
+"name": "chardet",
+"version": "2.3.0"
+},
+{
+"name": "CPAN::Meta",
+"version": "2.150001"
+},
+{
+"name": "DB_File",
+"version": "1.835"
+},
+{
+"name": "dosfstools",
+"version": "4.0"
+},
+{
+"name": "dosfstools-doc",
+"version": "4.0"
+},
+{
+"name": "dotzlib",
+"version": "1.0"
+},
+{
+"name": "e2fsprogs",
+"version": "1.43"
+},
+{
+"name": "elfutils",
+"version": "0.166"
+},
+{
+"name": "enum34",
+"version": "1.1.6"
+},
+{
+"name": "eudev",
+"version": "3.2"
+},
+{
+"name": "ExtUtils::ParseXS",
+"version": "3.31"
+},
+{
+"name": "fedora-sysv/initscripts",
+"version": "9.68"
+},
+{
+"name": "Gawk",
+"version": "4.1.3"
+},
+{
+"name": "gcc-5-doc",
+"version": "5.2.0"
+},
+{
+"name": "gcc-avr",
+"version": "5.4.0+Atmel3.6.1"
+},
+{
+"name": "gcc-mozilla",
+"version": "6.4.0"
+},
+{
+"name": "GDB",
+"version": "7.11.1"
+},
+{
+"name": "gerbv a Gerber (RS-274X) viewer",
+"version": "2.6.2"
+},
+{
+"name": "gerbv a Gerber (RS-274X) viewer",
+"version": "2.7.0"
+},
+{
+"name": "gettext",
+"version": "0.19.8.1"
+},
+{
+"name": "ghc",
+"version": "8.2.2"
+},
+{
+"name": "gkernel: rng-tools / ethtool",
+"version": "4.6"
+},
+{
+"name": "GLib",
+"version": "2.48.2"
+},
+{
+"name": "GMP",
+"version": "6.1.1"
+},
+{
+"name": "GNU Binutils",
+"version": "2.27"
+},
+{
+"name": "GNU C Library",
+"version": "2.2.3pre1"
+},
+{
+"name": "GNU C Library",
+"version": "2.24"
+},
+{
+"name": "GNU C Library",
+"version": "2.3.2"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "5.4.0"
+},
+{
+"name": "GNU Core Utilities",
+"version": "8.25"
+},
+{
+"name": "GNU grep",
+"version": "2.25"
+},
+{
+"name": "GNU libiberty",
+"version": "20160215"
+},
+{
+"name": "GNU libiberty",
+"version": "20160807"
+},
+{
+"name": "GNU Libtool",
+"version": "2.4.6"
+},
+{
+"name": "GNU sed",
+"version": "4.2.2"
+},
+{
+"name": "GnuTLS",
+"version": "3.5.3"
+},
+{
+"name": "Go programming language",
+"version": "20141129-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20200713-snapshot"
+},
+{
+"name": "gzip",
+"version": "1.8"
+},
+{
+"name": "hdparm",
+"version": "9.48"
+},
+{
+"name": "hiredis",
+"version": "0.14.1"
+},
+{
+"name": "i2c-tools",
+"version": "3.1.2"
+},
+{
+"name": "idna",
+"version": "2.1"
+},
+{
+"name": "idnkit",
+"version": "1.0"
+},
+{
+"name": "iproute2",
+"version": "4.14.1"
+},
+{
+"name": "IPTables",
+"version": "1.6.0"
+},
+{
+"name": "IronPython Standard Library",
+"version": "2.7.10"
+},
+{
+"name": "JavaCPP Presets for CPython",
+"version": "3.7.7-1.5.3"
+},
+{
+"name": "javasqlite",
+"version": "20140624"
+},
+{
+"name": "jitterentropy-library",
+"version": "v3.0.2"
+},
+{
+"name": "Jython",
+"version": "2.7.1"
+},
+{
+"name": "kbd",
+"version": "2.0.3"
+},
+{
+"name": "libberkeleydb-perl",
+"version": "0.54"
+},
+{
+"name": "libcap2",
+"version": "2.25"
+},
+{
+"name": "libcpan-meta-yaml-perl",
+"version": "0.012"
+},
+{
+"name": "libdaemon",
+"version": "0.14"
+},
+{
+"name": "libencode-perl",
+"version": "2.72"
+},
+{
+"name": "libevent",
+"version": "2.0.22"
+},
+{
+"name": "libexpat",
+"version": "2.2.0"
+},
+{
+"name": "libffi",
+"version": "3.1"
+},
+{
+"name": "libffi",
+"version": "3.2.1"
+},
+{
+"name": "libffi",
+"version": "3.2.1.git259"
+},
+{
+"name": "libgc6",
+"version": "6.4"
+},
+{
+"name": "libgcrypt",
+"version": "1.7.3"
+},
+{
+"name": "libgdbm",
+"version": "1.12"
+},
+{
+"name": "libgpg-error",
+"version": "1.24"
+},
+{
+"name": "Libidn",
+"version": "1.33"
+},
+{
+"name": "libmath-bigint-perl",
+"version": "1.9997"
+},
+{
+"name": "libmnl",
+"version": "1.0.4"
+},
+{
+"name": "libncursesada-doc",
+"version": "6.0.20170708"
+},
+{
+"name": "libndp",
+"version": "1.7"
+},
+{
+"name": "LibNet",
+"version": "3.11"
+},
+{
+"name": "libnetfilter-acct",
+"version": "1.0.3"
+},
+{
+"name": "libnfsidmap-dev",
+"version": "0.25"
+},
+{
+"name": "libnftnl",
+"version": "1.0.6"
+},
+{
+"name": "libpcap",
+"version": "1.7.4"
+},
+{
+"name": "libscalar- list-utils-perl",
+"version": "1.41"
+},
+{
+"name": "libscalar-list-utils-perl",
+"version": "1.41"
+},
+{
+"name": "libstdc++6",
+"version": "5.3.0"
+},
+{
+"name": "libtest-harness-perl",
+"version": "3.35"
+},
+{
+"name": "libtest-simple-perl",
+"version": "1.001014"
+},
+{
+"name": "libtirpc",
+"version": "1.0.1"
+},
+{
+"name": "libusb",
+"version": "1.0.20"
+},
+{
+"name": "libxml2",
+"version": "2.9.4"
+},
+{
+"name": "libzeep-dev",
+"version": "3.0.5"
+},
+{
+"name": "Linux DiskQuota",
+"version": "4.03"
+},
+{
+"name": "Linux Extended Attributes",
+"version": "2.4.47"
+},
+{
+"name": "Linux Kernel",
+"version": "4.8.0"
+},
+{
+"name": "Linux Kernel",
+"version": "4.9.258"
+},
+{
+"name": "Linux Kernel",
+"version": "v4.9.260"
+},
+{
+"name": "linux- euclid-tools-4.4.0-9019",
+"version": "4.4.0"
+},
+{
+"name": "linux- joule-tools-4.4.0-1001",
+"version": "4.4.0"
+},
+{
+"name": "linux-azure-tools-4.10.0-1005",
+"version": "4.10.0"
+},
+{
+"name": "linux-gke-tools-common",
+"version": "4.4.0"
+},
+{
+"name": "linux-joule-tools-4.4.0-1001",
+"version": "4.4.0"
+},
+{
+"name": "linux-libc-headers-dev",
+"version": "4.8"
+},
+{
+"name": "linux-misc",
+"version": "4.3~rc4"
+},
+{
+"name": "lldpd",
+"version": "1.0.4"
+},
+{
+"name": "lrzsz",
+"version": "0.12.20"
+},
+{
+"name": "lsb-release",
+"version": "1.4"
+},
+{
+"name": "lsof",
+"version": "4.89"
+},
+{
+"name": "lsvpd",
+"version": "2.1.0+repack"
+},
+{
+"name": "lttng-modules",
+"version": "2.10.1"
+},
+{
+"name": "lttng-ust",
+"version": "2.10.1"
+},
+{
+"name": "LZO real-time data compression library",
+"version": "2.09"
+},
+{
+"name": "module-init-tools",
+"version": "23"
+},
+{
+"name": "Module::Load",
+"version": "0.34"
+},
+{
+"name": "mtd-utils",
+"version": "1.5.2"
+},
+{
+"name": "ncurses",
+"version": "6.0+20160625"
+},
+{
+"name": "ndg-httpsclient",
+"version": "0.4.2"
+},
+{
+"name": "NetBase",
+"version": "5.3"
+},
+{
+"name": "Netlink Protocol Library Suite (libnl)",
+"version": "3.2.28"
+},
+{
+"name": "Nettle",
+"version": "3.2"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p10"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p15"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p9"
+},
+{
+"name": "NFS",
+"version": "1.3.3"
+},
+{
+"name": "nftables",
+"version": "0.6"
+},
+{
+"name": "Node.js",
+"version": "4.4.5"
+},
+{
+"name": "Node.js",
+"version": "8.12.0"
+},
+{
+"name": "nokogiri",
+"version": "1.7.1"
+},
+{
+"name": "OpenSSH",
+"version": "7.3p1"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2i"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2j"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2o"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2p"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2r"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2t"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2y"
+},
+{
+"name": "OVN",
+"version": "2.8.1"
+},
+{
+"name": "parent",
+"version": "0.238"
+},
+{
+"name": "pciutils",
+"version": "3.5.1"
+},
+{
+"name": "PCRE",
+"version": "8.39"
+},
+{
+"name": "pdf2htmlex-android",
+"version": "0.18.13"
+},
+{
+"name": "Perl",
+"version": "5.22.1"
+},
+{
+"name": "pip",
+"version": "8.1.1"
+},
+{
+"name": "pip",
+"version": "8.1.2"
+},
+{
+"name": "podlators",
+"version": "2.5.3"
+},
+{
+"name": "popt",
+"version": "1.10"
+},
+{
+"name": "popt",
+"version": "1.16"
+},
+{
+"name": "popt",
+"version": "1.5.1"
+},
+{
+"name": "pps-tools",
+"version": "0"
+},
+{
+"name": "Procps",
+"version": "3.3.12"
+},
+{
+"name": "Protobuf",
+"version": "2.6.1"
+},
+{
+"name": "protobuf-c",
+"version": "1.1.1"
+},
+{
+"name": "protobufel-protobuf-test-protos",
+"version": "0.7.1"
+},
+{
+"name": "psmisc",
+"version": "22.21"
+},
+{
+"name": "pycparser",
+"version": "2.14"
+},
+{
+"name": "PyCrypto",
+"version": "2.6.1"
+},
+{
+"name": "pyOpenSSL",
+"version": "16.1.0"
+},
+{
+"name": "pyopenssl-doc",
+"version": "16.1.0"
+},
+{
+"name": "pypi/setuptools",
+"version": "20.10.1"
+},
+{
+"name": "pypi/setuptools",
+"version": "22.0.5"
+},
+{
+"name": "PySocks",
+"version": "1.5.7"
+},
+{
+"name": "Python programming language",
+"version": "2.7.12"
+},
+{
+"name": "Python programming language",
+"version": "3.5.2"
+},
+{
+"name": "Python six",
+"version": "1.10.0"
+},
+{
+"name": "python-bitarray",
+"version": "0.8.1"
+},
+{
+"name": "python-certifi",
+"version": "2016.9.26"
+},
+{
+"name": "python-cryptography",
+"version": "1.4"
+},
+{
+"name": "python-distlib",
+"version": "0.2.2"
+},
+{
+"name": "python-distlib",
+"version": "0.2.3"
+},
+{
+"name": "python-ipaddress",
+"version": "1.0.16"
+},
+{
+"name": "python3.4",
+"version": "3.4.4~rc1"
+},
+{
+"name": "radsecproxy",
+"version": "1.7.1"
+},
+{
+"name": "Readline",
+"version": "6.3"
+},
+{
+"name": "redis - Official",
+"version": "4.0.11"
+},
+{
+"name": "redis-py",
+"version": "2.10.5"
+},
+{
+"name": "regex",
+"version": "2016.03.26"
+},
+{
+"name": "requests",
+"version": "2.10.0"
+},
+{
+"name": "requests",
+"version": "2.11.1"
+},
+{
+"name": "requests",
+"version": "2.9.1"
+},
+{
+"name": "RPCBind",
+"version": "0.2.3"
+},
+{
+"name": "rsync",
+"version": "3.1.2"
+},
+{
+"name": "Setserial - serial driver config tool",
+"version": "2.17"
+},
+{
+"name": "Shadow Tool Suite",
+"version": "4.2.1"
+},
+{
+"name": "SocksiPy - A Python SOCKS module",
+"version": "1.5.7"
+},
+{
+"name": "SQLite",
+"version": "3.14.1"
+},
+{
+"name": "sqliteodbc",
+"version": "0.999"
+},
+{
+"name": "stat - display file or file system status",
+"version": "3.3"
+},
+{
+"name": "StAX",
+"version": "1.0"
+},
+{
+"name": "strace",
+"version": "4.13"
+},
+{
+"name": "sysfsutils",
+"version": "2.1.0"
+},
+{
+"name": "sysvinit",
+"version": "2.88dsf"
+},
+{
+"name": "tcl8.6",
+"version": "8.6.6+dfsg"
+},
+{
+"name": "tcp- wrappers",
+"version": "7.6"
+},
+{
+"name": "tcpdump",
+"version": "4.9.0"
+},
+{
+"name": "The PCI Utilities",
+"version": "3.5.1"
+},
+{
+"name": "Time Zone Database",
+"version": "2006m"
+},
+{
+"name": "TIPC: Cluster Communication Protocol",
+"version": "2.2.0"
+},
+{
+"name": "tor",
+"version": "0.3.5.15"
+},
+{
+"name": "tor-android",
+"version": "0.3.5.17"
+},
+{
+"name": "Unicode::Collate",
+"version": "1.14"
+},
+{
+"name": "Unicode::Normalize",
+"version": "1.18"
+},
+{
+"name": "urllib3",
+"version": "1.13.1"
+},
+{
+"name": "urllib3",
+"version": "1.15.1"
+},
+{
+"name": "urllib3",
+"version": "1.16"
+},
+{
+"name": "urllib3",
+"version": "1.18"
+},
+{
+"name": "usbutils",
+"version": "008"
+},
+{
+"name": "Userspace RCU",
+"version": "0.9.2"
+},
+{
+"name": "util-linux",
+"version": "2.28.1"
+},
+{
+"name": "W3C XML Conformance Test Suite",
+"version": "20031210"
+},
+{
+"name": "xml-log-filter-conformance",
+"version": "1.0.1"
+},
+{
+"name": "XZ Utils",
+"version": "5.2.2"
+},
+{
+"name": "zlib",
+"version": "1.1.4"
+},
+{
+"name": "zlib",
+"version": "1.2.7"
+},
+{
+"name": "zlib",
+"version": "1.2.8"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "VSP 8600 Software",
+"retrieved": "2026-11-08",
+"sha256": "6801cc71e2183d392acd9192cfed3a8dba77df694ef37f91c17ed1f003667c51",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1f97e0ca1be94be7b2fbdba712e44a55?v=f0b27619",
+"version": "8.1.100.0"
+}

@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "console-io",
+"version": "v2.7.10"
+},
+{
+"name": "typeface-roboto",
+"version": "0.0.50"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "Extreme Defender",
+"retrieved": "2026-11-08",
+"sha256": "1c3081527da7a1718526e5b5f58e3729e3072d30eebc4a5099e9ed43743a414b",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/663459c46bf54d99b4bf5a5c2644f6a8?v=3ab78169",
+"version": "3.41"
+}

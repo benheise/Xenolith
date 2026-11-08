@@ -1,0 +1,162 @@
+{
+"components": [
+{
+"name": "annotations",
+"version": "2.0.1"
+},
+{
+"name": "aopalliance-repackaged",
+"version": "2.5.0-b32"
+},
+{
+"name": "cron4j",
+"version": "2.2.5"
+},
+{
+"name": "h2",
+"version": "1.4.194"
+},
+{
+"name": "hk2-api",
+"version": "2.5.0-b32"
+},
+{
+"name": "hk2-locator",
+"version": "2.5.0-b32"
+},
+{
+"name": "hk2-utils",
+"version": "2.5.0-b32"
+},
+{
+"name": "jackson-jaxrs-base",
+"version": "2.8.8"
+},
+{
+"name": "javassist",
+"version": "3.21.0-GA"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.2"
+},
+{
+"name": "javax.inject",
+"version": "2.5.0-b32"
+},
+{
+"name": "javax.servlet-api",
+"version": "3.0.1"
+},
+{
+"name": "javax.servlet-api",
+"version": "3.1.0"
+},
+{
+"name": "javax.transaction-api",
+"version": "1.2"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0.1"
+},
+{
+"name": "jcommon",
+"version": "1_0_16"
+},
+{
+"name": "jersey-client",
+"version": "2.25.1"
+},
+{
+"name": "jersey-common",
+"version": "2.25.1"
+},
+{
+"name": "jersey-container-servlet",
+"version": "2.25.1"
+},
+{
+"name": "jersey-container-servlet-core",
+"version": "2.25.1"
+},
+{
+"name": "jersey-guava",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-multipart",
+"version": "2.25.1"
+},
+{
+"name": "jersey-server",
+"version": "2.25.1"
+},
+{
+"name": "jfreechart",
+"version": "1_0_13"
+},
+{
+"name": "logback-classic",
+"version": "1.2.3"
+},
+{
+"name": "logback-core",
+"version": "1.2.3"
+},
+{
+"name": "logback-syslog4j",
+"version": "1.0.2"
+},
+{
+"name": "mimepull",
+"version": "1.9.6"
+},
+{
+"name": "OpenJDK",
+"version": "8u171-b11"
+},
+{
+"name": "osgi-resource-locator",
+"version": "1.0.1"
+},
+{
+"name": "sevenZip",
+"version": "9_20"
+},
+{
+"name": "swing_layout",
+"version": "1_0"
+},
+{
+"name": "swingx_core",
+"version": "1_6_2"
+},
+{
+"name": "syslog4j",
+"version": "0.9.60.1"
+},
+{
+"name": "winrun4j",
+"version": "0.4.5"
+}
+],
+"extractors": [
+"source_archives"
+],
+"kind": "listing",
+"product": "SANtricity Storage Manager",
+"retrieved": "2026-11-08",
+"sha256": "e59ad16f2e0ca43fb11c22ea20ca00dde689d267332bc2a35d669bd99727c70d",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/SANtricity_Storage_Manager/v11.50/",
+"version": "11.50"
+}

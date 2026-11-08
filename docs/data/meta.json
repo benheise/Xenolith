@@ -1,14 +1,14 @@
 {
- "built": "2026-11-08T02:18:32Z",
+ "built": "2026-11-08T02:55:38Z",
  "counts": {
-  "assertions": 12921,
-  "products_with_data": 7137,
-  "inventories": 97,
-  "inventory_components": 38754,
+  "assertions": 13301,
+  "products_with_data": 7212,
+  "inventories": 254,
+  "inventory_components": 149690,
   "cpe_linked_clusters": 21,
   "cpe_linked_entries": 23,
   "spine_products": 15962,
-  "spine_only_shown": 4742,
+  "spine_only_shown": 4738,
   "components": 13
  },
  "components": [
@@ -63,17 +63,17 @@
      ]
     }
    ],
-   "assertions": 824,
-   "products": 743,
-   "contains": 446,
-   "in_range": 0,
+   "assertions": 838,
+   "products": 753,
+   "contains": 460,
+   "in_range": 3,
    "verdicts": {
     "fixed": 170,
     "workaround": 9,
     "affected": 200,
     "under_investigation": 79,
     "not_affected": 201,
-    "present": 67,
+    "present": 81,
     "absent": 96,
     "runtime_dependent": 2
    }
@@ -124,13 +124,13 @@
      ]
     }
    ],
-   "assertions": 169,
-   "products": 153,
-   "contains": 150,
-   "in_range": 20,
+   "assertions": 189,
+   "products": 162,
+   "contains": 170,
+   "in_range": 38,
    "verdicts": {
     "fixed": 115,
-    "present": 20,
+    "present": 40,
     "not_affected": 11,
     "workaround": 15,
     "absent": 8
@@ -291,10 +291,10 @@
      ]
     }
    ],
-   "assertions": 7357,
-   "products": 6131,
-   "contains": 2539,
-   "in_range": 3,
+   "assertions": 7371,
+   "products": 6137,
+   "contains": 2553,
+   "in_range": 6,
    "verdicts": {
     "not_affected": 4258,
     "unknown": 401,
@@ -302,7 +302,7 @@
     "fixed": 1356,
     "under_investigation": 159,
     "workaround": 251,
-    "present": 6
+    "present": 20
    }
   },
   {
@@ -337,15 +337,16 @@
      ]
     }
    ],
-   "assertions": 3908,
-   "products": 3809,
-   "contains": 90,
-   "in_range": 0,
+   "assertions": 3931,
+   "products": 3822,
+   "contains": 113,
+   "in_range": 23,
    "verdicts": {
     "not_affected": 3809,
     "workaround": 11,
     "fixed": 62,
     "under_investigation": 9,
+    "present": 23,
     "affected": 17
    }
   },
@@ -381,13 +382,13 @@
      ]
     }
    ],
-   "assertions": 55,
-   "products": 11,
-   "contains": 48,
-   "in_range": 0,
+   "assertions": 99,
+   "products": 35,
+   "contains": 92,
+   "in_range": 1,
    "verdicts": {
-    "not_affected": 7,
-    "present": 48
+    "present": 92,
+    "not_affected": 7
    }
   },
   {
@@ -422,14 +423,14 @@
      ]
     }
    ],
-   "assertions": 111,
-   "products": 38,
-   "contains": 104,
-   "in_range": 6,
+   "assertions": 148,
+   "products": 60,
+   "contains": 141,
+   "in_range": 23,
    "verdicts": {
     "workaround": 15,
     "fixed": 19,
-    "present": 70,
+    "present": 107,
     "not_affected": 7
    }
   },
@@ -464,12 +465,12 @@
      ]
     }
    ],
-   "assertions": 38,
-   "products": 30,
-   "contains": 37,
-   "in_range": 0,
+   "assertions": 47,
+   "products": 34,
+   "contains": 46,
+   "in_range": 6,
    "verdicts": {
-    "present": 6,
+    "present": 15,
     "fixed": 30,
     "workaround": 1,
     "not_affected": 1
@@ -506,13 +507,13 @@
      ]
     }
    ],
-   "assertions": 131,
-   "products": 51,
-   "contains": 124,
-   "in_range": 6,
+   "assertions": 180,
+   "products": 77,
+   "contains": 173,
+   "in_range": 23,
    "verdicts": {
     "fixed": 45,
-    "present": 68,
+    "present": 117,
     "not_affected": 3,
     "workaround": 11,
     "absent": 4
@@ -552,12 +553,12 @@
      ]
     }
    ],
-   "assertions": 147,
-   "products": 46,
-   "contains": 126,
-   "in_range": 0,
+   "assertions": 231,
+   "products": 93,
+   "contains": 210,
+   "in_range": 1,
    "verdicts": {
-    "present": 93,
+    "present": 177,
     "workaround": 5,
     "fixed": 28,
     "under_investigation": 1,
@@ -600,14 +601,14 @@
      ]
     }
    ],
-   "assertions": 34,
-   "products": 32,
-   "contains": 34,
-   "in_range": 3,
+   "assertions": 59,
+   "products": 46,
+   "contains": 59,
+   "in_range": 17,
    "verdicts": {
     "fixed": 26,
-    "workaround": 5,
-    "present": 3
+    "present": 28,
+    "workaround": 5
    }
   },
   {
@@ -641,12 +642,12 @@
      ]
     }
    ],
-   "assertions": 39,
-   "products": 37,
-   "contains": 27,
-   "in_range": 0,
+   "assertions": 52,
+   "products": 43,
+   "contains": 40,
+   "in_range": 3,
    "verdicts": {
-    "present": 3,
+    "present": 16,
     "fixed": 19,
     "not_affected": 12,
     "workaround": 5
@@ -684,13 +685,13 @@
      ]
     }
    ],
-   "assertions": 99,
-   "products": 30,
-   "contains": 97,
-   "in_range": 6,
+   "assertions": 147,
+   "products": 56,
+   "contains": 145,
+   "in_range": 19,
    "verdicts": {
+    "present": 116,
     "fixed": 19,
-    "present": 68,
     "not_affected": 2,
     "workaround": 10
    }
@@ -756,7 +757,7 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 452,
+   "assertions": 832,
    "latest": "2026-11-08"
   },
   {

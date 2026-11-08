@@ -4,11 +4,30 @@ from __future__ import annotations
 
 import gzip
 import json
+import ssl
 import time
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 from . import USER_AGENT
+
+INTERMEDIATES = Path(__file__).resolve().parent.parent / "catalog" / "intermediates.pem"
+
+
+def _context() -> ssl.SSLContext:
+    """System trust store plus catalog/intermediates.pem (for vendor sites with incomplete chains)."""
+    ctx = ssl.create_default_context()
+    if INTERMEDIATES.exists():
+        ctx.load_verify_locations(cafile=str(INTERMEDIATES))
+    return ctx
+
+
+SSL_CONTEXT = _context()
+
+
+def urlopen(req, timeout: float):
+    return urllib.request.urlopen(req, timeout=timeout, context=SSL_CONTEXT)
 
 
 class FetchError(RuntimeError):
@@ -24,7 +43,7 @@ def get(url: str, *, timeout: float = 45, retries: int = 2, accept: str = "*/*")
             "Accept-Encoding": "gzip",
         })
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as resp:
+            with urlopen(req, timeout) as resp:
                 body = resp.read()
                 if resp.headers.get("Content-Encoding") == "gzip":
                     body = gzip.decompress(body)

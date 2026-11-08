@@ -1,0 +1,1318 @@
+{
+"components": [
+{
+"name": "@anzerr/png.util",
+"version": "3.3.8"
+},
+{
+"name": "@deepvision/http-client",
+"version": "0.1.0"
+},
+{
+"name": "@deepvision/test-kit-jest",
+"version": "0.3.1"
+},
+{
+"name": "@gamiphy/service-core",
+"version": "1.0.1"
+},
+{
+"name": "@jbateson/semantic-release-config",
+"version": "1.0.0"
+},
+{
+"name": "@microsoft/office-js",
+"version": "1.1.27-custom.2"
+},
+{
+"name": "@microsoft/office-js",
+"version": "1.1.29"
+},
+{
+"name": "@request/promise-core",
+"version": "1.1.2"
+},
+{
+"name": "@types/node",
+"version": "12.7.4"
+},
+{
+"name": "@typescript-eslint/experimental-utils",
+"version": "2.1.1-alpha.6"
+},
+{
+"name": "adm-zip",
+"version": "0.4.13"
+},
+{
+"name": "ahmadnassri/har-schema",
+"version": "2.0.0"
+},
+{
+"name": "ajv",
+"version": "6.10.2"
+},
+{
+"name": "andris9/nodemailer-smtp- transport",
+"version": "2.6.0"
+},
+{
+"name": "andris9/nodemailer-smtp-transport",
+"version": "2.4.2"
+},
+{
+"name": "andris9/nodemailer-smtp-transport",
+"version": "v2.7.2"
+},
+{
+"name": "ansi-regex",
+"version": "2.1.1"
+},
+{
+"name": "ansi-regex",
+"version": "4.1.0"
+},
+{
+"name": "Aopalliance Version",
+"version": "1.0 Repackaged As A Module 2.5.0-b42"
+},
+{
+"name": "Apache log4j",
+"version": "1.2.9"
+},
+{
+"name": "append-field",
+"version": "0.1.0"
+},
+{
+"name": "apply- clients",
+"version": "3.0.2"
+},
+{
+"name": "argparse",
+"version": "1.0.10"
+},
+{
+"name": "array-flatten",
+"version": "1.1.1"
+},
+{
+"name": "asap",
+"version": "2.0.4"
+},
+{
+"name": "Async",
+"version": "1.0.0"
+},
+{
+"name": "Async",
+"version": "1.5.2"
+},
+{
+"name": "asynckit",
+"version": "0.4.0"
+},
+{
+"name": "aws4",
+"version": "1.8.0"
+},
+{
+"name": "BasicAuth",
+"version": "2.0.0"
+},
+{
+"name": "beanvalidation-api",
+"version": "1.1.0.Final"
+},
+{
+"name": "Bluebird",
+"version": "3.5.5"
+},
+{
+"name": "Bluebird JS",
+"version": "v3.5.5"
+},
+{
+"name": "body-parser",
+"version": "1.19.0"
+},
+{
+"name": "buffer-equal-constant-time",
+"version": "1.0.0"
+},
+{
+"name": "busboy",
+"version": "0.2.14"
+},
+{
+"name": "bytes",
+"version": "3.0.0"
+},
+{
+"name": "bytes",
+"version": "3.1.0"
+},
+{
+"name": "cache-stampede",
+"version": "0.9.0"
+},
+{
+"name": "call-me-maybe",
+"version": "1.0.1"
+},
+{
+"name": "camelcase",
+"version": "2.1.1"
+},
+{
+"name": "camelcase",
+"version": "5.3.1"
+},
+{
+"name": "catl-cli",
+"version": "2.7.1-develop-ea0a87788561a87600e85c70c911a52d628c1d58"
+},
+{
+"name": "chenyuncai/request-promise",
+"version": "4.2.4"
+},
+{
+"name": "cliui",
+"version": "3.2.0"
+},
+{
+"name": "Clone",
+"version": "2.1.2"
+},
+{
+"name": "code.ametys.org/scm/tools/tools",
+"version": "2.10.0"
+},
+{
+"name": "code.ametys.org/scm/tools/tools",
+"version": "2.10.0M6"
+},
+{
+"name": "color-name",
+"version": "1.1.3"
+},
+{
+"name": "colors.js",
+"version": "1.0.3"
+},
+{
+"name": "combined-stream",
+"version": "1.0.8"
+},
+{
+"name": "Commander.js",
+"version": "2.20.0"
+},
+{
+"name": "component/path-to-regexp",
+"version": "0.1.7"
+},
+{
+"name": "compression",
+"version": "1.7.4"
+},
+{
+"name": "connext",
+"version": "3.1.2"
+},
+{
+"name": "content-disposition",
+"version": "0.5.3"
+},
+{
+"name": "cookies",
+"version": "0.7.2"
+},
+{
+"name": "core-js",
+"version": "2.6.9"
+},
+{
+"name": "core-util-is",
+"version": "1.0.2"
+},
+{
+"name": "debug",
+"version": "v2.6.9"
+},
+{
+"name": "Decamelize",
+"version": "1.2.0"
+},
+{
+"name": "define-properties",
+"version": "v1.1.3"
+},
+{
+"name": "delayed-stream",
+"version": "1.0.0"
+},
+{
+"name": "deprecate",
+"version": "1.0.0"
+},
+{
+"name": "dicer",
+"version": "0.2.5"
+},
+{
+"name": "dijkstrajs",
+"version": "1.0.1"
+},
+{
+"name": "doctrine",
+"version": "v2.1.0"
+},
+{
+"name": "dscape/cycle",
+"version": "1.0.3"
+},
+{
+"name": "ecc-jsbn",
+"version": "0.1.2"
+},
+{
+"name": "ecdsa-sig-formatter",
+"version": "1.0.10"
+},
+{
+"name": "ecdsa-sig-formatter",
+"version": "v1.0.11"
+},
+{
+"name": "echonok_test",
+"version": "1.0.0"
+},
+{
+"name": "emoji-regex",
+"version": "7.0.3"
+},
+{
+"name": "encodeurl",
+"version": "1.0.2"
+},
+{
+"name": "escape-html",
+"version": "1.0.3"
+},
+{
+"name": "eslint-config- dom-base",
+"version": "1.0.0"
+},
+{
+"name": "Esprima",
+"version": "4.0.1"
+},
+{
+"name": "esutils",
+"version": "2.0.2"
+},
+{
+"name": "etag",
+"version": "1.8.1"
+},
+{
+"name": "expressjs",
+"version": "4.17.1"
+},
+{
+"name": "expressjs/accepts",
+"version": "1.3.5"
+},
+{
+"name": "expressjs/compressible",
+"version": "2.0.15"
+},
+{
+"name": "extend",
+"version": "3.0.2"
+},
+{
+"name": "extsprintf",
+"version": "1.3.0"
+},
+{
+"name": "Eyes",
+"version": "0.1.8"
+},
+{
+"name": "fast-deep-equal",
+"version": "2.0.1"
+},
+{
+"name": "fast-json-stable-stringify",
+"version": "2.0.0"
+},
+{
+"name": "finalhandler",
+"version": "1.1.2"
+},
+{
+"name": "find-up",
+"version": "3.0.0"
+},
+{
+"name": "flatiron/winston",
+"version": "2.4.4"
+},
+{
+"name": "forever-agent",
+"version": "0.6.1"
+},
+{
+"name": "form-data",
+"version": "2.3.1"
+},
+{
+"name": "form-data",
+"version": "2.3.3"
+},
+{
+"name": "forwarded",
+"version": "0.1.2"
+},
+{
+"name": "framagit.org/hubzilla/core",
+"version": "3.8"
+},
+{
+"name": "fs-extra",
+"version": "5.0.0"
+},
+{
+"name": "gar",
+"version": "1.0.4"
+},
+{
+"name": "get-caller-file",
+"version": "2.0.5"
+},
+{
+"name": "get-folder-size",
+"version": "v2.0.1"
+},
+{
+"name": "GNU Crypto",
+"version": "2.0.1"
+},
+{
+"name": "har-validator",
+"version": "5.1.3"
+},
+{
+"name": "harrisiirak/cron-parser",
+"version": "2.13.0"
+},
+{
+"name": "HK2 API module",
+"version": "2.5.0-b42"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.5.0-b42"
+},
+{
+"name": "http-errors",
+"version": "1.7.1"
+},
+{
+"name": "httpntlm",
+"version": "1.6.1"
+},
+{
+"name": "httpreq",
+"version": "0.4.24"
+},
+{
+"name": "hull",
+"version": "0.13.16"
+},
+{
+"name": "iconv-lite",
+"version": "20180822-snapshot-efbbb093"
+},
+{
+"name": "iconv-lite",
+"version": "v0.4.24"
+},
+{
+"name": "inflight",
+"version": "1.0.6"
+},
+{
+"name": "inherits",
+"version": "2.0.3"
+},
+{
+"name": "Injection API (JSR 330) version",
+"version": "1 repackaged as OSGi bundle 2.5.0-b42"
+},
+{
+"name": "is-nan",
+"version": "1.2.0"
+},
+{
+"name": "is-typedarray",
+"version": "1.0.0"
+},
+{
+"name": "isaacs's npm",
+"version": "6.1.0"
+},
+{
+"name": "isaacs/once",
+"version": "1.4.0"
+},
+{
+"name": "isarray",
+"version": "0.0.1"
+},
+{
+"name": "isarray",
+"version": "1.0.0"
+},
+{
+"name": "isstream",
+"version": "0.1.2"
+},
+{
+"name": "jackson- module-jaxb-annotations",
+"version": "2.9.6"
+},
+{
+"name": "jackson-annotations",
+"version": "2.9.6"
+},
+{
+"name": "jackson-core",
+"version": "2.9.6"
+},
+{
+"name": "jackson-databind",
+"version": "2.9.6"
+},
+{
+"name": "Javassist",
+"version": "3.22.0-CR2"
+},
+{
+"name": "Javax Inject from the JSR-330 Expert Group",
+"version": "1"
+},
+{
+"name": "javax.annotation API",
+"version": "1.2"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.1"
+},
+{
+"name": "Jersey",
+"version": "2.27"
+},
+{
+"name": "jersey- ext-entity-filtering",
+"version": "2.27"
+},
+{
+"name": "jersey-container- servlet-core",
+"version": "2.27"
+},
+{
+"name": "jersey-container-servlet- core",
+"version": "2.27"
+},
+{
+"name": "jersey-container-servlet-core",
+"version": "2.27"
+},
+{
+"name": "jersey-core-server",
+"version": "2.27"
+},
+{
+"name": "jersey-ext- entity-filtering",
+"version": "2.27"
+},
+{
+"name": "jersey-ext-entity-filtering",
+"version": "2.27"
+},
+{
+"name": "jersey-inject-hk2",
+"version": "2.27"
+},
+{
+"name": "jersey-media- json-jackson",
+"version": "2.27"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.27"
+},
+{
+"name": "js-yaml",
+"version": "3.13.1"
+},
+{
+"name": "JS-YAML. Native JS port of PyYAML.",
+"version": "3.13.1"
+},
+{
+"name": "jsbn",
+"version": "0.1.0"
+},
+{
+"name": "jshttp/content-type",
+"version": "1.0.4"
+},
+{
+"name": "jshttp/fresh",
+"version": "0.5.2"
+},
+{
+"name": "jshttp/mime-types",
+"version": "2.1.24"
+},
+{
+"name": "json- schema-webjar",
+"version": "0.2.3"
+},
+{
+"name": "json-schema",
+"version": "0.2.2"
+},
+{
+"name": "json-schema",
+"version": "0.2.3"
+},
+{
+"name": "json-schema-ref-parser",
+"version": "7.1.0"
+},
+{
+"name": "json-schema-traverse",
+"version": "0.4.1"
+},
+{
+"name": "json-schema-traverse",
+"version": "20180610-snapshot- bc898eee"
+},
+{
+"name": "json-stringify-safe",
+"version": "5.0.1"
+},
+{
+"name": "jsonwebtoken",
+"version": "0.1.0"
+},
+{
+"name": "jsprim",
+"version": "1.4.0"
+},
+{
+"name": "jsprim",
+"version": "1.4.1"
+},
+{
+"name": "jwa",
+"version": "v1.4.1"
+},
+{
+"name": "jws",
+"version": "3.2.2"
+},
+{
+"name": "jwt-simple",
+"version": "v0.5.6"
+},
+{
+"name": "keygrip",
+"version": "1.0.3"
+},
+{
+"name": "kirrg001/nconf",
+"version": "0.10.0"
+},
+{
+"name": "kriskowal's q",
+"version": "2.0.3"
+},
+{
+"name": "lcid",
+"version": "1.0.0"
+},
+{
+"name": "LessCss",
+"version": "2.6.1"
+},
+{
+"name": "Lo-Dash",
+"version": "4.17.15"
+},
+{
+"name": "Lo-Dash",
+"version": "4.17.15-npm"
+},
+{
+"name": "locate-path",
+"version": "3.0.0"
+},
+{
+"name": "lodash-compat",
+"version": "3.10.2"
+},
+{
+"name": "lodash.get",
+"version": "4.4.2"
+},
+{
+"name": "lodash.includes",
+"version": "4.3.0"
+},
+{
+"name": "lodash.isboolean",
+"version": "3.0.3"
+},
+{
+"name": "lodash.isequal",
+"version": "4.5.0"
+},
+{
+"name": "lodash.isinteger",
+"version": "4.0.4"
+},
+{
+"name": "lodash.isnumber",
+"version": "3.0.3"
+},
+{
+"name": "lodash.isplainobject",
+"version": "4.0.6"
+},
+{
+"name": "lodash.isstring",
+"version": "4.0.1"
+},
+{
+"name": "lodash.once",
+"version": "4.1.1"
+},
+{
+"name": "long-timeout",
+"version": "0.1.1"
+},
+{
+"name": "man",
+"version": "1.1.2"
+},
+{
+"name": "media-typer",
+"version": "0.3.0"
+},
+{
+"name": "merge-descriptors",
+"version": "1.0.1"
+},
+{
+"name": "method-override",
+"version": "2.3.10"
+},
+{
+"name": "methods",
+"version": "1.1.2"
+},
+{
+"name": "mikeal/oauth-sign",
+"version": "0.9.0"
+},
+{
+"name": "mime",
+"version": "1.6.0"
+},
+{
+"name": "minimatch",
+"version": "3.0.4"
+},
+{
+"name": "minimist",
+"version": "0.0.8"
+},
+{
+"name": "Modernizr",
+"version": "2.6.2"
+},
+{
+"name": "Moment JavaScript Date Library",
+"version": "2.24.0"
+},
+{
+"name": "moment-timezone",
+"version": "0.5.26"
+},
+{
+"name": "morgan",
+"version": "20181120-snapshot-31464271"
+},
+{
+"name": "ms.js",
+"version": "2.0.0"
+},
+{
+"name": "ms.js",
+"version": "2.1.2"
+},
+{
+"name": "multer",
+"version": "1.4.1"
+},
+{
+"name": "multer",
+"version": "20181023-snapshot-47b0a1b1"
+},
+{
+"name": "Negotiator",
+"version": "0.6.2"
+},
+{
+"name": "netroy/image-size",
+"version": "0.6.3"
+},
+{
+"name": "node-assert-plus",
+"version": "1.0.0"
+},
+{
+"name": "node-cache",
+"version": "4.2.1"
+},
+{
+"name": "node-concat-map",
+"version": "0.0.1"
+},
+{
+"name": "node-cookie",
+"version": "v0.4.0"
+},
+{
+"name": "node-cookie-signature",
+"version": "1.0.6"
+},
+{
+"name": "node-dashdash",
+"version": "1.14.0"
+},
+{
+"name": "node-dashdash",
+"version": "1.14.1"
+},
+{
+"name": "node-glob",
+"version": "v7.1.4"
+},
+{
+"name": "node-graceful-fs",
+"version": "v4.1.9"
+},
+{
+"name": "node-http-signature",
+"version": "1.1.1"
+},
+{
+"name": "node-imap",
+"version": "0.8.7"
+},
+{
+"name": "node-ini",
+"version": "1.3.5"
+},
+{
+"name": "node-ip",
+"version": "1.1.5"
+},
+{
+"name": "node-jsonfile",
+"version": "4.0.0"
+},
+{
+"name": "node-mkdirp",
+"version": "0.5.1"
+},
+{
+"name": "node-schedule",
+"version": "1.3.2"
+},
+{
+"name": "node-semver",
+"version": "5.7.1"
+},
+{
+"name": "node-stack-trace",
+"version": "0.0.10"
+},
+{
+"name": "node-uuid",
+"version": "3.3.2"
+},
+{
+"name": "nodejs Deprecate",
+"version": "1.1.2"
+},
+{
+"name": "nodejs-asn1",
+"version": "0.2.4"
+},
+{
+"name": "nodejs/string_decoder",
+"version": "0.10.31"
+},
+{
+"name": "nodejs/string_decoder",
+"version": "1.0.3"
+},
+{
+"name": "Nodemailer",
+"version": "2.0.0-beta.1"
+},
+{
+"name": "Nodemailer",
+"version": "2.1.0-beta.3"
+},
+{
+"name": "Nodemailer",
+"version": "4.7.0"
+},
+{
+"name": "nodemailer-fetch",
+"version": "1.6.0"
+},
+{
+"name": "nodemailer-shared",
+"version": "1.0.5"
+},
+{
+"name": "nodemailer-wellknown",
+"version": "0.1.10"
+},
+{
+"name": "object-assign",
+"version": "4.1.1"
+},
+{
+"name": "object-keys",
+"version": "1.1.1"
+},
+{
+"name": "object.values",
+"version": "1.0.3"
+},
+{
+"name": "on-finished",
+"version": "2.3.0"
+},
+{
+"name": "on-headers",
+"version": "1.0.2"
+},
+{
+"name": "ono",
+"version": "5.0.0"
+},
+{
+"name": "ono",
+"version": "5.0.2"
+},
+{
+"name": "openapi-schemas",
+"version": "1.0.0"
+},
+{
+"name": "openapi-schemas",
+"version": "1.0.1"
+},
+{
+"name": "openapi-types",
+"version": "1.0.4"
+},
+{
+"name": "openapi-types",
+"version": "1.3.1"
+},
+{
+"name": "org.webjars.npm:har-schema",
+"version": "2.0.0"
+},
+{
+"name": "os-locale",
+"version": "1.4.0"
+},
+{
+"name": "p-limit",
+"version": "2.2.0"
+},
+{
+"name": "p-locate",
+"version": "3.0.0"
+},
+{
+"name": "p-try",
+"version": "2.2.0"
+},
+{
+"name": "parseurl",
+"version": "1.3.2"
+},
+{
+"name": "parseurl",
+"version": "1.3.3"
+},
+{
+"name": "performance-now",
+"version": "2.1.0"
+},
+{
+"name": "pngjs",
+"version": "3.4.0"
+},
+{
+"name": "pnpm",
+"version": "0.26.5"
+},
+{
+"name": "pop-iterate",
+"version": "1.0.1"
+},
+{
+"name": "proxy-addr",
+"version": "2.0.2"
+},
+{
+"name": "psl",
+"version": "1.2.0"
+},
+{
+"name": "Punycode.js",
+"version": "1.4.1"
+},
+{
+"name": "Punycode.js",
+"version": "v2.1.1"
+},
+{
+"name": "python-shell",
+"version": "0.5.0"
+},
+{
+"name": "Qix-/color-convert",
+"version": "1.9.3"
+},
+{
+"name": "qr-code",
+"version": "1.4.1"
+},
+{
+"name": "qs - QS Querystring",
+"version": "6.5.2"
+},
+{
+"name": "qs - QS Querystring",
+"version": "v6.7.0"
+},
+{
+"name": "range-parser",
+"version": "v1.2.1"
+},
+{
+"name": "raw-body",
+"version": "2.3.3"
+},
+{
+"name": "readable-stream",
+"version": "1.1.14"
+},
+{
+"name": "Request - Simple HTTP Client",
+"version": "v2.88.0"
+},
+{
+"name": "request-simple-ntlm",
+"version": "1.0.0"
+},
+{
+"name": "require-directory",
+"version": "2.1.0"
+},
+{
+"name": "require-main-filename",
+"version": "1.0.1"
+},
+{
+"name": "rootpath",
+"version": "0.1.2"
+},
+{
+"name": "safe-buffer",
+"version": "5.1.1"
+},
+{
+"name": "safe-buffer",
+"version": "v5.2.0"
+},
+{
+"name": "safer-buffer",
+"version": "2.1.2"
+},
+{
+"name": "scmp",
+"version": "2.0.0"
+},
+{
+"name": "secure-keys",
+"version": "1.0.0"
+},
+{
+"name": "send",
+"version": "0.17.1"
+},
+{
+"name": "serve- static",
+"version": "v1.14.1"
+},
+{
+"name": "ServiceLocator Default Implementation",
+"version": "2.5.0-b42"
+},
+{
+"name": "setprototypeof",
+"version": "1.1.1"
+},
+{
+"name": "smtp-connection",
+"version": "2.12.0"
+},
+{
+"name": "snowball-stemmer.jsx",
+"version": "0.2.3"
+},
+{
+"name": "sorted-array-functions",
+"version": "1.2.0"
+},
+{
+"name": "sprintf.js",
+"version": "1.0.1"
+},
+{
+"name": "sprintf.js",
+"version": "1.0.3"
+},
+{
+"name": "sshpk",
+"version": "1.16.1"
+},
+{
+"name": "statuses",
+"version": "1.3.0"
+},
+{
+"name": "statuses",
+"version": "1.4.0"
+},
+{
+"name": "stealthy-require",
+"version": "1.1.1"
+},
+{
+"name": "streamsearch",
+"version": "0.1.2"
+},
+{
+"name": "string-width",
+"version": "1.0.2"
+},
+{
+"name": "string-width",
+"version": "v3.1.0"
+},
+{
+"name": "Strip ANSI",
+"version": "3.0.1"
+},
+{
+"name": "Strip ANSI",
+"version": "5.2.0"
+},
+{
+"name": "Swagger Parser",
+"version": "8.0.1"
+},
+{
+"name": "Swagger Parser",
+"version": "v8.0.0"
+},
+{
+"name": "swagger-jsdoc",
+"version": "3.2.7"
+},
+{
+"name": "swagger-jsdoc",
+"version": "3.2.8"
+},
+{
+"name": "swagger-methods",
+"version": "1.0.8"
+},
+{
+"name": "swagger-ui",
+"version": "3.23.1"
+},
+{
+"name": "tiny-each-async",
+"version": "2.0.3"
+},
+{
+"name": "tns-core- modules",
+"version": "1.7.1"
+},
+{
+"name": "toidentifier",
+"version": "1.0.0"
+},
+{
+"name": "tough-cookie",
+"version": "2.4.3"
+},
+{
+"name": "tweetnacl-js",
+"version": "1.0.0"
+},
+{
+"name": "twilio-node",
+"version": "3.33.2"
+},
+{
+"name": "Type arithmetic library for Java5",
+"version": "1.3"
+},
+{
+"name": "type.is",
+"version": "1.6.18"
+},
+{
+"name": "TypedArray",
+"version": "0.0.6"
+},
+{
+"name": "Underscore.js",
+"version": "1.7.0"
+},
+{
+"name": "universalify",
+"version": "0.1.1"
+},
+{
+"name": "uri-js",
+"version": "4.2.2"
+},
+{
+"name": "util-deprecate",
+"version": "1.0.2"
+},
+{
+"name": "utils-merge",
+"version": "1.0.0"
+},
+{
+"name": "UUID",
+"version": "3.3.2"
+},
+{
+"name": "Validator",
+"version": "10.11.0"
+},
+{
+"name": "validator",
+"version": "10.9.0"
+},
+{
+"name": "vary",
+"version": "1.1.2"
+},
+{
+"name": "verror",
+"version": "1.10.0"
+},
+{
+"name": "Visionmedia Debug",
+"version": "2.6.9"
+},
+{
+"name": "weak-map",
+"version": "1.0.5"
+},
+{
+"name": "whitequark/ipaddr.js",
+"version": "1.9.0"
+},
+{
+"name": "window-size",
+"version": "0.1.3"
+},
+{
+"name": "wrap-ansi",
+"version": "v5.1.0"
+},
+{
+"name": "wrappy",
+"version": "1.0.1"
+},
+{
+"name": "xmlbuilder",
+"version": "9.0.0"
+},
+{
+"name": "xtend",
+"version": "4.0.1"
+},
+{
+"name": "y18n",
+"version": "3.2.0"
+},
+{
+"name": "yargs",
+"version": "3.32.0"
+},
+{
+"name": "yargs",
+"version": "v13.3.0"
+},
+{
+"name": "yargs-parser",
+"version": "v13.1.1"
+},
+{
+"name": "yunlongzha_test_node",
+"version": "1.0.0"
+},
+{
+"name": "z-schema",
+"version": "v4.1.0"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "Guest & IoT Manager",
+"retrieved": "2026-11-08",
+"sha256": "0a967a19828f397e083286d4d6d81ace0cfe43cf7c67a43b49c94778e8d01738",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/10f13bfc745147de92bd9691b147aeac?v=b307ec54",
+"version": "8.4"
+}

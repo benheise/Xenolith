@@ -10,6 +10,7 @@ from pathlib import Path
 
 from . import build as build_mod
 from . import catalog as catalog_mod
+from . import fingerprint as fingerprint_mod
 from . import prepare as prepare_mod
 from .catalog import ROOT
 from .model import dedupe, write_ndjson
@@ -136,6 +137,14 @@ def main(argv: list[str] | None = None) -> int:
     m = sub.add_parser("community", help="validate and ingest community/assertions.csv")
     m.add_argument("--check", action="store_true", help="validate only, write nothing")
     m.set_defaults(fn=cmd_community)
+
+    f = sub.add_parser("fingerprint", help="find watchlist components in a file, folder or archive (offline)")
+    f.add_argument("target", help="extracted firmware or install folder, or an archive (zip, jar, war, tar, tgz)")
+    f.add_argument("-o", "--output", help="write the findings as CycloneDX JSON (input for `prepare`)")
+    f.add_argument("--min-confidence", type=float, default=0.0, help="drop findings below this confidence (0-1)")
+    f.add_argument("--fingerprints", help="alternative fingerprints file (default catalog/fingerprints.yaml)")
+    f.add_argument("-v", "--verbose", action="store_true", help="list items that could not be inspected")
+    f.set_defaults(fn=fingerprint_mod.run)
 
     r = sub.add_parser("prepare", help="turn a Syft/cdxgen/cve-bin-tool SBOM into a community/sboms submission")
     r.add_argument("scan", help="CycloneDX or SPDX JSON written by the scanner")

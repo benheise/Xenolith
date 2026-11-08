@@ -1,0 +1,82 @@
+{
+"components": [
+{
+"name": "Boost",
+"version": "1.76"
+},
+{
+"name": "CFPP",
+"version": ""
+},
+{
+"name": "cpprestsdk",
+"version": "2.9.0"
+},
+{
+"name": "jwt-cpp",
+"version": "159527930e2e15e190049c20655d54a308b638d7"
+},
+{
+"name": "libstdc++",
+"version": ""
+},
+{
+"name": "LZ4",
+"version": "1.9.2"
+},
+{
+"name": "Oat++",
+"version": "1.2.5"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2w"
+},
+{
+"name": "PlistCpp",
+"version": ""
+},
+{
+"name": "STPrivilegedTask",
+"version": ""
+},
+{
+"name": "tinyxml2",
+"version": "6.0.0"
+},
+{
+"name": "uri-encode-c",
+"version": "0.03"
+},
+{
+"name": "utf8.h, utf8/checked.h, utf8/unchecked.h, utf8/core.h",
+"version": ""
+},
+{
+"name": "util-linux/libuuid",
+"version": ""
+},
+{
+"name": "WebSocket++",
+"version": "0.5.1"
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+},
+{
+"name": "zstd",
+"version": "1.5.2"
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam Agent for Mac",
+"retrieved": "2026-11-08",
+"sha256": "2cba2ee267548e561c81691f5cff425f5227ff8c84fe77862a1cbaa35b03a131",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=veeam_agent_for_mac_2_0&lang=en",
+"version": "2.0"
+}

@@ -1,0 +1,122 @@
+{
+"components": [
+{
+"name": "Boost",
+"version": "1.76"
+},
+{
+"name": "Catch2",
+"version": "2.11.0"
+},
+{
+"name": "Catch2",
+"version": "2.13.7"
+},
+{
+"name": "cpprestsdk",
+"version": "2.9.0"
+},
+{
+"name": "crc32c",
+"version": "1.1.2"
+},
+{
+"name": "jwt-cpp",
+"version": "159527930e2e15e190049c20655d54a308b638d7"
+},
+{
+"name": "libdevmapper",
+"version": ""
+},
+{
+"name": "libgcc",
+"version": ""
+},
+{
+"name": "liblvm",
+"version": ""
+},
+{
+"name": "librsync: rollsum.h",
+"version": "0.9.7"
+},
+{
+"name": "libstdc++",
+"version": ""
+},
+{
+"name": "libzip",
+"version": "1.7.3-1-debian"
+},
+{
+"name": "lz4",
+"version": "1.9.4"
+},
+{
+"name": "Microsoft Azure Storage Client Library for C++",
+"version": "3.0.0"
+},
+{
+"name": "oatpp",
+"version": "1.2.5"
+},
+{
+"name": "oatpp-websocket",
+"version": "1.2.5"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2zi"
+},
+{
+"name": "sha2",
+"version": "79116b5d5d449311c27a24e16c99d8bccb4d1301"
+},
+{
+"name": "SQLite",
+"version": "3.39.4"
+},
+{
+"name": "StdString.h",
+"version": ""
+},
+{
+"name": "tinyxml2",
+"version": "7.0.1"
+},
+{
+"name": "uri-encode-c",
+"version": "0.03"
+},
+{
+"name": "utf8.h, utf8/checked.h, utf8/unchecked.h, utf8/core.h",
+"version": ""
+},
+{
+"name": "util-linux/libuuid",
+"version": ""
+},
+{
+"name": "WebSocket++",
+"version": "0.5.1"
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+},
+{
+"name": "zstd",
+"version": "1.5.2"
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam Agent for Linux",
+"retrieved": "2026-11-08",
+"sha256": "af3ed2ab724c06d67178f569844018413cc8599a88d9b977e2de421286bdf8b6",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_linux_6_1&lang=en",
+"version": "6.1"
+}

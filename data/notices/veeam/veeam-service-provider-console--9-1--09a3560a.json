@@ -1,0 +1,1682 @@
+{
+"components": [
+{
+"name": ".NET 8.0",
+"version": ""
+},
+{
+"name": ".NET Framework",
+"version": "4.7.2"
+},
+{
+"name": "@babel/runtime",
+"version": "7.21.5"
+},
+{
+"name": "@emotion/is-prop-valid",
+"version": "1.2.2"
+},
+{
+"name": "@emotion/memoize",
+"version": "0.8.1"
+},
+{
+"name": "@emotion/unitless",
+"version": "0.8.1"
+},
+{
+"name": "@types/element-resize-event",
+"version": "2.0.0"
+},
+{
+"name": "@types/prop-types",
+"version": "15.7.5"
+},
+{
+"name": "@types/react",
+"version": "18.3.12"
+},
+{
+"name": "@types/react-window",
+"version": "1.8.8"
+},
+{
+"name": "@types/stylis",
+"version": "4.2.5"
+},
+{
+"name": "Akka",
+"version": "1.5.53"
+},
+{
+"name": "Akka.Logger.Serilog",
+"version": "1.5.25"
+},
+{
+"name": "Akka.Streams",
+"version": "1.5.53"
+},
+{
+"name": "App.Metrics",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.Abstractions",
+"version": "4.4.0-preview.0.4"
+},
+{
+"name": "App.Metrics.AspNetCore",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.AspNetCore.Abstractions",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.AspNetCore.Core",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.AspNetCore.Endpoints",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.AspNetCore.Hosting",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.AspNetCore.Mvc",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.AspNetCore.Mvc.Core",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.AspNetCore.Routing",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.AspNetCore.Tracking",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.Concurrency",
+"version": "4.4.0-preview.0.4"
+},
+{
+"name": "App.Metrics.Core",
+"version": "4.4.0-preview.0.4"
+},
+{
+"name": "App.Metrics.Extensions.Configuration",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.Extensions.DependencyInjection",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.Extensions.Hosting",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.Formatters.Ascii",
+"version": "4.4.0-preview.0.4"
+},
+{
+"name": "App.Metrics.Formatters.InfluxDB",
+"version": "4.4.0-preview.0.4"
+},
+{
+"name": "App.Metrics.Formatters.Json",
+"version": "4.3.0"
+},
+{
+"name": "App.Metrics.Reporting.InfluxDB",
+"version": "4.4.0-preview.0.4"
+},
+{
+"name": "ASP.NET Core Runtime",
+"version": "8.0"
+},
+{
+"name": "Asp.Versioning.Abstractions",
+"version": "8.1.0"
+},
+{
+"name": "Asp.Versioning.Http",
+"version": "8.1.0"
+},
+{
+"name": "Asp.Versioning.Mvc",
+"version": "8.1.0"
+},
+{
+"name": "Autofac",
+"version": "7.1.0"
+},
+{
+"name": "Autofac",
+"version": "8.2.1"
+},
+{
+"name": "Autofac.Extensions.DependencyInjection",
+"version": "9.0.0"
+},
+{
+"name": "AutoMapper",
+"version": "10.1.1"
+},
+{
+"name": "AutoMapper",
+"version": "12.0.1"
+},
+{
+"name": "AutoMapper.Contrib.Autofac.DependencyInjection",
+"version": "4.0.0"
+},
+{
+"name": "Azure.Core",
+"version": "1.38.0"
+},
+{
+"name": "Azure.Identity",
+"version": "1.11.4"
+},
+{
+"name": "Boost",
+"version": "1.84"
+},
+{
+"name": "Boost",
+"version": "1.86"
+},
+{
+"name": "BouncyCastle.Cryptography",
+"version": "2.4.0"
+},
+{
+"name": "bzip2",
+"version": "1.0.8"
+},
+{
+"name": "camelize",
+"version": "1.0.1"
+},
+{
+"name": "CommandLineParser",
+"version": "2.9.1"
+},
+{
+"name": "css-color-keywords",
+"version": "1.0.0"
+},
+{
+"name": "css-to-react-native",
+"version": "3.2.0"
+},
+{
+"name": "csstype",
+"version": "3.1.3"
+},
+{
+"name": "CsvHelper",
+"version": "33.0.1"
+},
+{
+"name": "Destructurama.Attributed",
+"version": "4.0.0"
+},
+{
+"name": "Destructurama.JsonNet",
+"version": "3.0.0"
+},
+{
+"name": "DynamicData",
+"version": "7.5.2"
+},
+{
+"name": "Elasticsearch.Net",
+"version": "7.17.5"
+},
+{
+"name": "electron-log",
+"version": "4.4.8"
+},
+{
+"name": "electron-traywindow-positioner",
+"version": "1.1.1"
+},
+{
+"name": "element-resize-event",
+"version": "3.0.6"
+},
+{
+"name": "fast-deep-equal",
+"version": "3.1.3"
+},
+{
+"name": "FluentValidation",
+"version": "11.9.2"
+},
+{
+"name": "FluentValidation",
+"version": "8.6.2"
+},
+{
+"name": "FluentValidation",
+"version": "8.6.3"
+},
+{
+"name": "FluentValidation.AspNetCore",
+"version": "11.3.0"
+},
+{
+"name": "FluentValidation.AspNetCore",
+"version": "8.6.2"
+},
+{
+"name": "FluentValidation.DependencyInjectionExtensions",
+"version": "11.5.1"
+},
+{
+"name": "FluentValidation.DependencyInjectionExtensions",
+"version": "8.6.2"
+},
+{
+"name": "fmt",
+"version": "11.0.2"
+},
+{
+"name": "focus-trap",
+"version": "7.6.5"
+},
+{
+"name": "focus-trap-react",
+"version": "10.3.0"
+},
+{
+"name": "functionalplus",
+"version": "0.2.13-p0"
+},
+{
+"name": "goober",
+"version": "2.1.10"
+},
+{
+"name": "Google.Protobuf",
+"version": "3.21.9"
+},
+{
+"name": "Google.Protobuf",
+"version": "3.26.1"
+},
+{
+"name": "Google.Protobuf",
+"version": "3.32.0"
+},
+{
+"name": "Grpc.Core",
+"version": "2.46.6"
+},
+{
+"name": "Grpc.Core.Api",
+"version": "2.71.0"
+},
+{
+"name": "Grpc.Net.Client",
+"version": "2.71.0"
+},
+{
+"name": "Grpc.Net.ClientFactory",
+"version": "2.67.0"
+},
+{
+"name": "Grpc.Net.Common",
+"version": "2.71.0"
+},
+{
+"name": "Grpc.Reflection",
+"version": "2.67.0"
+},
+{
+"name": "Hardcodet.NotifyIcon.Wpf",
+"version": "1.1.0"
+},
+{
+"name": "immer",
+"version": "10.0.4"
+},
+{
+"name": "InfluxDB.Client",
+"version": "4.18.0"
+},
+{
+"name": "InfluxDB.Client.Core",
+"version": "4.18.0"
+},
+{
+"name": "Inter Tight",
+"version": ""
+},
+{
+"name": "IPNetwork2",
+"version": "3.0.667"
+},
+{
+"name": "js-tokens",
+"version": "4.0.0"
+},
+{
+"name": "jsoncpp",
+"version": "1.9.5"
+},
+{
+"name": "JsonSubTypes",
+"version": "1.8.0"
+},
+{
+"name": "JsonSubTypes",
+"version": "1.9.0"
+},
+{
+"name": "JsonSubTypes",
+"version": "2.0.1"
+},
+{
+"name": "libbacktrace",
+"version": "cci.20210118"
+},
+{
+"name": "libiconv",
+"version": "1.17.0"
+},
+{
+"name": "libssh",
+"version": "0.11.3"
+},
+{
+"name": "libxml2",
+"version": "2.13.4"
+},
+{
+"name": "loose-envify",
+"version": "1.4.0"
+},
+{
+"name": "magic_enum",
+"version": "0.7.2"
+},
+{
+"name": "MailKit",
+"version": "4.8.0"
+},
+{
+"name": "ManagedEsent",
+"version": "2.0.0"
+},
+{
+"name": "Mapster",
+"version": "7.4.0"
+},
+{
+"name": "Mapster.Core",
+"version": "1.2.1"
+},
+{
+"name": "memoize-one",
+"version": "5.2.1"
+},
+{
+"name": "Microsoft.ApplicationInsights",
+"version": "2.20.0"
+},
+{
+"name": "Microsoft.ApplicationInsights",
+"version": "2.21.0"
+},
+{
+"name": "Microsoft.AspNet.WebApi.Client",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+"version": "8.0.12"
+},
+{
+"name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+"version": "8.0.16"
+},
+{
+"name": "Microsoft.AspNetCore.JsonPatch",
+"version": "8.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.JsonPatch",
+"version": "8.0.12"
+},
+{
+"name": "Microsoft.AspNetCore.JsonPatch",
+"version": "8.0.16"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+"version": "8.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+"version": "8.0.12"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+"version": "8.0.16"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.Versioning",
+"version": "4.1.1"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.Versioning",
+"version": "5.1.0"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer",
+"version": "4.1.1"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer",
+"version": "5.1.0"
+},
+{
+"name": "Microsoft.AspNetCore.NodeServices",
+"version": "3.1.4"
+},
+{
+"name": "Microsoft.AspNetCore.SpaServices",
+"version": "3.1.4"
+},
+{
+"name": "Microsoft.AspNetCore.SpaServices.Extensions",
+"version": "3.1.4"
+},
+{
+"name": "Microsoft.AspNetCore.SpaServices.Extensions",
+"version": "8.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.SpaServices.Extensions",
+"version": "8.0.16"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "1.1.1"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.CodeAnalysis.Common",
+"version": "4.10.0"
+},
+{
+"name": "Microsoft.CodeAnalysis.CSharp",
+"version": "4.10.0"
+},
+{
+"name": "Microsoft.Data.SqlClient",
+"version": "5.2.2"
+},
+{
+"name": "Microsoft.Data.SqlClient.SNI",
+"version": "5.1.1"
+},
+{
+"name": "Microsoft.Data.SqlClient.SNI",
+"version": "5.2.0"
+},
+{
+"name": "Microsoft.Data.Sqlite.Core",
+"version": "8.0.10"
+},
+{
+"name": "Microsoft.Data.Sqlite.Core",
+"version": "8.0.16"
+},
+{
+"name": "Microsoft.EntityFrameworkCore",
+"version": "8.0.10"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Abstractions",
+"version": "8.0.10"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Relational",
+"version": "8.0.10"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Sqlite.Core",
+"version": "8.0.10"
+},
+{
+"name": "Microsoft.Extensions.AmbientMetadata.Application",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Extensions.Caching.Abstractions",
+"version": "2.0.1"
+},
+{
+"name": "Microsoft.Extensions.Caching.Abstractions",
+"version": "3.1.25"
+},
+{
+"name": "Microsoft.Extensions.Caching.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Caching.Memory",
+"version": "2.0.1"
+},
+{
+"name": "Microsoft.Extensions.Caching.Memory",
+"version": "3.1.25"
+},
+{
+"name": "Microsoft.Extensions.Caching.Memory",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Compliance.Abstractions",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Configuration",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Abstractions",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Abstractions",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Binder",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Binder",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Binder",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.CommandLine",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Configuration.CommandLine",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.FileExtensions",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Configuration.FileExtensions",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Json",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Json",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Configuration.UserSecrets",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Configuration.UserSecrets",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "3.1.10"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.AutoActivation",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyModel",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyModel",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.DiagnosticAdapter",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics.Abstractions",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics.Abstractions",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Diagnostics.ExceptionSummarization",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Abstractions",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Physical",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Physical",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.FileSystemGlobbing",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.FileSystemGlobbing",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Hosting",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Hosting",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Hosting.Abstractions",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Hosting.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Hosting.Abstractions",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Hosting.Systemd",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Hosting.WindowsServices",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Hosting.WindowsServices",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Hosting.WindowsServices",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Http",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Http",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Http.Diagnostics",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Extensions.Http.Polly",
+"version": "8.0.5"
+},
+{
+"name": "Microsoft.Extensions.Http.Resilience",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "3.1.25"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "8.0.3"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Configuration",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Logging.Configuration",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Configuration",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Logging.Configuration",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Console",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Logging.Console",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Logging.Debug",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Logging.Debug",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Logging.EventLog",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Logging.EventLog",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.Logging.EventSource",
+"version": "3.1.8"
+},
+{
+"name": "Microsoft.Extensions.Logging.EventSource",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft.Extensions.ObjectPool",
+"version": "8.0.5"
+},
+{
+"name": "Microsoft.Extensions.ObjectPool",
+"version": "8.0.8"
+},
+{
+"name": "Microsoft.Extensions.Options",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Options",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.Options",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Primitives",
+"version": "3.1.32"
+},
+{
+"name": "Microsoft.Extensions.Primitives",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Primitives",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.Extensions.Resilience",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Extensions.Telemetry",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Extensions.Telemetry.Abstractions",
+"version": "8.6.0"
+},
+{
+"name": "Microsoft.Identity.Client",
+"version": "4.61.3"
+},
+{
+"name": "Microsoft.Identity.Client.Extensions.Msal",
+"version": "4.61.3"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "7.1.2"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "8.12.0"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "7.1.2"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "8.12.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "7.1.2"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "8.12.0"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols",
+"version": "5.2.4"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols",
+"version": "7.1.2"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+"version": "7.1.2"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "7.1.2"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "8.12.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens.Saml",
+"version": "5.2.4"
+},
+{
+"name": "Microsoft.IdentityModel.Xml",
+"version": "5.2.4"
+},
+{
+"name": "Microsoft.IO.RecyclableMemoryStream",
+"version": "3.0.0"
+},
+{
+"name": "Microsoft.Management.Infrastructure.Runtime.Win",
+"version": "3.0.0"
+},
+{
+"name": "Microsoft.Net.Http.Headers",
+"version": "2.2.8"
+},
+{
+"name": "Microsoft.OpenApi",
+"version": "1.2.3"
+},
+{
+"name": "Microsoft.OpenApi",
+"version": "1.6.25"
+},
+{
+"name": "Microsoft.OpenApi.Kiota",
+"version": "1.6.1"
+},
+{
+"name": "Microsoft.OpenApi.Readers",
+"version": "1.6.25"
+},
+{
+"name": "Microsoft.PowerShell.CoreCLR.Eventing",
+"version": "7.4.5"
+},
+{
+"name": "Microsoft.PowerShell.Native",
+"version": "7.4.0"
+},
+{
+"name": "Microsoft.SqlServer.Server",
+"version": "1.0.0"
+},
+{
+"name": "Microsoft.Win32.Registry.AccessControl",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Win32.SystemEvents",
+"version": "8.0.0"
+},
+{
+"name": "MimeKit",
+"version": "4.8.0"
+},
+{
+"name": "Namotion.Reflection",
+"version": "3.2.0"
+},
+{
+"name": "nanoid",
+"version": "3.3.11"
+},
+{
+"name": "Newtonsoft.Json",
+"version": "13.0.3"
+},
+{
+"name": "Newtonsoft.Json.Bson",
+"version": "1.0.2"
+},
+{
+"name": "Nito.AsyncEx.Context",
+"version": "5.1.2"
+},
+{
+"name": "Nito.AsyncEx.Tasks",
+"version": "5.1.2"
+},
+{
+"name": "Nito.Disposables",
+"version": "2.2.1"
+},
+{
+"name": "NJsonSchema",
+"version": "11.1.0"
+},
+{
+"name": "NJsonSchema.Annotations",
+"version": "11.1.0"
+},
+{
+"name": "NJsonSchema.NewtonsoftJson",
+"version": "11.1.0"
+},
+{
+"name": "NodaTime",
+"version": "3.1.11"
+},
+{
+"name": "NodaTime.Serialization.JsonNet",
+"version": "3.1.0"
+},
+{
+"name": "Npgsql",
+"version": "8.0.5"
+},
+{
+"name": "NUlid",
+"version": "1.7.2"
+},
+{
+"name": "Open Sans",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": "3.0.13"
+},
+{
+"name": "OpenTelemetry",
+"version": "1.11.2"
+},
+{
+"name": "OpenTelemetry.Api",
+"version": "1.11.2"
+},
+{
+"name": "OpenTelemetry.Api.ProviderBuilderExtensions",
+"version": "1.11.2"
+},
+{
+"name": "OpenTelemetry.Instrumentation.Runtime",
+"version": "1.11.1"
+},
+{
+"name": "pcre",
+"version": "8.45"
+},
+{
+"name": "picocolors",
+"version": "1.1.1"
+},
+{
+"name": "poco",
+"version": "1.11.0"
+},
+{
+"name": "Polly",
+"version": "7.2.2"
+},
+{
+"name": "Polly",
+"version": "8.5.2"
+},
+{
+"name": "Polly.Core",
+"version": "8.5.2"
+},
+{
+"name": "Polly.Extensions",
+"version": "8.5.2"
+},
+{
+"name": "Polly.Extensions.Http",
+"version": "3.0.0"
+},
+{
+"name": "Polly.RateLimiting",
+"version": "8.4.0"
+},
+{
+"name": "postcss",
+"version": "8.4.49"
+},
+{
+"name": "postcss-value-parser",
+"version": "4.2.0"
+},
+{
+"name": "PowerShell",
+"version": "7.4.0"
+},
+{
+"name": "protobuf-net",
+"version": "3.2.0"
+},
+{
+"name": "protobuf-net",
+"version": "3.2.46"
+},
+{
+"name": "protobuf-net.Core",
+"version": "3.2.0"
+},
+{
+"name": "protobuf-net.Core",
+"version": "3.2.46"
+},
+{
+"name": "react",
+"version": "18.3.1"
+},
+{
+"name": "react-dom",
+"version": "18.3.1"
+},
+{
+"name": "react-window",
+"version": "1.8.10"
+},
+{
+"name": "Reactive.Streams",
+"version": "1.0.4"
+},
+{
+"name": "ReactiveUI",
+"version": "17.1.50"
+},
+{
+"name": "ReactiveUI.WPF",
+"version": "17.1.50"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.13.11"
+},
+{
+"name": "RestSharp",
+"version": "106.15.0"
+},
+{
+"name": "RestSharp",
+"version": "112.0.0"
+},
+{
+"name": "runtime.win-x64.runtime.native.System.Data.SqlClient.sni",
+"version": "4.4.0"
+},
+{
+"name": "scheduler",
+"version": "0.23.2"
+},
+{
+"name": "Serilog",
+"version": "4.0.2"
+},
+{
+"name": "Serilog.Enrichers.Environment",
+"version": "3.0.1"
+},
+{
+"name": "Serilog.Enrichers.Process",
+"version": "3.0.0"
+},
+{
+"name": "Serilog.Enrichers.Thread",
+"version": "4.0.0"
+},
+{
+"name": "Serilog.Exceptions",
+"version": "8.4.0"
+},
+{
+"name": "Serilog.Extensions.Hosting",
+"version": "8.0.0"
+},
+{
+"name": "Serilog.Extensions.Logging",
+"version": "8.0.0"
+},
+{
+"name": "Serilog.Filters.Expressions",
+"version": "2.1.0"
+},
+{
+"name": "Serilog.Formatting.Compact",
+"version": "2.0.0"
+},
+{
+"name": "Serilog.Formatting.Compact.Reader",
+"version": "3.0.0"
+},
+{
+"name": "Serilog.Formatting.Elasticsearch",
+"version": "10.0.0"
+},
+{
+"name": "Serilog.Sinks.ApplicationInsights",
+"version": "4.0.0"
+},
+{
+"name": "Serilog.Sinks.Console",
+"version": "6.0.0"
+},
+{
+"name": "Serilog.Sinks.Elasticsearch",
+"version": "10.0.0"
+},
+{
+"name": "Serilog.Sinks.File",
+"version": "5.0.0"
+},
+{
+"name": "Serilog.Sinks.Grafana.Loki",
+"version": "8.3.0"
+},
+{
+"name": "Serilog.Sinks.Graylog",
+"version": "3.1.1"
+},
+{
+"name": "Serilog.Sinks.PeriodicBatching",
+"version": "4.0.0"
+},
+{
+"name": "Serilog.Sinks.Seq",
+"version": "8.0.0"
+},
+{
+"name": "shallowequal",
+"version": "1.1.0"
+},
+{
+"name": "SharpYaml",
+"version": "2.1.1"
+},
+{
+"name": "SharpZipLib",
+"version": "1.4.2"
+},
+{
+"name": "source-map-js",
+"version": "1.2.1"
+},
+{
+"name": "spdlog",
+"version": "1.13.0"
+},
+{
+"name": "Splat",
+"version": "14.1.45"
+},
+{
+"name": "SQLite",
+"version": "3.45.0"
+},
+{
+"name": "sqlite_orm",
+"version": "1.6"
+},
+{
+"name": "SQLitePCLRaw.bundle_e_sqlite3",
+"version": "2.1.6"
+},
+{
+"name": "SQLitePCLRaw.core",
+"version": "2.1.6"
+},
+{
+"name": "SQLitePCLRaw.lib.e_sqlite3",
+"version": "2.1.6"
+},
+{
+"name": "SQLitePCLRaw.provider.e_sqlite3",
+"version": "2.1.6"
+},
+{
+"name": "stduuid",
+"version": "1.0"
+},
+{
+"name": "styled-components",
+"version": "6.1.16"
+},
+{
+"name": "stylis",
+"version": "4.3.2"
+},
+{
+"name": "Superpower",
+"version": "2.3.0"
+},
+{
+"name": "Swashbuckle.AspNetCore.Swagger",
+"version": "6.5.0"
+},
+{
+"name": "Swashbuckle.AspNetCore.Swagger",
+"version": "9.0.4"
+},
+{
+"name": "Swashbuckle.AspNetCore.SwaggerGen",
+"version": "6.5.0"
+},
+{
+"name": "Swashbuckle.AspNetCore.SwaggerGen",
+"version": "9.0.4"
+},
+{
+"name": "Swashbuckle.AspNetCore.SwaggerUI",
+"version": "6.5.0"
+},
+{
+"name": "Swashbuckle.AspNetCore.SwaggerUI",
+"version": "9.0.4"
+},
+{
+"name": "System.Buffers",
+"version": "4.5.1"
+},
+{
+"name": "System.ClientModel",
+"version": "1.0.0"
+},
+{
+"name": "System.CodeDom",
+"version": "8.0.0"
+},
+{
+"name": "System.Collections.Immutable",
+"version": "7.0.0"
+},
+{
+"name": "System.Configuration.ConfigurationManager",
+"version": "8.0.0"
+},
+{
+"name": "System.Configuration.ConfigurationManager",
+"version": "8.0.1"
+},
+{
+"name": "System.Configuration.ConfigurationManager",
+"version": "9.0.3"
+},
+{
+"name": "System.Data.SqlClient",
+"version": "4.8.6"
+},
+{
+"name": "System.Diagnostics.DiagnosticSource",
+"version": "9.0.3"
+},
+{
+"name": "System.Diagnostics.EventLog",
+"version": "8.0.0"
+},
+{
+"name": "System.Diagnostics.EventLog",
+"version": "8.0.1"
+},
+{
+"name": "System.Diagnostics.EventLog",
+"version": "9.0.3"
+},
+{
+"name": "System.Diagnostics.PerformanceCounter",
+"version": "9.0.3"
+},
+{
+"name": "System.DirectoryServices",
+"version": "8.0.0"
+},
+{
+"name": "System.DirectoryServices.AccountManagement",
+"version": "8.0.1"
+},
+{
+"name": "System.DirectoryServices.Protocols",
+"version": "8.0.0"
+},
+{
+"name": "System.Drawing.Common",
+"version": "8.0.10"
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": "6.35.0"
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": "7.1.2"
+},
+{
+"name": "System.Linq.Async",
+"version": "6.0.3"
+},
+{
+"name": "System.Management",
+"version": "8.0.0"
+},
+{
+"name": "System.Management.Automation",
+"version": "7.4.5"
+},
+{
+"name": "System.Memory",
+"version": "4.5.5"
+},
+{
+"name": "System.Memory.Data",
+"version": "1.0.2"
+},
+{
+"name": "System.Numerics.Vectors",
+"version": "4.5.0"
+},
+{
+"name": "System.Reactive",
+"version": "6.0.1"
+},
+{
+"name": "System.Reactive",
+"version": "6.0.2"
+},
+{
+"name": "System.Reactive.Interfaces",
+"version": "6.0.2"
+},
+{
+"name": "System.Reactive.Linq",
+"version": "6.0.2"
+},
+{
+"name": "System.Resources.Extensions",
+"version": "8.0.0"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "4.5.0"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "8.0.0"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "8.0.1"
+},
+{
+"name": "System.Runtime.CompilerServices.Unsafe",
+"version": "6.0.0"
+},
+{
+"name": "System.Security.Cryptography.Pkcs",
+"version": "8.0.1"
+},
+{
+"name": "System.Security.Cryptography.ProtectedData",
+"version": "8.0.0"
+},
+{
+"name": "System.Security.Cryptography.ProtectedData",
+"version": "9.0.3"
+},
+{
+"name": "System.Security.Cryptography.Xml",
+"version": "8.0.2"
+},
+{
+"name": "System.Security.Permissions",
+"version": "8.0.0"
+},
+{
+"name": "System.ServiceProcess.ServiceController",
+"version": "4.7.0"
+},
+{
+"name": "System.ServiceProcess.ServiceController",
+"version": "8.0.0"
+},
+{
+"name": "System.ServiceProcess.ServiceController",
+"version": "8.0.1"
+},
+{
+"name": "System.Threading.AccessControl",
+"version": "8.0.0"
+},
+{
+"name": "System.Threading.RateLimiting",
+"version": "8.0.0"
+},
+{
+"name": "System.Windows.Extensions",
+"version": "8.0.0"
+},
+{
+"name": "tabbable",
+"version": "6.2.0"
+},
+{
+"name": "tslib",
+"version": "2.6.2"
+},
+{
+"name": "uuid",
+"version": "10.0.0"
+},
+{
+"name": "Veeam.AutoMapper.Extensions.EnumMapping",
+"version": "1.0.0.24"
+},
+{
+"name": "WinCDEmu",
+"version": "4.0"
+},
+{
+"name": "winpty",
+"version": "0.4.3"
+},
+{
+"name": "xmlsec",
+"version": "1.3.6"
+},
+{
+"name": "yaml-cpp",
+"version": "0.6.3"
+},
+{
+"name": "Z.EntityFramework.Extensions.EFCore",
+"version": "8.103.6.3"
+},
+{
+"name": "zlib",
+"version": "1.3.1"
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam Service Provider Console",
+"retrieved": "2026-11-08",
+"sha256": "2e5466981e6b0cf88825b95dbc066db6ac05e6df4830d2e2baca17dd4d8129b5",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=licenses.vspc_9.1.0.30125&lang=en",
+"version": "9.1"
+}

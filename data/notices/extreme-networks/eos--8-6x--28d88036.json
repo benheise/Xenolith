@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "Open Source Software Used in the Product",
+"version": ""
+},
+{
+"name": "Software And The Associated",
+"version": ""
+}
+],
+"extractors": [
+"dotted_toc"
+],
+"kind": "pdf",
+"product": "EOS",
+"retrieved": "2026-11-08",
+"sha256": "ca397eb88d4d007f78994bbe2bfd5f163c55f7aac29dd30f1c77b12085c1a127",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/98dd0c2185654c75b44df27fcfaef449?v=4c79b587",
+"version": "8.6X"
+}

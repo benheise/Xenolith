@@ -1,0 +1,4482 @@
+{
+"components": [
+{
+"name": "2to3",
+"version": "1.0"
+},
+{
+"name": "@ampproject/remapping",
+"version": "2.2.1"
+},
+{
+"name": "@ampproject/remapping",
+"version": "2.3.0"
+},
+{
+"name": "@angular-devkit/architect",
+"version": "0.1602.10"
+},
+{
+"name": "@angular-devkit/build-angular",
+"version": "16.2.10"
+},
+{
+"name": "@angular/animations",
+"version": "16.2.12"
+},
+{
+"name": "@angular/common",
+"version": "16.2.12"
+},
+{
+"name": "@angular/compiler",
+"version": "16.2.12"
+},
+{
+"name": "@angular/compiler-cli",
+"version": "16.2.12"
+},
+{
+"name": "@angular/core",
+"version": "16.2.12"
+},
+{
+"name": "@angular/forms",
+"version": "16.2.12"
+},
+{
+"name": "@angular/localize",
+"version": "16.2.12"
+},
+{
+"name": "@angular/platform-browser",
+"version": "16.2.12"
+},
+{
+"name": "@angular/platform-browser-dynamic",
+"version": "16.2.12"
+},
+{
+"name": "@angular/router",
+"version": "16.2.12"
+},
+{
+"name": "@assemblyscript/loader",
+"version": "0.10.1"
+},
+{
+"name": "@babel/code-frame",
+"version": "7.24.2"
+},
+{
+"name": "@babel/compat-data",
+"version": "7.24.4"
+},
+{
+"name": "@babel/core",
+"version": "7.22.9"
+},
+{
+"name": "@babel/core",
+"version": "7.23.2"
+},
+{
+"name": "@babel/core",
+"version": "7.24.4"
+},
+{
+"name": "@babel/generator",
+"version": "7.22.9"
+},
+{
+"name": "@babel/generator",
+"version": "7.24.4"
+},
+{
+"name": "@babel/helper-annotate-as-pure",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-builder-binary-assignment-operator-visitor",
+"version": "7.22.15"
+},
+{
+"name": "@babel/helper-compilation-targets",
+"version": "7.23.6"
+},
+{
+"name": "@babel/helper-create-class-features-plugin",
+"version": "7.24.4"
+},
+{
+"name": "@babel/helper-create-regexp-features-plugin",
+"version": "7.22.15"
+},
+{
+"name": "@babel/helper-define-polyfill -provider",
+"version": "0.4.4"
+},
+{
+"name": "@babel/helper-define-polyfill -provider",
+"version": "0.5.0"
+},
+{
+"name": "@babel/helper-define-polyfill -provider",
+"version": "0.6.2"
+},
+{
+"name": "@babel/helper-environment-visitor",
+"version": "7.22.20"
+},
+{
+"name": "@babel/helper-function-name",
+"version": "7.23.0"
+},
+{
+"name": "@babel/helper-hoist-variables",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-member-expression-to-functions",
+"version": "7.23.0"
+},
+{
+"name": "@babel/helper-module-imports",
+"version": "7.24.3"
+},
+{
+"name": "@babel/helper-module-transforms",
+"version": "7.23.3"
+},
+{
+"name": "@babel/helper-optimise-call-expression",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-plugin-utils",
+"version": "7.24.0"
+},
+{
+"name": "@babel/helper-remap-async -to-generator",
+"version": "7.22.20"
+},
+{
+"name": "@babel/helper-replace-supers",
+"version": "7.24.1"
+},
+{
+"name": "@babel/helper-simple-access",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-skip-transparent-expression-wrappers",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-split-export-declaration",
+"version": "7.22.6"
+},
+{
+"name": "@babel/helper-string-parser",
+"version": "7.24.1"
+},
+{
+"name": "@babel/helper-validator-identifier",
+"version": "7.22.20"
+},
+{
+"name": "@babel/helper-validator-option",
+"version": "7.23.5"
+},
+{
+"name": "@babel/helper-wrap-function",
+"version": "7.22.20"
+},
+{
+"name": "@babel/helpers",
+"version": "7.24.4"
+},
+{
+"name": "@babel/highlight",
+"version": "7.24.2"
+},
+{
+"name": "@babel/parser",
+"version": "7.24.4"
+},
+{
+"name": "@babel/plugin-bugfix",
+"version": "8-spr"
+},
+{
+"name": "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-proposal-async-generator-functions",
+"version": "7.20.7"
+},
+{
+"name": "@babel/plugin-proposal-private-property-in-object",
+"version": "7.21.0"
+},
+{
+"name": "@babel/plugin-proposal-unicode-property-regex",
+"version": "7.18.6"
+},
+{
+"name": "@babel/plugin-syntax-async -generators",
+"version": "7.8.4"
+},
+{
+"name": "@babel/plugin-syntax-class-properties",
+"version": "7.12.13"
+},
+{
+"name": "@babel/plugin-syntax-class-static-block",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-syntax-dynamic-import",
+"version": "7.8.3"
+},
+{
+"name": "@babel/plugin-syntax-export -namespace-from",
+"version": "7.8.3"
+},
+{
+"name": "@babel/plugin-syntax-import -assertions",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-syntax-import -attributes",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-syntax-import -meta",
+"version": "7.10.4"
+},
+{
+"name": "@babel/plugin-syntax-json-strings",
+"version": "7.8.3"
+},
+{
+"name": "@babel/plugin-syntax-logical -assignment-operators",
+"version": "7.10.4"
+},
+{
+"name": "@babel/plugin-syntax-nullish -coalescing-operator",
+"version": "7.8.3"
+},
+{
+"name": "@babel/plugin-syntax-numeric-separator",
+"version": "7.10.4"
+},
+{
+"name": "@babel/plugin-syntax-object -rest-spread",
+"version": "7.8.3"
+},
+{
+"name": "@babel/plugin-syntax-optional-catch-binding",
+"version": "7.8.3"
+},
+{
+"name": "@babel/plugin-syntax-optional-chaining",
+"version": "7.8.3"
+},
+{
+"name": "@babel/plugin-syntax-private-property-in-object",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-syntax-top-level-await",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-syntax-unicode-sets-regex",
+"version": "7.18.6"
+},
+{
+"name": "@babel/plugin-transform-arrow-functions",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-async-generator-functions",
+"version": "7.24.3"
+},
+{
+"name": "@babel/plugin-transform-async-to-generator",
+"version": "7.22.5"
+},
+{
+"name": "@babel/plugin-transform-async-to-generator",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-block-scoped-functions",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-block-scoping",
+"version": "7.24.4"
+},
+{
+"name": "@babel/plugin-transform-class-properties",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-class-static-block",
+"version": "7.24.4"
+},
+{
+"name": "@babel/plugin-transform-classes",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-computed-properties",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-destructuring",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-dotall-regex",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-duplicate-keys",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-dynamic-import",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-exponentiation-operator",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-export-namespace-from",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-for-of",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-function-name",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-json-strings",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-literals",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-logical-assignment-operators",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-member-expression-literals",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-modules-amd",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-modules-commonjs",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-modules-systemjs",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-modules-umd",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-named-capturing-groups-regex",
+"version": "7.22.5"
+},
+{
+"name": "@babel/plugin-transform-new-target",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-nullish-coalescing-operator",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-numeric-separator",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-object-rest-spread",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-object-super",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-optional-catch-binding",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-optional-chaining",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-parameters",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-private-methods",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-private-property-in-object",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-property-literals",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-regenerator",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-reserved-words",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-runtime",
+"version": "7.22.9"
+},
+{
+"name": "@babel/plugin-transform-shorthand-properties",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-spread",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-sticky-regex",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-template-literals",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-typeof-symbol",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-unicode-escapes",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-unicode-property-regex",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-unicode-regex",
+"version": "7.24.1"
+},
+{
+"name": "@babel/plugin-transform-unicode-sets-regex",
+"version": "7.24.1"
+},
+{
+"name": "@babel/preset-env",
+"version": "7.22.9"
+},
+{
+"name": "@babel/preset-modules",
+"version": "0.1.6"
+},
+{
+"name": "@babel/regjsgen",
+"version": "0.8.0"
+},
+{
+"name": "@babel/runtime",
+"version": "7.22.6"
+},
+{
+"name": "@babel/runtime",
+"version": "7.24.4"
+},
+{
+"name": "@babel/template",
+"version": "7.22.5"
+},
+{
+"name": "@babel/template",
+"version": "7.24.0"
+},
+{
+"name": "@babel/types",
+"version": "7.24.0"
+},
+{
+"name": "@devexpress/utils",
+"version": "1.3.16"
+},
+{
+"name": "@devexpress/utils",
+"version": "1.4.1"
+},
+{
+"name": "@discoveryjs/json-ext",
+"version": "0.5.7"
+},
+{
+"name": "@esbuild/android-arm",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/android-arm",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/android-arm64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/android-arm64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/android-x64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/android-x64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/darwin-arm64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/darwin-arm64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/darwin-x64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/darwin-x64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/freebsd-arm64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/freebsd-arm64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/freebsd-x64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/freebsd-x64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-arm",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-arm",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-arm64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-arm64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-ia32",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-ia32",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-loong64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-loong64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-mips64el",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-mips64el",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-ppc64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-ppc64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-riscv64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-riscv64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-s390x",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-s390x",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/linux-x64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/linux-x64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/netbsd-x64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/netbsd-x64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/openbsd-x64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/openbsd-x64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/sunos-x64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/sunos-x64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/win32-arm64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/win32-arm64",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/win32-ia32",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/win32-ia32",
+"version": "0.18.20"
+},
+{
+"name": "@esbuild/win32-x64",
+"version": "0.18.17"
+},
+{
+"name": "@esbuild/win32-x64",
+"version": "0.18.20"
+},
+{
+"name": "@gar/promisify",
+"version": "1.1.3"
+},
+{
+"name": "@hangar42/ngx-toast-it",
+"version": "1.1.0"
+},
+{
+"name": "@interactjs/types",
+"version": "1.10.27"
+},
+{
+"name": "@isaacs/cliui",
+"version": "8.0.2"
+},
+{
+"name": "@istanbuljs/load-nyc-config",
+"version": "1.1.0"
+},
+{
+"name": "@istanbuljs/schema",
+"version": "0.1.3"
+},
+{
+"name": "@jridgewell/gen-mapping",
+"version": "0.3.5"
+},
+{
+"name": "@jridgewell/resolve-uri",
+"version": "3.1.2"
+},
+{
+"name": "@jridgewell/set-array",
+"version": "1.2.1"
+},
+{
+"name": "@jridgewell/source-map",
+"version": "0.3.6"
+},
+{
+"name": "@jridgewell/sourcemap-codec",
+"version": "1.4.15"
+},
+{
+"name": "@jridgewell/trace-mapping",
+"version": "0.3.25"
+},
+{
+"name": "@leichtgewicht/ip-codec",
+"version": "2.0.5"
+},
+{
+"name": "@netapp/luci",
+"version": "3.1.0"
+},
+{
+"name": "@ng-bootstrap/ng-bootstrap",
+"version": "12.1.2"
+},
+{
+"name": "@ngtools/webpack",
+"version": "16.2.10"
+},
+{
+"name": "@nodelib/fs.scandir",
+"version": "2.1.5"
+},
+{
+"name": "@nodelib/fs.stat",
+"version": "2.0.5"
+},
+{
+"name": "@nodelib/fs.walk",
+"version": "1.2.8"
+},
+{
+"name": "@npmcli/fs",
+"version": "2.1.2"
+},
+{
+"name": "@npmcli/fs",
+"version": "3.1.0"
+},
+{
+"name": "@npmcli/git",
+"version": "4.1.0"
+},
+{
+"name": "@npmcli/installed-package-contents",
+"version": "2.1.0"
+},
+{
+"name": "@npmcli/move-file",
+"version": "2.0.1"
+},
+{
+"name": "@npmcli/node-gyp",
+"version": "3.0.0"
+},
+{
+"name": "@npmcli/promise-spawn",
+"version": "6.0.2"
+},
+{
+"name": "@npmcli/run-script",
+"version": "6.0.2"
+},
+{
+"name": "@pkgjs/parseargs",
+"version": "0.11.0"
+},
+{
+"name": "@popperjs/core",
+"version": "2.11.8"
+},
+{
+"name": "@sigstore/bundle",
+"version": "1.1.0"
+},
+{
+"name": "@sigstore/protobuf-specs",
+"version": "0.2.1"
+},
+{
+"name": "@sigstore/sign",
+"version": "1.0.0"
+},
+{
+"name": "@sigstore/tuf",
+"version": "1.0.3"
+},
+{
+"name": "@tootallnate/once",
+"version": "1.1.2"
+},
+{
+"name": "@tootallnate/once",
+"version": "2.0.0"
+},
+{
+"name": "@tufjs/canonical-json",
+"version": "1.0.0"
+},
+{
+"name": "@tufjs/models",
+"version": "1.0.4"
+},
+{
+"name": "@types/body-parser",
+"version": "1.19.5"
+},
+{
+"name": "@types/bonjour",
+"version": "3.5.13"
+},
+{
+"name": "@types/connect",
+"version": "3.4.38"
+},
+{
+"name": "@types/connect-history-api-fallback",
+"version": "1.5.4"
+},
+{
+"name": "@types/crypto-js",
+"version": "3.1.43"
+},
+{
+"name": "@types/eslint",
+"version": "8.56.10"
+},
+{
+"name": "@types/eslint-scope",
+"version": "3.7.7"
+},
+{
+"name": "@types/estree",
+"version": "1.0.5"
+},
+{
+"name": "@types/express",
+"version": "4.17.21"
+},
+{
+"name": "@types/express-serve-static -core",
+"version": "4.19.0"
+},
+{
+"name": "@types/http-errors",
+"version": "2.0.4"
+},
+{
+"name": "@types/http-proxy",
+"version": "1.17.14"
+},
+{
+"name": "@types/jasmine",
+"version": "3.6.11"
+},
+{
+"name": "@types/jasmine",
+"version": "5.1.4"
+},
+{
+"name": "@types/jasminewd2",
+"version": "2.0.8"
+},
+{
+"name": "@types/json-schema",
+"version": "7.0.15"
+},
+{
+"name": "@types/lodash",
+"version": "4.14.144"
+},
+{
+"name": "@types/mime",
+"version": "1.3.5"
+},
+{
+"name": "@types/node",
+"version": "12.12.0"
+},
+{
+"name": "@types/node",
+"version": "20.12.7"
+},
+{
+"name": "@types/node-forge",
+"version": "1.3.11"
+},
+{
+"name": "@types/qs",
+"version": "6.9.15"
+},
+{
+"name": "@types/range-parser",
+"version": "1.2.7"
+},
+{
+"name": "@types/retry",
+"version": "0.12.0"
+},
+{
+"name": "@types/send",
+"version": "0.17.4"
+},
+{
+"name": "@types/serve-index",
+"version": "1.9.4"
+},
+{
+"name": "@types/serve-static",
+"version": "1.15.7"
+},
+{
+"name": "@types/sockjs",
+"version": "0.3.36"
+},
+{
+"name": "@types/ws",
+"version": "8.5.10"
+},
+{
+"name": "@vitejs/plugin-basic-ssl",
+"version": "1.0.1"
+},
+{
+"name": "@webassemblyjs/ast",
+"version": "1.12.1"
+},
+{
+"name": "@webassemblyjs/floating-point-hex-parser",
+"version": "1.11.6"
+},
+{
+"name": "@webassemblyjs/helper-api -error",
+"version": "1.11.6"
+},
+{
+"name": "@webassemblyjs/helper-buffer",
+"version": "1.12.1"
+},
+{
+"name": "@webassemblyjs/helper-numbers",
+"version": "1.11.6"
+},
+{
+"name": "@webassemblyjs/helper-wasm-bytecode",
+"version": "1.11.6"
+},
+{
+"name": "@webassemblyjs/ieee754",
+"version": "1.11.6"
+},
+{
+"name": "@webassemblyjs/leb128",
+"version": "1.11.6"
+},
+{
+"name": "@webassemblyjs/utf8",
+"version": "1.11.6"
+},
+{
+"name": "@webassemblyjs/wasm-edit",
+"version": "1.12.1"
+},
+{
+"name": "@webassemblyjs/wasm-gen",
+"version": "1.12.1"
+},
+{
+"name": "@webassemblyjs/wasm-opt",
+"version": "1.12.1"
+},
+{
+"name": "@webassemblyjs/wasm-parser",
+"version": "1.12.1"
+},
+{
+"name": "@webassemblyjs/wast-printer",
+"version": "1.12.1"
+},
+{
+"name": "@wessberg/ts-evaluator",
+"version": "0.0.27"
+},
+{
+"name": "@xtuc/ieee754",
+"version": "1.2.0"
+},
+{
+"name": "@xtuc/long",
+"version": "4.2.2"
+},
+{
+"name": "@yarnpkg/lockfile",
+"version": "1.1.0"
+},
+{
+"name": "abab",
+"version": "2.0.6"
+},
+{
+"name": "abbrev",
+"version": "1.1.1"
+},
+{
+"name": "Acorn",
+"version": "7.4.1"
+},
+{
+"name": "Acorn",
+"version": "8.11.3"
+},
+{
+"name": "acorn-globals",
+"version": "6.0.0"
+},
+{
+"name": "acorn-import-assertions",
+"version": "1.9.0"
+},
+{
+"name": "acorn-walk",
+"version": "7.2.0"
+},
+{
+"name": "adjust-sourcemap-loader",
+"version": "4.0.0"
+},
+{
+"name": "agent-base",
+"version": "6.0.2"
+},
+{
+"name": "agentkeepalive",
+"version": "4.5.0"
+},
+{
+"name": "aggregate-error",
+"version": "3.1.0"
+},
+{
+"name": "ajv",
+"version": "6.12.6"
+},
+{
+"name": "ajv",
+"version": "8.12.0"
+},
+{
+"name": "ajv",
+"version": "v8.6.2"
+},
+{
+"name": "ajv-formats",
+"version": "2.1.0"
+},
+{
+"name": "ajv-formats",
+"version": "2.1.1"
+},
+{
+"name": "ajv-keywords",
+"version": "3.5.2"
+},
+{
+"name": "ajv-keywords",
+"version": "5.1.0"
+},
+{
+"name": "alabaster",
+"version": "0.7.9"
+},
+{
+"name": "altgraph",
+"version": "0.15"
+},
+{
+"name": "altgraph",
+"version": "0.17.2"
+},
+{
+"name": "Angular Highcharts",
+"version": "16.0.0"
+},
+{
+"name": "angular-cli",
+"version": "12.2.18"
+},
+{
+"name": "angular-cli",
+"version": "16.2.10"
+},
+{
+"name": "angular-i18next",
+"version": "17.0.1"
+},
+{
+"name": "angular__cli",
+"version": "16.2.10"
+},
+{
+"name": "ansi-colors",
+"version": "4.1.3"
+},
+{
+"name": "ansi-escapes",
+"version": "4.3.2"
+},
+{
+"name": "ansi-html-community",
+"version": "0.0.8"
+},
+{
+"name": "ansi-regex",
+"version": "5.0.1"
+},
+{
+"name": "ansi-regex",
+"version": "6.0.1"
+},
+{
+"name": "ansi-styles",
+"version": "3.2.1"
+},
+{
+"name": "ansi-styles",
+"version": "6.2.1"
+},
+{
+"name": "ansi-styles",
+"version": "v4.3.0"
+},
+{
+"name": "anymatch",
+"version": "3.1.3"
+},
+{
+"name": "aproba",
+"version": "2.0.0"
+},
+{
+"name": "are-we-there-yet",
+"version": "3.0.1"
+},
+{
+"name": "ARG",
+"version": "4.1.3"
+},
+{
+"name": "array-flatten",
+"version": "1.1.1"
+},
+{
+"name": "async_generator",
+"version": "1.10"
+},
+{
+"name": "asyncio_extras",
+"version": "1.3.2"
+},
+{
+"name": "asynckit",
+"version": "0.4.0"
+},
+{
+"name": "Autoprefixer",
+"version": "10.4.14"
+},
+{
+"name": "babel-loader",
+"version": "9.1.3"
+},
+{
+"name": "babel-plugin-istanbul",
+"version": "6.1.1"
+},
+{
+"name": "babel-plugin-polyfill-corejs2",
+"version": "0.4.11"
+},
+{
+"name": "babel-plugin-polyfill-corejs3",
+"version": "0.8.7"
+},
+{
+"name": "babel-plugin-polyfill-regenerator",
+"version": "0.5.5"
+},
+{
+"name": "babel-traverse",
+"version": "7.24.1"
+},
+{
+"name": "balanced-match",
+"version": "1.0.2"
+},
+{
+"name": "base64-js",
+"version": "1.5.1"
+},
+{
+"name": "big.js",
+"version": "3.2.0"
+},
+{
+"name": "big.js",
+"version": "5.2.2"
+},
+{
+"name": "binary-extensions",
+"version": "2.3.0"
+},
+{
+"name": "bl",
+"version": "4.1.0"
+},
+{
+"name": "body-parser",
+"version": "1.20.2"
+},
+{
+"name": "bonjour-service",
+"version": "1.2.1"
+},
+{
+"name": "boolbase",
+"version": "1.0.0"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "4.4.1"
+},
+{
+"name": "boto",
+"version": "2.49.0"
+},
+{
+"name": "boto3",
+"version": "1.23.10"
+},
+{
+"name": "boto3",
+"version": "1.34.52"
+},
+{
+"name": "botocore",
+"version": "1.26.10"
+},
+{
+"name": "botocore",
+"version": "1.34.52"
+},
+{
+"name": "brace-expansion",
+"version": "1.1.11"
+},
+{
+"name": "brace-expansion",
+"version": "2.0.1"
+},
+{
+"name": "braces",
+"version": "3.0.2"
+},
+{
+"name": "brix/crypto-js",
+"version": "4.2.0"
+},
+{
+"name": "browser-process-hrtime",
+"version": "1.0.0"
+},
+{
+"name": "browserify/resolve",
+"version": "1.22.2"
+},
+{
+"name": "browserify/resolve",
+"version": "1.22.8"
+},
+{
+"name": "browserslist",
+"version": "4.23.0"
+},
+{
+"name": "Buffer",
+"version": "v5.7.1"
+},
+{
+"name": "buffer-from",
+"version": "1.1.2"
+},
+{
+"name": "builtin-modules",
+"version": "1.1.1"
+},
+{
+"name": "builtins",
+"version": "5.1.0"
+},
+{
+"name": "bytes.js",
+"version": "3.0.0"
+},
+{
+"name": "bytes.js",
+"version": "3.1.2"
+},
+{
+"name": "cacache",
+"version": "16.1.3"
+},
+{
+"name": "cacache",
+"version": "17.1.4"
+},
+{
+"name": "call-bind",
+"version": "1.0.7"
+},
+{
+"name": "callsites",
+"version": "3.1.0"
+},
+{
+"name": "calvinmetcalf/lie",
+"version": "3.3.0"
+},
+{
+"name": "camelcase",
+"version": "5.3.1"
+},
+{
+"name": "caniuse-lite",
+"version": "1.0.30001614"
+},
+{
+"name": "Chalk",
+"version": "2.4.2"
+},
+{
+"name": "Chalk",
+"version": "4.1.2"
+},
+{
+"name": "chokidar",
+"version": "3.5.3"
+},
+{
+"name": "chokidar",
+"version": "3.6.0"
+},
+{
+"name": "chownr",
+"version": "2.0.0"
+},
+{
+"name": "clean-stack",
+"version": "2.2.0"
+},
+{
+"name": "cli-cursor",
+"version": "v3.1.0"
+},
+{
+"name": "cli-spinners",
+"version": "2.9.2"
+},
+{
+"name": "cli-width",
+"version": "3.0.0"
+},
+{
+"name": "Click - Python Command Line Utility",
+"version": "6.7"
+},
+{
+"name": "Click - Python Command Line Utility",
+"version": "8.1.3"
+},
+{
+"name": "cliui",
+"version": "8.0.1"
+},
+{
+"name": "Clone",
+"version": "1.0.4"
+},
+{
+"name": "clone-deep",
+"version": "4.0.1"
+},
+{
+"name": "color-name",
+"version": "1.1.3"
+},
+{
+"name": "color-name",
+"version": "1.1.4"
+},
+{
+"name": "color-support",
+"version": "1.1.3"
+},
+{
+"name": "colorama",
+"version": "0.4.4"
+},
+{
+"name": "colorama",
+"version": "0.4.6"
+},
+{
+"name": "colorette",
+"version": "2.0.20"
+},
+{
+"name": "combined-stream",
+"version": "1.0.8"
+},
+{
+"name": "Commander.js",
+"version": "v2.20.3"
+},
+{
+"name": "common-path-prefix",
+"version": "3.0.0"
+},
+{
+"name": "compression",
+"version": "1.7.4"
+},
+{
+"name": "configparser",
+"version": "5.0.2"
+},
+{
+"name": "connect-history-api-fallback",
+"version": "2.0.0"
+},
+{
+"name": "console-control-strings",
+"version": "1.1.0"
+},
+{
+"name": "content-disposition",
+"version": "0.5.4"
+},
+{
+"name": "convert-source-map",
+"version": "1.9.0"
+},
+{
+"name": "convert-source-map",
+"version": "2.0.0"
+},
+{
+"name": "copy-anything",
+"version": "2.0.6"
+},
+{
+"name": "copy-webpack-plugin",
+"version": "11.0.0"
+},
+{
+"name": "core-js",
+"version": "3.3.5"
+},
+{
+"name": "core-js",
+"version": "3.37.0"
+},
+{
+"name": "core-util-is",
+"version": "1.0.3"
+},
+{
+"name": "cosmiconfig",
+"version": "8.3.6"
+},
+{
+"name": "coveo/exponential-backoff",
+"version": "3.1.1"
+},
+{
+"name": "Coverage",
+"version": "3.7.1"
+},
+{
+"name": "Coverage",
+"version": "6.4.3"
+},
+{
+"name": "crypto",
+"version": "1.4.1"
+},
+{
+"name": "css-loader",
+"version": "6.8.1"
+},
+{
+"name": "css-what",
+"version": "6.1.0"
+},
+{
+"name": "cssesc",
+"version": "3.0.0"
+},
+{
+"name": "cssom",
+"version": "0.3.8"
+},
+{
+"name": "cssom",
+"version": "0.4.4"
+},
+{
+"name": "CSSselect",
+"version": "5.1.0"
+},
+{
+"name": "cssstyle",
+"version": "2.3.0"
+},
+{
+"name": "Cython",
+"version": "0.29.28"
+},
+{
+"name": "Cython",
+"version": "0.29.3"
+},
+{
+"name": "cytoolz",
+"version": "0.11.0"
+},
+{
+"name": "DamonOehlman/wildcard",
+"version": "2.0.1"
+},
+{
+"name": "data-urls",
+"version": "2.0.0"
+},
+{
+"name": "dataclasses",
+"version": "0.6"
+},
+{
+"name": "debug-js/debug",
+"version": "2.6.9"
+},
+{
+"name": "debug-js/debug",
+"version": "4.3.4"
+},
+{
+"name": "decimal.js",
+"version": "10.4.3"
+},
+{
+"name": "default-gateway",
+"version": "6.0.3"
+},
+{
+"name": "defaults",
+"version": "1.0.4"
+},
+{
+"name": "define-data-property",
+"version": "1.1.4"
+},
+{
+"name": "define-lazy-prop",
+"version": "2.0.0"
+},
+{
+"name": "delayed-stream",
+"version": "1.0.0"
+},
+{
+"name": "delegates",
+"version": "1.0.0"
+},
+{
+"name": "destroy",
+"version": "1.2.0"
+},
+{
+"name": "detect-node",
+"version": "2.1.0"
+},
+{
+"name": "DevExpress Third Party Content",
+"version": "19.2.6"
+},
+{
+"name": "devexpress-diagram",
+"version": "2.2.2"
+},
+{
+"name": "devexpress-gantt",
+"version": "4.1.50"
+},
+{
+"name": "DevExtreme",
+"version": "23.2.3"
+},
+{
+"name": "devextreme-angular",
+"version": "23.2.3"
+},
+{
+"name": "devextreme-intl",
+"version": "19.1.8"
+},
+{
+"name": "devextreme-quill",
+"version": "1.6.2"
+},
+{
+"name": "devextreme-schematics",
+"version": "1.6.7"
+},
+{
+"name": "devextreme-showdown",
+"version": "1.0.1"
+},
+{
+"name": "dialog-polyfill",
+"version": "0.4.10"
+},
+{
+"name": "dir-glob",
+"version": "3.0.1"
+},
+{
+"name": "distro",
+"version": "1.7.0"
+},
+{
+"name": "dns-packet",
+"version": "5.6.1"
+},
+{
+"name": "Docutils",
+"version": "0.12"
+},
+{
+"name": "dom-serializer",
+"version": "2.0.0"
+},
+{
+"name": "domelementtype",
+"version": "2.3.0"
+},
+{
+"name": "domexception",
+"version": "2.0.1"
+},
+{
+"name": "DomHandler",
+"version": "5.0.3"
+},
+{
+"name": "domutils",
+"version": "3.1.0"
+},
+{
+"name": "ead-parameters-in-optional-chaining",
+"version": "7.24.1"
+},
+{
+"name": "eastasianwidth",
+"version": "0.2.0"
+},
+{
+"name": "ee-first",
+"version": "1.1.1"
+},
+{
+"name": "einaros/ws",
+"version": "7.5.9"
+},
+{
+"name": "einaros/ws",
+"version": "8.17.0"
+},
+{
+"name": "electron-to-chromium",
+"version": "1.4.750"
+},
+{
+"name": "emoji-regex",
+"version": "9.2.2"
+},
+{
+"name": "emoji-regex",
+"version": "v8.0.0"
+},
+{
+"name": "emojis-list",
+"version": "2.1.0"
+},
+{
+"name": "emojis-list",
+"version": "3.0.0"
+},
+{
+"name": "encodeurl",
+"version": "1.0.2"
+},
+{
+"name": "encoding",
+"version": "v0.1.13"
+},
+{
+"name": "enhanced-resolve",
+"version": "5.16.0"
+},
+{
+"name": "enum34",
+"version": "1.1.2"
+},
+{
+"name": "env-paths",
+"version": "2.2.1"
+},
+{
+"name": "err-code",
+"version": "2.0.3"
+},
+{
+"name": "errno",
+"version": "0.1.8"
+},
+{
+"name": "es-define-property",
+"version": "1.0.0"
+},
+{
+"name": "es-errors",
+"version": "1.3.0"
+},
+{
+"name": "es-module-lexer",
+"version": "1.5.2"
+},
+{
+"name": "es6-object-assign",
+"version": "1.1.0"
+},
+{
+"name": "esbuild",
+"version": "0.18.17"
+},
+{
+"name": "esbuild",
+"version": "0.18.20"
+},
+{
+"name": "escalade",
+"version": "3.1.2"
+},
+{
+"name": "escape-html",
+"version": "1.0.3"
+},
+{
+"name": "escape-string-regexp",
+"version": "1.0.5"
+},
+{
+"name": "escodegen",
+"version": "2.1.0"
+},
+{
+"name": "eslint-scope",
+"version": "v5.1.1"
+},
+{
+"name": "Esprima",
+"version": "4.0.1"
+},
+{
+"name": "esrecurse",
+"version": "v4.3.0"
+},
+{
+"name": "estraverse",
+"version": "5.3.0"
+},
+{
+"name": "estraverse",
+"version": "v4.3.0"
+},
+{
+"name": "esutils",
+"version": "2.0.3"
+},
+{
+"name": "etag",
+"version": "1.8.1"
+},
+{
+"name": "eventemitter-asyncresource",
+"version": "1.0.0"
+},
+{
+"name": "eventemitter3",
+"version": "4.0.7"
+},
+{
+"name": "execa",
+"version": "5.1.1"
+},
+{
+"name": "expressjs/accepts",
+"version": "1.3.8"
+},
+{
+"name": "expressjs/compressible",
+"version": "2.0.18"
+},
+{
+"name": "expressjs/express",
+"version": "4.19.2"
+},
+{
+"name": "expressjs/mime-types",
+"version": "2.1.35"
+},
+{
+"name": "fast-deep-equal",
+"version": "v3.1.3"
+},
+{
+"name": "fast-diff",
+"version": "1.3.0"
+},
+{
+"name": "fast-glob",
+"version": "3.3.0"
+},
+{
+"name": "fast-glob",
+"version": "3.3.1"
+},
+{
+"name": "fast-glob",
+"version": "3.3.2"
+},
+{
+"name": "fast-json-stable-stringify",
+"version": "2.1.0"
+},
+{
+"name": "fastq",
+"version": "1.17.1"
+},
+{
+"name": "faye-websocket-node",
+"version": "0.11.4"
+},
+{
+"name": "felixge/node-retry",
+"version": "0.13.1"
+},
+{
+"name": "felixge/node-retry",
+"version": "v0.12.0"
+},
+{
+"name": "figures",
+"version": "3.2.0"
+},
+{
+"name": "fill-range",
+"version": "7.0.1"
+},
+{
+"name": "finalhandler",
+"version": "1.2.0"
+},
+{
+"name": "find-cache-dir",
+"version": "4.0.0"
+},
+{
+"name": "find-up",
+"version": "6.3.0"
+},
+{
+"name": "find-up",
+"version": "v4.1.0"
+},
+{
+"name": "Flask",
+"version": "2.2.5"
+},
+{
+"name": "Flask-Cors",
+"version": "3.0.10"
+},
+{
+"name": "flask-httpauth",
+"version": "4.8.0"
+},
+{
+"name": "Flask-JWT-Extended",
+"version": "4.4.4"
+},
+{
+"name": "Flask-JWT-Simple",
+"version": "0.0.3"
+},
+{
+"name": "flask-sqlalchemy",
+"version": "2.5.1"
+},
+{
+"name": "flori/utils",
+"version": "1.0.1"
+},
+{
+"name": "follow-redirects",
+"version": "1.15.6"
+},
+{
+"name": "foreground-child",
+"version": "3.1.1"
+},
+{
+"name": "form-data",
+"version": "3.0.1"
+},
+{
+"name": "forwarded",
+"version": "0.2.0"
+},
+{
+"name": "fraction.js",
+"version": "4.3.7"
+},
+{
+"name": "fs-minipass",
+"version": "3.0.3"
+},
+{
+"name": "fs-minipass",
+"version": "v2.1.0"
+},
+{
+"name": "fs-monkey",
+"version": "1.0.5"
+},
+{
+"name": "fs.realpath",
+"version": "1.0.0"
+},
+{
+"name": "fsevents",
+"version": "2.3.3"
+},
+{
+"name": "function-bind",
+"version": "1.1.2"
+},
+{
+"name": "gensync",
+"version": "1.0.0-beta.2"
+},
+{
+"name": "get-caller-file",
+"version": "2.0.5"
+},
+{
+"name": "get-intrinsic",
+"version": "1.2.4"
+},
+{
+"name": "get-package-type",
+"version": "0.1.0"
+},
+{
+"name": "get-stream",
+"version": "6.0.1"
+},
+{
+"name": "glob-parent",
+"version": "5.1.2"
+},
+{
+"name": "glob-parent",
+"version": "6.0.2"
+},
+{
+"name": "glob-to-regexp",
+"version": "0.4.1"
+},
+{
+"name": "GoogleChromeLabs/critters",
+"version": "0.0.20"
+},
+{
+"name": "gopd",
+"version": "1.0.1"
+},
+{
+"name": "Gozala/events",
+"version": "3.3.0"
+},
+{
+"name": "greenlet",
+"version": "0.4.15"
+},
+{
+"name": "greenlet",
+"version": "1.1.2"
+},
+{
+"name": "guess-js/guess",
+"version": "0.4.22"
+},
+{
+"name": "handle-thing",
+"version": "v2.0.1"
+},
+{
+"name": "has-flag",
+"version": "3.0.0"
+},
+{
+"name": "has-flag",
+"version": "4.0.0"
+},
+{
+"name": "has-property-descriptors",
+"version": "1.0.2"
+},
+{
+"name": "has-proto",
+"version": "1.0.3"
+},
+{
+"name": "has-symbols",
+"version": "1.0.3"
+},
+{
+"name": "has-unicode",
+"version": "2.0.1"
+},
+{
+"name": "hasown",
+"version": "2.0.2"
+},
+{
+"name": "hdr-histogram-js",
+"version": "2.0.3"
+},
+{
+"name": "hdr-histogram-percentiles-obj",
+"version": "3.0.0"
+},
+{
+"name": "Highcharts JS",
+"version": "v9.0.0"
+},
+{
+"name": "hosted-git-info",
+"version": "6.1.1"
+},
+{
+"name": "hpack.js",
+"version": "2.1.6"
+},
+{
+"name": "html-encoding-sniffer",
+"version": "2.0.1"
+},
+{
+"name": "htmlparser2",
+"version": "8.0.2"
+},
+{
+"name": "http-cache-semantics",
+"version": "4.1.1"
+},
+{
+"name": "http-deceiver",
+"version": "1.2.7"
+},
+{
+"name": "http-errors",
+"version": "1.6.3"
+},
+{
+"name": "http-errors",
+"version": "2.0.0"
+},
+{
+"name": "http-parser-js",
+"version": "0.5.8"
+},
+{
+"name": "http-proxy",
+"version": "1.18.1"
+},
+{
+"name": "http-proxy-middleware",
+"version": "2.0.6"
+},
+{
+"name": "https-proxy-agent",
+"version": "5.0.1"
+},
+{
+"name": "human-signals",
+"version": "2.1.0"
+},
+{
+"name": "humanize-ms",
+"version": "1.2.1"
+},
+{
+"name": "i18next",
+"version": "19.8.3"
+},
+{
+"name": "i18next-browser-languagedetector",
+"version": "4.0.2"
+},
+{
+"name": "i18next-resource-store-loader",
+"version": "0.1.2"
+},
+{
+"name": "iarna/gauge",
+"version": "4.0.4"
+},
+{
+"name": "iconv-lite",
+"version": "0.6.3"
+},
+{
+"name": "iconv-lite",
+"version": "v0.4.24"
+},
+{
+"name": "icss-utils",
+"version": "5.1.0"
+},
+{
+"name": "ieee754",
+"version": "v1.2.1"
+},
+{
+"name": "ignore-walk",
+"version": "6.0.4"
+},
+{
+"name": "imagesize",
+"version": "0.7.1"
+},
+{
+"name": "immediate",
+"version": "3.0.6"
+},
+{
+"name": "immutable-js",
+"version": "4.3.5"
+},
+{
+"name": "import-fresh",
+"version": "3.3.0"
+},
+{
+"name": "importlib-resources",
+"version": "5.9.0"
+},
+{
+"name": "imurmurhash",
+"version": "0.1.4"
+},
+{
+"name": "indent-string",
+"version": "v4.0.0"
+},
+{
+"name": "infer-owner",
+"version": "1.0.4"
+},
+{
+"name": "inferno",
+"version": "7.4.11"
+},
+{
+"name": "InfernoJS",
+"version": "7.4.11"
+},
+{
+"name": "inflight",
+"version": "1.0.6"
+},
+{
+"name": "inherits",
+"version": "2.0.3"
+},
+{
+"name": "inherits",
+"version": "v2.0.4"
+},
+{
+"name": "iniparse",
+"version": "0.4"
+},
+{
+"name": "Inquirer.js",
+"version": "8.2.4"
+},
+{
+"name": "interact.js",
+"version": "1.10.27"
+},
+{
+"name": "ipaddress",
+"version": "9.0.5"
+},
+{
+"name": "is-arrayish",
+"version": "0.2.1"
+},
+{
+"name": "is-binary-path",
+"version": "v2.1.0"
+},
+{
+"name": "is-core-module",
+"version": "2.13.1"
+},
+{
+"name": "is-docker",
+"version": "2.2.1"
+},
+{
+"name": "is-extglob",
+"version": "2.1.1"
+},
+{
+"name": "is-fullwidth-code-point",
+"version": "3.0.0"
+},
+{
+"name": "is-glob",
+"version": "4.0.3"
+},
+{
+"name": "is-interactive",
+"version": "1.0.0"
+},
+{
+"name": "is-lambda",
+"version": "1.0.1"
+},
+{
+"name": "is-number",
+"version": "7.0.0"
+},
+{
+"name": "is-plain-obj",
+"version": "3.0.0"
+},
+{
+"name": "is-plain-object",
+"version": "2.0.4"
+},
+{
+"name": "is-potential-custom-element-name",
+"version": "1.0.1"
+},
+{
+"name": "is-unicode-supported",
+"version": "0.1.0"
+},
+{
+"name": "is-what",
+"version": "3.14.1"
+},
+{
+"name": "is-wsl",
+"version": "2.2.0"
+},
+{
+"name": "isaacs/once",
+"version": "1.4.0"
+},
+{
+"name": "isarray",
+"version": "1.0.0"
+},
+{
+"name": "isexe",
+"version": "2.0.0"
+},
+{
+"name": "isobject",
+"version": "3.0.1"
+},
+{
+"name": "isodate",
+"version": "0.6.1"
+},
+{
+"name": "istanbul-lib-coverage",
+"version": "3.2.2"
+},
+{
+"name": "istanbul-lib-instrument",
+"version": "5.2.1"
+},
+{
+"name": "itsdangerous",
+"version": "0.24"
+},
+{
+"name": "itsdangerous",
+"version": "2.1.2"
+},
+{
+"name": "jackspeak",
+"version": "2.3.6"
+},
+{
+"name": "jasmine-data-provider",
+"version": "2.2.0"
+},
+{
+"name": "JavaCPP Presets for CPython",
+"version": "3.10.2-1.5.7"
+},
+{
+"name": "jest-worker",
+"version": "27.5.1"
+},
+{
+"name": "jiti",
+"version": "1.21.0"
+},
+{
+"name": "jmespath",
+"version": "0.10.0"
+},
+{
+"name": "jmespath.py",
+"version": "0.10.0"
+},
+{
+"name": "jmespath.py",
+"version": "0.9.0"
+},
+{
+"name": "js-tokens",
+"version": "4.0.0"
+},
+{
+"name": "js-yaml",
+"version": "3.14.1"
+},
+{
+"name": "js-yaml",
+"version": "4.1.0"
+},
+{
+"name": "jsbn",
+"version": "1.1.0"
+},
+{
+"name": "jsdiff",
+"version": "4.0.2"
+},
+{
+"name": "jsdom",
+"version": "16.7.0"
+},
+{
+"name": "jsesc",
+"version": "0.5.0"
+},
+{
+"name": "jsesc",
+"version": "v2.5.2"
+},
+{
+"name": "JSHTTP's negotiator",
+"version": "0.6.3"
+},
+{
+"name": "jshttp/content-type",
+"version": "1.0.5"
+},
+{
+"name": "jshttp/fresh",
+"version": "0.5.2"
+},
+{
+"name": "json-parse-even-better-errors",
+"version": "2.3.1"
+},
+{
+"name": "json-parse-even-better-errors",
+"version": "3.0.1"
+},
+{
+"name": "json-schema-traverse",
+"version": "0.4.1"
+},
+{
+"name": "json-schema-traverse",
+"version": "1.0.0"
+},
+{
+"name": "json5",
+"version": "2.2.3"
+},
+{
+"name": "jsonc-parser",
+"version": "3.0.0"
+},
+{
+"name": "jsonc-parser",
+"version": "3.2.0"
+},
+{
+"name": "jsonparse",
+"version": "1.3.1"
+},
+{
+"name": "jszip",
+"version": "3.10.1"
+},
+{
+"name": "karma-source-map-support",
+"version": "1.4.0"
+},
+{
+"name": "kind-of",
+"version": "6.0.3"
+},
+{
+"name": "klona",
+"version": "2.0.6"
+},
+{
+"name": "launch-editor",
+"version": "2.6.1"
+},
+{
+"name": "less-loader",
+"version": "11.1.0"
+},
+{
+"name": "LessCss",
+"version": "4.1.3"
+},
+{
+"name": "lines-and-columns",
+"version": "1.2.4"
+},
+{
+"name": "loader-runner",
+"version": "4.3.0"
+},
+{
+"name": "locate-path",
+"version": "7.2.0"
+},
+{
+"name": "locate-path",
+"version": "v5.0.0"
+},
+{
+"name": "Lodash",
+"version": "4.17.21"
+},
+{
+"name": "lodash-es",
+"version": "4.17.21"
+},
+{
+"name": "lodash.clonedeep",
+"version": "4.5.0"
+},
+{
+"name": "lodash.debounce",
+"version": "4.0.8"
+},
+{
+"name": "lodash.get",
+"version": "4.4.2"
+},
+{
+"name": "lodash.isequal",
+"version": "4.5.0"
+},
+{
+"name": "lodash.merge",
+"version": "4.6.2"
+},
+{
+"name": "lodash.set",
+"version": "4.3.2"
+},
+{
+"name": "log-symbols",
+"version": "4.1.0"
+},
+{
+"name": "lxml",
+"version": "5.2.1"
+},
+{
+"name": "macholib",
+"version": "1.11"
+},
+{
+"name": "magic-string",
+"version": "0.25.7"
+},
+{
+"name": "magic-string",
+"version": "0.30.1"
+},
+{
+"name": "make-dir",
+"version": "2.1.0"
+},
+{
+"name": "make-error",
+"version": "1.3.6"
+},
+{
+"name": "make-fetch-happen",
+"version": "10.2.1"
+},
+{
+"name": "make-fetch-happen",
+"version": "11.1.1"
+},
+{
+"name": "MarkupSafe",
+"version": "0.23"
+},
+{
+"name": "MarkupSafe",
+"version": "2.1.1"
+},
+{
+"name": "MarkupSafe",
+"version": "2.1.5"
+},
+{
+"name": "mathiasbynens/regenerate",
+"version": "1.4.2"
+},
+{
+"name": "media-typer",
+"version": "0.3.0"
+},
+{
+"name": "mehcode/python-xmlsec",
+"version": "1.3.14rc1"
+},
+{
+"name": "merge-descriptors",
+"version": "1.0.1"
+},
+{
+"name": "Merge-Stream",
+"version": "2.0.0"
+},
+{
+"name": "merge2",
+"version": "1.4.1"
+},
+{
+"name": "methods",
+"version": "1.1.2"
+},
+{
+"name": "micromatch",
+"version": "4.0.5"
+},
+{
+"name": "Microsoft/tslib",
+"version": "1.14.1"
+},
+{
+"name": "Microsoft/tslib",
+"version": "2.0.1"
+},
+{
+"name": "Microsoft/tslib",
+"version": "2.3.1"
+},
+{
+"name": "Microsoft/tslib",
+"version": "2.6.1"
+},
+{
+"name": "Microsoft/tslib",
+"version": "2.6.2"
+},
+{
+"name": "mime",
+"version": "1.6.0"
+},
+{
+"name": "mime-db",
+"version": "1.52.0"
+},
+{
+"name": "mimic-fn",
+"version": "2.1.0"
+},
+{
+"name": "mini-css-extract-plugin",
+"version": "2.7.6"
+},
+{
+"name": "minimalistic-assert",
+"version": "1.0.1"
+},
+{
+"name": "minimatch",
+"version": "3.1.2"
+},
+{
+"name": "minimatch",
+"version": "5.1.6"
+},
+{
+"name": "minimatch",
+"version": "9.0.4"
+},
+{
+"name": "minimist",
+"version": "1.2.8"
+},
+{
+"name": "minipass",
+"version": "3.3.6"
+},
+{
+"name": "minipass",
+"version": "5.0.0"
+},
+{
+"name": "minipass",
+"version": "7.0.4"
+},
+{
+"name": "minipass-collect",
+"version": "1.0.2"
+},
+{
+"name": "minipass-fetch",
+"version": "2.1.2"
+},
+{
+"name": "minipass-fetch",
+"version": "3.0.4"
+},
+{
+"name": "minipass-flush",
+"version": "1.0.5"
+},
+{
+"name": "minipass-json-stream",
+"version": "1.0.1"
+},
+{
+"name": "minipass-pipeline",
+"version": "1.2.4"
+},
+{
+"name": "minipass-sized",
+"version": "1.0.3"
+},
+{
+"name": "minizlib",
+"version": "v2.1.2"
+},
+{
+"name": "mock",
+"version": "1.0.1"
+},
+{
+"name": "mrmime",
+"version": "1.0.1"
+},
+{
+"name": "ms.js",
+"version": "2.0.0"
+},
+{
+"name": "ms.js",
+"version": "2.1.2"
+},
+{
+"name": "ms.js",
+"version": "2.1.3"
+},
+{
+"name": "multicast-dns",
+"version": "7.2.5"
+},
+{
+"name": "mute-stream",
+"version": "0.0.8"
+},
+{
+"name": "naked",
+"version": "0.1.31"
+},
+{
+"name": "nanoid",
+"version": "3.3.7"
+},
+{
+"name": "neo-async",
+"version": "2.6.2"
+},
+{
+"name": "netifaces",
+"version": "0.11.0"
+},
+{
+"name": "netroy/image-size",
+"version": "0.5.5"
+},
+{
+"name": "ngx-cookie-service",
+"version": "17.0.1"
+},
+{
+"name": "ngx-store",
+"version": "2.1.0"
+},
+{
+"name": "nice-napi",
+"version": "1.0.2"
+},
+{
+"name": "Node Cookie Parser",
+"version": "0.6.0"
+},
+{
+"name": "node-addon-api",
+"version": "3.2.1"
+},
+{
+"name": "node-chardet",
+"version": "v0.7.0"
+},
+{
+"name": "node-concat-map",
+"version": "0.0.1"
+},
+{
+"name": "node-cookie-signature",
+"version": "1.0.6"
+},
+{
+"name": "node-cross-spawn",
+"version": "7.0.3"
+},
+{
+"name": "node-domino",
+"version": "2.1.6"
+},
+{
+"name": "node-entities",
+"version": "4.5.0"
+},
+{
+"name": "node-error-ex",
+"version": "1.3.2"
+},
+{
+"name": "node-external-editor",
+"version": "3.1.0"
+},
+{
+"name": "node-forge",
+"version": "1.3.1"
+},
+{
+"name": "node-glob",
+"version": "10.3.12"
+},
+{
+"name": "node-glob",
+"version": "7.2.3"
+},
+{
+"name": "node-glob",
+"version": "8.1.0"
+},
+{
+"name": "node-glob",
+"version": "v7.1.6"
+},
+{
+"name": "node-graceful-fs",
+"version": "4.2.11"
+},
+{
+"name": "node-gyp",
+"version": "9.4.1"
+},
+{
+"name": "node-gyp-build",
+"version": "4.8.0"
+},
+{
+"name": "node-html-entities",
+"version": "2.5.2"
+},
+{
+"name": "node-http-proxy-agent",
+"version": "4.0.1"
+},
+{
+"name": "node-http-proxy-agent",
+"version": "5.0.0"
+},
+{
+"name": "node-ignore",
+"version": "5.3.1"
+},
+{
+"name": "node-lru-cache",
+"version": "10.2.2"
+},
+{
+"name": "node-lru-cache",
+"version": "5.1.1"
+},
+{
+"name": "node-lru-cache",
+"version": "6.0.0"
+},
+{
+"name": "node-lru-cache",
+"version": "7.18.3"
+},
+{
+"name": "node-mkdirp",
+"version": "0.5.6"
+},
+{
+"name": "node-mkdirp",
+"version": "1.0.4"
+},
+{
+"name": "node-promise-retry",
+"version": "2.0.1"
+},
+{
+"name": "node-releases",
+"version": "2.0.14"
+},
+{
+"name": "node-semver",
+"version": "5.7.2"
+},
+{
+"name": "node-semver",
+"version": "6.3.1"
+},
+{
+"name": "node-semver",
+"version": "7.5.4"
+},
+{
+"name": "node-semver",
+"version": "7.6.0"
+},
+{
+"name": "node-shell-quote",
+"version": "1.8.1"
+},
+{
+"name": "node-source-map-support",
+"version": "0.5.21"
+},
+{
+"name": "nodeca-argparse",
+"version": "1.0.10"
+},
+{
+"name": "nodeca-argparse",
+"version": "2.0.1"
+},
+{
+"name": "nodeca/pako",
+"version": "1.0.11"
+},
+{
+"name": "nodejs Deprecate",
+"version": "1.1.2"
+},
+{
+"name": "nodejs Deprecate",
+"version": "2.0.0"
+},
+{
+"name": "nodejs/string_decoder",
+"version": "1.1.1"
+},
+{
+"name": "nodejs/string_decoder",
+"version": "1.3.0"
+},
+{
+"name": "nopt",
+"version": "6.0.0"
+},
+{
+"name": "normalize-package-data",
+"version": "5.0.0"
+},
+{
+"name": "normalize-path",
+"version": "3.0.0"
+},
+{
+"name": "normalize-range",
+"version": "0.1.2"
+},
+{
+"name": "npm ini",
+"version": "4.1.1"
+},
+{
+"name": "npm-bundled",
+"version": "3.0.0"
+},
+{
+"name": "npm-font-source-sans-pro",
+"version": "1.0.2"
+},
+{
+"name": "npm-install-checks",
+"version": "6.3.0"
+},
+{
+"name": "npm-normalize-package-bin",
+"version": "3.0.1"
+},
+{
+"name": "npm-package-arg",
+"version": "10.1.0"
+},
+{
+"name": "npm-packlist",
+"version": "7.0.4"
+},
+{
+"name": "npm-pick-manifest",
+"version": "8.0.1"
+},
+{
+"name": "npm-pick-manifest",
+"version": "8.0.2"
+},
+{
+"name": "npm-registry-fetch",
+"version": "14.0.5"
+},
+{
+"name": "npm-run-path",
+"version": "4.0.1"
+},
+{
+"name": "npmlog",
+"version": "6.0.2"
+},
+{
+"name": "nth-check",
+"version": "2.1.1"
+},
+{
+"name": "nwsapi",
+"version": "2.2.9"
+},
+{
+"name": "object-assign",
+"version": "4.1.1"
+},
+{
+"name": "object-inspect",
+"version": "1.13.1"
+},
+{
+"name": "object-path",
+"version": "0.11.8"
+},
+{
+"name": "obuf",
+"version": "1.1.2"
+},
+{
+"name": "on-finished",
+"version": "2.4.1"
+},
+{
+"name": "on-headers",
+"version": "1.0.2"
+},
+{
+"name": "onelogin/python3-samlv1.16.0",
+"version": ""
+},
+{
+"name": "opencollective-postinstall",
+"version": "2.0.3"
+},
+{
+"name": "ora",
+"version": "5.4.1"
+},
+{
+"name": "os-tmpdir",
+"version": "1.0.2"
+},
+{
+"name": "p-limit",
+"version": "2.3.0"
+},
+{
+"name": "p-limit",
+"version": "4.0.0"
+},
+{
+"name": "p-locate",
+"version": "4.1.0"
+},
+{
+"name": "p-locate",
+"version": "6.0.0"
+},
+{
+"name": "p-map",
+"version": "4.0.0"
+},
+{
+"name": "p-retry",
+"version": "4.6.2"
+},
+{
+"name": "p-try",
+"version": "2.2.0"
+},
+{
+"name": "Packaging",
+"version": "18.0"
+},
+{
+"name": "Packaging",
+"version": "24.0"
+},
+{
+"name": "pacote",
+"version": "15.2.0"
+},
+{
+"name": "Padding",
+"version": "0.5"
+},
+{
+"name": "parchment",
+"version": "2.0.1"
+},
+{
+"name": "parent-module",
+"version": "1.0.1"
+},
+{
+"name": "parse-json",
+"version": "v5.2.0"
+},
+{
+"name": "parse-node-version",
+"version": "1.0.1"
+},
+{
+"name": "parse5",
+"version": "6.0.1"
+},
+{
+"name": "parse5",
+"version": "7.0.0"
+},
+{
+"name": "parse5",
+"version": "7.1.2"
+},
+{
+"name": "parseurl",
+"version": "1.3.3"
+},
+{
+"name": "path-exists",
+"version": "4.0.0"
+},
+{
+"name": "path-exists",
+"version": "5.0.0"
+},
+{
+"name": "path-is-absolute",
+"version": "1.0.1"
+},
+{
+"name": "path-key",
+"version": "3.1.1"
+},
+{
+"name": "path-parse",
+"version": "1.0.7"
+},
+{
+"name": "path-scurry",
+"version": "1.10.2"
+},
+{
+"name": "path-to-regexp",
+"version": "0.1.7"
+},
+{
+"name": "path-type",
+"version": "4.0.0"
+},
+{
+"name": "pefile",
+"version": "2018.8.8"
+},
+{
+"name": "pefile",
+"version": "2021.9.3"
+},
+{
+"name": "pgdb",
+"version": "0.0.11"
+},
+{
+"name": "picocolors",
+"version": "1.0.0"
+},
+{
+"name": "picomatch",
+"version": "2.3.1"
+},
+{
+"name": "pify",
+"version": "4.0.1"
+},
+{
+"name": "piscina",
+"version": "4.0.0"
+},
+{
+"name": "pkg-dir",
+"version": "7.0.0"
+},
+{
+"name": "pkgutil_resolve_name",
+"version": "1.3.10"
+},
+{
+"name": "placeholder-for-preset-env.",
+"version": "2"
+},
+{
+"name": "platformdirs",
+"version": "2.5.2"
+},
+{
+"name": "ply",
+"version": "3.11"
+},
+{
+"name": "ply",
+"version": "3.4"
+},
+{
+"name": "PostCSS",
+"version": "8.4.31"
+},
+{
+"name": "PostCSS",
+"version": "8.4.38"
+},
+{
+"name": "postcss-loader",
+"version": "7.3.3"
+},
+{
+"name": "postcss-modules-extract-imports",
+"version": "3.1.0"
+},
+{
+"name": "postcss-modules-local-by-default",
+"version": "4.0.5"
+},
+{
+"name": "postcss-modules-scope",
+"version": "3.2.0"
+},
+{
+"name": "postcss-modules-values",
+"version": "4.0.0"
+},
+{
+"name": "postcss-selector-parser",
+"version": "6.0.16"
+},
+{
+"name": "postcss-value-parser",
+"version": "4.2.0"
+},
+{
+"name": "pretty-bytes",
+"version": "5.6.0"
+},
+{
+"name": "proc-log",
+"version": "3.0.0"
+},
+{
+"name": "process-nextick-args",
+"version": "v2.0.1"
+},
+{
+"name": "promise-inflight",
+"version": "1.0.1"
+},
+{
+"name": "proxy-addr",
+"version": "2.0.7"
+},
+{
+"name": "prr",
+"version": "1.0.1"
+},
+{
+"name": "psf-requests",
+"version": "2.31.0"
+},
+{
+"name": "psl",
+"version": "1.9.0"
+},
+{
+"name": "psutil",
+"version": "2.2.1"
+},
+{
+"name": "psutil",
+"version": "5.8.0"
+},
+{
+"name": "psutil",
+"version": "5.9.1"
+},
+{
+"name": "Punycode.js",
+"version": "2.3.1"
+},
+{
+"name": "py-filelock",
+"version": "3.7.1"
+},
+{
+"name": "py-future",
+"version": "0.18.3"
+},
+{
+"name": "py3-netifaces",
+"version": "0.11.0"
+},
+{
+"name": "pycryptodome",
+"version": "3.20.0"
+},
+{
+"name": "PyGreSQL",
+"version": "5.2.4"
+},
+{
+"name": "pyinstaller-hooks-contrib",
+"version": "2022.8"
+},
+{
+"name": "pyinvoke",
+"version": "1.3.0"
+},
+{
+"name": "pyinvoke",
+"version": "1.7.1"
+},
+{
+"name": "PyJWT",
+"version": "2.4.0"
+},
+{
+"name": "Pyparsing",
+"version": "2.2.0"
+},
+{
+"name": "pypi/setuptools",
+"version": "67.4.0"
+},
+{
+"name": "pypi/setuptools",
+"version": "69.5.1"
+},
+{
+"name": "Pypubsub",
+"version": "4.0.3"
+},
+{
+"name": "pypubsub - Publish and Receive Messages Within an Application",
+"version": "4.0.3"
+},
+{
+"name": "pyrsistent",
+"version": "0.18.0"
+},
+{
+"name": "Python six",
+"version": "1.15.0"
+},
+{
+"name": "Python six",
+"version": "1.16.0"
+},
+{
+"name": "Python tzdata",
+"version": "2021.5"
+},
+{
+"name": "python-attrs",
+"version": "17.4.0"
+},
+{
+"name": "python-attrs",
+"version": "21.4.0"
+},
+{
+"name": "Python-Babel",
+"version": "2.3.4"
+},
+{
+"name": "python-dateutil",
+"version": "2.8.0"
+},
+{
+"name": "python-dateutil",
+"version": "2.8.2"
+},
+{
+"name": "python-decorator",
+"version": "4.0.10"
+},
+{
+"name": "python-decorator",
+"version": "4.2.1"
+},
+{
+"name": "python-distlib",
+"version": "0.3.1"
+},
+{
+"name": "python-distlib",
+"version": "0.3.3"
+},
+{
+"name": "python-distlib",
+"version": "0.3.6"
+},
+{
+"name": "python-future",
+"version": "0.18.3"
+},
+{
+"name": "python-jsonschema",
+"version": "2.5.1"
+},
+{
+"name": "python-jsonschema",
+"version": "3.2.0"
+},
+{
+"name": "python-jsonschema",
+"version": "4.9.1"
+},
+{
+"name": "python-Naked",
+"version": "0.1.31"
+},
+{
+"name": "python-pygments",
+"version": "2.12.0"
+},
+{
+"name": "python-sqlalchemy",
+"version": "1.4.40"
+},
+{
+"name": "python-virtualenv",
+"version": "20.21.0+ds"
+},
+{
+"name": "python-webencodings",
+"version": "0.5.1"
+},
+{
+"name": "python-wheel",
+"version": "0.38.4"
+},
+{
+"name": "python/importlib_metadata",
+"version": "0.18"
+},
+{
+"name": "python/importlib_metadata",
+"version": "4.8.3"
+},
+{
+"name": "python3-async-generator",
+"version": "1.10"
+},
+{
+"name": "python3-flask-jwt-simple",
+"version": "0.0.3"
+},
+{
+"name": "python3-pyrsistent",
+"version": "0.18.1"
+},
+{
+"name": "python3-python-flask-jwt-extended",
+"version": "4.4.4"
+},
+{
+"name": "python3-resolvelib",
+"version": "0.5.4"
+},
+{
+"name": "python3-saml",
+"version": "1.16.0"
+},
+{
+"name": "PyTZ - Python Time Zone Library",
+"version": "2017.2"
+},
+{
+"name": "PyTZ - Python Time Zone Library",
+"version": "2021.3"
+},
+{
+"name": "PyTZ - Python Time Zone Library",
+"version": "2023.3"
+},
+{
+"name": "pytz-deprecation-shim",
+"version": "0.1.0.post0"
+},
+{
+"name": "pywin32",
+"version": "301"
+},
+{
+"name": "pywin32-ctypes",
+"version": "0.2.0"
+},
+{
+"name": "PyYAML",
+"version": "5.1.1"
+},
+{
+"name": "PyYAML",
+"version": "6.0"
+},
+{
+"name": "Qix-/color-convert",
+"version": "1.9.3"
+},
+{
+"name": "Qix-/color-convert",
+"version": "2.0.1"
+},
+{
+"name": "qs - QS Querystring",
+"version": "6.11.0"
+},
+{
+"name": "querystringify",
+"version": "2.2.0"
+},
+{
+"name": "queue-microtask",
+"version": "1.2.3"
+},
+{
+"name": "quill-delta",
+"version": "5.1.0"
+},
+{
+"name": "randombytes",
+"version": "2.1.0"
+},
+{
+"name": "range-parser",
+"version": "v1.2.1"
+},
+{
+"name": "raw-body",
+"version": "2.5.2"
+},
+{
+"name": "ReactiveX RxJS",
+"version": "6.6.0"
+},
+{
+"name": "ReactiveX RxJS",
+"version": "6.6.7"
+},
+{
+"name": "ReactiveX RxJS",
+"version": "7.8.1"
+},
+{
+"name": "read-package-json",
+"version": "6.0.4"
+},
+{
+"name": "read-package-json-fast",
+"version": "3.0.2"
+},
+{
+"name": "readable-stream",
+"version": "2.3.8"
+},
+{
+"name": "readable-stream",
+"version": "3.6.2"
+},
+{
+"name": "readdirp",
+"version": "3.6.0"
+},
+{
+"name": "reflect-metadata",
+"version": "0.1.14"
+},
+{
+"name": "regenerate-unicode-properties",
+"version": "10.1.1"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.13.11"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.14.1"
+},
+{
+"name": "regenerator-transform",
+"version": "0.15.2"
+},
+{
+"name": "regex-parser",
+"version": "2.3.0"
+},
+{
+"name": "regexpu-core",
+"version": "5.3.2"
+},
+{
+"name": "regjsparser",
+"version": "0.9.1"
+},
+{
+"name": "require-directory",
+"version": "2.1.1"
+},
+{
+"name": "require-from-string",
+"version": "2.0.2"
+},
+{
+"name": "requires-port",
+"version": "1.0.0"
+},
+{
+"name": "resolve-from",
+"version": "4.0.0"
+},
+{
+"name": "resolve-from",
+"version": "5.0.0"
+},
+{
+"name": "resolve-url-loader",
+"version": "5.0.0"
+},
+{
+"name": "restore-cursor",
+"version": "v3.1.0"
+},
+{
+"name": "reusify",
+"version": "1.0.4"
+},
+{
+"name": "rimraf",
+"version": "3.0.2"
+},
+{
+"name": "rollup",
+"version": "3.29.4"
+},
+{
+"name": "rrule",
+"version": "2.8.1"
+},
+{
+"name": "run-async",
+"version": "2.4.1"
+},
+{
+"name": "run-parallel",
+"version": "1.2.0"
+},
+{
+"name": "s3transfer",
+"version": "0.10.0"
+},
+{
+"name": "s3transfer",
+"version": "0.5.2"
+},
+{
+"name": "safe-buffer",
+"version": "5.1.2"
+},
+{
+"name": "safe-buffer",
+"version": "5.2.1"
+},
+{
+"name": "safer-buffer",
+"version": "2.1.2"
+},
+{
+"name": "samccone/chrome-trace-event",
+"version": "1.0.3"
+},
+{
+"name": "sass",
+"version": "1.64.1"
+},
+{
+"name": "sass-rem",
+"version": "2.0.1"
+},
+{
+"name": "sax-js",
+"version": "1.3.0"
+},
+{
+"name": "saxes",
+"version": "5.0.1"
+},
+{
+"name": "schema-utils",
+"version": "3.3.0"
+},
+{
+"name": "schema-utils",
+"version": "4.2.0"
+},
+{
+"name": "select-hose",
+"version": "2.0.0"
+},
+{
+"name": "selfsigned",
+"version": "2.4.1"
+},
+{
+"name": "send",
+"version": "0.18.0"
+},
+{
+"name": "serialize-javascript",
+"version": "6.0.2"
+},
+{
+"name": "serve-index",
+"version": "1.9.1"
+},
+{
+"name": "serve-static",
+"version": "1.15.0"
+},
+{
+"name": "serve.me",
+"version": "0.1.0"
+},
+{
+"name": "set-blocking",
+"version": "2.0.0"
+},
+{
+"name": "set-function-length",
+"version": "1.2.2"
+},
+{
+"name": "setImmediate",
+"version": "1.0.5"
+},
+{
+"name": "setprototypeof",
+"version": "1.1.0"
+},
+{
+"name": "setprototypeof",
+"version": "1.2.0"
+},
+{
+"name": "shallow-clone",
+"version": "3.0.1"
+},
+{
+"name": "shebang-command",
+"version": "2.0.0"
+},
+{
+"name": "shebang-regex",
+"version": "3.0.0"
+},
+{
+"name": "shellescape",
+"version": "3.8.1"
+},
+{
+"name": "side-channel",
+"version": "1.0.6"
+},
+{
+"name": "sigstore",
+"version": "1.9.0"
+},
+{
+"name": "sindresorhus-open",
+"version": "8.4.2"
+},
+{
+"name": "sindresorhus/globals",
+"version": "11.12.0"
+},
+{
+"name": "sindresorhus/globby",
+"version": "13.2.2"
+},
+{
+"name": "sindresorhus/is-stream",
+"version": "2.0.1"
+},
+{
+"name": "sindresorhus/onetime",
+"version": "v5.1.2"
+},
+{
+"name": "sindresorhus/slash",
+"version": "4.0.0"
+},
+{
+"name": "sindresorhus/supports-color",
+"version": "5.5.0"
+},
+{
+"name": "sindresorhus/supports-color",
+"version": "8.1.1"
+},
+{
+"name": "sindresorhus/supports-colorv7.2.0",
+"version": ""
+},
+{
+"name": "smart-buffer",
+"version": "4.2.0"
+},
+{
+"name": "sn-2-ui-router-ng2",
+"version": "12.0.0"
+},
+{
+"name": "Snowball stemmer",
+"version": "1.2.1"
+},
+{
+"name": "sockjs-node",
+"version": "0.3.24"
+},
+{
+"name": "socks",
+"version": "2.8.3"
+},
+{
+"name": "socks-proxy-agent",
+"version": "7.0.0"
+},
+{
+"name": "source-map",
+"version": "0.6.1"
+},
+{
+"name": "source-map",
+"version": "0.7.3"
+},
+{
+"name": "source-map",
+"version": "0.7.4"
+},
+{
+"name": "source-map-js",
+"version": "1.2.0"
+},
+{
+"name": "source-map-loader",
+"version": "4.0.1"
+},
+{
+"name": "sourcemap-codec",
+"version": "1.4.8"
+},
+{
+"name": "spdx-correct.js",
+"version": "3.2.0"
+},
+{
+"name": "spdx-exceptions",
+"version": "2.5.0"
+},
+{
+"name": "spdx-expression-parse.js",
+"version": "3.0.1"
+},
+{
+"name": "spdy",
+"version": "4.0.2"
+},
+{
+"name": "spdy-transport",
+"version": "3.0.0"
+},
+{
+"name": "Sphinx",
+"version": "2.1.2"
+},
+{
+"name": "Sphinx-Python Documentation Generator",
+"version": "1.0.1"
+},
+{
+"name": "sphinxcontrib-applehelp",
+"version": "1.0.1"
+},
+{
+"name": "sphinxcontrib-devhelp",
+"version": "1.0.1"
+},
+{
+"name": "sphinxcontrib-htmlhelp",
+"version": "1.0.2"
+},
+{
+"name": "sphinxcontrib-qthelp",
+"version": "1.0.2"
+},
+{
+"name": "sphinxcontrib-serializinghtml",
+"version": "1.1.3"
+},
+{
+"name": "sprintf.js",
+"version": "1.0.3"
+},
+{
+"name": "sprintf.js",
+"version": "1.1.3"
+},
+{
+"name": "SQLAlchemy",
+"version": "1.3.4"
+},
+{
+"name": "SQLAlchemy",
+"version": "1.4.23"
+},
+{
+"name": "SQLAlchemy",
+"version": "1.4.40"
+},
+{
+"name": "sqlalchemy-utils",
+"version": "0.37.8"
+},
+{
+"name": "sqlalchemy-utils",
+"version": "0.38.3"
+},
+{
+"name": "ssri",
+"version": "10.0.5"
+},
+{
+"name": "ssri",
+"version": "9.0.1"
+},
+{
+"name": "statuses",
+"version": "1.5.0"
+},
+{
+"name": "statuses",
+"version": "2.0.1"
+},
+{
+"name": "streamich/memfs",
+"version": "3.6.0"
+},
+{
+"name": "string-width",
+"version": "4.2.3"
+},
+{
+"name": "string-width",
+"version": "5.1.2"
+},
+{
+"name": "Strip ANSI",
+"version": "6.0.1"
+},
+{
+"name": "Strip ANSI",
+"version": "7.1.0"
+},
+{
+"name": "strip-final-newline",
+"version": "2.0.0"
+},
+{
+"name": "supports-preserve-symlinks-flag",
+"version": "1.0.0"
+},
+{
+"name": "svg4everybody",
+"version": "2.1.9"
+},
+{
+"name": "symbol-observable",
+"version": "4.0.0"
+},
+{
+"name": "symbol-tree",
+"version": "3.2.4"
+},
+{
+"name": "tapable",
+"version": "2.2.1"
+},
+{
+"name": "tapjs/signal-exit",
+"version": "3.0.7"
+},
+{
+"name": "tapjs/signal-exit",
+"version": "4.1.0"
+},
+{
+"name": "tar",
+"version": "6.2.1"
+},
+{
+"name": "terser",
+"version": "5.19.2"
+},
+{
+"name": "terser",
+"version": "5.30.4"
+},
+{
+"name": "terser-webpack-plugin",
+"version": "5.3.10"
+},
+{
+"name": "test-exclude",
+"version": "6.0.0"
+},
+{
+"name": "text-table",
+"version": "0.2.0"
+},
+{
+"name": "through",
+"version": "2.3.8"
+},
+{
+"name": "thunky",
+"version": "1.1.0"
+},
+{
+"name": "tinyaes",
+"version": "1.0.3"
+},
+{
+"name": "tmp",
+"version": "0.0.33"
+},
+{
+"name": "to-fast-properties",
+"version": "2.0.0"
+},
+{
+"name": "to-regex-range",
+"version": "5.0.1"
+},
+{
+"name": "toidentifier",
+"version": "1.0.1"
+},
+{
+"name": "tomas/needle",
+"version": "3.3.1"
+},
+{
+"name": "tomli",
+"version": "2.0.1"
+},
+{
+"name": "toolz",
+"version": "0.11.1"
+},
+{
+"name": "toolz_py",
+"version": "0.11.1"
+},
+{
+"name": "tornado",
+"version": "6.3.2"
+},
+{
+"name": "Tornado Web Server",
+"version": ""
+},
+{
+"name": "tough-cookie",
+"version": "4.1.3"
+},
+{
+"name": "tr46",
+"version": "2.1.0"
+},
+{
+"name": "tree-kill",
+"version": "v1.2.2"
+},
+{
+"name": "ts-debug",
+"version": "1.3.0"
+},
+{
+"name": "ts-node",
+"version": "8.10.1"
+},
+{
+"name": "tslint",
+"version": "6.1.2"
+},
+{
+"name": "tsutils",
+"version": "2.29.0"
+},
+{
+"name": "tuf-js",
+"version": "1.1.7"
+},
+{
+"name": "turndown",
+"version": "7.1.3"
+},
+{
+"name": "type-fest",
+"version": "0.21.3"
+},
+{
+"name": "type.is",
+"version": "1.6.18"
+},
+{
+"name": "typed-assert",
+"version": "1.0.9"
+},
+{
+"name": "TypeScript",
+"version": "4.9.5"
+},
+{
+"name": "tzlocal",
+"version": "4.1"
+},
+{
+"name": "ui-router-rx",
+"version": "1.0.0"
+},
+{
+"name": "ui-router/core",
+"version": "6.0.8"
+},
+{
+"name": "undici-types",
+"version": "5.26.5"
+},
+{
+"name": "unicode-canonical-property-names-ecmascript",
+"version": "2.0.0"
+},
+{
+"name": "unicode-match-property-ecmascript",
+"version": "2.0.0"
+},
+{
+"name": "unicode-match-property-value-ecmascript",
+"version": "2.1.0"
+},
+{
+"name": "unicode-property-aliases-ecmascript",
+"version": "2.1.0"
+},
+{
+"name": "unique-filename",
+"version": "2.0.1"
+},
+{
+"name": "unique-filename",
+"version": "3.0.0"
+},
+{
+"name": "unique-slug",
+"version": "3.0.0"
+},
+{
+"name": "unique-slug",
+"version": "4.0.0"
+},
+{
+"name": "universalify",
+"version": "0.2.0"
+},
+{
+"name": "unpipe",
+"version": "1.0.0"
+},
+{
+"name": "update-browserslist-db",
+"version": "1.0.13"
+},
+{
+"name": "uri-js",
+"version": "4.4.1"
+},
+{
+"name": "url-parse",
+"version": "1.5.10"
+},
+{
+"name": "util-deprecate",
+"version": "1.0.2"
+},
+{
+"name": "utils-merge",
+"version": "1.0.1"
+},
+{
+"name": "uuid",
+"version": "8.3.2"
+},
+{
+"name": "validate-npm-package-name",
+"version": "5.0.0"
+},
+{
+"name": "vary",
+"version": "1.1.2"
+},
+{
+"name": "verigak/progress",
+"version": "1.6"
+},
+{
+"name": "virtualenv",
+"version": "14.0.5"
+},
+{
+"name": "virtualenv",
+"version": "20.21.0"
+},
+{
+"name": "visionmedia/batch",
+"version": "0.6.1"
+},
+{
+"name": "w3c-hr-time",
+"version": "1.0.2"
+},
+{
+"name": "w3c-xmlserializer",
+"version": "2.0.0"
+},
+{
+"name": "watchpack",
+"version": "2.4.1"
+},
+{
+"name": "wbuf",
+"version": "1.7.3"
+},
+{
+"name": "wcwidth",
+"version": "1.0.1"
+},
+{
+"name": "webidl-conversions",
+"version": "5.0.0"
+},
+{
+"name": "webidl-conversions",
+"version": "6.1.0"
+},
+{
+"name": "Webpack",
+"version": "5.88.2"
+},
+{
+"name": "webpack-contrib/sass-loader",
+"version": "13.3.2"
+},
+{
+"name": "webpack-dev-server",
+"version": "4.15.1"
+},
+{
+"name": "webpack-merge",
+"version": "5.9.0"
+},
+{
+"name": "webpack-sources",
+"version": "3.2.3"
+},
+{
+"name": "webpack-subresource-integrity",
+"version": "5.1.0"
+},
+{
+"name": "webpack/loader-utils",
+"version": "3.2.1"
+},
+{
+"name": "websocket-driver-node",
+"version": "0.7.4"
+},
+{
+"name": "websocket-extensions-node",
+"version": "0.1.4"
+},
+{
+"name": "whatwg-encoding",
+"version": "1.0.5"
+},
+{
+"name": "whatwg-mimetype",
+"version": "2.3.0"
+},
+{
+"name": "whatwg-url",
+"version": "8.7.0"
+},
+{
+"name": "which",
+"version": "2.0.2"
+},
+{
+"name": "which",
+"version": "3.0.1"
+},
+{
+"name": "whitequark/ipaddr.js",
+"version": "2.2.0"
+},
+{
+"name": "whitequark/ipaddr.js",
+"version": "v1.9.1"
+},
+{
+"name": "wide-align",
+"version": "1.1.5"
+},
+{
+"name": "win_unicode_console",
+"version": "0.5"
+},
+{
+"name": "winsys",
+"version": "1.2"
+},
+{
+"name": "wrap-ansi",
+"version": "8.1.0"
+},
+{
+"name": "wrap-ansi",
+"version": "v7.0.0"
+},
+{
+"name": "wrappy",
+"version": "1.0.2"
+},
+{
+"name": "wtforms",
+"version": "3.0.1"
+},
+{
+"name": "wtforms-json",
+"version": "0.3.5"
+},
+{
+"name": "xml-name-validator",
+"version": "3.0.0"
+},
+{
+"name": "xmlchars",
+"version": "2.2.0"
+},
+{
+"name": "y18n",
+"version": "5.0.8"
+},
+{
+"name": "yallist",
+"version": "3.1.1"
+},
+{
+"name": "yallist",
+"version": "4.0.0"
+},
+{
+"name": "yargs",
+"version": "17.7.2"
+},
+{
+"name": "yargs-parser",
+"version": "21.1.1"
+},
+{
+"name": "yn",
+"version": "v3.1.1"
+},
+{
+"name": "yocto-queue",
+"version": "1.0.0"
+},
+{
+"name": "zipp",
+"version": "0.5.1"
+},
+{
+"name": "zipp",
+"version": "3.18.0"
+},
+{
+"name": "zipp",
+"version": "3.18.1"
+},
+{
+"name": "zipp",
+"version": "3.8.1"
+},
+{
+"name": "Zone.js",
+"version": "0.13.3"
+}
+],
+"extractors": [
+"component_license"
+],
+"kind": "pdf",
+"product": "XCP",
+"retrieved": "2026-11-08",
+"sha256": "82699ee0bb7a509fe704370028f812a3cb67579faad80c1f59cff6cd8008c92f",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/XCP/1.9.4/NOTICE.pdf",
+"version": "1.9.4"
+}

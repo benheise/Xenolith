@@ -1,0 +1,5839 @@
+{
+"components": [
+{
+"name": "\"Java Concurrency in Practice\" book annotations",
+"version": "1.0"
+},
+{
+"name": "#SNMP, Open Source SNMP for .NET/Mono",
+"version": "12.3.0"
+},
+{
+"name": ".NET Compiler Platform",
+"version": ""
+},
+{
+"name": "0f",
+"version": ""
+},
+{
+"name": "113-snapshot",
+"version": "1582c4e8"
+},
+{
+"name": "7-Zip",
+"version": ""
+},
+{
+"name": "@microsoft/signalr",
+"version": "8.0.0"
+},
+{
+"name": "abbrev.js",
+"version": ""
+},
+{
+"name": "Abseil",
+"version": ""
+},
+{
+"name": "acorn",
+"version": ""
+},
+{
+"name": "acorn-jsx",
+"version": ""
+},
+{
+"name": "acorn-to-esprima",
+"version": ""
+},
+{
+"name": "Active Directory Authentication Library for .NET",
+"version": ""
+},
+{
+"name": "ActiveState cookbook recipe \"Remove duplicates from a sequence\"",
+"version": ""
+},
+{
+"name": "Adrian Mato Gondelle",
+"version": ""
+},
+{
+"name": "agent-base",
+"version": ""
+},
+{
+"name": "Alexander Chemeris’ ISO C9x compliant inttypes.h for Microsoft Visual Studio",
+"version": ""
+},
+{
+"name": "Algorithm::C3",
+"version": "0.11"
+},
+{
+"name": "align-text",
+"version": ""
+},
+{
+"name": "alter",
+"version": ""
+},
+{
+"name": "amdefine",
+"version": ""
+},
+{
+"name": "Anaconda packages",
+"version": ""
+},
+{
+"name": "Anaconda Python",
+"version": ""
+},
+{
+"name": "analysis-smartcn",
+"version": ""
+},
+{
+"name": "Android dirname_r",
+"version": ""
+},
+{
+"name": "Android native_app_glue",
+"version": ""
+},
+{
+"name": "Android Studio",
+"version": ""
+},
+{
+"name": "AndroidSupportComponents",
+"version": ""
+},
+{
+"name": "AngleSharp",
+"version": "1.7.0"
+},
+{
+"name": "AngleSharp.Css",
+"version": "1.0.1"
+},
+{
+"name": "AngularJS Intellisense",
+"version": ""
+},
+{
+"name": "AngularJS logo",
+"version": ""
+},
+{
+"name": "Angus Activation Registries",
+"version": "2.0.3"
+},
+{
+"name": "ansi",
+"version": ""
+},
+{
+"name": "ansi-escapes",
+"version": ""
+},
+{
+"name": "ansi-regex",
+"version": ""
+},
+{
+"name": "ansi-styles",
+"version": ""
+},
+{
+"name": "ansicolors",
+"version": ""
+},
+{
+"name": "ansistyles",
+"version": ""
+},
+{
+"name": "Anti-Grain Geometry",
+"version": ""
+},
+{
+"name": "ANTLR",
+"version": ""
+},
+{
+"name": "antlr",
+"version": "3.5.1"
+},
+{
+"name": "antlr",
+"version": "4.7.2"
+},
+{
+"name": "antlr4cs",
+"version": ""
+},
+{
+"name": "Apache ActiveMQ",
+"version": "2.6.3"
+},
+{
+"name": "Apache Ant",
+"version": ""
+},
+{
+"name": "Apache Camel",
+"version": ""
+},
+{
+"name": "Apache Commons BeanUtils",
+"version": "1.11.0"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.15"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.4"
+},
+{
+"name": "Apache Commons Collections",
+"version": "3.2.2"
+},
+{
+"name": "Apache Commons Configuration",
+"version": "2.11.0"
+},
+{
+"name": "Apache Commons Configuration",
+"version": "2.13.0"
+},
+{
+"name": "Apache Commons Configuration",
+"version": "24.0.0"
+},
+{
+"name": "Apache Commons IO",
+"version": "2.17.0"
+},
+{
+"name": "Apache Commons Lang",
+"version": "2.6"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.2"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.3.2"
+},
+{
+"name": "Apache Commons Text",
+"version": "1.12.0"
+},
+{
+"name": "Apache Commons Text",
+"version": "1.15.0"
+},
+{
+"name": "Apache Hive",
+"version": ""
+},
+{
+"name": "Apache HttpClient",
+"version": "4.5.13"
+},
+{
+"name": "Apache log4net",
+"version": ""
+},
+{
+"name": "Apache Log4Net",
+"version": "2.0.11"
+},
+{
+"name": "Apache Log4Net",
+"version": "3.3.2"
+},
+{
+"name": "Apache Lucene",
+"version": ""
+},
+{
+"name": "Apache Qpid",
+"version": ""
+},
+{
+"name": "Apache Thrift",
+"version": ""
+},
+{
+"name": "Apache::LogFormat::Compil er",
+"version": "0.36"
+},
+{
+"name": "App-vNext-Polly",
+"version": "8.7.0"
+},
+{
+"name": "AppConfig",
+"version": "1.71"
+},
+{
+"name": "ApplicationInsights-node.js",
+"version": ""
+},
+{
+"name": "aproba",
+"version": ""
+},
+{
+"name": "Archive::Zip Perl Module",
+"version": "1.68"
+},
+{
+"name": "Archiver",
+"version": ""
+},
+{
+"name": "archiver-utils",
+"version": ""
+},
+{
+"name": "archy",
+"version": ""
+},
+{
+"name": "are-we-there-yet",
+"version": ""
+},
+{
+"name": "argparse",
+"version": ""
+},
+{
+"name": "array-filter",
+"version": ""
+},
+{
+"name": "array-index",
+"version": ""
+},
+{
+"name": "array-map",
+"version": ""
+},
+{
+"name": "array-reduce",
+"version": ""
+},
+{
+"name": "array-union",
+"version": ""
+},
+{
+"name": "array-uniq",
+"version": ""
+},
+{
+"name": "arrify",
+"version": ""
+},
+{
+"name": "artifact-engine",
+"version": ""
+},
+{
+"name": "asap",
+"version": ""
+},
+{
+"name": "ASM",
+"version": ""
+},
+{
+"name": "ASM",
+"version": "9.10.1"
+},
+{
+"name": "asm-analysis",
+"version": ""
+},
+{
+"name": "asm-tree",
+"version": ""
+},
+{
+"name": "ASMJS Validator",
+"version": ""
+},
+{
+"name": "asn1",
+"version": ""
+},
+{
+"name": "ASP.NET",
+"version": ""
+},
+{
+"name": "AspectJ Runtime",
+"version": "1.9.22.1"
+},
+{
+"name": "AspectJ weaver",
+"version": "1.9.22.1"
+},
+{
+"name": "assert-plus",
+"version": ""
+},
+{
+"name": "ast-traverse",
+"version": ""
+},
+{
+"name": "ast-types",
+"version": ""
+},
+{
+"name": "async",
+"version": ""
+},
+{
+"name": "Async MySQL Connector",
+"version": "2.6.1"
+},
+{
+"name": "async-some",
+"version": ""
+},
+{
+"name": "Attractive Chaos' h.h",
+"version": ""
+},
+{
+"name": "Authen::SASL",
+"version": "v2.1700"
+},
+{
+"name": "autodie",
+"version": "2.29"
+},
+{
+"name": "autodie",
+"version": "2.37"
+},
+{
+"name": "autofac",
+"version": "3.5.2"
+},
+{
+"name": "Autogrow Textarea Plugin",
+"version": ""
+},
+{
+"name": "AutoRest",
+"version": ""
+},
+{
+"name": "aws-sign2",
+"version": ""
+},
+{
+"name": "aws4",
+"version": ""
+},
+{
+"name": "axios",
+"version": ""
+},
+{
+"name": "axon",
+"version": ""
+},
+{
+"name": "Azure Key Vault",
+"version": ""
+},
+{
+"name": "azure-sdk-for-net",
+"version": "1.11.4"
+},
+{
+"name": "azure-storage-net",
+"version": ""
+},
+{
+"name": "azure-storage-net-data-movement",
+"version": ""
+},
+{
+"name": "Azure.Core",
+"version": "1.38.0"
+},
+{
+"name": "Azure.Core",
+"version": "1.50.0"
+},
+{
+"name": "Azure.Core",
+"version": "1.60.0"
+},
+{
+"name": "Azure.ResourceManager",
+"version": "1.14.0"
+},
+{
+"name": "Azure.ResourceManager.Ne tApp",
+"version": "1.12.0"
+},
+{
+"name": "Azure.ResourceManager.Ne tApp",
+"version": "1.18.0"
+},
+{
+"name": "Azure.ResourceManager.Ne tApp",
+"version": "1.4.1"
+},
+{
+"name": "Azure.ResourceManager.Ne tApp",
+"version": "1.5.0-beta.1"
+},
+{
+"name": "Azure.ResourceManager.Ne tApp",
+"version": "1.6.0"
+},
+{
+"name": "Azure.ResourceManager.Ne tApp",
+"version": "1.7.0"
+},
+{
+"name": "B-COW",
+"version": "0.007"
+},
+{
+"name": "B-Hooks-EndOfScope",
+"version": "0.28"
+},
+{
+"name": "B::Flags",
+"version": "0.17"
+},
+{
+"name": "B::Hooks::OP::Check",
+"version": "0.22"
+},
+{
+"name": "Babel",
+"version": ""
+},
+{
+"name": "Babel-eslint",
+"version": ""
+},
+{
+"name": "babel-plugin-constant-folding",
+"version": ""
+},
+{
+"name": "babel-sublime",
+"version": ""
+},
+{
+"name": "backbone js framework",
+"version": "1.1.2"
+},
+{
+"name": "balanced-match",
+"version": ""
+},
+{
+"name": "Batch File",
+"version": ""
+},
+{
+"name": "BeanShell",
+"version": "2.0b6"
+},
+{
+"name": "Beautify-html.js",
+"version": ""
+},
+{
+"name": "BERKELEY YACC",
+"version": ""
+},
+{
+"name": "binary",
+"version": ""
+},
+{
+"name": "binutils",
+"version": ""
+},
+{
+"name": "bl",
+"version": ""
+},
+{
+"name": "blesh/ALE",
+"version": "20160303-snaps"
+},
+{
+"name": "block-stream",
+"version": ""
+},
+{
+"name": "bluebird",
+"version": ""
+},
+{
+"name": "Boehm-Demers-Weiser conservative garbage collector",
+"version": ""
+},
+{
+"name": "Bohemian Sketch Third Party Content",
+"version": "53.2"
+},
+{
+"name": "boom",
+"version": ""
+},
+{
+"name": "Boost",
+"version": ""
+},
+{
+"name": "Boost Test Library",
+"version": ""
+},
+{
+"name": "Boost Unit Test Adapter",
+"version": ""
+},
+{
+"name": "bootstrap",
+"version": ""
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "4.4.1-1"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "4.7.0"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "5.0.0"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "5.1.0"
+},
+{
+"name": "Bootstrap (Twitter) unknown",
+"version": ""
+},
+{
+"name": "bootstrap-multiselect",
+"version": "2.0.0"
+},
+{
+"name": "bootstrap-select",
+"version": "1.14.0-beta3"
+},
+{
+"name": "bootstrap-selectv1.14.0-beta2",
+"version": ""
+},
+{
+"name": "bootstrap-slider",
+"version": "2.0.0"
+},
+{
+"name": "bootstrap-tagsinput",
+"version": "0.2.0"
+},
+{
+"name": "bootstrap-touch-carousel",
+"version": ""
+},
+{
+"name": "BoringSSL",
+"version": ""
+},
+{
+"name": "Bouncy Castle",
+"version": ""
+},
+{
+"name": "Bouncy Castle JCE",
+"version": ""
+},
+{
+"name": "BouncyCastle.Cryptography",
+"version": "2.6.2"
+},
+{
+"name": "Bower",
+"version": ""
+},
+{
+"name": "bower-config",
+"version": ""
+},
+{
+"name": "bower-endpoint-parser",
+"version": ""
+},
+{
+"name": "bower-json",
+"version": ""
+},
+{
+"name": "bower-logger",
+"version": ""
+},
+{
+"name": "bower-registry-client",
+"version": ""
+},
+{
+"name": "brace-expansion",
+"version": ""
+},
+{
+"name": "breakable",
+"version": ""
+},
+{
+"name": "Browser::Open",
+"version": "0.04"
+},
+{
+"name": "browserkeymap",
+"version": ""
+},
+{
+"name": "BSD fnmatch",
+"version": ""
+},
+{
+"name": "BSD glibc bsearch",
+"version": ""
+},
+{
+"name": "BSD-Resource",
+"version": "1.2911"
+},
+{
+"name": "BSON",
+"version": "3.3.0-query-log-max-size"
+},
+{
+"name": "buddy.js",
+"version": ""
+},
+{
+"name": "buffer-crc32",
+"version": ""
+},
+{
+"name": "buffer-equal-constant-time",
+"version": ""
+},
+{
+"name": "buffer-shims",
+"version": ""
+},
+{
+"name": "buffers",
+"version": ""
+},
+{
+"name": "builtin-modules",
+"version": ""
+},
+{
+"name": "builtins",
+"version": ""
+},
+{
+"name": "Byte Buddy",
+"version": "1.14.5"
+},
+{
+"name": "C++ Standard Library",
+"version": ""
+},
+{
+"name": "c-ares",
+"version": ""
+},
+{
+"name": "camelcase",
+"version": ""
+},
+{
+"name": "Camellia",
+"version": ""
+},
+{
+"name": "Canary::Stability",
+"version": "2012"
+},
+{
+"name": "capture-stack-trace",
+"version": ""
+},
+{
+"name": "cardinal",
+"version": ""
+},
+{
+"name": "Carp",
+"version": "1.50"
+},
+{
+"name": "Carp::Assert",
+"version": "0.22"
+},
+{
+"name": "caseless",
+"version": ""
+},
+{
+"name": "CatalystX::DebugFilter",
+"version": "0.12"
+},
+{
+"name": "CatalystX::DebugFilter",
+"version": "0.16"
+},
+{
+"name": "cctools",
+"version": ""
+},
+{
+"name": "cdnjs",
+"version": "2015"
+},
+{
+"name": "cecil",
+"version": ""
+},
+{
+"name": "center-align",
+"version": ""
+},
+{
+"name": "CF-Lite",
+"version": ""
+},
+{
+"name": "cfe",
+"version": ""
+},
+{
+"name": "CFStreamAbstract.h",
+"version": ""
+},
+{
+"name": "CGI.pm",
+"version": "4.67"
+},
+{
+"name": "CGI::Struct",
+"version": "1.12"
+},
+{
+"name": "CGI::Struct",
+"version": "1.21"
+},
+{
+"name": "CGISimple",
+"version": "1.281"
+},
+{
+"name": "ch-siphash",
+"version": ""
+},
+{
+"name": "chainsaw",
+"version": ""
+},
+{
+"name": "chalk",
+"version": ""
+},
+{
+"name": "chmodr",
+"version": ""
+},
+{
+"name": "chownr",
+"version": ""
+},
+{
+"name": "Chris Swenson’s sorting routine implementations",
+"version": ""
+},
+{
+"name": "Chromium",
+"version": ""
+},
+{
+"name": "cityhash",
+"version": ""
+},
+{
+"name": "Clang",
+"version": ""
+},
+{
+"name": "clang-tools-extra",
+"version": ""
+},
+{
+"name": "CLAP.dll",
+"version": ""
+},
+{
+"name": "Class-Method-Modifiers",
+"version": "2.15"
+},
+{
+"name": "Class::C3::Adopt::NEXT",
+"version": "0.14"
+},
+{
+"name": "Class::Inspector",
+"version": "1.36"
+},
+{
+"name": "Class::Load",
+"version": "0.10"
+},
+{
+"name": "Class::Load",
+"version": "0.25"
+},
+{
+"name": "cli-cursor",
+"version": ""
+},
+{
+"name": "cli-width",
+"version": ""
+},
+{
+"name": "Clide",
+"version": ""
+},
+{
+"name": "clio",
+"version": "8.1.0.88"
+},
+{
+"name": "cliui",
+"version": ""
+},
+{
+"name": "Clojure",
+"version": ""
+},
+{
+"name": "clone",
+"version": ""
+},
+{
+"name": "Clone::PP",
+"version": "1.08"
+},
+{
+"name": "CLR Instrumentation Engine",
+"version": ""
+},
+{
+"name": "CMake",
+"version": ""
+},
+{
+"name": "CMake For VisualStudio Code TextMate grammar files",
+"version": ""
+},
+{
+"name": "cmd-shim",
+"version": ""
+},
+{
+"name": "CNNICHashWhitelist.inc",
+"version": ""
+},
+{
+"name": "code-point-at",
+"version": ""
+},
+{
+"name": "code-prettify",
+"version": ""
+},
+{
+"name": "CodePoint",
+"version": ""
+},
+{
+"name": "Coffeelint",
+"version": ""
+},
+{
+"name": "CoffeeScript",
+"version": ""
+},
+{
+"name": "columnify",
+"version": ""
+},
+{
+"name": "combined-stream",
+"version": ""
+},
+{
+"name": "Command Line Parser Library",
+"version": ""
+},
+{
+"name": "commander",
+"version": ""
+},
+{
+"name": "CommandLineParser",
+"version": "1.9.71"
+},
+{
+"name": "CommandLineParser",
+"version": "1.9.71.2 stable"
+},
+{
+"name": "CommandLineParser",
+"version": "v1.9.71.2"
+},
+{
+"name": "common-sense",
+"version": "3.75"
+},
+{
+"name": "commoner",
+"version": ""
+},
+{
+"name": "CommonServiceLocator",
+"version": ""
+},
+{
+"name": "compress-commons",
+"version": ""
+},
+{
+"name": "Compress::Raw::Zlib",
+"version": "2.212"
+},
+{
+"name": "concat-map",
+"version": ""
+},
+{
+"name": "concat-stream",
+"version": ""
+},
+{
+"name": "config-chain",
+"version": ""
+},
+{
+"name": "configstore",
+"version": ""
+},
+{
+"name": "convert-source-map",
+"version": ""
+},
+{
+"name": "copy-to-clipboard",
+"version": ""
+},
+{
+"name": "core-js",
+"version": ""
+},
+{
+"name": "core-util-is",
+"version": ""
+},
+{
+"name": "coreclr",
+"version": ""
+},
+{
+"name": "CoreFX",
+"version": ""
+},
+{
+"name": "corefxlab",
+"version": ""
+},
+{
+"name": "CoreWCF.Http",
+"version": "1.9.1"
+},
+{
+"name": "CoreWCF.Primitives",
+"version": "1.9.1"
+},
+{
+"name": "CoreWCF.WebHttp",
+"version": "1.9.1"
+},
+{
+"name": "CorrelationId",
+"version": "3.0.1"
+},
+{
+"name": "coverlet",
+"version": ""
+},
+{
+"name": "cowboy server",
+"version": "2.17.0"
+},
+{
+"name": "CPAN::Meta",
+"version": "2.150010"
+},
+{
+"name": "CPAN::Meta::Check",
+"version": "0.018"
+},
+{
+"name": "CPAN::Meta::Requirements",
+"version": "2.143"
+},
+{
+"name": "cpan:TOBYINK LV-0.006",
+"version": ""
+},
+{
+"name": "Cpanel::JSON::XS",
+"version": "4.39"
+},
+{
+"name": "crc32",
+"version": ""
+},
+{
+"name": "Crc32-stream",
+"version": ""
+},
+{
+"name": "create-error-class",
+"version": ""
+},
+{
+"name": "cryptiles",
+"version": ""
+},
+{
+"name": "csharp",
+"version": ""
+},
+{
+"name": "CSharpier",
+"version": "1.2.2"
+},
+{
+"name": "CSS::Tiny",
+"version": "1.20"
+},
+{
+"name": "CSSLint",
+"version": ""
+},
+{
+"name": "ct-with-guava",
+"version": ""
+},
+{
+"name": "Ctt",
+"version": ""
+},
+{
+"name": "ctype",
+"version": ""
+},
+{
+"name": "cURL",
+"version": ""
+},
+{
+"name": "d",
+"version": ""
+},
+{
+"name": "D3.js",
+"version": ""
+},
+{
+"name": "Daniel Cazzulino",
+"version": ""
+},
+{
+"name": "Data::Dumper",
+"version": "2.173"
+},
+{
+"name": "Data::Validate::IP",
+"version": "0.31"
+},
+{
+"name": "Data::Visitor",
+"version": "0.32"
+},
+{
+"name": "DataJS",
+"version": ""
+},
+{
+"name": "DataTables",
+"version": "1.13.8"
+},
+{
+"name": "DataTables",
+"version": "2.0.1"
+},
+{
+"name": "DataTables",
+"version": "3.0.0"
+},
+{
+"name": "datatables.net",
+"version": "1.10.10"
+},
+{
+"name": "Datejs",
+"version": ""
+},
+{
+"name": "dbug_analyze.c",
+"version": ""
+},
+{
+"name": "debug",
+"version": ""
+},
+{
+"name": "debuglog",
+"version": ""
+},
+{
+"name": "decamelize",
+"version": ""
+},
+{
+"name": "decompress-zip",
+"version": ""
+},
+{
+"name": "deep-eql",
+"version": ""
+},
+{
+"name": "deep-extend",
+"version": ""
+},
+{
+"name": "deep-is",
+"version": ""
+},
+{
+"name": "deepmerge",
+"version": ""
+},
+{
+"name": "defaults",
+"version": ""
+},
+{
+"name": "defined",
+"version": ""
+},
+{
+"name": "DefinitelyTyped",
+"version": ""
+},
+{
+"name": "DefinitelyTyped react-copy-to-clipboard",
+"version": ""
+},
+{
+"name": "defs",
+"version": ""
+},
+{
+"name": "del",
+"version": ""
+},
+{
+"name": "delayed-stream",
+"version": ""
+},
+{
+"name": "delegates",
+"version": ""
+},
+{
+"name": "destroy",
+"version": ""
+},
+{
+"name": "detect-indent",
+"version": ""
+},
+{
+"name": "detective",
+"version": ""
+},
+{
+"name": "Devel::Caller",
+"version": "2.07"
+},
+{
+"name": "Devel::CheckLib",
+"version": "1.16"
+},
+{
+"name": "Devel::Cover",
+"version": "1.44"
+},
+{
+"name": "Devel::Cycle",
+"version": "1.12"
+},
+{
+"name": "Devel::GlobalDestruction",
+"version": "0.14"
+},
+{
+"name": "Devel::Hide",
+"version": "0.0015"
+},
+{
+"name": "Devel::LexAlias",
+"version": "0.05"
+},
+{
+"name": "Devel::PartialDump",
+"version": "0.20"
+},
+{
+"name": "Devel::StackTrace::AsHTML",
+"version": "0.15"
+},
+{
+"name": "dezalgo",
+"version": ""
+},
+{
+"name": "django-rest-swagger",
+"version": "2.0.5"
+},
+{
+"name": "DocBook XSL stylesheets",
+"version": ""
+},
+{
+"name": "Dockerfile.tmlanguage",
+"version": ""
+},
+{
+"name": "doctrine",
+"version": ""
+},
+{
+"name": "Document Object Model",
+"version": ""
+},
+{
+"name": "DocumentFormat.OpenXml",
+"version": "2.7.2"
+},
+{
+"name": "DOMPurify",
+"version": ""
+},
+{
+"name": "DotNetOpenAuth",
+"version": ""
+},
+{
+"name": "DotNetZip",
+"version": ""
+},
+{
+"name": "dtl",
+"version": ""
+},
+{
+"name": "dtoa",
+"version": ""
+},
+{
+"name": "duplexify",
+"version": ""
+},
+{
+"name": "easymockobjenesis",
+"version": "1.0"
+},
+{
+"name": "ecc-jsbn",
+"version": ""
+},
+{
+"name": "ECMAScript 5 Shims",
+"version": ""
+},
+{
+"name": "editor",
+"version": ""
+},
+{
+"name": "EE10 :: Jetty :: Servlet Handling",
+"version": "12.1.8"
+},
+{
+"name": "Elasticsearch",
+"version": ""
+},
+{
+"name": "elasticsearch-analysis-stconvert",
+"version": ""
+},
+{
+"name": "elasticsearch-net",
+"version": ""
+},
+{
+"name": "electron",
+"version": ""
+},
+{
+"name": "Elixir programming language",
+"version": "v1.18.3"
+},
+{
+"name": "Encode::Locale",
+"version": "1.05"
+},
+{
+"name": "end-of-stream",
+"version": ""
+},
+{
+"name": "EnterpriseLibrary",
+"version": ""
+},
+{
+"name": "Entity Framework",
+"version": ""
+},
+{
+"name": "Entity Framework",
+"version": "6.5.2"
+},
+{
+"name": "Entity Framework Third Party Content",
+"version": "6.1.3"
+},
+{
+"name": "EntityFrameworkCore",
+"version": "9.0.18"
+},
+{
+"name": "erlang-base",
+"version": "27.2"
+},
+{
+"name": "erlang-cowlib",
+"version": "2.18.0"
+},
+{
+"name": "erlang-erts",
+"version": "27.3.4.14"
+},
+{
+"name": "erlang-erts",
+"version": "27.3.4.16"
+},
+{
+"name": "erlang-os_mon",
+"version": "27.3.4.16"
+},
+{
+"name": "erlang-otp",
+"version": "27.3.4.16"
+},
+{
+"name": "erlang-public_key",
+"version": "27.3.4.16"
+},
+{
+"name": "erlang-runtime_tools",
+"version": "27.3.4.16"
+},
+{
+"name": "erlang-sasl",
+"version": "27.3.4.16"
+},
+{
+"name": "erlang-syntax_tools",
+"version": "27.3.4.16"
+},
+{
+"name": "errno-codes",
+"version": ""
+},
+{
+"name": "error-ex",
+"version": ""
+},
+{
+"name": "es5-ext",
+"version": ""
+},
+{
+"name": "es6-iterator",
+"version": ""
+},
+{
+"name": "es6-map",
+"version": ""
+},
+{
+"name": "es6-set",
+"version": ""
+},
+{
+"name": "es6-shim",
+"version": ""
+},
+{
+"name": "es6-symbol",
+"version": ""
+},
+{
+"name": "es6-weak-map",
+"version": ""
+},
+{
+"name": "escape-string-regexp",
+"version": ""
+},
+{
+"name": "escope",
+"version": ""
+},
+{
+"name": "ESLint",
+"version": ""
+},
+{
+"name": "Eslint-config-defaults",
+"version": ""
+},
+{
+"name": "Eslint-config-standard",
+"version": ""
+},
+{
+"name": "Eslint-plugin-react",
+"version": ""
+},
+{
+"name": "Eslint-plugin-standard",
+"version": ""
+},
+{
+"name": "Espree",
+"version": ""
+},
+{
+"name": "esprima",
+"version": ""
+},
+{
+"name": "esprima-fb",
+"version": ""
+},
+{
+"name": "Esprima.js",
+"version": ""
+},
+{
+"name": "esrecurse",
+"version": ""
+},
+{
+"name": "estraverse",
+"version": ""
+},
+{
+"name": "estraverse-fb",
+"version": ""
+},
+{
+"name": "esutils",
+"version": ""
+},
+{
+"name": "event-emitter",
+"version": ""
+},
+{
+"name": "execa",
+"version": ""
+},
+{
+"name": "exit-hook",
+"version": ""
+},
+{
+"name": "Expect.pm",
+"version": ""
+},
+{
+"name": "Exporter::Easy",
+"version": "0.18"
+},
+{
+"name": "extend",
+"version": ""
+},
+{
+"name": "Extended WPF Toolkit – Community Edition",
+"version": ""
+},
+{
+"name": "extract-opts",
+"version": ""
+},
+{
+"name": "extract-zip",
+"version": ""
+},
+{
+"name": "ExtUtils::Depends",
+"version": "0.8001"
+},
+{
+"name": "ExtUtils::MakeMaker",
+"version": "7.70"
+},
+{
+"name": "F# Compiler",
+"version": ""
+},
+{
+"name": "FaceBook C# SDK",
+"version": ""
+},
+{
+"name": "Facebook fast checksum patch",
+"version": ""
+},
+{
+"name": "facebook patches",
+"version": ""
+},
+{
+"name": "fash-levenshtein",
+"version": ""
+},
+{
+"name": "fast-levenshtein",
+"version": ""
+},
+{
+"name": "FDLIBM",
+"version": ""
+},
+{
+"name": "figures",
+"version": ""
+},
+{
+"name": "File with code from a nczonline.net blog post \"Event delegation in JavaScript\"",
+"version": ""
+},
+{
+"name": "File written by dwd@bell-labs.com",
+"version": ""
+},
+{
+"name": "file-entry-cache",
+"version": ""
+},
+{
+"name": "file-lock",
+"version": ""
+},
+{
+"name": "File::chdir",
+"version": "0.1011"
+},
+{
+"name": "File::Findgrep",
+"version": "0.02"
+},
+{
+"name": "File::pushd",
+"version": "1.016"
+},
+{
+"name": "File::Remove",
+"version": "1.61"
+},
+{
+"name": "File::ShareDir",
+"version": "1.118"
+},
+{
+"name": "File::Sharedir::Install",
+"version": "0.14"
+},
+{
+"name": "File::Slurp",
+"version": "9999.32"
+},
+{
+"name": "filelisting",
+"version": "6.16"
+},
+{
+"name": "fileoverview",
+"version": ""
+},
+{
+"name": "Files with code \"[a]dapted from\" code by Paul Irish",
+"version": ""
+},
+{
+"name": "Files with code \"based on\" John Resig's \"tmpl\" implementation, as well as doT.js",
+"version": ""
+},
+{
+"name": "Files with code from io.js",
+"version": ""
+},
+{
+"name": "Filesys-Notify-Simple",
+"version": "0.14"
+},
+{
+"name": "Filesys::Notify::Simple",
+"version": "0.14"
+},
+{
+"name": "find-up",
+"version": ""
+},
+{
+"name": "findup-sync",
+"version": ""
+},
+{
+"name": "flat-cache",
+"version": ""
+},
+{
+"name": "floating-point-gui.de",
+"version": ""
+},
+{
+"name": "floating-point-gui.de article \"Comparison\"",
+"version": ""
+},
+{
+"name": "flot.github.com",
+"version": "0.8.1"
+},
+{
+"name": "FluentMigrator.DotNet.Cli",
+"version": "6.2.0"
+},
+{
+"name": "Font-Awesome",
+"version": "4.2.0"
+},
+{
+"name": "Font::AFM",
+"version": "1.20"
+},
+{
+"name": "Forensic similarities to Peacock",
+"version": ""
+},
+{
+"name": "forever-agent",
+"version": ""
+},
+{
+"name": "form-data",
+"version": ""
+},
+{
+"name": "Fraction data type",
+"version": "7.3.0"
+},
+{
+"name": "Fred Fishs dbug library",
+"version": ""
+},
+{
+"name": "FreeType",
+"version": ""
+},
+{
+"name": "Freetype 2 Font Engine",
+"version": ""
+},
+{
+"name": "fs-readdir-recursive",
+"version": ""
+},
+{
+"name": "fs-vacuum",
+"version": ""
+},
+{
+"name": "fs-write-stream-atomic",
+"version": ""
+},
+{
+"name": "fs.realpath",
+"version": ""
+},
+{
+"name": "FsGrammar",
+"version": ""
+},
+{
+"name": "fstream",
+"version": ""
+},
+{
+"name": "fstream-ignore",
+"version": ""
+},
+{
+"name": "fstream-npm",
+"version": ""
+},
+{
+"name": "fuzzaldrin-plus",
+"version": ""
+},
+{
+"name": "gauge",
+"version": ""
+},
+{
+"name": "GDB: The GNU Project Debugger",
+"version": ""
+},
+{
+"name": "generate-function",
+"version": ""
+},
+{
+"name": "generate-object-property",
+"version": ""
+},
+{
+"name": "get-stdin",
+"version": ""
+},
+{
+"name": "get-stream",
+"version": ""
+},
+{
+"name": "getmac",
+"version": ""
+},
+{
+"name": "Getopt::Long::Descriptive",
+"version": "0.116"
+},
+{
+"name": "gherkin",
+"version": "17.0.1"
+},
+{
+"name": "Git Credential Manager for Windows",
+"version": ""
+},
+{
+"name": "Git for Windows",
+"version": ""
+},
+{
+"name": "Git Logo by Jason Long",
+"version": ""
+},
+{
+"name": "GitHub Extension for Visual Studio",
+"version": ""
+},
+{
+"name": "GitInfo",
+"version": ""
+},
+{
+"name": "Glob",
+"version": ""
+},
+{
+"name": "Glob implementation from OpenBSD",
+"version": ""
+},
+{
+"name": "Globalmousekeyhook",
+"version": ""
+},
+{
+"name": "globals",
+"version": ""
+},
+{
+"name": "globby",
+"version": ""
+},
+{
+"name": "globule",
+"version": ""
+},
+{
+"name": "Gnuplot file",
+"version": ""
+},
+{
+"name": "Google API Common Protos",
+"version": "2.3.0"
+},
+{
+"name": "Google API Extensions",
+"version": "3.3.0"
+},
+{
+"name": "Google APIs Auth Client Library",
+"version": "1.48.0"
+},
+{
+"name": "Google APIs Client Library",
+"version": "1.48.0"
+},
+{
+"name": "Google APIs Core Client Library",
+"version": "1.48.0"
+},
+{
+"name": "Google C++ Testing Framework",
+"version": ""
+},
+{
+"name": "Google Controlling Master Thread I/O Rate Patch",
+"version": ""
+},
+{
+"name": "Google Mock",
+"version": ""
+},
+{
+"name": "Google SMP Patch",
+"version": ""
+},
+{
+"name": "Google Test Adapter",
+"version": ""
+},
+{
+"name": "Google Test Framework",
+"version": ""
+},
+{
+"name": "google-perftools",
+"version": ""
+},
+{
+"name": "Google.Api.Gax.Grpc",
+"version": "3.3.0"
+},
+{
+"name": "Google.Api.Gax.Grpc.GrpcC ore",
+"version": "3.3.0"
+},
+{
+"name": "Google.Cloud.Firestore",
+"version": "2.4.0"
+},
+{
+"name": "Google.Cloud.Firestore.V1",
+"version": "2.3.0"
+},
+{
+"name": "Google.Longrunning",
+"version": "2.1.0"
+},
+{
+"name": "Google.Protobuf/C#",
+"version": "3.15.8"
+},
+{
+"name": "Google.ProtocolBuffers",
+"version": ""
+},
+{
+"name": "googleguava",
+"version": "32.1.3"
+},
+{
+"name": "googletest",
+"version": ""
+},
+{
+"name": "got",
+"version": ""
+},
+{
+"name": "gperftools",
+"version": ""
+},
+{
+"name": "graceful-fs",
+"version": ""
+},
+{
+"name": "graceful-readlink",
+"version": ""
+},
+{
+"name": "grammars",
+"version": ""
+},
+{
+"name": "Gridster.js",
+"version": ""
+},
+{
+"name": "grpc",
+"version": "2.36.4"
+},
+{
+"name": "grpc/grpc-dotnet",
+"version": "2.36.4"
+},
+{
+"name": "Grunt",
+"version": ""
+},
+{
+"name": "Grunt-bower-task",
+"version": ""
+},
+{
+"name": "grunt-cli",
+"version": ""
+},
+{
+"name": "Grunt-concat",
+"version": ""
+},
+{
+"name": "Grunt-contrib-clean",
+"version": ""
+},
+{
+"name": "Grunt-contrib-copy",
+"version": ""
+},
+{
+"name": "Grunt-contrib-jshint",
+"version": ""
+},
+{
+"name": "Grunt-contrib-watch",
+"version": ""
+},
+{
+"name": "Grunt-cssmin",
+"version": ""
+},
+{
+"name": "Grunt-uglify",
+"version": ""
+},
+{
+"name": "guard/listen",
+"version": "1.3.0"
+},
+{
+"name": "Guava",
+"version": ""
+},
+{
+"name": "Guava InternalFutureFailureAccess and InternalFutures",
+"version": "1.0.1"
+},
+{
+"name": "Guava ListenableFuture only",
+"version": "9999.0-empty-to-avoid-confli"
+},
+{
+"name": "gulp-concat",
+"version": ""
+},
+{
+"name": "gulp-cssmin",
+"version": ""
+},
+{
+"name": "gulp-uglify",
+"version": ""
+},
+{
+"name": "Hamcrest",
+"version": "1.3"
+},
+{
+"name": "hammer.js",
+"version": ""
+},
+{
+"name": "handlebars.js",
+"version": ""
+},
+{
+"name": "har-validator",
+"version": ""
+},
+{
+"name": "HarfBuzzSharp",
+"version": "2.8.2.3"
+},
+{
+"name": "HarfBuzzSharp.NativeAsset s.Linux",
+"version": "2.8.2.4-preview.84"
+},
+{
+"name": "has-ansi",
+"version": ""
+},
+{
+"name": "has-unicode",
+"version": ""
+},
+{
+"name": "hash-base",
+"version": ""
+},
+{
+"name": "Hash::MultiValue",
+"version": "0.16"
+},
+{
+"name": "hawk",
+"version": ""
+},
+{
+"name": "hcatlin's sass",
+"version": "3.4.22"
+},
+{
+"name": "HighCharts.js",
+"version": ""
+},
+{
+"name": "Highlight.js",
+"version": ""
+},
+{
+"name": "Highlight.js",
+"version": "9.18.0"
+},
+{
+"name": "history",
+"version": ""
+},
+{
+"name": "hoek",
+"version": ""
+},
+{
+"name": "home-or-tmp",
+"version": ""
+},
+{
+"name": "Hook::LexWrap",
+"version": "0.26"
+},
+{
+"name": "hosted-git-info",
+"version": ""
+},
+{
+"name": "hot-f0f4863e",
+"version": ""
+},
+{
+"name": "HTML Agility Pack",
+"version": ""
+},
+{
+"name": "html-agility-pack",
+"version": ""
+},
+{
+"name": "html5-boilerplate",
+"version": ""
+},
+{
+"name": "html5shiv",
+"version": "3.7.3"
+},
+{
+"name": "html5shiv-rails",
+"version": "0.0.1"
+},
+{
+"name": "HTML::Lint",
+"version": "2.32"
+},
+{
+"name": "HTML::Tree",
+"version": "5.07"
+},
+{
+"name": "HtmlTextWriter",
+"version": "3.0.2"
+},
+{
+"name": "HTTP Parser",
+"version": ""
+},
+{
+"name": "Http-Multipart-Data-Parser",
+"version": "10.0.0"
+},
+{
+"name": "http-proxy-agent",
+"version": ""
+},
+{
+"name": "http-signature",
+"version": ""
+},
+{
+"name": "HTTP::Body",
+"version": "1.23"
+},
+{
+"name": "HTTP::Cookies",
+"version": "6.11"
+},
+{
+"name": "HTTP::Date",
+"version": "6.06"
+},
+{
+"name": "HTTP::Entity::Parser",
+"version": "0.25"
+},
+{
+"name": "HTTP::Headers::Fast",
+"version": "0.22"
+},
+{
+"name": "HTTP::MultiPartParser",
+"version": "0.02"
+},
+{
+"name": "HTTP::Negotiate",
+"version": "6.01"
+},
+{
+"name": "HTTP::Server::Simple",
+"version": "0.52"
+},
+{
+"name": "https-proxy-agent",
+"version": ""
+},
+{
+"name": "Humanizer",
+"version": ""
+},
+{
+"name": "Hystrix",
+"version": ""
+},
+{
+"name": "iconv-lite",
+"version": ""
+},
+{
+"name": "icu",
+"version": ""
+},
+{
+"name": "ICU - International Components for Unicode Third Party Content",
+"version": ""
+},
+{
+"name": "IdentityModel Extensions for .NET",
+"version": "6.35.0"
+},
+{
+"name": "IdentityModel Extensions for .NET",
+"version": "8.19.2"
+},
+{
+"name": "IdentityModel Extensions for .NET",
+"version": "8.22.0"
+},
+{
+"name": "IETF RFC 1321: RSA Data Security, Inc. MD5 Message-Digest Algorithm",
+"version": ""
+},
+{
+"name": "IETF RFC 2553: Basic Socket Interface Extensions for IPv6",
+"version": ""
+},
+{
+"name": "IETF RFC 3492: Bootstring encoding of Unicode for Internationalized Domain Names in Applications",
+"version": ""
+},
+{
+"name": "iferr",
+"version": ""
+},
+{
+"name": "ignore",
+"version": ""
+},
+{
+"name": "ILSpy",
+"version": ""
+},
+{
+"name": "Images from SilkIcons",
+"version": ""
+},
+{
+"name": "immutable-js",
+"version": ""
+},
+{
+"name": "ImpromptuInterface",
+"version": ""
+},
+{
+"name": "imurmurhash",
+"version": ""
+},
+{
+"name": "inc-latest",
+"version": "0.500"
+},
+{
+"name": "Independent JPEG Group's JPEG Library",
+"version": ""
+},
+{
+"name": "inflight",
+"version": ""
+},
+{
+"name": "inherit",
+"version": ""
+},
+{
+"name": "inherits",
+"version": ""
+},
+{
+"name": "ini",
+"version": ""
+},
+{
+"name": "ini-parser",
+"version": ""
+},
+{
+"name": "init-package-json",
+"version": ""
+},
+{
+"name": "inquirer",
+"version": ""
+},
+{
+"name": "insight",
+"version": ""
+},
+{
+"name": "intellij-core",
+"version": ""
+},
+{
+"name": "intellij-core.jar",
+"version": ""
+},
+{
+"name": "International Components for Unicode",
+"version": ""
+},
+{
+"name": "intersect",
+"version": ""
+},
+{
+"name": "InversifyJS",
+"version": ""
+},
+{
+"name": "invert-kv",
+"version": ""
+},
+{
+"name": "IO",
+"version": "1.42"
+},
+{
+"name": "IO",
+"version": "1.55"
+},
+{
+"name": "io.js",
+"version": ""
+},
+{
+"name": "IO::Any",
+"version": "0.09"
+},
+{
+"name": "IO::Compress",
+"version": "2.212"
+},
+{
+"name": "IO::HTML",
+"version": "1.004"
+},
+{
+"name": "IO::Interface",
+"version": "1.09"
+},
+{
+"name": "IO::Tty",
+"version": "1.20"
+},
+{
+"name": "IPC::Run",
+"version": "0.90"
+},
+{
+"name": "IPC::System::Simple",
+"version": "1.30"
+},
+{
+"name": "is-absolute",
+"version": ""
+},
+{
+"name": "is-admin",
+"version": ""
+},
+{
+"name": "is-arrayish",
+"version": ""
+},
+{
+"name": "is-buffer",
+"version": ""
+},
+{
+"name": "is-builtin-module",
+"version": ""
+},
+{
+"name": "is-elevated",
+"version": ""
+},
+{
+"name": "is-finite",
+"version": ""
+},
+{
+"name": "is-fullwidth-code-point",
+"version": ""
+},
+{
+"name": "is-integer",
+"version": ""
+},
+{
+"name": "is-my-json-valid",
+"version": ""
+},
+{
+"name": "is-npm",
+"version": ""
+},
+{
+"name": "is-path-cwd",
+"version": ""
+},
+{
+"name": "is-path-in-cwd",
+"version": ""
+},
+{
+"name": "is-path-inside",
+"version": ""
+},
+{
+"name": "is-plain-obj",
+"version": ""
+},
+{
+"name": "is-property",
+"version": ""
+},
+{
+"name": "is-redirect",
+"version": ""
+},
+{
+"name": "is-relative",
+"version": ""
+},
+{
+"name": "is-resolvable",
+"version": ""
+},
+{
+"name": "is-root",
+"version": ""
+},
+{
+"name": "is-stream",
+"version": ""
+},
+{
+"name": "is-utf8",
+"version": ""
+},
+{
+"name": "isarray",
+"version": ""
+},
+{
+"name": "isemail",
+"version": ""
+},
+{
+"name": "isexe",
+"version": ""
+},
+{
+"name": "isstream",
+"version": ""
+},
+{
+"name": "ix-ASYN",
+"version": ""
+},
+{
+"name": "Jackson Jakarta-RS: JSON",
+"version": "2.18.2"
+},
+{
+"name": "jackson-annotations",
+"version": "2.18.2"
+},
+{
+"name": "jackson-annotations",
+"version": "2.20"
+},
+{
+"name": "jackson-core",
+"version": "2.18.2"
+},
+{
+"name": "jackson-core",
+"version": "2.20.1"
+},
+{
+"name": "jackson-databind",
+"version": "2.18.2"
+},
+{
+"name": "jackson-databind",
+"version": "2.20.1"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.13.4"
+},
+{
+"name": "jackson-modules-base",
+"version": "2.18.2"
+},
+{
+"name": "Jakarta Activation API",
+"version": "2.1.4"
+},
+{
+"name": "Jakarta Activation API",
+"version": "2.2.0-M2"
+},
+{
+"name": "jakarta.xml.bind:jakarta.xml. bind-api",
+"version": "4.0.2"
+},
+{
+"name": "jakartaee/rest",
+"version": "3.1.0"
+},
+{
+"name": "Janino",
+"version": "3.1.12"
+},
+{
+"name": "JasPer Project",
+"version": ""
+},
+{
+"name": "Java Native Access (JNA)",
+"version": "5.10.0"
+},
+{
+"name": "Java Servlet API",
+"version": "6.2.0-M2"
+},
+{
+"name": "java-sizeof",
+"version": "0.0.5"
+},
+{
+"name": "Javascript Cookie Library with jQuery bindings and JSON support",
+"version": ""
+},
+{
+"name": "JavaScript Lint",
+"version": ""
+},
+{
+"name": "JavaScript.tmLanguage",
+"version": ""
+},
+{
+"name": "Javolution",
+"version": ""
+},
+{
+"name": "JAXB JXC",
+"version": "4.0.5"
+},
+{
+"name": "jaxb-api",
+"version": "2.3.1.wso2v2"
+},
+{
+"name": "JCommander Library",
+"version": "1.72"
+},
+{
+"name": "jdk8u",
+"version": ""
+},
+{
+"name": "jemalloc",
+"version": ""
+},
+{
+"name": "Jenkins logo",
+"version": ""
+},
+{
+"name": "JetBrains ReSharper",
+"version": ""
+},
+{
+"name": "Jetty Core :: Sessions",
+"version": "12.1.13"
+},
+{
+"name": "JGit test",
+"version": ""
+},
+{
+"name": "JGit xhistogram",
+"version": ""
+},
+{
+"name": "jimfs",
+"version": ""
+},
+{
+"name": "jju",
+"version": ""
+},
+{
+"name": "jMock 2 Core",
+"version": "2.13.1"
+},
+{
+"name": "JNA",
+"version": ""
+},
+{
+"name": "jodid25519",
+"version": ""
+},
+{
+"name": "joi",
+"version": ""
+},
+{
+"name": "jqGrid",
+"version": ""
+},
+{
+"name": "jqTree",
+"version": ""
+},
+{
+"name": "jQuery",
+"version": ""
+},
+{
+"name": "jQuery",
+"version": "1.5"
+},
+{
+"name": "jQuery",
+"version": "3.4.0"
+},
+{
+"name": "jQuery",
+"version": "3.7.1"
+},
+{
+"name": "jQuery cookie plugin",
+"version": ""
+},
+{
+"name": "jQuery Delay",
+"version": ""
+},
+{
+"name": "jQuery Mobile",
+"version": ""
+},
+{
+"name": "jQuery postMessage",
+"version": ""
+},
+{
+"name": "jQuery Templates",
+"version": ""
+},
+{
+"name": "jQuery Timepicker Addon",
+"version": ""
+},
+{
+"name": "jQuery UI",
+"version": "1.13.3"
+},
+{
+"name": "jQuery Validation",
+"version": ""
+},
+{
+"name": "jQuery Watermark plugin",
+"version": ""
+},
+{
+"name": "jquery-base64",
+"version": ""
+},
+{
+"name": "jquery-bootstrap-pagination",
+"version": "1.2.0"
+},
+{
+"name": "jquery-datatables-bundlev3.8.0",
+"version": ""
+},
+{
+"name": "jquery-migrate",
+"version": "1.1.1"
+},
+{
+"name": "jquery-steps",
+"version": "1.1.0"
+},
+{
+"name": "jquery-treetable",
+"version": "2.3.1"
+},
+{
+"name": "jquery-treetable-qs",
+"version": "3.1.0"
+},
+{
+"name": "jquery-validation_jquery-validation",
+"version": "1.20.0"
+},
+{
+"name": "jQuery.FilterTable",
+"version": "1.5.5"
+},
+{
+"name": "jQuery.LazyLoad",
+"version": ""
+},
+{
+"name": "jQueryUI",
+"version": ""
+},
+{
+"name": "js-sha256",
+"version": ""
+},
+{
+"name": "js-tokens",
+"version": ""
+},
+{
+"name": "js-yaml",
+"version": ""
+},
+{
+"name": "jsesc",
+"version": ""
+},
+{
+"name": "JSON",
+"version": "4.10"
+},
+{
+"name": "JSON Web Token Handler For the Microsoft .Net Framework",
+"version": "4.5 6.35.0"
+},
+{
+"name": "JSON Web Token Handler For the Microsoft .Net Framework",
+"version": "4.5 8.19.2"
+},
+{
+"name": "JSON Web Token Handler For the Microsoft .Net Framework",
+"version": "4.5 8.22.0"
+},
+{
+"name": "json-document-transforms",
+"version": ""
+},
+{
+"name": "json-edm-parser",
+"version": ""
+},
+{
+"name": "json-parse-helpfulerror",
+"version": ""
+},
+{
+"name": "JSON-PP",
+"version": "2.27203"
+},
+{
+"name": "JSON-PP",
+"version": "4.00"
+},
+{
+"name": "json-rpc-peer",
+"version": ""
+},
+{
+"name": "json-rpc-protocol",
+"version": ""
+},
+{
+"name": "json-stable-stringify",
+"version": ""
+},
+{
+"name": "json-stringify-safe",
+"version": ""
+},
+{
+"name": "Json.NET",
+"version": ""
+},
+{
+"name": "Json.NET",
+"version": "13.0.1"
+},
+{
+"name": "Json.NET",
+"version": "13.0.4"
+},
+{
+"name": "Json2.js",
+"version": ""
+},
+{
+"name": "json5",
+"version": ""
+},
+{
+"name": "JSON::Any",
+"version": "1.40"
+},
+{
+"name": "JSON::Util",
+"version": "0.06"
+},
+{
+"name": "jsonpointer",
+"version": ""
+},
+{
+"name": "jsonwebtoken",
+"version": ""
+},
+{
+"name": "JSR-250 Common Annotations for the JavaTM Platform",
+"version": "1.0"
+},
+{
+"name": "JTS Topology Suite",
+"version": ""
+},
+{
+"name": "junk",
+"version": ""
+},
+{
+"name": "Kajabity tools",
+"version": ""
+},
+{
+"name": "Katana",
+"version": ""
+},
+{
+"name": "KaTeX",
+"version": ""
+},
+{
+"name": "kerberos",
+"version": ""
+},
+{
+"name": "Kerberos5 Third Party content Unspecifed",
+"version": ""
+},
+{
+"name": "kernel32.privateprofilestring Third Party Content",
+"version": ""
+},
+{
+"name": "kind-of",
+"version": ""
+},
+{
+"name": "Knockout Validation",
+"version": ""
+},
+{
+"name": "knockout-secure-binding",
+"version": ""
+},
+{
+"name": "KnockoutJS",
+"version": ""
+},
+{
+"name": "kotlin:stdlib",
+"version": ""
+},
+{
+"name": "LGPL 2.1 Contribution to MySQL Community Database Server",
+"version": ""
+},
+{
+"name": "libaio",
+"version": ""
+},
+{
+"name": "libalgorithm-diff-perl",
+"version": "1.201"
+},
+{
+"name": "libalien-build-perl",
+"version": "2.84"
+},
+{
+"name": "libappconfig-perl",
+"version": "1.71"
+},
+{
+"name": "libb-cow-perl",
+"version": "0.007"
+},
+{
+"name": "libb-debug-perl",
+"version": "1.26"
+},
+{
+"name": "libcapture-tiny-perl",
+"version": "0.50"
+},
+{
+"name": "libcatalyst-plugin-session-state-cookie-perl",
+"version": "0.18"
+},
+{
+"name": "libcbor",
+"version": ""
+},
+{
+"name": "libclass-data-inheritable-perl",
+"version": "0.10"
+},
+{
+"name": "libclass-inspector-perl",
+"version": "1.36"
+},
+{
+"name": "libclass-load-xs-perl",
+"version": "0.25"
+},
+{
+"name": "libclass-tiny-perl",
+"version": "1.008"
+},
+{
+"name": "libclone-choose-perl",
+"version": "0.010"
+},
+{
+"name": "libcookie-baker-perl",
+"version": "0.12"
+},
+{
+"name": "libdata-dump-perl",
+"version": "1.25"
+},
+{
+"name": "libdata-optlist-perl",
+"version": "0.114"
+},
+{
+"name": "libdevel-overloadinfo-perl",
+"version": "0.007"
+},
+{
+"name": "libdevel-stacktrace-perl",
+"version": "2.0500"
+},
+{
+"name": "libdevel-symdump-perl",
+"version": "2.18"
+},
+{
+"name": "libdigest-sha-perl",
+"version": "6.04"
+},
+{
+"name": "libdist-checkconflicts-perl",
+"version": "0.11"
+},
+{
+"name": "Libedit",
+"version": ""
+},
+{
+"name": "Libedit Third Party Content",
+"version": ""
+},
+{
+"name": "libencode-perl",
+"version": "3.19"
+},
+{
+"name": "libencode-perl",
+"version": "3.21"
+},
+{
+"name": "liberror-perl",
+"version": "0.17029"
+},
+{
+"name": "libeval-closure-perl",
+"version": "0.14"
+},
+{
+"name": "Libevent Third Party Content",
+"version": ""
+},
+{
+"name": "libexporter-tiny-perl",
+"version": "1.006002"
+},
+{
+"name": "libextutils-config-perl",
+"version": "0.010"
+},
+{
+"name": "libextutils-helpers-perl",
+"version": "0.028"
+},
+{
+"name": "libextutils-installpaths-perl",
+"version": "0.014"
+},
+{
+"name": "libfido2",
+"version": ""
+},
+{
+"name": "libfile-slurper-perl",
+"version": "0.014"
+},
+{
+"name": "libfile-which-perl",
+"version": "0.05"
+},
+{
+"name": "libfile-which-perl",
+"version": "1.27"
+},
+{
+"name": "libhash-merge-perl",
+"version": "0.302"
+},
+{
+"name": "libhtml-form-perl",
+"version": "6.12"
+},
+{
+"name": "libhtml-parser-perl",
+"version": "3.83"
+},
+{
+"name": "libhtml-tagset-perl",
+"version": "3.24"
+},
+{
+"name": "libhttp-cookiejar-perl",
+"version": "0.014"
+},
+{
+"name": "libhttp-daemon-perl",
+"version": "6.16"
+},
+{
+"name": "libhttp-message-perl",
+"version": "7.00"
+},
+{
+"name": "libimport-into-perl",
+"version": "1.002005"
+},
+{
+"name": "libimporter-perl",
+"version": "0.026"
+},
+{
+"name": "libintl-perl",
+"version": "1.34"
+},
+{
+"name": "libio-compress-base-perl",
+"version": "2.015"
+},
+{
+"name": "libio-socket-inet6-perl",
+"version": "2.73"
+},
+{
+"name": "libio-string-perl",
+"version": "1.08"
+},
+{
+"name": "libio-stringy-perl",
+"version": "2.113"
+},
+{
+"name": "libipc-run-perl",
+"version": "20231003.0"
+},
+{
+"name": "libipc-run3-perl",
+"version": "0.049"
+},
+{
+"name": "libjson-maybexs-perl",
+"version": "1.004008"
+},
+{
+"name": "libjson-parse-perl",
+"version": "0.62"
+},
+{
+"name": "libjson-path-perl",
+"version": "1.0.6"
+},
+{
+"name": "libjson-xs-perl",
+"version": "4.030"
+},
+{
+"name": "liblist-moreutils-perl",
+"version": "0.430"
+},
+{
+"name": "liblist-moreutils-xs-perl",
+"version": "0.430"
+},
+{
+"name": "liblist-someutils-xs-perl",
+"version": "0.58"
+},
+{
+"name": "liblv-perl",
+"version": "0.006"
+},
+{
+"name": "libmath-bigint-perl",
+"version": "2.003002"
+},
+{
+"name": "libmodule-build-perl",
+"version": "0.423400"
+},
+{
+"name": "libmodule-install-perl",
+"version": "1.18"
+},
+{
+"name": "libmodule-install-perl",
+"version": "1.21"
+},
+{
+"name": "libmodule-pluggable-perl",
+"version": "6.3"
+},
+{
+"name": "libmodule-runtime-conflicts-perl",
+"version": "0.003"
+},
+{
+"name": "libmodule-runtime-perl",
+"version": "0.016"
+},
+{
+"name": "libmoo-perl",
+"version": "2.005005"
+},
+{
+"name": "libmoose-perl",
+"version": "2.2207"
+},
+{
+"name": "libnamespace-clean-perl",
+"version": "0.27"
+},
+{
+"name": "libnet-address-ip-local-perl",
+"version": "0.1.2"
+},
+{
+"name": "libnet-interface-perl",
+"version": "1.016"
+},
+{
+"name": "libnetaddr-ip-perl",
+"version": "4.079"
+},
+{
+"name": "libobject-signature-perl",
+"version": "1.08"
+},
+{
+"name": "libpackage-stash-perl",
+"version": "0.30"
+},
+{
+"name": "libpackage-stash-perl",
+"version": "0.40"
+},
+{
+"name": "libparams-util-perl",
+"version": "1.102"
+},
+{
+"name": "libparams-validate-perl",
+"version": "1.31"
+},
+{
+"name": "libplack-middleware-fixmissingbodyinredirect-perl",
+"version": "0.12"
+},
+{
+"name": "libplack-middleware-methodoverride-perl",
+"version": "0.20"
+},
+{
+"name": "libplack-test-externalserver-perl",
+"version": "0.02"
+},
+{
+"name": "libpod-coverage-perl",
+"version": "0.23"
+},
+{
+"name": "libpod-parser-perl",
+"version": "1.67"
+},
+{
+"name": "libpod-simple-perl",
+"version": "3.45"
+},
+{
+"name": "libppi-html-perl",
+"version": "1.08"
+},
+{
+"name": "libppi-perl",
+"version": "1.281"
+},
+{
+"name": "libscalar-list-utils-perl",
+"version": "1.63"
+},
+{
+"name": "libsereal-decoder-perl",
+"version": "5.004+ds"
+},
+{
+"name": "libsereal-encoder-perl",
+"version": "5.004+ds"
+},
+{
+"name": "libsocket-perl",
+"version": "2.027"
+},
+{
+"name": "libspecio-perl",
+"version": "0.49"
+},
+{
+"name": "libsub-exporter-progressive-perl",
+"version": "0.001013"
+},
+{
+"name": "libsub-install-perl",
+"version": "0.929"
+},
+{
+"name": "libsub-name-perl",
+"version": "0.28"
+},
+{
+"name": "libsub-quote-perl",
+"version": "2.006008"
+},
+{
+"name": "libsub-uplevel-perl",
+"version": "0.2800"
+},
+{
+"name": "libtemplate-perl-doc",
+"version": "3.102"
+},
+{
+"name": "libterm-table-perl",
+"version": "0.018"
+},
+{
+"name": "libterm-ui-perl",
+"version": "0.50"
+},
+{
+"name": "libtest-cleannamespaces-perl",
+"version": "0.24"
+},
+{
+"name": "libtest-deep-perl",
+"version": "1.204"
+},
+{
+"name": "libtest-differences-perl",
+"version": "0.71"
+},
+{
+"name": "libtest-mockobject-perl",
+"version": "1.20200122"
+},
+{
+"name": "libtest-nowarnings-perl",
+"version": "1.06"
+},
+{
+"name": "libtest-pod-perl",
+"version": "1.52"
+},
+{
+"name": "libtest-requiresinternet-perl",
+"version": "0.05"
+},
+{
+"name": "libtest-simple-perl",
+"version": "1.302190"
+},
+{
+"name": "libtest-simple-perl",
+"version": "1.302199"
+},
+{
+"name": "libtest-simple-perl",
+"version": "1.302204"
+},
+{
+"name": "libtest-time-perl",
+"version": "0.092"
+},
+{
+"name": "libtest-warn-perl",
+"version": "0.37"
+},
+{
+"name": "libtest2-suite-perl",
+"version": "0.000138"
+},
+{
+"name": "libtest2-tools-explain-perl",
+"version": "0.02"
+},
+{
+"name": "libtext-diff-perl",
+"version": "1.45"
+},
+{
+"name": "libtie-toobject-perl",
+"version": "0.03"
+},
+{
+"name": "libtimedate-perl",
+"version": "2.3300"
+},
+{
+"name": "libtypes-serialiser-perl",
+"version": "1.01"
+},
+{
+"name": "libuniversal-can-perl",
+"version": "1.20140328"
+},
+{
+"name": "libwww-perl",
+"version": "6.49"
+},
+{
+"name": "libwww-perl",
+"version": "6.77"
+},
+{
+"name": "libwww-robotrules-perl",
+"version": "6.02"
+},
+{
+"name": "libxml-sax-perl",
+"version": "1.09"
+},
+{
+"name": "libxstring-perl",
+"version": "0.005"
+},
+{
+"name": "List::SomeUtils",
+"version": "0.59"
+},
+{
+"name": "List::SomeUtils::XS",
+"version": "0.58"
+},
+{
+"name": "load-json-file",
+"version": ""
+},
+{
+"name": "Locale::Codes",
+"version": "3.56"
+},
+{
+"name": "Locale::Maketext",
+"version": "1.28"
+},
+{
+"name": "Locale::Maketext",
+"version": "1.33"
+},
+{
+"name": "Locale::Maketext::Simple",
+"version": "0.20_01"
+},
+{
+"name": "lodash",
+"version": ""
+},
+{
+"name": "Lodash",
+"version": "4.17.21"
+},
+{
+"name": "Lodash",
+"version": "4.18.1"
+},
+{
+"name": "lodash.assign",
+"version": ""
+},
+{
+"name": "Log::Message",
+"version": "0.08"
+},
+{
+"name": "Logback",
+"version": "1.5.26"
+},
+{
+"name": "Logback",
+"version": "1.6.3"
+},
+{
+"name": "LTEAdmin",
+"version": "1.0"
+},
+{
+"name": "LTEAdmin",
+"version": "v3.0.0"
+},
+{
+"name": "LWP::MediaTypes",
+"version": "6.04"
+},
+{
+"name": "lz4",
+"version": ""
+},
+{
+"name": "MailKit: A cross-platform.NETmail-client library based on MimeKit.",
+"version": "4.17.0"
+},
+{
+"name": "Mapster",
+"version": "10.0.11"
+},
+{
+"name": "Mapster.Core",
+"version": "10.0.11"
+},
+{
+"name": "Mapster.DependencyInjectio n",
+"version": "10.0.11"
+},
+{
+"name": "Markdig.Signed",
+"version": "0.18.3"
+},
+{
+"name": "markedjs",
+"version": "0.8.2"
+},
+{
+"name": "markedjs",
+"version": "v1.1.1"
+},
+{
+"name": "martinus/robin-hood-hashing",
+"version": ""
+},
+{
+"name": "MD5 Message-Digest Algorithm",
+"version": ""
+},
+{
+"name": "MeCab",
+"version": ""
+},
+{
+"name": "MeCab Dictionary",
+"version": ""
+},
+{
+"name": "mecab-ipadic",
+"version": "2.7.0+20070801"
+},
+{
+"name": "mecab-ipadic-EUCJP",
+"version": "2.7.0.20070801"
+},
+{
+"name": "Memcached.pm",
+"version": ""
+},
+{
+"name": "mganss/HtmlSanitizer",
+"version": "9.1.982"
+},
+{
+"name": "micrometer-commons",
+"version": "1.16.5"
+},
+{
+"name": "micrometer-observation",
+"version": "1.16.5"
+},
+{
+"name": "Microsoft Application Insights",
+"version": "2.13.1"
+},
+{
+"name": "Microsoft Application Insights",
+"version": "2.23.0"
+},
+{
+"name": "Microsoft ASP.NET Core API Versioning",
+"version": "5.1.0"
+},
+{
+"name": "Microsoft ASP.NET SignalR",
+"version": "2.4.2"
+},
+{
+"name": "Microsoft ASP.NET Web API Client Libraries",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft jQuery Unobtrusive Ajax",
+"version": "3.2.6"
+},
+{
+"name": "Microsoft jQuery Unobtrusive Validation",
+"version": "1.0"
+},
+{
+"name": "Microsoft jQuery Unobtrusive Validation",
+"version": "2.0.20126.16343"
+},
+{
+"name": "Microsoft jQuery Unobtrusive Validation",
+"version": "4.0.0"
+},
+{
+"name": "Microsoft Platform SDK February",
+"version": "2003"
+},
+{
+"name": "Microsoft PowerShell",
+"version": "7.6.1"
+},
+{
+"name": "Microsoft PowerShell",
+"version": "7.6.4"
+},
+{
+"name": "Microsoft Visual Studio Third Party Content",
+"version": "2012"
+},
+{
+"name": "Microsoft Windows Driver Kit - WDK",
+"version": "7.0.0.7600"
+},
+{
+"name": "Microsoft Windows SDK for Windows 7 and .NET Framework 4",
+"version": "8.1 6.3.9600"
+},
+{
+"name": "Microsoft.AspNetCore.Authe ntication.Certificate",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Authe ntication.Certificate",
+"version": "8.0.22"
+},
+{
+"name": "Microsoft.AspNetCore.Authe ntication.JwtBearer",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Authe ntication.JwtBearer",
+"version": "8.0.24"
+},
+{
+"name": "Microsoft.AspNetCore.Authe ntication.Negotiate",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Crypt ography.Internal",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Crypt ography.KeyDerivation",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Http. Connections.Client",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Http. Connections.Client",
+"version": "8.0.24"
+},
+{
+"name": "Microsoft.AspNetCore.Json Patch",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc. NewtonsoftJson",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Signa lR.Client",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Signa lR.Client.Core",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.AspNetCore.Syste mWebAdapters",
+"version": "2.3.0"
+},
+{
+"name": "Microsoft.AspNetCore.Syste mWebAdapters.Abstractions",
+"version": "2.3.0"
+},
+{
+"name": "Microsoft.AspNetCore.Syste mWebAdapters.CoreService s",
+"version": "2.3.0"
+},
+{
+"name": "Microsoft.Bcl.Async Third party Content",
+"version": "1.0.16"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterface s",
+"version": "10.0.5"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterface s",
+"version": "10.0.9"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterface s",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Bcl.Cryptography",
+"version": "10.0.2"
+},
+{
+"name": "Microsoft.Bcl.HashCode",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.CodeAnalysis.Anal yzers",
+"version": "2.9.6"
+},
+{
+"name": "Microsoft.CodeAnalysis.Co mmon",
+"version": "3.4.0"
+},
+{
+"name": "Microsoft.CodeAnalysis.CSh arp",
+"version": "3.4.0"
+},
+{
+"name": "Microsoft.Data.SqlClient",
+"version": "6.1.4"
+},
+{
+"name": "Microsoft.dotnet-interactive",
+"version": "1.0.707101"
+},
+{
+"name": "Microsoft.EntityFrameworkC ore.Abstractions",
+"version": "9.0.18"
+},
+{
+"name": "Microsoft.EntityFrameworkC ore.Relational",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft.EntityFrameworkC ore.Relational",
+"version": "9.0.18"
+},
+{
+"name": "Microsoft.Extensions.Config uration",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Config uration.Abstractions",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Config uration.Abstractions",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft.Extensions.Config uration.Binder",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Depen dencyInjection",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Depen dencyInjection.Abstractions",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Depen dencyInjection.Abstractions",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.Depen dencyModel",
+"version": "10.0.0"
+},
+{
+"name": "Microsoft.Extensions.Diagno stics",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Diagno stics.Abstractions",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Hostin g.Systemd",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Hostin g.WindowsServices",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Http.P olly",
+"version": "8.0.20"
+},
+{
+"name": "Microsoft.Extensions.Identity .Core",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Loggin g",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Loggin g.Abstractions",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft.Extensions.Object Pool",
+"version": "10.0.5"
+},
+{
+"name": "Microsoft.Extensions.Option s",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Option s.ConfigurationExtensions",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Extensions.Primitiv es",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Identity.Client",
+"version": "4.61.3"
+},
+{
+"name": "Microsoft.Identity.Client.Exte nsions.Msal",
+"version": "4.61.3"
+},
+{
+"name": "Microsoft.Identity.Client.Exte nsions.Msal",
+"version": "4.78.0"
+},
+{
+"name": "Microsoft.Identity.Client.Exte nsions.Msal",
+"version": "4.84.2"
+},
+{
+"name": "Microsoft.IdentityModel.Abst ractions",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Abst ractions",
+"version": "8.19.2"
+},
+{
+"name": "Microsoft.IdentityModel.Abst ractions",
+"version": "8.22.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logg ing",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logg ing",
+"version": "8.19.2"
+},
+{
+"name": "Microsoft.IdentityModel.Logg ing",
+"version": "8.22.0"
+},
+{
+"name": "Microsoft.IdentityModel.Prot ocols",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Prot ocols",
+"version": "8.19.2"
+},
+{
+"name": "Microsoft.IdentityModel.Prot ocols",
+"version": "8.22.0"
+},
+{
+"name": "Microsoft.IdentityModel.Prot ocols.OpenIdConnect",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft.IdentityModel.Prot ocols.OpenIdConnect",
+"version": "8.19.2"
+},
+{
+"name": "Microsoft.IdentityModel.Prot ocols.OpenIdConnect",
+"version": "8.22.0"
+},
+{
+"name": "Microsoft.IdentityModel.Prot ocols.WsTrust",
+"version": "6.8.0"
+},
+{
+"name": "Microsoft.IdentityModel.Toke ns.Saml",
+"version": "8.19.1"
+},
+{
+"name": "Microsoft.IdentityModel.Xml",
+"version": "8.19.1"
+},
+{
+"name": "Microsoft.IO.RecyclableMem oryStream",
+"version": "3.0.0"
+},
+{
+"name": "Microsoft.IO.RecyclableMem oryStream",
+"version": "3.0.1"
+},
+{
+"name": "Microsoft.Management.Infra structure",
+"version": "2.0.0"
+},
+{
+"name": "Microsoft.Management.Infra structure",
+"version": "2.0.0-preview.2"
+},
+{
+"name": "Microsoft.NETCore.Platform s",
+"version": "2.1.0"
+},
+{
+"name": "Microsoft.NETCore.Platform s",
+"version": "2.1.2"
+},
+{
+"name": "Microsoft.NETCore.Platform s",
+"version": "3.1.0"
+},
+{
+"name": "Microsoft.NETCore.Platform s",
+"version": "3.1.1"
+},
+{
+"name": "Microsoft.OpenApi",
+"version": "1.6.23"
+},
+{
+"name": "Microsoft.OpenApi",
+"version": "1.6.25"
+},
+{
+"name": "Microsoft.PowerShell.Comm ands.Diagnostics",
+"version": "7.6.4"
+},
+{
+"name": "Microsoft.PowerShell.Pager",
+"version": "1.0.0"
+},
+{
+"name": "Microsoft.PowerShell.SDK",
+"version": "7.6.4"
+},
+{
+"name": "Microsoft.PowerShell.Securit y",
+"version": "7.6.4"
+},
+{
+"name": "Microsoft.SqlServer.Server",
+"version": "1.0.0"
+},
+{
+"name": "Microsoft.SqlServer.SqlMan agementObjects",
+"version": "181.19.0"
+},
+{
+"name": "Microsoft.TestPlatform.Obje ctModel",
+"version": "17.10.0"
+},
+{
+"name": "Microsoft.TestPlatform.Test Host",
+"version": "16.5.0"
+},
+{
+"name": "Microsoft.Web.Administratio n",
+"version": "11.1.0"
+},
+{
+"name": "Microsoft.Web.Administratio n Third Party Content",
+"version": "7.0.0"
+},
+{
+"name": "Microsoft.Win32.Registry",
+"version": "4.6.0"
+},
+{
+"name": "Microsoft.Win32.Registry",
+"version": "4.7.0"
+},
+{
+"name": "Microsoft.Win32.Registry",
+"version": "4.7.0-preview2.19523.17"
+},
+{
+"name": "Microsoft.Win32.Registry",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Win32.Registry.Ac cessControl",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Win32.Registry.Ac cessControl",
+"version": "10.0.5"
+},
+{
+"name": "Microsoft.Win32.Registry.Ac cessControl",
+"version": "4.7.0"
+},
+{
+"name": "Microsoft.Win32.SystemEve nts",
+"version": "10.0.10"
+},
+{
+"name": "Microsoft.Win32.SystemEve nts",
+"version": "10.0.5"
+},
+{
+"name": "Microsoft.Win32.SystemEve nts",
+"version": "4.7.0"
+},
+{
+"name": "Microsoft.WSMan.Managem ent",
+"version": "7.6.4"
+},
+{
+"name": "Microsoft.WSMan.Runtime",
+"version": "7.6.4"
+},
+{
+"name": "MimeKit: (S/)MIME creation and parser library",
+"version": "4.17.0"
+},
+{
+"name": "Mockito_",
+"version": "1.9.0"
+},
+{
+"name": "Module::Build",
+"version": "0.4231"
+},
+{
+"name": "Module::Implementation",
+"version": "0.09"
+},
+{
+"name": "Module::Install",
+"version": "1.20"
+},
+{
+"name": "Module::Install",
+"version": "1.21"
+},
+{
+"name": "Module::Load::Conditional",
+"version": "0.74"
+},
+{
+"name": "Module::Loaded",
+"version": "0.08"
+},
+{
+"name": "Moment.js",
+"version": "2.14.1"
+},
+{
+"name": "Moment.js",
+"version": "2.29.4"
+},
+{
+"name": "Mongo Java Driver",
+"version": "3.4.2"
+},
+{
+"name": "MongoDB Java Driver Core",
+"version": "3.3.0-query-log-max-size"
+},
+{
+"name": "Moose",
+"version": "2.0007"
+},
+{
+"name": "Moose",
+"version": "2.2207"
+},
+{
+"name": "MooseX::Emulate::Class::Ac cessor::Fast",
+"version": "0.009032"
+},
+{
+"name": "MooseX::MethodAttributes",
+"version": "0.32"
+},
+{
+"name": "MooseX::Role::Parameterize d",
+"version": "1.11"
+},
+{
+"name": "MRO::Compat",
+"version": "0.15"
+},
+{
+"name": "ms",
+"version": ""
+},
+{
+"name": "MS Visual Cpp Redistributable Package - x86 & x64 Third Party Content",
+"version": "2013"
+},
+{
+"name": "MSBuild Extension Pack October",
+"version": "2013"
+},
+{
+"name": "MSYS2",
+"version": "2022-12-16-msys-x86_64"
+},
+{
+"name": "myfaces",
+"version": "4.0.0"
+},
+{
+"name": "MySQL",
+"version": "8.0.40"
+},
+{
+"name": "MySQL",
+"version": "8.4.11"
+},
+{
+"name": "namespace::autoclean",
+"version": "0.29"
+},
+{
+"name": "namespace::autoclean",
+"version": "0.31"
+},
+{
+"name": "Namotion.Reflection",
+"version": "1.0.13"
+},
+{
+"name": "NCrontab",
+"version": "3.4.0"
+},
+{
+"name": "net-http",
+"version": "6.23"
+},
+{
+"name": "Net::Interface",
+"version": "0.03"
+},
+{
+"name": "Net::Netmask",
+"version": "2.0002"
+},
+{
+"name": "NetAddr::IP",
+"version": "4.079"
+},
+{
+"name": "NetBSD",
+"version": ""
+},
+{
+"name": "Newtonsoft.Json.Bson",
+"version": "1.0.2"
+},
+{
+"name": "ninenines/gun",
+"version": "2.4.0"
+},
+{
+"name": "node-uuid",
+"version": ""
+},
+{
+"name": "normalize-package-data",
+"version": ""
+},
+{
+"name": "Npam",
+"version": "1.0.2"
+},
+{
+"name": "NuGet.CommandLine",
+"version": "3.3.0"
+},
+{
+"name": "NuGet.Commands",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.Common",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.Configuration",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.Credentials",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.DependencyResolver .Core",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.Frameworks",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.LibraryModel",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.Packaging",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.ProjectModel",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.Protocol",
+"version": "6.9.1"
+},
+{
+"name": "NuGet.Versioning",
+"version": "6.9.1"
+},
+{
+"name": "number-is-nan",
+"version": ""
+},
+{
+"name": "NUnit 3.0 Test Adapter for VS2012 through VS2015",
+"version": "3.16.1"
+},
+{
+"name": "NUnit Framework",
+"version": "2.6.3"
+},
+{
+"name": "NUnit.Runners",
+"version": "2.6.3"
+},
+{
+"name": "nunit3-vs-adapter",
+"version": "V3.16.1"
+},
+{
+"name": "ojdbc8",
+"version": "19.3.0.0"
+},
+{
+"name": "OmerMor/StateMachineToolkit",
+"version": "20131215-snapshot-c5d9"
+},
+{
+"name": "Opcodes",
+"version": "0.14"
+},
+{
+"name": "open",
+"version": ""
+},
+{
+"name": "Open JTalk",
+"version": "1.07"
+},
+{
+"name": "org-eclipse-jgit RELEASE180",
+"version": ""
+},
+{
+"name": "Orika - core",
+"version": "1.5.4"
+},
+{
+"name": "Package::Anon",
+"version": "0.05"
+},
+{
+"name": "Package::DeprecationMana ger",
+"version": "0.18"
+},
+{
+"name": "Package::Generator",
+"version": "1.106"
+},
+{
+"name": "Palmmedia-ReportGenerator",
+"version": "1.9.1.0"
+},
+{
+"name": "PAR",
+"version": "1.021"
+},
+{
+"name": "PAR::Packer",
+"version": "1.063"
+},
+{
+"name": "Params::Util",
+"version": "1.102"
+},
+{
+"name": "Params::Validate",
+"version": "1.31"
+},
+{
+"name": "parse-json",
+"version": ""
+},
+{
+"name": "pass-journal-loader-nih",
+"version": "0.6.0"
+},
+{
+"name": "path-exists",
+"version": ""
+},
+{
+"name": "path-type",
+"version": ""
+},
+{
+"name": "Path::Class",
+"version": "0.37"
+},
+{
+"name": "PathTools",
+"version": "3.75"
+},
+{
+"name": "Percona Multiple I/O Threads Patch",
+"version": ""
+},
+{
+"name": "Perl",
+"version": "5.40.0"
+},
+{
+"name": "Perl 5 Encode",
+"version": "3.19"
+},
+{
+"name": "Perl 5 Encode",
+"version": "3.21"
+},
+{
+"name": "Perl Artistic Contribution to MySQL Community Database Server",
+"version": ""
+},
+{
+"name": "perl-Carp-Assert-More",
+"version": "2.8.0"
+},
+{
+"name": "perl-CGI",
+"version": "4.67"
+},
+{
+"name": "perl-Error",
+"version": "0.17029"
+},
+{
+"name": "perl-executing-browserv0.8.0",
+"version": ""
+},
+{
+"name": "perl-Hash-Flatten",
+"version": "1.19"
+},
+{
+"name": "perl-HTML-Formatter",
+"version": "2.16"
+},
+{
+"name": "perl-Log-Trace",
+"version": "1.070"
+},
+{
+"name": "perl-Readonly",
+"version": "2.05"
+},
+{
+"name": "perl-Sereal",
+"version": "5.004"
+},
+{
+"name": "perl-Test-Specio",
+"version": "0.49"
+},
+{
+"name": "perl-test2-suite",
+"version": "0.000162"
+},
+{
+"name": "perl-URI",
+"version": "0.03"
+},
+{
+"name": "PerlIO::utf8_strict",
+"version": "0.010"
+},
+{
+"name": "PetaPoco.Core - A tiny ORMish thing for your POCOs (Core Only)",
+"version": "6.0.683"
+},
+{
+"name": "phamm",
+"version": "0.6.2"
+},
+{
+"name": "pify",
+"version": ""
+},
+{
+"name": "pinkie",
+"version": ""
+},
+{
+"name": "pinkie-promise",
+"version": ""
+},
+{
+"name": "pkg-conf",
+"version": ""
+},
+{
+"name": "Plack.pm",
+"version": "1.0046"
+},
+{
+"name": "Plack.pm",
+"version": "1.0051"
+},
+{
+"name": "Plack::Middleware::Remove RedundantBody",
+"version": "0.09"
+},
+{
+"name": "Plack::Middleware::Reverse Proxy",
+"version": "0.16"
+},
+{
+"name": "Pod::Coverage",
+"version": "0.23"
+},
+{
+"name": "Pod::Perldoc",
+"version": "3.28"
+},
+{
+"name": "Pod::Simple",
+"version": "3.35"
+},
+{
+"name": "podam",
+"version": "4.7.3.RELEASE"
+},
+{
+"name": "Polly.Contrib.WaitAndRetry",
+"version": "1.1.1"
+},
+{
+"name": "Polly.Core",
+"version": "8.7.0"
+},
+{
+"name": "Polly.Extensions.Http",
+"version": "3.0.0"
+},
+{
+"name": "Polyfill from Base64.js",
+"version": ""
+},
+{
+"name": "Pomelo.EntityFrameworkCor e.MySql",
+"version": "9.0.0"
+},
+{
+"name": "popper.js",
+"version": "1.12.9"
+},
+{
+"name": "PowerShellStandard.Library",
+"version": "5.1.0"
+},
+{
+"name": "PPI",
+"version": "1.281"
+},
+{
+"name": "PPI::HTML",
+"version": "1.08"
+},
+{
+"name": "Python for .NET",
+"version": "3.1.0"
+},
+{
+"name": "Quartz.NET",
+"version": "3.18.0"
+},
+{
+"name": "Quartz.NET",
+"version": "3.19.1"
+},
+{
+"name": "Quartz.NET JSON Serialization",
+"version": "3.19.1"
+},
+{
+"name": "rabbitmq-dotnet-client",
+"version": "6.8.1"
+},
+{
+"name": "rabbitmq-server",
+"version": "4.3.4"
+},
+{
+"name": "rabbitmq-server",
+"version": "v3.7.27"
+},
+{
+"name": "rapidjson",
+"version": "1.1.0"
+},
+{
+"name": "RapidJSON",
+"version": "v1.1.0_ThirdParty-Content"
+},
+{
+"name": "read-pkg",
+"version": ""
+},
+{
+"name": "read-pkg-up",
+"version": ""
+},
+{
+"name": "redux",
+"version": ""
+},
+{
+"name": "redux-logger",
+"version": ""
+},
+{
+"name": "redux-thunk",
+"version": ""
+},
+{
+"name": "require-main-filename",
+"version": ""
+},
+{
+"name": "rh-perl530-perl-Package-Generator",
+"version": "1.106"
+},
+{
+"name": "Richard A. O'Keefe String Library",
+"version": ""
+},
+{
+"name": "riot",
+"version": ""
+},
+{
+"name": "riot-ts",
+"version": ""
+},
+{
+"name": "RiotTS",
+"version": ""
+},
+{
+"name": "Role::Tiny",
+"version": "2.002004"
+},
+{
+"name": "ruby-sass",
+"version": "3.4.22"
+},
+{
+"name": "runas",
+"version": ""
+},
+{
+"name": "runtime.android-arm.runtime .native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.android-arm64.runtime.native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.android-x64.runtime.native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.android-x86.runtime.native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.linux-bionic-arm64.runtime.native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.linux-bionic-x64.runtime.native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.linux-musl-arm.runtime.native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.linux-musl-arm64.runtime.native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.linux-musl-x64.runtime.native.System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "runtime.native.System.Data. SqlClient.sni",
+"version": "4.7.0"
+},
+{
+"name": "runtime.native.System.IO.Po rts",
+"version": "10.0.10"
+},
+{
+"name": "Safe::Isa",
+"version": "1.000010"
+},
+{
+"name": "Scope::Guard",
+"version": "0.21"
+},
+{
+"name": "semver",
+"version": ""
+},
+{
+"name": "Sereal Sereal-5.004",
+"version": ""
+},
+{
+"name": "Sereal::Decoder",
+"version": "5.004"
+},
+{
+"name": "Sereal::Encoder",
+"version": "5.004"
+},
+{
+"name": "Serilog.AspNetCore",
+"version": "10.0.0"
+},
+{
+"name": "Serilog.Enrichers.Correlation Id",
+"version": "3.0.1"
+},
+{
+"name": "Serilog.Enrichers.Thread",
+"version": "4.0.0"
+},
+{
+"name": "Serilog.Extensions.Hosting",
+"version": "10.0.0"
+},
+{
+"name": "Serilog.Extensions.Logging",
+"version": "10.0.0"
+},
+{
+"name": "Serilog.Formatting.Compact",
+"version": "3.0.0"
+},
+{
+"name": "Serilog.Settings.Configuratio n",
+"version": "10.0.1"
+},
+{
+"name": "Serilog.Sinks.Console",
+"version": "6.1.1"
+},
+{
+"name": "Serilog.Sinks.Debug",
+"version": "3.0.0"
+},
+{
+"name": "Serilog.Sinks.File",
+"version": "7.0.0"
+},
+{
+"name": "Serilog.Sinks.PeriodicBatchi ng",
+"version": "4.1.0"
+},
+{
+"name": "Serilog.Sinks.RabbitMQ",
+"version": "7.0.2"
+},
+{
+"name": "Serilog.Sinks.RollingFile",
+"version": "3.3.0"
+},
+{
+"name": "serilog/serilog",
+"version": "4.4.0"
+},
+{
+"name": "set-blocking",
+"version": ""
+},
+{
+"name": "SharpCompress - Pure C# D ecompression/Compression",
+"version": "0.50.3"
+},
+{
+"name": "SignalR",
+"version": "1.0.1"
+},
+{
+"name": "SignalR",
+"version": "2.4.2"
+},
+{
+"name": "SignalR",
+"version": "2.4.3"
+},
+{
+"name": "SkiaSharp",
+"version": "3.119.1"
+},
+{
+"name": "SkiaSharp.HarfBuzz",
+"version": "2.88.3"
+},
+{
+"name": "SkiaSharp.NativeAssets.Lin ux",
+"version": "3.119.1"
+},
+{
+"name": "SkiaSharp.NativeAssets.Win",
+"version": "32 3.119.1"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.26"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.30"
+},
+{
+"name": "SLF4J API Module",
+"version": "2.0.17"
+},
+{
+"name": "Sliders optimizeDB-20121123",
+"version": ""
+},
+{
+"name": "snapx",
+"version": "5.2.5-prerelease0014"
+},
+{
+"name": "SOAP-Lite",
+"version": "1.27"
+},
+{
+"name": "spdx-correct",
+"version": ""
+},
+{
+"name": "spdx-expression-parse",
+"version": ""
+},
+{
+"name": "spotbugs-gradle-plugin",
+"version": "5.0.15"
+},
+{
+"name": "Spring Framework",
+"version": "7.0.7"
+},
+{
+"name": "Spring.Aop",
+"version": "3.0.3"
+},
+{
+"name": "Spring.Core",
+"version": "3.0.3"
+},
+{
+"name": "SQLite PowerShell Provider",
+"version": "20140513-snapshot-21b27e"
+},
+{
+"name": "SQLitePCLRaw.bundle_gre en",
+"version": "2.1.11"
+},
+{
+"name": "SQLitePCLRaw.core",
+"version": "2.1.11"
+},
+{
+"name": "SQLitePCLRaw.lib.e_sqlite3",
+"version": "2.1.11"
+},
+{
+"name": "SQLitePCLRaw.provider.e_s qlite3",
+"version": "2.1.11"
+},
+{
+"name": "SSH.NET Library",
+"version": "2025.1.0"
+},
+{
+"name": "SshNet.Security.Cryptograp hy",
+"version": "1.2.0"
+},
+{
+"name": "SshNet.Security.Cryptograp hy",
+"version": "1.3.0"
+},
+{
+"name": "StAX",
+"version": "1.0-2"
+},
+{
+"name": "stax2-api",
+"version": "4.2.1"
+},
+{
+"name": "Stream::Buffered",
+"version": "0.03"
+},
+{
+"name": "string",
+"version": ""
+},
+{
+"name": "string-width",
+"version": ""
+},
+{
+"name": "strip-ansi",
+"version": ""
+},
+{
+"name": "strip-bom",
+"version": ""
+},
+{
+"name": "Sub::Exporter",
+"version": "0.991"
+},
+{
+"name": "Sub::Identify",
+"version": "0.14"
+},
+{
+"name": "Sub::Info",
+"version": "0.002"
+},
+{
+"name": "swagger-ui",
+"version": "4.1.3"
+},
+{
+"name": "Swashbuckle.AspNetCore",
+"version": "9.0.6"
+},
+{
+"name": "Swashbuckle.AspNetCore.S wagger",
+"version": "9.0.6"
+},
+{
+"name": "Swashbuckle.AspNetCore.S waggerGen",
+"version": "9.0.6"
+},
+{
+"name": "Swashbuckle.AspNetCore.S waggerUI",
+"version": "9.0.6"
+},
+{
+"name": "symbol",
+"version": ""
+},
+{
+"name": "System.Buffers",
+"version": "4.5.0"
+},
+{
+"name": "System.Buffers",
+"version": "4.5.1"
+},
+{
+"name": "System.ClientModel",
+"version": "1.0.0"
+},
+{
+"name": "System.CodeDom",
+"version": "10.0.10"
+},
+{
+"name": "System.CodeDom",
+"version": "10.0.5"
+},
+{
+"name": "System.CodeDom",
+"version": "4.7.0"
+},
+{
+"name": "System.CodeDom",
+"version": "5.0.0"
+},
+{
+"name": "System.ComponentModel.C omposition",
+"version": "10.0.10"
+},
+{
+"name": "System.ComponentModel.C omposition",
+"version": "10.0.5"
+},
+{
+"name": "System.ComponentModel.C omposition.Registration",
+"version": "10.0.10"
+},
+{
+"name": "System.ComponentModel.C omposition.Registration",
+"version": "10.0.5"
+},
+{
+"name": "System.ComponentModel.C omposition.Registration",
+"version": "4.7.0"
+},
+{
+"name": "System.Configuration.Config urationManager",
+"version": "10.0.10"
+},
+{
+"name": "System.Configuration.Config urationManager",
+"version": "4.7.0"
+},
+{
+"name": "System.Data.Odbc",
+"version": "10.0.10"
+},
+{
+"name": "System.Data.Odbc",
+"version": "10.0.5"
+},
+{
+"name": "System.Data.Odbc",
+"version": "4.7.0"
+},
+{
+"name": "System.Data.OleDb",
+"version": "10.0.10"
+},
+{
+"name": "System.Data.OleDb",
+"version": "10.0.5"
+},
+{
+"name": "System.Data.OleDb",
+"version": "4.7.0"
+},
+{
+"name": "System.Data.SqlClient",
+"version": "4.9.0"
+},
+{
+"name": "System.Data.SqlClient",
+"version": "4.9.1"
+},
+{
+"name": "System.Diagnostics.Diagnos ticSource",
+"version": "6.0.1"
+},
+{
+"name": "System.Diagnostics.EventLo g",
+"version": "10.0.10"
+},
+{
+"name": "System.Diagnostics.EventLo g",
+"version": "4.5.0"
+},
+{
+"name": "System.Diagnostics.EventLo g",
+"version": "4.6.0"
+},
+{
+"name": "System.Diagnostics.EventLo g",
+"version": "4.7.0"
+},
+{
+"name": "System.Diagnostics.Perform anceCounter",
+"version": "10.0.10"
+},
+{
+"name": "System.Diagnostics.Perform anceCounter",
+"version": "10.0.5"
+},
+{
+"name": "System.Diagnostics.Perform anceCounter",
+"version": "4.7.0"
+},
+{
+"name": "System.DirectoryServices",
+"version": "10.0.10"
+},
+{
+"name": "System.DirectoryServices",
+"version": "10.0.5"
+},
+{
+"name": "System.DirectoryServices",
+"version": "4.7.0"
+},
+{
+"name": "System.DirectoryServices",
+"version": "8.0.0"
+},
+{
+"name": "System.DirectoryServices.A ccountManagement",
+"version": "10.0.10"
+},
+{
+"name": "System.DirectoryServices.A ccountManagement",
+"version": "10.0.5"
+},
+{
+"name": "System.DirectoryServices.A ccountManagement",
+"version": "4.7.0"
+},
+{
+"name": "System.DirectoryServices.Pr otocols",
+"version": "10.0.10"
+},
+{
+"name": "System.DirectoryServices.Pr otocols",
+"version": "10.0.5"
+},
+{
+"name": "System.DirectoryServices.Pr otocols",
+"version": "8.0.2"
+},
+{
+"name": "System.Drawing.Common",
+"version": "10.0.10"
+},
+{
+"name": "System.Drawing.Common",
+"version": "10.0.5"
+},
+{
+"name": "System.Drawing.Common",
+"version": "4.7.1"
+},
+{
+"name": "System.Formats.Nrbf",
+"version": "10.0.10"
+},
+{
+"name": "System.IO.FileSystem.Acce ssControl",
+"version": "4.6.0"
+},
+{
+"name": "System.IO.FileSystem.Acce ssControl",
+"version": "4.7.0"
+},
+{
+"name": "System.IO.Packaging",
+"version": "10.0.10"
+},
+{
+"name": "System.IO.Packaging",
+"version": "10.0.5"
+},
+{
+"name": "System.IO.Packaging",
+"version": "4.7.0"
+},
+{
+"name": "System.IO.Pipes.AccessCon trol",
+"version": "4.5.1"
+},
+{
+"name": "System.IO.Ports",
+"version": "10.0.10"
+},
+{
+"name": "System.IO.Ports",
+"version": "10.0.5"
+},
+{
+"name": "System.Linq.Async",
+"version": "4.0.0"
+},
+{
+"name": "System.Management",
+"version": "5.0.0"
+},
+{
+"name": "System.Management.Autom ation",
+"version": "7.0.13"
+},
+{
+"name": "System.Management.Autom ation",
+"version": "7.4.13"
+},
+{
+"name": "System.Management.Autom ation",
+"version": "7.6.4"
+},
+{
+"name": "System.Memory",
+"version": "4.5.4"
+},
+{
+"name": "System.Memory.Data",
+"version": "1.0.2"
+},
+{
+"name": "System.Net.Http.WinHttpHa ndler",
+"version": "10.0.5"
+},
+{
+"name": "System.Net.Http.WinHttpHa ndler",
+"version": "4.7.2"
+},
+{
+"name": "System.Net.WebSockets.W ebSocketProtocol",
+"version": "5.1.0"
+},
+{
+"name": "System.Private.ServiceMod el",
+"version": "4.7.0"
+},
+{
+"name": "System.Reflection",
+"version": "4.1.0"
+},
+{
+"name": "System.Reflection",
+"version": "4.3.0-preview1-24530-04"
+},
+{
+"name": "System.Reflection.Context",
+"version": "10.0.10"
+},
+{
+"name": "System.Reflection.Context",
+"version": "10.0.5"
+},
+{
+"name": "System.Reflection.Context",
+"version": "4.7.0"
+},
+{
+"name": "System.Reflection.Dispatch Proxy",
+"version": "4.7.0"
+},
+{
+"name": "System.Reflection.Emit",
+"version": "4.0.1"
+},
+{
+"name": "System.Reflection.Emit",
+"version": "4.7.0"
+},
+{
+"name": "System.Reflection.Emit.ILGe neration",
+"version": "4.7.0"
+},
+{
+"name": "System.Reflection.Emit.Light weight",
+"version": "4.7.0"
+},
+{
+"name": "System.Reflection.Extension s",
+"version": "4.0.1"
+},
+{
+"name": "System.Reflection.Primitives",
+"version": "4.0.1"
+},
+{
+"name": "System.Reflection.Primitives",
+"version": "4.3.0-preview1-24530-04"
+},
+{
+"name": "System.Resources.Extensio ns",
+"version": "10.0.10"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "10.0.10"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "10.0.5"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "4.7.0"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "8.0.0"
+},
+{
+"name": "System.Runtime.CompilerS ervices.Unsafe",
+"version": "4.7.1"
+},
+{
+"name": "System.Security.AccessCon trol",
+"version": "4.7.0"
+},
+{
+"name": "System.Security.AccessCon trol",
+"version": "5.0.0"
+},
+{
+"name": "System.Security.Cryptograp hy.Cng",
+"version": "4.7.0"
+},
+{
+"name": "System.Security.Cryptograp hy.Pkcs",
+"version": "10.0.5"
+},
+{
+"name": "System.Security.Cryptograp hy.Pkcs",
+"version": "10.0.6"
+},
+{
+"name": "System.Security.Cryptograp hy.Pkcs",
+"version": "4.7.0"
+},
+{
+"name": "System.Security.Cryptograp hy.ProtectedData",
+"version": "10.0.10"
+},
+{
+"name": "System.Security.Cryptograp hy.ProtectedData",
+"version": "4.7.0"
+},
+{
+"name": "System.Security.Cryptograp hy.Xml",
+"version": "10.0.6"
+},
+{
+"name": "System.Security.Cryptograp hy.Xml",
+"version": "4.7.1"
+},
+{
+"name": "System.Security.Permission s",
+"version": "10.0.10"
+},
+{
+"name": "System.Security.Permission s",
+"version": "4.7.0"
+},
+{
+"name": "System.Security.Principal.Wi ndows",
+"version": "4.7.0"
+},
+{
+"name": "System.Security.Principal.Wi ndows",
+"version": "5.0.0"
+},
+{
+"name": "System.ServiceModel.Duple x",
+"version": "4.7.0"
+},
+{
+"name": "System.ServiceModel.Feder ation",
+"version": "10.0.652802"
+},
+{
+"name": "System.ServiceModel.Http",
+"version": "10.0.652802"
+},
+{
+"name": "System.ServiceModel.Http",
+"version": "4.7.0"
+},
+{
+"name": "System.ServiceModel.NetFr amingBase",
+"version": "10.0.652802"
+},
+{
+"name": "System.ServiceModel.NetTc p",
+"version": "10.0.652802"
+},
+{
+"name": "System.ServiceModel.NetTc p",
+"version": "4.7.0"
+},
+{
+"name": "System.ServiceModel.Primiti ves",
+"version": "10.0.652802"
+},
+{
+"name": "System.ServiceModel.Primiti ves",
+"version": "4.7.0"
+},
+{
+"name": "System.ServiceModel.Securi ty",
+"version": "4.7.0"
+},
+{
+"name": "System.ServiceModel.Syndi cation",
+"version": "10.0.10"
+},
+{
+"name": "System.ServiceModel.Syndi cation",
+"version": "10.0.5"
+},
+{
+"name": "System.ServiceModel.Syndi cation",
+"version": "4.7.0"
+},
+{
+"name": "System.ServiceProcess.Ser viceController",
+"version": "10.0.10"
+},
+{
+"name": "System.ServiceProcess.Ser viceController",
+"version": "10.0.5"
+},
+{
+"name": "System.ServiceProcess.Ser viceController",
+"version": "4.6.0"
+},
+{
+"name": "System.ServiceProcess.Ser viceController",
+"version": "4.7.0"
+},
+{
+"name": "System.ServiceProcess.Ser viceController",
+"version": "4.7.0-preview2.19523.17"
+},
+{
+"name": "System.Speech",
+"version": "10.0.10"
+},
+{
+"name": "System.Speech",
+"version": "10.0.5"
+},
+{
+"name": "System.Text.Encoding.Code Pages",
+"version": "4.5.1"
+},
+{
+"name": "System.Text.Encoding.Code Pages",
+"version": "4.7.0"
+},
+{
+"name": "System.Text.Encoding.Code Pages",
+"version": "4.7.1"
+},
+{
+"name": "System.Threading.AccessC ontrol",
+"version": "4.5.0"
+},
+{
+"name": "System.Threading.AccessC ontrol",
+"version": "4.7.0"
+},
+{
+"name": "System.Threading.AccessC ontrol",
+"version": "4.7.0-preview2.19523.17"
+},
+{
+"name": "System.Threading.Tasks.Ext ensions",
+"version": "4.5.4"
+},
+{
+"name": "System.Web.Services.Descr iption",
+"version": "8.1.2"
+},
+{
+"name": "System.Windows.Extension s",
+"version": "10.0.10"
+},
+{
+"name": "System.Windows.Extension s",
+"version": "10.0.5"
+},
+{
+"name": "System.Windows.Extension s",
+"version": "4.7.0"
+},
+{
+"name": "System.Xml.XPath.XmlDocu ment",
+"version": "4.3.0"
+},
+{
+"name": "t_ctype.h",
+"version": ""
+},
+{
+"name": "Task Scheduler Managed Wrapper",
+"version": "2.12.2"
+},
+{
+"name": "Task::Weaken",
+"version": "1.06"
+},
+{
+"name": "Telerik Kendo UI Core",
+"version": "2014.3.1316"
+},
+{
+"name": "Telerik.Licensing",
+"version": "1.8.2"
+},
+{
+"name": "Template Toolkit",
+"version": "3.102"
+},
+{
+"name": "test-sharedfork",
+"version": "v0.35"
+},
+{
+"name": "test-tcp",
+"version": "2.18"
+},
+{
+"name": "test-tcp",
+"version": "2.22"
+},
+{
+"name": "Test2::Plugin::NoWarnings",
+"version": "0.10"
+},
+{
+"name": "Test2::Util",
+"version": "1.302175"
+},
+{
+"name": "Test::Assertions",
+"version": "1.054"
+},
+{
+"name": "Test::CPAN::Meta",
+"version": "0.25"
+},
+{
+"name": "Test::Fatal",
+"version": "0.017"
+},
+{
+"name": "Test::Harness",
+"version": "3.48"
+},
+{
+"name": "Test::LeakTrace",
+"version": "0.17"
+},
+{
+"name": "Test::LongString",
+"version": "0.17"
+},
+{
+"name": "Test::Memory::Cycle",
+"version": "1.06"
+},
+{
+"name": "Test::MockTime",
+"version": "0.17"
+},
+{
+"name": "Test::Most",
+"version": "0.38"
+},
+{
+"name": "Test::Needs",
+"version": "0.002010"
+},
+{
+"name": "Test::Object",
+"version": "0.08"
+},
+{
+"name": "Test::Output",
+"version": "1.035"
+},
+{
+"name": "Test::Pod::Coverage",
+"version": "1.10"
+},
+{
+"name": "Test::Requires",
+"version": "0.11"
+},
+{
+"name": "Test::SharedFork",
+"version": "0.35"
+},
+{
+"name": "Test::SubCalls",
+"version": "1.10"
+},
+{
+"name": "Test::Taint",
+"version": "1.08"
+},
+{
+"name": "Test::TCP",
+"version": "2.22"
+},
+{
+"name": "Test::Time",
+"version": "0.092"
+},
+{
+"name": "Test::Trap",
+"version": "v0.3.5"
+},
+{
+"name": "Test::UseAllModules",
+"version": "0.17"
+},
+{
+"name": "Test::utf8",
+"version": "1.03"
+},
+{
+"name": "Test::Warnings",
+"version": "0.037"
+},
+{
+"name": "Test::Without::Module",
+"version": "0.23"
+},
+{
+"name": "Test::WWW::Mechanize",
+"version": "1.60"
+},
+{
+"name": "Test::WWW::Mechanize::Ca talyst",
+"version": "0.62"
+},
+{
+"name": "Test::WWW::Mechanize::PS GI",
+"version": "0.39"
+},
+{
+"name": "Text::Diff",
+"version": "1.45"
+},
+{
+"name": "Text::SimpleTable",
+"version": "2.07"
+},
+{
+"name": "Tie::IxHash",
+"version": "1.23"
+},
+{
+"name": "Time Zone Information",
+"version": ""
+},
+{
+"name": "Time::HiRes",
+"version": "1.9764"
+},
+{
+"name": "Topshelf",
+"version": "4.3.0"
+},
+{
+"name": "Topten.RichTextKit",
+"version": "0.4.166"
+},
+{
+"name": "Tree::Simple",
+"version": "1.33"
+},
+{
+"name": "Tree::Simple::VisitorFactory",
+"version": "0.15"
+},
+{
+"name": "try-tiny",
+"version": "0.32"
+},
+{
+"name": "twitter.bootstrap.mvc",
+"version": "20141"
+},
+{
+"name": "twitter.bootstrap.mvc master-20141109",
+"version": ""
+},
+{
+"name": "Type::Tiny",
+"version": "1.001"
+},
+{
+"name": "Type::Tiny",
+"version": "2.006000"
+},
+{
+"name": "typechecker",
+"version": ""
+},
+{
+"name": "Unicode Data Files and Software",
+"version": ""
+},
+{
+"name": "Unicode Data Files and Software",
+"version": "v5.2.0"
+},
+{
+"name": "Unicode::Collate",
+"version": "1.31"
+},
+{
+"name": "Unix::Mknod",
+"version": "0.05"
+},
+{
+"name": "unordered_dense",
+"version": ""
+},
+{
+"name": "URI::ws",
+"version": "0.03"
+},
+{
+"name": "uuid",
+"version": ""
+},
+{
+"name": "v1.1.0 RapidJSON_1.1.0_dependencies_License RequireJS",
+"version": "2.3.6"
+},
+{
+"name": "Variable::Magic",
+"version": "0.64"
+},
+{
+"name": "VSSDK.Shell.10 Third Party Content",
+"version": "10.0.3"
+},
+{
+"name": "WebConfiguration",
+"version": "1.0.1"
+},
+{
+"name": "WebGrease Third Party Content",
+"version": "1.1.0"
+},
+{
+"name": "win-sshfs",
+"version": "20120104"
+},
+{
+"name": "window-size",
+"version": ""
+},
+{
+"name": "Windows NT Service class library",
+"version": ""
+},
+{
+"name": "Windows-classic-samples MicrosoftDocs-Samples",
+"version": ""
+},
+{
+"name": "winreg",
+"version": ""
+},
+{
+"name": "WinZip",
+"version": "6.2 2.3"
+},
+{
+"name": "Woodstox",
+"version": "6.5.0"
+},
+{
+"name": "wrap-ansi",
+"version": ""
+},
+{
+"name": "ws-commons-util",
+"version": "1.0.1"
+},
+{
+"name": "WSDL4J",
+"version": "1.6.3"
+},
+{
+"name": "WWW::Form::UrlEncoded",
+"version": "0.26"
+},
+{
+"name": "XML::LibXML",
+"version": "2.0210"
+},
+{
+"name": "XML::NamespaceSupport",
+"version": "1.12"
+},
+{
+"name": "XML::SAX",
+"version": "1.02"
+},
+{
+"name": "XML::Writer",
+"version": "0.900"
+},
+{
+"name": "XmlSchema Core",
+"version": "2.3.2"
+},
+{
+"name": "XMLUnit",
+"version": "1.5"
+},
+{
+"name": "XSLoader",
+"version": "0.24"
+},
+{
+"name": "xUnit.net",
+"version": "1.9.1"
+},
+{
+"name": "xxhash",
+"version": ""
+},
+{
+"name": "y18n",
+"version": ""
+},
+{
+"name": "YamlDotNet",
+"version": "16.3.0"
+},
+{
+"name": "yargs",
+"version": ""
+},
+{
+"name": "yargs-parser",
+"version": ""
+}
+],
+"extractors": [
+"tpn_list",
+"component_license"
+],
+"kind": "pdf",
+"product": "SnapCenter",
+"retrieved": "2026-11-08",
+"sha256": "8730497c35a45d0e90dc158124ab9078b2e3206ee3a946202dde6aac1d681105",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/SnapCenter/6.2.3/NOTICE.pdf",
+"version": "6.2.3"
+}

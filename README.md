@@ -29,7 +29,7 @@ The exact field lists, examples and the commands to check your change locally ar
 
 **Don't submit** anything confidential, anything you aren't permitted to share, or statements you can't link to. If you work for a vendor, the best contribution of all is publishing your product's SBOM or notices at a stable public URL and adding that URL.
 
-**Generating an SBOM for a product nobody has documented?** Scan it with Syft, cve-bin-tool or blint, then run `python -m xenolith prepare scan.cdx.json --supplier … --product … --version … --artifact <file> --attest`. It adds the required fields, hashes the artifact, strips local paths and validates the result ([how](CONTRIBUTING.md#3-submit-an-sbom)). [design/xenolith-scan.md](design/xenolith-scan.md) is the plan for a single cross-platform scanner that does the whole job in one step.
+**Generating an SBOM for a product nobody has documented?** `python -m xenolith fingerprint <folder or archive> -o scan.cdx.json` finds the watchlist components in extracted firmware, an install folder or a jar/war/tgz, including statically linked and shaded copies, entirely offline. `python -m xenolith prepare scan.cdx.json --supplier … --product … --version … --artifact <file> --attest` then adds the required fields, hashes the artifact, strips local paths and validates the result ([how](CONTRIBUTING.md#3-submit-an-sbom)). It also accepts Syft, cve-bin-tool or blint output. [design/xenolith-scan.md](design/xenolith-scan.md) is the plan for a single cross-platform scanner that does the whole job in one step.
 
 ## How it works
 
@@ -52,7 +52,7 @@ CVE records + CISA KEV ──► data/spine/products.ndjson       (product regis
 
 1. **Component watchlist.** [`catalog/components.yaml`](catalog/components.yaml) lists widely embedded components, the CVEs that identify them, the names they appear under in notices, and the affected version ranges from each CVE record.
 2. **Vendor advisories (automated).** A crawler reads CSAF 2.x feeds from Cisco, Microsoft, Red Hat, Siemens, Schneider Electric, ABB, SICK, CISA and every provider on BSI's CSAF aggregator. A vendor's status for a watchlist CVE is a statement about whether the product embeds the component. The crawl is incremental.
-3. **Vendor open source notices (automated).** "Open Source Used In" documents, OSS listings and third-party notices are the closest public stand-in for an SBOM of a closed product. `python -m xenolith notices` fetches the documents in [`catalog/notices.yaml`](catalog/notices.yaml) (PDF, HTML, text, CycloneDX, SPDX), keeps the **full** component list and matches it against the watchlist. Sources so far: Palo Alto Networks (every OSS listing, discovered automatically), Elastic (per-release dependency reports), Ivanti Connect Secure and Secure Access Client, WatchGuard Fireware, Tenable, F5 BIG-IP and Citrix NetScaler. Vendors checked and found not crawlable are listed at the bottom of that file.
+3. **Vendor open source notices (automated).** "Open Source Used In" documents, OSS listings and third-party notices are the closest public stand-in for an SBOM of a closed product. `python -m xenolith notices` fetches the documents in [`catalog/notices.yaml`](catalog/notices.yaml) (PDF, HTML, text, CycloneDX, SPDX), keeps the **full** component list and matches it against the watchlist. Sources so far: NetApp (NOTICE reports for ONTAP, Active IQ Unified Manager, SnapCenter, SANtricity (E-Series), Element and more than a dozen other products, discovered from its open source site), Extreme Networks (an Open Source Declaration for each release of about 50 products), Veeam (component lists for 18 products), Palo Alto Networks (every OSS listing), Elastic (per-release dependency reports), Ivanti Connect Secure and Secure Access Client, WatchGuard Fireware, ManageEngine ADSelfService Plus, SolarWinds Dameware and Serv-U, Tenable, F5 BIG-IP and Citrix NetScaler. Vendors checked and found not crawlable are listed at the bottom of that file.
 4. **Incident trackers (seed data).** NCSC-NL php2shell and log4shell, and CISA's log4j-affected-db, imported with full provenance.
 5. **Community submissions.** Statements and SBOMs contributed by pull request (see [Contribute](#contribute)).
 6. **Product registry.** Vendor/product names from CNA-published CVE records and the CISA KEV catalog, ranked by exploitation, with the CPE identifiers the CNA or CISA's ADP container gives them. Products with no composition data yet are listed too, which makes the gaps visible.
@@ -99,7 +99,7 @@ Incident trackers are ingested from local clones: `git clone --depth 1 https://g
 
 | Path | What |
 |---|---|
-| `catalog/` | Component watchlist with affected ranges, data source registry, CSAF provider list, notices document list, identity aliases |
+| `catalog/` | Component watchlist with affected ranges, fingerprints, data source registry, CSAF provider list, notices document list, identity aliases, extra TLS intermediates |
 | `community/` | Contributions: `assertions.csv`, `sboms/` and `examples/` |
 | `data/assertions/` | Normalized statements per source (NDJSON). The open data dump |
 | `data/notices/`, `data/community_sboms/` | Full component inventories, one JSON file per document or SBOM |
@@ -122,7 +122,7 @@ Incident trackers are ingested from local clones: `git clone --depth 1 https://g
 - [x] CycloneDX 1.6 export of any product's inventory; CycloneDX SBOM submissions
 - [x] `xenolith prepare`: turns any scanner's CycloneDX or SPDX output into a validated, path-stripped submission
 - [ ] `xenolith-scan`: one cross-platform, offline binary that unpacks an installer, firmware image or container and produces a submission ([design](design/xenolith-scan.md))
-- [ ] `catalog/fingerprints.yaml`: symbol and version-string fingerprints for watchlist components, shared with the scanner
+- [x] `catalog/fingerprints.yaml` and `python -m xenolith fingerprint`: version strings, defined symbols, version-function constants, static data and archive metadata for every watchlist component
 - [ ] Transparency Exchange API (TEA) client to collect vendor SBOMs as vendors publish them
 - [ ] More notices sources (Oracle licensing manuals, Splunk credits and JetBrains need custom handling)
 - [ ] Bulk CycloneDX/SPDX export of all inventories for GUAC or Dependency-Track

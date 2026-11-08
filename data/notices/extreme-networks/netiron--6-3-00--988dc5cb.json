@@ -1,0 +1,18 @@
+{
+"components": [
+{
+"name": "OpenSSL",
+"version": "2.0.3-fips"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "NetIron",
+"retrieved": "2026-11-08",
+"sha256": "90e8f675f731633903a10afccdfda1cee24cb7e6c241663f0b1c127548d28691",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b980c68d1e3c4c7caf64bbb054eb696d?v=5f12bb87",
+"version": "6.3.00"
+}

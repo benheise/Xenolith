@@ -1,0 +1,478 @@
+{
+"components": [
+{
+"name": "and CRMF APIs",
+"version": "1.60"
+},
+{
+"name": "ANTLR",
+"version": "2.7.7"
+},
+{
+"name": "AOP Alliance (Java/J2EE AOP standard)",
+"version": "1.0"
+},
+{
+"name": "Aopalliance Version",
+"version": "1.0 Repackaged As A Module 2.4.0-b34"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.9"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.2"
+},
+{
+"name": "Apache Commons Net",
+"version": "3.3"
+},
+{
+"name": "Apache HttpClient",
+"version": "4.5.2"
+},
+{
+"name": "Apache HttpComponents Core",
+"version": "4.4.4"
+},
+{
+"name": "Apache Tomcat",
+"version": "8.0.32"
+},
+{
+"name": "Apache Tomcat Embed",
+"version": "8.0.32"
+},
+{
+"name": "Apache XML Commons",
+"version": "1.0.b2"
+},
+{
+"name": "AspectJ weaver",
+"version": "1.8.8"
+},
+{
+"name": "beanvalidation-api",
+"version": "1.1.0.Final"
+},
+{
+"name": "Bouncy Castle",
+"version": "1.60"
+},
+{
+"name": "btf",
+"version": "1.2"
+},
+{
+"name": "CatLearn",
+"version": "0.4.4.dev1"
+},
+{
+"name": "Class Model for Hk2",
+"version": "2.4.0-b34"
+},
+{
+"name": "dom4j: flexible XML framework for Java",
+"version": "1.6.1"
+},
+{
+"name": "ed25519-java",
+"version": "0.2.0"
+},
+{
+"name": "Evo Inflector",
+"version": "1.2.1"
+},
+{
+"name": "FindBugs jsr305",
+"version": "2.0.1"
+},
+{
+"name": "FindBugs-Annotations",
+"version": "2.0.2"
+},
+{
+"name": "flyway-core",
+"version": "4.0"
+},
+{
+"name": "generator-react-webpack",
+"version": "1.2.9"
+},
+{
+"name": "Guava: Google Core Libraries for Java",
+"version": "19.0"
+},
+{
+"name": "Hamcrest",
+"version": "1.1"
+},
+{
+"name": "Hibernate",
+"version": "4.3.11.Final"
+},
+{
+"name": "Hibernate Commons Annotations",
+"version": "4.0.5.Final"
+},
+{
+"name": "Hibernate Entity Manager",
+"version": "4.3.11.Final"
+},
+{
+"name": "Hibernate JPA",
+"version": "2.1 API 1.0.0.Final"
+},
+{
+"name": "Hibernate Validator",
+"version": "5.2.4.Final"
+},
+{
+"name": "Highcharts JS",
+"version": "3.0.10"
+},
+{
+"name": "highcharts-browserify",
+"version": "0.0.0-3.0.10"
+},
+{
+"name": "HK2 API module",
+"version": "2.4.0-b34"
+},
+{
+"name": "HK2 core module",
+"version": "2.4.0-b34"
+},
+{
+"name": "HK2 Implementation Utilities",
+"version": "2.4.0-b34"
+},
+{
+"name": "HK2 module of HK2 itself",
+"version": "2.4.0-b34"
+},
+{
+"name": "HK2 Spring Bridge",
+"version": "2.4.0-b34"
+},
+{
+"name": "Injection API (JSR 330) version",
+"version": "1 repackaged as OSGi bundle 2.4.0-b34"
+},
+{
+"name": "ixmp",
+"version": "0.2.0"
+},
+{
+"name": "jackson- module-jaxb-annotations",
+"version": "2.5.4"
+},
+{
+"name": "jackson-annotations",
+"version": "2.6.5"
+},
+{
+"name": "jackson-core",
+"version": "2.6.5"
+},
+{
+"name": "jackson-coreutils",
+"version": "1.6"
+},
+{
+"name": "jackson-databind",
+"version": "2.6.5"
+},
+{
+"name": "Jackson-Datatype-JSR310",
+"version": "2.6.1"
+},
+{
+"name": "Jackson-JAXRS-base",
+"version": "2.5.4"
+},
+{
+"name": "jackson-jaxrs-json- provider",
+"version": "2.5.4"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.5.4"
+},
+{
+"name": "Java Annotation Indexer",
+"version": "1.1.0.Final"
+},
+{
+"name": "Java IPv6 Library",
+"version": "0.16"
+},
+{
+"name": "java-classmate",
+"version": "1.1.0"
+},
+{
+"name": "Javassist",
+"version": "3.18.1-GA"
+},
+{
+"name": "Javax Inject from the JSR-330 Expert Group",
+"version": "1"
+},
+{
+"name": "javax.annotation API",
+"version": "1.2"
+},
+{
+"name": "javax.transaction API",
+"version": "1.2"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0.1"
+},
+{
+"name": "JBoss Logging",
+"version": "3 3.2.1.Final"
+},
+{
+"name": "JBoss Logging I18n Annotations",
+"version": "1.2.0.Beta1"
+},
+{
+"name": "JCL",
+"version": "1.2 Implemented Over SLF4J 1.7.16"
+},
+{
+"name": "Jersey",
+"version": "2.22.2"
+},
+{
+"name": "jersey- container-servlet",
+"version": "2.22.2"
+},
+{
+"name": "jersey-container-servlet",
+"version": "2.22.2"
+},
+{
+"name": "jersey-container-servlet-core",
+"version": "2.22.2"
+},
+{
+"name": "jersey-core-server",
+"version": "2.22.2"
+},
+{
+"name": "jersey-ext-bean-validation",
+"version": "2.22.2"
+},
+{
+"name": "jersey-ext-entity-filtering",
+"version": "2.22.2"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.22.2"
+},
+{
+"name": "jersey-media-json-jackson",
+"version": "2.22.2"
+},
+{
+"name": "jersey-repackaged-guava",
+"version": "2.22.2"
+},
+{
+"name": "jersey-spring3",
+"version": "2.22.2"
+},
+{
+"name": "JSON-java",
+"version": "20090211"
+},
+{
+"name": "json-patch",
+"version": "1.7"
+},
+{
+"name": "json-simple",
+"version": "1.1.1"
+},
+{
+"name": "JSR-330 support in Hk2",
+"version": "2.4.0-b34"
+},
+{
+"name": "JUL to SLF4J bridge",
+"version": "1.7.16"
+},
+{
+"name": "JUnit",
+"version": "4.10"
+},
+{
+"name": "JZlib",
+"version": "1.1.3"
+},
+{
+"name": "Log4j Implemented Over SLF4J",
+"version": "1.7.16"
+},
+{
+"name": "Logback",
+"version": "1.1.5"
+},
+{
+"name": "Logback Classic Module",
+"version": "1.1.5"
+},
+{
+"name": "mariadb-java-client",
+"version": "1.3.4"
+},
+{
+"name": "materialize",
+"version": "0.97.5"
+},
+{
+"name": "msg-simple",
+"version": "1.1"
+},
+{
+"name": "org.objectweb.asm.all version",
+"version": "3.1 repackaged as a module 2.4.0-b34"
+},
+{
+"name": "org.w3c:dom",
+"version": "2.3.0-jaxb-1.0.6"
+},
+{
+"name": "peacejs",
+"version": "1.0.0"
+},
+{
+"name": "PySiddhi4",
+"version": "1.0.0b1"
+},
+{
+"name": "python-bioformats",
+"version": "1.2.0"
+},
+{
+"name": "react-select",
+"version": "1.0.0"
+},
+{
+"name": "Run Level Service",
+"version": "2.4.0-b34"
+},
+{
+"name": "ServiceLocator Default Implementation",
+"version": "2.4.0-b34"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.16"
+},
+{
+"name": "SnakeYAML",
+"version": "1.16"
+},
+{
+"name": "Spring Aspects",
+"version": "4.2.5.RELEASE"
+},
+{
+"name": "Spring Boot",
+"version": "1.3.3.RELEASE"
+},
+{
+"name": "Spring Boot Cache Starter",
+"version": "1.3.3.RELEASE"
+},
+{
+"name": "Spring Boot Jersey Starter",
+"version": "1.3.3.RELEASE"
+},
+{
+"name": "Spring Boot Validation Starter",
+"version": "1.3.3.RELEASE"
+},
+{
+"name": "Spring Data Commons",
+"version": "1.11.4.RELEASE"
+},
+{
+"name": "Spring Data JPA",
+"version": "1.9.4.RELEASE"
+},
+{
+"name": "Spring Data REST",
+"version": "2.4.4.RELEASE"
+},
+{
+"name": "Spring Data REST - WebMVC",
+"version": "2.4.4.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "4.1.9.RELEASE"
+},
+{
+"name": "Spring Framework",
+"version": "4.2.5.RELEASE"
+},
+{
+"name": "Spring HATEOAS",
+"version": "0.19.0.RELEASE"
+},
+{
+"name": "Spring Plugin Core",
+"version": "1.2.0.RELEASE"
+},
+{
+"name": "Spring Security",
+"version": "4.0.3.RELEASE"
+},
+{
+"name": "Spring Transaction",
+"version": "4.2.5.RELEASE"
+},
+{
+"name": "spring- aopalliance",
+"version": "1.0"
+},
+{
+"name": "sshj",
+"version": "0.27.0"
+},
+{
+"name": "tabula-py",
+"version": "1.3.1"
+},
+{
+"name": "Type arithmetic library for Java5",
+"version": "1.4"
+},
+{
+"name": "warp10-jupyter",
+"version": "0.4"
+},
+{
+"name": "web-react",
+"version": "1.2.1"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "Visibility Manager",
+"retrieved": "2026-11-08",
+"sha256": "f22b5b0461a57393fd30d9cbb8c3d9c286e53051c8e9bb543c9be9073dd42ff6",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/d368c4e1647e4aac997ef26fab8e7ce1?v=1c757c22",
+"version": "4.5.0"
+}

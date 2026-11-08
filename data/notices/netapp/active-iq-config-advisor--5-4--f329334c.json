@@ -1,0 +1,66 @@
+{
+"components": [
+{
+"name": "adodbapi",
+"version": "2.0"
+},
+{
+"name": "Django",
+"version": "1.8"
+},
+{
+"name": "Django",
+"version": "1.8.4"
+},
+{
+"name": "jquery",
+"version": "1.11.1"
+},
+{
+"name": "jquery",
+"version": "1.11.3"
+},
+{
+"name": "node-js",
+"version": "6.11.2"
+},
+{
+"name": "paramiko",
+"version": "2.0.1"
+},
+{
+"name": "Python",
+"version": "3.4.4"
+},
+{
+"name": "pywbem",
+"version": "0.9.0"
+},
+{
+"name": "reportlab",
+"version": "3.3.0"
+},
+{
+"name": "typing",
+"version": "3.5.3.0"
+},
+{
+"name": "xlwt",
+"version": "1.1.2"
+},
+{
+"name": "xmldom",
+"version": "0.1.27"
+}
+],
+"extractors": [
+"source_archives"
+],
+"kind": "listing",
+"product": "Active IQ Config Advisor",
+"retrieved": "2026-11-08",
+"sha256": "5f919325d0047067e30a6c41207d8b1a17a5e49d13a571d55774ab4cb19ed765",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/Config_Advisor/5.4/",
+"version": "5.4"
+}

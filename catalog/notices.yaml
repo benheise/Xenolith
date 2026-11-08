@@ -33,7 +33,86 @@ discover:
     limit: 4
     url_template: https://artifacts.elastic.co/reports/dependencies/dependencies-{version}.html
 
+  # NetApp publishes a NOTICE report for every release of most products in a
+  # plain directory listing: <product>/<version>/NOTICE.pdf. Older releases only
+  # have the source archives, whose file names are used instead. The server sends an
+  # incomplete certificate chain; catalog/intermediates.pem supplies the missing
+  # intermediate.
+  - type: autoindex
+    supplier: NetApp
+    index: https://opensource.netapp.com/
+    file: '(?i)^notice[^/]*\.pdf$'
+    version: '^v?(?P<v>\d+(?:\.\d+)+(?:P\d+)?)'
+    exclude: '(?i)(rc\d*|beta|eap|test|scan|preview|old)'
+    latest: 3
+    archives: true      # releases without a NOTICE report: list the source archives instead
+    products:
+      ONTAP: ONTAP
+      Data_ONTAP_9: {name: ONTAP, latest: 2}
+      Cloud_Volumes_ONTAP: Cloud Volumes ONTAP
+      ONTAP_Select: ONTAP Select
+      ONTAP_Select_Deploy: ONTAP Select Deploy
+      ONTAP_Mediator: ONTAP Mediator
+      ONTAP_Tools_for_VMware_vSphere: ONTAP tools for VMware vSphere
+      Active_IQ_Unified_Manager: {name: Active IQ Unified Manager, version: '^(?:AIQUM-)?(?P<v>\d+(?:\.\d+)+(?:P\d+)?)'}
+      Config_Advisor: Active IQ Config Advisor
+      SnapCenter: SnapCenter
+      SnapCenter_Plug-in_for_VMware_vSphere: SnapCenter Plug-in for VMware vSphere
+      StorageGRID: StorageGRID
+      StorageGRID_Webscale: StorageGRID
+      ESeries_EFSeries_SANtricity_OS: SANtricity OS
+      SANtricity_Web_Services_Proxy: SANtricity Web Services Proxy
+      SANtricity_Storage_Manager: SANtricity Storage Manager
+      Element_Software: Element Software
+      Element_OS: Element Software
+      Service_Processor: Service Processor
+      MetroCluster_Tiebreaker: MetroCluster Tiebreaker
+      Astra_Control_Center: Astra Control Center
+      XCP: XCP
+
+  # Extreme Networks lists an "Open Source Declaration" PDF per product release
+  # in one table (family | product | version | link). Newest two per product.
+  - type: table
+    supplier: Extreme Networks
+    index: https://www.extremenetworks.com/support/policies/open-source-declaration
+    product_column: 1
+    version_column: 2
+    link: 'sitecorecontenthub\.cloud/api/public/content/|documentation\.extremenetworks\.com/.+\.pdf'
+    exclude: '(?i)beta|alpha|\brc\d*'
+    latest: 2
+
+  # Veeam's open source page is a product/version picker; the options (with the
+  # URL of each version's JSON component list) are embedded in the page.
+  - type: embedded_json
+    supplier: Veeam
+    index: https://www.veeam.com/legal/eula-oss.html
+    config: "data-config='(\\{\\s*\"licensesJson\".*?)'"
+    list_key: licensesJson
+    product_key: product
+    versions_key: versions
+    version_key: version
+    url_key: path
+    exclude_products: '(?i)community edition|FREE$'
+    latest: 2
+
 documents:
+  # ManageEngine: ADSelfService Plus publishes a "third-party components" PDF
+  # (bundled JARs with versions), updated per build.
+  - supplier: ManageEngine
+    product: ADSelfService Plus
+    version: "7000"
+    url: https://download.manageengine.com/products/self-service-password/adselfservice-plus-third-party-apps-list.pdf
+
+  # SolarWinds: per-product third-party lists. The SolarWinds Platform list
+  # (NPM, SAM, NCM and the other Orion modules) is no longer published.
+  - supplier: SolarWinds
+    product: Dameware
+    url: https://documentation.solarwinds.com/en/Success_Center/dameware/Content/dameware_third_party_software_list.htm
+
+  - supplier: SolarWinds
+    product: Serv-U
+    url: https://documentation.solarwinds.com/en/success_center/servu/content/servu_third_party_software_list.htm
+
   - supplier: F5
     product: BIG-IP
     version: "17.5"
@@ -141,3 +220,7 @@ documents:
 #   Docker Desktop: acknowledgements only inside the app.
 #   Axis: per-model text files exist only for legacy firmware (5.x).
 #   Nutanix, Zscaler: no public component lists found.
+#   SolarWinds Platform (NPM, SAM, NCM ...): list withdrawn; "request an SBOM". Kiwi pages render client-side.
+#   ManageEngine OpManager: thirdparty-library-dependency.html renders client-side.
+#   Veritas NetBackup: notices are an HTML book of license texts without versions.
+#   Progress MOVEit Transfer: since 2020 only in notice.txt inside the installation.

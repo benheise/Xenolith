@@ -1,0 +1,66 @@
+{
+"components": [
+{
+"name": "ant-contrib",
+"version": "1.0b3"
+},
+{
+"name": "Apache Commons Collections",
+"version": "3.2.2"
+},
+{
+"name": "chaki",
+"version": "0.1.0"
+},
+{
+"name": "Direct Web Remoting",
+"version": "2.0.4"
+},
+{
+"name": "Eclipse ECJ",
+"version": "4.4.1"
+},
+{
+"name": "Ext.ux.layout.Carousel",
+"version": "20140627-snapshot-5b4c9e68"
+},
+{
+"name": "JavaMail",
+"version": "1.4.6"
+},
+{
+"name": "JavaMail API pop3 provider",
+"version": "1.4.6"
+},
+{
+"name": "JavaMail API smtp provider",
+"version": "1.4.6-rc1"
+},
+{
+"name": "JBoss Community Application Server",
+"version": "6.0.0.Final"
+},
+{
+"name": "JSch",
+"version": "0.1.49"
+},
+{
+"name": "mxgraph",
+"version": "v3.3.1.1"
+},
+{
+"name": "vext-framework",
+"version": "1.1.0.1"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "FabricManager",
+"retrieved": "2026-11-08",
+"sha256": "89fe400585ab28b8dde76f35d0d4727acb4b3c0d29f2f0a5902eafb928bb85ad",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/f151d560870c479eb833a23ca904c8d4?v=6b663bde",
+"version": "8.4"
+}

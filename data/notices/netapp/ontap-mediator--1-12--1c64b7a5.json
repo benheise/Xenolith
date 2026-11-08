@@ -1,0 +1,330 @@
+{
+"components": [
+{
+"name": "alembic",
+"version": "1.18.4"
+},
+{
+"name": "anyio",
+"version": "4.12.1"
+},
+{
+"name": "Click - Python Command Line Utility",
+"version": "8.3.1"
+},
+{
+"name": "connexion",
+"version": "3.3.0"
+},
+{
+"name": "crate-py/rpds",
+"version": "0.30.0"
+},
+{
+"name": "distro",
+"version": "1.9.0"
+},
+{
+"name": "django/asgiref",
+"version": "3.11.1"
+},
+{
+"name": "encode/httpx",
+"version": "0.28.1"
+},
+{
+"name": "encode/uvicorn",
+"version": "0.41.0"
+},
+{
+"name": "gevent",
+"version": "25.9.1"
+},
+{
+"name": "greenlet",
+"version": "3.2.5"
+},
+{
+"name": "h11",
+"version": "0.16.0"
+},
+{
+"name": "httpcore",
+"version": "1.0.9"
+},
+{
+"name": "httpx",
+"version": "0.28.1"
+},
+{
+"name": "idna",
+"version": "3.10"
+},
+{
+"name": "idna",
+"version": "3.11"
+},
+{
+"name": "importlib_metadata",
+"version": "8.7.1"
+},
+{
+"name": "inflection",
+"version": "0.5.1"
+},
+{
+"name": "itsdangerous",
+"version": "2.2.0"
+},
+{
+"name": "jsonschema-specifications",
+"version": "2025.9.1"
+},
+{
+"name": "Mako",
+"version": "1.3.10"
+},
+{
+"name": "markdown-it-py",
+"version": "4.0.0"
+},
+{
+"name": "MarkupSafe",
+"version": "3.0.3"
+},
+{
+"name": "Packaging",
+"version": "26.0"
+},
+{
+"name": "paramiko",
+"version": "4.0.0"
+},
+{
+"name": "platformdirs",
+"version": "4.2.2"
+},
+{
+"name": "platformdirs",
+"version": "4.4.0"
+},
+{
+"name": "psf-requests",
+"version": "2.32.5"
+},
+{
+"name": "psutil",
+"version": "6.0.0"
+},
+{
+"name": "psutil",
+"version": "7.2.2"
+},
+{
+"name": "py3-inflect",
+"version": "7.3.1"
+},
+{
+"name": "py3-python-multipart",
+"version": "0.0.22"
+},
+{
+"name": "py3-swagger-ui-bundle",
+"version": "1.1.0"
+},
+{
+"name": "pycparser",
+"version": "3.0"
+},
+{
+"name": "Pygments - Python syntax highlighter",
+"version": "2.19.2"
+},
+{
+"name": "pypi-zope.interface",
+"version": "8.2"
+},
+{
+"name": "pyrsistent",
+"version": "0.20.0"
+},
+{
+"name": "Python six",
+"version": "1.17.0"
+},
+{
+"name": "python-a2wsgi",
+"version": "1.10.0"
+},
+{
+"name": "python-attrs",
+"version": "25.4.0"
+},
+{
+"name": "python-certifi",
+"version": "2026.2.25"
+},
+{
+"name": "python-dateutil",
+"version": "2.9.0.post0"
+},
+{
+"name": "python-gevent-doc",
+"version": "25.9.1"
+},
+{
+"name": "python-jsonschema",
+"version": "4.26.0"
+},
+{
+"name": "python-jsonschema/referencing",
+"version": "0.37.0"
+},
+{
+"name": "python-multipart",
+"version": "0.0.22"
+},
+{
+"name": "python-pam",
+"version": "2.0.2"
+},
+{
+"name": "python-typing-extensions",
+"version": "4.1.1"
+},
+{
+"name": "python-typing-extensions",
+"version": "4.12.2"
+},
+{
+"name": "python-typing-extensions",
+"version": "4.15.0"
+},
+{
+"name": "python-wheel",
+"version": "0.46.3"
+},
+{
+"name": "python3-attrs",
+"version": "25.4.0"
+},
+{
+"name": "python3-charset-normalizer",
+"version": "3.4.5"
+},
+{
+"name": "python3-httpcore",
+"version": "1.0.9"
+},
+{
+"name": "python3-multipart",
+"version": "0.0.22"
+},
+{
+"name": "PyYAML",
+"version": "6.0.2"
+},
+{
+"name": "PyYAML",
+"version": "6.0.3"
+},
+{
+"name": "referencing",
+"version": "0.37.0"
+},
+{
+"name": "SCST",
+"version": "3.10"
+},
+{
+"name": "SCST",
+"version": "3.3.0"
+},
+{
+"name": "SCST",
+"version": "3.4.0"
+},
+{
+"name": "SCST",
+"version": "3.5.0"
+},
+{
+"name": "SCST",
+"version": "3.6.0"
+},
+{
+"name": "SCST",
+"version": "3.7.0"
+},
+{
+"name": "SCST",
+"version": "3.8.0"
+},
+{
+"name": "SCST",
+"version": "3.9"
+},
+{
+"name": "sniffio",
+"version": "1.3.0"
+},
+{
+"name": "SQLAlchemy",
+"version": "2.0.48"
+},
+{
+"name": "Starlette",
+"version": "0.52.1"
+},
+{
+"name": "swagger-ui-bundle",
+"version": "1.1.0"
+},
+{
+"name": "tobgu/pyrsistent",
+"version": "0.20.0"
+},
+{
+"name": "typing_extensions",
+"version": "4.12.2"
+},
+{
+"name": "typing_extensions",
+"version": "4.15.0"
+},
+{
+"name": "url-normalize",
+"version": "2.2.1"
+},
+{
+"name": "urllib3",
+"version": "2.6.3"
+},
+{
+"name": "Werkzeug",
+"version": "3.1.6"
+},
+{
+"name": "wrapt",
+"version": "1.17.3"
+},
+{
+"name": "zipp",
+"version": "3.23.0"
+},
+{
+"name": "zope.event",
+"version": "6.1"
+}
+],
+"extractors": [
+"component_license"
+],
+"kind": "pdf",
+"product": "ONTAP Mediator",
+"retrieved": "2026-11-08",
+"sha256": "f005ad04627b57a2198f94f83ae7c17ea6c35e710e93ab22d4111c0f30a13701",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/ONTAP_Mediator/1.12/NOTICE.pdf",
+"version": "1.12"
+}

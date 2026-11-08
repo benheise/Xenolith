@@ -1,0 +1,2510 @@
+{
+"components": [
+{
+"name": "@bab syntax-class-static-block",
+"version": "7.14.5"
+},
+{
+"name": "@babel/ transform-regenerator",
+"version": "7.14.5"
+},
+{
+"name": "@babel/code-frame",
+"version": "7.12.11"
+},
+{
+"name": "@babel/code-frame",
+"version": "7.14.5"
+},
+{
+"name": "@babel/compat- data",
+"version": "7.15.0"
+},
+{
+"name": "@babel/core",
+"version": "7.15.0"
+},
+{
+"name": "@babel/generator",
+"version": "7.15.0"
+},
+{
+"name": "@babel/h transforms",
+"version": "7.15.0"
+},
+{
+"name": "@babel/he variables",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-annotate-as-pure",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-build assignment-operator-visitor",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-compilation-targets",
+"version": "7.15.0"
+},
+{
+"name": "@babel/helper-create-class-features-pl @babel/helper-create-regexp-features-plugin",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-define-polyfill-provider",
+"version": "0.2.3"
+},
+{
+"name": "@babel/helper-expl assignable-expression",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-function-name",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-get-function-arity",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-member-expression-to-functions",
+"version": "7.15.0"
+},
+{
+"name": "@babel/helper-module-imports",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-optimise-call-expression",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-plugin-utils",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-r generator",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-replace-supers",
+"version": "7.15.0"
+},
+{
+"name": "@babel/helper-simple-access",
+"version": "7.14.8"
+},
+{
+"name": "@babel/helper-skip-transp expression-wrappers",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-split-export-declaration",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helper-validator-identifier",
+"version": "7.14.9 @babel/helper-validator-option 7.14.5"
+},
+{
+"name": "@babel/helper-wrap-function",
+"version": "7.14.5"
+},
+{
+"name": "@babel/helpers",
+"version": "7.15.3"
+},
+{
+"name": "@babel/highlight",
+"version": "7 @babel/parser 7.15.3"
+},
+{
+"name": "@babel/pl optional-catch-binding",
+"version": "7.14.5"
+},
+{
+"name": "@babel/pl transform-property-literals",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plug new-target",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugi unicode-escapes",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-pro strings",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal- generator-functions",
+"version": "7.14.9"
+},
+{
+"name": "@babel/plugin-proposal-class-properties",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal-class-static-bloc @babel/plugin-proposal-dynamic-import",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal-export-namespace-from",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal-logical-assignment-operators",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal-nullish-coalescin",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal-numeric-separator",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal-object-rest-spread",
+"version": "7.14.7"
+},
+{
+"name": "@babel/plugin-proposal-optional-chaining",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal-private-metho @babel/plugin-proposal-private-property-in-object",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-proposal-unicode-property-regex",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-syntax-jsx",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-syntax-private-property-in-object",
+"version": "7 @babel/plugin-syntax-top-level-await 7.14.5"
+},
+{
+"name": "@babel/plugin-tr exponentiation-operator",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-tr modules-amd",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform",
+"version": "7.14.7"
+},
+{
+"name": "@babel/plugin-transform generator",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-arrow-functions",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-block-scoped-functions",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-block-scoping",
+"version": "7.15. @babel/plugin-transform-classes 7.14.9"
+},
+{
+"name": "@babel/plugin-transform-computed-properties",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-dotall-regex",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-duplicate-keys",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-for-of",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-function-name",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-literals",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-member-expression-literals",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-modules-commonjs",
+"version": "7.15.0"
+},
+{
+"name": "@babel/plugin-transform-modules-systemjs",
+"version": "7.14.5 @babel/plugin-transform-modules-umd 7.14.5"
+},
+{
+"name": "@babel/plugin-transform-named-capturing-groups-regex",
+"version": "7.14.9"
+},
+{
+"name": "@babel/plugin-transform-object-super",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-parameters",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-react @babel/plugin-transform-react-jsx-development",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-react-display-name",
+"version": "7.15.1"
+},
+{
+"name": "@babel/plugin-transform-react-pure-annotations",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-reserved-words",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-runtime",
+"version": "7.15.0"
+},
+{
+"name": "@babel/plugin-transform-shorthand-properties",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-spread",
+"version": "7.14.6"
+},
+{
+"name": "@babel/plugin-transform-template-literals",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-typeof-symbol",
+"version": "7.14.5"
+},
+{
+"name": "@babel/plugin-transform-unicode-regex",
+"version": "7.14.5"
+},
+{
+"name": "@babel/preset-env",
+"version": "7.15.0"
+},
+{
+"name": "@babel/preset-react @babel/runtime",
+"version": "7.15.3"
+},
+{
+"name": "@babel/runtime-corejs3",
+"version": "7.15.3"
+},
+{
+"name": "@babel/template",
+"version": "7.14.5"
+},
+{
+"name": "@babel/traverse",
+"version": "7.15.0"
+},
+{
+"name": "@babel/types",
+"version": "7 @eslint/eslintrc 0.4.3"
+},
+{
+"name": "@dabh/diagnostics",
+"version": "2.0.2"
+},
+{
+"name": "@emotion/hash",
+"version": "0.8.0"
+},
+{
+"name": "@humanwhocodes/config-array",
+"version": "0.5.0"
+},
+{
+"name": "@humanwhocodes/object-schema",
+"version": "1.2.0"
+},
+{
+"name": "@iamstarkov/jss-sheets-manager",
+"version": "v10.7.1"
+},
+{
+"name": "@jest/console",
+"version": "26.6.2"
+},
+{
+"name": "@jest/core",
+"version": "26.6.3"
+},
+{
+"name": "@jest/environment",
+"version": "26.6.2"
+},
+{
+"name": "@jest/fake-timers",
+"version": "26.6.2"
+},
+{
+"name": "@jest/globals",
+"version": "26.6.2"
+},
+{
+"name": "@jest/reporters",
+"version": "26.6.2"
+},
+{
+"name": "@jest/source-map",
+"version": "26.6.2"
+},
+{
+"name": "@jest/t",
+"version": "26.6.3"
+},
+{
+"name": "@jest/test-result",
+"version": "26.6.2"
+},
+{
+"name": "@jest/transform",
+"version": "26.6.2"
+},
+{
+"name": "@jest/types",
+"version": "26.6.2"
+},
+{
+"name": "@material-ui/core",
+"version": "4.12.3"
+},
+{
+"name": "@material-ui/icons",
+"version": "4.11.2"
+},
+{
+"name": "@material-ui/lab",
+"version": "4.0.0-alpha.60 ui/styles 4.11.4"
+},
+{
+"name": "@material-ui/system",
+"version": "4.12.1"
+},
+{
+"name": "@material-ui/types",
+"version": "5.1.0"
+},
+{
+"name": "@material-ui/utils",
+"version": "4.11.2"
+},
+{
+"name": "@mswjs/cookies",
+"version": "0. draft/until 1.0.3"
+},
+{
+"name": "@reach/router",
+"version": "1.3.4"
+},
+{
+"name": "@sinonjs/fake-timers",
+"version": "6.0.1"
+},
+{
+"name": "@te library/user-event",
+"version": "7.2.1"
+},
+{
+"name": "@testing-library/dom",
+"version": "7.31.2"
+},
+{
+"name": "@testing-library/jest-dom",
+"version": "5.14.1"
+},
+{
+"name": "@testing-library/react",
+"version": "11.2.7"
+},
+{
+"name": "@testing-library/react",
+"version": "9.5.0"
+},
+{
+"name": "@tootallnate/once",
+"version": "1.1.2"
+},
+{
+"name": "@types/aria-query",
+"version": "4.2.2"
+},
+{
+"name": "@types/babel__",
+"version": "7.6.3"
+},
+{
+"name": "@types/babel__core",
+"version": "7.1.15"
+},
+{
+"name": "@types/babel__template",
+"version": "7.4.1"
+},
+{
+"name": "@types/babel__traverse",
+"version": "7.14.2"
+},
+{
+"name": "@types/cookie",
+"version": "0.4.1"
+},
+{
+"name": "@types/d3",
+"version": "6.7.5"
+},
+{
+"name": "@types/d3- @types/d3-axis",
+"version": "2.1.3"
+},
+{
+"name": "@types/d3- @types/d3-time-format",
+"version": "3.0.1"
+},
+{
+"name": "@types/d3-brush",
+"version": "2.1.2"
+},
+{
+"name": "@types/d3-chord",
+"version": "2.0.3"
+},
+{
+"name": "@types/d3-color",
+"version": "2.0.3"
+},
+{
+"name": "@types/d3-contour",
+"version": "2.0.4"
+},
+{
+"name": "@types/d3-delaunay",
+"version": "5.3.1"
+},
+{
+"name": "@types/d3-dispatch",
+"version": "2.0.1"
+},
+{
+"name": "@types/d3-drag",
+"version": "2.0.2"
+},
+{
+"name": "@types/d3-dsv",
+"version": "2.0.2"
+},
+{
+"name": "@types/d3-ease",
+"version": "2.0.1"
+},
+{
+"name": "@types/d3-fetch",
+"version": "2.0.2"
+},
+{
+"name": "@types/d3-force",
+"version": "2.1.4"
+},
+{
+"name": "@types/d3-format",
+"version": "2.0.2"
+},
+{
+"name": "@types/d3-geo",
+"version": "2.0.3"
+},
+{
+"name": "@types/d3-hierarchy",
+"version": "2.0.2 @types/d3-interpolate 2.0.2"
+},
+{
+"name": "@types/d3-path",
+"version": "2.0.1"
+},
+{
+"name": "@types/d3-polygon",
+"version": "2.0.1"
+},
+{
+"name": "@types/d3-quadtree",
+"version": "2.0.2"
+},
+{
+"name": "@types/d3-rand @types/d3-scale",
+"version": "3.3.2"
+},
+{
+"name": "@types/d3-scale-chromatic",
+"version": "2.0.1"
+},
+{
+"name": "@types/d3-selection",
+"version": "2.0.1"
+},
+{
+"name": "@types/d3-shape",
+"version": "2.1.3"
+},
+{
+"name": "@types/d3-timer",
+"version": "2.0.1"
+},
+{
+"name": "@types/d3-transition",
+"version": "2.0.2"
+},
+{
+"name": "@types/d3-zoom",
+"version": "2.0.3"
+},
+{
+"name": "@types/geojson @types/glob",
+"version": "7.1.4"
+},
+{
+"name": "@types/hoist-non-react-statics",
+"version": "3.3.1"
+},
+{
+"name": "@types/html-minifier-terser",
+"version": "5.1.2"
+},
+{
+"name": "@types/inquirer",
+"version": "7.3.3"
+},
+{
+"name": "@types/istanbul-reports",
+"version": "3.0.1"
+},
+{
+"name": "@types/j",
+"version": "1.1.0"
+},
+{
+"name": "@types/json-schema",
+"version": "7.0.9"
+},
+{
+"name": "@types/minimatch",
+"version": "3.0.5"
+},
+{
+"name": "@types/normalize-package-data",
+"version": "2.4.1"
+},
+{
+"name": "@types/prettier",
+"version": "2.3.2"
+},
+{
+"name": "@types/react",
+"version": "17.0.19"
+},
+{
+"name": "@types/react-dom",
+"version": "17.0.9"
+},
+{
+"name": "@types/react-redux",
+"version": "7.1.18"
+},
+{
+"name": "@types/react-transition-grou @types/scheduler",
+"version": "0.16.2"
+},
+{
+"name": "@types/set-cookie-parser",
+"version": "2.4.1"
+},
+{
+"name": "@types/stack-utils",
+"version": "2.0.1"
+},
+{
+"name": "@types/systemjs",
+"version": "6.1.1"
+},
+{
+"name": "@types/tap @types/testing-library__jest-dom",
+"version": "5.14.1"
+},
+{
+"name": "@types/through",
+"version": "0.0.30"
+},
+{
+"name": "@types/uglify-js",
+"version": "3.13.1"
+},
+{
+"name": "@types/webpack",
+"version": "4.41.30"
+},
+{
+"name": "@types/webpack-sources",
+"version": "3.2 @types/yargs 13.0.12"
+},
+{
+"name": "@types/yargs",
+"version": "15.0.14"
+},
+{
+"name": "@types/yargs-parser",
+"version": "20.2.1"
+},
+{
+"name": "@webassemblyjs/floating-point-hex-parser",
+"version": "1.9.0"
+},
+{
+"name": "@webassemblyjs/helper-api-error",
+"version": "1.9.0"
+},
+{
+"name": "@webassemblyjs/helper-code- frame",
+"version": "1.9.0"
+},
+{
+"name": "@webassemblyjs/helper-fsm",
+"version": "1.9.0"
+},
+{
+"name": "@webassemblyjs/wast-parser",
+"version": "1.9.0"
+},
+{
+"name": "@xtuc/long",
+"version": "4.2.2"
+},
+{
+"name": "@zeit/schemas",
+"version": "2.6.0"
+},
+{
+"name": "Acorn",
+"version": "8.4.1"
+},
+{
+"name": "acorn-globals",
+"version": "6.0.0"
+},
+{
+"name": "Acorn-JSX",
+"version": "5.3.2"
+},
+{
+"name": "admiralobvious/tinysyslog",
+"version": "v0.2.0"
+},
+{
+"name": "agent-base",
+"version": "6.0.2"
+},
+{
+"name": "ajv",
+"version": "v8.6.2"
+},
+{
+"name": "and",
+"version": "3.4 are conditions of the licenses granted in SectionÂ 2.1. 3. Responsibilities ------------------- 3.1. Distribution of Source Form All distribution of Covered Software in Source Code Form"
+},
+{
+"name": "and",
+"version": "8 survive termination of this Public License. Section 7 â€“ Other Terms and Conditions. a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed. b. Any arrangements"
+},
+{
+"name": "and any national implementations thereof.",
+"version": "2. Waiver. To the greatest extent permitted by"
+},
+{
+"name": "and distribute the Work and such Derivative Works in Source or Object form.",
+"version": "3. Grant of Patent License. Subject to the terms and conditions of this License"
+},
+{
+"name": "AND DISTRIBUTION",
+"version": "1. Definitions. \"License\" shall mean the terms and conditions for use"
+},
+{
+"name": "and distribution as defined by Sections",
+"version": "1 through 9 of this document. \"Licensor\" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License. \"Legal Entity\" shall mean the union of the acting entity and all other entities that control"
+},
+{
+"name": "and otherwise transfer either its Contributions or its Contributor Version.",
+"version": "2.2. Effective Date The licenses granted in SectionÂ 2.1 with respect to any Contribution become effective for each Contribution on the date the Contributor first distributes such Contribution. 2.3. Limitations on Grant Scope The licenses granted in this SectionÂ 2 are the only rights granted under this License. No additional rights or licenses will be implied from the distribution or licensing of Covered Software under this License. Notwithstanding SectionÂ 2.1(b) above"
+},
+{
+"name": "and Share Adapted Material.",
+"version": "2. Exceptions and Limitations. For the avoidance of doubt"
+},
+{
+"name": "and You become compliant prior to",
+"version": "30 days after Your receipt of the notice. 5.2. If You initiate litigation against any entity by asserting a patent infringement claim (excluding declaratory judgment actions, counter-claims, and cross-claims) alleging that a Contributor Version directly or indirectly infringes any patent"
+},
+{
+"name": "ansi-align",
+"version": "2.0.0"
+},
+{
+"name": "ansi-colors",
+"version": "1.1.0"
+},
+{
+"name": "ansi-colors",
+"version": "4.1.1"
+},
+{
+"name": "ansi-wrap",
+"version": "0.1.0"
+},
+{
+"name": "append-buffer",
+"version": "1.0.2"
+},
+{
+"name": "arch",
+"version": "2.2.0"
+},
+{
+"name": "are permitted provided that the fol conditions are met",
+"version": "1. Redistributions of source code must retain the above copyright notice"
+},
+{
+"name": "are permitted provided that the following conditions are met",
+"version": "1. Redistributions of source code must retain the above copyright notice"
+},
+{
+"name": "ARG",
+"version": "2.0.0"
+},
+{
+"name": "ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. Creative Commons Attribution",
+"version": "4.0 Packages that use this license: (caniuse-lite 1.0.30001252) Creative Commons Attribution 4.0 ================================ Creative Commons Attribution 4.0 International Creative Commons Corporation (â€œCreative Commonsâ€\u0000) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an â€œas-isâ€\u0000 basis. Creative Commons gives no warranties regarding its licenses"
+},
+{
+"name": "arr-filter",
+"version": "1.1.2"
+},
+{
+"name": "arr-map",
+"version": "2.0.2"
+},
+{
+"name": "array-initial",
+"version": "1.1.0"
+},
+{
+"name": "array-last",
+"version": "1.3.0"
+},
+{
+"name": "array-sort",
+"version": "1.0.0"
+},
+{
+"name": "As axios",
+"version": "0.21.1"
+},
+{
+"name": "as described in SectionÂ",
+"version": "3.1"
+},
+{
+"name": "astral-regex",
+"version": "2.0.0"
+},
+{
+"name": "async-done",
+"version": "v1.3.2"
+},
+{
+"name": "async-settle",
+"version": "1.0.0"
+},
+{
+"name": "Autoprefixer",
+"version": "9.8.6"
+},
+{
+"name": "axe-core",
+"version": "4.3.3"
+},
+{
+"name": "babel-plugin-polyfill-corejs2",
+"version": "0.2.2"
+},
+{
+"name": "babel-plugin-polyfill-corejs3",
+"version": "0.2.4"
+},
+{
+"name": "babel-plugin-polyfill-regene babel-preset-current-node-syntax",
+"version": "1.0.1"
+},
+{
+"name": "bach",
+"version": "1.2.0"
+},
+{
+"name": "balanced-match",
+"version": "0.4.2"
+},
+{
+"name": "browserslist",
+"version": "4.16.8"
+},
+{
+"name": "buffer-from",
+"version": "1.1.2"
+},
+{
+"name": "but not otherwise.",
+"version": "2. Patent and trademark rights are not licensed under this Public License. 3. To the extent possible"
+},
+{
+"name": "camelcase",
+"version": "3.0.0"
+},
+{
+"name": "camelcase",
+"version": "4.1.0"
+},
+{
+"name": "camelcase",
+"version": "6.2.0"
+},
+{
+"name": "caniuse-lite",
+"version": "1.0.30001252"
+},
+{
+"name": "Chalk",
+"version": "2.4.1"
+},
+{
+"name": "Chalk",
+"version": "4.1.2"
+},
+{
+"name": "char-regex",
+"version": "1.0.2"
+},
+{
+"name": "chokid classcat",
+"version": "5.0.3"
+},
+{
+"name": "chrisdickinson/raf",
+"version": "3.4.1"
+},
+{
+"name": "cjs-module-lexer",
+"version": "0.6.0"
+},
+{
+"name": "classnames",
+"version": "2.3.1"
+},
+{
+"name": "cli-boxes",
+"version": "1.0.0"
+},
+{
+"name": "clipboardy",
+"version": "1.2.3"
+},
+{
+"name": "cliui",
+"version": "3.2.0"
+},
+{
+"name": "cliui",
+"version": "v7.0.4"
+},
+{
+"name": "Clone",
+"version": "2.1.2"
+},
+{
+"name": "clone-buffer",
+"version": "1.0.0"
+},
+{
+"name": "clone-stats",
+"version": "1.0.0"
+},
+{
+"name": "cloneable-readable",
+"version": "1.1.3"
+},
+{
+"name": "clsx",
+"version": "1.1.1"
+},
+{
+"name": "code-point-at",
+"version": "1.1.0"
+},
+{
+"name": "collection-map",
+"version": "1.0.0"
+},
+{
+"name": "color-string",
+"version": "1.6.0"
+},
+{
+"name": "color-support",
+"version": "1.1.3"
+},
+{
+"name": "colorette",
+"version": "1.3.0"
+},
+{
+"name": "colors.js",
+"version": "v1.4.0"
+},
+{
+"name": "colorspace",
+"version": "1.1.2"
+},
+{
+"name": "component/path-to- regexp",
+"version": "2.2.1"
+},
+{
+"name": "component/path-to-regexp",
+"version": "1.8.0"
+},
+{
+"name": "compression",
+"version": "1.7.3"
+},
+{
+"name": "config-chain",
+"version": "1.1.13"
+},
+{
+"name": "content-disposition",
+"version": "0.5.2"
+},
+{
+"name": "Contributors (ben@npmjs.com)",
+"version": "2010"
+},
+{
+"name": "conventional-commit-types",
+"version": "2.3.0"
+},
+{
+"name": "convert-source-map",
+"version": "1.8.0 2.0.5"
+},
+{
+"name": "core-js",
+"version": "3.16.4"
+},
+{
+"name": "core-js-pure",
+"version": "3.16.4"
+},
+{
+"name": "cosmiconfig",
+"version": "7.0.1"
+},
+{
+"name": "create-react-context",
+"version": "0.3.0"
+},
+{
+"name": "css-vendor",
+"version": "2.0.8"
+},
+{
+"name": "css-what",
+"version": "v5.0.1"
+},
+{
+"name": "CSSselect",
+"version": "v4.1.3"
+},
+{
+"name": "csstype",
+"version": "2.6.17"
+},
+{
+"name": "cz-conventional-changelog",
+"version": "1.2.0"
+},
+{
+"name": "d3-array",
+"version": "1.2.4"
+},
+{
+"name": "d3-collection",
+"version": "1.0.7"
+},
+{
+"name": "d3-color",
+"version": "1.4.1"
+},
+{
+"name": "d3-color",
+"version": "2.0.0"
+},
+{
+"name": "d3-dispatch",
+"version": "2.0.0"
+},
+{
+"name": "d3-drag",
+"version": "2.0.0"
+},
+{
+"name": "d3-ease",
+"version": "2.0.0 1.4.5"
+},
+{
+"name": "d3-interpolate",
+"version": "v1.4.0"
+},
+{
+"name": "d3-interpolate",
+"version": "v2.0.1"
+},
+{
+"name": "d3-path",
+"version": "1.0.9"
+},
+{
+"name": "d3-scale",
+"version": "2.2.2"
+},
+{
+"name": "d3-selection",
+"version": "v2.0.0"
+},
+{
+"name": "d3-shape",
+"version": "v1.3.7"
+},
+{
+"name": "d3-time",
+"version": "1.1 format 2.3.0"
+},
+{
+"name": "d3-timer",
+"version": "v2.0.0"
+},
+{
+"name": "d3-transition",
+"version": "v2.0.0"
+},
+{
+"name": "d3-zoom",
+"version": "2.0.0"
+},
+{
+"name": "data-urls",
+"version": "2.0.0"
+},
+{
+"name": "date dayjs",
+"version": "1.10.6"
+},
+{
+"name": "December",
+"version": "2004 Copyright (C) 2004 Sam Hocevar 22 rue de Plaisance"
+},
+{
+"name": "decimal.js",
+"version": "10.3.1"
+},
+{
+"name": "decimal.js-light",
+"version": "2.5.1"
+},
+{
+"name": "deep-extend",
+"version": "0.6.0"
+},
+{
+"name": "default-compare",
+"version": "1.0.0"
+},
+{
+"name": "default-resolution",
+"version": "2.0.0"
+},
+{
+"name": "detect-node",
+"version": "2.1.0"
+},
+{
+"name": "DISTRIBUTION AND MODIFICATION",
+"version": "0. You just DO WHAT THE FUCK YOU WANT TO. ISC License Packages that use this license: (cliui v7.0.4) Copyright (c) 2015"
+},
+{
+"name": "dns-packet",
+"version": "1.3.4"
+},
+{
+"name": "dom-accessibility-api helpers",
+"version": "v5.2.1"
+},
+{
+"name": "dom-helpers",
+"version": "3.4.0"
+},
+{
+"name": "dom-serializer",
+"version": "1.3.2"
+},
+{
+"name": "domexception",
+"version": "2.0.1"
+},
+{
+"name": "DomHandler",
+"version": "4.2.2"
+},
+{
+"name": "dominictarr/rc",
+"version": "1.2.8"
+},
+{
+"name": "domutils",
+"version": "2.8.0"
+},
+{
+"name": "each-props",
+"version": "1.3.2"
+},
+{
+"name": "einaros/ws",
+"version": "6.2.2"
+},
+{
+"name": "einaros/ws",
+"version": "7.5.4"
+},
+{
+"name": "emittery",
+"version": "v0.7.2"
+},
+{
+"name": "enabled",
+"version": "2.0.0"
+},
+{
+"name": "enquirer",
+"version": "2.3.6"
+},
+{
+"name": "es-abstract",
+"version": "1.18.5"
+},
+{
+"name": "es5-ext",
+"version": "0.10.53"
+},
+{
+"name": "es6-iterator",
+"version": "2.0.3"
+},
+{
+"name": "es6-symbol",
+"version": "v3.1.3"
+},
+{
+"name": "es6-weak-map",
+"version": "2.0.3"
+},
+{
+"name": "escape-string-regexp",
+"version": "v4.0.0"
+},
+{
+"name": "escodegen",
+"version": "v2.0.0"
+},
+{
+"name": "ESL eslint-plugin-prettier",
+"version": "3.4.1"
+},
+{
+"name": "eslint-utils",
+"version": "v2.1.0"
+},
+{
+"name": "eslint-visitor-keys",
+"version": "2.1.0"
+},
+{
+"name": "espree",
+"version": "7.3.1"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "2-clause \"Simplified\" License Packages that use this license: (css-what v5.0.1, CSSselect v4.1.3, DomHandler 4.2.2, domutils 2.8.0, espree 7.3.1, nth-check 2.0.0, webidl-conversions v5.0.0) BSD Two Clause License ====================== Redistribution and use in source and binary forms"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "2-clause \"Simplified\" License Packages that use this license: (dominictarr/rc 1.2.8) Copyright (c) 2013"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: ( ) Copyright (c) 2013-2015"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: (@humanwhocodes/object-schema 1.2.0, d3-array 1.2.4, d3-collection 1.0.7, d3-color 1.4.1, d3-color 2.0.0, d3-dispatch 2.0.0, d3-drag 2.0.0, d3-ease 2.0.0 1.4.5, d3-interpolate v1.4.0, d3-interpolate v2.0.1, d3-path 1.0.9, d3-scale 2.2.2, d3-selection v2.0.0, d3-time 1.1 format 2.3.0, d3-timer v2.0.0, d3-transition v2.0.0, d3-zoom 2.0.0, gajus/table v6.7.1, hoist-non-react-statics v3.3 transition-group 4.4.2) Copyright (c)"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: (@sinonjs/fake-timers 6.0.1) Copyright (c) 2010-2014"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: (d3-shape v1.3.7) Upstream-Contact: https://github.com/d3/d3-shape/issues Source: https://d3js.org/d3-shape/ Files: * Copyright: 2010-2015 Mike Bostock License: BSD-3-Clause Files: debian/* Copyright: 2017 Pirate Praveen License: BSD-3-Clause License: BSD-3-Clause Redistribution and use in source and binary forms"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: (golang protobuf 20190126-snapshot-347cf4a8) Copyright 2010 The Go Authors. All rights reserved. Redistribution and use in source and binary forms"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: (hyphenate-style-name 1.0.4) Copyright (c) 2015"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: (react-transition-group 2.9.0) BSD 3-Clause License Copyright (c) 2018"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: (tough-cookie 4.0.0) Copyright (c) 2015"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. BSD",
+"version": "2-clause \"Simplified\" License Packages that use this license: (escodegen v2.0.0) Copyright (C) 2012 Yusuke Suzuki (twitter: @Constellation) and other contributors. Redistribution and use in source and binary forms"
+},
+{
+"name": "EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. BSD",
+"version": "3-clause \"New\" or \"Revised\" License Packages that use this license: (Protocol Buffers 3.6.0) Copyright 2008 Google Inc. All rights reserved. Redistribution and use in source and binary forms"
+},
+{
+"name": "even if such Contributor has been advised of the possibility of such damages.",
+"version": "9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof"
+},
+{
+"name": "execa",
+"version": "0.7.0"
+},
+{
+"name": "execa",
+"version": "0.8.0"
+},
+{
+"name": "execa",
+"version": "4.1.0"
+},
+{
+"name": "expand-tilde",
+"version": "2.0.2"
+},
+{
+"name": "expect",
+"version": "26.6.2"
+},
+{
+"name": "ext",
+"version": "1.5.0"
+},
+{
+"name": "fancy-log",
+"version": "1.3.3"
+},
+{
+"name": "fast-levenshtein",
+"version": "1.1.4"
+},
+{
+"name": "fast-safe-stringify",
+"version": "2.0.8"
+},
+{
+"name": "fast-url-parser",
+"version": "1.1.3"
+},
+{
+"name": "faye-websocket-node",
+"version": "0.11.4"
+},
+{
+"name": "fecha",
+"version": "4.2.1"
+},
+{
+"name": "file-entry-cache",
+"version": "6.0.1"
+},
+{
+"name": "file-loader",
+"version": "6.0.0"
+},
+{
+"name": "file-loader",
+"version": "v6.2.0"
+},
+{
+"name": "file-stream-rotator",
+"version": "0. cache-dir 3.3.2"
+},
+{
+"name": "fined",
+"version": "1.2.0"
+},
+{
+"name": "flagged-respawn",
+"version": "1.0.1"
+},
+{
+"name": "flat-cache",
+"version": "3.0.4"
+},
+{
+"name": "flatiron/winston",
+"version": "3.3.3"
+},
+{
+"name": "flatted",
+"version": "3.2.2"
+},
+{
+"name": "fn.name",
+"version": "1.1.0"
+},
+{
+"name": "follow-redirects",
+"version": "1.14.2"
+},
+{
+"name": "for-own",
+"version": "1.0.0"
+},
+{
+"name": "form-data",
+"version": "3.0.1"
+},
+{
+"name": "forwarded",
+"version": "0.2.0"
+},
+{
+"name": "fs-mkdirp-stream",
+"version": "1.0.0"
+},
+{
+"name": "gajus/table",
+"version": "v6.7.1"
+},
+{
+"name": "get-caller-file",
+"version": "1.0.3"
+},
+{
+"name": "glob-stream",
+"version": "6.1.0"
+},
+{
+"name": "glob-watcher",
+"version": "5.0.5"
+},
+{
+"name": "glogg",
+"version": "1.0.2"
+},
+{
+"name": "go.uuid",
+"version": "20181205-snapshot-b2ce2384"
+},
+{
+"name": "golang protobuf",
+"version": "20190126-snapshot-347cf4a8"
+},
+{
+"name": "gud",
+"version": "1.0.0"
+},
+{
+"name": "gulp-yarn",
+"version": "2.0.0"
+},
+{
+"name": "gulplog",
+"version": "1.0.0"
+},
+{
+"name": "harthur/color",
+"version": "3.0.0"
+},
+{
+"name": "has-tostringtag",
+"version": "1.0.0"
+},
+{
+"name": "header helmetjs/helmet",
+"version": "4.6.0"
+},
+{
+"name": "History",
+"version": "v4.10.1"
+},
+{
+"name": "hoist-non-react-statics",
+"version": "v3.3 transition-group 4.4.2"
+},
+{
+"name": "html-encoding-sniffer",
+"version": "2.0.1"
+},
+{
+"name": "htmlparser2",
+"version": "6.1.0"
+},
+{
+"name": "http-proxy-agent",
+"version": "4.0.1"
+},
+{
+"name": "https-proxy-agent",
+"version": "5.0.0"
+},
+{
+"name": "hyphenate-style-name",
+"version": "1.0.4"
+},
+{
+"name": "if such Contributor fails to notify You of the non-compliance by some reasonable means prior to",
+"version": "60 days after You have come back into compliance. Moreover"
+},
+{
+"name": "import-cwd",
+"version": "2.1.0"
+},
+{
+"name": "import-from",
+"version": "2.1.0"
+},
+{
+"name": "in each case including portions thereof.",
+"version": "1.5. \"Incompatible With Secondary Licenses\" means a. that the initial Contributor has attached the notice described in Exhibit B to the Covered Software; or b. that the Covered Software was made available under the terms of version 1.1 or earlier of the License"
+},
+{
+"name": "in either case contrary to Affirmer's express Statement of Purpose.",
+"version": "4. Limitations and Disclaimers. a. No trademark or patent rights held by Affirmer are waived"
+},
+{
+"name": "ini",
+"version": "1.3.8"
+},
+{
+"name": "internal-slot",
+"version": "1.0.3"
+},
+{
+"name": "is-arguments",
+"version": "1.1.1"
+},
+{
+"name": "is-arrayish",
+"version": "0.3.2"
+},
+{
+"name": "is-bigint",
+"version": "1.0.4"
+},
+{
+"name": "is-boolean-objec callable",
+"version": "1.2.4"
+},
+{
+"name": "is-core-module",
+"version": "2.6.0"
+},
+{
+"name": "is-date-object",
+"version": "1.0.5"
+},
+{
+"name": "is-in-browser",
+"version": "1.1.3"
+},
+{
+"name": "is-negated-glob",
+"version": "1.0.0"
+},
+{
+"name": "is-number-object",
+"version": "1.0.6"
+},
+{
+"name": "is-potentia element-name",
+"version": "1.0.1"
+},
+{
+"name": "is-regex",
+"version": "1.1.4"
+},
+{
+"name": "is-string",
+"version": "1.0.7"
+},
+{
+"name": "is-unc-path",
+"version": "1.0.0"
+},
+{
+"name": "isarray",
+"version": "0.0.1"
+},
+{
+"name": "isstream",
+"version": "2.0.1"
+},
+{
+"name": "it reinstates",
+"version": "1. automatically as of the date the violation is cured"
+},
+{
+"name": "j dependencies",
+"version": "26.6.3"
+},
+{
+"name": "January",
+"version": "2004 ========================= http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE"
+},
+{
+"name": "jdextraze/go-gesclient",
+"version": "v0.2.0"
+},
+{
+"name": "je detector",
+"version": "26.6.2"
+},
+{
+"name": "Je Facebook",
+"version": "v26.0.0"
+},
+{
+"name": "Jest from Facebook",
+"version": "v26.6.2"
+},
+{
+"name": "Jest from Facebook",
+"version": "v26.6.3"
+},
+{
+"name": "jest-changed-files",
+"version": "26.6.2"
+},
+{
+"name": "jest-config",
+"version": "26. 26.6.2"
+},
+{
+"name": "jest-diff",
+"version": "26.6.2 1.14.0"
+},
+{
+"name": "jest-environment-jsdom",
+"version": "26.6.2"
+},
+{
+"name": "jest-environment-node",
+"version": "26.6.2"
+},
+{
+"name": "jest-get-type",
+"version": "26.3.0"
+},
+{
+"name": "jest-haste-map",
+"version": "26.6.2"
+},
+{
+"name": "jest-matcher-utils",
+"version": "26.6.2"
+},
+{
+"name": "jest-message-util",
+"version": "26.6.2"
+},
+{
+"name": "jest-regex-util",
+"version": "26.0.0"
+},
+{
+"name": "jest-resolve",
+"version": "26.6.2"
+},
+{
+"name": "jest-runner",
+"version": "26.6.3"
+},
+{
+"name": "jest-runtime",
+"version": "26.6.3"
+},
+{
+"name": "jest-snapshot",
+"version": "26.6.2"
+},
+{
+"name": "jest-util",
+"version": "26.6.2"
+},
+{
+"name": "jest-validate worker",
+"version": "26.6.2"
+},
+{
+"name": "Jon Schlinkert.",
+"version": "2012"
+},
+{
+"name": "jonschlinkert/array-slice",
+"version": "1.1.0"
+},
+{
+"name": "js-levenshtein",
+"version": "1.1.6"
+},
+{
+"name": "jsdom",
+"version": "16.7.0"
+},
+{
+"name": "jshttp/mime-types",
+"version": "2.1.18"
+},
+{
+"name": "jshttp/mime-types",
+"version": "2.1.32"
+},
+{
+"name": "json-schema-traverse",
+"version": "1.0.0"
+},
+{
+"name": "jss",
+"version": "10.7.1"
+},
+{
+"name": "just-debounce",
+"version": "v1.1.0"
+},
+{
+"name": "kuler",
+"version": "2.0.0"
+},
+{
+"name": "lazystream",
+"version": "1.0.0"
+},
+{
+"name": "lead",
+"version": "1.0.0"
+},
+{
+"name": "levn",
+"version": "0.4.1"
+},
+{
+"name": "Liftoff",
+"version": "3.1.0"
+},
+{
+"name": "lodash.clonedeep",
+"version": "4.5.0"
+},
+{
+"name": "lodash.map",
+"version": "4.6.0"
+},
+{
+"name": "lodash.merge",
+"version": "4.6.2"
+},
+{
+"name": "lodash.throttle",
+"version": "4.1.1"
+},
+{
+"name": "lodash.truncate",
+"version": "4.4.2"
+},
+{
+"name": "logform",
+"version": "2.2.0"
+},
+{
+"name": "longest",
+"version": "1.0.1"
+},
+{
+"name": "lysu/go-saga",
+"version": "20160426-snapshot-a5372c96"
+},
+{
+"name": "math-e evaluator",
+"version": "1.3.8"
+},
+{
+"name": "may not be circumvented under laws fulfilling obligations under Article",
+"version": "11 of the WIPO Copyright Treaty adopted on December 20"
+},
+{
+"name": "merge2",
+"version": "1.4.1"
+},
+{
+"name": "mikaelbr/node-notifier",
+"version": "v8.0.2"
+},
+{
+"name": "mime-db",
+"version": "1.33.0"
+},
+{
+"name": "mime-db",
+"version": "1.49.0"
+},
+{
+"name": "mini-create-react-context",
+"version": "0.4.1"
+},
+{
+"name": "moment/moment",
+"version": "2.29.1"
+},
+{
+"name": "ms.js",
+"version": "2.1.3"
+},
+{
+"name": "msw",
+"version": "0.21.3"
+},
+{
+"name": "msw",
+"version": "0.27.2"
+},
+{
+"name": "mute-stdout",
+"version": "1.0.1"
+},
+{
+"name": "nan",
+"version": "2.15.0"
+},
+{
+"name": "node path",
+"version": "0.12.7"
+},
+{
+"name": "node-cookie",
+"version": "0.4.1"
+},
+{
+"name": "node-cross-spawn",
+"version": "5.1.0"
+},
+{
+"name": "node-fetch",
+"version": "v2.6.1"
+},
+{
+"name": "node-graceful-fs",
+"version": "4.2.8"
+},
+{
+"name": "node-lru-cache",
+"version": "6.0.0"
+},
+{
+"name": "node-match-path match-path",
+"version": "0.6.3"
+},
+{
+"name": "node-releases",
+"version": "1.1.75"
+},
+{
+"name": "node-request-interceptor",
+"version": "0.5.9"
+},
+{
+"name": "node-request-interceptor",
+"version": "0.6.3"
+},
+{
+"name": "node-semver",
+"version": "7.3.5"
+},
+{
+"name": "node-uuid",
+"version": "8. hash v2.2.0"
+},
+{
+"name": "nodejs/string_decoder",
+"version": "v1.3.0"
+},
+{
+"name": "normalize-range",
+"version": "0.1.2"
+},
+{
+"name": "now-and-later",
+"version": "2.0.1"
+},
+{
+"name": "nth-check",
+"version": "2.0.0"
+},
+{
+"name": "num2fraction",
+"version": "1.2.2"
+},
+{
+"name": "object-inspect",
+"version": "1.11.0"
+},
+{
+"name": "object.defaults",
+"version": "1.1.0"
+},
+{
+"name": "object.map",
+"version": "1.0.1"
+},
+{
+"name": "object.reduce",
+"version": "1.0.1"
+},
+{
+"name": "optionator",
+"version": "0.9.1"
+},
+{
+"name": "or (b) ownership of more than fifty percent (50%) of the outstanding shares or beneficial ownership of such entity.",
+"version": "2. License Grants and Conditions -------------------------------- 2.1. Grants Each Contributor hereby grants You a world-wide"
+},
+{
+"name": "or other equivalents.",
+"version": "2.7. Conditions Sections 3.1"
+},
+{
+"name": "or owns Covered Software.",
+"version": "1.2. \"Contributor Version\" means the combination of the Contributions of others (if any) used by a Contributor and that particular Contributor's Contribution. 1.3. \"Contribution\" means Covered Software of a particular Contributor. 1.4. \"Covered Software\" means Source Code Form to which the initial Contributor has attached the notice in Exhibit A"
+},
+{
+"name": "or transfer of either its Contributions or its Contributor Version.",
+"version": "1.12. \"Secondary License\" means either the GNU General Public License"
+},
+{
+"name": "pad-right",
+"version": "0.2.2"
+},
+{
+"name": "Paolo Greppi",
+"version": "2019"
+},
+{
+"name": "parse-filepath",
+"version": "1.0.2"
+},
+{
+"name": "parse-node-version",
+"version": "1.0.1"
+},
+{
+"name": "path-parse",
+"version": "1.0.7"
+},
+{
+"name": "path-root",
+"version": "0.1.1"
+},
+{
+"name": "path-root-regex",
+"version": "0.1.2"
+},
+{
+"name": "Per Andersson",
+"version": "2020"
+},
+{
+"name": "picomatch",
+"version": "2.3.0"
+},
+{
+"name": "Pirate Praveen",
+"version": "2018"
+},
+{
+"name": "Pirate Praveen",
+"version": "2019"
+},
+{
+"name": "plugin-error",
+"version": "1.0.1"
+},
+{
+"name": "popper.js",
+"version": "1.16.1-lts"
+},
+{
+"name": "PostCSS",
+"version": "7.0.36"
+},
+{
+"name": "postcss-load-config",
+"version": "2.1.2"
+},
+{
+"name": "postcss-loader",
+"version": "3.0.0"
+},
+{
+"name": "prelude-ls",
+"version": "1.2.1"
+},
+{
+"name": "prettier",
+"version": "2.3.2"
+},
+{
+"name": "pretty-format",
+"version": "26.6.2"
+},
+{
+"name": "pretty-hrtime",
+"version": "1.0.3"
+},
+{
+"name": "prop-types",
+"version": "15.7.2"
+},
+{
+"name": "Protocol Buffers",
+"version": "3.6.0"
+},
+{
+"name": "provided it is cured within",
+"version": "30 days of Your discovery of the violation; or 2. upon express reinstatement by the Licensor. c. For the avoidance of doubt"
+},
+{
+"name": "proxy-addr",
+"version": "v2 from Facebook 17.0.2"
+},
+{
+"name": "rapidloop/nrpc",
+"version": "20180913-snapshot-7b212b Apache License Version 2.0"
+},
+{
+"name": "React from Facebook",
+"version": "16.13.1"
+},
+{
+"name": "React from Facebook",
+"version": "16.14.0"
+},
+{
+"name": "react-draggable",
+"version": "4.4.4"
+},
+{
+"name": "react-flow-renderer",
+"version": "9.5.4"
+},
+{
+"name": "react-lifecycles-compat",
+"version": "3.0.4"
+},
+{
+"name": "React-Redux",
+"version": "v7.2.4"
+},
+{
+"name": "react-resize-detector",
+"version": "2.3.0"
+},
+{
+"name": "react-router-dom",
+"version": "5.2.1"
+},
+{
+"name": "react-transition-group",
+"version": "2.9.0"
+},
+{
+"name": "reacttraining/react-router",
+"version": "5.2.1"
+},
+{
+"name": "readdirp",
+"version": "3.6.0"
+},
+{
+"name": "recharts",
+"version": "1.8.5"
+},
+{
+"name": "recharts-scale",
+"version": "0.4.5"
+},
+{
+"name": "rechoir",
+"version": "0.6.2"
+},
+{
+"name": "reduce-css-calc",
+"version": "1.3.0"
+},
+{
+"name": "reduce-function-call",
+"version": "1.0.3"
+},
+{
+"name": "Redux JS",
+"version": "4.1.1"
+},
+{
+"name": "regenerator-runtime",
+"version": "0 3.2.0"
+},
+{
+"name": "registry-auth-token",
+"version": "3.3.2"
+},
+{
+"name": "registry-url",
+"version": "3.1.0"
+},
+{
+"name": "remove-bom-stream",
+"version": "1.2.0"
+},
+{
+"name": "renderkid",
+"version": "2.0.7"
+},
+{
+"name": "replace- homedir",
+"version": "1.0.0"
+},
+{
+"name": "require-from-string",
+"version": "2.0.2"
+},
+{
+"name": "require-main-filename",
+"version": "1.0.1"
+},
+{
+"name": "resize-observer-polyfill",
+"version": "1.5.1"
+},
+{
+"name": "resolve-options",
+"version": "1.1.0"
+},
+{
+"name": "resolve-pathname",
+"version": "3.0.0"
+},
+{
+"name": "right-pad",
+"version": "1.0.1"
+},
+{
+"name": "saxes",
+"version": "5.0.1"
+},
+{
+"name": "scheduler",
+"version": "0.19.1"
+},
+{
+"name": "schema-utils",
+"version": "3.1.1"
+},
+{
+"name": "semver-greatest-satisfied-range",
+"version": "1.1.0"
+},
+{
+"name": "serve",
+"version": "11.3.2"
+},
+{
+"name": "serve-handler",
+"version": "6.1.3"
+},
+{
+"name": "si",
+"version": "5.9.3"
+},
+{
+"name": "side-channel",
+"version": "1.0.4"
+},
+{
+"name": "simple-swizzle",
+"version": "0.2.2"
+},
+{
+"name": "sindresorhus/boxen",
+"version": "1.3.0"
+},
+{
+"name": "sindresorhus/globals",
+"version": "13.11.0"
+},
+{
+"name": "single-spa-layout",
+"version": "1.6.0"
+},
+{
+"name": "slice-ansi",
+"version": "4.0.0"
+},
+{
+"name": "so this exclusion and limitation may not apply to You.",
+"version": "8. Litigation ------------- Any litigation relating to this License may be brought only in the courts of a jurisdiction where the defendant maintains its principal place of business and such litigation shall be governed by laws of that jurisdiction"
+},
+{
+"name": "sockjs-client-node",
+"version": "1.5.2"
+},
+{
+"name": "sparkles",
+"version": "1.0.1"
+},
+{
+"name": "stack-utils",
+"version": "2.0.3"
+},
+{
+"name": "strict-event-emitter",
+"version": "0.1.0"
+},
+{
+"name": "string-length",
+"version": "4.0.2"
+},
+{
+"name": "string-width",
+"version": "2.1.1"
+},
+{
+"name": "strip-json-comments",
+"version": "2.0.1"
+},
+{
+"name": "such description must be sufficiently detailed for a recipient of ordinary skill to be able to understand it.",
+"version": "5. Termination -------------- 5.1. The rights granted under this License will terminate automatically if You fail to comply with any of its terms. However"
+},
+{
+"name": "suman",
+"version": "2020"
+},
+{
+"name": "sver-compat",
+"version": "1.5.0"
+},
+{
+"name": "svg-url-loader",
+"version": "6.0.0"
+},
+{
+"name": "sys interop",
+"version": "2.3.7"
+},
+{
+"name": "systemjs-webpack-interop",
+"version": "1.2.1"
+},
+{
+"name": "term-size",
+"version": "1.2 The MIT License (MIT) Copyright (c) Sindre Sorhus (sindresorhus.com) Permission is hereby granted"
+},
+{
+"name": "text-hex",
+"version": "1.0.0"
+},
+{
+"name": "that is not Covered Software.",
+"version": "1.8. \"License\" means this document. 1.9. \"Licensable\" means having the right to grant"
+},
+{
+"name": "then the rights granted to You by any and all Contributors for the Covered Software under SectionÂ",
+"version": "2.1 of this License shall terminate. 5.3. In the event of termination under SectionsÂ 5.1 or 5.2 above"
+},
+{
+"name": "this list of conditions and the followi in the documentation and/or other materials provided with the distribution.",
+"version": "3. Neither the name of Salesforce.com nor the names of its contributors may be used to endorse or promote products d this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES"
+},
+{
+"name": "this list of conditions and the followi in the documentation and/or other materials provided with the distribution.",
+"version": "3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote prod from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES"
+},
+{
+"name": "this list of conditions and the following",
+"version": "2. Redistributions in binary form must reproduce the above copyright notice"
+},
+{
+"name": "Thorsten Alteholz",
+"version": "2019"
+},
+{
+"name": "through2-filter",
+"version": "3.0.0"
+},
+{
+"name": "tiny-invariant",
+"version": "1.1.0"
+},
+{
+"name": "tiny-warning",
+"version": "1.0.3"
+},
+{
+"name": "to-absolute-glob",
+"version": "2.0.2"
+},
+{
+"name": "to-through",
+"version": "2.0.0"
+},
+{
+"name": "tough-cookie",
+"version": "4.0.0"
+},
+{
+"name": "tr46",
+"version": "2.1.0"
+},
+{
+"name": "triple-beam",
+"version": "1.3.0"
+},
+{
+"name": "tslib",
+"version": "2.3.1"
+},
+{
+"name": "type",
+"version": "1.2.0"
+},
+{
+"name": "type-check",
+"version": "0.4.0"
+},
+{
+"name": "type-fest",
+"version": "0.20.2"
+},
+{
+"name": "types",
+"version": "15.7.4"
+},
+{
+"name": "undertaker",
+"version": "1.3.0"
+},
+{
+"name": "universalify",
+"version": "0.1.2"
+},
+{
+"name": "unshiftio/one-time",
+"version": "1.0.0"
+},
+{
+"name": "update-check",
+"version": "1.5.2"
+},
+{
+"name": "url-parse",
+"version": "1.5.3"
+},
+{
+"name": "util",
+"version": "0.10.4"
+},
+{
+"name": "v.",
+"version": "2.0."
+},
+{
+"name": "v.",
+"version": "2.0. If a copy of the MPL was not distributed with this file"
+},
+{
+"name": "v8-to-istanbul",
+"version": "7.1.2"
+},
+{
+"name": "v8flags",
+"version": "3.2.0"
+},
+{
+"name": "value-equal",
+"version": "1.0.1"
+},
+{
+"name": "value-or-function",
+"version": "3.0.0"
+},
+{
+"name": "Version",
+"version": "2.0"
+},
+{
+"name": "Version",
+"version": "2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing"
+},
+{
+"name": "Version",
+"version": "2.1"
+},
+{
+"name": "Version",
+"version": "3.0"
+},
+{
+"name": "vinyl - virtual file format",
+"version": "2.2.1"
+},
+{
+"name": "vinyl-sourcemap",
+"version": "1.1.0"
+},
+{
+"name": "Visionmedia Debug",
+"version": "4.3.2"
+},
+{
+"name": "w3c-xmlserializer",
+"version": "2.0.0"
+},
+{
+"name": "warning",
+"version": "4.0.3"
+},
+{
+"name": "webidl-conversions",
+"version": "6.1.0"
+},
+{
+"name": "webidl-conversions",
+"version": "v5.0.0"
+},
+{
+"name": "whatwg-url",
+"version": "v8.7.0"
+},
+{
+"name": "which-module",
+"version": "1.0.0"
+},
+{
+"name": "widest-line",
+"version": "2.0.1"
+},
+{
+"name": "winston-daily-rotate-file",
+"version": "4.5.0"
+},
+{
+"name": "winston-transport",
+"version": "v4.4.0"
+},
+{
+"name": "y18n",
+"version": "3.2.2"
+},
+{
+"name": "y18n",
+"version": "5.0.8"
+},
+{
+"name": "yallist",
+"version": "4.0.0"
+},
+{
+"name": "yargs",
+"version": "16.2 yargs-v7.1.2"
+},
+{
+"name": "yargs-parser",
+"version": "20.2.9"
+},
+{
+"name": "yargs-parser",
+"version": "v5.0.1"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "Extreme Visibility Manager (XVM)",
+"retrieved": "2026-11-08",
+"sha256": "a1f530dd5ddcba2cb53bb1a45bc22790e9cf6d0b05b0e0deaa6fe01c97220229",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1da44d69b281430790aa4a1f330f4acd?v=15cf3d8a",
+"version": "6.1.0"
+}

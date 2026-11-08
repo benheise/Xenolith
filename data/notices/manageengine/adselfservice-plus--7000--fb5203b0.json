@@ -1,0 +1,510 @@
+{
+"components": [
+{
+"name": "annotations",
+"version": "23.0.0"
+},
+{
+"name": "batik-all",
+"version": "1.16"
+},
+{
+"name": "bcpkix-jdk18on",
+"version": "1.84"
+},
+{
+"name": "bcprov-jdk18on",
+"version": "1.84"
+},
+{
+"name": "bcutil-jdk18on",
+"version": "1.84"
+},
+{
+"name": "caffeine",
+"version": "3.2.2"
+},
+{
+"name": "checker-qual",
+"version": "3.39.0"
+},
+{
+"name": "commons-beanutils",
+"version": "1.11.0"
+},
+{
+"name": "commons-chain",
+"version": "1.2"
+},
+{
+"name": "commons-codec",
+"version": "1.19.0"
+},
+{
+"name": "commons-collections",
+"version": "3.2.2"
+},
+{
+"name": "commons-collections4",
+"version": "4.4"
+},
+{
+"name": "commons-compress",
+"version": "1.28.0"
+},
+{
+"name": "commons-csv",
+"version": "1.14.1"
+},
+{
+"name": "commons-fileupload",
+"version": "1.6.0"
+},
+{
+"name": "commons-io",
+"version": "2.20.0"
+},
+{
+"name": "commons-javaflow",
+"version": "20060411"
+},
+{
+"name": "commons-lang3",
+"version": "3.18.0"
+},
+{
+"name": "commons-text",
+"version": "1.10.0"
+},
+{
+"name": "commons-validator",
+"version": "1.10.0"
+},
+{
+"name": "concurrent-trees",
+"version": "2.6.1"
+},
+{
+"name": "converter-jackson",
+"version": "2.9.0"
+},
+{
+"name": "cryptacular",
+"version": "1.2.6"
+},
+{
+"name": "cssparser",
+"version": "0.9.30"
+},
+{
+"name": "duo-universal-sdk",
+"version": "1.3.1"
+},
+{
+"name": "encoder",
+"version": "1.3.1"
+},
+{
+"name": "failureaccess",
+"version": "1.0.2"
+},
+{
+"name": "fast-uuid",
+"version": "0.1"
+},
+{
+"name": "google-api-client",
+"version": "1.20.0"
+},
+{
+"name": "google-api-services-admin-directory",
+"version": "1-rev53-1.20.0"
+},
+{
+"name": "google-auth-library-credentials",
+"version": "1.24.1"
+},
+{
+"name": "google-auth-library-oauth2-http",
+"version": "1.24.1"
+},
+{
+"name": "google-http-client",
+"version": "1.20.0"
+},
+{
+"name": "google-http-client-gson",
+"version": "1.44.2"
+},
+{
+"name": "google-http-client-jackson2",
+"version": "1.20.0"
+},
+{
+"name": "google-oauth-client",
+"version": "1.33.3"
+},
+{
+"name": "gson",
+"version": "2.10"
+},
+{
+"name": "guava",
+"version": "33.4.8-jre"
+},
+{
+"name": "httpclient5",
+"version": "5.5"
+},
+{
+"name": "httpcore5",
+"version": "5.2.4"
+},
+{
+"name": "jackson-annotations",
+"version": "2.21"
+},
+{
+"name": "jackson-core",
+"version": "2.21.1"
+},
+{
+"name": "jackson-databind",
+"version": "2.21.1"
+},
+{
+"name": "jackson-dataformat-cbor",
+"version": "2.21.2"
+},
+{
+"name": "jackson-dataformat-xml",
+"version": "2.21.1"
+},
+{
+"name": "jackson-datatype-json-org",
+"version": "2.21.1"
+},
+{
+"name": "java-jwt",
+"version": "4.2.1"
+},
+{
+"name": "javax.mail",
+"version": "1.6.1"
+},
+{
+"name": "jaxb-api",
+"version": "2.3.1"
+},
+{
+"name": "jbcrypt",
+"version": "0.4"
+},
+{
+"name": "jcifs",
+"version": "1.3.18.3"
+},
+{
+"name": "jcommon",
+"version": "1.0.24"
+},
+{
+"name": "jdom2",
+"version": "2.0.6.1"
+},
+{
+"name": "jfreechart",
+"version": "1.5.6"
+},
+{
+"name": "jgroups",
+"version": "3.6.16.Final"
+},
+{
+"name": "jjwt",
+"version": "0.9.0"
+},
+{
+"name": "joda-time",
+"version": "2.2"
+},
+{
+"name": "jsch",
+"version": "0.1.55"
+},
+{
+"name": "jstl",
+"version": "1.2"
+},
+{
+"name": "jta",
+"version": "1.1"
+},
+{
+"name": "jtds",
+"version": "1.3.1"
+},
+{
+"name": "kerby-asn1",
+"version": "2.0.3"
+},
+{
+"name": "kryo",
+"version": "4.0.1"
+},
+{
+"name": "LGoodDatePicker",
+"version": "11.2.1"
+},
+{
+"name": "log4j-api",
+"version": "2.25.4"
+},
+{
+"name": "metrics-core",
+"version": "4.2.30"
+},
+{
+"name": "micrometer-commons",
+"version": "1.15.2"
+},
+{
+"name": "minlog",
+"version": "1.3.0"
+},
+{
+"name": "mssql-jdbc",
+"version": "8.4.1.jre8"
+},
+{
+"name": "netty-all",
+"version": "4.1.51.Final"
+},
+{
+"name": "nimbus-jose-jwt",
+"version": "10.6"
+},
+{
+"name": "objenesis",
+"version": "2.1"
+},
+{
+"name": "ojdbc8",
+"version": "19.15.0.0.1"
+},
+{
+"name": "okhttp",
+"version": "4.10.0"
+},
+{
+"name": "okio-jvm",
+"version": "3.16.1"
+},
+{
+"name": "openpdf",
+"version": "1.3.36"
+},
+{
+"name": "opensaml-core-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-core-impl",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-messaging-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-messaging-impl",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-profile-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-profile-impl",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-saml-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-saml-impl",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-security-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-security-impl",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-soap-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-soap-impl",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-xacml-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-xacml-impl",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-xacml-saml-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-xacml-saml-impl",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-xmlsec-api",
+"version": "5.1.4"
+},
+{
+"name": "opensaml-xmlsec-impl",
+"version": "5.1.4"
+},
+{
+"name": "oro",
+"version": "2.0.8"
+},
+{
+"name": "poi",
+"version": "5.5.1"
+},
+{
+"name": "postgresql",
+"version": "42.5.6"
+},
+{
+"name": "pushy",
+"version": "0.14.1"
+},
+{
+"name": "retrofit",
+"version": "2.9.0"
+},
+{
+"name": "service-proxy-core",
+"version": "4.8.8"
+},
+{
+"name": "shib-networking",
+"version": "9.1.6"
+},
+{
+"name": "shib-security",
+"version": "9.1.6"
+},
+{
+"name": "shib-support",
+"version": "9.1.6"
+},
+{
+"name": "shib-velocity",
+"version": "9.1.6"
+},
+{
+"name": "simplecaptcha",
+"version": "1.2.1"
+},
+{
+"name": "smslib",
+"version": "3.5.2"
+},
+{
+"name": "snakeyaml",
+"version": "2.4"
+},
+{
+"name": "sparsebitset",
+"version": "1.3"
+},
+{
+"name": "stax2-api",
+"version": "4.2.2"
+},
+{
+"name": "struts-core",
+"version": "1.3.11"
+},
+{
+"name": "struts-extras",
+"version": "1.3.11"
+},
+{
+"name": "struts-taglib",
+"version": "1.3.11"
+},
+{
+"name": "struts-tiles",
+"version": "1.3.11"
+},
+{
+"name": "taglibs-standard-impl",
+"version": "1.2.5"
+},
+{
+"name": "webauthn4j-core",
+"version": "0.21.8.RELEASE"
+},
+{
+"name": "webauthn4j-util",
+"version": "0.21.8.RELEASE"
+},
+{
+"name": "xmlbeans",
+"version": "5.1.1"
+},
+{
+"name": "xmlbeautifier",
+"version": "1.2.2"
+},
+{
+"name": "xmlsec",
+"version": "3.0.4"
+},
+{
+"name": "xz",
+"version": "1.10"
+},
+{
+"name": "yubico-validation-client2",
+"version": "3.0.5"
+},
+{
+"name": "zero-allocation-hashing",
+"version": "0.27ea1"
+},
+{
+"name": "zip4j",
+"version": "2.11.5"
+},
+{
+"name": "zxing-core",
+"version": "3.5.3"
+}
+],
+"extractors": [
+"jar_names"
+],
+"kind": "pdf",
+"product": "ADSelfService Plus",
+"retrieved": "2026-11-08",
+"sha256": "715bc233ca4781428f1ce932c2863d9024b6c5ab4e56b7c771de78bdb40736f9",
+"supplier": "ManageEngine",
+"url": "https://download.manageengine.com/products/self-service-password/adselfservice-plus-third-party-apps-list.pdf",
+"version": "7000"
+}

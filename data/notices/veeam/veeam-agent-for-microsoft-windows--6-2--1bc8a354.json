@@ -1,0 +1,250 @@
+{
+"components": [
+{
+"name": "AWSSDK.Core",
+"version": "3.7.0.14"
+},
+{
+"name": "AWSSDK.EC2",
+"version": "3.7.4.4"
+},
+{
+"name": "AWSSDK.S3",
+"version": "3.7.0.15"
+},
+{
+"name": "AWSSDK.SQS",
+"version": "3.7.0.9"
+},
+{
+"name": "Azure.Core",
+"version": "1.22.0"
+},
+{
+"name": "Boost",
+"version": "1.76"
+},
+{
+"name": "Catch2",
+"version": "2.7.0"
+},
+{
+"name": "cpprestsdk",
+"version": "2.9.0"
+},
+{
+"name": "crc32c",
+"version": "1.1.2"
+},
+{
+"name": "Google.Apis",
+"version": "1.57.0"
+},
+{
+"name": "Google.Apis.Auth",
+"version": "1.57.0"
+},
+{
+"name": "Google.Apis.Core",
+"version": "1.57.0"
+},
+{
+"name": "Google.Apis.Gmail.v1",
+"version": "1.57.0.2650"
+},
+{
+"name": "Google.Apis.Oauth2.v2",
+"version": "1.57.0.1869"
+},
+{
+"name": "Hardcodet WPF NotifyIcon",
+"version": "1.0.5"
+},
+{
+"name": "Ionic.Zip",
+"version": "1.9.1.8"
+},
+{
+"name": "ipaddresscontrollib",
+"version": ""
+},
+{
+"name": "Jayrock",
+"version": "0.9.16530"
+},
+{
+"name": "librsync: rollsum.h",
+"version": "0.9.7"
+},
+{
+"name": "lz4",
+"version": "1.9.4"
+},
+{
+"name": "Microsoft Azure Storage Client Library for C++",
+"version": "3.0.0"
+},
+{
+"name": "Microsoft Prism Library for WPF",
+"version": "4.1"
+},
+{
+"name": "Microsoft Visual C++ Redistributable Packages for Visual Studio 2015 Update 3",
+"version": ""
+},
+{
+"name": "Microsoft.Azure.KeyVault.Core",
+"version": "3.0.5"
+},
+{
+"name": "Microsoft.Azure.Storage.Common",
+"version": "11.2.2"
+},
+{
+"name": "Microsoft.Azure.Storage.Queue",
+"version": "11.2.2"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Graph",
+"version": "4.25.0"
+},
+{
+"name": "Microsoft.Graph.Core",
+"version": "2.0.8"
+},
+{
+"name": "Microsoft.Identity.Client",
+"version": "4.43.1"
+},
+{
+"name": "Microsoft.Xaml.Behaviors.Wpf",
+"version": "1.1.39"
+},
+{
+"name": "MimeKitLite",
+"version": "3.2.0"
+},
+{
+"name": "MinHook",
+"version": "1.2.1A"
+},
+{
+"name": "Newtonsoft.Json",
+"version": "13.0.1"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2zi"
+},
+{
+"name": "sha2",
+"version": "79116b5d5d449311c27a24e16c99d8bccb4d1301"
+},
+{
+"name": "StdString.h",
+"version": ""
+},
+{
+"name": "System.Buffers",
+"version": "4.5.1"
+},
+{
+"name": "System.Collections.Immutable",
+"version": "5.0.0"
+},
+{
+"name": "System.Data.SQLite",
+"version": "1.0.117"
+},
+{
+"name": "System.Data.SQLite.Core.MSIL",
+"version": "1.0.117"
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": "6.15.1"
+},
+{
+"name": "System.Memory",
+"version": "4.5.4"
+},
+{
+"name": "System.Net.Http",
+"version": "4.3.4"
+},
+{
+"name": "System.Net.Http.WinHttpHandler",
+"version": "6.0.0"
+},
+{
+"name": "System.Runtime.CompilerServices.Unsafe",
+"version": "4.5.3"
+},
+{
+"name": "System.Runtime.CompilerServices.Unsafe",
+"version": "6.0.0"
+},
+{
+"name": "System.Text.Encodings.Web",
+"version": "6.0.0"
+},
+{
+"name": "System.Text.Json",
+"version": "6.0.2"
+},
+{
+"name": "System.Threading.Tasks.Extensions",
+"version": "4.5.4"
+},
+{
+"name": "System.ValueTuple",
+"version": "4.5.0"
+},
+{
+"name": "tinyxml",
+"version": "2.5.3"
+},
+{
+"name": "tinyxml2",
+"version": "6.0.0"
+},
+{
+"name": "utf8.h, utf8/checked.h, utf8/unchecked.h, utf8/core.h",
+"version": ""
+},
+{
+"name": "util-linux/libuuid",
+"version": ""
+},
+{
+"name": "WebSocket++",
+"version": "0.5.1"
+},
+{
+"name": "wiasane",
+"version": "0.0.0.5"
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+},
+{
+"name": "zstd",
+"version": "1.5.2"
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam Agent for Microsoft Windows",
+"retrieved": "2026-11-08",
+"sha256": "5bb6e39b6b88db3427f4d374bf0493391cb1c3707e9b4f53e78c48efff55b06f",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-windows-6.2-6.2.0.115&lang=en",
+"version": "6.2"
+}

@@ -1,0 +1,806 @@
+{
+"components": [
+{
+"name": "ACE",
+"version": "6.1.0"
+},
+{
+"name": "Apache HTTP Server",
+"version": "2.4.25"
+},
+{
+"name": "apache/apr-util",
+"version": "1.5.4"
+},
+{
+"name": "base-files",
+"version": "3.0.14"
+},
+{
+"name": "base-passwd",
+"version": "3.5.29"
+},
+{
+"name": "Bash",
+"version": "4.3.30"
+},
+{
+"name": "Berkeley DB",
+"version": "5.3.28"
+},
+{
+"name": "Boost C++ Libraries",
+"version": "1.56.0"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "2.3.2"
+},
+{
+"name": "BusyBox",
+"version": "1.24.1"
+},
+{
+"name": "bzip2",
+"version": "1.0.6"
+},
+{
+"name": "cJSON",
+"version": "v0.0.0"
+},
+{
+"name": "CLEditor",
+"version": "1.4.3"
+},
+{
+"name": "Color Picker - jQuery plugin",
+"version": "23.05.2009"
+},
+{
+"name": "cracklib",
+"version": "2.9.5"
+},
+{
+"name": "cronie",
+"version": "1.5.1"
+},
+{
+"name": "cURL",
+"version": "7.53.1"
+},
+{
+"name": "DataTables",
+"version": "1.8.2"
+},
+{
+"name": "dhcp-relay",
+"version": "4.3.5"
+},
+{
+"name": "dhcp-server",
+"version": "4.3.5"
+},
+{
+"name": "diffutils",
+"version": "3.5"
+},
+{
+"name": "dmidecode",
+"version": "3.0"
+},
+{
+"name": "DNRD",
+"version": "2.20.3"
+},
+{
+"name": "e2fsprogs",
+"version": "1.43.4"
+},
+{
+"name": "eudev",
+"version": "3.2.1"
+},
+{
+"name": "Expat XML Parser",
+"version": "2.2.0"
+},
+{
+"name": "file",
+"version": "5.30"
+},
+{
+"name": "findutils",
+"version": "4.6.0"
+},
+{
+"name": "Flot",
+"version": "v0.7.0"
+},
+{
+"name": "flot-axislabels",
+"version": "20120405-snapshot-a0d11e5e"
+},
+{
+"name": "Font-Awesome",
+"version": "4.2.0"
+},
+{
+"name": "fpdf",
+"version": "1.7"
+},
+{
+"name": "Gawk",
+"version": "4.1.4"
+},
+{
+"name": "GLib",
+"version": "2.50.3"
+},
+{
+"name": "GNU C Library",
+"version": "2.25"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "6.4.0"
+},
+{
+"name": "GNU Core Utilities",
+"version": "8.26"
+},
+{
+"name": "GNU grep",
+"version": "3.0"
+},
+{
+"name": "GNU Ncurses",
+"version": "6.0+20160213"
+},
+{
+"name": "GNU tar",
+"version": "1.29"
+},
+{
+"name": "grub",
+"version": "0.97"
+},
+{
+"name": "gzip",
+"version": "1.8"
+},
+{
+"name": "hostapd",
+"version": "2.1"
+},
+{
+"name": "Hunspell passphrase dictionary",
+"version": "7.1"
+},
+{
+"name": "init-ifupdown",
+"version": "1.0"
+},
+{
+"name": "initscripts",
+"version": "1.0"
+},
+{
+"name": "initscripts-functions",
+"version": "1.0"
+},
+{
+"name": "ipmitool",
+"version": "1.8.11"
+},
+{
+"name": "iproute2",
+"version": "4.10.0"
+},
+{
+"name": "IPTables",
+"version": "1.6.1"
+},
+{
+"name": "jqDnR",
+"version": "2007.08.19 r2"
+},
+{
+"name": "jQuery",
+"version": "1.11.1"
+},
+{
+"name": "jQuery",
+"version": "1.6.4"
+},
+{
+"name": "jQuery BlockUI Plugin",
+"version": "2.39"
+},
+{
+"name": "jQuery BlockUI Plugin",
+"version": "2.70"
+},
+{
+"name": "jQuery Form Plugin",
+"version": "3.45.0"
+},
+{
+"name": "jQuery UI",
+"version": "1.11.4"
+},
+{
+"name": "jQuery UI",
+"version": "1.8.14"
+},
+{
+"name": "jquery-migrate",
+"version": "1.2.1"
+},
+{
+"name": "jQuery-Timepicker-Addon",
+"version": "v1.4.4"
+},
+{
+"name": "jquery-treeview",
+"version": "1.4.2"
+},
+{
+"name": "kmod",
+"version": "v23"
+},
+{
+"name": "Less",
+"version": "487"
+},
+{
+"name": "libbz2-1",
+"version": "1.0.6"
+},
+{
+"name": "libcap2",
+"version": "2.25"
+},
+{
+"name": "libcomerr2",
+"version": "1.43.4"
+},
+{
+"name": "libcurl4",
+"version": "7.53.1"
+},
+{
+"name": "libdbus-1-3",
+"version": "1.10.14"
+},
+{
+"name": "libelf1",
+"version": "0.168"
+},
+{
+"name": "libffi",
+"version": "3.2.1"
+},
+{
+"name": "libgdbm4-64bit",
+"version": "1.11"
+},
+{
+"name": "libkmod2",
+"version": "23+git0+65a885df5f"
+},
+{
+"name": "liblzma5",
+"version": "5.2.3"
+},
+{
+"name": "libmount1",
+"version": "2.29.1"
+},
+{
+"name": "libncurses5-64bit",
+"version": "6.1"
+},
+{
+"name": "libpcap",
+"version": "1.8.1"
+},
+{
+"name": "libpci3",
+"version": "3.5.2"
+},
+{
+"name": "libpopt0",
+"version": "1.16"
+},
+{
+"name": "libreadline7",
+"version": "7.0"
+},
+{
+"name": "libsmartcols1",
+"version": "2.29.1"
+},
+{
+"name": "libsqlite3-0",
+"version": "3.17.0"
+},
+{
+"name": "libtinfo5",
+"version": "6.0+20161126"
+},
+{
+"name": "libuuid1",
+"version": "2.29.1"
+},
+{
+"name": "libwrap0",
+"version": "7.6"
+},
+{
+"name": "libxml2",
+"version": "2.9.4"
+},
+{
+"name": "libz1",
+"version": "1.2.11"
+},
+{
+"name": "Linux Kernel",
+"version": "4.9.127"
+},
+{
+"name": "Linux-Pam",
+"version": "1.3.0"
+},
+{
+"name": "Lo-Dash",
+"version": "4.17.4"
+},
+{
+"name": "logrotate",
+"version": "3.9.1"
+},
+{
+"name": "lsof",
+"version": "4.89"
+},
+{
+"name": "makedevs",
+"version": "1.0.1"
+},
+{
+"name": "minizip",
+"version": "1.2.11"
+},
+{
+"name": "modutils-initscripts",
+"version": "1.0"
+},
+{
+"name": "nativesdk-libpcre1",
+"version": "8.40"
+},
+{
+"name": "nativesdk-util-linux-blkid",
+"version": "2.29.1"
+},
+{
+"name": "Net-SNMP",
+"version": "5.7.3"
+},
+{
+"name": "net-tools",
+"version": "1.60"
+},
+{
+"name": "netbase",
+"version": "5.4"
+},
+{
+"name": "netkit-ftp",
+"version": "0.17"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p10"
+},
+{
+"name": "NSPR",
+"version": "4.13.1"
+},
+{
+"name": "nss",
+"version": "3.28.1"
+},
+{
+"name": "open-vm-tools",
+"version": "2011.05.27-420096"
+},
+{
+"name": "OpenSLP",
+"version": "1.0.11"
+},
+{
+"name": "openssh-keygen",
+"version": "7.4p1"
+},
+{
+"name": "openssh-scp",
+"version": "7.4p1"
+},
+{
+"name": "openssh-sftp",
+"version": "7.4p1"
+},
+{
+"name": "openssh-ssh",
+"version": "7.4p1"
+},
+{
+"name": "openssh-sshd",
+"version": "7.4p1"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.1-beta3"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2n"
+},
+{
+"name": "OpenSSL",
+"version": "2.0-fips"
+},
+{
+"name": "pam-plugin- faildelay",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-deny",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-env",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-faildelay",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-group",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-keyinit",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-loginuid",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-nologin",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-permit",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-rootok",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-unix",
+"version": "1.3.0"
+},
+{
+"name": "pam-plugin-warn",
+"version": "1.3.0"
+},
+{
+"name": "pamplugin- keyinit",
+"version": "1.3.0"
+},
+{
+"name": "pamplugin-unix",
+"version": "1.3.0"
+},
+{
+"name": "pciutils",
+"version": "v3.5.2"
+},
+{
+"name": "pexpect",
+"version": "2.3"
+},
+{
+"name": "PHP",
+"version": "5.6.26"
+},
+{
+"name": "php serialize/unserialize",
+"version": "3.1"
+},
+{
+"name": "phpseclib",
+"version": "0.2.1"
+},
+{
+"name": "procps",
+"version": "3.3.12"
+},
+{
+"name": "Protocol Buffers",
+"version": "3.1.0"
+},
+{
+"name": "Python programming language",
+"version": "3.5.2"
+},
+{
+"name": "python3- resource",
+"version": "3.5.2"
+},
+{
+"name": "python3-argparse",
+"version": "3.5.2"
+},
+{
+"name": "python3-codecs",
+"version": "3.5.2"
+},
+{
+"name": "python3-compile",
+"version": "3.5.2"
+},
+{
+"name": "python3-compression",
+"version": "3.5.2"
+},
+{
+"name": "python3-core",
+"version": "3.5.2"
+},
+{
+"name": "python3-crypt",
+"version": "3.5.2"
+},
+{
+"name": "python3-datetime",
+"version": "3.5.2"
+},
+{
+"name": "python3-enum",
+"version": "3.5.2"
+},
+{
+"name": "python3-fcntl",
+"version": "3.5.2"
+},
+{
+"name": "python3-html",
+"version": "3.5.2"
+},
+{
+"name": "python3-image",
+"version": "3.5.2"
+},
+{
+"name": "python3-importlib",
+"version": "3.5.2"
+},
+{
+"name": "python3-io",
+"version": "3.5.2"
+},
+{
+"name": "python3-json",
+"version": "3.5.2"
+},
+{
+"name": "python3-lang",
+"version": "3.5.2"
+},
+{
+"name": "python3-logging",
+"version": "3.5.2"
+},
+{
+"name": "python3-math",
+"version": "3.5.2"
+},
+{
+"name": "python3-mime",
+"version": "3.5.2"
+},
+{
+"name": "python3-netclient",
+"version": "3.5.2"
+},
+{
+"name": "python3-numbers",
+"version": "3.5.2"
+},
+{
+"name": "python3-pickle",
+"version": "3.5.2"
+},
+{
+"name": "python3-re",
+"version": "3.5.2"
+},
+{
+"name": "python3-readline",
+"version": "3.5.2"
+},
+{
+"name": "python3-reprlib",
+"version": "3.5.2"
+},
+{
+"name": "python3-selectors",
+"version": "3.5.2"
+},
+{
+"name": "python3-shell",
+"version": "3.5.2"
+},
+{
+"name": "python3-signal",
+"version": "3.5.2"
+},
+{
+"name": "python3-stringold",
+"version": "3.5.2"
+},
+{
+"name": "python3-subprocess",
+"version": "3.5.2"
+},
+{
+"name": "python3-terminal",
+"version": "3.5.2"
+},
+{
+"name": "python3-textutils",
+"version": "3.5.2"
+},
+{
+"name": "python3-threading",
+"version": "3.5.2"
+},
+{
+"name": "python3-unixadmin",
+"version": "3.5.2"
+},
+{
+"name": "python3-xml",
+"version": "3.5.2"
+},
+{
+"name": "Racoon2",
+"version": "20100526a"
+},
+{
+"name": "RPM",
+"version": "4.13.90"
+},
+{
+"name": "shadow",
+"version": "4.2.1"
+},
+{
+"name": "shadow-base",
+"version": "4.2.1"
+},
+{
+"name": "shadow-securetty",
+"version": "4.2.1"
+},
+{
+"name": "sshpass",
+"version": "1.05"
+},
+{
+"name": "stat - display file or file system status",
+"version": "3.3"
+},
+{
+"name": "strace",
+"version": "4.16"
+},
+{
+"name": "sudo",
+"version": "1.8.19p2"
+},
+{
+"name": "sysfsutils",
+"version": "2.1.0"
+},
+{
+"name": "sysfsutils-lib",
+"version": "2.1.0"
+},
+{
+"name": "sysklogd",
+"version": "1.5.1"
+},
+{
+"name": "sysstat",
+"version": "v11.5.4"
+},
+{
+"name": "sysvinit",
+"version": "2.88dsf"
+},
+{
+"name": "sysvinit-inittab",
+"version": "2.88dsf"
+},
+{
+"name": "tcpdump",
+"version": "4.9.2"
+},
+{
+"name": "term.js",
+"version": "0.0.7"
+},
+{
+"name": "tftp-hpa",
+"version": "5.2"
+},
+{
+"name": "Time Zone Database",
+"version": "2018c"
+},
+{
+"name": "TinyXML2",
+"version": "1.0.11"
+},
+{
+"name": "traceroute",
+"version": "2.1.0"
+},
+{
+"name": "update-rc.d",
+"version": "0.7"
+},
+{
+"name": "util-linux",
+"version": "2.29.1"
+},
+{
+"name": "Vim",
+"version": "v8.0.0427"
+},
+{
+"name": "xinetd",
+"version": "2.3.15"
+},
+{
+"name": "xz",
+"version": "5.2.3"
+},
+{
+"name": "YUI",
+"version": "2.5.2"
+},
+{
+"name": "YUI",
+"version": "2.7.0b"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "ExtremeWireless OS",
+"retrieved": "2026-11-08",
+"sha256": "40c5f2da76c616f82334e2260cf432146c76833fa059f40aa7b7a105b81b74fd",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ff120cab4b324aaca816017957032c8b?v=715aa5ed",
+"version": "10.51"
+}

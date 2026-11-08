@@ -1,0 +1,238 @@
+{
+"components": [
+{
+"name": "c-ares",
+"version": ""
+},
+{
+"name": "Chapter",
+"version": "10: ISC"
+},
+{
+"name": "Chapter",
+"version": "11: libwebsockets"
+},
+{
+"name": "Chapter",
+"version": "12: Linux Foundation"
+},
+{
+"name": "Chapter",
+"version": "13: MIT"
+},
+{
+"name": "Chapter",
+"version": "14: Modified BSD"
+},
+{
+"name": "Chapter",
+"version": "16: OpenSSL"
+},
+{
+"name": "Chapter",
+"version": "17: Open Source Initiative (OSI)"
+},
+{
+"name": "Chapter",
+"version": "19: Python 2.0.1"
+},
+{
+"name": "Chapter",
+"version": "1: Open Source Software Used in the Product"
+},
+{
+"name": "Chapter",
+"version": "20: SIL Open Font"
+},
+{
+"name": "Chapter",
+"version": "21: Spell Checker Oriented Word Lists (SCOWL)"
+},
+{
+"name": "Chapter",
+"version": "22: VIM"
+},
+{
+"name": "Chapter",
+"version": "23: zlib"
+},
+{
+"name": "Chapter",
+"version": "2: Open Source Software That May Be Used in This Product"
+},
+{
+"name": "Chapter",
+"version": "3: ACE"
+},
+{
+"name": "Chapter",
+"version": "4: Apache 2.0"
+},
+{
+"name": "Chapter",
+"version": "5: Boost Software"
+},
+{
+"name": "Chapter",
+"version": "6: bzip2"
+},
+{
+"name": "Chapter",
+"version": "7: Creative Commons"
+},
+{
+"name": "Chapter",
+"version": "8: GNU Public"
+},
+{
+"name": "Chapter",
+"version": "9: Google-protobuf"
+},
+{
+"name": "cJSON",
+"version": ""
+},
+{
+"name": "CLEditor",
+"version": ""
+},
+{
+"name": "ColorPicker",
+"version": ""
+},
+{
+"name": "CURL",
+"version": ""
+},
+{
+"name": "Dropbear",
+"version": ""
+},
+{
+"name": "expat",
+"version": ""
+},
+{
+"name": "Extreme Networks Documentation",
+"version": ""
+},
+{
+"name": "ExtremeWireless AP",
+"version": ""
+},
+{
+"name": "ExtremeWireless Appliance",
+"version": ""
+},
+{
+"name": "flot",
+"version": ""
+},
+{
+"name": "flot-axislabels",
+"version": ""
+},
+{
+"name": "FontAwesome",
+"version": ""
+},
+{
+"name": "Form",
+"version": ""
+},
+{
+"name": "Getting Help",
+"version": ""
+},
+{
+"name": "HTTP Parser",
+"version": ""
+},
+{
+"name": "Jansson",
+"version": ""
+},
+{
+"name": "jqDnR",
+"version": ""
+},
+{
+"name": "JqModal",
+"version": ""
+},
+{
+"name": "jQuery",
+"version": ""
+},
+{
+"name": "libbase64codec",
+"version": ""
+},
+{
+"name": "libffi",
+"version": ""
+},
+{
+"name": "libxml2",
+"version": ""
+},
+{
+"name": "lodash",
+"version": ""
+},
+{
+"name": "ncurses",
+"version": ""
+},
+{
+"name": "Open Source",
+"version": ""
+},
+{
+"name": "ossp-uuid",
+"version": ""
+},
+{
+"name": "pexpect",
+"version": ""
+},
+{
+"name": "popt",
+"version": ""
+},
+{
+"name": "Providing Feedback to Us",
+"version": ""
+},
+{
+"name": "selectToUISlider",
+"version": ""
+},
+{
+"name": "shadow-securetty",
+"version": ""
+},
+{
+"name": "term.js",
+"version": ""
+},
+{
+"name": "Text Conventions",
+"version": ""
+},
+{
+"name": "TreeView",
+"version": ""
+}
+],
+"extractors": [
+"dotted_toc"
+],
+"kind": "pdf",
+"product": "ExtremeWireless OS",
+"retrieved": "2026-11-08",
+"sha256": "7be2c6d0c7d3a73bb20d92437a10a0086315608df5628cbb43118b3b77ff84b8",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ba50efacc75d4c6f97074e2359bc2d15?v=21a69c32",
+"version": "10.41"
+}

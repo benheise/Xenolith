@@ -1,0 +1,82 @@
+{
+"components": [
+{
+"name": "7-Zip",
+"version": "25.01"
+},
+{
+"name": "Apache Log4cxx",
+"version": "1.7.0"
+},
+{
+"name": "ASP.NET Core SignalR",
+"version": "10.0.0"
+},
+{
+"name": "boost",
+"version": "1.90.0"
+},
+{
+"name": "Casablanca C++ REST SDK",
+"version": "2.10.19"
+},
+{
+"name": "Chilkat",
+"version": "9.5.0"
+},
+{
+"name": "CodeJock Xtreme Toolkit Pro",
+"version": "24.1.0"
+},
+{
+"name": "CSLA .NET",
+"version": "8.2.9"
+},
+{
+"name": "Infragistics Windows Forms",
+"version": "22.2"
+},
+{
+"name": "Intel AMT SDK",
+"version": "21.0.0.1"
+},
+{
+"name": "json-cpp",
+"version": "0.11.0"
+},
+{
+"name": "Microsoft Core XML Services",
+"version": "6.0 SP1"
+},
+{
+"name": "protobuf-cpp",
+"version": "3.21.12"
+},
+{
+"name": "protobuf-net",
+"version": "3.1.22"
+},
+{
+"name": "RSA BSAFE Crypto-C Micro Edition",
+"version": "4.1.5.0"
+},
+{
+"name": "System.Data.SQLite",
+"version": "1.0.118"
+},
+{
+"name": "zlib",
+"version": "1.3.1"
+}
+],
+"extractors": [
+"html_table"
+],
+"kind": "html",
+"product": "Dameware",
+"retrieved": "2026-11-08",
+"sha256": "09bf8f8a698e833f53a4991da700be29b37938ef7d87f6fa9d2c11580e469fff",
+"supplier": "SolarWinds",
+"url": "https://documentation.solarwinds.com/en/Success_Center/dameware/Content/dameware_third_party_software_list.htm",
+"version": ""
+}

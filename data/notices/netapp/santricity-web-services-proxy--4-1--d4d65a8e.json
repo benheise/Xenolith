@@ -1,0 +1,166 @@
+{
+"components": [
+{
+"name": "aopalliance-repackaged",
+"version": "2.5.0-b32"
+},
+{
+"name": "byteman",
+"version": "4.0.6"
+},
+{
+"name": "cron4j",
+"version": "2.2.5"
+},
+{
+"name": "h2",
+"version": "1.4.198"
+},
+{
+"name": "hk2-api",
+"version": "2.5.0-b32"
+},
+{
+"name": "hk2-locator",
+"version": "2.5.0-b32"
+},
+{
+"name": "hk2-utils",
+"version": "2.5.0-b32"
+},
+{
+"name": "javassist",
+"version": "3.21.0-GA"
+},
+{
+"name": "javax.activation",
+"version": "1.2.0"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.2"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.3"
+},
+{
+"name": "javax.inject",
+"version": "2.5.0-b32"
+},
+{
+"name": "javax.servlet-api",
+"version": "3.1.0"
+},
+{
+"name": "javax.transaction-api",
+"version": "1.3"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0.1"
+},
+{
+"name": "jaxb-api",
+"version": "2.3.0"
+},
+{
+"name": "jaxb-core",
+"version": "2.3.0.1"
+},
+{
+"name": "jaxb-runtime",
+"version": "2.3.0.1"
+},
+{
+"name": "jersey-client",
+"version": "2.25.1"
+},
+{
+"name": "jersey-common",
+"version": "2.25.1"
+},
+{
+"name": "jersey-container-servlet",
+"version": "2.25.1"
+},
+{
+"name": "jersey-container-servlet-core",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-multipart",
+"version": "2.25.1"
+},
+{
+"name": "jersey-server",
+"version": "2.25.1"
+},
+{
+"name": "logback-classic",
+"version": "1.2.3"
+},
+{
+"name": "logback-classic",
+"version": "1.2.3.1"
+},
+{
+"name": "logback-core",
+"version": "1.2.3"
+},
+{
+"name": "logback-core",
+"version": "1.2.3.1"
+},
+{
+"name": "mimepull",
+"version": "1.9.6"
+},
+{
+"name": "openjdk-zulu",
+"version": "11.0.5+10"
+},
+{
+"name": "osgi-resource-locator",
+"version": "1.0.1"
+},
+{
+"name": "spotbugs-annotations",
+"version": "3.1.9"
+},
+{
+"name": "stax-api",
+"version": "1.0-2"
+},
+{
+"name": "stax-ex",
+"version": "1.7.8"
+},
+{
+"name": "syslog4j",
+"version": "0.9.60.1"
+},
+{
+"name": "winrun4j",
+"version": "0.4.5"
+}
+],
+"extractors": [
+"source_archives"
+],
+"kind": "listing",
+"product": "SANtricity Web Services Proxy",
+"retrieved": "2026-11-08",
+"sha256": "23a9c7acf098754697629934efc4e3b26ea1f75ddfc48755683987a3aedf610c",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/SANtricity_Web_Services_Proxy/4.1/",
+"version": "4.1"
+}

@@ -1,0 +1,30 @@
+{
+"components": [
+{
+"name": "Ionic.Zip",
+"version": "1.8.4.8"
+},
+{
+"name": "Jayrock",
+"version": "0.9.10905.0931"
+},
+{
+"name": "log4net",
+"version": "1.2.10"
+},
+{
+"name": "Open Sans",
+"version": ""
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam Management Pack for Microsoft System Center",
+"retrieved": "2026-11-08",
+"sha256": "68d2c58d51b42802edde97c057381ae8473d4aeb446f4486807b17f12f67fa8d",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=veeam_management_pack_for_microsoft_system_center_9_0_components_summary&lang=en",
+"version": "9.0"
+}

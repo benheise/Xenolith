@@ -1,0 +1,1770 @@
+{
+"components": [
+{
+"name": "@flexem/jstzdetect",
+"version": "1.0.6"
+},
+{
+"name": "@spalger/filesaver",
+"version": "1.0.2"
+},
+{
+"name": "@trichins/angular-timezone-selector",
+"version": "1.2.1"
+},
+{
+"name": "A Swiss Army Knife for OSGi (bndlib)",
+"version": "1.15.0"
+},
+{
+"name": "ACE",
+"version": "6.1.0"
+},
+{
+"name": "Airline - io.airlift:airline",
+"version": "0.7"
+},
+{
+"name": "amdjs/underscore",
+"version": "1.4.0"
+},
+{
+"name": "angucomplete-alt",
+"version": "2.0.3"
+},
+{
+"name": "angucomplete-alt",
+"version": "2.4.1"
+},
+{
+"name": "Angular",
+"version": "1.3.18"
+},
+{
+"name": "Angular",
+"version": "1.3.20"
+},
+{
+"name": "Angular",
+"version": "1.4.2"
+},
+{
+"name": "Angular",
+"version": "1.5.5"
+},
+{
+"name": "Angular",
+"version": "1.5.8"
+},
+{
+"name": "Angular",
+"version": "1.6.9"
+},
+{
+"name": "Angular Clipboard",
+"version": "1.6.2"
+},
+{
+"name": "Angular Material",
+"version": "0.10.0"
+},
+{
+"name": "Angular Material",
+"version": "1.1.0-cj"
+},
+{
+"name": "Angular Material",
+"version": "1.1.6"
+},
+{
+"name": "Angular Material",
+"version": "v1.1.13"
+},
+{
+"name": "Angular UI Bootstrap",
+"version": "0.13.2"
+},
+{
+"name": "Angular UI Bootstrap",
+"version": "2.0.1"
+},
+{
+"name": "Angular ui-calendar",
+"version": "1.0.2"
+},
+{
+"name": "angular-bootstrap-colorpicker",
+"version": "3.0.25"
+},
+{
+"name": "angular-bootstrap-contextmenu",
+"version": "v1.2.0"
+},
+{
+"name": "angular-cookies",
+"version": "1.4.1"
+},
+{
+"name": "angular-cookies",
+"version": "1.6.9"
+},
+{
+"name": "angular-file-upload",
+"version": "10.1.10"
+},
+{
+"name": "angular-gage",
+"version": "0.1.0"
+},
+{
+"name": "angular-google-maps",
+"version": "2.1.2"
+},
+{
+"name": "angular-hotkeys",
+"version": "1.4.5"
+},
+{
+"name": "angular-hotkeys",
+"version": "1.7.0"
+},
+{
+"name": "angular-material",
+"version": "1.1.1"
+},
+{
+"name": "angular-material",
+"version": "1.1.3"
+},
+{
+"name": "angular-material-docs",
+"version": "1.1.1"
+},
+{
+"name": "angular-multiselect",
+"version": "4.0.1"
+},
+{
+"name": "angular-openlayers-directive",
+"version": "1.4.0"
+},
+{
+"name": "angular-pageslide-directive",
+"version": "2.1.4"
+},
+{
+"name": "angular-resource",
+"version": "1.3.20"
+},
+{
+"name": "angular-resource",
+"version": "1.6.9"
+},
+{
+"name": "angular-route",
+"version": "1.2.30"
+},
+{
+"name": "angular-route",
+"version": "1.6.9"
+},
+{
+"name": "angular-sanitize",
+"version": "1.7.6"
+},
+{
+"name": "angular-smart-table-npm",
+"version": "1.0.0"
+},
+{
+"name": "angular-translate",
+"version": "2.12.0"
+},
+{
+"name": "angular-translate-loader-static-files",
+"version": "2.12.0"
+},
+{
+"name": "angular-ui",
+"version": "0.4.0.1"
+},
+{
+"name": "angular-ui",
+"version": "1.0.3"
+},
+{
+"name": "angular-ui-grid",
+"version": "4.0.4"
+},
+{
+"name": "angular-ui-slider",
+"version": "0.3.2"
+},
+{
+"name": "angularjs-slider",
+"version": "6.0.0"
+},
+{
+"name": "angularUtils-pagination",
+"version": "20160401-snapshot-b1f22908"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.6"
+},
+{
+"name": "Apache Commons Lang",
+"version": "3.4"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.1.2"
+},
+{
+"name": "Apache HTTP Server",
+"version": "2.4.41"
+},
+{
+"name": "Apache HttpClient",
+"version": "4.3.3"
+},
+{
+"name": "Apache Portable Runtime",
+"version": "1.6.1"
+},
+{
+"name": "apache-websocket",
+"version": "0.1.1"
+},
+{
+"name": "appdynamics-bindeps-linux-x86",
+"version": "4.1.4.0"
+},
+{
+"name": "ASM",
+"version": "3.1"
+},
+{
+"name": "azureml-dataprep",
+"version": "1.0.16"
+},
+{
+"name": "backbone-chaining",
+"version": "0.3.0"
+},
+{
+"name": "Backbone.js",
+"version": "1.3.3"
+},
+{
+"name": "backbone.paginator",
+"version": "2.0.6"
+},
+{
+"name": "base-files",
+"version": "3.0.14"
+},
+{
+"name": "base-passwd",
+"version": "3.5.29"
+},
+{
+"name": "Bash",
+"version": "5.0"
+},
+{
+"name": "beanvalidation-api",
+"version": "1.1.0.Final"
+},
+{
+"name": "Berkeley DB",
+"version": "5.3.28"
+},
+{
+"name": "bnm-main-api",
+"version": "2.0.1499237777"
+},
+{
+"name": "Boost C++ Libraries",
+"version": "1.56.0"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "2.2.2"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "3.2.0"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "3.3.1"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "3.3.5"
+},
+{
+"name": "bower-angular",
+"version": "v1.3.20"
+},
+{
+"name": "bower-angular-animate",
+"version": "v1.3.20"
+},
+{
+"name": "bower-angular-resource",
+"version": "v1.3.20"
+},
+{
+"name": "BusyBox",
+"version": "1_31_0"
+},
+{
+"name": "bzip2-old",
+"version": "1.0.8"
+},
+{
+"name": "ca-certificates",
+"version": "20190110"
+},
+{
+"name": "cglib",
+"version": "2.2"
+},
+{
+"name": "cgroup-lite",
+"version": "1.15"
+},
+{
+"name": "checklist-model",
+"version": "0.8.0"
+},
+{
+"name": "chosen",
+"version": "1.7.0"
+},
+{
+"name": "Chroma.js",
+"version": "1.1.1"
+},
+{
+"name": "cJSON",
+"version": "v0.0.0"
+},
+{
+"name": "classworlds",
+"version": "1.1-alpha-2"
+},
+{
+"name": "cms-bundle",
+"version": "v6.0.1"
+},
+{
+"name": "com.springsource.net.sf.cglib",
+"version": "2.2.0"
+},
+{
+"name": "com.springsource.org.xmlpull",
+"version": "1.1.4.c"
+},
+{
+"name": "Commons IO",
+"version": "2.1"
+},
+{
+"name": "Compiler assisted localization library (CAL10N) - API",
+"version": "0.8.1"
+},
+{
+"name": "containerd-opencontainers",
+"version": "v1.2.7+gitX-r0"
+},
+{
+"name": "core-resource-app-test",
+"version": "30.0.0"
+},
+{
+"name": "cracklib",
+"version": "2.9.5"
+},
+{
+"name": "cronie",
+"version": "1.5.4"
+},
+{
+"name": "cURL",
+"version": "7.66.0"
+},
+{
+"name": "CurvedLines",
+"version": "1.1.1"
+},
+{
+"name": "D3.js",
+"version": "3.5.16"
+},
+{
+"name": "D3.js",
+"version": "3.5.17"
+},
+{
+"name": "Default Plexus Container",
+"version": "1.0-alpha-9-stable-1"
+},
+{
+"name": "dhcp- server",
+"version": "4.4.1"
+},
+{
+"name": "dhcp-relay",
+"version": "4.4.1"
+},
+{
+"name": "diffutils",
+"version": "3.7"
+},
+{
+"name": "dmidecode",
+"version": "3.2"
+},
+{
+"name": "DNRD",
+"version": "2.20.3"
+},
+{
+"name": "docker-moby",
+"version": "19.03.2+git08bc39c8f9e1ccdc5ff18f6e751105722cecc4a9-r0"
+},
+{
+"name": "e2fsprogs",
+"version": "1.45.3"
+},
+{
+"name": "ethtool",
+"version": "5.2-r0"
+},
+{
+"name": "eudev",
+"version": "3.2.8"
+},
+{
+"name": "Expat XML Parser",
+"version": "2.2.8"
+},
+{
+"name": "file",
+"version": "5.37"
+},
+{
+"name": "findutils",
+"version": "4.6.0"
+},
+{
+"name": "Flot",
+"version": "0.8.3"
+},
+{
+"name": "flot.tooltip",
+"version": "0.9.0"
+},
+{
+"name": "Font-Awesome",
+"version": "v4.7.0"
+},
+{
+"name": "freeradius",
+"version": "3.0.11"
+},
+{
+"name": "FullCalendar",
+"version": "2.3.1"
+},
+{
+"name": "FullCalendar",
+"version": "2.7.3"
+},
+{
+"name": "funds-front",
+"version": "1.1.30"
+},
+{
+"name": "ganarajpr/angular-dragdrop",
+"version": "1.2.2"
+},
+{
+"name": "Gawk",
+"version": "5.0.1"
+},
+{
+"name": "GLib",
+"version": "2.60.7"
+},
+{
+"name": "GNU C Library",
+"version": "2.30"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "8.3.0"
+},
+{
+"name": "GNU Core Utilities",
+"version": "v8.31"
+},
+{
+"name": "GNU grep",
+"version": "3.3"
+},
+{
+"name": "GNU Ncurses",
+"version": "6.1+20190803"
+},
+{
+"name": "GNU tar",
+"version": "1.32"
+},
+{
+"name": "grub",
+"version": "0.97"
+},
+{
+"name": "Guava: Google Core Libraries for Java",
+"version": "18.0-rc2"
+},
+{
+"name": "gzip",
+"version": "1.10"
+},
+{
+"name": "Hamcrest",
+"version": "1.1"
+},
+{
+"name": "haveged",
+"version": "1.9.6"
+},
+{
+"name": "hipages-coding-challenge",
+"version": "1.0.0"
+},
+{
+"name": "hiredis",
+"version": "0.13.1"
+},
+{
+"name": "hostapd",
+"version": "2.1"
+},
+{
+"name": "init- ifupdown",
+"version": "1.0"
+},
+{
+"name": "initscripts",
+"version": "1.0"
+},
+{
+"name": "initscripts-functions",
+"version": "1.0"
+},
+{
+"name": "insight-bitcore",
+"version": "5.0.0-beta.12"
+},
+{
+"name": "io.swagger:swagger-annotations",
+"version": "1.5.6"
+},
+{
+"name": "ipaddress",
+"version": "5.8.9"
+},
+{
+"name": "ipmitool",
+"version": "1.8.11"
+},
+{
+"name": "iproute2",
+"version": "v5.2.0"
+},
+{
+"name": "IPTables",
+"version": "v1.8.3"
+},
+{
+"name": "iptables- module-ip6t-dnat",
+"version": "1.8.3"
+},
+{
+"name": "iptables- module-ipt-snat",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ip6t-ah",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ip6t-icmp6",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ip6t-masquerade",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ip6t-redirect",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ip6t-snat",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ipt-ah",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ipt-dnat",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ipt-icmp",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ipt-masquerade",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ipt-redirect",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ipt-reject",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-ipt-ttl",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-addrtype",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-conntrack",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-esp",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-limit",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-mac",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-mark",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-multiport",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-owner",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-standard",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-tcp",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-tcpmss",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-tos",
+"version": "1.8.3"
+},
+{
+"name": "iptables-module-xt-udp",
+"version": "1.8.3"
+},
+{
+"name": "jackson- dataformat-yaml",
+"version": "2.4.5"
+},
+{
+"name": "jackson-annotations",
+"version": "2.4.2"
+},
+{
+"name": "jackson-core",
+"version": "2.4.5"
+},
+{
+"name": "jackson-databind",
+"version": "2.4.5"
+},
+{
+"name": "jackson-datatype-joda",
+"version": "2.4.3"
+},
+{
+"name": "Java Platform Standard Edition (JRE) (J2RE)",
+"version": "8u202"
+},
+{
+"name": "JavaBeans Activation Framework",
+"version": "1.1ea"
+},
+{
+"name": "javascript.util",
+"version": "0.12.8"
+},
+{
+"name": "jbh-jblast",
+"version": "0.0.140"
+},
+{
+"name": "jiarongxu/ngDraggable",
+"version": "0.1.10"
+},
+{
+"name": "jmustache",
+"version": "1.12"
+},
+{
+"name": "Joda Time",
+"version": "2.3"
+},
+{
+"name": "johnnys-terminal",
+"version": "2.0.0"
+},
+{
+"name": "JOpt Simple",
+"version": "4.6"
+},
+{
+"name": "jQuery",
+"version": "0.9.0"
+},
+{
+"name": "jQuery",
+"version": "1.10.4"
+},
+{
+"name": "jQuery",
+"version": "1.12.0"
+},
+{
+"name": "jQuery",
+"version": "1.7.x"
+},
+{
+"name": "jQuery",
+"version": "1.8.3"
+},
+{
+"name": "jQuery",
+"version": "1.9.1"
+},
+{
+"name": "jQuery",
+"version": "18n"
+},
+{
+"name": "jQuery",
+"version": "2.1.4"
+},
+{
+"name": "jQuery",
+"version": "89"
+},
+{
+"name": "jQuery",
+"version": "v33"
+},
+{
+"name": "jQuery ColorHelpers",
+"version": "1.1"
+},
+{
+"name": "jQuery UI",
+"version": "1.10.4"
+},
+{
+"name": "jQuery UI",
+"version": "1.12.0"
+},
+{
+"name": "jQuery UI",
+"version": "20170301-snapshot-032ddc33"
+},
+{
+"name": "jquery.tablesorter",
+"version": "2.0.5"
+},
+{
+"name": "jsTimezoneDetect",
+"version": "1.0.6"
+},
+{
+"name": "JSTS Topology Suite",
+"version": "0.16.0"
+},
+{
+"name": "jstz",
+"version": "2.0.0"
+},
+{
+"name": "justgage",
+"version": "1.1.0"
+},
+{
+"name": "kmod",
+"version": "v26"
+},
+{
+"name": "krb5-libs",
+"version": "1.17"
+},
+{
+"name": "lapack64",
+"version": "3.8.0"
+},
+{
+"name": "Less",
+"version": "551"
+},
+{
+"name": "lib64-ldd",
+"version": "2.30"
+},
+{
+"name": "lib64-libc6-utils",
+"version": "2.30"
+},
+{
+"name": "lib64-libe2p2",
+"version": "1.45.3"
+},
+{
+"name": "lib64-libext2fs2",
+"version": "1.45.3"
+},
+{
+"name": "lib64-libtinfo5",
+"version": "6.1+20190803"
+},
+{
+"name": "lib64-libtirpc3",
+"version": "1.1.4"
+},
+{
+"name": "libapr-1-src",
+"version": "1.7.0"
+},
+{
+"name": "libbsd",
+"version": "0.10.0"
+},
+{
+"name": "libbz2-1",
+"version": "1.0.8"
+},
+{
+"name": "libcap2",
+"version": "2.27"
+},
+{
+"name": "libcomerr2",
+"version": "1.45.3"
+},
+{
+"name": "libcrypt2",
+"version": "4.4.8"
+},
+{
+"name": "libcurl4",
+"version": "7.66.0"
+},
+{
+"name": "libdbus-1-3",
+"version": "1.12.16"
+},
+{
+"name": "libdw1",
+"version": "0.177"
+},
+{
+"name": "libelf1",
+"version": "0.177"
+},
+{
+"name": "libffi",
+"version": "3.3~rc0"
+},
+{
+"name": "libgcrypt",
+"version": "1.8.4"
+},
+{
+"name": "libgdbm6",
+"version": "1.18.1"
+},
+{
+"name": "libgfortran5",
+"version": "8.3.0"
+},
+{
+"name": "libgomp",
+"version": "8.3.1"
+},
+{
+"name": "libgpg-error",
+"version": "1.36"
+},
+{
+"name": "libjansson4",
+"version": "2.12"
+},
+{
+"name": "libkmod2",
+"version": "26"
+},
+{
+"name": "libldb",
+"version": "1.5.5"
+},
+{
+"name": "liblzma5",
+"version": "5.2.4"
+},
+{
+"name": "libmnl0",
+"version": "1.0.4"
+},
+{
+"name": "libmount1",
+"version": "2.34"
+},
+{
+"name": "libncurses5-64bit",
+"version": "6.1"
+},
+{
+"name": "libnsl2",
+"version": "1.2.0"
+},
+{
+"name": "libopenblas0",
+"version": "0.3.7+ds"
+},
+{
+"name": "libpcap",
+"version": "1.9.1"
+},
+{
+"name": "libpci3",
+"version": "3.6.2"
+},
+{
+"name": "libphonenumber",
+"version": "6.0"
+},
+{
+"name": "libplexus-utils",
+"version": "1.0.4"
+},
+{
+"name": "libpopt0",
+"version": "1.16"
+},
+{
+"name": "libquadmath",
+"version": "8.3.1"
+},
+{
+"name": "libreadline8",
+"version": "8.0"
+},
+{
+"name": "libsqlite3-0",
+"version": "3.29.0"
+},
+{
+"name": "libstdc++6",
+"version": "8.3.0"
+},
+{
+"name": "libtalloc",
+"version": "2.3.0"
+},
+{
+"name": "libtdb1",
+"version": "1.4.2"
+},
+{
+"name": "libtevent0",
+"version": "0.10.1"
+},
+{
+"name": "libuuid1",
+"version": "2.34"
+},
+{
+"name": "libwrap0",
+"version": "7.6"
+},
+{
+"name": "libxml2",
+"version": "2.9.9"
+},
+{
+"name": "libz1",
+"version": "1.2.11"
+},
+{
+"name": "Linux Kernel",
+"version": "4.9.185"
+},
+{
+"name": "Linux-Pam",
+"version": "1.3.1"
+},
+{
+"name": "Lo-Dash",
+"version": "4.13.1"
+},
+{
+"name": "logrotate",
+"version": "3.15.1"
+},
+{
+"name": "lsof",
+"version": "4.91"
+},
+{
+"name": "makedevs",
+"version": "1.0.1"
+},
+{
+"name": "Maven Archiver",
+"version": "2.2"
+},
+{
+"name": "Maven Artifact",
+"version": "2.0.7"
+},
+{
+"name": "Maven Artifact Manager",
+"version": "2.0.6"
+},
+{
+"name": "Maven Dependency Tree",
+"version": "1.2"
+},
+{
+"name": "Maven Local Settings Model",
+"version": "2.0.7"
+},
+{
+"name": "Maven Model",
+"version": "2.0.7"
+},
+{
+"name": "Maven Plugin Descriptor Model",
+"version": "2.0"
+},
+{
+"name": "Maven Plugin Tools APIs",
+"version": "2.0"
+},
+{
+"name": "Maven Project",
+"version": "2.0"
+},
+{
+"name": "Maven Wagon API",
+"version": "1.0-beta-2"
+},
+{
+"name": "meanjs",
+"version": "0.4.2"
+},
+{
+"name": "minizip",
+"version": "1.2.11"
+},
+{
+"name": "mms-angular-material",
+"version": "1.1.17"
+},
+{
+"name": "modutils-initscripts",
+"version": "1.0"
+},
+{
+"name": "moment",
+"version": "2.10.6"
+},
+{
+"name": "Moment JavaScript Date Library",
+"version": "2.10.6"
+},
+{
+"name": "moment-timezone",
+"version": "0.4.0"
+},
+{
+"name": "moment-timezone",
+"version": "0.4.1"
+},
+{
+"name": "nativesdk-libblkid1",
+"version": "2.34"
+},
+{
+"name": "nativesdk-libpcre1",
+"version": "8.43"
+},
+{
+"name": "Net-SNMP",
+"version": "5.8"
+},
+{
+"name": "net-tools",
+"version": "1.60"
+},
+{
+"name": "netbase",
+"version": "5.6"
+},
+{
+"name": "netkit-ftp",
+"version": "0.17"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p13"
+},
+{
+"name": "ng-pageslide",
+"version": "v2.1.1"
+},
+{
+"name": "ng-sortable-fix",
+"version": "1.3.6"
+},
+{
+"name": "ngDraggable",
+"version": "0.1.9"
+},
+{
+"name": "node-openlayers",
+"version": "4.3.2"
+},
+{
+"name": "nscd - A Name Service Caching Daemon (nscd)",
+"version": "2.25"
+},
+{
+"name": "NSPR",
+"version": "4.21"
+},
+{
+"name": "NSS",
+"version": "3.45"
+},
+{
+"name": "numexpr",
+"version": "2.6.4"
+},
+{
+"name": "objenesis",
+"version": "1.2"
+},
+{
+"name": "ol-rotate-feature",
+"version": "1.3.0"
+},
+{
+"name": "ol3-ext",
+"version": "1.0.2-alpha.0"
+},
+{
+"name": "Olical/EventEmitter",
+"version": "4.2.7"
+},
+{
+"name": "Open Virtual Machine Tools",
+"version": "2011.05.27-420096"
+},
+{
+"name": "OpenLayers",
+"version": "2.12"
+},
+{
+"name": "OpenLayers",
+"version": "v3.13.0"
+},
+{
+"name": "OpenLDAP",
+"version": "2.4.48"
+},
+{
+"name": "OpenSLP",
+"version": "1.0.11"
+},
+{
+"name": "openssh-keygen",
+"version": "8.0p1"
+},
+{
+"name": "openssh-scp",
+"version": "8.0p1"
+},
+{
+"name": "openssh-sftp",
+"version": "8.0p1"
+},
+{
+"name": "openssh-ssh",
+"version": "8.0p1"
+},
+{
+"name": "openssh-sshd",
+"version": "8.0p1"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.1-beta3"
+},
+{
+"name": "OpenSSL",
+"version": "1.1.1d"
+},
+{
+"name": "OpenSSL",
+"version": "2.0-fips"
+},
+{
+"name": "openssl-bin",
+"version": "1.1.1d"
+},
+{
+"name": "opkg",
+"version": "v0.4.1"
+},
+{
+"name": "Oracle FMW MapViewer",
+"version": "12.2.1.3"
+},
+{
+"name": "OSGi OBR Service API",
+"version": "1.0.2"
+},
+{
+"name": "osgi.core",
+"version": "4.1.0"
+},
+{
+"name": "pam- plugin-deny",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin- loginuid",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-env",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-faildelay",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-group",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-keyinit",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-nologin",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-permit",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-rootok",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-unix",
+"version": "1.3.1"
+},
+{
+"name": "pam-plugin-warn",
+"version": "1.3.1"
+},
+{
+"name": "pandas-python3",
+"version": "0.23.4"
+},
+{
+"name": "payu-form-validation",
+"version": "4.17.2"
+},
+{
+"name": "pciutils",
+"version": "v3.6.2"
+},
+{
+"name": "pexpect",
+"version": "2.3"
+},
+{
+"name": "pg-formula-parser",
+"version": "v1.0.5"
+},
+{
+"name": "Plexus",
+"version": "1.0-alpha-7"
+},
+{
+"name": "Plexus Component API",
+"version": "1.0-alpha-13"
+},
+{
+"name": "PostgreSQL Database Server",
+"version": "11.5"
+},
+{
+"name": "procps",
+"version": "3.3.15"
+},
+{
+"name": "Protocol Buffers",
+"version": "3.9.2"
+},
+{
+"name": "Python programming language",
+"version": "3.7.5"
+},
+{
+"name": "python-hiredis",
+"version": "0.2.0"
+},
+{
+"name": "python3-codecs",
+"version": "3.7.5"
+},
+{
+"name": "python3-compile",
+"version": "3.7.5"
+},
+{
+"name": "python3-compression",
+"version": "3.7.5"
+},
+{
+"name": "python3-core",
+"version": "3.7.5"
+},
+{
+"name": "python3-crypt",
+"version": "3.7.5"
+},
+{
+"name": "python3-ctypes",
+"version": "3.7.5"
+},
+{
+"name": "python3-datetime",
+"version": "3.7.5"
+},
+{
+"name": "python3-difflib",
+"version": "3.7.5"
+},
+{
+"name": "python3-distutils",
+"version": "3.7.5"
+},
+{
+"name": "python3-email",
+"version": "3.7.5"
+},
+{
+"name": "python3-fcntl",
+"version": "3.7.5"
+},
+{
+"name": "python3-image",
+"version": "3.7.5"
+},
+{
+"name": "python3-io",
+"version": "3.7.5"
+},
+{
+"name": "python3-json",
+"version": "3.7.5"
+},
+{
+"name": "python3-logging",
+"version": "3.7.5"
+},
+{
+"name": "python3-math",
+"version": "3.7.5"
+},
+{
+"name": "python3-mime",
+"version": "3.7.5"
+},
+{
+"name": "python3-misc",
+"version": "3.7.5"
+},
+{
+"name": "python3-mmap",
+"version": "3.7.5"
+},
+{
+"name": "python3-multiprocessing",
+"version": "3.7.5"
+},
+{
+"name": "python3-netclient",
+"version": "3.7.5"
+},
+{
+"name": "python3-numbers",
+"version": "3.7.5"
+},
+{
+"name": "python3-numpy",
+"version": "1.17.0"
+},
+{
+"name": "python3-pickle",
+"version": "3.7.5"
+},
+{
+"name": "python3-pkgutil",
+"version": "3.7.5"
+},
+{
+"name": "python3-pprint",
+"version": "3.7.5"
+},
+{
+"name": "python3-pydoc",
+"version": "3.7.5"
+},
+{
+"name": "python3-python-dateutil",
+"version": "2.8.0"
+},
+{
+"name": "python3-resource",
+"version": "3.7.5"
+},
+{
+"name": "python3-shell",
+"version": "3.7.5"
+},
+{
+"name": "python3-six",
+"version": "1.12.0"
+},
+{
+"name": "python3-stringold",
+"version": "3.7.5"
+},
+{
+"name": "python3-terminal",
+"version": "3.7.5"
+},
+{
+"name": "python3-threading",
+"version": "3.7.5"
+},
+{
+"name": "python3-typing",
+"version": "3.7.5"
+},
+{
+"name": "python3-unittest",
+"version": "3.7.5"
+},
+{
+"name": "python3-unixadmin",
+"version": "3.7.5"
+},
+{
+"name": "python3-xml",
+"version": "3.7.5"
+},
+{
+"name": "PyTZ - Python Time Zone Library",
+"version": "2019.2"
+},
+{
+"name": "Racoon2",
+"version": "20100526a"
+},
+{
+"name": "RaphaÃ«l",
+"version": "2.1.4"
+},
+{
+"name": "Redis",
+"version": "3.2.11"
+},
+{
+"name": "redis-python3",
+"version": "2.10.6"
+},
+{
+"name": "rpcapd-linux",
+"version": "4.1.2"
+},
+{
+"name": "rpm",
+"version": "4.14.2.1"
+},
+{
+"name": "runc",
+"version": "1.0.0"
+},
+{
+"name": "scikit-learn",
+"version": "0.19.2"
+},
+{
+"name": "scipy",
+"version": "1.3.1"
+},
+{
+"name": "shadow",
+"version": "4.6"
+},
+{
+"name": "shadow-base",
+"version": "4.6"
+},
+{
+"name": "shadow-securetty",
+"version": "4.6"
+},
+{
+"name": "shared-tag-library",
+"version": "1.7.11"
+},
+{
+"name": "Simple XML",
+"version": "2.3.3"
+},
+{
+"name": "SLF4J API Module",
+"version": "1.7.11"
+},
+{
+"name": "SLF4J Extensions Module",
+"version": "1.7.11"
+},
+{
+"name": "Smart-Table",
+"version": "2.1.8"
+},
+{
+"name": "socket-io",
+"version": "v1.0.0-stable"
+},
+{
+"name": "splitargs",
+"version": "0.0.7"
+},
+{
+"name": "sshpass",
+"version": "1.05"
+},
+{
+"name": "strace",
+"version": "5.3"
+},
+{
+"name": "sudo",
+"version": "1.8.27"
+},
+{
+"name": "Swagger API",
+"version": "1.5.9"
+},
+{
+"name": "swagger- parser",
+"version": "1.0.21"
+},
+{
+"name": "swagger-codegen",
+"version": "2.1.0-M2"
+},
+{
+"name": "swagger-codegen (core library)",
+"version": "2.2.0"
+},
+{
+"name": "swagger-compat-spec-parser",
+"version": "1.0.24"
+},
+{
+"name": "swagger-models",
+"version": "1.5.9"
+},
+{
+"name": "sysfsutils",
+"version": "2.1.0"
+},
+{
+"name": "sysfsutils-lib",
+"version": "2.1.0"
+},
+{
+"name": "sysklogd",
+"version": "1.5.1"
+},
+{
+"name": "sysstat",
+"version": "v12.1.6"
+},
+{
+"name": "sysvinit",
+"version": "2.88dsf"
+},
+{
+"name": "sysvinit-inittab",
+"version": "2.88dsf"
+},
+{
+"name": "text-encoding",
+"version": "0.6.4"
+},
+{
+"name": "tftp-hpa",
+"version": "5.2"
+},
+{
+"name": "Time Zone Database",
+"version": "2019c"
+},
+{
+"name": "timezone-picker",
+"version": "1.0.2"
+},
+{
+"name": "TinyColor",
+"version": "1.3.0"
+},
+{
+"name": "TinyXML2",
+"version": "1.0.11"
+},
+{
+"name": "toastr",
+"version": "2.1.4"
+},
+{
+"name": "traceroute",
+"version": "2.1.0"
+},
+{
+"name": "ui-select-that-was-forked-solely-to-update-npm-version",
+"version": "0.19.6"
+},
+{
+"name": "Underscore.js",
+"version": "1.8.3"
+},
+{
+"name": "update-rc.d",
+"version": "0.8"
+},
+{
+"name": "util-linux",
+"version": "2.34"
+},
+{
+"name": "uws",
+"version": "0.14.5"
+},
+{
+"name": "Vim",
+"version": "8.1.1518"
+},
+{
+"name": "vis.js",
+"version": "4.21.0"
+},
+{
+"name": "WebVella/WebVella-ERP",
+"version": "20171102-snapshot-e99352a3"
+},
+{
+"name": "wicket-jquery-ui-theme-base",
+"version": "8.0.0-M4.1"
+},
+{
+"name": "Wireshark",
+"version": "v3.0.3"
+},
+{
+"name": "xinetd",
+"version": "2.3.15"
+},
+{
+"name": "xmlpull",
+"version": "1.1.3.1"
+},
+{
+"name": "xpp3_xpath",
+"version": "1.1.4c"
+},
+{
+"name": "xterm.js",
+"version": "2.9.2"
+},
+{
+"name": "xz",
+"version": "5.2.4"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "ExtremeGuest",
+"retrieved": "2026-11-08",
+"sha256": "2ea912fbddc8ff92bd2f560bd86fd67bf8abf7de7bcfd071d909c65b88a4ac38",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1825be0a48cd4bdbb1735338ff66f4cd?v=76a56f5f",
+"version": "4.76.01"
+}

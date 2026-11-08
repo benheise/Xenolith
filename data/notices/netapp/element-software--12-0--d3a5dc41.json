@@ -1,0 +1,30 @@
+{
+"components": [
+{
+"name": "element",
+"version": "11_3"
+},
+{
+"name": "element-auth",
+"version": "1.1.108_3rd_party"
+},
+{
+"name": "ember",
+"version": "12"
+},
+{
+"name": "mnode-svc-storage",
+"version": "3rd_party"
+}
+],
+"extractors": [
+"source_archives"
+],
+"kind": "listing",
+"product": "Element Software",
+"retrieved": "2026-11-08",
+"sha256": "bf872c88f7bb3072ebfb73a007ceecc362e7329467f1323dae73ee4fcf1f6470",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/Element_OS/12.0/",
+"version": "12.0"
+}

@@ -1,0 +1,66 @@
+{
+"components": [
+{
+"name": "@schematics/angular",
+"version": "0.5.4"
+},
+{
+"name": "console-io",
+"version": "v2.7.10"
+},
+{
+"name": "D3.js",
+"version": "v5.0.0"
+},
+{
+"name": "Flot",
+"version": "0.8.1"
+},
+{
+"name": "Flot",
+"version": "20140429-snapshot-958e5fd4"
+},
+{
+"name": "flot.tooltip",
+"version": "0.9.0"
+},
+{
+"name": "jQuery",
+"version": "0.9.0"
+},
+{
+"name": "jQuery",
+"version": "1.1"
+},
+{
+"name": "jQuery",
+"version": "1.8.3"
+},
+{
+"name": "jQuery",
+"version": "3.3.1"
+},
+{
+"name": "Sizzle",
+"version": "2.3.3"
+},
+{
+"name": "swagger-ui-express",
+"version": "3.0.9"
+},
+{
+"name": "typeface-roboto",
+"version": "0.0.50"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "Guest & IoT Manager",
+"retrieved": "2026-11-08",
+"sha256": "abc100f0f60a13c5c9d29cb1cea2320d63197602e902e4461fb7a8bb6925c7f4",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/98aea157762b48da9d830582eea83387?v=fb7a9059",
+"version": "3.21.06"
+}

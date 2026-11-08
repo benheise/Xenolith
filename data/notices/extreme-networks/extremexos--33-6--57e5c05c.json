@@ -1,0 +1,4291 @@
+{
+"components": [
+{
+"name": "aanand/compose-file",
+"version": "20170111-snapshot-8b762b24"
+},
+{
+"name": "aanand/compose-file 20170111-snapshot",
+"version": "8b762b24"
+},
+{
+"name": "abook",
+"version": "0.5.6"
+},
+{
+"name": "acl (access control list)",
+"version": "2.3.1"
+},
+{
+"name": "ACME Lego",
+"version": "20180928-snapshot-a9d8cec0"
+},
+{
+"name": "agronholm/typeguard",
+"version": "2.13.3"
+},
+{
+"name": "amd64-microcode",
+"version": "3.20230414.1"
+},
+{
+"name": "Android",
+"version": "31.0.3"
+},
+{
+"name": "ant-contrib",
+"version": "1.0b3"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.3"
+},
+{
+"name": "Apache Commons Daemon",
+"version": "1.0.15"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.0"
+},
+{
+"name": "Apache HttpClient",
+"version": "3.1"
+},
+{
+"name": "Apache Lucene",
+"version": "3.0.0"
+},
+{
+"name": "Apache Regexp",
+"version": "1.2"
+},
+{
+"name": "Apache ServiceMix :: Bundles :: xercesImpl",
+"version": "2.11.0_1"
+},
+{
+"name": "Apache ServiceMix Bundles: saxon-9.1.0.1",
+"version": "9.3.0.11_1"
+},
+{
+"name": "Apache Xalan (Java)",
+"version": "2.7.2"
+},
+{
+"name": "Apache Xerces2 J",
+"version": "2.11.0"
+},
+{
+"name": "Apache XML Commons",
+"version": "2.11.0"
+},
+{
+"name": "Archive-Tar",
+"version": "2.38"
+},
+{
+"name": "asn1crypto",
+"version": "1.5.1"
+},
+{
+"name": "asset-importer-sys",
+"version": "0.2.1"
+},
+{
+"name": "atomicwrites",
+"version": "1.4.0"
+},
+{
+"name": "autoconf-archive",
+"version": "20220211"
+},
+{
+"name": "autodie",
+"version": "2.34"
+},
+{
+"name": "autowrap",
+"version": "0.23.0"
+},
+{
+"name": "avahi",
+"version": "0.8"
+},
+{
+"name": "avr-gcc",
+"version": "11.3.0"
+},
+{
+"name": "AWS SDK for Go",
+"version": "20160602-snapshot-6e586c89"
+},
+{
+"name": "AWS SDK for Go",
+"version": "20160906-snapshot-beb58f57"
+},
+{
+"name": "AWS SDK for Go 20160602-snapshot",
+"version": "6e586c89"
+},
+{
+"name": "Axel",
+"version": "2.6"
+},
+{
+"name": "Azure/azure-sdk-for-go",
+"version": "20170717-snapshot"
+},
+{
+"name": "backports.functools_lru_cache",
+"version": "1.6.4"
+},
+{
+"name": "base-passwd",
+"version": "3.5.29"
+},
+{
+"name": "Bash",
+"version": "5.1.16"
+},
+{
+"name": "Bash Completion",
+"version": "2.11"
+},
+{
+"name": "Bash Completion",
+"version": "2.5"
+},
+{
+"name": "bash-completion",
+"version": "2.11"
+},
+{
+"name": "batch",
+"version": "0.1.0"
+},
+{
+"name": "bcrypt",
+"version": "3.2.0"
+},
+{
+"name": "benchmark",
+"version": "1.4.1"
+},
+{
+"name": "Berkeley DB",
+"version": "5.3.28"
+},
+{
+"name": "Berkeley SoftFloat",
+"version": "20180726-snapshot-b64af41c"
+},
+{
+"name": "bignum",
+"version": "0.49"
+},
+{
+"name": "BIND9 (Berkeley Internet Name Domain)",
+"version": "9.11.2.P1"
+},
+{
+"name": "bison-doc",
+"version": "3.8.2+repack"
+},
+{
+"name": "bitarray",
+"version": "2.4.1"
+},
+{
+"name": "Bitbake",
+"version": "2015-04-fido"
+},
+{
+"name": "bitflags",
+"version": "1.3.2"
+},
+{
+"name": "blackfriday",
+"version": "v2.1.0"
+},
+{
+"name": "BlueZ",
+"version": "5.65"
+},
+{
+"name": "Boost C++ Libraries - boost",
+"version": "1.72.0"
+},
+{
+"name": "bridge-utils",
+"version": "1.7.1"
+},
+{
+"name": "brotli",
+"version": "1.0.7"
+},
+{
+"name": "brotli",
+"version": "1.0.9"
+},
+{
+"name": "btrfs-progs",
+"version": "v5.16.2"
+},
+{
+"name": "btrfs-progs - Userspace Tools",
+"version": "v5.16.2"
+},
+{
+"name": "btrfs-tools",
+"version": "5.16.2"
+},
+{
+"name": "bugsnag-bugsnag-go",
+"version": "v1.0.4"
+},
+{
+"name": "bugsnag/panicwrap",
+"version": "20221031-snapshot"
+},
+{
+"name": "BurntSushi/rust-memchr",
+"version": "2.4.1"
+},
+{
+"name": "busybox",
+"version": "1_35_0"
+},
+{
+"name": "byacc",
+"version": "2.0.20220114"
+},
+{
+"name": "byacc",
+"version": "20220128"
+},
+{
+"name": "ca- certificates",
+"version": "20211016~21.10.1"
+},
+{
+"name": "ca-certificates",
+"version": "20211016~21.10.1"
+},
+{
+"name": "Cairo-Pixman",
+"version": "0.40.0"
+},
+{
+"name": "can-utils",
+"version": "v2020.11.0"
+},
+{
+"name": "capstone-sys",
+"version": "0.17.0"
+},
+{
+"name": "cargo",
+"version": "0.32.0"
+},
+{
+"name": "cargo",
+"version": "0.57.0+ubuntu"
+},
+{
+"name": "cargo",
+"version": "0.58.0"
+},
+{
+"name": "cargo",
+"version": "0.60.0ubuntu2"
+},
+{
+"name": "cargo",
+"version": "0.63.1"
+},
+{
+"name": "cc-rs",
+"version": "1.0.69"
+},
+{
+"name": "ccrypt",
+"version": "1.10"
+},
+{
+"name": "cddlib-sys",
+"version": "0.3.2"
+},
+{
+"name": "CEL Java",
+"version": "0.3.0"
+},
+{
+"name": "cenkalti/backoff",
+"version": "v1.0.0"
+},
+{
+"name": "census-instrumentation/opencensus-go",
+"version": "v0.22.3"
+},
+{
+"name": "ceph",
+"version": "14.2.9"
+},
+{
+"name": "certvalidator",
+"version": "0.11.1"
+},
+{
+"name": "cfssl",
+"version": "20180516-snapshot-4e2dcbde"
+},
+{
+"name": "chardet",
+"version": "4.0.0"
+},
+{
+"name": "cheroot",
+"version": "6.4.0"
+},
+{
+"name": "CherryPy",
+"version": "v17.4.2"
+},
+{
+"name": "cherrypy-cors",
+"version": "1.6"
+},
+{
+"name": "chronotope/chrono",
+"version": "v0.4.19"
+},
+{
+"name": "chrpath",
+"version": "0.16"
+},
+{
+"name": "chyh1990/yaml-rust",
+"version": "0.3.5"
+},
+{
+"name": "chyh1990/yaml-rust",
+"version": "0.4.4"
+},
+{
+"name": "cisco/ChezScheme",
+"version": "v10.1.0"
+},
+{
+"name": "Clang",
+"version": "13.0.0"
+},
+{
+"name": "clang",
+"version": "13.0.1"
+},
+{
+"name": "Click - Python Command Line Utility",
+"version": "8.1.2"
+},
+{
+"name": "clickclick",
+"version": "20.10.2"
+},
+{
+"name": "client_golang",
+"version": "0.7.0"
+},
+{
+"name": "CMake",
+"version": "3.22.3"
+},
+{
+"name": "colorama",
+"version": "0.4.5"
+},
+{
+"name": "com.gitee.silentdoer:CommentManager",
+"version": "5.5.0"
+},
+{
+"name": "com.gitee.silentdoer:CommentManager",
+"version": "7.0.0"
+},
+{
+"name": "com.tagtraum:libz",
+"version": "4.0.0"
+},
+{
+"name": "commons-bcel",
+"version": "5.0"
+},
+{
+"name": "Compress::Raw::Zlib",
+"version": "2.096"
+},
+{
+"name": "Config::Perl::V",
+"version": "0.33"
+},
+{
+"name": "configparser",
+"version": "5.2.0"
+},
+{
+"name": "connexion",
+"version": "2.14.1"
+},
+{
+"name": "conntrack",
+"version": "1.4.7"
+},
+{
+"name": "Consul",
+"version": "1.8.7"
+},
+{
+"name": "containerd/console",
+"version": "20210311-snapshot"
+},
+{
+"name": "containerd/console",
+"version": "v1.0.2"
+},
+{
+"name": "containerd/containerd",
+"version": "v1.4.3"
+},
+{
+"name": "containerd/containerd",
+"version": "v1.6.19"
+},
+{
+"name": "containerd/continuity",
+"version": "v0.3.0"
+},
+{
+"name": "containerd/fifo",
+"version": "20201026-snapshot-0724c46b"
+},
+{
+"name": "containerd/go-runc",
+"version": "20201020-snapshot-16b287bc"
+},
+{
+"name": "containerd/go-runc 20201020-snapshot",
+"version": "16b287bc"
+},
+{
+"name": "contextlib2",
+"version": "21.6.0"
+},
+{
+"name": "Control Group Configuration Library",
+"version": "2.0.2"
+},
+{
+"name": "coreos-pkg",
+"version": "20190419-snapshot"
+},
+{
+"name": "CPAN::Meta",
+"version": "2.150010"
+},
+{
+"name": "cpio-doc",
+"version": "2.13"
+},
+{
+"name": "cpuguy83-go-md2man",
+"version": "2.0.1"
+},
+{
+"name": "creack/pty",
+"version": "v1.1.11"
+},
+{
+"name": "curl",
+"version": "7.66.0"
+},
+{
+"name": "curl",
+"version": "7.82.0"
+},
+{
+"name": "cwautomacros",
+"version": "20110201"
+},
+{
+"name": "cyphar/filepath-securejoin",
+"version": "20190111-snapshot"
+},
+{
+"name": "Cyrus SASL",
+"version": "2.1.23"
+},
+{
+"name": "Cyrus SASL",
+"version": "2.1.28"
+},
+{
+"name": "Cython",
+"version": "0.29.28"
+},
+{
+"name": "D-Bus",
+"version": "1.14.8"
+},
+{
+"name": "dancannon/gorethink",
+"version": "v2.x.x"
+},
+{
+"name": "dancannon/gorethink",
+"version": "v3.0.0"
+},
+{
+"name": "db-src",
+"version": "5.3.28"
+},
+{
+"name": "dbus-glib",
+"version": "0.112"
+},
+{
+"name": "dbus-python",
+"version": "1.2.18"
+},
+{
+"name": "debfoster",
+"version": "2.5"
+},
+{
+"name": "Debian Goodies",
+"version": "0.63"
+},
+{
+"name": "debian-firmware-nonfree",
+"version": "20230404"
+},
+{
+"name": "debianutils",
+"version": "5.13"
+},
+{
+"name": "debianutils",
+"version": "5.7"
+},
+{
+"name": "denverdino-aliyungo",
+"version": "20170404-snapshot-f90f8648"
+},
+{
+"name": "device-tree-compiler",
+"version": "1.6.1"
+},
+{
+"name": "dfu-util",
+"version": "0.11"
+},
+{
+"name": "DHCP (ISC)",
+"version": "4.4.1"
+},
+{
+"name": "DirMngr",
+"version": "0.9.1"
+},
+{
+"name": "Dnsmasq",
+"version": "2.81"
+},
+{
+"name": "Dnsmasq",
+"version": "2.84"
+},
+{
+"name": "Docbkx Maven Plugin",
+"version": "2.0.8"
+},
+{
+"name": "docbook",
+"version": "0.0.5"
+},
+{
+"name": "DocBook",
+"version": "1.79.1"
+},
+{
+"name": "DocBook XSL WebHelp Indexer extension",
+"version": "1.0.0-9777"
+},
+{
+"name": "docbook-xml",
+"version": "4.0"
+},
+{
+"name": "docbook-xml",
+"version": "4.4"
+},
+{
+"name": "docbook-xml",
+"version": "4.5"
+},
+{
+"name": "docbook-xml-dtd4",
+"version": "4.5"
+},
+{
+"name": "docker",
+"version": "v20.10.21"
+},
+{
+"name": "docker- cli",
+"version": "20180806-snapshot"
+},
+{
+"name": "docker-cli",
+"version": "20180417-snapshot"
+},
+{
+"name": "docker-cli",
+"version": "20180611-snapshot"
+},
+{
+"name": "docker-cli",
+"version": "20180806-snapshot"
+},
+{
+"name": "docker-cli",
+"version": "v20.10.21"
+},
+{
+"name": "docker-go",
+"version": "v1.5.1-1"
+},
+{
+"name": "docker-goamz",
+"version": "20160206-snapshot-f0a21f5b"
+},
+{
+"name": "docker-org",
+"version": "20190806-snapshot-e31b211e"
+},
+{
+"name": "docker-org",
+"version": "v0.6.4"
+},
+{
+"name": "docker-registry",
+"version": "2.4.1"
+},
+{
+"name": "docker-registry",
+"version": "2.6.0"
+},
+{
+"name": "docker-registry",
+"version": "2.6.0~rc.1+git20161216.38.28602af3"
+},
+{
+"name": "docker-registry",
+"version": "2.6.2"
+},
+{
+"name": "docker-registry",
+"version": "2.7.1"
+},
+{
+"name": "docker-registry",
+"version": "20170726-snapshot-edc3ab29"
+},
+{
+"name": "docker/compose-on-kubernetes",
+"version": "v0.5.0"
+},
+{
+"name": "Docutils",
+"version": "0.18.1"
+},
+{
+"name": "dosfstools",
+"version": "4.0"
+},
+{
+"name": "dosfstools",
+"version": "4.2"
+},
+{
+"name": "e2fsprogs",
+"version": "1.46.5"
+},
+{
+"name": "ebtables",
+"version": "2.0.11"
+},
+{
+"name": "elfutils",
+"version": "0.186"
+},
+{
+"name": "embedded-postgres-binaries-linux-arm64v8",
+"version": "13.4.0"
+},
+{
+"name": "evanphx/json-patch",
+"version": "20190403-snapshot"
+},
+{
+"name": "exml",
+"version": "0.7.2"
+},
+{
+"name": "ExtUtils::CBuilder",
+"version": "0.280235"
+},
+{
+"name": "ExtUtils::ParseXS",
+"version": "3.35"
+},
+{
+"name": "fakeroot",
+"version": "1.24"
+},
+{
+"name": "fatih/pool",
+"version": "20160419-snapshot-cba550eb"
+},
+{
+"name": "fernet-fernet-go",
+"version": "20180830-snapshot-9eac43b8"
+},
+{
+"name": "file",
+"version": "5.41"
+},
+{
+"name": "File Roller",
+"version": "0.8"
+},
+{
+"name": "findutils",
+"version": "4.9.0"
+},
+{
+"name": "fio",
+"version": "3.30"
+},
+{
+"name": "flake8",
+"version": "5.0.4"
+},
+{
+"name": "Flask",
+"version": "2.1.1"
+},
+{
+"name": "Flask-Cors",
+"version": "3.0.10"
+},
+{
+"name": "Flask-FlatPages",
+"version": "0.6.1"
+},
+{
+"name": "flask-httpauth",
+"version": "4.3.0"
+},
+{
+"name": "flask-jsonrpc",
+"version": "0.3.1"
+},
+{
+"name": "Flask-JsonSchema",
+"version": "0.1.1"
+},
+{
+"name": "flate2",
+"version": "1.0.16"
+},
+{
+"name": "flate2",
+"version": "1.0.22"
+},
+{
+"name": "Flex",
+"version": "2.6.4"
+},
+{
+"name": "flit",
+"version": "3.7.1"
+},
+{
+"name": "Font-Awesome",
+"version": "4.0.2"
+},
+{
+"name": "funcsigs",
+"version": "1.0.2"
+},
+{
+"name": "FUSE",
+"version": "2.9.9"
+},
+{
+"name": "fvbommel/sortorder",
+"version": "v1.0.2"
+},
+{
+"name": "Gawk",
+"version": "5.1.1"
+},
+{
+"name": "gcc-11",
+"version": "11.3.0"
+},
+{
+"name": "GDB",
+"version": "11.2"
+},
+{
+"name": "GDB",
+"version": "12.0.50.20220217"
+},
+{
+"name": "gerbv a Gerber (RS-274X) viewer",
+"version": "2.6.2"
+},
+{
+"name": "gerbv a Gerber (RS-274X) viewer",
+"version": "2.7.0"
+},
+{
+"name": "gettext",
+"version": "0.21"
+},
+{
+"name": "git.kernel.org/pub/scm/network/iproute2/iproute2",
+"version": "v5.17.0"
+},
+{
+"name": "git.yoctoproject.org/git/yocto-kernel-tools",
+"version": "v0.3"
+},
+{
+"name": "git2-rs",
+"version": "0.13.23"
+},
+{
+"name": "github-singularity",
+"version": "3.10.1+ds1"
+},
+{
+"name": "github-singularity",
+"version": "3.9.4+ds2"
+},
+{
+"name": "github.com/containerd/go-cni",
+"version": "0"
+},
+{
+"name": "github.com/containerd/ttrpc",
+"version": "v1.0.2"
+},
+{
+"name": "github.com/gofrs/flock",
+"version": "v0.7.3"
+},
+{
+"name": "github.com/google/go-containerregistry",
+"version": "0.4.1"
+},
+{
+"name": "github.com/stevvooe/resumable",
+"version": "20160729-snapshot-51ad4410"
+},
+{
+"name": "gkernel: rng-tools / ethtool",
+"version": "v5.16"
+},
+{
+"name": "GKSu",
+"version": "1.2.5"
+},
+{
+"name": "GLib",
+"version": "2.39.3"
+},
+{
+"name": "GLib",
+"version": "2.72.3"
+},
+{
+"name": "GLib",
+"version": "2.75.0-beta-1"
+},
+{
+"name": "GMP",
+"version": "6.2.1"
+},
+{
+"name": "gmpy",
+"version": "2.1.2"
+},
+{
+"name": "GNOME",
+"version": "2021.1"
+},
+{
+"name": "GNU Autoconf",
+"version": "v2.71"
+},
+{
+"name": "GNU Autoconf Archive",
+"version": "v2022.02.11"
+},
+{
+"name": "GNU Automake",
+"version": "1.16.5"
+},
+{
+"name": "GNU bc",
+"version": "1.07.1"
+},
+{
+"name": "GNU Binutils",
+"version": "2.37.90.20220130"
+},
+{
+"name": "GNU Binutils",
+"version": "2.38"
+},
+{
+"name": "GNU Bison",
+"version": "1.35"
+},
+{
+"name": "GNU Bison",
+"version": "3.8.2"
+},
+{
+"name": "GNU C Library",
+"version": "2.2.3pre1"
+},
+{
+"name": "GNU C Library",
+"version": "2.32"
+},
+{
+"name": "GNU C Library",
+"version": "2.35"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "11.3.0"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "11.3.0+git1637"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "11.5.0"
+},
+{
+"name": "GNU Core Utilities",
+"version": "9.0"
+},
+{
+"name": "GNU cpio",
+"version": "2.13"
+},
+{
+"name": "GNU Diff Utilities",
+"version": "3.9"
+},
+{
+"name": "GNU grep",
+"version": "3.7"
+},
+{
+"name": "GNU GRUB",
+"version": "2.06"
+},
+{
+"name": "GNU libiberty",
+"version": "20211102"
+},
+{
+"name": "GNU Libtool",
+"version": "2.4.7"
+},
+{
+"name": "GNU M4",
+"version": "1.4.19"
+},
+{
+"name": "GNU MPC",
+"version": "1.2.1"
+},
+{
+"name": "GNU MPFR",
+"version": "4.1.1"
+},
+{
+"name": "GNU Parted",
+"version": "v3.4"
+},
+{
+"name": "GNU Patch",
+"version": "2.7.6"
+},
+{
+"name": "GNU sed",
+"version": "4.8"
+},
+{
+"name": "GNU Sharutils",
+"version": "4.11.1"
+},
+{
+"name": "GNU tar",
+"version": "1.34"
+},
+{
+"name": "GNU which",
+"version": "2.21"
+},
+{
+"name": "GnuTLS",
+"version": "3.7.4"
+},
+{
+"name": "Go Logrus",
+"version": "20210312-snapshot"
+},
+{
+"name": "Go Logrus",
+"version": "v0.11.0"
+},
+{
+"name": "Go programming language",
+"version": "1.17.13"
+},
+{
+"name": "Go programming language",
+"version": "20150204-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20170417-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20200421-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20200915-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20210927-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20220127-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20220210-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20220216-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20220607-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20230119-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20240404-snapshot"
+},
+{
+"name": "Go programming language",
+"version": "20240708-snapshot"
+},
+{
+"name": "Go Testify",
+"version": "20200427-snapshot"
+},
+{
+"name": "go-ansiterm",
+"version": "20190110-snapshot-d25a2c83"
+},
+{
+"name": "go-ansiterm",
+"version": "20210617-snapshot-d185dfc1"
+},
+{
+"name": "go-check-check",
+"version": "20180214-snapshot-64131543"
+},
+{
+"name": "go-cli",
+"version": "20150514-snapshot"
+},
+{
+"name": "go-cli",
+"version": "v1.9.0"
+},
+{
+"name": "go-etcd",
+"version": "20190717-snapshot"
+},
+{
+"name": "go-immutable-radix",
+"version": "20180615-snapshot-826af9cc"
+},
+{
+"name": "go-immutable-radix 20180615-snapshot",
+"version": "826af9cc"
+},
+{
+"name": "go-ini-ini",
+"version": "20180223-snapshot"
+},
+{
+"name": "go-jose",
+"version": "20160311-snapshot-70a7e670"
+},
+{
+"name": "go-jose",
+"version": "20181202-snapshot-a8abebc3"
+},
+{
+"name": "go-metrics",
+"version": "20180502-snapshot-7da7ed57"
+},
+{
+"name": "go-sql-driver",
+"version": "v1.3"
+},
+{
+"name": "go-systemd",
+"version": "4"
+},
+{
+"name": "go-systemd",
+"version": "v17"
+},
+{
+"name": "go-viper",
+"version": "20160225-snapshot-be5ff3e4"
+},
+{
+"name": "go-zfs",
+"version": "20190419-snapshot-f784269b"
+},
+{
+"name": "go-zookeeper",
+"version": "20150629-snapshot-d0e0d8e1"
+},
+{
+"name": "GObject-introspection",
+"version": "1.72.0"
+},
+{
+"name": "godbus-dbus",
+"version": "v4.0.0"
+},
+{
+"name": "gogo/protobuf",
+"version": "20190905-snapshot"
+},
+{
+"name": "Golang Protobuf",
+"version": "v1.3.1"
+},
+{
+"name": "Golang Protobuf",
+"version": "v1.3.2"
+},
+{
+"name": "golang- github-spf13-pflag-dev",
+"version": "v1.0.5-rc1"
+},
+{
+"name": "golang-1.16-src",
+"version": "1.16.15"
+},
+{
+"name": "golang-1.17-doc",
+"version": "1.17.13"
+},
+{
+"name": "golang-github- hashicorp-memberlist",
+"version": "20180718-snapshot-3d8438da"
+},
+{
+"name": "golang-github-aanand-compose-file-dev",
+"version": "0.0~git20161122.0.a3e5876"
+},
+{
+"name": "golang-github-azure-go- ansiterm",
+"version": "0.0~git20210617.d185dfc"
+},
+{
+"name": "golang-github-azure-go-ansiterm",
+"version": "0.0~git20210617.d185dfc"
+},
+{
+"name": "golang-github-docker-go- connections-dev",
+"version": "20190110-snapshot-d25a2c83"
+},
+{
+"name": "golang-github-docker-go-connections- dev",
+"version": "0.2.1+git20161115.12.4ccf312"
+},
+{
+"name": "golang-github-docker-go-connections-dev",
+"version": "0.2.1+git20161115.12.4ccf312"
+},
+{
+"name": "golang-github-docker-go-connections-dev",
+"version": "20180516-snapshot-7395e3f8"
+},
+{
+"name": "golang-github-docker-go-connections-dev",
+"version": "20190110-snapshot-d25a2c83"
+},
+{
+"name": "golang-github-docker-notary-dev",
+"version": "0.6.1~ds1"
+},
+{
+"name": "golang-github-hashicorp-memberlist",
+"version": "v0.4.0"
+},
+{
+"name": "golang-github-magiconair-properties",
+"version": "1.5.3"
+},
+{
+"name": "golang-github-opencontainers-image-spec-dev",
+"version": "1.0.2"
+},
+{
+"name": "golang-github-opencontainers-image-spec-dev",
+"version": "1.0.2+20211123.g43a7dee1ec31"
+},
+{
+"name": "golang-github-spf13-pflag-dev",
+"version": "v1.0.5-rc1"
+},
+{
+"name": "golang-google-grpc",
+"version": "1.38.1"
+},
+{
+"name": "golang-misc",
+"version": "1.16.5"
+},
+{
+"name": "golang-misc",
+"version": "1.17.12"
+},
+{
+"name": "golang-race",
+"version": "1.17.13"
+},
+{
+"name": "golang-set",
+"version": "20170411-snapshot-ef32fa30"
+},
+{
+"name": "golang-text",
+"version": "20130925-snapshot-048ed3d7"
+},
+{
+"name": "golang.org/x/crypto",
+"version": "20170727-snapshot"
+},
+{
+"name": "golang.org/x/crypto",
+"version": "20180605-snapshot-76eec36f"
+},
+{
+"name": "golang.org/x/crypto",
+"version": "20200513-snapshot-4b2356b1"
+},
+{
+"name": "golang.org/x/crypto 20180605-snapshot",
+"version": "76eec36f"
+},
+{
+"name": "golang.org/x/crypto 20200513-snapshot",
+"version": "4b2356b1"
+},
+{
+"name": "golang.org/x/net",
+"version": "20170331-snapshot"
+},
+{
+"name": "golang.org/x/net",
+"version": "20190617-snapshot"
+},
+{
+"name": "golang.org/x/net",
+"version": "20200118-snapshot-6afb5195"
+},
+{
+"name": "golang.org/x/net",
+"version": "20200707-snapshot-ab342639"
+},
+{
+"name": "golang.org/x/sys",
+"version": "20180105-snapshot-314a259e"
+},
+{
+"name": "golang.org/x/term",
+"version": "20201202-snapshot-f5c789dd"
+},
+{
+"name": "golang.org/x/time",
+"version": "20160908-snapshot"
+},
+{
+"name": "golang/gddo",
+"version": "20190904-snapshot-72a348e7"
+},
+{
+"name": "golang/oauth2",
+"version": "20180419-snapshot"
+},
+{
+"name": "golang/sync",
+"version": "20190918-snapshot-cd5d95a4"
+},
+{
+"name": "Google C++ Testing Framework",
+"version": "1.10.0"
+},
+{
+"name": "Google C++ Testing Framework",
+"version": "1.7.0"
+},
+{
+"name": "Google C++ Testing Framework",
+"version": "1.8.0"
+},
+{
+"name": "Google Mock",
+"version": "1.7.0-18092013"
+},
+{
+"name": "google/go-cmp",
+"version": "20180627-snapshot"
+},
+{
+"name": "googleapis/go-genproto",
+"version": "20201022-snapshot-3f1135a2"
+},
+{
+"name": "googleapis/go-genproto 20201022-snapshot",
+"version": "3f1135a2"
+},
+{
+"name": "gorilla/handlers",
+"version": "20171117-snapshot"
+},
+{
+"name": "gorilla/mux",
+"version": "20170515-snapshot"
+},
+{
+"name": "gorilla/mux",
+"version": "20181029-snapshot"
+},
+{
+"name": "gorilla/mux",
+"version": "v1.8.0"
+},
+{
+"name": "gorm",
+"version": "20180516-snapshot-5409931a"
+},
+{
+"name": "gperf",
+"version": "3.1"
+},
+{
+"name": "GPT fdisk",
+"version": "1.0.8"
+},
+{
+"name": "grantjenks/python-sortedcontainers",
+"version": "v2.4.0"
+},
+{
+"name": "gridcf/gct",
+"version": "v6.2.20220524"
+},
+{
+"name": "groff",
+"version": "1.22.4"
+},
+{
+"name": "groff",
+"version": "1.22.4~rc4"
+},
+{
+"name": "groupcache",
+"version": "20190701-snapshot-869f8716"
+},
+{
+"name": "grpc-ecosystem/go-grpc-middleware",
+"version": "v1.2.0"
+},
+{
+"name": "grpc-ecosystem/grpc-opentracing",
+"version": "20180507-snapshot-8e809c8a"
+},
+{
+"name": "grpc-gateway",
+"version": "20170714-snapshot-1a03ca3b"
+},
+{
+"name": "grpc-go",
+"version": "v1.41.0"
+},
+{
+"name": "gtk-doc",
+"version": "1.33.2"
+},
+{
+"name": "gtkterm",
+"version": "0.99.4"
+},
+{
+"name": "gzip",
+"version": "1.12"
+},
+{
+"name": "hailocab-go-hostpool",
+"version": "20180905-snapshot-d8e2db65"
+},
+{
+"name": "hashicorp serf",
+"version": "0.7.0"
+},
+{
+"name": "hashicorp-go- memdb",
+"version": "20170411-snapshot-cb9a474f"
+},
+{
+"name": "hashicorp-go-memdb",
+"version": "20170411-snapshot-cb9a474f"
+},
+{
+"name": "hashicorp-go-msgpack",
+"version": "20170411-snapshot-71c2886f"
+},
+{
+"name": "hashicorp-go-msgpack 20170411-snapshot",
+"version": "71c2886f"
+},
+{
+"name": "hashicorp/go-sockaddr",
+"version": "v1.0.2"
+},
+{
+"name": "hddtemp",
+"version": "0.3-beta13"
+},
+{
+"name": "help2man",
+"version": "1.49.1"
+},
+{
+"name": "hiredis",
+"version": "v1.0.2"
+},
+{
+"name": "html5ever",
+"version": "0.16.1"
+},
+{
+"name": "httpagentparser",
+"version": "1.9.2"
+},
+{
+"name": "hypergraphx",
+"version": "0.0.2"
+},
+{
+"name": "hypothesis",
+"version": "6.39.5"
+},
+{
+"name": "ICU for C/C++ (ICU4C)",
+"version": "70.1"
+},
+{
+"name": "idna",
+"version": "3.3"
+},
+{
+"name": "IEEE",
+"version": "802.11i 2.7+git20190128+0c1e29f"
+},
+{
+"name": "impacket",
+"version": "0.9.24"
+},
+{
+"name": "importlib_metadata",
+"version": "4.11.3"
+},
+{
+"name": "inconshreveable/mousetrap",
+"version": "0.0~git20141017.0.76626ae"
+},
+{
+"name": "Info-Zip",
+"version": "3.0"
+},
+{
+"name": "Info-Zip",
+"version": "6.0"
+},
+{
+"name": "ingress-nginx",
+"version": "20200809-snapshot"
+},
+{
+"name": "iniconfig",
+"version": "1.1.1"
+},
+{
+"name": "iniparse",
+"version": "0.5"
+},
+{
+"name": "init-system-helpers",
+"version": "1.62"
+},
+{
+"name": "installer",
+"version": "0.5.1"
+},
+{
+"name": "intltool",
+"version": "0.51.0"
+},
+{
+"name": "IO",
+"version": "1.45"
+},
+{
+"name": "IO::Compress",
+"version": "2.102"
+},
+{
+"name": "IO::Socket::IP",
+"version": "0.41"
+},
+{
+"name": "IPMI Tool",
+"version": "1.8.18"
+},
+{
+"name": "iproute2",
+"version": "5.17.0"
+},
+{
+"name": "IPTables",
+"version": "1.8.7"
+},
+{
+"name": "irqbalance",
+"version": "v1.8.0"
+},
+{
+"name": "irqbalance",
+"version": "v1.9.0"
+},
+{
+"name": "ishidawataru/sctp",
+"version": "20210226-snapshot-f2269e66"
+},
+{
+"name": "ISO RELAX",
+"version": "20041111"
+},
+{
+"name": "itsdangerous",
+"version": "2.1.2"
+},
+{
+"name": "itstool",
+"version": "2.0.7"
+},
+{
+"name": "jaguilar/vt100",
+"version": "20190419-snapshot-ad4c4a57"
+},
+{
+"name": "jansson",
+"version": "2.13.1"
+},
+{
+"name": "jansson",
+"version": "2.4"
+},
+{
+"name": "jaraco.functools",
+"version": "1.20"
+},
+{
+"name": "jaraco/configparser",
+"version": "v5.2.0"
+},
+{
+"name": "JavaCPP Presets for CPython",
+"version": "3.10.13-1.5.7.1"
+},
+{
+"name": "JavaCPP Presets for CPython",
+"version": "3.10.13-1.5.7.2"
+},
+{
+"name": "JavaCPP Presets for CPython",
+"version": "3.10.8-1.5.8"
+},
+{
+"name": "JavaCPP Presets for CPython",
+"version": "3.11.3-1.5.9"
+},
+{
+"name": "jbeder/yaml-cpp",
+"version": "0.5.3"
+},
+{
+"name": "jbeder/yaml-cpp",
+"version": "0.6.2"
+},
+{
+"name": "jemalloc",
+"version": "5.2.1"
+},
+{
+"name": "jing-trang",
+"version": "20091111"
+},
+{
+"name": "jinjapython",
+"version": "3.1.1"
+},
+{
+"name": "jose2go",
+"version": "1.3"
+},
+{
+"name": "JRst - lib",
+"version": "2.4"
+},
+{
+"name": "JRst :: Docutils",
+"version": "2.4"
+},
+{
+"name": "jsocol's bleach",
+"version": "6.2.0"
+},
+{
+"name": "JSON-PP",
+"version": "4.06"
+},
+{
+"name": "jsoniter-go",
+"version": "v1.1.12"
+},
+{
+"name": "jsonpath",
+"version": "0.82"
+},
+{
+"name": "Jython",
+"version": "2.5.2"
+},
+{
+"name": "k8s.io/klog",
+"version": "20200731-snapshot-4ad0115b"
+},
+{
+"name": "k8s.io/utils",
+"version": "20191008-snapshot-69764acb"
+},
+{
+"name": "kbd",
+"version": "2.4.0"
+},
+{
+"name": "kbd",
+"version": "2.4.0-alt1"
+},
+{
+"name": "Kconfiglib",
+"version": "14.1.0"
+},
+{
+"name": "kmod",
+"version": "29"
+},
+{
+"name": "language",
+"version": "1.59.0"
+},
+{
+"name": "lathiat/nss-mdns",
+"version": "0.15.1"
+},
+{
+"name": "Less",
+"version": "590"
+},
+{
+"name": "libaio",
+"version": "0.3.112"
+},
+{
+"name": "libarchive",
+"version": "3.6.2"
+},
+{
+"name": "libatomic-ops",
+"version": "7.6.14"
+},
+{
+"name": "libaugeas0",
+"version": "1.12.0"
+},
+{
+"name": "libboost1.71-doc",
+"version": "1.71.0"
+},
+{
+"name": "libboost1.71-tools-dev",
+"version": "1.71.0"
+},
+{
+"name": "libboost1.83-dev",
+"version": "1.83.0"
+},
+{
+"name": "libboost1.83-doc",
+"version": "1.83.0"
+},
+{
+"name": "libbsd",
+"version": "0.11.5"
+},
+{
+"name": "libbsd-dev",
+"version": "0.11.6"
+},
+{
+"name": "libcap",
+"version": "2.66"
+},
+{
+"name": "libcap-ng",
+"version": "0.8.2"
+},
+{
+"name": "libcheck/check",
+"version": "0.15.2"
+},
+{
+"name": "libcmocka-dev",
+"version": "1.1.5"
+},
+{
+"name": "libcmocka-dev",
+"version": "1.1.7"
+},
+{
+"name": "libcroco",
+"version": "0.6.13"
+},
+{
+"name": "libdaemon",
+"version": "0.14"
+},
+{
+"name": "libdb",
+"version": "5.3.28"
+},
+{
+"name": "libdbus-c++-1-0",
+"version": "0.9.0"
+},
+{
+"name": "libdrm-dev",
+"version": "2.4.110"
+},
+{
+"name": "libencode-perl",
+"version": "3.08"
+},
+{
+"name": "libepoxy",
+"version": "1.5.10"
+},
+{
+"name": "liberror-perl",
+"version": "0.17029"
+},
+{
+"name": "libestr",
+"version": "0.1.11"
+},
+{
+"name": "libevent",
+"version": "2.1.11-stable"
+},
+{
+"name": "libevent",
+"version": "2.1.12"
+},
+{
+"name": "libevent",
+"version": "2.1.12-stable"
+},
+{
+"name": "libevent-sys",
+"version": "0.2.3"
+},
+{
+"name": "libexpat",
+"version": "2.5.0"
+},
+{
+"name": "libffi",
+"version": "3.3~20160120"
+},
+{
+"name": "libffi",
+"version": "3.4.4"
+},
+{
+"name": "libffi-sys",
+"version": "3.3.3"
+},
+{
+"name": "libgcrypt",
+"version": "1.9.4"
+},
+{
+"name": "libgdbm",
+"version": "v1.23"
+},
+{
+"name": "libgit2",
+"version": "1.3.0"
+},
+{
+"name": "libgpg-error",
+"version": "1.4"
+},
+{
+"name": "libgpg-error",
+"version": "1.44"
+},
+{
+"name": "libical",
+"version": "3.0.16"
+},
+{
+"name": "Libidn",
+"version": "1.36"
+},
+{
+"name": "Libidn",
+"version": "2.3.2"
+},
+{
+"name": "libmath- bigint-perl",
+"version": "1.999818"
+},
+{
+"name": "libmath-bigint-perl",
+"version": "1.999818"
+},
+{
+"name": "libmd0",
+"version": "1.0.4"
+},
+{
+"name": "libmnl",
+"version": "1.0.4"
+},
+{
+"name": "libmnl",
+"version": "1.0.5"
+},
+{
+"name": "libmpc",
+"version": "1.2.1"
+},
+{
+"name": "libnetfilter-conntrack-dev",
+"version": "1.0.9"
+},
+{
+"name": "libnetfilter-queue1",
+"version": "1.0.5"
+},
+{
+"name": "libnetwork",
+"version": "0.8.0~dev.2"
+},
+{
+"name": "libnghttp2-sys",
+"version": "0.1.11+1.64.0"
+},
+{
+"name": "libnsl",
+"version": "2.0.0"
+},
+{
+"name": "libnsl2-devel",
+"version": "2.0.0"
+},
+{
+"name": "libnss-db",
+"version": "2.2.3pre1"
+},
+{
+"name": "libnss-mdns",
+"version": "0.14.1"
+},
+{
+"name": "libnss-mdns",
+"version": "0.15.1"
+},
+{
+"name": "libnuma1",
+"version": "2.0.16"
+},
+{
+"name": "libopendbx",
+"version": "1.4.6"
+},
+{
+"name": "libpcap",
+"version": "1.10.1"
+},
+{
+"name": "libpciaccess0",
+"version": "0.16"
+},
+{
+"name": "libpipeline - pipeline manipulation library",
+"version": "1.5.5"
+},
+{
+"name": "libpod-simple-perl",
+"version": "3.42"
+},
+{
+"name": "libpthread-stubs0",
+"version": "0.4"
+},
+{
+"name": "libpthread-stubs0-dev",
+"version": "0.4"
+},
+{
+"name": "librsvg",
+"version": "2.47.3"
+},
+{
+"name": "librsvg",
+"version": "2.48.6"
+},
+{
+"name": "librsvg",
+"version": "2.48.8"
+},
+{
+"name": "librsvg",
+"version": "2.50.3"
+},
+{
+"name": "librsvg",
+"version": "2.53.0"
+},
+{
+"name": "librsync",
+"version": "2.3.2"
+},
+{
+"name": "librsync- sys",
+"version": "0.1.0"
+},
+{
+"name": "librsync-sys",
+"version": "0.1.0"
+},
+{
+"name": "librsync-sys",
+"version": "0.1.2"
+},
+{
+"name": "librust- autocfg-dev",
+"version": "1.0.0"
+},
+{
+"name": "librust-autocfg-dev",
+"version": "1.0.0"
+},
+{
+"name": "librust-autocfg-dev",
+"version": "1.0.1"
+},
+{
+"name": "librust-capstone-sys-dev",
+"version": "0.15.0"
+},
+{
+"name": "librust-hashbrown-dev",
+"version": "0.11.2"
+},
+{
+"name": "librust-salsa-macros-dev",
+"version": "0.17.0~pre.2"
+},
+{
+"name": "libscalar- list-utils-perl",
+"version": "1.55"
+},
+{
+"name": "libscalar-list-utils-perl",
+"version": "1.55"
+},
+{
+"name": "libseccomp-golang",
+"version": "20220609-snapshot"
+},
+{
+"name": "libsegwayrmp",
+"version": "0.2.10"
+},
+{
+"name": "libsocket-perl",
+"version": "2.032"
+},
+{
+"name": "libsodium",
+"version": "1.0.18"
+},
+{
+"name": "libsodium",
+"version": "1.0.19"
+},
+{
+"name": "libspatialindex",
+"version": "1.9.3"
+},
+{
+"name": "libssh2",
+"version": "1.10.0"
+},
+{
+"name": "libssh2",
+"version": "1.11.0"
+},
+{
+"name": "libssh2",
+"version": "1.9.0"
+},
+{
+"name": "libstdc++",
+"version": "12-20211113"
+},
+{
+"name": "libstdc++",
+"version": "12-20211117"
+},
+{
+"name": "libstdc++",
+"version": "12-20211127"
+},
+{
+"name": "libstdc++",
+"version": "12-20211217"
+},
+{
+"name": "libstdc++",
+"version": "12-20220106"
+},
+{
+"name": "libstdc++",
+"version": "12-20220126"
+},
+{
+"name": "Libtasn1",
+"version": "4.19.0"
+},
+{
+"name": "libtest-json-schema-acceptance-perl",
+"version": "1.015"
+},
+{
+"name": "libtest-simple-perl",
+"version": "1.302183"
+},
+{
+"name": "libtext-template-perl",
+"version": "1.46"
+},
+{
+"name": "libtext-template-perl",
+"version": "1.58"
+},
+{
+"name": "libtirpc",
+"version": "1.3.2"
+},
+{
+"name": "libunistring",
+"version": "v1.0"
+},
+{
+"name": "libunwind",
+"version": "v1.6.2"
+},
+{
+"name": "libusb",
+"version": "1.0.26"
+},
+{
+"name": "libvirt",
+"version": "8.1.0"
+},
+{
+"name": "libX11",
+"version": "1.7.3.1"
+},
+{
+"name": "libxcrypt",
+"version": "4.4.30"
+},
+{
+"name": "libxcrypt",
+"version": "4.4.33"
+},
+{
+"name": "libxdamage1",
+"version": "1.1.5"
+},
+{
+"name": "libXdmcp",
+"version": "1.1.3"
+},
+{
+"name": "libXext",
+"version": "1.3.4"
+},
+{
+"name": "libxext-dev",
+"version": "1.3.4"
+},
+{
+"name": "libxml2",
+"version": "2.9.14"
+},
+{
+"name": "libxrender1",
+"version": "0.9.10"
+},
+{
+"name": "libxshmfence",
+"version": "1.3"
+},
+{
+"name": "libxslt",
+"version": "v1.1.35"
+},
+{
+"name": "LibYAML",
+"version": "0.2.5"
+},
+{
+"name": "libzeep-dev",
+"version": "3.0.5"
+},
+{
+"name": "libzstd-dev",
+"version": "1.5.2"
+},
+{
+"name": "Linux Containers",
+"version": "4.0.12"
+},
+{
+"name": "Linux Extended Attributes (attr)",
+"version": "2.5.1"
+},
+{
+"name": "Linux Kernel",
+"version": "4.14"
+},
+{
+"name": "Linux Kernel",
+"version": "5.10.177"
+},
+{
+"name": "Linux Kernel",
+"version": "5.10.178"
+},
+{
+"name": "Linux Kernel",
+"version": "v4.14.253"
+},
+{
+"name": "Linux Kernel SCTP",
+"version": "v1.0.19"
+},
+{
+"name": "linux-firmware",
+"version": "20230404"
+},
+{
+"name": "linux-oem-5.10-tools-host",
+"version": "5.10.0"
+},
+{
+"name": "linuxptp",
+"version": "3.1.1"
+},
+{
+"name": "linuxptp",
+"version": "4.2"
+},
+{
+"name": "lit",
+"version": "13.0.1"
+},
+{
+"name": "lld",
+"version": "13.0.1"
+},
+{
+"name": "lldb",
+"version": "13.0.1"
+},
+{
+"name": "LLVM - Low Level Virtual Machine",
+"version": "13.0.0~+rc4"
+},
+{
+"name": "LLVM - Low Level Virtual Machine",
+"version": "13.0.1"
+},
+{
+"name": "Locale::Maketext::Simple",
+"version": "0.20_01"
+},
+{
+"name": "lsof",
+"version": "4.94.0"
+},
+{
+"name": "lsof-org/lsof",
+"version": "4.94.0"
+},
+{
+"name": "lttng-modules",
+"version": "2.13.5"
+},
+{
+"name": "lttng-ust",
+"version": "v2.13.5"
+},
+{
+"name": "lua",
+"version": "5.1.5"
+},
+{
+"name": "lua",
+"version": "5.1.5-Ubuntu-x86_64"
+},
+{
+"name": "lua5.4",
+"version": "5.4.4"
+},
+{
+"name": "Lucene Analyzers",
+"version": "3.0.0"
+},
+{
+"name": "lvm2",
+"version": "2.02.171"
+},
+{
+"name": "lwIP",
+"version": "2.0.0-RC2"
+},
+{
+"name": "lz4",
+"version": "1.9.4"
+},
+{
+"name": "LZO real-time data compression library",
+"version": "2.03"
+},
+{
+"name": "LZO real-time data compression library",
+"version": "2.10"
+},
+{
+"name": "lzo-sys",
+"version": "1.0.0"
+},
+{
+"name": "mackwic/colored",
+"version": "v2.0.0"
+},
+{
+"name": "mailx",
+"version": "14.9.24"
+},
+{
+"name": "make",
+"version": "4.3"
+},
+{
+"name": "makedumpfile",
+"version": "1.7.1"
+},
+{
+"name": "Mako",
+"version": "1.1.6"
+},
+{
+"name": "man-db",
+"version": "2.10.2"
+},
+{
+"name": "mapstructure",
+"version": "87d716ed0b363d0e32dfa71eae1d8d2714a4455d"
+},
+{
+"name": "mapstructure",
+"version": "v1.3.2"
+},
+{
+"name": "MarkupSafe",
+"version": "2.1.1"
+},
+{
+"name": "mattn-go-sqlite3",
+"version": "v1.6.0"
+},
+{
+"name": "matttproud-golang_protobuf_extensions",
+"version": "20180214-snapshot-d0c3fe89"
+},
+{
+"name": "mbed TLS",
+"version": "2.16.2"
+},
+{
+"name": "mccabe",
+"version": "0.7.0"
+},
+{
+"name": "mcrypt",
+"version": "2.5.13"
+},
+{
+"name": "mdadm",
+"version": "4.2"
+},
+{
+"name": "medInria-public",
+"version": "V5.0.1beta"
+},
+{
+"name": "mendersoftware/mendertesting",
+"version": "0.0~git20200227.1396c95"
+},
+{
+"name": "mergo",
+"version": "v0.3.8"
+},
+{
+"name": "Mesa",
+"version": "22.0.3"
+},
+{
+"name": "meson",
+"version": "0.61.3"
+},
+{
+"name": "Meson build system",
+"version": "0.59.2"
+},
+{
+"name": "Meson build system",
+"version": "0.59.3"
+},
+{
+"name": "Meson build system",
+"version": "0.59.4"
+},
+{
+"name": "Meson build system",
+"version": "0.61.2"
+},
+{
+"name": "Meson build system",
+"version": "0.61.3"
+},
+{
+"name": "Microsoft-go-winio",
+"version": "v0.4.14"
+},
+{
+"name": "Microsoft-go-winio",
+"version": "v0.4.15"
+},
+{
+"name": "miekg/dns",
+"version": "v1.1.27"
+},
+{
+"name": "miekg/pkcs11",
+"version": "20180515-snapshot-5f6e0d0d"
+},
+{
+"name": "miekg/pkcs11",
+"version": "v1.0.3"
+},
+{
+"name": "mingw-python-charset-normalizer",
+"version": "3.0.1"
+},
+{
+"name": "MiniDLNA",
+"version": "1.1.3"
+},
+{
+"name": "moby/ipvs",
+"version": "20201102-snapshot"
+},
+{
+"name": "moby/term",
+"version": "20201022-snapshot-7f0af18e"
+},
+{
+"name": "moby/term",
+"version": "3f7ff695adc6a35abc925370dd0a4dafb48ec64d"
+},
+{
+"name": "modern-go/reflect2",
+"version": "v1.0.2"
+},
+{
+"name": "Module::Load::Conditional",
+"version": "0.74"
+},
+{
+"name": "mold",
+"version": "1.0.0"
+},
+{
+"name": "mold",
+"version": "1.0.3"
+},
+{
+"name": "more-itertools",
+"version": "8.12.0"
+},
+{
+"name": "mountall",
+"version": "2.36.4ubuntu0.1"
+},
+{
+"name": "mpc",
+"version": "1.2.1"
+},
+{
+"name": "mpdecimal",
+"version": "2.5.1"
+},
+{
+"name": "mruby",
+"version": "2.0.1"
+},
+{
+"name": "mtd-utils",
+"version": "v2.1.5"
+},
+{
+"name": "ncurses",
+"version": "6.3+20220423"
+},
+{
+"name": "ndg-httpsclient",
+"version": "0.5.1"
+},
+{
+"name": "Net-SNMP",
+"version": "5.9.1"
+},
+{
+"name": "net-tools",
+"version": "2.10"
+},
+{
+"name": "NetBase",
+"version": "6.3"
+},
+{
+"name": "netcat-openbsd",
+"version": "1.195"
+},
+{
+"name": "netcf",
+"version": "0.2.8"
+},
+{
+"name": "Netlink Protocol Library Suite (libnl)",
+"version": "3.5.0"
+},
+{
+"name": "Nettle",
+"version": "3.7.3"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p10"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p12"
+},
+{
+"name": "Newt",
+"version": "0.52.23"
+},
+{
+"name": "nftables",
+"version": "1.0.2"
+},
+{
+"name": "nghttp2",
+"version": "v1.41.0"
+},
+{
+"name": "Ninja (build system)",
+"version": "1.10.2"
+},
+{
+"name": "NIST PKI Test Suite",
+"version": "1.0.1"
+},
+{
+"name": "nongnu - dmidecode",
+"version": "3.3"
+},
+{
+"name": "notary",
+"version": "v0.6.1"
+},
+{
+"name": "ObConf",
+"version": "1.6"
+},
+{
+"name": "ObConf",
+"version": "2.0.1"
+},
+{
+"name": "ocproxy",
+"version": "1.50"
+},
+{
+"name": "open-formula",
+"version": "0.1.0"
+},
+{
+"name": "OpenBIOS",
+"version": "1.1.git20191022"
+},
+{
+"name": "OpenCC",
+"version": "1.0.4"
+},
+{
+"name": "opencontainers-runtime-spec",
+"version": "20200811-snapshot-4d89ac9f"
+},
+{
+"name": "opencontainers/go-digest",
+"version": "1.0.0"
+},
+{
+"name": "opencontainers/image-spec",
+"version": "20220302-snapshot"
+},
+{
+"name": "opencontainers/image-spec",
+"version": "67d2d5658fe0476ab9bf414cec164077ebff3920"
+},
+{
+"name": "opencontainers/selinux",
+"version": "v1.8.0"
+},
+{
+"name": "OpenLDAP",
+"version": "2.4.21"
+},
+{
+"name": "OpenLDAP",
+"version": "2.5.12"
+},
+{
+"name": "opensbi",
+"version": "v0.9"
+},
+{
+"name": "OpenSSH",
+"version": "8.1p1"
+},
+{
+"name": "OpenSSH",
+"version": "8.9p1"
+},
+{
+"name": "OpenSSL",
+"version": "1.1.1g"
+},
+{
+"name": "OpenSSL",
+"version": "1.1.1l"
+},
+{
+"name": "OpenSSL",
+"version": "3.0.10"
+},
+{
+"name": "openSUSE libsolv",
+"version": "0.7.22"
+},
+{
+"name": "opentracing-opentracing-go",
+"version": "v1.2.0"
+},
+{
+"name": "opkg",
+"version": "0.5.0"
+},
+{
+"name": "org.briarproject:tor",
+"version": "0.3.5.15"
+},
+{
+"name": "org.briarproject:tor",
+"version": "0.4.5.12"
+},
+{
+"name": "org.briarproject:tor",
+"version": "0.4.5.14"
+},
+{
+"name": "Packaging",
+"version": "21.3"
+},
+{
+"name": "paramiko",
+"version": "2.10.3"
+},
+{
+"name": "Paste",
+"version": "3.5.0"
+},
+{
+"name": "pathlib2",
+"version": "2.3.7"
+},
+{
+"name": "pbr",
+"version": "5.8.1"
+},
+{
+"name": "pciutils/pciutils",
+"version": "v3.7.0"
+},
+{
+"name": "PCRE",
+"version": "8.45"
+},
+{
+"name": "PCRE2",
+"version": "10.40"
+},
+{
+"name": "Perl",
+"version": "v5.34.1"
+},
+{
+"name": "perl- Devel-PPPort",
+"version": "3.62"
+},
+{
+"name": "perl- IPC-SysV",
+"version": "2.09"
+},
+{
+"name": "perl-cross",
+"version": "1.3.7"
+},
+{
+"name": "perl-Devel-PPPort",
+"version": "3.62"
+},
+{
+"name": "perl-IPC-SysV",
+"version": "2.09"
+},
+{
+"name": "pexpect",
+"version": "4.8.0"
+},
+{
+"name": "pigz",
+"version": "v2.7"
+},
+{
+"name": "pip",
+"version": "22.0.3"
+},
+{
+"name": "pip",
+"version": "22.3.1"
+},
+{
+"name": "Pipe Viewer",
+"version": "1.6.20"
+},
+{
+"name": "pkg-config",
+"version": "0.29.2"
+},
+{
+"name": "ply",
+"version": "3.11"
+},
+{
+"name": "pm-utils",
+"version": "1.4.1"
+},
+{
+"name": "Pod::Perldoc",
+"version": "3.28.01"
+},
+{
+"name": "podlators",
+"version": "4.14"
+},
+{
+"name": "poetry",
+"version": "1.0.8"
+},
+{
+"name": "popt",
+"version": "1.10"
+},
+{
+"name": "popt",
+"version": "1.18"
+},
+{
+"name": "popt",
+"version": "1.5.1"
+},
+{
+"name": "portend",
+"version": "2.6"
+},
+{
+"name": "practical language",
+"version": "1.59.0"
+},
+{
+"name": "pretend",
+"version": "1.0.9"
+},
+{
+"name": "Procps",
+"version": "3.3.16"
+},
+{
+"name": "Procps",
+"version": "3.3.17"
+},
+{
+"name": "Procps",
+"version": "v3.3.17rc1"
+},
+{
+"name": "prometheus-client_model",
+"version": "20171108-snapshot-fa8ad6fe"
+},
+{
+"name": "prometheus-common",
+"version": "20160225-snapshot-4fdc91a5"
+},
+{
+"name": "prometheus-common 20160225-snapshot",
+"version": "4fdc91a5"
+},
+{
+"name": "prometheus-procfs",
+"version": "184688adcb6ddaa744fe787e6e6a47a95f8b5e44"
+},
+{
+"name": "prometheus-procfs",
+"version": "20160225-snapshot-b1afdc26"
+},
+{
+"name": "Protobuf",
+"version": "3.19.6"
+},
+{
+"name": "protobuf-c",
+"version": "1.4.1"
+},
+{
+"name": "Protocol Buffer Java Util Package",
+"version": "3.19.6"
+},
+{
+"name": "pseudo",
+"version": "1.9.0+git20220404+2b4b88eb5133"
+},
+{
+"name": "pseudo",
+"version": "1.9.0+git20230301+ec6151a2b057"
+},
+{
+"name": "psf-requests",
+"version": "2.27.1"
+},
+{
+"name": "psmisc",
+"version": "23.4"
+},
+{
+"name": "psmisc/psmisc",
+"version": "v23.4"
+},
+{
+"name": "psutil",
+"version": "5.9.0"
+},
+{
+"name": "ptest-runner2",
+"version": "2.4.2"
+},
+{
+"name": "ptyprocess",
+"version": "0.6.0"
+},
+{
+"name": "ptyprocess",
+"version": "0.7.0"
+},
+{
+"name": "pulldown-cmark",
+"version": "0.8.0"
+},
+{
+"name": "pulldown-cmark",
+"version": "0.9.2"
+},
+{
+"name": "purpleprotocol/mimalloc_rust",
+"version": "0.1.51"
+},
+{
+"name": "py",
+"version": "1.11.0"
+},
+{
+"name": "py- funcsigs",
+"version": "1.0.2"
+},
+{
+"name": "py-future",
+"version": "0.18.3"
+},
+{
+"name": "py-ipaddress",
+"version": "1.0.23"
+},
+{
+"name": "py3-atomicwrites",
+"version": "1.4.0"
+},
+{
+"name": "py3-rfc3987",
+"version": "1.3.8"
+},
+{
+"name": "py3-tomli",
+"version": "2.0.1"
+},
+{
+"name": "pyasn1",
+"version": "0.3.4"
+},
+{
+"name": "pyasn1",
+"version": "0.4.8"
+},
+{
+"name": "pyasn1-modules",
+"version": "0.2.8"
+},
+{
+"name": "pyca/cryptography",
+"version": "36.0.2"
+},
+{
+"name": "pyca/pynacl",
+"version": "1.5.0"
+},
+{
+"name": "pycodestyle",
+"version": "2.9.1"
+},
+{
+"name": "pycparser",
+"version": "2.21"
+},
+{
+"name": "pycryptodome",
+"version": "3.11.0"
+},
+{
+"name": "pycryptodome",
+"version": "3.18.0"
+},
+{
+"name": "pycryptodome",
+"version": "v3.14.1x"
+},
+{
+"name": "pycryptodomex",
+"version": "3.14.1"
+},
+{
+"name": "Pyflakes",
+"version": "2.5.0"
+},
+{
+"name": "pyiso8601",
+"version": "1.0.2"
+},
+{
+"name": "PyJWT",
+"version": "2.3.0"
+},
+{
+"name": "pyOpenSSL",
+"version": "22.0.0"
+},
+{
+"name": "Pyparsing",
+"version": "3.0.7"
+},
+{
+"name": "pypi-toml",
+"version": "0.10.2"
+},
+{
+"name": "pypi/setuptools",
+"version": "59.5.0"
+},
+{
+"name": "pypi/setuptools",
+"version": "65.5.0"
+},
+{
+"name": "Pypubsub",
+"version": "4.0.7"
+},
+{
+"name": "PyPy",
+"version": "1.11.0"
+},
+{
+"name": "pyrsistent",
+"version": "0.18.1"
+},
+{
+"name": "pysmi",
+"version": "0.3.4"
+},
+{
+"name": "pysnmp",
+"version": "4.4.9"
+},
+{
+"name": "PySocks",
+"version": "1.7.1"
+},
+{
+"name": "pytest",
+"version": "7.1.1"
+},
+{
+"name": "pytest-runner",
+"version": "6.0.0"
+},
+{
+"name": "pytest-subtests",
+"version": "0.7.0"
+},
+{
+"name": "python cffi",
+"version": "1.15.0"
+},
+{
+"name": "Python Paste",
+"version": "3.5.0"
+},
+{
+"name": "Python programming language",
+"version": "3.10.9"
+},
+{
+"name": "Python six",
+"version": "1.16.0"
+},
+{
+"name": "Python SNMP framework",
+"version": "4.4.9"
+},
+{
+"name": "python- certifi",
+"version": "2021.10.8"
+},
+{
+"name": "python- jaraco.functools",
+"version": "1.20"
+},
+{
+"name": "python- pycryptodomex",
+"version": "3.14.1"
+},
+{
+"name": "python-attrs",
+"version": "21.4.0"
+},
+{
+"name": "python-bcrypt",
+"version": "3.2.0"
+},
+{
+"name": "python-certifi",
+"version": "2021.10.8"
+},
+{
+"name": "python-codespeak-lib",
+"version": "1.11.0"
+},
+{
+"name": "python-distlib",
+"version": "0.3.6"
+},
+{
+"name": "python-distutils-extra",
+"version": "2.39"
+},
+{
+"name": "python-dnslib",
+"version": "0.9.19"
+},
+{
+"name": "python-dnspython",
+"version": "2.2.1"
+},
+{
+"name": "python-ecdsa",
+"version": "0.17.0"
+},
+{
+"name": "python-flask-cors",
+"version": "3.0.10"
+},
+{
+"name": "python-flask-httpauth",
+"version": "4.8.0"
+},
+{
+"name": "python-future",
+"version": "0.18.2"
+},
+{
+"name": "python-impacket",
+"version": "0.9.24"
+},
+{
+"name": "python-importlib-metadata",
+"version": "4.11.3"
+},
+{
+"name": "python-importlib-metadata",
+"version": "4.12.0"
+},
+{
+"name": "python-installer",
+"version": "0.5.1"
+},
+{
+"name": "python-jaraco.functools",
+"version": "1.20"
+},
+{
+"name": "python-json-pointer",
+"version": "2.2"
+},
+{
+"name": "python-jsonschema",
+"version": "4.4.0"
+},
+{
+"name": "python-ldap",
+"version": "3.4.0"
+},
+{
+"name": "python-memcached",
+"version": "1.59"
+},
+{
+"name": "python-paste",
+"version": "3.5.0"
+},
+{
+"name": "python-pluggy",
+"version": "1.0.0"
+},
+{
+"name": "python-pycryptodomex",
+"version": "3.14.1"
+},
+{
+"name": "python-pyparsing",
+"version": "3.0.7"
+},
+{
+"name": "python-pypubsub",
+"version": "4.0.3"
+},
+{
+"name": "python-pysmi-lextudio-doc",
+"version": "1.0.4"
+},
+{
+"name": "python-regex",
+"version": "2022.3.15"
+},
+{
+"name": "python-repoze.lru",
+"version": "0.6"
+},
+{
+"name": "python-routes",
+"version": "2.4.1"
+},
+{
+"name": "python-semanticversion",
+"version": "2.9.0"
+},
+{
+"name": "python-setuptools-rust",
+"version": "1.1.2"
+},
+{
+"name": "python-toml",
+"version": "0.10.2"
+},
+{
+"name": "python-typing-extensions",
+"version": "3.10.0.0"
+},
+{
+"name": "python-webencodings",
+"version": "0.5.1"
+},
+{
+"name": "python-werkzeug",
+"version": "2.0.3"
+},
+{
+"name": "python-wheel",
+"version": "0.37.1"
+},
+{
+"name": "python-ws4py",
+"version": "0.5.1"
+},
+{
+"name": "python-wsgiproxy",
+"version": "0.2.2"
+},
+{
+"name": "python-zstd",
+"version": "1.5.2.3"
+},
+{
+"name": "python3-atomicwrites",
+"version": "1.4.0"
+},
+{
+"name": "python3-charset-normalizer",
+"version": "3.0.1"
+},
+{
+"name": "python3-funcsigs",
+"version": "1.0.2"
+},
+{
+"name": "python3-impacket",
+"version": "0.9.24"
+},
+{
+"name": "python3-pyrsistent",
+"version": "0.18.1"
+},
+{
+"name": "python3-setuptools-rust",
+"version": "1.1.2"
+},
+{
+"name": "PyTZ - Python Time Zone Library",
+"version": "2022.1"
+},
+{
+"name": "PyYAML",
+"version": "6.0"
+},
+{
+"name": "QEMU",
+"version": "6.2"
+},
+{
+"name": "QEMU",
+"version": "v6.2.0"
+},
+{
+"name": "QEMU",
+"version": "v8.2.2"
+},
+{
+"name": "qemu-kvm",
+"version": "6.2.0"
+},
+{
+"name": "quilt",
+"version": "v0.67"
+},
+{
+"name": "RackSec-srslog",
+"version": "20180709-snapshot-a4725f04"
+},
+{
+"name": "re2c",
+"version": "3.0"
+},
+{
+"name": "Readline",
+"version": "8.1.2"
+},
+{
+"name": "redigo",
+"version": "20160809-snapshot-535138d7"
+},
+{
+"name": "redis - Official",
+"version": "7.0.11"
+},
+{
+"name": "regex",
+"version": "2022.3.15"
+},
+{
+"name": "regex-syntax",
+"version": "0.6.25"
+},
+{
+"name": "repoze.lru",
+"version": "0.6"
+},
+{
+"name": "rfc3987",
+"version": "1.3.8"
+},
+{
+"name": "rfkill",
+"version": "v1.0"
+},
+{
+"name": "rlwrap",
+"version": "0.30"
+},
+{
+"name": "RonnyPfannschmidt/iniconfig",
+"version": "1.1.1"
+},
+{
+"name": "Routes",
+"version": "v2.4.1"
+},
+{
+"name": "routing-release",
+"version": "0.234.0"
+},
+{
+"name": "RPM",
+"version": "4.17.1"
+},
+{
+"name": "rsc/tmplfunc",
+"version": "v0.0.3"
+},
+{
+"name": "RSN, IEEE 802.11i",
+"version": "2.7+git20190128+0c1e29f"
+},
+{
+"name": "rsync",
+"version": "3.2.5"
+},
+{
+"name": "rsync",
+"version": "v3.2.5pre1"
+},
+{
+"name": "runc",
+"version": "1.1.5"
+},
+{
+"name": "runc",
+"version": "v1.1.4"
+},
+{
+"name": "rust",
+"version": "1.59.0"
+},
+{
+"name": "rust- crossbeam-deque",
+"version": "0.7.4"
+},
+{
+"name": "rust- crossbeam-utils",
+"version": "0.7.2"
+},
+{
+"name": "rust- serde-derive",
+"version": "1.0.136"
+},
+{
+"name": "rust-aho-corasick",
+"version": "0.7.18"
+},
+{
+"name": "rust-annotate-snippets",
+"version": "0.9.1"
+},
+{
+"name": "rust-ansi-term",
+"version": "0.11.0"
+},
+{
+"name": "rust-ansi-term",
+"version": "v0.12.1"
+},
+{
+"name": "rust-arbitrary",
+"version": "1.0.3"
+},
+{
+"name": "rust-arrayvec",
+"version": "0.7.2"
+},
+{
+"name": "rust-backtrace",
+"version": "0.3.66"
+},
+{
+"name": "rust-crossbeam-deque",
+"version": "0.7.4"
+},
+{
+"name": "rust-crossbeam-deque",
+"version": "0.8.1"
+},
+{
+"name": "rust-crossbeam-epoch",
+"version": "0.8.2"
+},
+{
+"name": "rust-crossbeam-utils",
+"version": "0.7.2"
+},
+{
+"name": "rust-crossbeam-utils",
+"version": "0.8.5"
+},
+{
+"name": "rust-curl-sys",
+"version": "0.4.51"
+},
+{
+"name": "rust-dashmap-devel",
+"version": "4.0.2"
+},
+{
+"name": "rust-digest",
+"version": "0.9.0"
+},
+{
+"name": "rust-elasticlunr-rs-devel",
+"version": "2.3.9"
+},
+{
+"name": "rust-getset-devel",
+"version": "0.1.1"
+},
+{
+"name": "rust-gimli",
+"version": "0.25.0"
+},
+{
+"name": "rust-heck",
+"version": "0.3.1"
+},
+{
+"name": "rust-heck",
+"version": "0.3.3"
+},
+{
+"name": "rust-indexmap",
+"version": "1.7.0"
+},
+{
+"name": "rust-itertools",
+"version": "0.10.1"
+},
+{
+"name": "rust-itertools",
+"version": "0.10.3"
+},
+{
+"name": "rust-itertools",
+"version": "0.9.0"
+},
+{
+"name": "rust-jobserver",
+"version": "0.1.24"
+},
+{
+"name": "rust-lang-nursery/futures-rs",
+"version": "0.1.29"
+},
+{
+"name": "rust-lang-nursery/futures-rs",
+"version": "0.3.12"
+},
+{
+"name": "rust-lang/libc",
+"version": "0.2.108"
+},
+{
+"name": "rust-lang/libc",
+"version": "0.2.112"
+},
+{
+"name": "rust-libloading",
+"version": "0.7.2"
+},
+{
+"name": "rust-libm",
+"version": "0.1.4"
+},
+{
+"name": "rust-libseccomp-sys",
+"version": "0.2.0"
+},
+{
+"name": "rust-libz-sys",
+"version": "1.1.2"
+},
+{
+"name": "rust-lock-api",
+"version": "0.4.5"
+},
+{
+"name": "rust-mio",
+"version": "0.7.13"
+},
+{
+"name": "rust-mio",
+"version": "0.7.14"
+},
+{
+"name": "rust-once-cell",
+"version": "1.9.0"
+},
+{
+"name": "rust-openssl-devel",
+"version": "0.10.35"
+},
+{
+"name": "rust-os_info-devel",
+"version": "3.0.7"
+},
+{
+"name": "rust-parking-lot-core",
+"version": "0.8.5"
+},
+{
+"name": "rust-paste",
+"version": "1.0.6"
+},
+{
+"name": "rust-pkg-config",
+"version": "0.3.18"
+},
+{
+"name": "rust-psm",
+"version": "0.1.16"
+},
+{
+"name": "rust-quote",
+"version": "1.0.7"
+},
+{
+"name": "rust-rand",
+"version": "0.7.3"
+},
+{
+"name": "rust-rand",
+"version": "0.8.4"
+},
+{
+"name": "rust-rand-core",
+"version": "0.5.1"
+},
+{
+"name": "rust-rayon-core",
+"version": "1.7.0"
+},
+{
+"name": "rust-regalloc-devel",
+"version": "0.0.34"
+},
+{
+"name": "rust-regex",
+"version": "1.5.4"
+},
+{
+"name": "rust-regex- automata",
+"version": "0.1.8"
+},
+{
+"name": "rust-regex-automata",
+"version": "0.1.8"
+},
+{
+"name": "rust-rustc- demangle",
+"version": "0.1.21"
+},
+{
+"name": "rust-rustc-demangle",
+"version": "0.1.21"
+},
+{
+"name": "rust-serde",
+"version": "1.0.130"
+},
+{
+"name": "rust-serde-derive",
+"version": "1.0.136"
+},
+{
+"name": "rust-sharded-slab",
+"version": "0.1.4"
+},
+{
+"name": "rust-tempfile",
+"version": "3.2.0"
+},
+{
+"name": "rust-tokio",
+"version": "1.8.2"
+},
+{
+"name": "rust-tokio-devel",
+"version": "1.8.2"
+},
+{
+"name": "rust-tokio-stream",
+"version": "0.1.8"
+},
+{
+"name": "rust-tracing-attributes-devel",
+"version": "0.1.18"
+},
+{
+"name": "rust-typenum",
+"version": "1.12.0"
+},
+{
+"name": "rust-unicase",
+"version": "2.6.0"
+},
+{
+"name": "rust-utf8parse",
+"version": "0.1.1"
+},
+{
+"name": "rust-vergen-devel",
+"version": "5.1.17"
+},
+{
+"name": "rust-zram-generator",
+"version": "1.1.2"
+},
+{
+"name": "S-Lang",
+"version": "2.3.2"
+},
+{
+"name": "s-nail",
+"version": "14.9.24"
+},
+{
+"name": "s-nail-debugsource",
+"version": "14.9.24"
+},
+{
+"name": "sanbootconf",
+"version": "1.0.0+git-20190125.36a4c85"
+},
+{
+"name": "saxon",
+"version": "6.5.5"
+},
+{
+"name": "scandir",
+"version": "1.10.0"
+},
+{
+"name": "schollii/pypubsub",
+"version": "20190401-snapshot-dd5c1e84"
+},
+{
+"name": "scim-bridge",
+"version": "0.4.14"
+},
+{
+"name": "SDL2",
+"version": "2.0.20"
+},
+{
+"name": "sdl3-src",
+"version": "3.2.8"
+},
+{
+"name": "SeaBIOS",
+"version": "1.14.0"
+},
+{
+"name": "SeaBIOS",
+"version": "1.15.0"
+},
+{
+"name": "Seccomp Library",
+"version": "2.5.3"
+},
+{
+"name": "setuptools-rust",
+"version": "1.1.2"
+},
+{
+"name": "setuptools_scm",
+"version": "6.4.2"
+},
+{
+"name": "setuptools_scm_git_archive",
+"version": "1.0"
+},
+{
+"name": "Shadow Tool Suite",
+"version": "v4.11.1"
+},
+{
+"name": "shared-mime-info",
+"version": "2.1"
+},
+{
+"name": "shemminger/iproute2",
+"version": "v5.17.0"
+},
+{
+"name": "Simple DirectMedia Layer",
+"version": "2.0.20"
+},
+{
+"name": "simplejson",
+"version": "3.17.6"
+},
+{
+"name": "SLOF",
+"version": "20210217"
+},
+{
+"name": "Smartmontools - S.M.A.R.T. Disk Monitoring Tools",
+"version": "7.1"
+},
+{
+"name": "Smartmontools - S.M.A.R.T. Disk Monitoring Tools",
+"version": "7.3"
+},
+{
+"name": "socat",
+"version": "1.7.4.4"
+},
+{
+"name": "SocksiPy - A Python SOCKS module",
+"version": "1.7.1"
+},
+{
+"name": "sortedcontainers",
+"version": "2.4.0"
+},
+{
+"name": "spf13-cast",
+"version": "20200609-snapshot"
+},
+{
+"name": "spf13-cobra",
+"version": "20171031-snapshot"
+},
+{
+"name": "spf13-cobra",
+"version": "v1.1.1"
+},
+{
+"name": "sphinx_rtd_theme",
+"version": "0.1.8"
+},
+{
+"name": "SQLite",
+"version": "3.38.5"
+},
+{
+"name": "Squashfs",
+"version": "4.5.1"
+},
+{
+"name": "srijs/rust-crc32fast",
+"version": "1.2.0"
+},
+{
+"name": "strace",
+"version": "v5.16"
+},
+{
+"name": "stress",
+"version": "1.0.4"
+},
+{
+"name": "strict-rfc3339",
+"version": "0.7"
+},
+{
+"name": "strongSwan",
+"version": "5.9.6"
+},
+{
+"name": "strum-rs",
+"version": "0.18.0"
+},
+{
+"name": "sudo",
+"version": "1.9.13"
+},
+{
+"name": "sudo",
+"version": "1.9.13p3"
+},
+{
+"name": "SuperCollider",
+"version": "3.13.0+repack"
+},
+{
+"name": "Symphony Agent Service Java Client",
+"version": "0.9.0"
+},
+{
+"name": "syndtr-gocapability",
+"version": "20151120-snapshot-2c00daeb"
+},
+{
+"name": "syndtr-gocapability 20151120-snapshot",
+"version": "2c00daeb"
+},
+{
+"name": "sysfsutils",
+"version": "2.1.0+repack"
+},
+{
+"name": "systemd",
+"version": "250.5"
+},
+{
+"name": "TagSoup",
+"version": "1.2.1"
+},
+{
+"name": "tar (Rust)",
+"version": "0.4.37"
+},
+{
+"name": "tar-doc",
+"version": "1.34"
+},
+{
+"name": "tchap-go-patricia",
+"version": "v2.2.6"
+},
+{
+"name": "tchap-go-patricia",
+"version": "v2.3.0"
+},
+{
+"name": "Tcl/Tk",
+"version": "8.6.11"
+},
+{
+"name": "tcl8.6",
+"version": "8.6.11"
+},
+{
+"name": "tcpdump",
+"version": "4.99.1"
+},
+{
+"name": "tdom",
+"version": "0.9.1"
+},
+{
+"name": "tempora",
+"version": "1.13"
+},
+{
+"name": "Test::Harness",
+"version": "3.43"
+},
+{
+"name": "texinfo - GNU documentation system",
+"version": "4.1"
+},
+{
+"name": "The LLDB Debugger",
+"version": "13.0.0"
+},
+{
+"name": "The PCI Utilities",
+"version": "3.7.0"
+},
+{
+"name": "thin-provisioning-tools",
+"version": "0.9.0"
+},
+{
+"name": "tianocore/edk2",
+"version": "2020.08"
+},
+{
+"name": "tinylib-msgp",
+"version": "v1.1.0"
+},
+{
+"name": "tk-darwin-aarch64",
+"version": "8.6.12-0.9.5"
+},
+{
+"name": "tmux",
+"version": "3.1c"
+},
+{
+"name": "to-ml",
+"version": "0.10.2"
+},
+{
+"name": "tobgu/pyrsistent",
+"version": "v0.18.1"
+},
+{
+"name": "tomli",
+"version": "2.0.1"
+},
+{
+"name": "tonistiigi/go-rosetta",
+"version": "20200727-snapshot-f7959859"
+},
+{
+"name": "Tools",
+"version": "7.1"
+},
+{
+"name": "Tools",
+"version": "7.3"
+},
+{
+"name": "tpm2-abrmd",
+"version": "2.4.1"
+},
+{
+"name": "tpm2-tools",
+"version": "5.2"
+},
+{
+"name": "tpm2-tss",
+"version": "3.2.2"
+},
+{
+"name": "tpm2-tss-engine",
+"version": "1.1.0"
+},
+{
+"name": "TPM2.0-TSS",
+"version": "3.2.2"
+},
+{
+"name": "tvtime",
+"version": "1.0.11"
+},
+{
+"name": "typeguard",
+"version": "2.13.3"
+},
+{
+"name": "typing_extensions",
+"version": "3.10.0.0"
+},
+{
+"name": "U-Boot",
+"version": "2010.06"
+},
+{
+"name": "U-Boot",
+"version": "2021.07"
+},
+{
+"name": "U-Boot",
+"version": "2022.01"
+},
+{
+"name": "Ubuntu linux-base",
+"version": "4.14.0"
+},
+{
+"name": "Ubuntu linux-base",
+"version": "5.10.0"
+},
+{
+"name": "ultrajson",
+"version": "2.0.0"
+},
+{
+"name": "ultrajson/ultrajson",
+"version": "2.0.0"
+},
+{
+"name": "unfs3",
+"version": "0.9.15+dfsg"
+},
+{
+"name": "unfs3",
+"version": "0.9.21+dfsg"
+},
+{
+"name": "UNFS3 user-space NFSv3 server",
+"version": "0.9.22"
+},
+{
+"name": "Unicode::Collate",
+"version": "1.30"
+},
+{
+"name": "unifdef",
+"version": "2.12"
+},
+{
+"name": "unzip",
+"version": "3.0"
+},
+{
+"name": "urllib3",
+"version": "1.26.15"
+},
+{
+"name": "urllib3",
+"version": "1.26.9"
+},
+{
+"name": "Userspace RCU",
+"version": "0.13.2"
+},
+{
+"name": "util-linux",
+"version": "2.37.4"
+},
+{
+"name": "Vala",
+"version": "0.56.3"
+},
+{
+"name": "vanhoefm/krackattacks-scripts",
+"version": "20181118-snapshot-861b1a3c"
+},
+{
+"name": "vbatts-tar-split",
+"version": "v0.11.2"
+},
+{
+"name": "vcversioner",
+"version": "2.16.0.0"
+},
+{
+"name": "virglrenderer",
+"version": "0.9.1"
+},
+{
+"name": "vishvananda-netlink",
+"version": "1.1.0"
+},
+{
+"name": "vishvananda-netns",
+"version": "20211020-snapshot"
+},
+{
+"name": "vorbis-tools",
+"version": "1.2.0"
+},
+{
+"name": "W3C XML Conformance Test Suite",
+"version": "20031210"
+},
+{
+"name": "W3C XML Conformance Test Suite",
+"version": "20130923"
+},
+{
+"name": "wcwidth",
+"version": "0.2.5"
+},
+{
+"name": "webcolors",
+"version": "1.11.1"
+},
+{
+"name": "WebOb",
+"version": "1.7.2"
+},
+{
+"name": "WebSocket-for-Python",
+"version": "0.5.1"
+},
+{
+"name": "WebSocket-for-Python",
+"version": "0.6.0"
+},
+{
+"name": "Werkzeug",
+"version": "2.0.3"
+},
+{
+"name": "willf/bitset",
+"version": "20210520-snapshot"
+},
+{
+"name": "winapi-rs",
+"version": "0.3.9"
+},
+{
+"name": "wkz/phytool",
+"version": "v2"
+},
+{
+"name": "wpa_supplicant - IEEE",
+"version": "802.1X"
+},
+{
+"name": "WSGIProxy",
+"version": "0.2.2"
+},
+{
+"name": "x.org_lib",
+"version": "1.0.6"
+},
+{
+"name": "x11proto-print-dev",
+"version": "1.0.5"
+},
+{
+"name": "XCB",
+"version": "1.14"
+},
+{
+"name": "xcb-proto",
+"version": "1.14.1"
+},
+{
+"name": "xeipuuv/gojsonschema",
+"version": "v1.2.0"
+},
+{
+"name": "xml-log-filter-conformance",
+"version": "1.0.0"
+},
+{
+"name": "XML-Parser",
+"version": "2.46"
+},
+{
+"name": "xmlto",
+"version": "0.0.28"
+},
+{
+"name": "xmount",
+"version": "1.2.0"
+},
+{
+"name": "xorg-x11",
+"version": "1.0.9"
+},
+{
+"name": "xorg-x11",
+"version": "1.1.4"
+},
+{
+"name": "xorg-x11",
+"version": "1.5.2"
+},
+{
+"name": "xorg-x11",
+"version": "1.7.5"
+},
+{
+"name": "xorg-x11",
+"version": "6.0.0"
+},
+{
+"name": "xorg-x11-util-macros",
+"version": "1.19.3"
+},
+{
+"name": "xproto - X Window System Core Protocol",
+"version": "2021.5"
+},
+{
+"name": "XQJ RI",
+"version": "20080114-133351"
+},
+{
+"name": "xrandr",
+"version": "1.5.1"
+},
+{
+"name": "xrust",
+"version": "1.0.0"
+},
+{
+"name": "xtrans",
+"version": "1.4.0"
+},
+{
+"name": "XZ Utils",
+"version": "5.2.4"
+},
+{
+"name": "XZ Utils",
+"version": "5.2.5"
+},
+{
+"name": "XZ Utils",
+"version": "5.2.6"
+},
+{
+"name": "yajl-c",
+"version": "2.1.0"
+},
+{
+"name": "yougov/cherrypy-cors",
+"version": "1.6"
+},
+{
+"name": "yuwata/systemd",
+"version": "v250.5"
+},
+{
+"name": "zc.lockfile",
+"version": "1.3.0"
+},
+{
+"name": "zipp",
+"version": "3.7.0"
+},
+{
+"name": "zlib",
+"version": "1.2.11"
+},
+{
+"name": "zstd",
+"version": "1.5.2"
+},
+{
+"name": "zstd",
+"version": "v1.5.2-kernel"
+}
+],
+"extractors": [
+"url_lines",
+"license_groups"
+],
+"kind": "pdf",
+"product": "ExtremeXOS",
+"retrieved": "2026-11-08",
+"sha256": "4bc739bb731f81ebe6fdfc5e69d44a85f450b8726732dce040e000cefc6b8434",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/808a09a869d6450583bdad6684f67200?v=72b43d5f",
+"version": "33.6"
+}

@@ -150,7 +150,9 @@ components:
     cpe: cpe:2.3:a:tukaani:xz
     aliases: [liblzma, xz-utils]
     notices_names:
-      - '^xz$'
+      # bare "xz" only with an XZ Utils version (4.999 or 5.x+); the Java library
+      # org.tukaani:xz is also called "xz" but is versioned 1.x
+      - {pattern: '^xz$', version: '^(?:[4-9]|\d\d)\.'}
       - '^xz[-_ ]?(?:utils|libs)$'
       - '^liblzma\d*$'
     incidents:

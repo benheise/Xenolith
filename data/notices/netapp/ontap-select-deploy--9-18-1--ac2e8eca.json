@@ -1,0 +1,3698 @@
+{
+"components": [
+{
+"name": "7-Zip",
+"version": "24.09"
+},
+{
+"name": "7-Zip",
+"version": "25.01"
+},
+{
+"name": "@angular/common",
+"version": "8.2.12"
+},
+{
+"name": "@angular/common",
+"version": "8.2.13"
+},
+{
+"name": "@angular/compiler",
+"version": "8.2.13"
+},
+{
+"name": "@angular/forms",
+"version": "8.2.12"
+},
+{
+"name": "@angular/forms",
+"version": "8.2.13"
+},
+{
+"name": "@angular/platform-browser",
+"version": "8.2.10"
+},
+{
+"name": "@angular/platform-browser",
+"version": "8.2.13"
+},
+{
+"name": "@angular/platform-browser-dynamic",
+"version": "8.2.13"
+},
+{
+"name": "@angular/router",
+"version": "8.2.13"
+},
+{
+"name": "@angular/upgrade",
+"version": "8.2.12"
+},
+{
+"name": "@angular/upgrade",
+"version": "8.2.13"
+},
+{
+"name": "@babel/compat-data",
+"version": "7.23.3"
+},
+{
+"name": "@babel/generator",
+"version": "7.23.3"
+},
+{
+"name": "@babel/helper-module-transforms",
+"version": "7.23.3"
+},
+{
+"name": "@babel/helper-string-parser",
+"version": "7.21.5"
+},
+{
+"name": "@babel/helpers",
+"version": "7.23.2"
+},
+{
+"name": "@babel/parser",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-arrow-functions",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-async-to-generator",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-block-scoped-functions",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-block-scoping",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-classes",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-computed-properties",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-destructuring",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-dotall-regex",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-duplicate-keys",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-exponentiation-operator",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-for-of",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-function-name",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-literals",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-member-expression-literals",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-modules-amd",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-modules-commonjs",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-modules-systemjs",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-modules-umd",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-new-target",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-object-super",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-parameters",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-property-literals",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-regenerator",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-reserved-words",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-shorthand-properties",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-spread",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-sticky-regex",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-template-literals",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-typeof-symbol",
+"version": "7.23.3"
+},
+{
+"name": "@babel/plugin-transform-unicode-regex",
+"version": "7.23.3"
+},
+{
+"name": "@babel/preset-env",
+"version": "7.5.4"
+},
+{
+"name": "@babel/runtime",
+"version": "7.23.2"
+},
+{
+"name": "@babel/types",
+"version": "7.23.3"
+},
+{
+"name": "@babel/types",
+"version": "7.23.5"
+},
+{
+"name": "@colors/colors",
+"version": "1.6.0"
+},
+{
+"name": "@interactjs/types",
+"version": "1.10.20"
+},
+{
+"name": "@interactjs/types",
+"version": "1.10.21"
+},
+{
+"name": "@jridgewell/trace-mapping",
+"version": "0.3.20"
+},
+{
+"name": "@netapp/luci",
+"version": "3.1.0"
+},
+{
+"name": "@ng-bootstrap/ng-bootstrap",
+"version": "5.1.3"
+},
+{
+"name": "@ng-bootstrap/ng-bootstrap",
+"version": "5.1.4"
+},
+{
+"name": "@ngrx/data",
+"version": "8.6.0"
+},
+{
+"name": "@ngrx/data",
+"version": "8.6.1"
+},
+{
+"name": "@ngrx/router-store",
+"version": "8.6.0"
+},
+{
+"name": "@ngrx/schematics",
+"version": "8.6.0"
+},
+{
+"name": "@ngrx/schematics",
+"version": "8.6.1"
+},
+{
+"name": "@ngrx/store",
+"version": "8.6.0"
+},
+{
+"name": "@types/angular",
+"version": "1.8.8"
+},
+{
+"name": "@types/jasmine",
+"version": "5.1.2"
+},
+{
+"name": "@types/jquery",
+"version": "3.5.27"
+},
+{
+"name": "@types/json-schema",
+"version": "7.0.15"
+},
+{
+"name": "@types/node",
+"version": "20.9.0"
+},
+{
+"name": "@types/q",
+"version": "1.5.8"
+},
+{
+"name": "@types/selenium-webdriver",
+"version": "3.0.26"
+},
+{
+"name": "@types/sizzle",
+"version": "2.3.5"
+},
+{
+"name": "@types/sizzle",
+"version": "2.3.6"
+},
+{
+"name": "@types/source-list-map",
+"version": "0.1.5"
+},
+{
+"name": "@types/webpack-sources",
+"version": "0.1.12"
+},
+{
+"name": "@uirouter/angularjs",
+"version": "1.0.24"
+},
+{
+"name": "@webassemblyjs/ast",
+"version": "1.7.10"
+},
+{
+"name": "@webassemblyjs/ast",
+"version": "1.9.1"
+},
+{
+"name": "@webassemblyjs/helper-buffer",
+"version": "1.8.1"
+},
+{
+"name": "@webassemblyjs/helper-wasm-bytecode",
+"version": "1.7.10"
+},
+{
+"name": "@webassemblyjs/leb128",
+"version": "1.11.1"
+},
+{
+"name": "@webassemblyjs/utf8",
+"version": "1.8.0"
+},
+{
+"name": "@webassemblyjs/wasm-edit",
+"version": "1.7.10"
+},
+{
+"name": "@webassemblyjs/wasm-gen",
+"version": "1.7.10"
+},
+{
+"name": "@webassemblyjs/wasm-parser",
+"version": "1.7.10"
+},
+{
+"name": "@webassemblyjs/wast-parser",
+"version": "1.7.10"
+},
+{
+"name": "@webassemblyjs/wast-parser",
+"version": "1.9.0"
+},
+{
+"name": "@webassemblyjs/wast-printer",
+"version": "1.7.10"
+},
+{
+"name": "a2wsgi",
+"version": "1.10.7"
+},
+{
+"name": "acl (access control list)",
+"version": "v2.3.2"
+},
+{
+"name": "adduser",
+"version": "3.152"
+},
+{
+"name": "agent-base",
+"version": "20180705-snaps"
+},
+{
+"name": "agronholm/exceptiongroup",
+"version": "1.2.2"
+},
+{
+"name": "alembic",
+"version": "1.13.2"
+},
+{
+"name": "Algorithm::C3",
+"version": "0.11"
+},
+{
+"name": "andy",
+"version": "1.0.2"
+},
+{
+"name": "Angular",
+"version": "1.8.3"
+},
+{
+"name": "Angular",
+"version": "8.2.13"
+},
+{
+"name": "Angular Highcharts",
+"version": "8.0.3"
+},
+{
+"name": "Angular UI Bootstrap",
+"version": "2.5.6"
+},
+{
+"name": "Angular UI UI-Grid",
+"version": "4.9.0"
+},
+{
+"name": "angular-i18next",
+"version": "7.0.0"
+},
+{
+"name": "angular-resource",
+"version": "1.7.1"
+},
+{
+"name": "angular-resource",
+"version": "1.7.8"
+},
+{
+"name": "angular__cli",
+"version": "8.3.17"
+},
+{
+"name": "ansi-regex",
+"version": "4.1.1"
+},
+{
+"name": "anyio",
+"version": "4.4.0"
+},
+{
+"name": "Apache Avro",
+"version": "0.21.0"
+},
+{
+"name": "Apache Commons Configuration",
+"version": "0.3.0"
+},
+{
+"name": "apipkg",
+"version": "3.0.2"
+},
+{
+"name": "AppArmor: Application Armor",
+"version": "4.1.0"
+},
+{
+"name": "appdirs",
+"version": "1.4.4"
+},
+{
+"name": "apt - Advanced Package Tool",
+"version": "3.0.3"
+},
+{
+"name": "apt-swarm",
+"version": "0.1.0"
+},
+{
+"name": "Archive::Zip Perl Module",
+"version": "1.68"
+},
+{
+"name": "argcomplete",
+"version": "3.6.2"
+},
+{
+"name": "arping",
+"version": "2.09"
+},
+{
+"name": "arping",
+"version": "2.21"
+},
+{
+"name": "arping",
+"version": "2.25"
+},
+{
+"name": "array.prototype.reduce",
+"version": "1.0.6"
+},
+{
+"name": "arraybuffer.prototype.slice",
+"version": "1.0.2"
+},
+{
+"name": "asgi-csrf",
+"version": "0.9"
+},
+{
+"name": "atob",
+"version": "2.1.2"
+},
+{
+"name": "audit-userspace",
+"version": "4.0.2"
+},
+{
+"name": "autodie",
+"version": "2.37"
+},
+{
+"name": "autopage",
+"version": "0.5.2"
+},
+{
+"name": "B-Hooks-EndOfScope",
+"version": "0.28"
+},
+{
+"name": "B::Hooks::OP::Check",
+"version": "0.22"
+},
+{
+"name": "babel code-frame",
+"version": "7.22.13"
+},
+{
+"name": "babel helper-validator-option",
+"version": "7.22.15"
+},
+{
+"name": "babel runtime",
+"version": "7.23.4"
+},
+{
+"name": "babel traverse",
+"version": "7.23.3"
+},
+{
+"name": "babel-code-frame",
+"version": "6.26.0"
+},
+{
+"name": "babel-traverse",
+"version": "7.23.3"
+},
+{
+"name": "base-files",
+"version": "13.8"
+},
+{
+"name": "base-files",
+"version": "13.8+deb13u2"
+},
+{
+"name": "base-passwd",
+"version": "3.6.7"
+},
+{
+"name": "baseconv",
+"version": "1.2.2"
+},
+{
+"name": "Bash",
+"version": "5.2.15"
+},
+{
+"name": "Bash",
+"version": "5.2.37"
+},
+{
+"name": "bcrypt",
+"version": "4.2.0"
+},
+{
+"name": "bcrypt",
+"version": "4.3.0"
+},
+{
+"name": "Berkeley DB",
+"version": "5.3.28"
+},
+{
+"name": "binutils-aarch64-linux-gnu",
+"version": "2.44"
+},
+{
+"name": "blinker-pypi",
+"version": "1.8.2"
+},
+{
+"name": "Bootstrap (Twitter)",
+"version": "4.3.1"
+},
+{
+"name": "bootstrap-html",
+"version": "5.3.5"
+},
+{
+"name": "brotli",
+"version": "1.1.0"
+},
+{
+"name": "browserify-sign",
+"version": "4.2.2"
+},
+{
+"name": "browserify-sign",
+"version": "4.2.3"
+},
+{
+"name": "browserify/resolve",
+"version": "1.22.8"
+},
+{
+"name": "browserify/resolve",
+"version": "1.22.8+~cs5.34.15"
+},
+{
+"name": "bsdutils",
+"version": "2.41"
+},
+{
+"name": "build-essential",
+"version": "12.12"
+},
+{
+"name": "build-essential - debian",
+"version": "12.4"
+},
+{
+"name": "Bzip2",
+"version": "1.0.8"
+},
+{
+"name": "ca-certificates",
+"version": "20250419"
+},
+{
+"name": "call-bind",
+"version": "1.0.5"
+},
+{
+"name": "can-utils",
+"version": "v2025.01"
+},
+{
+"name": "caniuse-lite",
+"version": "1.0.30001561"
+},
+{
+"name": "caniuse-lite",
+"version": "1.0.30001562"
+},
+{
+"name": "Carp",
+"version": "1.54"
+},
+{
+"name": "cdrkit",
+"version": "1.1.11"
+},
+{
+"name": "certo",
+"version": "0.1.1"
+},
+{
+"name": "chromedriver",
+"version": "78.0.1"
+},
+{
+"name": "Class-Method-Modifiers",
+"version": "2.15"
+},
+{
+"name": "Click - Python Command Line Utility",
+"version": "8.1.7"
+},
+{
+"name": "clickclick",
+"version": "20.10.2"
+},
+{
+"name": "cmd2",
+"version": "2.4.3"
+},
+{
+"name": "colorama",
+"version": "0.4.1"
+},
+{
+"name": "com.automation.remarks.vid eo-recorder",
+"version": "1.0.6"
+},
+{
+"name": "Compress::Raw::Bzip2",
+"version": "2.213"
+},
+{
+"name": "Compress::Raw::Zlib",
+"version": "2.213"
+},
+{
+"name": "compression",
+"version": "1.7.4"
+},
+{
+"name": "connexion",
+"version": "3.1.0"
+},
+{
+"name": "constant",
+"version": "1.33"
+},
+{
+"name": "core-js",
+"version": "3.2.1"
+},
+{
+"name": "core-js",
+"version": "3.33.2"
+},
+{
+"name": "coreyti's showdown",
+"version": "1.9.1"
+},
+{
+"name": "CPAN",
+"version": "2.36"
+},
+{
+"name": "CPAN::Meta",
+"version": "2.150010"
+},
+{
+"name": "CPAN::Meta::Requirements",
+"version": "2.143"
+},
+{
+"name": "cpp",
+"version": "14.2.0"
+},
+{
+"name": "cpp-for-host",
+"version": "14.2.0"
+},
+{
+"name": "cpp-x86-64-linux-gnu",
+"version": "14.2.0"
+},
+{
+"name": "Crypt::Random::Seed",
+"version": "0.03"
+},
+{
+"name": "Crypt::SSLeay",
+"version": "0.73_04"
+},
+{
+"name": "css-progress-wizard",
+"version": "2.0.0"
+},
+{
+"name": "Cyan4973/xxHash",
+"version": "v0.8.3"
+},
+{
+"name": "Cyrus SASL",
+"version": "2.1.28"
+},
+{
+"name": "D-Bus",
+"version": "1.16.2"
+},
+{
+"name": "DASH",
+"version": "0.5.12"
+},
+{
+"name": "dbus-common",
+"version": "1.16.0"
+},
+{
+"name": "debconf",
+"version": "1.5.91"
+},
+{
+"name": "Debian",
+"version": "0.280"
+},
+{
+"name": "Debian",
+"version": "0.7.8+deb8u1"
+},
+{
+"name": "Debian",
+"version": "20250803+deb13u1"
+},
+{
+"name": "Debian",
+"version": "20250803+deb13u2"
+},
+{
+"name": "debian-archive-keyring",
+"version": "2025.1"
+},
+{
+"name": "debianutils",
+"version": "5.23.2"
+},
+{
+"name": "debpkg",
+"version": "0.2.0"
+},
+{
+"name": "define-data-property",
+"version": "1.1.1"
+},
+{
+"name": "define-properties",
+"version": "1.2.1"
+},
+{
+"name": "deno",
+"version": "0.1.1"
+},
+{
+"name": "dependency-groups",
+"version": "1.3.0"
+},
+{
+"name": "dev-ip",
+"version": "1.0.0"
+},
+{
+"name": "Devel::CallChecker",
+"version": "0.009"
+},
+{
+"name": "Devel::GlobalDestruction",
+"version": "0.14"
+},
+{
+"name": "Devel::Trace",
+"version": "0.12"
+},
+{
+"name": "DevelPPPort",
+"version": "3.72"
+},
+{
+"name": "devextreme-angular",
+"version": "19.2.3"
+},
+{
+"name": "devextreme-schematics",
+"version": "1.6.2"
+},
+{
+"name": "devextreme-showdown",
+"version": "1.0.1"
+},
+{
+"name": "device-mapper-udev",
+"version": "2.03.33"
+},
+{
+"name": "devmapper",
+"version": "1.02.205"
+},
+{
+"name": "dh-runit",
+"version": "2.16.4"
+},
+{
+"name": "DHCP (ISC)",
+"version": "4.4.3_p1"
+},
+{
+"name": "Digest",
+"version": "1.20"
+},
+{
+"name": "django/asgiref",
+"version": "3.4.1"
+},
+{
+"name": "django/asgiref",
+"version": "3.8.1"
+},
+{
+"name": "dpkg",
+"version": "1.22.21"
+},
+{
+"name": "dpkg-lang",
+"version": "1.22.21"
+},
+{
+"name": "dracut",
+"version": "106"
+},
+{
+"name": "dwarves-dfsg",
+"version": "1.30"
+},
+{
+"name": "e2fsprogs",
+"version": "v1.47.2"
+},
+{
+"name": "efivar",
+"version": "38"
+},
+{
+"name": "electron-to-chromium",
+"version": "1.4.585"
+},
+{
+"name": "elfutils",
+"version": "0.192"
+},
+{
+"name": "Email::Date::Format",
+"version": "1.008"
+},
+{
+"name": "encode/uvicorn",
+"version": "0.30.5"
+},
+{
+"name": "Encode::Locale",
+"version": "1.05"
+},
+{
+"name": "erlang-base",
+"version": "27.3.4.1"
+},
+{
+"name": "erlang-otp",
+"version": "27.3.4.1"
+},
+{
+"name": "es-abstract",
+"version": "1.22.3"
+},
+{
+"name": "es-set-tostringtag",
+"version": "2.0.2"
+},
+{
+"name": "es6-error",
+"version": "4.1.1"
+},
+{
+"name": "exceptiongroup",
+"version": "1.2.2"
+},
+{
+"name": "Exceptions platformdirs",
+"version": "4.2.2"
+},
+{
+"name": "Exporter",
+"version": "5.78"
+},
+{
+"name": "expressjs/express",
+"version": "4.14.0"
+},
+{
+"name": "ExtUtils::Install",
+"version": "2.22"
+},
+{
+"name": "ExtUtils::MakeMaker",
+"version": "7.70"
+},
+{
+"name": "ExtUtils::Manifest",
+"version": "1.75"
+},
+{
+"name": "file",
+"version": "5.46"
+},
+{
+"name": "File::Fetch",
+"version": "1.04"
+},
+{
+"name": "File::Path",
+"version": "2.18"
+},
+{
+"name": "File::Temp",
+"version": "0.2311"
+},
+{
+"name": "filelisting",
+"version": "6.16"
+},
+{
+"name": "findutils",
+"version": "4.10.0"
+},
+{
+"name": "Flask",
+"version": "3.0.3"
+},
+{
+"name": "flatiron/cliff",
+"version": "4.7.0"
+},
+{
+"name": "flexcache",
+"version": "0.3"
+},
+{
+"name": "flexparser",
+"version": "0.3.1"
+},
+{
+"name": "flexparser",
+"version": "0.4"
+},
+{
+"name": "flot.github.com",
+"version": "0.8.1"
+},
+{
+"name": "fossology-rs",
+"version": "0.2.3"
+},
+{
+"name": "function-bind",
+"version": "1.1.2"
+},
+{
+"name": "FUSE",
+"version": "3.17.2"
+},
+{
+"name": "g",
+"version": "14.2.0"
+},
+{
+"name": "g++-14",
+"version": "14.2.0"
+},
+{
+"name": "gated-development",
+"version": "0.1.0"
+},
+{
+"name": "gcc-14",
+"version": "14.2.0"
+},
+{
+"name": "gcc-x86-64-linux-gnu",
+"version": "14.2.0"
+},
+{
+"name": "get-intrinsic",
+"version": "1.2.2"
+},
+{
+"name": "Getopt::Long",
+"version": "2.57"
+},
+{
+"name": "gettext",
+"version": "0.23.1"
+},
+{
+"name": "gevent",
+"version": "25.8.1"
+},
+{
+"name": "gevent",
+"version": "25.8.2"
+},
+{
+"name": "gkernel: rng-tools / ethtool",
+"version": "3.1-1"
+},
+{
+"name": "gkernel: rng-tools / ethtool",
+"version": "6.14.2"
+},
+{
+"name": "GMP",
+"version": "6.3.0"
+},
+{
+"name": "GNU Binutils",
+"version": "2.44"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "14.2.0"
+},
+{
+"name": "GNU Core Utilities",
+"version": "v9.7"
+},
+{
+"name": "GNU cpio",
+"version": "v2.15"
+},
+{
+"name": "GNU Diff Utilities",
+"version": "v3.10"
+},
+{
+"name": "GNU grep",
+"version": "v3.11"
+},
+{
+"name": "GNU GRUB",
+"version": "2.12"
+},
+{
+"name": "GNU Libtool",
+"version": "v2.5.4"
+},
+{
+"name": "GNU Make",
+"version": "4.4.1"
+},
+{
+"name": "GNU MPC",
+"version": "1.3.1"
+},
+{
+"name": "GNU MPFR",
+"version": "4.2.2"
+},
+{
+"name": "GNU Patch",
+"version": "v2.8"
+},
+{
+"name": "GNU sed",
+"version": "v4.9"
+},
+{
+"name": "GNU tar",
+"version": "v1.35"
+},
+{
+"name": "GnuTLS",
+"version": "3.8.9"
+},
+{
+"name": "greenlet",
+"version": "3.0.3"
+},
+{
+"name": "greenlet",
+"version": "3.2.4"
+},
+{
+"name": "groff",
+"version": "1.23.0"
+},
+{
+"name": "gzip",
+"version": "1.13"
+},
+{
+"name": "h11",
+"version": "0.14.0"
+},
+{
+"name": "has-property-descriptors",
+"version": "1.0.1"
+},
+{
+"name": "hasown",
+"version": "2.0.0"
+},
+{
+"name": "haveged",
+"version": "1.9.19"
+},
+{
+"name": "hostname",
+"version": "3.23+nmu1"
+},
+{
+"name": "hostname",
+"version": "3.25"
+},
+{
+"name": "hot",
+"version": "21c0343c"
+},
+{
+"name": "html-loader-entozoon",
+"version": "0.5.5"
+},
+{
+"name": "HTML::Tree",
+"version": "5.07"
+},
+{
+"name": "HTTP::Date",
+"version": "6.06"
+},
+{
+"name": "HTTP::Negotiate",
+"version": "6.01"
+},
+{
+"name": "httpcore",
+"version": "1.0.5"
+},
+{
+"name": "httplib-cachecontrol",
+"version": "0.14.3"
+},
+{
+"name": "httpx",
+"version": "0.27.2"
+},
+{
+"name": "i18next-browser-languagedetector",
+"version": "7.2.0"
+},
+{
+"name": "i18next-browser-languagedetector",
+"version": "v3.0.1"
+},
+{
+"name": "i18next/i18next",
+"version": "19.8.3"
+},
+{
+"name": "idna",
+"version": "3.10"
+},
+{
+"name": "idna",
+"version": "3.7"
+},
+{
+"name": "idna",
+"version": "3.8"
+},
+{
+"name": "ifupdown",
+"version": "0.8.44"
+},
+{
+"name": "importlib_metadata",
+"version": "8.0.0"
+},
+{
+"name": "importlib_metadata",
+"version": "8.4.0"
+},
+{
+"name": "inapt",
+"version": "0.1.0"
+},
+{
+"name": "incremental",
+"version": "17.5.0"
+},
+{
+"name": "inetutils-telnet",
+"version": "2.6"
+},
+{
+"name": "inflect.py",
+"version": "7.3.1"
+},
+{
+"name": "inflection",
+"version": "0.5.1"
+},
+{
+"name": "Info-Zip",
+"version": "3.0"
+},
+{
+"name": "Info-Zip",
+"version": "6.0"
+},
+{
+"name": "init-system-helpers",
+"version": "1.69~deb13u1"
+},
+{
+"name": "initramfs-tools",
+"version": "0.148.3"
+},
+{
+"name": "interact.js",
+"version": "1.10.21"
+},
+{
+"name": "internal-slot",
+"version": "1.0.6"
+},
+{
+"name": "IO",
+"version": "1.55"
+},
+{
+"name": "IO::Compress",
+"version": "2.213"
+},
+{
+"name": "IO::HTML",
+"version": "1.004"
+},
+{
+"name": "IO::Socket::IP",
+"version": "0.43"
+},
+{
+"name": "IO::Socket::SSL",
+"version": "2.089"
+},
+{
+"name": "IO::stringy",
+"version": "2.113"
+},
+{
+"name": "IO::Tty",
+"version": "1.18"
+},
+{
+"name": "iperf3",
+"version": "0.1.2"
+},
+{
+"name": "iproute2",
+"version": "6.15.0"
+},
+{
+"name": "IPTables",
+"version": "1.8.11"
+},
+{
+"name": "iptables-persistent",
+"version": "1.0.23"
+},
+{
+"name": "iputils",
+"version": "20240905"
+},
+{
+"name": "is-accessor-descriptor",
+"version": "1.0.1"
+},
+{
+"name": "is-core-module",
+"version": "2.13.1"
+},
+{
+"name": "is-data-descriptor",
+"version": "1.0.1"
+},
+{
+"name": "is-descriptor",
+"version": "0.1.7"
+},
+{
+"name": "is-descriptor",
+"version": "1.0.3"
+},
+{
+"name": "isl",
+"version": "0.27"
+},
+{
+"name": "istanbul-api",
+"version": "3.0.0"
+},
+{
+"name": "itsdangerous",
+"version": "2.2.0"
+},
+{
+"name": "jansson",
+"version": "2.14"
+},
+{
+"name": "janus",
+"version": "1.0.0"
+},
+{
+"name": "jaraco/jaraco.functoolsv4.0.1",
+"version": ""
+},
+{
+"name": "jasmine-reporters",
+"version": "2.3.2"
+},
+{
+"name": "JavaCPP Presets for CPython",
+"version": "3.13.5-1.5.12"
+},
+{
+"name": "javascript-common",
+"version": "12+nmu1"
+},
+{
+"name": "jinjapython",
+"version": "3.1.4"
+},
+{
+"name": "jQuery",
+"version": "3.5.0"
+},
+{
+"name": "jQuery",
+"version": "3.6.1"
+},
+{
+"name": "jshighlight",
+"version": "9.18.5"
+},
+{
+"name": "jshttp/forwarded",
+"version": "0.2.0"
+},
+{
+"name": "JSON",
+"version": "4.10000"
+},
+{
+"name": "json-c",
+"version": "0.18"
+},
+{
+"name": "json-schema-webjar",
+"version": "0.4.0"
+},
+{
+"name": "jsonschema-specifications",
+"version": "2023.12.1"
+},
+{
+"name": "juliangruber/util-promisify",
+"version": "2.1.0"
+},
+{
+"name": "kairos-io/kairos",
+"version": "v3.3.1"
+},
+{
+"name": "kernel-latest-2.6-amd64",
+"version": "6.12.48"
+},
+{
+"name": "keyutils",
+"version": "1.6.3"
+},
+{
+"name": "klibc-utils",
+"version": "2.0.14"
+},
+{
+"name": "kmod",
+"version": "34.2"
+},
+{
+"name": "krb5/krb5",
+"version": "1.21.3"
+},
+{
+"name": "lastlog2",
+"version": "2.41"
+},
+{
+"name": "lddtree",
+"version": "0.2.3"
+},
+{
+"name": "libarchive",
+"version": "3.7.4"
+},
+{
+"name": "libasan8",
+"version": "14.2.0"
+},
+{
+"name": "libatomic1",
+"version": "14.2.0"
+},
+{
+"name": "libbpf",
+"version": "1.5.0"
+},
+{
+"name": "libbsd",
+"version": "0.12.2"
+},
+{
+"name": "libbytes-random-secure-perl",
+"version": "0.29"
+},
+{
+"name": "libc6-dev-powerpc-cross",
+"version": "2.41"
+},
+{
+"name": "libcap",
+"version": "2.75"
+},
+{
+"name": "libcap-ng",
+"version": "0.8.5"
+},
+{
+"name": "libcbor",
+"version": "v0.10.2"
+},
+{
+"name": "libclass-c3-perl",
+"version": "0.35"
+},
+{
+"name": "libclass-data-inheritable-perl",
+"version": "0.10"
+},
+{
+"name": "libclass-inspector-perl",
+"version": "1.36"
+},
+{
+"name": "libclone-perl",
+"version": "0.47"
+},
+{
+"name": "libcomerr2",
+"version": "2.1-1.47.2"
+},
+{
+"name": "libconvert-binhex-perl",
+"version": "1.125"
+},
+{
+"name": "libcrypt-dev",
+"version": "4.4.38"
+},
+{
+"name": "libcrypt-ssleay-perl",
+"version": "0.73.06"
+},
+{
+"name": "libctf-nobfd0",
+"version": "2.44"
+},
+{
+"name": "libctf0",
+"version": "2.44"
+},
+{
+"name": "libdata-dump-perl",
+"version": "1.25"
+},
+{
+"name": "libdata-optlist-perl",
+"version": "0.114"
+},
+{
+"name": "libdate-manip-perl",
+"version": "6.98"
+},
+{
+"name": "libdevel-callchecker-perl",
+"version": "0.009"
+},
+{
+"name": "libdevel-stacktrace-perl",
+"version": "2.0500"
+},
+{
+"name": "libdigest-sha-perl",
+"version": "6.04"
+},
+{
+"name": "libdist-checkconflicts-perl",
+"version": "0.11"
+},
+{
+"name": "libdrm-dev",
+"version": "2.4.124"
+},
+{
+"name": "libdynaloader-functions-perl",
+"version": "0.004"
+},
+{
+"name": "libedit2",
+"version": "3.1-20250104"
+},
+{
+"name": "libencode-perl",
+"version": "3.21"
+},
+{
+"name": "libestr",
+"version": "0.1.11"
+},
+{
+"name": "libeval-closure-perl",
+"version": "0.14"
+},
+{
+"name": "libexpat",
+"version": "2.7.1"
+},
+{
+"name": "libfastjson",
+"version": "v1.2304.0"
+},
+{
+"name": "libfcgi-dev",
+"version": "2.4.5"
+},
+{
+"name": "libfcgi-perl",
+"version": "0.82+ds"
+},
+{
+"name": "libffi",
+"version": "3.4.8"
+},
+{
+"name": "libfido2",
+"version": "1.15.0"
+},
+{
+"name": "libfido2-1",
+"version": "1.15.0"
+},
+{
+"name": "libgcc-s1",
+"version": "14.2.0"
+},
+{
+"name": "libgcrypt",
+"version": "1.11.0"
+},
+{
+"name": "libgdbm",
+"version": "1.24"
+},
+{
+"name": "libgpg-error",
+"version": "1.51"
+},
+{
+"name": "libhavege2",
+"version": "1.9.19"
+},
+{
+"name": "libhtml-parser-perl",
+"version": "3.83"
+},
+{
+"name": "libhtml-tagset-perl",
+"version": "3.24"
+},
+{
+"name": "libhtml-tree-perl",
+"version": "5.07"
+},
+{
+"name": "libhttp-message-perl",
+"version": "7.00"
+},
+{
+"name": "libhwasan0",
+"version": "14.2.0"
+},
+{
+"name": "Libidn",
+"version": "2.3.8"
+},
+{
+"name": "libio-pty-perl",
+"version": "1.15"
+},
+{
+"name": "libio-pty-perl",
+"version": "1.20"
+},
+{
+"name": "libio-sessiondata-perl",
+"version": "1.03"
+},
+{
+"name": "libio-socket-ssl-perl",
+"version": "2.089"
+},
+{
+"name": "libio-stringy-perl",
+"version": "2.113"
+},
+{
+"name": "libitm1",
+"version": "14.2.0"
+},
+{
+"name": "libjs-popper.js",
+"version": "1.16.1+ds"
+},
+{
+"name": "libklibc",
+"version": "2.0.14"
+},
+{
+"name": "liblog-dispatch-perl",
+"version": "2.71"
+},
+{
+"name": "liblog-log4perl-perl",
+"version": "1.57"
+},
+{
+"name": "liblognorm",
+"version": "2.0.6"
+},
+{
+"name": "liblzma-sys",
+"version": "0.4.3"
+},
+{
+"name": "libmath-bigint-perl",
+"version": "2.003002"
+},
+{
+"name": "libmd0",
+"version": "1.1.0"
+},
+{
+"name": "libmime-lite-perl",
+"version": "3.033"
+},
+{
+"name": "libmime-perl",
+"version": "5.515"
+},
+{
+"name": "libmnl",
+"version": "1.0.5"
+},
+{
+"name": "libmodule-corelist-perl",
+"version": "5.20210320"
+},
+{
+"name": "libmodule-runtime-perl",
+"version": "0.018"
+},
+{
+"name": "libmspack",
+"version": "0.11"
+},
+{
+"name": "libnamespace-clean-perl",
+"version": "0.27"
+},
+{
+"name": "libnet-dev",
+"version": "v1.3"
+},
+{
+"name": "libnet-ssleay-perl",
+"version": "1.94"
+},
+{
+"name": "libnetfilter-conntrack-dev",
+"version": "1.1.0"
+},
+{
+"name": "libnfnetlink",
+"version": "1.0.2"
+},
+{
+"name": "libnftnl",
+"version": "1.2.9"
+},
+{
+"name": "libnuma1",
+"version": "2.0.19"
+},
+{
+"name": "libp11-kit0",
+"version": "0.25.5"
+},
+{
+"name": "libpackage-stash-perl",
+"version": "0.40"
+},
+{
+"name": "libparams-validate-perl",
+"version": "1.31"
+},
+{
+"name": "libparams-validationcompiler -perl",
+"version": "0.31"
+},
+{
+"name": "libpath-class-perl",
+"version": "0.37"
+},
+{
+"name": "libpcap",
+"version": "1.1.1"
+},
+{
+"name": "libpipeline - pipeline manipulation library",
+"version": "1.5.8"
+},
+{
+"name": "libpkgconf3",
+"version": "1.8.1"
+},
+{
+"name": "libpng",
+"version": "v1.6.48"
+},
+{
+"name": "libpod-simple-perl",
+"version": "3.45"
+},
+{
+"name": "libpsl",
+"version": "0.21.2"
+},
+{
+"name": "libpwquality",
+"version": "0.8.0"
+},
+{
+"name": "librtmp",
+"version": "2.4+20151223.gitfa8646d.1"
+},
+{
+"name": "libscalar-list-utils-perl",
+"version": "1.59"
+},
+{
+"name": "libscalar-list-utils-perl",
+"version": "1.63"
+},
+{
+"name": "libsemanage1",
+"version": "3.8.1"
+},
+{
+"name": "libsepol",
+"version": "3.8.1"
+},
+{
+"name": "libsocket-perl",
+"version": "2.038"
+},
+{
+"name": "libsocket6-perl",
+"version": "0.29"
+},
+{
+"name": "libspecio-perl",
+"version": "0.50"
+},
+{
+"name": "libssh",
+"version": "0.11.2"
+},
+{
+"name": "libssh2",
+"version": "1.11.1"
+},
+{
+"name": "libstdc++",
+"version": "14.2.0"
+},
+{
+"name": "libsub-exporter-perl",
+"version": "0.990"
+},
+{
+"name": "libsub-exporter-progressive-perl",
+"version": "0.001013"
+},
+{
+"name": "libsub-name-perl",
+"version": "0.28"
+},
+{
+"name": "libsub-quote-perl",
+"version": "2.006008"
+},
+{
+"name": "libsystemd0",
+"version": "257.8"
+},
+{
+"name": "libsystemd0",
+"version": "257.9"
+},
+{
+"name": "Libtasn1",
+"version": "v4.20.0"
+},
+{
+"name": "libterm-readline-gnu-perl",
+"version": "1.46"
+},
+{
+"name": "libterm-table-perl",
+"version": "0.024"
+},
+{
+"name": "libtest-simple-perl",
+"version": "1.302210"
+},
+{
+"name": "libtest2-suite-perl",
+"version": "0.000162"
+},
+{
+"name": "libtext-charwidth-perl",
+"version": "0.04"
+},
+{
+"name": "libtext-template-perl",
+"version": "1.61"
+},
+{
+"name": "libtext-wrapi18n-perl",
+"version": "0.06"
+},
+{
+"name": "libtimedate-perl",
+"version": "2.3300"
+},
+{
+"name": "libtirpc",
+"version": "1.3.6"
+},
+{
+"name": "libuchardet0",
+"version": "0.0.8"
+},
+{
+"name": "libunistring",
+"version": "v1.3"
+},
+{
+"name": "libversion-perl",
+"version": "0.9930"
+},
+{
+"name": "libvirt",
+"version": "10.2.0"
+},
+{
+"name": "libvirt",
+"version": "11.3.0"
+},
+{
+"name": "libvirt",
+"version": "11.7.0"
+},
+{
+"name": "libwww-perl",
+"version": "6.78"
+},
+{
+"name": "libwww-robotrules-perl",
+"version": "6.02"
+},
+{
+"name": "libxcrypt",
+"version": "4.4.38"
+},
+{
+"name": "libxml-libxml-perl",
+"version": "2.0207"
+},
+{
+"name": "libxml-sax-perl",
+"version": "1.02"
+},
+{
+"name": "libxml2",
+"version": "2.9.14"
+},
+{
+"name": "libxslt",
+"version": "v1.1.35"
+},
+{
+"name": "libxslt1-dev",
+"version": "1.1.35"
+},
+{
+"name": "libxstring-perl",
+"version": "0.005"
+},
+{
+"name": "libzstd-dev",
+"version": "1.5.7"
+},
+{
+"name": "Linux Extended Attributes",
+"version": ""
+},
+{
+"name": "Linux Kernel",
+"version": "v6.12.48"
+},
+{
+"name": "Linux Kernel",
+"version": "v6.12.57"
+},
+{
+"name": "Linux Kernel SCTP",
+"version": "v1.0.19"
+},
+{
+"name": "linux-base",
+"version": "4.12"
+},
+{
+"name": "linux-misc",
+"version": "6.12.48"
+},
+{
+"name": "linux-misc",
+"version": "6.12.57"
+},
+{
+"name": "Linux-Pam",
+"version": "v1.7.0"
+},
+{
+"name": "Locale::Maketext",
+"version": "1.33"
+},
+{
+"name": "Locales",
+"version": "2.41"
+},
+{
+"name": "Lodash",
+"version": "3.10.1-patch"
+},
+{
+"name": "lodash-es",
+"version": "4.17.21"
+},
+{
+"name": "log4js-node",
+"version": "4.5.1"
+},
+{
+"name": "Log::Dispatch::FileRotate",
+"version": "1.19"
+},
+{
+"name": "lsb",
+"version": "11.6"
+},
+{
+"name": "lsb-release",
+"version": "12.1"
+},
+{
+"name": "lsb-release-minimal",
+"version": "12.1"
+},
+{
+"name": "LWP::MediaTypes",
+"version": "6.04"
+},
+{
+"name": "LWP::Protocol::https",
+"version": "6.14"
+},
+{
+"name": "lxml",
+"version": "5.3.0"
+},
+{
+"name": "lxml",
+"version": "6.0.1"
+},
+{
+"name": "lz4",
+"version": "v1.10.0"
+},
+{
+"name": "maelstrom-container",
+"version": "0.14.0"
+},
+{
+"name": "mailtools",
+"version": "2.22"
+},
+{
+"name": "make",
+"version": "4.4.1"
+},
+{
+"name": "Mako",
+"version": "1.3.5"
+},
+{
+"name": "man",
+"version": "2.13.1"
+},
+{
+"name": "man-db",
+"version": "2.13.1"
+},
+{
+"name": "MarkupSafe",
+"version": "2.1.3"
+},
+{
+"name": "MarkupSafe",
+"version": "2.1.5"
+},
+{
+"name": "MarkupSafe",
+"version": "3.0.2"
+},
+{
+"name": "Math::Random::ISAAC",
+"version": "1.004"
+},
+{
+"name": "media-types",
+"version": "13.0.0"
+},
+{
+"name": "mergedeep",
+"version": "1.3.4"
+},
+{
+"name": "methods",
+"version": "0.0.1"
+},
+{
+"name": "miku-ktls-sys",
+"version": "1.1.0+commit.62e56ef"
+},
+{
+"name": "MIME::Lite",
+"version": "3.033"
+},
+{
+"name": "MIME::tools",
+"version": "5.515"
+},
+{
+"name": "Module::Implementation",
+"version": "0.09"
+},
+{
+"name": "Module::Load::Conditional",
+"version": "0.74"
+},
+{
+"name": "Module::Metadata",
+"version": "1.000038"
+},
+{
+"name": "Module::Runtime",
+"version": "0.018"
+},
+{
+"name": "Mojo Framework",
+"version": "9.39"
+},
+{
+"name": "more-itertools",
+"version": "10.3.0"
+},
+{
+"name": "moxystudio/node-cross-spawn",
+"version": "3.0.0"
+},
+{
+"name": "mozilla-sccache",
+"version": "0.2.15~git0.6b6d2f7"
+},
+{
+"name": "mqttrust_core",
+"version": "0.5.2"
+},
+{
+"name": "MRO::Compat",
+"version": "0.15"
+},
+{
+"name": "msgpack-python",
+"version": "1.1.0"
+},
+{
+"name": "namespace::autoclean",
+"version": "0.31"
+},
+{
+"name": "nan",
+"version": "2.18.0"
+},
+{
+"name": "nan",
+"version": "2.6.2"
+},
+{
+"name": "ncurses",
+"version": "6.5+20250216"
+},
+{
+"name": "ncurses-bin",
+"version": "6.5+20250216"
+},
+{
+"name": "ncurses-utils",
+"version": "6.5.20250216"
+},
+{
+"name": "nero",
+"version": "0.0.1"
+},
+{
+"name": "nest-asyncio",
+"version": "1.6.0"
+},
+{
+"name": "net-http",
+"version": "6.23"
+},
+{
+"name": "net-tools",
+"version": "2.10"
+},
+{
+"name": "Net::INET6Glue",
+"version": "0.604"
+},
+{
+"name": "Net::OpenSSH",
+"version": "0.84"
+},
+{
+"name": "Net::SMTP::SSL",
+"version": "1.04"
+},
+{
+"name": "NetBase",
+"version": "6.4"
+},
+{
+"name": "NetBase",
+"version": "6.5"
+},
+{
+"name": "Netlink Protocol Library Suite (libnl)",
+"version": "3.7.0"
+},
+{
+"name": "nettle-src",
+"version": "3.5.1-1"
+},
+{
+"name": "ng-i18next",
+"version": "1.0.6"
+},
+{
+"name": "nghttp2",
+"version": "v1.64.0"
+},
+{
+"name": "nghttp3",
+"version": "v1.8.0"
+},
+{
+"name": "nginx",
+"version": "1.26.3"
+},
+{
+"name": "ngtcp2",
+"version": "v1.11.0"
+},
+{
+"name": "node-deep-equal",
+"version": "1.1.2"
+},
+{
+"name": "node-deep-equal",
+"version": "2.2.3+~cs43.15.94"
+},
+{
+"name": "node-jquery",
+"version": "3.6.1"
+},
+{
+"name": "node-popper2",
+"version": "2.11.2"
+},
+{
+"name": "node-semver",
+"version": "5.3.0"
+},
+{
+"name": "node-semver",
+"version": "6.3.0"
+},
+{
+"name": "nongnu - dmidecode",
+"version": "3.6"
+},
+{
+"name": "object-inspect",
+"version": "1.13.1"
+},
+{
+"name": "object.getownpropertydescri ptors",
+"version": "2.1.7"
+},
+{
+"name": "open-vm-tools",
+"version": "12.5.0"
+},
+{
+"name": "OpenLDAP",
+"version": "2.6.10"
+},
+{
+"name": "OpenSSL",
+"version": "3.5.1"
+},
+{
+"name": "OpenSSL",
+"version": "3.5.4"
+},
+{
+"name": "orcupine.org/pub/security/index.html",
+"version": ""
+},
+{
+"name": "org.webjars.bower:angularjs -file-upload",
+"version": "12.2.13"
+},
+{
+"name": "p11-kit-trust",
+"version": "0.25.5"
+},
+{
+"name": "p7zip",
+"version": "16.02+transitional.1"
+},
+{
+"name": "Packaging",
+"version": "24.0"
+},
+{
+"name": "Packaging",
+"version": "24.1"
+},
+{
+"name": "Packaging",
+"version": "25.0"
+},
+{
+"name": "paramiko",
+"version": "3.4.1"
+},
+{
+"name": "pbr",
+"version": "6.0.0"
+},
+{
+"name": "pci.ids",
+"version": "0.0~2025.06.09"
+},
+{
+"name": "PCRE2",
+"version": "10.46"
+},
+{
+"name": "pdf2doi",
+"version": "1.2"
+},
+{
+"name": "Perl",
+"version": "5.40.1"
+},
+{
+"name": "Perl 5 Encode",
+"version": "3.21"
+},
+{
+"name": "Perl TimeDate",
+"version": "2.31"
+},
+{
+"name": "perl-Attribute-Handlers",
+"version": "1.03"
+},
+{
+"name": "perl-Class-Struct",
+"version": "0.68"
+},
+{
+"name": "Perl-Clone",
+"version": "0.47"
+},
+{
+"name": "perl-Config-Extensions",
+"version": "0.03"
+},
+{
+"name": "perl-DBM_Filter",
+"version": "0.06"
+},
+{
+"name": "perl-encoding-warnings",
+"version": "0.14"
+},
+{
+"name": "perl-ExtUtils-Constant",
+"version": "0.25"
+},
+{
+"name": "perl-ExtUtils-ParseXS",
+"version": "3.51"
+},
+{
+"name": "perl-File-Basename",
+"version": "2.86"
+},
+{
+"name": "perl-File-Compare",
+"version": "1.100.800"
+},
+{
+"name": "perl-File-Copy",
+"version": "2.41"
+},
+{
+"name": "perl-File-DosGlob",
+"version": "1.12"
+},
+{
+"name": "perl-File-Find",
+"version": "1.44"
+},
+{
+"name": "perl-File-stat",
+"version": "1.14"
+},
+{
+"name": "perl-Filter-Simple",
+"version": "0.96"
+},
+{
+"name": "perl-Getopt-Std",
+"version": "1.14"
+},
+{
+"name": "perl-Hash-Util",
+"version": "0.32"
+},
+{
+"name": "perl-Hash-Util-FieldHash",
+"version": "1.27"
+},
+{
+"name": "perl-http-message",
+"version": "7.00"
+},
+{
+"name": "perl-I18N-LangTags",
+"version": "0.45"
+},
+{
+"name": "perl-IO-Compress-tests",
+"version": "2.213"
+},
+{
+"name": "perl-IPC-Cmd",
+"version": "1.04"
+},
+{
+"name": "perl-IPC-Open3",
+"version": "1.22"
+},
+{
+"name": "perl-IPC-SysV",
+"version": "2.09"
+},
+{
+"name": "perl-libnetcfg",
+"version": "5.40.1"
+},
+{
+"name": "perl-libwww",
+"version": "6.81"
+},
+{
+"name": "perl-libwww-perl",
+"version": "6.78"
+},
+{
+"name": "perl-Locale-Maketext-Simple",
+"version": "0.21"
+},
+{
+"name": "perl-Math-BigInt-FastCalc",
+"version": "0.501.800"
+},
+{
+"name": "perl-Math-Complex",
+"version": "1.62"
+},
+{
+"name": "perl-Memoize",
+"version": "1.16"
+},
+{
+"name": "perl-Module-Load",
+"version": "0.36"
+},
+{
+"name": "perl-Mojolicious",
+"version": "9.39"
+},
+{
+"name": "perl-openssl-defaults",
+"version": "7+b2"
+},
+{
+"name": "perl-overloading",
+"version": "0.02"
+},
+{
+"name": "perl-Params-Check",
+"version": "0.38"
+},
+{
+"name": "perl-params-validationcompiler",
+"version": "0.31"
+},
+{
+"name": "perl-Pod-Functions",
+"version": "1.14"
+},
+{
+"name": "perl-Pod-Html",
+"version": "1.35"
+},
+{
+"name": "perl-Pod-Usage",
+"version": "2.03"
+},
+{
+"name": "perl-Readonly",
+"version": "2.050"
+},
+{
+"name": "perl-Term-ANSIColor",
+"version": "5.01"
+},
+{
+"name": "perl-Term-Complete",
+"version": "1.403"
+},
+{
+"name": "perl-Term-ReadLine",
+"version": "1.17"
+},
+{
+"name": "perl-term-readline-gnu",
+"version": "1.46"
+},
+{
+"name": "perl-test2-suite",
+"version": "0.000162"
+},
+{
+"name": "perl-Text-CharWidth",
+"version": "0.04"
+},
+{
+"name": "perl-Text-WrapI18N",
+"version": "0.06"
+},
+{
+"name": "perl-Thread-Semaphore",
+"version": "2.13"
+},
+{
+"name": "perl-threads-shared",
+"version": "1.69"
+},
+{
+"name": "perl-Tie",
+"version": "4.6"
+},
+{
+"name": "perl-Tie-File",
+"version": "1.09"
+},
+{
+"name": "perl-Tie-Memoize",
+"version": "1.1"
+},
+{
+"name": "perl-Tie-RefHash",
+"version": "1.40"
+},
+{
+"name": "perl-Time",
+"version": "1.04"
+},
+{
+"name": "perl-Unicode-UCD",
+"version": "0.78"
+},
+{
+"name": "perl-URI",
+"version": "5.30"
+},
+{
+"name": "perl-User-pwent",
+"version": "1.05"
+},
+{
+"name": "perl-version",
+"version": "0.9927"
+},
+{
+"name": "perl-XML-Parser-tests",
+"version": "2.47"
+},
+{
+"name": "pika AMQP Module for RabbitMQ",
+"version": "1.3.2"
+},
+{
+"name": "pint",
+"version": "0.24.3"
+},
+{
+"name": "pint",
+"version": "0.25"
+},
+{
+"name": "pip",
+"version": "25.1.1"
+},
+{
+"name": "pkg-config",
+"version": "1.8.1"
+},
+{
+"name": "pkgconf",
+"version": "1.8.1"
+},
+{
+"name": "pkgconf-m4",
+"version": "2.1.1"
+},
+{
+"name": "platformdirs",
+"version": "4.2.2"
+},
+{
+"name": "platformdirs",
+"version": "4.4.0"
+},
+{
+"name": "Pod::Checker",
+"version": "1.77"
+},
+{
+"name": "Pod::Escapes",
+"version": "1.07"
+},
+{
+"name": "Pod::Perldoc",
+"version": "3.28.01"
+},
+{
+"name": "popper.js",
+"version": "0.0.0"
+},
+{
+"name": "portscanner",
+"version": "2.1.1"
+},
+{
+"name": "postcss-normalize-repeat-style",
+"version": "4.0.2"
+},
+{
+"name": "postcss-selector-parser",
+"version": "6.0.16"
+},
+{
+"name": "prettytable",
+"version": "3.10.2"
+},
+{
+"name": "Procps",
+"version": "4.0.4"
+},
+{
+"name": "protractor-jasmine2-html-reporter",
+"version": "0.0.7"
+},
+{
+"name": "psf-requests",
+"version": "2.32.3"
+},
+{
+"name": "psmisc",
+"version": "23.7"
+},
+{
+"name": "psmisc-doc",
+"version": "23.7"
+},
+{
+"name": "psutil",
+"version": "7.1.0"
+},
+{
+"name": "ptyprocess",
+"version": "0.7.0"
+},
+{
+"name": "Punycode.js",
+"version": "1.4.0"
+},
+{
+"name": "Punycode.js",
+"version": "2.3.1"
+},
+{
+"name": "pure-rust-locales",
+"version": "0.2.1"
+},
+{
+"name": "py-distro",
+"version": "1.9.0"
+},
+{
+"name": "py-future",
+"version": "1.0.0"
+},
+{
+"name": "py-gevent",
+"version": "25.8.2"
+},
+{
+"name": "py3-a2wsgi-pyc",
+"version": "1.10.7"
+},
+{
+"name": "py3-autocommand",
+"version": "2.2.2"
+},
+{
+"name": "py3-autopage-pyc",
+"version": "0.5.2"
+},
+{
+"name": "py3-httpcore",
+"version": "1.0.5"
+},
+{
+"name": "py3-httpx",
+"version": "0.27.2"
+},
+{
+"name": "py3-inflect",
+"version": "7.3.1"
+},
+{
+"name": "py3-jaraco.context",
+"version": "5.3.0"
+},
+{
+"name": "py3-jaraco.text",
+"version": "3.12.0"
+},
+{
+"name": "py3-jsonschema-specifications",
+"version": "2023.12.1"
+},
+{
+"name": "py3-nest_asyncio",
+"version": "1.6.0"
+},
+{
+"name": "py3-pika",
+"version": "1.3.2"
+},
+{
+"name": "py3-platformdirs",
+"version": "4.4.0"
+},
+{
+"name": "py3-prettytable3",
+"version": "3.10.2"
+},
+{
+"name": "py3-python-multipart",
+"version": "0.0.9"
+},
+{
+"name": "py3-referencing",
+"version": "0.35.1"
+},
+{
+"name": "py3-requests-toolbelt",
+"version": "0.10.1"
+},
+{
+"name": "py3-requests-toolbelt",
+"version": "1.0.0"
+},
+{
+"name": "py3-swagger-ui-bundle",
+"version": "1.1.0"
+},
+{
+"name": "py3-tomli",
+"version": "2.0.1"
+},
+{
+"name": "py3-tomli",
+"version": "2.2.1"
+},
+{
+"name": "py3-typing-extensions",
+"version": "4.12.2"
+},
+{
+"name": "py3-typing-extensions",
+"version": "4.15.0"
+},
+{
+"name": "pyca/cryptography",
+"version": "42.0.8"
+},
+{
+"name": "pyca/cryptography",
+"version": "45.0.7"
+},
+{
+"name": "pyca/pynacl",
+"version": "1.5.0"
+},
+{
+"name": "pycparser",
+"version": "2.22"
+},
+{
+"name": "PyEasyArchive",
+"version": "0.4.7"
+},
+{
+"name": "pyescrypt",
+"version": "0.1.0"
+},
+{
+"name": "pyOpenSSL",
+"version": "25.3.0"
+},
+{
+"name": "PyOxidizer",
+"version": "0.18.0"
+},
+{
+"name": "PyOxidizer",
+"version": "0.2.0"
+},
+{
+"name": "pypi-zope.interface",
+"version": "7.0.1"
+},
+{
+"name": "pypi-zope.interface",
+"version": "7.2"
+},
+{
+"name": "pypi/setuptools",
+"version": "72.1.0"
+},
+{
+"name": "pypi/setuptools",
+"version": "78.1.1"
+},
+{
+"name": "pyspnego",
+"version": "0.11.1"
+},
+{
+"name": "python cffi",
+"version": "1.17.0"
+},
+{
+"name": "python cffi",
+"version": "2.0.0"
+},
+{
+"name": "Python programming language",
+"version": "3.13.5"
+},
+{
+"name": "Python six",
+"version": "1.16.0"
+},
+{
+"name": "python-a2wsgi",
+"version": "1.10.7"
+},
+{
+"name": "python-argcomplete",
+"version": "3.6.2"
+},
+{
+"name": "python-attrs",
+"version": "24.2.0"
+},
+{
+"name": "python-autocommand",
+"version": "2.2.2"
+},
+{
+"name": "python-certifi",
+"version": "2025.1.31"
+},
+{
+"name": "python-cliff",
+"version": "4.7.0"
+},
+{
+"name": "python-cmd2/cmd2",
+"version": "2.4.3"
+},
+{
+"name": "python-cryptography",
+"version": "45.0.7"
+},
+{
+"name": "python-dateutil",
+"version": "2.9.0.post0"
+},
+{
+"name": "python-distlib",
+"version": "0.2.9.post0"
+},
+{
+"name": "python-distlib",
+"version": "0.3.9"
+},
+{
+"name": "python-distro",
+"version": "1.9.0"
+},
+{
+"name": "python-editor",
+"version": "1.0.3"
+},
+{
+"name": "python-editor",
+"version": "1.0.4"
+},
+{
+"name": "python-future",
+"version": "1.0.0"
+},
+{
+"name": "python-gevent-doc",
+"version": "24.2.1"
+},
+{
+"name": "python-hupper",
+"version": "1.12"
+},
+{
+"name": "python-jsonschema",
+"version": "4.23.0"
+},
+{
+"name": "python-jsonschema-specifications",
+"version": "2023.12.1"
+},
+{
+"name": "python-marshmallow",
+"version": "3.21.3"
+},
+{
+"name": "python-multipart",
+"version": "0.0.9"
+},
+{
+"name": "python-nose",
+"version": "1.3.7"
+},
+{
+"name": "python-spnego",
+"version": "0.11.1"
+},
+{
+"name": "python-stevedore",
+"version": "5.2.0"
+},
+{
+"name": "python-tomli-w",
+"version": "1.2.0"
+},
+{
+"name": "python-truststore",
+"version": "0.10.1"
+},
+{
+"name": "python-typeguard",
+"version": "4.3.0"
+},
+{
+"name": "python-typing-extensions",
+"version": "4.12.2"
+},
+{
+"name": "python-typing-extensions",
+"version": "4.14.1"
+},
+{
+"name": "python-typing-extensions",
+"version": "4.15.0"
+},
+{
+"name": "python-typing-extensions",
+"version": "4.5.0"
+},
+{
+"name": "python-wheel",
+"version": "0.46.1"
+},
+{
+"name": "python2.1-xmlbase",
+"version": "2.1.3"
+},
+{
+"name": "python3-charset-normalizer",
+"version": "3.4.2"
+},
+{
+"name": "python3-charset-normalizer",
+"version": "3.4.3"
+},
+{
+"name": "python3-flexcache",
+"version": "0.3"
+},
+{
+"name": "python3-flexparser",
+"version": "0.3.1"
+},
+{
+"name": "python3-flexparser",
+"version": "0.4"
+},
+{
+"name": "python3-httpcore",
+"version": "1.0.5"
+},
+{
+"name": "python3-multipart",
+"version": "0.0.9"
+},
+{
+"name": "python3-progress",
+"version": "1.5"
+},
+{
+"name": "python3-pyproject-hooks",
+"version": "1.2.0"
+},
+{
+"name": "python3-resolvelib",
+"version": "1.1.0"
+},
+{
+"name": "python3-rich",
+"version": "14.0.0"
+},
+{
+"name": "python3-sniffio",
+"version": "1.3.1"
+},
+{
+"name": "python3-sphinx-inline-tabs",
+"version": "2023.04.21"
+},
+{
+"name": "python3-spnego",
+"version": "0.11.1"
+},
+{
+"name": "pyvmomi",
+"version": "8.0.3.0.1"
+},
+{
+"name": "pywinrm",
+"version": "0.5.0"
+},
+{
+"name": "PyYAML",
+"version": "6.0.2"
+},
+{
+"name": "Qixcolor",
+"version": "3.2.1"
+},
+{
+"name": "rabbitmq-server",
+"version": "4.0.5"
+},
+{
+"name": "rdma-core",
+"version": "v54.0"
+},
+{
+"name": "ReactiveX RxJS",
+"version": "6.3.3"
+},
+{
+"name": "ReactiveX RxJS",
+"version": "6.4.0"
+},
+{
+"name": "ReactiveX RxJS",
+"version": "6.5.3"
+},
+{
+"name": "ReactiveX RxJS",
+"version": "6.6.7"
+},
+{
+"name": "read-pkg",
+"version": "1.1.0"
+},
+{
+"name": "redding/assert",
+"version": "1.5.1"
+},
+{
+"name": "reductstore/reductstore",
+"version": "1.7.1"
+},
+{
+"name": "referencing",
+"version": "0.35.1"
+},
+{
+"name": "reflect-metadata",
+"version": "0.1.13"
+},
+{
+"name": "Request - Simple HTTP Client",
+"version": "1.0.5"
+},
+{
+"name": "Request - Simple HTTP Client",
+"version": "2.88.2"
+},
+{
+"name": "requests-ntlm",
+"version": "1.3.0"
+},
+{
+"name": "requests-toolbelt",
+"version": "1.0.0"
+},
+{
+"name": "resolvconf",
+"version": "1.94"
+},
+{
+"name": "resolve",
+"version": "1.22.8"
+},
+{
+"name": "Role::Tiny",
+"version": "2.002004"
+},
+{
+"name": "RonnyPfannschmidt/iniconfig",
+"version": "2.0.0"
+},
+{
+"name": "rpds-py",
+"version": "0.20.0"
+},
+{
+"name": "rpds-py",
+"version": "0.27.1"
+},
+{
+"name": "rsyslog",
+"version": "8.2504.0"
+},
+{
+"name": "rtmpdump",
+"version": "2.4+20151223.gitfa8646d.1"
+},
+{
+"name": "rubygem-nokogiri",
+"version": "1.13.6"
+},
+{
+"name": "rust-sequoia-sqv",
+"version": "1.3.0"
+},
+{
+"name": "rustls-native-certs",
+"version": "0.2.0"
+},
+{
+"name": "RustPython",
+"version": "0.4.0"
+},
+{
+"name": "Samba",
+"version": "0.1.0"
+},
+{
+"name": "sarugaku/resolvelib",
+"version": "1.1.0"
+},
+{
+"name": "SCST",
+"version": "20181219-snapshot-7843"
+},
+{
+"name": "Seccomp Library",
+"version": "2.6.0"
+},
+{
+"name": "Security-enhanced Linux",
+"version": "3.8.1"
+},
+{
+"name": "selenium-edge-driver",
+"version": "3.0.0-beta2"
+},
+{
+"name": "selenium-edge-driver",
+"version": "3.0.1"
+},
+{
+"name": "selenium-opera-driver",
+"version": "3.0.1"
+},
+{
+"name": "sensible-utils",
+"version": "0.0.25"
+},
+{
+"name": "sequoia-sqv",
+"version": "1.3.0"
+},
+{
+"name": "set-function-length",
+"version": "1.1.1"
+},
+{
+"name": "sexibytes/sexigraf",
+"version": "0.99e"
+},
+{
+"name": "Shadow Tool Suite",
+"version": "4.16.0-2+really2.41"
+},
+{
+"name": "Shadow Tool Suite",
+"version": "4.17.4"
+},
+{
+"name": "shama/gaze",
+"version": "0.5.2"
+},
+{
+"name": "sites.google.com/site/vdeeditor/Home/vde-files/rpsort-manual",
+"version": "2.73"
+},
+{
+"name": "sniffio",
+"version": "1.3.0"
+},
+{
+"name": "sniffio",
+"version": "1.3.1"
+},
+{
+"name": "SOAP-Lite",
+"version": "1.27"
+},
+{
+"name": "Socket",
+"version": "2.038"
+},
+{
+"name": "socket.io",
+"version": "2.1.1"
+},
+{
+"name": "solana-labs/solana",
+"version": "1.16.6"
+},
+{
+"name": "spdx-correct.js",
+"version": "3.2.0"
+},
+{
+"name": "spdx-exceptions",
+"version": "2.3.0"
+},
+{
+"name": "spdx-expression-parse.js",
+"version": "3.0.1"
+},
+{
+"name": "Sphinx-Python Documentation Generator",
+"version": "8.1.3"
+},
+{
+"name": "SQLAlchemy",
+"version": "2.0.32"
+},
+{
+"name": "SQLAlchemy",
+"version": "2.0.43"
+},
+{
+"name": "SQLite",
+"version": "3.46.1"
+},
+{
+"name": "sqv",
+"version": "1.3.0"
+},
+{
+"name": "sshpk",
+"version": "1.18.0"
+},
+{
+"name": "Starlette",
+"version": "0.38.5"
+},
+{
+"name": "Storable",
+"version": "3.32"
+},
+{
+"name": "string.prototype.trim",
+"version": "1.2.8"
+},
+{
+"name": "string.prototype.trimend",
+"version": "1.0.7"
+},
+{
+"name": "string.prototype.trimstart",
+"version": "1.0.7"
+},
+{
+"name": "string.prototype.trimstart",
+"version": "1.0.8"
+},
+{
+"name": "Sub::Identify",
+"version": "0.14"
+},
+{
+"name": "swagger-ui-bundle",
+"version": "1.1.0"
+},
+{
+"name": "systemd",
+"version": "257.7"
+},
+{
+"name": "systemd",
+"version": "257.8"
+},
+{
+"name": "systemd",
+"version": "257.9"
+},
+{
+"name": "systemd-experimental",
+"version": "257.9"
+},
+{
+"name": "systemd-lang",
+"version": "257.7"
+},
+{
+"name": "systemd-networkd",
+"version": "257.7"
+},
+{
+"name": "systemd-networkd",
+"version": "257.9"
+},
+{
+"name": "systemd-sysvcompat",
+"version": "257.9"
+},
+{
+"name": "systemd-sysvinit",
+"version": "208"
+},
+{
+"name": "systemd-timesyncd",
+"version": "248.3"
+},
+{
+"name": "sysvinit",
+"version": "3.14"
+},
+{
+"name": "tarent/he",
+"version": "1.2.0"
+},
+{
+"name": "Task::Weaken",
+"version": "1.06"
+},
+{
+"name": "telnet",
+"version": "0.17+2.6"
+},
+{
+"name": "Test::Harness",
+"version": "3.48"
+},
+{
+"name": "The FreeType Project",
+"version": "2.13.3"
+},
+{
+"name": "The PCI Utilities",
+"version": "3.13.0"
+},
+{
+"name": "thkukuk/rpcsvc-proto",
+"version": "v1.4.3"
+},
+{
+"name": "Thread::Queue",
+"version": "3.14"
+},
+{
+"name": "Time Zone Database",
+"version": "2025b"
+},
+{
+"name": "Time::Local",
+"version": "1.35"
+},
+{
+"name": "tomli",
+"version": "2.0.1"
+},
+{
+"name": "tomli",
+"version": "2.2.1"
+},
+{
+"name": "try-tiny",
+"version": "0.32"
+},
+{
+"name": "typed-array-byte-length",
+"version": "1.0.0"
+},
+{
+"name": "typed-array-byte-offset",
+"version": "1.0.0"
+},
+{
+"name": "typeguard",
+"version": "4.3.0"
+},
+{
+"name": "types node",
+"version": "20.0.0"
+},
+{
+"name": "types q",
+"version": "1.5.8"
+},
+{
+"name": "ucf",
+"version": "3.0052"
+},
+{
+"name": "uchardet",
+"version": "0.0.8"
+},
+{
+"name": "udev",
+"version": "257.8"
+},
+{
+"name": "udev",
+"version": "257.9"
+},
+{
+"name": "Underscore.js",
+"version": "1.13.4"
+},
+{
+"name": "undici-types",
+"version": "5.26.5"
+},
+{
+"name": "undici-types",
+"version": "5.27.1"
+},
+{
+"name": "Unicode::Collate",
+"version": "1.31"
+},
+{
+"name": "unixODBC",
+"version": "2.3.12"
+},
+{
+"name": "urllib3",
+"version": "1.26.20"
+},
+{
+"name": "urllib3",
+"version": "2.2.2"
+},
+{
+"name": "util-linux",
+"version": "2.38.1"
+},
+{
+"name": "util-linux",
+"version": "2.41"
+},
+{
+"name": "UUID",
+"version": "0.37"
+},
+{
+"name": "Variable::Magic",
+"version": "0.64"
+},
+{
+"name": "Vim",
+"version": "v9.1.1230"
+},
+{
+"name": "virt-what",
+"version": "1.27"
+},
+{
+"name": "vmware-vapi-runtime",
+"version": "2.52.0"
+},
+{
+"name": "vmware-vcenter",
+"version": "8.0.3.0"
+},
+{
+"name": "wcwidth",
+"version": "0.2.13"
+},
+{
+"name": "Werkzeug",
+"version": "3.0.4"
+},
+{
+"name": "Wget",
+"version": "v1.25.0"
+},
+{
+"name": "whatwg-encoding",
+"version": "1.0.4"
+},
+{
+"name": "which-typed-array",
+"version": "1.1.13"
+},
+{
+"name": "wireguard-tools",
+"version": "1.0.20200729"
+},
+{
+"name": "wtmpdb",
+"version": "0.73.0"
+},
+{
+"name": "XML Security Library",
+"version": "1.2.41"
+},
+{
+"name": "XML::NamespaceSupport",
+"version": "1.12"
+},
+{
+"name": "XML::SAX::Base",
+"version": "1.09"
+},
+{
+"name": "xmlbuilder",
+"version": "11.0.1"
+},
+{
+"name": "xmltodict",
+"version": "0.13.0"
+},
+{
+"name": "xolox/python-negotiator",
+"version": "0.6.3"
+},
+{
+"name": "xxhash-c-sys",
+"version": "0.8.3"
+},
+{
+"name": "XZ Utils",
+"version": "v5.8.1"
+},
+{
+"name": "Yarn Package Manager",
+"version": "4.0.2"
+},
+{
+"name": "zcatalyst-angular-schematics",
+"version": "0.0.1"
+},
+{
+"name": "zipp",
+"version": "3.19.2"
+},
+{
+"name": "zipp",
+"version": "3.20.1"
+},
+{
+"name": "zlib",
+"version": "v1.3"
+},
+{
+"name": "Zone.js",
+"version": "0.10.2"
+},
+{
+"name": "zope.event",
+"version": "4.6"
+},
+{
+"name": "zope.event",
+"version": "5.0"
+},
+{
+"name": "zstd",
+"version": "1.5.7"
+}
+],
+"extractors": [
+"component_license"
+],
+"kind": "pdf",
+"product": "ONTAP Select Deploy",
+"retrieved": "2026-11-08",
+"sha256": "87f2c872cbc5cd94c062405e37ad4a398d75c3263061d4daae6dd2698b236114",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/ONTAP_Select_Deploy/9.18.1/NOTICE.pdf",
+"version": "9.18.1"
+}

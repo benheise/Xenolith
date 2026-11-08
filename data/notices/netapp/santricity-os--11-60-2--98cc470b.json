@@ -1,0 +1,218 @@
+{
+"components": [
+{
+"name": "aopalliance-repackaged",
+"version": "2.5.0-b32"
+},
+{
+"name": "base-passwd",
+"version": "3.5.37"
+},
+{
+"name": "byteman",
+"version": "4.0.6"
+},
+{
+"name": "cri-tools",
+"version": "1.13.0"
+},
+{
+"name": "cron4j",
+"version": "2.2.5"
+},
+{
+"name": "docker-ce",
+"version": "18.06.3-ce"
+},
+{
+"name": "gdb",
+"version": "7.12.6"
+},
+{
+"name": "glibc",
+"version": "2.19-18+deb8u10"
+},
+{
+"name": "grub",
+"version": "0.97"
+},
+{
+"name": "h2",
+"version": "1.4.198"
+},
+{
+"name": "hk2-api",
+"version": "2.5.0-b32"
+},
+{
+"name": "hk2-locator",
+"version": "2.5.0-b32"
+},
+{
+"name": "hk2-utils",
+"version": "2.5.0-b32"
+},
+{
+"name": "javassist",
+"version": "3.21.0-GA"
+},
+{
+"name": "javax.activation",
+"version": "1.2.0"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.2"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.3"
+},
+{
+"name": "javax.inject",
+"version": "2.5.0-b32"
+},
+{
+"name": "javax.mail",
+"version": "1.6.2"
+},
+{
+"name": "javax.servlet-api",
+"version": "3.1.0"
+},
+{
+"name": "javax.transaction-api",
+"version": "1.3"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0.1"
+},
+{
+"name": "jaxb-api",
+"version": "2.3.0"
+},
+{
+"name": "jaxb-core",
+"version": "2.3.0.1"
+},
+{
+"name": "jersey-client",
+"version": "2.25.1"
+},
+{
+"name": "jersey-common",
+"version": "2.25.1"
+},
+{
+"name": "jersey-container-servlet",
+"version": "2.25.1"
+},
+{
+"name": "jersey-container-servlet-core",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-jaxb",
+"version": "2.25.1"
+},
+{
+"name": "jersey-media-multipart",
+"version": "2.25.1"
+},
+{
+"name": "jersey-server",
+"version": "2.25.1"
+},
+{
+"name": "kubernetes",
+"version": "1.18.0"
+},
+{
+"name": "kubernets-cni",
+"version": "0.7.5-00"
+},
+{
+"name": "linux",
+"version": "4.19.98-1"
+},
+{
+"name": "logback-classic",
+"version": "1.2.3"
+},
+{
+"name": "logback-classic",
+"version": "1.2.3.1"
+},
+{
+"name": "logback-core",
+"version": "1.2.3"
+},
+{
+"name": "logback-core",
+"version": "1.2.3.1"
+},
+{
+"name": "mimepull",
+"version": "1.9.6"
+},
+{
+"name": "mlnx-ofed",
+"version": "5.0.1.0.0.0.1"
+},
+{
+"name": "mstfline",
+"version": "4.13.0"
+},
+{
+"name": "net-snmp",
+"version": "5.7.2.1+deb8u2"
+},
+{
+"name": "openjdk-zulu",
+"version": "11.0.6+10"
+},
+{
+"name": "osgi-resource-locator",
+"version": "1.0.1"
+},
+{
+"name": "rhino",
+"version": "1.7.11"
+},
+{
+"name": "spotbugs-annotations",
+"version": "3.1.9"
+},
+{
+"name": "stax-api",
+"version": "1.0-2"
+},
+{
+"name": "stax-ex",
+"version": "1.7.8"
+},
+{
+"name": "syslog4j",
+"version": "0.9.60.1"
+},
+{
+"name": "winrun4j",
+"version": "0.4.5"
+}
+],
+"extractors": [
+"source_archives"
+],
+"kind": "listing",
+"product": "SANtricity OS",
+"retrieved": "2026-11-08",
+"sha256": "8a2ca6f8ce8a5e2756af0aa56dd6ee3de0529aec34f6526b2e50811444c75fd3",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/ESeries_EFSeries_SANtricity_OS/v11.60.2/",
+"version": "11.60.2"
+}

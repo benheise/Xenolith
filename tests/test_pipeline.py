@@ -499,3 +499,199 @@ class CrosswalkReleaseTest(unittest.TestCase):
                                                       "red-hat/jboss-data-virtualization-6-4-8-sp2"}}
         remap, clusters = crosswalk.build(links, {})
         self.assertEqual((remap, clusters), ({}, []))
+
+
+import io as _io  # noqa: E402
+import struct as _struct  # noqa: E402
+import tarfile as _tarfile  # noqa: E402
+import zipfile as _zipfile  # noqa: E402
+
+from xenolith import fingerprint as fpm  # noqa: E402
+
+
+def make_elf(functions: dict[str, bytes], imports=(), machine=0x3E) -> bytes:
+    """Minimal little-endian ELF64 shared object that defines `functions` and imports `imports`."""
+    text = b"".join(code.ljust(16, b"\x90") for code in functions.values())
+    names = list(functions) + list(imports)
+    dynstr, offsets = b"\x00", []
+    for n in names:
+        offsets.append(len(dynstr))
+        dynstr += n.encode() + b"\x00"
+    text_off, str_off = 0x100, 0x100 + len(text)
+    sym_off = (str_off + len(dynstr) + 7) & ~7
+    syms = b"\x00" * 24
+    for i, n in enumerate(names):
+        defined = n in functions
+        syms += _struct.pack("<IBBHQQ", offsets[i], 0x12, 0, 1 if defined else 0,
+                             text_off + 16 * i if defined else 0, 16 if defined else 0)
+    sh_off = (sym_off + len(syms) + 7) & ~7
+    total = sh_off + 64 * 4
+    header = b"\x7fELF\x02\x01\x01" + b"\x00" * 9 + _struct.pack(
+        "<HHIQQQIHHHHHH", 3, machine, 1, 0, 0x40, sh_off, 0, 64, 56, 1, 64, 4, 0)
+    phdr = _struct.pack("<IIQQQQQQ", 1, 5, 0, 0, 0, total, total, 0x1000)
+    shdrs = b"\x00" * 64
+    shdrs += _struct.pack("<IIQQQQIIQQ", 0, 1, 6, text_off, text_off, len(text), 0, 0, 16, 0)
+    shdrs += _struct.pack("<IIQQQQIIQQ", 0, 3, 2, str_off, str_off, len(dynstr), 0, 0, 1, 0)
+    shdrs += _struct.pack("<IIQQQQIIQQ", 0, 11, 2, sym_off, sym_off, len(syms), 2, 1, 8, 24)
+    out = bytearray(total)
+    out[0:64] = header
+    out[64:64 + 56] = phdr
+    out[text_off:text_off + len(text)] = text
+    out[str_off:str_off + len(dynstr)] = dynstr
+    out[sym_off:sym_off + len(syms)] = syms
+    out[sh_off:sh_off + len(shdrs)] = shdrs
+    return bytes(out)
+
+
+def jar(entries: dict[str, bytes]) -> bytes:
+    buf = _io.BytesIO()
+    with _zipfile.ZipFile(buf, "w") as z:
+        for name, data in entries.items():
+            z.writestr(name, data)
+    return buf.getvalue()
+
+
+class FingerprintTest(unittest.TestCase):
+    def setUp(self):
+        self.fps = fpm.load()
+
+    def scan(self, files: dict[str, bytes]) -> dict[tuple[str, str], dict]:
+        with tempfile.TemporaryDirectory() as d:
+            for rel, data in files.items():
+                p = Path(d) / rel
+                p.parent.mkdir(parents=True, exist_ok=True)
+                p.write_bytes(data)
+            s = fpm.Scanner(self.fps)
+            s.scan(Path(d))
+        return {(g["component"], g["version"]): g for g in fpm.summarize(s.findings)}
+
+    def test_version_strings(self):
+        elf = b"\x7fELF" + b"\x00" * 60
+        found = self.scan({
+            "lib/libcrypto.so.1.1": elf + b"OpenSSL 1.1.1k  25 Mar 2021\x00OPENSSLDIR: \"/usr/lib/ssl\"\x00",
+            "lib/libcurl.so.4": elf + b"libcurl/7.88.1\x00",
+            "lib/libc.so.6": elf + b"GNU C Library (GNU libc) stable release version 2.36.\x00",
+            "bin/php-fpm": elf + b"X-Powered-By: PHP/8.1.2\x00OpenSSL 3.0.2 15 Mar 2022\x00",   # header copy only
+            "bin/sshd": elf + b"OpenSSH_9.3p1\x00/etc/ssh/sshd_config\x00",
+            "bin/putty": elf + b"OpenSSH_2.3\x00",                                          # bug table, not OpenSSH
+            "bin/xz": elf + b"xz (XZ Utils) 5.6.1\x00",
+        })
+        self.assertEqual(set(found), {("openssl", "1.1.1k"), ("curl", "7.88.1"), ("glibc", "2.36"),
+                                      ("php", "8.1.2"), ("openssh", "9.3p1"), ("xz", "5.6.1")})
+
+    def test_version_probes_and_symbols(self):
+        x86 = b"\xf3\x0f\x1e\xfa\xb8" + _struct.pack("<I", 0x1000009) + b"\xc3"
+        arm = b"".join(_struct.pack("<I", i) for i in (0x52800120, 0x72A02000, 0xD65F03C0))   # movz/movk/ret
+        found = self.scan({
+            "a/libbrotlidec.so.1": make_elf({"BrotliDecoderVersion": x86, "BrotliDecoderDecompressStream": b"\xc3"}),
+            "b/libbrotlidec.so.1": make_elf({"BrotliDecoderVersion": arm}, machine=0xB7),
+            "c/libwebp.so.7": make_elf({"WebPGetDecoderVersion": b"\xb8\x02\x03\x01\x00\xc3"}),
+            "d/liblzma.so.5": make_elf({"lzma_version_number": b"\xb8" + _struct.pack("<I", 50060012) + b"\xc3"}),
+            # a program that only imports Brotli is not a copy of it
+            "e/app": make_elf({"main": b"\xc3"}, imports=["BrotliDecoderDecompressStream", "BrotliDecoderVersion"]),
+            # stripped static copy: only the built-in dictionary remains
+            "f/firmware.bin": b"\x7fELF" + b"\x00" * 60 + b"timedownlifeleftbackcodedatashowonlysitecityopenjustlikefreeworktextyear",
+        })
+        self.assertIn(("brotli", "1.0.9"), found)
+        self.assertEqual(len(found[("brotli", "1.0.9")]["locations"]), 2)       # x86-64 and AArch64
+        self.assertIn(("libwebp", "1.3.2"), found)
+        self.assertIn(("xz", "5.6.1"), found)
+        self.assertEqual(found[("brotli", "")]["locations"], ["f/firmware.bin"])
+        self.assertTrue(found[("brotli", "")]["notes"])
+
+    def test_archives(self):
+        log4j = jar({"META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties": b"groupId=org.apache.logging.log4j\nversion=2.14.1\n",
+                     "org/apache/logging/log4j/core/lookup/JndiLookup.class": b"\xca\xfe\xba\xbe"})
+        spring = jar({"META-INF/MANIFEST.MF": b"Implementation-Title: spring-beans\nImplementation-Version: 5.3.17\n",
+                      "org/springframework/beans/BeanWrapperImpl.class": b"\xca\xfe\xba\xbe"})
+        other = jar({"META-INF/MANIFEST.MF": b"Implementation-Title: other\nImplementation-Version: 9.9\n"})
+        shaded = jar({"com/acme/shaded/org/apache/log4j/net/SocketNode.class": b"\xca\xfe\xba\xbe"})
+        war = jar({"WEB-INF/lib/log4j-core-2.14.1.jar": log4j, "WEB-INF/lib/spring-beans-5.3.17.jar": spring,
+                   "WEB-INF/lib/other.jar": other, "WEB-INF/lib/agent-all.jar": shaded})
+        tgz = _io.BytesIO()
+        with _tarfile.open(fileobj=tgz, mode="w:gz") as t:
+            for name, data in {"opt/app/app.war": war,
+                               "web/node_modules/react-server-dom-webpack/package.json": b'{"version": "19.0.0"}'}.items():
+                info = _tarfile.TarInfo(name)
+                info.size = len(data)
+                t.addfile(info, _io.BytesIO(data))
+        found = self.scan({"product.tgz": tgz.getvalue()})
+        self.assertIn(("log4j-core", "2.14.1"), found)
+        self.assertIn(("spring-framework", "5.3.17"), found)
+        self.assertIn(("react-server-components", "19.0.0"), found)
+        self.assertIn(("log4j-1", ""), found)                                  # shaded copy, version unknown
+        self.assertNotIn(("log4j-core", ""), found)                            # same jar already gave the version
+        self.assertNotIn(("spring-framework", "9.9"), found)                   # other jar's manifest
+
+    def test_names_match_watchlist(self):
+        cat = catalog.load()
+        samples = {"brotli": "1.1.0", "xz": "5.4.5", "log4j-1": "1.2.17", "log4j-core": "2.14.1"}
+        for fp in self.fps:
+            names = {fp.name} | {s["name"] for s in fp.strings if s.get("name")}
+            if fp.id == "react-server-components":
+                names |= {"react-server-dom-turbopack"}
+            for n in names:
+                full = f"{fp.group}:{n}" if fp.group else n
+                self.assertEqual(cat.match_component(full, samples.get(fp.id, "1.0.0")), fp.id, full)
+
+    def test_findings_become_a_valid_submission(self):
+        elf = b"\x7fELF" + b"\x00" * 60 + b"OpenSSL 3.0.13 30 Jan 2024\x00OPENSSLDIR: \"/x\"\x00"
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            (root / "fw").mkdir()
+            (root / "fw" / "libcrypto.so.3").write_bytes(elf)
+            s = fpm.Scanner(self.fps)
+            s.scan(root / "fw")
+            doc = fpm.to_cyclonedx(fpm.summarize(s.findings), self.fps, "fw")
+            self.assertEqual(doc["components"][0]["evidence"]["occurrences"][0]["location"], "libcrypto.so.3")
+            out = prepare.prepare(doc, supplier="Acme", product="Gateway", version="1.0", artifact="fw.bin",
+                                  artifact_sha256="a" * 64, attest=True)
+            inv, errors = community_sbom.check(out, "community/sboms/acme/gateway--1-0.cdx.json")
+        self.assertEqual(errors, [])
+        self.assertEqual(inv["components"], [{"name": "openssl", "version": "3.0.13"}])
+        self.assertNotIn("occurrences", json.dumps(out))                       # paths stay local
+
+
+class NewNoticesFormatsTest(unittest.TestCase):
+    def test_netapp_component_license(self):
+        text = ("Components:\nComponent\nLicense\nabab 2.0.6\nBSD 3-clause \"New\" or \"Revised\" License\n"
+                "acl (access control list)\n2.2.51\nGNU Lesser General Public License v2.1 only\n"
+                "ACPICA\n(BSD 3-clause \"New\" or \"Revised\" License AND Intel License)\n"
+                "@babel/plugin-transform-log\nical-assignment-operators 7.25.9\nMIT License\n"
+                "xen-utils-3.2-1\n4.17.5+23-ga4e5191dc0\nGNU General Public License v2.0 only\n"
+                "AGPGART Driver Routines\nUnspecified\nMIT License\n\n3\nbrotli 1.0.9\nMIT License\n"
+                "Licenses:\nApache License 2.0 ...\nbogus 9.9\n")
+        rows = notices.ex_component_license(text)
+        self.assertEqual(rows, [("abab", "2.0.6"), ("acl (access control list)", "2.2.51"), ("ACPICA", ""),
+                                ("@babel/plugin-transform-logical-assignment-operators", "7.25.9"),
+                                ("xen-utils-3.2-1", "4.17.5+23-ga4e5191dc0"), ("AGPGART Driver Routines", ""),
+                                ("brotli", "1.0.9")])
+
+    def test_source_archive_listing(self):
+        html = ('<html><head><title>Index of /ESeries/v11.70</title></head><body><a href="?C=N;O=D">Name</a>'
+                '<a href="glibc-2.19-18+deb8u10.tar.gz">x</a><a href="h2-1.4.198-sources.jar">x</a>'
+                '<a href="ESeries_v11.70_1607925826596.tgz">x</a><a href="PacHelper.js">x</a>'
+                '<a href="linux_distro/">x</a></body></html>').encode()
+        comps, used, kind = notices.extract(html, "text/html", "https://opensource.netapp.com/x/v11.70/")
+        self.assertEqual((kind, used), ("listing", ["source_archives"]))
+        self.assertEqual({(c["name"], c["version"]) for c in comps}, {("glibc", "2.19-18+deb8u10"), ("h2", "1.4.198")})
+
+    def test_extreme_formats(self):
+        text = ("jedis 2.9.0: https://github.com/xetorthio/jedis MIT License\n"
+                "Apache Karaf :: Shell SSH 3.0.7: http://www.apache.org/karaf/ Apache License 2.0\n"
+                "Packages that use this license: (acl (access control list) 2.3.1, D-Bus\n1.14.8, OpenSSL 3.0.10)\n")
+        self.assertEqual(notices.ex_url_lines(text), [("jedis", "2.9.0"), ("Apache Karaf :: Shell SSH", "3.0.7")])
+        self.assertEqual(notices.ex_license_groups(text), [("acl (access control list)", "2.3.1"), ("D-Bus", "1.14.8"),
+                                                           ("OpenSSL", "3.0.10")])
+
+    def test_jar_names_and_component_json(self):
+        self.assertEqual(notices.ex_jar_names("commons-lang3-3. 18.0.jar 3.18.0 strings\ncommons-text-\n1.10.0.jar"),
+                         [("commons-lang3", "3.18.0"), ("commons-text", "1.10.0")])
+        body = json.dumps({"components": [{"name": "log4j-core", "version": "2.17.1"}], "licenses": []}).encode()
+        comps, used, kind = notices.extract(body, "application/json", "https://www.veeam.com/services/license/content?file=x")
+        self.assertEqual(comps, [{"name": "log4j-core", "version": "2.17.1"}])
+
+    def test_java_xz_is_not_xz_utils(self):
+        cat = catalog.load()
+        self.assertIsNone(cat.match_component("xz", "1.10"))           # org.tukaani:xz (Java)
+        self.assertEqual(cat.match_component("xz", "5.2.4"), "xz")

@@ -1,0 +1,2007 @@
+{
+"components": [
+{
+"name": "(ALSA)",
+"version": "1.1.3"
+},
+{
+"name": "(ALSA)",
+"version": "1.1.5"
+},
+{
+"name": "acl (access control list)",
+"version": "2.2.52"
+},
+{
+"name": "acl (access control list)",
+"version": "2.2.53"
+},
+{
+"name": "ACPI Daemon",
+"version": "2.0.28"
+},
+{
+"name": "ACPICA",
+"version": "20180105"
+},
+{
+"name": "Advanced Linux Sound Architecture (ALSA)",
+"version": "1.1.3"
+},
+{
+"name": "Advanced Linux Sound Architecture (ALSA)",
+"version": "1.1.5"
+},
+{
+"name": "amadvance/tommyds",
+"version": "v2.1"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.0"
+},
+{
+"name": "Apache HTTP Server",
+"version": "2.4.57"
+},
+{
+"name": "Apache HTTP Server",
+"version": "2.4.63"
+},
+{
+"name": "Apache Portable Runtime",
+"version": "1.6.1"
+},
+{
+"name": "Apache Portable Runtime",
+"version": "1.6.3"
+},
+{
+"name": "Apache Portable Runtime",
+"version": "1.6.5"
+},
+{
+"name": "Apache Thrift",
+"version": "0.10.0"
+},
+{
+"name": "apr-util",
+"version": "1.6.1"
+},
+{
+"name": "apr-util-debugsource",
+"version": "1.6.1"
+},
+{
+"name": "apt - Advanced Package Tool",
+"version": "1.2.24"
+},
+{
+"name": "audit-userspace",
+"version": "2.8.4"
+},
+{
+"name": "avahi",
+"version": "0.7"
+},
+{
+"name": "avahi-src",
+"version": "0.7"
+},
+{
+"name": "base-passwd-src",
+"version": "3.5.29"
+},
+{
+"name": "Bash",
+"version": "4.4.12"
+},
+{
+"name": "Bash",
+"version": "4.4.23"
+},
+{
+"name": "batch",
+"version": "0.1.0"
+},
+{
+"name": "bind-debugsource",
+"version": "9.11.19"
+},
+{
+"name": "bind-debugsource",
+"version": "9.11.20"
+},
+{
+"name": "bind-src",
+"version": "9.11.19"
+},
+{
+"name": "BIND9 (Berkeley Internet Name Domain)",
+"version": "9.11.19"
+},
+{
+"name": "bind9-libs",
+"version": "9.11.19"
+},
+{
+"name": "bison-src",
+"version": "3.0.4"
+},
+{
+"name": "blktool",
+"version": "4-7"
+},
+{
+"name": "blktrace",
+"version": "1.2.0"
+},
+{
+"name": "blktrace-debuginfo",
+"version": "1.2.0"
+},
+{
+"name": "blktrace-src",
+"version": "1.2.0+git0+cca113f2fe"
+},
+{
+"name": "Boost C++ Libraries - boost",
+"version": "1.34.1"
+},
+{
+"name": "bridge-utils",
+"version": "1.5"
+},
+{
+"name": "btrfs-tools",
+"version": "4.13.3"
+},
+{
+"name": "busybox",
+"version": "1.27.2"
+},
+{
+"name": "Bzip2",
+"version": "1.0.6"
+},
+{
+"name": "bzip2-src",
+"version": "1.0.6"
+},
+{
+"name": "capstone",
+"version": "3.0.5"
+},
+{
+"name": "capstone-debuginfo",
+"version": "3.0.5"
+},
+{
+"name": "chkconfig-dbg",
+"version": "1.3.58"
+},
+{
+"name": "chkconfig-src",
+"version": "1.3.58"
+},
+{
+"name": "chrpath",
+"version": "0.16"
+},
+{
+"name": "chrpath-src",
+"version": "0.16"
+},
+{
+"name": "Compress::Raw::Zlib",
+"version": "2.070"
+},
+{
+"name": "Control Group Configuration Library",
+"version": "0.41"
+},
+{
+"name": "cpio-src",
+"version": "2.12"
+},
+{
+"name": "createrepo_c",
+"version": "0.10.0.48"
+},
+{
+"name": "cronie",
+"version": "1.5.1"
+},
+{
+"name": "curl",
+"version": "7.61.0"
+},
+{
+"name": "Cyrus SASL",
+"version": "2.1.27"
+},
+{
+"name": "D-Bus",
+"version": "1.12.2"
+},
+{
+"name": "D-Bus",
+"version": "1.12.8"
+},
+{
+"name": "db-dbg",
+"version": "5.3.28"
+},
+{
+"name": "debianutils-dbg",
+"version": "4.5.1"
+},
+{
+"name": "Device Tree Compiler",
+"version": "1.4.5"
+},
+{
+"name": "Device Tree Compiler",
+"version": "1.4.6"
+},
+{
+"name": "devtoolset-8-binutils-debuginfo",
+"version": "2.30"
+},
+{
+"name": "DHCP (ISC)",
+"version": "4.4.2"
+},
+{
+"name": "dhcp-src",
+"version": "4.4.2"
+},
+{
+"name": "Dnsmasq",
+"version": "2.79"
+},
+{
+"name": "dpkg",
+"version": "1.18.24"
+},
+{
+"name": "dpkg",
+"version": "1.18.25"
+},
+{
+"name": "DUMA library",
+"version": "2.5.15"
+},
+{
+"name": "e2fsprogs",
+"version": "1.43.8"
+},
+{
+"name": "ebtables",
+"version": "2.0.10"
+},
+{
+"name": "ebtables",
+"version": "2.0.10.4+snapshot20181205"
+},
+{
+"name": "elfutils- devel",
+"version": "0.170"
+},
+{
+"name": "elfutils-dbg",
+"version": "0.170"
+},
+{
+"name": "elfutils-devel",
+"version": "0.170"
+},
+{
+"name": "emitter written in C",
+"version": "0.2.2"
+},
+{
+"name": "erlang-otp",
+"version": "16.b.3-dfsg"
+},
+{
+"name": "erlang-otp",
+"version": "19.0.2"
+},
+{
+"name": "erlang-otp",
+"version": "19.0.5"
+},
+{
+"name": "Ethernet bridge tables",
+"version": "2.0.10"
+},
+{
+"name": "eventlog-debuginfo",
+"version": "0.2.13"
+},
+{
+"name": "Expect",
+"version": "5.45.4"
+},
+{
+"name": "expect-src",
+"version": "5.45.4"
+},
+{
+"name": "FastCGI Development Kit",
+"version": "2.4.0"
+},
+{
+"name": "file",
+"version": "5.32"
+},
+{
+"name": "files/rpsort-manual",
+"version": "2.25"
+},
+{
+"name": "findutils",
+"version": "4.6.0"
+},
+{
+"name": "fio",
+"version": "2.12"
+},
+{
+"name": "fio",
+"version": "2.13"
+},
+{
+"name": "fio",
+"version": "2.9"
+},
+{
+"name": "Flex",
+"version": "2.6.0"
+},
+{
+"name": "fontconfig",
+"version": "2.11.1"
+},
+{
+"name": "fontconfig",
+"version": "2.12.6"
+},
+{
+"name": "freeradius",
+"version": "1.1.3"
+},
+{
+"name": "freeradius",
+"version": "3.0.0"
+},
+{
+"name": "FreeRADIUS Client",
+"version": "1.1.7"
+},
+{
+"name": "Gawk",
+"version": "4.2.1"
+},
+{
+"name": "gcc-x86_64-linux-gnu",
+"version": "7.0.1"
+},
+{
+"name": "GDB",
+"version": "8.0.1"
+},
+{
+"name": "gettext",
+"version": "0.19.8.1"
+},
+{
+"name": "GLib",
+"version": "2.54.3"
+},
+{
+"name": "glibc-debuginfo",
+"version": "2.26.9000"
+},
+{
+"name": "glibc-debuginfo",
+"version": "2.27"
+},
+{
+"name": "GMP",
+"version": "6.1.2"
+},
+{
+"name": "gnome-desktop-testing-dbg",
+"version": "2014.1"
+},
+{
+"name": "GNU Binutils",
+"version": "2.30"
+},
+{
+"name": "GNU C Library",
+"version": "2.27"
+},
+{
+"name": "GNU Compiler Collection",
+"version": "7.3.0"
+},
+{
+"name": "GNU Core Utilities",
+"version": "8.29"
+},
+{
+"name": "GNU cpio",
+"version": "2.12"
+},
+{
+"name": "GNU grep",
+"version": "3.1"
+},
+{
+"name": "GNU GRUB",
+"version": "2.02"
+},
+{
+"name": "GNU libiberty",
+"version": "20180425"
+},
+{
+"name": "GNU Libtool",
+"version": "2.4.6"
+},
+{
+"name": "GNU Libtool",
+"version": "2.4.6-beta-3"
+},
+{
+"name": "GNU M4",
+"version": "1.4.18"
+},
+{
+"name": "GNU Make",
+"version": "4.2.1"
+},
+{
+"name": "GNU MPC",
+"version": "1.1.0"
+},
+{
+"name": "GNU Parted",
+"version": "3.2"
+},
+{
+"name": "GNU sed",
+"version": "4.2.2"
+},
+{
+"name": "GNU tar",
+"version": "1.30"
+},
+{
+"name": "GNU troff",
+"version": "1.22.3"
+},
+{
+"name": "GNU which",
+"version": "2.21"
+},
+{
+"name": "GnuPG",
+"version": "1.1.0"
+},
+{
+"name": "GnuPG",
+"version": "2.2.4"
+},
+{
+"name": "GnuPG Made Easy (GPGME)",
+"version": "1.10.0"
+},
+{
+"name": "gnupg-dbg",
+"version": "2.2.4"
+},
+{
+"name": "GnuTLS",
+"version": "3.5.9"
+},
+{
+"name": "GnuTLS",
+"version": "3.6.1"
+},
+{
+"name": "GnuTLS",
+"version": "3.6.2"
+},
+{
+"name": "GObject- introspection",
+"version": "1.54.1"
+},
+{
+"name": "GObject-introspection",
+"version": "1.50.0"
+},
+{
+"name": "GObject-introspection",
+"version": "1.54.1"
+},
+{
+"name": "golang-github-ddevault-go-libvterm-dev",
+"version": "0.0~git20190526.b7d861d"
+},
+{
+"name": "Google C++ Testing Framework",
+"version": "1.7.0"
+},
+{
+"name": "gpg2-debugsource",
+"version": "2.2.4"
+},
+{
+"name": "gpgme-dbg",
+"version": "1.10.0"
+},
+{
+"name": "greenworks",
+"version": "0.2"
+},
+{
+"name": "grpc",
+"version": "1.2.5"
+},
+{
+"name": "grpc-debugsource",
+"version": "1.2.3"
+},
+{
+"name": "gzip",
+"version": "1.9"
+},
+{
+"name": "hardkernel/linux",
+"version": "4.14.66-134"
+},
+{
+"name": "hardkernel/linux",
+"version": "4.14.69-148"
+},
+{
+"name": "hdparm-dbg",
+"version": "9.53"
+},
+{
+"name": "i2c-tools- debuginfo",
+"version": "4.0"
+},
+{
+"name": "i2c-tools-dbg",
+"version": "4.0"
+},
+{
+"name": "i2c-tools-debuginfo",
+"version": "4.0"
+},
+{
+"name": "ICU for C/C++ (ICU4C)",
+"version": "60.2"
+},
+{
+"name": "ICU for C/C++ (ICU4C)",
+"version": "60.3"
+},
+{
+"name": "icu-debugsource",
+"version": "60.2"
+},
+{
+"name": "intel-microcode",
+"version": "3.20190618.0ubuntu0.16.04.1"
+},
+{
+"name": "IPMI Tool",
+"version": "1.8.18"
+},
+{
+"name": "ipmitool-debugsource",
+"version": "1.8.18"
+},
+{
+"name": "iproute2",
+"version": "4.14.1"
+},
+{
+"name": "ipsec-tools",
+"version": "0.8.0"
+},
+{
+"name": "ipsec-tools",
+"version": "0.8.2+20140711"
+},
+{
+"name": "IPTables",
+"version": "1.6.2"
+},
+{
+"name": "iptables-src",
+"version": "1.6.2"
+},
+{
+"name": "iputils",
+"version": "20180629"
+},
+{
+"name": "kbd",
+"version": "2.0.4"
+},
+{
+"name": "kbd-src",
+"version": "2.0.4"
+},
+{
+"name": "kernel-headers",
+"version": "4.15.7"
+},
+{
+"name": "kernel-tools-debuginfo",
+"version": "4.15.0"
+},
+{
+"name": "keylime",
+"version": "6.0.1"
+},
+{
+"name": "kkos/oniguruma",
+"version": "v5.9.6"
+},
+{
+"name": "kmod-dbg",
+"version": "25+git0+aca4eca103"
+},
+{
+"name": "kmod-debuginfo",
+"version": "25"
+},
+{
+"name": "Less",
+"version": "529"
+},
+{
+"name": "lib32-dbus-test-src",
+"version": "1.12.12"
+},
+{
+"name": "lib32-dhcp-src",
+"version": "4.4.2"
+},
+{
+"name": "lib32-groff-src",
+"version": "1.22.3"
+},
+{
+"name": "lib32-inetutils-src",
+"version": "1.9.4"
+},
+{
+"name": "lib32-libglib-2.0-dbg",
+"version": "2.54.3"
+},
+{
+"name": "lib32-net-tools-src",
+"version": "1.60-26"
+},
+{
+"name": "lib32-rsync-dbg",
+"version": "3.1.3"
+},
+{
+"name": "libapr-1-src",
+"version": "1.6.5"
+},
+{
+"name": "libaprutil-1-src",
+"version": "1.6.1"
+},
+{
+"name": "libarchive",
+"version": "3.3.2"
+},
+{
+"name": "libassuan-dbg",
+"version": "2.5.1"
+},
+{
+"name": "libatomic-ops",
+"version": "7.6.2"
+},
+{
+"name": "libaugeas0",
+"version": "1.1.0"
+},
+{
+"name": "libboost1.83-doc",
+"version": "1.83.0"
+},
+{
+"name": "libbsd",
+"version": "0.8.7"
+},
+{
+"name": "libbsd-debugsource",
+"version": "0.8.6"
+},
+{
+"name": "libbsd-debugsource",
+"version": "0.8.7"
+},
+{
+"name": "libcap",
+"version": "2.25"
+},
+{
+"name": "libcap-debugsource",
+"version": "2.25"
+},
+{
+"name": "libcap-ng",
+"version": "0.7.8"
+},
+{
+"name": "libcgroup-debugsource",
+"version": "0.41"
+},
+{
+"name": "libcgroup-src",
+"version": "0.41"
+},
+{
+"name": "libcheck/check",
+"version": "0.11.0"
+},
+{
+"name": "libcheck/check",
+"version": "0.12.0"
+},
+{
+"name": "libcomps-dbg",
+"version": "0.1.8+git0+01a4759894"
+},
+{
+"name": "libcomps-debuginfo",
+"version": "0.1.8"
+},
+{
+"name": "libcomps-devel",
+"version": "0.1.8"
+},
+{
+"name": "libcroco",
+"version": "0.6.12"
+},
+{
+"name": "libcroco",
+"version": "0.6.13"
+},
+{
+"name": "libcroco-src",
+"version": "0.6.12"
+},
+{
+"name": "libdaemon",
+"version": "0.14"
+},
+{
+"name": "libdb",
+"version": "5.3.28"
+},
+{
+"name": "libdb-debugsource",
+"version": "5.3.28"
+},
+{
+"name": "libdigest-sha-perl",
+"version": "5.95"
+},
+{
+"name": "libdnf-dbg",
+"version": "0.11.1"
+},
+{
+"name": "libdnf-debuginfo",
+"version": "0.11.1"
+},
+{
+"name": "libdnf-devel",
+"version": "0.11.1"
+},
+{
+"name": "libdrm-dev",
+"version": "2.4.75"
+},
+{
+"name": "libdrm-dev",
+"version": "2.4.91"
+},
+{
+"name": "libevent",
+"version": "2.1.12"
+},
+{
+"name": "libevent",
+"version": "2.1.8"
+},
+{
+"name": "libevent",
+"version": "2.1.8-stable"
+},
+{
+"name": "libevent-src",
+"version": "2.1.8"
+},
+{
+"name": "libfcgi-dev",
+"version": "2.4.0"
+},
+{
+"name": "libffi",
+"version": "3.2.1"
+},
+{
+"name": "libfontconfig-dbg",
+"version": "2.12.6"
+},
+{
+"name": "libgcrypt",
+"version": "1.7.3"
+},
+{
+"name": "libgcrypt",
+"version": "1.8.1"
+},
+{
+"name": "libgdbm",
+"version": "1.11"
+},
+{
+"name": "libgdbm",
+"version": "1.14.1"
+},
+{
+"name": "libgrpc-dev",
+"version": "1.3.2"
+},
+{
+"name": "Libidn",
+"version": "1.33"
+},
+{
+"name": "libivykis async I/O-assisting library",
+"version": "0.36.2"
+},
+{
+"name": "libivykis async I/O-assisting library",
+"version": "0.43.2"
+},
+{
+"name": "libksba",
+"version": "1.3.5"
+},
+{
+"name": "libksba-src",
+"version": "1.3.5"
+},
+{
+"name": "libmnl",
+"version": "1.0.4"
+},
+{
+"name": "libmnl-src",
+"version": "1.0.4"
+},
+{
+"name": "libmongo-client",
+"version": "0.1.8"
+},
+{
+"name": "libmpc-src",
+"version": "1.1.0"
+},
+{
+"name": "libmpfr-dbg",
+"version": "3.1.5"
+},
+{
+"name": "libnewt-dbg",
+"version": "0.52.20"
+},
+{
+"name": "libnewt-src",
+"version": "0.52.20"
+},
+{
+"name": "libnl-3-dbg",
+"version": "3.4.0"
+},
+{
+"name": "libnpth0",
+"version": "1.5"
+},
+{
+"name": "libnss-mdns-dbg",
+"version": "0.10"
+},
+{
+"name": "libnss-mdns-src",
+"version": "0.10"
+},
+{
+"name": "libonig-dev",
+"version": "5.9.6"
+},
+{
+"name": "libopenipmi-dev",
+"version": "2.0.25"
+},
+{
+"name": "libpcap",
+"version": "1.9.1"
+},
+{
+"name": "libpcap-src",
+"version": "1.9.1"
+},
+{
+"name": "libpciaccess-dbg",
+"version": "0.14"
+},
+{
+"name": "libpciaccess-src",
+"version": "0.14"
+},
+{
+"name": "libpipeline - pipeline manipulation library",
+"version": "1.5.0"
+},
+{
+"name": "libpixman-1-dbg",
+"version": "0.34.0"
+},
+{
+"name": "libpng",
+"version": "1.6.34"
+},
+{
+"name": "libpng16-dbg",
+"version": "1.6.34"
+},
+{
+"name": "libpopt- src",
+"version": "1.16"
+},
+{
+"name": "libpopt-dbg",
+"version": "1.16"
+},
+{
+"name": "libpopt-src",
+"version": "1.16"
+},
+{
+"name": "libproc",
+"version": "3.3.12"
+},
+{
+"name": "libreadline-dbg",
+"version": "7.0"
+},
+{
+"name": "librtr",
+"version": "0.7.0"
+},
+{
+"name": "libsegwayrmp",
+"version": "0.2.10"
+},
+{
+"name": "libsemanage1",
+"version": "2.8"
+},
+{
+"name": "libsemanage1",
+"version": "2.9"
+},
+{
+"name": "libsepol",
+"version": "2.8"
+},
+{
+"name": "libsepol-debugsource",
+"version": "2.8"
+},
+{
+"name": "libsepol-debugsource",
+"version": "3.5"
+},
+{
+"name": "libsepol1-dev",
+"version": "2.8"
+},
+{
+"name": "libssh",
+"version": "0.5.4"
+},
+{
+"name": "libssh",
+"version": "0.7.3"
+},
+{
+"name": "Libtasn1",
+"version": "2.14"
+},
+{
+"name": "Libtasn1",
+"version": "4.13"
+},
+{
+"name": "libtasn1-src",
+"version": "4.13"
+},
+{
+"name": "libtirpc",
+"version": "1.0.2"
+},
+{
+"name": "libunistring",
+"version": "0.9.7"
+},
+{
+"name": "libunistring",
+"version": "0.9.8"
+},
+{
+"name": "libunistring",
+"version": "0.9.9"
+},
+{
+"name": "libunwind",
+"version": "1.1+git0+bc8698fd7e"
+},
+{
+"name": "libunwind",
+"version": "1.2.1"
+},
+{
+"name": "libusb",
+"version": "1.0.21"
+},
+{
+"name": "libusb-0.1-dbg",
+"version": "0.1.5"
+},
+{
+"name": "libvirt",
+"version": "4.5.0"
+},
+{
+"name": "libxml2-dbg",
+"version": "2.9.3"
+},
+{
+"name": "libxslt",
+"version": "1.1.32"
+},
+{
+"name": "LibYAML - A YAML",
+"version": "1.1 parser and emitter written in C 0.2.2"
+},
+{
+"name": "libyaml-0-src",
+"version": "0.2.2"
+},
+{
+"name": "libz-dbg",
+"version": "1.2.11"
+},
+{
+"name": "Linux Containers",
+"version": "2.0.8"
+},
+{
+"name": "Linux Diagnostic Tools",
+"version": "2.1.0"
+},
+{
+"name": "Linux DiskQuota",
+"version": "4.04"
+},
+{
+"name": "Linux Extended Attributes (attr)",
+"version": "2.4.46"
+},
+{
+"name": "Linux Extended Attributes (attr)",
+"version": "2.4.47"
+},
+{
+"name": "Linux Extended Attributes (attr)",
+"version": "2.5.1"
+},
+{
+"name": "Linux Kernel",
+"version": "4.14.67"
+},
+{
+"name": "Linux Kernel",
+"version": "4.15.10"
+},
+{
+"name": "Linux Kernel",
+"version": "4.15.4"
+},
+{
+"name": "Linux Kernel",
+"version": "4.15~rc8"
+},
+{
+"name": "Linux-Pam",
+"version": "1.3.0"
+},
+{
+"name": "Linux-USB Project",
+"version": "007"
+},
+{
+"name": "Linux-USB Project",
+"version": "009"
+},
+{
+"name": "linux-yocto",
+"version": "v4.14.67"
+},
+{
+"name": "lm-sensors/lm-sensors",
+"version": "3.4.0"
+},
+{
+"name": "lm_sensors-debuginfo",
+"version": "3.1.1"
+},
+{
+"name": "lm_sensors-debuginfo",
+"version": "3.4.0"
+},
+{
+"name": "logrotate-dbg",
+"version": "3.13.0"
+},
+{
+"name": "lrzsz",
+"version": "0.12.20"
+},
+{
+"name": "lrzsz-src",
+"version": "0.12.20"
+},
+{
+"name": "lttng-modules",
+"version": "2.10.1"
+},
+{
+"name": "lttng-modules",
+"version": "2.10.6"
+},
+{
+"name": "lttng-tools-dbg",
+"version": "2.9.4"
+},
+{
+"name": "lttng-tools-debuginfo",
+"version": "2.9.5"
+},
+{
+"name": "lvm2",
+"version": "2.02.171"
+},
+{
+"name": "LZO real-time data compression library",
+"version": "2.10"
+},
+{
+"name": "Macaulay2-debuginfo",
+"version": "1.9.2"
+},
+{
+"name": "mailx",
+"version": "12.5-5"
+},
+{
+"name": "make-src",
+"version": "4.2.1"
+},
+{
+"name": "man-db",
+"version": "2.8.3"
+},
+{
+"name": "man-db-dbg",
+"version": "2.8.4"
+},
+{
+"name": "man-db-debuginfo",
+"version": "2.8.1"
+},
+{
+"name": "man-db-debugsource",
+"version": "2.7.6.1"
+},
+{
+"name": "Mesa",
+"version": "17.3.6"
+},
+{
+"name": "Mesa",
+"version": "17.3.9"
+},
+{
+"name": "Mesa-libEGL-devel",
+"version": "18.0.5"
+},
+{
+"name": "Mesa-libGLESv3-devel",
+"version": "17.2.5"
+},
+{
+"name": "microsoft/WSL2-Linux-Kernel",
+"version": "v4.14.67"
+},
+{
+"name": "minicom",
+"version": "2.7.1"
+},
+{
+"name": "minicom-src",
+"version": "2.7.1"
+},
+{
+"name": "minizip",
+"version": "2.5.4"
+},
+{
+"name": "Monitoring Tools",
+"version": "6.6"
+},
+{
+"name": "mpfr-debuginfo",
+"version": "3.1.5"
+},
+{
+"name": "msmtp",
+"version": "1.6.6"
+},
+{
+"name": "msmtp-src",
+"version": "1.6.6"
+},
+{
+"name": "multipath-tools",
+"version": "0.7.4"
+},
+{
+"name": "multipath-tools",
+"version": "0.7.7"
+},
+{
+"name": "multipath-tools",
+"version": "0.7.9"
+},
+{
+"name": "nativesdk-gmp-dev",
+"version": "6.1.2"
+},
+{
+"name": "nativesdk-mpfr-dev",
+"version": "3.1.5"
+},
+{
+"name": "nativesdk-qemu-src",
+"version": "3.1.1.1"
+},
+{
+"name": "NcFTP client",
+"version": "3.2.6"
+},
+{
+"name": "ncurses",
+"version": "6.1"
+},
+{
+"name": "ncurses-debuginfo",
+"version": "6.0"
+},
+{
+"name": "ncurses-debugsource",
+"version": "6.0"
+},
+{
+"name": "ncurses-debugsource",
+"version": "6.1"
+},
+{
+"name": "ncurses-debugsource",
+"version": "6.5"
+},
+{
+"name": "Net-SNMP",
+"version": "5.9.1"
+},
+{
+"name": "Net-SNMP",
+"version": "v5.9.1.rc1"
+},
+{
+"name": "net-tools-src",
+"version": "1.60-26"
+},
+{
+"name": "netcf- debuginfo",
+"version": "0.2.8"
+},
+{
+"name": "netcf-debuginfo",
+"version": "0.2.8"
+},
+{
+"name": "Netlink Protocol Library Suite (libnl)",
+"version": "3.4.0"
+},
+{
+"name": "Nettle",
+"version": "3.4"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p12"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p14"
+},
+{
+"name": "Network Time Protocol project (NTP)",
+"version": "4.2.8p15"
+},
+{
+"name": "Newt",
+"version": "0.52.20"
+},
+{
+"name": "NFS",
+"version": "2.3.1"
+},
+{
+"name": "NIH Utility Library",
+"version": "1.0.3"
+},
+{
+"name": "Node.js",
+"version": "v18.17.1"
+},
+{
+"name": "nongnu - dmidecode",
+"version": "3.1"
+},
+{
+"name": "npth-debugsource",
+"version": "1.5"
+},
+{
+"name": "NSPR",
+"version": "4.13.1"
+},
+{
+"name": "NSPR",
+"version": "4.19"
+},
+{
+"name": "NSPR",
+"version": "4.19.0"
+},
+{
+"name": "NSS",
+"version": "3.28.1"
+},
+{
+"name": "NSS",
+"version": "3.28.4"
+},
+{
+"name": "NSS",
+"version": "3.35"
+},
+{
+"name": "NSS",
+"version": "3.36"
+},
+{
+"name": "Open IPMI",
+"version": "2.0.25"
+},
+{
+"name": "OpenBIOS",
+"version": "1.1.git20181001"
+},
+{
+"name": "openbios",
+"version": "20180609"
+},
+{
+"name": "OpenIPMI-debugsource",
+"version": "2.0.25"
+},
+{
+"name": "OpenLDAP",
+"version": "2.6.7"
+},
+{
+"name": "OpenSLP",
+"version": "2.0.0"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.1e"
+},
+{
+"name": "OpenSSL",
+"version": "3.0.1"
+},
+{
+"name": "OpenSSL",
+"version": "3.0.9"
+},
+{
+"name": "OpenSSL",
+"version": "3.1.4"
+},
+{
+"name": "OpenSSL",
+"version": "3.5.0"
+},
+{
+"name": "openSUSE libsolv",
+"version": "0.6.33"
+},
+{
+"name": "openSUSE libsolv",
+"version": "0.6.34"
+},
+{
+"name": "OProfile",
+"version": "1.1.0"
+},
+{
+"name": "Pango",
+"version": "1.40.14"
+},
+{
+"name": "PCRE",
+"version": "8.41"
+},
+{
+"name": "PCRE2",
+"version": "10.30"
+},
+{
+"name": "perf-debugsource",
+"version": "4.15.4"
+},
+{
+"name": "Perl",
+"version": "5 Encode 3.01"
+},
+{
+"name": "Perl",
+"version": "5.24.1"
+},
+{
+"name": "Perl 5 Encode",
+"version": "3.01"
+},
+{
+"name": "pinentry-dbg",
+"version": "1.1.0"
+},
+{
+"name": "pinentry-debugsource",
+"version": "1.1.0"
+},
+{
+"name": "pinentry-src",
+"version": "1.1.0"
+},
+{
+"name": "pm-utils-dbg",
+"version": "1.4.1"
+},
+{
+"name": "pm-utils-debuginfo",
+"version": "1.4.1"
+},
+{
+"name": "pm-utils-src",
+"version": "1.4.1"
+},
+{
+"name": "policycoreutils-debugsource",
+"version": "2.8"
+},
+{
+"name": "popt",
+"version": "1.16"
+},
+{
+"name": "portmap-dbg",
+"version": "6.0"
+},
+{
+"name": "PostgreSQL Database Server",
+"version": "9.4.14"
+},
+{
+"name": "PostgreSQL Database Server",
+"version": "9.4.20"
+},
+{
+"name": "PowerTOP",
+"version": "2.9"
+},
+{
+"name": "pps-tools",
+"version": "0"
+},
+{
+"name": "Procps",
+"version": "3.3.12"
+},
+{
+"name": "protobuf-devel",
+"version": "3.2.0"
+},
+{
+"name": "ptest-runner-dbg",
+"version": "2.0+git0+8bfdf946e7"
+},
+{
+"name": "pyang",
+"version": "1.2"
+},
+{
+"name": "pycparser",
+"version": "2.18"
+},
+{
+"name": "pypy3",
+"version": "7.3.12"
+},
+{
+"name": "python cffi",
+"version": "1.11.5"
+},
+{
+"name": "Python programming language",
+"version": "2.7.14"
+},
+{
+"name": "Python programming language",
+"version": "2.7.5"
+},
+{
+"name": "Python programming language",
+"version": "3.5.1"
+},
+{
+"name": "Python programming language",
+"version": "3.5.5"
+},
+{
+"name": "python-cffi-debugsource",
+"version": "1.11.5"
+},
+{
+"name": "python-cryptography-debuginfo",
+"version": "2.1.4"
+},
+{
+"name": "python-dbg",
+"version": "2.7.13"
+},
+{
+"name": "python-librabbitmq",
+"version": "1.0.3"
+},
+{
+"name": "python3-dbg",
+"version": "3.5.5"
+},
+{
+"name": "qemu-debugsource",
+"version": "3.0.0"
+},
+{
+"name": "qemu-ovmf-x86_64-debug",
+"version": "202308"
+},
+{
+"name": "Readline",
+"version": "7.0"
+},
+{
+"name": "riak-cs",
+"version": "3.0.1"
+},
+{
+"name": "RPM",
+"version": "4.11.1"
+},
+{
+"name": "RPM",
+"version": "4.14.1"
+},
+{
+"name": "rpm-software- management/librepo",
+"version": "1.8.1"
+},
+{
+"name": "rpm-software-management/librepo",
+"version": "1.8.1"
+},
+{
+"name": "rsms/fontkit",
+"version": "20190430-snapshot-c362db1e"
+},
+{
+"name": "rsync",
+"version": "3.1.3"
+},
+{
+"name": "rsync-src",
+"version": "3.1.3"
+},
+{
+"name": "rtrlib-debugsource",
+"version": "0.7.0"
+},
+{
+"name": "rtrlib-dev",
+"version": "0.7.0"
+},
+{
+"name": "rtrlib-dev",
+"version": "0.8.0"
+},
+{
+"name": "ruby-grpc-tools",
+"version": "1.3.2+debian"
+},
+{
+"name": "sanbootconf",
+"version": "20170710"
+},
+{
+"name": "SeaBIOS",
+"version": "1.11.0"
+},
+{
+"name": "Security-enhanced Linux",
+"version": "2.8"
+},
+{
+"name": "setools",
+"version": "4.1.1"
+},
+{
+"name": "setools-debuginfo",
+"version": "4.1.0"
+},
+{
+"name": "Setserial - serial driver config tool",
+"version": "2.17"
+},
+{
+"name": "setserial-src",
+"version": "2.17"
+},
+{
+"name": "Shadow Tool Suite",
+"version": "4.6"
+},
+{
+"name": "shared-mime-info",
+"version": "1.9"
+},
+{
+"name": "Simple DirectMedia Layer",
+"version": "1.2.15"
+},
+{
+"name": "Simple DirectMedia Layer",
+"version": "2.0.8"
+},
+{
+"name": "sites.google.com/site/vdeeditor/Home/vde-files/rpsort-manual",
+"version": "2.25"
+},
+{
+"name": "Slicer4",
+"version": "v5.2.3"
+},
+{
+"name": "Smartmontools - S.M.A.R.T. Disk Monitoring Tools",
+"version": "6.6"
+},
+{
+"name": "SQLite",
+"version": "3.22.0"
+},
+{
+"name": "sqlite3-dbg",
+"version": "3.22.0"
+},
+{
+"name": "SSHTools",
+"version": "0.2.9"
+},
+{
+"name": "stat-dbg",
+"version": "3.3"
+},
+{
+"name": "strace",
+"version": "4.20"
+},
+{
+"name": "sudo",
+"version": "1.9.5p2"
+},
+{
+"name": "sysfsutils",
+"version": "2.1.0"
+},
+{
+"name": "sysfsutils-src",
+"version": "2.1.0"
+},
+{
+"name": "syslog-ng",
+"version": "3.6.2"
+},
+{
+"name": "syslog-ng",
+"version": "4.3.1"
+},
+{
+"name": "syslog-ng",
+"version": "4.6.0"
+},
+{
+"name": "syslog-ng",
+"version": "4.7.1"
+},
+{
+"name": "syslog-ng",
+"version": "4.8.0"
+},
+{
+"name": "sysstat",
+"version": "v11.7.1"
+},
+{
+"name": "System Tap",
+"version": "3.2"
+},
+{
+"name": "systemtap",
+"version": "4.1"
+},
+{
+"name": "systemtap-dbg",
+"version": "3.1"
+},
+{
+"name": "sysvinit",
+"version": "2.88dsf"
+},
+{
+"name": "sysvinit-src",
+"version": "2.88dsf"
+},
+{
+"name": "Tcl/Tk",
+"version": "8.6.6"
+},
+{
+"name": "Tcl/Tk",
+"version": "8.6.8"
+},
+{
+"name": "tcl8.6",
+"version": "8.6.8"
+},
+{
+"name": "tclthread",
+"version": "2.8.2"
+},
+{
+"name": "tcp-wrappers-src",
+"version": "7.6"
+},
+{
+"name": "tcpdump",
+"version": "4.99.4"
+},
+{
+"name": "tftp-debuginfo",
+"version": "5.2"
+},
+{
+"name": "The FreeType Project",
+"version": "2.9"
+},
+{
+"name": "The FreeType Project",
+"version": "2.9.1"
+},
+{
+"name": "The PCI Utilities",
+"version": "3.5.6"
+},
+{
+"name": "tmon-debugsource",
+"version": "1.0"
+},
+{
+"name": "tmux",
+"version": "2.6"
+},
+{
+"name": "tpm2-software",
+"version": "4.1.2-rc0"
+},
+{
+"name": "tpm2-software",
+"version": "4.1.3"
+},
+{
+"name": "tpm2-software",
+"version": "5.7"
+},
+{
+"name": "TPM2.0-TSS",
+"version": "4.1.0"
+},
+{
+"name": "traceroute",
+"version": "2.0.21"
+},
+{
+"name": "U-Boot",
+"version": "2010.06"
+},
+{
+"name": "unzip-src",
+"version": "6.0"
+},
+{
+"name": "usbutils-debugsource",
+"version": "010"
+},
+{
+"name": "Userspace RCU",
+"version": "0.10.0"
+},
+{
+"name": "Userspace RCU",
+"version": "0.10.1"
+},
+{
+"name": "Userspace RCU",
+"version": "0.8.1"
+},
+{
+"name": "util-linux",
+"version": "2.32"
+},
+{
+"name": "util-linux",
+"version": "2.32.1"
+},
+{
+"name": "Valgrind Instrumentation Framework",
+"version": "3.13.0"
+},
+{
+"name": "Valgrind Instrumentation Framework",
+"version": "3.14.0"
+},
+{
+"name": "valgrind-src",
+"version": "3.15.0"
+},
+{
+"name": "Wget",
+"version": "1.20.1"
+},
+{
+"name": "which-src",
+"version": "2.21"
+},
+{
+"name": "wkz/phytool",
+"version": "v2"
+},
+{
+"name": "x.org_lib",
+"version": "1.0.9"
+},
+{
+"name": "x.org_lib",
+"version": "1.3.5"
+},
+{
+"name": "x.org_lib",
+"version": "2.8"
+},
+{
+"name": "x.org_lib",
+"version": "7.0.31"
+},
+{
+"name": "XCB",
+"version": "1.12"
+},
+{
+"name": "xinetd",
+"version": "2.3.15"
+},
+{
+"name": "xinetd-src",
+"version": "2.3.15"
+},
+{
+"name": "XZ Utils",
+"version": "5.2.2"
+},
+{
+"name": "XZ Utils",
+"version": "5.2.3"
+},
+{
+"name": "yajl-c",
+"version": "2.1.0"
+},
+{
+"name": "yaws",
+"version": "1.98"
+},
+{
+"name": "yaws",
+"version": "2.1.1"
+},
+{
+"name": "zip-src",
+"version": "3.0"
+}
+],
+"extractors": [
+"url_lines",
+"license_groups"
+],
+"kind": "pdf",
+"product": "SLX-OS",
+"retrieved": "2026-11-08",
+"sha256": "7e71da1343462d115a770582c79b33be84b3c22bca0cf7fbb7b5e89b5fff804a",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/581f266c864a472ab60ab5d4c0a194fa?v=80590889",
+"version": "20.7.3"
+}

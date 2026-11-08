@@ -1,0 +1,26 @@
+{
+"components": [
+{
+"name": "element",
+"version": "11_3"
+},
+{
+"name": "Element-auth",
+"version": "11.3"
+},
+{
+"name": "hci_bootstrap_os",
+"version": "1_7"
+}
+],
+"extractors": [
+"source_archives"
+],
+"kind": "listing",
+"product": "Element Software",
+"retrieved": "2026-11-08",
+"sha256": "ad00a6c8dd5369180e67cbe9c5794070450b1ed21a2c5a6f084eb0606977c897",
+"supplier": "NetApp",
+"url": "https://opensource.netapp.com/Element_OS/11.8/",
+"version": "11.8"
+}

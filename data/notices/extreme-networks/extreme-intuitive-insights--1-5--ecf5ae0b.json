@@ -1,0 +1,958 @@
+{
+"components": [
+{
+"name": "@angular/google-maps",
+"version": "11.2.7"
+},
+{
+"name": "@babel/code-frame",
+"version": "7.12.11"
+},
+{
+"name": "@babel/core",
+"version": "7.12.10"
+},
+{
+"name": "@babel/generator",
+"version": "7.12.11"
+},
+{
+"name": "@babel/helper-function-name",
+"version": "7.12.11"
+},
+{
+"name": "@babel/helper-get-function-arity",
+"version": "7.12.10"
+},
+{
+"name": "@babel/helper-member-expression-to- functions",
+"version": "7.12.7"
+},
+{
+"name": "@babel/helper-module-imports",
+"version": "7.12.5"
+},
+{
+"name": "@babel/helper-module-transforms",
+"version": "7.12.1"
+},
+{
+"name": "@babel/helper-optimise-call- expression",
+"version": "7.12.10"
+},
+{
+"name": "@babel/helper-replace-supers",
+"version": "7.12.11"
+},
+{
+"name": "@babel/helper-simple-access",
+"version": "7.12.1"
+},
+{
+"name": "@babel/helper-split-export- declaration",
+"version": "7.12.11"
+},
+{
+"name": "@babel/helper-validator-identifier",
+"version": "7.12.11"
+},
+{
+"name": "@babel/helpers",
+"version": "7.12.5"
+},
+{
+"name": "@babel/highlight",
+"version": "7.10.4"
+},
+{
+"name": "@babel/parser",
+"version": "7.12.11"
+},
+{
+"name": "@babel/template",
+"version": "7.12.7"
+},
+{
+"name": "@babel/traverse",
+"version": "7.12.12"
+},
+{
+"name": "@babel/types",
+"version": "7.12.12"
+},
+{
+"name": "@google/maps",
+"version": "1.1.3"
+},
+{
+"name": "@googlemaps/js-api-loader",
+"version": "1.11.3"
+},
+{
+"name": "@istanbuljs/schema",
+"version": "0.1.2"
+},
+{
+"name": "@ngx-translate/http-loader",
+"version": "v6.0.0"
+},
+{
+"name": "@types/googlemaps",
+"version": "3.43.3"
+},
+{
+"name": "@types/q",
+"version": "0.0.32"
+},
+{
+"name": "@types/selenium-webdriver",
+"version": "3.0.17"
+},
+{
+"name": "adm-zip",
+"version": "0.4.16"
+},
+{
+"name": "agent-base",
+"version": "4.3.0"
+},
+{
+"name": "agent-base",
+"version": "6.0.2"
+},
+{
+"name": "ajv",
+"version": "6.12.6"
+},
+{
+"name": "angular-material-fileupload",
+"version": "3.0.2"
+},
+{
+"name": "ansi-regex",
+"version": "2.1.1"
+},
+{
+"name": "ansi-regex",
+"version": "5.0.0"
+},
+{
+"name": "ansi-styles",
+"version": "2.2.1"
+},
+{
+"name": "ansi-styles",
+"version": "3.2.1"
+},
+{
+"name": "ansi-styles",
+"version": "v4.3.0"
+},
+{
+"name": "argparse",
+"version": "1.0.10"
+},
+{
+"name": "array-union",
+"version": "1.0.2"
+},
+{
+"name": "array-uniq",
+"version": "1.0.3"
+},
+{
+"name": "arrify",
+"version": "1.0.1"
+},
+{
+"name": "asynckit",
+"version": "0.4.0"
+},
+{
+"name": "aws4",
+"version": "v1.11.0"
+},
+{
+"name": "balanced-match",
+"version": "1.0.0"
+},
+{
+"name": "bcrypt-pbkdf",
+"version": "1.0.2"
+},
+{
+"name": "brace-expansion",
+"version": "1.1.11"
+},
+{
+"name": "browser-detect",
+"version": "0.2.28"
+},
+{
+"name": "browserify/resolve",
+"version": "v1.19.0"
+},
+{
+"name": "builtin-modules",
+"version": "1.1.1"
+},
+{
+"name": "calvinmetcalf/lie",
+"version": "v3.3.0"
+},
+{
+"name": "camelcase",
+"version": "5.3.1"
+},
+{
+"name": "caseless",
+"version": "0.12.0"
+},
+{
+"name": "Chalk",
+"version": "1.1.3"
+},
+{
+"name": "Chalk",
+"version": "2.4.2"
+},
+{
+"name": "cliui",
+"version": "v6.0.0"
+},
+{
+"name": "clvm-rs",
+"version": "0.1.2"
+},
+{
+"name": "color-name",
+"version": "1.1.3"
+},
+{
+"name": "color-name",
+"version": "1.1.4"
+},
+{
+"name": "com.liferay.blade.cli",
+"version": "3.8.0"
+},
+{
+"name": "combined-stream",
+"version": "1.0.8"
+},
+{
+"name": "Commander.js",
+"version": "v2.20.3"
+},
+{
+"name": "convert-source-map",
+"version": "v1.7.0"
+},
+{
+"name": "core-js",
+"version": "v2.6.12"
+},
+{
+"name": "core-util-is",
+"version": "1.0.2"
+},
+{
+"name": "Decamelize",
+"version": "1.2.0"
+},
+{
+"name": "Del using Globs",
+"version": "2.2.2"
+},
+{
+"name": "delayed-stream",
+"version": "1.0.0"
+},
+{
+"name": "ecc-jsbn",
+"version": "0.1.2"
+},
+{
+"name": "emoji-regex",
+"version": "v8.0.0"
+},
+{
+"name": "es6-promise",
+"version": "v4.2.8"
+},
+{
+"name": "es6-promisify",
+"version": "5.0.0"
+},
+{
+"name": "escape-string-regexp",
+"version": "1.0.5"
+},
+{
+"name": "Esprima",
+"version": "4.0.1"
+},
+{
+"name": "extend",
+"version": "3.0.2"
+},
+{
+"name": "extsprintf",
+"version": "1.3.0"
+},
+{
+"name": "extsprintf",
+"version": "1.4.0"
+},
+{
+"name": "fast-deep-equal",
+"version": "v3.1.3"
+},
+{
+"name": "fast-json-stable-stringify",
+"version": "2.1.0"
+},
+{
+"name": "find-up",
+"version": "v4.1.0"
+},
+{
+"name": "floatdrop/pinkie",
+"version": "2.0.4"
+},
+{
+"name": "forever-agent",
+"version": "0.6.1"
+},
+{
+"name": "form-data",
+"version": "2.3.3"
+},
+{
+"name": "fs.realpath",
+"version": "1.0.0"
+},
+{
+"name": "function-bind",
+"version": "1.1.1"
+},
+{
+"name": "gensync",
+"version": "1.0.0-beta.2"
+},
+{
+"name": "get-caller-file",
+"version": "2.0.5"
+},
+{
+"name": "getpass",
+"version": "0.1.7"
+},
+{
+"name": "Gradle",
+"version": "4.4.0-rc1"
+},
+{
+"name": "har-schema",
+"version": "2.0.0"
+},
+{
+"name": "har-validator",
+"version": "5.1.5"
+},
+{
+"name": "has",
+"version": "1.0.3"
+},
+{
+"name": "has-ansi",
+"version": "2.0.0"
+},
+{
+"name": "has-flag",
+"version": "3.0.0"
+},
+{
+"name": "has-flag",
+"version": "4.0.0"
+},
+{
+"name": "html-escaper",
+"version": "2.0.2"
+},
+{
+"name": "https-proxy-agent",
+"version": "2.2.4"
+},
+{
+"name": "https-proxy-agent",
+"version": "3.0.1"
+},
+{
+"name": "https-proxy-agent",
+"version": "5.0.0"
+},
+{
+"name": "immediate",
+"version": "3.0.6"
+},
+{
+"name": "inflight",
+"version": "1.0.6"
+},
+{
+"name": "inherits",
+"version": "v2.0.4"
+},
+{
+"name": "ini",
+"version": "1.3.8"
+},
+{
+"name": "Intellij Community",
+"version": "16.0.2"
+},
+{
+"name": "is-core-module",
+"version": "2.2.0"
+},
+{
+"name": "is-fullwidth-code-point",
+"version": "3.0.0"
+},
+{
+"name": "is-path-cwd",
+"version": "1.0.0"
+},
+{
+"name": "is-path-in-cwd",
+"version": "v1.0.1"
+},
+{
+"name": "is-path-inside",
+"version": "1.0.1"
+},
+{
+"name": "is-typedarray",
+"version": "1.0.0"
+},
+{
+"name": "isaacs/once",
+"version": "1.4.0"
+},
+{
+"name": "isarray",
+"version": "1.0.0"
+},
+{
+"name": "isexe",
+"version": "2.0.0"
+},
+{
+"name": "isstream",
+"version": "0.1.2"
+},
+{
+"name": "istanbul- lib-report",
+"version": "3.0.0"
+},
+{
+"name": "istanbul- reports",
+"version": "3.0.2"
+},
+{
+"name": "istanbul-lib-coverage",
+"version": "3.0.0"
+},
+{
+"name": "istanbul-lib-instrument",
+"version": "4.0.3"
+},
+{
+"name": "istanbul-lib-source-maps",
+"version": "4.0.0"
+},
+{
+"name": "jasmine/jasmine",
+"version": "2.8.0"
+},
+{
+"name": "jasminewd",
+"version": "1.0.1"
+},
+{
+"name": "jasminewd",
+"version": "2.2.0"
+},
+{
+"name": "js-tokens",
+"version": "4.0.0"
+},
+{
+"name": "JS-YAML. Native JS port of PyYAML.",
+"version": "3.14.1"
+},
+{
+"name": "jsbn",
+"version": "0.1.1"
+},
+{
+"name": "jsdiff",
+"version": "4.0.2"
+},
+{
+"name": "jsesc",
+"version": "v2.5.2"
+},
+{
+"name": "jshttp/mime-types",
+"version": "2.1.28"
+},
+{
+"name": "json-schema",
+"version": "0.2.3"
+},
+{
+"name": "json-schema-traverse",
+"version": "0.4.1"
+},
+{
+"name": "json-stringify-safe",
+"version": "5.0.1"
+},
+{
+"name": "json5",
+"version": "v2.2.0"
+},
+{
+"name": "jsprim",
+"version": "1.4.1"
+},
+{
+"name": "jszip",
+"version": "3.5.0"
+},
+{
+"name": "karma-chrome-launcher",
+"version": "v3.1.0"
+},
+{
+"name": "karma-coverage",
+"version": "2.0.3"
+},
+{
+"name": "kriskowal's q",
+"version": "1.4.1"
+},
+{
+"name": "kriskowal's q",
+"version": "1.5.1"
+},
+{
+"name": "locate-path",
+"version": "v5.0.0"
+},
+{
+"name": "Lodash",
+"version": "4.17.20"
+},
+{
+"name": "make-dir",
+"version": "3.1.0"
+},
+{
+"name": "Microsoft/tslib",
+"version": "1.14.1"
+},
+{
+"name": "Microsoft/tslib",
+"version": "2.1.0"
+},
+{
+"name": "mikeal/aws- sign",
+"version": "0.7.0"
+},
+{
+"name": "mikeal/oauth-sign",
+"version": "0.9.0"
+},
+{
+"name": "mime-db",
+"version": "v1.45.0"
+},
+{
+"name": "minimatch",
+"version": "3.0.4"
+},
+{
+"name": "minimist",
+"version": "1.2.5"
+},
+{
+"name": "ms.js",
+"version": "2.1.2"
+},
+{
+"name": "ms.js",
+"version": "2.1.3"
+},
+{
+"name": "ngx-translate/core",
+"version": "v13.0.0"
+},
+{
+"name": "node-assert-plus",
+"version": "1.0.0"
+},
+{
+"name": "node-browserstack",
+"version": "1.6.1"
+},
+{
+"name": "node-concat-map",
+"version": "0.0.1"
+},
+{
+"name": "node-dashdash",
+"version": "1.14.1"
+},
+{
+"name": "node-glob",
+"version": "v7.1.6"
+},
+{
+"name": "node-http-signature",
+"version": "1.2.0"
+},
+{
+"name": "node-mkdirp",
+"version": "0.5.5"
+},
+{
+"name": "node-semver",
+"version": "5.7.1"
+},
+{
+"name": "node-semver",
+"version": "6.3.0"
+},
+{
+"name": "node-source-map-support",
+"version": "0.4.18"
+},
+{
+"name": "node-uuid",
+"version": "3.4.0"
+},
+{
+"name": "node-uuid",
+"version": "8.3.2"
+},
+{
+"name": "node-xml2js",
+"version": "0.4.23"
+},
+{
+"name": "nodeca/pako",
+"version": "1.0.11"
+},
+{
+"name": "nodejs-asn1",
+"version": "0.2.4"
+},
+{
+"name": "nodejs-exit",
+"version": "0.1.2"
+},
+{
+"name": "nodejs/string_decoder",
+"version": "1.1.1"
+},
+{
+"name": "object-assign",
+"version": "4.1.1"
+},
+{
+"name": "os-tmpdir",
+"version": "1.0.2"
+},
+{
+"name": "p-limit",
+"version": "2.3.0"
+},
+{
+"name": "p-locate",
+"version": "4.1.0"
+},
+{
+"name": "p-try",
+"version": "2.2.0"
+},
+{
+"name": "path-exists",
+"version": "4.0.0"
+},
+{
+"name": "path-is-absolute",
+"version": "1.0.1"
+},
+{
+"name": "path-is-inside",
+"version": "1.0.2"
+},
+{
+"name": "path-parse",
+"version": "1.0.6"
+},
+{
+"name": "performance-now",
+"version": "2.1.0"
+},
+{
+"name": "pify",
+"version": "2.3.0"
+},
+{
+"name": "pinkie-promise",
+"version": "2.0.1"
+},
+{
+"name": "popper.js",
+"version": "1.16.1"
+},
+{
+"name": "process-nextick-args",
+"version": "v2.0.1"
+},
+{
+"name": "Protractor",
+"version": "7.0.0"
+},
+{
+"name": "psl",
+"version": "1.8.0"
+},
+{
+"name": "Punycode.js",
+"version": "v2.1.1"
+},
+{
+"name": "pypi/setuptools",
+"version": "41.0.1"
+},
+{
+"name": "Python programming language",
+"version": "3.7.10"
+},
+{
+"name": "Qix-/color-convert",
+"version": "1.9.3"
+},
+{
+"name": "Qix-/color-convert",
+"version": "2.0.1"
+},
+{
+"name": "qs - QS Querystring",
+"version": "6.5.2"
+},
+{
+"name": "readable-stream",
+"version": "v2.3.7"
+},
+{
+"name": "Request - Simple HTTP Client",
+"version": "2.88.2"
+},
+{
+"name": "request/tunnel-agent",
+"version": "0.6.0"
+},
+{
+"name": "require-directory",
+"version": "2.1.1"
+},
+{
+"name": "require-main-filename",
+"version": "2.0.0"
+},
+{
+"name": "rimraf",
+"version": "2.7.1"
+},
+{
+"name": "safe-buffer",
+"version": "5.1.2"
+},
+{
+"name": "safe-buffer",
+"version": "v5.2.1"
+},
+{
+"name": "safer-buffer",
+"version": "2.1.2"
+},
+{
+"name": "saucelabs",
+"version": "1.5.0"
+},
+{
+"name": "sax-js",
+"version": "1.2.4"
+},
+{
+"name": "Selenium",
+"version": "3.6.0"
+},
+{
+"name": "set-blocking",
+"version": "2.0.0"
+},
+{
+"name": "set-immediate-shim",
+"version": "1.0.1"
+},
+{
+"name": "sindresorhus/globals",
+"version": "11.12.0"
+},
+{
+"name": "sindresorhus/globby",
+"version": "5.0.0"
+},
+{
+"name": "sindresorhus/supports-color",
+"version": "2.0.0"
+},
+{
+"name": "sindresorhus/supports-color",
+"version": "5.5.0"
+},
+{
+"name": "sindresorhus/supports-color",
+"version": "v7.2.0"
+},
+{
+"name": "source-map",
+"version": "0.5.7"
+},
+{
+"name": "source-map",
+"version": "0.6.1"
+},
+{
+"name": "sprintf.js",
+"version": "1.0.3"
+},
+{
+"name": "sshpk",
+"version": "1.16.1"
+},
+{
+"name": "string-width",
+"version": "v4.2.0"
+},
+{
+"name": "Strip ANSI",
+"version": "3.0.1"
+},
+{
+"name": "Strip ANSI",
+"version": "6.0.0"
+},
+{
+"name": "tmp",
+"version": "0.0.30"
+},
+{
+"name": "to-fast-properties",
+"version": "2.0.0"
+},
+{
+"name": "tough-cookie",
+"version": "v2.5.0"
+},
+{
+"name": "tslint",
+"version": "6.1.3"
+},
+{
+"name": "tsutils",
+"version": "2.29.0"
+},
+{
+"name": "tweetnacl-js",
+"version": "0.14.5"
+},
+{
+"name": "uri-js",
+"version": "4.4.1"
+},
+{
+"name": "util-deprecate",
+"version": "1.0.2"
+},
+{
+"name": "verror",
+"version": "1.10.0"
+},
+{
+"name": "Visionmedia Debug",
+"version": "3.2.7"
+},
+{
+"name": "Visionmedia Debug",
+"version": "4.3.1"
+},
+{
+"name": "webdriver-js-extender",
+"version": "2.1.0"
+},
+{
+"name": "webdriver-manager",
+"version": "12.1.8"
+},
+{
+"name": "which",
+"version": "1.3.1"
+},
+{
+"name": "which-module",
+"version": "2.0.0"
+},
+{
+"name": "wrap-ansi",
+"version": "v6.2.0"
+},
+{
+"name": "wrappy",
+"version": "1.0.2"
+},
+{
+"name": "xmlbuilder-js",
+"version": "v11.0.1"
+},
+{
+"name": "y18n",
+"version": "4.0.1"
+},
+{
+"name": "yargs",
+"version": "15.4.1"
+},
+{
+"name": "yargs-parser",
+"version": "v18.1.3"
+}
+],
+"extractors": [
+"license_groups"
+],
+"kind": "pdf",
+"product": "Extreme Intuitive Insights",
+"retrieved": "2026-11-08",
+"sha256": "a2f613dfc76139ea3e815a28d019a46b6b079542b5c94cc1d1b12056bd6b3399",
+"supplier": "Extreme Networks",
+"url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/3206721469304311bdec936bc661301d?v=2485208d",
+"version": "1.5"
+}

@@ -1,6 +1,6 @@
 # xenolith-scan: design recommendation
 
-**Status:** proposal. The bridge it builds on, `python -m xenolith prepare`, works today ([CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom)).
+**Status:** proposal. Two pieces work today ([CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom)): `python -m xenolith fingerprint`, a Python reference implementation of the watchlist detection described below (fingerprints in [`catalog/fingerprints.yaml`](../catalog/fingerprints.yaml)), and `python -m xenolith prepare`, which turns any scanner's output into a submission.
 
 ## The problem it solves
 
@@ -107,7 +107,7 @@ Each finding records how it was made, and the strongest evidence wins when sever
 
 Brotli shows why the fingerprint layer matters: the library carries no human-readable version string, so string classifiers miss it, yet its exported symbols and its large static dictionary are distinctive. That is the layer that would have found the vendored decoders in the October 2026 hunt.
 
-**The fingerprint pack lives in this repository**, as `catalog/fingerprints.yaml` next to `components.yaml`: per watchlist component, the version-string regexes, distinctive symbols, data signatures and version probes. The scanner embeds a pinned copy at build time and can load a newer one with `--fingerprints`. Adding detection for the next incident's component is then a pull request here, reviewed with the same test fixtures, rather than a scanner release.
+**The fingerprint pack lives in this repository**, as [`catalog/fingerprints.yaml`](../catalog/fingerprints.yaml) next to `components.yaml` (it exists now, with the Python reference scanner): per watchlist component, the version-string regexes, distinctive symbols, data signatures and version probes. The scanner embeds a pinned copy at build time and can load a newer one with `--fingerprints`. Adding detection for the next incident's component is then a pull request here, reviewed with the same test fixtures, rather than a scanner release.
 
 Notices files found inside the product are parsed with the same extractors Xenolith uses for vendor notices documents (`xenolith/sources/notices.py`); port the text extractors to Go and share the existing test fixtures so both behave identically.
 
@@ -163,7 +163,7 @@ For vendors who want to do this every release, ship a GitHub Action wrapping the
 
 | Phase | Scope | Done when |
 |---|---|---|
-| **0 (done)** | `python -m xenolith prepare`: converts Syft, cdxgen, cve-bin-tool, blint or Trivy output (CycloneDX or SPDX) into a validated submission; hashes the artifact, strips local paths, reports watchlist hits | Shipped in this repository, with tests |
+| **0 (done)** | `python -m xenolith prepare`: converts Syft, cdxgen, cve-bin-tool, blint or Trivy output (CycloneDX or SPDX) into a validated submission. `python -m xenolith fingerprint` and `catalog/fingerprints.yaml`: version strings, defined ELF symbols, version-function constants (x86-64, AArch64), static data markers and archive metadata for all 13 watchlist components | Shipped in this repository, with tests on synthetic samples; checked against real builds |
 | **1: MVP** | Go CLI with Syft embedded; directories, common archives, deb/rpm and container images; first `catalog/fingerprints.yaml` covering the watchlist; product prompts; submission and local report; signed releases for six host targets | On an evaluation corpus, finds at least 90% of the watchlist components the vendor's own notices list, with no high-confidence false positives |
 | **2: Installers and firmware** | MSI, NSIS, Inno, DMG/PKG, AppImage/snap, OVA/VMDK/qcow2; unblob helper and the "full" container image; notices files inside products; Electron and nested jars | Same bar across a corpus of 50+ artifacts spanning those formats |
 | **3: Vendored code** | Symbol and data fingerprints, version probes, confidence scoring, optional blint deep mode, `review` and `submit` commands | Finds statically linked copies of watchlist components missed by version strings |

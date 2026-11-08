@@ -1,0 +1,1514 @@
+{
+"components": [
+{
+"name": ".NET 6.0",
+"version": ""
+},
+{
+"name": "@babel/code-frame",
+"version": "7.22.13"
+},
+{
+"name": "@babel/generator",
+"version": "7.23.0"
+},
+{
+"name": "@babel/helper-annotate-as-pure",
+"version": "7.16.7"
+},
+{
+"name": "@babel/helper-annotate-as-pure",
+"version": "7.18.6"
+},
+{
+"name": "@babel/helper-annotate-as-pure",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-environment-visitor",
+"version": "7.22.20"
+},
+{
+"name": "@babel/helper-function-name",
+"version": "7.23.0"
+},
+{
+"name": "@babel/helper-hoist-variables",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-module-imports",
+"version": "7.16.0"
+},
+{
+"name": "@babel/helper-module-imports",
+"version": "7.16.7"
+},
+{
+"name": "@babel/helper-module-imports",
+"version": "7.21.4"
+},
+{
+"name": "@babel/helper-module-imports",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-plugin-utils",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-split-export-declaration",
+"version": "7.22.6"
+},
+{
+"name": "@babel/helper-string-parser",
+"version": "7.21.5"
+},
+{
+"name": "@babel/helper-string-parser",
+"version": "7.22.5"
+},
+{
+"name": "@babel/helper-validator-identifier",
+"version": "7.15.7"
+},
+{
+"name": "@babel/helper-validator-identifier",
+"version": "7.16.7"
+},
+{
+"name": "@babel/helper-validator-identifier",
+"version": "7.19.1"
+},
+{
+"name": "@babel/helper-validator-identifier",
+"version": "7.22.20"
+},
+{
+"name": "@babel/helper-validator-identifier",
+"version": "7.22.5"
+},
+{
+"name": "@babel/highlight",
+"version": "7.22.20"
+},
+{
+"name": "@babel/parser",
+"version": "7.23.0"
+},
+{
+"name": "@babel/plugin-syntax-jsx",
+"version": "7.22.5"
+},
+{
+"name": "@babel/runtime",
+"version": "7.16.3"
+},
+{
+"name": "@babel/runtime",
+"version": "7.17.2"
+},
+{
+"name": "@babel/runtime",
+"version": "7.21.5"
+},
+{
+"name": "@babel/runtime",
+"version": "7.22.11"
+},
+{
+"name": "@babel/template",
+"version": "7.22.15"
+},
+{
+"name": "@babel/traverse",
+"version": "7.23.2"
+},
+{
+"name": "@babel/types",
+"version": "7.16.0"
+},
+{
+"name": "@babel/types",
+"version": "7.17.0"
+},
+{
+"name": "@babel/types",
+"version": "7.21.5"
+},
+{
+"name": "@babel/types",
+"version": "7.22.11"
+},
+{
+"name": "@babel/types",
+"version": "7.23.0"
+},
+{
+"name": "@emotion/is-prop-valid",
+"version": "0.8.8"
+},
+{
+"name": "@emotion/memoize",
+"version": "0.7.4"
+},
+{
+"name": "@emotion/stylis",
+"version": "0.8.5"
+},
+{
+"name": "@emotion/unitless",
+"version": "0.7.5"
+},
+{
+"name": "@jridgewell/gen-mapping",
+"version": "0.3.3"
+},
+{
+"name": "@jridgewell/resolve-uri",
+"version": "3.1.0"
+},
+{
+"name": "@jridgewell/resolve-uri",
+"version": "3.1.1"
+},
+{
+"name": "@jridgewell/set-array",
+"version": "1.1.2"
+},
+{
+"name": "@jridgewell/sourcemap-codec",
+"version": "1.4.11"
+},
+{
+"name": "@jridgewell/sourcemap-codec",
+"version": "1.4.14"
+},
+{
+"name": "@jridgewell/sourcemap-codec",
+"version": "1.4.15"
+},
+{
+"name": "@jridgewell/trace-mapping",
+"version": "0.3.18"
+},
+{
+"name": "@jridgewell/trace-mapping",
+"version": "0.3.19"
+},
+{
+"name": "@jridgewell/trace-mapping",
+"version": "0.3.20"
+},
+{
+"name": "@microsoft/signalr",
+"version": "7.0.10"
+},
+{
+"name": "@types/element-resize-event",
+"version": "2.0.0"
+},
+{
+"name": "@types/hast",
+"version": "2.3.5"
+},
+{
+"name": "@types/history",
+"version": "4.7.4"
+},
+{
+"name": "@types/hoist-non-react-statics",
+"version": "3.3.1"
+},
+{
+"name": "@types/marked",
+"version": "1.1.0"
+},
+{
+"name": "@types/mdast",
+"version": "3.0.12"
+},
+{
+"name": "@types/mustache",
+"version": "4.0.1"
+},
+{
+"name": "@types/node",
+"version": "20.5.4"
+},
+{
+"name": "@types/nodemailer",
+"version": "6.4.0"
+},
+{
+"name": "@types/prop-types",
+"version": "15.7.4"
+},
+{
+"name": "@types/prop-types",
+"version": "15.7.5"
+},
+{
+"name": "@types/react",
+"version": "17.0.37"
+},
+{
+"name": "@types/react",
+"version": "18.2.21"
+},
+{
+"name": "@types/react-transition-group",
+"version": "4.4.5"
+},
+{
+"name": "@types/react-window",
+"version": "1.8.5"
+},
+{
+"name": "@types/scheduler",
+"version": "0.16.2"
+},
+{
+"name": "@types/scheduler",
+"version": "0.16.3"
+},
+{
+"name": "@types/styled-components",
+"version": "5.1.19"
+},
+{
+"name": "@types/unist",
+"version": "2.0.7"
+},
+{
+"name": "abort-controller",
+"version": "3.0.0"
+},
+{
+"name": "ansi-styles",
+"version": "3.2.1"
+},
+{
+"name": "Azure.Core",
+"version": "1.35.0"
+},
+{
+"name": "Azure.Core.Amqp",
+"version": "1.3.0"
+},
+{
+"name": "Azure.Messaging.ServiceBus",
+"version": "7.15.0"
+},
+{
+"name": "Azure.Monitor.OpenTelemetry.Exporter",
+"version": "1.0.0-beta.3"
+},
+{
+"name": "Azure.Storage.Blobs",
+"version": "12.14.1"
+},
+{
+"name": "Azure.Storage.Blobs",
+"version": "12.18.0"
+},
+{
+"name": "Azure.Storage.Common",
+"version": "12.15.0"
+},
+{
+"name": "Azure.Storage.Common",
+"version": "12.17.0"
+},
+{
+"name": "Azure.Storage.Queues",
+"version": "12.14.0"
+},
+{
+"name": "babel-plugin-styled-components",
+"version": "2.0.5"
+},
+{
+"name": "babel-plugin-styled-components",
+"version": "2.1.1"
+},
+{
+"name": "babel-plugin-styled-components",
+"version": "2.1.4"
+},
+{
+"name": "babel-plugin-syntax-jsx",
+"version": "6.18.0"
+},
+{
+"name": "bail",
+"version": "1.0.5"
+},
+{
+"name": "Boost",
+"version": "1.76"
+},
+{
+"name": "camelize",
+"version": "1.0.0"
+},
+{
+"name": "camelize",
+"version": "1.0.1"
+},
+{
+"name": "Catch2",
+"version": "2.11.0"
+},
+{
+"name": "chalk",
+"version": "2.4.2"
+},
+{
+"name": "character-entities",
+"version": "1.2.4"
+},
+{
+"name": "character-entities-legacy",
+"version": "1.1.4"
+},
+{
+"name": "character-reference-invalid",
+"version": "1.1.4"
+},
+{
+"name": "color-convert",
+"version": "1.9.3"
+},
+{
+"name": "color-name",
+"version": "1.1.3"
+},
+{
+"name": "comma-separated-tokens",
+"version": "1.0.8"
+},
+{
+"name": "CommunityToolkit.HighPerformance",
+"version": "8.0.0"
+},
+{
+"name": "cpprestsdk",
+"version": "2.9.0"
+},
+{
+"name": "crc32c",
+"version": "1.1.2"
+},
+{
+"name": "css-color-keywords",
+"version": "1.0.0"
+},
+{
+"name": "css-to-react-native",
+"version": "3.0.0"
+},
+{
+"name": "css-to-react-native",
+"version": "3.2.0"
+},
+{
+"name": "csstype",
+"version": "3.0.10"
+},
+{
+"name": "csstype",
+"version": "3.1.2"
+},
+{
+"name": "debug",
+"version": "4.3.3"
+},
+{
+"name": "debug",
+"version": "4.3.4"
+},
+{
+"name": "dom-helpers",
+"version": "5.2.1"
+},
+{
+"name": "element-resize-event",
+"version": "3.0.3"
+},
+{
+"name": "escape-string-regexp",
+"version": "1.0.5"
+},
+{
+"name": "event-target-shim",
+"version": "5.0.1"
+},
+{
+"name": "eventsource",
+"version": "2.0.2"
+},
+{
+"name": "exec-sh",
+"version": "0.2.2"
+},
+{
+"name": "extend",
+"version": "3.0.2"
+},
+{
+"name": "fast-deep-equal",
+"version": "3.1.3"
+},
+{
+"name": "fetch-cookie",
+"version": "2.1.0"
+},
+{
+"name": "file-saver",
+"version": "2.0.2"
+},
+{
+"name": "final-form",
+"version": "4.18.2"
+},
+{
+"name": "final-form-calculate",
+"version": "1.3.1"
+},
+{
+"name": "fp-ts",
+"version": "2.8.3"
+},
+{
+"name": "Functional.Maybe",
+"version": "2.0.20"
+},
+{
+"name": "globals",
+"version": "11.12.0"
+},
+{
+"name": "goober",
+"version": "2.1.1"
+},
+{
+"name": "Google.Protobuf",
+"version": "3.23.4"
+},
+{
+"name": "Google.Protobuf",
+"version": "3.24.4"
+},
+{
+"name": "Grpc.Core.Api",
+"version": "2.43.0"
+},
+{
+"name": "Grpc.Net.Client",
+"version": "2.43.0"
+},
+{
+"name": "Grpc.Net.Common",
+"version": "2.43.0"
+},
+{
+"name": "handlebars",
+"version": "4.7.8"
+},
+{
+"name": "has-flag",
+"version": "3.0.0"
+},
+{
+"name": "history",
+"version": "4.10.1"
+},
+{
+"name": "history",
+"version": "4.9.0"
+},
+{
+"name": "hoist-non-react-statics",
+"version": "3.3.2"
+},
+{
+"name": "immer",
+"version": "9.0.12"
+},
+{
+"name": "immer",
+"version": "9.0.6"
+},
+{
+"name": "inline-style-parser",
+"version": "0.1.1"
+},
+{
+"name": "io-ts",
+"version": "2.1.2"
+},
+{
+"name": "ip-regex",
+"version": "4.3.0"
+},
+{
+"name": "is-alphabetical",
+"version": "1.0.4"
+},
+{
+"name": "is-alphanumerical",
+"version": "1.0.4"
+},
+{
+"name": "is-buffer",
+"version": "2.0.5"
+},
+{
+"name": "is-decimal",
+"version": "1.0.4"
+},
+{
+"name": "is-hexadecimal",
+"version": "1.0.4"
+},
+{
+"name": "is-plain-obj",
+"version": "2.1.0"
+},
+{
+"name": "Joonasw.AspNetCore.SecurityHeaders",
+"version": "3.0.0"
+},
+{
+"name": "js-tokens",
+"version": "4.0.0"
+},
+{
+"name": "jsesc",
+"version": "2.5.2"
+},
+{
+"name": "jwt-decode",
+"version": "2.2.0"
+},
+{
+"name": "jwt-decode",
+"version": "3.0.0"
+},
+{
+"name": "kleur",
+"version": "3.0.3"
+},
+{
+"name": "librsync: rollsum.h",
+"version": "0.9.7"
+},
+{
+"name": "libstdc++",
+"version": ""
+},
+{
+"name": "libzip",
+"version": "1.5.1"
+},
+{
+"name": "lodash",
+"version": "4.17.21"
+},
+{
+"name": "lodash.isequal",
+"version": "4.5.0"
+},
+{
+"name": "lodash.maxby",
+"version": "4.6.0"
+},
+{
+"name": "loose-envify",
+"version": "1.4.0"
+},
+{
+"name": "lz4",
+"version": "1.9.4"
+},
+{
+"name": "mdast-util-definitions",
+"version": "4.0.0"
+},
+{
+"name": "mdast-util-from-markdown",
+"version": "0.8.5"
+},
+{
+"name": "mdast-util-to-hast",
+"version": "10.2.0"
+},
+{
+"name": "mdast-util-to-string",
+"version": "2.0.0"
+},
+{
+"name": "mdurl",
+"version": "1.0.1"
+},
+{
+"name": "memoize-one",
+"version": "5.2.1"
+},
+{
+"name": "merge",
+"version": "2.1.1"
+},
+{
+"name": "micromark",
+"version": "2.11.4"
+},
+{
+"name": "Microsoft Azure Storage Client Library for C++",
+"version": "3.0.0"
+},
+{
+"name": "Microsoft.ApplicationInsights",
+"version": "2.21.0"
+},
+{
+"name": "Microsoft.ApplicationInsights.AspNetCore",
+"version": "2.21.0"
+},
+{
+"name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.AspNetCore.JsonPatch",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Azure.Amqp",
+"version": "2.6.2"
+},
+{
+"name": "Microsoft.Azure.ServiceBus",
+"version": "5.2.0"
+},
+{
+"name": "Microsoft.Azure.Services.AppAuthentication",
+"version": "1.0.3"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "1.1.1"
+},
+{
+"name": "Microsoft.Bcl.AsyncInterfaces",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Diagnostics.NETCore.Client",
+"version": "0.2.257301"
+},
+{
+"name": "Microsoft.Diagnostics.Tracing.TraceEvent",
+"version": "2.0.77"
+},
+{
+"name": "Microsoft.EntityFrameworkCore",
+"version": "6.0.12"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Abstractions",
+"version": "6.0.12"
+},
+{
+"name": "Microsoft.EntityFrameworkCore.Relational",
+"version": "6.0.12"
+},
+{
+"name": "Microsoft.Extensions.Caching.Memory",
+"version": "6.0.1"
+},
+{
+"name": "Microsoft.Extensions.Configuration",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration",
+"version": "6.0.1"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Abstractions",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Binder",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.CommandLine",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+"version": "6.0.1"
+},
+{
+"name": "Microsoft.Extensions.Configuration.FileExtensions",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Ini",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.Json",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Configuration.UserSecrets",
+"version": "6.0.1"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection",
+"version": "6.0.1"
+},
+{
+"name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Abstractions",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.FileProviders.Physical",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.FileSystemGlobbing",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Hosting",
+"version": "6.0.1"
+},
+{
+"name": "Microsoft.Extensions.Hosting.Abstractions",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Hosting.WindowsServices",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Http.Polly",
+"version": "6.0.7"
+},
+{
+"name": "Microsoft.Extensions.Logging",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Abstractions",
+"version": "6.0.1"
+},
+{
+"name": "Microsoft.Extensions.Logging.ApplicationInsights",
+"version": "2.21.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Configuration",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Console",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.Debug",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.EventLog",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Logging.EventSource",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Options",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.Extensions.Primitives",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft.IdentityModel.Abstractions",
+"version": "6.21.0"
+},
+{
+"name": "Microsoft.IdentityModel.Clients.ActiveDirectory",
+"version": "5.2.9"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "6.10.0"
+},
+{
+"name": "Microsoft.IdentityModel.JsonWebTokens",
+"version": "6.21.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "6.10.0"
+},
+{
+"name": "Microsoft.IdentityModel.Logging",
+"version": "6.21.0"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols",
+"version": "6.10.0"
+},
+{
+"name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+"version": "6.10.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "6.10.0"
+},
+{
+"name": "Microsoft.IdentityModel.Tokens",
+"version": "6.21.0"
+},
+{
+"name": "Microsoft.Rest.ClientRuntime",
+"version": "2.3.24"
+},
+{
+"name": "Microsoft.Rest.ClientRuntime.Azure",
+"version": "3.3.19"
+},
+{
+"name": "Microsoft.Win32.SystemEvents",
+"version": "6.0.0"
+},
+{
+"name": "MinHook",
+"version": "1.2.1A"
+},
+{
+"name": "minimist",
+"version": "1.2.8"
+},
+{
+"name": "moment",
+"version": "2.29.4"
+},
+{
+"name": "moment-timezone",
+"version": "0.5.43"
+},
+{
+"name": "ms",
+"version": "2.1.2"
+},
+{
+"name": "MsQuic",
+"version": "1.7.0"
+},
+{
+"name": "neo-async",
+"version": "2.6.2"
+},
+{
+"name": "Newtonsoft.Json",
+"version": "13.0.1"
+},
+{
+"name": "Newtonsoft.Json.Bson",
+"version": "1.0.2"
+},
+{
+"name": "node-fetch",
+"version": "2.7.0"
+},
+{
+"name": "nodemailer",
+"version": "6.9.5"
+},
+{
+"name": "Npgsql",
+"version": "4.0.8"
+},
+{
+"name": "Npgsql",
+"version": "6.0.8"
+},
+{
+"name": "Npgsql.EntityFrameworkCore.PostgreSQL",
+"version": "6.0.8"
+},
+{
+"name": "object-assign",
+"version": "4.1.1"
+},
+{
+"name": "OneOf",
+"version": "3.0.243"
+},
+{
+"name": "OpenSSL",
+"version": "1.0.2zi"
+},
+{
+"name": "OpenTelemetry",
+"version": "1.2.0"
+},
+{
+"name": "OpenTelemetry .NET",
+"version": "1.2.0"
+},
+{
+"name": "OpenTelemetry.Api",
+"version": "1.2.0"
+},
+{
+"name": "OpenTelemetry.Exporter.Console",
+"version": "1.2.0"
+},
+{
+"name": "OpenTelemetry.Exporter.Jaeger",
+"version": "1.2.0"
+},
+{
+"name": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+"version": "1.2.0"
+},
+{
+"name": "OpenTelemetry.Exporter.Zipkin",
+"version": "1.2.0"
+},
+{
+"name": "parse-entities",
+"version": "2.0.0"
+},
+{
+"name": "path-to-regexp",
+"version": "6.2.1"
+},
+{
+"name": "picomatch",
+"version": "2.3.1"
+},
+{
+"name": "Polly",
+"version": "7.2.2"
+},
+{
+"name": "Polly",
+"version": "7.2.3"
+},
+{
+"name": "Polly.Extensions.Http",
+"version": "3.0.0"
+},
+{
+"name": "Portable.BouncyCastle",
+"version": "1.9.0"
+},
+{
+"name": "postcss-value-parser",
+"version": "4.2.0"
+},
+{
+"name": "prompts",
+"version": "2.4.2"
+},
+{
+"name": "prop-types",
+"version": "15.6.2"
+},
+{
+"name": "prop-types",
+"version": "15.7.2"
+},
+{
+"name": "prop-types",
+"version": "15.8.1"
+},
+{
+"name": "property-information",
+"version": "5.6.0"
+},
+{
+"name": "protobuf-net",
+"version": "3.2.16"
+},
+{
+"name": "protobuf-net.Core",
+"version": "3.2.16"
+},
+{
+"name": "psl",
+"version": "1.9.0"
+},
+{
+"name": "punycode",
+"version": "2.3.0"
+},
+{
+"name": "qr.js",
+"version": "0.0.0"
+},
+{
+"name": "qrcode.react",
+"version": "1.0.0"
+},
+{
+"name": "querystringify",
+"version": "2.2.0"
+},
+{
+"name": "react",
+"version": "18.2.0"
+},
+{
+"name": "react-dom",
+"version": "18.2.0"
+},
+{
+"name": "react-final-form",
+"version": "6.3.0"
+},
+{
+"name": "react-final-form-hooks",
+"version": "2.0.2"
+},
+{
+"name": "react-is",
+"version": "16.13.1"
+},
+{
+"name": "react-is",
+"version": "17.0.2"
+},
+{
+"name": "react-markdown",
+"version": "6.0.2"
+},
+{
+"name": "react-transition-group",
+"version": "4.4.5"
+},
+{
+"name": "react-window",
+"version": "1.8.8"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.13.11"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.13.9"
+},
+{
+"name": "regenerator-runtime",
+"version": "0.14.0"
+},
+{
+"name": "remark-parse",
+"version": "9.0.0"
+},
+{
+"name": "remark-rehype",
+"version": "8.1.0"
+},
+{
+"name": "Renci.SshNet.Async",
+"version": "1.4.0"
+},
+{
+"name": "requires-port",
+"version": "1.0.0"
+},
+{
+"name": "resolve-pathname",
+"version": "2.2.0"
+},
+{
+"name": "resolve-pathname",
+"version": "3.0.0"
+},
+{
+"name": "routr",
+"version": "3.0.1"
+},
+{
+"name": "rxjs",
+"version": "6.5.3"
+},
+{
+"name": "rxjs",
+"version": "7.1.0"
+},
+{
+"name": "scheduler",
+"version": "0.23.0"
+},
+{
+"name": "Serilog",
+"version": "2.10.0"
+},
+{
+"name": "Serilog.Sinks.Async",
+"version": "1.5.0"
+},
+{
+"name": "Serilog.Sinks.File",
+"version": "5.0.0"
+},
+{
+"name": "Serilog.Sinks.File.Archive",
+"version": "1.0.2"
+},
+{
+"name": "set-cookie-parser",
+"version": "2.6.0"
+},
+{
+"name": "sha2",
+"version": "79116b5d5d449311c27a24e16c99d8bccb4d1301"
+},
+{
+"name": "shallowequal",
+"version": "1.1.0"
+},
+{
+"name": "sisteransi",
+"version": "1.0.5"
+},
+{
+"name": "source-map",
+"version": "0.6.1"
+},
+{
+"name": "space-separated-tokens",
+"version": "1.1.5"
+},
+{
+"name": "sprintf",
+"version": "0.1.5"
+},
+{
+"name": "SQLite",
+"version": "3.38.5"
+},
+{
+"name": "SSH.NET",
+"version": "2020.0.2"
+},
+{
+"name": "SshNet.Security.Cryptography",
+"version": "1.3.0"
+},
+{
+"name": "StdString.h",
+"version": ""
+},
+{
+"name": "style-to-object",
+"version": "0.3.0"
+},
+{
+"name": "styled-components",
+"version": "5.3.3"
+},
+{
+"name": "supports-color",
+"version": "5.5.0"
+},
+{
+"name": "System.Collections.Immutable",
+"version": "7.0.0"
+},
+{
+"name": "System.Configuration.ConfigurationManager",
+"version": "4.5.0"
+},
+{
+"name": "System.Configuration.ConfigurationManager",
+"version": "6.0.0"
+},
+{
+"name": "System.Diagnostics.DiagnosticSource",
+"version": "6.0.1"
+},
+{
+"name": "System.Diagnostics.EventLog",
+"version": "6.0.0"
+},
+{
+"name": "System.Diagnostics.PerformanceCounter",
+"version": "4.7.0"
+},
+{
+"name": "System.Drawing.Common",
+"version": "6.0.0"
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": "6.10.0"
+},
+{
+"name": "System.IdentityModel.Tokens.Jwt",
+"version": "6.21.0"
+},
+{
+"name": "System.IO.Hashing",
+"version": "6.0.0"
+},
+{
+"name": "System.IO.Hashing",
+"version": "6.0.1"
+},
+{
+"name": "System.IO.Pipelines",
+"version": "6.0.3"
+},
+{
+"name": "System.Memory.Data",
+"version": "1.0.2"
+},
+{
+"name": "System.Runtime.Caching",
+"version": "4.5.0"
+},
+{
+"name": "System.Security.Cryptography.ProtectedData",
+"version": "4.5.0"
+},
+{
+"name": "System.Security.Cryptography.ProtectedData",
+"version": "6.0.0"
+},
+{
+"name": "System.Security.Permissions",
+"version": "4.5.0"
+},
+{
+"name": "System.Security.Permissions",
+"version": "6.0.0"
+},
+{
+"name": "System.ServiceProcess.ServiceController",
+"version": "6.0.0"
+},
+{
+"name": "System.Windows.Extensions",
+"version": "6.0.0"
+},
+{
+"name": "tiny-invariant",
+"version": "1.2.0"
+},
+{
+"name": "tiny-invariant",
+"version": "1.3.1"
+},
+{
+"name": "tiny-warning",
+"version": "1.0.3"
+},
+{
+"name": "tinyxml",
+"version": "2.5.3"
+},
+{
+"name": "tinyxml2",
+"version": "6.0.0"
+},
+{
+"name": "to-fast-properties",
+"version": "2.0.0"
+},
+{
+"name": "tough-cookie",
+"version": "4.1.3"
+},
+{
+"name": "tr46",
+"version": "0.0.3"
+},
+{
+"name": "trough",
+"version": "1.0.5"
+},
+{
+"name": "ts-essentials",
+"version": "2.0.12"
+},
+{
+"name": "ts-simple-nameof",
+"version": "1.3.0"
+},
+{
+"name": "tslib",
+"version": "1.14.1"
+},
+{
+"name": "tslib",
+"version": "2.1.0"
+},
+{
+"name": "typescript",
+"version": "4.7.4"
+},
+{
+"name": "uglify-js",
+"version": "3.17.4"
+},
+{
+"name": "unified",
+"version": "9.2.2"
+},
+{
+"name": "unist-builder",
+"version": "2.0.3"
+},
+{
+"name": "unist-util-generated",
+"version": "1.1.6"
+},
+{
+"name": "unist-util-is",
+"version": "4.1.0"
+},
+{
+"name": "unist-util-position",
+"version": "3.1.0"
+},
+{
+"name": "unist-util-stringify-position",
+"version": "2.0.3"
+},
+{
+"name": "unist-util-visit",
+"version": "2.0.3"
+},
+{
+"name": "unist-util-visit-parents",
+"version": "3.1.1"
+},
+{
+"name": "universalify",
+"version": "0.2.0"
+},
+{
+"name": "url-parse",
+"version": "1.5.10"
+},
+{
+"name": "utf8.h, utf8/checked.h, utf8/unchecked.h, utf8/core.h",
+"version": ""
+},
+{
+"name": "util-linux/libuuid",
+"version": ""
+},
+{
+"name": "uuid",
+"version": "8.3.1"
+},
+{
+"name": "value-equal",
+"version": "0.4.0"
+},
+{
+"name": "value-equal",
+"version": "1.0.1"
+},
+{
+"name": "vfile",
+"version": "4.2.1"
+},
+{
+"name": "vfile-message",
+"version": "2.0.4"
+},
+{
+"name": "watch",
+"version": "1.0.2"
+},
+{
+"name": "webidl-conversions",
+"version": "3.0.1"
+},
+{
+"name": "WebSocket++",
+"version": "0.5.1"
+},
+{
+"name": "whatwg-url",
+"version": "5.0.0"
+},
+{
+"name": "wordwrap",
+"version": "1.0.0"
+},
+{
+"name": "ws",
+"version": "7.5.9"
+},
+{
+"name": "xml2js",
+"version": "0.6.0"
+},
+{
+"name": "xmlbuilder",
+"version": "11.0.1"
+},
+{
+"name": "xtend",
+"version": "4.0.2"
+},
+{
+"name": "yaml",
+"version": "1.10.0"
+},
+{
+"name": "zlib",
+"version": "1.2.13"
+},
+{
+"name": "zstd",
+"version": "1.5.2"
+}
+],
+"extractors": [
+"sbom"
+],
+"kind": "sbom",
+"product": "Veeam Plug-In for Microsoft Azure",
+"retrieved": "2026-11-08",
+"sha256": "5b869e0c4352f275e42bfcc769171f6475fa65de553043c5db008df84b60181c",
+"supplier": "Veeam",
+"url": "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_microsoft_azure_6_0&lang=en",
+"version": "6"
+}
