@@ -1,0 +1,182 @@
+{
+"components": [
+{
+"name": "Apache FOP",
+"version": ""
+},
+{
+"name": "Apache Portable Runtime",
+"version": ""
+},
+{
+"name": "apr-iconv",
+"version": ""
+},
+{
+"name": "CED",
+"version": ""
+},
+{
+"name": "chart.js",
+"version": ""
+},
+{
+"name": "DataTables",
+"version": ""
+},
+{
+"name": "expat",
+"version": ""
+},
+{
+"name": "Flatiron Director",
+"version": ""
+},
+{
+"name": "Flot",
+"version": ""
+},
+{
+"name": "Font Awesome",
+"version": ""
+},
+{
+"name": "Handlebars",
+"version": ""
+},
+{
+"name": "jemalloc",
+"version": ""
+},
+{
+"name": "jQuery",
+"version": ""
+},
+{
+"name": "jQuery Cookie",
+"version": ""
+},
+{
+"name": "jQuery DragSort",
+"version": ""
+},
+{
+"name": "jQuery FileUpload",
+"version": ""
+},
+{
+"name": "jQuery HotKeys",
+"version": ""
+},
+{
+"name": "jQuery scroll.To",
+"version": ""
+},
+{
+"name": "jQuery Storage",
+"version": ""
+},
+{
+"name": "jQuery TableSorter",
+"version": ""
+},
+{
+"name": "jQuery Tooltip",
+"version": ""
+},
+{
+"name": "jQuery UI",
+"version": ""
+},
+{
+"name": "JSONSL",
+"version": ""
+},
+{
+"name": "less.js",
+"version": ""
+},
+{
+"name": "libbzip2",
+"version": ""
+},
+{
+"name": "libjpeg",
+"version": ""
+},
+{
+"name": "libpcap",
+"version": ""
+},
+{
+"name": "libpcre",
+"version": ""
+},
+{
+"name": "libxml2",
+"version": ""
+},
+{
+"name": "libxmlsec",
+"version": ""
+},
+{
+"name": "libxslt",
+"version": ""
+},
+{
+"name": "List.js",
+"version": ""
+},
+{
+"name": "moment",
+"version": ""
+},
+{
+"name": "moment-timezone",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": ""
+},
+{
+"name": "RapidJSON",
+"version": ""
+},
+{
+"name": "Select2",
+"version": ""
+},
+{
+"name": "Snappy",
+"version": ""
+},
+{
+"name": "Spin",
+"version": ""
+},
+{
+"name": "Sugar",
+"version": ""
+},
+{
+"name": "Underscore.js",
+"version": ""
+},
+{
+"name": "zlib",
+"version": ""
+}
+],
+"extractors": [
+"dropdown_heads"
+],
+"kind": "html",
+"product": "Tenable Nessus",
+"retrieved": "2026-11-08",
+"sha256": "fb71fd229a0ea0113e2ae623cd7f48cc5a2a2e8171cdb9ca07ae5a88da16fa20",
+"supplier": "Tenable",
+"url": "https://docs.tenable.com/license-declarations/Content/Nessus/Nessus-10.htm",
+"version": "10.x"
+}

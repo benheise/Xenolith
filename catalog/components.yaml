@@ -31,6 +31,13 @@ components:
       - name: PHP2Shell
         year: 2026
         cves: [CVE-2026-109618, CVE-2026-109619]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2026-109618, CVE-2026-109619]
+            ranges:
+              - {introduced: '8.2.0', fixed: '8.2.35'}
+              - {introduced: '8.3.0', fixed: '8.3.36'}
+              - {introduced: '8.4.0', fixed: '8.4.27'}
+              - {introduced: '8.5.0', fixed: '8.5.12'}
         trackers:
           - https://github.com/NCSC-NL/php2shell
 
@@ -41,7 +48,7 @@ components:
     cpe: cpe:2.3:a:google:brotli
     aliases: [libbrotli, brotlidec, node2shell, http2shell, broccoli2shell]
     notices_names:
-      - '^(?:google[- ])?brotli$'
+      - {pattern: '^(?:google[- ])?brotli$', version: '^(?:$|v?0\.|v?1\.[0-2](?:\.|$))'}   # C brotli is 1.0-1.2; ports (npm 1.3.x, Rust 3+) are not it
       - '^libbrotli(?:common|dec|enc)?\d*$'
       - '^brotli[-_ ]?(?:c|lib|libs|cffi|py|python|decoder|common)$'
       - '^brotli(?:cffi|py)$'
@@ -50,6 +57,12 @@ components:
       - name: Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)
         year: 2026
         cves: [CVE-2026-111497]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2026-111497]
+            ranges:
+              - {introduced: '1.0.3', fixed: '1.0.10'}
+              - {introduced: '1.1.0', fixed: '1.1.1'}
+              - {introduced: '1.2.0', fixed: '1.2.1'}
         trackers:
           - https://broccoli2shell.com/
 
@@ -64,6 +77,12 @@ components:
       - name: React2Shell
         year: 2025
         cves: [CVE-2025-55182]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2025-55182]
+            ranges:
+              - {introduced: '19.0.0', last_affected: '19.0.0'}
+              - {introduced: '19.1.0', last_affected: '19.1.1'}
+              - {introduced: '19.2.0', last_affected: '19.2.0'}
 
   - id: log4j-core
     name: Apache Log4j 2 (log4j-core)
@@ -80,6 +99,27 @@ components:
       - name: Log4Shell
         year: 2021
         cves: [CVE-2021-44228, CVE-2021-45046, CVE-2021-45105, CVE-2021-44832]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2021-44228]
+            ranges:
+              - {introduced: '2.0-beta9', fixed: '2.3.1'}
+              - {introduced: '2.4', fixed: '2.12.2'}
+              - {introduced: '2.13.0', fixed: '2.15.0'}
+          - cves: [CVE-2021-45046]
+            ranges:
+              - {introduced: '2.0-beta9', fixed: '2.3.1'}
+              - {introduced: '2.4', fixed: '2.12.2'}
+              - {introduced: '2.13.0', fixed: '2.16.0'}
+          - cves: [CVE-2021-45105]
+            ranges:
+              - {introduced: '2.0-beta9', fixed: '2.3.1'}
+              - {introduced: '2.4', fixed: '2.12.3'}
+              - {introduced: '2.13.0', fixed: '2.17.0'}
+          - cves: [CVE-2021-44832]
+            ranges:
+              - {introduced: '2.0-beta7', fixed: '2.3.2'}
+              - {introduced: '2.4', fixed: '2.12.4'}
+              - {introduced: '2.13.0', fixed: '2.17.1'}
         trackers:
           - https://github.com/NCSC-NL/log4shell
           - https://github.com/cisagov/log4j-affected-db
@@ -98,6 +138,10 @@ components:
       - name: Log4j 1.x JMSAppender
         year: 2021
         cves: [CVE-2021-4104]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2021-4104]
+            ranges:
+              - {introduced: '1.2', fixed: '1.3'}
 
   - id: xz
     name: XZ Utils / liblzma
@@ -113,6 +157,10 @@ components:
       - name: XZ Utils backdoor
         year: 2024
         cves: [CVE-2024-3094]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2024-3094]
+            ranges:
+              - {introduced: '5.6.0', fixed: '5.6.2'}
 
   - id: openssh
     name: OpenSSH (portable)
@@ -126,6 +174,10 @@ components:
       - name: regreSSHion
         year: 2024
         cves: [CVE-2024-6387]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2024-6387]
+            ranges:
+              - {introduced: '8.5p1', last_affected: '9.7p1'}
 
   - id: libwebp
     name: libwebp
@@ -140,6 +192,10 @@ components:
       - name: libwebp heap overflow
         year: 2023
         cves: [CVE-2023-4863]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2023-4863]
+            ranges:
+              - {introduced: '0', fixed: '1.3.2'}
 
   - id: curl
     name: curl / libcurl
@@ -156,6 +212,10 @@ components:
       - name: curl SOCKS5 heap overflow
         year: 2023
         cves: [CVE-2023-38545]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2023-38545]
+            ranges:
+              - {introduced: '7.69.0', fixed: '8.4.0'}
 
   - id: openssl
     name: OpenSSL
@@ -164,7 +224,7 @@ components:
     cpe: cpe:2.3:a:openssl:openssl
     aliases: [libssl, libcrypto]
     notices_names:
-      - '^openssl$'
+      - {pattern: '^openssl$', version: '^(?!v?0\.1\d)'}   # the Rust 'openssl' crate is 0.10.x
       - '^openssl[-_ ](?:libs|fips|toolkit)$'
       - '^libssl\d*(?:\.\d+)*$'
       - '^openssl\d+$'
@@ -172,6 +232,10 @@ components:
       - name: OpenSSL 3.0 punycode overflows
         year: 2022
         cves: [CVE-2022-3602, CVE-2022-3786]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2022-3602, CVE-2022-3786]
+            ranges:
+              - {introduced: '3.0.0', fixed: '3.0.7'}
 
   - id: spring-framework
     name: Spring Framework
@@ -186,6 +250,11 @@ components:
       - name: Spring4Shell
         year: 2022
         cves: [CVE-2022-22965]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2022-22965]
+            ranges:
+              - {introduced: '0', fixed: '5.2.20'}
+              - {introduced: '5.3.0', fixed: '5.3.18'}
 
   - id: commons-text
     name: Apache Commons Text
@@ -200,6 +269,10 @@ components:
       - name: Text4Shell
         year: 2022
         cves: [CVE-2022-42889]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2022-42889]
+            ranges:
+              - {introduced: '1.5', fixed: '1.10.0'}
 
   - id: glibc
     name: GNU C Library (glibc)
@@ -216,3 +289,7 @@ components:
       - name: Looney Tunables
         year: 2023
         cves: [CVE-2023-4911]
+        affected:   # [introduced, fixed) from the CVE records' CNA 'affected' data
+          - cves: [CVE-2023-4911]
+            ranges:
+              - {introduced: '2.34', fixed: '2.39'}

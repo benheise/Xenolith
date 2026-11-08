@@ -21,6 +21,7 @@ from pathlib import Path
 from .catalog import Catalog, normalize_name
 from .model import dedupe, product_key, read_ndjson
 from .sources.notices import iter_inventories
+from .versions import check as range_check
 
 EVIDENCE_RANK = {
     "vendor-advisory": 0,
@@ -75,7 +76,26 @@ def load_assertions(data_dir: Path) -> list[dict]:
     rows: list[dict] = []
     for path in sorted((data_dir / "assertions").rglob("*.ndjson")):
         rows.extend(read_ndjson(path))
+    # Re-key with the current identity rules so alias changes apply without re-ingesting.
+    for a in rows:
+        a["product_key"] = product_key(a["supplier"], a["product"])
     return dedupe(_collapse_csaf_duplicates(rows))
+
+
+def load_spine(data_dir: Path) -> list[dict]:
+    """Registry entries re-keyed and merged when several names map to one product."""
+    merged: dict[str, dict] = {}
+    for sp in read_ndjson(data_dir / "spine" / "products.ndjson"):
+        key = product_key(sp["supplier"], sp["product"])
+        prev = merged.get(key)
+        if prev is None or sp["cve_count"] > prev["cve_count"]:
+            entry = {**sp, "key": key}
+            if prev is not None:
+                entry["kev_count"] = max(entry["kev_count"], prev["kev_count"])
+            merged[key] = entry
+        else:
+            prev["kev_count"] = max(prev["kev_count"], sp["kev_count"])
+    return list(merged.values())
 
 
 def _best(assertions: list[dict]) -> dict:
@@ -87,16 +107,21 @@ def _best(assertions: list[dict]) -> dict:
 
 def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: int = 10) -> dict:
     assertions = load_assertions(data_dir)
-    spine = list(read_ndjson(data_dir / "spine" / "products.ndjson"))
+    spine = load_spine(data_dir)
     spine_by_key = {p["key"]: p for p in spine}
 
     by_component: dict[str, list[dict]] = defaultdict(list)
     by_product: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
-    names: dict[str, tuple[str, str]] = {}
+    name_votes: dict[str, Counter] = defaultdict(Counter)
     for a in assertions:
         by_component[a["component"]].append(a)
         by_product[a["product_key"]][a["component"]].append(a)
-        names.setdefault(a["product_key"], (a["supplier"], a["product"]))
+        name_votes[a["product_key"]][(a["supplier"], a["product"])] += 1
+    # Display name: the most common spelling across sources, preferring the registry's.
+    for sp in spine:
+        if sp["key"] in name_votes:
+            name_votes[sp["key"]][(sp["supplier"], sp["product"])] += 3
+    names: dict[str, tuple[str, str]] = {k: v.most_common(1)[0][0] for k, v in name_votes.items()}
 
     comp_dir = out_dir / "components"
     comp_dir.mkdir(parents=True, exist_ok=True)
@@ -105,11 +130,17 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             old.unlink()
 
     components_meta = []
+    vulnerable_versions: dict[tuple[str, str], bool] = {}
     for comp in catalog.components.values():
         rows = sorted(by_component.get(comp.id, []), key=lambda a: _version_key(a["version"]), reverse=True)
         rows.sort(key=lambda a: (a["supplier"].lower(), a["product"].lower()))   # stable: newest version first per product
         slim = []
+        in_range = 0
         for a in rows:
+            rc = range_check(a["component_version"].split(", "), comp.affected) if a.get("component_version") else None
+            if rc and rc["status"] == "in_range":
+                in_range += 1
+                vulnerable_versions[(a["product_key"], comp.id)] = True
             slim.append({
                 "k": a["product_key"], "s": a["supplier"], "p": a["product"], "v": a["version"],
                 "c": a["cves"], "st": a["verdict"], "e": a["evidence"], "src": a["source"],
@@ -117,6 +148,7 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
                 "r": a["references"][:FRONTEND_REFS_LIMIT],
                 "n": a["notes"][:FRONTEND_NOTES_LIMIT], "cat": a.get("category"), "d": a["updated"],
                 **({"cv": a["component_version"]} if a.get("component_version") else {}),
+                **({"rc": rc["status"], "rcc": rc["cves"], "rcv": rc["versions"]} if rc and rc["status"] != "unknown" else {}),
             })
         (comp_dir / f"{comp.id}.json").write_text(json.dumps(slim, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         verdicts = Counter(a["verdict"] for a in rows)
@@ -125,6 +157,7 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             "cpe": comp.cpe, "aliases": comp.aliases, "incidents": comp.incidents,
             "assertions": len(rows), "products": len({a["product_key"] for a in rows}),
             "contains": sum(1 for a in rows if a["contains"] is True),
+            "in_range": in_range,
             "verdicts": dict(verdicts),
         })
 
@@ -143,6 +176,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             "n": sum(len(r) for r in comps.values()),
             **({"cv": sp["cve_count"], "kev": sp["kev_count"]} if sp else {}),
             **({"inv": inventories[key]["count"]} if key in inventories else {}),
+            **({"vr": sorted(cid for (k, cid) in vulnerable_versions if k == key)}
+               if any(k == key for (k, _) in vulnerable_versions) else {}),
         })
     spine_only = 0
     for sp in spine:

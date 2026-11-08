@@ -29,6 +29,11 @@ class Component:
     def cves(self) -> list[str]:
         return [c.upper() for inc in self.incidents for c in inc.get("cves", [])]
 
+    @property
+    def affected(self) -> list[dict]:
+        """Affected version ranges from all incidents: [{cves, ranges: [{introduced, fixed|last_affected}]}]."""
+        return [a for inc in self.incidents for a in inc.get("affected", [])]
+
     def matchers(self) -> list[tuple[re.Pattern, re.Pattern | None]]:
         out = []
         for entry in self.notices_names:
@@ -46,14 +51,10 @@ def normalize_name(name: str) -> str:
 
 
 def name_variants(name: str) -> list[str]:
-    """The name itself plus its last coordinate segment
-    (org.apache.logging.log4j:log4j-core -> log4j-core, github.com/google/brotli -> brotli)."""
-    n = normalize_name(name)
-    out = [n]
-    tail = re.split(r"[:/]", n)[-1]
-    if tail and tail != n:
-        out.append(tail)
-    return out
+    """Names are matched whole. Coordinates (org.apache.logging.log4j:log4j-core,
+    github.com/google/brotli) need their own patterns: the last segment alone is
+    often a different project (org.tukaani:xz is XZ for Java, not XZ Utils)."""
+    return [normalize_name(name)]
 
 
 @dataclass

@@ -120,6 +120,7 @@ const FILTERS = [
   ["under_investigation", "Investigating", r => r.st === "under_investigation"],
   ["not_affected", "Not affected / not present", r => r.st === "not_affected" || r.st === "absent"],
   ["runtime_dependent", "Host runtime", r => r.st === "runtime_dependent"],
+  ["in_range", "Vulnerable version listed", r => r.rc === "in_range"],
 ];
 const PAGE = 50;
 const REPO = "https://github.com/benheise/Xenolith";
@@ -298,8 +299,9 @@ function compCard(c) {
 }
 function productCard(p) {
   const comps = Object.entries(p.c || {});
+  const vr = new Set(p.vr || []);
   const badges = comps.length
-    ? comps.map(([cid, st]) => `<span class="badge v-${esc(st)}" title="${esc(VERDICTS[st] || st)}">${esc(compName(cid))}: ${esc(VERDICTS[st] || st)}</span>`).join("")
+    ? comps.map(([cid, st]) => `<span class="badge v-${esc(vr.has(cid) ? "workaround" : st)}" title="${esc(VERDICTS[st] || st)}">${esc(compName(cid))}: ${esc(vr.has(cid) && st === "present" ? "vulnerable version listed" : (VERDICTS[st] || st))}</span>`).join("")
     : `<span class="small muted">${p.inv ? "No watchlist components listed" : "No composition data yet"}</span>`;
   const facts = [];
   if (p.inv) facts.push(`${fmt(p.inv)} components in vendor notices`);
@@ -343,6 +345,7 @@ async function showComponent(id, filterKey, text) {
       <div class="stat"><b>${fmt(c.products)}</b><span>products with statements</span></div>
       <div class="stat"><b>${fmt(c.contains)}</b><span>confirmed to contain it</span></div>
       <div class="stat"><b>${fmt((c.verdicts || {}).affected || 0)}</b><span>affected, no fix stated</span></div>
+      ${c.in_range ? `<div class="stat"><b>${fmt(c.in_range)}</b><span>list a vulnerable version</span></div>` : ""}
     </div>
     <div class="chips" role="group" aria-label="Filter by status">
       ${FILTERS.map(f => `<button class="chip" data-f="${f[0]}" aria-pressed="${f[0] === filt[0]}">${esc(f[1])} <span class="muted">${fmt(counts[f[0]])}</span></button>`).join("")}
@@ -388,6 +391,10 @@ function statementCard(r, opts = {}) {
     <div class="row"><div class="grow">${head}</div>${badge(r.st)}</div>
     ${r.v ? `<div class="meta">${r.e === "notices-file" ? "Product version" : "Versions"}: ${esc(r.v)}</div>` : ""}
     ${r.cv ? `<div class="meta">Component version: <b>${esc(r.cv)}</b></div>` : ""}
+    ${r.rc === "in_range" ? `<div class="meta"><span class="badge v-workaround">Vulnerable version listed</span>
+      ${esc((r.rcv || []).join(", "))} is in the affected range of ${(r.rcc || []).map(c => `<span class="cve">${esc(c)}</span>`).join(" ")}.
+      The vendor may have backported a fix; ask them or check their advisory.</div>` : ""}
+    ${r.rc === "outside" ? `<div class="meta">Listed version is outside the affected ranges in the CVE record. Older, end-of-life branches are often missing from those ranges.</div>` : ""}
     ${cves ? `<div class="cves">${cves}</div>` : ""}
     <div class="meta">${esc(EVIDENCE[r.e] || r.e)} · ${link(r.u, who)}${r.d ? ` · as of ${esc(r.d)}` : ""}${r.cat && r.src !== "csaf" ? ` · ${esc(r.cat)}` : ""}</div>
     ${(r.n || refs) ? `<details><summary>Notes and references</summary>
@@ -435,6 +442,7 @@ async function renderInventory(key) {
       `<button class="chip" data-doc="${i}" aria-pressed="${i === 0}">${esc(d.v || "all")} <span class="muted">${fmt(d.c.length)}</span></button>`).join("")}</div>
     <input class="filter" id="invfilter" type="search" placeholder="Filter components…">
     <div class="meta" id="invsrc"></div>
+    <button class="chip" id="cdx" style="margin:8px 0">Download as CycloneDX</button>
     <div class="card"><table class="small" style="width:100%;border-collapse:collapse" id="invtable"></table></div>`;
   let cur = 0;
   const draw = () => {
@@ -451,7 +459,35 @@ async function renderInventory(key) {
     draw();
   }));
   $("#invfilter").addEventListener("input", draw);
+  $("#cdx").addEventListener("click", () => downloadCycloneDX(PBYKEY.get(key), docs[cur]));
   draw();
+}
+
+function downloadCycloneDX(p, d) {
+  // A CycloneDX 1.6 BOM built from the vendor's public notices. It is evidence, not a vendor SBOM.
+  const uuid = (crypto.randomUUID ? crypto.randomUUID() : "00000000-0000-4000-8000-" + Date.now().toString(16).padStart(12, "0"));
+  const bom = {
+    bomFormat: "CycloneDX", specVersion: "1.6", serialNumber: `urn:uuid:${uuid}`, version: 1,
+    metadata: {
+      timestamp: new Date().toISOString(),
+      tools: { components: [{ type: "application", name: "Xenolith", externalReferences: [{ type: "website", url: REPO }] }] },
+      supplier: { name: p.s },
+      component: { type: "application", "bom-ref": "product", name: p.p, version: d.v || undefined, supplier: { name: p.s } },
+      properties: [
+        { name: "xenolith:evidence", value: "Derived from the vendor's published third-party notices; not a vendor-issued SBOM" },
+        { name: "xenolith:source", value: d.u },
+        { name: "xenolith:retrieved", value: d.d },
+      ],
+    },
+    components: d.c.map(([n, v], i) => ({ type: "library", "bom-ref": `c${i}`, name: n, ...(v ? { version: v } : {}) })),
+    dependencies: [{ ref: "product", dependsOn: d.c.map((_, i) => `c${i}`) }],
+  };
+  const blob = new Blob([JSON.stringify(bom, null, 2)], { type: "application/vnd.cyclonedx+json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `${p.k.replace("/", "_")}${d.v ? "_" + d.v.replace(/[^\w.-]+/g, "_") : ""}.cdx.json`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 }
 
 // ---------------------------------------------------------------- home

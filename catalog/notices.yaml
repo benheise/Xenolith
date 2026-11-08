@@ -19,6 +19,20 @@ discover:
     link: '/oss-listings/.+/[^/]+oss-listing[^/]*\.html$'
     title: '^(?P<product>.+?)\s+(?P<version>\d[\w.\-]*)\s+OSS Listing$'
 
+  # Elastic publishes a full third-party dependency report per release
+  # (Elasticsearch, Kibana, Logstash, Beats, Elastic Agent, Endpoint, ...).
+  # Versions come from Elastic's artifacts API; the latest patch of the four
+  # newest minors is kept.
+  - type: versions_json
+    supplier: Elastic
+    product: Elastic Stack
+    versions_url: https://artifacts-api.elastic.co/v1/versions
+    field: versions
+    exclude: SNAPSHOT
+    keep_latest_per_minor: true
+    limit: 4
+    url_template: https://artifacts.elastic.co/reports/dependencies/dependencies-{version}.html
+
 documents:
   - supplier: F5
     product: BIG-IP
@@ -35,13 +49,69 @@ documents:
     version: "16.1"
     url: https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html
 
+  # Ivanti attributions PDFs (tables of contents list every component)
+  - supplier: Ivanti
+    product: Ivanti Connect Secure
+    version: "22.x (current)"
+    url: https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions.pdf
+
+  - supplier: Ivanti
+    product: Ivanti Connect Secure
+    version: "22.4R1"
+    url: https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions-22.4R1.pdf
+
+  - supplier: Ivanti
+    product: Ivanti Connect Secure
+    version: "9.1R18.7"
+    url: https://help.ivanti.com/ps/help/en_US/ICS/9.1RX/9.1R18.7-Connect-Secure-Attributions.pdf
+
+  - supplier: Ivanti
+    product: Ivanti Secure Access Client
+    version: "22.8R5"
+    url: https://help.ivanti.com/ps/help/en_US/ISAC/22.X/22.8.5Desktop-Client-Attributions.pdf
+
+  # Tenable license declarations (component names, no versions)
+  - supplier: Tenable
+    product: Tenable Nessus
+    version: "10.x"
+    url: https://docs.tenable.com/license-declarations/Content/Nessus/Nessus-10.htm
+
+  - supplier: Tenable
+    product: Tenable Agent
+    version: "10.x"
+    url: https://docs.tenable.com/license-declarations/Content/Nessus-Agent/Nessus-Agent-10.htm
+
+  - supplier: Tenable
+    product: Tenable Network Monitor
+    version: "5.11.x"
+    url: https://docs.tenable.com/license-declarations/Content/NNM/NNM_511.htm
+
+  - supplier: Tenable
+    product: Tenable Security Center
+    version: "6.5.x"
+    url: https://docs.tenable.com/license-declarations/Content/SC/security-center-65.htm
+
+  - supplier: Tenable
+    product: Tenable Security Center
+    version: "6.4.x"
+    url: https://docs.tenable.com/license-declarations/Content/SC/security-center-64.htm
+
+  - supplier: Tenable
+    product: Tenable Security Center
+    version: "6.3.x"
+    url: https://docs.tenable.com/license-declarations/Content/SC/security-center-63.htm
+
   - supplier: Citrix
     product: NetScaler ADC
     version: "11.1"
     url: https://www.citrix.com/content/dam/citrix/en_us/documents/downloads/netscaler-adc/NetScaler_11.1_Third_Party_Notices.pdf
 
-# Known vendors that can't be crawled from cloud machines (add documents by
-# hand only if their URLs become reachable):
+# Vendors checked and not crawlable (November 2026):
 #   Cisco "Open Source Used In" PDFs: blocked for automated clients (HTTP 403).
 #   VMware/Broadcom open_source_licenses.txt: behind the Broadcom support login.
 #   Fortinet: exported from the FortiOS GUI (System > Legal Third Party), not published.
+#   Splunk: credits PDFs are served through short-lived signed URLs.
+#   Juniper: per-release attribution pages stop at Junos 16.1; newer ones moved behind HPE networking docs.
+#   SonicWall, Synology, HPE Aruba: no public component lists (GPL source on request or tarballs only).
+#   Atlassian: SBOMs ship inside the installation directory only.
+#   Adobe: notices PDFs list only attribution-required components, without versions; low value.

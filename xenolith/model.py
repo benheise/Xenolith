@@ -69,7 +69,9 @@ def slug(text: str) -> str:
 
 
 def product_key(supplier: str, product: str) -> str:
-    return f"{slug(supplier)}/{slug(product)}"
+    """Canonical key for a product; see xenolith/identity.py and catalog/identity.yaml."""
+    from .identity import product_key as canonical_key
+    return canonical_key(supplier, product)
 
 
 def verdict(statuses: Iterable[str]) -> str:

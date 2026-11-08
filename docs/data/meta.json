@@ -1,12 +1,12 @@
 {
- "built": "2026-11-08T01:11:14Z",
+ "built": "2026-11-08T01:42:47Z",
  "counts": {
-  "assertions": 12896,
-  "products_with_data": 7425,
-  "inventories": 80,
-  "inventory_components": 23059,
-  "spine_products": 16524,
-  "spine_only_shown": 4986,
+  "assertions": 12927,
+  "products_with_data": 7136,
+  "inventories": 93,
+  "inventory_components": 37239,
+  "spine_products": 15796,
+  "spine_only_shown": 4662,
   "components": 13
  },
  "components": [
@@ -30,21 +30,48 @@
       "CVE-2026-109618",
       "CVE-2026-109619"
      ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+       ],
+       "ranges": [
+        {
+         "introduced": "8.2.0",
+         "fixed": "8.2.35"
+        },
+        {
+         "introduced": "8.3.0",
+         "fixed": "8.3.36"
+        },
+        {
+         "introduced": "8.4.0",
+         "fixed": "8.4.27"
+        },
+        {
+         "introduced": "8.5.0",
+         "fixed": "8.5.12"
+        }
+       ]
+      }
+     ],
      "trackers": [
       "https://github.com/NCSC-NL/php2shell"
      ]
     }
    ],
-   "assertions": 821,
-   "products": 742,
-   "contains": 443,
+   "assertions": 824,
+   "products": 743,
+   "contains": 446,
+   "in_range": 0,
    "verdicts": {
     "fixed": 170,
     "workaround": 9,
     "affected": 200,
     "under_investigation": 79,
     "not_affected": 201,
-    "present": 64,
+    "present": 67,
     "absent": 96,
     "runtime_dependent": 2
    }
@@ -69,6 +96,27 @@
      "cves": [
       "CVE-2026-111497"
      ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-111497"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.0.3",
+         "fixed": "1.0.10"
+        },
+        {
+         "introduced": "1.1.0",
+         "fixed": "1.1.1"
+        },
+        {
+         "introduced": "1.2.0",
+         "fixed": "1.2.1"
+        }
+       ]
+      }
+     ],
      "trackers": [
       "https://broccoli2shell.com/"
      ]
@@ -77,6 +125,7 @@
    "assertions": 169,
    "products": 153,
    "contains": 150,
+   "in_range": 20,
    "verdicts": {
     "fixed": 115,
     "present": 20,
@@ -103,12 +152,34 @@
      "year": 2025,
      "cves": [
       "CVE-2025-55182"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2025-55182"
+       ],
+       "ranges": [
+        {
+         "introduced": "19.0.0",
+         "last_affected": "19.0.0"
+        },
+        {
+         "introduced": "19.1.0",
+         "last_affected": "19.1.1"
+        },
+        {
+         "introduced": "19.2.0",
+         "last_affected": "19.2.0"
+        }
+       ]
+      }
      ]
     }
    ],
    "assertions": 9,
    "products": 9,
    "contains": 0,
+   "in_range": 0,
    "verdicts": {
     "not_affected": 9
    }
@@ -134,23 +205,102 @@
       "CVE-2021-45105",
       "CVE-2021-44832"
      ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2021-44228"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0-beta9",
+         "fixed": "2.3.1"
+        },
+        {
+         "introduced": "2.4",
+         "fixed": "2.12.2"
+        },
+        {
+         "introduced": "2.13.0",
+         "fixed": "2.15.0"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-45046"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0-beta9",
+         "fixed": "2.3.1"
+        },
+        {
+         "introduced": "2.4",
+         "fixed": "2.12.2"
+        },
+        {
+         "introduced": "2.13.0",
+         "fixed": "2.16.0"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-45105"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0-beta9",
+         "fixed": "2.3.1"
+        },
+        {
+         "introduced": "2.4",
+         "fixed": "2.12.3"
+        },
+        {
+         "introduced": "2.13.0",
+         "fixed": "2.17.0"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-44832"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0-beta7",
+         "fixed": "2.3.2"
+        },
+        {
+         "introduced": "2.4",
+         "fixed": "2.12.4"
+        },
+        {
+         "introduced": "2.13.0",
+         "fixed": "2.17.1"
+        }
+       ]
+      }
+     ],
      "trackers": [
       "https://github.com/NCSC-NL/log4shell",
       "https://github.com/cisagov/log4j-affected-db"
      ]
     }
    ],
-   "assertions": 7376,
-   "products": 6402,
-   "contains": 2538,
+   "assertions": 7377,
+   "products": 6131,
+   "contains": 2539,
+   "in_range": 3,
    "verdicts": {
     "not_affected": 4277,
     "unknown": 401,
     "affected": 926,
-    "fixed": 1358,
+    "fixed": 1356,
     "under_investigation": 160,
     "workaround": 251,
-    "present": 3
+    "present": 6
    }
   },
   {
@@ -169,12 +319,26 @@
      "year": 2021,
      "cves": [
       "CVE-2021-4104"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2021-4104"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.2",
+         "fixed": "1.3"
+        }
+       ]
+      }
      ]
     }
    ],
    "assertions": 3910,
-   "products": 3818,
+   "products": 3809,
    "contains": 90,
+   "in_range": 0,
    "verdicts": {
     "not_affected": 3811,
     "workaround": 11,
@@ -199,12 +363,26 @@
      "year": 2024,
      "cves": [
       "CVE-2024-3094"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2024-3094"
+       ],
+       "ranges": [
+        {
+         "introduced": "5.6.0",
+         "fixed": "5.6.2"
+        }
+       ]
+      }
      ]
     }
    ],
    "assertions": 55,
    "products": 11,
    "contains": 48,
+   "in_range": 0,
    "verdicts": {
     "not_affected": 7,
     "present": 48
@@ -226,16 +404,30 @@
      "year": 2024,
      "cves": [
       "CVE-2024-6387"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2024-6387"
+       ],
+       "ranges": [
+        {
+         "introduced": "8.5p1",
+         "last_affected": "9.7p1"
+        }
+       ]
+      }
      ]
     }
    ],
-   "assertions": 104,
-   "products": 36,
-   "contains": 97,
+   "assertions": 107,
+   "products": 37,
+   "contains": 100,
+   "in_range": 6,
    "verdicts": {
     "workaround": 15,
     "fixed": 19,
-    "present": 63,
+    "present": 66,
     "not_affected": 7
    }
   },
@@ -254,14 +446,28 @@
      "year": 2023,
      "cves": [
       "CVE-2023-4863"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2023-4863"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "1.3.2"
+        }
+       ]
+      }
      ]
     }
    ],
-   "assertions": 35,
-   "products": 29,
-   "contains": 34,
+   "assertions": 38,
+   "products": 30,
+   "contains": 37,
+   "in_range": 0,
    "verdicts": {
-    "present": 3,
+    "present": 6,
     "fixed": 30,
     "workaround": 1,
     "not_affected": 1
@@ -282,15 +488,29 @@
      "year": 2023,
      "cves": [
       "CVE-2023-38545"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2023-38545"
+       ],
+       "ranges": [
+        {
+         "introduced": "7.69.0",
+         "fixed": "8.4.0"
+        }
+       ]
+      }
      ]
     }
    ],
-   "assertions": 121,
-   "products": 48,
-   "contains": 114,
+   "assertions": 127,
+   "products": 50,
+   "contains": 120,
+   "in_range": 6,
    "verdicts": {
     "fixed": 45,
-    "present": 58,
+    "present": 64,
     "not_affected": 3,
     "workaround": 11,
     "absent": 4
@@ -313,14 +533,29 @@
      "cves": [
       "CVE-2022-3602",
       "CVE-2022-3786"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2022-3602",
+        "CVE-2022-3786"
+       ],
+       "ranges": [
+        {
+         "introduced": "3.0.0",
+         "fixed": "3.0.7"
+        }
+       ]
+      }
      ]
     }
    ],
-   "assertions": 131,
-   "products": 39,
-   "contains": 110,
+   "assertions": 143,
+   "products": 45,
+   "contains": 122,
+   "in_range": 0,
    "verdicts": {
-    "present": 77,
+    "present": 89,
     "workaround": 5,
     "fixed": 28,
     "under_investigation": 1,
@@ -343,12 +578,30 @@
      "year": 2022,
      "cves": [
       "CVE-2022-22965"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2022-22965"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "5.2.20"
+        },
+        {
+         "introduced": "5.3.0",
+         "fixed": "5.3.18"
+        }
+       ]
+      }
      ]
     }
    ],
    "assertions": 34,
    "products": 32,
    "contains": 34,
+   "in_range": 3,
    "verdicts": {
     "fixed": 26,
     "workaround": 5,
@@ -370,13 +623,28 @@
      "year": 2022,
      "cves": [
       "CVE-2022-42889"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2022-42889"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.5",
+         "fixed": "1.10.0"
+        }
+       ]
+      }
      ]
     }
    ],
-   "assertions": 36,
-   "products": 36,
-   "contains": 24,
+   "assertions": 39,
+   "products": 37,
+   "contains": 27,
+   "in_range": 0,
    "verdicts": {
+    "present": 3,
     "fixed": 19,
     "not_affected": 12,
     "workaround": 5
@@ -398,12 +666,26 @@
      "year": 2023,
      "cves": [
       "CVE-2023-4911"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2023-4911"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.34",
+         "fixed": "2.39"
+        }
+       ]
+      }
      ]
     }
    ],
    "assertions": 95,
    "products": 29,
    "contains": 93,
+   "in_range": 6,
    "verdicts": {
     "fixed": 19,
     "present": 64,
@@ -450,11 +732,11 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 1040,
+   "assertions": 1038,
    "latest": "2026-11-07",
    "publishers": {
     "Red Hat Product Security": 492,
-    "Siemens ProductCERT": 333,
+    "Siemens ProductCERT": 331,
     "CISA": 72,
     "ABB PSIRT": 46,
     "Cisco": 40,
@@ -472,7 +754,7 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 403,
+   "assertions": 436,
    "latest": "2026-11-08"
   },
   {
@@ -493,7 +775,7 @@
    "notes": "Vendor/product names from CNA-published CVE records, ranked by CVE and KEV counts. Records for package-ecosystem components are excluded.",
    "assertions": 0,
    "latest": "",
-   "products": 16524
+   "products": 15796
   }
  ],
  "comparables": [

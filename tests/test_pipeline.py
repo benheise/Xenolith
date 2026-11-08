@@ -42,7 +42,15 @@ class ModelTest(unittest.TestCase):
         self.assertEqual(verdict([]), "unknown")
 
     def test_product_key(self):
-        self.assertEqual(product_key("Café Systems GmbH", "Gateway OS 7.x"), "cafe-systems-gmbh/gateway-os-7-x")
+        self.assertEqual(product_key("Café Systems GmbH", "Gateway OS 7.x"), "cafe-systems/gateway-os-7-x")
+
+    def test_identity_merges_variants(self):
+        same = [("Palo Alto Networks, Inc.", "PAN-OS"), ("Palo Alto", "PAN-OS Software"), ("palo alto networks", "Palo Alto Networks PAN-OS")]
+        self.assertEqual({product_key(s, p) for s, p in same}, {"palo-alto-networks/pan-os"})
+        self.assertEqual(product_key("Ivanti", "Pulse Connect Secure"), product_key("Ivanti", "Ivanti Connect Secure"))
+        self.assertEqual(product_key("Cisco Systems, Inc.", "Cisco Adaptive Security Appliance (ASA) Software"),
+                         "cisco/adaptive-security-appliance")
+        self.assertEqual(product_key("Zoom", "Zoom"), "zoom/zoom")   # never strip a product down to nothing
 
     def test_make_assertion_rejects_bad_status(self):
         with self.assertRaises(ValueError):
@@ -297,3 +305,37 @@ class NoticesMatchTest(unittest.TestCase):
             index = json.loads((out / "inventory_index.json").read_text())
             self.assertIn("zlib", index["n"])
             self.assertTrue((out / "inventory" / "acme__gateway-os.json").exists())
+
+
+
+from xenolith.versions import check as range_check, version_key  # noqa: E402
+
+
+class VersionRangeTest(unittest.TestCase):
+    def test_ordering(self):
+        self.assertLess(version_key("2.0-beta9"), version_key("2.0"))
+        self.assertLess(version_key("1.1.1"), version_key("1.1.1g"))
+        self.assertLess(version_key("8.0p1"), version_key("8.5p1"))
+        self.assertLess(version_key("1.0.9"), version_key("1.0.10"))
+        self.assertLess(version_key("0:2.28-225.el8"), version_key("2.34"))
+        self.assertIsNone(version_key("Display Manager dependent"))
+
+    def test_catalog_ranges(self):
+        cat = catalog.load()
+        brotli = cat.components["brotli"].affected
+        self.assertEqual(range_check(["1.0.6"], brotli)["status"], "in_range")
+        self.assertEqual(range_check(["1.0.10"], brotli)["status"], "outside")
+        self.assertEqual(range_check(["1.2.1"], brotli)["status"], "outside")
+        self.assertEqual(range_check([""], brotli)["status"], "unknown")
+        log4j = cat.components["log4j-core"].affected
+        hit = range_check(["2.14.1"], log4j)
+        self.assertEqual(hit["status"], "in_range")
+        self.assertIn("CVE-2021-44228", hit["cves"])
+        self.assertNotIn("CVE-2021-44228", range_check(["2.16.0"], log4j)["cves"])
+        self.assertIn("CVE-2021-44832", range_check(["2.16.0"], log4j)["cves"])
+        ssh = cat.components["openssh"].affected
+        self.assertEqual(range_check(["9.7p1"], ssh)["status"], "in_range")
+        self.assertEqual(range_check(["8.0p1"], ssh)["status"], "outside")
+        php = cat.components["php"].affected
+        self.assertEqual(range_check(["8.3.35"], php)["status"], "in_range")
+        self.assertEqual(range_check(["8.3.36"], php)["status"], "outside")

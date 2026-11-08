@@ -1,0 +1,250 @@
+{
+"components": [
+{
+"name": "antlr/antlrworks",
+"version": ""
+},
+{
+"name": "apple/swift-corelibs-libdispatch",
+"version": ""
+},
+{
+"name": "APSL/react-native-keyboard-aware-scroll-view",
+"version": ""
+},
+{
+"name": "arnnis/react-native-fast-toast",
+"version": ""
+},
+{
+"name": "beefe/React Native ActionSheet",
+"version": ""
+},
+{
+"name": "chromiumembedded/cef",
+"version": ""
+},
+{
+"name": "crazycodeboy/react-native-splash-screen",
+"version": ""
+},
+{
+"name": "dropbox/djinni",
+"version": ""
+},
+{
+"name": "erikdoe/ocmock",
+"version": ""
+},
+{
+"name": "facebook/prop-types",
+"version": ""
+},
+{
+"name": "facebook/RCT-Folly",
+"version": ""
+},
+{
+"name": "facebook/React",
+"version": ""
+},
+{
+"name": "facebook/React Native",
+"version": ""
+},
+{
+"name": "GeekyAnts/Native Base",
+"version": ""
+},
+{
+"name": "google/DoubleConversion",
+"version": ""
+},
+{
+"name": "google/Google Logging Library (glog)",
+"version": ""
+},
+{
+"name": "haxx/libcurl",
+"version": ""
+},
+{
+"name": "ivpusic/react-native-image-crop-picker",
+"version": ""
+},
+{
+"name": "jemise111/react-native-swipe-list-view",
+"version": ""
+},
+{
+"name": "libexpat/libexpat",
+"version": ""
+},
+{
+"name": "luggit/React Native Config",
+"version": ""
+},
+{
+"name": "mCodex/React Native Sensitive Info",
+"version": ""
+},
+{
+"name": "microsoft/React Native for macOS",
+"version": ""
+},
+{
+"name": "microsoft/React Native for Windows",
+"version": ""
+},
+{
+"name": "microsoft/UI Xaml for Windows",
+"version": ""
+},
+{
+"name": "microsoft/wil",
+"version": ""
+},
+{
+"name": "openssl/openssl",
+"version": ""
+},
+{
+"name": "openssl_fips.yml",
+"version": ""
+},
+{
+"name": "openssl_nonfips.yml",
+"version": ""
+},
+{
+"name": "ptelad/react-native-iphone-x-helper",
+"version": ""
+},
+{
+"name": "react-native-async-storage/React Native Async Storage",
+"version": ""
+},
+{
+"name": "react-native-community/checkbox",
+"version": ""
+},
+{
+"name": "react-native-community/netinfo",
+"version": ""
+},
+{
+"name": "react-native-device-info/React Native Device Info",
+"version": ""
+},
+{
+"name": "react-native-masked-view/React Native MaskedView component",
+"version": ""
+},
+{
+"name": "react-native-webview/React Native WebView",
+"version": ""
+},
+{
+"name": "react-navigation/React Navigation Core",
+"version": ""
+},
+{
+"name": "react-navigation/React Navigation Native",
+"version": ""
+},
+{
+"name": "react-navigation/React Navigation Routers",
+"version": ""
+},
+{
+"name": "react-navigation/React Navigation Stack",
+"version": ""
+},
+{
+"name": "reduxjs/react-redux",
+"version": ""
+},
+{
+"name": "reduxjs/Redux",
+"version": ""
+},
+{
+"name": "reduxjs/Redux Thunk",
+"version": ""
+},
+{
+"name": "reduxjs/reduxjs/toolkit",
+"version": ""
+},
+{
+"name": "rgommezz/react-native-offline",
+"version": ""
+},
+{
+"name": "rt2zz/Redux Persist",
+"version": ""
+},
+{
+"name": "rtfeldman/seamless-immutable",
+"version": ""
+},
+{
+"name": "shahen94/react-native-switch",
+"version": ""
+},
+{
+"name": "software-mansion/React Native Gesture Handler",
+"version": ""
+},
+{
+"name": "software-mansion/React Native MaskedView component",
+"version": ""
+},
+{
+"name": "software-mansion/React Native Screens",
+"version": ""
+},
+{
+"name": "speed-soft/nsis_simple_service_plugin",
+"version": ""
+},
+{
+"name": "stefalda/ReactNativeLocalization",
+"version": ""
+},
+{
+"name": "Tencent/rapidjson",
+"version": ""
+},
+{
+"name": "th3rdwave/react-native-safe-area-context",
+"version": ""
+},
+{
+"name": "USCiLab/cereal",
+"version": ""
+},
+{
+"name": "vinzscam/react-native-file-viewer",
+"version": ""
+},
+{
+"name": "zlib",
+"version": ""
+},
+{
+"name": "zoontek/react-native-permissions",
+"version": ""
+}
+],
+"extractors": [
+"dotted_toc"
+],
+"kind": "pdf",
+"product": "Ivanti Secure Access Client",
+"retrieved": "2026-11-08",
+"sha256": "4f30e061e944f971fffd845050f352eb6dd5573f79c1b62a946cc30eff7d4bb1",
+"supplier": "Ivanti",
+"url": "https://help.ivanti.com/ps/help/en_US/ISAC/22.X/22.8.5Desktop-Client-Attributions.pdf",
+"version": "22.8R5"
+}

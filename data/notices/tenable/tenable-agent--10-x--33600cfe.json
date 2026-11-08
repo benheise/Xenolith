@@ -1,0 +1,70 @@
+{
+"components": [
+{
+"name": "CED",
+"version": ""
+},
+{
+"name": "expat",
+"version": ""
+},
+{
+"name": "jemalloc",
+"version": ""
+},
+{
+"name": "JSONSL",
+"version": ""
+},
+{
+"name": "libbzip2",
+"version": ""
+},
+{
+"name": "libjpeg",
+"version": ""
+},
+{
+"name": "libpcre",
+"version": ""
+},
+{
+"name": "libxml2",
+"version": ""
+},
+{
+"name": "libxmlsec",
+"version": ""
+},
+{
+"name": "libxslt",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": ""
+},
+{
+"name": "RapidJSON",
+"version": ""
+},
+{
+"name": "Snappy",
+"version": ""
+},
+{
+"name": "zlib",
+"version": ""
+}
+],
+"extractors": [
+"dropdown_heads"
+],
+"kind": "html",
+"product": "Tenable Agent",
+"retrieved": "2026-11-08",
+"sha256": "2c879cd21cd6af8a4ca36ffb8a285173450d0a083603c253a02b33ffcb56d5e7",
+"supplier": "Tenable",
+"url": "https://docs.tenable.com/license-declarations/Content/Nessus-Agent/Nessus-Agent-10.htm",
+"version": "10.x"
+}

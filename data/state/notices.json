@@ -1,4 +1,34 @@
 {
+"https://artifacts.elastic.co/reports/dependencies/dependencies-8.19.24.html": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 5146,
+"sha": "b41261a9dbad0cec0c98727fc252f896e71539ef363f05a18ee5b666c9138570",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://artifacts.elastic.co/reports/dependencies/dependencies-9.4.9.html": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 4195,
+"sha": "8bf5a83b15f9190bee1a618a86deb9fa34d2191d0bfe54e8b1f9d92b8700e99a",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://artifacts.elastic.co/reports/dependencies/dependencies-9.5.6.html": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 4159,
+"sha": "1ebe4661c78b3cc40faa39616b90b43c7dce38679e120e1ae8b9ecbae488ddb4",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/cn-series-oss-listings/cn-series-10-0-open-source-software-oss-listing.html": {
 "fetched": "2026-11-08",
 "kind": "html",
@@ -757,6 +787,106 @@
 "status": "ok",
 "via": [
 "html_table"
+]
+},
+"https://docs.tenable.com/license-declarations/Content/NNM/NNM_511.htm": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 36,
+"sha": "f475ded19d5531b1865b073cd68235ee945e67a2d95da27a7f27aa9e07a522a5",
+"status": "ok",
+"via": [
+"dropdown_heads"
+]
+},
+"https://docs.tenable.com/license-declarations/Content/Nessus-Agent/Nessus-Agent-10.htm": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 14,
+"sha": "2c879cd21cd6af8a4ca36ffb8a285173450d0a083603c253a02b33ffcb56d5e7",
+"status": "ok",
+"via": [
+"dropdown_heads"
+]
+},
+"https://docs.tenable.com/license-declarations/Content/Nessus/Nessus-10.htm": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 42,
+"sha": "fb71fd229a0ea0113e2ae623cd7f48cc5a2a2e8171cdb9ca07ae5a88da16fa20",
+"status": "ok",
+"via": [
+"dropdown_heads"
+]
+},
+"https://docs.tenable.com/license-declarations/Content/SC/security-center-63.htm": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 37,
+"sha": "2193ee97211513680b1a0e58ae862b664a3fd8c696f9823387aa6c96ca9b809f",
+"status": "ok",
+"via": [
+"dropdown_heads"
+]
+},
+"https://docs.tenable.com/license-declarations/Content/SC/security-center-64.htm": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 38,
+"sha": "28b27e82587d0a5d8476a621ca029ed92db92b3c393e4cfa6f91c55180aa6fcb",
+"status": "ok",
+"via": [
+"dropdown_heads"
+]
+},
+"https://docs.tenable.com/license-declarations/Content/SC/security-center-65.htm": {
+"fetched": "2026-11-08",
+"kind": "html",
+"n": 41,
+"sha": "74eeba345265817c75bdfbff4b8ff0837f5c37aa3b63fccb34278dd84d2d4a43",
+"status": "ok",
+"via": [
+"dropdown_heads"
+]
+},
+"https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions-22.4R1.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 133,
+"sha": "06e54649aee19ec8133eaa30bc8b62acb3756de202dea6f64ad9fa5e33578f55",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 149,
+"sha": "ab06d49dee1f1dab86596e2be13362ac0835ca2c16771ebf3597ad8464661e72",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://help.ivanti.com/ps/help/en_US/ICS/9.1RX/9.1R18.7-Connect-Secure-Attributions.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 131,
+"sha": "5c8eb41b6d3e3f72e90e139585720e66531d0df708c11f8dcdcc8d56b3f2836a",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
+},
+"https://help.ivanti.com/ps/help/en_US/ISAC/22.X/22.8.5Desktop-Client-Attributions.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 59,
+"sha": "4f30e061e944f971fffd845050f352eb6dd5573f79c1b62a946cc30eff7d4bb1",
+"status": "ok",
+"via": [
+"dotted_toc"
 ]
 },
 "https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html": {

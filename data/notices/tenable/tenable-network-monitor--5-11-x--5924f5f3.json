@@ -1,0 +1,158 @@
+{
+"components": [
+{
+"name": "chosen",
+"version": ""
+},
+{
+"name": "d3",
+"version": ""
+},
+{
+"name": "DataTables",
+"version": ""
+},
+{
+"name": "dpdk",
+"version": ""
+},
+{
+"name": "expat",
+"version": ""
+},
+{
+"name": "Flatiron Director",
+"version": ""
+},
+{
+"name": "Font Awesome",
+"version": ""
+},
+{
+"name": "Handlebars",
+"version": ""
+},
+{
+"name": "Hyperscan",
+"version": ""
+},
+{
+"name": "jQuery",
+"version": ""
+},
+{
+"name": "jQuery Cookie",
+"version": ""
+},
+{
+"name": "jQuery FileUpload",
+"version": ""
+},
+{
+"name": "jQuery HotKeys",
+"version": ""
+},
+{
+"name": "jQuery iFrame Transport Plugin",
+"version": ""
+},
+{
+"name": "jQuery scroll.To",
+"version": ""
+},
+{
+"name": "jQuery TableSorter",
+"version": ""
+},
+{
+"name": "jQuery tipsy",
+"version": ""
+},
+{
+"name": "jQuery UI",
+"version": ""
+},
+{
+"name": "jQuery UI Touch Punch",
+"version": ""
+},
+{
+"name": "jQuery-Storage-API",
+"version": ""
+},
+{
+"name": "libbzip2",
+"version": ""
+},
+{
+"name": "libpcap",
+"version": ""
+},
+{
+"name": "libxml2",
+"version": ""
+},
+{
+"name": "libxmlsec",
+"version": ""
+},
+{
+"name": "libxslt",
+"version": ""
+},
+{
+"name": "mobile-detect.js",
+"version": ""
+},
+{
+"name": "moment",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": ""
+},
+{
+"name": "PCRE / libpcre",
+"version": ""
+},
+{
+"name": "snprintf.c",
+"version": ""
+},
+{
+"name": "spin.js",
+"version": ""
+},
+{
+"name": "SQLite",
+"version": ""
+},
+{
+"name": "sugar",
+"version": ""
+},
+{
+"name": "WinPcap",
+"version": ""
+},
+{
+"name": "xml2json",
+"version": ""
+},
+{
+"name": "zlib",
+"version": ""
+}
+],
+"extractors": [
+"dropdown_heads"
+],
+"kind": "html",
+"product": "Tenable Network Monitor",
+"retrieved": "2026-11-08",
+"sha256": "f475ded19d5531b1865b073cd68235ee945e67a2d95da27a7f27aa9e07a522a5",
+"supplier": "Tenable",
+"url": "https://docs.tenable.com/license-declarations/Content/NNM/NNM_511.htm",
+"version": "5.11.x"
+}

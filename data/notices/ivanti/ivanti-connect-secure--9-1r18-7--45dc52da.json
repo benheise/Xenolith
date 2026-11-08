@@ -1,0 +1,538 @@
+{
+"components": [
+{
+"name": "aliyun/alibaba-cloud-sdk-go",
+"version": ""
+},
+{
+"name": "apache/guacamole-client",
+"version": ""
+},
+{
+"name": "apache/guacamole-server",
+"version": ""
+},
+{
+"name": "Apache/HttpComponents_Client",
+"version": ""
+},
+{
+"name": "archive/zip",
+"version": ""
+},
+{
+"name": "aws/aws-sdk-go",
+"version": ""
+},
+{
+"name": "azure/azure-pipeline-go",
+"version": ""
+},
+{
+"name": "azure/azure-sorage-blob-go",
+"version": ""
+},
+{
+"name": "bbangert/beaker",
+"version": ""
+},
+{
+"name": "bitkkeks/python-netfow",
+"version": "9-softfow3"
+},
+{
+"name": "brandonaaron/bgiframe",
+"version": ""
+},
+{
+"name": "cannatag/ldap3",
+"version": ""
+},
+{
+"name": "certif/python-certif",
+"version": ""
+},
+{
+"name": "cf/cf",
+"version": ""
+},
+{
+"name": "chardet/chardet",
+"version": ""
+},
+{
+"name": "citusdata/citus",
+"version": ""
+},
+{
+"name": "coresecurity/impacket",
+"version": ""
+},
+{
+"name": "CoreSecurity/pcapy",
+"version": ""
+},
+{
+"name": "cppzmq",
+"version": ""
+},
+{
+"name": "cpython/python",
+"version": ""
+},
+{
+"name": "dabeaz/ply",
+"version": ""
+},
+{
+"name": "dashea/requess-fle",
+"version": ""
+},
+{
+"name": "dirkjanm/ldapdomaindump",
+"version": ""
+},
+{
+"name": "eliben/pycparser",
+"version": ""
+},
+{
+"name": "erikrose/more-itertools",
+"version": ""
+},
+{
+"name": "etingof/pyasn1",
+"version": ""
+},
+{
+"name": "etingof/pysmi",
+"version": ""
+},
+{
+"name": "etingof/pysnmp",
+"version": ""
+},
+{
+"name": "faspbkdf2",
+"version": ""
+},
+{
+"name": "FreeRDP/FreeRDP",
+"version": ""
+},
+{
+"name": "FreeTDS",
+"version": ""
+},
+{
+"name": "gevent/gevent",
+"version": ""
+},
+{
+"name": "ghosscript/ghosscript",
+"version": ""
+},
+{
+"name": "gnu/bash",
+"version": ""
+},
+{
+"name": "google-authenticator",
+"version": ""
+},
+{
+"name": "google/protobuf",
+"version": ""
+},
+{
+"name": "grub",
+"version": ""
+},
+{
+"name": "haxx/libcurl",
+"version": ""
+},
+{
+"name": "IdentityPython/pyjwkes",
+"version": ""
+},
+{
+"name": "IPsec-Tools",
+"version": ""
+},
+{
+"name": "ipset",
+"version": ""
+},
+{
+"name": "Jansson",
+"version": ""
+},
+{
+"name": "jbardin/scp",
+"version": ""
+},
+{
+"name": "john-kurkowski/tldextract",
+"version": ""
+},
+{
+"name": "jpadilla/pyjwt",
+"version": ""
+},
+{
+"name": "jquery/jquery",
+"version": ""
+},
+{
+"name": "julian/jsonschema",
+"version": ""
+},
+{
+"name": "kbandla/dpkt",
+"version": ""
+},
+{
+"name": "kjd/idna",
+"version": ""
+},
+{
+"name": "lathiat/avahi",
+"version": ""
+},
+{
+"name": "Legrandin/pycryptodome",
+"version": ""
+},
+{
+"name": "libssh2",
+"version": ""
+},
+{
+"name": "libwebp",
+"version": ""
+},
+{
+"name": "libwebsockets",
+"version": ""
+},
+{
+"name": "libxml2",
+"version": ""
+},
+{
+"name": "Linux Kernel v",
+"version": "4.15"
+},
+{
+"name": "LIS/lis-next",
+"version": ""
+},
+{
+"name": "lmdb",
+"version": ""
+},
+{
+"name": "makamaka/JSON",
+"version": ""
+},
+{
+"name": "Martiusweb/asynctes",
+"version": ""
+},
+{
+"name": "maxmind/GeoIP2-python",
+"version": ""
+},
+{
+"name": "maxmind/libmaxminddb",
+"version": ""
+},
+{
+"name": "maxmind/MaxMind-DB-Reader-python",
+"version": ""
+},
+{
+"name": "MinIO client (mc)",
+"version": ""
+},
+{
+"name": "mozilla-services/hawkauthlib",
+"version": ""
+},
+{
+"name": "msamy2/PyPDF2",
+"version": ""
+},
+{
+"name": "mysql/mysql-connector-cpp",
+"version": ""
+},
+{
+"name": "net-snmp",
+"version": ""
+},
+{
+"name": "NetSNMP",
+"version": ""
+},
+{
+"name": "noirbizarre/fask -resplus",
+"version": ""
+},
+{
+"name": "noppo/gevent-websocket",
+"version": ""
+},
+{
+"name": "ntp-project/ntp",
+"version": ""
+},
+{
+"name": "numpy/numpy",
+"version": ""
+},
+{
+"name": "OpenIDC/pyoidc",
+"version": ""
+},
+{
+"name": "openjdk/java",
+"version": ""
+},
+{
+"name": "openlink/iODBC",
+"version": ""
+},
+{
+"name": "OpenSSH",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": ""
+},
+{
+"name": "pallets/itsdangerous",
+"version": ""
+},
+{
+"name": "pallets/jinja",
+"version": ""
+},
+{
+"name": "pallets/jinja2",
+"version": ""
+},
+{
+"name": "pallets/markupsafe",
+"version": ""
+},
+{
+"name": "paramiko/paramiko",
+"version": ""
+},
+{
+"name": "pcre",
+"version": ""
+},
+{
+"name": "perl",
+"version": ""
+},
+{
+"name": "phihag/ipaddress",
+"version": ""
+},
+{
+"name": "psycopg_psycopg2",
+"version": ""
+},
+{
+"name": "pyasn1",
+"version": ""
+},
+{
+"name": "pyca/cryptography",
+"version": ""
+},
+{
+"name": "pyca/pyopenssl",
+"version": ""
+},
+{
+"name": "pycrypto",
+"version": ""
+},
+{
+"name": "pytes-dev/pluggy",
+"version": ""
+},
+{
+"name": "pytes-dev/py",
+"version": ""
+},
+{
+"name": "pytes-dev/pytes",
+"version": ""
+},
+{
+"name": "pytes-dev/pytes-cov",
+"version": ""
+},
+{
+"name": "pytes-dev/pytes-mock",
+"version": ""
+},
+{
+"name": "python-attrs/attrs",
+"version": ""
+},
+{
+"name": "python-greenlet/greenlet",
+"version": ""
+},
+{
+"name": "python-libnmap",
+"version": ""
+},
+{
+"name": "python-pillow/pillow",
+"version": ""
+},
+{
+"name": "python/typing",
+"version": ""
+},
+{
+"name": "pythoncharmers/python-future",
+"version": ""
+},
+{
+"name": "redis/hiredis",
+"version": ""
+},
+{
+"name": "redis/redis",
+"version": ""
+},
+{
+"name": "requess/requess",
+"version": ""
+},
+{
+"name": "rptlab/reportlab",
+"version": ""
+},
+{
+"name": "rthalley/dnspython",
+"version": ""
+},
+{
+"name": "Samba/Samba",
+"version": ""
+},
+{
+"name": "scikit-learn/scikit-learn",
+"version": ""
+},
+{
+"name": "scipy/scipy",
+"version": ""
+},
+{
+"name": "simplejson/simplejson",
+"version": ""
+},
+{
+"name": "sqlalchemy/mako",
+"version": ""
+},
+{
+"name": "ssldump",
+"version": ""
+},
+{
+"name": "swig/swig",
+"version": ""
+},
+{
+"name": "tacacsplus",
+"version": ""
+},
+{
+"name": "the-tcpdump-group/libpcap",
+"version": ""
+},
+{
+"name": "the-tcpdump-group/tcpdump",
+"version": ""
+},
+{
+"name": "tiran/defusedxml",
+"version": ""
+},
+{
+"name": "treasuredata/fuent-bit",
+"version": ""
+},
+{
+"name": "ua-parser",
+"version": ""
+},
+{
+"name": "unbit/uwsgi",
+"version": ""
+},
+{
+"name": "untitaker/python-atomicwrites",
+"version": ""
+},
+{
+"name": "urllib3/urllib3",
+"version": ""
+},
+{
+"name": "user-agents",
+"version": ""
+},
+{
+"name": "VinceG/twitter-bootsrap-wizard",
+"version": ""
+},
+{
+"name": "vmware-tools",
+"version": ""
+},
+{
+"name": "waLinuxAgent",
+"version": ""
+},
+{
+"name": "wbond/asn1crypto",
+"version": ""
+},
+{
+"name": "websocket-client/websocket-client",
+"version": ""
+},
+{
+"name": "zeromq",
+"version": ""
+},
+{
+"name": "zeromq/pyzmq",
+"version": ""
+}
+],
+"extractors": [
+"dotted_toc"
+],
+"kind": "pdf",
+"product": "Ivanti Connect Secure",
+"retrieved": "2026-11-08",
+"sha256": "5c8eb41b6d3e3f72e90e139585720e66531d0df708c11f8dcdcc8d56b3f2836a",
+"supplier": "Ivanti",
+"url": "https://help.ivanti.com/ps/help/en_US/ICS/9.1RX/9.1R18.7-Connect-Secure-Attributions.pdf",
+"version": "9.1R18.7"
+}

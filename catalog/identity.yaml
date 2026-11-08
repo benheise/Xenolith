@@ -1,0 +1,64 @@
+# Product identity crosswalk.
+#
+# Sources name the same product differently: "Palo Alto Networks, Inc." /
+# "Palo Alto Networks" / "palo alto", "Ivanti Connect Secure" / "Connect
+# Secure" / "Pulse Connect Secure". Xenolith builds every product key from a
+# canonical supplier and a canonical product name so all statements about one
+# product land on one page.
+#
+# Automatic rules (xenolith/identity.py), applied before this file:
+#   - legal suffixes are dropped from suppliers (Inc., LLC, Ltd, GmbH, AG, SE, Corporation, ...)
+#   - the supplier's own name is dropped from the front of product names
+#     ("Cisco Identity Services Engine" -> "Identity Services Engine")
+#   - a trailing "Software" and parenthesised acronyms are dropped
+#     ("Adaptive Security Appliance (ASA) Software" -> "Adaptive Security Appliance")
+#
+# Below, all names are written lowercase, without punctuation, as they look
+# after those rules. Add an alias when you see one product split across pages.
+
+suppliers:
+  # canonical: [aliases]
+  palo alto networks: [palo alto, paloaltonetworks, palo alto networks psirt]
+  cisco: [cisco systems, cisco psirt]
+  microsoft: [msrc, microsoft security response center]
+  f5: [f5 networks]
+  apache software foundation: [apache, the apache software foundation, asf]
+  adobe: [adobe systems]
+  vmware: [vmware by broadcom, broadcom vmware]
+  ivanti: [pulse secure]
+  citrix: [citrix systems, cloud software group, citrix netscaler, netscaler]
+  mitsubishi electric: [mitsubishi]
+  arista networks: [arista]
+  manageengine: [manageengine zoho, zoho manageengine, zohocorp manageengine]
+  tenable: [tenable network security]
+  elastic: [elasticsearch, elastic nv, elasticsearch bv]
+  siemens: [siemens productcert]
+  sick: [sick psirt]
+  abb: [abb psirt]
+  schneider electric: [schneider electric cpcert, schneider]
+  hewlett packard enterprise: [hpe, hewlett packard enterprise development lp, hp enterprise]
+  fortinet: [fortinet psirt]
+  oracle: [oracle america]
+  juniper networks: [juniper]
+  check point: [check point software technologies, checkpoint]
+  red hat: [red hat product security]
+
+products:
+  # canonical supplier:
+  #   canonical product: [aliases]
+  ivanti:
+    connect secure: [pulse connect secure, ics]
+    policy secure: [pulse policy secure, ips]
+    secure access client: [pulse secure client, pulse secure desktop client]
+  palo alto networks:
+    pan os: [panos, pan os software]
+  citrix:
+    netscaler adc: [citrix adc, adc, netscaler application delivery controller, application delivery controller]
+    netscaler gateway: [citrix gateway, gateway]
+  f5:
+    big ip: [bigip]
+  fortinet:
+    fortios: [forti os]
+  tenable:
+    security center: [tenable sc, sc, securitycenter]
+    nessus: [tenable nessus]

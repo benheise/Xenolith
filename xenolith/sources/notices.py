@@ -105,19 +105,29 @@ class _Tables(HTMLParser):
             self._cell.append(data)
 
 
-NAME_HEADERS = {"name", "component", "component name", "package", "package name", "software", "library",
+NAME_HEADERS = {"name", "component", "component(s)", "components", "component name", "package", "package name", "software", "library",
                 "open source component", "open source software", "project", "module", "third party software",
                 "third-party software", "oss component", "software name"}
 VERSION_HEADERS = {"version", "component version", "package version", "version number", "release"}
 
 
-def _header_index(row: list[str]) -> tuple[int, int] | None:
+def _header_index(row: list[str]) -> tuple[int, int | None] | None:
     low = [c.strip().lower().rstrip(":") for c in row]
     ni = next((i for i, c in enumerate(low) if c in NAME_HEADERS), None)
     vi = next((i for i, c in enumerate(low) if c in VERSION_HEADERS), None)
     if ni is not None and vi is not None and ni != vi:
         return ni, vi
+    # Name-only tables still count when a license column shows it's a component table.
+    if ni is not None and any("licen" in c for i, c in enumerate(low) if i != ni):
+        return ni, None
     return None
+
+
+def _cells_at(row: list[str], idx: tuple[int, int | None]) -> tuple[str, str] | None:
+    ni, vi = idx
+    if len(row) <= ni or (vi is not None and len(row) <= vi):
+        return None
+    return row[ni], (row[vi] if vi is not None else "")
 
 
 def html_to_text(html: str) -> str:
@@ -160,11 +170,17 @@ def ex_html_table(html: str | None) -> list[tuple[str, str]]:
             if h:
                 idx = h
                 continue
-            if idx and len(row) > max(idx):
-                name, ver = row[idx[0]], row[idx[1]]
-                if plausible(name):
-                    out.append((name, ver))
+            got = _cells_at(row, idx) if idx else None
+            if got and plausible(got[0]):
+                for name in _split_multi(got[0]):
+                    out.append((name, got[1]))
     return out
+
+
+def _split_multi(cell: str) -> list[str]:
+    """'zlib, libpng' in a name cell lists several components (Oracle-style tables)."""
+    parts = [p.strip() for p in re.split(r"\s*[,;]\s*|\n", cell) if p.strip()]
+    return parts if len(parts) > 1 and all(len(p) < 60 for p in parts) else [cell]
 
 
 def ex_pipe_table(text: str) -> list[tuple[str, str]]:
@@ -178,24 +194,40 @@ def ex_pipe_table(text: str) -> list[tuple[str, str]]:
         if h:
             idx = h
             continue
-        if idx and len(cells) > max(idx) and not set("".join(cells)) <= set("-: "):
-            name, ver = cells[idx[0]], cells[idx[1]]
-            if plausible(name):
-                out.append((name, ver))
+        got = _cells_at(cells, idx) if idx else None
+        if got and not set("".join(cells)) <= set("-: ") and plausible(got[0]):
+            out.append(got)
     return out
 
 
 DOTTED = re.compile(r"^\s*(?P<body>\S.*?\S)\s*(?:\.\s?){4,}\s*\d+\s*$")
 
 
+LICENSE_ONLY = re.compile(
+    r"^(?:the )?(?:bsd|mit|isc|apache|mozilla public|mpl|gnu|gpl|lgpl|agpl|eclipse public|epl|cddl|"
+    r"common development and distribution|artistic|boost software|public domain|creative commons|cc[- ]?by|"
+    r"python software foundation|psf|unicode|w3c|x11|wtfpl|unlicense|ms-pl|microsoft public)"
+    r"(?:[\s\-]+(?:\d[\w.\-]*|clause|v\d[\w.]*|version|public|general|lesser|library|software|license|licence|"
+    r"only|or later|revised|new|simplified|\+|\(\w+\)))*$", re.I)
+TOC_WORDS = {"contents", "content", "table of contents", "index", "revision history", "introduction", "preface"}
+
+
 def ex_dotted_toc(text: str) -> list[tuple[str, str]]:
     out = []
     for line in text.splitlines():
         m = DOTTED.match(line)
-        if m and plausible(m.group("body")):
-            name, ver = split_name_version(m.group("body"))
-            if plausible(name):
-                out.append((name, ver))
+        if not m:
+            continue
+        # Ivanti and others write "component License ...... 12"; the label isn't part of the name.
+        raw = m.group("body")
+        body = re.sub(r"\s+(?:licen[cs]es?|notices?|attributions?)$", "", raw, flags=re.I).strip()
+        if body != raw.strip() and LICENSE_ONLY.match(body):
+            continue   # a license section ("BSD 3-Clause License"), not a component
+        if body.lower() in TOC_WORDS or re.match(r"^\d+ lines\b", body) or not plausible(body):
+            continue
+        name, ver = split_name_version(body)
+        if plausible(name):
+            out.append((name, ver))
     return out
 
 
@@ -256,15 +288,39 @@ INCLUDES = re.compile(
     re.I)
 
 
+# Boilerplate from standard license texts ("This product includes cryptographic software written by ...").
+PROSE_STOP_FIRST = {"cryptographic", "software", "either", "portions", "code", "material", "materials",
+                    "technology", "copyrighted", "certain", "some", "other", "additional", "third-party"}
+
+
 def ex_includes_prose(text: str) -> list[tuple[str, str]]:
     flat = re.sub(r"\s+", " ", text)
     out = []
     for m in INCLUDES.finditer(flat):
         name = m.group("name").strip()
-        if name.lower() in {"software", "the following", "following", "open source", "third party"}:
+        first = name.lower().split()[0]
+        if name.lower() in {"software", "the following", "following", "open source", "third party"} \
+                or first in PROSE_STOP_FIRST or "written" in name.lower():
             continue
         if plausible(name):
             out.append((name, m.group("ver") or ""))
+    return out
+
+
+DROPDOWN_HEAD = re.compile(
+    r'class="[^"]*MCDropDownHead[^"]*h2closed[^"]*"[^>]*>\s*<a[^>]*>(?:\s*<img[^>]*>)?\s*(?P<name>[^<]+?)\s*</a>', re.I)
+DROPDOWN_SKIP = {"copyright", "copyrights", "license", "licenses", "notice", "notices", "source", "source code"}
+
+
+def ex_dropdown_heads(html: str | None) -> list[tuple[str, str]]:
+    """Component names from MadCap Flare collapsible sections (one per component)."""
+    if not html:
+        return []
+    out = []
+    for m in DROPDOWN_HEAD.finditer(html):
+        name = htmllib.unescape(m.group("name")).strip()
+        if name.lower() not in DROPDOWN_SKIP and plausible(name):
+            out.append(split_name_version(name))
     return out
 
 
@@ -342,6 +398,8 @@ def extract(body: bytes, content_type: str, url: str) -> tuple[list[dict], list[
         results["dotted_toc"] = ex_dotted_toc(text)
         results["gt_list"] = ex_gt_list(text)
         results["tpn_list"] = ex_tpn_list(text)
+        if not any(results.values()):
+            results["dropdown_heads"] = ex_dropdown_heads(html)
         # Prose is the weakest signal; only use it when nothing structured was found.
         if not any(results.values()):
             results["includes_prose"] = ex_includes_prose(text)
@@ -393,6 +451,41 @@ def discover(rule: dict, log=print) -> list[dict]:
     return list(docs.values())
 
 
+def discover_versions(rule: dict, log=print) -> list[dict]:
+    """Build document URLs from a JSON list of released versions (Elastic's artifacts API).
+
+    rule: {type: versions_json, supplier, product, versions_url, field, url_template,
+           exclude (regex), keep_latest_per_minor (bool), limit (int)}
+    """
+    data = fetch.get_json(rule["versions_url"])
+    versions = [v for v in data.get(rule.get("field", "versions"), []) if isinstance(v, str)]
+    if rule.get("exclude"):
+        versions = [v for v in versions if not re.search(rule["exclude"], v)]
+    versions = [v for v in versions if re.match(r"^\d+(\.\d+)*$", v)]
+    key = lambda v: [int(x) for x in v.split(".")]
+    versions.sort(key=key, reverse=True)
+    if rule.get("keep_latest_per_minor", True):
+        # Reports often lag the newest patch release, so take the newest patch
+        # per minor whose document actually exists (checked with HEAD requests).
+        by_minor: dict[tuple, list[str]] = {}
+        for v in versions:
+            by_minor.setdefault(tuple(key(v)[:2]), []).append(v)
+        latest = []
+        for minor in sorted(by_minor, reverse=True):
+            for v in by_minor[minor][:4]:
+                if _exists(rule["url_template"].format(version=v)):
+                    latest.append(v)
+                    break
+            if len(latest) >= int(rule.get("limit", 4)):
+                break
+        versions = latest
+    versions = versions[: int(rule.get("limit", 4))]
+    docs = [{"supplier": rule["supplier"], "product": rule["product"], "version": v,
+             "url": rule["url_template"].format(version=v), "discovered_by": rule["versions_url"]} for v in versions]
+    log(f"  {rule['supplier']} {rule['product']}: versions {', '.join(versions)}")
+    return docs
+
+
 def load_registry(path: Path, *, discover_docs: bool = True, log=print) -> list[dict]:
     cfg = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     docs: dict[str, dict] = {}
@@ -401,7 +494,8 @@ def load_registry(path: Path, *, discover_docs: bool = True, log=print) -> list[
     if discover_docs:
         for rule in cfg.get("discover") or []:
             try:
-                for d in discover(rule, log=log):
+                found = discover_versions(rule, log=log) if rule.get("type") == "versions_json" else discover(rule, log=log)
+                for d in found:
                     docs.setdefault(d["url"], d)
             except fetch.FetchError as e:
                 log(f"  ! discovery failed for {rule.get('index')}: {e}")
@@ -473,6 +567,17 @@ def crawl(registry_path: Path, *, data_dir: Path, max_fetch: int = 80, refresh_d
     state_path.parent.mkdir(parents=True, exist_ok=True)
     state_path.write_text(json.dumps(state, sort_keys=True, indent=0) + "\n")
     return stats
+
+
+def _exists(url: str) -> bool:
+    import urllib.request
+    from .. import USER_AGENT
+    try:
+        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return 200 <= resp.status < 300
+    except Exception:  # noqa: BLE001
+        return False
 
 
 def _get(url: str) -> tuple[bytes, str]:

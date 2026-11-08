@@ -44,6 +44,10 @@ Pull request checks run `python -m xenolith community --check` and the test suit
 
 Add an entry to `catalog/components.yaml` with the CVEs that identify the component. Good candidates are small, permissively licensed libraries that vendors copy into their products (compression, parsing, TLS, image codecs, logging, runtimes). The crawler will start matching vendor advisories for those CVEs on its next run, including advisories it has already seen.
 
+## Merge a product that shows up twice
+
+If the same product appears as two entries (different spellings across sources), add an alias to [`catalog/identity.yaml`](catalog/identity.yaml). Supplier aliases go under `suppliers`, product aliases under `products` for that supplier. Names are written lowercase without punctuation, after the automatic rules described at the top of that file.
+
 ## Add a CSAF provider
 
 Add the provider's `provider-metadata.json` URL to `catalog/csaf_providers.yaml`. Providers listed on BSI's CSAF aggregator are picked up automatically.

@@ -1,0 +1,166 @@
+{
+"components": [
+{
+"name": "Apache FOP",
+"version": ""
+},
+{
+"name": "Apache HTTP",
+"version": ""
+},
+{
+"name": "Apache Portable Runtime",
+"version": ""
+},
+{
+"name": "backbone.js",
+"version": ""
+},
+{
+"name": "Bootstrap",
+"version": ""
+},
+{
+"name": "ChartDirector",
+"version": ""
+},
+{
+"name": "composer",
+"version": ""
+},
+{
+"name": "d3",
+"version": ""
+},
+{
+"name": "expat",
+"version": ""
+},
+{
+"name": "GMP",
+"version": ""
+},
+{
+"name": "handlebars",
+"version": ""
+},
+{
+"name": "jQuery",
+"version": ""
+},
+{
+"name": "jQuery UI",
+"version": ""
+},
+{
+"name": "Kubernetes",
+"version": ""
+},
+{
+"name": "libcurl",
+"version": ""
+},
+{
+"name": "libmcrypt",
+"version": ""
+},
+{
+"name": "libssh2",
+"version": ""
+},
+{
+"name": "libwebsockets",
+"version": ""
+},
+{
+"name": "libyaml",
+"version": ""
+},
+{
+"name": "mcrypt",
+"version": ""
+},
+{
+"name": "moment",
+"version": ""
+},
+{
+"name": "moment-timezone",
+"version": ""
+},
+{
+"name": "moment.js",
+"version": ""
+},
+{
+"name": "OpenLDAP",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": ""
+},
+{
+"name": "PCRE / libpcre",
+"version": ""
+},
+{
+"name": "PHP",
+"version": ""
+},
+{
+"name": "PHP SourceGuardian Loaders",
+"version": ""
+},
+{
+"name": "PHP SSH2 Extension",
+"version": ""
+},
+{
+"name": "PHP-JWT",
+"version": ""
+},
+{
+"name": "PHPMailer",
+"version": ""
+},
+{
+"name": "RapidJSON",
+"version": ""
+},
+{
+"name": "require.js",
+"version": ""
+},
+{
+"name": "SimpleSAMLphp",
+"version": ""
+},
+{
+"name": "SQLite",
+"version": ""
+},
+{
+"name": "SSH PECL",
+"version": ""
+},
+{
+"name": "underscore",
+"version": ""
+},
+{
+"name": "zlib",
+"version": ""
+}
+],
+"extractors": [
+"dropdown_heads"
+],
+"kind": "html",
+"product": "Tenable Security Center",
+"retrieved": "2026-11-08",
+"sha256": "28b27e82587d0a5d8476a621ca029ed92db92b3c393e4cfa6f91c55180aa6fcb",
+"supplier": "Tenable",
+"url": "https://docs.tenable.com/license-declarations/Content/SC/security-center-64.htm",
+"version": "6.4.x"
+}

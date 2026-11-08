@@ -1,0 +1,162 @@
+{
+"components": [
+{
+"name": "Apache FOP",
+"version": ""
+},
+{
+"name": "Apache HTTP",
+"version": ""
+},
+{
+"name": "Apache Portable Runtime",
+"version": ""
+},
+{
+"name": "backbone.js",
+"version": ""
+},
+{
+"name": "Bootstrap",
+"version": ""
+},
+{
+"name": "ChartDirector",
+"version": ""
+},
+{
+"name": "composer",
+"version": ""
+},
+{
+"name": "d3",
+"version": ""
+},
+{
+"name": "expat",
+"version": ""
+},
+{
+"name": "GMP",
+"version": ""
+},
+{
+"name": "handlebars",
+"version": ""
+},
+{
+"name": "jQuery",
+"version": ""
+},
+{
+"name": "jQuery UI",
+"version": ""
+},
+{
+"name": "Kubernetes",
+"version": ""
+},
+{
+"name": "libcurl",
+"version": ""
+},
+{
+"name": "libmcrypt",
+"version": ""
+},
+{
+"name": "libssh2",
+"version": ""
+},
+{
+"name": "libwebsockets",
+"version": ""
+},
+{
+"name": "libyaml",
+"version": ""
+},
+{
+"name": "mcrypt",
+"version": ""
+},
+{
+"name": "moment",
+"version": ""
+},
+{
+"name": "moment-timezone",
+"version": ""
+},
+{
+"name": "moment.js",
+"version": ""
+},
+{
+"name": "OpenLDAP",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": ""
+},
+{
+"name": "PCRE / libpcre",
+"version": ""
+},
+{
+"name": "PHP",
+"version": ""
+},
+{
+"name": "PHP SourceGuardian Loaders",
+"version": ""
+},
+{
+"name": "PHP SSH2 Extension",
+"version": ""
+},
+{
+"name": "PHPMailer",
+"version": ""
+},
+{
+"name": "RapidJSON",
+"version": ""
+},
+{
+"name": "require.js",
+"version": ""
+},
+{
+"name": "SimpleSAMLphp",
+"version": ""
+},
+{
+"name": "SQLite",
+"version": ""
+},
+{
+"name": "SSH PECL",
+"version": ""
+},
+{
+"name": "underscore",
+"version": ""
+},
+{
+"name": "zlib",
+"version": ""
+}
+],
+"extractors": [
+"dropdown_heads"
+],
+"kind": "html",
+"product": "Tenable Security Center",
+"retrieved": "2026-11-08",
+"sha256": "2193ee97211513680b1a0e58ae862b664a3fd8c696f9823387aa6c96ca9b809f",
+"supplier": "Tenable",
+"url": "https://docs.tenable.com/license-declarations/Content/SC/security-center-63.htm",
+"version": "6.3.x"
+}
