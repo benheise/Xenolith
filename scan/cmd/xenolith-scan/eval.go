@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"slices"
 	"sort"
 	"strings"
 	"time"
@@ -72,8 +73,10 @@ func runEval(manifest, out string) error {
 	}
 	watchNames := map[string]bool{}
 	for _, fp := range pack.Components {
-		watchNames[norm(fp.Name)] = true
-		watchNames[norm(fp.ID)] = true
+		if fp.Watchlist {
+			watchNames[norm(fp.Name)] = true
+			watchNames[norm(fp.ID)] = true
+		}
 	}
 	for _, alias := range []string{"libcurl", "libssl", "libcrypto", "liblzma", "xz utils", "glibc", "libc6", "openssh-server", "openssh-client", "libwebp", "brotli", "libbrotli", "log4j", "log4j-core", "commons-text", "spring-beans", "spring-core", "spring-framework", "php", "openssl", "openssh", "curl", "react-server-dom-turbopack"} {
 		watchNames[norm(alias)] = true
@@ -157,13 +160,29 @@ func evalOne(e corpusEntry, out string, pack *fingerprint.Pack, watch map[string
 	}
 	// index every submitted component under its full and short (group-less) name; extras
 	// are counted per submitted component, not per index key
-	index := map[string]string{}
-	for k := range found {
-		index[norm(k)] = k
-		if i := strings.LastIndex(k, ":"); i >= 0 { // group:name -> name
-			if _, taken := index[norm(k[i+1:])]; !taken {
-				index[norm(k[i+1:])] = k
+	// every submitted component is indexed under its full name, its short (group-less)
+	// name and a punctuation-free form; a listed component matches all of them, so the
+	// same name from a notices file and from the jar itself both count
+	index := map[string][]string{}
+	put := func(key, orig string) {
+		for _, k := range []string{key, strings.ReplaceAll(key, "-", "")} { // node.js = nodejs
+			if !slices.Contains(index[k], orig) {
+				index[k] = append(index[k], orig)
 			}
+		}
+	}
+	keys := make([]string, 0, len(found))
+	for k := range found {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	for _, k := range keys {
+		put(norm(k), k)
+		if a, ok := evalAliases[norm(k)]; ok {
+			put(a, k)
+		}
+		if i := strings.LastIndex(k, ":"); i >= 0 { // group:name -> name
+			put(norm(k[i+1:]), k)
 		}
 	}
 	matched := map[string]bool{}
@@ -174,30 +193,36 @@ func evalOne(e corpusEntry, out string, pack *fingerprint.Pack, watch map[string
 		if isWatch {
 			r.WatchInventory++
 		}
-		orig, ok := index[key]
-		if !ok {
+		cands := index[key]
+		if len(cands) == 0 {
 			// try the last path-ish token (org.apache.commons:commons-text, libfoo-dev)
-			for _, alt := range altNames(c.Name) {
-				if orig, ok = index[alt]; ok {
+			for _, alt := range append(altNames(c.Name), strings.ReplaceAll(key, "-", "")) {
+				if cands = index[alt]; len(cands) > 0 {
 					break
 				}
 			}
 		}
-		if !ok {
+		if len(cands) == 0 {
 			r.Missed = append(r.Missed, c.Name+" "+c.Version)
 			continue
 		}
 		r.Found++
-		matched[orig] = true
+		var seen []string
+		ok := false
+		for _, o := range cands {
+			matched[o] = true
+			seen = append(seen, found[o])
+			ok = ok || hasVersion(found[o], c.Version)
+		}
 		if isWatch {
 			r.WatchFound++
 		}
 		if c.Version != "" {
 			r.Versioned++
-			if hasVersion(found[orig], c.Version) {
+			if ok {
 				r.FoundVersion++
 			} else {
-				r.WrongVersion = append(r.WrongVersion, fmt.Sprintf("%s %s (scanner: %s)", c.Name, c.Version, orDash(found[orig])))
+				r.WrongVersion = append(r.WrongVersion, fmt.Sprintf("%s %s (scanner: %s)", c.Name, c.Version, orDash(strings.Join(seen, "; "))))
 			}
 		}
 	}
@@ -238,6 +263,15 @@ func orDash(s string) string {
 }
 
 var nonAlnum = regexp.MustCompile(`[^a-z0-9]+`)
+
+// evalAliases: product names a binary's own metadata uses for a component that ground
+// truth lists under its short name. Matching only; submissions keep what was found.
+var evalAliases = map[string]string{
+	"zstandard": "zstd",
+	"xz-utils":  "xz",
+	"qt6":       "qt",
+	"qt5":       "qt",
+}
 
 func norm(s string) string {
 	return strings.Trim(nonAlnum.ReplaceAllString(strings.ToLower(s), "-"), "-")

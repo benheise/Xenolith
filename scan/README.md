@@ -29,9 +29,11 @@ Contributor workflow: [CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom)
 
 1. **Unpack**, recursively and statically, into a private temporary tree: zip/jar, tar,
    gzip, bzip2, xz, zstd, lzma, 7z, ar/deb, rpm, cpio, squashfs, ISO 9660, ext4, raw disk
-   images (MBR/GPT), AppImage, Electron asar; with optional helpers found on `PATH`:
-   7-Zip (MSI, CAB, NSIS, InstallShield, xar/pkg, DMG, VMDK, qcow2, VHD), innoextract
-   (Inno Setup), unblob (firmware blobs, UBI, JFFS2, cramfs). Nothing from the artifact
+   images (MBR/GPT), AppImage, Electron asar, and squashfs carved out of firmware blobs
+   (router `.chk`/`.trx` images); with optional helpers found on `PATH`: 7-Zip (MSI,
+   CAB, NSIS, InstallShield, xar/pkg, DMG, VMDK, qcow2, VHD; MSI files get their
+   installed paths back from the MSI tables), innoextract (Inno Setup), unblob
+   (firmware blobs, UBI, JFFS2, cramfs). Nothing from the artifact
    is executed, mounted or emulated. Depth, byte and file limits bound the extraction;
    traversal names, links and device files are refused.
 2. **Detect** with three layers and merge the evidence per component:
@@ -40,9 +42,11 @@ Contributor workflow: [CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom)
      classifiers for common native binaries.
    - the Xenolith **fingerprint pack** (`catalog/fingerprints.yaml`, pinned into the
      binary, `--fingerprints` for a newer one): version strings, static data markers,
-     defined ELF symbols, and the constants version functions return (x86-64, AArch64),
-     for the watchlist components. This is what finds a statically linked Brotli or
-     OpenSSL with no package metadata.
+     defined ELF symbols and PE exports, and what version functions return (a constant
+     or a literal; x86, x86-64, AArch64), for the watchlist components and for common
+     libraries the census does not track (zlib, SQLite, libpng, Electron, Chromium,
+     Node.js and others, marked `watchlist: false`). This is what finds a statically
+     linked Brotli or OpenSSL with no package metadata.
    - **notices files inside the product** (THIRD-PARTY-NOTICES, LICENSES.chromium.html,
      embedded CycloneDX/SPDX files).
 3. **Identify the product** from what the artifact says (PE VERSIONINFO, Info.plist,
@@ -71,8 +75,10 @@ an in-tree kernel module with no version of its own drops to 0.6.
 
 ## Evaluation
 
-`scan/corpus/manifest.yaml` lists 18 public artifacts (Debian packages, Python wheels,
-npm and Maven packages, an OpenWrt image) with ground truth the maker published.
+`scan/corpus/manifest.yaml` lists 24 public artifacts (Debian packages, Python wheels,
+npm and Maven packages, an OpenWrt image, Splunk's Universal Forwarder, Visual Studio
+Code, Wireshark's Windows installers, Elasticsearch) with ground truth the maker published.
+The Windows installers need 7-Zip on `PATH`.
 `xenolith-scan eval` downloads them, checks the hashes, scans and prints recall, version
 accuracy and watchlist recall per artifact; `eval.json` has the missed, wrong-version and
 unlisted lists. Current results and the defects the corpus found are in the

@@ -28,15 +28,16 @@ type Pack struct {
 
 // Fingerprint is the detection recipe for one watchlist component.
 type Fingerprint struct {
-	ID      string
-	Name    string
-	Group   string
-	PURL    string
-	Strings []StringRule
-	Symbols []string
-	Probes  []Probe
-	Markers []Marker
-	Paths   []PathRule
+	ID        string
+	Name      string
+	Group     string
+	PURL      string
+	Watchlist bool // false for detect-only entries (reported, but not census watchlist components)
+	Strings   []StringRule
+	Symbols   []string
+	Probes    []Probe
+	Markers   []Marker
+	Paths     []PathRule
 }
 
 // StringRule finds a version string in an executable.
@@ -44,7 +45,9 @@ type StringRule struct {
 	Contains    []byte
 	Regex       *regexp.Regexp
 	RequiresAny [][]byte
+	UnlessAny   [][]byte
 	Name        string
+	Confidence  float64
 }
 
 // Probe reads the constant a version function returns.
@@ -96,13 +99,17 @@ type rawEntry struct {
 	Probes  []Probe     `yaml:"probes"`
 	Markers []rawMarker `yaml:"markers"`
 	Paths   []rawPath   `yaml:"paths"`
+	// Watchlist is a pointer so that a missing key means true.
+	Watchlist *bool `yaml:"watchlist"`
 }
 
 type rawString struct {
 	Contains    string   `yaml:"contains"`
 	Regex       string   `yaml:"regex"`
 	RequiresAny []string `yaml:"requires_any"`
+	UnlessAny   []string `yaml:"unless_any"`
 	Name        string   `yaml:"name"`
+	Confidence  float64  `yaml:"confidence"`
 }
 
 type rawMarker struct {
@@ -143,7 +150,8 @@ func Load(data []byte) (*Pack, error) {
 	sort.Strings(ids)
 	for _, id := range ids {
 		e := raw.Components[id]
-		fp := &Fingerprint{ID: id, Name: e.Name, Group: e.Group, PURL: e.PURL, Symbols: e.Symbols, Probes: e.Probes}
+		fp := &Fingerprint{ID: id, Name: e.Name, Group: e.Group, PURL: e.PURL, Symbols: e.Symbols, Probes: e.Probes,
+			Watchlist: e.Watchlist == nil || *e.Watchlist}
 		if fp.Name == "" {
 			fp.Name = id
 		}
@@ -152,9 +160,15 @@ func Load(data []byte) (*Pack, error) {
 			if err != nil {
 				return nil, fmt.Errorf("fingerprints: %s: %w", id, err)
 			}
-			rule := StringRule{Contains: []byte(s.Contains), Regex: re, Name: s.Name}
+			rule := StringRule{Contains: []byte(s.Contains), Regex: re, Name: s.Name, Confidence: s.Confidence}
+			if rule.Confidence == 0 {
+				rule.Confidence = 0.9
+			}
 			for _, r := range s.RequiresAny {
 				rule.RequiresAny = append(rule.RequiresAny, []byte(r))
+			}
+			for _, r := range s.UnlessAny {
+				rule.UnlessAny = append(rule.UnlessAny, []byte(r))
 			}
 			fp.Strings = append(fp.Strings, rule)
 		}

@@ -56,6 +56,7 @@ class Fingerprint:
     name: str
     group: str = ""
     purl: str = ""
+    watchlist: bool = True              # false: detect-only (reported, not a census watchlist component)
     strings: list = field(default_factory=list)
     symbols: list = field(default_factory=list)
     probes: list = field(default_factory=list)
@@ -67,10 +68,12 @@ def load(path: Path = FINGERPRINTS) -> list[Fingerprint]:
     cfg = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     out = []
     for cid, spec in (cfg.get("components") or {}).items():
-        fp = Fingerprint(id=cid, name=spec["name"], group=spec.get("group", ""), purl=spec.get("purl", ""))
+        fp = Fingerprint(id=cid, name=spec["name"], group=spec.get("group", ""), purl=spec.get("purl", ""),
+                         watchlist=spec.get("watchlist", True) is not False)
         for s in spec.get("strings") or []:
             fp.strings.append({**s, "contains": s["contains"].encode(), "regex": re.compile(s["regex"].encode()),
-                               "requires_any": [r.encode() for r in s.get("requires_any") or []]})
+                               "requires_any": [r.encode() for r in s.get("requires_any") or []],
+                               "unless_any": [r.encode() for r in s.get("unless_any") or []]})
         fp.symbols = [s.encode() for s in spec.get("symbols") or []]
         fp.probes = list(spec.get("probes") or [])
         fp.markers = [{**m, "bytes": m["bytes"].encode()} for m in spec.get("markers") or []]
@@ -175,12 +178,75 @@ class Elf:
         return b""
 
 
+class Pe:
+    """Just enough PE/COFF to find exported functions and read their code (Windows DLLs
+    export their version functions the way ELF libraries define them)."""
+
+    MAX_EXPORTS = 1 << 16
+
+    def __init__(self, data):
+        self.data = data
+        pe = struct.unpack_from("<I", data, 0x3C)[0]
+        if data[pe:pe + 4] != b"PE\0\0":
+            raise ValueError("not a PE file")
+        machine, nsec = struct.unpack_from("<HH", data, pe + 4)
+        optsz = struct.unpack_from("<H", data, pe + 20)[0]
+        opt = pe + 24
+        magic = struct.unpack_from("<H", data, opt)[0]
+        self.arch = {0x8664: "x86", 0x14C: "x86", 0xAA64: "arm64"}.get(machine, "")
+        dd = opt + (112 if magic == 0x20B else 96)
+        nrva = struct.unpack_from("<I", data, dd - 4)[0]
+        self.export_dir = struct.unpack_from("<II", data, dd) if nrva > 0 else (0, 0)
+        self.sections = []
+        for i in range(min(nsec, 96)):
+            _, vsize, va, rawsz, rawptr = struct.unpack_from("<8sIIII", data, opt + optsz + 40 * i)
+            self.sections.append((va, max(vsize, rawsz), rawsz, rawptr))
+
+    def read_rva(self, rva: int, n: int = 32) -> bytes:
+        for va, size, rawsz, rawptr in self.sections:
+            if va <= rva < va + size:
+                off = rva - va
+                if off >= rawsz:
+                    return b""
+                return bytes(self.data[rawptr + off:rawptr + min(rawsz, off + n)])
+        return b""
+
+    def exports(self, wanted: set[bytes]) -> dict[bytes, int]:
+        erva, esize = self.export_dir
+        hdr = self.read_rva(erva, 40) if erva and esize >= 40 else b""
+        if len(hdr) < 40:
+            return {}
+        nfun, nnames, afun, anames, aords = struct.unpack_from("<IIIII", hdr, 20)
+        if nfun > self.MAX_EXPORTS or nnames > self.MAX_EXPORTS:
+            return {}
+        longest = max((len(w) for w in wanted), default=0)
+        names, ords, funcs = self.read_rva(anames, nnames * 4), self.read_rva(aords, nnames * 2), self.read_rva(afun, nfun * 4)
+        out = {}
+        for i in range(min(len(names) // 4, len(ords) // 2)):
+            raw = self.read_rva(struct.unpack_from("<I", names, i * 4)[0], longest + 1)
+            if b"\0" not in raw or raw[:raw.index(b"\0")] not in wanted:
+                continue
+            o = struct.unpack_from("<H", ords, i * 2)[0]
+            if o * 4 + 4 > len(funcs):
+                continue
+            rva = struct.unpack_from("<I", funcs, o * 4)[0]
+            if not erva <= rva < erva + esize:     # forwarded exports point into the export directory
+                out[raw[:raw.index(b"\0")]] = rva
+        return out
+
+
 def returned_constant(elf: Elf, vaddr: int) -> int | None:
     """The immediate a tiny 'return CONSTANT;' function returns (x86/x86-64, AArch64)."""
-    code = elf.read_at(vaddr & ~1)
+    arch = {0x3E: "x86", 0x03: "x86", 0xB7: "arm64"}.get(elf.machine, "")
+    # x86 functions may start at odd addresses (Pillow's liblcms2 has one at 0xed7f); only
+    # 32-bit ARM uses the low bit, for Thumb, and it is not decoded here.
+    return decode_return(elf.read_at(vaddr), arch)
+
+
+def decode_return(code: bytes, arch: str) -> int | None:
     if not code:
         return None
-    if elf.machine in (0x3E, 0x03):                 # x86-64, i386
+    if arch == "x86":                               # x86-64, i386
         if code[:4] in (b"\xf3\x0f\x1e\xfa", b"\xf3\x0f\x1e\xfb"):   # endbr64/endbr32
             code = code[4:]
         framed = False
@@ -194,7 +260,7 @@ def returned_constant(elf: Elf, vaddr: int) -> int | None:
         if framed and rest[:1] in (b"\x5d", b"\xc9"):   # pop rbp / leave
             rest = rest[1:]
         return value if rest[:1] == b"\xc3" else None
-    if elf.machine == 0xB7:                         # AArch64
+    if arch == "arm64":
         value, seen = 0, False
         for i in range(0, len(code) - 3, 4):
             ins = struct.unpack_from("<I", code, i)[0]
@@ -215,11 +281,57 @@ def returned_constant(elf: Elf, vaddr: int) -> int | None:
     return None
 
 
+def decode_address(code: bytes, arch: str, addr: int) -> int | None:
+    """Address of the literal a tiny 'return "literal";' function returns: x86-64
+    lea rax,[rip+disp32]; ret (optionally framed), or AArch64 adrp x0 / add x0,x0,#lo12 / ret."""
+    if arch == "x86":
+        at = 4 if code[:4] == b"\xf3\x0f\x1e\xfa" else 0
+        framed = code[at:at + 4] == b"\x55\x48\x89\xe5"
+        if framed:
+            at += 4
+        if code[at:at + 3] != b"\x48\x8d\x05" or len(code) < at + 8:
+            return None
+        disp = struct.unpack_from("<i", code, at + 3)[0]
+        rest = code[at + 7:]
+        if framed and rest[:1] in (b"\x5d", b"\xc9"):
+            rest = rest[1:]
+        return addr + at + 7 + disp if rest[:1] == b"\xc3" else None
+    if arch == "arm64":
+        target = None
+        for i in range(0, len(code) - 3, 4):
+            ins = struct.unpack_from("<I", code, i)[0]
+            if ins in (0xD503201F, 0xD503233F, 0xD503245F, 0xD503241F, 0xD50323BF, 0xA9BF7BFD, 0x910003FD, 0xA8C17BFD):
+                continue
+            if ins & 0x9F00001F == 0x90000000:                      # adrp x0, page
+                imm = ((ins >> 29) & 3) | (((ins >> 5) & 0x7FFFF) << 2)
+                if imm & (1 << 20):
+                    imm -= 1 << 21
+                target = ((addr + i) & ~0xFFF) + (imm << 12)
+            elif target is not None and ins & 0xFFC003FF == 0x91000000:   # add x0, x0, #imm12
+                target += (ins >> 10) & 0xFFF
+            elif ins == 0xD65F03C0:
+                return target
+            else:
+                return None
+    return None
+
+
+def version_in(literal: bytes) -> str:
+    literal = literal.split(b"\0", 1)[0]
+    m = re.search(rb"\d+\.\d+(?:\.\d+){0,2}", literal) if 0 < len(literal) <= 64 else None
+    return m.group(0).decode() if m else ""
+
+
 DECODERS = {
     "brotli_hex": lambda v: f"{v >> 24}.{(v >> 12) & 0xFFF}.{v & 0xFFF}",
     "webp_hex": lambda v: f"{v >> 16}.{(v >> 8) & 0xFF}.{v & 0xFF}",
     "lzma_number": lambda v: f"{v // 10000000}.{(v // 10000) % 1000}.{(v // 10) % 1000}",
+    "sqlite_number": lambda v: f"{v // 1000000}.{(v // 1000) % 1000}.{v % 1000}",
+    "lcms_number": lambda v: f"{v // 1000}.{(v // 10) % 100}" + (f".{v % 10}" if v % 10 else ""),
+    "decimal_mmp": lambda v: f"{v // 10000}.{(v // 100) % 100}.{v % 100}",
+    "pg_number": lambda v: f"{v // 10000}.{v % 10000}" if v >= 100000 else f"{v // 10000}.{(v // 100) % 100}.{v % 100}",
 }
+VERSION_SHAPE = re.compile(r"\d{1,2}\.\d{1,4}(?:\.\d{1,4})?")
 
 
 # ----------------------------------------------------------------- scanner
@@ -369,6 +481,8 @@ class Scanner:
                     continue
                 if s["requires_any"] and not any(data.find(r) >= 0 for r in s["requires_any"]):
                     continue
+                if any(data.find(r) >= 0 for r in s["unless_any"]):
+                    continue
                 # Prefer the most specific version and skip glob patterns: OpenSSH keeps the bare
                 # "OpenSSH_9.2" next to "OpenSSH_9.2p1 Debian-..." and a table of "OpenSSH_7.0*".
                 best = None
@@ -381,31 +495,55 @@ class Scanner:
                         best = m
                 if best is not None:
                     v = best.group("v").decode("ascii", "replace")
-                    self._add(fp, v, "binary-analysis", 0.9, rel, evidence=best.group(0).decode("ascii", "replace"),
-                              name=s.get("name") or fp.name)
+                    self._add(fp, v, "binary-analysis", float(s.get("confidence", 0.9)), rel,
+                              evidence=best.group(0).decode("ascii", "replace"), name=s.get("name") or fp.name)
             for mk in fp.markers:
                 if data.find(mk["bytes"]) >= 0:
                     self._add(fp, "", "binary-analysis", 0.6, rel, evidence="static data marker", note=mk.get("note", ""))
-        if data[:4] == b"\x7fELF" and self.wanted_symbols and any(data.find(s) >= 0 for s in self.wanted_symbols):
+        if not self.wanted_symbols or not any(data.find(s) >= 0 for s in self.wanted_symbols):
+            return
+        verb = "defines"
+        if data[:4] == b"\x7fELF":
             try:
                 elf = Elf(data)
                 defined = elf.defined_symbols(self.wanted_symbols)
             except (ValueError, struct.error) as e:
                 self.skipped.append(f"{rel}: ELF parse: {e}")
                 return
-            for fp in self.fps:
-                version = ""
-                for probe in fp.probes:
-                    addr = defined.get(probe["symbol"].encode())
-                    value = returned_constant(elf, addr) if addr else None
-                    if value:
-                        v = DECODERS[probe["decode"]](value)
-                        if re.fullmatch(r"\d{1,2}\.\d{1,4}\.\d{1,4}", v):
-                            version = v
-                            self._add(fp, v, "binary-analysis", 0.8, rel, evidence=f"{probe['symbol']}() returns {value:#x}")
-                            break
-                if fp.symbols and not version and all(s in defined for s in fp.symbols):
-                    self._add(fp, "", "binary-analysis", 0.7, rel, evidence="defines " + ", ".join(s.decode() for s in fp.symbols))
+            read = elf.read_at                                    # (vaddr, n=32)
+            arch = {0x3E: "x86", 0x03: "x86", 0xB7: "arm64"}.get(elf.machine, "")
+        elif data[:2] == b"MZ":
+            try:
+                pe = Pe(data)
+                defined = pe.exports(self.wanted_symbols)
+            except (ValueError, struct.error):
+                return                                  # a DOS stub or other MZ file
+            read, arch, verb = pe.read_rva, pe.arch, "exports"
+        else:
+            return
+        for fp in self.fps:
+            version = ""
+            for probe in fp.probes:
+                addr = defined.get(probe["symbol"].encode())
+                if not addr:
+                    continue
+                if probe["decode"] == "string":
+                    target = decode_address(read(addr, 32), arch, addr)
+                    v = version_in(read(target, 65)) if target is not None else ""
+                    if VERSION_SHAPE.fullmatch(v):
+                        version = v
+                        self._add(fp, v, "binary-analysis", 0.8, rel, evidence=f'{probe["symbol"]}() returns "{v}"')
+                        break
+                    continue
+                value = decode_return(read(addr, 32), arch)
+                if value:
+                    v = DECODERS[probe["decode"]](value)
+                    if VERSION_SHAPE.fullmatch(v):
+                        version = v
+                        self._add(fp, v, "binary-analysis", 0.8, rel, evidence=f"{probe['symbol']}() returns {value:#x}")
+                        break
+            if fp.symbols and not version and all(s in defined for s in fp.symbols):
+                self._add(fp, "", "binary-analysis", 0.7, rel, evidence=f"{verb} " + ", ".join(s.decode() for s in fp.symbols))
 
     def _add(self, fp: Fingerprint, version: str, technique: str, confidence: float, rel: str,
              evidence: str = "", note: str = "", name: str = ""):
@@ -495,6 +633,7 @@ def summarize(findings: list[Finding]) -> list[dict]:
 
 def to_cyclonedx(summary: list[dict], fingerprints: list[Fingerprint], target: str) -> dict:
     purls = {fp.id: fp.purl for fp in fingerprints}
+    tracked = {fp.id for fp in fingerprints if fp.watchlist}
     comps = []
     for i, g in enumerate(summary):
         c = {"type": "library", "bom-ref": f"f{i + 1}", "name": g["name"]}
@@ -510,9 +649,9 @@ def to_cyclonedx(summary: list[dict], fingerprints: list[Fingerprint], target: s
                           "methods": [{"technique": t, "confidence": round(g["confidence"], 2)} for t in sorted(g["techniques"])]}],
             "occurrences": [{"location": loc} for loc in g["locations"][:50]],
         }
-        c["properties"] = [{"name": "xenolith:component", "value": g["component"]},
-                           {"name": "xenolith:found_by", "value": "xenolith-fingerprint"},
-                           {"name": "xenolith:confidence", "value": f"{g['confidence']:.2f}"}]
+        c["properties"] = ([{"name": "xenolith:component", "value": g["component"]}] if g["component"] in tracked else []) + [
+            {"name": "xenolith:found_by", "value": "xenolith-fingerprint"},
+            {"name": "xenolith:confidence", "value": f"{g['confidence']:.2f}"}]
         if g["notes"]:
             c["properties"].append({"name": "xenolith:note", "value": "; ".join(sorted(g["notes"]))})
         comps.append(c)
@@ -549,7 +688,7 @@ def run(args) -> int:
         for note in sorted(g["notes"]):
             print(f"{'':24} note: {note}")
     if not summary:
-        print("no watchlist components found")
+        print("no components found")
     if scanner.skipped:
         print(f"{len(scanner.skipped)} item(s) not inspected" + ("" if args.verbose else " (use --verbose to list)"))
         if args.verbose:

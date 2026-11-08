@@ -25,6 +25,7 @@ type Finding struct {
 	Evidence   string  `json:"evidence,omitempty"`
 	Note       string  `json:"note,omitempty"`
 	PURL       string  `json:"purl,omitempty"`
+	Watchlist  bool    `json:"watchlist"` // false for detect-only fingerprints
 }
 
 // Scanner applies a pack to files.
@@ -270,12 +271,15 @@ func (s *Scanner) binary(data []byte, location string) {
 			if len(rule.RequiresAny) > 0 && !anyContains(data, rule.RequiresAny) {
 				continue
 			}
+			if len(rule.UnlessAny) > 0 && anyContains(data, rule.UnlessAny) {
+				continue
+			}
 			if m, v := matchString(rule, data); m != nil {
 				name := rule.Name
 				if name == "" {
 					name = fp.Name
 				}
-				s.add(fp, name, v, "binary-analysis", 0.9, location, printable(m), "")
+				s.add(fp, name, v, "binary-analysis", rule.Confidence, location, printable(m), "")
 			}
 		}
 		for _, mk := range fp.Markers {
@@ -284,18 +288,43 @@ func (s *Scanner) binary(data []byte, location string) {
 			}
 		}
 	}
-	if !bytes.HasPrefix(data, []byte{0x7f, 'E', 'L', 'F'}) || len(s.wanted) == 0 || !anyContains(data, s.wanted) {
+	if len(s.wanted) == 0 || !anyContains(data, s.wanted) {
 		return
 	}
-	f, err := elf.NewFile(bytes.NewReader(data))
-	if err != nil {
-		s.Skipped = append(s.Skipped, location+": ELF parse: "+err.Error())
-		return
-	}
-	defer f.Close()
-	defined, err := definedSymbols(f, s.wanted)
-	if err != nil {
-		s.Skipped = append(s.Skipped, location+": ELF symbols: "+err.Error())
+	var defined map[string]uint64
+	var read func(addr uint64, n int) []byte
+	arch, verb := "", "defines"
+	switch {
+	case bytes.HasPrefix(data, []byte{0x7f, 'E', 'L', 'F'}):
+		f, err := elf.NewFile(bytes.NewReader(data))
+		if err != nil {
+			s.Skipped = append(s.Skipped, location+": ELF parse: "+err.Error())
+			return
+		}
+		defer f.Close()
+		if defined, err = definedSymbols(f, s.wanted); err != nil {
+			s.Skipped = append(s.Skipped, location+": ELF symbols: "+err.Error())
+			return
+		}
+		read = func(addr uint64, n int) []byte { return readAt(f, addr, n) }
+		switch f.Machine {
+		case elf.EM_X86_64, elf.EM_386:
+			arch = "x86"
+		case elf.EM_AARCH64:
+			arch = "arm64"
+		}
+	case bytes.HasPrefix(data, []byte("MZ")):
+		img, err := openPE(data, s.wanted)
+		if err != nil {
+			return // a DOS stub or something else starting with MZ
+		}
+		defined = map[string]uint64{}
+		for name, rva := range img.exports {
+			defined[name] = uint64(rva)
+		}
+		read = func(addr uint64, n int) []byte { return img.read(uint32(addr), n) }
+		arch, verb = img.arch, "exports"
+	default:
 		return
 	}
 	for _, fp := range s.Pack.Components {
@@ -305,7 +334,19 @@ func (s *Scanner) binary(data []byte, location string) {
 			if !ok {
 				continue
 			}
-			if value, ok := returnedConstant(f, addr); ok && value != 0 {
+			if probe.Decode == "string" {
+				target, ok := decodeAddress(read(addr, 32), arch, addr)
+				if !ok {
+					continue
+				}
+				if v := versionIn(read(target, 65)); versionShape.MatchString(v) {
+					version = v
+					s.add(fp, fp.Name, v, "binary-analysis", 0.8, location, probe.Symbol+`() returns "`+v+`"`, "")
+					break
+				}
+				continue
+			}
+			if value, ok := decodeReturn(read(addr, 32), arch); ok && value != 0 {
 				if v := decodeVersion(probe.Decode, value); versionShape.MatchString(v) {
 					version = v
 					s.add(fp, fp.Name, v, "binary-analysis", 0.8, location,
@@ -323,13 +364,13 @@ func (s *Scanner) binary(data []byte, location string) {
 				}
 			}
 			if all {
-				s.add(fp, fp.Name, "", "binary-analysis", 0.7, location, "defines "+strings.Join(fp.Symbols, ", "), "")
+				s.add(fp, fp.Name, "", "binary-analysis", 0.7, location, verb+" "+strings.Join(fp.Symbols, ", "), "")
 			}
 		}
 	}
 }
 
-var versionShape = regexp.MustCompile(`^\d{1,2}\.\d{1,4}\.\d{1,4}$`)
+var versionShape = regexp.MustCompile(`^\d{1,2}\.\d{1,4}(?:\.\d{1,4})?$`)
 
 func hex32(v uint32) string {
 	const digits = "0123456789abcdef"
@@ -426,6 +467,7 @@ func (s *Scanner) add(fp *Fingerprint, name, version, technique string, confiden
 	s.Findings = append(s.Findings, Finding{
 		Component: fp.ID, Name: name, Group: fp.Group, Version: version, Technique: technique,
 		Confidence: confidence, Location: location, Evidence: evidence, Note: note, PURL: fp.PURLFor(name, version),
+		Watchlist: fp.Watchlist,
 	})
 }
 
@@ -441,6 +483,7 @@ type Group struct {
 	Locations  []string `json:"locations"`
 	Evidence   []string `json:"evidence"`
 	Notes      []string `json:"notes,omitempty"`
+	Watchlist  bool     `json:"watchlist"`
 }
 
 // Summarize merges findings into one entry per (component, name, version). Unversioned
@@ -470,7 +513,7 @@ func Summarize(findings []Finding) []Group {
 		key := [4]string{f.Component, f.Group, f.Name, f.Version}
 		g, ok := groups[key]
 		if !ok {
-			g = &Group{Component: f.Component, Name: f.Name, Group: f.Group, Version: f.Version, PURL: f.PURL}
+			g = &Group{Component: f.Component, Name: f.Name, Group: f.Group, Version: f.Version, PURL: f.PURL, Watchlist: f.Watchlist}
 			groups[key] = g
 			order = append(order, key)
 		}

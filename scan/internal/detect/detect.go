@@ -118,7 +118,8 @@ func Run(ctx context.Context, res *unpack.Result, opts Options) (*Report, error)
 
 	var noticeFiles int
 	for _, tree := range res.Trees {
-		found := notices.Scan(tree, res.Locate)
+		found, nskipped := notices.Scan(tree, res.Locate)
+		rep.Skipped = append(rep.Skipped, nskipped...)
 		for _, nf := range found {
 			noticeFiles++
 			for _, c := range nf.Components {
@@ -239,6 +240,15 @@ func fromSyft(p pkg.Package, tree string, res *unpack.Result) Component {
 		c.Confidence = 0.5
 		note = "declared in a manifest found in the artifact, without a resolved version; not evidence it shipped"
 	}
+	if strings.Contains(p.FoundBy, "pe-binary") {
+		c.Name, c.Version = peName(c.Name), peVersion(c.Version)
+	}
+	if c.Version == "" && (strings.Contains(p.FoundBy, "pe-binary") || strings.Contains(p.FoundBy, "elf-binary")) {
+		// a DLL or ELF file named by its file name, with no version resource or package
+		// note: presence of something, not an identified component
+		c.Confidence = 0.6
+		note = "binary without version information; named from the file"
+	}
 	if p.Type == pkg.LinuxKernelModulePkg && c.Version == "" {
 		// in-tree modules have no version of their own: they are the kernel, which is
 		// listed separately; keep them as leads rather than one submission line per .ko
@@ -332,6 +342,65 @@ func declaredByLibrary(p pkg.Package) bool {
 	return true
 }
 
+// watchlistID links a fingerprint finding to its census watchlist component; detect-only
+// fingerprints (zlib, sqlite, Electron...) report the component without that link.
+func watchlistID(g fingerprint.Group) string {
+	if g.Watchlist {
+		return g.Component
+	}
+	return ""
+}
+
+func hasPrefixed(list []string, prefix string) bool {
+	for _, x := range list {
+		if strings.HasPrefix(x, prefix) {
+			return true
+		}
+	}
+	return false
+}
+
+// trimZero drops a fourth ".0" component (Windows file versions: 6.7.3.0 = 6.7.3).
+func trimZero(v string) string {
+	if strings.Count(v, ".") == 3 && strings.HasSuffix(v, ".0") {
+		return strings.TrimSuffix(v, ".0")
+	}
+	return v
+}
+
+// peName tidies the product names Windows version resources carry ("The c-ares
+// library", "XZ Utils <https://tukaani.org/xz/>", "NGHTTP2.", "GNU libintl: accessing
+// NLS message catalogs") into component names.
+func peName(name string) string {
+	n := strings.TrimSpace(name)
+	if i := strings.Index(n, " <"); i > 0 {
+		n = n[:i]
+	}
+	if i := strings.Index(n, ": "); i > 0 {
+		n = n[:i]
+	}
+	n = strings.TrimSuffix(strings.TrimSpace(n), ".")
+	n = strings.TrimPrefix(n, "The ")
+	for _, suffix := range []string{" library", " Library", " DLL", " dll"} {
+		if t := strings.TrimSuffix(n, suffix); t != n && t != "" {
+			n = t
+			break
+		}
+	}
+	if n == "" {
+		return name
+	}
+	return n
+}
+
+// peVersion: "1, 0, 0, 0" -> "1.0.0", "6.7.3.0" -> "6.7.3".
+func peVersion(v string) string {
+	if strings.Contains(v, ", ") {
+		v = strings.ReplaceAll(v, ", ", ".")
+	}
+	return trimZero(strings.TrimSpace(v))
+}
+
 func unresolved(v string) bool {
 	v = strings.TrimSpace(v)
 	return strings.EqualFold(v, "UNKNOWN") || strings.Contains(v, "${")
@@ -339,7 +408,7 @@ func unresolved(v string) bool {
 
 func fromFingerprint(g fingerprint.Group) Component {
 	c := Component{
-		Name: g.Name, Group: g.Group, Version: g.Version, Type: "library", PURL: g.PURL, Watchlist: g.Component,
+		Name: g.Name, Group: g.Group, Version: g.Version, Type: "library", PURL: g.PURL, Watchlist: watchlistID(g),
 		Confidence: g.Confidence, Techniques: g.Techniques, FoundBy: []string{"xenolith-fingerprint"},
 		Locations: g.Locations, Evidence: g.Evidence, Notes: g.Notes,
 	}
@@ -420,6 +489,39 @@ func merge(all []Component) []Component {
 				g.Notes = appendUnique(g.Notes, n)
 			}
 			dropped[k] = true
+		}
+	}
+	// A Windows or ELF binary Syft names from its own version resource is the same
+	// component a fingerprint identified in that file at the same version: keep the
+	// fingerprint's name (zlib-ng2.dll calls itself "zlib" 2.1.5; the fingerprint knows
+	// it is zlib-ng 2.1.5).
+	byLoc := map[string][]string{}
+	for _, k := range order {
+		if c := byKey[k]; !dropped[k] && hasPrefixed(c.FoundBy, "xenolith-fingerprint") {
+			for _, l := range c.Locations {
+				byLoc[l] = append(byLoc[l], k)
+			}
+		}
+	}
+	for _, k := range order {
+		c := byKey[k]
+		if dropped[k] || len(c.Locations) != 1 || c.Version == "" || hasPrefixed(c.FoundBy, "xenolith-fingerprint") ||
+			!(hasPrefixed(c.FoundBy, "syft:pe-binary") || hasPrefixed(c.FoundBy, "syft:elf-binary")) {
+			continue
+		}
+		for _, fk := range byLoc[c.Locations[0]] {
+			f := byKey[fk]
+			if fk == k || trimZero(f.Version) != trimZero(c.Version) {
+				continue
+			}
+			for _, x := range c.FoundBy {
+				f.FoundBy = appendUnique(f.FoundBy, x)
+			}
+			if c.Confidence > f.Confidence {
+				f.Confidence = c.Confidence
+			}
+			dropped[k] = true
+			break
 		}
 	}
 	versioned := map[string]bool{}

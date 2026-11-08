@@ -17,10 +17,14 @@ func TestSyftUnresolvedVersions(t *testing.T) {
 	if c := fromSyft(prop, "", nil); c.Version != "" || c.Confidence >= 0.7 {
 		t.Errorf("property placeholder: %+v", c)
 	}
-	// a PE binary without version resources stays a presence finding at its own confidence
+	// a PE binary without version resources is presence only: a lead below the line
 	pe := pkg.Package{Name: "snappyjava", Version: "UNKNOWN", FoundBy: "pe-binary-package-cataloger"}
-	if c := fromSyft(pe, "", nil); c.Version != "" || c.Confidence != 0.9 {
+	if c := fromSyft(pe, "", nil); c.Version != "" || c.Confidence >= 0.7 || len(c.Notes) != 1 {
 		t.Errorf("pe binary: %+v", c)
+	}
+	versioned := pkg.Package{Name: "GLib", Version: "2.80.0", FoundBy: "pe-binary-package-cataloger"}
+	if c := fromSyft(versioned, "", nil); c.Confidence != 0.9 {
+		t.Errorf("versioned pe binary: %+v", c)
 	}
 	// a declared dependency with a concrete version keeps the manifest confidence
 	pinned := pkg.Package{Name: "log4j-core", Version: "2.13.3", FoundBy: "java-pom-cataloger"}
@@ -77,5 +81,45 @@ func TestJarNamedFromFile(t *testing.T) {
 		Locations: file.NewLocationSet(file.NewLocation("/lib/netty-common-4.1.70.Final.jar"))}
 	if c := fromSyft(other, "", nil); c.Name != "netty-common" {
 		t.Errorf("unchanged when the file name agrees: %+v", c)
+	}
+}
+
+func TestPENamesAndVersions(t *testing.T) {
+	for in, want := range map[string]string{
+		"The c-ares library":                          "c-ares",
+		"XZ Utils <https://tukaani.org/xz/>":          "XZ Utils",
+		"NGHTTP2.":                                    "NGHTTP2",
+		"GNU libintl: accessing NLS message catalogs": "GNU libintl",
+		"Qt6":                          "Qt6",
+		"Microsoft® C Runtime Library": "Microsoft® C Runtime",
+	} {
+		if got := peName(in); got != want {
+			t.Errorf("peName(%q) = %q, want %q", in, got, want)
+		}
+	}
+	for in, want := range map[string]string{"1, 0, 0, 0": "1.0.0", "6.7.3.0": "6.7.3", "4.4.19": "4.4.19", "10.0.28000.1839": "10.0.28000.1839"} {
+		if got := peVersion(in); got != want {
+			t.Errorf("peVersion(%q) = %q, want %q", in, got, want)
+		}
+	}
+}
+
+func TestFoldBinaryIntoFingerprint(t *testing.T) {
+	loc := "Wireshark.msi!/Wireshark/zlib-ng2.dll"
+	merged := merge([]Component{
+		{Name: "zlib", Version: "2.1.5", Confidence: 0.9, FoundBy: []string{"syft:pe-binary-package-cataloger"}, Locations: []string{loc}},
+		{Name: "zlib-ng", Version: "2.1.5", Confidence: 0.9, FoundBy: []string{"xenolith-fingerprint"}, Locations: []string{loc}},
+		{Name: "zlib", Version: "1.3.1", Confidence: 0.9, FoundBy: []string{"xenolith-fingerprint"}, Locations: []string{"Wireshark.msi!/Wireshark/zlib1.dll"}},
+	})
+	if len(merged) != 2 {
+		t.Fatalf("want zlib-ng 2.1.5 and zlib 1.3.1, got %+v", merged)
+	}
+	for _, c := range merged {
+		if c.Name == "zlib" && c.Version == "2.1.5" {
+			t.Errorf("the version resource's name survived: %+v", c)
+		}
+		if c.Name == "zlib-ng" && len(c.FoundBy) != 2 {
+			t.Errorf("found_by not merged: %+v", c)
+		}
 	}
 }

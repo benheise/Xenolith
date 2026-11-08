@@ -221,6 +221,8 @@ class NoticesExtractTest(unittest.TestCase):
         got, used = self.comps(html, "text/html", "https://v.example/x.html")
         self.assertEqual(got, {("brotli", "1.0.6"), ("php", "7.4.33")})
         self.assertEqual(used, ["html_table"])
+        # the text fallback keeps the rows too (flattened rows are separated by blank lines)
+        self.assertEqual(set(notices.ex_pipe_table(notices.html_to_text(html))), {("brotli", "1.0.6"), ("php", "7.4.33")})
 
     def test_dotted_toc_skips_license_entries(self):
         text = ("Table of Contents\n7-Zip (win32) 9.20 ........................ 12\n"
@@ -581,6 +583,41 @@ def jar(entries: dict[str, bytes]) -> bytes:
     return buf.getvalue()
 
 
+def make_pe(functions: dict[str, bytes], machine=0x8664) -> bytes:
+    """Minimal PE32+ DLL with one section exporting `functions` (code first, then the export directory)."""
+    text = b"".join(code.ljust(16, b"\xcc") for code in functions.values())
+    va, raw = 0x1000, 0x200
+    names = sorted(functions)
+    order = list(functions)
+    edir = va + len(text)
+    afun = edir + 40
+    anames = afun + 4 * len(order)
+    aords = anames + 4 * len(names)
+    strs = aords + 2 * len(names)
+    blob, name_rvas = b"", []
+    for n in names:
+        name_rvas.append(strs + len(blob))
+        blob += n.encode() + b"\x00"
+    exp = _struct.pack("<IIHHIIIIIII", 0, 0, 0, 0, 0, 1, len(order), len(names), afun, anames, aords)
+    exp += b"".join(_struct.pack("<I", va + 16 * i) for i in range(len(order)))
+    exp += b"".join(_struct.pack("<I", r) for r in name_rvas)
+    exp += b"".join(_struct.pack("<H", order.index(n)) for n in names)
+    section = text + exp + blob
+    size = (len(section) + 0x1FF) & ~0x1FF
+    opt = bytearray(240)
+    _struct.pack_into("<H", opt, 0, 0x20B)
+    _struct.pack_into("<I", opt, 108, 16)
+    _struct.pack_into("<II", opt, 112, edir, len(exp) + len(blob))
+    coff = _struct.pack("<HHIIIHH", machine, 1, 0, 0, 0, len(opt), 0x2022)
+    shdr = _struct.pack("<8sIIIIIIHHI", b".text", len(section), va, size, raw, 0, 0, 0, 0, 0x60000020)
+    head = bytearray(raw)
+    head[0:2] = b"MZ"
+    _struct.pack_into("<I", head, 0x3C, 0x40)
+    hdr = b"PE\x00\x00" + coff + bytes(opt) + shdr
+    head[0x40:0x40 + len(hdr)] = hdr
+    return bytes(head) + section.ljust(size, b"\x00")
+
+
 class FingerprintTest(unittest.TestCase):
     def setUp(self):
         self.fps = fpm.load()
@@ -605,9 +642,12 @@ class FingerprintTest(unittest.TestCase):
             "bin/sshd": elf + b"OpenSSH_9.3p1\x00/etc/ssh/sshd_config\x00",
             "bin/putty": elf + b"OpenSSH_2.3\x00",                                          # bug table, not OpenSSH
             "bin/xz": elf + b"xz (XZ Utils) 5.6.1\x00",
+            # static curl 8 with only curl_version_info()'s bare string (Splunk's splunkd)
+            "bin/splunkd": elf + b"libcurl lacks IDN support\x00alt-svc\x008.5.0\x00AsynchDNS\x00curl_version_info\x00",
         })
         self.assertEqual(set(found), {("openssl", "1.1.1k"), ("curl", "7.88.1"), ("glibc", "2.36"),
-                                      ("php", "8.1.2"), ("openssh", "9.3p1"), ("xz", "5.6.1")})
+                                      ("php", "8.1.2"), ("openssh", "9.3p1"), ("xz", "5.6.1"), ("curl", "8.5.0")})
+        self.assertEqual(found[("curl", "8.5.0")]["confidence"], 0.8)
 
     def test_version_probes_and_symbols(self):
         x86 = b"\xf3\x0f\x1e\xfa\xb8" + _struct.pack("<I", 0x1000009) + b"\xc3"
@@ -628,6 +668,65 @@ class FingerprintTest(unittest.TestCase):
         self.assertIn(("xz", "5.6.1"), found)
         self.assertEqual(found[("brotli", "")]["locations"], ["f/firmware.bin"])
         self.assertTrue(found[("brotli", "")]["notes"])
+
+    def test_pe_export_probes(self):
+        found = self.scan({
+            "win/brotlidec.dll": make_pe({"BrotliDecoderVersion": b"\xb8\x00\x20\x00\x01\xc3",      # Wireshark's 1.2.0
+                                          "BrotliDecoderDecompressStream": b"\xc3"}),
+            "win/libwebp.dll": make_pe({"WebPGetDecoderVersion": b"\xb8\x02\x03\x01\x00\xc3"}),
+            "win/arm64/liblzma.dll": make_pe({"lzma_version_number": b"".join(
+                _struct.pack("<I", i) for i in (0x52800000 | (0x3ED4 << 5), 0x72A00000 | (0x2FB << 5), 0xD65F03C0))}, machine=0xAA64),
+            "win/app.exe": make_pe({"main": b"\xc3"}),
+        })
+        self.assertIn(("brotli", "1.2.0"), found)
+        self.assertIn(("libwebp", "1.3.2"), found)
+        self.assertIn(("xz", "5.2.5"), found)          # 50020052 = 0x02FB3ED4, built by movz/movk
+        self.assertNotIn(("brotli", ""), found)
+
+    def test_string_probes_and_windows_libraries(self):
+        lit = lambda pre, s: pre + s.encode() + b"\x00"  # noqa: E731
+        found = self.scan({
+            # push rbp; mov rbp,rsp; lea rax,[rip+2]; pop rbp; ret; "8.2.0" (Pillow's libharfbuzz)
+            "lib/libharfbuzz.so": make_elf({"hb_version_string": lit(b"\x55\x48\x89\xe5\x48\x8d\x05\x02\x00\x00\x00\x5d\xc3", "8.2.0")}),
+            "win/opus.dll": make_pe({"opus_get_version_string": lit(b"\x48\x8d\x05\x01\x00\x00\x00\xc3", "libopus 1.5.1")}),
+            "win/lz4.dll": make_pe({"LZ4_versionNumber": b"\xb8\xf8\x2a\x00\x00\xc3"}),
+            "win/zstd.dll": make_pe({"ZSTD_versionNumber": b"\xb8\x0a\x29\x00\x00\xc3"}),
+            "win/libssh.dll": b"\x7fELF" + b"\x00" * 60 + b"SSH-2.0-libssh_0.12.2\x00",
+            "win/gnutls.dll": b"\x7fELF" + b"\x00" * 60 + b"Enabled GnuTLS 3.8.13 logging...\x00",
+            "win/lua54.dll": b"\x7fELF" + b"\x00" * 60 + b"$LuaVersion: Lua 5.4.6  Copyright (C) 1994-2023 Lua.org, PUC-Rio $\x00",
+            "win/krb5_64.dll": b"\x7fELF" + b"\x00" * 60 + b"KRB5_BRAND: krb5-1.22.1-final 1.22.1 [date unknown]\x00",
+            "lib/libother.so": make_elf({"hb_version_string": b"\x31\xc0\xc3"}),     # computes, not a literal
+        })
+        self.assertEqual(set(found), {("harfbuzz", "8.2.0"), ("opus", "1.5.1"), ("lz4", "1.10.0"), ("zstd", "1.5.6"),
+                                      ("libssh", "0.12.2"), ("gnutls", "3.8.13"), ("lua", "5.4.6"), ("krb5", "1.22.1")})
+
+    def test_detect_only_components(self):
+        elf = b"\x7fELF" + b"\x00" * 60
+        found = self.scan({
+            "lib/libz.so.1": elf + b" deflate 1.2.11 Copyright 1995-2017 Jean-loup Gailly and Mark Adler \x00",
+            "lib/libpng16.so": elf + b" libpng version 1.6.40 - June 21, 2023\x00Application built with libpng-\x00",
+            "bin/viewer": elf + b"libpng version 1.6.40\x00",                       # a program quoting png.h
+            "lib/libtiff.so": elf + b"LIBTIFF, Version 4.5.1\x00",
+            "lib/libjpeg.so": elf + b"libjpeg-turbo version 2.1.5.1 (build 20230701)\x00",
+            "lib/libbz2.so": elf + b"1.0.8, 13-Jul-2019\x00bzip2/libbzip2: internal error number %d.\x00",
+            "lib/libarchive.so": elf + b"libarchive 3.6.2\x00",
+            "lib/libexpat.so": elf + b"expat_2.9.0\x00",
+            "win/zlib-ng2.dll": elf + b" deflate 1.2.13 Copyright 1995-2022 Jean-loup Gailly and Mark Adler \x00 zlib-ng 2.1.5\x00",
+            "app/code": elf + b"%s/%s Chrome/%s Electron/32.2.1\x00Chrome/128.0.6613.186 Electron/32.2.1\x00"
+                              b"ELECTRON_RUN_AS_NODE\x00https://nodejs.org/download/release/v20.18.0/node-v20.18.0-headers.tar.gz\x00",
+            "lib/libsqlite3.so": make_elf({"sqlite3_libversion_number": b"\xb8" + _struct.pack("<I", 3041002) + b"\xc3"}),
+            "lib/liblcms2.so": make_elf({"cmsGetEncodedCMMversion": b"\xb8" + _struct.pack("<I", 2150) + b"\xc3"}),
+            "lib/libpq.so": make_elf({"PQlibVersion": b"\xb8" + _struct.pack("<I", 160000) + b"\xc3"}),
+        })
+        want = {("zlib", "1.2.11"), ("libpng", "1.6.40"), ("libtiff", "4.5.1"), ("libjpeg-turbo", "2.1.5.1"), ("bzip2", "1.0.8"),
+                ("libarchive", "3.6.2"), ("expat", "2.9.0"), ("zlib-ng", "2.1.5"), ("electron", "32.2.1"), ("chromium", "128.0.6613.186"),
+                ("nodejs", "20.18.0"), ("sqlite", "3.41.2"), ("lcms2", "2.15"), ("libpq", "16.0")}
+        self.assertEqual(set(found), want)
+        self.assertEqual(found[("libpng", "1.6.40")]["locations"], ["lib/libpng16.so"])
+        # detect-only components carry no watchlist link in the submission
+        doc = fpm.to_cyclonedx(list(found.values()), self.fps, "x")
+        for c in doc["components"]:
+            self.assertNotIn("xenolith:component", {p["name"] for p in c["properties"]}, c["name"])
 
     def test_archives(self):
         log4j = jar({"META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties": b"groupId=org.apache.logging.log4j\nversion=2.14.1\n",
@@ -689,6 +788,9 @@ class FingerprintTest(unittest.TestCase):
         cat = catalog.load()
         samples = {"brotli": "1.1.0", "xz": "5.4.5", "log4j-1": "1.2.17", "log4j-core": "2.14.1"}
         for fp in self.fps:
+            if not fp.watchlist:
+                self.assertIsNone(cat.match_component(fp.name, "1.0.0"), f"{fp.id} is on the watchlist; drop watchlist: false")
+                continue
             names = {fp.name} | {s["name"] for s in fp.strings if s.get("name")}
             if fp.id == "react-server-components":
                 names |= {"react-server-dom-turbopack"}

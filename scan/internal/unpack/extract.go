@@ -67,8 +67,10 @@ func (r *Result) extract(kind, detail, p, dir, location string, depth int) (int,
 		return r.extractAppImage(p, dir, location, depth)
 	case "asar":
 		return r.extractAsar(p, dir, location, depth)
+	case "firmware":
+		return r.extractFirmware(p, dir, location, depth)
 	case "cab", "msi", "xar", "vmdk", "qcow2", "vhd", "vhdx", "dmg", "nsis", "installshield", "inno",
-		"ubi", "jffs2", "cramfs", "firmware":
+		"ubi", "jffs2", "cramfs":
 		return r.extractWithHelper(detail, kind, p, dir, location, depth)
 	}
 	return 0, fmt.Errorf("no extractor for %s", kind)

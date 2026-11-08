@@ -6,6 +6,7 @@ package notices
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/fs"
 	"os"
 	"path/filepath"
@@ -35,9 +36,9 @@ var nameHints = regexp.MustCompile(`(?i)^(?:third[-_ ]?party[-_ ]?(?:notices?|li
 	`[^/]*open[-_ ]?source[-_ ]?licen[cs]es?[^/]*|[^/]*oss[-_ ]?(?:licen[cs]es?|notice|attribution)[^/]*|` +
 	`[^/]*attributions?(?:\.(?:txt|md|html?|pdf))?|[^/]*\.(?:cdx|spdx)\.json|(?:s?bom|sbom)\.json|[^/]*\.spdx)$`)
 
-// Scan walks a tree for notices files and parses them.
-func Scan(root string, locate func(string) string) []File {
-	var out []File
+// Scan walks a tree for notices files and parses them. A parser panic on one file is
+// recorded in skipped (location: reason) and the walk goes on.
+func Scan(root string, locate func(string) string) (out []File, skipped []string) {
 	_ = filepath.WalkDir(root, func(p string, d fs.DirEntry, err error) error {
 		if err != nil || !d.Type().IsRegular() {
 			return nil
@@ -58,14 +59,28 @@ func Scan(root string, locate func(string) string) []File {
 		if locate != nil {
 			loc = locate(p)
 		}
-		comps, format := Parse(data, base)
+		comps, format, perr := safeParse(data, base)
+		if perr != nil {
+			skipped = append(skipped, loc+": notices parser crashed (please report): "+perr.Error())
+			return nil
+		}
 		if len(comps) > 0 {
 			out = append(out, File{Location: loc, Format: format, Components: comps})
 		}
 		return nil
 	})
 	sort.Slice(out, func(i, j int) bool { return out[i].Location < out[j].Location })
-	return out
+	return out, skipped
+}
+
+func safeParse(data []byte, name string) (comps []Component, format string, err error) {
+	defer func() {
+		if rec := recover(); rec != nil {
+			comps, format, err = nil, "", fmt.Errorf("%v", rec)
+		}
+	}()
+	comps, format = Parse(data, name)
+	return comps, format, nil
 }
 
 // Parse extracts components from a notices document.
@@ -136,7 +151,7 @@ var stopWords = regexp.MustCompile(`(?i)\b(licen[cs]e[sd]?|copyright|notices?|ap
 
 func plausible(name string) bool {
 	name = strings.TrimSpace(name)
-	if name == "" || len(name) > 120 || !regexp.MustCompile(`[A-Za-z]`).MatchString(name) {
+	if name == "" || len(name) > 120 || !hasLetter.MatchString(name) {
 		return false
 	}
 	return !stopWords.MatchString(name)
@@ -195,10 +210,18 @@ func parseChromium(html string) []Component {
 	return out
 }
 
+// RE2 has no backreferences, so each element that holds no text gets its own branch.
+var (
+	htmlNoText = regexp.MustCompile(`(?is)<script\b.*?</script\s*>|<style\b.*?</style\s*>|<noscript\b.*?</noscript\s*>`)
+	htmlBreak  = regexp.MustCompile(`(?i)<br\s*/?>|</(p|div|li|tr|h[1-6]|pre|table|dd|dt)>`)
+	htmlCell   = regexp.MustCompile(`(?i)</t[dh]>`)
+	hasLetter  = regexp.MustCompile(`[A-Za-z]`)
+)
+
 func htmlToText(html string) string {
-	html = regexp.MustCompile(`(?is)<(script|style|noscript)\b.*?</\1>`).ReplaceAllString(html, " ")
-	html = regexp.MustCompile(`(?i)<br\s*/?>|</(p|div|li|tr|h[1-6]|pre|table|dd|dt)>`).ReplaceAllString(html, "\n")
-	html = regexp.MustCompile(`(?i)</t[dh]>`).ReplaceAllString(html, " | ")
+	html = htmlNoText.ReplaceAllString(html, " ")
+	html = htmlBreak.ReplaceAllString(html, "\n")
+	html = htmlCell.ReplaceAllString(html, " | ")
 	text := tagRe.ReplaceAllString(html, " ")
 	for _, r := range [][2]string{{"&amp;", "&"}, {"&lt;", "<"}, {"&gt;", ">"}, {"&quot;", `"`}, {"&#39;", "'"}, {"&nbsp;", " "}} {
 		text = strings.ReplaceAll(text, r[0], r[1])
@@ -221,6 +244,9 @@ func parsePipeTable(text string) []Component {
 	var out []Component
 	ni, vi := -1, -1
 	for _, line := range strings.Split(text, "\n") {
+		if strings.TrimSpace(line) == "" {
+			continue // HTML tables flatten to rows separated by blank lines
+		}
 		if !strings.Contains(line, "|") {
 			ni, vi = -1, -1
 			continue

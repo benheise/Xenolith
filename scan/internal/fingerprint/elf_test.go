@@ -174,3 +174,18 @@ func TestAArch64Probe(t *testing.T) {
 		t.Fatalf("expected xz 5.4.0 from the AArch64 probe, got %+v", s.Findings)
 	}
 }
+
+// x86 functions can start at odd addresses (Pillow's liblcms2 has cmsGetEncodedCMMversion
+// at 0xed7f); masking the low bit, as for ARM Thumb, read the byte before the function.
+func TestProbeAtOddAddress(t *testing.T) {
+	code := []byte{0xcc, 0x55, 0x48, 0x89, 0xe5, 0xb8, 0x66, 0x08, 0x00, 0x00, 0x5d, 0xc3}
+	data := makeELF(elf.EM_X86_64, []testSymbol{{"cmsGetEncodedCMMversion", code}}, nil)
+	f, err := elf.NewFile(bytes.NewReader(data))
+	if err != nil {
+		t.Fatal(err)
+	}
+	syms, _ := f.DynamicSymbols()
+	if v, ok := returnedConstant(f, syms[0].Value+1); !ok || v != 2150 {
+		t.Fatalf("odd-address probe: %d %v", v, ok)
+	}
+}

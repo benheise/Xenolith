@@ -1,6 +1,8 @@
 package notices
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 )
@@ -67,5 +69,36 @@ func TestNameHints(t *testing.T) {
 		if nameHints.MatchString(n) {
 			t.Errorf("%s should not be a notices candidate", n)
 		}
+	}
+}
+
+// An HTML notices page that is not Chromium's format goes through htmlToText; its
+// script/style removal once used a backreference RE2 rejects, which panicked on the
+// first such file (a Netgear firmware's open-source page).
+func TestHTMLNoticesWithScripts(t *testing.T) {
+	page := `<html><head><style>p { color: red }</style><script>var x = "zlib 9.9.9";</script></head>
+<body><h1>Open Source Notices</h1><table><tr><th>Component</th><th>Version</th></tr>
+<tr><td>BusyBox</td><td>1.36.1</td></tr><tr><td>zlib</td><td>1.2.13</td></tr></table>
+<noscript>libfoo 1.0</noscript></body></html>`
+	comps, _ := Parse([]byte(page), "open_source_notices.html")
+	got := map[string]string{}
+	for _, c := range comps {
+		got[c.Name] = c.Version
+	}
+	if got["BusyBox"] != "1.36.1" || got["zlib"] != "1.2.13" {
+		t.Errorf("table rows: %v", comps)
+	}
+	for _, c := range comps {
+		if c.Version == "9.9.9" || c.Name == "libfoo" {
+			t.Errorf("text inside script/noscript was parsed: %+v", c)
+		}
+	}
+	dir := t.TempDir()
+	if err := os.WriteFile(filepath.Join(dir, "THIRD-PARTY-NOTICES.html"), []byte(page), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	files, skipped := Scan(dir, nil)
+	if len(files) != 1 || len(skipped) != 0 {
+		t.Errorf("scan: files=%v skipped=%v", files, skipped)
 	}
 }

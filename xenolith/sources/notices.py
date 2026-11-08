@@ -197,6 +197,8 @@ def _split_multi(cell: str) -> list[str]:
 def ex_pipe_table(text: str) -> list[tuple[str, str]]:
     out, idx = [], None
     for line in text.splitlines():
+        if not line.strip():
+            continue                    # HTML tables flatten to rows separated by blank lines
         if "|" not in line:
             idx = None
             continue

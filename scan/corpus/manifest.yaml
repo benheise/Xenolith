@@ -132,3 +132,46 @@ artifacts:
     product: php8.2-cli (Debian package, amd64)
     version: "8.2.35-1~deb12u1"
     inventory: scan/corpus/truth/debian-php8.2-cli-amd64.json
+
+  # ---- closed-source and Windows installer proofs (November 2026, second round)
+  - artifact: https://download.splunk.com/products/universalforwarder/releases/9.2.1/linux/splunkforwarder-9.2.1-78803f08aabb-Linux-x86_64.tgz
+    sha256: 7a2513d410fe2c9215832e4fdbf26b7bb2429563741fb6aa84567ba93b93d414
+    supplier: Splunk
+    product: Splunk Universal Forwarder (Linux x86-64)
+    version: "9.2.1"
+    inventory: scan/corpus/truth/splunk-universal-forwarder-9.2.1.json
+    note: "Closed source. curl 8.5.0 is statically linked into splunkd with no 'libcurl/' string; the curl_version_info() rule finds it."
+  - artifact: https://download.splunk.com/products/universalforwarder/releases/9.0.9/linux/splunkforwarder-9.0.9-6315942c563f-Linux-x86_64.tgz
+    sha256: daf4fdcfda09d9df467af520d1a57ec17b8ab7478bc40f52590a19cd90da6f6c
+    supplier: Splunk
+    product: Splunk Universal Forwarder (Linux x86-64)
+    version: "9.0.9"
+    inventory: scan/corpus/truth/splunk-universal-forwarder-9.0.9.json
+  - artifact: https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/code_1.95.3-1731513102_amd64.deb
+    sha256: 176286acb16b5bad1f0431947c3fb17813c5a84ee85a3395c7620379a4a70086
+    supplier: Microsoft
+    product: Visual Studio Code (Linux .deb)
+    version: "1.95.3"
+    inventory: scan/corpus/truth/vscode-1.95.3.json
+    note: "Microsoft's closed build. Electron, Chromium and Node.js come from detect-only fingerprints; bin/code-tunnel also carries OpenSSL 3.1.4, which Microsoft's notices do not name."
+  - artifact: https://2.na.dl.wireshark.org/win64/all-versions/Wireshark-4.4.19-x64.exe
+    sha256: 17e01432f0b23f5caa3d35f9e8bc4fefe6ae2ec8d05deb1d81676d76b2f7d2cc
+    supplier: Wireshark Foundation
+    product: Wireshark (Windows x64, NSIS installer)
+    version: "4.4.19"
+    inventory: scan/corpus/truth/wireshark-4.4.19-windows-x64.json
+    note: "NSIS through 7-Zip. brotli 1.2.0 comes from the BrotliDecoderVersion() export probe of a Windows DLL. Needs 7-Zip on PATH."
+  - artifact: https://2.na.dl.wireshark.org/win64/all-versions/Wireshark-4.4.19-x64.msi
+    sha256: cc680e386a8608af2bf173e4dcc93f6be3652e269023d1ade2a85f5b36c75015
+    supplier: Wireshark Foundation
+    product: Wireshark (Windows x64, MSI)
+    version: "4.4.19"
+    inventory: scan/corpus/truth/wireshark-4.4.19-windows-x64.json
+    note: "Cabinet members are named by File-table keys; the MSI tables restore the installed paths (0 components before, 55 after). Needs 7-Zip on PATH. The MSI does not carry the Npcap installer, so libpcap is expected missing."
+  - artifact: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.0-linux-x86_64.tar.gz
+    sha256: d4179fe2c37b2c7ddc13d8e1f8e61e3a0fa613861310ee5f54db08784b415166
+    supplier: Elastic
+    product: Elasticsearch (Linux x86-64 tarball)
+    version: "8.15.0"
+    inventory: scan/corpus/truth/elasticsearch-8.15.0.json
+    note: "Elastic License / SSPL distribution with a bundled JDK. 1,148 dependencies declared in bundled libraries' pom.xml files are ignored."

@@ -116,9 +116,14 @@ func sniff(p, location string, size int64) (kind, detail string) {
 	if strings.HasSuffix(base, ".lzma") {
 		return "lzma", ""
 	}
-	// Firmware blobs with no recognised header: let unblob carve them when present.
+	if firmwareMagic(head) {
+		return "firmware", "unblob"
+	}
+	// Firmware blobs with no recognised header: carved for squashfs, and opened by unblob
+	// when present. A file name alone is weak evidence (Electron's V8 snapshots and ML
+	// model shards are .bin too), so small ones need a filesystem inside the first bytes.
 	for _, ext := range []string{".bin", ".img", ".fw", ".trx", ".chk", ".rom", ".pkg", ".firmware", ".upd", ".swu"} {
-		if strings.HasSuffix(base, ext) && size > 256<<10 {
+		if strings.HasSuffix(base, ext) && size > 256<<10 && (size >= 4<<20 || bytes.Contains(head, []byte("hsqs"))) {
 			return "firmware", "unblob"
 		}
 	}

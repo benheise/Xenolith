@@ -13,17 +13,25 @@
 #                    contains: literal bytes checked first (fast)
 #                    regex: Python regex over bytes; group v is the version
 #                    requires_any: other literals, one of which must also occur
+#                    unless_any: literals that rule the match out (another component's copy)
 #                    name: report under this name instead
+#                    confidence: default 0.9 (an exact version string)
 #   symbols          ELF only: function names that must be *defined* in the file
 #                    (imports don't count). Presence without a version.
 #   probes           ELF x86-64 / AArch64: read the constant a version function
-#                    returns. decode: brotli_hex | webp_hex | lzma_number
+#                    returns (ELF symbols or PE exports). decode: brotli_hex | webp_hex |
+#                    lzma_number | sqlite_number | lcms_number | pg_number | decimal_mmp,
+#                    or string: the function returns a literal ("8.2.0", "libopus 1.5.1")
 #   markers          byte sequences that only the component's own code contains
 #                    (static tables). Presence without a version; finds statically
 #                    linked, stripped copies.
 #   paths            files inside a tree or archive (jar, war, zip, tar): regex on the
 #                    path; version from: pom (pom.properties), manifest, package_json,
 #                    or the regex's group v. confidence 0-1.
+#
+#   watchlist        false for detect-only entries: components the scanner reports (with
+#                    their versions) that are not on the census watchlist, so they carry
+#                    no xenolith:component link. Default true.
 #
 # Confidence guide: 0.9 package metadata or exact version string; 0.8 version
 # probe; 0.7 defined symbols; 0.6 class or marker presence; 0.5 file name only.
@@ -60,6 +68,13 @@ components:
       - contains: "curl/"
         regex: '(?<![\w./-])curl/(?P<v>\d+\.\d+\.\d+)'
         requires_any: ["curl_easy_"]
+      # curl 8 assembles "libcurl/<version>" at run time, so a static copy may keep only
+      # curl_version_info()'s bare version string, which version.c's rodata places among
+      # the feature names (Splunk UF 9.2.1's splunkd: "alt-svc\08.5.0\0AsynchDNS")
+      - contains: "libcurl lacks"
+        regex: '\x00(?P<v>[78]\.\d{1,2}\.\d{1,2})\x00(?:alt-svc|AsynchDNS|brotli|HSTS|HTTP2|HTTP3|HTTPS-proxy|IDN|IPv6|Largefile|libz|NTLM|SSL|threadsafe|UnixSockets|zstd)\x00'
+        requires_any: ["curl_version_info"]
+        confidence: 0.8
 
   glibc:
     name: glibc
@@ -169,3 +184,214 @@ components:
           # published to npm as 0.0.0-experimental-<sha>-<date>
           rewrite: {regex: '^\d+\.\d+\.\d+-experimental-', to: '0.0.0-experimental-'}
           note: version read from the React build vendored alongside (React packages are released in lockstep)
+
+  # ---- detect-only (watchlist: false) -------------------------------------------------
+  # Common native libraries the evaluation corpus showed Syft does not identify in
+  # vendor builds (Pillow, psycopg2, Splunk, Wireshark, Electron apps). Each rule was
+  # checked against a real build named in its comment.
+
+  zlib:
+    name: zlib
+    purl: pkg:generic/zlib@{version}
+    watchlist: false
+    strings:
+      # the copyright banners deflate.c and inflate.c keep (Splunk UF's libz 1.2.11)
+      - contains: " Copyright 1995-"
+        regex: '(?:de|in)flate (?P<v>1\.\d+\.\d+(?:\.\d+)?) Copyright 1995-\d{4}'
+        unless_any: [" zlib-ng "]     # zlib-ng keeps the zlib banner of the API it mirrors
+
+  zlib-ng:
+    name: zlib-ng
+    purl: pkg:generic/zlib-ng@{version}
+    watchlist: false
+    strings:
+      # (Wireshark 4.4.19's zlib-ng2.dll: " zlib-ng 2.1.5", next to zlib 1.2.13's banners)
+      - contains: " zlib-ng "
+        regex: ' zlib-ng (?P<v>\d+\.\d+\.\d+)'
+
+  sqlite:
+    name: sqlite
+    purl: pkg:generic/sqlite@{version}
+    watchlist: false
+    probes:
+      # returns SQLITE_VERSION_NUMBER (Splunk UF's libsqlite3: 3041002 = 3.41.2)
+      - {symbol: sqlite3_libversion_number, decode: sqlite_number}
+
+  libpng:
+    name: libpng
+    purl: pkg:generic/libpng@{version}
+    watchlist: false
+    strings:
+      # png.c's header string; applications quote it too, so require libpng's own
+      # version-mismatch messages (1.6.40 in Pillow keeps "Application built with libpng-")
+      - contains: "libpng version "
+        regex: 'libpng version (?P<v>1\.\d+\.\d+)'
+        requires_any: ["Application built with libpng-", "Incompatible libpng version"]
+
+  libtiff:
+    name: libtiff
+    purl: pkg:generic/libtiff@{version}
+    watchlist: false
+    strings:
+      # TIFFGetVersion()'s string (Pillow's libtiff 4.5.1)
+      - contains: "LIBTIFF, Version "
+        regex: 'LIBTIFF, Version (?P<v>\d+\.\d+\.\d+)'
+
+  libjpeg-turbo:
+    name: libjpeg-turbo
+    purl: pkg:generic/libjpeg-turbo@{version}
+    watchlist: false
+    strings:
+      # (Pillow's libjpeg 3.0.0: "libjpeg-turbo version 3.0.0 (build 20230915)"; 10.0.0 has 2.1.5.1)
+      - contains: "libjpeg-turbo version "
+        regex: 'libjpeg-turbo version (?P<v>\d+\.\d+\.\d+(?:\.\d+)?)'
+
+  lcms2:
+    name: lcms2
+    purl: pkg:generic/lcms2@{version}
+    watchlist: false
+    probes:
+      # returns LCMS_VERSION (Pillow's liblcms2: 2150 = 2.15)
+      - {symbol: cmsGetEncodedCMMversion, decode: lcms_number}
+
+  libpq:
+    name: libpq
+    purl: pkg:generic/postgresql@{version}
+    watchlist: false
+    probes:
+      # returns PG_VERSION_NUM (psycopg2-binary's libpq: 160000 = 16.0)
+      - {symbol: PQlibVersion, decode: pg_number}
+
+  bzip2:
+    name: bzip2
+    purl: pkg:generic/bzip2@{version}
+    watchlist: false
+    strings:
+      # BZ2_bzlibVersion()'s string next to libbzip2's own error text (Splunk UF)
+      - contains: "bzip2/libbzip2"
+        regex: '(?<![\w.])(?P<v>1\.\d+\.\d+), \d{1,2}-[A-Z][a-z]{2}-\d{4}'
+
+  libarchive:
+    name: libarchive
+    purl: pkg:generic/libarchive@{version}
+    watchlist: false
+    strings:
+      # (Splunk UF's libarchive 3.6.2)
+      - contains: "libarchive "
+        regex: '(?<![\w.-])libarchive (?P<v>\d+\.\d+\.\d+)'
+
+  expat:
+    name: expat
+    purl: pkg:generic/expat@{version}
+    watchlist: false
+    strings:
+      # XML_ExpatVersion()'s string (Debian's libexpat1 2.9.0)
+      - contains: "expat_"
+        regex: '(?<![\w.-])expat_(?P<v>\d+\.\d+\.\d+)'
+
+  electron:
+    name: electron
+    purl: pkg:generic/electron@{version}
+    watchlist: false
+    strings:
+      # the user-agent template Electron compiles in, in every Electron app's main binary
+      # (VS Code 1.95.3: "Chrome/128.0.6613.186 Electron/32.2.1")
+      - contains: "Electron/"
+        regex: 'Chrome/\d+\.\d+\.\d+\.\d+ Electron/(?P<v>\d+\.\d+\.\d+)'
+        requires_any: ["ELECTRON_RUN_AS_NODE"]
+
+  chromium:
+    name: chromium
+    purl: pkg:generic/chromium@{version}
+    watchlist: false
+    strings:
+      # the Chromium version embedded in Electron and Qt WebEngine (a browser's own
+      # binary is identified by Syft's chrome classifier)
+      - contains: "Chrome/"
+        regex: 'Chrome/(?P<v>\d+\.\d+\.\d+\.\d+) (?:Electron|QtWebEngine)/'
+      - contains: "QtWebEngine/"
+        regex: 'QtWebEngine/\d+\.\d+\.\d+ Chrome/(?P<v>\d+\.\d+\.\d+\.\d+)'
+
+  nodejs:
+    name: node.js
+    purl: pkg:generic/node.js@{version}
+    watchlist: false
+    strings:
+      # process.release.headersUrl, compiled into node and into Electron
+      - contains: "-headers.tar.gz"
+        regex: 'nodejs\.org/download/release/v(?P<v>\d+\.\d+\.\d+)/node-v\d+\.\d+\.\d+-headers\.tar\.gz'
+
+  harfbuzz:
+    name: harfbuzz
+    purl: pkg:generic/harfbuzz@{version}
+    watchlist: false
+    probes:
+      # returns the literal HB_VERSION_STRING (Pillow 10.0.1's libharfbuzz: "8.2.0")
+      - {symbol: hb_version_string, decode: string}
+
+  openjpeg:
+    name: openjpeg
+    purl: pkg:generic/openjpeg@{version}
+    watchlist: false
+    probes:
+      # (Pillow's libopenjp2: "2.5.0")
+      - {symbol: opj_version, decode: string}
+
+  opus:
+    name: opus
+    purl: pkg:generic/opus@{version}
+    watchlist: false
+    probes:
+      - {symbol: opus_get_version_string, decode: string}
+
+  lz4:
+    name: lz4
+    purl: pkg:generic/lz4@{version}
+    watchlist: false
+    probes:
+      # returns LZ4_VERSION_NUMBER (Wireshark 4.4.19's lz4.dll: 11000 = 1.10.0)
+      - {symbol: LZ4_versionNumber, decode: decimal_mmp}
+
+  zstd:
+    name: zstd
+    purl: pkg:generic/zstd@{version}
+    watchlist: false
+    probes:
+      # returns ZSTD_VERSION_NUMBER (Wireshark's zstd.dll: 10506 = 1.5.6)
+      - {symbol: ZSTD_versionNumber, decode: decimal_mmp}
+
+  libssh:
+    name: libssh
+    purl: pkg:generic/libssh@{version}
+    watchlist: false
+    strings:
+      # the client banner libssh compiles in (Wireshark's libssh.dll: SSH-2.0-libssh_0.12.2)
+      - contains: "SSH-2.0-libssh_"
+        regex: 'SSH-2\.0-libssh_(?P<v>\d+\.\d+\.\d+)'
+
+  gnutls:
+    name: gnutls
+    purl: pkg:generic/gnutls@{version}
+    watchlist: false
+    strings:
+      # (Wireshark's libgnutls-30.dll: "Enabled GnuTLS 3.8.13 logging...")
+      - contains: "Enabled GnuTLS "
+        regex: 'Enabled GnuTLS (?P<v>\d+\.\d+\.\d+) logging'
+
+  lua:
+    name: lua
+    purl: pkg:generic/lua@{version}
+    watchlist: false
+    strings:
+      # lua_ident (Wireshark's lua54.dll: "$LuaVersion: Lua 5.4.6  Copyright (C) 1994-2023 ...")
+      - contains: "$LuaVersion: Lua "
+        regex: '\$LuaVersion: Lua (?P<v>\d+\.\d+\.\d+) '
+
+  krb5:
+    name: krb5
+    purl: pkg:generic/krb5@{version}
+    watchlist: false
+    strings:
+      # MIT Kerberos's build brand (Wireshark's krb5_64.dll: "KRB5_BRAND: krb5-1.22.1-final 1.22.1")
+      - contains: "KRB5_BRAND: krb5-"
+        regex: 'KRB5_BRAND: krb5-(?P<v>\d+\.\d+(?:\.\d+)?)'

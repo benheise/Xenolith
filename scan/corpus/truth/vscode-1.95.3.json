@@ -1,0 +1,21 @@
+{
+ "supplier": "Microsoft",
+ "product": "Visual Studio Code (Linux .deb)",
+ "version": "1.95.3",
+ "source": "https://github.com/microsoft/vscode/blob/1.95.3/cgmanifest.json (component governance manifest: electron, chromium, nodejs) and .npmrc (target Electron 32.2.1)",
+ "note": "The CLI binary (bin/code-tunnel) statically links OpenSSL 3.1.4 from an internal prebuilt package; Microsoft's CLI notices list only the Rust openssl crate (0.10.66), so OpenSSL is not in this inventory.",
+ "components": [
+  {
+   "name": "electron",
+   "version": "32.2.1"
+  },
+  {
+   "name": "chromium",
+   "version": "128.0.6613.186"
+  },
+  {
+   "name": "node.js",
+   "version": "20.18.0"
+  }
+ ]
+}

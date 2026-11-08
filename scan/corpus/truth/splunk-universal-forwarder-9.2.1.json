@@ -1,0 +1,17 @@
+{
+ "supplier": "Splunk",
+ "product": "Splunk Universal Forwarder (Linux x86-64)",
+ "version": "9.2.1",
+ "source": "https://advisory.splunk.com/advisories/SVD-2024-0304 (Universal Forwarder 9.2.1, 9.1.4, 9.0.9: OpenSSL upgraded to 1.0.2zj, curl from 8.0.1 to 8.5.0)",
+ "note": "Closed-source product; Splunk's advisory names only the packages it changed. The scanner also reports zlib, sqlite, bzip2 and libarchive, which the advisory does not mention.",
+ "components": [
+  {
+   "name": "openssl",
+   "version": "1.0.2zj"
+  },
+  {
+   "name": "curl",
+   "version": "8.5.0"
+  }
+ ]
+}

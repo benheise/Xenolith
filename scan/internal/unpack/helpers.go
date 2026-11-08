@@ -66,6 +66,9 @@ func (r *Result) extractWithHelper(helper, kind, p, dir, location string, depth 
 	cmd.Dir = dir
 	cmd.Env = []string{"PATH=" + os.Getenv("PATH"), "HOME=" + dir, "LC_ALL=C"}
 	out, runErr := cmd.CombinedOutput()
+	if kind == "msi" && runErr == nil {
+		r.renameMSI(bin, dir, location)
+	}
 	n, regErr := r.registerTree(dir, location, depth)
 	if n == 0 {
 		msg := string(out)
@@ -169,4 +172,68 @@ func trim(s string) string {
 		}
 	}
 	return string(out)
+}
+
+// renameMSI replaces what 7-Zip gives for an MSI (table streams and cabinets whose
+// members are named by File-table keys) with the installed tree: each cabinet is
+// unpacked and its members moved to the paths the Directory/Component/File tables
+// give them. Without readable tables the cabinets are left for the normal recursion.
+func (r *Result) renameMSI(bin, dir, location string) {
+	names, ok, err := msiNames(dir)
+	if err != nil {
+		r.skip(location, "MSI tables unreadable, files keep their cabinet names: "+err.Error())
+	}
+	if !ok || len(names) == 0 {
+		return
+	}
+	cabs, _ := filepath.Glob(filepath.Join(dir, "*.cab"))
+	for _, cab := range cabs {
+		tmp, err := os.MkdirTemp(dir, ".cab-")
+		if err != nil {
+			continue
+		}
+		ctx, cancel := context.WithTimeout(context.Background(), helperTimeout)
+		cmd := exec.CommandContext(ctx, bin, "x", "-y", "-p", "-bd", "-bso0", "-bsp0", "-o"+tmp, cab)
+		cmd.Dir = tmp
+		cmd.Env = []string{"PATH=" + os.Getenv("PATH"), "HOME=" + tmp, "LC_ALL=C"}
+		runErr := cmd.Run()
+		cancel()
+		if runErr != nil {
+			_ = os.RemoveAll(tmp)
+			continue // leave the cabinet for the normal recursion
+		}
+		_ = filepath.WalkDir(tmp, func(p string, d os.DirEntry, err error) error {
+			if err != nil || !d.Type().IsRegular() {
+				return nil
+			}
+			rel, _ := filepath.Rel(tmp, p)
+			key := filepath.ToSlash(rel)
+			target, ok := names[key]
+			if !ok {
+				target = filepath.Base(cab) + "/" + key
+			}
+			clean, safe := safeName(target)
+			if !safe {
+				clean = filepath.Base(cab) + "/" + key
+			}
+			dst := filepath.Join(dir, filepath.FromSlash(clean))
+			for i := 2; ; i++ { // two files may install to the same name (per-architecture copies)
+				if _, err := os.Lstat(dst); errors.Is(err, os.ErrNotExist) {
+					break
+				}
+				dst = filepath.Join(dir, filepath.FromSlash(clean)) + fmt.Sprintf(".%d", i)
+			}
+			if os.MkdirAll(filepath.Dir(dst), 0o755) == nil {
+				_ = os.Rename(p, dst)
+			}
+			return nil
+		})
+		_ = os.RemoveAll(tmp)
+		_ = os.Remove(cab)
+	}
+	// the table streams are database internals, not installed files
+	streams, _ := filepath.Glob(filepath.Join(dir, "!*"))
+	for _, s := range streams {
+		_ = os.Remove(s)
+	}
 }
