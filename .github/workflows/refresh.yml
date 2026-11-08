@@ -1,0 +1,115 @@
+name: Refresh census and publish site
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["**.md"]
+  schedule:
+    - cron: "41 6 * * *"   # daily, 06:41 UTC
+  workflow_dispatch:
+    inputs:
+      full_spine:
+        description: "Rebuild the product registry from the full cvelistV5 dump (runs automatically on Sundays)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: census
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Clone incident trackers
+        run: |
+          mkdir -p src
+          git clone --depth 1 https://github.com/NCSC-NL/php2shell src/NCSC-NL_php2shell
+          git clone --depth 1 https://github.com/NCSC-NL/log4shell src/NCSC-NL_log4shell
+          git clone --depth 1 https://github.com/cisagov/log4j-affected-db src/cisagov_log4j-affected-db
+
+      - name: Ingest incident trackers
+        run: python -m xenolith trackers --src src
+
+      - name: Crawl vendor CSAF feeds (incremental)
+        run: python -m xenolith csaf
+
+      - name: Ingest community submissions
+        run: python -m xenolith community
+
+      - name: Rebuild product registry
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ inputs.full_spine }}" = "true" ] || [ "$(date -u +%u)" = "7" ]; then
+            mkdir -p /tmp/cvelist
+            gh release download --repo CVEProject/cvelistV5 --pattern '*_all_CVEs_at_midnight*' --dir /tmp/cvelist
+            cd /tmp/cvelist
+            for z in *.zip; do unzip -q -o "$z"; done
+            for z in *.zip; do unzip -q -o "$z" 2>/dev/null || true; done
+            CVES_DIR="$(find /tmp/cvelist -type d -name cves | head -1)"
+            cd "$GITHUB_WORKSPACE"
+            python -m xenolith spine --cves "$CVES_DIR"
+          else
+            echo "Not a full-registry day; keeping data/spine/products.ndjson"
+          fi
+
+      - name: Build site data
+        run: python -m xenolith build
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs/data
+          if git diff --cached --quiet; then
+            echo "No data changes"
+            exit 0
+          fi
+          git commit -m "Refresh census data $(date -u +%Y-%m-%d)"
+          git push
+
+  publish:
+    needs: refresh
+    if: ${{ always() && needs.refresh.result != 'failure' && needs.refresh.result != 'cancelled' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build site data
+        run: |
+          pip install -r requirements.txt
+          python -m xenolith build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

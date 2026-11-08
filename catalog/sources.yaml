@@ -1,0 +1,57 @@
+# Data sources Xenolith ingests. Every assertion carries one of these ids,
+# so each record can be traced to where it came from and under what terms.
+#
+# kind:
+#   tracker          community incident tracker (vendor x product x status tables)
+#   vendor-advisory  machine-readable vendor advisory or VEX (CSAF 2.x)
+#   community        rows contributed directly to this repository
+#   spine            product registry used as the starting product list
+
+sources:
+  - id: ncsc-nl-php2shell
+    name: NCSC-NL php2shell
+    kind: tracker
+    url: https://github.com/NCSC-NL/php2shell
+    license: EUPL-1.2
+    notes: >-
+      Rows in package-level segments (runtime builds, frameworks and libraries,
+      OS distributions, container images, developer tooling) are excluded.
+      Those are open source packages already indexed by deps.dev, OSV and distro trackers.
+
+  - id: ncsc-nl-log4shell
+    name: NCSC-NL log4shell
+    kind: tracker
+    url: https://github.com/NCSC-NL/log4shell
+    license: MIT
+    notes: Archived June 2022. Statuses reflect vendor statements at the time.
+
+  - id: cisa-log4j
+    name: CISA log4j-affected-db
+    kind: tracker
+    url: https://github.com/cisagov/log4j-affected-db
+    license: CC0-1.0
+    notes: Archived February 2023. Statuses reflect vendor statements at the time.
+
+  - id: csaf
+    name: Vendor CSAF advisories and VEX
+    kind: vendor-advisory
+    url: https://www.csaf.io/
+    license: Per vendor (public TLP:CLEAR advisories)
+    notes: >-
+      Only facts are extracted (product, version, status, link). Advisory documents
+      are not redistributed. See catalog/csaf_providers.yaml for the provider list.
+
+  - id: community
+    name: Xenolith community submissions
+    kind: community
+    url: https://github.com/benheise/Xenolith/blob/main/community/assertions.csv
+    license: CC-BY-4.0
+
+  - id: cvelist
+    name: CVE Program cvelistV5 + CISA KEV
+    kind: spine
+    url: https://github.com/CVEProject/cvelistV5
+    license: CVE Terms of Use; KEV is CC0-1.0
+    notes: >-
+      Vendor/product names from CNA-published CVE records, ranked by CVE and KEV counts.
+      Records for package-ecosystem components are excluded.

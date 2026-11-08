@@ -1,0 +1,160 @@
+# Component watchlist.
+#
+# Each entry is a widely embedded third-party component, plus the CVEs that
+# identify it. Ingesters use the CVE IDs to recognize when a vendor advisory,
+# VEX statement or incident tracker is talking about this component inside
+# a commercial product.
+#
+# To add a component, open a pull request. Required: id, name, cves.
+# `purl` and `cpe` describe the upstream component itself (not the products
+# that embed it) and are used for cross-referencing only.
+
+components:
+  - id: php
+    name: PHP runtime
+    upstream: https://github.com/php/php-src
+    purl: pkg:github/php/php-src
+    cpe: cpe:2.3:a:php:php
+    aliases: [php-src, php-fpm, mod_php, php-cgi]
+    incidents:
+      - name: PHP2Shell
+        year: 2026
+        cves: [CVE-2026-109618, CVE-2026-109619]
+        trackers:
+          - https://github.com/NCSC-NL/php2shell
+
+  - id: brotli
+    name: Google Brotli (C library)
+    upstream: https://github.com/google/brotli
+    purl: pkg:github/google/brotli
+    cpe: cpe:2.3:a:google:brotli
+    aliases: [libbrotli, brotlidec, node2shell, http2shell, broccoli2shell]
+    incidents:
+      - name: Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)
+        year: 2026
+        cves: [CVE-2026-111497]
+        trackers:
+          - https://broccoli2shell.com/
+
+  - id: react-server-components
+    name: React Server Components
+    upstream: https://github.com/facebook/react
+    purl: pkg:npm/react-server-dom-webpack
+    aliases: [react2shell, react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack]
+    incidents:
+      - name: React2Shell
+        year: 2025
+        cves: [CVE-2025-55182]
+
+  - id: log4j-core
+    name: Apache Log4j 2 (log4j-core)
+    upstream: https://logging.apache.org/log4j/2.x/
+    purl: pkg:maven/org.apache.logging.log4j/log4j-core
+    cpe: cpe:2.3:a:apache:log4j
+    aliases: [log4j, log4j2, log4shell]
+    incidents:
+      - name: Log4Shell
+        year: 2021
+        cves: [CVE-2021-44228, CVE-2021-45046, CVE-2021-45105, CVE-2021-44832]
+        trackers:
+          - https://github.com/NCSC-NL/log4shell
+          - https://github.com/cisagov/log4j-affected-db
+
+  - id: log4j-1
+    name: Apache Log4j 1.x
+    upstream: https://logging.apache.org/log4j/1.x/
+    purl: pkg:maven/log4j/log4j
+    cpe: cpe:2.3:a:apache:log4j
+    aliases: [log4j1, log4j 1.2]
+    incidents:
+      - name: Log4j 1.x JMSAppender
+        year: 2021
+        cves: [CVE-2021-4104]
+
+  - id: xz
+    name: XZ Utils / liblzma
+    upstream: https://github.com/tukaani-project/xz
+    purl: pkg:github/tukaani-project/xz
+    cpe: cpe:2.3:a:tukaani:xz
+    aliases: [liblzma, xz-utils]
+    incidents:
+      - name: XZ Utils backdoor
+        year: 2024
+        cves: [CVE-2024-3094]
+
+  - id: openssh
+    name: OpenSSH (portable)
+    upstream: https://www.openssh.com/
+    purl: pkg:github/openssh/openssh-portable
+    cpe: cpe:2.3:a:openbsd:openssh
+    aliases: [sshd, regresshion]
+    incidents:
+      - name: regreSSHion
+        year: 2024
+        cves: [CVE-2024-6387]
+
+  - id: libwebp
+    name: libwebp
+    upstream: https://chromium.googlesource.com/webm/libwebp
+    purl: pkg:github/webmproject/libwebp
+    cpe: cpe:2.3:a:webmproject:libwebp
+    aliases: [webp]
+    incidents:
+      - name: libwebp heap overflow
+        year: 2023
+        cves: [CVE-2023-4863]
+
+  - id: curl
+    name: curl / libcurl
+    upstream: https://curl.se/
+    purl: pkg:github/curl/curl
+    cpe: cpe:2.3:a:haxx:curl
+    aliases: [libcurl]
+    incidents:
+      - name: curl SOCKS5 heap overflow
+        year: 2023
+        cves: [CVE-2023-38545]
+
+  - id: openssl
+    name: OpenSSL
+    upstream: https://www.openssl.org/
+    purl: pkg:github/openssl/openssl
+    cpe: cpe:2.3:a:openssl:openssl
+    aliases: [libssl, libcrypto]
+    incidents:
+      - name: OpenSSL 3.0 punycode overflows
+        year: 2022
+        cves: [CVE-2022-3602, CVE-2022-3786]
+
+  - id: spring-framework
+    name: Spring Framework
+    upstream: https://spring.io/projects/spring-framework
+    purl: pkg:maven/org.springframework/spring-beans
+    cpe: cpe:2.3:a:vmware:spring_framework
+    aliases: [spring4shell, spring-beans]
+    incidents:
+      - name: Spring4Shell
+        year: 2022
+        cves: [CVE-2022-22965]
+
+  - id: commons-text
+    name: Apache Commons Text
+    upstream: https://commons.apache.org/proper/commons-text/
+    purl: pkg:maven/org.apache.commons/commons-text
+    cpe: cpe:2.3:a:apache:commons_text
+    aliases: [text4shell]
+    incidents:
+      - name: Text4Shell
+        year: 2022
+        cves: [CVE-2022-42889]
+
+  - id: glibc
+    name: GNU C Library (glibc)
+    upstream: https://www.gnu.org/software/libc/
+    purl: pkg:github/bminor/glibc
+    cpe: cpe:2.3:a:gnu:glibc
+    aliases: [libc, looney tunables]
+    incidents:
+      - name: Looney Tunables
+        year: 2023
+        cves: [CVE-2023-4911]

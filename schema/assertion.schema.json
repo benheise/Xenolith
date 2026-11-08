@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/benheise/Xenolith/schema/assertion.schema.json",
+  "title": "Xenolith assertion",
+  "description": "One sourced claim about whether one product embeds one component, and its status for that component's CVEs.",
+  "type": "object",
+  "required": ["id", "component", "supplier", "product", "product_key", "version", "cves", "verdict",
+               "contains", "evidence", "source", "source_url", "references", "notes", "updated"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[0-9a-f]{16}$",
+           "description": "Stable hash of source, source_url, product_key, version and component."},
+    "component": {"type": "string", "description": "Component id from catalog/components.yaml."},
+    "supplier": {"type": "string", "minLength": 1},
+    "product": {"type": "string", "minLength": 1},
+    "product_key": {"type": "string", "pattern": "^[a-z0-9-]+/[a-z0-9-]+$",
+                    "description": "slug(supplier)/slug(product). Used to group statements about the same product."},
+    "version": {"type": "string", "description": "Free-text version scope as stated by the source."},
+    "cves": {"type": "object",
+             "propertyNames": {"pattern": "^CVE-[0-9]{4}-[0-9]{4,}$"},
+             "additionalProperties": {"$ref": "#/$defs/status"}},
+    "verdict": {"$ref": "#/$defs/status", "description": "Roll-up of the per-CVE statuses."},
+    "contains": {"type": ["boolean", "null"],
+                 "description": "true if the statement implies the product embeds the component, false if it says it doesn't, null if unknown."},
+    "evidence": {"enum": ["tracker", "vendor-advisory", "vendor-sbom", "notices-file", "binary-scan", "community"]},
+    "source": {"type": "string", "description": "Source id from catalog/sources.yaml."},
+    "publisher": {"type": "string", "description": "Organization that made the statement (for CSAF, the vendor PSIRT)."},
+    "source_url": {"type": "string", "format": "uri"},
+    "references": {"type": "array", "items": {"type": "string"}, "maxItems": 12},
+    "notes": {"type": "string", "maxLength": 600},
+    "category": {"type": ["string", "null"], "description": "Source-specific grouping (tracker segment or CSAF provider)."},
+    "updated": {"type": "string", "description": "Date (YYYY-MM-DD) the source made or last updated the statement."}
+  },
+  "$defs": {
+    "status": {"enum": ["affected", "workaround", "fixed", "under_investigation", "runtime_dependent",
+                        "not_affected", "present", "absent", "unknown"]}
+  }
+}

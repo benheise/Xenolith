@@ -1,0 +1,128 @@
+"""Command line entry point: python -m xenolith <command>."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+from . import build as build_mod
+from . import catalog as catalog_mod
+from .catalog import ROOT
+from .model import dedupe, write_ndjson
+from .sources import cisa_log4j, community, csaf, cvelist, ncsc_markdown
+
+DATA = ROOT / "data"
+DOCS_DATA = ROOT / "docs" / "data"
+
+TRACKERS = [
+    # (source id, repo, directory name under --src, default component)
+    ("ncsc-nl-php2shell", "NCSC-NL/php2shell", "php"),
+    ("ncsc-nl-log4shell", "NCSC-NL/log4shell", "log4j-core"),
+    ("cisa-log4j", "cisagov/log4j-affected-db", "log4j-core"),
+]
+
+
+def _git(repo: Path, fmt: str) -> str:
+    try:
+        return subprocess.run(["git", "-C", str(repo), "log", "-1", f"--format={fmt}"],
+                              capture_output=True, text=True, check=True).stdout.strip()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return ""
+
+
+def cmd_trackers(args) -> int:
+    cat = catalog_mod.load()
+    src = Path(args.src)
+    for source_id, repo, default_comp in TRACKERS:
+        path = src / repo.replace("/", "_")
+        if not path.exists():
+            print(f"- {source_id}: {path} not found, skipped")
+            continue
+        commit = _git(path, "%H") or "main"
+        as_of = _git(path, "%cs") or ""
+        if source_id == "cisa-log4j":
+            rows, stats = cisa_log4j.ingest(path, catalog=cat, commit=commit)
+        else:
+            rows, stats = ncsc_markdown.ingest(
+                path, source_id=source_id, repo_url=f"https://github.com/{repo}",
+                default_component=default_comp, catalog=cat, as_of=as_of, commit=commit)
+        n = write_ndjson(DATA / "assertions" / "trackers" / f"{source_id}.ndjson", dedupe(rows))
+        print(f"- {source_id} @ {commit[:10]} ({as_of}): {n} assertions  {json.dumps(stats)}")
+    return 0
+
+
+def cmd_csaf(args) -> int:
+    cat = catalog_mod.load()
+    results = csaf.crawl(ROOT / "catalog" / "csaf_providers.yaml", catalog=cat, data_dir=DATA,
+                         only=args.only, max_fetch=args.max_fetch, discover=not args.no_discover)
+    failed = [r for r in results if "error" in r]
+    print(f"{len(results) - len(failed)} providers crawled, {len(failed)} unreachable")
+    return 0
+
+
+def cmd_community(args) -> int:
+    cat = catalog_mod.load()
+    rows, errors = community.load(ROOT / "community" / "assertions.csv", cat)
+    for e in errors:
+        print(f"::error::{e}")
+    if errors:
+        return 1
+    if not args.check:
+        write_ndjson(DATA / "assertions" / "community.ndjson", dedupe(rows))
+    print(f"community: {len(rows)} valid rows")
+    return 0
+
+
+def cmd_spine(args) -> int:
+    kev = cvelist.load_kev(Path(args.kev) if args.kev else None)
+    out, stats = cvelist.build(Path(args.cves) if args.cves else None, kev, min_cves=args.min_cves)
+    n = write_ndjson(DATA / "spine" / "products.ndjson", out)
+    print(f"spine: {n} products  {json.dumps(stats)}")
+    return 0
+
+
+def cmd_build(args) -> int:
+    cat = catalog_mod.load()
+    counts = build_mod.build(cat, DATA, DOCS_DATA, spine_min_cves=args.spine_min_cves)
+    print(f"built docs/data: {json.dumps(counts)}")
+    return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser(prog="xenolith", description=__doc__)
+    sub = p.add_subparsers(dest="cmd", required=True)
+
+    t = sub.add_parser("trackers", help="ingest NCSC-NL and CISA incident trackers from local clones")
+    t.add_argument("--src", default="src", help="directory holding clones named Owner_repo")
+    t.set_defaults(fn=cmd_trackers)
+
+    c = sub.add_parser("csaf", help="crawl CSAF providers for watchlist CVEs (incremental)")
+    c.add_argument("--only", nargs="*", help="only providers whose name contains one of these strings")
+    c.add_argument("--max-fetch", type=int, help="override per-provider fetch cap for this run")
+    c.add_argument("--no-discover", action="store_true", help="skip aggregator discovery")
+    c.set_defaults(fn=cmd_csaf)
+
+    m = sub.add_parser("community", help="validate and ingest community/assertions.csv")
+    m.add_argument("--check", action="store_true", help="validate only, write nothing")
+    m.set_defaults(fn=cmd_community)
+
+    s = sub.add_parser("spine", help="build the product spine from cvelistV5 and CISA KEV")
+    s.add_argument("--cves", help="path to an extracted cvelistV5 'cves' directory (omit for KEV-only)")
+    s.add_argument("--kev", help="local KEV CSV (default: download from cisagov/kev-data)")
+    s.add_argument("--min-cves", type=int, default=3, help="keep non-KEV products with at least this many CVEs")
+    s.set_defaults(fn=cmd_spine)
+
+    b = sub.add_parser("build", help="build docs/data for the GitHub Pages site")
+    b.add_argument("--spine-min-cves", type=int, default=10,
+                   help="list products with no composition data yet only if they have KEV entries or this many CVEs")
+    b.set_defaults(fn=cmd_build)
+
+    args = p.parse_args(argv)
+    return args.fn(args)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

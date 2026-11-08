@@ -1,0 +1,55 @@
+# CSAF 2.x providers to crawl for watchlist CVEs.
+#
+# mode:
+#   full          Fetch every advisory once (then only changed ones) and check it
+#                 for watchlist CVEs. Right for vendors that name files by advisory ID.
+#   cve-filename  Only fetch files whose name contains a watchlist CVE ID. Right for
+#                 very large providers that publish one file per CVE.
+#
+# max_fetch caps new or changed documents fetched per provider per run, so the
+# first full crawl is spread over several scheduled runs.
+#
+# discover_from_aggregators adds every provider listed by these CSAF aggregators
+# or listers (mode: full, default cap) unless it is already listed or excluded below.
+
+defaults:
+  mode: full
+  max_fetch: 1500
+
+discover_from_aggregators:
+  - https://wid.cert-bund.de/.well-known/csaf-aggregator/aggregator.json
+
+exclude:
+  # BSI's own WID feed republishes advisories for every vendor. It is far too
+  # large to crawl in full and duplicates the vendors' own feeds.
+  - https://wid.cert-bund.de/.well-known/csaf/provider-metadata.json
+  # Huawei's feeds all require a login (HTTP 401), so there is nothing public to crawl.
+  - https://www.huawei.com/.well-known/csaf/provider-metadata.json
+
+providers:
+  - name: Cisco
+    metadata: https://www.cisco.com/.well-known/csaf/provider-metadata.json
+    mode: full
+
+  - name: Microsoft
+    metadata: https://msrc.microsoft.com/csaf/provider-metadata.json
+    mode: cve-filename
+
+  - name: Red Hat
+    metadata: https://security.access.redhat.com/data/csaf/v2/provider-metadata.json
+    mode: cve-filename
+
+  - name: Siemens ProductCERT
+    metadata: https://cert-portal.siemens.com/productcert/csaf/provider-metadata.json
+
+  - name: Schneider Electric
+    metadata: https://www.se.com/.well-known/csaf/provider-metadata.json
+
+  - name: ABB
+    metadata: https://psirt.abb.com/.well-known/csaf/provider-metadata.json
+
+  - name: SICK
+    metadata: https://www.sick.com/.well-known/csaf/provider-metadata.json
+
+  - name: CISA (ICS advisories)
+    metadata: https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xenolith: which products embed this component?</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Cpath d=%22M16 2 29 9v14L16 30 3 23V9z%22 fill=%22%232f6f6a%22/%3E%3Cpath d=%22M12 12h8v8h-8z%22 fill=%22%23f7f7f5%22/%3E%3C/svg%3E">
+<meta name="description" content="Open census of which commercial and closed-source products embed which third-party components, with sourced vendor and tracker statements.">
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --ink: #1b1d1f; --muted: #5d636a; --line: #e3e3df;
+    --accent: #2f6f6a; --accent-ink: #ffffff; --chip: #eeeeea;
+    --affected: #b42318; --workaround: #b54708; --fixed: #067647; --investigating: #8a6a00;
+    --runtime: #175cd3; --present: #6941c6; --neutral: #667085;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121416; --panel: #1b1e21; --ink: #e8e9ea; --muted: #a0a6ad; --line: #2c3035;
+      --accent: #5fb3ab; --accent-ink: #0d1f1d; --chip: #262a2e;
+      --affected: #f97066; --workaround: #fdb022; --fixed: #47cd89; --investigating: #e5c454;
+      --runtime: #84adff; --present: #b692f6; --neutral: #98a2b3;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif; }
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 28px 0 8px; }
+  .brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .brand h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+  .brand h1 a { color: inherit; text-decoration: none; }
+  .brand p { margin: 0; color: var(--muted); }
+  .search { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 12px 0; }
+  .search input { width: 100%; font: inherit; font-size: 17px; padding: 13px 14px; border-radius: var(--radius);
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+  .hint { color: var(--muted); font-size: 14px; margin: 6px 2px 0; }
+  main { padding-bottom: 40px; min-height: 50vh; }
+  h2 { font-size: 20px; margin: 20px 0 8px; letter-spacing: -0.01em; }
+  h3 { font-size: 16px; margin: 0; }
+  .muted { color: var(--muted); }
+  .small { font-size: 14px; }
+  .grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+  button.card { text-align: left; font: inherit; color: inherit; cursor: pointer; width: 100%; }
+  button.card:hover { border-color: var(--accent); }
+  .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 6px 0 2px; }
+  .stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0; }
+  .chip { border: 1px solid var(--line); background: var(--chip); color: var(--ink); border-radius: 999px;
+    padding: 5px 11px; font: inherit; font-size: 14px; cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .chip[aria-pressed="true"] .muted { color: inherit; opacity: .85; }
+  .badge { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px;
+    border: 1px solid currentColor; white-space: nowrap; }
+  .v-affected { color: var(--affected); } .v-workaround { color: var(--workaround); }
+  .v-fixed { color: var(--fixed); } .v-under_investigation { color: var(--investigating); }
+  .v-runtime_dependent { color: var(--runtime); } .v-present { color: var(--present); }
+  .v-not_affected, .v-absent, .v-unknown { color: var(--neutral); }
+  .row { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+  .row .grow { min-width: 0; flex: 1; }
+  .supplier { color: var(--muted); font-size: 14px; }
+  .product { font-weight: 600; overflow-wrap: anywhere; }
+  .meta { color: var(--muted); font-size: 13.5px; margin-top: 6px; overflow-wrap: anywhere; }
+  .cves { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .cve { white-space: nowrap; font-size: 12.5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--chip);
+    border-radius: 6px; padding: 2px 6px; }
+  details { margin-top: 6px; } summary { cursor: pointer; color: var(--muted); font-size: 13.5px; }
+  .list { display: grid; gap: 8px; }
+  .filter { width: 100%; font: inherit; padding: 9px 12px; border-radius: var(--radius); border: 1px solid var(--line);
+    background: var(--panel); color: var(--ink); margin: 4px 0 10px; }
+  .more { margin: 14px auto 0; display: block; }
+  .back { background: none; border: 0; color: var(--accent); font: inherit; padding: 0; cursor: pointer; margin-top: 8px; }
+  .notice { border-left: 3px solid var(--accent); padding: 8px 12px; background: var(--panel); border-radius: 0 var(--radius) var(--radius) 0; }
+  footer { border-top: 1px solid var(--line); padding: 20px 0 40px; color: var(--muted); font-size: 14px; }
+  footer h2 { color: var(--ink); font-size: 16px; }
+  footer ul { padding-left: 18px; margin: 6px 0; }
+  .comp-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .kbd { font-family: ui-monospace, monospace; font-size: 13px; background: var(--chip); padding: 1px 5px; border-radius: 5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1><a href="#" id="home-link">Xenolith</a></h1>
+      <p>Which commercial products embed this component?</p>
+    </div>
+  </header>
+  <div class="search" role="search">
+    <label for="q" class="muted small">Search a component, CVE, vendor or product</label>
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+           placeholder="php, brotli, CVE-2021-44228, Cisco, FortiGate…">
+    <p class="hint" id="status">Loading census…</p>
+  </div>
+  <main id="app" aria-live="polite"></main>
+  <footer id="footer"></footer>
+</div>
+<script>
+"use strict";
+const VERDICTS = {
+  affected: "Affected", workaround: "Workaround only", fixed: "Fix released",
+  under_investigation: "Investigating", runtime_dependent: "Uses host runtime",
+  present: "Contains (not assessed)", not_affected: "Not affected", absent: "Not present", unknown: "No status"
+};
+const CONTAINS = new Set(["affected", "workaround", "fixed", "present"]);
+const EVIDENCE = {
+  "tracker": "Incident tracker", "vendor-advisory": "Vendor advisory (CSAF)", "vendor-sbom": "Vendor SBOM",
+  "notices-file": "Third-party notices", "binary-scan": "Binary scan", "community": "Community submission"
+};
+const FILTERS = [
+  ["all", "All", () => true],
+  ["contains", "Contains it", r => CONTAINS.has(r.st)],
+  ["affected", "Affected", r => r.st === "affected" || r.st === "workaround"],
+  ["fixed", "Fix released", r => r.st === "fixed"],
+  ["under_investigation", "Investigating", r => r.st === "under_investigation"],
+  ["not_affected", "Not affected / not present", r => r.st === "not_affected" || r.st === "absent"],
+  ["runtime_dependent", "Host runtime", r => r.st === "runtime_dependent"],
+];
+const PAGE = 50;
+const REPO = "https://github.com/benheise/Xenolith";
+
+let META = null, PRODUCTS = [], PINDEX = [], SOURCES = {};
+const compCache = new Map();
+const $ = s => document.querySelector(s);
+const app = $("#app"), input = $("#q"), statusEl = $("#status");
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : null; }
+function link(u, text) {
+  const s = safeUrl(u);
+  return s ? `<a href="${esc(s)}" target="_blank" rel="noopener noreferrer">${esc(text || hostOf(s))}</a>` : esc(text || "");
+}
+function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } }
+function badge(st) { return `<span class="badge v-${esc(st)}">${esc(VERDICTS[st] || st)}</span>`; }
+function fmt(n) { return Number(n || 0).toLocaleString("en-US"); }
+function norm(s) { return String(s || "").toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, ""); }
+
+async function loadJSON(path) {
+  const r = await fetch(path, { cache: "no-cache" });
+  if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+  return r.json();
+}
+async function component(id) {
+  if (!compCache.has(id)) compCache.set(id, loadJSON(`data/components/${encodeURIComponent(id)}.json`));
+  return compCache.get(id);
+}
+
+// ---------------------------------------------------------------- routing
+function parseHash() {
+  const h = new URLSearchParams(location.hash.replace(/^#/, ""));
+  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), f: h.get("f") || "all", t: h.get("t") || "" };
+}
+function go(params, replace = false) {
+  const h = new URLSearchParams();
+  for (const [k, v] of Object.entries(params)) if (v) h.set(k, v);
+  const next = "#" + h.toString();
+  if (replace) history.replaceState(null, "", next); else location.hash = next;
+  if (replace) route();
+}
+window.addEventListener("hashchange", route);
+
+let lastView = null;
+function route() {
+  if (!META) return;
+  const { c, p, q, f, t } = parseHash();
+  const view = c ? `c:${c}` : p ? `p:${p}` : q ? "q" : "home";
+  if (view !== lastView) { window.scrollTo(0, 0); lastView = view; }
+  if (c && META.components.some(x => x.id === c)) { input.value = ""; return showComponent(c, f, t); }
+  if (p) { input.value = ""; return showProduct(p); }
+  if (q) { if (input.value !== q) input.value = q; return showSearch(q); }
+  input.value = "";
+  showHome();
+}
+
+let typingTimer = null;
+input.addEventListener("input", () => {
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(() => {
+    const q = input.value.trim();
+    go(q ? { q } : {}, true);
+  }, 160);
+});
+input.addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+    const hit = exactComponent(input.value.trim());
+    if (hit) go({ c: hit.id });
+  }
+});
+$("#home-link").addEventListener("click", e => { e.preventDefault(); go({}); });
+
+// ---------------------------------------------------------------- search
+function componentTerms(comp) {
+  const terms = [comp.id, comp.name, ...(comp.aliases || [])];
+  for (const inc of comp.incidents || []) { terms.push(inc.name, ...(inc.cves || [])); }
+  return terms.map(norm);
+}
+function exactComponent(q) {
+  const n = norm(q);
+  if (!n) return null;
+  return META.components.find(c => componentTerms(c).includes(n)) || null;
+}
+function matchComponents(q) {
+  const n = norm(q);
+  return META.components.filter(c => componentTerms(c).some(t => t.includes(n)));
+}
+function matchProducts(q, limit = 60) {
+  const tokens = norm(q).split(/\s+/).filter(Boolean);
+  if (!tokens.length) return [];
+  const out = [];
+  for (let i = 0; i < PINDEX.length; i++) {
+    if (tokens.every(t => PINDEX[i].includes(t))) out.push(PRODUCTS[i]);
+  }
+  out.sort((a, b) => (b.n > 0) - (a.n > 0) || (b.kev || 0) - (a.kev || 0) || (b.n - a.n));
+  return { total: out.length, items: out.slice(0, limit) };
+}
+
+function showSearch(q) {
+  const exact = exactComponent(q);
+  const comps = matchComponents(q);
+  const prods = matchProducts(q);
+  statusEl.textContent = `${comps.length} component${comps.length === 1 ? "" : "s"}, ${fmt(prods.total)} product${prods.total === 1 ? "" : "s"} match`;
+  let html = "";
+  if (exact) {
+    html += `<div class="notice">“${esc(q)}” is <b>${esc(exact.name)}</b>. <a href="#c=${encodeURIComponent(exact.id)}">See every product that embeds it →</a></div>`;
+  }
+  if (comps.length) {
+    html += `<h2>Components</h2><div class="grid">${comps.map(compCard).join("")}</div>`;
+  }
+  if (prods.total) {
+    html += `<h2>Products${prods.total > prods.items.length ? ` <span class="muted small">(first ${prods.items.length} of ${fmt(prods.total)})</span>` : ""}</h2>`;
+    html += `<div class="list">${prods.items.map(productCard).join("")}</div>`;
+  }
+  if (!comps.length && !prods.total) {
+    html += `<p class="muted">Nothing matches “${esc(q)}”. The census only covers commercial products and the components on the
+      <a href="${REPO}/blob/main/catalog/components.yaml" target="_blank" rel="noopener">watchlist</a>.
+      For open source packages, try <a href="https://deps.dev/" target="_blank" rel="noopener">deps.dev</a> or
+      <a href="https://osv.dev/" target="_blank" rel="noopener">OSV.dev</a>.</p>`;
+  }
+  app.innerHTML = html;
+  bindCards();
+}
+
+function compCard(c) {
+  const incs = (c.incidents || []).map(i => esc(i.name)).join(", ");
+  return `<button class="card" data-c="${esc(c.id)}">
+    <h3>${esc(c.name)}</h3>
+    <div class="small muted">${incs}</div>
+    <div class="small" style="margin-top:6px"><b>${fmt(c.products)}</b> products · <b>${fmt(c.contains)}</b> confirmed to contain it</div>
+  </button>`;
+}
+function productCard(p) {
+  const comps = Object.entries(p.c || {});
+  const badges = comps.length
+    ? comps.map(([cid, st]) => `<span class="badge v-${esc(st)}" title="${esc(VERDICTS[st] || st)}">${esc(compName(cid))}: ${esc(VERDICTS[st] || st)}</span>`).join("")
+    : `<span class="small muted">No composition data yet</span>`;
+  const spine = p.cv ? `<div class="meta">${fmt(p.cv)} CVE${p.cv === 1 ? "" : "s"}${p.kev ? ` · ${fmt(p.kev)} in CISA KEV` : ""}</div>` : "";
+  return `<button class="card" data-p="${esc(p.k)}">
+    <div class="supplier">${esc(p.s)}</div><div class="product">${esc(p.p)}</div>
+    <div class="comp-badges">${badges}</div>${spine}
+  </button>`;
+}
+function compName(id) { const c = META.components.find(x => x.id === id); return c ? c.id : id; }
+function bindCards() {
+  app.querySelectorAll("[data-c]").forEach(el => el.addEventListener("click", () => go({ c: el.dataset.c })));
+  app.querySelectorAll("[data-p]").forEach(el => el.addEventListener("click", () => go({ p: el.dataset.p })));
+}
+
+// ---------------------------------------------------------------- component view
+async function showComponent(id, filterKey, text) {
+  const c = META.components.find(x => x.id === id);
+  statusEl.textContent = `Loading ${c.name}…`;
+  let rows;
+  try { rows = await component(id); }
+  catch (e) { app.innerHTML = `<p class="muted">Could not load data for ${esc(c.name)} (${esc(e.message)}).</p>`; return; }
+  const filt = FILTERS.find(f => f[0] === filterKey) || FILTERS[0];
+  const t = norm(text);
+  const visible = rows.filter(r => filt[2](r) && (!t || norm(`${r.s} ${r.p} ${r.v} ${r.pub}`).includes(t)));
+  const counts = Object.fromEntries(FILTERS.map(f => [f[0], rows.filter(f[2]).length]));
+  statusEl.textContent = `${fmt(visible.length)} of ${fmt(rows.length)} statements shown`;
+
+  const incidents = (c.incidents || []).map(i => `
+    <div class="small" style="margin-top:4px"><b>${esc(i.name)}</b> (${esc(i.year)}):
+      ${(i.cves || []).map(v => `<a class="cve" href="https://www.cve.org/CVERecord?id=${esc(v)}" target="_blank" rel="noopener">${esc(v)}</a>`).join(" ")}
+      ${(i.trackers || []).map(u => ` · tracker: ${link(u)}`).join("")}
+    </div>`).join("");
+  app.innerHTML = `
+    <button class="back" id="back">← All components</button>
+    <h2>${esc(c.name)}</h2>
+    <div class="small muted">Upstream: ${link(c.upstream)}${c.purl ? ` · <span class="kbd">${esc(c.purl)}</span>` : ""}</div>
+    ${incidents}
+    <div class="stats">
+      <div class="stat"><b>${fmt(c.products)}</b><span>products with statements</span></div>
+      <div class="stat"><b>${fmt(c.contains)}</b><span>confirmed to contain it</span></div>
+      <div class="stat"><b>${fmt((c.verdicts || {}).affected || 0)}</b><span>affected, no fix stated</span></div>
+    </div>
+    <div class="chips" role="group" aria-label="Filter by status">
+      ${FILTERS.map(f => `<button class="chip" data-f="${f[0]}" aria-pressed="${f[0] === filt[0]}">${esc(f[1])} <span class="muted">${fmt(counts[f[0]])}</span></button>`).join("")}
+    </div>
+    <input class="filter" id="tfilter" type="search" placeholder="Filter by vendor or product…" value="${esc(text)}">
+    <div class="list" id="rows"></div>
+    <button class="chip more" id="more" hidden>Show more</button>`;
+  $("#back").addEventListener("click", () => go({}));
+  app.querySelectorAll("[data-f]").forEach(el => el.addEventListener("click", () => go({ c: id, f: el.dataset.f, t: $("#tfilter").value.trim() })));
+  let tt = null;
+  $("#tfilter").addEventListener("input", e => {
+    clearTimeout(tt);
+    tt = setTimeout(() => go({ c: id, f: filt[0], t: e.target.value.trim() }, true), 200);
+  });
+  let shown = 0;
+  const list = $("#rows"), more = $("#more");
+  function page() {
+    list.insertAdjacentHTML("beforeend", visible.slice(shown, shown + PAGE).map(r => statementCard(r)).join(""));
+    shown = Math.min(shown + PAGE, visible.length);
+    more.hidden = shown >= visible.length;
+    more.textContent = `Show more (${fmt(visible.length - shown)} left)`;
+    list.querySelectorAll("[data-p]:not([data-bound])").forEach(el => {
+      el.dataset.bound = "1";
+      el.addEventListener("click", ev => { ev.preventDefault(); go({ p: el.dataset.p }); });
+    });
+  }
+  more.addEventListener("click", page);
+  if (!visible.length) list.innerHTML = `<p class="muted">No statements match this filter.</p>`;
+  else page();
+  if (document.activeElement !== $("#tfilter") && text) { const f = $("#tfilter"); f.focus(); f.setSelectionRange(f.value.length, f.value.length); }
+}
+
+function statementCard(r, opts = {}) {
+  const src = SOURCES[r.src] || { name: r.src };
+  const who = r.src === "csaf" ? (r.pub || r.cat || "Vendor") : src.name;
+  const cves = Object.entries(r.c || {}).map(([cve, st]) => `<span class="cve" title="${esc(VERDICTS[st] || st)}">${esc(cve)}: ${esc(VERDICTS[st] || st)}</span>`).join("");
+  const refs = (r.r || []).map(u => link(u)).join(" · ");
+  const head = opts.inProduct
+    ? `<div class="small"><b>${esc(who)}</b></div>`
+    : `<div class="supplier">${esc(r.s)}</div>
+      <a class="product" href="#p=${encodeURIComponent(r.k)}" data-p="${esc(r.k)}">${esc(r.p)}</a>`;
+  return `<div class="card">
+    <div class="row"><div class="grow">${head}</div>${badge(r.st)}</div>
+    ${r.v ? `<div class="meta">Versions: ${esc(r.v)}</div>` : ""}
+    ${cves ? `<div class="cves">${cves}</div>` : ""}
+    <div class="meta">${esc(EVIDENCE[r.e] || r.e)} · ${link(r.u, who)}${r.d ? ` · as of ${esc(r.d)}` : ""}${r.cat && r.src !== "csaf" ? ` · ${esc(r.cat)}` : ""}</div>
+    ${(r.n || refs) ? `<details><summary>Notes and references</summary>
+      ${r.n ? `<div class="meta">${esc(r.n)}</div>` : ""}${refs ? `<div class="meta">${refs}</div>` : ""}</details>` : ""}
+  </div>`;
+}
+
+// ---------------------------------------------------------------- product view
+async function showProduct(key) {
+  const p = PRODUCTS.find(x => x.k === key);
+  if (!p) { app.innerHTML = `<p class="muted">Unknown product.</p>`; return; }
+  statusEl.textContent = `Loading ${p.p}…`;
+  const comps = Object.keys(p.c || {});
+  const sections = await Promise.all(comps.map(async cid => {
+    const rows = (await component(cid)).filter(r => r.k === key);
+    const name = (META.components.find(x => x.id === cid) || {}).name || cid;
+    return { cid, name, rows };
+  }));
+  statusEl.textContent = `${comps.length} component${comps.length === 1 ? "" : "s"} with statements`;
+  const issue = `${REPO}/issues/new?title=${encodeURIComponent(`Composition data: ${p.s} ${p.p}`)}&body=${encodeURIComponent(`Product: ${p.s} — ${p.p}\nComponent:\nStatus:\nSource link (vendor advisory, SBOM, notices file):\nDate of statement:\n`)}`;
+  app.innerHTML = `
+    <button class="back" id="back">← Back</button>
+    <div class="supplier" style="margin-top:12px">${esc(p.s)}</div>
+    <h2 style="margin-top:0">${esc(p.p)}</h2>
+    ${p.cv ? `<div class="stats"><div class="stat"><b>${fmt(p.cv)}</b><span>CVEs naming this product</span></div>
+      <div class="stat"><b>${fmt(p.kev || 0)}</b><span>in CISA KEV</span></div></div>` : ""}
+    ${sections.map(s => `<h2><a href="#c=${encodeURIComponent(s.cid)}">${esc(s.name)}</a></h2>
+      <div class="list">${s.rows.map(r => statementCard(r, { inProduct: true })).join("")}</div>`).join("")}
+    ${comps.length ? "" : `<p class="notice">No composition data for this product yet. It is listed because it appears in CVE records or the CISA KEV catalog.</p>`}
+    <p class="small muted" style="margin-top:18px">Know what this product embeds? <a href="${esc(issue)}" target="_blank" rel="noopener">Submit a sourced statement</a>.</p>`;
+  $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
+}
+
+// ---------------------------------------------------------------- home
+function showHome() {
+  const k = META.counts;
+  statusEl.textContent = `${fmt(k.assertions)} sourced statements about ${fmt(k.products_with_data)} products · updated ${META.built.slice(0, 10)}`;
+  const comps = [...META.components].sort((a, b) => b.products - a.products);
+  app.innerHTML = `
+    <p>When a vulnerability lands in a widely embedded component, the hard question is which <b>vendor products</b> ship it inside.
+    Asset scanners can't see into appliances and SaaS. Xenolith collects vendor CSAF/VEX statements and community incident trackers
+    into one searchable, permanent index, organized by component.</p>
+    <div class="stats">
+      <div class="stat"><b>${fmt(k.assertions)}</b><span>sourced statements</span></div>
+      <div class="stat"><b>${fmt(k.products_with_data)}</b><span>products with data</span></div>
+      <div class="stat"><b>${fmt(k.components)}</b><span>components tracked</span></div>
+      <div class="stat"><b>${fmt(k.spine_products)}</b><span>products in the registry</span></div>
+    </div>
+    <h2>Components</h2>
+    <div class="grid">${comps.map(compCard).join("")}</div>
+    <h2>How to read a statement</h2>
+    <p class="small">Each card is one claim from one source, linked back to it. <b>Fix released</b> means the product contained
+    the component and the vendor has shipped a fixed version. <b>Uses host runtime</b> means the product runs on a copy of the
+    component you install and patch yourself. <b>Not present</b> is a vendor saying the component isn't in the product at all.
+    Tracker rows are only as current as the tracker; check the date.</p>`;
+  bindCards();
+}
+
+function renderFooter() {
+  const src = META.sources.map(s => `<li>${link(s.url, s.name)} (${esc(s.license)})${s.assertions ? `: ${fmt(s.assertions)} statements` : ""}${s.products ? `: ${fmt(s.products)} products` : ""}${s.latest ? `, latest ${esc(s.latest)}` : ""}</li>`).join("");
+  const pubs = (META.sources.find(s => s.id === "csaf") || {}).publishers || {};
+  const pubList = Object.keys(pubs).length ? `<p>CSAF publishers so far: ${Object.entries(pubs).map(([n, c]) => `${esc(n)} (${fmt(c)})`).join(", ")}.</p>` : "";
+  const comp = META.comparables.map(c => `<li>${link(c.url, c.name)}: ${esc(c.covers)}</li>`).join("");
+  $("#footer").innerHTML = `
+    <h2>Scope</h2>
+    <p>Xenolith covers <b>products</b>: appliances, firmware, enterprise and hosted software, management consoles.
+    It doesn't index open source <b>packages</b> (libraries, frameworks, distro packages, base images). These services already do that well:</p>
+    <ul>${comp}</ul>
+    <h2>Sources</h2><ul>${src}</ul>${pubList}
+    <h2>Data and contributions</h2>
+    <p>All data is in the repository as NDJSON under <a href="${REPO}/tree/main/data" target="_blank" rel="noopener">data/</a>,
+    refreshed daily. Add statements through <a href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">pull requests</a>.
+    Statements are reproduced from their sources, with links. Always confirm against the vendor's own advisory before you act.</p>
+    <p>Built ${esc(META.built)} · <a href="${REPO}" target="_blank" rel="noopener">GitHub</a></p>`;
+}
+
+// ---------------------------------------------------------------- boot
+(async function boot() {
+  try {
+    [META, PRODUCTS] = await Promise.all([loadJSON("data/meta.json"), loadJSON("data/products.json")]);
+  } catch (e) {
+    statusEl.textContent = "Could not load the census data.";
+    app.innerHTML = `<p class="muted">${esc(e.message)}</p>`;
+    return;
+  }
+  PINDEX = PRODUCTS.map(p => norm(`${p.s} ${p.p} ${p.k}`));
+  for (const s of META.sources) SOURCES[s.id] = s;
+  renderFooter();
+  route();
+})();
+</script>
+</body>
+</html>
