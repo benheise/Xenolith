@@ -28,3 +28,107 @@ artifacts:
     version: "5.3.0"
     inventory: scan/corpus/truth/lxml-5.3.0.json
     note: "Statically links libxml2 and libxslt (lxml's release notes name the versions). Neither is on the watchlist and Syft has no classifier for them: a known gap, kept here so the gap is measured."
+
+  # ---- real-artifact proofs added November 2026 (see docs/xenolith-scan.md, "Real-artifact proofs")
+  - artifact: https://files.pythonhosted.org/packages/16/89/818fa238e37a47a29bb8495ca2cafdd514599a89f19ada7916348a74b5f9/Pillow-10.0.0-cp311-cp311-manylinux_2_28_x86_64.whl
+    sha256: cd25d2a9d2b36fcb318882481367956d2cf91329f6892fe5d385c346c0649629
+    supplier: Python Pillow
+    product: Pillow (Python package)
+    version: "10.0.0"
+    inventory: scan/corpus/truth/pillow-10.0.0.json
+    note: "Bundles libwebp 1.3.1 (CVE-2023-4863). liblzma's version comes from the lzma_version_number() probe, which needed frame-pointer prologue decoding."
+  - artifact: https://files.pythonhosted.org/packages/3c/49/f87cecbdec4b00cc1187f01196d48c08828204cd861915fab44972dc705c/Pillow-10.0.1-cp311-cp311-manylinux_2_28_x86_64.whl
+    sha256: cbe68deb8580462ca0d9eb56a81912f59eb4542e1ef8f987405e35a0179f4ea2
+    supplier: Python Pillow
+    product: Pillow (Python package)
+    version: "10.0.1"
+    inventory: scan/corpus/truth/pillow-10.0.1.json
+    note: "The libwebp 1.3.2 fix release; `xenolith-scan diff` against 10.0.0 shows exactly brotli, liblzma and libwebp moving."
+  - artifact: https://files.pythonhosted.org/packages/f7/61/15b10190a6738db342efe4d06378ac4032b13d8ba6e9e1d89890119b2b8f/Pillow-10.0.1-cp311-cp311-manylinux_2_28_aarch64.whl
+    sha256: 92a23b0431941a33242b1f0ce6c88a952e09feeea9af4e8be48236a68ffe2205
+    supplier: Python Pillow
+    product: Pillow (Python package)
+    version: "10.0.1"
+    inventory: scan/corpus/truth/pillow-10.0.1.json
+    note: "Same pins on AArch64: exercises the movz/movk probes and frame records."
+  - artifact: https://files.pythonhosted.org/packages/ce/85/62825cabc6aad53104b7b6d12eb2ad74737d268630032d07b74d4444cb72/psycopg2_binary-2.9.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: 977646e05232579d2e7b9c59e21dbe5261f403a88417f6a6512e70d3f8a046be
+    supplier: Psycopg
+    product: psycopg2-binary (Python package)
+    version: "2.9.9"
+    inventory: scan/corpus/truth/psycopg2-binary-2.9.9.json
+    note: "OpenSSL 1.1.1w is found; libpq, OpenLDAP and Cyrus SASL are not on the watchlist and have no Syft classifier: a measured gap."
+  - artifact: https://files.pythonhosted.org/packages/3a/d0/edc009c27b406c4f9cbc79274d6e46d634d139075492ad055e3d68445925/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: 666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5
+    supplier: NumPy
+    product: numpy (Python package)
+    version: "1.26.4"
+    inventory: scan/corpus/truth/numpy-1.26.4.json
+    note: "Negative control (no watchlist component inside). Its GNU static library (.a) crashed the old ar parser; now read by the scanner's own hardened reader."
+  - artifact: https://registry.npmjs.org/next/-/next-15.0.4.tgz
+    sha256: b3e8173f6fc968db5cc565c501e95b1aa15614ec29296e7a0c41c8413f832ce0
+    supplier: Vercel
+    product: Next.js (npm package)
+    version: "15.0.4"
+    inventory: scan/corpus/truth/next-15.0.4.json
+    note: "Next vendors React Server Components under dist/compiled/ with the version stripped; the scanner reads it from the React build vendored alongside (sibling rule)."
+  - artifact: https://registry.npmjs.org/next/-/next-15.0.5.tgz
+    sha256: 60f410e59ee3c59c51e624aae2c934dadb7d2a614f736d96ead1ca3add02f4f9
+    supplier: Vercel
+    product: Next.js (npm package)
+    version: "15.0.5"
+    inventory: scan/corpus/truth/next-15.0.5.json
+    note: "The React2Shell (CVE-2025-55182) fix release kept the same React RC version: a version-based census records presence, not exposure."
+  - artifact: https://repo1.maven.org/maven2/io/zipkin/zipkin-server/2.23.8/zipkin-server-2.23.8-exec.jar
+    sha256: f4420fc8db5a9a9d94bf8501e2027b192c73e7aec8bd3d589eec2c0efc6d2424
+    supplier: OpenZipkin
+    product: Zipkin Server
+    version: "2.23.8"
+    inventory: scan/corpus/truth/zipkin-server-2.23.8.json
+    note: "Spring Boot executable jar with a shell-script prefix; bundles log4j-core 2.13.3 (Log4Shell-vulnerable) and brotli 1.0.9 inside brotli4j's native jar."
+  - artifact: https://repo1.maven.org/maven2/io/zipkin/zipkin-server/2.23.16/zipkin-server-2.23.16-exec.jar
+    sha256: 83cd660944fe173afac67ab3de68e102290c9c512af18ec2a124fb30c3db804e
+    supplier: OpenZipkin
+    product: Zipkin Server
+    version: "2.23.16"
+    inventory: scan/corpus/truth/zipkin-server-2.23.16.json
+    note: "The Log4Shell fix line: log4j 2.17.1. Maven Central rate-limits bursts; maven-central.storage-download.googleapis.com mirrors the same file."
+  - artifact: https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-23.05.5-x86-64-generic-squashfs-combined.img.gz
+    sha256: 788a786a7c2692cce1ac8922b71c4030958cb8ddd7f6b507fbba79c757a04fdf
+    supplier: OpenWrt
+    product: OpenWrt x86/64 combined image
+    version: "23.05.5"
+    inventory: scan/corpus/truth/openwrt-23.05.5-x86-64.json
+    note: "gzip with trailing data, MBR disk image, squashfs root (opkg database). The ext4 boot partition needs 7-Zip."
+  - artifact: https://deb.debian.org/debian-security/pool/updates/main/o/openssl/libssl3_3.0.22-1~deb12u2_amd64.deb
+    sha256: cb4784740daa9b3b0eaea2b444bbefa686794afbbf3d678d238c1fd9875f2efd
+    supplier: Debian
+    product: libssl3 (Debian package, amd64)
+    version: "3.0.22-1~deb12u2"
+    inventory: scan/corpus/truth/debian-libssl3-amd64.json
+    note: "Security-pool URLs move to snapshot.debian.org once superseded; the hash pins the file."
+  - artifact: https://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh-server_9.2p1-2+deb12u9_arm64.deb
+    sha256: ad0b59e2c075d046089ee1f2f967182b59f731579b2c016722f63d2951483ae8
+    supplier: Debian
+    product: openssh-server (Debian package, arm64)
+    version: "1:9.2p1-2+deb12u9"
+    inventory: scan/corpus/truth/debian-openssh-server-arm64.json
+    note: "The sshd binary contains both 'OpenSSH_9.2' and 'OpenSSH_9.2p1'; the scanner keeps the most specific."
+  - artifact: https://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/liblzma5_5.4.1-1+deb12u2_arm64.deb
+    sha256: 36358d245f246234721e6c1c2ee5d11a46c1c877023c63f7570df02cd79964f5
+    supplier: Debian
+    product: liblzma5 (Debian package, arm64)
+    version: "5.4.1-1+deb12u2"
+    inventory: scan/corpus/truth/debian-liblzma5-arm64.json
+  - artifact: https://deb.debian.org/debian-security/pool/updates/main/c/curl/libcurl4_7.88.1-10+deb12u5_amd64.deb
+    sha256: 619b592d51c0e75be0b153dbb671e732739d306bf22f42f8e1bc103235299f0d
+    supplier: Debian
+    product: libcurl4 (Debian package, amd64)
+    version: "7.88.1-10+deb12u5"
+    inventory: scan/corpus/truth/debian-libcurl4-amd64.json
+  - artifact: https://deb.debian.org/debian-security/pool/updates/main/p/php8.2/php8.2-cli_8.2.35-1~deb12u1_amd64.deb
+    sha256: 7ba6568ba8869fc057c162a14ebea9ace2c93b360f999c0be1bcc0e1ce0c9a21
+    supplier: Debian
+    product: php8.2-cli (Debian package, amd64)
+    version: "8.2.35-1~deb12u1"
+    inventory: scan/corpus/truth/debian-php8.2-cli-amd64.json

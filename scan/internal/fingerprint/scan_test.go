@@ -1,6 +1,8 @@
 package fingerprint
 
 import (
+	"debug/elf"
+	"encoding/binary"
 	"os"
 	"path/filepath"
 	"testing"
@@ -126,4 +128,114 @@ func TestEmbeddedPackMatchesCatalog(t *testing.T) {
 	if string(catalog) != string(PackYAML) {
 		t.Fatal("scan/internal/fingerprint/pack.yaml differs from catalog/fingerprints.yaml; run `make -C scan sync`")
 	}
+}
+
+func TestMostSpecificVersionAndPatterns(t *testing.T) {
+	pack, _ := LoadEmbedded()
+	s := New(pack)
+	// Debian's sshd: the bare SSH_VERSION first, a compat table of patterns, then the full release.
+	data := append([]byte{0x7f, 'E', 'L', 'F'}, []byte("x\x00OpenSSH_9.2\x00%s\x00OpenSSH_7.0*,OpenSSH_7.1*\x00OpenSSH_10.1*\x00"+
+		"OpenSSH_9.2p1 Debian-2+deb12u9\x00sshd_config\x00")...)
+	s.Binary(data, "usr/sbin/sshd")
+	if len(s.Findings) != 1 || s.Findings[0].Version != "9.2p1" {
+		t.Fatalf("want openssh 9.2p1, got %+v", s.Findings)
+	}
+}
+
+func TestFramedProbes(t *testing.T) {
+	pack, _ := LoadEmbedded()
+	// Pillow's liblzma keeps frame pointers: push rbp; mov rbp,rsp; mov eax,imm; pop rbp; ret
+	x86 := []byte{0x55, 0x48, 0x89, 0xe5, 0xb8, 0xea, 0x8c, 0xfb, 0x02, 0x5d, 0xc3}
+	data := makeELF(elf.EM_X86_64, []testSymbol{{"lzma_version_number", x86}, {"lzma_code", []byte{0xc3}}, {"lzma_stream_decoder", []byte{0xc3}}}, nil)
+	s := New(pack)
+	s.Binary(data, "Pillow.libs/liblzma-1e44b93d.so.5.4.4")
+	if len(s.Findings) != 1 || s.Findings[0].Version != "5.4.4" {
+		t.Fatalf("framed x86-64 probe: %+v", s.Findings)
+	}
+	// AArch64 with a frame record: stp x29,x30,[sp,#-16]!; mov x29,sp; movz; movk; ldp; ret
+	movz := uint32(0x52800000) | (0x8cea << 5)
+	movk := uint32(0x72800000) | (1 << 21) | (0x02fb << 5)
+	code := make([]byte, 24)
+	for i, ins := range []uint32{0xA9BF7BFD, 0x910003FD, movz, movk, 0xA8C17BFD, 0xD65F03C0} {
+		binary.LittleEndian.PutUint32(code[4*i:], ins)
+	}
+	data = makeELF(elf.EM_AARCH64, []testSymbol{{"lzma_version_number", code}, {"lzma_code", []byte{0, 0, 0, 0}}, {"lzma_stream_decoder", []byte{0, 0, 0, 0}}}, nil)
+	s = New(pack)
+	s.Binary(data, "liblzma.so.5")
+	if len(s.Findings) != 1 || s.Findings[0].Version != "5.4.4" {
+		t.Fatalf("framed AArch64 probe: %+v", s.Findings)
+	}
+}
+
+func TestNextTarballPath(t *testing.T) {
+	pack, _ := LoadEmbedded()
+	s := New(pack)
+	s.paths("next-15.0.4.tgz!/next-15.0.4.tar!/package/dist/compiled/react-server-dom-webpack/package.json",
+		func() []byte {
+			return []byte(`{"name":"react-server-dom-webpack","version":"19.0.0-rc-66855b96-20241106"}`)
+		}, nil)
+	if len(s.Findings) != 1 || s.Findings[0].Version != "19.0.0-rc-66855b96-20241106" {
+		t.Fatalf("npm tarball layout: %+v", s.Findings)
+	}
+}
+
+// Next.js strips "version" from the React packages it vendors; the scanner reads it
+// from the React build next to them, matching stable and experimental channels.
+func TestSiblingVersion(t *testing.T) {
+	root := t.TempDir()
+	write := func(rel, body string) {
+		p := filepath.Join(root, filepath.FromSlash(rel))
+		if err := os.MkdirAll(filepath.Dir(p), 0o755); err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(p, []byte(body), 0o644); err != nil {
+			t.Fatal(err)
+		}
+	}
+	c := "package/dist/compiled/"
+	write(c+"react-server-dom-webpack/package.json", `{"name":"react-server-dom-webpack-builtin","main":"index.js"}`)
+	write(c+"react-server-dom-webpack-experimental/package.json", `{"name":"react-server-dom-webpack-builtin"}`)
+	write(c+"react-server-dom-turbopack/package.json", `{"name":"react-server-dom-turbopack-builtin"}`)
+	write(c+"react/cjs/react.production.js", `"use strict";exports.version = "19.0.0-rc-66855b96-20241106";`)
+	write(c+"react-experimental/cjs/react.production.js", `exports.version = "19.0.0-experimental-66855b96-20241106";`)
+	pack, _ := LoadEmbedded()
+	s := New(pack)
+	s.ScanTree(root, nil)
+	got := map[string]Finding{}
+	for _, f := range s.Findings {
+		got[f.Location] = f
+	}
+	want := map[string]string{
+		c + "react-server-dom-webpack/package.json":              "19.0.0-rc-66855b96-20241106",
+		c + "react-server-dom-webpack-experimental/package.json": "0.0.0-experimental-66855b96-20241106",
+		c + "react-server-dom-turbopack/package.json":            "19.0.0-rc-66855b96-20241106",
+	}
+	for loc, v := range want {
+		f, ok := got[loc]
+		if !ok || f.Version != v || f.Confidence != 0.8 || f.Note == "" {
+			t.Errorf("%s: got %+v, want version %s at 0.8 with a note", loc, f, v)
+		}
+	}
+	if len(s.Findings) != len(want) {
+		t.Errorf("findings: %+v", s.Findings)
+	}
+	// without the sibling the finding stays, unversioned, at the presence confidence
+	if err := os.Remove(filepath.Join(root, filepath.FromSlash(c+"react/cjs/react.production.js"))); err != nil {
+		t.Fatal(err)
+	}
+	s = New(pack)
+	s.ScanFile(filepath.Join(root, filepath.FromSlash(c+"react-server-dom-turbopack/package.json")), "x/dist/compiled/react-server-dom-turbopack/package.json")
+	if len(s.Findings) != 1 || s.Findings[0].Version != "" || s.Findings[0].Confidence != 0.9 {
+		t.Errorf("missing sibling: %+v", s.Findings)
+	}
+}
+
+func FuzzBinary(f *testing.F) {
+	pack, _ := LoadEmbedded()
+	f.Add(makeELF(elf.EM_X86_64, []testSymbol{{"BrotliDecoderVersion", movEaxRet(0x01001009)}}, nil))
+	f.Add([]byte("MZ\x00OpenSSL 3.0.13 30 Jan 2024 OPENSSLDIR:"))
+	f.Fuzz(func(t *testing.T, data []byte) {
+		s := New(pack)
+		s.binary(data, "fuzz") // the unrecovered path: any panic fails the fuzz run
+	})
 }

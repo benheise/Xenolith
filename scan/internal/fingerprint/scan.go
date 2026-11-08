@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"debug/elf"
 	"encoding/json"
+	"fmt"
 	"io/fs"
 	"os"
 	"path/filepath"
@@ -97,7 +98,16 @@ func (s *Scanner) ScanFile(path, location string) {
 		}
 		return content
 	}
-	s.paths(location, read)
+	dir := filepath.Dir(path)
+	sibling := func(rel string) []byte {
+		target := filepath.Join(dir, filepath.FromSlash(rel))
+		if st, err := os.Stat(target); err != nil || !st.Mode().IsRegular() || st.Size() > 8<<20 {
+			return nil
+		}
+		data, _ := os.ReadFile(target)
+		return data
+	}
+	s.paths(location, read, sibling)
 	lower := strings.ToLower(location)
 	for _, ext := range notBinary {
 		if strings.HasSuffix(lower, ext) {
@@ -127,8 +137,9 @@ func (s *Scanner) ScanFile(path, location string) {
 	s.Binary(data, location)
 }
 
-// paths applies the path rules (package metadata, class files, file names).
-func (s *Scanner) paths(location string, read func() []byte) {
+// paths applies the path rules (package metadata, class files, file names). sibling
+// reads a file relative to the matched one's directory (nil when unavailable).
+func (s *Scanner) paths(location string, read func() []byte, sibling func(string) []byte) {
 	for _, fp := range s.Pack.Components {
 		for _, rule := range fp.Paths {
 			m := rule.Regex.FindStringSubmatch(location)
@@ -144,6 +155,17 @@ func (s *Scanner) paths(location string, read func() []byte) {
 				}
 				version = v
 			}
+			confidence, note := rule.Confidence, rule.Note
+			if version == "" && rule.Sibling != nil && sibling != nil {
+				if v := siblingVersion(rule.Sibling, groups, sibling); v != "" {
+					version = v
+					confidence = min(confidence, rule.Sibling.Confidence)
+					if note != "" && rule.Sibling.Note != "" {
+						note += "; "
+					}
+					note += rule.Sibling.Note
+				}
+			}
 			name := groups["name"]
 			if name == "" {
 				name = fp.Name
@@ -155,9 +177,28 @@ func (s *Scanner) paths(location string, read func() []byte) {
 				technique = "filename"
 			}
 			base := location[strings.LastIndex(location, "/")+1:]
-			s.add(fp, name, version, technique, rule.Confidence, location, base, rule.Note)
+			s.add(fp, name, version, technique, confidence, location, base, note)
 		}
 	}
+}
+
+var siblingGroup = regexp.MustCompile(`\{(\w+)\}`)
+
+func siblingVersion(sb *Sibling, groups map[string]string, read func(string) []byte) string {
+	rel := siblingGroup.ReplaceAllStringFunc(sb.Path, func(g string) string { return groups[g[1:len(g)-1]] })
+	data := read(rel)
+	if data == nil {
+		return ""
+	}
+	m := sb.Regex.FindSubmatch(data)
+	if m == nil {
+		return ""
+	}
+	v := string(m[sb.Regex.SubexpIndex("v")])
+	if sb.Rewrite != nil {
+		v = sb.Rewrite.ReplaceAllLiteralString(v, sb.To)
+	}
+	return v
 }
 
 func named(re *regexp.Regexp, m []string) map[string]string {
@@ -209,8 +250,18 @@ func metadataVersion(how string, content []byte, rule PathRule) (string, bool) {
 	return "", true
 }
 
-// Binary applies string, marker, symbol and probe rules to executable content.
+// Binary applies string, marker, symbol and probe rules to executable content. A
+// panic in a parser (debug/elf on a malformed file) is recorded, not propagated.
 func (s *Scanner) Binary(data []byte, location string) {
+	defer func() {
+		if rec := recover(); rec != nil {
+			s.Skipped = append(s.Skipped, fmt.Sprintf("%s: binary parser crashed (please report): %v", location, rec))
+		}
+	}()
+	s.binary(data, location)
+}
+
+func (s *Scanner) binary(data []byte, location string) {
 	for _, fp := range s.Pack.Components {
 		for _, rule := range fp.Strings {
 			if !bytes.Contains(data, rule.Contains) {
@@ -302,8 +353,13 @@ func anyContains(data []byte, needles [][]byte) bool {
 	return false
 }
 
-// matchString finds the first match of a string rule, honouring the rewritten
-// lookbehind (the optional "pre" group must not have matched a forbidden character).
+// matchString picks the best match of a string rule. A binary often holds several:
+// OpenSSH keeps the bare SSH_VERSION ("OpenSSH_9.2") next to the full release
+// ("OpenSSH_9.2p1 Debian-2+deb12u9"), and its compatibility table lists patterns
+// ("OpenSSH_7.0*"). Matches followed by '*' are patterns, not versions, and are
+// skipped; of the rest the most specific (longest) version wins, then the first.
+// The rewritten lookbehind is honoured: a match whose optional "pre" group caught
+// a forbidden character is not a match.
 func matchString(rule StringRule, data []byte) ([]byte, string) {
 	names := rule.Regex.SubexpNames()
 	pre, v := -1, -1
@@ -315,31 +371,39 @@ func matchString(rule StringRule, data []byte) ([]byte, string) {
 			v = i
 		}
 	}
-	start := 0
-	for start < len(data) {
+	var best []byte
+	bestV := ""
+	start, seen := 0, 0
+	for start < len(data) && seen < 10000 {
 		loc := rule.Regex.FindSubmatchIndex(data[start:])
 		if loc == nil {
-			return nil, ""
+			break
 		}
-		matched := true
-		if pre >= 0 && loc[2*pre] >= 0 {
-			matched = false // a forbidden character precedes the token: not a match
-		}
-		if matched && v >= 0 && loc[2*v] >= 0 {
-			from := loc[0]
-			if pre >= 0 && loc[2*pre] >= 0 {
-				from = loc[2*pre+1]
-			}
-			return data[start+from : start+loc[1]], string(data[start+loc[2*v] : start+loc[2*v+1]])
-		}
-		// Skip past this candidate and keep looking.
+		seen++
 		next := loc[1]
 		if next <= 0 {
 			next = 1
 		}
+		ok := v >= 0 && loc[2*v] >= 0 && !(pre >= 0 && loc[2*pre] >= 0)
+		if ok && start+loc[1] < len(data) && data[start+loc[1]] == '*' {
+			ok = false
+		}
+		if ok {
+			ver := string(data[start+loc[2*v] : start+loc[2*v+1]])
+			if len(ver) > len(bestV) {
+				from := loc[0]
+				if pre >= 0 && loc[2*pre] >= 0 {
+					from = loc[2*pre+1]
+				}
+				best, bestV = data[start+from:start+loc[1]], ver
+			}
+		}
 		start += next
 	}
-	return nil, ""
+	if best == nil {
+		return nil, ""
+	}
+	return best, bestV
 }
 
 func printable(b []byte) string {

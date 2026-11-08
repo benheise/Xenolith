@@ -5,6 +5,7 @@ package detect
 import (
 	"context"
 	"fmt"
+	"path"
 	"path/filepath"
 	"sort"
 	"strings"
@@ -80,7 +81,7 @@ func Run(ctx context.Context, res *unpack.Result, opts Options) (*Report, error)
 	for _, tree := range res.Trees {
 		s, err := runSyft(ctx, tree, opts.Parallelism)
 		if err != nil {
-			rep.Skipped = append(rep.Skipped, fmt.Sprintf("%s: syft: %v", tree, err))
+			rep.Skipped = append(rep.Skipped, fmt.Sprintf("%s: syft: %v", treeLabel(res, tree), err))
 			continue
 		}
 		if s.Artifacts.LinuxDistribution != nil && rep.Distro == "" {
@@ -89,10 +90,17 @@ func Run(ctx context.Context, res *unpack.Result, opts Options) (*Report, error)
 				rep.Distro = strings.TrimSpace(s.Artifacts.LinuxDistribution.Name + " " + s.Artifacts.LinuxDistribution.Version)
 			}
 		}
-		n := 0
+		n, declared := 0, 0
 		for p := range s.Artifacts.Packages.Enumerate() {
-			all = append(all, fromSyft(p, tree, res))
 			n++
+			if declaredByLibrary(p) {
+				declared++
+				continue
+			}
+			all = append(all, fromSyft(p, tree, res))
+		}
+		if declared > 0 {
+			rep.Skipped = append(rep.Skipped, fmt.Sprintf("%s: %d dependencies declared in the pom.xml of bundled libraries ignored (what a library was built against, often test-only; bundled jars are listed from their own metadata)", treeLabel(res, tree), declared))
 		}
 		rep.SyftPackages += n
 		opts.Log(fmt.Sprintf("syft: %d packages in %s", n, tree))
@@ -132,7 +140,12 @@ func Run(ctx context.Context, res *unpack.Result, opts Options) (*Report, error)
 	return rep, nil
 }
 
-func runSyft(ctx context.Context, tree string, parallelism int) (*sbom.SBOM, error) {
+func runSyft(ctx context.Context, tree string, parallelism int) (s *sbom.SBOM, err error) {
+	defer func() {
+		if rec := recover(); rec != nil {
+			s, err = nil, fmt.Errorf("syft crashed (please report): %v", rec)
+		}
+	}()
 	src, err := directorysource.NewFromPath(tree)
 	if err != nil {
 		return nil, err
@@ -166,9 +179,12 @@ func RunImage(ctx context.Context, ref string, opts Options) (*Report, source.De
 	rep := &Report{Engines: []Engine{{Name: "syft", Version: opts.SyftVersion}}}
 	var all []Component
 	for p := range s.Artifacts.Packages.Enumerate() {
+		rep.SyftPackages++
+		if declaredByLibrary(p) {
+			continue
+		}
 		all = append(all, fromSyft(p, "", nil))
 	}
-	rep.SyftPackages = len(all)
 	if s.Artifacts.LinuxDistribution != nil {
 		rep.Distro = s.Artifacts.LinuxDistribution.PrettyName
 	}
@@ -211,8 +227,34 @@ func fromSyft(p pkg.Package, tree string, res *unpack.Result) Component {
 		Name: p.Name, Version: p.Version, Type: "library", PURL: p.PURL, Confidence: conf,
 		Techniques: []string{technique}, FoundBy: []string{"syft:" + p.FoundBy},
 	}
-	if meta, ok := p.Metadata.(pkg.JavaArchive); ok && meta.PomProperties != nil && meta.PomProperties.GroupID != "" {
-		c.Group = meta.PomProperties.GroupID
+	if unresolved(c.Version) {
+		// Syft reports "UNKNOWN" (or the raw ${property}) when a pom declares a dependency
+		// whose version is managed elsewhere; that is no version at all.
+		c.PURL = strings.Replace(c.PURL, "@"+c.Version, "", 1)
+		c.Version = ""
+	}
+	if c.Version == "" && note != "" {
+		// a dependency a manifest declares, with no version, is not evidence anything
+		// shipped: keep it as a lead below the submission threshold
+		c.Confidence = 0.5
+		note = "declared in a manifest found in the artifact, without a resolved version; not evidence it shipped"
+	}
+	if p.Type == pkg.LinuxKernelModulePkg && c.Version == "" {
+		// in-tree modules have no version of their own: they are the kernel, which is
+		// listed separately; keep them as leads rather than one submission line per .ko
+		c.Confidence = 0.6
+		note = "kernel module without a version of its own (in-tree modules are part of the kernel)"
+		if meta, ok := p.Metadata.(pkg.LinuxKernelModule); ok && meta.KernelVersion != "" {
+			note += "; built for kernel " + meta.KernelVersion
+		}
+	}
+	if meta, ok := p.Metadata.(pkg.JavaArchive); ok {
+		if meta.PomProperties != nil && meta.PomProperties.GroupID != "" {
+			c.Group = meta.PomProperties.GroupID
+		} else if n := jarFileArtifact(p); n != "" {
+			c.PURL = strings.Replace(c.PURL, "/"+c.Name+"@", "/"+n+"@", 1)
+			c.Name = n
+		}
 	}
 	if len(p.CPEs) > 0 {
 		c.CPE = p.CPEs[0].Attributes.String()
@@ -238,6 +280,61 @@ func fromSyft(p pkg.Package, tree string, res *unpack.Result) Component {
 		c.Notes = append(c.Notes, note)
 	}
 	return c
+}
+
+// jarFileArtifact: without pom.properties Syft names a jar from its OSGi symbolic name
+// (io.zipkin.brave.context-slf4j -> "context-slf4j"). Maven names the file
+// artifactId-version.jar, so when the file name is <something>-<syft name>-<version>.jar
+// the longer name is the artifact id.
+func jarFileArtifact(p pkg.Package) string {
+	if p.Name == "" || p.Version == "" {
+		return ""
+	}
+	for _, l := range p.Locations.ToSlice() {
+		// Syft reports a jar it opened inside another archive as outer.jar:inner/path.jar
+		for _, where := range []string{l.RealPath, l.AccessPath[strings.LastIndex(l.AccessPath, ":")+1:]} {
+			base := path.Base(filepath.ToSlash(where))
+			stem, ok := strings.CutSuffix(base, "-"+p.Version+".jar")
+			if ok && strings.HasSuffix(stem, "-"+p.Name) && len(stem) > len(p.Name)+1 {
+				return stem
+			}
+		}
+	}
+	return ""
+}
+
+// treeLabel names an extracted tree in messages: its logical location, or "artifact"
+// for the top-level work directory (which has no location of its own).
+func treeLabel(res *unpack.Result, tree string) string {
+	if loc := res.Locate(tree); loc != "" && !filepath.IsAbs(filepath.FromSlash(loc)) {
+		return loc
+	}
+	return "artifact"
+}
+
+// declaredByLibrary reports a dependency Syft read from the pom.xml a library ships in
+// META-INF/maven/: what that library declared (junit, h2, an old log4j in test scope),
+// not what the product contains. Jars that are bundled are found from their own
+// pom.properties and manifests.
+func declaredByLibrary(p pkg.Package) bool {
+	if !strings.Contains(p.FoundBy, "pom-cataloger") {
+		return false
+	}
+	locs := p.Locations.ToSlice()
+	if len(locs) == 0 {
+		return false
+	}
+	for _, l := range locs {
+		if !strings.Contains(l.AccessPath, "META-INF/maven/") && !strings.Contains(l.RealPath, "META-INF/maven/") {
+			return false
+		}
+	}
+	return true
+}
+
+func unresolved(v string) bool {
+	v = strings.TrimSpace(v)
+	return strings.EqualFold(v, "UNKNOWN") || strings.Contains(v, "${")
 }
 
 func fromFingerprint(g fingerprint.Group) Component {

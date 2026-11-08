@@ -686,18 +686,30 @@ func loadComponents(path string) (string, map[string]string, error) {
 	if err := json.Unmarshal(b, &bom); err != nil {
 		return "", nil, err
 	}
-	out := map[string]string{}
+	// one line per name; several shipped versions are listed sorted, so component order
+	// in either file never shows up as a change
+	versions := map[string]map[string]bool{}
 	for _, c := range bom.Components {
 		name := c.Name
 		if c.Group != "" {
 			name = c.Group + ":" + c.Name
 		}
 		key := strings.ToLower(name)
-		if v, ok := out[key]; !ok || v == "" {
-			out[key] = c.Version
-		} else if c.Version != "" && v != c.Version {
-			out[key] = v + ", " + c.Version
+		if versions[key] == nil {
+			versions[key] = map[string]bool{}
 		}
+		if c.Version != "" {
+			versions[key][c.Version] = true
+		}
+	}
+	out := map[string]string{}
+	for key, set := range versions {
+		vs := make([]string, 0, len(set))
+		for v := range set {
+			vs = append(vs, v)
+		}
+		sort.Strings(vs)
+		out[key] = strings.Join(vs, ", ")
 	}
 	return bom.Metadata.Component.Name + " " + bom.Metadata.Component.Version, out, nil
 }

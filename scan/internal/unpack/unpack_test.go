@@ -189,3 +189,70 @@ func TestSniffHelperFormats(t *testing.T) {
 		t.Errorf("a missing helper must be reported, got %v", r.NotInspected)
 	}
 }
+
+func TestStaticLibInsideWheel(t *testing.T) {
+	// numpy ships GNU-format static libraries; they used to crash the ar reader.
+	whl := zipBytes(t, map[string]string{"numpy/core/lib/libnpymath.a": string(gnuStaticLib()), "numpy/__init__.py": ""})
+	dir := t.TempDir()
+	p := filepath.Join(dir, "numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.whl")
+	os.WriteFile(p, whl, 0o644)
+	r, err := Run(p, Options{Root: filepath.Join(dir, "out")})
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer r.Cleanup()
+	got := strings.Join(locations(r), "\n")
+	if !strings.Contains(got, "libnpymath.a!/npy_math_complex_long_name.o") {
+		t.Fatalf("static library members should be extracted:\n%s\n%v", got, r.NotInspected)
+	}
+}
+
+func TestPrependedZipAndInputPlacement(t *testing.T) {
+	// Spring Boot "fully executable" jar: a launch script, then the zip.
+	jar := append([]byte("#!/bin/bash\n# launch script\nexec java -jar \"$0\" \"$@\"\nexit 0\n"),
+		zipBytes(t, map[string]string{"BOOT-INF/lib/log4j-core-2.13.3.jar": string(zipBytes(t, map[string]string{
+			"META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties": "version=2.13.3\n"}))})...)
+	dir := t.TempDir()
+	p := filepath.Join(dir, "zipkin-server-2.23.8-exec.jar")
+	os.WriteFile(p, jar, 0o644)
+	r, err := Run(p, Options{Root: filepath.Join(dir, "out")})
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer r.Cleanup()
+	got := strings.Join(locations(r), "\n")
+	if !strings.Contains(got, "zipkin-server-2.23.8-exec.jar!/BOOT-INF/lib/log4j-core-2.13.3.jar!/META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties") {
+		t.Fatalf("prepended-data jar not unpacked:\n%s\n%v", got, r.NotInspected)
+	}
+	// The input file itself is in the scanned tree, located by its own name.
+	in := filepath.Join(r.Root, "input", "zipkin-server-2.23.8-exec.jar")
+	if _, err := os.Stat(in); err != nil {
+		t.Fatalf("input not placed in the tree: %v", err)
+	}
+	if r.Locate(in) != "zipkin-server-2.23.8-exec.jar" {
+		t.Fatalf("Locate(input) = %q", r.Locate(in))
+	}
+}
+
+func TestGzipTrailingData(t *testing.T) {
+	var buf bytes.Buffer
+	gz := gzip.NewWriter(&buf)
+	gz.Write([]byte(strings.Repeat("firmware", 1000)))
+	gz.Close()
+	data := append(buf.Bytes(), make([]byte, 4096)...) // OpenWrt pads .img.gz after the stream
+	copy(data[buf.Len():], "garbage-not-a-gzip-header")
+	dir := t.TempDir()
+	p := filepath.Join(dir, "openwrt-x86-64-combined.img.gz")
+	os.WriteFile(p, data, 0o644)
+	r, err := Run(p, Options{Root: filepath.Join(dir, "out")})
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer r.Cleanup()
+	if len(r.Entries) != 1 || r.Entries[0].Size != 8000 {
+		t.Fatalf("the stream before the padding should be kept: %+v %v", r.Entries, r.NotInspected)
+	}
+	if len(r.NotInspected) != 1 || !strings.Contains(r.NotInspected[0], "trailing data") {
+		t.Fatalf("trailing data should be noted: %v", r.NotInspected)
+	}
+}

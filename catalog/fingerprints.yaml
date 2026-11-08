@@ -154,6 +154,18 @@ components:
     paths:
       - {regex: '(?:^|/)node_modules/(?P<name>react-server-dom-(?:webpack|turbopack|parcel|esm))/package\.json$',
          version: package_json, confidence: 0.9}
-      # Next.js vendors its own copy
-      - {regex: '(?:^|/)next/dist/compiled/(?P<name>react-server-dom-(?:webpack|turbopack))(?:-experimental)?/package\.json$',
-         version: package_json, confidence: 0.9}
+      # Next.js vendors its own copy under dist/compiled/ (node_modules/next/dist/compiled/... once
+      # installed; package/dist/compiled/... inside the published npm tarball)
+      # and strips "version" from those package.json files; React releases every package in
+      # lockstep, so the version comes from the React build vendored next to it.
+      - regex: '(?:^|/)dist/compiled/(?P<name>react-server-dom-(?:webpack|turbopack))(?P<exp>-experimental)?/package\.json$'
+        version: package_json
+        confidence: 0.9
+        sibling:
+          path: '../react{exp}/cjs/react.production.js'
+          regex: 'exports\.version\s*=\s*"(?P<v>[^"]+)"'
+          confidence: 0.8
+          # experimental builds call themselves 19.0.0-experimental-<sha>-<date> but are
+          # published to npm as 0.0.0-experimental-<sha>-<date>
+          rewrite: {regex: '^\d+\.\d+\.\d+-experimental-', to: '0.0.0-experimental-'}
+          note: version read from the React build vendored alongside (React packages are released in lockstep)

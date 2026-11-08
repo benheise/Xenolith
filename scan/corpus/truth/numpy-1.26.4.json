@@ -1,0 +1,17 @@
+{
+ "supplier": "NumPy",
+ "product": "numpy (Python package)",
+ "version": "1.26.4",
+ "source": "https://github.com/numpy/numpy/blob/v1.26.4/tools/openblas_support.py (OPENBLAS_V); libgfortran and libquadmath come from the toolchain, unpinned, and are left out",
+ "note": "Negative control: nothing on the watchlist ships in this wheel, so any watchlist hit is a false positive.",
+ "components": [
+  {
+   "name": "numpy",
+   "version": "1.26.4"
+  },
+  {
+   "name": "openblas",
+   "version": "0.3.23.dev"
+  }
+ ]
+}

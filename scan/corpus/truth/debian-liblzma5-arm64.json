@@ -1,0 +1,16 @@
+{
+ "supplier": "Debian",
+ "product": "liblzma5 (Debian package, arm64)",
+ "version": "5.4.1-1+deb12u2",
+ "source": "Debian bookworm-security signed Packages index (Package, Version, Source); the upstream version is the Debian version without epoch and revision",
+ "components": [
+  {
+   "name": "liblzma5",
+   "version": "5.4.1-1+deb12u2"
+  },
+  {
+   "name": "liblzma",
+   "version": "5.4.1"
+  }
+ ]
+}

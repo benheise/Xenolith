@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"sort"
 	"strings"
 	"time"
 
@@ -34,18 +35,21 @@ type corpus struct {
 }
 
 type evalResult struct {
-	Artifact       string   `json:"artifact"`
-	Inventory      int      `json:"inventory_components"`
-	Found          int      `json:"found"`
-	FoundVersion   int      `json:"found_with_same_version"`
-	Recall         float64  `json:"recall"`
-	WatchInventory int      `json:"watchlist_in_inventory"`
-	WatchFound     int      `json:"watchlist_found"`
-	WatchRecall    float64  `json:"watchlist_recall"`
-	Extra          int      `json:"found_but_not_listed"`
-	Missed         []string `json:"missed"`
-	ExtraHighConf  []string `json:"extra_high_confidence"`
-	Error          string   `json:"error,omitempty"`
+	Artifact        string   `json:"artifact"`
+	Inventory       int      `json:"inventory_components"`
+	Found           int      `json:"found"`
+	Versioned       int      `json:"found_with_listed_version"`
+	FoundVersion    int      `json:"found_with_same_version"`
+	VersionAccuracy float64  `json:"version_accuracy"`
+	WrongVersion    []string `json:"wrong_version,omitempty"`
+	Recall          float64  `json:"recall"`
+	WatchInventory  int      `json:"watchlist_in_inventory"`
+	WatchFound      int      `json:"watchlist_found"`
+	WatchRecall     float64  `json:"watchlist_recall"`
+	Extra           int      `json:"found_but_not_listed"`
+	Missed          []string `json:"missed"`
+	ExtraHighConf   []string `json:"found_but_not_listed_components"`
+	Error           string   `json:"error,omitempty"`
 }
 
 func runEval(manifest, out string) error {
@@ -71,14 +75,14 @@ func runEval(manifest, out string) error {
 		watchNames[norm(fp.Name)] = true
 		watchNames[norm(fp.ID)] = true
 	}
-	for _, alias := range []string{"libcurl", "libssl", "libcrypto", "liblzma", "xz utils", "glibc", "libc6", "openssh-server", "openssh-client", "libwebp", "brotli", "libbrotli", "log4j", "log4j-core", "commons-text", "spring-beans", "spring-core", "spring-framework", "php", "openssl", "openssh", "curl"} {
+	for _, alias := range []string{"libcurl", "libssl", "libcrypto", "liblzma", "xz utils", "glibc", "libc6", "openssh-server", "openssh-client", "libwebp", "brotli", "libbrotli", "log4j", "log4j-core", "commons-text", "spring-beans", "spring-core", "spring-framework", "php", "openssl", "openssh", "curl", "react-server-dom-turbopack"} {
 		watchNames[norm(alias)] = true
 	}
 	if err := os.MkdirAll(out, 0o755); err != nil {
 		return err
 	}
 	var results []evalResult
-	fmt.Printf("%-40s %8s %8s %8s %10s %6s\n", "artifact", "listed", "found", "recall", "watchlist", "extra")
+	fmt.Printf("%-40s %7s %6s %7s %8s %10s %6s\n", "artifact", "listed", "found", "recall", "version", "watchlist", "extra")
 	for _, e := range c.Artifacts {
 		r := evalOne(e, out, pack, watchNames)
 		results = append(results, r)
@@ -86,7 +90,11 @@ func runEval(manifest, out string) error {
 			fmt.Printf("%-40s error: %s\n", trunc(r.Artifact, 40), r.Error)
 			continue
 		}
-		fmt.Printf("%-40s %8d %8d %7.0f%% %6d/%-3d %6d\n", trunc(r.Artifact, 40), r.Inventory, r.Found, r.Recall*100, r.WatchFound, r.WatchInventory, r.Extra)
+		ver := "-"
+		if r.Versioned > 0 {
+			ver = fmt.Sprintf("%d/%d", r.FoundVersion, r.Versioned)
+		}
+		fmt.Printf("%-40s %7d %6d %6.0f%% %8s %6d/%-3d %6d\n", trunc(r.Artifact, 40), r.Inventory, r.Found, r.Recall*100, ver, r.WatchFound, r.WatchInventory, r.Extra)
 	}
 	summaryPath := filepath.Join(out, "eval.json")
 	jb, _ := json.MarshalIndent(results, "", "  ")
@@ -147,11 +155,15 @@ func evalOne(e corpusEntry, out string, pack *fingerprint.Pack, watch map[string
 		r.Error = "inventory: " + err.Error()
 		return r
 	}
-	foundNorm := map[string]string{}
-	for k, v := range found {
-		foundNorm[norm(k)] = v
+	// index every submitted component under its full and short (group-less) name; extras
+	// are counted per submitted component, not per index key
+	index := map[string]string{}
+	for k := range found {
+		index[norm(k)] = k
 		if i := strings.LastIndex(k, ":"); i >= 0 { // group:name -> name
-			foundNorm[norm(k[i+1:])] = v
+			if _, taken := index[norm(k[i+1:])]; !taken {
+				index[norm(k[i+1:])] = k
+			}
 		}
 	}
 	matched := map[string]bool{}
@@ -162,40 +174,67 @@ func evalOne(e corpusEntry, out string, pack *fingerprint.Pack, watch map[string
 		if isWatch {
 			r.WatchInventory++
 		}
-		v, ok := foundNorm[key]
+		orig, ok := index[key]
 		if !ok {
 			// try the last path-ish token (org.apache.commons:commons-text, libfoo-dev)
 			for _, alt := range altNames(c.Name) {
-				if v, ok = foundNorm[alt]; ok {
+				if orig, ok = index[alt]; ok {
 					break
 				}
 			}
 		}
-		if ok {
-			r.Found++
-			matched[key] = true
-			if isWatch {
-				r.WatchFound++
-			}
-			if c.Version != "" && strings.Contains(v, c.Version) {
-				r.FoundVersion++
-			}
-		} else {
+		if !ok {
 			r.Missed = append(r.Missed, c.Name+" "+c.Version)
+			continue
+		}
+		r.Found++
+		matched[orig] = true
+		if isWatch {
+			r.WatchFound++
+		}
+		if c.Version != "" {
+			r.Versioned++
+			if hasVersion(found[orig], c.Version) {
+				r.FoundVersion++
+			} else {
+				r.WrongVersion = append(r.WrongVersion, fmt.Sprintf("%s %s (scanner: %s)", c.Name, c.Version, orDash(found[orig])))
+			}
 		}
 	}
-	for k := range foundNorm {
+	for k, v := range found {
 		if !matched[k] {
 			r.Extra++
+			r.ExtraHighConf = append(r.ExtraHighConf, strings.TrimSpace(k+" "+v))
 		}
 	}
+	sort.Strings(r.ExtraHighConf)
 	if r.Inventory > 0 {
 		r.Recall = float64(r.Found) / float64(r.Inventory)
 	}
 	if r.WatchInventory > 0 {
 		r.WatchRecall = float64(r.WatchFound) / float64(r.WatchInventory)
 	}
+	if r.Versioned > 0 {
+		r.VersionAccuracy = float64(r.FoundVersion) / float64(r.Versioned)
+	}
 	return r
+}
+
+// hasVersion: the scanner's value is one version or a sorted ", "-joined list of them.
+func hasVersion(found, want string) bool {
+	for _, v := range strings.Split(found, ", ") {
+		if v == want {
+			return true
+		}
+	}
+	return false
+}
+
+func orDash(s string) string {
+	if s == "" {
+		return "-"
+	}
+	return s
 }
 
 var nonAlnum = regexp.MustCompile(`[^a-z0-9]+`)

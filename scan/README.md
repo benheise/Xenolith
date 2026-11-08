@@ -18,7 +18,7 @@ xenolith-scan scan acme-fw-7.2.9.bin               # unpack, detect, write ./xen
 xenolith-scan review xenolith-out                  # keep or drop low-confidence findings
 xenolith-scan submit xenolith-out --attest         # open the pull request (gh) or print the upload path
 xenolith-scan diff old-scan/ new-scan/             # what changed between two versions
-xenolith-scan eval scan/corpus/manifest.yaml       # measure recall on the evaluation corpus
+xenolith-scan eval scan/corpus/manifest.yaml       # recall and version accuracy on the evaluation corpus
 xenolith-scan helpers                              # which optional unpackers are installed
 ```
 
@@ -63,6 +63,20 @@ Contributor workflow: [CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom)
 | Defined symbols (presence, no version) | 0.7 |
 | Static data marker, class file present | 0.6 |
 | File name only | 0.5 |
+
+Some things Syft reports are not evidence of what ships and are handled accordingly: the
+dependencies declared in the `pom.xml` of a bundled library are ignored (counted in
+`not-inspected.txt`), a declared dependency without a resolved version drops to 0.5, and
+an in-tree kernel module with no version of its own drops to 0.6.
+
+## Evaluation
+
+`scan/corpus/manifest.yaml` lists 18 public artifacts (Debian packages, Python wheels,
+npm and Maven packages, an OpenWrt image) with ground truth the maker published.
+`xenolith-scan eval` downloads them, checks the hashes, scans and prints recall, version
+accuracy and watchlist recall per artifact; `eval.json` has the missed, wrong-version and
+unlisted lists. Current results and the defects the corpus found are in the
+[design doc](../design/xenolith-scan.md#real-artifact-proofs-november-2026).
 
 ## Building
 

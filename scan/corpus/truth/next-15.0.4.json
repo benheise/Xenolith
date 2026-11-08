@@ -1,0 +1,25 @@
+{
+ "supplier": "Vercel",
+ "product": "Next.js (npm package)",
+ "version": "15.0.4",
+ "source": "https://github.com/vercel/next.js/blob/v15.0.4/package.json (the react-server-dom-* versions Next vendors into dist/compiled/)",
+ "note": "Scoped to the React Server Components packages (the watchlist component); Next vendors many more packages that this inventory does not list.",
+ "components": [
+  {
+   "name": "react-server-dom-webpack",
+   "version": "19.0.0-rc-66855b96-20241106"
+  },
+  {
+   "name": "react-server-dom-webpack",
+   "version": "0.0.0-experimental-66855b96-20241106"
+  },
+  {
+   "name": "react-server-dom-turbopack",
+   "version": "19.0.0-rc-66855b96-20241106"
+  },
+  {
+   "name": "react-server-dom-turbopack",
+   "version": "0.0.0-experimental-66855b96-20241106"
+  }
+ ]
+}

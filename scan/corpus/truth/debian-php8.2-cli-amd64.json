@@ -1,0 +1,17 @@
+{
+ "supplier": "Debian",
+ "product": "php8.2-cli (Debian package, amd64)",
+ "version": "8.2.35-1~deb12u1",
+ "source": "Debian bookworm-security signed Packages index (Package, Version, Source); the upstream version is the Debian version without epoch and revision",
+ "components": [
+  {
+   "name": "php8.2-cli",
+   "version": "8.2.35-1~deb12u1"
+  },
+  {
+   "name": "php",
+   "version": "8.2.35"
+  }
+ ],
+ "note": "The PHP binary links OpenSSL dynamically (libssl3 is a dependency, not bundled): an OpenSSL finding here would be a false positive."
+}

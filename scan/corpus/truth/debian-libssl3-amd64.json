@@ -1,0 +1,16 @@
+{
+ "supplier": "Debian",
+ "product": "libssl3 (Debian package, amd64)",
+ "version": "3.0.22-1~deb12u2",
+ "source": "Debian bookworm-security signed Packages index (Package, Version, Source); the upstream version is the Debian version without epoch and revision",
+ "components": [
+  {
+   "name": "libssl3",
+   "version": "3.0.22-1~deb12u2"
+  },
+  {
+   "name": "openssl",
+   "version": "3.0.22"
+  }
+ ]
+}

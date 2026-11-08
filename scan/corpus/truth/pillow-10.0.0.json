@@ -1,0 +1,56 @@
+{
+ "supplier": "Python Pillow",
+ "product": "Pillow (Python package)",
+ "version": "10.0.0",
+ "source": "https://github.com/python-pillow/pillow-wheels/blob/10.0.0/config.sh (the *_VERSION pins the wheels were built from; libXau, which has no pin, is left out; liblzma is the xz library)",
+ "components": [
+  {
+   "name": "pillow",
+   "version": "10.0.0"
+  },
+  {
+   "name": "freetype",
+   "version": "2.13.1"
+  },
+  {
+   "name": "harfbuzz",
+   "version": "7.3.0"
+  },
+  {
+   "name": "libpng",
+   "version": "1.6.40"
+  },
+  {
+   "name": "libjpeg-turbo",
+   "version": "2.1.5.1"
+  },
+  {
+   "name": "openjpeg",
+   "version": "2.5.0"
+  },
+  {
+   "name": "liblzma",
+   "version": "5.4.3"
+  },
+  {
+   "name": "libtiff",
+   "version": "4.5.1"
+  },
+  {
+   "name": "lcms2",
+   "version": "2.15"
+  },
+  {
+   "name": "libwebp",
+   "version": "1.3.1"
+  },
+  {
+   "name": "libxcb",
+   "version": "1.15"
+  },
+  {
+   "name": "brotli",
+   "version": "1.0.9"
+  }
+ ]
+}

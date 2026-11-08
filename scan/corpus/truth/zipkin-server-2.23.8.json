@@ -1,0 +1,448 @@
+{
+ "supplier": "OpenZipkin",
+ "product": "Zipkin Server",
+ "version": "2.23.8",
+ "source": "BOOT-INF/classpath.idx written by the Spring Boot build: the maker's own list of the jars bundled in the executable jar (platform classifiers such as -linux-x86_64 are not part of the version)",
+ "components": [
+  {
+   "name": "spring-boot",
+   "version": "2.4.13"
+  },
+  {
+   "name": "spring-context",
+   "version": "5.3.13"
+  },
+  {
+   "name": "spring-aop",
+   "version": "5.3.13"
+  },
+  {
+   "name": "spring-beans",
+   "version": "5.3.13"
+  },
+  {
+   "name": "spring-expression",
+   "version": "5.3.13"
+  },
+  {
+   "name": "spring-boot-autoconfigure",
+   "version": "2.4.13"
+  },
+  {
+   "name": "jakarta.annotation-api",
+   "version": "1.3.5"
+  },
+  {
+   "name": "spring-core",
+   "version": "5.3.13"
+  },
+  {
+   "name": "spring-jcl",
+   "version": "5.3.13"
+  },
+  {
+   "name": "snakeyaml",
+   "version": "1.27"
+  },
+  {
+   "name": "spring-boot-actuator-autoconfigure",
+   "version": "2.4.13"
+  },
+  {
+   "name": "spring-boot-actuator",
+   "version": "2.4.13"
+  },
+  {
+   "name": "jackson-databind",
+   "version": "2.13.0"
+  },
+  {
+   "name": "jackson-datatype-jsr310",
+   "version": "2.13.0"
+  },
+  {
+   "name": "log4j-slf4j-impl",
+   "version": "2.13.3"
+  },
+  {
+   "name": "log4j-api",
+   "version": "2.13.3"
+  },
+  {
+   "name": "log4j-core",
+   "version": "2.13.3"
+  },
+  {
+   "name": "log4j-jul",
+   "version": "2.13.3"
+  },
+  {
+   "name": "armeria-spring-boot2-autoconfigure",
+   "version": "1.13.3"
+  },
+  {
+   "name": "armeria",
+   "version": "1.13.3"
+  },
+  {
+   "name": "jackson-core",
+   "version": "2.13.0"
+  },
+  {
+   "name": "jackson-annotations",
+   "version": "2.13.0"
+  },
+  {
+   "name": "netty-transport",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-common",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-buffer",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-resolver",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-codec-http2",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-codec",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-codec-http",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-codec-haproxy",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-resolver-dns",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-codec-dns",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "reactive-streams",
+   "version": "1.0.3"
+  },
+  {
+   "name": "netty-resolver-dns-native-macos",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-transport-native-unix-common",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-transport-native-epoll",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-tcnative-boringssl-static",
+   "version": "2.0.44.Final"
+  },
+  {
+   "name": "netty-handler-proxy",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "netty-codec-socks",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "brotli4j",
+   "version": "1.6.0"
+  },
+  {
+   "name": "native-linux-x86_64",
+   "version": "1.6.0"
+  },
+  {
+   "name": "javax.inject",
+   "version": "1"
+  },
+  {
+   "name": "jsr305",
+   "version": "3.0.2"
+  },
+  {
+   "name": "armeria-brave",
+   "version": "1.13.3"
+  },
+  {
+   "name": "brave-instrumentation-http",
+   "version": "5.13.2"
+  },
+  {
+   "name": "armeria-grpc-protocol",
+   "version": "1.13.3"
+  },
+  {
+   "name": "micrometer-registry-prometheus",
+   "version": "1.6.12"
+  },
+  {
+   "name": "simpleclient_common",
+   "version": "0.9.0"
+  },
+  {
+   "name": "simpleclient",
+   "version": "0.9.0"
+  },
+  {
+   "name": "concurrency-limits-core",
+   "version": "0.3.6"
+  },
+  {
+   "name": "micrometer-core",
+   "version": "1.6.12"
+  },
+  {
+   "name": "HdrHistogram",
+   "version": "2.1.12"
+  },
+  {
+   "name": "LatencyUtils",
+   "version": "2.0.3"
+  },
+  {
+   "name": "zipkin",
+   "version": "2.23.8"
+  },
+  {
+   "name": "zipkin-collector",
+   "version": "2.23.8"
+  },
+  {
+   "name": "slf4j-api",
+   "version": "1.7.30"
+  },
+  {
+   "name": "jul-to-slf4j",
+   "version": "1.7.30"
+  },
+  {
+   "name": "zipkin-storage-cassandra",
+   "version": "2.23.8"
+  },
+  {
+   "name": "auto-value-annotations",
+   "version": "1.7.4"
+  },
+  {
+   "name": "java-driver-core",
+   "version": "4.11.3"
+  },
+  {
+   "name": "native-protocol",
+   "version": "1.5.0"
+  },
+  {
+   "name": "netty-handler",
+   "version": "4.1.69.Final"
+  },
+  {
+   "name": "java-driver-shaded-guava",
+   "version": "25.1-jre-graal-sub-1"
+  },
+  {
+   "name": "config",
+   "version": "1.4.1"
+  },
+  {
+   "name": "jnr-posix",
+   "version": "3.1.5"
+  },
+  {
+   "name": "jnr-ffi",
+   "version": "2.2.2"
+  },
+  {
+   "name": "jffi",
+   "version": "1.3.1"
+  },
+  {
+   "name": "asm-commons",
+   "version": "9.1"
+  },
+  {
+   "name": "asm-analysis",
+   "version": "9.1"
+  },
+  {
+   "name": "asm-tree",
+   "version": "9.1"
+  },
+  {
+   "name": "asm-util",
+   "version": "9.1"
+  },
+  {
+   "name": "jnr-a64asm",
+   "version": "1.0.0"
+  },
+  {
+   "name": "jnr-x86asm",
+   "version": "1.0.2"
+  },
+  {
+   "name": "jnr-constants",
+   "version": "0.10.1"
+  },
+  {
+   "name": "metrics-core",
+   "version": "4.1.18"
+  },
+  {
+   "name": "jcip-annotations",
+   "version": "1.0-1"
+  },
+  {
+   "name": "spotbugs-annotations",
+   "version": "3.1.12"
+  },
+  {
+   "name": "zipkin-storage-elasticsearch",
+   "version": "2.23.8"
+  },
+  {
+   "name": "zipkin-storage-mysql-v1",
+   "version": "2.23.8"
+  },
+  {
+   "name": "jooq",
+   "version": "3.14.4"
+  },
+  {
+   "name": "jaxb-api",
+   "version": "2.3.1"
+  },
+  {
+   "name": "javax.activation-api",
+   "version": "1.2.0"
+  },
+  {
+   "name": "mariadb-java-client",
+   "version": "2.7.1"
+  },
+  {
+   "name": "HikariCP",
+   "version": "3.4.5"
+  },
+  {
+   "name": "zipkin-collector-activemq",
+   "version": "2.23.8"
+  },
+  {
+   "name": "activemq-client",
+   "version": "5.16.3"
+  },
+  {
+   "name": "geronimo-jms_1.1_spec",
+   "version": "1.1.1"
+  },
+  {
+   "name": "hawtbuf",
+   "version": "1.11"
+  },
+  {
+   "name": "geronimo-j2ee-management_1.1_spec",
+   "version": "1.0.1"
+  },
+  {
+   "name": "zipkin-collector-kafka",
+   "version": "2.23.8"
+  },
+  {
+   "name": "kafka-clients",
+   "version": "2.8.1"
+  },
+  {
+   "name": "zstd-jni",
+   "version": "1.4.9-1"
+  },
+  {
+   "name": "lz4-java",
+   "version": "1.7.1"
+  },
+  {
+   "name": "snappy-java",
+   "version": "1.1.8.1"
+  },
+  {
+   "name": "zipkin-collector-rabbitmq",
+   "version": "2.23.8"
+  },
+  {
+   "name": "amqp-client",
+   "version": "4.12.0"
+  },
+  {
+   "name": "zipkin-collector-scribe",
+   "version": "2.23.8"
+  },
+  {
+   "name": "armeria-thrift0.14",
+   "version": "1.13.3"
+  },
+  {
+   "name": "libthrift",
+   "version": "0.14.2"
+  },
+  {
+   "name": "tomcat-embed-core",
+   "version": "8.5.46"
+  },
+  {
+   "name": "tomcat-annotations-api",
+   "version": "8.5.46"
+  },
+  {
+   "name": "javax.annotation-api",
+   "version": "1.3.2"
+  },
+  {
+   "name": "brave",
+   "version": "5.13.2"
+  },
+  {
+   "name": "zipkin-reporter-brave",
+   "version": "2.16.1"
+  },
+  {
+   "name": "zipkin-reporter",
+   "version": "2.16.1"
+  },
+  {
+   "name": "brave-context-slf4j",
+   "version": "5.13.2"
+  },
+  {
+   "name": "asm",
+   "version": "5.0.4"
+  },
+  {
+   "name": "armeria-spring-boot2-actuator-autoconfigure",
+   "version": "1.13.3"
+  },
+  {
+   "name": "zipkin-lens",
+   "version": "2.23.8"
+  },
+  {
+   "name": "spring-boot-jarmode-layertools",
+   "version": "2.4.13"
+  }
+ ]
+}

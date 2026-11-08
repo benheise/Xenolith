@@ -71,8 +71,22 @@ func returnedConstant(f *elf.File, vaddr uint64) (uint32, bool) {
 		if bytes.HasPrefix(code, []byte{0xf3, 0x0f, 0x1e, 0xfa}) || bytes.HasPrefix(code, []byte{0xf3, 0x0f, 0x1e, 0xfb}) {
 			code = code[4:] // endbr64 / endbr32
 		}
-		if len(code) >= 6 && code[0] == 0xb8 && code[5] == 0xc3 { // mov eax, imm32; ret
-			return binary.LittleEndian.Uint32(code[1:5]), true
+		framed := false
+		switch {
+		case bytes.HasPrefix(code, []byte{0x55, 0x48, 0x89, 0xe5}): // push rbp; mov rbp, rsp (frame pointers kept)
+			code, framed = code[4:], true
+		case bytes.HasPrefix(code, []byte{0x55, 0x89, 0xe5}): // i386: push ebp; mov ebp, esp
+			code, framed = code[3:], true
+		}
+		if len(code) < 6 || code[0] != 0xb8 { // mov eax, imm32
+			return 0, false
+		}
+		value, rest := binary.LittleEndian.Uint32(code[1:5]), code[5:]
+		if framed && len(rest) > 0 && (rest[0] == 0x5d || rest[0] == 0xc9) { // pop rbp / leave
+			rest = rest[1:]
+		}
+		if len(rest) > 0 && rest[0] == 0xc3 { // ret
+			return value, true
 		}
 		return 0, false
 	case elf.EM_AARCH64:
@@ -81,7 +95,9 @@ func returnedConstant(f *elf.File, vaddr uint64) (uint32, bool) {
 		for i := 0; i+4 <= len(code); i += 4 {
 			ins := binary.LittleEndian.Uint32(code[i:])
 			switch ins {
-			case 0xD503201F, 0xD503233F, 0xD503245F, 0xD503241F: // nop, paciasp, bti
+			case 0xD503201F, 0xD503233F, 0xD503245F, 0xD503241F, 0xD50323BF: // nop, paciasp, bti c, bti, autiasp
+				continue
+			case 0xA9BF7BFD, 0x910003FD, 0xA8C17BFD: // stp x29,x30,[sp,#-16]! / mov x29,sp / ldp x29,x30,[sp],#16
 				continue
 			case 0xD65F03C0: // ret
 				if seen {

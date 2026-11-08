@@ -11,12 +11,14 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"io/fs"
 	"os"
 	"path"
+	"path/filepath"
 	"strconv"
 	"strings"
 
-	"github.com/blakesmith/ar"
+	squashfs "github.com/CalebQ42/squashfs"
 	"github.com/bodgit/sevenzip"
 	"github.com/cavaliergopher/cpio"
 	"github.com/cavaliergopher/rpm"
@@ -25,7 +27,6 @@ import (
 	"github.com/diskfs/go-diskfs/filesystem"
 	"github.com/diskfs/go-diskfs/filesystem/ext4"
 	"github.com/diskfs/go-diskfs/filesystem/iso9660"
-	"github.com/diskfs/go-diskfs/filesystem/squashfs"
 	"github.com/klauspost/compress/zstd"
 	"github.com/ulikunitz/xz"
 	"github.com/ulikunitz/xz/lzma"
@@ -55,7 +56,11 @@ func (r *Result) extract(kind, detail, p, dir, location string, depth int) (int,
 		defer f.Close()
 		return r.extractCpio(f, dir, location, depth)
 	case "squashfs", "iso9660", "ext4":
-		return r.extractFilesystem(kind, p, 0, dir, location, depth)
+		n, err := r.extractFilesystem(kind, p, 0, dir, location, depth)
+		if n == 0 && kind == "ext4" && r.Helpers["7z"] != "" {
+			return r.extractWithHelper("7z", kind, p, dir, location, depth)
+		}
+		return n, err
 	case "disk":
 		return r.extractDisk(p, dir, location, depth)
 	case "appimage":
@@ -156,7 +161,7 @@ func (r *Result) extractCompressed(kind, p, dir, location string, depth int) (in
 			return 0, err
 		}
 		defer gz.Close()
-		src = gz
+		src = &trailingTolerant{r: gz, onTrailing: func() { r.skip(location, "gzip: trailing data after the compressed stream ignored") }}
 	case "bzip2":
 		src = bzip2.NewReader(f)
 	case "xz":
@@ -241,7 +246,10 @@ func (r *Result) extractAr(p, dir, location string, depth int) (int, error) {
 		return 0, err
 	}
 	defer f.Close()
-	rd := ar.NewReader(f)
+	rd, err := newArReader(f)
+	if err != nil {
+		return 0, err
+	}
 	n := 0
 	for {
 		h, err := rd.Next()
@@ -251,8 +259,7 @@ func (r *Result) extractAr(p, dir, location string, depth int) (int, error) {
 		if err != nil {
 			return n, err
 		}
-		name := strings.TrimSuffix(strings.TrimSpace(h.Name), "/")
-		ok, err := r.writeMember(dir, location, name, h.Size, depth, io.LimitReader(rd, h.Size))
+		ok, err := r.writeMember(dir, location, h.Name, h.Size, depth, rd)
 		if ok {
 			n++
 		}
@@ -349,7 +356,10 @@ func (r *Result) extractFilesystem(kind, p string, offset int64, dir, location s
 	var fsys filesystem.FileSystem
 	switch kind {
 	case "squashfs":
-		fsys, err = squashfs.Read(b, size, offset, 4096)
+		// go-diskfs drops entries from large squashfs directories (an OpenWrt root lost
+		// 900 of its 1,400 inodes, including the whole opkg database); the dedicated
+		// reader walks them correctly, so it is used for squashfs.
+		return r.extractSquashfs(p, offset, dir, location, depth)
 	case "iso9660":
 		fsys, err = iso9660.Read(b, size, offset, 2048)
 	case "ext4":
@@ -363,22 +373,23 @@ func (r *Result) extractFilesystem(kind, p string, offset int64, dir, location s
 	return r.walkFS(fsys, dir, location, depth)
 }
 
-// walkFS copies every regular file of a go-diskfs filesystem.
+// walkFS copies every regular file of a go-diskfs filesystem. go-diskfs follows
+// io/fs naming: the root is "." and names carry no leading slash.
 func (r *Result) walkFS(fsys filesystem.FileSystem, dir, location string, depth int) (int, error) {
 	n := 0
 	var walk func(string) error
 	walk = func(dirName string) error {
 		entries, err := fsys.ReadDir(dirName)
 		if err != nil {
-			r.skip(location+"!"+dirName, err.Error())
+			r.skip(location+"!/"+strings.TrimPrefix(dirName, "."), err.Error())
 			return nil
 		}
 		for _, e := range entries {
+			if e.Name() == "." || e.Name() == ".." || e.Name() == "" {
+				continue
+			}
 			name := path.Join(dirName, e.Name())
 			if e.IsDir() {
-				if e.Name() == "." || e.Name() == ".." {
-					continue
-				}
 				if err := walk(name); err != nil {
 					return err
 				}
@@ -393,7 +404,10 @@ func (r *Result) walkFS(fsys filesystem.FileSystem, dir, location string, depth 
 			}
 			fh, err := fsys.OpenFile(name, os.O_RDONLY)
 			if err != nil {
-				r.skip(location+"!"+name, err.Error())
+				fh, err = fsys.OpenFile("/"+name, os.O_RDONLY)
+			}
+			if err != nil {
+				r.skip(location+"!/"+name, err.Error())
 				continue
 			}
 			ok, err := r.writeMember(dir, location, name, info.Size(), depth, fh)
@@ -407,7 +421,7 @@ func (r *Result) walkFS(fsys filesystem.FileSystem, dir, location string, depth 
 		}
 		return nil
 	}
-	err := walk("/")
+	err := walk(".")
 	return n, err
 }
 
@@ -427,23 +441,86 @@ func (r *Result) extractDisk(p, dir, location string, depth int) (int, error) {
 		if part.GetSize() <= 0 {
 			continue
 		}
-		fsys, err := d.GetFilesystem(i + 1)
-		if err != nil {
-			// go-diskfs knows FAT, ISO, squashfs and ext4; anything else (NTFS, XFS,
-			// LVM, swap, encrypted) is reported rather than guessed at.
-			r.skip(fmt.Sprintf("%s!/partition%d", location, i+1), fmt.Sprintf("%s (%s)", err.Error(), humanBytes(part.GetSize())))
+		ploc := fmt.Sprintf("%s!/partition%d", location, i+1)
+		pdir := filepath.Join(dir, fmt.Sprintf("partition%d", i+1))
+		kind := sniffAt(p, part.GetStart())
+		var m int
+		var perr error
+		switch kind {
+		case "squashfs", "ext4", "iso9660":
+			m, perr = r.extractFilesystem(kind, p, part.GetStart(), pdir, ploc, depth)
+			if m == 0 && kind == "ext4" && r.Helpers["7z"] != "" {
+				m, perr = r.partitionWithHelper(p, part.GetStart(), part.GetSize(), pdir, ploc, depth)
+			}
+		default:
+			fsys, err := d.GetFilesystem(i + 1)
+			if err != nil {
+				// FAT, ISO, squashfs and ext4 are read here; anything else (NTFS, XFS,
+				// LVM, swap, encrypted) is reported rather than guessed at.
+				perr = fmt.Errorf("%s (%s)", err.Error(), humanBytes(part.GetSize()))
+				break
+			}
+			m, perr = r.walkFS(fsys, pdir, ploc, depth)
+		}
+		if m == 0 && perr != nil {
+			msg := perr.Error()
+			if kind == "ext4" && r.Helpers["7z"] == "" {
+				msg += "; install 7-Zip to read ext4 without metadata checksums"
+			}
+			r.skip(ploc, msg)
 			continue
 		}
-		m, err := r.walkFS(fsys, dir, fmt.Sprintf("%s!/partition%d", location, i+1), depth)
 		n += m
-		if errors.Is(err, errLimit) {
-			return n, err
+		if errors.Is(perr, errLimit) {
+			return n, perr
 		}
 	}
 	if n == 0 {
 		return 0, errors.New("no readable filesystem in any partition")
 	}
 	return n, nil
+}
+
+// sniffAt identifies a filesystem starting at an offset (a partition).
+func sniffAt(p string, off int64) string {
+	f, err := os.Open(p)
+	if err != nil {
+		return ""
+	}
+	defer f.Close()
+	head := make([]byte, 0x8006)
+	n, _ := f.ReadAt(head, off)
+	head = head[:n]
+	switch {
+	case len(head) >= 4 && (string(head[:4]) == "hsqs" || string(head[:4]) == "sqsh"):
+		return "squashfs"
+	case len(head) > 0x43a && binary.LittleEndian.Uint16(head[0x438:]) == 0xEF53:
+		return "ext4"
+	case len(head) > 0x8005 && string(head[0x8001:0x8006]) == "CD001":
+		return "iso9660"
+	}
+	return ""
+}
+
+// partitionWithHelper copies one partition to a file and hands it to 7-Zip.
+func (r *Result) partitionWithHelper(p string, start, size int64, dir, location string, depth int) (int, error) {
+	src, err := os.Open(p)
+	if err != nil {
+		return 0, err
+	}
+	defer src.Close()
+	tmp := filepath.Join(r.Root, fmt.Sprintf("part-%d.img", start))
+	out, err := os.Create(tmp)
+	if err != nil {
+		return 0, err
+	}
+	_, err = io.Copy(out, io.NewSectionReader(src, start, size))
+	out.Close()
+	defer os.Remove(tmp)
+	if err != nil {
+		return 0, err
+	}
+	return r.extractWithHelper("7z", "ext4", tmp, dir, location, depth)
 }
 
 // extractAppImage reads the squashfs image appended to an AppImage's ELF runtime.
@@ -545,4 +622,78 @@ func (r *Result) extractAsar(p, dir, location string, depth int) (int, error) {
 	}
 	err = walk("", root)
 	return n, err
+}
+
+// trailingTolerant ends a gzip stream cleanly when what follows the last member is
+// not another gzip header: firmware images (OpenWrt's .img.gz, for one) are padded
+// after the stream, which `gzip -d` reports as "trailing garbage ignored".
+type trailingTolerant struct {
+	r          io.Reader
+	n          int64
+	onTrailing func()
+}
+
+func (t *trailingTolerant) Read(p []byte) (int, error) {
+	n, err := t.r.Read(p)
+	t.n += int64(n)
+	if errors.Is(err, gzip.ErrHeader) && t.n > 0 {
+		if t.onTrailing != nil {
+			t.onTrailing()
+			t.onTrailing = nil
+		}
+		return n, io.EOF
+	}
+	return n, err
+}
+
+// extractSquashfs copies every regular file of a squashfs image starting at offset
+// (0 for a standalone image, the partition start inside a disk image, the end of
+// the runtime inside an AppImage). Links and device nodes are skipped.
+func (r *Result) extractSquashfs(p string, offset int64, dir, location string, depth int) (int, error) {
+	f, err := os.Open(p)
+	if err != nil {
+		return 0, err
+	}
+	defer f.Close()
+	rd, err := squashfs.NewReaderAtOffset(f, offset)
+	if err != nil {
+		return 0, err
+	}
+	n := 0
+	var limitErr error
+	walkErr := fs.WalkDir(rd, ".", func(name string, d fs.DirEntry, err error) error {
+		if err != nil {
+			r.skip(location+"!/"+name, err.Error())
+			return nil
+		}
+		if limitErr != nil {
+			return fs.SkipAll
+		}
+		if !d.Type().IsRegular() {
+			return nil
+		}
+		info, err := d.Info()
+		if err != nil {
+			return nil
+		}
+		fh, err := rd.Open(name)
+		if err != nil {
+			r.skip(location+"!/"+name, err.Error())
+			return nil
+		}
+		ok, werr := r.writeMember(dir, location, name, info.Size(), depth, fh)
+		fh.Close()
+		if ok {
+			n++
+		}
+		if errors.Is(werr, errLimit) {
+			limitErr = werr
+			return fs.SkipAll
+		}
+		return nil
+	})
+	if limitErr != nil {
+		return n, limitErr
+	}
+	return n, walkErr
 }

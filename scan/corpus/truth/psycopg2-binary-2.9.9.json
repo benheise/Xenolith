@@ -1,0 +1,28 @@
+{
+ "supplier": "Psycopg",
+ "product": "psycopg2-binary (Python package)",
+ "version": "2.9.9",
+ "source": "https://github.com/psycopg/psycopg2/blob/2_9_9/.github/workflows/packages.yml (LIBPQ_VERSION, OPENSSL_VERSION) and scripts/build/build_libpq.sh (ldap_version, sasl_version); the Kerberos libraries come from the build image, unpinned, and are left out",
+ "components": [
+  {
+   "name": "psycopg2-binary",
+   "version": "2.9.9"
+  },
+  {
+   "name": "libpq",
+   "version": "16.0"
+  },
+  {
+   "name": "openssl",
+   "version": "1.1.1w"
+  },
+  {
+   "name": "openldap",
+   "version": "2.6.3"
+  },
+  {
+   "name": "cyrus-sasl",
+   "version": "2.1.28"
+  }
+ ]
+}

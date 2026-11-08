@@ -653,6 +653,38 @@ class FingerprintTest(unittest.TestCase):
         self.assertNotIn(("log4j-core", ""), found)                            # same jar already gave the version
         self.assertNotIn(("spring-framework", "9.9"), found)                   # other jar's manifest
 
+    def test_sibling_version(self):
+        # Next.js strips "version" from the React packages it vendors; the version comes
+        # from the React build next to them (stable and experimental channels)
+        c = "package/dist/compiled/"
+        tree = {c + "react-server-dom-webpack/package.json": b'{"name": "react-server-dom-webpack-builtin"}',
+                c + "react-server-dom-webpack-experimental/package.json": b'{"name": "x"}',
+                c + "react/cjs/react.production.js": b'exports.version = "19.0.0-rc-66855b96-20241106";',
+                c + "react-experimental/cjs/react.production.js": b'exports.version = "19.0.0-experimental-66855b96-20241106";'}
+        found = self.scan(tree)
+        rc = found[("react-server-components", "19.0.0-rc-66855b96-20241106")]
+        self.assertEqual(rc["confidence"], 0.8)
+        self.assertTrue(rc["notes"])
+        self.assertIn(("react-server-components", "0.0.0-experimental-66855b96-20241106"), found)  # npm's name
+        self.assertNotIn(("react-server-components", ""), found)
+        # the same layout inside a zip resolves through the archive
+        found = self.scan({"next.zip": jar(tree)})
+        self.assertIn(("react-server-components", "19.0.0-rc-66855b96-20241106"), found)
+        # and inside a tarball (the npm layout)
+        tgz = _io.BytesIO()
+        with _tarfile.open(fileobj=tgz, mode="w:gz") as t:
+            for name, data in tree.items():
+                info = _tarfile.TarInfo(name)
+                info.size = len(data)
+                t.addfile(info, _io.BytesIO(data))
+        found = self.scan({"next-15.0.4.tgz": tgz.getvalue()})
+        self.assertIn(("react-server-components", "0.0.0-experimental-66855b96-20241106"), found)
+        self.assertNotIn(("react-server-components", ""), found)
+        # without the sibling: presence only, at the rule's own confidence
+        del tree[c + "react/cjs/react.production.js"]
+        found = self.scan(tree)
+        self.assertEqual(found[("react-server-components", "")]["confidence"], 0.9)
+
     def test_names_match_watchlist(self):
         cat = catalog.load()
         samples = {"brotli": "1.1.0", "xz": "5.4.5", "log4j-1": "1.2.17", "log4j-core": "2.14.1"}

@@ -84,6 +84,14 @@ func sniff(p, location string, size int64) (kind, detail string) {
 	if len(head) > 262 && (string(head[257:262]) == "ustar" || tarChecksumOK(head)) {
 		return "tar", ""
 	}
+	// A zip with data in front of it: Spring Boot "fully executable" jars start with a
+	// shell script, self-extracting archives with a stub. The end-of-central-directory
+	// record sits in the last 64 KiB.
+	if bytes.HasPrefix(head, []byte("#!")) || hasZipExt(base) {
+		if zipAtEnd(f, size) {
+			return "zip", ""
+		}
+	}
 	if len(head) > 0x43a && binary.LittleEndian.Uint16(head[0x438:]) == 0xEF53 {
 		return "ext4", ""
 	}
@@ -188,4 +196,28 @@ func io_readFull(f *os.File, buf []byte) (int, error) {
 		}
 	}
 	return total, nil
+}
+
+var zipExts = []string{".jar", ".war", ".ear", ".zip", ".apk", ".aar", ".whl", ".nupkg", ".hpi", ".jpi", ".sar", ".par", ".xpi", ".vsix", ".crx"}
+
+func hasZipExt(base string) bool {
+	for _, e := range zipExts {
+		if strings.HasSuffix(base, e) {
+			return true
+		}
+	}
+	return false
+}
+
+// zipAtEnd looks for an end-of-central-directory record near the end of the file.
+func zipAtEnd(f *os.File, size int64) bool {
+	n := int64(66 << 10)
+	if n > size {
+		n = size
+	}
+	tail := make([]byte, n)
+	if _, err := f.ReadAt(tail, size-n); err != nil {
+		return false
+	}
+	return bytes.LastIndex(tail, []byte("PK\x05\x06")) >= 0
 }

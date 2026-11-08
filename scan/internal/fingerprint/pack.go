@@ -66,6 +66,20 @@ type PathRule struct {
 	Confidence    float64
 	Note          string
 	ManifestTitle *regexp.Regexp
+	Sibling       *Sibling
+}
+
+// Sibling reads the version from another file near the matched one when the matched
+// file carries none (Next.js strips "version" from the React packages it vendors).
+// Path is relative to the matched file's directory; {group} is replaced by that named
+// capture of the path rule.
+type Sibling struct {
+	Path       string
+	Regex      *regexp.Regexp
+	Confidence float64
+	Note       string
+	Rewrite    *regexp.Regexp // replaced by To in the version read (publishing conventions)
+	To         string
 }
 
 type rawPack struct {
@@ -102,6 +116,16 @@ type rawPath struct {
 	Confidence    float64 `yaml:"confidence"`
 	Note          string  `yaml:"note"`
 	ManifestTitle string  `yaml:"manifest_title"`
+	Sibling       *struct {
+		Path       string  `yaml:"path"`
+		Regex      string  `yaml:"regex"`
+		Confidence float64 `yaml:"confidence"`
+		Note       string  `yaml:"note"`
+		Rewrite    *struct {
+			Regex string `yaml:"regex"`
+			To    string `yaml:"to"`
+		} `yaml:"rewrite"`
+	} `yaml:"sibling"`
 }
 
 // Load parses a fingerprint pack. Python's (?P<name>...) and Go's RE2 syntax agree
@@ -152,6 +176,26 @@ func Load(data []byte) (*Pack, error) {
 					return nil, fmt.Errorf("fingerprints: %s: %w", id, err)
 				}
 				rule.ManifestTitle = mt
+			}
+			if sb := p.Sibling; sb != nil {
+				sre, err := compile(sb.Regex)
+				if err != nil {
+					return nil, fmt.Errorf("fingerprints: %s: sibling: %w", id, err)
+				}
+				if sb.Path == "" || sre.SubexpIndex("v") < 0 {
+					return nil, fmt.Errorf("fingerprints: %s: sibling needs a path and a (?P<v>...) group", id)
+				}
+				rule.Sibling = &Sibling{Path: sb.Path, Regex: sre, Confidence: sb.Confidence, Note: sb.Note}
+				if rule.Sibling.Confidence == 0 {
+					rule.Sibling.Confidence = rule.Confidence
+				}
+				if rw := sb.Rewrite; rw != nil {
+					rre, err := compile(rw.Regex)
+					if err != nil {
+						return nil, fmt.Errorf("fingerprints: %s: sibling rewrite: %w", id, err)
+					}
+					rule.Sibling.Rewrite, rule.Sibling.To = rre, rw.To
+				}
 			}
 			fp.Paths = append(fp.Paths, rule)
 		}

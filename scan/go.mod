@@ -3,6 +3,7 @@ module github.com/benheise/Xenolith/scan
 go 1.26.8
 
 require (
+	github.com/CalebQ42/squashfs v1.4.1
 	github.com/anchore/go-logger v0.2.0
 	github.com/anchore/syft v1.57.0
 	github.com/blakesmith/ar v0.0.0-20190502131153-809d4375e1fb
@@ -226,6 +227,7 @@ require (
 	github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect
 	github.com/pquerna/cachecontrol v0.0.0-20180517163645-1555304b9b35 // indirect
 	github.com/proglottis/gpgme v0.1.6 // indirect
+	github.com/rasky/go-lzo v0.0.0-20200203143853-96a758eda86e // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/rust-secure-code/go-rustaudit v0.0.0-20250226111315-e20ec32e963c // indirect

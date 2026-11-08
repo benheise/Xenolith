@@ -1,0 +1,16 @@
+{
+ "supplier": "Debian",
+ "product": "libcurl4 (Debian package, amd64)",
+ "version": "7.88.1-10+deb12u5",
+ "source": "Debian bookworm-security signed Packages index (Package, Version, Source); the upstream version is the Debian version without epoch and revision",
+ "components": [
+  {
+   "name": "libcurl4",
+   "version": "7.88.1-10+deb12u5"
+  },
+  {
+   "name": "curl",
+   "version": "7.88.1"
+  }
+ ]
+}

@@ -24,6 +24,7 @@ import io
 import json
 import mmap
 import os
+import posixpath
 import re
 import struct
 import tarfile
@@ -73,7 +74,17 @@ def load(path: Path = FINGERPRINTS) -> list[Fingerprint]:
         fp.symbols = [s.encode() for s in spec.get("symbols") or []]
         fp.probes = list(spec.get("probes") or [])
         fp.markers = [{**m, "bytes": m["bytes"].encode()} for m in spec.get("markers") or []]
-        fp.paths = [{**p, "regex": re.compile(p["regex"])} for p in spec.get("paths") or []]
+        fp.paths = []
+        for p in spec.get("paths") or []:
+            rule = {**p, "regex": re.compile(p["regex"])}
+            if p.get("sibling"):
+                sb = p["sibling"]
+                rule["sibling"] = {**sb, "regex": re.compile(sb["regex"].encode())}
+                if sb.get("rewrite"):
+                    rule["sibling"]["rewrite"] = (re.compile(sb["rewrite"]["regex"]), sb["rewrite"].get("to", ""))
+                if "v" not in rule["sibling"]["regex"].groupindex or not sb.get("path"):
+                    raise ValueError(f"fingerprints: {cid}: sibling needs a path and a (?P<v>...) group")
+            fp.paths.append(rule)
         out.append(fp)
     return out
 
@@ -172,14 +183,23 @@ def returned_constant(elf: Elf, vaddr: int) -> int | None:
     if elf.machine in (0x3E, 0x03):                 # x86-64, i386
         if code[:4] in (b"\xf3\x0f\x1e\xfa", b"\xf3\x0f\x1e\xfb"):   # endbr64/endbr32
             code = code[4:]
-        if code[:1] == b"\xb8" and code[5:6] == b"\xc3":             # mov eax, imm32; ret
-            return struct.unpack_from("<I", code, 1)[0]
-        return None
+        framed = False
+        if code[:4] == b"\x55\x48\x89\xe5":            # push rbp; mov rbp, rsp (frame pointers kept)
+            code, framed = code[4:], True
+        elif code[:3] == b"\x55\x89\xe5":               # i386: push ebp; mov ebp, esp
+            code, framed = code[3:], True
+        if code[:1] != b"\xb8" or len(code) < 6:        # mov eax, imm32
+            return None
+        value, rest = struct.unpack_from("<I", code, 1)[0], code[5:]
+        if framed and rest[:1] in (b"\x5d", b"\xc9"):   # pop rbp / leave
+            rest = rest[1:]
+        return value if rest[:1] == b"\xc3" else None
     if elf.machine == 0xB7:                         # AArch64
         value, seen = 0, False
         for i in range(0, len(code) - 3, 4):
             ins = struct.unpack_from("<I", code, i)[0]
-            if ins in (0xD503201F, 0xD503233F, 0xD503245F, 0xD503241F):   # nop, paciasp, bti
+            if ins in (0xD503201F, 0xD503233F, 0xD503245F, 0xD503241F, 0xD50323BF,   # nop, paciasp, bti, autiasp
+                       0xA9BF7BFD, 0x910003FD, 0xA8C17BFD):   # stp x29,x30,[sp,#-16]! / mov x29,sp / ldp x29,x30,[sp],#16
                 continue
             if ins == 0xD65F03C0:                   # ret
                 return value if seen else None
@@ -235,7 +255,8 @@ class Scanner:
                 return
             with path.open("rb") as f:
                 head = f.read(8)
-                self._paths(rel, lambda: path.read_bytes() if size < 4 * 1024 * 1024 else b"")
+                self._paths(rel, lambda: path.read_bytes() if size < 4 * 1024 * 1024 else b"",
+                            lambda r: _read_small(path.parent / r))
                 if head[:4] == b"PK\x03\x04" or rel.lower().endswith(ZIP_EXT):
                     if zipfile.is_zipfile(path):
                         with zipfile.ZipFile(path) as z:
@@ -270,7 +291,8 @@ class Scanner:
             if info.is_dir():
                 continue
             rel = f"{base}!/{info.filename}"
-            self._paths(rel, lambda info=info: z.read(info) if info.file_size < 4 * 1024 * 1024 else b"")
+            self._paths(rel, lambda info=info: z.read(info) if info.file_size < 4 * 1024 * 1024 else b"",
+                        lambda r, info=info: _zip_sibling(z, info.filename, r))
             if info.filename.lower().endswith(NOT_BINARY):
                 continue
             with z.open(info) as fh:
@@ -291,7 +313,7 @@ class Scanner:
             data = None
             if self._wants_path(rel) and small:
                 data = t.extractfile(m).read()
-                self._paths(rel, lambda d=data: d)
+                self._paths(rel, lambda d=data: d, lambda r, name=m.name: _tar_sibling(t, name, r))
             if m.size > MAX_MEMBER_BYTES:
                 self.skipped.append(f"{rel}: larger than {MAX_MEMBER_BYTES >> 20} MB")
                 continue
@@ -305,7 +327,8 @@ class Scanner:
     def _wants_path(self, rel: str) -> bool:
         return any(p["regex"].search(rel) for fp in self.fps for p in fp.paths)
 
-    def _paths(self, rel: str, read):
+    def _paths(self, rel: str, read, sibling=None):
+        """sibling(relpath) reads a file relative to the matched one's directory (or None)."""
         content = None
         for fp in self.fps:
             for rule in fp.paths:
@@ -319,10 +342,24 @@ class Scanner:
                     version = _metadata_version(how, content, rule)
                     if version is None:         # manifest of some other jar
                         continue
+                confidence, note = float(rule.get("confidence", 0.6)), rule.get("note", "")
+                sb = rule.get("sibling")
+                if not version and sb and sibling is not None:
+                    groups = {k: v or "" for k, v in m.groupdict().items()}
+                    target = re.sub(r"\{(\w+)\}", lambda g: groups.get(g.group(1), ""), sb["path"])
+                    data = sibling(target)
+                    sm = sb["regex"].search(data) if data else None
+                    if sm:
+                        version = sm.group("v").decode("utf-8", "replace")
+                        if sb.get("rewrite"):
+                            rx, to = sb["rewrite"]
+                            version = rx.sub(lambda _m: to, version)
+                        confidence = min(confidence, float(sb.get("confidence", confidence)))
+                        note = "; ".join(x for x in (note, sb.get("note", "")) if x)
                 name = m.groupdict().get("name") or fp.name
                 technique = "manifest-analysis" if how else ("filename" if m.groupdict().get("v") else "binary-analysis")
-                self._add(fp, version, technique, float(rule.get("confidence", 0.6)), rel,
-                          evidence=rel.rsplit("/", 1)[-1], note=rule.get("note", ""), name=name)
+                self._add(fp, version, technique, confidence, rel,
+                          evidence=rel.rsplit("/", 1)[-1], note=note, name=name)
 
     # -- executables and libraries
     def _binary(self, data, rel: str):
@@ -332,11 +369,20 @@ class Scanner:
                     continue
                 if s["requires_any"] and not any(data.find(r) >= 0 for r in s["requires_any"]):
                     continue
-                for m in s["regex"].finditer(data):
-                    v = m.group("v").decode("ascii", "replace")
-                    self._add(fp, v, "binary-analysis", 0.9, rel, evidence=m.group(0).decode("ascii", "replace"),
+                # Prefer the most specific version and skip glob patterns: OpenSSH keeps the bare
+                # "OpenSSH_9.2" next to "OpenSSH_9.2p1 Debian-..." and a table of "OpenSSH_7.0*".
+                best = None
+                for i, m in enumerate(s["regex"].finditer(data)):
+                    if i >= 10000:
+                        break
+                    if data[m.end():m.end() + 1] == b"*":
+                        continue
+                    if best is None or len(m.group("v")) > len(best.group("v")):
+                        best = m
+                if best is not None:
+                    v = best.group("v").decode("ascii", "replace")
+                    self._add(fp, v, "binary-analysis", 0.9, rel, evidence=best.group(0).decode("ascii", "replace"),
                               name=s.get("name") or fp.name)
-                    break
             for mk in fp.markers:
                 if data.find(mk["bytes"]) >= 0:
                     self._add(fp, "", "binary-analysis", 0.6, rel, evidence="static data marker", note=mk.get("note", ""))
@@ -365,6 +411,39 @@ class Scanner:
              evidence: str = "", note: str = "", name: str = ""):
         self.findings.append(Finding(fp.id, name or fp.name, fp.group, version.strip(), technique,
                                      confidence, rel, evidence[:200], note))
+
+
+SIBLING_LIMIT = 8 * 1024 * 1024
+
+
+def _read_small(p: Path):
+    try:
+        if p.is_file() and not p.is_symlink() and p.stat().st_size <= SIBLING_LIMIT:
+            return p.read_bytes()
+    except OSError:
+        pass
+    return None
+
+
+def _tar_sibling(t: tarfile.TarFile, member: str, rel: str):
+    target = posixpath.normpath(posixpath.join(posixpath.dirname(member), rel))
+    try:
+        m = t.getmember(target)
+    except KeyError:
+        return None
+    if not m.isfile() or m.size > SIBLING_LIMIT:
+        return None
+    f = t.extractfile(m)
+    return f.read() if f else None
+
+
+def _zip_sibling(z: zipfile.ZipFile, member: str, rel: str):
+    target = posixpath.normpath(posixpath.join(posixpath.dirname(member), rel))
+    try:
+        info = z.getinfo(target)
+    except KeyError:
+        return None
+    return z.read(info) if info.file_size <= SIBLING_LIMIT else None
 
 
 def _metadata_version(how: str, content: bytes, rule: dict) -> str | None:

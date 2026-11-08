@@ -107,6 +107,9 @@ func (r *Result) Locate(p string) string {
 	if rel == "." {
 		return bestLoc
 	}
+	if bestLoc == "" { // the copy of the input file itself
+		return filepath.ToSlash(rel)
+	}
 	return bestLoc + "!/" + filepath.ToSlash(rel)
 }
 
@@ -146,12 +149,52 @@ func Run(artifact string, opts Options) (*Result, error) {
 			return nil
 		})
 	} else {
+		r.placeInput(artifact, size)
 		r.consider(artifact, filepath.Base(artifact), size, 0)
 	}
 	opts.Log(fmt.Sprintf("unpacked %d containers, %d files, %s in %s", len(r.Containers), r.files,
 		humanBytes(r.written), time.Since(start).Round(time.Millisecond)))
 	sort.Strings(r.NotInspected)
 	return r, nil
+}
+
+// maxInputCopy bounds copying the input file into the scanned tree when a hard link
+// is not possible (different filesystems).
+const maxInputCopy = 4 << 30
+
+// placeInput puts the artifact itself into the scanned tree, so the detection layers
+// see it as well as whatever was unpacked from it: a .deb or .ipk for Syft's archive
+// cataloger, a .jar or wheel for its Java and Python catalogers, a bare executable
+// for the fingerprints. A hard link costs nothing; otherwise it is copied.
+func (r *Result) placeInput(artifact string, size int64) {
+	dir := filepath.Join(r.Root, "input")
+	if err := os.MkdirAll(dir, 0o755); err != nil {
+		return
+	}
+	dst := filepath.Join(dir, filepath.Base(artifact))
+	r.locations[dir] = ""
+	if err := os.Link(artifact, dst); err == nil {
+		return
+	}
+	if size > maxInputCopy {
+		r.skip(filepath.Base(artifact), "input file itself not passed to the package catalogers (too large to copy; unpacked contents were)")
+		return
+	}
+	in, err := os.Open(artifact)
+	if err != nil {
+		return
+	}
+	defer in.Close()
+	out, err := os.Create(dst)
+	if err != nil {
+		return
+	}
+	if _, err := io.Copy(out, in); err != nil {
+		out.Close()
+		_ = os.Remove(dst)
+		return
+	}
+	out.Close()
 }
 
 // Cleanup removes the temporary tree unless Keep was set.
@@ -175,7 +218,7 @@ func (r *Result) consider(p, location string, size int64, depth int) {
 		return
 	}
 	dir := r.newDir(location)
-	n, err := r.extract(kind, detail, p, dir, location, depth+1)
+	n, err := r.safeExtract(kind, detail, p, dir, location, depth+1)
 	if err != nil && n == 0 {
 		_ = os.RemoveAll(dir)
 		delete(r.locations, dir)
@@ -194,6 +237,19 @@ func (r *Result) consider(p, location string, size int64, depth int) {
 	r.Formats[kind]++
 	r.Containers = append(r.Containers, Container{Location: location, Format: kind, Depth: depth, Files: n})
 	r.opts.Log(fmt.Sprintf("  %s: %s, %d files", location, kind, n))
+}
+
+// safeExtract runs one extractor and turns a panic in any parser into an error, so a
+// malformed or unexpected container is reported as not inspected instead of ending
+// the scan. Each one is a parser bug to fix; the message says where it happened.
+func (r *Result) safeExtract(kind, detail, p, dir, location string, depth int) (n int, err error) {
+	before := r.files
+	defer func() {
+		if rec := recover(); rec != nil {
+			n, err = r.files-before, fmt.Errorf("parser crashed (please report): %v", rec)
+		}
+	}()
+	return r.extract(kind, detail, p, dir, location, depth)
 }
 
 func (r *Result) newDir(location string) string {
