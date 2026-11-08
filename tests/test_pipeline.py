@@ -491,3 +491,11 @@ class PrepareTest(unittest.TestCase):
         self.assertEqual((code, errors), (0, []))
         self.assertEqual([c["name"] for c in doc["components"]], ["php"])
         self.assertEqual(doc["metadata"]["tools"]["components"][0], {"type": "application", "name": "syft", "version": "1.33.0"})
+
+
+class CrosswalkReleaseTest(unittest.TestCase):
+    def test_service_packs_stay_apart(self):
+        links = {"redhat:jboss_data_virtualization": {"red-hat/jboss-data-virtualization-6-4-8-sp1",
+                                                      "red-hat/jboss-data-virtualization-6-4-8-sp2"}}
+        remap, clusters = crosswalk.build(links, {})
+        self.assertEqual((remap, clusters), ({}, []))

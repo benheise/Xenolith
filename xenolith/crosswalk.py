@@ -84,7 +84,11 @@ def similarity(name: str, cpe_product: str) -> float:
 
 
 def _numbers(text: str) -> frozenset[str]:
-    return frozenset(re.findall(r"(?<![a-z0-9])\d+(?![a-z0-9])", text.lower()))
+    """Release numbers in a name, keeping service-pack/revision/update qualifiers: 'sp1' != 'sp2', 'v7' == '7'."""
+    out = set()
+    for prefix, num in re.findall(r"(?<![a-z0-9])(sp|r|u|gen|v)?(\d+)(?![a-z0-9])", text.lower()):
+        out.add(num if prefix in ("", "v") else prefix + num)
+    return frozenset(out)
 
 
 def build(links: dict[str, set[str]], weight: dict[str, float]) -> tuple[dict[str, str], list[dict]]:

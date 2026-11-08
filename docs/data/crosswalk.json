@@ -193,16 +193,6 @@
 ]
 },
 {
-"key": "red-hat/jboss-data-virtualization-6-4-8-sp2",
-"keys": [
-"red-hat/jboss-data-virtualization-6-4-8-sp1",
-"red-hat/jboss-data-virtualization-6-4-8-sp2"
-],
-"cpes": [
-"redhat:jboss_data_virtualization"
-]
-},
-{
 "key": "sailpoint/identityiq",
 "keys": [
 "sailpoint-technologies/identityiq",

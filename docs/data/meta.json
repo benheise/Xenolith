@@ -1,12 +1,12 @@
 {
- "built": "2026-11-08T02:17:24Z",
+ "built": "2026-11-08T02:18:32Z",
  "counts": {
   "assertions": 12921,
-  "products_with_data": 7136,
+  "products_with_data": 7137,
   "inventories": 97,
   "inventory_components": 38754,
-  "cpe_linked_clusters": 22,
-  "cpe_linked_entries": 24,
+  "cpe_linked_clusters": 21,
+  "cpe_linked_entries": 23,
   "spine_products": 15962,
   "spine_only_shown": 4742,
   "components": 13
@@ -338,7 +338,7 @@
     }
    ],
    "assertions": 3908,
-   "products": 3808,
+   "products": 3809,
    "contains": 90,
    "in_range": 0,
    "verdicts": {
