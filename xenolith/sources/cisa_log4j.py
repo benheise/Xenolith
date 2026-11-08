@@ -82,6 +82,8 @@ def ingest(repo: Path, *, catalog: Catalog, commit: str = "develop") -> tuple[li
                     references=refs,
                     notes=str(sw.get("notes") or ""),
                     updated=updated,
+                    found_via="hand-listed",
+                    discovery_path=[REPO_URL],
                 ))
     stats["assertions"] = len(out)
     return out, stats

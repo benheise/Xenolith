@@ -1269,9 +1269,13 @@
 "version": "1.2.8"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "XA1400",
 "retrieved": "2026-11-08",

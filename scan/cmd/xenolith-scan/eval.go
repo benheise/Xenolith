@@ -22,7 +22,8 @@ import (
 // corpusEntry is one artifact with a known inventory (the vendor's own notices or
 // dependency report, as stored by Xenolith) to measure the scanner against.
 type corpusEntry struct {
-	Artifact  string `yaml:"artifact" json:"artifact"` // local path or https URL
+	Artifact  string `yaml:"artifact" json:"artifact"`           // local path or https URL
+	FoundAt   string `yaml:"found_at" json:"found_at,omitempty"` // the page that links the artifact (release page, package index, directory listing)
 	SHA256    string `yaml:"sha256" json:"sha256"`
 	Supplier  string `yaml:"supplier" json:"supplier"`
 	Product   string `yaml:"product" json:"product"`

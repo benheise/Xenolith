@@ -2165,9 +2165,13 @@
 "version": "1.2.11"
 }
 ],
+"discovery_path": [
+"https://docs.paloaltonetworks.com/oss-listings"
+],
 "extractors": [
 "html_table"
 ],
+"found_via": "auto-discovered",
 "kind": "html",
 "product": "PAN-OS",
 "retrieved": "2026-11-08",

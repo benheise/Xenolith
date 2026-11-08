@@ -225,9 +225,13 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "dotted_toc"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ExtremeWireless OS",
 "retrieved": "2026-11-08",

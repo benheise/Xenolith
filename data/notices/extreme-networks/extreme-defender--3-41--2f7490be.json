@@ -9,9 +9,13 @@
 "version": "0.0.50"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "Extreme Defender",
 "retrieved": "2026-11-08",

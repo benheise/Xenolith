@@ -2129,10 +2129,14 @@
 "version": "3.8.3"
 }
 ],
+"discovery_path": [
+"https://docs.helixops.ai/bin/IT-Operations-Management/On-Premises-Deployment/BMC-Helix-On-premises-Deployment/Third-party-product-terms-of-use/"
+],
 "extractors": [
 "jar_names",
 "name_version_lines"
 ],
+"found_via": "hand-listed",
 "kind": "html",
 "product": "BMC Helix Operations Management",
 "retrieved": "2026-11-08",

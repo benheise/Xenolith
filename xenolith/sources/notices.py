@@ -900,7 +900,7 @@ def discover_autoindex(rule: dict, log=print) -> list[dict]:
                 continue
             found.append(v)
             docs.append({"supplier": rule["supplier"], "product": product, "version": v,
-                         "url": url, "discovered_by": base + directory})
+                         "url": url, "discovered_by": base + directory.strip("/") + "/"})
             if len(found) >= keep:
                 break
         log(f"  {rule['supplier']} {product}: {', '.join(found) or 'no notices found'}")
@@ -974,11 +974,36 @@ def discover_embedded_json(rule: dict, log=print) -> list[dict]:
     return docs
 
 
+def rule_start(rule: dict) -> str:
+    """Where a discovery rule's trail starts: its index page, versions API or release list."""
+    if rule.get("type") == "apple_releases":
+        from . import apple
+        return rule.get("index") or apple.RELEASES_URL
+    return rule.get("index") or rule.get("versions_url") or ""
+
+
+def doc_provenance(doc: dict, rule: dict | None = None) -> dict:
+    """found_via and discovery_path for a registry document.
+
+    Hand-listed documents carry the page a person found the link on as `found_at` in
+    catalog/notices.yaml; discovered ones carry the rule's start page plus the page the
+    link was read from (`discovered_by`) when that is a different page.
+    """
+    if rule is None:
+        found_at = doc.get("found_at") or []
+        path = [found_at] if isinstance(found_at, str) else [str(p) for p in found_at]
+        return {"found_via": "hand-listed", "discovery_path": [p for p in dict.fromkeys(path) if p]}
+    path = [rule_start(rule)]
+    if doc.get("discovered_by"):
+        path.append(doc["discovered_by"])
+    return {"found_via": "auto-discovered", "discovery_path": [p for p in dict.fromkeys(path) if p]}
+
+
 def load_registry(path: Path, *, discover_docs: bool = True, log=print) -> list[dict]:
     cfg = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     docs: dict[str, dict] = {}
     for d in cfg.get("documents") or []:
-        docs[d["url"]] = {**d, "version": str(d.get("version") or "")}
+        docs[d["url"]] = {**d, "version": str(d.get("version") or ""), **doc_provenance(d)}
     if discover_docs:
         for rule in cfg.get("discover") or []:
             try:
@@ -993,10 +1018,74 @@ def load_registry(path: Path, *, discover_docs: bool = True, log=print) -> list[
                              else discover_embedded_json(rule, log=log) if kind == "embedded_json"
                              else discover(rule, log=log))
                 for d in found:
-                    docs.setdefault(d["url"], d)
+                    docs.setdefault(d["url"], {**d, **doc_provenance(d, rule)})
             except fetch.FetchError as e:
                 log(f"  ! discovery failed for {rule.get('index') or rule.get('versions_url')}: {e}")
     return list(docs.values())
+
+
+def infer_provenance(url: str, supplier: str, cfg: dict) -> dict:
+    """Provenance for a stored inventory without network access, from the catalog alone.
+
+    Used to stamp inventories whose document was not (re)discovered in this run, so a
+    discovery outage never strips provenance. Hand-listed URLs come first; otherwise the
+    discovery rule for the same supplier whose start page or link pattern matches.
+    """
+    for d in cfg.get("documents") or []:
+        if d.get("url") == url:
+            return doc_provenance(d)
+    rules = [r for r in cfg.get("discover") or [] if r.get("supplier") == supplier]
+    for rule in rules:
+        kind = rule.get("type")
+        if kind == "autoindex":
+            base = rule["index"].rstrip("/") + "/"
+            for directory in rule.get("products") or {}:
+                folder = base + directory.strip("/") + "/"
+                if url.startswith(folder):
+                    return doc_provenance({"discovered_by": folder}, rule)
+        elif kind == "versions_json":
+            prefix = rule["url_template"].split("{", 1)[0]
+            if url.startswith(prefix):
+                return doc_provenance({}, rule)
+        elif kind == "apple_releases":
+            if url.startswith(rule_start(rule)):
+                return doc_provenance({}, rule)
+        elif rule.get("link") and re.search(rule["link"], url, re.I):
+            return doc_provenance({}, rule)
+    if len(rules) == 1:
+        return doc_provenance({}, rules[0])
+    return {"found_via": "hand-listed", "discovery_path": []}
+
+
+def write_inventory(path: Path, inv: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(inv, ensure_ascii=False, indent=0, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def stamp_inventories(registry_path: Path, data_dir: Path, docs: list[dict] | None = None, log=print) -> int:
+    """Write found_via and discovery_path into every stored notices inventory.
+
+    `docs` (from load_registry) gives the exact discovery path seen in this run; documents
+    not among them are stamped from the catalog alone (infer_provenance). No network.
+    Returns the number of files changed.
+    """
+    cfg = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
+    by_url = {d["url"]: d for d in docs or []}
+    changed = 0
+    for p in sorted((data_dir / "notices").rglob("*.json")):
+        try:
+            inv = json.loads(p.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        d = by_url.get(inv.get("url", ""))
+        prov = ({"found_via": d["found_via"], "discovery_path": d.get("discovery_path", [])} if d and d.get("found_via")
+                else infer_provenance(inv.get("url", ""), inv.get("supplier", ""), cfg))
+        if inv.get("found_via") != prov["found_via"] or inv.get("discovery_path", []) != prov["discovery_path"]:
+            inv["found_via"], inv["discovery_path"] = prov["found_via"], prov["discovery_path"]
+            write_inventory(p, inv)
+            changed += 1
+    log(f"  provenance stamped on {changed} inventories")
+    return changed
 
 
 def inventory_path(data_dir: Path, doc: dict) -> Path:
@@ -1060,16 +1149,17 @@ def crawl(registry_path: Path, *, data_dir: Path, max_fetch: int = 80, refresh_d
         state[url] = {"fetched": today.isoformat(), "status": status, "sha": sha, "n": len(comps),
                       "via": used, "kind": kind}
         if comps:
-            inv.parent.mkdir(parents=True, exist_ok=True)
-            inv.write_text(json.dumps({
+            write_inventory(inv, {
                 "supplier": d["supplier"], "product": d["product"], "version": d.get("version", ""),
                 "url": url, "retrieved": today.isoformat(), "sha256": sha, "kind": kind,
                 "extractors": used, "components": comps,
-            }, ensure_ascii=False, indent=0, sort_keys=True) + "\n", encoding="utf-8")
+                "found_via": d.get("found_via", "hand-listed"), "discovery_path": d.get("discovery_path", []),
+            })
         log(f"  {d['supplier']} {d['product']} {d.get('version', '')}: {len(comps)} components via {', '.join(used) or 'nothing'}")
     stats["remaining"] = max(0, len(todo) - max_fetch)
     state_path.parent.mkdir(parents=True, exist_ok=True)
     state_path.write_text(json.dumps(state, sort_keys=True, indent=0) + "\n")
+    stats["stamped"] = stamp_inventories(registry_path, data_dir, docs, log=log)
     return stats
 
 
@@ -1164,6 +1254,9 @@ def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
                           "binary-scan": "Binary scan"}[evidence],
                 updated=inv.get("retrieved", ""),
                 component_version=versions,
+                found_via=inv.get("found_via", ""),
+                discovery_path=inv.get("discovery_path", []),
+                sha256=inv.get("sha256", ""),
             ))
     return out, stats
 

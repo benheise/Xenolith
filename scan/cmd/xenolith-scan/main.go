@@ -19,6 +19,7 @@ import (
 	"flag"
 	"fmt"
 	"io"
+	"net/url"
 	"os"
 	"path/filepath"
 	"runtime/debug"
@@ -165,6 +166,11 @@ func cmdScan(args []string) error {
 	}
 	if f.helpers != "auto" && f.helpers != "none" {
 		return fmt.Errorf("--helpers must be auto or none")
+	}
+	if f.sourceURL != "" {
+		if err := validSourceURL(f.sourceURL); err != nil {
+			return err
+		}
 	}
 	for i, artifact := range artifacts {
 		out := f.out
@@ -358,6 +364,9 @@ func scanOne(artifact, out string, f scanFlags, pack *fingerprint.Pack) error {
 	if !f.yes && (f.supplier == "" || f.product == "" || f.version == "") && isTerminal() {
 		confirmIdentity(scan, guess)
 	}
+	if scan.SourceURL == "" && scan.ArtifactKind != "image" && !f.yes && isTerminal() {
+		scan.SourceURL = askSourceURL(stdin, os.Stdout, scan.Artifact)
+	}
 	if scan.Supplier == "" || scan.Product == "" || scan.Version == "" {
 		if f.yes || !isTerminal() {
 			logf("identity incomplete; fill in --supplier/--product/--version or run `review` before submitting")
@@ -418,6 +427,9 @@ func summary(s *report.Scan, out string) {
 	}
 	fmt.Printf("  containers opened: %d, not inspected: %d, %s\n", len(s.Containers), len(s.NotInspected), s.Duration)
 	fmt.Printf("  wrote %s/{submission.cdx.json, report.html, not-inspected.txt, scan.log, findings.json}\n", out)
+	if s.SourceURL == "" && s.ArtifactKind != "image" {
+		fmt.Println("  no download link recorded: add one with `xenolith-scan review " + out + " --source-url https://…` so others can check the same file")
+	}
 	if !s.Attest {
 		fmt.Println("  next: review the report, then `xenolith-scan submit " + out + " --attest`")
 	} else {
@@ -443,8 +455,40 @@ func isTerminal() bool {
 	return err == nil && fi.Mode()&os.ModeCharDevice != 0
 }
 
+var stdin = bufio.NewReader(os.Stdin) // one reader, so prompts never lose each other's buffered input
+
+// validSourceURL accepts the public https link others can download the same file from.
+func validSourceURL(u string) error {
+	p, err := url.Parse(u)
+	if err != nil || p.Scheme != "https" || p.Host == "" {
+		return fmt.Errorf("--source-url must be an https:// link to the file or its download page, got %q", u)
+	}
+	return nil
+}
+
+// askSourceURL asks where the scanned file can be downloaded, so a reviewer can fetch the
+// same bytes and check the hash. An empty answer (or end of input) skips it.
+func askSourceURL(in *bufio.Reader, out io.Writer, artifact string) string {
+	fmt.Fprintf(out, "\nWhere can others download %s?\n  Paste the https link to the file or its download/release page (Enter to skip): ", artifact)
+	for tries := 0; tries < 3; tries++ {
+		line, err := in.ReadString('\n')
+		line = strings.TrimSpace(line)
+		if line == "" {
+			return ""
+		}
+		if validSourceURL(line) == nil {
+			return line
+		}
+		if err != nil {
+			return ""
+		}
+		fmt.Fprint(out, "  That is not an https:// link. Paste one, or press Enter to skip: ")
+	}
+	return ""
+}
+
 func confirmIdentity(s *report.Scan, g identity.Guess) {
-	in := bufio.NewReader(os.Stdin)
+	in := stdin
 	fmt.Println()
 	fmt.Printf("Product identity (from %s). Press Enter to accept a value, or type a correction.\n", g.Source)
 	if len(g.Matches) > 0 {
@@ -486,6 +530,8 @@ func cmdReview(args []string) error {
 	fs.StringVar(&drop, "drop", "", "comma-separated numbers of findings to exclude")
 	fs.BoolVar(&all, "keep-all", false, "include every finding")
 	fs.BoolVar(&none, "reset", false, "forget earlier review decisions")
+	var sourceURL string
+	fs.StringVar(&sourceURL, "source-url", "", "public link where the scanned file can be downloaded")
 	pos, err := parseInterleaved(fs, args)
 	if err != nil {
 		return err
@@ -497,6 +543,12 @@ func cmdReview(args []string) error {
 	s, err := report.Load(dir)
 	if err != nil {
 		return err
+	}
+	if sourceURL != "" {
+		if err := validSourceURL(sourceURL); err != nil {
+			return err
+		}
+		s.SourceURL = sourceURL
 	}
 	if none {
 		for i := range s.Components {
@@ -544,7 +596,7 @@ func cmdReview(args []string) error {
 		return err
 	}
 	if keep == "" && drop == "" && !all && !none && isTerminal() {
-		in := bufio.NewReader(os.Stdin)
+		in := stdin
 		fmt.Println("\nLow-confidence findings: keep in the submission? [y/N/q]")
 		for i, c := range s.Components {
 			if report.Included(c) && c.Keep == nil {
@@ -573,6 +625,9 @@ func cmdReview(args []string) error {
 		} else {
 			fmt.Println("\nidentity incomplete: re-run scan with --supplier/--product/--version")
 		}
+	}
+	if s.SourceURL == "" && s.ArtifactKind != "image" && isTerminal() {
+		s.SourceURL = askSourceURL(stdin, os.Stdout, s.Artifact)
 	}
 	if err := report.Write(dir, s); err != nil {
 		return err

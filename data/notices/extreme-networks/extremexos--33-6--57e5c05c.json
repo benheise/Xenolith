@@ -4277,10 +4277,14 @@
 "version": "v1.5.2-kernel"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "url_lines",
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ExtremeXOS",
 "retrieved": "2026-11-08",

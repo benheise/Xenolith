@@ -8,13 +8,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+import yaml
+
 from . import build as build_mod
 from . import catalog as catalog_mod
 from . import fingerprint as fingerprint_mod
 from . import prepare as prepare_mod
 from . import wanted as wanted_mod
 from .catalog import ROOT
-from .model import dedupe, write_ndjson
+from .model import dedupe, read_ndjson, stamp, write_ndjson
 from .sources import cisa_log4j, community, community_sbom, csaf, cvelist, ncsc_markdown, notices
 
 DATA = ROOT / "data"
@@ -42,7 +44,14 @@ def cmd_trackers(args) -> int:
     for source_id, repo, default_comp in TRACKERS:
         path = src / repo.replace("/", "_")
         if not path.exists():
-            print(f"- {source_id}: {path} not found, skipped")
+            store = DATA / "assertions" / "trackers" / f"{source_id}.ndjson"
+            rows = list(read_ndjson(store)) if store.exists() else []
+            todo = [a for a in rows if not a.get("found_via")]
+            for a in todo:          # keep stored statements' provenance complete without a clone
+                stamp(a, "hand-listed", [f"https://github.com/{repo}"])
+            if todo:
+                write_ndjson(store, rows)
+            print(f"- {source_id}: {path} not found, skipped" + (f" (provenance added to {len(todo)} stored statements)" if todo else ""))
             continue
         commit = _git(path, "%H") or "main"
         as_of = _git(path, "%cs") or ""
@@ -59,6 +68,10 @@ def cmd_trackers(args) -> int:
 
 def cmd_csaf(args) -> int:
     cat = catalog_mod.load()
+    if args.stamp_only:
+        n = csaf.stamp_existing(ROOT / "catalog" / "csaf_providers.yaml", DATA)
+        print(f"csaf: provenance added to {n} stored statements")
+        return 0
     results = csaf.crawl(ROOT / "catalog" / "csaf_providers.yaml", catalog=cat, data_dir=DATA,
                          only=args.only, max_fetch=args.max_fetch, discover=not args.no_discover)
     failed = [r for r in results if "error" in r]
@@ -72,10 +85,43 @@ def cmd_notices(args) -> int:
         stats = notices.crawl(ROOT / "catalog" / "notices.yaml", data_dir=DATA, max_fetch=args.max_fetch,
                               refresh_days=args.refresh_days, only=args.only, discover_docs=not args.no_discover)
         print(f"notices crawl: {json.dumps(stats)}")
+    else:
+        notices.stamp_inventories(ROOT / "catalog" / "notices.yaml", DATA)   # offline, from the catalog
     rows, stats = notices.assertions(cat, DATA)
     n = write_ndjson(DATA / "assertions" / "notices.ndjson", dedupe(rows))
     print(f"notices: {n} assertions from {stats['inventories']} inventories ({stats['components']} components)")
     return 0
+
+
+def cmd_provenance(args) -> int:
+    """Report how each record reached the census, and the sources missing a discovery URL."""
+    from collections import Counter
+    by_source: dict[str, Counter] = {}
+    missing_path: Counter = Counter()
+    for f in sorted((DATA / "assertions").rglob("*.ndjson")):
+        for a in read_ndjson(f):
+            by_source.setdefault(a["source"], Counter())[a.get("found_via") or "(none)"] += 1
+            if not a.get("discovery_path"):
+                missing_path[a["source"]] += 1
+    for src, c in sorted(by_source.items()):
+        print(f"{src:20} " + ", ".join(f"{k} {v}" for k, v in sorted(c.items()))
+              + (f"  | {missing_path[src]} without a discovery path" if missing_path[src] else ""))
+    reg = yaml.safe_load((ROOT / "catalog" / "notices.yaml").read_text(encoding="utf-8")) or {}
+    gaps = [d for d in reg.get("documents") or [] if not d.get("found_at")]
+    print(f"hand-listed notices documents without found_at: {len(gaps)}")
+    for d in gaps:
+        print(f"  {d['supplier']} | {d['product']} {d.get('version') or ''} | {d['url']}")
+    sboms, _ = community_sbom.load_all(ROOT)
+    no_src = [s for s in sboms if s["evidence"] == "binary-scan" and len(s.get("discovery_path", [])) < 2]
+    print(f"community scans without a download URL: {len(no_src)}")
+    for s in no_src:
+        print(f"  {s['supplier']} | {s['product']} {s['version']} | {s['submission']}")
+    corpus = yaml.safe_load((ROOT / "scan" / "corpus" / "manifest.yaml").read_text(encoding="utf-8")) or {}
+    no_page = [c for c in corpus.get("artifacts") or [] if not c.get("found_at")]
+    print(f"scanner corpus artifacts without found_at: {len(no_page)}")
+    for c in no_page:
+        print(f"  {c['supplier']} | {c['product']} {c['version']} | {c['artifact']}")
+    return 1 if args.strict and (gaps or no_src or no_page) else 0
 
 
 def cmd_community(args) -> int:
@@ -127,6 +173,7 @@ def main(argv: list[str] | None = None) -> int:
     c.add_argument("--only", nargs="*", help="only providers whose name contains one of these strings")
     c.add_argument("--max-fetch", type=int, help="override per-provider fetch cap for this run")
     c.add_argument("--no-discover", action="store_true", help="skip aggregator discovery")
+    c.add_argument("--stamp-only", action="store_true", help="add provenance to stored statements without fetching")
     c.set_defaults(fn=cmd_csaf)
 
     n = sub.add_parser("notices", help="parse vendor third-party notices into component inventories")
@@ -136,6 +183,10 @@ def main(argv: list[str] | None = None) -> int:
     n.add_argument("--no-discover", action="store_true", help="skip index-page discovery")
     n.add_argument("--match-only", action="store_true", help="re-match stored inventories without fetching")
     n.set_defaults(fn=cmd_notices)
+
+    pv = sub.add_parser("provenance", help="report found-via tags and sources missing a discovery URL")
+    pv.add_argument("--strict", action="store_true", help="exit 1 when a hand-listed document or scan lacks one")
+    pv.set_defaults(fn=cmd_provenance)
 
     m = sub.add_parser("community", help="validate and ingest community/assertions.csv")
     m.add_argument("--check", action="store_true", help="validate only, write nothing")

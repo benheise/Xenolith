@@ -149,9 +149,14 @@
 "version": "0.4.5"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/SANtricity_Storage_Manager/"
+],
 "extractors": [
 "source_archives"
 ],
+"found_via": "auto-discovered",
 "kind": "listing",
 "product": "SANtricity Storage Manager",
 "retrieved": "2026-11-08",

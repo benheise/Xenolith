@@ -149,12 +149,14 @@ documents:
     product: ADSelfService Plus
     version: "7000"
     url: https://download.manageengine.com/products/self-service-password/adselfservice-plus-third-party-apps-list.pdf
+    found_at: https://www.manageengine.com/products/self-service-password/self-service-password-help-docs.html
 
   # SolarWinds: per-product third-party lists. The SolarWinds Platform list
   # (NPM, SAM, NCM and the other Orion modules) is no longer published.
   - supplier: SolarWinds
     product: Dameware
     url: https://documentation.solarwinds.com/en/Success_Center/dameware/Content/dameware_third_party_software_list.htm
+    found_at: https://support.solarwinds.com/dameware-mini-remote-control
 
   - supplier: SolarWinds
     product: Serv-U
@@ -164,32 +166,38 @@ documents:
     product: BIG-IP
     version: "17.5"
     url: https://techdocs.f5.com/en-us/bigip-17-5-0/big-ip-open-source-notices-and-software-acknowledgments/02.html
+    found_at: https://techdocs.f5.com/en-us/bigip-17-5-0/big-ip-open-source-notices-and-software-acknowledgments.html
 
   - supplier: F5
     product: BIG-IP
     version: "17.1"
     url: https://techdocs.f5.com/en-us/bigip-17-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html
+    found_at: https://techdocs.f5.com/en-us/bigip-17-1-0/big-ip-open-source-notices-and-software-acknowledgments.html
 
   - supplier: F5
     product: BIG-IP
     version: "16.1"
     url: https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html
+    found_at: https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-open-source-notices-and-software-acknowledgments.html
 
   # Ivanti attributions PDFs (tables of contents list every component)
   - supplier: Ivanti
     product: Ivanti Connect Secure
     version: "22.x (current)"
     url: https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions.pdf
+    found_at: https://www.ivanti.com/support/product-documentation
 
   - supplier: Ivanti
     product: Ivanti Connect Secure
     version: "22.4R1"
     url: https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions-22.4R1.pdf
+    found_at: https://www.ivanti.com/support/product-documentation
 
   - supplier: Ivanti
     product: Ivanti Connect Secure
     version: "9.1R18.7"
     url: https://help.ivanti.com/ps/help/en_US/ICS/9.1RX/9.1R18.7-Connect-Secure-Attributions.pdf
+    found_at: https://www.ivanti.com/support/product-documentation
 
   - supplier: Ivanti
     product: Ivanti Secure Access Client
@@ -201,52 +209,62 @@ documents:
     product: Tenable Nessus
     version: "10.x"
     url: https://docs.tenable.com/license-declarations/Content/Nessus/Nessus-10.htm
+    found_at: https://docs.tenable.com/license-declarations/Content/Nessus.htm
 
   - supplier: Tenable
     product: Tenable Agent
     version: "10.x"
     url: https://docs.tenable.com/license-declarations/Content/Nessus-Agent/Nessus-Agent-10.htm
+    found_at: https://docs.tenable.com/license-declarations/Content/Nessus-Agent.htm
 
   - supplier: Tenable
     product: Tenable Network Monitor
     version: "5.11.x"
     url: https://docs.tenable.com/license-declarations/Content/NNM/NNM_511.htm
+    found_at: https://docs.tenable.com/license-declarations/Content/NNM.htm
 
   - supplier: Tenable
     product: Tenable Security Center
     version: "6.5.x"
     url: https://docs.tenable.com/license-declarations/Content/SC/security-center-65.htm
+    found_at: https://docs.tenable.com/license-declarations/Content/Tenablesc.htm
 
   - supplier: Tenable
     product: Tenable Security Center
     version: "6.4.x"
     url: https://docs.tenable.com/license-declarations/Content/SC/security-center-64.htm
+    found_at: https://docs.tenable.com/license-declarations/Content/Tenablesc.htm
 
   - supplier: Tenable
     product: Tenable Security Center
     version: "6.3.x"
     url: https://docs.tenable.com/license-declarations/Content/SC/security-center-63.htm
+    found_at: https://docs.tenable.com/license-declarations/Content/Tenablesc.htm
 
   # WatchGuard Copyright and Licensing Guides (table of contents lists every component)
   - supplier: WatchGuard
     product: Fireware OS
     version: "12.12"
     url: https://www.watchguard.com/help/docs/fireware/12/en-US/v12_12_copyright-licensing_guide.pdf
+    found_at: https://www.watchguard.com/wgrd-help/documentation/xtm
 
   - supplier: WatchGuard
     product: Fireware OS
     version: "12.11"
     url: https://www.watchguard.com/help/docs/fireware/12/en-US/v12_11_copyright-licensing_guide.pdf
+    found_at: https://www.watchguard.com/wgrd-help/documentation/xtm
 
   - supplier: WatchGuard
     product: Fireware OS
     version: "12.10"
     url: https://www.watchguard.com/help/docs/fireware/12/en-US/v12_10_copyright-licensing_guide.pdf
+    found_at: https://www.watchguard.com/wgrd-help/documentation/xtm
 
   - supplier: WatchGuard
     product: Fireware OS
     version: "12.5"
     url: https://www.watchguard.com/help/docs/fireware/12/en-US/v12_5_copyright-licensing_guide.pdf
+    found_at: https://www.watchguard.com/wgrd-help/documentation/xtm
 
   - supplier: Citrix
     product: NetScaler ADC
@@ -260,14 +278,17 @@ documents:
     product: Commvault Backup & Recovery
     version: "11.42"
     url: https://documentation.commvault.com/11.42/commcell-console/third_party_applications_installed_by_commvault_installer.html
+    found_at: https://documentation.commvault.com/11.42/commcell-console/installations.html
   - supplier: Commvault
     product: Commvault Backup & Recovery
     version: "2024E"
     url: https://documentation.commvault.com/2024e/commcell-console/third_party_applications_installed_by_commvault_installer.html
+    found_at: https://documentation.commvault.com/2024e/commcell-console/installations.html
   - supplier: Commvault
     product: Commvault Backup & Recovery
     version: "2023E"
     url: https://documentation.commvault.com/2023e/commcell-console/third_party_applications_installed_by_commvault_installer.html
+    found_at: https://documentation.commvault.com/2023e/commcell-console/installations.html
 
   # BMC Helix: docs.bmc.com answers automated clients with HTTP 403, but the same
   # XWiki content is served from docs.helixops.ai. Innovation Suite is the platform
@@ -278,22 +299,27 @@ documents:
     product: BMC Helix Innovation Suite
     version: "26.2"
     url: https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is262/Third-party-product-terms-of-use/
+    found_at: https://docs.helixops.ai/bin/IT-Operations-Management/On-Premises-Deployment/BMC-Helix-On-premises-Deployment/Third-party-product-terms-of-use/
   - supplier: BMC
     product: BMC Helix Innovation Suite
     version: "26.1"
     url: https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is261/Third-party-product-terms-of-use/
+    found_at: https://docs.helixops.ai/bin/IT-Operations-Management/On-Premises-Deployment/BMC-Helix-On-premises-Deployment/Third-party-product-terms-of-use/
   - supplier: BMC
     product: BMC Helix Innovation Suite
     version: "25.2"
     url: https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is252/Third-party-product-terms-of-use/
+    found_at: https://docs.helixops.ai/bin/IT-Operations-Management/On-Premises-Deployment/BMC-Helix-On-premises-Deployment/Third-party-product-terms-of-use/
   - supplier: BMC
     product: BMC Helix Operations Management
     version: "23.3"
     url: https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom233/Third-party-product-terms-of-use/
+    found_at: https://docs.helixops.ai/bin/IT-Operations-Management/On-Premises-Deployment/BMC-Helix-On-premises-Deployment/Third-party-product-terms-of-use/
   - supplier: BMC
     product: BMC Helix Operations Management
     version: "23.2"
     url: https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom232/Third-party-product-terms-of-use/
+    found_at: https://docs.helixops.ai/bin/IT-Operations-Management/On-Premises-Deployment/BMC-Helix-On-premises-Deployment/Third-party-product-terms-of-use/
 
   # Ivanti: Black Duck attribution reports ("Components:" name version : license).
   # Neurons for ITSM publishes one per quarterly release (only the 2024.2 one is still
@@ -336,6 +362,7 @@ documents:
     product: Fortify
     version: "18.10"
     url: https://dl.microfocus.com/documentation/fortify-webinspect/1810/Fortify_OpenSrc_18.10.pdf
+    found_at: https://www.microfocus.com/documentation/fortify-webinspect/1810/
 
   # CyberArk: no notices document, but the Common Criteria Security Target for PAM 14.0
   # (NSCIB-CC-2400012-01) lists the PVWA's third-party libraries by DLL name in Appendix B.
@@ -343,6 +370,7 @@ documents:
     product: Privileged Access Manager Self-Hosted
     version: "14.0"
     url: https://www.commoncriteriaportal.org/nfs/ccpfiles/files/epfiles/NSCIB-CC-2400012-01-ST_1.8.pdf
+    found_at: https://sec-certs.org/cc/84d69988d138d512/
 
   # Axway: "Third party open source and commercial/proprietary software and licenses"
   # PDFs are attached to public support KB articles, one per product release.
@@ -351,6 +379,7 @@ documents:
     product: Axway Gateway
     version: "6.17.3 SP10"
     url: https://support.axway.com/fr/articles/download-attachment/hash/7331c59682b7507655685cce49664d46-1/kb/194100
+    found_at: https://support.axway.com/kb/194100/language/en
 
 # Vendors checked and not crawlable (November 2026):
 #   Cisco "Open Source Used In" PDFs: blocked for automated clients (HTTP 403).

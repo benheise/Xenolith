@@ -305,11 +305,15 @@
 "version": "1.2.11"
 }
 ],
+"discovery_path": [
+"https://support.axway.com/kb/194100/language/en"
+],
 "extractors": [
 "dotted_toc",
 "table_lines",
 "jar_names"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Axway Gateway",
 "retrieved": "2026-11-08",

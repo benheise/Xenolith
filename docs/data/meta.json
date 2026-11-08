@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T13:52:42Z",
+ "built": "2026-11-08T19:45:33Z",
  "counts": {
   "assertions": 13371,
   "products_with_data": 7247,
@@ -708,7 +708,11 @@
    "license": "EUPL-1.2",
    "notes": "Rows in package-level segments (runtime builds, frameworks and libraries, OS distributions, container images, developer tooling) are excluded. Those are open source packages already indexed by deps.dev, OSV and distro trackers.",
    "assertions": 564,
-   "latest": "2026-11-04"
+   "latest": "2026-11-04",
+   "fv": "hand-listed",
+   "dp": [
+    "https://github.com/NCSC-NL/php2shell"
+   ]
   },
   {
    "id": "ncsc-nl-log4shell",
@@ -718,7 +722,11 @@
    "license": "MIT",
    "notes": "Archived June 2022. Statuses reflect vendor statements at the time.",
    "assertions": 9521,
-   "latest": "2022-06-15"
+   "latest": "2022-06-15",
+   "fv": "hand-listed",
+   "dp": [
+    "https://github.com/NCSC-NL/log4shell"
+   ]
   },
   {
    "id": "cisa-log4j",
@@ -728,7 +736,11 @@
    "license": "CC0-1.0",
    "notes": "Archived February 2023. Statuses reflect vendor statements at the time.",
    "assertions": 1346,
-   "latest": "2022-11-01"
+   "latest": "2022-11-01",
+   "fv": "hand-listed",
+   "dp": [
+    "https://github.com/cisagov/log4j-affected-db"
+   ]
   },
   {
    "id": "csaf",
@@ -750,7 +762,11 @@
     "SICK PSIRT": 10,
     "Open-Xchange GmbH": 1,
     "Intevation GmbH": 1
-   }
+   },
+   "fv": "hand-listed",
+   "dp": [
+    "https://security.access.redhat.com/data/csaf/v2/provider-metadata.json"
+   ]
   },
   {
    "id": "notices",
@@ -760,7 +776,11 @@
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
    "assertions": 886,
-   "latest": "2026-11-08"
+   "latest": "2026-11-08",
+   "fv": "auto-discovered",
+   "dp": [
+    "https://docs.paloaltonetworks.com/oss-listings"
+   ]
   },
   {
    "id": "community",
@@ -770,7 +790,11 @@
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
    "assertions": 16,
-   "latest": "2025-10-01"
+   "latest": "2025-10-01",
+   "fv": "community",
+   "dp": [
+    "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv#L3"
+   ]
   },
   {
    "id": "cvelist",

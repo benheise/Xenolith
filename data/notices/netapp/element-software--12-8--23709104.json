@@ -8317,9 +8317,14 @@
 "version": "1.4.4"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/Element_Software/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "Element Software",
 "retrieved": "2026-11-08",

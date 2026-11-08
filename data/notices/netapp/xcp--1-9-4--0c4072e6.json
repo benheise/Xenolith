@@ -4469,9 +4469,14 @@
 "version": "0.13.3"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/XCP/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "XCP",
 "retrieved": "2026-11-08",

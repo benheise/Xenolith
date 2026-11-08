@@ -1345,9 +1345,13 @@
 "version": "3.2.1"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ExtremeLocation",
 "retrieved": "2026-11-08",

@@ -856,10 +856,14 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://opensource.apple.com/releases/"
+],
 "extractors": [
 "apple_releases",
 "upstream_headers"
 ],
+"found_via": "auto-discovered",
 "kind": "apple-release",
 "product": "macOS",
 "retrieved": "2026-11-08",

@@ -15,12 +15,17 @@ container image) and get two things back:
 
 ```
 xenolith-scan scan acme-fw-7.2.9.bin               # unpack, detect, write ./xenolith-out/
-xenolith-scan review xenolith-out                  # keep or drop low-confidence findings
+xenolith-scan review xenolith-out                  # keep or drop low-confidence findings (--source-url to add the download link)
 xenolith-scan submit xenolith-out --attest         # open the pull request (gh) or print the upload path
 xenolith-scan diff old-scan/ new-scan/             # what changed between two versions
 xenolith-scan eval scan/corpus/manifest.yaml       # recall and version accuracy on the evaluation corpus
 xenolith-scan helpers                              # which optional unpackers are installed
 ```
+
+When it runs in a terminal, `scan` asks where the file can be downloaded (skip with Enter, or
+pass `--source-url https://…`). The link goes into the submission next to the file's SHA-256, so
+anyone can fetch the same bytes and check the result; it also becomes the first step of the
+record's discovery path on the site. `review --source-url` adds it to an existing scan.
 
 Design and rationale: [`design/xenolith-scan.md`](../design/xenolith-scan.md).
 Contributor workflow: [CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom).

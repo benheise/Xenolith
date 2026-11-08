@@ -1313,10 +1313,14 @@
 "version": "1.5.2"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "url_lines",
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "Fabric Engine",
 "retrieved": "2026-11-08",

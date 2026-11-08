@@ -6765,9 +6765,14 @@
 "version": "2.5.2"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/ONTAP_Tools_for_VMware_vSphere/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ONTAP tools for VMware vSphere",
 "retrieved": "2026-11-08",

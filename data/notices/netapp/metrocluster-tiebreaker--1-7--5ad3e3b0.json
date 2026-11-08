@@ -161,9 +161,14 @@
 "version": "1.9"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/MetroCluster_Tiebreaker/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "MetroCluster Tiebreaker",
 "retrieved": "2026-11-08",

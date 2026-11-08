@@ -21,6 +21,7 @@ Required (see CONTRIBUTING.md for an example):
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -96,11 +97,15 @@ def validate(path: Path, repo_root: Path) -> tuple[dict | None, list[str]]:
     rel = path.relative_to(repo_root).as_posix()
     if path.stat().st_size > MAX_BYTES:
         return None, [f"{rel}: larger than {MAX_BYTES // (1024 * 1024)} MB"]
+    raw = path.read_bytes()
     try:
-        bom = json.loads(path.read_text(encoding="utf-8"))
+        bom = json.loads(raw.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as e:
         return None, [f"{rel}: not valid JSON ({e})"]
-    return check(bom, rel)
+    inv, errs = check(bom, rel)
+    if inv and inv["evidence"] == "vendor-sbom":
+        inv["sha256"] = hashlib.sha256(raw).hexdigest()     # the SBOM file the statements were read from
+    return inv, errs
 
 
 def check(bom: dict, rel: str) -> tuple[dict | None, list[str]]:
@@ -161,6 +166,10 @@ def check(bom: dict, rel: str) -> tuple[dict | None, list[str]]:
         "source": "community",
         "artifact": props.get("xenolith:artifact", "")[:300],
         "artifact_sha256": props.get("xenolith:artifact_sha256", "").lower(),
+        # Where the file was found (its download or vendor page, when given), then the submission.
+        "found_via": "community",
+        "discovery_path": [u for u in (src, ROOT_URL + rel) if u],
+        "sha256": props.get("xenolith:artifact_sha256", "").lower() if evidence == "binary-scan" else "",
         "tool": ", ".join(t.get("name", "") for t in _tools(meta.get("tools")) if t.get("name"))[:200],
         "components": components,
     }, []

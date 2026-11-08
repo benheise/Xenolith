@@ -97,9 +97,11 @@
 "version": "1.2.11"
 }
 ],
+"discovery_path": [],
 "extractors": [
 "dotted_toc"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Desigo Fire Cloud Apps Modular Connection",
 "retrieved": "2026-11-08",

@@ -9,9 +9,13 @@
 "version": "8.8.1.really.8.7.7"
 }
 ],
+"discovery_path": [
+"https://docs.nvidia.com/networking/display/mlnxofedv24100700/legal-notices-and-3rd-party-licenses"
+],
 "extractors": [
 "homepage_table"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "NVIDIA libxlio",
 "retrieved": "2026-11-08",

@@ -157,6 +157,20 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
         if old.stem not in by_component:
             old.unlink()
 
+    # Provenance shared by most of a source's rows (a tracker's repository, say) is sent once in
+    # meta.sources; a row carries found_via / discovery_path only when it differs from that.
+    prov_votes: dict[str, Counter] = defaultdict(Counter)
+    for a in assertions:
+        prov_votes[a["source"]][(a.get("found_via", ""), tuple(a.get("discovery_path", [])))] += 1
+    source_prov = {sid: c.most_common(1)[0][0] for sid, c in prov_votes.items()}
+
+    def prov_fields(a: dict) -> dict:
+        fv, dp = a.get("found_via", ""), a.get("discovery_path", [])
+        out = {} if (fv, tuple(dp)) == source_prov.get(a["source"]) else {"fv": fv, "dp": dp}
+        if a.get("sha256"):
+            out["h"] = a["sha256"]
+        return out
+
     components_meta = []
     vulnerable_versions: dict[tuple[str, str], bool] = {}
     for comp in catalog.components.values():
@@ -177,6 +191,7 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
                 "n": a["notes"][:FRONTEND_NOTES_LIMIT], "cat": a.get("category"), "d": a["updated"],
                 **({"cv": a["component_version"]} if a.get("component_version") else {}),
                 **({"rc": rc["status"], "rcc": rc["cves"], "rcv": rc["versions"]} if rc and rc["status"] != "unknown" else {}),
+                **prov_fields(a),
             })
         (comp_dir / f"{comp.id}.json").write_text(json.dumps(slim, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         verdicts = Counter(a["verdict"] for a in rows)
@@ -251,6 +266,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             entry["products"] = len(spine)
         if sid == "csaf":
             entry["publishers"] = dict(publishers.most_common())
+        if sid in source_prov:
+            entry["fv"], entry["dp"] = source_prov[sid][0], list(source_prov[sid][1])
         sources_meta.append(entry)
 
     meta = {
@@ -299,7 +316,8 @@ def _merge_spine(spine: list[dict], remap: dict[str, str]) -> list[dict]:
 def build_inventories(data_dir: Path, out_dir: Path, remap: dict[str, str] | None = None) -> dict[str, dict]:
     """Write per-product component lists from notices files, plus a name index for search.
 
-    docs/data/inventory/<product_key>.json   [{v, u, d, x, c: [[name, version], ...]}], newest version first
+    docs/data/inventory/<product_key>.json   [{v, u, d, x, c: [[name, version], ...], e, fv, dp, h, a?}], newest version first
+                                             (e evidence, fv found_via, dp discovery_path, h sha256, a scanned artifact)
     docs/data/inventory_index.json           {p: [product_key, ...], n: {name: [[product idx, product version, component version], ...]}}
     """
     inv_dir = out_dir / "inventory"
@@ -318,7 +336,10 @@ def build_inventories(data_dir: Path, out_dir: Path, remap: dict[str, str] | Non
         g = grouped[key]
         g["docs"].sort(key=lambda d: _version_key(d.get("version", "")), reverse=True)
         payload = [{"v": d.get("version", ""), "u": d["url"], "d": d.get("retrieved", ""),
-                    "x": d.get("extractors", []), "c": [[c["name"], c.get("version", "")] for c in d["components"]]}
+                    "x": d.get("extractors", []), "c": [[c["name"], c.get("version", "")] for c in d["components"]],
+                    "e": d.get("evidence", "notices-file"), "fv": d.get("found_via", ""),
+                    "dp": d.get("discovery_path", []), "h": d.get("sha256", ""),
+                    **({"a": d["artifact"]} if d.get("artifact") else {})}
                    for d in g["docs"]]
         fname = key.replace("/", "__") + ".json"
         (inv_dir / fname).write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

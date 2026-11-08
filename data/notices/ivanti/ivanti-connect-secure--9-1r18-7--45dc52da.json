@@ -525,9 +525,13 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://www.ivanti.com/support/product-documentation"
+],
 "extractors": [
 "dotted_toc"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Ivanti Connect Secure",
 "retrieved": "2026-11-08",

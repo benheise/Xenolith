@@ -409,9 +409,13 @@
 "version": "10. EXPORT REGULATIONS.Â Â All Software and technical data delivered under this Agreement are subject to US export control laws and may be subject to export or import regulations in other countries. You agree to comply strictly with all such laws and regulations and acknowledge that you have the responsibility to obtain such licenses to export"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "Visibility Manager",
 "retrieved": "2026-11-08",

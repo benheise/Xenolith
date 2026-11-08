@@ -16637,9 +16637,13 @@
 "version": "4.1.1"
 }
 ],
+"discovery_path": [
+"https://artifacts-api.elastic.co/v1/versions"
+],
 "extractors": [
 "html_table"
 ],
+"found_via": "auto-discovered",
 "kind": "html",
 "product": "Elastic Stack",
 "retrieved": "2026-11-08",

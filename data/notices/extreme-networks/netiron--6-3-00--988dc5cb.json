@@ -5,9 +5,13 @@
 "version": "2.0.3-fips"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "NetIron",
 "retrieved": "2026-11-08",

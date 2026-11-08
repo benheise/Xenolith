@@ -54,11 +54,55 @@ EVIDENCE = (
     "community",        # contributed to this repository with a source link
 )
 
+# How a record's source document reached the census.
+FOUND_VIA = (
+    "hand-listed",      # someone added the document or source to a catalog file
+    "auto-discovered",  # a crawler found it from an index page, feed, directory listing or aggregator
+    "community",        # contributed through community/ (statement CSV or SBOM submission)
+)
+
 ASSERTION_FIELDS = (
     "id", "component", "supplier", "product", "product_key", "version",
     "cves", "verdict", "contains", "evidence", "source", "publisher",
     "source_url", "references", "notes", "category", "updated", "component_version", "cpes",
+    "found_via", "discovery_path", "sha256",
 )
+
+_SHA256 = re.compile(r"[0-9a-f]{64}")
+
+
+def provenance(found_via: str = "", discovery_path: Iterable[str] = (), sha256: str = "") -> dict:
+    """The provenance fields of a record, validated; empty values are left out.
+
+    discovery_path lists the pages that led to the source document, from where the trail
+    starts (an aggregator, an index page, the page a person found the link on) to the last
+    page before the document itself. sha256 is the hash of the bytes the record was read
+    from: the notices document, the submitted SBOM or the scanned artifact.
+    """
+    out: dict = {}
+    if found_via:
+        if found_via not in FOUND_VIA:
+            raise ValueError(f"unknown found_via {found_via!r}")
+        out["found_via"] = found_via
+    path = [str(p) for p in dict.fromkeys(discovery_path) if p][:6]
+    if path:
+        out["discovery_path"] = path
+    if sha256:
+        sha256 = sha256.lower()
+        if not _SHA256.fullmatch(sha256):
+            raise ValueError(f"sha256 must be 64 hex characters, got {sha256!r}")
+        out["sha256"] = sha256
+    return out
+
+
+def stamp(record: dict, found_via: str = "", discovery_path: Iterable[str] = (), sha256: str = "") -> dict:
+    """Set (or replace) a record's provenance in place; returns the record."""
+    for k in ("found_via", "discovery_path"):
+        record.pop(k, None)
+    if sha256:
+        record.pop("sha256", None)
+    record.update(provenance(found_via, discovery_path, sha256))
+    return record
 
 
 def slug(text: str) -> str:
@@ -113,6 +157,9 @@ def make_assertion(
     publisher: str = "",
     component_version: str = "",
     cpes: Iterable[str] = (),
+    found_via: str = "",
+    discovery_path: Iterable[str] = (),
+    sha256: str = "",
 ) -> dict:
     """Build a normalized assertion.
 
@@ -163,6 +210,7 @@ def make_assertion(
     cpes = sorted({c for c in cpes if c})[:8]
     if cpes:
         out["cpes"] = cpes   # CPE vendor:product pairs naming the product (used to link sources)
+    out.update(provenance(found_via, discovery_path, sha256))
     return out
 
 

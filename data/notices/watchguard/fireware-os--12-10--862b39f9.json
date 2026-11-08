@@ -1549,10 +1549,14 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://www.watchguard.com/wgrd-help/documentation/xtm"
+],
 "extractors": [
 "dotted_toc",
 "gt_list"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Fireware OS",
 "retrieved": "2026-11-08",

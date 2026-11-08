@@ -66,6 +66,9 @@
   .supplier { color: var(--muted); font-size: 14px; }
   .product { font-weight: 600; overflow-wrap: anywhere; }
   .meta { color: var(--muted); font-size: 13.5px; margin-top: 6px; overflow-wrap: anywhere; }
+  .hash { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; overflow-wrap: anywhere; }
+  .badge.fv { color: var(--accent); font-weight: 600; }
+  .prov-missing { color: var(--workaround); }
   .guess { display: grid; grid-template-columns: minmax(110px, 30%) 1fr; gap: 2px 10px; padding: 6px 0; border-top: 1px dashed var(--line); font-size: 13.5px; }
   .guess:first-of-type { border-top: 0; }
   .conf { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); margin-left: 4px; }
@@ -386,6 +389,37 @@ async function showComponent(id, filterKey, text) {
   if (document.activeElement !== $("#tfilter") && text) { const f = $("#tfilter"); f.focus(); f.setSelectionRange(f.value.length, f.value.length); }
 }
 
+// ---------------------------------------------------------------- provenance
+const FOUND_VIA = { "hand-listed": "Hand-listed", "auto-discovered": "Auto-discovered", "community": "Community" };
+const FOUND_VIA_HELP = {
+  "hand-listed": "Someone added this source to a catalog file in the repository",
+  "auto-discovered": "A crawler found this source from an index page, feed, directory listing or aggregator",
+  "community": "Contributed through community/ in the repository",
+};
+function shortUrl(u, max = 64) {
+  let t = u;
+  try {
+    const x = new URL(u);
+    const path = x.hostname === "github.com" ? x.pathname.replace(/^(\/[^/]+\/[^/]+)\/(?:blob|tree)\/[^/]+/, "$1") : x.pathname;
+    t = (x.hostname.replace(/^www\./, "") + path + x.hash).replace(/\/$/, "");
+  } catch { /* not a URL */ }
+  return t.length > max ? t.slice(0, max - 1) + "…" : t;
+}
+function provParts(fv, dp, h, e, full) {
+  if (!fv && !(dp || []).length && !h) return "";
+  const path = (dp || []).map(u => safeUrl(u) ? link(u, shortUrl(u)) : esc(u)).join(" → ");
+  const trail = path ? `via ${path}`
+    : fv === "hand-listed" ? `<span class="prov-missing">the page that links this source is not recorded yet</span>` : "";
+  const label = e === "binary-scan" ? "Scanned file SHA-256" : "Document SHA-256";
+  const hash = h ? `${label} <span class="hash" title="${esc(h)}">${esc(full ? h : h.slice(0, 16) + "…")}</span>` : "";
+  const badge = fv ? `<span class="badge fv" title="${esc(FOUND_VIA_HELP[fv] || "")}">${esc(FOUND_VIA[fv] || fv)}</span>` : "";
+  return [badge + (trail ? " " + trail : ""), hash].filter(Boolean).join(" · ");
+}
+function rowProv(r) {
+  const s = SOURCES[r.src] || {};
+  return { fv: r.fv ?? s.fv, dp: r.dp ?? s.dp, h: r.h };
+}
+
 function statementCard(r, opts = {}) {
   const src = SOURCES[r.src] || { name: r.src };
   const who = r.src === "csaf" ? (r.pub || r.cat || "Vendor") : src.name;
@@ -405,6 +439,8 @@ function statementCard(r, opts = {}) {
     ${r.rc === "outside" ? `<div class="meta">Listed version is outside the affected ranges in the CVE record. Older, end-of-life branches are often missing from those ranges.</div>` : ""}
     ${cves ? `<div class="cves">${cves}</div>` : ""}
     <div class="meta">${esc(EVIDENCE[r.e] || r.e)} · ${link(r.u, who)}${r.d ? ` · as of ${esc(r.d)}` : ""}${r.cat && r.src !== "csaf" ? ` · ${esc(r.cat)}` : ""}</div>
+    ${opts.inProduct ? (() => { const pv = rowProv(r), line = provParts(pv.fv, pv.dp, pv.h, r.e, false);
+      return line ? `<div class="meta">${line}</div>` : ""; })() : ""}
     ${(r.n || refs) ? `<details><summary>Notes and references</summary>
       ${r.n ? `<div class="meta">${esc(r.n)}</div>` : ""}${refs ? `<div class="meta">${refs}</div>` : ""}</details>` : ""}
   </div>`;
@@ -458,7 +494,9 @@ async function renderInventory(key) {
   const draw = () => {
     const d = docs[cur], t = norm($("#invfilter").value);
     const rows = d.c.filter(([n]) => !t || norm(n).includes(t));
-    $("#invsrc").innerHTML = `Source: ${link(d.u)} · retrieved ${esc(d.d)} · ${fmt(rows.length)} of ${fmt(d.c.length)} shown`;
+    const prov = provParts(d.fv, d.dp, d.h, d.e, true);
+    $("#invsrc").innerHTML = `Source: ${link(d.u)}${d.a ? ` (scan of ${esc(d.a)})` : ""} · retrieved ${esc(d.d)} · ${fmt(rows.length)} of ${fmt(d.c.length)} shown`
+      + (prov ? `<br>${prov}` : "");
     $("#invtable").innerHTML = rows.slice(0, 400).map(([n, v]) =>
       `<tr><td style="padding:3px 6px 3px 0;overflow-wrap:anywhere">${esc(n)}</td><td style="padding:3px 0;text-align:right;white-space:nowrap" class="muted">${esc(v)}</td></tr>`).join("")
       + (rows.length > 400 ? `<tr><td colspan="2" class="muted">… ${fmt(rows.length - 400)} more; use the filter</td></tr>` : "");

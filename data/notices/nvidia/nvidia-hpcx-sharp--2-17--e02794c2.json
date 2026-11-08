@@ -157,9 +157,13 @@
 "version": "7.2.0"
 }
 ],
+"discovery_path": [
+"https://docs.nvidia.com/networking/display/mlnxofedv24100700/legal-notices-and-3rd-party-licenses"
+],
 "extractors": [
 "homepage_table"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "NVIDIA HPCX sharp",
 "retrieved": "2026-11-08",

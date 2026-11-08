@@ -69,9 +69,13 @@
 "version": "1.3.1"
 }
 ],
+"discovery_path": [
+"https://support.solarwinds.com/dameware-mini-remote-control"
+],
 "extractors": [
 "html_table"
 ],
+"found_via": "hand-listed",
 "kind": "html",
 "product": "Dameware",
 "retrieved": "2026-11-08",

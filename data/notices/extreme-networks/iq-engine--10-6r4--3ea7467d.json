@@ -621,9 +621,13 @@
 "version": "1.2.3.4"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "IQ Engine",
 "retrieved": "2026-11-08",

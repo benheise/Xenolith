@@ -217,10 +217,12 @@
 "version": "0.5.1"
 }
 ],
+"discovery_path": [],
 "extractors": [
 "bd_components",
 "url_lines"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Ivanti Service Director",
 "retrieved": "2026-11-08",

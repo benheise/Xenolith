@@ -5785,9 +5785,14 @@
 "version": "v1.28.0"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/Astra_Control_Center/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "Astra Control Center",
 "retrieved": "2026-11-08",

@@ -312,6 +312,11 @@ details summary{cursor:pointer}.card{background:#f6f8fa;padding:.75rem 1rem;bord
 	if s.ArtifactSHA256 != "" {
 		fmt.Fprintf(&b, ` &nbsp; <b>SHA-256:</b> <code>%s</code>`, s.ArtifactSHA256)
 	}
+	if s.SourceURL != "" {
+		fmt.Fprintf(&b, `<br><b>Downloaded from:</b> <a href="%s">%s</a>`, esc(s.SourceURL), esc(s.SourceURL))
+	} else {
+		fmt.Fprintf(&b, `<br><b>Downloaded from:</b> <span class="low">not recorded</span> <span class="note">(add it with <code>xenolith-scan review --source-url https://…</code> so others can check the same file)</span>`)
+	}
 	fmt.Fprintf(&b, `<br><b>Identity from:</b> %s`, esc(s.Identity.Source))
 	if s.RegistryKey != "" {
 		fmt.Fprintf(&b, ` &nbsp; <b>Xenolith product:</b> <a href="https://benheise.github.io/Xenolith/#p=%s">%s</a>`, esc(s.RegistryKey), esc(s.RegistryKey))

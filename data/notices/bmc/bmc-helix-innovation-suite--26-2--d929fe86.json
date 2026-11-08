@@ -4433,9 +4433,13 @@
 "version": "1.4.0-1"
 }
 ],
+"discovery_path": [
+"https://docs.helixops.ai/bin/IT-Operations-Management/On-Premises-Deployment/BMC-Helix-On-premises-Deployment/Third-party-product-terms-of-use/"
+],
 "extractors": [
 "html_table"
 ],
+"found_via": "hand-listed",
 "kind": "html",
 "product": "BMC Helix Innovation Suite",
 "retrieved": "2026-11-08",

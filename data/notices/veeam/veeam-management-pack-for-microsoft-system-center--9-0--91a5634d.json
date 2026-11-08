@@ -17,9 +17,13 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://www.veeam.com/legal/eula-oss.html"
+],
 "extractors": [
 "sbom"
 ],
+"found_via": "auto-discovered",
 "kind": "sbom",
 "product": "Veeam Management Pack for Microsoft System Center",
 "retrieved": "2026-11-08",

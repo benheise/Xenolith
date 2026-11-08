@@ -11609,10 +11609,14 @@
 "version": "3.4.5"
 }
 ],
+"discovery_path": [
+"https://www.zimbra.com/downloads/zimbra-collaboration/"
+],
 "extractors": [
 "gt_list",
 "jar_names"
 ],
+"found_via": "auto-discovered",
 "kind": "text",
 "product": "Zimbra Collaboration",
 "retrieved": "2026-11-08",

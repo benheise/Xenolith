@@ -1213,9 +1213,13 @@
 "version": "1.5.2"
 }
 ],
+"discovery_path": [
+"https://www.veeam.com/legal/eula-oss.html"
+],
 "extractors": [
 "sbom"
 ],
+"found_via": "auto-discovered",
 "kind": "sbom",
 "product": "Veeam Plug-In for Nutanix AHV",
 "retrieved": "2026-11-08",

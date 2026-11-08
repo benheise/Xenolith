@@ -609,9 +609,11 @@
 "version": "0.15.1"
 }
 ],
+"discovery_path": [],
 "extractors": [
 "dotted_toc"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Desigo Optic",
 "retrieved": "2026-11-08",

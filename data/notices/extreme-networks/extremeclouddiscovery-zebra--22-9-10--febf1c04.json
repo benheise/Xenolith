@@ -3221,9 +3221,13 @@
 "version": "2.4.0.Final"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ExtremeCloudDiscovery-Zebra",
 "retrieved": "2026-11-08",

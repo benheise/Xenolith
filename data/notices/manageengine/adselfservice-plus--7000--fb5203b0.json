@@ -497,9 +497,13 @@
 "version": "3.5.3"
 }
 ],
+"discovery_path": [
+"https://www.manageengine.com/products/self-service-password/self-service-password-help-docs.html"
+],
 "extractors": [
 "jar_names"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "ADSelfService Plus",
 "retrieved": "2026-11-08",

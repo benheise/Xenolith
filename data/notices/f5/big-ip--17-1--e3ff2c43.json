@@ -1189,9 +1189,13 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://techdocs.f5.com/en-us/bigip-17-1-0/big-ip-open-source-notices-and-software-acknowledgments.html"
+],
 "extractors": [
 "includes_prose"
 ],
+"found_via": "hand-listed",
 "kind": "html",
 "product": "BIG-IP",
 "retrieved": "2026-11-08",

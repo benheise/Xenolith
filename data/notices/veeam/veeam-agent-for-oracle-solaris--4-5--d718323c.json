@@ -97,9 +97,13 @@
 "version": "1.5.5"
 }
 ],
+"discovery_path": [
+"https://www.veeam.com/legal/eula-oss.html"
+],
 "extractors": [
 "sbom"
 ],
+"found_via": "auto-discovered",
 "kind": "sbom",
 "product": "Veeam Agent for Oracle Solaris",
 "retrieved": "2026-11-08",

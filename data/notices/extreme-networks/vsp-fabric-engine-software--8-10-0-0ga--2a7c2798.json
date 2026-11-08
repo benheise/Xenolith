@@ -1885,9 +1885,13 @@
 "version": "1.5"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "VSP/Fabric Engine Software",
 "retrieved": "2026-11-08",

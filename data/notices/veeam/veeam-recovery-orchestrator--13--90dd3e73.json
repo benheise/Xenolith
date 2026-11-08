@@ -5069,9 +5069,13 @@
 "version": "0.8.4"
 }
 ],
+"discovery_path": [
+"https://www.veeam.com/legal/eula-oss.html"
+],
 "extractors": [
 "sbom"
 ],
+"found_via": "auto-discovered",
 "kind": "sbom",
 "product": "Veeam Recovery Orchestrator",
 "retrieved": "2026-11-08",

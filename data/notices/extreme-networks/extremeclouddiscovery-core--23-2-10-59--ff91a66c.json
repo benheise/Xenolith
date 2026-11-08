@@ -3217,10 +3217,14 @@
 "version": "2.4.0.Final"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups",
 "jar_names"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ExtremeCloudDiscovery - Core",
 "retrieved": "2026-11-08",

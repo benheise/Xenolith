@@ -1945,9 +1945,13 @@
 "version": "1.4.10"
 }
 ],
+"discovery_path": [
+"https://www.veeam.com/legal/eula-oss.html"
+],
 "extractors": [
 "sbom"
 ],
+"found_via": "auto-discovered",
 "kind": "sbom",
 "product": "Veeam Backup for Microsoft 365",
 "retrieved": "2026-11-08",

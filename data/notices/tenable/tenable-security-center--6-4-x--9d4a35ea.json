@@ -153,9 +153,13 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://docs.tenable.com/license-declarations/Content/Tenablesc.htm"
+],
 "extractors": [
 "dropdown_heads"
 ],
+"found_via": "hand-listed",
 "kind": "html",
 "product": "Tenable Security Center",
 "retrieved": "2026-11-08",

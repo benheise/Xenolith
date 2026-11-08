@@ -5541,11 +5541,15 @@
 "version": "3.5.3"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "url_lines",
 "license_groups",
 "jar_names"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ExtremeCloud IQ - Site Engine",
 "retrieved": "2026-11-08",

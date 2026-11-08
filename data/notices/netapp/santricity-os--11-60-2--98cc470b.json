@@ -205,9 +205,14 @@
 "version": "0.4.5"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/ESeries_EFSeries_SANtricity_OS/"
+],
 "extractors": [
 "source_archives"
 ],
+"found_via": "auto-discovered",
 "kind": "listing",
 "product": "SANtricity OS",
 "retrieved": "2026-11-08",

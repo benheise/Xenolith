@@ -317,9 +317,14 @@
 "version": "6.1"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/ONTAP_Mediator/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ONTAP Mediator",
 "retrieved": "2026-11-08",

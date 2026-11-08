@@ -31,6 +31,7 @@ There are three ways to contribute data, from quickest to most thorough. All thr
     product: Example Gateway OS         # the product, without the vendor's name
     version: "7.2"                      # product version the document covers (quote it)
     url: https://example.com/legal/gateway-os-7.2-open-source.pdf
+    found_at: https://example.com/support/gateway-os-7.2   # the page that links the document
 ```
 
 | Field | Required | Notes |
@@ -39,6 +40,9 @@ There are three ways to contribute data, from quickest to most thorough. All thr
 | `product` | yes | Product name |
 | `version` | yes | Product version or release line; use `"all"` if the document isn't versioned |
 | `url` | yes | Direct, public, stable link. PDF, HTML, plain text, CycloneDX or SPDX |
+| `found_at` | strongly recommended | The vendor page that links the document (release notes, a documentation index, a legal page). It is the record's discovery path: it lets anyone retrace where the file came from, and find the next version when this one moves. When the link sits two clicks deep, give a list, outermost page first |
+
+Every record in the census says how its source reached it (`found_via`): **hand-listed** (added to a catalog file like this one), **auto-discovered** (found by a `discover:` rule, a CSAF aggregator or a feed) or **community** (contributed under `community/`). Its `discovery_path` lists the pages that led to the document, and `sha256` is the hash of the bytes it was read from. Product pages on the site show all three. `python -m xenolith provenance` lists the hand-listed documents and scanner corpus artifacts still missing `found_at`.
 
 If the vendor has an **index page** linking a document per product or version, add a `discover:` rule instead (see the Palo Alto Networks rule in the same file) so new versions are picked up automatically.
 

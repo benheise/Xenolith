@@ -2345,9 +2345,13 @@
 "version": "8.33.0.1"
 }
 ],
+"discovery_path": [
+"https://docs.paloaltonetworks.com/oss-listings"
+],
 "extractors": [
 "html_table"
 ],
+"found_via": "auto-discovered",
 "kind": "html",
 "product": "WildFire",
 "retrieved": "2026-11-08",

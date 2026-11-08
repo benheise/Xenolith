@@ -205,9 +205,11 @@
 "version": "98"
 }
 ],
+"discovery_path": [],
 "extractors": [
 "dotted_toc"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "APOGEE Commissioning Tool",
 "retrieved": "2026-11-08",

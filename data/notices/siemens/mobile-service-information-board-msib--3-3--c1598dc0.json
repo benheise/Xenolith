@@ -513,9 +513,11 @@
 "version": "1.0.1"
 }
 ],
+"discovery_path": [],
 "extractors": [
 "dotted_toc"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Mobile Service Information Board (MSIB)",
 "retrieved": "2026-11-08",

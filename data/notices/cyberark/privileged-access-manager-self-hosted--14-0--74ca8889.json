@@ -293,10 +293,14 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://sec-certs.org/cc/84d69988d138d512/"
+],
 "extractors": [
 "dotted_toc",
 "dll_names"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Privileged Access Manager Self-Hosted",
 "retrieved": "2026-11-08",

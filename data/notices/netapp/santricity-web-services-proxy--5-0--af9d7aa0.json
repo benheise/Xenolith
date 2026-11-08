@@ -165,9 +165,14 @@
 "version": "0.4.5"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/SANtricity_Web_Services_Proxy/"
+],
 "extractors": [
 "source_archives"
 ],
+"found_via": "auto-discovered",
 "kind": "listing",
 "product": "SANtricity Web Services Proxy",
 "retrieved": "2026-11-08",

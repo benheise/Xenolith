@@ -677,9 +677,13 @@
 "version": "1.2.16"
 }
 ],
+"discovery_path": [
+"https://www.microfocus.com/documentation/fortify-webinspect/1810/"
+],
 "extractors": [
 "name_version_lines"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Fortify",
 "retrieved": "2026-11-08",

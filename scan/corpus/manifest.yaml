@@ -3,11 +3,14 @@
 #
 #   xenolith-scan eval scan/corpus/manifest.yaml
 #
+# found_at: the page that links the artifact (release page, package index, directory
+# listing), so anyone can retrace where it came from and find its successor.
 # inventory: a Xenolith-style inventory JSON ({"components": [{"name", "version"}]}).
 # The ones under scan/corpus/truth/ transcribe the maker's own statement (release notes,
 # build notes); for products Xenolith already tracks, point at data/notices/<supplier>/*.json.
 artifacts:
   - artifact: https://files.pythonhosted.org/packages/cp312/B/Brotli/Brotli-1.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    found_at: https://pypi.org/project/Brotli/1.1.0/#files
     sha256: d0c5516f0aed654134a2fc936325cc2e642f8a0e096d075209672eb321cff408
     supplier: Google
     product: Brotli (Python package)
@@ -15,6 +18,7 @@ artifacts:
     inventory: scan/corpus/truth/brotli-1.1.0.json
     note: "The wheel statically links the Brotli C library; the version comes from the BrotliDecoderVersion() probe (no version string in the binary)."
   - artifact: https://files.pythonhosted.org/packages/cp39/c/cryptography/cryptography-43.0.3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    found_at: https://pypi.org/project/cryptography/43.0.3/#files
     sha256: 0f996e7268af62598f2fc1204afa98a3b5712313a55c4c9d434aef49cadc91d4
     supplier: PyCA
     product: cryptography (Python package)
@@ -22,6 +26,7 @@ artifacts:
     inventory: scan/corpus/truth/cryptography-43.0.3.json
     note: "The 43.0.3 changelog says the wheels were compiled with OpenSSL 3.3.2; the scanner reads it from the version string."
   - artifact: https://files.pythonhosted.org/packages/cp312/l/lxml/lxml-5.3.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    found_at: https://pypi.org/project/lxml/5.3.0/#files
     sha256: c24037349665434f375645fa9d1f5304800cec574d0310f618490c871fd902b3
     supplier: lxml
     product: lxml (Python package)
@@ -31,6 +36,7 @@ artifacts:
 
   # ---- real-artifact proofs added November 2026 (see docs/xenolith-scan.md, "Real-artifact proofs")
   - artifact: https://files.pythonhosted.org/packages/16/89/818fa238e37a47a29bb8495ca2cafdd514599a89f19ada7916348a74b5f9/Pillow-10.0.0-cp311-cp311-manylinux_2_28_x86_64.whl
+    found_at: https://pypi.org/project/Pillow/10.0.0/#files
     sha256: cd25d2a9d2b36fcb318882481367956d2cf91329f6892fe5d385c346c0649629
     supplier: Python Pillow
     product: Pillow (Python package)
@@ -38,6 +44,7 @@ artifacts:
     inventory: scan/corpus/truth/pillow-10.0.0.json
     note: "Bundles libwebp 1.3.1 (CVE-2023-4863). liblzma's version comes from the lzma_version_number() probe, which needed frame-pointer prologue decoding."
   - artifact: https://files.pythonhosted.org/packages/3c/49/f87cecbdec4b00cc1187f01196d48c08828204cd861915fab44972dc705c/Pillow-10.0.1-cp311-cp311-manylinux_2_28_x86_64.whl
+    found_at: https://pypi.org/project/Pillow/10.0.1/#files
     sha256: cbe68deb8580462ca0d9eb56a81912f59eb4542e1ef8f987405e35a0179f4ea2
     supplier: Python Pillow
     product: Pillow (Python package)
@@ -45,6 +52,7 @@ artifacts:
     inventory: scan/corpus/truth/pillow-10.0.1.json
     note: "The libwebp 1.3.2 fix release; `xenolith-scan diff` against 10.0.0 shows exactly brotli, liblzma and libwebp moving."
   - artifact: https://files.pythonhosted.org/packages/f7/61/15b10190a6738db342efe4d06378ac4032b13d8ba6e9e1d89890119b2b8f/Pillow-10.0.1-cp311-cp311-manylinux_2_28_aarch64.whl
+    found_at: https://pypi.org/project/Pillow/10.0.1/#files
     sha256: 92a23b0431941a33242b1f0ce6c88a952e09feeea9af4e8be48236a68ffe2205
     supplier: Python Pillow
     product: Pillow (Python package)
@@ -52,6 +60,7 @@ artifacts:
     inventory: scan/corpus/truth/pillow-10.0.1.json
     note: "Same pins on AArch64: exercises the movz/movk probes and frame records."
   - artifact: https://files.pythonhosted.org/packages/ce/85/62825cabc6aad53104b7b6d12eb2ad74737d268630032d07b74d4444cb72/psycopg2_binary-2.9.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    found_at: https://pypi.org/project/psycopg2-binary/2.9.9/#files
     sha256: 977646e05232579d2e7b9c59e21dbe5261f403a88417f6a6512e70d3f8a046be
     supplier: Psycopg
     product: psycopg2-binary (Python package)
@@ -59,6 +68,7 @@ artifacts:
     inventory: scan/corpus/truth/psycopg2-binary-2.9.9.json
     note: "OpenSSL 1.1.1w is found; libpq, OpenLDAP and Cyrus SASL are not on the watchlist and have no Syft classifier: a measured gap."
   - artifact: https://files.pythonhosted.org/packages/3a/d0/edc009c27b406c4f9cbc79274d6e46d634d139075492ad055e3d68445925/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    found_at: https://pypi.org/project/numpy/1.26.4/#files
     sha256: 666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5
     supplier: NumPy
     product: numpy (Python package)
@@ -66,6 +76,7 @@ artifacts:
     inventory: scan/corpus/truth/numpy-1.26.4.json
     note: "Negative control (no watchlist component inside). Its GNU static library (.a) crashed the old ar parser; now read by the scanner's own hardened reader."
   - artifact: https://registry.npmjs.org/next/-/next-15.0.4.tgz
+    found_at: https://registry.npmjs.org/next/15.0.4
     sha256: b3e8173f6fc968db5cc565c501e95b1aa15614ec29296e7a0c41c8413f832ce0
     supplier: Vercel
     product: Next.js (npm package)
@@ -73,6 +84,7 @@ artifacts:
     inventory: scan/corpus/truth/next-15.0.4.json
     note: "Next vendors React Server Components under dist/compiled/ with the version stripped; the scanner reads it from the React build vendored alongside (sibling rule)."
   - artifact: https://registry.npmjs.org/next/-/next-15.0.5.tgz
+    found_at: https://registry.npmjs.org/next/15.0.5
     sha256: 60f410e59ee3c59c51e624aae2c934dadb7d2a614f736d96ead1ca3add02f4f9
     supplier: Vercel
     product: Next.js (npm package)
@@ -80,6 +92,7 @@ artifacts:
     inventory: scan/corpus/truth/next-15.0.5.json
     note: "The React2Shell (CVE-2025-55182) fix release kept the same React RC version: a version-based census records presence, not exposure."
   - artifact: https://repo1.maven.org/maven2/io/zipkin/zipkin-server/2.23.8/zipkin-server-2.23.8-exec.jar
+    found_at: https://repo1.maven.org/maven2/io/zipkin/zipkin-server/2.23.8/
     sha256: f4420fc8db5a9a9d94bf8501e2027b192c73e7aec8bd3d589eec2c0efc6d2424
     supplier: OpenZipkin
     product: Zipkin Server
@@ -87,6 +100,7 @@ artifacts:
     inventory: scan/corpus/truth/zipkin-server-2.23.8.json
     note: "Spring Boot executable jar with a shell-script prefix; bundles log4j-core 2.13.3 (Log4Shell-vulnerable) and brotli 1.0.9 inside brotli4j's native jar."
   - artifact: https://repo1.maven.org/maven2/io/zipkin/zipkin-server/2.23.16/zipkin-server-2.23.16-exec.jar
+    found_at: https://repo1.maven.org/maven2/io/zipkin/zipkin-server/2.23.16/
     sha256: 83cd660944fe173afac67ab3de68e102290c9c512af18ec2a124fb30c3db804e
     supplier: OpenZipkin
     product: Zipkin Server
@@ -94,6 +108,7 @@ artifacts:
     inventory: scan/corpus/truth/zipkin-server-2.23.16.json
     note: "The Log4Shell fix line: log4j 2.17.1. Maven Central rate-limits bursts; maven-central.storage-download.googleapis.com mirrors the same file."
   - artifact: https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-23.05.5-x86-64-generic-squashfs-combined.img.gz
+    found_at: https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/
     sha256: 788a786a7c2692cce1ac8922b71c4030958cb8ddd7f6b507fbba79c757a04fdf
     supplier: OpenWrt
     product: OpenWrt x86/64 combined image
@@ -101,6 +116,7 @@ artifacts:
     inventory: scan/corpus/truth/openwrt-23.05.5-x86-64.json
     note: "gzip with trailing data, MBR disk image, squashfs root (opkg database). The ext4 boot partition needs 7-Zip."
   - artifact: https://deb.debian.org/debian-security/pool/updates/main/o/openssl/libssl3_3.0.22-1~deb12u2_amd64.deb
+    found_at: https://deb.debian.org/debian-security/pool/updates/main/o/openssl/
     sha256: cb4784740daa9b3b0eaea2b444bbefa686794afbbf3d678d238c1fd9875f2efd
     supplier: Debian
     product: libssl3 (Debian package, amd64)
@@ -108,6 +124,7 @@ artifacts:
     inventory: scan/corpus/truth/debian-libssl3-amd64.json
     note: "Security-pool URLs move to snapshot.debian.org once superseded; the hash pins the file."
   - artifact: https://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh-server_9.2p1-2+deb12u9_arm64.deb
+    found_at: https://deb.debian.org/debian-security/pool/updates/main/o/openssh/
     sha256: ad0b59e2c075d046089ee1f2f967182b59f731579b2c016722f63d2951483ae8
     supplier: Debian
     product: openssh-server (Debian package, arm64)
@@ -115,18 +132,21 @@ artifacts:
     inventory: scan/corpus/truth/debian-openssh-server-arm64.json
     note: "The sshd binary contains both 'OpenSSH_9.2' and 'OpenSSH_9.2p1'; the scanner keeps the most specific."
   - artifact: https://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/liblzma5_5.4.1-1+deb12u2_arm64.deb
+    found_at: https://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/
     sha256: 36358d245f246234721e6c1c2ee5d11a46c1c877023c63f7570df02cd79964f5
     supplier: Debian
     product: liblzma5 (Debian package, arm64)
     version: "5.4.1-1+deb12u2"
     inventory: scan/corpus/truth/debian-liblzma5-arm64.json
   - artifact: https://deb.debian.org/debian-security/pool/updates/main/c/curl/libcurl4_7.88.1-10+deb12u5_amd64.deb
+    found_at: https://deb.debian.org/debian-security/pool/updates/main/c/curl/
     sha256: 619b592d51c0e75be0b153dbb671e732739d306bf22f42f8e1bc103235299f0d
     supplier: Debian
     product: libcurl4 (Debian package, amd64)
     version: "7.88.1-10+deb12u5"
     inventory: scan/corpus/truth/debian-libcurl4-amd64.json
   - artifact: https://deb.debian.org/debian-security/pool/updates/main/p/php8.2/php8.2-cli_8.2.35-1~deb12u1_amd64.deb
+    found_at: https://deb.debian.org/debian-security/pool/updates/main/p/php8.2/
     sha256: 7ba6568ba8869fc057c162a14ebea9ace2c93b360f999c0be1bcc0e1ce0c9a21
     supplier: Debian
     product: php8.2-cli (Debian package, amd64)
@@ -135,6 +155,7 @@ artifacts:
 
   # ---- closed-source and Windows installer proofs (November 2026, second round)
   - artifact: https://download.splunk.com/products/universalforwarder/releases/9.2.1/linux/splunkforwarder-9.2.1-78803f08aabb-Linux-x86_64.tgz
+    found_at: https://www.splunk.com/en_us/download/previous-releases-universal-forwarder.html
     sha256: 7a2513d410fe2c9215832e4fdbf26b7bb2429563741fb6aa84567ba93b93d414
     supplier: Splunk
     product: Splunk Universal Forwarder (Linux x86-64)
@@ -142,12 +163,14 @@ artifacts:
     inventory: scan/corpus/truth/splunk-universal-forwarder-9.2.1.json
     note: "Closed source. curl 8.5.0 is statically linked into splunkd with no 'libcurl/' string; the curl_version_info() rule finds it."
   - artifact: https://download.splunk.com/products/universalforwarder/releases/9.0.9/linux/splunkforwarder-9.0.9-6315942c563f-Linux-x86_64.tgz
+    found_at: https://www.splunk.com/en_us/download/previous-releases-universal-forwarder.html
     sha256: daf4fdcfda09d9df467af520d1a57ec17b8ab7478bc40f52590a19cd90da6f6c
     supplier: Splunk
     product: Splunk Universal Forwarder (Linux x86-64)
     version: "9.0.9"
     inventory: scan/corpus/truth/splunk-universal-forwarder-9.0.9.json
   - artifact: https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/code_1.95.3-1731513102_amd64.deb
+    found_at: https://code.visualstudio.com/updates/v1_95
     sha256: 176286acb16b5bad1f0431947c3fb17813c5a84ee85a3395c7620379a4a70086
     supplier: Microsoft
     product: Visual Studio Code (Linux .deb)
@@ -155,6 +178,7 @@ artifacts:
     inventory: scan/corpus/truth/vscode-1.95.3.json
     note: "Microsoft's closed build. Electron, Chromium and Node.js come from detect-only fingerprints; bin/code-tunnel also carries OpenSSL 3.1.4, which Microsoft's notices do not name."
   - artifact: https://2.na.dl.wireshark.org/win64/all-versions/Wireshark-4.4.19-x64.exe
+    found_at: https://2.na.dl.wireshark.org/win64/all-versions/
     sha256: 17e01432f0b23f5caa3d35f9e8bc4fefe6ae2ec8d05deb1d81676d76b2f7d2cc
     supplier: Wireshark Foundation
     product: Wireshark (Windows x64, NSIS installer)
@@ -162,6 +186,7 @@ artifacts:
     inventory: scan/corpus/truth/wireshark-4.4.19-windows-x64.json
     note: "NSIS through 7-Zip. brotli 1.2.0 comes from the BrotliDecoderVersion() export probe of a Windows DLL. Needs 7-Zip on PATH."
   - artifact: https://2.na.dl.wireshark.org/win64/all-versions/Wireshark-4.4.19-x64.msi
+    found_at: https://2.na.dl.wireshark.org/win64/all-versions/
     sha256: cc680e386a8608af2bf173e4dcc93f6be3652e269023d1ade2a85f5b36c75015
     supplier: Wireshark Foundation
     product: Wireshark (Windows x64, MSI)
@@ -169,6 +194,7 @@ artifacts:
     inventory: scan/corpus/truth/wireshark-4.4.19-windows-x64.json
     note: "Cabinet members are named by File-table keys; the MSI tables restore the installed paths (0 components before, 55 after). Needs 7-Zip on PATH. The MSI does not carry the Npcap installer, so libpcap is expected missing."
   - artifact: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.0-linux-x86_64.tar.gz
+    found_at: https://www.elastic.co/downloads/past-releases/elasticsearch-8-15-0
     sha256: d4179fe2c37b2c7ddc13d8e1f8e61e3a0fa613861310ee5f54db08784b415166
     supplier: Elastic
     product: Elasticsearch (Linux x86-64 tarball)

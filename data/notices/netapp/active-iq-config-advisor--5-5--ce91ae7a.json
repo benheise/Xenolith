@@ -69,9 +69,14 @@
 "version": "0.1.27"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/Config_Advisor/"
+],
 "extractors": [
 "source_archives"
 ],
+"found_via": "auto-discovered",
 "kind": "listing",
 "product": "Active IQ Config Advisor",
 "retrieved": "2026-11-08",

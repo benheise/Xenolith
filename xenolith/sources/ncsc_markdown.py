@@ -163,6 +163,8 @@ def ingest(
                 notes=row["notes"],
                 category=category,
                 updated=as_of,
+                found_via="hand-listed",          # the tracker repository is listed in catalog/sources.yaml
+                discovery_path=[repo_url],
             ))
     stats["assertions"] = len(out)
     stats["unmapped_cves"] = sorted(stats["unmapped_cves"])

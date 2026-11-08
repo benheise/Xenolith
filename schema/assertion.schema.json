@@ -125,6 +125,28 @@
       },
       "maxItems": 8,
       "description": "CPE vendor:product pairs naming the product, when the source gives them. Used to link the same product across sources."
+    },
+    "found_via": {
+      "enum": [
+        "hand-listed",
+        "auto-discovered",
+        "community"
+      ],
+      "description": "How the source document reached the census: listed by hand in a catalog file, found by a crawler, or contributed under community/."
+    },
+    "discovery_path": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Pages that led to the source document, from where the trail starts (aggregator, index page, directory listing, or the page a person found the link on) to the last page before the document."
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 of the bytes the statement was read from: the notices document, the submitted SBOM or the scanned artifact."
     }
   },
   "$defs": {

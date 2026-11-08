@@ -17177,10 +17177,15 @@
 "version": "2.2"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/Active_IQ_Unified_Manager/"
+],
 "extractors": [
 "component_license",
 "jar_names"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "Active IQ Unified Manager",
 "retrieved": "2026-11-08",

@@ -3685,9 +3685,14 @@
 "version": "1.5.7"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/ONTAP_Select_Deploy/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ONTAP Select Deploy",
 "retrieved": "2026-11-08",

@@ -473,9 +473,14 @@
 "version": "1.2.2"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/Service_Processor/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "Service Processor",
 "retrieved": "2026-11-08",

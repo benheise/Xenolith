@@ -8885,9 +8885,14 @@
 "version": "1.4.8"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/SnapCenter_Plug-in_for_VMware_vSphere/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "SnapCenter Plug-in for VMware vSphere",
 "retrieved": "2026-11-08",

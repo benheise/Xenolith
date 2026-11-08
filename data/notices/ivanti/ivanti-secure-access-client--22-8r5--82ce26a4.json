@@ -237,9 +237,11 @@
 "version": ""
 }
 ],
+"discovery_path": [],
 "extractors": [
 "dotted_toc"
 ],
+"found_via": "hand-listed",
 "kind": "pdf",
 "product": "Ivanti Secure Access Client",
 "retrieved": "2026-11-08",

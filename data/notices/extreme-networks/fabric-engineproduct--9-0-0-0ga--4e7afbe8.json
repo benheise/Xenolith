@@ -1993,9 +1993,13 @@
 "version": "1.2.8-alt1.M70C.1"
 }
 ],
+"discovery_path": [
+"https://www.extremenetworks.com/support/policies/open-source-declaration"
+],
 "extractors": [
 "license_groups"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "Fabric EngineProduct",
 "retrieved": "2026-11-08",

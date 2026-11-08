@@ -11881,9 +11881,14 @@
 "version": "1.5.4"
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/ONTAP/"
+],
 "extractors": [
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "ONTAP",
 "retrieved": "2026-11-08",

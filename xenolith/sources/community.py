@@ -70,5 +70,7 @@ def load(path: Path, catalog: Catalog) -> tuple[list[dict], list[str]]:
                 references=[REPO_FILE_URL],
                 notes=row["notes"],
                 updated=row["date"],
+                found_via="community",
+                discovery_path=[f"{REPO_FILE_URL}#L{n}"],
             ))
     return out, errors

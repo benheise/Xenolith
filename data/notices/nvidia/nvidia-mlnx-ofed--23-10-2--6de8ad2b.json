@@ -89,9 +89,13 @@
 "version": "1.16.0~rc4+ds"
 }
 ],
+"discovery_path": [
+"https://docs.nvidia.com/networking/display/mlnxofedv24100700/legal-notices-and-3rd-party-licenses"
+],
 "extractors": [
 "homepage_table"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "NVIDIA MLNX OFED",
 "retrieved": "2026-11-08",

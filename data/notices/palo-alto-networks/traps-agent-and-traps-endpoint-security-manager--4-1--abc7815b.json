@@ -261,9 +261,13 @@
 "version": "1.2.8"
 }
 ],
+"discovery_path": [
+"https://docs.paloaltonetworks.com/oss-listings"
+],
 "extractors": [
 "html_table"
 ],
+"found_via": "auto-discovered",
 "kind": "html",
 "product": "Traps Agent and Traps Endpoint Security Manager",
 "retrieved": "2026-11-08",

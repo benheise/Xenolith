@@ -5825,10 +5825,15 @@
 "version": ""
 }
 ],
+"discovery_path": [
+"https://opensource.netapp.com/",
+"https://opensource.netapp.com/SnapCenter/"
+],
 "extractors": [
 "tpn_list",
 "component_license"
 ],
+"found_via": "auto-discovered",
 "kind": "pdf",
 "product": "SnapCenter",
 "retrieved": "2026-11-08",

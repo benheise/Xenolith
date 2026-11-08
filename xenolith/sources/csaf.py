@@ -27,7 +27,7 @@ import yaml
 
 from .. import fetch
 from ..catalog import Catalog
-from ..model import VERDICT_PRIORITY, make_assertion, read_ndjson, slug, write_ndjson
+from ..model import VERDICT_PRIORITY, make_assertion, read_ndjson, slug, stamp, write_ndjson
 
 SOURCE_ID = "csaf"
 # Bump when parse_advisory extracts more: documents that matched the watchlist
@@ -267,14 +267,15 @@ def load_providers(config_path: Path, *, discover: bool = True) -> list[dict]:
     providers = []
     seen = set()
     for p in cfg.get("providers") or []:
-        providers.append({**defaults, **p})
+        providers.append({**defaults, **p, "found_via": "hand-listed", "discovery_path": [p["metadata"]]})
         seen.add(p["metadata"])
     if discover:
         for agg in cfg.get("discover_from_aggregators") or []:
             try:
                 for p in discover_providers(agg):
                     if p["metadata"] not in seen and p["metadata"] not in exclude:
-                        providers.append({**defaults, **p})
+                        providers.append({**defaults, **p, "found_via": "auto-discovered",
+                                          "discovery_path": [agg, p["metadata"]]})
                         seen.add(p["metadata"])
             except fetch.FetchError as e:
                 print(f"  ! aggregator {agg}: {e}")
@@ -345,6 +346,10 @@ def crawl_provider(provider: dict, *, catalog: Catalog, data_dir: Path,
 
     kept = [a for a in existing if a["source_url"] not in refreshed]
     merged = kept + new_assertions
+    if provider.get("found_via"):
+        # The trail to every advisory: (aggregator ->) provider-metadata.json -> the document.
+        for a in merged:
+            stamp(a, provider["found_via"], provider.get("discovery_path", []))
     stats["assertions"] = len(merged)
     write_ndjson(store_path, sorted(merged, key=lambda a: (a["component"], a["product_key"], a["source_url"])))
     state_path.parent.mkdir(parents=True, exist_ok=True)
@@ -369,6 +374,32 @@ def crawl(config_path: Path, *, catalog: Catalog, data_dir: Path, only: list[str
             f"{st['assertions']} assertions stored, {st['errors']} errors")
         results.append(st)
     return results
+
+
+def stamp_existing(config_path: Path, data_dir: Path) -> int:
+    """Add provenance to stored statements that have none, without fetching.
+
+    Providers listed in the config are hand-listed (their metadata URL is known);
+    the rest came from an aggregator, so the aggregator starts their trail. The next
+    crawl replaces this with the full path (aggregator, provider metadata).
+    """
+    cfg = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}
+    listed = {slug(p["name"]): p for p in load_providers(config_path, discover=False)}
+    aggregators = list(cfg.get("discover_from_aggregators") or [])
+    changed = 0
+    for store in sorted((data_dir / "assertions" / "csaf").glob("*.ndjson")):
+        rows = list(read_ndjson(store))
+        p = listed.get(store.stem)
+        fv, path = (p["found_via"], p["discovery_path"]) if p else ("auto-discovered", aggregators[:1])
+        n = 0
+        for a in rows:
+            if not a.get("found_via"):
+                stamp(a, fv, path)
+                n += 1
+        if n:
+            write_ndjson(store, rows)
+            changed += n
+    return changed
 
 
 def now_iso() -> str:

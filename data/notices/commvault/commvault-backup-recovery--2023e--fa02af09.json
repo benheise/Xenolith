@@ -45,9 +45,13 @@
 "version": "0.12.6"
 }
 ],
+"discovery_path": [
+"https://documentation.commvault.com/2023e/commcell-console/installations.html"
+],
 "extractors": [
 "name_version_lines"
 ],
+"found_via": "hand-listed",
 "kind": "html",
 "product": "Commvault Backup & Recovery",
 "retrieved": "2026-11-08",
