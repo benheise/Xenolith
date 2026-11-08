@@ -1,5 +1,7 @@
 # Xenolith
 
+> **Elevator pitch.** When a flaw lands in a widely shared component such as OpenSSL, Log4j or xz, every security team asks the same question: *which of the products we already run have it inside?* For appliances, firmware and commercial software, vendors rarely say, so each incident starts with weeks of hand-built spreadsheets that are thrown away afterwards. Xenolith keeps the answer permanently: an open, searchable census of which commercial products embed which components, where every entry links to its source and anyone can add an SBOM with one offline command. The next incident starts with a lookup instead of a scramble, and vendors who publish get the credit. ([Conference deck: PowerPoint](docs/presentations/xenolith-sbom-transparency.pptx) · [PDF](docs/presentations/xenolith-sbom-transparency.pdf))
+
 **An open census of which commercial products embed which third-party components.**
 
 🔎 **Search it:** https://benheise.github.io/Xenolith/ &nbsp;·&nbsp; 🤝 **Contribute:** [three ways, below](#contribute) &nbsp;·&nbsp; 📄 **Formats:** [CONTRIBUTING.md](CONTRIBUTING.md)
@@ -109,7 +111,7 @@ Incident trackers are ingested from local clones: `git clone --depth 1 https://g
 | `data/spine/products.ndjson` | Product registry |
 | `data/state/` | Crawl state so documents are only re-fetched when they change |
 | `design/` | Design notes, including the recommended scanning tool |
-| `docs/` | The GitHub Pages site (`index.html` + generated `data/`) |
+| `docs/` | The GitHub Pages site (`index.html` + generated `data/`) and `presentations/`, the conference deck (PowerPoint and PDF) |
 | `schema/assertion.schema.json` | JSON Schema for one statement |
 | `xenolith/` | Pipeline code (standard library + PyYAML + pypdf) |
 
