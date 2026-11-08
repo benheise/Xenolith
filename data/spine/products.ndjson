@@ -1,0 +1,733 @@
+{"cnas": [], "cpe": [], "cve_count": 175, "kev_count": 175, "key": "microsoft/windows", "last_cve": "2026-10-13", "product": "Windows", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 55, "kev_count": 55, "key": "apple/multiple-products", "last_cve": "2026-11-04", "product": "Multiple Products", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 41, "kev_count": 41, "key": "google/chromium-v8", "last_cve": "2026-09-09", "product": "Chromium V8", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 36, "kev_count": 36, "key": "microsoft/internet-explorer", "last_cve": "2026-05-20", "product": "Internet Explorer", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 33, "kev_count": 33, "key": "adobe/flash-player", "last_cve": "2024-09-17", "product": "Flash Player", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 32, "kev_count": 32, "key": "linux/kernel", "last_cve": "2026-10-28", "product": "Kernel", "supplier": "Linux"}
+{"cnas": [], "cpe": [], "cve_count": 29, "kev_count": 29, "key": "microsoft/office", "last_cve": "2026-04-14", "product": "Office", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 25, "kev_count": 25, "key": "microsoft/win32k", "last_cve": "2023-06-22", "product": "Win32k", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 17, "kev_count": 17, "key": "microsoft/exchange-server", "last_cve": "2026-04-13", "product": "Exchange Server", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 17, "kev_count": 17, "key": "synacor/zimbra-collaboration-suite-zcs", "last_cve": "2026-08-21", "product": "Zimbra Collaboration Suite (ZCS)", "supplier": "Synacor"}
+{"cnas": [], "cpe": [], "cve_count": 16, "kev_count": 16, "key": "adobe/coldfusion", "last_cve": "2026-07-07", "product": "ColdFusion", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 14, "kev_count": 14, "key": "cisco/ios-and-ios-xe-software", "last_cve": "2023-04-19", "product": "IOS and IOS XE Software", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 13, "kev_count": 13, "key": "adobe/acrobat-and-reader", "last_cve": "2026-05-20", "product": "Acrobat and Reader", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 13, "kev_count": 13, "key": "palo-alto-networks/pan-os", "last_cve": "2026-10-14", "product": "PAN-OS", "supplier": "Palo Alto Networks"}
+{"cnas": [], "cpe": [], "cve_count": 13, "kev_count": 13, "key": "samsung/mobile-devices", "last_cve": "2025-11-10", "product": "Mobile Devices", "supplier": "Samsung"}
+{"cnas": [], "cpe": [], "cve_count": 12, "kev_count": 12, "key": "oracle/weblogic-server", "last_cve": "2026-06-01", "product": "WebLogic Server", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 11, "kev_count": 11, "key": "apple/ios-ipados-and-macos", "last_cve": "2025-08-21", "product": "iOS, iPadOS, and macOS", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 11, "kev_count": 11, "key": "qualcomm/multiple-chipsets", "last_cve": "2026-03-03", "product": "Multiple Chipsets", "supplier": "Qualcomm"}
+{"cnas": [], "cpe": [], "cve_count": 10, "kev_count": 10, "key": "cisco/ios-software", "last_cve": "2022-03-03", "product": "IOS software", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 10, "kev_count": 10, "key": "microsoft/sharepoint", "last_cve": "2026-09-25", "product": "SharePoint", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 10, "kev_count": 10, "key": "sap/netweaver", "last_cve": "2025-05-15", "product": "NetWeaver", "supplier": "SAP"}
+{"cnas": [], "cpe": [], "cve_count": 9, "kev_count": 9, "key": "fortinet/fortios", "last_cve": "2026-07-27", "product": "FortiOS", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 9, "kev_count": 9, "key": "vmware/vcenter-server", "last_cve": "2024-11-20", "product": "vCenter Server", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 8, "kev_count": 8, "key": "adobe/reader-and-acrobat", "last_cve": "2022-06-08", "product": "Reader and Acrobat", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 8, "kev_count": 8, "key": "apple/ios", "last_cve": "2022-12-14", "product": "iOS", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 7, "kev_count": 7, "key": "fortinet/multiple-products", "last_cve": "2026-10-16", "product": "Multiple Products", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 7, "kev_count": 7, "key": "ivanti/endpoint-manager-mobile-epmm", "last_cve": "2026-05-07", "product": "Endpoint Manager Mobile (EPMM)", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 7, "kev_count": 7, "key": "ivanti/pulse-connect-secure", "last_cve": "2021-11-03", "product": "Pulse Connect Secure", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 7, "kev_count": 7, "key": "juniper/junos-os", "last_cve": "2025-03-13", "product": "Junos OS", "supplier": "Juniper"}
+{"cnas": [], "cpe": [], "cve_count": 7, "kev_count": 7, "key": "oracle/java-se", "last_cve": "2022-03-28", "product": "Java SE", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 7, "kev_count": 7, "key": "roundcube/webmail", "last_cve": "2026-02-20", "product": "Webmail", "supplier": "Roundcube"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "android/framework", "last_cve": "2026-06-02", "product": "Framework", "supplier": "Android"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "apache/struts", "last_cve": "2026-10-08", "product": "Struts", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "apache/tomcat", "last_cve": "2026-08-04", "product": "Tomcat", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "apple/macos", "last_cve": "2026-08-18", "product": "macOS", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "arm/mali-graphics-processing-unit-gpu", "last_cve": "2023-07-07", "product": "Mali Graphics Processing Unit (GPU)", "supplier": "Arm"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "cisco/adaptive-security-appliance-asa-and-firepower-threat-defense-ftd", "last_cve": "2024-10-24", "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "cisco/ios-xr", "last_cve": "2022-05-23", "product": "IOS XR", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "citrix/netscaler", "last_cve": "2026-10-04", "product": "NetScaler", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "google/chromium", "last_cve": "2026-02-17", "product": "Chromium", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "mozilla/firefox-and-thunderbird", "last_cve": "2022-05-23", "product": "Firefox and Thunderbird", "supplier": "Mozilla"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "oracle/fusion-middleware", "last_cve": "2025-11-21", "product": "Fusion Middleware", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 6, "kev_count": 6, "key": "zoho/manageengine", "last_cve": "2023-03-07", "product": "ManageEngine", "supplier": "Zoho"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "apple/ios-and-ipados", "last_cve": "2026-03-05", "product": "iOS and iPadOS", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "cisco/catalyst-sd-wan-manager", "last_cve": "2026-09-30", "product": "Catalyst SD-WAN Manager", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "cisco/small-business-rv160-rv260-rv340-and-rv345-series-routers", "last_cve": "2022-03-03", "product": "Small Business RV160, RV260, RV340, and RV345 Series Routers", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "citrix/netscaler-adc-and-netscaler-gateway", "last_cve": "2026-08-26", "product": "NetScaler ADC and NetScaler Gateway", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "ivanti/endpoint-manager-epm", "last_cve": "2026-03-09", "product": "Endpoint Manager (EPM)", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "langflow/langflow", "last_cve": "2026-07-21", "product": "Langflow", "supplier": "Langflow"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "microsoft/defender", "last_cve": "2026-05-20", "product": "Defender", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "microsoft/sharepoint-server", "last_cve": "2026-07-14", "product": "SharePoint Server", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "mikrotik/routeros", "last_cve": "2026-09-25", "product": "RouterOS", "supplier": "MikroTik"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "mozilla/firefox", "last_cve": "2024-10-15", "product": "Firefox", "supplier": "Mozilla"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "n-able/n-central", "last_cve": "2026-09-08", "product": "N-central", "supplier": "N-able"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "plex/media-server", "last_cve": "2026-10-20", "product": "Media Server", "supplier": "Plex"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "solarwinds/web-help-desk", "last_cve": "2026-03-09", "product": "Web Help Desk", "supplier": "SolarWinds"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "sonicwall/sma1000-appliances", "last_cve": "2026-09-02", "product": "SMA1000 Appliances", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 5, "kev_count": 5, "key": "zyxel/multiple-firewalls", "last_cve": "2024-12-03", "product": "Multiple Firewalls", "supplier": "Zyxel"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "accellion/fta", "last_cve": "2021-11-03", "product": "FTA", "supplier": "Accellion"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "adobe/commerce-and-magento", "last_cve": "2026-10-27", "product": "Commerce and Magento", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "android/pixel", "last_cve": "2024-06-13", "product": "Pixel", "supplier": "Android"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "apache/http-server", "last_cve": "2025-05-01", "product": "HTTP Server", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "apple/ios-and-macos", "last_cve": "2022-08-18", "product": "iOS and macOS", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "apple/ios-ipados-and-watchos", "last_cve": "2023-09-11", "product": "iOS, iPadOS, and watchOS", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "cisco/adaptive-security-appliance-asa", "last_cve": "2024-11-12", "product": "Adaptive Security Appliance (ASA)", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "cisco/ios-and-ios-xe", "last_cve": "2025-09-29", "product": "IOS and IOS XE", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "citrix/application-delivery-controller-adc-gateway-and-sd-wan-wanop-appliance", "last_cve": "2021-11-03", "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "connectwise/screenconnect", "last_cve": "2026-09-11", "product": "ScreenConnect", "supplier": "ConnectWise"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "craft-cms/craft-cms", "last_cve": "2026-03-20", "product": "Craft CMS", "supplier": "Craft CMS"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "fortinet/fortios-and-fortiproxy", "last_cve": "2025-03-18", "product": "FortiOS and FortiProxy", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "gigabyte/multiple-products", "last_cve": "2022-10-24", "product": "Multiple Products", "supplier": "GIGABYTE"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "jetbrains/teamcity", "last_cve": "2026-08-05", "product": "TeamCity", "supplier": "JetBrains"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "jfrog/artifactory", "last_cve": "2026-09-11", "product": "Artifactory", "supplier": "JFrog"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "microsoft/open-management-infrastructure-omi", "last_cve": "2021-11-03", "product": "Open Management Infrastructure (OMI)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "microsoft/word", "last_cve": "2023-09-12", "product": "Word", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "nagios/nagios-xi", "last_cve": "2022-01-18", "product": "Nagios XI", "supplier": "Nagios"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "oracle/e-business-suite", "last_cve": "2026-07-15", "product": "E-Business Suite", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "oracle/java-runtime-environment-jre", "last_cve": "2022-05-25", "product": "Java Runtime Environment (JRE)", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "papercut/ng-mf", "last_cve": "2026-08-31", "product": "NG/MF", "supplier": "PaperCut"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "qnap/network-attached-storage-nas", "last_cve": "2022-05-24", "product": "Network Attached Storage (NAS)", "supplier": "QNAP"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "qnap/photo-station", "last_cve": "2022-09-08", "product": "Photo Station", "supplier": "QNAP"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "rarlab/winrar", "last_cve": "2025-12-09", "product": "WinRAR", "supplier": "RARLAB"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "roundcube/roundcube-webmail", "last_cve": "2023-06-22", "product": "Roundcube Webmail", "supplier": "Roundcube"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "simplehelp/simplehelp", "last_cve": "2026-06-29", "product": "SimpleHelp", "supplier": "SimpleHelp"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "solarwinds/serv-u", "last_cve": "2026-06-05", "product": "Serv-U", "supplier": "SolarWinds"}
+{"cnas": [], "cpe": [], "cve_count": 4, "kev_count": 4, "key": "veeam/backup-replication", "last_cve": "2024-10-17", "product": "Backup & Replication", "supplier": "Veeam"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "android/kernel", "last_cve": "2024-08-07", "product": "Kernel", "supplier": "Android"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "apache/activemq", "last_cve": "2026-04-16", "product": "ActiveMQ", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "apache/ofbiz", "last_cve": "2025-02-04", "product": "OFBiz", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "arista/velocloud-orchestrator", "last_cve": "2026-10-23", "product": "VeloCloud Orchestrator", "supplier": "Arista"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "atlassian/confluence-data-center-and-server", "last_cve": "2024-01-24", "product": "Confluence Data Center and Server", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "berriai/litellm", "last_cve": "2026-09-02", "product": "LiteLLM", "supplier": "BerriAI"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "cisco/identity-services-engine", "last_cve": "2026-09-16", "product": "Identity Services Engine", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "cisco/ios-software-and-cisco-ios-xe-software", "last_cve": "2022-03-03", "product": "IOS Software and Cisco IOS XE Software", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "crushftp/crushftp", "last_cve": "2025-07-22", "product": "CrushFTP", "supplier": "CrushFTP"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "d-link/multiple-routers", "last_cve": "2022-09-08", "product": "Multiple Routers", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "dassault-systemes/delmia-apriso", "last_cve": "2025-10-28", "product": "DELMIA Apriso", "supplier": "Dassault Systèmes"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "dotnetnuke-dnn/dotnetnuke-dnn", "last_cve": "2021-11-03", "product": "DotNetNuke (DNN)", "supplier": "DotNetNuke (DNN)"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "drupal/core", "last_cve": "2026-05-22", "product": "Core", "supplier": "Drupal"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "exim/exim", "last_cve": "2022-03-25", "product": "Exim", "supplier": "Exim"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "f5/big-ip", "last_cve": "2026-03-27", "product": "BIG-IP", "supplier": "F5"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "fortinet/forticlient-ems", "last_cve": "2026-04-13", "product": "FortiClient EMS", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "fortinet/fortiweb", "last_cve": "2025-11-18", "product": "FortiWeb", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "ibm/data-risk-manager", "last_cve": "2021-11-03", "product": "Data Risk Manager", "supplier": "IBM"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "imagemagick/imagemagick", "last_cve": "2024-09-09", "product": "ImageMagick", "supplier": "ImageMagick"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "ivanti/cloud-services-appliance-csa", "last_cve": "2024-10-09", "product": "Cloud Services Appliance (CSA)", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "ivanti/connect-secure", "last_cve": "2026-10-30", "product": "Connect Secure", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "kaseya/virtual-system-server-administrator-vsa", "last_cve": "2022-05-24", "product": "Virtual System/Server Administrator (VSA)", "supplier": "Kaseya"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "meta-platforms/whatsapp", "last_cve": "2025-09-02", "product": "WhatsApp", "supplier": "Meta Platforms"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "microsoft/active-directory", "last_cve": "2022-08-18", "product": "Active Directory", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "microsoft/excel", "last_cve": "2022-03-03", "product": "Excel", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "microsoft/net-framework", "last_cve": "2025-02-04", "product": ".NET Framework", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "microsoft/silverlight", "last_cve": "2022-05-25", "product": "Silverlight", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "mitel/mivoice-connect", "last_cve": "2023-02-21", "product": "MiVoice Connect", "supplier": "Mitel"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "palo-alto-networks/expedition", "last_cve": "2024-11-14", "product": "Expedition", "supplier": "Palo Alto Networks"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "php-group/php", "last_cve": "2026-10-26", "product": "PHP", "supplier": "PHP Group"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "qlik/sense", "last_cve": "2025-01-13", "product": "Sense", "supplier": "Qlik"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "rails/ruby-on-rails", "last_cve": "2025-07-07", "product": "Ruby on Rails", "supplier": "Rails"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "saltstack/salt", "last_cve": "2021-11-03", "product": "Salt", "supplier": "SaltStack"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "sangoma/freepbx", "last_cve": "2026-02-03", "product": "FreePBX", "supplier": "Sangoma"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "smartertools/smartermail", "last_cve": "2026-02-05", "product": "SmarterMail", "supplier": "SmarterTools"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "sonicwall/sonicos", "last_cve": "2025-02-18", "product": "SonicOS", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "sonicwall/sonicwall-email-security", "last_cve": "2021-11-03", "product": "SonicWall Email Security", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "telemessage/tm-sgnl", "last_cve": "2025-07-01", "product": "TM SGNL", "supplier": "TeleMessage"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "ubiquiti/unifi-os", "last_cve": "2026-06-23", "product": "UniFi OS", "supplier": "Ubiquiti"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "veritas/backup-exec-agent", "last_cve": "2023-04-07", "product": "Backup Exec Agent", "supplier": "Veritas"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "vmware/esxi", "last_cve": "2025-03-04", "product": "ESXi", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "vmware/multiple-products", "last_cve": "2022-04-15", "product": "Multiple Products", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 3, "kev_count": 3, "key": "wordpress/core", "last_cve": "2026-09-25", "product": "Core", "supplier": "WordPress"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "adobe/commerce-and-magento-open-source", "last_cve": "2024-07-17", "product": "Commerce and Magento Open Source", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "adobe/flash-player-and-air", "last_cve": "2022-05-25", "product": "Flash Player and AIR", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "advantive/veracore", "last_cve": "2025-03-10", "product": "VeraCore", "supplier": "Advantive"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "ahsay/ahsaycbs", "last_cve": "2026-10-14", "product": "AhsayCBS", "supplier": "Ahsay"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "android/android-kernel", "last_cve": "2021-11-03", "product": "Android Kernel", "supplier": "Android"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "apache/log4j2", "last_cve": "2023-05-01", "product": "Log4j2", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "apache/solr", "last_cve": "2021-12-10", "product": "Solr", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "apache/struts-1", "last_cve": "2022-02-10", "product": "Struts 1", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "apple/os-x", "last_cve": "2022-02-10", "product": "OS X", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "arm/mali-gpu-kernel-driver", "last_cve": "2024-06-12", "product": "Mali GPU Kernel Driver", "supplier": "Arm"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "atlassian/confluence-server-and-data-center", "last_cve": "2021-11-03", "product": "Confluence Server and Data Center", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "atlassian/jira-server-and-data-center", "last_cve": "2024-11-12", "product": "Jira Server and Data Center", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "beyondtrust/privileged-remote-access-pra-and-remote-support-rs", "last_cve": "2025-01-13", "product": "Privileged Remote Access (PRA) and Remote Support (RS)", "supplier": "BeyondTrust"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "check-point/multiple-products", "last_cve": "2026-09-22", "product": "Multiple Products", "supplier": "Check Point"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/anyconnect-secure", "last_cve": "2022-10-24", "product": "AnyConnect Secure", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/hyperflex-hx", "last_cve": "2021-11-03", "product": "HyperFlex HX", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/ios", "last_cve": "2026-07-13", "product": "IOS", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/ios-xe-software", "last_cve": "2022-03-03", "product": "IOS XE Software", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/ios-xr-and-xe-software", "last_cve": "2022-03-03", "product": "IOS, XR, and XE Software", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/secure-email-gateway", "last_cve": "2026-10-14", "product": "Secure Email Gateway", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/secure-firewall-adaptive-security-appliance-and-secure-firewall-threat-defense", "last_cve": "2025-09-25", "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/secure-firewall-management-center-fmc", "last_cve": "2026-07-29", "product": "Secure Firewall Management Center (FMC)", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cisco/unified-communications-manager", "last_cve": "2026-06-25", "product": "Unified Communications Manager", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "citrix/netscaler-adc-and-gateway", "last_cve": "2025-07-10", "product": "NetScaler ADC and Gateway", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "citrix/sd-wan-and-netscaler", "last_cve": "2022-03-25", "product": "SD-WAN and NetScaler", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "citrix/session-recording", "last_cve": "2025-08-25", "product": "Session Recording", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cleo/multiple-products", "last_cve": "2024-12-17", "product": "Multiple Products", "supplier": "Cleo"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cwp/control-web-panel", "last_cve": "2025-11-04", "product": "Control Web Panel", "supplier": "CWP"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "cyberpersons/cyberpanel", "last_cve": "2024-12-04", "product": "CyberPanel", "supplier": "CyberPersons"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "d-link/dcs-2530l-and-dcs-2670l-devices", "last_cve": "2025-08-05", "product": "DCS-2530L and DCS-2670L Devices", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "d-link/dir-859-router", "last_cve": "2025-06-25", "product": "DIR-859 Router", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "d-link/multiple-nas-devices", "last_cve": "2024-04-11", "product": "Multiple NAS Devices", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "dahua/ip-camera-firmware", "last_cve": "2024-08-21", "product": "IP Camera Firmware", "supplier": "Dahua"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "dasan/gigabit-passive-optical-network-gpon-routers", "last_cve": "2022-03-31", "product": "Gigabit Passive Optical Network (GPON) Routers", "supplier": "Dasan"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "draytek/multiple-vigor-routers", "last_cve": "2024-09-30", "product": "Multiple Vigor Routers", "supplier": "DrayTek"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "draytek/vigorconnect", "last_cve": "2024-09-03", "product": "VigorConnect", "supplier": "DrayTek"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "drupal/drupal-core", "last_cve": "2022-01-18", "product": "Drupal core", "supplier": "Drupal"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "elastic/elasticsearch", "last_cve": "2022-03-25", "product": "Elasticsearch", "supplier": "Elastic"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "eyesofnetwork/eyesofnetwork", "last_cve": "2021-11-03", "product": "EyesOfNetwork", "supplier": "EyesOfNetwork"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "f5/big-ip-configuration-utility", "last_cve": "2023-10-31", "product": "BIG-IP Configuration Utility", "supplier": "F5"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "fortinet/fortisandbox", "last_cve": "2026-07-16", "product": "FortiSandbox", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "fortra/cobalt-strike", "last_cve": "2023-03-30", "product": "Cobalt Strike", "supplier": "Fortra"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "fortra/goanywhere-mft", "last_cve": "2025-09-29", "product": "GoAnywhere MFT", "supplier": "Fortra"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "geovision/multiple-devices", "last_cve": "2025-05-07", "product": "Multiple Devices", "supplier": "GeoVision"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "gitlab/community-and-enterprise-editions", "last_cve": "2026-02-03", "product": "Community and Enterprise Editions", "supplier": "GitLab"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "gitlab/community-edition-and-enterprise-edition", "last_cve": "2026-10-29", "product": "Community Edition and Enterprise Edition", "supplier": "GitLab"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "gladinet/centrestack-and-triofox", "last_cve": "2025-12-15", "product": "CentreStack and Triofox", "supplier": "Gladinet"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "gnu/bourne-again-shell-bash", "last_cve": "2022-01-28", "product": "Bourne-Again Shell (Bash)", "supplier": "GNU"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "google/chromium-blink", "last_cve": "2021-11-03", "product": "Chromium Blink", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "google/chromium-intents", "last_cve": "2022-08-18", "product": "Chromium Intents", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "google/chromium-mojo", "last_cve": "2025-03-27", "product": "Chromium Mojo", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "google/chromium-skia", "last_cve": "2023-11-30", "product": "Chromium Skia", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "google/pixel", "last_cve": "2026-09-16", "product": "Pixel", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "grafana-labs/grafana", "last_cve": "2025-10-09", "product": "Grafana", "supplier": "Grafana Labs"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "hitachi-vantara/pentaho-business-analytics-ba-server", "last_cve": "2025-03-03", "product": "Pentaho Business Analytics (BA) Server", "supplier": "Hitachi Vantara"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "ivanti/connect-secure-and-policy-secure", "last_cve": "2024-01-10", "product": "Connect Secure and Policy Secure", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "ivanti/connect-secure-policy-secure-and-zta-gateways", "last_cve": "2025-04-04", "product": "Connect Secure, Policy Secure, and ZTA Gateways", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "ivanti/sentry", "last_cve": "2026-06-11", "product": "Sentry", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "kentico/xperience-cms", "last_cve": "2025-10-20", "product": "Xperience CMS", "supplier": "Kentico"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "litespeed/cpanel-plugin", "last_cve": "2026-06-15", "product": "cPanel Plugin", "supplier": "LiteSpeed"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "metabase/metabase", "last_cve": "2026-08-11", "product": "Metabase", "supplier": "Metabase"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/directx-graphics-kernel-dxgkrnl", "last_cve": "2022-03-28", "product": "DirectX Graphics Kernel (DXGKRNL)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/edge", "last_cve": "2022-03-28", "product": "Edge", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/edge-and-internet-explorer", "last_cve": "2022-03-28", "product": "Edge and Internet Explorer", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/enhanced-cryptographic-provider", "last_cve": "2021-11-03", "product": "Enhanced Cryptographic Provider", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/graphics-device-interface-gdi", "last_cve": "2022-03-25", "product": "Graphics Device Interface (GDI)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/mshtml", "last_cve": "2021-11-03", "product": "MSHTML", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/powerpoint", "last_cve": "2022-06-08", "product": "PowerPoint", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/smbv1", "last_cve": "2022-02-10", "product": "SMBv1", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/smbv1-server", "last_cve": "2022-05-24", "product": "SMBv1 server", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/sql-server", "last_cve": "2026-08-26", "product": "SQL Server", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "microsoft/xml-core-services", "last_cve": "2022-06-08", "product": "XML Core Services", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "minio/minio", "last_cve": "2023-09-19", "product": "MinIO", "supplier": "MinIO"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "mitel/micollab", "last_cve": "2025-01-07", "product": "MiCollab", "supplier": "Mitel"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "netgear/multiple-devices", "last_cve": "2022-09-08", "product": "Multiple Devices", "supplier": "NETGEAR"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "openplc/scadabr", "last_cve": "2025-12-03", "product": "ScadaBR", "supplier": "OpenPLC"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "oracle/agile-product-lifecycle-management-plm", "last_cve": "2025-02-24", "product": "Agile Product Lifecycle Management (PLM)", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "osgeo/geoserver", "last_cve": "2025-12-11", "product": "GeoServer", "supplier": "OSGeo"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "paessler/prtg-network-monitor", "last_cve": "2025-02-04", "product": "PRTG Network Monitor", "supplier": "Paessler"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "pear/archive-tar", "last_cve": "2022-08-25", "product": "Archive_Tar", "supplier": "PEAR"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "progress/whatsup-gold", "last_cve": "2025-03-03", "product": "WhatsUp Gold", "supplier": "Progress"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "ptzoptics/pt30x-sdi-ndi-cameras", "last_cve": "2024-11-04", "product": "PT30X-SDI/NDI Cameras", "supplier": "PTZOptics"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "red-hat/jboss", "last_cve": "2022-05-25", "product": "JBoss", "supplier": "Red Hat"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "red-hat/polkit", "last_cve": "2023-05-12", "product": "Polkit", "supplier": "Red Hat"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "samsung/magicinfo-9-server", "last_cve": "2026-04-24", "product": "MagicINFO 9 Server", "supplier": "Samsung"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "servicenow/utah-vancouver-and-washington-dc-now-platform", "last_cve": "2024-07-29", "product": "Utah, Vancouver, and Washington DC Now Platform", "supplier": "ServiceNow"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "sitecore/cms-and-experience-platform-xp", "last_cve": "2025-03-26", "product": "CMS and Experience Platform (XP)", "supplier": "Sitecore"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "sonicwall/sma100", "last_cve": "2022-03-28", "product": "SMA100", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "sonicwall/sma100-appliances", "last_cve": "2025-05-01", "product": "SMA100 Appliances", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "sophos/firewall", "last_cve": "2022-09-23", "product": "Firewall", "supplier": "Sophos"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "sudo/sudo", "last_cve": "2025-09-29", "product": "Sudo", "supplier": "Sudo"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "sysaid/sysaid-on-prem", "last_cve": "2025-07-22", "product": "SysAid On-Prem", "supplier": "SysAid"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "telerik/user-interface-ui-for-asp-net-ajax", "last_cve": "2023-01-26", "product": "User Interface (UI) for ASP.NET AJAX", "supplier": "Telerik"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "tibco/jasperreports", "last_cve": "2022-12-29", "product": "JasperReports", "supplier": "TIBCO"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "tp-link/multiple-routers", "last_cve": "2025-09-03", "product": "Multiple Routers", "supplier": "TP-Link"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "trend-micro/apex-one", "last_cve": "2026-05-21", "product": "Apex One", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "trend-micro/apex-one-and-officescan", "last_cve": "2021-11-03", "product": "Apex One and OfficeScan", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "trend-micro/apex-one-apex-one-as-a-service-and-worry-free-business-security", "last_cve": "2021-11-03", "product": "Apex One, Apex One as a Service, and Worry-Free Business Security", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "trueconf/server", "last_cve": "2026-08-20", "product": "Server", "supplier": "TrueConf"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "unraid/unraid", "last_cve": "2021-11-03", "product": "Unraid", "supplier": "Unraid"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "vbulletin/vbulletin", "last_cve": "2021-11-03", "product": "vBulletin", "supplier": "vBulletin"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "watchguard/firebox", "last_cve": "2025-12-19", "product": "Firebox", "supplier": "WatchGuard"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "wing-ftp-server/wing-ftp-server", "last_cve": "2026-03-16", "product": "Wing FTP Server", "supplier": "Wing FTP Server"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "wso2/multiple-products", "last_cve": "2026-09-24", "product": "Multiple Products", "supplier": "WSO2"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "zabbix/frontend", "last_cve": "2022-02-22", "product": "Frontend", "supplier": "Zabbix"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "zammad-gmbh/zammad", "last_cve": "2026-10-02", "product": "Zammad", "supplier": "Zammad GmbH"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "zyxel/dsl-cpe-devices", "last_cve": "2025-02-11", "product": "DSL CPE Devices", "supplier": "Zyxel"}
+{"cnas": [], "cpe": [], "cve_count": 2, "kev_count": 2, "key": "zyxel/multiple-network-attached-storage-nas-devices", "last_cve": "2023-06-23", "product": "Multiple Network-Attached Storage (NAS) Devices", "supplier": "Zyxel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "7-zip/7-zip", "last_cve": "2025-02-06", "product": "7-Zip", "supplier": "7-Zip"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "acclaim-systems/usaherds", "last_cve": "2024-12-23", "product": "USAHERDS", "supplier": "Acclaim Systems"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "acronis/backup", "last_cve": "2026-09-16", "product": "Backup", "supplier": "Acronis"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "acronis/cyber-infrastructure-aci", "last_cve": "2024-07-29", "product": "Cyber Infrastructure (ACI)", "supplier": "Acronis"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "adminer/adminer", "last_cve": "2025-09-29", "product": "Adminer", "supplier": "Adminer"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "adobe/acrobat", "last_cve": "2026-04-13", "product": "Acrobat", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "adobe/acrobat-and-reader-flash-player", "last_cve": "2022-06-08", "product": "Acrobat and Reader, Flash Player", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "adobe/blazeds", "last_cve": "2022-03-07", "product": "BlazeDS", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "adobe/experience-manager-aem-forms", "last_cve": "2025-10-15", "product": "Experience Manager (AEM) Forms", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "adobe/reader", "last_cve": "2022-03-03", "product": "Reader", "supplier": "Adobe"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ajax-net-professional/ajax-net-professional", "last_cve": "2026-08-26", "product": "Ajax.NET Professional", "supplier": "Ajax.NET Professional"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "alcatel/omnipcx-enterprise", "last_cve": "2022-04-15", "product": "OmniPCX Enterprise", "supplier": "Alcatel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "amcrest/cameras-and-network-video-recorder-nvr", "last_cve": "2021-11-03", "product": "Cameras and Network Video Recorder (NVR)", "supplier": "Amcrest"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ami/megarac-spx", "last_cve": "2025-06-25", "product": "MegaRAC SPx", "supplier": "AMI"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "android/android-os", "last_cve": "2022-09-08", "product": "Android OS", "supplier": "Android"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "android/runtime", "last_cve": "2025-09-04", "product": "Runtime", "supplier": "Android"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/airflow", "last_cve": "2022-01-18", "product": "Airflow", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/airflow-s-experimental-api", "last_cve": "2022-01-18", "product": "Airflow's Experimental API", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/apache", "last_cve": "2021-12-01", "product": "Apache", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/apisix", "last_cve": "2022-08-25", "product": "APISIX", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/couchdb", "last_cve": "2022-08-25", "product": "CouchDB", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/flink", "last_cve": "2024-05-23", "product": "Flink", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/hugegraph-server", "last_cve": "2024-09-18", "product": "HugeGraph-Server", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/kylin", "last_cve": "2022-03-25", "product": "Kylin", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/rocketmq", "last_cve": "2023-09-06", "product": "RocketMQ", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/shiro", "last_cve": "2021-11-03", "product": "Shiro", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/spark", "last_cve": "2023-03-07", "product": "Spark", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/struts-2", "last_cve": "2022-01-21", "product": "Struts 2", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apache/superset", "last_cve": "2024-01-08", "product": "Superset", "supplier": "Apache"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "apple/ios-macos-watchos", "last_cve": "2022-08-25", "product": "iOS, macOS, watchOS", "supplier": "Apple"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "aquasecurity/trivy", "last_cve": "2026-03-26", "product": "Trivy", "supplier": "Aquasecurity"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "arcadyan/buffalo-firmware", "last_cve": "2021-11-03", "product": "Buffalo Firmware", "supplier": "Arcadyan"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "arcserve/unified-data-protection-udp", "last_cve": "2022-03-25", "product": "Unified Data Protection (UDP)", "supplier": "Arcserve"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "arista/extensible-operating-system", "last_cve": "2026-06-09", "product": "Extensible Operating System", "supplier": "Arista"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "arm/trusted-firmware", "last_cve": "2021-11-03", "product": "Trusted Firmware", "supplier": "Arm"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "array-networks/ag-vxag-arrayos", "last_cve": "2024-11-25", "product": "AG/vxAG ArrayOS", "supplier": "Array Networks"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "array-networks/arrayos-ag", "last_cve": "2025-12-08", "product": "ArrayOS AG", "supplier": "Array Networks"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "artifex/ghostscript", "last_cve": "2022-05-24", "product": "Ghostscript", "supplier": "Artifex"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "asus/live-update", "last_cve": "2025-12-17", "product": "Live Update", "supplier": "ASUS"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "asus/routers", "last_cve": "2025-06-02", "product": "Routers", "supplier": "ASUS"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "asus/rt-ax55-routers", "last_cve": "2025-06-02", "product": "RT-AX55 Routers", "supplier": "ASUS"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "atlassian/bitbucket-server-and-data-center", "last_cve": "2022-09-30", "product": "Bitbucket Server and Data Center", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "atlassian/confluence", "last_cve": "2022-07-29", "product": "Confluence", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "atlassian/confluence-server", "last_cve": "2022-03-28", "product": "Confluence Server", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "atlassian/confluence-server-and-data-server", "last_cve": "2021-11-03", "product": "Confluence Server and Data Server", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "atlassian/confluence-server-data-center", "last_cve": "2022-06-02", "product": "Confluence Server/Data Center", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "atlassian/crowd-and-crowd-data-center", "last_cve": "2021-11-03", "product": "Crowd and Crowd Data Center", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "atlassian/multiple-products", "last_cve": "2026-10-15", "product": "Multiple Products", "supplier": "Atlassian"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "audinate/dante-discovery", "last_cve": "2025-02-06", "product": "Dante Discovery", "supplier": "Audinate"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "aviatrix/aviatrix-controller", "last_cve": "2022-01-18", "product": "Aviatrix Controller", "supplier": "Aviatrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "aviatrix/controllers", "last_cve": "2025-01-16", "product": "Controllers", "supplier": "Aviatrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "balbooa/forms", "last_cve": "2026-07-10", "product": "Forms", "supplier": "Balbooa"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "barracuda-networks/email-security-gateway-esg-appliance", "last_cve": "2023-05-26", "product": "Email Security Gateway (ESG) Appliance", "supplier": "Barracuda Networks"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "beyondtrust/remote-support", "last_cve": "2026-10-16", "product": "Remote Support", "supplier": "BeyondTrust"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "beyondtrust/remote-support-rs-and-privileged-remote-access-pra", "last_cve": "2026-02-13", "product": "Remote Support (RS) and Privileged Remote Access (PRA)", "supplier": "BeyondTrust"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "bqe/billquick-web-suite", "last_cve": "2021-11-03", "product": "BillQuick Web Suite", "supplier": "BQE"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "broadcom/brocade-fabric-os", "last_cve": "2025-04-28", "product": "Brocade Fabric OS", "supplier": "Broadcom"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "broadcom/vmware-aria-operations", "last_cve": "2026-03-03", "product": "VMware Aria Operations", "supplier": "Broadcom"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "broadcom/vmware-aria-operations-and-vmware-tools", "last_cve": "2025-10-30", "product": "VMware Aria Operations and VMware Tools", "supplier": "Broadcom"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "broadcom/vmware-esx", "last_cve": "2026-10-28", "product": "VMware ESX", "supplier": "Broadcom"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "broadcom/vmware-vcenter", "last_cve": "2026-08-18", "product": "VMware vCenter", "supplier": "Broadcom"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "broadcom/vmware-vcenter-server", "last_cve": "2026-01-23", "product": "VMware vCenter Server", "supplier": "Broadcom"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cacti/cacti", "last_cve": "2023-02-16", "product": "Cacti", "supplier": "Cacti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "chakracore/chakracore-scripting-engine", "last_cve": "2022-03-03", "product": "ChakraCore scripting engine", "supplier": "ChakraCore"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "check-point/quantum-security-gateways", "last_cve": "2024-05-30", "product": "Quantum Security Gateways", "supplier": "Check Point"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "check-point/security-gateway", "last_cve": "2026-06-08", "product": "Security Gateway", "supplier": "Check Point"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "check-point/smartconsole", "last_cve": "2026-07-22", "product": "SmartConsole", "supplier": "Check Point"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "checkbox/checkbox-survey", "last_cve": "2022-04-11", "product": "Checkbox Survey", "supplier": "Checkbox"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/adaptive-security-appliance-and-firepower-threat-defense", "last_cve": "2023-09-13", "product": "Adaptive Security Appliance and Firepower Threat Defense", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/catalyst-4500-series-switches-and-cisco-catalyst-4500-x-series-switches", "last_cve": "2022-03-03", "product": "Catalyst 4500 Series Switches and Cisco Catalyst 4500-X Series Switches", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/catalyst-6800-series-switches", "last_cve": "2022-03-03", "product": "Catalyst 6800 Series Switches", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/catalyst-sd-wan", "last_cve": "2026-05-14", "product": "Catalyst SD-WAN", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/catalyst-sd-wan-controller-and-manager", "last_cve": "2026-02-25", "product": "Catalyst SD-WAN Controller and Manager", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/catalyst-sd-wan-manger", "last_cve": "2026-04-20", "product": "Catalyst SD-WAN Manger", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/cisco-ios-xe-web-ui", "last_cve": "2023-10-23", "product": "Cisco IOS XE Web UI", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/cisco-ip-phones", "last_cve": "2021-11-03", "product": "Cisco IP Phones", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/ios-ios-xr-and-ios-xe", "last_cve": "2023-05-19", "product": "IOS, IOS XR, and IOS XE", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/ios-xe-web-ui", "last_cve": "2023-10-16", "product": "IOS XE Web UI", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/multiple-products", "last_cve": "2025-12-17", "product": "Multiple Products", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/nx-os", "last_cve": "2024-07-02", "product": "NX-OS", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/prime-data-center-network-manager-dcnm", "last_cve": "2022-03-25", "product": "Prime Data Center Network Manager (DCNM)", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/rv-series-routers", "last_cve": "2022-06-08", "product": "RV Series Routers", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/sd-wan", "last_cve": "2026-02-25", "product": "SD-WAN", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/secure-access-control-system-acs", "last_cve": "2022-03-25", "product": "Secure Access Control System (ACS)", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/secure-firewall-adaptive-security-appliance-asa-and-secure-firewall-threat-defense-ftd", "last_cve": "2026-08-11", "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/secure-firewall-asa-software-and-cisco-secure-ftd-software", "last_cve": "2026-10-29", "product": "Secure Firewall ASA Software and Cisco Secure FTD Software", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/secure-firewall-management-center-fmc-and-security-cloud-control-scc-firewall-management", "last_cve": "2026-09-09", "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/small-business-rv-series-routers", "last_cve": "2025-03-03", "product": "Small Business RV Series Routers", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/small-business-rv320-and-rv325-dual-gigabit-wan-vpn-routers", "last_cve": "2022-03-03", "product": "Small Business RV320 and RV325 Dual Gigabit WAN VPN Routers", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/small-business-rv320-and-rv325-routers", "last_cve": "2021-11-03", "product": "Small Business RV320 and RV325 Routers", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/smart-licensing-utility", "last_cve": "2025-03-31", "product": "Smart Licensing Utility", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "cisco/vpn-routers", "last_cve": "2022-03-25", "product": "VPN Routers", "supplier": "Cisco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "citrix/application-delivery-controller-adc-and-gateway", "last_cve": "2022-12-13", "product": "Application Delivery Controller (ADC) and Gateway", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "citrix/content-collaboration", "last_cve": "2023-08-16", "product": "Content Collaboration", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "citrix/netscaler-sd-wan-enterprise-cloudbridge-virtual-wan-and-xenmobile-server", "last_cve": "2022-03-25", "product": "NetScaler SD-WAN Enterprise, CloudBridge Virtual WAN, and XenMobile Server", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "citrix/sharefile", "last_cve": "2022-03-25", "product": "ShareFile", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "citrix/storefront-server", "last_cve": "2021-11-03", "product": "StoreFront Server", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "citrix/workspace-application-and-receiver-for-windows", "last_cve": "2021-11-03", "product": "Workspace Application and Receiver for Windows", "supplier": "Citrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "code-aurora/acdb-audio-driver", "last_cve": "2022-09-15", "product": "ACDB Audio Driver", "supplier": "Code Aurora"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "collabora/collabora-online-built-in-code-server", "last_cve": "2026-10-23", "product": "Collabora Online – Built-in CODE Server", "supplier": "Collabora"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "commvault/command-center", "last_cve": "2025-05-02", "product": "Command Center", "supplier": "Commvault"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "commvault/web-server", "last_cve": "2025-04-28", "product": "Web Server", "supplier": "Commvault"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "crestron/multiple-products", "last_cve": "2022-04-15", "product": "Multiple Products", "supplier": "Crestron"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link-and-trendnet/multiple-devices", "last_cve": "2022-03-25", "product": "Multiple Devices", "supplier": "D-Link and TRENDnet"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dcs-930l-devices", "last_cve": "2022-03-25", "product": "DCS-930L Devices", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-300-router", "last_cve": "2022-09-08", "product": "DIR-300 Router", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-600-router", "last_cve": "2024-05-16", "product": "DIR-600 Router", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-605-router", "last_cve": "2024-05-16", "product": "DIR-605 Router", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-610-devices", "last_cve": "2022-03-25", "product": "DIR-610 Devices", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-645-router", "last_cve": "2022-02-10", "product": "DIR-645 Router", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-820-router", "last_cve": "2024-09-30", "product": "DIR-820 Router", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-820l", "last_cve": "2022-09-08", "product": "DIR-820L", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-823x", "last_cve": "2026-04-24", "product": "DIR-823X", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dir-825-r1-devices", "last_cve": "2021-11-03", "product": "DIR-825 R1 Devices", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dnr-322l", "last_cve": "2025-08-05", "product": "DNR-322L", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dns-320-device", "last_cve": "2021-11-03", "product": "DNS-320 Device", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dns-320-storage-device", "last_cve": "2022-04-15", "product": "DNS-320 Storage Device", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dsl-2750b-devices", "last_cve": "2024-01-08", "product": "DSL-2750B Devices", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dsl-2760u", "last_cve": "2022-03-25", "product": "DSL-2760U", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/dwl-2600ap-access-point", "last_cve": "2023-06-29", "product": "DWL-2600AP Access Point", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "d-link/routers", "last_cve": "2025-12-08", "product": "Routers", "supplier": "D-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "daemon/daemon-tools-lite", "last_cve": "2026-05-27", "product": "Daemon Tools Lite", "supplier": "Daemon"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "dd-wrt/dd-wrt", "last_cve": "2026-07-21", "product": "DD-WRT", "supplier": "DD-WRT"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "dell/dbutil-driver", "last_cve": "2022-03-31", "product": "dbutil Driver", "supplier": "Dell"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "dell/recoverpoint-for-virtual-machines-rp4vms", "last_cve": "2026-02-18", "product": "RecoverPoint for Virtual Machines (RP4VMs)", "supplier": "Dell"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "delta-electronics/dopsoft-2", "last_cve": "2022-08-25", "product": "DOPSoft 2", "supplier": "Delta Electronics"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "digiever/ds-2105-pro", "last_cve": "2025-12-22", "product": "DS-2105 Pro", "supplier": "Digiever"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "docker/desktop-community-edition", "last_cve": "2021-11-03", "product": "Desktop Community Edition", "supplier": "Docker"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "dotcms/dotcms", "last_cve": "2022-08-25", "product": "dotCMS", "supplier": "dotCMS"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "draytek/vigor-routers", "last_cve": "2025-05-15", "product": "Vigor Routers", "supplier": "DrayTek"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "edimax/ic-7100-ip-camera", "last_cve": "2025-03-19", "product": "IC-7100 IP Camera", "supplier": "Edimax"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "eg-secure-solutions/siteguard-server-edition", "last_cve": "2026-10-20", "product": "SiteGuard Server Edition", "supplier": "EG Secure Solutions"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "elastic/kibana", "last_cve": "2022-01-10", "product": "Kibana", "supplier": "Elastic"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "embedthis/goahead", "last_cve": "2021-12-10", "product": "GoAhead", "supplier": "Embedthis"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "erlang/erlang-otp", "last_cve": "2025-06-09", "product": "Erlang/OTP", "supplier": "Erlang"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "exim/exim-internet-mailer", "last_cve": "2022-03-03", "product": "Exim Internet Mailer", "supplier": "Exim"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "exim/mail-transfer-agent-mta", "last_cve": "2022-01-10", "product": "Mail Transfer Agent (MTA)", "supplier": "Exim"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "f5/big-ip-and-big-iq-centralized-management", "last_cve": "2021-11-03", "product": "BIG-IP and BIG-IQ Centralized Management", "supplier": "F5"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "f5/big-ip-apm", "last_cve": "2026-09-22", "product": "BIG-IP APM", "supplier": "F5"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "f5/big-ip-traffic-management-microkernel", "last_cve": "2022-01-18", "product": "BIG-IP Traffic Management Microkernel", "supplier": "F5"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "fatpipe/warp-ipvpn-and-mpvpn-software", "last_cve": "2022-01-10", "product": "WARP, IPVPN, and MPVPN software", "supplier": "FatPipe"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "forgerock/access-management-am", "last_cve": "2021-11-03", "product": "Access Management (AM)", "supplier": "ForgeRock"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "fortinet/fortimail", "last_cve": "2026-10-01", "product": "FortiMail", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "fortinet/fortimanager", "last_cve": "2024-10-23", "product": "FortiManager", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "fortinet/fortios-and-fortiadc", "last_cve": "2022-09-08", "product": "FortiOS and FortiADC", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "fortinet/fortios-and-fortiproxy-ssl-vpn", "last_cve": "2023-06-13", "product": "FortiOS and FortiProxy SSL-VPN", "supplier": "Fortinet"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "freetype/freetype", "last_cve": "2025-05-06", "product": "FreeType", "supplier": "FreeType"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "fuel-cms/fuel-cms", "last_cve": "2021-12-10", "product": "Fuel CMS", "supplier": "Fuel CMS"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "fxc/ae1021-ae1021pe", "last_cve": "2023-12-21", "product": "AE1021, AE1021PE", "supplier": "FXC"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "git/git", "last_cve": "2025-08-25", "product": "Git", "supplier": "Git"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gitea/gitea", "last_cve": "2026-08-25", "product": "Gitea", "supplier": "Gitea"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gitlab/gitlab", "last_cve": "2026-02-18", "product": "GitLab", "supplier": "GitLab"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gitlab/gitlab-ce-ee", "last_cve": "2024-05-01", "product": "GitLab CE/EE", "supplier": "GitLab"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gladinet/centrestack", "last_cve": "2025-04-08", "product": "CentreStack", "supplier": "Gladinet"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gladinet/triofox", "last_cve": "2025-11-12", "product": "Triofox", "supplier": "Gladinet"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gnu/gnu-bash", "last_cve": "2025-10-02", "product": "GNU Bash", "supplier": "GNU"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gnu/gnu-c-library", "last_cve": "2023-11-21", "product": "GNU C Library", "supplier": "GNU"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gnu/inetutils", "last_cve": "2026-01-26", "product": "InetUtils", "supplier": "GNU"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "gogs/gogs", "last_cve": "2026-01-12", "product": "Gogs", "supplier": "Gogs"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/brotli", "last_cve": "2026-10-27", "product": "Brotli", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chrome", "last_cve": "2021-11-03", "product": "Chrome", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chrome-blink", "last_cve": "2022-05-23", "product": "Chrome Blink", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chrome-for-android-ui", "last_cve": "2021-11-03", "product": "Chrome for Android UI", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chrome-freetype", "last_cve": "2021-11-03", "product": "Chrome FreeType", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chrome-media", "last_cve": "2022-01-10", "product": "Chrome Media", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chrome-webaudio", "last_cve": "2022-05-23", "product": "Chrome WebAudio", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-animation", "last_cve": "2022-02-15", "product": "Chromium Animation", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-gpu", "last_cve": "2022-11-28", "product": "Chromium GPU", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-indexed-db-api", "last_cve": "2021-11-03", "product": "Chromium Indexed DB API", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-libvpx", "last_cve": "2023-10-02", "product": "Chromium libvpx", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-network-service", "last_cve": "2023-03-30", "product": "Chromium Network Service", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-popupblocker", "last_cve": "2022-06-27", "product": "Chromium PopupBlocker", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-portals", "last_cve": "2021-11-03", "product": "Chromium Portals", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-webgl", "last_cve": "2021-11-03", "product": "Chromium WebGL", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-webp", "last_cve": "2023-09-13", "product": "Chromium WebP", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/chromium-webrtc", "last_cve": "2024-01-02", "product": "Chromium WebRTC", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/dawn", "last_cve": "2026-04-01", "product": "Dawn", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "google/skia", "last_cve": "2026-03-13", "product": "Skia", "supplier": "Google"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "grandstream/ucm6200", "last_cve": "2022-01-28", "product": "UCM6200", "supplier": "Grandstream"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "hewlett-packard-enterprise-hpe/oneview", "last_cve": "2026-01-07", "product": "OneView", "supplier": "Hewlett Packard Enterprise (HPE)"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "hewlett-packard-hp/openview-network-node-manager", "last_cve": "2022-03-25", "product": "OpenView Network Node Manager", "supplier": "Hewlett Packard (HP)"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "hewlett-packard-hp/procurve-manager-pcm-pcm-identity-driven-manager-idm-and-application-lifecycle-management", "last_cve": "2022-03-25", "product": "ProCurve Manager (PCM), PCM+, Identity Driven Manager (IDM), and Application Lifecycle Management", "supplier": "Hewlett Packard (HP)"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "hikvision/multiple-products", "last_cve": "2026-03-05", "product": "Multiple Products", "supplier": "Hikvision"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "hikvision/security-cameras-web-server", "last_cve": "2022-01-10", "product": "Security cameras web server", "supplier": "Hikvision"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ibm/aspera-faspex", "last_cve": "2023-02-21", "product": "Aspera Faspex", "supplier": "IBM"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ibm/infosphere-biginsights", "last_cve": "2022-05-25", "product": "InfoSphere BigInsights", "supplier": "IBM"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ibm/langflow", "last_cve": "2026-08-04", "product": "Langflow", "supplier": "IBM"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ibm/planning-analytics", "last_cve": "2021-11-03", "product": "Planning Analytics", "supplier": "IBM"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ibm/websphere-application-server-and-server-hypervisor-edition", "last_cve": "2022-01-10", "product": "WebSphere Application Server and Server Hypervisor Edition", "supplier": "IBM"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "icagenda/icagenda", "last_cve": "2026-07-10", "product": "iCagenda", "supplier": "iCagenda"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ietf/http-2", "last_cve": "2023-10-10", "product": "HTTP/2", "supplier": "IETF"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ietf/service-location-protocol-slp", "last_cve": "2023-11-08", "product": "Service Location Protocol (SLP)", "supplier": "IETF"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "igel/igel-os", "last_cve": "2025-10-14", "product": "IGEL OS", "supplier": "IGEL"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ignite-realtime/openfire", "last_cve": "2023-08-24", "product": "Openfire", "supplier": "Ignite Realtime"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "indusoft/web-studio", "last_cve": "2022-04-15", "product": "Web Studio", "supplier": "InduSoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "intel/active-management-technology-amt-small-business-technology-sbt-and-standard-manageability", "last_cve": "2022-01-28", "product": "Active Management Technology (AMT), Small Business Technology (SBT), and Standard Manageability", "supplier": "Intel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "intel/ethernet-diagnostics-driver-for-windows", "last_cve": "2023-02-10", "product": "Ethernet Diagnostics Driver for Windows", "supplier": "Intel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "isc/bind", "last_cve": "2026-10-08", "product": "BIND", "supplier": "ISC"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ivanti/cloud-services-appliance", "last_cve": "2024-09-13", "product": "Cloud Services Appliance", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ivanti/connect-secure-policy-secure-and-neurons", "last_cve": "2024-01-31", "product": "Connect Secure, Policy Secure, and Neurons", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ivanti/endpoint-manager-cloud-service-appliance-epm-csa", "last_cve": "2024-03-25", "product": "Endpoint Manager Cloud Service Appliance (EPM CSA)", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ivanti/endpoint-manager-mobile-epmm-and-mobileiron-core", "last_cve": "2024-01-18", "product": "Endpoint Manager Mobile (EPMM) and MobileIron Core", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ivanti/mobileiron-multiple-products", "last_cve": "2021-11-03", "product": "MobileIron Multiple Products", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ivanti/pulse-connect-secure-and-pulse-policy-secure", "last_cve": "2021-11-03", "product": "Pulse Connect Secure and Pulse Policy Secure", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ivanti/virtual-traffic-manager", "last_cve": "2024-09-24", "product": "Virtual Traffic Manager", "supplier": "Ivanti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "jenkins/jenkins", "last_cve": "2025-10-02", "product": "Jenkins", "supplier": "Jenkins"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "jenkins/jenkins-command-line-interface-cli", "last_cve": "2024-08-19", "product": "Jenkins Command Line Interface (CLI)", "supplier": "Jenkins"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "jenkins/jenkins-stapler-web-framework", "last_cve": "2022-02-10", "product": "Jenkins Stapler Web Framework", "supplier": "Jenkins"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "jenkins/jenkins-user-interface-ui", "last_cve": "2023-05-12", "product": "Jenkins User Interface (UI)", "supplier": "Jenkins"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "jenkins/matrix-project-plugin", "last_cve": "2022-03-25", "product": "Matrix Project Plugin", "supplier": "Jenkins"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "jenkins/script-security-plugin", "last_cve": "2022-04-25", "product": "Script Security Plugin", "supplier": "Jenkins"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "joomla/joomla", "last_cve": "2024-01-08", "product": "Joomla!", "supplier": "Joomla!"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "joomlack/page-builder", "last_cve": "2026-07-07", "product": "Page Builder", "supplier": "Joomlack"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "joomshaper/sp-page-builder", "last_cve": "2026-07-07", "product": "SP Page Builder", "supplier": "JoomShaper"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "jquery/jquery", "last_cve": "2025-01-23", "product": "JQuery", "supplier": "JQuery"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "juniper/screenos", "last_cve": "2025-10-02", "product": "ScreenOS", "supplier": "Juniper"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "justice-av-solutions/viewer", "last_cve": "2024-05-29", "product": "Viewer", "supplier": "Justice AV Solutions"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "kentico/kentico-xperience", "last_cve": "2026-04-20", "product": "Kentico Xperience", "supplier": "Kentico"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "kentico/xperience", "last_cve": "2022-03-25", "product": "Xperience", "supplier": "Kentico"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "kestra/kestra-oss", "last_cve": "2026-09-02", "product": "Kestra OSS", "supplier": "Kestra"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "kingsoft/wps-office", "last_cve": "2024-09-03", "product": "WPS Office", "supplier": "Kingsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "kludex/starlette", "last_cve": "2026-09-02", "product": "Starlette", "supplier": "Kludex"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "knx-association/knx-protocol-connection-authorization-option-1", "last_cve": "2026-07-15", "product": "KNX Protocol Connection Authorization Option 1", "supplier": "KNX Association"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "lantronix/eds5000", "last_cve": "2026-06-23", "product": "EDS5000", "supplier": "Lantronix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "laravel/ignition", "last_cve": "2023-09-18", "product": "Ignition", "supplier": "Laravel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "laravel/laravel-framework", "last_cve": "2024-01-16", "product": "Laravel Framework", "supplier": "Laravel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "laravel/livewire", "last_cve": "2026-03-20", "product": "Livewire", "supplier": "Laravel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "lg/n1a1-nas", "last_cve": "2022-03-25", "product": "N1A1 NAS", "supplier": "LG"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "libraesva/email-security-gateway", "last_cve": "2025-09-29", "product": "Email Security Gateway", "supplier": "Libraesva"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "liferay/liferay-portal", "last_cve": "2021-11-03", "product": "Liferay Portal", "supplier": "Liferay"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "looking-glass/multi-router-looking-glass-mrlg", "last_cve": "2025-07-07", "product": "Multi-Router Looking Glass (MRLG)", "supplier": "Looking Glass"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "marimo/marimo", "last_cve": "2026-04-23", "product": "Marimo", "supplier": "Marimo"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mcafee/mcafee-total-protection-mtp", "last_cve": "2021-11-03", "product": "McAfee Total Protection (MTP)", "supplier": "McAfee"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mdaemon/email-server", "last_cve": "2025-05-19", "product": "Email Server", "supplier": "MDaemon"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mediatek/multiple-chipsets", "last_cve": "2021-11-03", "product": "Multiple Chipsets", "supplier": "MediaTek"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "meta/react-server-components", "last_cve": "2025-12-05", "product": "React Server Components", "supplier": "Meta"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "micro-focus/micro-focus-access-manager", "last_cve": "2021-11-03", "product": "Micro Focus Access Manager", "supplier": "Micro Focus"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "micro-focus/operation-bridge-reporter-obr", "last_cve": "2021-11-03", "product": "Operation Bridge Reporter (OBR)", "supplier": "Micro Focus"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/active-directory-federation-services", "last_cve": "2026-07-14", "product": "Active Directory Federation Services", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/ancillary-function-driver-afd-sys", "last_cve": "2022-03-28", "product": "Ancillary Function Driver (afd.sys)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/atm-font-driver", "last_cve": "2022-03-03", "product": "ATM Font Driver", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/client-server-run-time-subsystem-csrss", "last_cve": "2022-03-28", "product": "Client-Server Run-time Subsystem (CSRSS)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/configuration-manager", "last_cve": "2026-02-12", "product": "Configuration Manager", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/directx", "last_cve": "2026-05-20", "product": "DirectX", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/dwm-core-library", "last_cve": "2024-05-14", "product": "DWM Core Library", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/exchange", "last_cve": "2021-11-17", "product": "Exchange", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/forefront-threat-management-gateway-tmg", "last_cve": "2022-03-03", "product": "Forefront Threat Management Gateway (TMG)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/graphics-component", "last_cve": "2022-02-15", "product": "Graphics Component", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/http-protocol-stack", "last_cve": "2022-04-06", "product": "HTTP Protocol Stack", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/http-sys", "last_cve": "2022-02-10", "product": "HTTP.sys", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/hyper-v-remotefx", "last_cve": "2021-11-03", "product": "Hyper-V RemoteFX", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/input-method-editor-ime-japanese", "last_cve": "2022-05-25", "product": "Input Method Editor (IME) Japanese", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/internet-explorer-and-edge", "last_cve": "2022-05-24", "product": "Internet Explorer and Edge", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/internet-explorer-scripting-engine", "last_cve": "2022-03-25", "product": "Internet Explorer Scripting Engine", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/internet-information-services-iis", "last_cve": "2021-11-03", "product": "Internet Information Services (IIS)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/internet-key-exchange-ike-service-extensions", "last_cve": "2026-08-18", "product": "Internet Key Exchange (IKE) Service Extensions", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/kerberos-key-distribution-center-kdc", "last_cve": "2022-03-25", "product": "Kerberos Key Distribution Center (KDC)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/malware-protection-engine", "last_cve": "2022-03-03", "product": "Malware Protection Engine", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/microsoft", "last_cve": "2026-05-15", "product": "Microsoft", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/mscomctl-ocx", "last_cve": "2021-11-03", "product": "MSCOMCTL.OCX", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/net-core-and-visual-studio", "last_cve": "2023-08-09", "product": ".NET Core and Visual Studio", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/net-framework-sharepoint-visual-studio", "last_cve": "2021-11-03", "product": ".NET Framework, SharePoint, Visual Studio", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/netlogon", "last_cve": "2021-11-03", "product": "Netlogon", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/office-and-wordpad", "last_cve": "2021-11-03", "product": "Office and WordPad", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/office-outlook", "last_cve": "2025-02-06", "product": "Office Outlook", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/outlook", "last_cve": "2023-07-11", "product": "Outlook", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/partner-center", "last_cve": "2025-02-25", "product": "Partner Center", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/power-pages", "last_cve": "2025-02-21", "product": "Power Pages", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/project", "last_cve": "2024-08-13", "product": "Project", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/publisher", "last_cve": "2024-09-10", "product": "Publisher", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/remote-desktop-services", "last_cve": "2021-11-03", "product": "Remote Desktop Services", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/skype-for-business", "last_cve": "2023-10-10", "product": "Skype for Business", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/smartscreen-prompt", "last_cve": "2024-04-30", "product": "SmartScreen Prompt", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/smbv3", "last_cve": "2022-02-10", "product": "SMBv3", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/streaming-service", "last_cve": "2024-02-29", "product": "Streaming Service", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/streaming-service-proxy", "last_cve": "2023-09-12", "product": "Streaming Service Proxy", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/task-scheduler", "last_cve": "2022-03-15", "product": "Task Scheduler", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/update-notification-manager", "last_cve": "2022-05-23", "product": "Update Notification Manager", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/visual-basic-for-applications-vba", "last_cve": "2026-04-13", "product": "Visual Basic for Applications (VBA)", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/windows-ancillary-function-driver-for-winsock", "last_cve": "2026-08-11", "product": "Windows Ancillary Function Driver for WinSock", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/windows-cng-key-isolation-service", "last_cve": "2023-10-04", "product": "Windows CNG Key Isolation Service", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/windows-com-event-system-service", "last_cve": "2022-10-11", "product": "Windows COM+ Event System Service", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/winverifytrust-function", "last_cve": "2022-01-10", "product": "WinVerifyTrust function", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "microsoft/wordpad", "last_cve": "2023-10-10", "product": "WordPad", "supplier": "Microsoft"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mirasvit/mirasvit-full-page-cache-warmer", "last_cve": "2026-06-03", "product": "Mirasvit Full Page Cache Warmer", "supplier": "Mirasvit"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mitel/micollab-mivoice-business-express", "last_cve": "2022-03-25", "product": "MiCollab, MiVoice Business Express", "supplier": "Mitel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mitel/sip-phones", "last_cve": "2025-02-12", "product": "SIP Phones", "supplier": "Mitel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mlflow/mlflow", "last_cve": "2026-08-19", "product": "MLflow", "supplier": "MLflow"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mongodb/mongo-express", "last_cve": "2021-12-10", "product": "mongo-express", "supplier": "MongoDB"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mongodb/mongodb-and-mongodb-server", "last_cve": "2025-12-29", "product": "MongoDB and MongoDB Server", "supplier": "MongoDB"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "motex/lanscope-endpoint-manager", "last_cve": "2025-10-22", "product": "LANSCOPE Endpoint Manager", "supplier": "Motex"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mozilla/firefox-firefox-esr-and-thunderbird", "last_cve": "2023-06-22", "product": "Firefox, Firefox ESR, and Thunderbird", "supplier": "Mozilla"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "mozilla/multiple-products", "last_cve": "2025-10-06", "product": "Multiple Products", "supplier": "Mozilla"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "n8n/n8n", "last_cve": "2026-03-11", "product": "n8n", "supplier": "n8n"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "nakivo/backup-and-replication", "last_cve": "2025-03-19", "product": "Backup and Replication", "supplier": "NAKIVO"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "netgear/dgn2200-devices", "last_cve": "2022-03-25", "product": "DGN2200 Devices", "supplier": "NETGEAR"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "netgear/jgs516pe-devices", "last_cve": "2021-11-03", "product": "JGS516PE Devices", "supplier": "NETGEAR"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "netgear/multiple-routers", "last_cve": "2022-03-07", "product": "Multiple Routers", "supplier": "NETGEAR"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "netgear/wireless-access-point-wap-devices", "last_cve": "2022-03-25", "product": "Wireless Access Point (WAP) Devices", "supplier": "NETGEAR"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "netgear/wireless-router-dgn2200", "last_cve": "2022-03-07", "product": "Wireless Router DGN2200", "supplier": "NETGEAR"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "netgear/wnr2000v5-router", "last_cve": "2022-03-25", "product": "WNR2000v5 Router", "supplier": "NETGEAR"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "netis/wf2419-devices", "last_cve": "2021-11-03", "product": "WF2419 Devices", "supplier": "Netis"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "netwrix/auditor", "last_cve": "2023-07-11", "product": "Auditor", "supplier": "Netwrix"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "nextgen-healthcare/mirth-connect", "last_cve": "2024-05-20", "product": "Mirth Connect", "supplier": "NextGen Healthcare"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "nice/linear-emerge-e3-series", "last_cve": "2024-03-25", "product": "Linear eMerge E3-Series", "supplier": "Nice"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "north-grid/proself", "last_cve": "2024-12-03", "product": "Proself", "supplier": "North Grid"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "nostromo/nhttpd", "last_cve": "2024-11-07", "product": "nhttpd", "supplier": "Nostromo"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "notepad/notepad", "last_cve": "2026-02-12", "product": "Notepad++", "supplier": "Notepad++"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "novi-survey/novi-survey", "last_cve": "2023-04-13", "product": "Novi Survey", "supplier": "Novi Survey"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "npm-package/system-information-library-for-node-js", "last_cve": "2022-01-18", "product": "System Information Library for Node.JS", "supplier": "Npm package"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "nuuo/nvrmini-devices", "last_cve": "2024-12-18", "product": "NVRmini Devices", "supplier": "NUUO"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "nuuo/nvrmini2-devices", "last_cve": "2024-12-18", "product": "NVRmini2 Devices", "supplier": "NUUO"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "nx/nx-console", "last_cve": "2026-05-27", "product": "Nx Console", "supplier": "Nx"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "october-cms/october-cms", "last_cve": "2022-01-18", "product": "October CMS", "supplier": "October CMS"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "omnissa/workspace-one-uem", "last_cve": "2026-03-09", "product": "Workspace One UEM", "supplier": "Omnissa"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "onlyoffice/docs", "last_cve": "2026-10-08", "product": "Docs", "supplier": "ONLYOFFICE"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "openbsd/opensmtpd", "last_cve": "2022-03-25", "product": "OpenSMTPD", "supplier": "OpenBSD"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "openssl/openssl", "last_cve": "2022-05-04", "product": "OpenSSL", "supplier": "OpenSSL"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/adf-faces", "last_cve": "2024-09-18", "product": "ADF Faces", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/bi-publisher-formerly-xml-publisher", "last_cve": "2022-03-25", "product": "BI Publisher (Formerly XML Publisher)", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/http-server-and-oracle-weblogic-server-proxy-plug-in", "last_cve": "2026-08-24", "product": "HTTP Server and Oracle Weblogic Server Proxy Plug-in", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/intelligence-enterprise-edition", "last_cve": "2022-01-18", "product": "Intelligence Enterprise Edition", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/java-se-and-jrockit", "last_cve": "2023-05-12", "product": "Java SE and JRockit", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/java-se-jdk-and-jre", "last_cve": "2022-03-03", "product": "Java SE JDK and JRE", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/multiple-products", "last_cve": "2021-11-03", "product": "Multiple Products", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/peoplesoft-enterprise-peopletools", "last_cve": "2026-06-12", "product": "PeopleSoft Enterprise PeopleTools", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/solaris", "last_cve": "2022-05-25", "product": "Solaris", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/solaris-and-zettabyte-file-system-zfs", "last_cve": "2021-11-03", "product": "Solaris and Zettabyte File System (ZFS)", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "oracle/virtualbox", "last_cve": "2022-03-03", "product": "VirtualBox", "supplier": "Oracle"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "osgeo/jai-ext", "last_cve": "2024-06-26", "product": "JAI-EXT", "supplier": "OSGeo"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "owncloud/owncloud", "last_cve": "2026-08-27", "product": "ownCloud", "supplier": "ownCloud"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "owncloud/owncloud-graphapi", "last_cve": "2023-11-30", "product": "ownCloud graphapi", "supplier": "ownCloud"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "papercut/mf-ng", "last_cve": "2023-04-21", "product": "MF/NG", "supplier": "PaperCut"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "perl/exiftool", "last_cve": "2021-11-17", "product": "Exiftool", "supplier": "Perl"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "php/fastcgi-process-manager-fpm", "last_cve": "2022-03-25", "product": "FastCGI Process Manager (FPM)", "supplier": "PHP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "php/php", "last_cve": "2022-03-25", "product": "PHP", "supplier": "PHP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "php/phpmailer", "last_cve": "2025-07-07", "product": "PHPMailer", "supplier": "PHP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "phpmyadmin/phpmyadmin", "last_cve": "2022-03-25", "product": "phpMyAdmin", "supplier": "phpMyAdmin"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "phpunit/phpunit", "last_cve": "2022-02-15", "product": "PHPUnit", "supplier": "PHPUnit"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "pi-hole/adminlte", "last_cve": "2021-12-10", "product": "AdminLTE", "supplier": "Pi-hole"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "playsms/playsms", "last_cve": "2021-11-03", "product": "PlaySMS", "supplier": "PlaySMS"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "prettier/eslint-config-prettier", "last_cve": "2026-01-22", "product": "eslint-config-prettier", "supplier": "Prettier"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "primetek/primefaces-application", "last_cve": "2022-01-10", "product": "Primefaces Application", "supplier": "Primetek"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "proftpd/proftpd", "last_cve": "2026-10-08", "product": "ProFTPD", "supplier": "ProFTPD"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "progress/asp-net-ajax-and-sitefinity", "last_cve": "2021-11-03", "product": "ASP.NET AJAX and Sitefinity", "supplier": "Progress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "progress/kemp-loadmaster", "last_cve": "2024-11-18", "product": "Kemp LoadMaster", "supplier": "Progress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "progress/loadmaster", "last_cve": "2026-08-07", "product": "LoadMaster", "supplier": "Progress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "progress/moveit-transfer", "last_cve": "2023-06-02", "product": "MOVEit Transfer", "supplier": "Progress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "progress/telerik-report-server", "last_cve": "2024-06-13", "product": "Telerik Report Server", "supplier": "Progress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "progress/telerik-ui-for-asp-net-ajax", "last_cve": "2021-11-03", "product": "Telerik UI for ASP.NET AJAX", "supplier": "Progress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "progress/ws-ftp-server", "last_cve": "2023-10-05", "product": "WS_FTP Server", "supplier": "Progress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "projectsend/projectsend", "last_cve": "2024-12-03", "product": "ProjectSend", "supplier": "ProjectSend"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ptc/windchill-and-flexplm", "last_cve": "2026-06-25", "product": "Windchill and FlexPLM", "supplier": "PTC"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "pulse-secure/pulse-connect-secure", "last_cve": "2022-03-07", "product": "Pulse Connect Secure", "supplier": "Pulse Secure"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "qnap-systems/helpdesk", "last_cve": "2022-03-25", "product": "Helpdesk", "supplier": "QNAP Systems"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "qnap/qnap-network-attached-storage-nas", "last_cve": "2022-04-11", "product": "QNAP Network-Attached Storage (NAS)", "supplier": "QNAP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "qnap/qts", "last_cve": "2022-06-08", "product": "QTS", "supplier": "QNAP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "qnap/viostor-nvr", "last_cve": "2023-12-21", "product": "VioStor NVR", "supplier": "QNAP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "qualcomm/snapdragon-auto-snapdragon-compute-snapdragon-connectivity-snapdragon-consumer-iot-snapdragon-industrial-iot-snapdragon-mobile-snapdragon-voice-music-snapdragon-wearables", "last_cve": "2021-12-01", "product": "Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables", "supplier": "Qualcomm"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "qualitia/active-mail", "last_cve": "2025-04-28", "product": "Active! Mail", "supplier": "Qualitia"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "quest/kace-system-management-appliance", "last_cve": "2022-03-25", "product": "KACE System Management Appliance", "supplier": "Quest"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "quest/kace-systems-management-appliance-sma", "last_cve": "2026-04-20", "product": "KACE Systems Management Appliance (SMA)", "supplier": "Quest"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "rarlab/unrar", "last_cve": "2022-08-09", "product": "UnRAR", "supplier": "RARLAB"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ray-project/ray", "last_cve": "2026-08-17", "product": "Ray", "supplier": "Ray-Project"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "rconfig/rconfig", "last_cve": "2021-11-03", "product": "rConfig", "supplier": "rConfig"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "react-native-community/cli", "last_cve": "2026-02-05", "product": "CLI", "supplier": "React Native Community"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "realtek/ap-router-sdk", "last_cve": "2021-11-03", "product": "AP-Router SDK", "supplier": "Realtek"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "realtek/jungle-software-development-kit-sdk", "last_cve": "2021-12-10", "product": "Jungle Software Development Kit (SDK)", "supplier": "Realtek"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "realtek/sdk", "last_cve": "2023-09-18", "product": "SDK", "supplier": "Realtek"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "red-hat/automatic-bug-reporting-tool", "last_cve": "2026-08-26", "product": "Automatic Bug Reporting Tool", "supplier": "Red Hat"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "red-hat/jboss-application-server", "last_cve": "2021-12-10", "product": "JBoss Application Server", "supplier": "Red Hat"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "red-hat/jboss-richfaces-framework", "last_cve": "2023-09-28", "product": "JBoss RichFaces Framework", "supplier": "Red Hat"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "red-hat/jboss-seam-2", "last_cve": "2021-12-10", "product": "JBoss Seam 2", "supplier": "Red Hat"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "red-hat/libuser", "last_cve": "2026-08-26", "product": "Libuser", "supplier": "Red Hat"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "redis/debian-specific-redis-servers", "last_cve": "2022-03-28", "product": "Debian-specific Redis Servers", "supplier": "Redis"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "rejetto/http-file-server", "last_cve": "2024-07-09", "product": "HTTP File Server", "supplier": "Rejetto"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "rejetto/http-file-server-hfs", "last_cve": "2022-03-25", "product": "HTTP File Server (HFS)", "supplier": "Rejetto"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "reolink/multiple-ip-cameras", "last_cve": "2024-12-18", "product": "Multiple IP Cameras", "supplier": "Reolink"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "reolink/rlc-410w-ip-camera", "last_cve": "2024-12-18", "product": "RLC-410W IP Camera", "supplier": "Reolink"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "reviewdog/action-setup-github-action", "last_cve": "2025-03-24", "product": "action-setup GitHub Action", "supplier": "reviewdog"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "rockwell/multiple-products", "last_cve": "2026-03-05", "product": "Multiple Products", "supplier": "Rockwell"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ruckus-wireless/multiple-products", "last_cve": "2023-05-12", "product": "Multiple Products", "supplier": "Ruckus Wireless"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "samba/samba", "last_cve": "2023-03-30", "product": "Samba", "supplier": "Samba"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sangoma/switchvox", "last_cve": "2026-09-02", "product": "Switchvox", "supplier": "Sangoma"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sap/commerce-cloud", "last_cve": "2024-09-30", "product": "Commerce Cloud", "supplier": "SAP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sap/customer-relationship-management-crm", "last_cve": "2021-11-03", "product": "Customer Relationship Management (CRM)", "supplier": "SAP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sap/multiple-products", "last_cve": "2022-08-18", "product": "Multiple Products", "supplier": "SAP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sap/solution-manager", "last_cve": "2021-11-03", "product": "Solution Manager", "supplier": "SAP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "schneider-electric/u-motion-builder", "last_cve": "2022-04-15", "product": "U.motion Builder", "supplier": "Schneider Electric"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sciencelogic/sl1", "last_cve": "2024-10-21", "product": "SL1", "supplier": "ScienceLogic"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "siemens/simatic-cp", "last_cve": "2022-03-03", "product": "SIMATIC CP", "supplier": "Siemens"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "siemens/software-center", "last_cve": "2026-10-20", "product": "Software Center", "supplier": "Siemens"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sierra-wireless/airlink-aleos", "last_cve": "2025-12-12", "product": "AirLink ALEOS", "supplier": "Sierra Wireless"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "simalliance/toolbox-browser", "last_cve": "2021-11-03", "product": "Toolbox Browser", "supplier": "SIMalliance"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sitecore/multiple-products", "last_cve": "2025-09-04", "product": "Multiple Products", "supplier": "Sitecore"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sitecore/xp", "last_cve": "2022-03-25", "product": "XP", "supplier": "Sitecore"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "skysea/client-view", "last_cve": "2025-10-14", "product": "Client View", "supplier": "SKYSEA"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "smartbedded/meteobridge", "last_cve": "2025-10-02", "product": "Meteobridge", "supplier": "Smartbedded"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "solarview/compact", "last_cve": "2023-07-13", "product": "Compact", "supplier": "SolarView"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "solarwinds/orion", "last_cve": "2021-11-03", "product": "Orion", "supplier": "SolarWinds"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "solarwinds/virtualization-manager", "last_cve": "2021-11-03", "product": "Virtualization Manager", "supplier": "SolarWinds"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "soliton-systems-k-k/filezen", "last_cve": "2026-02-24", "product": "FileZen", "supplier": "Soliton Systems K.K"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sonatype/nexus-repository", "last_cve": "2021-11-03", "product": "Nexus Repository", "supplier": "Sonatype"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sonatype/nexus-repository-manager", "last_cve": "2021-12-10", "product": "Nexus Repository Manager", "supplier": "Sonatype"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sonicwall/secure-remote-access-sra", "last_cve": "2022-03-28", "product": "Secure Remote Access (SRA)", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sonicwall/sma-100-appliances", "last_cve": "2022-01-28", "product": "SMA 100 Appliances", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sonicwall/sma1000-appliance", "last_cve": "2025-12-17", "product": "SMA1000 appliance", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sonicwall/sonicos-sslvpn", "last_cve": "2026-11-06", "product": "SonicOS SSLVPN", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sonicwall/sslvpn-sma100", "last_cve": "2021-11-03", "product": "SSLVPN SMA100", "supplier": "SonicWall"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sophos/cyberoamos", "last_cve": "2025-02-06", "product": "CyberoamOS", "supplier": "Sophos"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sophos/sfos", "last_cve": "2021-11-03", "product": "SFOS", "supplier": "Sophos"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sophos/sg-utm", "last_cve": "2022-03-25", "product": "SG UTM", "supplier": "Sophos"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sophos/web-appliance", "last_cve": "2023-11-16", "product": "Web Appliance", "supplier": "Sophos"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sophos/xg-firewall", "last_cve": "2025-02-06", "product": "XG Firewall", "supplier": "Sophos"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "splunk/enterprise", "last_cve": "2026-06-18", "product": "Enterprise", "supplier": "Splunk"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "spreadsheet-parseexcel/spreadsheet-parseexcel", "last_cve": "2024-01-02", "product": "Spreadsheet::ParseExcel", "supplier": "Spreadsheet::ParseExcel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "srimax/output-messenger", "last_cve": "2025-05-19", "product": "Output Messenger", "supplier": "Srimax"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "strapi/strapi", "last_cve": "2026-10-08", "product": "Strapi", "supplier": "Strapi"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sugarcrm/multiple-products", "last_cve": "2023-02-02", "product": "Multiple Products", "supplier": "SugarCRM"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sumavision/enhanced-multimedia-router-emr", "last_cve": "2021-11-03", "product": "Enhanced Multimedia Router (EMR)", "supplier": "Sumavision"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sunhillo/sureline", "last_cve": "2024-03-05", "product": "SureLine", "supplier": "Sunhillo"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "symantec/symantec-messaging-gateway", "last_cve": "2021-11-03", "product": "Symantec Messaging Gateway", "supplier": "Symantec"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "synacor/zimbra-collaborate-suite-zcs", "last_cve": "2022-02-25", "product": "Zimbra Collaborate Suite (ZCS)", "supplier": "Synacor"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "synacor/zimbra-collaboration-suite", "last_cve": "2026-02-17", "product": "Zimbra Collaboration Suite", "supplier": "Synacor"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "sysaid/sysaid-server", "last_cve": "2023-11-13", "product": "SysAid Server", "supplier": "SysAid"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tanstack/tanstack", "last_cve": "2026-05-27", "product": "TanStack", "supplier": "TanStack"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "teamt5/threatsonar-anti-ransomware", "last_cve": "2026-02-17", "product": "ThreatSonar Anti-Ransomware", "supplier": "TeamT5"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "teamviewer/desktop", "last_cve": "2021-11-03", "product": "Desktop", "supplier": "TeamViewer"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "teclib/glpi", "last_cve": "2023-03-07", "product": "GLPI", "supplier": "Teclib"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tenda/ac11-router", "last_cve": "2021-11-03", "product": "AC11 Router", "supplier": "Tenda"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tenda/ac1900-router-ac15-model", "last_cve": "2021-11-03", "product": "AC1900 Router AC15 Model", "supplier": "Tenda"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tenda/ac7-ac9-and-ac10-routers", "last_cve": "2021-11-03", "product": "AC7, AC9, and AC10 Routers", "supplier": "Tenda"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "terramaster/terramaster-os", "last_cve": "2023-02-10", "product": "TerraMaster OS", "supplier": "TerraMaster"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "thinkphp/nonecms", "last_cve": "2021-11-03", "product": "noneCms", "supplier": "ThinkPHP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "thinkphp/thinkphp", "last_cve": "2021-11-03", "product": "ThinkPHP", "supplier": "ThinkPHP"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tj-actions/changed-files-github-action", "last_cve": "2025-03-18", "product": "changed-files GitHub Action", "supplier": "tj-actions"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tp-link/archer-ax21", "last_cve": "2023-05-01", "product": "Archer AX21", "supplier": "TP-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tp-link/multiple-archer-devices", "last_cve": "2022-03-25", "product": "Multiple Archer Devices", "supplier": "TP-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tp-link/tl-wa855re", "last_cve": "2025-09-02", "product": "TL-WA855RE", "supplier": "TP-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tp-link/tl-wr841n", "last_cve": "2025-09-03", "product": "TL-WR841N", "supplier": "TP-Link"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "treck-tcp-ip-stack/ipv6", "last_cve": "2022-03-03", "product": "IPv6", "supplier": "Treck TCP/IP stack"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trend-micro/apex-central", "last_cve": "2022-03-31", "product": "Apex Central", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trend-micro/apex-one-and-apex-one-as-a-service", "last_cve": "2022-09-15", "product": "Apex One and Apex One as a Service", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trend-micro/apex-one-and-worry-free-business-security", "last_cve": "2023-09-21", "product": "Apex One and Worry-Free Business Security", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trend-micro/apex-one-officescan-and-worry-free-business-security", "last_cve": "2021-11-03", "product": "Apex One, OfficeScan, and Worry-Free Business Security", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trend-micro/apex-one-officescan-and-worry-free-business-security-agents", "last_cve": "2021-11-03", "product": "Apex One, OfficeScan and Worry-Free Business Security Agents", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trend-micro/officescan", "last_cve": "2021-11-03", "product": "OfficeScan", "supplier": "Trend Micro"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trihedral/vtscada-formerly-vts", "last_cve": "2022-04-15", "product": "VTScada (formerly VTS)", "supplier": "Trihedral"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trimble/cityworks", "last_cve": "2025-02-07", "product": "Cityworks", "supplier": "Trimble"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "trueconf/client", "last_cve": "2026-04-02", "product": "Client", "supplier": "TrueConf"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "tvt/nvms-1000", "last_cve": "2021-11-03", "product": "NVMS-1000", "supplier": "TVT"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "twilio/authy", "last_cve": "2024-07-23", "product": "Authy", "supplier": "Twilio"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "ubiquiti/airos", "last_cve": "2022-04-15", "product": "AirOS", "supplier": "Ubiquiti"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "unitronics/vision-plc-and-hmi", "last_cve": "2023-12-11", "product": "Vision PLC and HMI", "supplier": "Unitronics"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "versa/concerto", "last_cve": "2026-01-22", "product": "Concerto", "supplier": "Versa"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "versa/director", "last_cve": "2024-08-23", "product": "Director", "supplier": "Versa"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vite/vitejs", "last_cve": "2026-01-22", "product": "Vitejs", "supplier": "Vite"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware-tanzu/spring-cloud", "last_cve": "2022-08-25", "product": "Spring Cloud", "supplier": "VMware Tanzu"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware-tanzu/spring-cloud-configuration-config-server", "last_cve": "2022-03-25", "product": "Spring Cloud Configuration (Config) Server", "supplier": "VMware Tanzu"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware-tanzu/spring-data-commons", "last_cve": "2022-03-25", "product": "Spring Data Commons", "supplier": "VMware Tanzu"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/aria-operations-for-networks", "last_cve": "2023-06-22", "product": "Aria Operations for Networks", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/esxi-and-workstation", "last_cve": "2025-03-04", "product": "ESXi and Workstation", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/esxi-workstation-and-fusion", "last_cve": "2025-03-04", "product": "ESXi, Workstation, and Fusion", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/sd-wan-edge", "last_cve": "2022-03-25", "product": "SD-WAN Edge", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/spring-cloud-gateway", "last_cve": "2022-05-16", "product": "Spring Cloud Gateway", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/spring-framework", "last_cve": "2022-04-04", "product": "Spring Framework", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/tools", "last_cve": "2023-06-23", "product": "Tools", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/vcenter-server-and-cloud-foundation", "last_cve": "2022-03-07", "product": "vCenter Server and Cloud Foundation", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/vmware-esxi-and-horizon-daas", "last_cve": "2021-11-03", "product": "VMware ESXi and Horizon DaaS", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/vrealize-operations-manager-api", "last_cve": "2022-01-18", "product": "vRealize Operations Manager API", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "vmware/workspace-one-access-and-identity-manager", "last_cve": "2022-04-14", "product": "Workspace ONE Access and Identity Manager", "supplier": "VMware"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "watchguard/firebox-and-xtm", "last_cve": "2022-04-11", "product": "Firebox and XTM", "supplier": "WatchGuard"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "watchguard/firebox-and-xtm-appliances", "last_cve": "2022-03-25", "product": "Firebox and XTM Appliances", "supplier": "WatchGuard"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "wazuh/wazuh-server", "last_cve": "2025-06-10", "product": "Wazuh Server", "supplier": "Wazuh"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "webkitgtk/webkitgtk", "last_cve": "2022-05-23", "product": "WebKitGTK", "supplier": "WebKitGTK"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "webmin/webmin", "last_cve": "2022-03-25", "product": "Webmin", "supplier": "Webmin"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "webpros/cpanel-whm-and-wp2-wordpress-squared", "last_cve": "2026-04-30", "product": "cPanel & WHM and WP2 (WordPress Squared)", "supplier": "WebPros"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "webrtc/webrtc", "last_cve": "2022-08-25", "product": "WebRTC", "supplier": "WebRTC"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "widget-factory/joomla-content-editor", "last_cve": "2026-06-16", "product": "Joomla Content Editor", "supplier": "Widget Factory"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "wordpress/file-manager-plugin", "last_cve": "2021-11-03", "product": "File Manager Plugin", "supplier": "WordPress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "wordpress/snap-creek-duplicator-plugin", "last_cve": "2021-11-03", "product": "Snap Creek Duplicator Plugin", "supplier": "WordPress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "wordpress/social-warfare-plugin", "last_cve": "2021-11-03", "product": "Social Warfare Plugin", "supplier": "WordPress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "wordpress/wordpress-core", "last_cve": "2026-11-03", "product": "WordPress Core", "supplier": "WordPress"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "xstream/xstream", "last_cve": "2023-03-10", "product": "XStream", "supplier": "XStream"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "xwiki/platform", "last_cve": "2025-10-30", "product": "Platform", "supplier": "XWiki"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "yealink/device-management", "last_cve": "2021-11-03", "product": "Device Management", "supplier": "Yealink"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "yiiframework/yii", "last_cve": "2025-05-02", "product": "Yii", "supplier": "Yiiframework"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zk-framework/auuploader", "last_cve": "2023-02-27", "product": "AuUploader", "supplier": "ZK Framework"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zkteco/biotime", "last_cve": "2025-05-19", "product": "BioTime", "supplier": "ZKTeco"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zoho/desktop-central", "last_cve": "2021-12-10", "product": "Desktop Central", "supplier": "Zoho"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zoho/manageengine-servicedesk-plus-sdp", "last_cve": "2021-12-01", "product": "ManageEngine ServiceDesk Plus (SDP)", "supplier": "Zoho"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zoho/manageengine-servicedesk-plus-sdp-supportcenter-plus", "last_cve": "2021-12-01", "product": "ManageEngine ServiceDesk Plus (SDP) / SupportCenter Plus", "supplier": "Zoho"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zyxel/emg2926-routers", "last_cve": "2023-09-18", "product": "EMG2926 Routers", "supplier": "Zyxel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zyxel/gs1900-series-switches", "last_cve": "2026-09-21", "product": "GS1900 Series Switches", "supplier": "Zyxel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zyxel/multiple-products", "last_cve": "2021-11-03", "product": "Multiple Products", "supplier": "Zyxel"}
+{"cnas": [], "cpe": [], "cve_count": 1, "kev_count": 1, "key": "zyxel/p660hn-t1a-routers", "last_cve": "2023-08-07", "product": "P660HN-T1A Routers", "supplier": "Zyxel"}

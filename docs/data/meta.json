@@ -1,0 +1,509 @@
+{
+ "built": "2026-11-08T00:33:12Z",
+ "counts": {
+  "assertions": 12493,
+  "products_with_data": 7419,
+  "spine_products": 733,
+  "spine_only_shown": 693,
+  "components": 13
+ },
+ "components": [
+  {
+   "id": "php",
+   "name": "PHP runtime",
+   "upstream": "https://github.com/php/php-src",
+   "purl": "pkg:github/php/php-src",
+   "cpe": "cpe:2.3:a:php:php",
+   "aliases": [
+    "php-src",
+    "php-fpm",
+    "mod_php",
+    "php-cgi"
+   ],
+   "incidents": [
+    {
+     "name": "PHP2Shell",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+     ],
+     "trackers": [
+      "https://github.com/NCSC-NL/php2shell"
+     ]
+    }
+   ],
+   "assertions": 757,
+   "products": 738,
+   "contains": 379,
+   "verdicts": {
+    "fixed": 170,
+    "workaround": 9,
+    "affected": 200,
+    "under_investigation": 79,
+    "not_affected": 201,
+    "absent": 96,
+    "runtime_dependent": 2
+   }
+  },
+  {
+   "id": "brotli",
+   "name": "Google Brotli (C library)",
+   "upstream": "https://github.com/google/brotli",
+   "purl": "pkg:github/google/brotli",
+   "cpe": "cpe:2.3:a:google:brotli",
+   "aliases": [
+    "libbrotli",
+    "brotlidec",
+    "node2shell",
+    "http2shell",
+    "broccoli2shell"
+   ],
+   "incidents": [
+    {
+     "name": "Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-111497"
+     ],
+     "trackers": [
+      "https://broccoli2shell.com/"
+     ]
+    }
+   ],
+   "assertions": 149,
+   "products": 149,
+   "contains": 130,
+   "verdicts": {
+    "fixed": 115,
+    "not_affected": 11,
+    "workaround": 15,
+    "absent": 8
+   }
+  },
+  {
+   "id": "react-server-components",
+   "name": "React Server Components",
+   "upstream": "https://github.com/facebook/react",
+   "purl": "pkg:npm/react-server-dom-webpack",
+   "cpe": "",
+   "aliases": [
+    "react2shell",
+    "react-server-dom-webpack",
+    "react-server-dom-parcel",
+    "react-server-dom-turbopack"
+   ],
+   "incidents": [
+    {
+     "name": "React2Shell",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-55182"
+     ]
+    }
+   ],
+   "assertions": 9,
+   "products": 9,
+   "contains": 0,
+   "verdicts": {
+    "not_affected": 9
+   }
+  },
+  {
+   "id": "log4j-core",
+   "name": "Apache Log4j 2 (log4j-core)",
+   "upstream": "https://logging.apache.org/log4j/2.x/",
+   "purl": "pkg:maven/org.apache.logging.log4j/log4j-core",
+   "cpe": "cpe:2.3:a:apache:log4j",
+   "aliases": [
+    "log4j",
+    "log4j2",
+    "log4shell"
+   ],
+   "incidents": [
+    {
+     "name": "Log4Shell",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-44228",
+      "CVE-2021-45046",
+      "CVE-2021-45105",
+      "CVE-2021-44832"
+     ],
+     "trackers": [
+      "https://github.com/NCSC-NL/log4shell",
+      "https://github.com/cisagov/log4j-affected-db"
+     ]
+    }
+   ],
+   "assertions": 7373,
+   "products": 6401,
+   "contains": 2535,
+   "verdicts": {
+    "not_affected": 4277,
+    "unknown": 401,
+    "affected": 926,
+    "fixed": 1358,
+    "under_investigation": 160,
+    "workaround": 251
+   }
+  },
+  {
+   "id": "log4j-1",
+   "name": "Apache Log4j 1.x",
+   "upstream": "https://logging.apache.org/log4j/1.x/",
+   "purl": "pkg:maven/log4j/log4j",
+   "cpe": "cpe:2.3:a:apache:log4j",
+   "aliases": [
+    "log4j1",
+    "log4j 1.2"
+   ],
+   "incidents": [
+    {
+     "name": "Log4j 1.x JMSAppender",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-4104"
+     ]
+    }
+   ],
+   "assertions": 3910,
+   "products": 3818,
+   "contains": 90,
+   "verdicts": {
+    "not_affected": 3811,
+    "workaround": 11,
+    "fixed": 62,
+    "under_investigation": 9,
+    "affected": 17
+   }
+  },
+  {
+   "id": "xz",
+   "name": "XZ Utils / liblzma",
+   "upstream": "https://github.com/tukaani-project/xz",
+   "purl": "pkg:github/tukaani-project/xz",
+   "cpe": "cpe:2.3:a:tukaani:xz",
+   "aliases": [
+    "liblzma",
+    "xz-utils"
+   ],
+   "incidents": [
+    {
+     "name": "XZ Utils backdoor",
+     "year": 2024,
+     "cves": [
+      "CVE-2024-3094"
+     ]
+    }
+   ],
+   "assertions": 7,
+   "products": 7,
+   "contains": 0,
+   "verdicts": {
+    "not_affected": 7
+   }
+  },
+  {
+   "id": "openssh",
+   "name": "OpenSSH (portable)",
+   "upstream": "https://www.openssh.com/",
+   "purl": "pkg:github/openssh/openssh-portable",
+   "cpe": "cpe:2.3:a:openbsd:openssh",
+   "aliases": [
+    "sshd",
+    "regresshion"
+   ],
+   "incidents": [
+    {
+     "name": "regreSSHion",
+     "year": 2024,
+     "cves": [
+      "CVE-2024-6387"
+     ]
+    }
+   ],
+   "assertions": 41,
+   "products": 31,
+   "contains": 34,
+   "verdicts": {
+    "workaround": 15,
+    "fixed": 19,
+    "not_affected": 7
+   }
+  },
+  {
+   "id": "libwebp",
+   "name": "libwebp",
+   "upstream": "https://chromium.googlesource.com/webm/libwebp",
+   "purl": "pkg:github/webmproject/libwebp",
+   "cpe": "cpe:2.3:a:webmproject:libwebp",
+   "aliases": [
+    "webp"
+   ],
+   "incidents": [
+    {
+     "name": "libwebp heap overflow",
+     "year": 2023,
+     "cves": [
+      "CVE-2023-4863"
+     ]
+    }
+   ],
+   "assertions": 32,
+   "products": 28,
+   "contains": 31,
+   "verdicts": {
+    "fixed": 30,
+    "workaround": 1,
+    "not_affected": 1
+   }
+  },
+  {
+   "id": "curl",
+   "name": "curl / libcurl",
+   "upstream": "https://curl.se/",
+   "purl": "pkg:github/curl/curl",
+   "cpe": "cpe:2.3:a:haxx:curl",
+   "aliases": [
+    "libcurl"
+   ],
+   "incidents": [
+    {
+     "name": "curl SOCKS5 heap overflow",
+     "year": 2023,
+     "cves": [
+      "CVE-2023-38545"
+     ]
+    }
+   ],
+   "assertions": 63,
+   "products": 41,
+   "contains": 56,
+   "verdicts": {
+    "fixed": 45,
+    "not_affected": 3,
+    "workaround": 11,
+    "absent": 4
+   }
+  },
+  {
+   "id": "openssl",
+   "name": "OpenSSL",
+   "upstream": "https://www.openssl.org/",
+   "purl": "pkg:github/openssl/openssl",
+   "cpe": "cpe:2.3:a:openssl:openssl",
+   "aliases": [
+    "libssl",
+    "libcrypto"
+   ],
+   "incidents": [
+    {
+     "name": "OpenSSL 3.0 punycode overflows",
+     "year": 2022,
+     "cves": [
+      "CVE-2022-3602",
+      "CVE-2022-3786"
+     ]
+    }
+   ],
+   "assertions": 54,
+   "products": 29,
+   "contains": 33,
+   "verdicts": {
+    "workaround": 5,
+    "fixed": 28,
+    "under_investigation": 1,
+    "not_affected": 20
+   }
+  },
+  {
+   "id": "spring-framework",
+   "name": "Spring Framework",
+   "upstream": "https://spring.io/projects/spring-framework",
+   "purl": "pkg:maven/org.springframework/spring-beans",
+   "cpe": "cpe:2.3:a:vmware:spring_framework",
+   "aliases": [
+    "spring4shell",
+    "spring-beans"
+   ],
+   "incidents": [
+    {
+     "name": "Spring4Shell",
+     "year": 2022,
+     "cves": [
+      "CVE-2022-22965"
+     ]
+    }
+   ],
+   "assertions": 31,
+   "products": 31,
+   "contains": 31,
+   "verdicts": {
+    "fixed": 26,
+    "workaround": 5
+   }
+  },
+  {
+   "id": "commons-text",
+   "name": "Apache Commons Text",
+   "upstream": "https://commons.apache.org/proper/commons-text/",
+   "purl": "pkg:maven/org.apache.commons/commons-text",
+   "cpe": "cpe:2.3:a:apache:commons_text",
+   "aliases": [
+    "text4shell"
+   ],
+   "incidents": [
+    {
+     "name": "Text4Shell",
+     "year": 2022,
+     "cves": [
+      "CVE-2022-42889"
+     ]
+    }
+   ],
+   "assertions": 36,
+   "products": 36,
+   "contains": 24,
+   "verdicts": {
+    "fixed": 19,
+    "not_affected": 12,
+    "workaround": 5
+   }
+  },
+  {
+   "id": "glibc",
+   "name": "GNU C Library (glibc)",
+   "upstream": "https://www.gnu.org/software/libc/",
+   "purl": "pkg:github/bminor/glibc",
+   "cpe": "cpe:2.3:a:gnu:glibc",
+   "aliases": [
+    "libc",
+    "looney tunables"
+   ],
+   "incidents": [
+    {
+     "name": "Looney Tunables",
+     "year": 2023,
+     "cves": [
+      "CVE-2023-4911"
+     ]
+    }
+   ],
+   "assertions": 31,
+   "products": 24,
+   "contains": 29,
+   "verdicts": {
+    "fixed": 19,
+    "not_affected": 2,
+    "workaround": 10
+   }
+  }
+ ],
+ "sources": [
+  {
+   "id": "ncsc-nl-php2shell",
+   "name": "NCSC-NL php2shell",
+   "kind": "tracker",
+   "url": "https://github.com/NCSC-NL/php2shell",
+   "license": "EUPL-1.2",
+   "notes": "Rows in package-level segments (runtime builds, frameworks and libraries, OS distributions, container images, developer tooling) are excluded. Those are open source packages already indexed by deps.dev, OSV and distro trackers.",
+   "assertions": 564,
+   "latest": "2026-11-04"
+  },
+  {
+   "id": "ncsc-nl-log4shell",
+   "name": "NCSC-NL log4shell",
+   "kind": "tracker",
+   "url": "https://github.com/NCSC-NL/log4shell",
+   "license": "MIT",
+   "notes": "Archived June 2022. Statuses reflect vendor statements at the time.",
+   "assertions": 9540,
+   "latest": "2022-06-15"
+  },
+  {
+   "id": "cisa-log4j",
+   "name": "CISA log4j-affected-db",
+   "kind": "tracker",
+   "url": "https://github.com/cisagov/log4j-affected-db",
+   "license": "CC0-1.0",
+   "notes": "Archived February 2023. Statuses reflect vendor statements at the time.",
+   "assertions": 1349,
+   "latest": "2022-11-01"
+  },
+  {
+   "id": "csaf",
+   "name": "Vendor CSAF advisories and VEX",
+   "kind": "vendor-advisory",
+   "url": "https://www.csaf.io/",
+   "license": "Per vendor (public TLP:CLEAR advisories)",
+   "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
+   "assertions": 1040,
+   "latest": "2026-11-07",
+   "publishers": {
+    "Red Hat Product Security": 492,
+    "Siemens ProductCERT": 333,
+    "CISA": 72,
+    "ABB PSIRT": 46,
+    "Cisco": 40,
+    "Schneider Electric CPCERT": 24,
+    "Microsoft Security Response Center": 21,
+    "SICK PSIRT": 10,
+    "Open-Xchange GmbH": 1,
+    "Intevation GmbH": 1
+   }
+  },
+  {
+   "id": "community",
+   "name": "Xenolith community submissions",
+   "kind": "community",
+   "url": "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv",
+   "license": "CC-BY-4.0",
+   "assertions": 0,
+   "latest": ""
+  },
+  {
+   "id": "cvelist",
+   "name": "CVE Program cvelistV5 + CISA KEV",
+   "kind": "spine",
+   "url": "https://github.com/CVEProject/cvelistV5",
+   "license": "CVE Terms of Use; KEV is CC0-1.0",
+   "notes": "Vendor/product names from CNA-published CVE records, ranked by CVE and KEV counts. Records for package-ecosystem components are excluded.",
+   "assertions": 0,
+   "latest": "",
+   "products": 733
+  }
+ ],
+ "comparables": [
+  {
+   "name": "deps.dev (Open Source Insights)",
+   "url": "https://deps.dev/",
+   "covers": "Resolved dependency graphs and dependents for open source packages (npm, Maven, PyPI, Go, Cargo, NuGet, RubyGems)."
+  },
+  {
+   "name": "ecosyste.ms",
+   "url": "https://ecosyste.ms/",
+   "covers": "Packages, dependent repositories and Docker image SBOMs across 100+ open source registries."
+  },
+  {
+   "name": "OSV.dev",
+   "url": "https://osv.dev/",
+   "covers": "Open source vulnerabilities mapped to package versions."
+  },
+  {
+   "name": "GitHub Advisory Database",
+   "url": "https://github.com/advisories",
+   "covers": "Reviewed advisories for open source packages, with Dependabot dependents."
+  },
+  {
+   "name": "Repology",
+   "url": "https://repology.org/",
+   "covers": "Which Linux and BSD distributions package which open source project, and at what version."
+  },
+  {
+   "name": "Census III of Free and Open Source Software",
+   "url": "https://www.linuxfoundation.org/press/open-source-usage-trends-and-security-challenges-revealed-in-new-study",
+   "covers": "Linux Foundation / Harvard ranking of the most widely used open source libraries."
+  }
+ ]
+}
