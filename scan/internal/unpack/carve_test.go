@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"os"
+	"path"
 	"path/filepath"
 	"strings"
 	"testing"
@@ -25,7 +26,7 @@ func squashfsImage(t *testing.T, files map[string]string) []byte {
 		t.Fatal(err)
 	}
 	for name, body := range files {
-		if err := fsys.Mkdir(filepath.Dir(name)); err != nil {
+		if err := fsys.Mkdir(path.Dir(name)); err != nil { // squashfs paths are always slash-separated
 			t.Fatal(err)
 		}
 		w, err := fsys.OpenFile(name, os.O_CREATE|os.O_RDWR)
@@ -50,7 +51,13 @@ func squashfsImage(t *testing.T, files map[string]string) []byte {
 // A router image laid out like Netgear's .chk: vendor header, TRX header, a compressed
 // kernel, then the squashfs root. The carver must open the root without unblob.
 func TestFirmwareSquashfsCarving(t *testing.T) {
-	sq := squashfsImage(t, map[string]string{"usr/sbin/curl": "\x7fELF curl 7.36.0", "etc/banner": "router"})
+	// testdata/router-root.sqfs: squashfsImage(t, {"usr/sbin/curl": "\x7fELF curl 7.36.0",
+	// "etc/banner": "router"}), generated once on Linux so the test does not depend on the
+	// writer's behaviour on each platform
+	sq, err := os.ReadFile(filepath.Join("testdata", "router-root.sqfs"))
+	if err != nil {
+		t.Fatal(err)
+	}
 	var img bytes.Buffer
 	img.WriteString("*#$^")
 	img.Write(make([]byte, 54))
@@ -83,7 +90,7 @@ func TestFirmwareSquashfsCarving(t *testing.T) {
 		}
 	}
 	if !found {
-		t.Errorf("carved files missing: %+v", res.Entries)
+		t.Errorf("carved files missing: entries %+v, containers %+v, skipped %+v", res.Entries, res.Containers, res.NotInspected)
 	}
 }
 
