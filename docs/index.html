@@ -88,6 +88,64 @@
   footer ul { padding-left: 18px; margin: 6px 0; }
   .comp-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
   .kbd { font-family: ui-monospace, monospace; font-size: 13px; background: var(--chip); padding: 1px 5px; border-radius: 5px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  /* tabs */
+  .tabs { display: flex; gap: 2px; margin-top: 14px; border-bottom: 1px solid var(--line); }
+  .tabs a { padding: 8px 12px; text-decoration: none; color: var(--muted); font-weight: 600; font-size: 15px;
+    border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .tabs a:hover { color: var(--ink); }
+  .tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+  /* "Why it matters" tab */
+  .why section { margin: 34px 0 0; }
+  .why h2 { font-size: 22px; margin: 2px 0 10px; }
+  .why h3 { font-size: 16px; }
+  .kicker { margin: 0; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+  .lede { font-size: 18px; }
+  .grid3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .hero { display: grid; grid-template-columns: 1fr 170px; gap: 24px; align-items: center; margin-top: 18px; }
+  .hero h2 { font-size: 30px; letter-spacing: -0.02em; margin: 4px 0 8px; }
+  .art { width: 100%; height: auto; }
+  .fact b { display: block; font-size: 30px; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 4px; font-variant-numeric: tabular-nums; }
+  .fact.risk b { color: var(--affected); } .fact.good b { color: var(--accent); }
+  .fact .src { color: var(--muted); font-size: 12.5px; margin-top: 8px; }
+  .num { font-size: 26px; font-weight: 700; color: var(--accent); line-height: 1; }
+  .cite { font-size: 11px; vertical-align: super; line-height: 0; text-decoration: none; margin-left: 1px; }
+  .callout { background: var(--ink); color: var(--bg); border-radius: var(--radius); padding: 14px 16px; margin-top: 10px; }
+  .callout b { color: inherit; }
+  .callout .cite { color: inherit; opacity: .8; }
+  .quote { font-size: 21px; font-style: italic; line-height: 1.35; margin: 4px 0 8px; }
+  .timeline { list-style: none; margin: 4px 0 0 7px; padding: 0; border-left: 2px solid var(--line); }
+  .timeline li { position: relative; padding: 0 0 16px 22px; }
+  .timeline li::before { content: ""; position: absolute; left: -8px; top: 5px; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--affected); border: 2px solid var(--bg); }
+  .timeline .year { font-weight: 700; font-variant-numeric: tabular-nums; margin-right: 6px; }
+  .timeline .tag { color: var(--accent); font-size: 13px; font-weight: 600; }
+  .takeaway { font-style: italic; font-size: 18px; color: var(--accent); margin: 4px 0 0; }
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tbl { width: 100%; min-width: 660px; border-collapse: collapse; font-size: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+  .tbl th, .tbl td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  .tbl thead th { background: var(--chip); font-size: 13px; }
+  .tbl tr:last-child td { border-bottom: 0; }
+  .yes { color: var(--fixed); font-weight: 700; } .no { color: var(--affected); font-weight: 700; } .unk { color: var(--neutral); font-weight: 700; }
+  .cols2 { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .card ul { margin: 6px 0 0; padding-left: 18px; }
+  .card li { margin: 3px 0; }
+  .meter { display: inline-flex; gap: 3px; align-items: flex-end; height: 22px; margin-right: 8px; vertical-align: middle; }
+  .meter i { display: block; width: 6px; border-radius: 1px; background: var(--line); }
+  .meter i.on { background: var(--accent); }
+  .lvl-top { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .bars { display: grid; gap: 8px; margin-top: 6px; }
+  .bars .row { align-items: center; font-size: 14px; }
+  .bars .lab { width: 170px; flex: none; }
+  .bars .track { flex: 1; background: var(--chip); border-radius: 4px; height: 14px; }
+  .bars .fill { height: 14px; border-radius: 4px; min-width: 3px; }
+  .bars .val { width: 40px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .sources li { margin: 4px 0; overflow-wrap: anywhere; }
+  .scroll-hint { display: none; color: var(--muted); font-size: 13px; margin: 0 0 4px; }
+  @media (max-width: 640px) {
+    .hero { grid-template-columns: 1fr; } .hero .art { display: none; }
+    .hero h2 { font-size: 26px; } .bars .lab { width: 120px; } .scroll-hint { display: block; }
+  }
 </style>
 </head>
 <body>
@@ -97,6 +155,10 @@
       <h1><a href="#" id="home-link">Xenolith</a></h1>
       <p>Which commercial products embed this component?</p>
     </div>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#" data-tab="census" id="tab-census">Census</a>
+      <a href="#why" data-tab="why">Why it matters</a>
+    </nav>
   </header>
   <div class="search" role="search">
     <label for="q" class="muted small">Search a component, CVE, vendor or product</label>
@@ -164,7 +226,12 @@ async function component(id) {
 // ---------------------------------------------------------------- routing
 function parseHash() {
   const h = new URLSearchParams(location.hash.replace(/^#/, ""));
-  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), w: h.get("w"), f: h.get("f") || "all", t: h.get("t") || "" };
+  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), w: h.get("w"), why: h.has("why"), f: h.get("f") || "all", t: h.get("t") || "" };
+}
+function setTab(name) {
+  document.querySelectorAll(".tabs a").forEach(a => {
+    if (a.dataset.tab === name) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+  });
 }
 function go(params, replace = false) {
   const h = new URLSearchParams();
@@ -178,9 +245,11 @@ window.addEventListener("hashchange", route);
 let lastView = null;
 function route() {
   if (!META) return;
-  const { c, p, q, w, f, t } = parseHash();
-  const view = c ? `c:${c}` : p ? `p:${p}` : q ? "q" : w ? "wanted" : "home";
+  const { c, p, q, w, why, f, t } = parseHash();
+  const view = c ? `c:${c}` : p ? `p:${p}` : q ? "q" : w ? "wanted" : why ? "why" : "home";
   if (view !== lastView) { window.scrollTo(0, 0); lastView = view; }
+  setTab(view === "why" ? "why" : "census");
+  if (view === "why") { input.value = ""; return showWhy(); }
   if (c && META.components.some(x => x.id === c)) { input.value = ""; return showComponent(c, f, t); }
   if (p) { input.value = ""; return showProduct(p); }
   if (q) { if (input.value !== q) input.value = q; return showSearch(q); }
@@ -204,6 +273,7 @@ input.addEventListener("keydown", e => {
   }
 });
 $("#home-link").addEventListener("click", e => { e.preventDefault(); go({}); });
+$("#tab-census").addEventListener("click", e => { e.preventDefault(); go({}); });
 
 // ---------------------------------------------------------------- search
 function componentTerms(comp) {
@@ -510,6 +580,7 @@ function showHome() {
     Asset scanners can't see into appliances and SaaS. Xenolith collects vendor CSAF/VEX statements, vendors' own open source notices
     and community incident trackers into one searchable, permanent index, organized by component. Search any library name to see which
     products list it in their notices.</p>
+    <p class="small"><a href="#why">Why this matters: the incidents, the rules and the evidence →</a></p>
     <div class="stats">
       <div class="stat"><b>${fmt(k.assertions)}</b><span>sourced statements</span></div>
       <div class="stat"><b>${fmt(k.products_with_data)}</b><span>products with data</span></div>
@@ -613,6 +684,290 @@ function queueSection(queue) {
     these vendors publishes its notices? <a href="${REPO}/blob/main/catalog/research_queue.yaml" target="_blank" rel="noopener">catalog/research_queue.yaml</a>.</p>
     <div class="list">${rows}</div>
     <p class="small muted" style="margin-top:10px">Ranking sources:</p><ul class="small">${srcs}</ul>`;
+}
+
+// ---------------------------------------------------------------- "Why it matters" tab
+// The same facts as the conference deck in presentations/ (v1.0, 8 November 2026), with the same source numbering.
+const DECK = { pptx: "presentations/xenolith-sbom-transparency.pptx", pdf: "presentations/xenolith-sbom-transparency.pdf",
+  version: "1.0", date: "8 November 2026" };
+const WHY_SRC = [
+  ["CyberScoop (T. Starks), “CISA warns ‘most serious’ Log4j vulnerability likely to affect hundreds of millions of devices,” 13 Dec 2021", "https://www.cyberscoop.com/log4j-cisa-easterly-most-serious/"],
+  ["Cyber Safety Review Board, “Review of the December 2021 Log4j Event,” 11 Jul 2022", "https://www.cisa.gov/sites/default/files/publications/CSRB-Report-on-Log4-July-11-2022_508.pdf"],
+  ["U.S. Senate Permanent Subcommittee on Investigations, “How Equifax Neglected Cybersecurity and Suffered a Devastating Data Breach,” staff report, 2019", "https://www.hsgac.senate.gov/imo/media/doc/FINAL%20Equifax%20Report.pdf"],
+  ["U.S. GAO, “Data Protection: Actions Taken by Equifax and Federal Agencies in Response to the 2017 Breach,” GAO-18-559, 2018", "https://www.gao.gov/products/gao-18-559"],
+  ["Netcraft, “Half a million widely trusted websites vulnerable to Heartbleed bug,” 8 Apr 2014", "https://news.netcraft.com/archives/2014/04/08/half-a-million-widely-trusted-websites-vulnerable-to-heartbleed-bug.html"],
+  ["SecurityWeek, “Heartbleed Still Affects 200,000 Devices: Shodan,” Jan 2017", "https://www.securityweek.com/heartbleed-still-affects-200000-devices-shodan"],
+  ["SolarWinds Corp., Form 8-K, 14 Dec 2020", "https://www.sec.gov/Archives/edgar/data/1739942/000162828020017451/swi-20201214.htm"],
+  ["A. Freund, “backdoor in upstream xz/liblzma leading to ssh server compromise,” oss-security, 29 Mar 2024", "https://www.openwall.com/lists/oss-security/2024/03/29/4"],
+  ["Centre for Cybersecurity Belgium, Advisory 2023-109, libwebp, 18 Sep 2023", "https://ccb.belgium.be/advisories/warning-critical-actively-exploited-vulnerability-libwebp-affecting-many-products"],
+  ["U.S. FDA, “Cybersecurity in Medical Devices Frequently Asked Questions (FAQs)”", "https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity-medical-devices-frequently-asked-questions-faqs"],
+  ["Regulation (EU) 2024/2847 (Cyber Resilience Act)", "https://eur-lex.europa.eu/eli/reg/2024/2847/oj"],
+  ["PCI Security Standards Council, PCI DSS v4.0, requirement 6.3.2", "https://www.pcisecuritystandards.org/document_library/"],
+  ["U.S. OMB, M-26-05, “Adopting a Risk-based Approach to Software and Hardware Security,” 23 Jan 2026", "https://www.whitehouse.gov/wp-content/uploads/2026/01/M-26-05-Adopting-a-Risk-based-Approach-to-Software-and-Hardware-Security.pdf"],
+  ["NTIA, “The Minimum Elements for a Software Bill of Materials (SBOM),” 12 Jul 2021", "https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom"],
+  ["CISA, “2025 Minimum Elements for a Software Bill of Materials (SBOM),” public comment draft, Aug 2025", "https://www.cisa.gov/resources-tools/resources/2025-minimum-elements-software-bill-materials-sbom"],
+  ["CISA, NSA and 19 international partners, “A Shared Vision of Software Bill of Materials (SBOM) for Cybersecurity,” 3 Sep 2025", "https://www.cisa.gov/resources-tools/resources/shared-vision-software-bill-materials-sbom-cybersecurity"],
+  ["Red Hat Product Security, “Security Data” (SBOM, CSAF/VEX and OSV; CC BY 4.0)", "https://access.redhat.com/security/data"],
+  ["Kubernetes release engineering, signed SPDX SBOMs for every release (kubernetes/release issue 1837)", "https://github.com/kubernetes/release/issues/1837"],
+  ["Docker, “Docker Hardened Images features”", "https://docs.docker.com/dhi/features/"],
+  ["Cisco, “Demonstrating Transparency Through Software Bill of Materials (SBOM),” 2023, and the SBOM request terms", "https://blogs.cisco.com/security/demonstrating-transparency-through-software-bill-of-materials-sbom"],
+  ["Siemens ProductCERT, security advisories in HTML and CSAF", "https://cert-portal.siemens.com/"],
+  ["Philips, Product Security (MDS² forms) and its stated SBOM aim", "https://www.philips.com/productsecurity"],
+  ["Microsoft, sbom-tool (open source SBOM generator)", "https://github.com/microsoft/sbom-tool"],
+  ["Xenolith: xenolith-scan design and real-artifact proofs, November 2026", "https://github.com/benheise/Xenolith/blob/main/design/xenolith-scan.md#real-artifact-proofs-november-2026"],
+];
+function ct(...ns) {
+  return ns.map(n => { const [t, u] = WHY_SRC[n - 1];
+    return `<a class="cite" href="${esc(u)}" target="_blank" rel="noopener noreferrer" title="${esc(t)}">[${n}]</a>`; }).join("");
+}
+function prodLink(keys, label) {
+  const k = keys.find(x => PBYKEY.has(x));
+  return k ? `<a href="#p=${encodeURIComponent(k)}">${esc(label)}</a>` : esc(label);
+}
+const XENOLITH_ART = `<svg class="art" viewBox="0 0 430 500" role="img" aria-label="Illustration: a light fragment sealed inside darker rock, which is what a xenolith is">
+  <polygon points="60,0 330,30 430,190 390,410 200,500 30,420 0,160" style="fill:var(--line)"/>
+  <polygon points="85,55 315,45 375,215 325,405 175,445 55,335 65,165" style="fill:var(--chip)"/>
+  <polygon points="165,155 275,170 315,245 265,325 155,305 125,225" style="fill:var(--accent)"/>
+  <polygon points="165,170 245,182 190,235" style="fill:var(--panel);opacity:.55"/></svg>`;
+
+function showWhy() {
+  const k = META.counts;
+  statusEl.textContent = `The case for the census · the same facts as the conference deck, v${DECK.version}, ${DECK.date}`;
+  const timeline = [
+    ["2014", "Heartbleed", "OpenSSL", `About 17% of trusted HTTPS sites were exposed ${ct(5)}; nearly 200,000 devices were still vulnerable in January 2017 ${ct(6)}.`],
+    ["2017", "Equifax", "Apache Struts", `The fix was out on 7 March; attackers were inside from 13 May. Data on more than 145 million people was taken ${ct(3, 4)}.`],
+    ["2020", "SolarWinds", "Orion build system", `The backdoor was added in the build system, not the source repository. Fewer than 18,000 customers installed it ${ct(7)}.`],
+    ["2021", "Log4Shell", "Log4j", `A CVSS 10.0 flaw in a logging library integrated into millions of systems ${ct(2)}.`],
+    ["2023", "libwebp", "libwebp", `An exploited image-decoder flaw inside browsers and Electron, CEF and Flutter apps ${ct(9)}.`],
+    ["2024", "xz utils", "liblzma", `A multi-year backdoor campaign, found by an engineer chasing slow SSH logins ${ct(8)}.`],
+  ];
+  const ladder = [
+    [1, "Readable disclosures", "Open source notices and security disclosure forms.", `<b>Philips:</b> MDS² security forms for its medical devices, and a stated aim of an SBOM for every product ${ct(22)}.`],
+    [2, "Machine-readable advisories", "CSAF advisories and VEX: affected, fixed or not affected.", `<b>Siemens, Microsoft, Cisco:</b> CSAF feeds. Siemens has listed “known not affected” products since June 2025 ${ct(21, 24)}.`],
+    [3, "SBOMs on request", "Customers can ask, usually under confidentiality terms.", `<b>Cisco:</b> SPDX SBOMs since June 2023 for supported on-premises software released after September 2022 ${ct(20)}.`],
+    [4, "Public SBOMs and VEX", "Anyone can download and check, release by release.", `<b>Red Hat:</b> SBOMs, VEX and OSV under CC BY 4.0 ${ct(17)}.<br><b>Kubernetes:</b> a signed SBOM per release ${ct(18)}.<br><b>Docker:</b> SBOM, VEX and SLSA L3 provenance on every Hardened Image ${ct(19)}.`],
+  ];
+  const meter = n => `<span class="meter" aria-hidden="true">${[0, 1, 2, 3].map(i => `<i class="${i < n ? "on" : ""}" style="height:${8 + i * 4}px"></i>`).join("")}</span>`;
+  const bars = [["Found, maker’s version", 481, "var(--accent)"], ["Found, other version", 2, "var(--workaround)"], ["Not found", 38, "var(--affected)"]];
+  app.innerHTML = `<article class="why">
+    <div class="hero">
+      <div>
+        <p class="kicker">Why it matters</p>
+        <h2>Do you know what’s inside?</h2>
+        <p class="lede">Every major incident starts with the same question: <b>which of the products we already run have the vulnerable component inside?</b>
+        This page sets out why that is still so hard to answer, why the rules won’t answer it for us, who is already doing better, and what the census does about it.</p>
+        <p class="small muted">Also a conference talk: <a href="${DECK.pptx}" download>PowerPoint</a> · <a href="${DECK.pdf}" target="_blank" rel="noopener">PDF</a>
+        (20 slides with speaker notes, v${DECK.version}, ${DECK.date}). Bracketed numbers link to each source.</p>
+      </div>
+      ${XENOLITH_ART}
+    </div>
+
+    <section aria-labelledby="why-bottom">
+      <p class="kicker">Overview</p><h2 id="why-bottom">The bottom line</h2>
+      <div class="grid grid3">
+        <div class="card"><div class="num">1</div><h3 style="margin-top:8px">We keep asking the same question</h3>
+          <p class="small">Every major incident starts with “which of our products contain it?”, and most organizations still can’t answer quickly.</p></div>
+        <div class="card"><div class="num">2</div><h3 style="margin-top:8px">The rules won’t answer it for us</h3>
+          <p class="small">Requirements differ by sector and country, and almost none require vendors to publish what their products contain.</p></div>
+        <div class="card"><div class="num">3</div><h3 style="margin-top:8px">Transparency is a competitive edge</h3>
+          <p class="small">Vendors who publish SBOMs and VEX earn trust before the next incident. An open census can check everyone else.</p></div>
+      </div>
+      <div class="callout"><b>The ask:</b> publish machine-readable SBOMs and VEX for every release, and help build a public, verifiable census of what products contain.</div>
+    </section>
+
+    <section aria-labelledby="why-question">
+      <p class="kicker">The question</p><h2 id="why-question">Every incident asks the same question</h2>
+      <div class="grid grid3">
+        <div class="card fact risk"><b>No inventory</b><div class="small">Equifax had no inventory showing where, or whether, it ran Apache Struts when the 2017 fix landed.</div>
+          <div class="src">U.S. Senate PSI, 2019 ${ct(3)}</div></div>
+        <div class="card fact risk"><b>Unknown</b><div class="small">Belgium’s cyber centre on libwebp in 2023: “It is unknown how many applications are affected.”</div>
+          <div class="src">CCB advisory 2023-109 ${ct(9)}</div></div>
+        <div class="card fact risk"><b>~200,000</b><div class="small">Devices still exposed to Heartbleed nearly three years after the fix was released.</div>
+          <div class="src">Shodan, January 2017 ${ct(6)}</div></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-history">
+      <p class="kicker">How we got here</p><h2 id="why-history">A decade of the same blind spot</h2>
+      <ol class="timeline">${timeline.map(([y, name, comp, body]) => `<li><div><span class="year">${y}</span><b>${esc(name)}</b> <span class="tag">${esc(comp)}</span></div>
+        <div class="small">${body}</div></li>`).join("")}</ol>
+      <p class="takeaway">Different components, different attackers, the same blind spot.</p>
+    </section>
+
+    <section aria-labelledby="why-log4shell">
+      <p class="kicker">How we got here</p><h2 id="why-log4shell">Log4Shell: the cost of not knowing</h2>
+      <div class="cols2">
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+          <div class="card fact risk"><b>10.0</b><div class="small">CVSS score: remote code execution in a library that ships almost everywhere</div></div>
+          <div class="card fact risk"><b>Hundreds</b><div class="small">of millions of devices likely affected, CISA officials warned industry ${ct(1)}</div></div>
+          <div class="card fact risk"><b>33,000</b><div class="small">hours one federal cabinet department spent on its Log4j response ${ct(2)}</div></div>
+          <div class="card fact risk"><b>10+ years</b><div class="small">how long the CSRB said vulnerable Log4j versions may remain in systems ${ct(2)}</div></div>
+        </div>
+        <div class="callout" style="margin-top:0">
+          <p class="quote">“One of the most serious I’ve seen in my entire career.”</p>
+          <div class="small">Jen Easterly, CISA Director, briefing industry on 13 December 2021 ${ct(1)}</div>
+          <div class="small" style="margin-top:12px">The Cyber Safety Review Board later called Log4j an “endemic vulnerability” ${ct(2)}.</div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-root">
+      <p class="kicker">How we got here</p><h2 id="why-root">Three failures, one root cause</h2>
+      <div class="grid grid3">
+        <div class="card"><h3>Embedded and unlisted</h3><div class="tag small" style="color:var(--accent);font-weight:600">Heartbleed · libwebp</div>
+          <p class="small">A component compiled into products that never said it was there.</p></div>
+        <div class="card"><h3>No inventory</h3><div class="tag small" style="color:var(--accent);font-weight:600">Equifax · Log4Shell</div>
+          <p class="small">Owners could not say where the component ran, so scans looked in the wrong places.</p></div>
+        <div class="card"><h3>Compromised builds</h3><div class="tag small" style="color:var(--accent);font-weight:600">SolarWinds · xz utils</div>
+          <p class="small">What shipped differed from what the source said; only the artifact told the truth.</p></div>
+      </div>
+      <div class="callout"><b>Root cause:</b> no shared, verifiable record of what products contain. Every organization rebuilds the answer alone, under pressure, and then throws it away.</div>
+    </section>
+
+    <section aria-labelledby="why-rules">
+      <p class="kicker">A patchwork of rules</p><h2 id="why-rules">Rules differ by sector, and stay private</h2>
+      <p class="scroll-hint">Swipe the table sideways to see every column.</p>
+      <div class="scroll"><table class="tbl">
+        <caption class="sr-only">SBOM requirements by sector, and whether the SBOM must be public</caption>
+        <thead><tr><th scope="col">Sector</th><th scope="col">Instrument</th><th scope="col">What it requires</th><th scope="col">Public?</th><th scope="col">In force</th></tr></thead>
+        <tbody>
+          <tr><td>Medical devices (US)</td><td>FD&amp;C Act §524B, enforced by FDA ${ct(10)}</td><td>An SBOM in premarket submissions for “cyber devices”</td><td class="no">No: filed with FDA</td><td>29 Mar 2023</td></tr>
+          <tr><td>Products with digital elements (EU)</td><td>Cyber Resilience Act, (EU) 2024/2847 ${ct(11)}</td><td>An SBOM in the technical documentation</td><td class="no">No: not obliged to publish</td><td>11 Dec 2027</td></tr>
+          <tr><td>Payment card environments</td><td>PCI DSS 4.0, requirement 6.3.2 ${ct(12)}</td><td>Inventory of bespoke and custom software and its third-party components</td><td class="no">No: for assessors</td><td>31 Mar 2025</td></tr>
+          <tr><td>US federal purchasing</td><td>EO 14028, now OMB M-26-05 ${ct(13)}</td><td>Nothing fixed: agencies “may” require an SBOM by contract</td><td class="no">No</td><td>Mandate rescinded 23 Jan 2026</td></tr>
+          <tr><td>Industrial, enterprise, consumer IoT</td><td>Guidance only: NTIA 2021, CISA 2025 draft, CISA/NSA + 19 partners ${ct(14, 15, 16)}</td><td>Nothing binding</td><td class="no">No</td><td>—</td></tr>
+        </tbody></table></div>
+      <h3 style="margin:18px 0 8px">Mandates are moving in opposite directions</h3>
+      <div class="cols2">
+        <div class="card"><h3 style="color:var(--fixed)">Tightening</h3><ul class="small">
+          <li>FDA may refuse premarket submissions for cyber devices that lack required cybersecurity content (since 1 Oct 2023) ${ct(10)}</li>
+          <li>PCI DSS component inventory mandatory from 31 Mar 2025 ${ct(12)}</li>
+          <li>EU CRA: vulnerability reporting from 11 Sep 2026, SBOM duty from 11 Dec 2027, fines up to €15M or 2.5% of turnover ${ct(11)}</li>
+          <li>CISA’s 2025 draft adds component hash, license, tool name and generation context ${ct(15)}</li></ul></div>
+        <div class="card"><h3 style="color:var(--affected)">Loosening</h3><ul class="small">
+          <li>OMB M-26-05 rescinded the federal secure-software attestation memos (23 Jan 2026) ${ct(13)}</li>
+          <li>SBOMs became an agency-by-agency choice; CISA templates are no longer required ${ct(13)}</li>
+          <li>Agencies must still keep a complete software and hardware inventory, which depends on vendor data ${ct(13)}</li></ul></div>
+      </div>
+      <div class="callout">One product sold to US hospitals, card processors, EU customers and federal agencies answers to four regimes, and none requires the vendor to publish.</div>
+    </section>
+
+    <section aria-labelledby="why-gap">
+      <p class="kicker">The verification gap</p><h2 id="why-gap">Paperwork and products drift apart</h2>
+      <p class="small">What each maker’s documents say, next to what <span class="kbd">xenolith-scan</span> found in the files they ship ${ct(24)}.</p>
+      <p class="scroll-hint">Swipe the table sideways to see every column.</p>
+      <div class="scroll"><table class="tbl">
+        <caption class="sr-only">Vendor documentation compared with the contents of shipped files</caption>
+        <thead><tr><th scope="col">Product</th><th scope="col">The maker’s documents say</th><th scope="col">The shipped files contain</th><th scope="col">Match</th></tr></thead>
+        <tbody>
+          <tr><td>${prodLink(["microsoft/visual-studio-code"], "Visual Studio Code")} 1.95.3, code-tunnel CLI</td><td>Notices name only the Rust openssl crate</td><td>OpenSSL 3.1.4, statically linked</td><td class="no">No</td></tr>
+          <tr><td>${prodLink(["elastic/elasticsearch"], "Elasticsearch")} 8.15.0</td><td>NOTICE.txt: commons-logging 1.1.1</td><td>commons-logging 1.2 in every bundled jar</td><td class="no">No</td></tr>
+          <tr><td>${prodLink(["wireshark-foundation/wireshark", "the-wireshark-foundation/wireshark"], "Wireshark")} 4.4.19 for Windows</td><td>Build script: c-ares 1.28.1</td><td>cares.dll reports 1.27.0</td><td class="no">No</td></tr>
+          <tr><td>${prodLink(["netgear/r7000"], "Netgear R7000")} firmware 1.0.11.136 (2022)</td><td>No public component list found</td><td>curl 7.36.0 (from 2014), OpenSSL 1.0.2h, BusyBox 1.22.1*</td><td class="unk">Unknown</td></tr>
+          <tr><td>${prodLink(["splunk/universal-forwarder"], "Splunk Universal Forwarder")} 9.2.1</td><td>Advisory SVD-2024-0304: OpenSSL 1.0.2zj, curl 8.5.0</td><td>OpenSSL 1.0.2zj, curl 8.5.0</td><td class="yes">Yes</td></tr>
+        </tbody></table></div>
+      <p class="small muted">Presence is not exposure: a listed component can be unreachable or already patched. * A scan result, not confirmed against a GPL source archive.</p>
+      <h3 style="margin:18px 0 8px">Why checking is harder than it sounds</h3>
+      <div class="grid grid3">
+        <div class="card"><h3>Static linking and vendoring</h3><p class="small">Copies compiled into a binary leave no package metadata for scanners to read.</p></div>
+        <div class="card"><h3>Packed formats</h3><p class="small">Firmware and installers hide their files. Wireshark’s MSI showed 0 components until its tables were decoded, then 55 ${ct(24)}.</p></div>
+        <div class="card"><h3>Notices are legal documents</h3><p class="small">Written for license compliance, not inventory, they drift from what is actually built.</p></div>
+        <div class="card"><h3>Inconsistent identity</h3><p class="small">zlib-ng announces itself as zlib; a DLL calls itself “The c-ares library”. Matching takes judgment ${ct(24)}.</p></div>
+        <div class="card"><h3>SBOMs kept private</h3><p class="small">Where SBOMs exist, they go to regulators or under confidentiality terms, out of customers’ reach ${ct(11, 20)}.</p></div>
+        <div class="card"><h3>Builds can differ from source</h3><p class="small">SolarWinds’ backdoor sat in the build system, not the source repository. Only the artifact tells the truth ${ct(7)}.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-leaders">
+      <p class="kicker">Leaders who publish</p><h2 id="why-leaders">The transparency ladder</h2>
+      <div class="grid">${ladder.map(([n, name, desc, who]) => `<div class="card${n === 4 ? " lvl-top" : ""}">
+        <div class="small" style="font-weight:700;color:var(--accent)">${meter(n)}Level ${n}</div>
+        <h3 style="margin-top:6px">${esc(name)}</h3><p class="small muted" style="margin:4px 0 8px">${esc(desc)}</p>
+        <div class="small">${who}</div></div>`).join("")}</div>
+      <p class="small muted">Microsoft also open-sourced its SBOM generator, sbom-tool, in 2022 ${ct(23)}. The goal for the industry is level 4.</p>
+      <h3 style="margin:18px 0 8px">Knowing what’s inside is an advantage</h3>
+      <div class="cols2">
+        <div class="card"><h3>Same flaw, same month, different outcomes (2017)</h3>
+          <p class="small"><b class="yes">TransUnion and Experian</b> used accurate IT asset inventories to find their vulnerable Struts systems; TransUnion began patching within days.</p>
+          <p class="small"><b class="no">Equifax</b> had no inventory of where it used Struts. The breach exposed data on more than 145 million people.</p>
+          <div class="meta">U.S. Senate Permanent Subcommittee on Investigations, 2019 ${ct(3)}; GAO-18-559 ${ct(4)}</div></div>
+        <div class="card"><h3>What publishing earns a vendor</h3><ul class="small">
+          <li><b>Faster answers:</b> “are we affected?” becomes a lookup for customers, not a support ticket.</li>
+          <li><b>Procurement readiness:</b> FDA, PCI DSS and the EU CRA already demand this evidence ${ct(10, 11, 12)}.</li>
+          <li><b>Trust that survives scrutiny:</b> public data can be checked, and data that checks out compounds trust.</li>
+          <li><b>Authority to say “not affected”:</b> VEX ends the scramble for customers and support teams alike.</li></ul></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-census">
+      <p class="kicker">An open census</p><h2 id="why-census">What the census does</h2>
+      <p class="small muted">A xenolith is a fragment of foreign rock sealed inside another. Products carry other people’s components the same way.</p>
+      <div class="grid grid3">
+        <div class="card"><div class="kicker">1 · Collect</div><h3>Gather what vendors publish</h3><ul class="small">
+          <li>CSAF and VEX feeds: Cisco, Microsoft, Red Hat, Siemens, BSI’s aggregator</li>
+          <li>Open source notices from NetApp, Palo Alto Networks, F5, Apple and more</li>
+          <li>SBOMs submitted by vendors and the community</li></ul></div>
+        <div class="card"><div class="kicker">2 · Verify</div><h3>Check the shipped artifact</h3><ul class="small">
+          <li><span class="kbd">xenolith-scan</span>: one offline command; nothing is executed</li>
+          <li>Unpacks installers, firmware, archives and container images</li>
+          <li>Finds statically linked copies; compares with the maker’s notices</li></ul></div>
+        <div class="card"><div class="kicker">3 · Publish</div><h3>Make the answer public</h3><ul class="small">
+          <li>Searchable by product, component and version</li>
+          <li>Every entry links to its source</li>
+          <li>Shows presence, not exposure: a lead to check, not a verdict</li></ul></div>
+      </div>
+      <div class="stats" style="margin-top:12px">
+        <div class="stat"><b>${fmt(k.assertions)}</b><span>sourced statements today</span></div>
+        <div class="stat"><b>${fmt(k.products_with_data)}</b><span>products with data</span></div>
+        <div class="stat"><b>${fmt(k.inventories || 0)}</b><span>vendor notices parsed</span></div>
+        <div class="stat"><b>${fmt(k.inventory_components || 0)}</b><span>components listed in them</span></div>
+      </div>
+      <h3 style="margin:18px 0 8px">Tested against real products</h3>
+      <div class="cols2">
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+          <div class="card fact good"><b>24</b><div class="small">real artifacts with maker-published ground truth, closed-source products included</div></div>
+          <div class="card fact good"><b>93%</b><div class="small">of listed components found (483 of 521)</div></div>
+          <div class="card fact good"><b>481/483</b><div class="small">found components reported at the maker’s exact version</div></div>
+          <div class="card fact good"><b>39/39</b><div class="small">watchlist components detected, such as OpenSSL, curl, Log4j and libwebp</div></div>
+        </div>
+        <div class="card"><h3>521 listed components, 24 artifacts</h3>
+          <div class="bars">${bars.map(([lab, v, col]) => `<div class="row"><span class="lab">${esc(lab)}</span>
+            <span class="track" aria-hidden="true"><span class="fill" style="display:block;width:${(v / 521 * 100).toFixed(1)}%;background:${col}"></span></span>
+            <span class="val">${v}</span></div>`).join("")}</div>
+          <p class="small muted" style="margin-bottom:0">The corpus includes Splunk Universal Forwarder, Visual Studio Code, Wireshark’s NSIS and MSI installers, Elasticsearch,
+          OpenWrt, Debian packages and Python wheels. The misses are libraries with no fingerprint yet, such as libpng, FreeType and OpenLDAP ${ct(24)}.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-action">
+      <p class="kicker">Call to action</p><h2 id="why-action">What each of us can do</h2>
+      <div class="grid grid3">
+        <div class="card"><h3>Vendors</h3><ul class="small">
+          <li>Publish an SBOM and VEX for every release at a stable public URL</li>
+          <li>Generate SBOMs from the artifact you ship, not only the source tree</li>
+          <li>Keep notices in step with builds, and welcome independent checks</li></ul></div>
+        <div class="card"><h3>Buyers</h3><ul class="small">
+          <li>Ask for public SBOM and VEX in every RFP and renewal</li>
+          <li>Give weight to vendors who already publish; ask the rest why not</li>
+          <li>Scan what you run and <a href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contribute the results</a> to the census</li></ul></div>
+        <div class="card"><h3>Regulators and standards bodies</h3><ul class="small">
+          <li>Make publication the default, and justify exceptions narrowly</li>
+          <li>Align sectors on one set of minimum elements</li>
+          <li>Accept independent verification as evidence</li></ul></div>
+      </div>
+      <div class="callout"><b>Make day one a lookup, not a scramble.</b> The next Log4Shell is already shipping inside something you run.
+        <a href="#" id="why-search" style="color:inherit">Search the census →</a></div>
+    </section>
+
+    <section aria-labelledby="why-sources">
+      <p class="kicker">References</p><h2 id="why-sources">Sources</h2>
+      <ol class="small sources">${WHY_SRC.map(([t, u]) => `<li>${esc(t)}. ${link(u, u.replace(/^https?:\/\//, ""))}</li>`).join("")}</ol>
+      <p class="small muted">Facts are current as of ${DECK.date}. Census findings show that a component is present, not that a product is exploitable.
+      Product and company names are trademarks of their owners; mentions are factual and imply no endorsement. Recommendations are the author’s own.
+      Corrections: <a href="${REPO}/issues" target="_blank" rel="noopener">open an issue</a>.</p>
+    </section>
+  </article>`;
+  $("#why-search").addEventListener("click", e => { e.preventDefault(); go({}); input.focus(); });
 }
 
 function renderFooter() {
