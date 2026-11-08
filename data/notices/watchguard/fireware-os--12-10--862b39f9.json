@@ -1,0 +1,1563 @@
+{
+"components": [
+{
+"name": "accel-ppp",
+"version": ""
+},
+{
+"name": "Apache Axis2/C",
+"version": ""
+},
+{
+"name": "Apache Axis2/Java",
+"version": ""
+},
+{
+"name": "Apache Commons",
+"version": ""
+},
+{
+"name": "Apache FOP",
+"version": ""
+},
+{
+"name": "Apache POI",
+"version": ""
+},
+{
+"name": "Apache Portable Runtime",
+"version": ""
+},
+{
+"name": "Apache Rampart/C",
+"version": ""
+},
+{
+"name": "Apache Server",
+"version": ""
+},
+{
+"name": "Apache WS Common Utilities",
+"version": ""
+},
+{
+"name": "Apache xmlrpc",
+"version": ""
+},
+{
+"name": "arptables",
+"version": ""
+},
+{
+"name": "asn1crypto",
+"version": ""
+},
+{
+"name": "async-res",
+"version": ""
+},
+{
+"name": "atf",
+"version": ""
+},
+{
+"name": "atftp",
+"version": ""
+},
+{
+"name": "ath",
+"version": "10k-firmware"
+},
+{
+"name": "attrs",
+"version": ""
+},
+{
+"name": "atws",
+"version": ""
+},
+{
+"name": "autosetup",
+"version": ""
+},
+{
+"name": "awscli",
+"version": ""
+},
+{
+"name": "backports_abc",
+"version": ""
+},
+{
+"name": "backstrap",
+"version": ""
+},
+{
+"name": "bf",
+"version": ""
+},
+{
+"name": "bftpd",
+"version": ""
+},
+{
+"name": "binutils",
+"version": ""
+},
+{
+"name": "boa-asp",
+"version": ""
+},
+{
+"name": "boa-utils",
+"version": ""
+},
+{
+"name": "Boost",
+"version": ""
+},
+{
+"name": "Bootstrap",
+"version": ""
+},
+{
+"name": "bootstrap-datetimepicker.js",
+"version": ""
+},
+{
+"name": "boto3",
+"version": ""
+},
+{
+"name": "botocore",
+"version": ""
+},
+{
+"name": "Bouncy Castle Crypto APIs",
+"version": ""
+},
+{
+"name": "bridge-utils",
+"version": ""
+},
+{
+"name": "BusyBox",
+"version": ""
+},
+{
+"name": "bzip2",
+"version": ""
+},
+{
+"name": "c-ares",
+"version": ""
+},
+{
+"name": "cached-property",
+"version": ""
+},
+{
+"name": "cairo",
+"version": ""
+},
+{
+"name": "cavecreek",
+"version": ""
+},
+{
+"name": "celementree",
+"version": ""
+},
+{
+"name": "cereal",
+"version": ""
+},
+{
+"name": "certifi",
+"version": ""
+},
+{
+"name": "cffi",
+"version": ""
+},
+{
+"name": "CGIC",
+"version": ""
+},
+{
+"name": "Cheetah",
+"version": ""
+},
+{
+"name": "Common CA Database (run by Mozilla)",
+"version": ""
+},
+{
+"name": "compat-wireless",
+"version": ""
+},
+{
+"name": "conntrack-tools",
+"version": ""
+},
+{
+"name": "crypt",
+"version": ""
+},
+{
+"name": "cryptography",
+"version": ""
+},
+{
+"name": "css-flags",
+"version": ""
+},
+{
+"name": "ctypes",
+"version": ""
+},
+{
+"name": "curl",
+"version": ""
+},
+{
+"name": "Cyberons_SNMP",
+"version": ""
+},
+{
+"name": "Cylance",
+"version": ""
+},
+{
+"name": "d3 and d3-plugins",
+"version": ""
+},
+{
+"name": "dateFormat",
+"version": ""
+},
+{
+"name": "dateutil",
+"version": ""
+},
+{
+"name": "defusedxml",
+"version": ""
+},
+{
+"name": "dejavu-fonts-ttf",
+"version": ""
+},
+{
+"name": "des",
+"version": ""
+},
+{
+"name": "dhcp",
+"version": ""
+},
+{
+"name": "dmalloc",
+"version": ""
+},
+{
+"name": "dnsmasq",
+"version": ""
+},
+{
+"name": "docutils",
+"version": ""
+},
+{
+"name": "dosfstools",
+"version": ""
+},
+{
+"name": "dropbear",
+"version": ""
+},
+{
+"name": "dsl",
+"version": ""
+},
+{
+"name": "dsl_sdk",
+"version": ""
+},
+{
+"name": "e2fsprogs",
+"version": ""
+},
+{
+"name": "ebtables",
+"version": ""
+},
+{
+"name": "ecmh",
+"version": ""
+},
+{
+"name": "edtFTPj",
+"version": ""
+},
+{
+"name": "eglibc",
+"version": ""
+},
+{
+"name": "ElementTree",
+"version": ""
+},
+{
+"name": "enum34",
+"version": ""
+},
+{
+"name": "ethtool",
+"version": ""
+},
+{
+"name": "expat and libexpat",
+"version": ""
+},
+{
+"name": "ez-ipupdate",
+"version": ""
+},
+{
+"name": "fcg-cgi",
+"version": ""
+},
+{
+"name": "FCGI — FastCGI Application Library",
+"version": ""
+},
+{
+"name": "fcgiwrap",
+"version": ""
+},
+{
+"name": "file",
+"version": ""
+},
+{
+"name": "Files-In-Use Extension for Inno Setup",
+"version": ""
+},
+{
+"name": "flup",
+"version": ""
+},
+{
+"name": "fm-ucode",
+"version": ""
+},
+{
+"name": "fmb",
+"version": ""
+},
+{
+"name": "fmc",
+"version": ""
+},
+{
+"name": "fmlib",
+"version": ""
+},
+{
+"name": "fontconfig",
+"version": ""
+},
+{
+"name": "FPCONST",
+"version": ""
+},
+{
+"name": "free-extractor",
+"version": ""
+},
+{
+"name": "freebsd-base64",
+"version": "4.8"
+},
+{
+"name": "freeradius",
+"version": ""
+},
+{
+"name": "FreeRADIUS client",
+"version": ""
+},
+{
+"name": "freeradius-client-cvs",
+"version": ""
+},
+{
+"name": "freerdp",
+"version": ""
+},
+{
+"name": "freetype",
+"version": ""
+},
+{
+"name": "frr",
+"version": ""
+},
+{
+"name": "fsl-config",
+"version": ""
+},
+{
+"name": "fsl-ethconfig",
+"version": ""
+},
+{
+"name": "functools",
+"version": ""
+},
+{
+"name": "future",
+"version": ""
+},
+{
+"name": "futures",
+"version": ""
+},
+{
+"name": "gcc",
+"version": ""
+},
+{
+"name": "gdb",
+"version": ""
+},
+{
+"name": "gdbm",
+"version": ""
+},
+{
+"name": "GeoIite2 City database",
+"version": ""
+},
+{
+"name": "GeoIP2-Python",
+"version": ""
+},
+{
+"name": "gevent",
+"version": ""
+},
+{
+"name": "glibc",
+"version": ""
+},
+{
+"name": "gobi3000",
+"version": ""
+},
+{
+"name": "greenlet",
+"version": ""
+},
+{
+"name": "grub",
+"version": ""
+},
+{
+"name": "guacamole server",
+"version": ""
+},
+{
+"name": "gzip",
+"version": ""
+},
+{
+"name": "harfbuzz",
+"version": ""
+},
+{
+"name": "hostapd",
+"version": ""
+},
+{
+"name": "hping",
+"version": ""
+},
+{
+"name": "i40e",
+"version": ""
+},
+{
+"name": "idna",
+"version": ""
+},
+{
+"name": "Iiperf",
+"version": ""
+},
+{
+"name": "ilmid",
+"version": ""
+},
+{
+"name": "inetd",
+"version": ""
+},
+{
+"name": "Inno Setup",
+"version": ""
+},
+{
+"name": "inotifyx",
+"version": ""
+},
+{
+"name": "ipaddr",
+"version": ""
+},
+{
+"name": "ipaddress",
+"version": ""
+},
+{
+"name": "iproute",
+"version": ""
+},
+{
+"name": "iproute2",
+"version": ""
+},
+{
+"name": "ipsec-tools",
+"version": ""
+},
+{
+"name": "ipt-netflow",
+"version": ""
+},
+{
+"name": "iptables",
+"version": ""
+},
+{
+"name": "iputils",
+"version": ""
+},
+{
+"name": "isodate",
+"version": ""
+},
+{
+"name": "iText",
+"version": ""
+},
+{
+"name": "iw",
+"version": ""
+},
+{
+"name": "jansson",
+"version": ""
+},
+{
+"name": "Jasper Reports",
+"version": ""
+},
+{
+"name": "Java Look and Feel Graphics Repository (lfgr)",
+"version": ""
+},
+{
+"name": "Java2D",
+"version": ""
+},
+{
+"name": "javasqlite",
+"version": ""
+},
+{
+"name": "JavaTar",
+"version": ""
+},
+{
+"name": "javax.json",
+"version": ""
+},
+{
+"name": "JAXB",
+"version": ""
+},
+{
+"name": "JClass and Jcchart",
+"version": ""
+},
+{
+"name": "JCommon",
+"version": ""
+},
+{
+"name": "JDIC",
+"version": ""
+},
+{
+"name": "JDom",
+"version": ""
+},
+{
+"name": "JFreeChart",
+"version": ""
+},
+{
+"name": "jim",
+"version": ""
+},
+{
+"name": "Jitter RNG Daemon",
+"version": ""
+},
+{
+"name": "jmespath.py",
+"version": ""
+},
+{
+"name": "jqGrid",
+"version": ""
+},
+{
+"name": "jqPlot",
+"version": ""
+},
+{
+"name": "jQuery and jQuery UI",
+"version": ""
+},
+{
+"name": "js-base64",
+"version": ""
+},
+{
+"name": "js-bootstrap",
+"version": ""
+},
+{
+"name": "js-d3",
+"version": ""
+},
+{
+"name": "js-dateformat",
+"version": ""
+},
+{
+"name": "js-filesaver",
+"version": ""
+},
+{
+"name": "js-jquery",
+"version": ""
+},
+{
+"name": "js-jquery-colorpicker",
+"version": ""
+},
+{
+"name": "js-jquery-jqplot",
+"version": ""
+},
+{
+"name": "js-jquery-jqrid",
+"version": ""
+},
+{
+"name": "js-jquery-ui",
+"version": ""
+},
+{
+"name": "js-jquery-ui-timepicker-addon",
+"version": ""
+},
+{
+"name": "js-jquery-xmlrpc",
+"version": ""
+},
+{
+"name": "js-json2",
+"version": ""
+},
+{
+"name": "js-modernizr-respond",
+"version": ""
+},
+{
+"name": "js-moment",
+"version": ""
+},
+{
+"name": "js-selectize",
+"version": ""
+},
+{
+"name": "js-visavail",
+"version": ""
+},
+{
+"name": "json-c",
+"version": ""
+},
+{
+"name": "jsonrpc",
+"version": ""
+},
+{
+"name": "jsonschema",
+"version": ""
+},
+{
+"name": "jstimezonedetect.js",
+"version": ""
+},
+{
+"name": "junit",
+"version": ""
+},
+{
+"name": "Jython",
+"version": ""
+},
+{
+"name": "kazlib",
+"version": ""
+},
+{
+"name": "kexec-tools",
+"version": ""
+},
+{
+"name": "ksymoops",
+"version": ""
+},
+{
+"name": "lane",
+"version": ""
+},
+{
+"name": "led",
+"version": ""
+},
+{
+"name": "libarchive",
+"version": ""
+},
+{
+"name": "libbsd",
+"version": ""
+},
+{
+"name": "libcap",
+"version": ""
+},
+{
+"name": "libcurl",
+"version": ""
+},
+{
+"name": "libedit",
+"version": ""
+},
+{
+"name": "libelf",
+"version": ""
+},
+{
+"name": "libev",
+"version": ""
+},
+{
+"name": "libexpat",
+"version": ""
+},
+{
+"name": "Libffi",
+"version": ""
+},
+{
+"name": "libiconv",
+"version": ""
+},
+{
+"name": "libjpeg",
+"version": ""
+},
+{
+"name": "libjpeg-turbo",
+"version": ""
+},
+{
+"name": "liblockfile1",
+"version": ""
+},
+{
+"name": "libmaxminddb",
+"version": ""
+},
+{
+"name": "libmba",
+"version": ""
+},
+{
+"name": "libmd",
+"version": ""
+},
+{
+"name": "libmnl",
+"version": ""
+},
+{
+"name": "libmspack",
+"version": ""
+},
+{
+"name": "Libnet",
+"version": "1.1.x"
+},
+{
+"name": "libnetfilter_conntrack",
+"version": ""
+},
+{
+"name": "libnetfilter_cthelper",
+"version": ""
+},
+{
+"name": "libnetfilter_cttimeout",
+"version": ""
+},
+{
+"name": "libnetfilter_queue",
+"version": ""
+},
+{
+"name": "libnfnetlink",
+"version": ""
+},
+{
+"name": "libnl",
+"version": ""
+},
+{
+"name": "libpcap",
+"version": ""
+},
+{
+"name": "libpng",
+"version": ""
+},
+{
+"name": "libpthread",
+"version": ""
+},
+{
+"name": "libssh",
+"version": ""
+},
+{
+"name": "libssl",
+"version": ""
+},
+{
+"name": "libtld",
+"version": ""
+},
+{
+"name": "libtool",
+"version": ""
+},
+{
+"name": "libudis86",
+"version": ""
+},
+{
+"name": "libupnp",
+"version": ""
+},
+{
+"name": "libusb",
+"version": ""
+},
+{
+"name": "libusb-compat",
+"version": ""
+},
+{
+"name": "libxml2",
+"version": ""
+},
+{
+"name": "libxmlrpc",
+"version": ""
+},
+{
+"name": "libxslt",
+"version": ""
+},
+{
+"name": "libyang",
+"version": ""
+},
+{
+"name": "Licensing for Firebox T10-D DSL Firmware",
+"version": ""
+},
+{
+"name": "Licensing for WSM, Fireware, and Dimension",
+"version": ""
+},
+{
+"name": "Linux",
+"version": ""
+},
+{
+"name": "linux-atm",
+"version": ""
+},
+{
+"name": "linux-firmware",
+"version": ""
+},
+{
+"name": "linuxatm",
+"version": ""
+},
+{
+"name": "Lua",
+"version": ""
+},
+{
+"name": "lxml",
+"version": ""
+},
+{
+"name": "LZO",
+"version": ""
+},
+{
+"name": "Mailshell",
+"version": ""
+},
+{
+"name": "makedumpfile",
+"version": ""
+},
+{
+"name": "matrixssl",
+"version": ""
+},
+{
+"name": "maxminddb",
+"version": ""
+},
+{
+"name": "mbedtls",
+"version": ""
+},
+{
+"name": "memtester",
+"version": ""
+},
+{
+"name": "Microsoft Azure Linux Agent",
+"version": ""
+},
+{
+"name": "minizip",
+"version": ""
+},
+{
+"name": "mod_python",
+"version": ""
+},
+{
+"name": "mod_wsgi",
+"version": ""
+},
+{
+"name": "modernizr",
+"version": ""
+},
+{
+"name": "modeswitch",
+"version": ""
+},
+{
+"name": "mono",
+"version": ""
+},
+{
+"name": "monotime",
+"version": ""
+},
+{
+"name": "mtd",
+"version": ""
+},
+{
+"name": "mtk-firmware",
+"version": ""
+},
+{
+"name": "mxml",
+"version": ""
+},
+{
+"name": "ncurses",
+"version": ""
+},
+{
+"name": "net-SNMP",
+"version": ""
+},
+{
+"name": "netkit-ftp",
+"version": ""
+},
+{
+"name": "nfdump",
+"version": ""
+},
+{
+"name": "nginx",
+"version": ""
+},
+{
+"name": "nmap",
+"version": ""
+},
+{
+"name": "ntpclient",
+"version": ""
+},
+{
+"name": "NumPy",
+"version": ""
+},
+{
+"name": "Open Sans Fonts",
+"version": ""
+},
+{
+"name": "open-vm-tools",
+"version": ""
+},
+{
+"name": "OpenJDK",
+"version": ""
+},
+{
+"name": "OpenLDAP",
+"version": ""
+},
+{
+"name": "OpenNTPD",
+"version": ""
+},
+{
+"name": "opensans font",
+"version": ""
+},
+{
+"name": "openssh",
+"version": ""
+},
+{
+"name": "OpenSSL",
+"version": ""
+},
+{
+"name": "OpenVPN -- An Open Source VPN daemon",
+"version": ""
+},
+{
+"name": "oprofile",
+"version": ""
+},
+{
+"name": "ossp_mm",
+"version": ""
+},
+{
+"name": "paho-mqtt",
+"version": ""
+},
+{
+"name": "PAM",
+"version": ""
+},
+{
+"name": "pango",
+"version": ""
+},
+{
+"name": "parted",
+"version": ""
+},
+{
+"name": "Patents",
+"version": ""
+},
+{
+"name": "pcre2",
+"version": ""
+},
+{
+"name": "pimd",
+"version": ""
+},
+{
+"name": "pixman",
+"version": ""
+},
+{
+"name": "Poco",
+"version": ""
+},
+{
+"name": "PostgreSQL Database Management System",
+"version": ""
+},
+{
+"name": "PPP",
+"version": ""
+},
+{
+"name": "pppd",
+"version": ""
+},
+{
+"name": "pppoatm",
+"version": ""
+},
+{
+"name": "pptpd",
+"version": ""
+},
+{
+"name": "ProtoBuf",
+"version": ""
+},
+{
+"name": "protobuf-c",
+"version": ""
+},
+{
+"name": "proxytunnel",
+"version": ""
+},
+{
+"name": "psocopg2",
+"version": ""
+},
+{
+"name": "pstack",
+"version": ""
+},
+{
+"name": "psutil",
+"version": ""
+},
+{
+"name": "psycopg",
+"version": ""
+},
+{
+"name": "py.lib",
+"version": ""
+},
+{
+"name": "pyasn1",
+"version": ""
+},
+{
+"name": "PyCryptodome",
+"version": ""
+},
+{
+"name": "pymssql",
+"version": ""
+},
+{
+"name": "pyOpenSSL",
+"version": ""
+},
+{
+"name": "pyroute2",
+"version": ""
+},
+{
+"name": "pysqlite",
+"version": ""
+},
+{
+"name": "Python",
+"version": ""
+},
+{
+"name": "Python Imaging Library",
+"version": ""
+},
+{
+"name": "python-xmlsec",
+"version": ""
+},
+{
+"name": "python3-saml",
+"version": ""
+},
+{
+"name": "Pytz",
+"version": ""
+},
+{
+"name": "QJson",
+"version": ""
+},
+{
+"name": "QT",
+"version": ""
+},
+{
+"name": "radvd",
+"version": ""
+},
+{
+"name": "Raleway",
+"version": ""
+},
+{
+"name": "readline",
+"version": ""
+},
+{
+"name": "reload4j",
+"version": ""
+},
+{
+"name": "ReportLab Toolkit",
+"version": ""
+},
+{
+"name": "requests",
+"version": ""
+},
+{
+"name": "requests-toolbelt",
+"version": ""
+},
+{
+"name": "restool",
+"version": ""
+},
+{
+"name": "rngtools",
+"version": ""
+},
+{
+"name": "rp-pppoe",
+"version": ""
+},
+{
+"name": "rsa",
+"version": ""
+},
+{
+"name": "rsync",
+"version": ""
+},
+{
+"name": "rtrlib",
+"version": ""
+},
+{
+"name": "samba",
+"version": ""
+},
+{
+"name": "sasl",
+"version": ""
+},
+{
+"name": "SCEW",
+"version": ""
+},
+{
+"name": "screen",
+"version": ""
+},
+{
+"name": "simplejson",
+"version": ""
+},
+{
+"name": "simpleopt",
+"version": ""
+},
+{
+"name": "singledispatch",
+"version": ""
+},
+{
+"name": "six",
+"version": ""
+},
+{
+"name": "smartmontools",
+"version": ""
+},
+{
+"name": "smcroute",
+"version": ""
+},
+{
+"name": "Sophos-dlp",
+"version": ""
+},
+{
+"name": "spawn-fcgi",
+"version": ""
+},
+{
+"name": "spc",
+"version": ""
+},
+{
+"name": "SQLAlchemy",
+"version": ""
+},
+{
+"name": "sqlite",
+"version": ""
+},
+{
+"name": "SQLiteJDBC",
+"version": ""
+},
+{
+"name": "ssl_match_hostname",
+"version": ""
+},
+{
+"name": "suds-jurko",
+"version": ""
+},
+{
+"name": "SurfControl",
+"version": ""
+},
+{
+"name": "SwingWorker",
+"version": ""
+},
+{
+"name": "SwingX",
+"version": ""
+},
+{
+"name": "sysstat",
+"version": ""
+},
+{
+"name": "TAP-Win32 distributions",
+"version": ""
+},
+{
+"name": "TCPdump",
+"version": ""
+},
+{
+"name": "tdts-kern",
+"version": ""
+},
+{
+"name": "tdts-user",
+"version": ""
+},
+{
+"name": "termcap",
+"version": ""
+},
+{
+"name": "tinyxpath",
+"version": ""
+},
+{
+"name": "tornado",
+"version": ""
+},
+{
+"name": "tpm-tools",
+"version": ""
+},
+{
+"name": "tpm2-abrmd",
+"version": ""
+},
+{
+"name": "tpm2-tools",
+"version": ""
+},
+{
+"name": "tpm2-tss",
+"version": ""
+},
+{
+"name": "traceroute",
+"version": ""
+},
+{
+"name": "Trademarks",
+"version": ""
+},
+{
+"name": "trousers",
+"version": ""
+},
+{
+"name": "u-boot",
+"version": ""
+},
+{
+"name": "ubiqx",
+"version": ""
+},
+{
+"name": "uClibc",
+"version": ""
+},
+{
+"name": "unicode",
+"version": "5.0"
+},
+{
+"name": "UninstHs",
+"version": ""
+},
+{
+"name": "upnp",
+"version": ""
+},
+{
+"name": "usb-modeswitch",
+"version": ""
+},
+{
+"name": "usb-modeswitch-data",
+"version": ""
+},
+{
+"name": "usb-ntpclient",
+"version": ""
+},
+{
+"name": "usb_camera",
+"version": ""
+},
+{
+"name": "utelnetd",
+"version": ""
+},
+{
+"name": "uuid",
+"version": ""
+},
+{
+"name": "vhdtool",
+"version": ""
+},
+{
+"name": "vmime",
+"version": ""
+},
+{
+"name": "walinuxagent",
+"version": ""
+},
+{
+"name": "wide-dhcpv6",
+"version": ""
+},
+{
+"name": "Winstone",
+"version": ""
+},
+{
+"name": "WinSW",
+"version": ""
+},
+{
+"name": "wireless_tools",
+"version": ""
+},
+{
+"name": "wpa-supplicant",
+"version": ""
+},
+{
+"name": "wpa_supplicant",
+"version": ""
+},
+{
+"name": "wsc_upnp",
+"version": ""
+},
+{
+"name": "wvdial",
+"version": ""
+},
+{
+"name": "wvstreams",
+"version": ""
+},
+{
+"name": "xerces",
+"version": ""
+},
+{
+"name": "xmlrpc-epi toolkit",
+"version": ""
+},
+{
+"name": "xmlsec1",
+"version": ""
+},
+{
+"name": "xmltodict",
+"version": ""
+},
+{
+"name": "xpp3",
+"version": ""
+},
+{
+"name": "zeep",
+"version": ""
+},
+{
+"name": "zlib",
+"version": ""
+},
+{
+"name": "zoneinfo",
+"version": ""
+}
+],
+"extractors": [
+"dotted_toc",
+"gt_list"
+],
+"kind": "pdf",
+"product": "Fireware OS",
+"retrieved": "2026-11-08",
+"sha256": "6c7575faa4de5e41e902f2d2c6765094154f1cf1654b9c6a60014289244efcaf",
+"supplier": "WatchGuard",
+"url": "https://www.watchguard.com/help/docs/fireware/12/en-US/v12_10_copyright-licensing_guide.pdf",
+"version": "12.10"
+}

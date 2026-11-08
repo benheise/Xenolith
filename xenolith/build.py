@@ -22,6 +22,7 @@ from .catalog import Catalog, normalize_name
 from .model import dedupe, product_key, read_ndjson
 from .sources.notices import iter_inventories
 from .versions import check as range_check
+from . import crosswalk
 
 EVIDENCE_RANK = {
     "vendor-advisory": 0,
@@ -108,6 +109,31 @@ def _best(assertions: list[dict]) -> dict:
 def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: int = 10) -> dict:
     assertions = load_assertions(data_dir)
     spine = load_spine(data_dir)
+
+    # Link entries that share a CPE vendor:product (registry CPEs from CVE records,
+    # CPEs from vendor CSAF product trees), then fold them onto one key.
+    links: dict[str, set[str]] = defaultdict(set)
+    weight: dict[str, float] = defaultdict(float)
+    for sp in spine:
+        weight[sp["key"]] += sp["cve_count"] + 10 * sp["kev_count"]
+        for c in sp.get("cpe") or []:
+            if (vp := crosswalk.normalize_cpe(c)):
+                links[vp].add(sp["key"])
+    for a in assertions:
+        weight[a["product_key"]] += 1
+        for c in a.get("cpes") or []:
+            if (vp := crosswalk.normalize_cpe(c)):
+                links[vp].add(a["product_key"])
+    remap, clusters = crosswalk.build(links, weight)
+    for a in assertions:
+        a["product_key"] = remap.get(a["product_key"], a["product_key"])
+    spine = _merge_spine(spine, remap)
+    product_cpes: dict[str, set[str]] = defaultdict(set)
+    for vp, keys in links.items():
+        for k in keys:
+            product_cpes[remap.get(k, k)].add(vp)
+    (out_dir / "crosswalk.json").parent.mkdir(parents=True, exist_ok=True)
+    (out_dir / "crosswalk.json").write_text(json.dumps(clusters, ensure_ascii=False, indent=0), encoding="utf-8")
     spine_by_key = {p["key"]: p for p in spine}
 
     by_component: dict[str, list[dict]] = defaultdict(list)
@@ -161,7 +187,7 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             "verdicts": dict(verdicts),
         })
 
-    inventories = build_inventories(data_dir, out_dir)
+    inventories = build_inventories(data_dir, out_dir, remap)
     for key, inv in inventories.items():
         names.setdefault(key, (inv["s"], inv["p"]))
 
@@ -178,6 +204,7 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             **({"inv": inventories[key]["count"]} if key in inventories else {}),
             **({"vr": sorted(cid for (k, cid) in vulnerable_versions if k == key)}
                if any(k == key for (k, _) in vulnerable_versions) else {}),
+            **({"cpe": sorted(product_cpes[key])[:4]} if product_cpes.get(key) else {}),
         })
     spine_only = 0
     for sp in spine:
@@ -186,7 +213,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
         if sp["kev_count"] == 0 and sp["cve_count"] < spine_min_cves:
             continue
         products.append({"k": sp["key"], "s": sp["supplier"], "p": sp["product"], "c": {}, "n": 0,
-                         "cv": sp["cve_count"], "kev": sp["kev_count"]})
+                         "cv": sp["cve_count"], "kev": sp["kev_count"],
+                         **({"cpe": sorted(product_cpes[sp["key"]])[:4]} if product_cpes.get(sp["key"]) else {})})
         spine_only += 1
     products.sort(key=lambda p: (p["s"].lower(), p["p"].lower()))
     (out_dir / "products.json").write_text(json.dumps(products, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
@@ -213,6 +241,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             "products_with_data": len(set(by_product) | set(inventories)),
             "inventories": sum(i["docs"] for i in inventories.values()),
             "inventory_components": sum(i["rows"] for i in inventories.values()),
+            "cpe_linked_clusters": len(clusters),
+            "cpe_linked_entries": len(remap),
             "spine_products": len(spine),
             "spine_only_shown": spine_only,
             "components": len(catalog.components),
@@ -229,7 +259,23 @@ def _version_key(v: str):
     return [(0, int(t)) if t.isdigit() else (1, t) for t in re.findall(r"\d+|[a-z]+", (v or "").lower())]
 
 
-def build_inventories(data_dir: Path, out_dir: Path) -> dict[str, dict]:
+def _merge_spine(spine: list[dict], remap: dict[str, str]) -> list[dict]:
+    merged: dict[str, dict] = {}
+    for sp in spine:
+        key = remap.get(sp["key"], sp["key"])
+        prev = merged.get(key)
+        if prev is None:
+            merged[key] = {**sp, "key": key}
+        else:
+            keep = sp if sp["cve_count"] > prev["cve_count"] else prev
+            merged[key] = {**keep, "key": key,
+                           "cve_count": max(sp["cve_count"], prev["cve_count"]),
+                           "kev_count": max(sp["kev_count"], prev["kev_count"]),
+                           "cpe": sorted(set(sp.get("cpe") or []) | set(prev.get("cpe") or []))}
+    return list(merged.values())
+
+
+def build_inventories(data_dir: Path, out_dir: Path, remap: dict[str, str] | None = None) -> dict[str, dict]:
     """Write per-product component lists from notices files, plus a name index for search.
 
     docs/data/inventory/<product_key>.json   [{v, u, d, x, c: [[name, version], ...]}], newest version first
@@ -240,6 +286,7 @@ def build_inventories(data_dir: Path, out_dir: Path) -> dict[str, dict]:
     grouped: dict[str, dict] = {}
     for _, inv in iter_inventories(data_dir):
         key = product_key(inv["supplier"], inv["product"])
+        key = (remap or {}).get(key, key)
         g = grouped.setdefault(key, {"s": inv["supplier"], "p": inv["product"], "docs": []})
         g["docs"].append(inv)
     written = set()

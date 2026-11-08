@@ -608,7 +608,9 @@ def _get(url: str) -> tuple[bytes, str]:
 # ----------------------------------------------------------------- assertions
 
 def iter_inventories(data_dir: Path):
-    for p in sorted((data_dir / "notices").rglob("*.json")):
+    """Vendor notices inventories plus contributed SBOMs (data/community_sboms/)."""
+    paths = sorted((data_dir / "notices").rglob("*.json")) + sorted((data_dir / "community_sboms").rglob("*.json"))
+    for p in paths:
         try:
             yield p, json.loads(p.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -632,6 +634,10 @@ def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
             listed = "; ".join(f"{c['name']} {c['version']}".strip() for c in comps[:6])
             versions = ", ".join(dict.fromkeys(c["version"] for c in comps if c.get("version")))
             pv = inv.get("version", "")
+            evidence = inv.get("evidence", "notices-file")
+            where = {"notices-file": f"Listed in {inv['supplier']}'s open source notices",
+                     "vendor-sbom": f"Listed in {inv['supplier']}'s published SBOM",
+                     "binary-scan": f"Found by a contributed binary scan ({inv.get('tool') or 'tool not stated'})"}[evidence]
             out.append(make_assertion(
                 component=cid,
                 supplier=inv["supplier"],
@@ -639,13 +645,15 @@ def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
                 version=pv,
                 cves={},
                 status="present",
-                evidence="notices-file",
-                source=SOURCE_ID,
-                publisher=inv["supplier"],
+                evidence=evidence,
+                source=inv.get("source", SOURCE_ID),
+                publisher=inv["supplier"] if evidence != "binary-scan" else "Community submission",
                 source_url=inv["url"],
-                notes=f"Listed in {inv['supplier']}'s open source notices for {inv['product']}"
-                      f"{' ' + pv if pv else ''} as: {listed}.",
-                category="Third-party notices",
+                references=[r for r in (inv.get("submission"),) if r],
+                notes=f"{where} for {inv['product']}{' ' + pv if pv else ''} as: {listed}."
+                      + (f" Artifact: {inv['artifact']} (sha256 {inv['artifact_sha256'][:16]}…)." if inv.get("artifact_sha256") else ""),
+                category={"notices-file": "Third-party notices", "vendor-sbom": "Vendor SBOM",
+                          "binary-scan": "Binary scan"}[evidence],
                 updated=inv.get("retrieved", ""),
                 component_version=versions,
             ))

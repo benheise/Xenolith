@@ -1,0 +1,15 @@
+name: Add a component to the watchlist
+description: A widely embedded component with a vulnerability people are hunting for
+labels: [watchlist]
+body:
+  - type: input
+    id: component
+    attributes: { label: Component, placeholder: "libexample (C library)" }
+    validations: { required: true }
+  - type: input
+    id: cves
+    attributes: { label: CVE IDs, placeholder: CVE-2026-12345 }
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes: { label: Why it matters, description: Where it tends to be embedded, any trackers already running }

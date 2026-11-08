@@ -421,11 +421,12 @@ async function showProduct(key) {
     <h2 style="margin-top:0">${esc(p.p)}</h2>
     ${p.cv ? `<div class="stats"><div class="stat"><b>${fmt(p.cv)}</b><span>CVEs naming this product</span></div>
       <div class="stat"><b>${fmt(p.kev || 0)}</b><span>in CISA KEV</span></div></div>` : ""}
+    ${p.cpe ? `<div class="meta">CPE: ${p.cpe.map(c => `<span class="kbd">${esc(c)}</span>`).join(" ")}</div>` : ""}
     ${sections.map(s => `<h2><a href="#c=${encodeURIComponent(s.cid)}">${esc(s.name)}</a></h2>
       <div class="list">${s.rows.map(r => statementCard(r, { inProduct: true })).join("")}</div>`).join("")}
     ${comps.length || p.inv ? "" : `<p class="notice">No composition data for this product yet. It is listed because it appears in CVE records or the CISA KEV catalog.</p>`}
     <div id="inventory"></div>
-    <p class="small muted" style="margin-top:18px">Know what this product embeds? <a href="${esc(issue)}" target="_blank" rel="noopener">Submit a sourced statement</a>.</p>`;
+    <p class="small muted" style="margin-top:18px">Know what this product embeds? <a href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute a notices link, statement or SBOM</a>, or <a href="${esc(issue)}" target="_blank" rel="noopener">open an issue</a>.</p>`;
   $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
   if (p.inv) renderInventory(key);
 }
@@ -513,7 +514,17 @@ function showHome() {
     <p class="small">Each card is one claim from one source, linked back to it. <b>Fix released</b> means the product contained
     the component and the vendor has shipped a fixed version. <b>Uses host runtime</b> means the product runs on a copy of the
     component you install and patch yourself. <b>Not present</b> is a vendor saying the component isn't in the product at all.
-    Tracker rows are only as current as the tracker; check the date.</p>`;
+    Tracker rows are only as current as the tracker; check the date.</p>
+    <h2 id="contribute">Contribute</h2>
+    <p class="small">Every entry needs evidence someone else can check. Pick whichever matches what you have; all three are a pull request, validated automatically.</p>
+    <div class="grid">
+      <a class="card" style="text-decoration:none;color:inherit" href="${REPO}/blob/main/CONTRIBUTING.md#1-add-a-vendor-notices-document" target="_blank" rel="noopener">
+        <h3>A vendor's open source notices</h3><div class="small muted">Four YAML lines in <span class="kbd">catalog/notices.yaml</span>: supplier, product, version, URL. The full component list is extracted automatically.</div></a>
+      <a class="card" style="text-decoration:none;color:inherit" href="${REPO}/blob/main/CONTRIBUTING.md#2-add-a-sourced-statement" target="_blank" rel="noopener">
+        <h3>A vendor statement</h3><div class="small muted">One CSV row in <span class="kbd">community/assertions.csv</span>: component, product, status, source link, date.</div></a>
+      <a class="card" style="text-decoration:none;color:inherit" href="${REPO}/blob/main/CONTRIBUTING.md#3-submit-an-sbom" target="_blank" rel="noopener">
+        <h3>An SBOM</h3><div class="small muted">A CycloneDX file in <span class="kbd">community/sboms/</span>, vendor-published or from a scan you're permitted to share.</div></a>
+    </div>`;
   bindCards();
 }
 
@@ -530,7 +541,7 @@ function renderFooter() {
     <h2>Sources</h2><ul>${src}</ul>${pubList}
     <h2>Data and contributions</h2>
     <p>All data is in the repository as NDJSON under <a href="${REPO}/tree/main/data" target="_blank" rel="noopener">data/</a>,
-    refreshed daily. Add statements through <a href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">pull requests</a>.
+    refreshed daily. Contribute notices links, statements or SBOMs through <a href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">pull requests</a>.
     Statements are reproduced from their sources, with links. Always confirm against the vendor's own advisory before you act.</p>
     <p>Built ${esc(META.built)} · <a href="${REPO}" target="_blank" rel="noopener">GitHub</a></p>`;
 }

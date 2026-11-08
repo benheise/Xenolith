@@ -339,3 +339,155 @@ class VersionRangeTest(unittest.TestCase):
         php = cat.components["php"].affected
         self.assertEqual(range_check(["8.3.35"], php)["status"], "in_range")
         self.assertEqual(range_check(["8.3.36"], php)["status"], "outside")
+
+
+from xenolith import crosswalk  # noqa: E402
+from xenolith.sources import cvelist  # noqa: E402
+
+
+class CrosswalkTest(unittest.TestCase):
+    def test_cpe_parsing(self):
+        self.assertEqual(cvelist.cpe_vendor_product("cpe:2.3:o:paloaltonetworks:pan-os:10.1.0:*:*:*:*:*:*:*"), "paloaltonetworks:pan-os")
+        self.assertEqual(cvelist.cpe_vendor_product("cpe:/a:redhat:ansible_automation_platform:2.4::el8"), "redhat:ansible_automation_platform")
+        self.assertIsNone(cvelist.cpe_vendor_product("cpe:2.3:a:*:*:*"))
+        self.assertEqual(crosswalk.normalize_cpe("Microsoft:Windows_10"), "microsoft:windows_10")
+
+    def test_adp_assignment(self):
+        got = cvelist.assign_adp_cpes(["Firefox", "Firefox ESR"], ["cpe:2.3:a:mozilla:firefox:*", "cpe:2.3:a:mozilla:firefox_esr:*"])
+        self.assertEqual(got, {0: ["mozilla:firefox"], 1: ["mozilla:firefox_esr"]})
+        self.assertEqual(cvelist.assign_adp_cpes(["Chrome"], ["cpe:2.3:o:fedoraproject:fedora:38"]), {})
+
+    def test_links_and_guards(self):
+        links = {
+            "microsoft:windows_server_2016": {"microsoft/windows-server-2016", "microsoft/windows-server-2016-server-core-installation"},
+            "microsoft:excel": {"microsoft/excel-2010", "microsoft/excel-2016"},
+            "acme:gateway_os": {"acme/gateway-os", "other-vendor/gateway-os"},
+            "acme:everything": {f"acme/product-{i}" for i in range(8)},
+            "ibm:mq_appliance": {"ibm/mq", "ibm/mq-appliance"},
+        }
+        remap, clusters = crosswalk.build(links, {"microsoft/windows-server-2016": 10})
+        self.assertEqual(remap, {"microsoft/windows-server-2016-server-core-installation": "microsoft/windows-server-2016"})
+        self.assertEqual(len(clusters), 1)
+
+    def test_csaf_cpe_capture(self):
+        doc = {"document": {"publisher": {"name": "Acme"}, "tracking": {}},
+               "product_tree": {"branches": [{"category": "vendor", "name": "Acme", "branches": [
+                   {"category": "product_name", "name": "Gateway OS", "product": {
+                       "product_id": "GW", "name": "Gateway OS",
+                       "product_identification_helper": {"cpe": "cpe:2.3:o:acme:gateway_os:7.2:*:*:*:*:*:*:*"}}}]}]},
+               "vulnerabilities": [{"cve": "CVE-2026-111497", "product_status": {"known_affected": ["GW"]}}]}
+        rows, _ = csaf.parse_advisory(doc, "https://acme.example/a.json", catalog.load().cve_to_component, "Acme")
+        self.assertEqual(rows[0]["cpes"], ["acme:gateway_os"])
+        check_schema(self, rows[0])
+
+
+from xenolith.sources import community_sbom  # noqa: E402
+
+
+class CommunitySbomTest(unittest.TestCase):
+    EXAMPLE = ROOT / "community" / "examples" / "example-binary-scan.cdx.json"
+
+    def test_example_is_valid_and_becomes_statements(self):
+        cat = catalog.load()
+        with tempfile.TemporaryDirectory() as d:
+            repo = Path(d)
+            target = repo / "community" / "sboms" / "example-networks" / "gateway.cdx.json"
+            target.parent.mkdir(parents=True)
+            target.write_text(self.EXAMPLE.read_text())
+            invs, errors = community_sbom.load_all(repo)
+            self.assertEqual(errors, [])
+            self.assertEqual(invs[0]["evidence"], "binary-scan")
+            community_sbom.write_inventories(invs, repo / "data")
+            rows, _ = notices.assertions(cat, repo / "data")
+        by = {a["component"]: a for a in rows}
+        self.assertEqual(set(by), {"brotli", "openssl", "php"})
+        self.assertEqual(by["brotli"]["evidence"], "binary-scan")
+        self.assertEqual(by["brotli"]["component_version"], "1.0.9")
+        for a in rows:
+            check_schema(self, a)
+
+    def test_missing_fields_are_reported(self):
+        bom = json.loads(self.EXAMPLE.read_text())
+        bom["metadata"]["properties"] = [p for p in bom["metadata"]["properties"] if p["name"] != "xenolith:attestation"]
+        del bom["metadata"]["component"]["version"]
+        with tempfile.TemporaryDirectory() as d:
+            repo = Path(d)
+            target = repo / "community" / "sboms" / "x.cdx.json"
+            target.parent.mkdir(parents=True)
+            target.write_text(json.dumps(bom))
+            invs, errors = community_sbom.load_all(repo)
+        self.assertEqual(invs, [])
+        self.assertTrue(any("attestation" in e for e in errors))
+        self.assertTrue(any("metadata.component.version" in e for e in errors))
+
+
+from xenolith import prepare  # noqa: E402
+
+
+class PrepareTest(unittest.TestCase):
+    SYFT = {
+        "bomFormat": "CycloneDX", "specVersion": "1.6",
+        "metadata": {"timestamp": "2026-11-01T00:00:00Z",
+                     "tools": {"components": [{"type": "application", "author": "anchore", "name": "syft", "version": "1.33.0"}]},
+                     "component": {"type": "file", "name": "/home/alice/work/acme-fw_extract"}},
+        "components": [
+            {"type": "library", "name": "brotli", "version": "1.0.9", "purl": "pkg:generic/brotli@1.0.9",
+             "properties": [{"name": "syft:package:foundBy", "value": "binary-classifier-cataloger"},
+                            {"name": "syft:location:0:path", "value": "/home/alice/work/acme-fw_extract/usr/lib/libbrotlidec.so.1"}]},
+            {"type": "library", "name": "openssl", "version": "3.0.13",
+             "cpe": "cpe:2.3:a:openssl:openssl:3.0.13:*:*:*:*:*:*:*",
+             "components": [{"type": "library", "name": "zlib", "version": "1.2.13"}]},
+            {"type": "library", "name": "brotli", "version": "1.0.9", "purl": "pkg:generic/brotli@1.0.9"},
+            {"type": "file", "name": "/home/alice/work/acme-fw_extract/etc/passwd"},
+        ],
+    }
+    SPDX = {
+        "spdxVersion": "SPDX-2.3", "SPDXID": "SPDXRef-DOCUMENT",
+        "creationInfo": {"creators": ["Organization: Anchore, Inc", "Tool: syft-1.33.0"]},
+        "documentDescribes": ["SPDXRef-root"],
+        "packages": [
+            {"SPDXID": "SPDXRef-root", "name": "/scan/root"},
+            {"SPDXID": "SPDXRef-php", "name": "php", "versionInfo": "8.2.20",
+             "externalRefs": [{"referenceType": "purl", "referenceLocator": "pkg:generic/php@8.2.20"}]},
+        ],
+    }
+
+    def _run(self, scan, attest=True, **kw):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            (root / "scan.json").write_text(json.dumps(scan))
+            fw = root / "acme-fw-7.2.9.bin"
+            fw.write_bytes(b"firmware")
+            args = type("A", (), dict(scan=str(root / "scan.json"), supplier="Acme Networks", product="Acme Gateway OS",
+                                      version="7.2.9", artifact=str(fw), artifact_sha256=None, evidence="binary-scan",
+                                      source_url=None, product_type="firmware", attest=attest, output=None, **kw))
+            code = prepare.run(args, root, catalog.load())
+            out = root / "community" / "sboms" / "acme-networks" / "acme-gateway-os--7-2-9.cdx.json"
+            doc = json.loads(out.read_text())
+            invs, errors = community_sbom.load_all(root)
+        return code, doc, invs, errors
+
+    def test_syft_output_becomes_valid_submission(self):
+        code, doc, invs, errors = self._run(self.SYFT)
+        self.assertEqual((code, errors), (0, []))
+        text = json.dumps(doc)
+        self.assertNotIn("/home/alice", text)                 # no host paths survive
+        self.assertNotIn("passwd", text)                      # file entries dropped
+        names = [(c["name"], c.get("version")) for c in doc["components"]]
+        self.assertEqual(names, [("brotli", "1.0.9"), ("openssl", "3.0.13"), ("zlib", "1.2.13")])
+        props = {p["name"]: p["value"] for p in doc["metadata"]["properties"]}
+        self.assertEqual(props["xenolith:artifact"], "acme-fw-7.2.9.bin")
+        self.assertEqual(props["xenolith:artifact_sha256"], prepare.hashlib.sha256(b"firmware").hexdigest())
+        self.assertEqual([t["name"] for t in doc["metadata"]["tools"]["components"]], ["syft", "xenolith prepare"])
+        self.assertEqual(invs[0]["product"], "Acme Gateway OS")
+
+    def test_without_attest_is_not_ready(self):
+        code, doc, invs, errors = self._run(self.SYFT, attest=False)
+        self.assertEqual(code, 1)
+        self.assertTrue(any("attestation" in e for e in errors))
+
+    def test_spdx_input(self):
+        code, doc, _, errors = self._run(self.SPDX)
+        self.assertEqual((code, errors), (0, []))
+        self.assertEqual([c["name"] for c in doc["components"]], ["php"])
+        self.assertEqual(doc["metadata"]["tools"]["components"][0], {"type": "application", "name": "syft", "version": "1.33.0"})

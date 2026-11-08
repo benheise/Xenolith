@@ -1,66 +1,163 @@
 # Contributing to Xenolith
 
-The census is only as good as its evidence. The most useful contribution is a **sourced statement** about what a commercial product embeds.
+Xenolith answers one question: **which commercial products embed which third-party components?** Its value depends entirely on evidence, so every contribution must point to something others can check.
 
-## Add a vendor's open source notices document (easiest)
+There are three ways to contribute data, from quickest to most thorough. All three go through a pull request, and every pull request is validated automatically.
 
-If a vendor publishes an "Open Source Used In", OSS listing, third-party notices or SBOM document for a product, add it to [`catalog/notices.yaml`](catalog/notices.yaml):
+- [1. Add a vendor notices document](#1-add-a-vendor-notices-document) (`catalog/notices.yaml`)
+- [2. Add a sourced statement](#2-add-a-sourced-statement) (`community/assertions.csv`)
+- [3. Submit an SBOM](#3-submit-an-sbom) (`community/sboms/*.cdx.json`)
+- [Other changes](#other-changes): watchlist components, product aliases, CSAF providers, corrections, code
+- [Before you open the pull request](#before-you-open-the-pull-request)
+
+## Ground rules
+
+- **Link to evidence.** Every row, document and SBOM needs a public source or a reproducible artifact. "I know this" isn't enough.
+- **Only share what you may share.** Don't submit confidential documents, internal SBOMs, customer data, or scans of software whose license or your employer's policy forbids it. If in doubt, ask your legal or open source office first.
+- **Products, not packages.** Open source libraries and their dependents are covered by deps.dev, OSV and ecosyste.ms.
+- **Your words for notes.** Don't paste advisory text; summarize it.
+- Contributions under `community/` are licensed **CC-BY-4.0**.
+
+---
+
+## 1. Add a vendor notices document
+
+**Use this when** a vendor publishes a list of the open source components in a product: an "Open Source Used In …" document, an OSS listing, third-party notices, attributions, acknowledgments, or a published SBOM.
+
+**File:** [`catalog/notices.yaml`](catalog/notices.yaml), under `documents:`.
 
 ```yaml
-  - supplier: Example Networks
-    product: Example Gateway OS
-    version: "7.2"
-    url: https://example.com/docs/gateway-os-7.2-open-source.pdf
+  - supplier: Example Networks          # the vendor, as it names itself
+    product: Example Gateway OS         # the product, without the vendor's name
+    version: "7.2"                      # product version the document covers (quote it)
+    url: https://example.com/legal/gateway-os-7.2-open-source.pdf
 ```
 
-PDF, HTML, plain text, CycloneDX and SPDX all work. The next scheduled run extracts every component in it. If the vendor has an index page linking all its documents, add a `discover` rule instead so new product versions are picked up automatically. Run `python -m xenolith notices --only "Example Networks"` locally to check what gets extracted.
-
-Some vendors block automated downloads or put notices behind a login; those can't be crawled. Don't add copies hosted by third parties.
-
-## Add a statement
-
-Edit [`community/assertions.csv`](community/assertions.csv) and open a pull request. One row per product and component:
-
-| Column | Required | Example |
+| Field | Required | Notes |
 |---|---|---|
-| `component` | yes | `brotli` (an `id` from [`catalog/components.yaml`](catalog/components.yaml)) |
-| `supplier` | yes | `Example Networks` |
-| `product` | yes | `Example Gateway OS` |
-| `versions` | no | `7.2.0 to 7.2.9; fixed in 7.2.10` |
-| `status` | yes | `fixed` (see below) |
-| `cves` | no | `CVE-2026-111497` (space-separated; leave empty for composition-only evidence) |
+| `supplier` | yes | Vendor name |
+| `product` | yes | Product name |
+| `version` | yes | Product version or release line; use `"all"` if the document isn't versioned |
+| `url` | yes | Direct, public, stable link. PDF, HTML, plain text, CycloneDX or SPDX |
+
+If the vendor has an **index page** linking a document per product or version, add a `discover:` rule instead (see the Palo Alto Networks rule in the same file) so new versions are picked up automatically.
+
+Check it locally:
+
+```bash
+python -m xenolith notices --only "Example Networks"
+```
+
+The output says how many components were extracted and by which parser. If it says `0 components`, open an issue with the URL; the parser may need a new format.
+
+## 2. Add a sourced statement
+
+**Use this when** you have a public vendor statement about one product and one component: a security advisory, KB article, release note, support forum answer from the vendor, or a VEX document.
+
+**File:** [`community/assertions.csv`](community/assertions.csv). One row per product and component. The header must stay exactly:
+
+```
+component,supplier,product,versions,status,cves,evidence,source_url,date,notes
+```
+
+| Column | Required | Allowed values / format |
+|---|---|---|
+| `component` | yes | An `id` from [`catalog/components.yaml`](catalog/components.yaml), e.g. `brotli`, `php`, `log4j-core` |
+| `supplier` | yes | Vendor name |
+| `product` | yes | Product name |
+| `versions` | no | Product versions the statement covers, free text: `7.2.0 to 7.2.9; fixed in 7.2.10` |
+| `status` | yes | `affected`, `workaround`, `fixed`, `under_investigation`, `runtime_dependent`, `not_affected`, `present`, `absent`, `unknown` |
+| `cves` | no | Space-separated CVE IDs from that component's watchlist entry. Leave empty for composition-only facts |
 | `evidence` | no | `vendor-advisory`, `vendor-sbom`, `notices-file`, `binary-scan` or `community` (default) |
-| `source_url` | yes | `https://…` link to the evidence |
-| `date` | yes | `2026-10-29` (the date the source made the statement) |
-| `notes` | no | Short context, in your own words |
+| `source_url` | yes | `https://` link to the evidence |
+| `date` | yes | `YYYY-MM-DD`, the date the source made the statement |
+| `notes` | no | Short context in your own words |
 
-`status` is one of: `affected`, `workaround`, `fixed`, `under_investigation`, `runtime_dependent`, `not_affected`, `present` (component is embedded, no CVE assessed), `absent` (component is not in the product), `unknown`.
+What the statuses mean:
 
-Good evidence, in order of strength: a vendor advisory or VEX statement, a vendor-published SBOM, the vendor's third-party notices / "open source used in" document, a reproducible binary scan of a publicly downloadable artifact (say which tool and which artifact hash). Don't submit statements you can't link to.
+| Status | Use when the source says |
+|---|---|
+| `affected` | The product is vulnerable and no fix is available yet |
+| `workaround` | Vulnerable; only a mitigation is available |
+| `fixed` | The product contained the component and a fixed version is available |
+| `under_investigation` | The vendor is still checking |
+| `runtime_dependent` | The product runs on a copy the customer installs (patch the host) |
+| `not_affected` | Not affected (component may or may not be present) |
+| `present` | The component is in the product; no CVE is assessed |
+| `absent` | The component is not in the product |
 
-Pull request checks run `python -m xenolith community --check` and the test suite. Errors name the line and the problem.
+Examples:
 
-## Add a component to the watchlist
+```csv
+brotli,Example Networks,Example Gateway OS,7.2.0 to 7.2.9,fixed,CVE-2026-111497,vendor-advisory,https://example.com/psirt/EX-2026-014,2026-10-29,Fixed in 7.2.10
+php,Example Networks,Example Console,,absent,,vendor-advisory,https://example.com/kb/123,2026-10-24,Console is Java; no PHP runtime
+openssl,Example Networks,Example Gateway OS,7.2,present,,notices-file,https://example.com/legal/oss-7.2.pdf,2026-06-01,Bundles OpenSSL 3.0.13
+```
 
-Add an entry to `catalog/components.yaml` with the CVEs that identify the component. Good candidates are small, permissively licensed libraries that vendors copy into their products (compression, parsing, TLS, image codecs, logging, runtimes). The crawler will start matching vendor advisories for those CVEs on its next run, including advisories it has already seen.
+## 3. Submit an SBOM
 
-## Merge a product that shows up twice
+**Use this when** you have a **CycloneDX** SBOM of a product: one the vendor published, or one you produced by scanning software you're permitted to analyze **and** to share the results of (a public download, a container image, your own company's product with approval).
 
-If the same product appears as two entries (different spellings across sources), add an alias to [`catalog/identity.yaml`](catalog/identity.yaml). Supplier aliases go under `suppliers`, product aliases under `products` for that supplier. Names are written lowercase without punctuation, after the automatic rules described at the top of that file.
+**File:** `community/sboms/<supplier>/<product>--<version>.cdx.json` (the `prepare` command below picks this path for you). A complete, valid example: [`community/examples/example-binary-scan.cdx.json`](community/examples/example-binary-scan.cdx.json).
 
-## Add a CSAF provider
+Required content:
 
-Add the provider's `provider-metadata.json` URL to `catalog/csaf_providers.yaml`. Providers listed on BSI's CSAF aggregator are picked up automatically.
+| Where | Field | Rule |
+|---|---|---|
+| top level | `bomFormat`, `specVersion` | `"CycloneDX"`, 1.4 to 1.7 |
+| `metadata` | `timestamp` | When the SBOM was produced (ISO 8601) |
+| `metadata` | `tools` | The tool(s) that produced it, e.g. `syft`, `cdxgen`, `xenolith-scan` |
+| `metadata.component` | `name`, `version` | The **product** and its version |
+| `metadata.supplier` (or `metadata.component.supplier`) | `name` | The **vendor** |
+| `components[]` | `name`, `version` | The embedded components. Versions strongly recommended |
+| `metadata.properties` | `xenolith:evidence` | `binary-scan` (you scanned it) or `vendor-sbom` (the vendor published it) |
+| `metadata.properties` | `xenolith:artifact` | What was analyzed: file name, download URL or image digest |
+| `metadata.properties` | `xenolith:artifact_sha256` | Required for `binary-scan`: SHA-256 of the analyzed file, so others can reproduce it |
+| `metadata.properties` | `xenolith:source_url` | Public `https://` link: the vendor's SBOM (required for `vendor-sbom`) or the download page (recommended for `binary-scan`) |
+| `metadata.properties` | `xenolith:attestation` | Must be `"yes"`: you confirm you're permitted to share this component list |
 
-## Report a wrong statement
+Limits: 8 MB per file, 25,000 components. Submissions are CycloneDX; `prepare` below converts SPDX JSON for you.
 
-Open an issue with the product, the statement you believe is wrong, and a link to the vendor's current advisory. Statements imported from a tracker or vendor feed are corrected at the source when possible.
+What happens next: the SBOM becomes an inventory just like a notices document. Its full component list becomes searchable on the site, and watchlist components in it appear on the product's page as statements with evidence type `binary-scan` or `vendor-sbom`, flagged when a listed version falls in a CVE's affected range.
 
-## Code
+**Producing one.** Scan the product with any SBOM scanner, then let `python -m xenolith prepare` turn the result into a submission. It fills in the product and the `xenolith:` properties, computes the artifact's SHA-256, keeps only component name, version, purl and CPE (so paths, user names and build directories from your machine never reach the pull request), validates the file, and lists the watchlist components it found:
+
+```bash
+# 1. Unpack and scan (examples; use whichever fits the artifact)
+unblob -e ./extracted acme-fw-7.2.9.bin                                     # firmware image
+syft scan dir:./extracted -o cyclonedx-json=scan.cdx.json                   # Syft
+# cve-bin-tool ./extracted --sbom-type cyclonedx --sbom-output scan.cdx.json   # or cve-bin-tool
+# blint sbom -i ./extracted -o scan.cdx.json                                  # or blint (Go/Rust/.NET/Android binaries)
+
+# 2. Turn it into a submission
+python -m xenolith prepare scan.cdx.json \
+  --supplier "Acme Networks" --product "Acme Gateway OS" --version 7.2.9 \
+  --artifact acme-fw-7.2.9.bin --product-type firmware --attest
+# -> community/sboms/acme-networks/acme-gateway-os--7-2-9.cdx.json
+```
+
+Leave out `--attest` until you've confirmed you may share the list; the file is written but marked not ready. For a vendor-published SBOM, pass `--evidence vendor-sbom --source-url https://...` instead. [design/xenolith-scan.md](design/xenolith-scan.md) describes the single cross-platform scanner planned to replace step 1.
+
+---
+
+## Other changes
+
+**Add a component to the watchlist.** Add an entry to [`catalog/components.yaml`](catalog/components.yaml) with `id`, `name`, the incident's CVEs, the `affected:` ranges copied from the CVE record, and `notices_names` patterns for how the component appears in notices. Every stored notices document and SBOM is re-matched on the next build.
+
+**Merge a product that shows up twice.** Add an alias to [`catalog/identity.yaml`](catalog/identity.yaml). Many duplicates are already linked automatically through shared CPE identifiers; `docs/data/crosswalk.json` lists those links.
+
+**Add a CSAF provider.** Add its `provider-metadata.json` URL to [`catalog/csaf_providers.yaml`](catalog/csaf_providers.yaml). Providers on BSI's aggregator are picked up automatically.
+
+**Report a wrong statement.** Open an issue with the product, the statement, and a link to the vendor's current advisory.
+
+**Code.** The pipeline is Python with three dependencies (PyYAML, pypdf, standard library otherwise). Add a test for any parser or rule you change.
+
+## Before you open the pull request
 
 ```bash
 pip install -r requirements.txt
+python -m xenolith community --check     # validates assertions.csv and every file in community/sboms/
 python -m unittest discover -s tests
 ```
 
-The pipeline uses only the standard library plus PyYAML so it runs anywhere GitHub Actions does.
+The same checks run on the pull request. The pull request template has a short checklist.

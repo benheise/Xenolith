@@ -1,12 +1,14 @@
 {
- "built": "2026-11-08T01:42:47Z",
+ "built": "2026-11-08T02:14:39Z",
  "counts": {
-  "assertions": 12927,
+  "assertions": 12943,
   "products_with_data": 7136,
-  "inventories": 93,
-  "inventory_components": 37239,
-  "spine_products": 15796,
-  "spine_only_shown": 4662,
+  "inventories": 97,
+  "inventory_components": 38754,
+  "cpe_linked_clusters": 11,
+  "cpe_linked_entries": 13,
+  "spine_products": 15784,
+  "spine_only_shown": 4652,
   "components": 13
  },
  "components": [
@@ -336,7 +338,7 @@
     }
    ],
    "assertions": 3910,
-   "products": 3809,
+   "products": 3808,
    "contains": 90,
    "in_range": 0,
    "verdicts": {
@@ -420,14 +422,14 @@
      ]
     }
    ],
-   "assertions": 107,
-   "products": 37,
-   "contains": 100,
+   "assertions": 111,
+   "products": 38,
+   "contains": 104,
    "in_range": 6,
    "verdicts": {
     "workaround": 15,
     "fixed": 19,
-    "present": 66,
+    "present": 70,
     "not_affected": 7
    }
   },
@@ -504,13 +506,13 @@
      ]
     }
    ],
-   "assertions": 127,
-   "products": 50,
-   "contains": 120,
+   "assertions": 131,
+   "products": 51,
+   "contains": 124,
    "in_range": 6,
    "verdicts": {
     "fixed": 45,
-    "present": 64,
+    "present": 68,
     "not_affected": 3,
     "workaround": 11,
     "absent": 4
@@ -550,12 +552,12 @@
      ]
     }
    ],
-   "assertions": 143,
-   "products": 45,
-   "contains": 122,
+   "assertions": 147,
+   "products": 46,
+   "contains": 126,
    "in_range": 0,
    "verdicts": {
-    "present": 89,
+    "present": 93,
     "workaround": 5,
     "fixed": 28,
     "under_investigation": 1,
@@ -682,13 +684,13 @@
      ]
     }
    ],
-   "assertions": 95,
-   "products": 29,
-   "contains": 93,
+   "assertions": 99,
+   "products": 30,
+   "contains": 97,
    "in_range": 6,
    "verdicts": {
     "fixed": 19,
-    "present": 64,
+    "present": 68,
     "not_affected": 2,
     "workaround": 10
    }
@@ -754,15 +756,16 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 436,
+   "assertions": 452,
    "latest": "2026-11-08"
   },
   {
    "id": "community",
    "name": "Xenolith community submissions",
    "kind": "community",
-   "url": "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv",
+   "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
+   "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
    "assertions": 0,
    "latest": ""
   },
@@ -775,7 +778,7 @@
    "notes": "Vendor/product names from CNA-published CVE records, ranked by CVE and KEV counts. Records for package-ecosystem components are excluded.",
    "assertions": 0,
    "latest": "",
-   "products": 15796
+   "products": 15784
   }
  ],
  "comparables": [

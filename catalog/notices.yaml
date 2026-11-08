@@ -101,6 +101,27 @@ documents:
     version: "6.3.x"
     url: https://docs.tenable.com/license-declarations/Content/SC/security-center-63.htm
 
+  # WatchGuard Copyright and Licensing Guides (table of contents lists every component)
+  - supplier: WatchGuard
+    product: Fireware OS
+    version: "12.12"
+    url: https://www.watchguard.com/help/docs/fireware/12/en-US/v12_12_copyright-licensing_guide.pdf
+
+  - supplier: WatchGuard
+    product: Fireware OS
+    version: "12.11"
+    url: https://www.watchguard.com/help/docs/fireware/12/en-US/v12_11_copyright-licensing_guide.pdf
+
+  - supplier: WatchGuard
+    product: Fireware OS
+    version: "12.10"
+    url: https://www.watchguard.com/help/docs/fireware/12/en-US/v12_10_copyright-licensing_guide.pdf
+
+  - supplier: WatchGuard
+    product: Fireware OS
+    version: "12.5"
+    url: https://www.watchguard.com/help/docs/fireware/12/en-US/v12_5_copyright-licensing_guide.pdf
+
   - supplier: Citrix
     product: NetScaler ADC
     version: "11.1"
@@ -115,3 +136,8 @@ documents:
 #   SonicWall, Synology, HPE Aruba: no public component lists (GPL source on request or tarballs only).
 #   Atlassian: SBOMs ship inside the installation directory only.
 #   Adobe: notices PDFs list only attribution-required components, without versions; low value.
+#   JetBrains: legal/third-party-software is rendered client-side; needs its JSON endpoint.
+#   Check Point: one prose copyright page, no per-product component list.
+#   Docker Desktop: acknowledgements only inside the app.
+#   Axis: per-model text files exist only for legacy firmware (5.x).
+#   Nutanix, Zscaler: no public component lists found.

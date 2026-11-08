@@ -10,9 +10,10 @@ from pathlib import Path
 
 from . import build as build_mod
 from . import catalog as catalog_mod
+from . import prepare as prepare_mod
 from .catalog import ROOT
 from .model import dedupe, write_ndjson
-from .sources import cisa_log4j, community, csaf, cvelist, ncsc_markdown, notices
+from .sources import cisa_log4j, community, community_sbom, csaf, cvelist, ncsc_markdown, notices
 
 DATA = ROOT / "data"
 DOCS_DATA = ROOT / "docs" / "data"
@@ -76,15 +77,22 @@ def cmd_notices(args) -> int:
 
 
 def cmd_community(args) -> int:
+    """Validate (and unless --check, ingest) community/assertions.csv and community/sboms/."""
     cat = catalog_mod.load()
     rows, errors = community.load(ROOT / "community" / "assertions.csv", cat)
+    sboms, sbom_errors = community_sbom.load_all(ROOT)
+    errors += sbom_errors
     for e in errors:
         print(f"::error::{e}")
     if errors:
+        print(f"{len(errors)} problem(s) found; see CONTRIBUTING.md for the required formats")
         return 1
     if not args.check:
         write_ndjson(DATA / "assertions" / "community.ndjson", dedupe(rows))
-    print(f"community: {len(rows)} valid rows")
+        community_sbom.write_inventories(sboms, DATA)
+        nrows, _ = notices.assertions(cat, DATA)
+        write_ndjson(DATA / "assertions" / "notices.ndjson", dedupe(nrows))
+    print(f"community: {len(rows)} valid rows, {len(sboms)} valid SBOM file(s)")
     return 0
 
 
@@ -128,6 +136,22 @@ def main(argv: list[str] | None = None) -> int:
     m = sub.add_parser("community", help="validate and ingest community/assertions.csv")
     m.add_argument("--check", action="store_true", help="validate only, write nothing")
     m.set_defaults(fn=cmd_community)
+
+    r = sub.add_parser("prepare", help="turn a Syft/cdxgen/cve-bin-tool SBOM into a community/sboms submission")
+    r.add_argument("scan", help="CycloneDX or SPDX JSON written by the scanner")
+    r.add_argument("--supplier", required=True, help="vendor of the product, e.g. \"Example Networks\"")
+    r.add_argument("--product", required=True, help="product name as the vendor writes it")
+    r.add_argument("--version", required=True, help="product version that was scanned")
+    r.add_argument("--artifact", required=True,
+                   help="the original file you scanned (its sha256 is computed), or a download URL / image digest")
+    r.add_argument("--artifact-sha256", help="sha256 of the artifact, if --artifact is not a local file")
+    r.add_argument("--evidence", choices=sorted(community_sbom.EVIDENCE), default="binary-scan")
+    r.add_argument("--source-url", help="public https link to the vendor's SBOM (required for vendor-sbom)")
+    r.add_argument("--product-type", choices=prepare_mod.PRODUCT_TYPES, default="application")
+    r.add_argument("--attest", action="store_true",
+                   help="confirm you are permitted to share this component list (sets xenolith:attestation=yes)")
+    r.add_argument("-o", "--output", help="output path (default community/sboms/<supplier>/<product>--<version>.cdx.json)")
+    r.set_defaults(fn=lambda a: prepare_mod.run(a, ROOT, catalog_mod.load()))
 
     s = sub.add_parser("spine", help="build the product spine from cvelistV5 and CISA KEV")
     s.add_argument("--cves", help="path to an extracted cvelistV5 'cves' directory (omit for KEV-only)")

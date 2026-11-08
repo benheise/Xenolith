@@ -1,0 +1,115 @@
+[
+{
+"key": "ibm/security-verify-access",
+"keys": [
+"ibm/security-verify-access",
+"ibm/security-verify-access-appliance",
+"ibm/security-verify-access-docker"
+],
+"cpes": [
+"ibm:security_verify_access",
+"ibm:security_verify_access_docker"
+]
+},
+{
+"key": "microsoft/windows-server-2008-r2-service-pack-1",
+"keys": [
+"microsoft/windows-server-2008-r2-service-pack-1",
+"microsoft/windows-server-2008-r2-service-pack-1-server-core-installation",
+"microsoft/windows-server-2008-r2-systems-service-pack-1"
+],
+"cpes": [
+"microsoft:windows_server_2008_r2"
+]
+},
+{
+"key": "ibm/business-automation-workflow",
+"keys": [
+"ibm/business-automation-workflow",
+"ibm/business-automation-workflow-containers"
+],
+"cpes": [
+"ibm:business_automation_workflow"
+]
+},
+{
+"key": "ibm/sterling-b2b-integrator",
+"keys": [
+"ibm/sterling-b2b-integrator",
+"ibm/sterling-b2b-integrator-standard-edition"
+],
+"cpes": [
+"ibm:sterling_b2b_integrator"
+]
+},
+{
+"key": "microsoft/powershell-7-0",
+"keys": [
+"microsoft/powershell-7-0",
+"microsoft/powershell-core-7-0"
+],
+"cpes": [
+"microsoft:powershell_core"
+]
+},
+{
+"key": "microsoft/powershell-7-1",
+"keys": [
+"microsoft/powershell-7-1",
+"microsoft/powershell-core-7-1"
+],
+"cpes": [
+"microsoft:powershell_core"
+]
+},
+{
+"key": "microsoft/windows-server-2012",
+"keys": [
+"microsoft/windows-server-2012",
+"microsoft/windows-server-2012-server-core-installation"
+],
+"cpes": [
+"microsoft:windows_server_2012"
+]
+},
+{
+"key": "microsoft/windows-server-2012-r2",
+"keys": [
+"microsoft/windows-server-2012-r2",
+"microsoft/windows-server-2012-r2-server-core-installation"
+],
+"cpes": [
+"microsoft:windows_server_2012_r2"
+]
+},
+{
+"key": "microsoft/windows-server-2016",
+"keys": [
+"microsoft/windows-server-2016",
+"microsoft/windows-server-2016-server-core-installation"
+],
+"cpes": [
+"microsoft:windows_server_2016"
+]
+},
+{
+"key": "microsoft/windows-server-2019",
+"keys": [
+"microsoft/windows-server-2019",
+"microsoft/windows-server-2019-server-core-installation"
+],
+"cpes": [
+"microsoft:windows_server_2019"
+]
+},
+{
+"key": "red-hat/jboss-data-virtualization-6-4-8-sp2",
+"keys": [
+"red-hat/jboss-data-virtualization-6-4-8-sp1",
+"red-hat/jboss-data-virtualization-6-4-8-sp2"
+],
+"cpes": [
+"redhat:jboss_data_virtualization"
+]
+}
+]

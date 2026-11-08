@@ -1,0 +1,15 @@
+name: Suggest a notices source
+description: A vendor publishes open source notices, OSS listings or SBOMs for its products
+labels: [notices-source]
+body:
+  - type: input
+    id: supplier
+    attributes: { label: Vendor, placeholder: Example Networks }
+    validations: { required: true }
+  - type: input
+    id: url
+    attributes: { label: Link to a document or an index page of documents, placeholder: "https://" }
+    validations: { required: true }
+  - type: textarea
+    id: notes
+    attributes: { label: Notes, description: Products covered, file format, anything unusual about the page }

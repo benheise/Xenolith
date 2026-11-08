@@ -116,6 +116,15 @@
     "component_version": {
       "type": "string",
       "description": "Version of the embedded component as stated by the source (for example from a third-party notices file)."
+    },
+    "cpes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[^:]+:[^:]+$"
+      },
+      "maxItems": 8,
+      "description": "CPE vendor:product pairs naming the product, when the source gives them. Used to link the same product across sources."
     }
   },
   "$defs": {

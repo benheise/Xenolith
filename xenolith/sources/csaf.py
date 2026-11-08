@@ -30,6 +30,9 @@ from ..catalog import Catalog
 from ..model import VERDICT_PRIORITY, make_assertion, read_ndjson, slug, write_ndjson
 
 SOURCE_ID = "csaf"
+# Bump when parse_advisory extracts more: documents that matched the watchlist
+# are re-fetched once so their stored statements pick up the new fields.
+PARSER_VERSION = 3   # 2: CPEs from product_identification_helper; 3: CPE 2.2 URIs
 
 CSAF_STATUS = {
     "known_affected": "affected",
@@ -49,13 +52,19 @@ FILENAME_CVE = re.compile(r"cve-(\d{4})-(\d{4,})", re.IGNORECASE)
 
 # ---------------------------------------------------------------- product tree
 
-def _from_path(path: list[tuple[str, str]], full_name: str) -> dict:
+def _cpe_vp(cpe: str | None) -> str | None:
+    from .cvelist import cpe_vendor_product
+    return cpe_vendor_product(cpe) if cpe else None
+
+
+def _from_path(path: list[tuple[str, str]], full_name: str, helper: dict | None = None) -> dict:
     vendor = next((n for c, n in reversed(path) if c == "vendor"), None)
     product = next((n for c, n in reversed(path) if c == "product_name"), None) \
         or next((n for c, n in reversed(path) if c == "product_family"), None) \
         or full_name
     version = " ".join(n for c, n in path if c in VERSION_CATEGORIES and n)
-    return {"vendor": vendor, "product": product or full_name, "version": version}
+    return {"vendor": vendor, "product": product or full_name, "version": version,
+            "cpe": _cpe_vp((helper or {}).get("cpe"))}
 
 
 def index_product_tree(pt: dict) -> tuple[dict[str, dict], dict[str, list[str]]]:
@@ -67,13 +76,14 @@ def index_product_tree(pt: dict) -> tuple[dict[str, dict], dict[str, list[str]]]
             p = path + [(b.get("category", ""), str(b.get("name", "")))]
             prod = b.get("product") or {}
             if prod.get("product_id"):
-                names[prod["product_id"]] = _from_path(p, prod.get("name", ""))
+                names[prod["product_id"]] = _from_path(p, prod.get("name", ""), prod.get("product_identification_helper"))
             walk(b.get("branches"), p)
 
     walk(pt.get("branches"), [])
     for fp in pt.get("full_product_names") or []:
         if fp.get("product_id"):
-            names.setdefault(fp["product_id"], {"vendor": None, "product": fp.get("name", ""), "version": ""})
+            names.setdefault(fp["product_id"], {"vendor": None, "product": fp.get("name", ""), "version": "",
+                                                "cpe": _cpe_vp((fp.get("product_identification_helper") or {}).get("cpe"))})
     for rel in pt.get("relationships") or []:
         fp = rel.get("full_product_name") or {}
         pid = fp.get("product_id")
@@ -87,9 +97,10 @@ def index_product_tree(pt: dict) -> tuple[dict[str, dict], dict[str, list[str]]]
                 comp_label = " ".join(x for x in (comp["product"], comp["version"]) if x)
             names[pid] = {"vendor": plat["vendor"] or (comp or {}).get("vendor"),
                           "product": plat["product"],
-                          "version": " ".join(x for x in (plat["version"], comp_label) if x)}
+                          "version": " ".join(x for x in (plat["version"], comp_label) if x),
+                          "cpe": plat.get("cpe")}
         else:
-            names.setdefault(pid, {"vendor": None, "product": fp.get("name", ""), "version": ""})
+            names.setdefault(pid, {"vendor": None, "product": fp.get("name", ""), "version": "", "cpe": None})
     groups = {g["group_id"]: list(g.get("product_ids") or []) for g in pt.get("product_groups") or [] if g.get("group_id")}
     return names, groups
 
@@ -126,6 +137,7 @@ def parse_advisory(doc: dict, url: str, cve_map: dict[str, str], provider: str) 
     all_cves: list[str] = []
     # (component, supplier, product) -> {cve: {version: status}}
     rows: dict[tuple[str, str, str], dict[str, dict[str, str]]] = {}
+    row_cpes: dict[tuple[str, str, str], set[str]] = {}
     for vuln in doc.get("vulnerabilities") or []:
         cve = str(vuln.get("cve") or "").upper()
         if cve:
@@ -157,6 +169,8 @@ def parse_advisory(doc: dict, url: str, cve_map: dict[str, str], provider: str) 
                     st = "absent"
                 info = names.get(pid) or {"vendor": None, "product": pid, "version": ""}
                 key = (comp, info["vendor"] or publisher, info["product"] or pid)
+                if info.get("cpe"):
+                    row_cpes.setdefault(key, set()).add(info["cpe"])
                 versions = rows.setdefault(key, {}).setdefault(cve, {})
                 v = info["version"] or ""
                 prev = versions.get(v)
@@ -187,6 +201,7 @@ def parse_advisory(doc: dict, url: str, cve_map: dict[str, str], provider: str) 
             notes=title,
             category=provider,
             updated=updated,
+            cpes=row_cpes.get((comp, supplier, product), ()),
         ))
     return out, sorted(set(all_cves))
 
@@ -294,6 +309,8 @@ def crawl_provider(provider: dict, *, catalog: Catalog, data_dir: Path,
         st = state.get(url)
         if st is None or st.get("r") != release:
             return True
+        if st.get("x") and st.get("pv", 1) < PARSER_VERSION:
+            return True
         return set(st.get("c", [])) & watch != set(st.get("x", []))
 
     todo = sorted(((u, r) for u, r in docs if needs(u, r)), key=lambda ur: ur[1], reverse=True)
@@ -322,7 +339,7 @@ def crawl_provider(provider: dict, *, catalog: Catalog, data_dir: Path,
                 continue
             stats["fetched"] += 1
             assertions, cves = parse_advisory(doc, url, cve_map, provider["name"])
-            state[url] = {"r": release, "c": cves, "x": sorted(set(cves) & watch)}
+            state[url] = {"r": release, "c": cves, "x": sorted(set(cves) & watch), "pv": PARSER_VERSION}
             refreshed.add(url)
             new_assertions.extend(assertions)
 

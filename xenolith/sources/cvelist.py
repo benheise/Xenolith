@@ -18,6 +18,7 @@ from __future__ import annotations
 import csv
 import io
 import json
+import re
 from collections import Counter
 from pathlib import Path
 from typing import Iterator
@@ -28,6 +29,55 @@ from ..model import product_key
 KEV_CSV = "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.csv"
 EXCLUDED_CNAS = {"GitHub_M"}
 PLACEHOLDERS = {"", "n/a", "na", "none", "unknown", "-", "?", "unspecified", "not applicable"}
+GENERIC_TOKENS = {"the", "for", "and", "software", "server", "firmware", "client", "edition", "enterprise",
+                  "system", "systems", "suite", "app", "application", "plugin", "module", "version", "series"}
+
+
+def cpe_vendor_product(cpe: str) -> str | None:
+    """'cpe:2.3:o:paloaltonetworks:pan-os:10.1:*...' or CPE 2.2 'cpe:/o:paloaltonetworks:pan-os:10.1'
+    -> 'paloaltonetworks:pan-os'."""
+    s = (cpe or "").strip().lower().replace("\\:", "\x00").replace("\\", "")
+    if s.startswith("cpe:2.3:"):
+        parts = s.split(":")[3:5]
+    elif s.startswith("cpe:/"):
+        parts = s[5:].split(":")[1:3]
+    else:
+        return None
+    if len(parts) < 2 or parts[0] in ("", "*", "-") or parts[1] in ("", "*", "-"):
+        return None
+    return f"{parts[0]}:{parts[1]}".replace("\x00", ":")
+
+
+def _tokens(text: str) -> set[str]:
+    return {t for t in re.split(r"[^a-z0-9]+", (text or "").lower()) if len(t) >= 2 and t not in GENERIC_TOKENS}
+
+
+def name_similarity(product: str, cpe_product: str) -> float:
+    a, b = _tokens(product), _tokens(cpe_product.replace("_", " "))
+    if not a or not b:
+        return 0.0
+    if "".join(sorted(a)) == "".join(sorted(b)):
+        return 1.0
+    return len(a & b) / len(a | b)
+
+
+def assign_adp_cpes(products: list[str], adp_cpes: list[str]) -> dict[int, list[str]]:
+    """CISA's ADP container adds CPEs to many CVE records, but not per CNA entry.
+    Give each ADP CPE to the one CNA product it matches best (similarity >= 0.5,
+    no ties), so 'fedoraproject:fedora' never lands on a Chrome entry and
+    'mozilla:firefox_esr' goes to Firefox ESR, not Firefox."""
+    out: dict[int, list[str]] = {}
+    for c in dict.fromkeys(adp_cpes):
+        vp = cpe_vendor_product(c)
+        if not vp:
+            continue
+        scores = [name_similarity(p, vp.split(":", 1)[1]) for p in products]
+        if not scores:
+            continue
+        best = max(scores)
+        if best >= 0.5 and scores.count(best) == 1:
+            out.setdefault(scores.index(best), []).append(vp)
+    return out
 
 
 def load_kev(path: Path | None = None) -> list[dict]:
@@ -71,6 +121,9 @@ def build(cve_dir: Path | None, kev_rows: list[dict], *, min_cves: int = 3) -> t
                 continue
             stats["records"] += 1
             published = str(meta.get("datePublished") or "")[:10]
+            adp_cpes = [c for adp in (rec.get("containers") or {}).get("adp") or []
+                        for a in adp.get("affected") or [] for c in a.get("cpes") or [] if isinstance(c, str)]
+            usable = []
             for aff in cna.get("affected") or []:
                 if aff.get("packageName") or aff.get("collectionURL"):
                     stats["excluded_package_entries"] += 1
@@ -80,14 +133,20 @@ def build(cve_dir: Path | None, kev_rows: list[dict], *, min_cves: int = 3) -> t
                 if vendor.lower() in PLACEHOLDERS or product.lower() in PLACEHOLDERS:
                     stats["placeholder_entries"] += 1
                     continue
+                usable.append((aff, vendor, product))
+            adp_assigned = assign_adp_cpes([p for _, _, p in usable], adp_cpes)
+            for i, (aff, vendor, product) in enumerate(usable):
                 e = entry(vendor, product)
                 e["cves"].add(cve)
                 if cve in kev_ids:
                     e["kev"].add(cve)
                 e["cnas"][short] += 1
                 for cpe in aff.get("cpes") or []:
-                    if isinstance(cpe, str) and cpe.startswith("cpe:"):
-                        e["cpes"].add(cpe)
+                    if isinstance(cpe, str) and (vp := cpe_vendor_product(cpe)):
+                        e["cpes"].add(vp)
+                for vp in adp_assigned.get(i, []):
+                    e["cpes"].add(vp)
+                    stats["adp_cpes_attached"] += 1
                 if published > e["last"]:
                     e["last"] = published
 
@@ -104,8 +163,7 @@ def build(cve_dir: Path | None, kev_rows: list[dict], *, min_cves: int = 3) -> t
             stats["below_threshold"] += 1
             continue
         (vendor, product), _ = e["names"].most_common(1)[0]
-        # Keep CPE vendor:product prefixes only; full CPEs repeat per version.
-        cpe_prefixes = sorted({":".join(c.split(":")[:5]) for c in e["cpes"]})[:5]
+        cpe_prefixes = sorted(e["cpes"])[:8]   # CPE vendor:product pairs (version parts dropped)
         out.append({
             "key": e["key"],
             "supplier": vendor,

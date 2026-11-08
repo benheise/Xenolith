@@ -928,5 +928,48 @@
 "via": [
 "dotted_toc"
 ]
+},
+"https://www.watchguard.com/help/docs/fireware/12/en-US/v12_10_copyright-licensing_guide.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 387,
+"sha": "6c7575faa4de5e41e902f2d2c6765094154f1cf1654b9c6a60014289244efcaf",
+"status": "ok",
+"via": [
+"dotted_toc",
+"gt_list"
+]
+},
+"https://www.watchguard.com/help/docs/fireware/12/en-US/v12_11_copyright-licensing_guide.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 392,
+"sha": "24396e9a6335eea00e49d4cc09ebc979c8d5cbbbdeac5524a1e80ffeb5d78089",
+"status": "ok",
+"via": [
+"dotted_toc",
+"gt_list"
+]
+},
+"https://www.watchguard.com/help/docs/fireware/12/en-US/v12_12_copyright-licensing_guide.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 394,
+"sha": "dc7389e78178d34fc25ad72e74315e1ca1041122ba7b5a637e788a2d48ed8185",
+"status": "ok",
+"via": [
+"dotted_toc",
+"gt_list"
+]
+},
+"https://www.watchguard.com/help/docs/fireware/12/en-US/v12_5_copyright-licensing_guide.pdf": {
+"fetched": "2026-11-08",
+"kind": "pdf",
+"n": 342,
+"sha": "6807f2959e16174eafbd805e1282f29c927bd585be19f08283071018c1eac14c",
+"status": "ok",
+"via": [
+"dotted_toc"
+]
 }
 }

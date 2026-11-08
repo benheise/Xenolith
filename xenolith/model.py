@@ -57,7 +57,7 @@ EVIDENCE = (
 ASSERTION_FIELDS = (
     "id", "component", "supplier", "product", "product_key", "version",
     "cves", "verdict", "contains", "evidence", "source", "publisher",
-    "source_url", "references", "notes", "category", "updated", "component_version",
+    "source_url", "references", "notes", "category", "updated", "component_version", "cpes",
 )
 
 
@@ -112,6 +112,7 @@ def make_assertion(
     status: str | None = None,
     publisher: str = "",
     component_version: str = "",
+    cpes: Iterable[str] = (),
 ) -> dict:
     """Build a normalized assertion.
 
@@ -159,6 +160,9 @@ def make_assertion(
     }
     if component_version:
         out["component_version"] = clean_text(component_version, 200)
+    cpes = sorted({c for c in cpes if c})[:8]
+    if cpes:
+        out["cpes"] = cpes   # CPE vendor:product pairs naming the product (used to link sources)
     return out
 
 

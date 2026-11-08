@@ -1,0 +1,16 @@
+name: Report a wrong statement
+description: A product page shows a status or component that the vendor's current information contradicts
+labels: [correction]
+body:
+  - type: input
+    id: product
+    attributes: { label: Product page link, placeholder: "https://benheise.github.io/Xenolith/#p=..." }
+    validations: { required: true }
+  - type: textarea
+    id: wrong
+    attributes: { label: What's wrong }
+    validations: { required: true }
+  - type: input
+    id: evidence
+    attributes: { label: Link to the vendor's current statement, placeholder: "https://" }
+    validations: { required: true }

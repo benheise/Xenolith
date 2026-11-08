@@ -1,0 +1,36 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-08T12:00:00Z",
+    "tools": {
+      "components": [
+        { "type": "application", "name": "syft", "version": "1.x" },
+        { "type": "application", "name": "xenolith-scan", "version": "0.1" }
+      ]
+    },
+    "supplier": { "name": "Example Networks" },
+    "component": {
+      "type": "firmware",
+      "bom-ref": "product",
+      "name": "Example Gateway OS",
+      "version": "7.2.9",
+      "supplier": { "name": "Example Networks" }
+    },
+    "properties": [
+      { "name": "xenolith:evidence", "value": "binary-scan" },
+      { "name": "xenolith:artifact", "value": "example-gateway-os-7.2.9.img (public download page: https://example.com/downloads)" },
+      { "name": "xenolith:artifact_sha256", "value": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08" },
+      { "name": "xenolith:source_url", "value": "https://example.com/downloads" },
+      { "name": "xenolith:attestation", "value": "yes" }
+    ]
+  },
+  "components": [
+    { "type": "library", "bom-ref": "c1", "name": "brotli", "version": "1.0.9" },
+    { "type": "library", "bom-ref": "c2", "name": "openssl", "version": "3.0.13" },
+    { "type": "library", "bom-ref": "c3", "name": "zlib", "version": "1.2.13" },
+    { "type": "application", "bom-ref": "c4", "name": "php", "version": "8.2.20" }
+  ]
+}

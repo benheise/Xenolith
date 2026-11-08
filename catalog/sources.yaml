@@ -54,8 +54,11 @@ sources:
   - id: community
     name: Xenolith community submissions
     kind: community
-    url: https://github.com/benheise/Xenolith/blob/main/community/assertions.csv
+    url: https://github.com/benheise/Xenolith/tree/main/community
     license: CC-BY-4.0
+    notes: >-
+      Sourced statements (community/assertions.csv) and contributed CycloneDX
+      SBOMs (community/sboms/), validated on every pull request.
 
   - id: cvelist
     name: CVE Program cvelistV5 + CISA KEV
