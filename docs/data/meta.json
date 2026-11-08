@@ -1,15 +1,17 @@
 {
- "built": "2026-11-08T02:55:38Z",
+ "built": "2026-11-08T03:15:02Z",
  "counts": {
-  "assertions": 13301,
-  "products_with_data": 7212,
+  "assertions": 13317,
+  "products_with_data": 7221,
   "inventories": 254,
   "inventory_components": 149690,
   "cpe_linked_clusters": 21,
   "cpe_linked_entries": 23,
   "spine_products": 15962,
-  "spine_only_shown": 4738,
-  "components": 13
+  "spine_only_shown": 4733,
+  "components": 13,
+  "wanted": 46,
+  "wanted_fulfilled": 0
  },
  "components": [
   {
@@ -337,16 +339,16 @@
      ]
     }
    ],
-   "assertions": 3931,
-   "products": 3822,
-   "contains": 113,
+   "assertions": 3936,
+   "products": 3827,
+   "contains": 118,
    "in_range": 23,
    "verdicts": {
     "not_affected": 3809,
     "workaround": 11,
     "fixed": 62,
+    "present": 28,
     "under_investigation": 9,
-    "present": 23,
     "affected": 17
    }
   },
@@ -423,15 +425,15 @@
      ]
     }
    ],
-   "assertions": 148,
-   "products": 60,
-   "contains": 141,
+   "assertions": 155,
+   "products": 67,
+   "contains": 143,
    "in_range": 23,
    "verdicts": {
     "workaround": 15,
-    "fixed": 19,
-    "present": 107,
-    "not_affected": 7
+    "not_affected": 12,
+    "fixed": 21,
+    "present": 107
    }
   },
   {
@@ -507,14 +509,14 @@
      ]
     }
    ],
-   "assertions": 180,
-   "products": 77,
-   "contains": 173,
+   "assertions": 182,
+   "products": 78,
+   "contains": 174,
    "in_range": 23,
    "verdicts": {
     "fixed": 45,
-    "present": 117,
-    "not_affected": 3,
+    "present": 118,
+    "not_affected": 4,
     "workaround": 11,
     "absent": 4
    }
@@ -553,12 +555,12 @@
      ]
     }
    ],
-   "assertions": 231,
-   "products": 93,
-   "contains": 210,
+   "assertions": 233,
+   "products": 95,
+   "contains": 212,
    "in_range": 1,
    "verdicts": {
-    "present": 177,
+    "present": 179,
     "workaround": 5,
     "fixed": 28,
     "under_investigation": 1,
@@ -767,8 +769,8 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 0,
-   "latest": ""
+   "assertions": 16,
+   "latest": "2025-10-01"
   },
   {
    "id": "cvelist",

@@ -66,6 +66,13 @@
   .supplier { color: var(--muted); font-size: 14px; }
   .product { font-weight: 600; overflow-wrap: anywhere; }
   .meta { color: var(--muted); font-size: 13.5px; margin-top: 6px; overflow-wrap: anywhere; }
+  .guess { display: grid; grid-template-columns: minmax(110px, 30%) 1fr; gap: 2px 10px; padding: 6px 0; border-top: 1px dashed var(--line); font-size: 13.5px; }
+  .guess:first-of-type { border-top: 0; }
+  .conf { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); margin-left: 4px; }
+  .conf-named { color: var(--present); border-color: var(--present); }
+  .conf-likely { color: var(--workaround); border-color: var(--workaround); }
+  .conf-possible { color: var(--neutral); }
+  .wanted-flag { border-left: 3px solid var(--workaround); padding: 8px 12px; margin: 12px 0; background: var(--panel); border-radius: 6px; font-size: 14px; }
   .cves { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
   .cve { white-space: nowrap; font-size: 12.5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--chip);
     border-radius: 6px; padding: 2px 6px; }
@@ -109,7 +116,7 @@ const VERDICTS = {
 };
 const CONTAINS = new Set(["affected", "workaround", "fixed", "present"]);
 const EVIDENCE = {
-  "tracker": "Incident tracker", "vendor-advisory": "Vendor advisory (CSAF)", "vendor-sbom": "Vendor SBOM",
+  "tracker": "Incident tracker", "vendor-advisory": "Vendor advisory", "vendor-sbom": "Vendor SBOM",
   "notices-file": "Third-party notices", "binary-scan": "Binary scan", "community": "Community submission"
 };
 const FILTERS = [
@@ -157,7 +164,7 @@ async function component(id) {
 // ---------------------------------------------------------------- routing
 function parseHash() {
   const h = new URLSearchParams(location.hash.replace(/^#/, ""));
-  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), f: h.get("f") || "all", t: h.get("t") || "" };
+  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), w: h.get("w"), f: h.get("f") || "all", t: h.get("t") || "" };
 }
 function go(params, replace = false) {
   const h = new URLSearchParams();
@@ -171,13 +178,14 @@ window.addEventListener("hashchange", route);
 let lastView = null;
 function route() {
   if (!META) return;
-  const { c, p, q, f, t } = parseHash();
-  const view = c ? `c:${c}` : p ? `p:${p}` : q ? "q" : "home";
+  const { c, p, q, w, f, t } = parseHash();
+  const view = c ? `c:${c}` : p ? `p:${p}` : q ? "q" : w ? "wanted" : "home";
   if (view !== lastView) { window.scrollTo(0, 0); lastView = view; }
   if (c && META.components.some(x => x.id === c)) { input.value = ""; return showComponent(c, f, t); }
   if (p) { input.value = ""; return showProduct(p); }
   if (q) { if (input.value !== q) input.value = q; return showSearch(q); }
   input.value = "";
+  if (w) return showWanted(w);
   showHome();
 }
 
@@ -422,6 +430,7 @@ async function showProduct(key) {
     ${p.cv ? `<div class="stats"><div class="stat"><b>${fmt(p.cv)}</b><span>CVEs naming this product</span></div>
       <div class="stat"><b>${fmt(p.kev || 0)}</b><span>in CISA KEV</span></div></div>` : ""}
     ${p.cpe ? `<div class="meta">CPE: ${p.cpe.map(c => `<span class="kbd">${esc(c)}</span>`).join(" ")}</div>` : ""}
+    ${p.w ? `<div class="wanted-flag">This product is on the <a href="#w=${encodeURIComponent(p.k)}">wanted list</a>: we tried to collect its full component list and couldn't. If you can see inside it, a notices link or SBOM would fill the gap.</div>` : ""}
     ${sections.map(s => `<h2><a href="#c=${encodeURIComponent(s.cid)}">${esc(s.name)}</a></h2>
       <div class="list">${s.rows.map(r => statementCard(r, { inProduct: true })).join("")}</div>`).join("")}
     ${comps.length || p.inv ? "" : `<p class="notice">No composition data for this product yet. It is listed because it appears in CVE records or the CISA KEV catalog.</p>`}
@@ -524,8 +533,62 @@ function showHome() {
         <h3>A vendor statement</h3><div class="small muted">One CSV row in <span class="kbd">community/assertions.csv</span>: component, product, status, source link, date.</div></a>
       <a class="card" style="text-decoration:none;color:inherit" href="${REPO}/blob/main/CONTRIBUTING.md#3-submit-an-sbom" target="_blank" rel="noopener">
         <h3>An SBOM</h3><div class="small muted">A CycloneDX file in <span class="kbd">community/sboms/</span>, vendor-published or from a scan you're permitted to share.</div></a>
+      ${k.wanted ? `<a class="card" style="text-decoration:none;color:inherit" href="#w=all">
+        <h3>The wanted list</h3><div class="small muted">${fmt(k.wanted)} widely deployed products whose component lists we couldn't get, with what's blocking each and where the list lives.</div></a>` : ""}
     </div>`;
   bindCards();
+}
+
+// ---------------------------------------------------------------- wanted list
+let WANTED = null;
+async function showWanted(focus) {
+  statusEl.textContent = "Loading the wanted list…";
+  if (!WANTED) WANTED = await loadJSON("data/wanted.json").catch(() => ({ entries: [], counts: {}, reasons: {} }));
+  const { entries, counts, reasons } = WANTED;
+  statusEl.textContent = `${fmt(counts.wanted || 0)} products wanted · ${fmt(counts.fulfilled || 0)} now verified`;
+  const confLabel = { named: "named by vendor", likely: "likely", possible: "possible" };
+  const card = e => {
+    const title = e.linked ? `<a href="#p=${encodeURIComponent(e.k)}">${esc(e.p)}</a>` : esc(e.p);
+    const verified = e.verified.length ? `<div class="meta">Already verified on Xenolith: ${e.verified.map(v =>
+      `<a href="#c=${encodeURIComponent(v.c)}">${esc(v.n)}</a> <span class="v-${esc(v.v)}">(${esc(VERDICTS[v.v] || v.v)})</span>`).join(", ")}</div>` : "";
+    if (e.status === "fulfilled") {
+      return `<div class="card" id="w-${esc(e.k)}"><div class="supplier">${esc(e.s)}</div><h3 style="margin:2px 0 4px">${title}</h3>
+        <div class="small">A component list has arrived; see the product page. Remove this entry from <span class="kbd">catalog/wanted.yaml</span> once checked.</div>${verified}</div>`;
+    }
+    const guesses = e.guesses.map(g => `<div class="guess">
+        <div><b>${g.c ? `<a href="#c=${encodeURIComponent(g.c)}">${esc(g.n)}</a>` : esc(g.n)}</b>${g.v ? ` <span class="muted">${esc(g.v)}</span>` : ""}<br><span class="conf conf-${esc(g.conf)}">${esc(confLabel[g.conf] || g.conf)}</span></div>
+        <div class="muted">${esc(g.b)}${g.src ? ` ${link(g.src, "source")}` : ""}</div></div>`).join("");
+    return `<div class="card" id="w-${esc(e.k)}">
+      <div class="supplier">${esc(e.s)}</div>
+      <h3 style="margin:2px 0 4px">${title}</h3>
+      <div class="small"><span class="badge v-workaround">${esc(reasons[e.reason] || e.reason)}</span></div>
+      <div class="small" style="margin-top:6px">${esc(e.detail)}</div>
+      ${e.where ? `<div class="small" style="margin-top:6px"><b>Where the list lives:</b> ${esc(e.where)}</div>` : ""}
+      ${verified}
+      ${guesses ? `<div class="small" style="margin-top:8px"><b>Best guesses (unverified)</b></div><div>${guesses}</div>` : ""}
+    </div>`;
+  };
+  const fulfilled = entries.filter(e => e.status === "fulfilled");
+  const open = entries.filter(e => e.status !== "fulfilled");
+  app.innerHTML = `
+    <button class="back" id="back">← Back</button>
+    <h2>Wanted</h2>
+    <p>Widely deployed products whose component lists we tried to collect and couldn't: the vendor blocks automated downloads,
+    keeps the list behind a login or inside the product, or doesn't publish one. If you have access to one of these products,
+    the list is usually a few clicks away for you, and it's exactly what's missing here.</p>
+    <p class="notice small"><b>The guesses are not data.</b> They're our reasoning about what each product probably contains,
+    to tell a contributor what to look for. They never appear on product or component pages and are never counted as evidence.
+    When a notices link, SBOM or scan arrives for a product, it moves to <i>Now verified</i> automatically.</p>
+    <p class="small"><a href="${REPO}/blob/main/CONTRIBUTING.md#the-wanted-list" target="_blank" rel="noopener">How to help with an entry</a> ·
+    <a href="${REPO}/blob/main/catalog/wanted.yaml" target="_blank" rel="noopener">catalog/wanted.yaml</a></p>
+    ${fulfilled.length ? `<h2>Now verified</h2><div class="list">${fulfilled.map(card).join("")}</div>` : ""}
+    <h2>${fmt(open.length)} products wanted</h2>
+    <div class="list">${open.map(card).join("")}</div>`;
+  $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
+  if (focus && focus !== "all") {
+    const el = document.getElementById(`w-${focus}`);
+    if (el) { el.scrollIntoView(); el.style.borderColor = "var(--accent)"; }
+  }
 }
 
 function renderFooter() {

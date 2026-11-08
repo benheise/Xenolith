@@ -12,6 +12,7 @@ from . import build as build_mod
 from . import catalog as catalog_mod
 from . import fingerprint as fingerprint_mod
 from . import prepare as prepare_mod
+from . import wanted as wanted_mod
 from .catalog import ROOT
 from .model import dedupe, write_ndjson
 from .sources import cisa_log4j, community, community_sbom, csaf, cvelist, ncsc_markdown, notices
@@ -78,11 +79,12 @@ def cmd_notices(args) -> int:
 
 
 def cmd_community(args) -> int:
-    """Validate (and unless --check, ingest) community/assertions.csv and community/sboms/."""
+    """Validate (and unless --check, ingest) community/assertions.csv and community/sboms/; validate catalog/wanted.yaml."""
     cat = catalog_mod.load()
     rows, errors = community.load(ROOT / "community" / "assertions.csv", cat)
     sboms, sbom_errors = community_sbom.load_all(ROOT)
     errors += sbom_errors
+    errors += wanted_mod.validate(wanted_mod.load(ROOT / "catalog" / "wanted.yaml"), set(cat.components))
     for e in errors:
         print(f"::error::{e}")
     if errors:

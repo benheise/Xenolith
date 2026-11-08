@@ -695,3 +695,60 @@ class NewNoticesFormatsTest(unittest.TestCase):
         cat = catalog.load()
         self.assertIsNone(cat.match_component("xz", "1.10"))           # org.tukaani:xz (Java)
         self.assertEqual(cat.match_component("xz", "5.2.4"), "xz")
+
+
+from xenolith import wanted as wanted_mod  # noqa: E402
+
+
+class WantedTest(unittest.TestCase):
+    CFG = {"vendors": [{"supplier": "Acme", "blocked": "login", "detail": "Behind a login.", "where": "Admin UI > Legal",
+                        "products": [
+                            {"product": "Gateway", "key": "acme/gateway", "guesses": [
+                                {"component": "openssl", "confidence": "likely", "basis": "TLS VPN"},
+                                {"component": "openssh", "confidence": "likely", "basis": "SSH admin"},
+                                {"name": "Apache Tomcat", "confidence": "named", "basis": "Install guide", "version": "9.0"}]},
+                            {"product": "Console", "guesses": [{"component": "curl", "confidence": "possible", "basis": "Agent"}]}]}]}
+
+    def test_shipped_list_is_valid(self):
+        cat = catalog.load()
+        cfg = wanted_mod.load(ROOT / "catalog" / "wanted.yaml")
+        self.assertEqual(wanted_mod.validate(cfg, set(cat.components)), [])
+        self.assertGreater(sum(len(v["products"]) for v in cfg["vendors"]), 20)
+
+    def test_validation_errors(self):
+        bad = {"vendors": [{"supplier": "X", "blocked": "nope", "products": [{"product": "Y", "guesses": [
+            {"component": "not-a-component", "confidence": "sure", "basis": ""},
+            {"component": "openssl", "name": "also", "confidence": "likely", "basis": "b"},
+            {"component": "curl", "confidence": "named", "basis": "b"}]}]}]}
+        errors = " | ".join(wanted_mod.validate(bad, {"openssl", "curl"}))
+        for needle in ("blocked must be", "unknown component", "confidence must be", "basis", "exactly one of", "needs a source"):
+            self.assertIn(needle, errors)
+
+    def test_build_drops_verified_guesses_and_fulfils(self):
+        names = {"openssl": "OpenSSL", "openssh": "OpenSSH", "curl": "curl"}
+        out = wanted_mod.build(self.CFG, component_names=names, remap={},
+                               statements={"acme/gateway": {"openssh": "fixed"}},
+                               inventories={"acme/console"}, known_keys={"acme/gateway"})
+        by = {e["p"]: e for e in out["entries"]}
+        gw = by["Gateway"]
+        self.assertEqual(gw["status"], "wanted")
+        self.assertTrue(gw["linked"])
+        self.assertEqual([v["c"] for v in gw["verified"]], ["openssh"])
+        self.assertEqual([g["n"] for g in gw["guesses"]], ["OpenSSL", "Apache Tomcat"])   # openssh guess dropped
+        self.assertEqual(by["Console"]["status"], "fulfilled")                             # a component list arrived
+        self.assertEqual(by["Console"]["k"], "acme/console")
+        self.assertEqual(out["counts"], {"wanted": 1, "fulfilled": 1, "guesses": 2})
+        self.assertEqual(out["entries"][0]["p"], "Console")                               # fulfilled listed first
+
+    def test_guesses_never_reach_statements(self):
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d)
+            build.build(catalog.load(), ROOT / "data", out)
+            wanted = json.loads((out / "wanted.json").read_text())
+            products = json.loads((out / "products.json").read_text())
+            self.assertTrue(any(p.get("w") for p in products))
+            guessed = {(e["k"], g["c"]) for e in wanted["entries"] for g in e["guesses"] if g.get("c")}
+            for cid in {c for _, c in guessed}:
+                rows = json.loads((out / "components" / f"{cid}.json").read_text())
+                keys = {r["k"] for r in (rows if isinstance(rows, list) else rows.get("rows", []))}
+                self.assertFalse({k for k, c in guessed if c == cid} & keys, cid)

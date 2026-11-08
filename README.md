@@ -27,6 +27,8 @@ Everything is contributed by pull request and checked automatically. Pick whiche
 
 The exact field lists, examples and the commands to check your change locally are in **[CONTRIBUTING.md](CONTRIBUTING.md)**. Pull requests run `python -m xenolith community --check`, which names the file, line and field of any problem.
 
+**Wanted list.** [Some widely deployed products](https://benheise.github.io/Xenolith/#w=all) keep their component lists behind a login, inside the product, or unpublished. The [wanted list](catalog/wanted.yaml) says what's blocking each one, where the list lives for someone with access, and our best guesses at its contents (shown only on that page, never as data). Entries move to verified automatically when a real list arrives ([details](CONTRIBUTING.md#the-wanted-list)).
+
 **Don't submit** anything confidential, anything you aren't permitted to share, or statements you can't link to. If you work for a vendor, the best contribution of all is publishing your product's SBOM or notices at a stable public URL and adding that URL.
 
 **Generating an SBOM for a product nobody has documented?** `python -m xenolith fingerprint <folder or archive> -o scan.cdx.json` finds the watchlist components in extracted firmware, an install folder or a jar/war/tgz, including statically linked and shaded copies, entirely offline. `python -m xenolith prepare scan.cdx.json --supplier … --product … --version … --artifact <file> --attest` then adds the required fields, hashes the artifact, strips local paths and validates the result ([how](CONTRIBUTING.md#3-submit-an-sbom)). It also accepts Syft, cve-bin-tool or blint output. [design/xenolith-scan.md](design/xenolith-scan.md) is the plan for a single cross-platform scanner that does the whole job in one step.
@@ -99,7 +101,7 @@ Incident trackers are ingested from local clones: `git clone --depth 1 https://g
 
 | Path | What |
 |---|---|
-| `catalog/` | Component watchlist with affected ranges, fingerprints, data source registry, CSAF provider list, notices document list, identity aliases, extra TLS intermediates |
+| `catalog/` | Component watchlist with affected ranges, fingerprints, wanted list, data source registry, CSAF provider list, notices document list, identity aliases, extra TLS intermediates |
 | `community/` | Contributions: `assertions.csv`, `sboms/` and `examples/` |
 | `data/assertions/` | Normalized statements per source (NDJSON). The open data dump |
 | `data/notices/`, `data/community_sboms/` | Full component inventories, one JSON file per document or SBOM |

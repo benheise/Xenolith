@@ -23,6 +23,8 @@ from .model import dedupe, product_key, read_ndjson
 from .sources.notices import iter_inventories
 from .versions import check as range_check
 from . import crosswalk
+from . import wanted as wanted_mod
+from .catalog import CATALOG
 
 EVIDENCE_RANK = {
     "vendor-advisory": 0,
@@ -217,6 +219,21 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
                          **({"cpe": sorted(product_cpes[sp["key"]])[:4]} if product_cpes.get(sp["key"]) else {})})
         spine_only += 1
     products.sort(key=lambda p: (p["s"].lower(), p["p"].lower()))
+
+    # Wanted list: guesses live only in wanted.json; product pages just get a flag.
+    wanted = wanted_mod.build(
+        wanted_mod.load(CATALOG / "wanted.yaml"),
+        component_names={cid: c.name for cid, c in catalog.components.items()},
+        remap=remap,
+        statements={k: {cid: _best(rows)["verdict"] for cid, rows in comps.items()} for k, comps in by_product.items()},
+        inventories=set(inventories),
+        known_keys={p["k"] for p in products},
+    )
+    open_keys = {e["k"] for e in wanted["entries"] if e["status"] == "wanted"}
+    for prod in products:
+        if prod["k"] in open_keys:
+            prod["w"] = 1
+    (out_dir / "wanted.json").write_text(json.dumps(wanted, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (out_dir / "products.json").write_text(json.dumps(products, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     source_counts = Counter(a["source"] for a in assertions)
@@ -246,6 +263,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             "spine_products": len(spine),
             "spine_only_shown": spine_only,
             "components": len(catalog.components),
+            "wanted": wanted["counts"]["wanted"],
+            "wanted_fulfilled": wanted["counts"]["fulfilled"],
         },
         "components": components_meta,
         "sources": sources_meta,

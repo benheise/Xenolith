@@ -1,0 +1,420 @@
+# Wanted: products whose component lists we tried to collect and couldn't.
+#
+# Shown on the site's Wanted page only. Guesses here are NEVER statements: they
+# don't appear on product or component pages and don't count as evidence. Their
+# purpose is to tell a contributor what to look for, and to rank what to chase.
+#
+# An entry is fulfilled automatically when Xenolith gets a component list for the
+# product (a vendor notices document or a community SBOM); the site then moves it
+# to "Now verified". Sourced statements about single components (community/
+# assertions.csv, vendor advisories) show up on the entry as already verified.
+# Remove an entry once it's fulfilled and checked.
+#
+# Per vendor:   supplier, blocked (reason code, see REASONS in xenolith/wanted.py),
+#               detail (what we tried), where (where the list lives, for whoever has
+#               access), products
+# Per product:  product, key (Xenolith product key, so the entry links to the existing
+#               page), optional blocked/detail/where overrides, guesses
+# Per guess:    component (watchlist id) or name (anything else), confidence:
+#                 named     the vendor named it publicly (advisory, KB, old notices), but
+#                           there's no complete, current list
+#                 likely    strong inference (platform, runtime, known architecture)
+#                 possible  weaker inference
+#               basis (why), optional version and source (https link)
+
+vendors:
+  - supplier: Cisco
+    blocked: blocked
+    detail: "Cisco's \"Open Source Used In\" PDFs exist for most products, but cisco.com answers automated clients with HTTP 403."
+    where: "The \"Open Source Used In <product> <release>\" PDF linked from each product's support page, or the licensing documents on the software download page."
+    products:
+      - product: Secure Firewall ASA
+        key: cisco/adaptive-security-appliance
+        guesses:
+          - {component: openssl, confidence: likely, basis: "Terminates TLS and AnyConnect/Secure Client VPN sessions."}
+          - {component: glibc, confidence: possible, basis: "Current ASA software runs on a Linux base on most platforms."}
+      - product: IOS XE
+        key: cisco/ios-xe
+        guesses:
+          - {component: glibc, confidence: likely, basis: "IOS XE runs the IOS daemon on a Linux kernel."}
+          - {component: openssl, confidence: likely, basis: "HTTPS web UI, RESTCONF/NETCONF and IPsec key management."}
+          - {component: curl, confidence: possible, basis: "Common in Linux-based network OS images for downloads and smart licensing."}
+      - product: Identity Services Engine
+        key: cisco/identity-services-engine
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Runs on Cisco ADE-OS, a Red Hat-derived Linux."}
+          - {component: openssl, confidence: likely, basis: "Linux appliance with TLS admin portal, RADIUS/EAP-TLS and pxGrid."}
+          - {component: openssh, confidence: likely, basis: "Admin CLI over SSH on a Linux appliance."}
+          - {component: spring-framework, confidence: possible, basis: "Java web application on Tomcat."}
+      - product: Secure Email Gateway
+        key: cisco/secure-email
+        guesses:
+          - {component: openssl, confidence: likely, basis: "AsyncOS (FreeBSD-based) terminates SMTP TLS."}
+          - {component: openssh, confidence: possible, basis: "FreeBSD base system ships OpenSSH; admin CLI over SSH."}
+
+  - supplier: VMware
+    blocked: login
+    detail: "open_source_licenses.txt files moved behind the Broadcom support portal login."
+    where: "Broadcom support portal > product downloads > Open Source Disclosure package; also open_source_licenses.txt on the appliance or in the installer ISO."
+    products:
+      - product: vCenter Server
+        key: vmware/vcenter-server
+        guesses:
+          - {component: glibc, confidence: likely, basis: "The appliance runs on VMware Photon OS."}
+          - {component: openssl, confidence: likely, basis: "Photon OS base and TLS for every service."}
+          - {component: openssh, confidence: likely, basis: "Appliance shell access over SSH."}
+          - {component: curl, confidence: likely, basis: "Part of the Photon OS base image."}
+          - {component: xz, confidence: likely, basis: "Part of the Photon OS base image."}
+          - {component: spring-framework, confidence: possible, basis: "Several vCenter services are Java applications."}
+      - product: ESXi
+        key: vmware/esxi
+        guesses:
+          - {component: openssl, confidence: likely, basis: "ESXi release notes routinely list OpenSSL updates."}
+          - {component: openssh, confidence: likely, basis: "ESXi Shell/SSH service; release notes list OpenSSH updates."}
+          - {component: curl, confidence: likely, basis: "ESXi release notes routinely list cURL library updates."}
+          - {component: glibc, confidence: possible, basis: "Userworld tools are built against a C library; whether it is glibc is not public."}
+
+  - supplier: Fortinet
+    blocked: in-product
+    detail: "The third-party list is exported from the device GUI (System > Legal / Third Party); it is not published on the web."
+    where: "FortiOS GUI: System > Settings or the Legal page > Third-party licenses; FortiManager/FortiAnalyzer: System Settings > Legal."
+    products:
+      - product: FortiOS
+        key: fortinet/fortios
+        guesses:
+          - {component: openssl, confidence: likely, basis: "SSL-VPN, HTTPS admin and IPsec; Fortinet advisories have covered OpenSSL issues."}
+          - {component: curl, confidence: possible, basis: "Common for FortiGuard and cloud connectors; not confirmed."}
+      - product: FortiManager
+        key: fortinet/fortimanager
+        guesses:
+          - {component: openssh, confidence: named, basis: "Fortinet staff on the community forum: OpenSSH in FortiManager/FortiAnalyzer can't be upgraded separately; a firmware update carries the fix.", source: "https://community.fortinet.com/t5/Support-Forum/CVE-2024-6387-RegreSSHion/m-p/325128"}
+          - {component: glibc, confidence: likely, basis: "regreSSHion only applies to glibc-based Linux, and Fortinet treated it as affected."}
+          - {component: openssl, confidence: likely, basis: "Linux appliance with HTTPS GUI and FGFM tunnels."}
+      - product: FortiAnalyzer
+        key: fortinet/fortianalyzer
+        guesses:
+          - {component: openssh, confidence: named, basis: "Fixed releases for regreSSHion listed under FG-IR-24-258 (7.0.13+, 6.4.15+).", source: "https://www.fortiguard.com/psirt/FG-IR-24-258"}
+          - {component: glibc, confidence: likely, basis: "regreSSHion only applies to glibc-based Linux."}
+      - product: FortiWeb
+        key: fortinet/fortiweb
+        guesses:
+          - {component: openssh, confidence: named, basis: "Fortinet tech tip: regreSSHion affects the FortiWeb sshd process.", source: "https://community.fortinet.com/t5/FortiWeb/Technical-Tip-OpenSSH-regreSSHion-Attack-CVE-2024-6387-affecting/ta-p/356324"}
+          - {component: glibc, confidence: likely, basis: "regreSSHion only applies to glibc-based Linux."}
+          - {component: openssl, confidence: likely, basis: "A web application firewall terminates TLS."}
+
+  - supplier: Splunk
+    blocked: signed-urls
+    detail: "Splunk's credits PDFs are served through short-lived signed URLs, so they can't be fetched on a schedule."
+    where: "$SPLUNK_HOME/share/splunk/ or the Licensing / Credits page in Splunk docs; Splunk's quarterly 'Third-Party Package Updates' advisories name many bundled packages."
+    products:
+      - product: Splunk Enterprise
+        key: splunk/enterprise
+        guesses:
+          - {name: libxml2, confidence: named, version: "2.9.14 (patched)", basis: "SVD-2025-1007.", source: "https://advisory.splunk.com/advisories/SVD-2025-1007"}
+          - {name: MongoDB (KV store), confidence: named, version: "7.0.14", basis: "SVD-2025-1007.", source: "https://advisory.splunk.com/advisories/SVD-2025-1007"}
+          - {name: libxslt, confidence: named, version: "1.1.34 (patched)", basis: "SVD-2023-0808.", source: "https://advisory.splunk.com/advisories/SVD-2023-0808"}
+          - {name: Python 3, confidence: named, basis: "Advisories reference $SPLUNK_HOME/lib/python3.7/site-packages.", source: "https://advisory.splunk.com/advisories/SVD-2023-0808"}
+          - {name: jackson-databind, confidence: named, version: "2.13.5", basis: "SVD-2024-0303.", source: "https://advisory.splunk.com/advisories/SVD-2024-0303"}
+      - product: Splunk Universal Forwarder
+        key: splunk/universal-forwarder
+        guesses:
+          - {name: libxml2, confidence: named, basis: "SVD-2022-0804 covers Enterprise and Universal Forwarders.", source: "https://advisory.splunk.com/advisories/SVD-2022-0804"}
+          - {component: curl, confidence: likely, basis: "Shares the Splunk Enterprise runtime libraries."}
+
+  - supplier: Juniper Networks
+    blocked: login
+    detail: "Per-release attribution pages stop at Junos 16.1; newer ones moved behind the HPE networking support portal."
+    where: "Junos OS release notes > Open Source Software licenses, or the 'Juniper Open Source' document set for each release."
+    products:
+      - product: Junos OS
+        key: juniper-networks/junos-os
+        guesses:
+          - {component: openssh, confidence: named, basis: "Junos OS and Junos OS Evolved OpenSSH update for CVE-2024-6387 (JSA92873).", source: "https://www.tenable.com/plugins/nessus/310752"}
+          - {component: openssl, confidence: likely, basis: "FreeBSD-based; J-Web, NETCONF over TLS, IPsec."}
+          - {component: php, confidence: possible, basis: "J-Web on SRX/EX has been PHP-based (2023 J-Web PHP issues)."}
+      - product: Junos OS Evolved
+        key: juniper-networks/junos-os-evolved
+        guesses:
+          - {component: openssh, confidence: named, basis: "Covered by JSA92873 OpenSSH update.", source: "https://www.tenable.com/plugins/nessus/310752"}
+          - {component: glibc, confidence: likely, basis: "Junos OS Evolved runs on Linux."}
+          - {component: openssl, confidence: likely, basis: "TLS for management protocols."}
+      - product: Junos Space
+        key: juniper-networks/junos-space-network-management-platform
+        guesses:
+          - {component: glibc, confidence: likely, basis: "CentOS/RHEL-based appliance."}
+          - {component: openssh, confidence: likely, basis: "Linux appliance administered over SSH."}
+          - {component: spring-framework, confidence: possible, basis: "Java EE application platform."}
+
+  - supplier: SonicWall
+    blocked: not-published
+    detail: "No public component lists; GPL source is available only on request."
+    where: "The appliance's management UI 'Legal' or 'Third-party licenses' page, or the GPL source request."
+    products:
+      - product: SMA1000
+        key: sonicwall/sma1000
+        guesses:
+          - {component: glibc, confidence: likely, basis: "regreSSHion applied to it, which requires glibc Linux."}
+          - {component: openssl, confidence: likely, basis: "SSL VPN appliance."}
+      - product: SMA100
+        key: sonicwall/sma100
+        guesses:
+          - {component: openssl, confidence: likely, basis: "SSL VPN appliance on Linux."}
+          - {component: glibc, confidence: possible, basis: "Linux-based appliance; C library not public."}
+      - product: SonicOS
+        key: sonicwall/sonicos
+        guesses:
+          - {component: openssl, confidence: possible, basis: "SSL VPN and HTTPS management; crypto library not public."}
+
+  - supplier: Synology
+    blocked: not-published
+    detail: "No public component list for DSM; open source tarballs only."
+    where: "DSM Control Panel > Info Center > Legal / Third-party software, or Synology's open source archive for the DSM build."
+    products:
+      - product: DSM
+        key: synology/dsm
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Linux-based NAS operating system."}
+          - {component: openssl, confidence: likely, basis: "Synology security advisories regularly cover OpenSSL in DSM."}
+          - {component: openssh, confidence: likely, basis: "SSH service on DSM."}
+          - {component: curl, confidence: likely, basis: "Synology advisories have covered curl in DSM."}
+          - {component: libwebp, confidence: possible, basis: "Photo applications and thumbnails."}
+
+  - supplier: HPE Aruba Networking
+    blocked: not-published
+    detail: "No public component lists; GPL source on request."
+    where: "Device web UI or CLI 'show license-info / legal', or HPE's open source request page."
+    products:
+      - product: ClearPass Policy Manager
+        key: aruba-networks/clearpass-policy-manager
+        guesses:
+          - {component: glibc, confidence: likely, basis: "CentOS-based appliance."}
+          - {component: openssl, confidence: likely, basis: "RADIUS/EAP-TLS and HTTPS portals."}
+          - {component: openssh, confidence: likely, basis: "Linux appliance administered over SSH."}
+      - product: AOS-CX
+        key: hewlett-packard-enterprise/arubaos-cx-switches
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Linux-based switch OS."}
+          - {component: openssl, confidence: likely, basis: "HTTPS REST API and web UI."}
+          - {component: openssh, confidence: likely, basis: "SSH management."}
+
+  - supplier: Atlassian
+    blocked: in-product
+    detail: "Third-party lists (and SBOMs for newer releases) ship only inside the installation directory."
+    where: "<install-dir>/licenses/ and the bundled third-party licensing files; also visible in WEB-INF/lib jar names."
+    products:
+      - product: Jira Data Center
+        key: atlassian/jira-server-and-data-center
+        guesses:
+          - {component: spring-framework, confidence: likely, basis: "Jira's plugin system and services are built on Spring."}
+          - {name: Apache Tomcat, confidence: named, basis: "Jira installers bundle Tomcat."}
+          - {component: commons-text, confidence: possible, basis: "Common transitive dependency of Java web applications."}
+      - product: Confluence Data Center
+        key: atlassian/confluence-server-and-data-center
+        guesses:
+          - {component: spring-framework, confidence: likely, basis: "Confluence is built on Spring."}
+          - {name: Apache Tomcat, confidence: named, basis: "Confluence installers bundle Tomcat."}
+          - {component: commons-text, confidence: possible, basis: "Common transitive dependency of Java web applications."}
+      - product: Bitbucket Data Center
+        key: atlassian/bitbucket-data-center
+        guesses:
+          - {name: Logback, confidence: named, basis: "Atlassian: Bitbucket uses Logback, not Log4j.", source: "https://support.atlassian.com/atlassian-knowledge-base/kb/faq-for-cve-2021-44228-cve-2021-45046-and-cve-2021-45105"}
+          - {name: Elasticsearch / OpenSearch (bundled search), confidence: named, basis: "Atlassian's Log4j FAQ: Bitbucket was vulnerable through its bundled Elasticsearch.", source: "https://support.atlassian.com/atlassian-knowledge-base/kb/faq-for-cve-2021-44228-cve-2021-45046-and-cve-2021-45105"}
+          - {component: spring-framework, confidence: likely, basis: "Spring Boot application."}
+
+  - supplier: Adobe
+    blocked: no-versions
+    detail: "Adobe's notices PDFs list only attribution-required components, without versions."
+    where: "Product 'Third Party Notices' PDF, or the notices file in the installation directory."
+    products:
+      - product: Acrobat Reader
+        key: adobe/acrobat-and-reader
+        guesses:
+          - {component: libwebp, confidence: likely, basis: "Ships AcroCEF (Chromium Embedded Framework); Chromium bundles libwebp."}
+          - {component: brotli, confidence: likely, basis: "Chromium (via CEF) bundles Brotli."}
+      - product: ColdFusion
+        key: adobe/coldfusion
+        guesses:
+          - {component: spring-framework, confidence: possible, basis: "Java EE server bundling many Java libraries."}
+          - {component: commons-text, confidence: possible, basis: "Common transitive dependency of Java servers."}
+          - {name: Apache Tomcat, confidence: likely, basis: "ColdFusion's built-in web server is Tomcat-based."}
+
+  - supplier: JetBrains
+    blocked: client-side
+    detail: "jetbrains.com/legal/third-party-software renders its list in the browser; needs the JSON endpoint behind it."
+    where: "Help > About > third-party software in each IDE, and the license folder in the installation directory."
+    products:
+      - product: IntelliJ IDEA
+        key: jetbrains/intellij-idea
+        guesses:
+          - {component: libwebp, confidence: likely, basis: "Bundles JCEF (Chromium Embedded Framework); Chromium includes libwebp."}
+          - {component: brotli, confidence: likely, basis: "Chromium (via JCEF) includes Brotli; the platform also handles Brotli-encoded downloads."}
+          - {component: commons-text, confidence: possible, basis: "Common Java dependency."}
+      - product: TeamCity
+        key: jetbrains/teamcity
+        guesses:
+          - {component: spring-framework, confidence: likely, basis: "TeamCity server is a Spring web application on Tomcat."}
+          - {name: Apache Tomcat, confidence: likely, basis: "TeamCity server distribution bundles Tomcat."}
+
+  - supplier: Check Point
+    blocked: not-published
+    detail: "One prose copyright page, no per-product component list."
+    where: "Gaia Portal > About, or 'rpm -qa' on Gaia in Expert mode (Gaia is RPM-based)."
+    products:
+      - product: Quantum Security Gateway
+        key: check-point/quantum-security-gateway
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Gaia is a Red Hat-derived Linux; Check Point's regreSSHion analysis treats it as glibc-based."}
+          - {component: openssl, confidence: likely, basis: "VPN, HTTPS inspection and Gaia Portal."}
+          - {component: curl, confidence: likely, basis: "Gaia ships curl_cli for updates and diagnostics."}
+      - product: Quantum Security Management
+        key: check-point/quantum-security-management
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Runs on Gaia."}
+          - {component: spring-framework, confidence: possible, basis: "Management API and web services run on a Java stack."}
+      - product: Quantum Spark
+        guesses:
+          - {component: openssl, confidence: likely, basis: "SMB VPN gateways."}
+
+  - supplier: Docker
+    blocked: in-product
+    detail: "Acknowledgements are shown only inside the app."
+    where: "Docker Desktop > Settings > About / Open source licenses, or the licenses folder in the installation."
+    products:
+      - product: Docker Desktop
+        key: docker/desktop
+        guesses:
+          - {component: libwebp, confidence: likely, basis: "The dashboard is an Electron app; Electron bundles Chromium and libwebp."}
+          - {component: brotli, confidence: likely, basis: "Chromium (via Electron) bundles Brotli."}
+          - {component: openssl, confidence: possible, basis: "The Linux VM and helper tools; may be BoringSSL or Go crypto instead."}
+
+  - supplier: Axis Communications
+    blocked: not-published
+    detail: "Per-model open source text files exist only for legacy firmware (5.x); AXIS OS has none public."
+    where: "Device web UI > About > Open source licenses, or the license file in the firmware package."
+    products:
+      - product: AXIS OS
+        key: axis/os
+        guesses:
+          - {component: openssl, confidence: likely, basis: "HTTPS, 802.1X and signed firmware on a Linux-based camera OS."}
+          - {component: glibc, confidence: possible, basis: "Linux-based; the C library is not public."}
+          - {component: curl, confidence: possible, basis: "Common in Linux camera firmware for uploads and cloud services."}
+          - {component: openssh, confidence: possible, basis: "SSH can be enabled on AXIS OS devices."}
+
+  - supplier: Nutanix
+    blocked: not-published
+    detail: "No public component lists found."
+    where: "Prism > Settings > Licenses / Open source; the CVM runs an RPM-based Linux, so 'rpm -qa' on a CVM lists most packages."
+    products:
+      - product: AOS
+        key: nutanix/aos
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Controller VM runs an RPM-based (CentOS/Rocky) Linux."}
+          - {component: openssl, confidence: likely, basis: "Linux CVM with TLS everywhere."}
+          - {component: openssh, confidence: likely, basis: "CVM administration over SSH."}
+          - {component: curl, confidence: likely, basis: "Part of the CVM's Linux base."}
+          - {component: xz, confidence: likely, basis: "Part of the CVM's Linux base."}
+      - product: Prism Central
+        key: nutanix/prism-central
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Linux VM appliance."}
+          - {component: openssh, confidence: likely, basis: "Administered over SSH."}
+      - product: AHV
+        key: nutanix/ahv
+        guesses:
+          - {component: glibc, confidence: likely, basis: "KVM hypervisor on an RPM-based Linux."}
+          - {component: openssl, confidence: likely, basis: "Linux base."}
+
+  - supplier: Zscaler
+    blocked: not-published
+    detail: "No public component lists found."
+    where: "Client Connector: About > Licenses; App Connector: the VM image (RPM-based)."
+    products:
+      - product: Client Connector
+        key: zscaler/client-connector
+        guesses:
+          - {component: openssl, confidence: possible, basis: "Endpoint agent with TLS tunnels; crypto library not public."}
+          - {component: curl, confidence: possible, basis: "Common in desktop agents for updates."}
+      - product: App Connector
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Distributed as an RHEL-family VM image."}
+          - {component: openssl, confidence: likely, basis: "Linux VM base."}
+          - {component: openssh, confidence: likely, basis: "Administered over SSH."}
+
+  - supplier: SolarWinds
+    blocked: withdrawn
+    detail: "The SolarWinds Platform third-party list was withdrawn; the page now says to request an SBOM."
+    where: "SolarWinds support (SBOM request), or the license files in the installation directory."
+    products:
+      - product: SolarWinds Platform (Orion)
+        key: solarwinds/orion-platform
+        guesses:
+          - {component: openssl, confidence: possible, basis: "Agents and polling engines; Windows/.NET products often bundle OpenSSL for agents."}
+          - {component: curl, confidence: possible, basis: "Agents on Linux."}
+      - product: Kiwi Syslog Server
+        blocked: client-side
+        detail: "The third-party page renders its list in the browser."
+        guesses:
+          - {name: IPWorks ActiveX, confidence: named, version: "22.0.8668", basis: "SolarWinds Kiwi Syslog Server third-party page (seen in search results).", source: "https://documentation.solarwinds.com/en/success_center/kss/content/kss_third_party_software_list.htm"}
+      - product: Kiwi CatTools
+        blocked: client-side
+        detail: "The third-party page renders its list in the browser."
+        guesses:
+          - {name: WeOnlyDo! COM Secure Shell Client ActiveX, confidence: named, version: "3.1.6.247", basis: "SolarWinds Kiwi CatTools third-party page (seen in search results).", source: "https://documentation.solarwinds.com/en/success_center/kct/content/kct_third_party_software_list.htm"}
+
+  - supplier: ManageEngine
+    blocked: client-side
+    detail: "OpManager's thirdparty-library-dependency.html loads its table in the browser."
+    where: "<install-dir>/lib and the third-party license files; the help page loads it from a script."
+    products:
+      - product: OpManager
+        guesses:
+          - {name: Apache Tomcat, confidence: named, version: "9.0.87", basis: "OpManager MSP third-party library page (seen in search results).", source: "https://manageengine.com/network-monitoring-msp/help/thirdparty-library-dependency.html"}
+          - {name: PostgreSQL, confidence: named, version: "9.2.1 (older release)", basis: "Bundled database on ManageEngine's OpManager open source page.", source: "https://www.manageengine.cn/network-monitoring/help/oss.html"}
+          - {component: commons-text, confidence: named, basis: "ManageEngine: the library is available in all on-premises products, though used only in some.", source: "https://pitstop.manageengine.com/portal/en/community/topic/update-on-the-recent-vulnerability-in-apache-commons-text-library-and-the-impact-on-manageengine-on-premise-products"}
+
+  - supplier: Veritas
+    blocked: no-versions
+    detail: "NetBackup's third-party legal notices are an HTML book that names components but gives no versions."
+    where: "NetBackup Third-party Legal Notices (Veritas support docs), and the install directory's license files for versions."
+    products:
+      - product: NetBackup
+        key: veritas/netbackup-primary-server
+        guesses:
+          - {name: Apache Log4j, confidence: named, basis: "Named in the NetBackup 8.0 third-party notices (version not given).", source: "https://www.veritas.com/support/en_US/doc/124745273-127137067-0"}
+          - {name: Apache Tomcat, confidence: named, basis: "Named in the NetBackup third-party notices.", source: "https://www.veritas.com/support/en_US/doc/124745273-127137067-0"}
+          - {name: zlib, confidence: named, basis: "Named in the NetBackup third-party notices.", source: "https://www.veritas.com/support/en_US/doc/124745273-127137067-0"}
+          - {component: openssl, confidence: likely, basis: "Encrypted backup transport and certificate-based authentication."}
+
+  - supplier: Progress
+    blocked: in-product
+    detail: "Since 2020, MOVEit Transfer's acknowledgements are only in notice.txt in the installation directory."
+    where: "C:\\Program Files\\MOVEit\\MOVEitTransfer\\notice.txt (location in the MOVEitInstallDir registry value)."
+    products:
+      - product: MOVEit Transfer
+        key: progress/moveit-transfer
+        guesses:
+          - {component: spring-framework, confidence: named, version: "4.2.3 (2019.1, mobile component)", basis: "Listed in the MOVEit Transfer 2019.1 acknowledgements.", source: "https://docs.ipswitch.com/MOVEit/Transfer2019_1/Help/Admin/en/33071.htm"}
+          - {name: 7-Zip, confidence: named, version: "16.02 (2019.1)", basis: "Listed in the 2019.1 acknowledgements.", source: "https://docs.ipswitch.com/MOVEit/Transfer2019_1/Help/Admin/en/33071.htm"}
+          - {name: Apache Tomcat, confidence: named, version: "8.0.42 (2019.1, mobile component)", basis: "Listed in the 2019.1 acknowledgements.", source: "https://docs.ipswitch.com/MOVEit/Transfer2019_1/Help/Admin/en/33071.htm"}
+
+  - supplier: Oracle
+    blocked: needs-parser
+    detail: "Oracle publishes a Licensing Information User Manual per product release listing third-party components, but each manual needs its own parser."
+    where: "docs.oracle.com > product > Licensing Information User Manual."
+    products:
+      - product: WebLogic Server
+        key: oracle/weblogic-server
+        guesses:
+          - {component: spring-framework, confidence: possible, basis: "Java EE server with many bundled Java libraries."}
+          - {component: commons-text, confidence: possible, basis: "Common Java dependency."}
+
+  - supplier: NetApp
+    blocked: not-found
+    detail: "opensource.netapp.com has NOTICE reports for most products, but none for current StorageGRID releases (only 8.x/9.x source archives)."
+    where: "StorageGRID Grid Manager > Help > About > Licenses, or the NOTICE file in the installation package."
+    products:
+      - product: StorageGRID
+        guesses:
+          - {component: glibc, confidence: likely, basis: "Grid nodes run Debian-based Linux (NetApp's 11.5.0 source folder has a debian_unmodified set)."}
+          - {component: openssl, confidence: likely, basis: "S3 endpoint and Grid Manager over TLS."}
+          - {component: openssh, confidence: likely, basis: "Node administration over SSH."}

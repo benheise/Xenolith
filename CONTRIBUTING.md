@@ -142,6 +142,24 @@ python -m xenolith prepare scan.cdx.json \
 
 ---
 
+## The wanted list
+
+[`catalog/wanted.yaml`](catalog/wanted.yaml) lists widely deployed products whose component lists we tried to collect and couldn't, shown on the site's [Wanted page](https://benheise.github.io/Xenolith/#w=all). Each entry says what's blocking it (login, in-product only, blocked downloads, no public list), where the list usually lives for someone with access, and our best guesses at what it contains.
+
+**Helping with an entry.** If you can see inside one of these products, the entry's "where" line says where to look. Contribute what you find the usual way: a notices URL (section 1), a sourced statement (section 2) or an SBOM (section 3). When a component list arrives for the product, the build moves the entry to "Now verified" automatically; a sourced statement about one component shows on the entry as already verified and replaces the guess about it.
+
+**Guesses are not data.** They appear only on the Wanted page, never on product or component pages, and never count as evidence. Each guess needs a `confidence` and a `basis`:
+
+| `confidence` | Use when |
+|---|---|
+| `named` | The vendor named the component publicly (an advisory, KB article, old notices, a support page), but there's no complete, current list. Give the `source` link |
+| `likely` | Strong inference: the platform or runtime makes it near-certain (a Photon OS appliance has glibc and OpenSSL; an Electron app has Chromium's libwebp) |
+| `possible` | Weaker inference worth checking |
+
+**Adding an entry.** Add the product under its vendor with `product`, `key` (the product key from the site's URL, `#p=<key>`, so the entry links to the existing page), and at least one guess. Use `component:` for watchlist ids and `name:` for anything else. If a vendor statement already settles a component, add it to `community/assertions.csv` instead of guessing. `python -m xenolith community --check` validates the file.
+
+---
+
 ## Other changes
 
 **Add a component to the watchlist.** Add an entry to [`catalog/components.yaml`](catalog/components.yaml) with `id`, `name`, the incident's CVEs, the `affected:` ranges copied from the CVE record, and `notices_names` patterns for how the component appears in notices. Every stored notices document and SBOM is re-matched on the next build.
