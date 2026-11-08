@@ -1,10 +1,10 @@
 {
- "built": "2026-11-08T00:37:08Z",
+ "built": "2026-11-08T00:58:27Z",
  "counts": {
   "assertions": 12493,
   "products_with_data": 7419,
-  "spine_products": 16507,
-  "spine_only_shown": 4983,
+  "spine_products": 16524,
+  "spine_only_shown": 4987,
   "components": 13
  },
  "components": [
@@ -471,7 +471,7 @@
    "notes": "Vendor/product names from CNA-published CVE records, ranked by CVE and KEV counts. Records for package-ecosystem components are excluded.",
    "assertions": 0,
    "latest": "",
-   "products": 16507
+   "products": 16524
   }
  ],
  "comparables": [

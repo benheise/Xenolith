@@ -69,7 +69,7 @@
 {"cnas": ["microsoft"], "cpe": ["cpe:2.3:a:microsoft:exchange_server"], "cve_count": 51, "kev_count": 13, "key": "microsoft/microsoft-exchange-server-2013-cumulative-update-23", "last_cve": "2023-02-14", "product": "Microsoft Exchange Server 2013 Cumulative Update 23", "supplier": "Microsoft"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 19, "kev_count": 13, "key": "adobe/acrobat-and-reader", "last_cve": "2026-05-20", "product": "Acrobat and Reader", "supplier": "Adobe"}
 {"cnas": [], "cpe": [], "cve_count": 13, "kev_count": 13, "key": "samsung/mobile-devices", "last_cve": "2025-11-10", "product": "Mobile Devices", "supplier": "Samsung"}
-{"cnas": ["Linux", "XEN", "debian"], "cpe": [], "cve_count": 18229, "kev_count": 12, "key": "linux/linux", "last_cve": "2026-11-06", "product": "Linux", "supplier": "Linux"}
+{"cnas": ["Linux", "XEN", "debian"], "cpe": [], "cve_count": 18243, "kev_count": 12, "key": "linux/linux", "last_cve": "2026-11-07", "product": "Linux", "supplier": "Linux"}
 {"cnas": ["microsoft"], "cpe": ["cpe:2.3:a:microsoft:sharepoint_server"], "cve_count": 272, "kev_count": 12, "key": "microsoft/microsoft-sharepoint-server-subscription-edition", "last_cve": "2026-10-15", "product": "Microsoft SharePoint Server Subscription Edition", "supplier": "Microsoft"}
 {"cnas": ["oracle"], "cpe": [], "cve_count": 13, "kev_count": 12, "key": "oracle/weblogic-server", "last_cve": "2026-06-01", "product": "WebLogic Server", "supplier": "Oracle"}
 {"cnas": ["mozilla", "jpcert", "Chrome"], "cpe": [], "cve_count": 2220, "kev_count": 11, "key": "mozilla/firefox", "last_cve": "2026-11-03", "product": "Firefox", "supplier": "Mozilla"}
@@ -648,7 +648,7 @@
 {"cnas": ["microsoft"], "cpe": [], "cve_count": 46, "kev_count": 1, "key": "microsoft/microsoft-exchange-server-subscription-edition-rtm", "last_cve": "2026-10-13", "product": "Microsoft Exchange Server Subscription Edition RTM", "supplier": "Microsoft"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:h:d-link:dnr-322l"], "cve_count": 45, "kev_count": 1, "key": "d-link/dnr-322l", "last_cve": "2026-07-21", "product": "DNR-322L", "supplier": "D-Link"}
 {"cnas": ["microsoft"], "cpe": [], "cve_count": 45, "kev_count": 1, "key": "microsoft/microsoft-exchange-server-2019-cumulative-update-15", "last_cve": "2026-10-13", "product": "Microsoft Exchange Server 2019 Cumulative Update 15", "supplier": "Microsoft"}
-{"cnas": ["ibm"], "cpe": ["cpe:2.3:a:ibm:aspera_faspex"], "cve_count": 41, "kev_count": 1, "key": "ibm/aspera-faspex", "last_cve": "2025-10-09", "product": "Aspera Faspex", "supplier": "IBM"}
+{"cnas": ["ibm"], "cpe": ["cpe:2.3:a:ibm:aspera_faspex"], "cve_count": 42, "kev_count": 1, "key": "ibm/aspera-faspex", "last_cve": "2026-11-07", "product": "Aspera Faspex", "supplier": "IBM"}
 {"cnas": ["WSO2"], "cpe": [], "cve_count": 40, "kev_count": 1, "key": "wso2/wso2-traffic-manager", "last_cve": "2026-11-03", "product": "WSO2 Traffic Manager", "supplier": "WSO2"}
 {"cnas": ["WSO2"], "cpe": [], "cve_count": 40, "kev_count": 1, "key": "wso2/wso2-universal-gateway", "last_cve": "2026-11-03", "product": "WSO2 Universal Gateway", "supplier": "WSO2"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 39, "kev_count": 1, "key": "cisco/cisco-unity-connection", "last_cve": "2026-10-21", "product": "Cisco Unity Connection", "supplier": "Cisco"}
@@ -1505,6 +1505,7 @@
 {"cnas": ["juniper"], "cpe": [], "cve_count": 375, "kev_count": 0, "key": "juniper-networks/junos-os-evolved", "last_cve": "2026-10-14", "product": "Junos OS Evolved", "supplier": "Juniper Networks"}
 {"cnas": ["Unisoc"], "cpe": [], "cve_count": 327, "kev_count": 0, "key": "unisoc-shanghai-technologies-co-ltd/sc9863a-sc9832e-sc7731e-t610-t310-t606-t760-t610-t618-t606-t612-t616-t760-t770-t820-s8000", "last_cve": "2023-07-12", "product": "SC9863A/SC9832E/SC7731E/T610/T310/T606/T760/T610/T618/T606/T612/T616/T760/T770/T820/S8000", "supplier": "Unisoc (Shanghai) Technologies Co., Ltd."}
 {"cnas": ["qualcomm", "google_android"], "cpe": [], "cve_count": 306, "kev_count": 0, "key": "qualcomm-inc/android-for-msm-firefox-os-for-msm-qrd-android", "last_cve": "2019-02-11", "product": "Android for MSM, Firefox OS for MSM, QRD Android", "supplier": "Qualcomm, Inc."}
+{"cnas": ["ibm"], "cpe": ["cpe:2.3:a:ibm:api_connect"], "cve_count": 286, "kev_count": 0, "key": "ibm/api-connect", "last_cve": "2026-11-07", "product": "API Connect", "supplier": "IBM"}
 {"cnas": ["oracle"], "cpe": ["cpe:2.3:a:oracle:vm_virtualbox"], "cve_count": 280, "kev_count": 0, "key": "oracle-corporation/vm-virtualbox", "last_cve": "2024-07-16", "product": "VM VirtualBox", "supplier": "Oracle Corporation"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 280, "kev_count": 0, "key": "pdf-xchange/pdf-xchange-editor", "last_cve": "2026-02-20", "product": "PDF-XChange Editor", "supplier": "PDF-XChange"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 248, "kev_count": 0, "key": "adobe/adobe-experience-manager-6-5", "last_cve": "2026-10-13", "product": "Adobe Experience Manager 6.5", "supplier": "Adobe"}
@@ -1646,7 +1647,7 @@
 {"cnas": ["microsoft"], "cpe": [], "cve_count": 80, "kev_count": 0, "key": "microsoft/azure-site-recovery-vmware-to-azure", "last_cve": "2022-08-09", "product": "Azure Site Recovery VMWare to Azure", "supplier": "Microsoft"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 79, "kev_count": 0, "key": "foxit/phantompdf", "last_cve": "2021-06-16", "product": "PhantomPDF", "supplier": "Foxit"}
 {"cnas": ["PSF"], "cpe": [], "cve_count": 79, "kev_count": 0, "key": "python-software-foundation/cpython", "last_cve": "2026-11-06", "product": "CPython", "supplier": "Python Software Foundation"}
-{"cnas": ["ibm"], "cpe": ["cpe:2.3:a:ibm:api_connect"], "cve_count": 78, "kev_count": 0, "key": "ibm/api-connect", "last_cve": "2026-07-08", "product": "API Connect", "supplier": "IBM"}
+{"cnas": ["VulnCheck", "Fluid Attacks", "INCIBE"], "cpe": [], "cve_count": 78, "kev_count": 0, "key": "frappe/erpnext", "last_cve": "2026-11-07", "product": "erpnext", "supplier": "frappe"}
 {"cnas": ["@huntrdev", "@huntr_ai"], "cpe": [], "cve_count": 78, "kev_count": 0, "key": "microweber/microweber-microweber", "last_cve": "2023-12-15", "product": "microweber/microweber", "supplier": "microweber"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 77, "kev_count": 0, "key": "nagios/xi", "last_cve": "2025-11-03", "product": "XI", "supplier": "Nagios"}
 {"cnas": ["ibm"], "cpe": [], "cve_count": 76, "kev_count": 0, "key": "ibm/rational-engineering-lifecycle-manager", "last_cve": "2021-10-27", "product": "Rational Engineering Lifecycle Manager", "supplier": "IBM"}
@@ -1656,7 +1657,6 @@
 {"cnas": ["siemens"], "cpe": [], "cve_count": 75, "kev_count": 0, "key": "siemens/tecnomatix-plant-simulation-v2302", "last_cve": "2025-03-11", "product": "Tecnomatix Plant Simulation V2302", "supplier": "Siemens"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 74, "kev_count": 0, "key": "campcodes/complete-web-based-school-management-system", "last_cve": "2024-05-23", "product": "Complete Web-Based School Management System", "supplier": "Campcodes"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 74, "kev_count": 0, "key": "cisco/cisco-data-center-network-manager", "last_cve": "2025-08-27", "product": "Cisco Data Center Network Manager", "supplier": "Cisco"}
-{"cnas": ["VulnCheck", "Fluid Attacks", "INCIBE"], "cpe": [], "cve_count": 74, "kev_count": 0, "key": "frappe/erpnext", "last_cve": "2026-10-12", "product": "erpnext", "supplier": "frappe"}
 {"cnas": ["oracle"], "cpe": [], "cve_count": 74, "kev_count": 0, "key": "oracle-corporation/oracle-business-intelligence-enterprise-edition", "last_cve": "2026-10-20", "product": "Oracle Business Intelligence Enterprise Edition", "supplier": "Oracle Corporation"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 74, "kev_count": 0, "key": "thorsten/phpmyfaq", "last_cve": "2026-10-25", "product": "phpMyFAQ", "supplier": "thorsten"}
 {"cnas": ["microsoft"], "cpe": ["cpe:2.3:a:microsoft:visual_studio_2019"], "cve_count": 73, "kev_count": 0, "key": "microsoft/microsoft-visual-studio-2019-version-16-11-includes-16-0-16-10", "last_cve": "2026-07-14", "product": "Microsoft Visual Studio 2019 version 16.11 (includes 16.0 - 16.10)", "supplier": "Microsoft"}
@@ -1826,6 +1826,7 @@
 {"cnas": ["oracle"], "cpe": ["cpe:2.3:a:oracle:marketing"], "cve_count": 47, "kev_count": 0, "key": "oracle-corporation/marketing", "last_cve": "2024-07-16", "product": "Marketing", "supplier": "Oracle Corporation"}
 {"cnas": ["qualcomm"], "cpe": [], "cve_count": 47, "kev_count": 0, "key": "qualcomm-inc/snapdragon-auto-snapdragon-compute-snapdragon-connectivity-snapdragon-consumer-electronics-connectivity-snapdragon-consumer-iot-snapdragon-industrial-iot-snapdragon-mobile-snapdragon-voice-music-snapdragon-wired-infrastructure-and-networking", "last_cve": "2022-02-11", "product": "Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wired Infrastructure and Networking", "supplier": "Qualcomm, Inc."}
 {"cnas": ["siemens", "icscert"], "cpe": [], "cve_count": 47, "kev_count": 0, "key": "siemens/teamcenter-visualization-v13-3", "last_cve": "2024-01-09", "product": "Teamcenter Visualization V13.3", "supplier": "Siemens"}
+{"cnas": ["Wordfence", "WPScan"], "cpe": [], "cve_count": 47, "kev_count": 0, "key": "themeum/tutor-lms-elearning-and-online-course-solution", "last_cve": "2026-11-07", "product": "Tutor LMS – eLearning and online course solution", "supplier": "themeum"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 46, "kev_count": 0, "key": "cisco/cisco-webex-meetings", "last_cve": "2026-06-03", "product": "Cisco Webex Meetings", "supplier": "Cisco"}
 {"cnas": ["dell"], "cpe": [], "cve_count": 46, "kev_count": 0, "key": "dell/secure-connect-gateway-scg-policy-manager", "last_cve": "2026-10-09", "product": "Secure Connect Gateway (SCG) Policy Manager", "supplier": "Dell"}
 {"cnas": ["GitHub_P"], "cpe": [], "cve_count": 46, "kev_count": 0, "key": "github/github-enterprise-server", "last_cve": "2025-07-01", "product": "GitHub Enterprise Server", "supplier": "GitHub"}
@@ -1839,7 +1840,6 @@
 {"cnas": ["microsoft"], "cpe": [], "cve_count": 46, "kev_count": 0, "key": "microsoft/microsoft-edge-edgehtml-based-on-windows-10-version-1903-for-x64-based-systems", "last_cve": "2020-07-14", "product": "Microsoft Edge (EdgeHTML-based) on Windows 10 Version 1903 for x64-based Systems", "supplier": "Microsoft"}
 {"cnas": ["microsoft"], "cpe": [], "cve_count": 46, "kev_count": 0, "key": "microsoft/microsoft-edge-edgehtml-based-on-windows-server-2019", "last_cve": "2020-07-14", "product": "Microsoft Edge (EdgeHTML-based) on Windows Server 2019", "supplier": "Microsoft"}
 {"cnas": ["siemens", "icscert"], "cpe": [], "cve_count": 46, "kev_count": 0, "key": "siemens/simcenter-femap", "last_cve": "2026-08-11", "product": "Simcenter Femap", "supplier": "Siemens"}
-{"cnas": ["Wordfence", "WPScan"], "cpe": [], "cve_count": 46, "kev_count": 0, "key": "themeum/tutor-lms-elearning-and-online-course-solution", "last_cve": "2026-10-17", "product": "Tutor LMS – eLearning and online course solution", "supplier": "themeum"}
 {"cnas": ["Acronis"], "cpe": [], "cve_count": 45, "kev_count": 0, "key": "acronis/acronis-cyber-protect-cloud-agent", "last_cve": "2026-10-28", "product": "Acronis Cyber Protect Cloud Agent", "supplier": "Acronis"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 45, "kev_count": 0, "key": "adobe/adobe-campaign-classic", "last_cve": "2026-10-27", "product": "Adobe Campaign Classic", "supplier": "Adobe"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 45, "kev_count": 0, "key": "adobe/media-encoder", "last_cve": "2025-04-08", "product": "Media Encoder", "supplier": "Adobe"}
@@ -1996,6 +1996,7 @@
 {"cnas": ["AMD"], "cpe": [], "cve_count": 36, "kev_count": 0, "key": "amd/amd-ryzentm-embedded-v2000-series-processors", "last_cve": "2026-06-01", "product": "AMD Ryzen™ Embedded V2000 Series Processors", "supplier": "AMD"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 36, "kev_count": 0, "key": "cisco/cisco-ios", "last_cve": "2023-03-23", "product": "Cisco IOS", "supplier": "Cisco"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 36, "kev_count": 0, "key": "cisco/cisco-unified-contact-center-express", "last_cve": "2026-03-11", "product": "Cisco Unified Contact Center Express", "supplier": "Cisco"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 36, "kev_count": 0, "key": "codename065/download-manager", "last_cve": "2026-11-07", "product": "Download Manager", "supplier": "codename065"}
 {"cnas": ["hpe"], "cpe": [], "cve_count": 36, "kev_count": 0, "key": "hewlett-packard-enterprise-hpe/clearpass-policy-manager-cppm", "last_cve": "2026-10-06", "product": "ClearPass Policy Manager (CPPM)", "supplier": "Hewlett Packard Enterprise (HPE)"}
 {"cnas": ["ibm"], "cpe": ["cpe:2.3:a:ibm:mq_appliance"], "cve_count": 36, "kev_count": 0, "key": "ibm/mq-appliance", "last_cve": "2026-11-04", "product": "MQ Appliance", "supplier": "IBM"}
 {"cnas": ["microsoft"], "cpe": ["cpe:2.3:a:microsoft:excel"], "cve_count": 36, "kev_count": 0, "key": "microsoft/microsoft-excel-2010-service-pack-2", "last_cve": "2021-04-13", "product": "Microsoft Excel 2010 Service Pack 2", "supplier": "Microsoft"}
@@ -2009,7 +2010,6 @@
 {"cnas": ["adobe"], "cpe": [], "cve_count": 35, "kev_count": 0, "key": "adobe/framemaker", "last_cve": "2023-02-17", "product": "FrameMaker", "supplier": "Adobe"}
 {"cnas": ["CERT-PL"], "cpe": [], "cve_count": 35, "kev_count": 0, "key": "cgm/cgm-clininet", "last_cve": "2026-10-23", "product": "CGM CLININET", "supplier": "CGM"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 35, "kev_count": 0, "key": "cisco/cisco-webex-wrf-player", "last_cve": "2020-09-23", "product": "Cisco WebEx WRF Player", "supplier": "Cisco"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 35, "kev_count": 0, "key": "codename065/download-manager", "last_cve": "2026-10-10", "product": "Download Manager", "supplier": "codename065"}
 {"cnas": ["f5"], "cpe": [], "cve_count": 35, "kev_count": 0, "key": "f5/nginx-open-source", "last_cve": "2026-10-14", "product": "NGINX Open Source", "supplier": "F5"}
 {"cnas": ["cisa-cg"], "cpe": [], "cve_count": 35, "kev_count": 0, "key": "kiteworks/core", "last_cve": "2026-09-30", "product": "Core", "supplier": "Kiteworks"}
 {"cnas": ["microsoft"], "cpe": [], "cve_count": 35, "kev_count": 0, "key": "microsoft/microsoft-edge-edgehtml-based-on-windows-10-version-1709-for-32-bit-systems", "last_cve": "2020-07-14", "product": "Microsoft Edge (EdgeHTML-based) on Windows 10 Version 1709 for 32-bit Systems", "supplier": "Microsoft"}
@@ -2163,6 +2163,7 @@
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:tenda:ac7_firmware"], "cve_count": 30, "kev_count": 0, "key": "tenda/ac7", "last_cve": "2026-03-27", "product": "AC7", "supplier": "Tenda"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:tenda:f453_firmware"], "cve_count": 30, "kev_count": 0, "key": "tenda/f453", "last_cve": "2026-04-25", "product": "F453", "supplier": "Tenda"}
 {"cnas": ["talos"], "cpe": [], "cve_count": 30, "kev_count": 0, "key": "totolink/totolink", "last_cve": "2026-10-20", "product": "Totolink", "supplier": "totolink"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 30, "kev_count": 0, "key": "ultimatemember/ultimate-member-user-profile-registration-login-member-directory-content-restriction-membership-plugin", "last_cve": "2026-11-07", "product": "Ultimate Member – User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin", "supplier": "ultimatemember"}
 {"cnas": ["Absolute"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "absolute-security/secure-access", "last_cve": "2026-11-02", "product": "Secure Access", "supplier": "Absolute Security"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "adobe/magento", "last_cve": "2020-07-29", "product": "Magento", "supplier": "Adobe"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "adobe/substance3d-designer", "last_cve": "2025-07-08", "product": "Substance3D - Designer", "supplier": "Adobe"}
@@ -2222,7 +2223,7 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "sourcecodester/online-eyewear-shop", "last_cve": "2025-05-01", "product": "Online Eyewear Shop", "supplier": "SourceCodester"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "thehappymonster/happy-addons-for-elementor", "last_cve": "2026-03-11", "product": "Happy Addons for Elementor", "supplier": "thehappymonster"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "trimble/sketchup-viewer", "last_cve": "2024-11-22", "product": "SketchUp Viewer", "supplier": "Trimble"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "ultimatemember/ultimate-member-user-profile-registration-login-member-directory-content-restriction-membership-plugin", "last_cve": "2026-10-28", "product": "Ultimate Member – User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin", "supplier": "ultimatemember"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "unitecms/unlimited-elements-for-elementor", "last_cve": "2026-11-07", "product": "Unlimited Elements For Elementor", "supplier": "unitecms"}
 {"cnas": ["WSO2"], "cpe": [], "cve_count": 29, "kev_count": 0, "key": "wso2/wso2-enterprise-integrator", "last_cve": "2026-11-02", "product": "WSO2 Enterprise Integrator", "supplier": "WSO2"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 28, "kev_count": 0, "key": "adobe/adobe-photoshop", "last_cve": "2026-11-06", "product": "Adobe Photoshop", "supplier": "Adobe"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 28, "kev_count": 0, "key": "adobe/premiere", "last_cve": "2026-09-22", "product": "Premiere", "supplier": "Adobe"}
@@ -2258,7 +2259,6 @@
 {"cnas": ["suse"], "cpe": [], "cve_count": 28, "kev_count": 0, "key": "suse/rancher", "last_cve": "2026-09-03", "product": "Rancher", "supplier": "SUSE"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:tenda:f456_firmware"], "cve_count": 28, "kev_count": 0, "key": "tenda/f456", "last_cve": "2026-05-24", "product": "F456", "supplier": "Tenda"}
 {"cnas": ["trendmicro"], "cpe": [], "cve_count": 28, "kev_count": 0, "key": "trend-micro/trend-micro-security-consumer", "last_cve": "2022-09-19", "product": "Trend Micro Security (Consumer)", "supplier": "Trend Micro"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 28, "kev_count": 0, "key": "unitecms/unlimited-elements-for-elementor", "last_cve": "2026-09-11", "product": "Unlimited Elements For Elementor", "supplier": "unitecms"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 28, "kev_count": 0, "key": "wpeverest/user-registration-membership-free-paid-memberships-subscriptions-content-restriction-user-profile-custom-user-registration-login-builder", "last_cve": "2026-10-17", "product": "User Registration & Membership – Free & Paid Memberships, Subscriptions, Content Restriction, User Profile, Custom User Registration & Login Builder", "supplier": "wpeverest"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 27, "kev_count": 0, "key": "adobe/photoshop-desktop", "last_cve": "2026-04-14", "product": "Photoshop Desktop", "supplier": "Adobe"}
 {"cnas": ["AMD"], "cpe": [], "cve_count": 27, "kev_count": 0, "key": "amd/amd-epyctm-7003-series-processors", "last_cve": "2026-06-10", "product": "AMD EPYC™ 7003 Series Processors", "supplier": "AMD"}
@@ -2688,6 +2688,7 @@
 {"cnas": ["OpenNMS"], "cpe": [], "cve_count": 22, "kev_count": 0, "key": "the-opennms-group/meridian", "last_cve": "2026-10-15", "product": "Meridian", "supplier": "The OpenNMS Group"}
 {"cnas": ["tibco"], "cpe": [], "cve_count": 22, "kev_count": 0, "key": "tibco-software-inc/tibco-spotfire-analytics-platform-for-aws-marketplace", "last_cve": "2022-11-15", "product": "TIBCO Spotfire Analytics Platform for AWS Marketplace", "supplier": "TIBCO Software Inc."}
 {"cnas": ["NCSC.ch"], "cpe": [], "cve_count": 22, "kev_count": 0, "key": "tobit-laboratories-ag/teamdavid", "last_cve": "2026-08-07", "product": "TeamDavid", "supplier": "Tobit Laboratories AG"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 22, "kev_count": 0, "key": "tomdever/wpforo-forum", "last_cve": "2026-11-07", "product": "wpForo Forum", "supplier": "tomdever"}
 {"cnas": ["Unisoc"], "cpe": [], "cve_count": 22, "kev_count": 0, "key": "unisoc-shanghai-technologies-co-ltd/t8100-t9100-t8200-t8300", "last_cve": "2026-08-03", "product": "T8100/T9100/T8200/T8300", "supplier": "Unisoc (Shanghai) Technologies Co., Ltd."}
 {"cnas": ["redhat"], "cpe": [], "cve_count": 22, "kev_count": 0, "key": "unknown/moodle", "last_cve": "2020-05-21", "product": "moodle", "supplier": "[UNKNOWN]"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 22, "kev_count": 0, "key": "utt/520w", "last_cve": "2026-02-07", "product": "进取 520W", "supplier": "UTT"}
@@ -2757,6 +2758,7 @@
 {"cnas": ["Wordfence", "jpcert"], "cpe": [], "cve_count": 21, "kev_count": 0, "key": "wpdevelop/booking-calendar", "last_cve": "2026-10-10", "product": "Booking Calendar", "supplier": "wpdevelop"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 21, "kev_count": 0, "key": "wpvibes/addon-elements-for-elementor-formerly-elementor-addon-elements", "last_cve": "2025-12-14", "product": "Addon Elements for Elementor (formerly Elementor Addon Elements)", "supplier": "wpvibes"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:yonyou:ksoa"], "cve_count": 21, "kev_count": 0, "key": "yonyou/ksoa", "last_cve": "2026-09-22", "product": "KSOA", "supplier": "Yonyou"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 20, "kev_count": 0, "key": "10web/form-maker-by-10web-mobile-friendly-drag-drop-contact-form-builder", "last_cve": "2026-11-07", "product": "Form Maker by 10Web – Mobile-Friendly Drag & Drop Contact Form Builder", "supplier": "10web"}
 {"cnas": ["Nozomi"], "cpe": [], "cve_count": 20, "kev_count": 0, "key": "advantech/eki-6333ac-1gpo", "last_cve": "2024-11-26", "product": "EKI-6333AC-1GPO", "supplier": "Advantech"}
 {"cnas": ["Nozomi"], "cpe": [], "cve_count": 20, "kev_count": 0, "key": "advantech/eki-6333ac-2g", "last_cve": "2024-11-26", "product": "EKI-6333AC-2G", "supplier": "Advantech"}
 {"cnas": ["Nozomi"], "cpe": [], "cve_count": 20, "kev_count": 0, "key": "advantech/eki-6333ac-2gd", "last_cve": "2024-11-26", "product": "EKI-6333AC-2GD", "supplier": "Advantech"}
@@ -2958,7 +2960,6 @@
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 19, "kev_count": 0, "key": "timstrifler/exclusive-addons-for-elementor", "last_cve": "2026-08-02", "product": "Exclusive Addons for Elementor", "supplier": "timstrifler"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 19, "kev_count": 0, "key": "totolink/ex1200t", "last_cve": "2025-06-24", "product": "EX1200T", "supplier": "TOTOLINK"}
 {"cnas": ["redhat"], "cpe": [], "cve_count": 19, "kev_count": 0, "key": "unknown/kernel", "last_cve": "2020-09-10", "product": "kernel", "supplier": "[UNKNOWN]"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "10web/form-maker-by-10web-mobile-friendly-drag-drop-contact-form-builder", "last_cve": "2026-10-14", "product": "Form Maker by 10Web – Mobile-Friendly Drag & Drop Contact Form Builder", "supplier": "10web"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "admidio/admidio", "last_cve": "2026-10-27", "product": "admidio", "supplier": "Admidio"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "adobe/adobe-media-encoder", "last_cve": "2026-07-14", "product": "Adobe Media Encoder", "supplier": "Adobe"}
 {"cnas": ["@huntr_ai"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "aimhubio/aimhubio-aim", "last_cve": "2025-03-20", "product": "aimhubio/aim", "supplier": "aimhubio"}
@@ -2968,6 +2969,7 @@
 {"cnas": ["AMD"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "amd/amd-ryzentm-threadrippertm-3000-series-processors", "last_cve": "2026-09-02", "product": "AMD Ryzen™ Threadripper™ 3000 Series Processors", "supplier": "AMD"}
 {"cnas": ["apache"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "apache-software-foundation/apache-allura", "last_cve": "2026-10-12", "product": "Apache Allura", "supplier": "Apache Software Foundation"}
 {"cnas": ["apache"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "apache-software-foundation/apache-hadoop", "last_cve": "2024-09-25", "product": "Apache Hadoop", "supplier": "Apache Software Foundation"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "artbees/jupiter-x-core", "last_cve": "2026-11-07", "product": "Jupiter X Core", "supplier": "artbees"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "asus/bmc-firmware-for-asmb8-ikvm", "last_cve": "2021-04-06", "product": "BMC firmware for ASMB8-iKVM", "supplier": "ASUS"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "asus/bmc-firmware-for-z10pe-d16-ws", "last_cve": "2021-04-06", "product": "BMC firmware for Z10PE-D16 WS", "supplier": "ASUS"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "asus/bmc-firmware-for-z10pr-d16", "last_cve": "2021-04-06", "product": "BMC firmware for Z10PR-D16", "supplier": "ASUS"}
@@ -3019,6 +3021,7 @@
 {"cnas": ["oracle"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "oracle-corporation/banking-corporate-lending", "last_cve": "2020-10-21", "product": "Banking Corporate Lending", "supplier": "Oracle Corporation"}
 {"cnas": ["oracle"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "oracle-corporation/email-center", "last_cve": "2021-04-22", "product": "Email Center", "supplier": "Oracle Corporation"}
 {"cnas": ["oracle"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "oracle-corporation/peoplesoft-enterprise-cs-campus-community", "last_cve": "2026-07-21", "product": "PeopleSoft Enterprise CS Campus Community", "supplier": "Oracle Corporation"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "paoltaia/geodirectory-wp-business-directory-plugin-and-classified-listings-directory", "last_cve": "2026-11-07", "product": "GeoDirectory – WP Business Directory Plugin and Classified Listings Directory", "supplier": "paoltaia"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "phpgurukul/nipah-virus-testing-management-system", "last_cve": "2025-06-17", "product": "Nipah Virus Testing Management System", "supplier": "PHPGurukul"}
 {"cnas": ["certcc", "VulnCheck", "redhat"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "pidgin/pidgin", "last_cve": "2026-03-21", "product": "Pidgin", "supplier": "Pidgin"}
 {"cnas": ["@huntrdev"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "polonel/polonel-trudesk", "last_cve": "2022-06-20", "product": "polonel/trudesk", "supplier": "polonel"}
@@ -3061,6 +3064,7 @@
 {"cnas": ["Ubiquiti", "hackerone"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "ubiquiti-inc/dream-wall", "last_cve": "2026-09-22", "product": "Dream Wall", "supplier": "Ubiquiti Inc"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "wavlink/nu516u1", "last_cve": "2026-05-10", "product": "NU516U1", "supplier": "Wavlink"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "wazuh/wazuh-manager", "last_cve": "2026-10-13", "product": "wazuh-manager", "supplier": "Wazuh"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "wpsoul/greenshift-animation-and-page-builder-blocks", "last_cve": "2026-11-07", "product": "Greenshift – animation and page builder blocks", "supplier": "wpsoul"}
 {"cnas": ["YokogawaGroup"], "cpe": [], "cve_count": 18, "kev_count": 0, "key": "yokogawa-electric-corporation/fast-tools", "last_cve": "2026-06-23", "product": "FAST/TOOLS", "supplier": "Yokogawa Electric Corporation"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "adobe/adobe-substance-3d-sampler", "last_cve": "2026-09-03", "product": "Adobe Substance 3D Sampler", "supplier": "Adobe"}
 {"cnas": ["adobe"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "adobe/prelude", "last_cve": "2023-12-13", "product": "Prelude", "supplier": "Adobe"}
@@ -3179,7 +3183,6 @@
 {"cnas": ["oracle"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "oracle-corporation/oracle-goldengate", "last_cve": "2026-10-20", "product": "Oracle GoldenGate", "supplier": "Oracle Corporation"}
 {"cnas": ["oracle"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "oracle-corporation/retail-customer-management-and-segmentation-foundation", "last_cve": "2021-01-20", "product": "Retail Customer Management and Segmentation Foundation", "supplier": "Oracle Corporation"}
 {"cnas": ["oracle"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "oracle/mysql-server", "last_cve": "2017-01-27", "product": "MySQL Server", "supplier": "Oracle"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "paoltaia/geodirectory-wp-business-directory-plugin-and-classified-listings-directory", "last_cve": "2026-10-31", "product": "GeoDirectory – WP Business Directory Plugin and Classified Listings Directory", "supplier": "paoltaia"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "phpgurukul/boat-booking-system", "last_cve": "2025-08-01", "product": "Boat Booking System", "supplier": "PHPGurukul"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "phpgurukul/emergency-ambulance-hiring-portal", "last_cve": "2025-06-20", "product": "Emergency Ambulance Hiring Portal", "supplier": "PHPGurukul"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "phpgurukul/online-shopping-portal", "last_cve": "2025-05-22", "product": "Online Shopping Portal", "supplier": "PHPGurukul"}
@@ -3233,11 +3236,11 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "sourcecodester/employee-task-management-system", "last_cve": "2026-03-08", "product": "Employee Task Management System", "supplier": "SourceCodester"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "sourcecodester/engineers-online-portal", "last_cve": "2024-01-09", "product": "Engineers Online Portal", "supplier": "SourceCodester"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "sourcecodester/simple-online-bidding-system", "last_cve": "2024-08-18", "product": "Simple Online Bidding System", "supplier": "SourceCodester"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "stylemix/motors-car-dealership-classified-listings-plugin", "last_cve": "2026-11-07", "product": "Motors – Car Dealership & Classified Listings Plugin", "supplier": "stylemix"}
 {"cnas": ["talos"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "talos/allen-bradley", "last_cve": "2018-06-04", "product": "Allen Bradley", "supplier": "Talos"}
 {"cnas": ["redhat"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "the-curl-project/curl", "last_cve": "2019-02-06", "product": "curl", "supplier": "The Curl Project"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "themeisle/rss-aggregator-by-feedzy-feed-to-post-autoblogging-news-youtube-video-feeds-aggregator", "last_cve": "2026-11-06", "product": "RSS Aggregator by Feedzy – Feed to Post, Autoblogging, News & YouTube Video Feeds Aggregator", "supplier": "themeisle"}
 {"cnas": ["tibco"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "tibco-software-inc/tibco-spotfire-server", "last_cve": "2022-11-15", "product": "TIBCO Spotfire Server", "supplier": "TIBCO Software Inc."}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "tomdever/wpforo-forum", "last_cve": "2026-09-25", "product": "wpForo Forum", "supplier": "tomdever"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "tomofun/furbo-360", "last_cve": "2025-10-12", "product": "Furbo 360", "supplier": "Tomofun"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:totolink:a3300r_firmware"], "cve_count": 17, "kev_count": 0, "key": "totolink/a3300r", "last_cve": "2026-04-06", "product": "A3300R", "supplier": "Totolink"}
 {"cnas": ["zdi", "trellix", "icscert"], "cpe": [], "cve_count": 17, "kev_count": 0, "key": "triangle-microworks/scada-data-gateway", "last_cve": "2024-05-07", "product": "SCADA Data Gateway", "supplier": "Triangle MicroWorks"}
@@ -3297,6 +3300,7 @@
 {"cnas": ["KNIME"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "knime/knime-business-hub", "last_cve": "2026-10-22", "product": "KNIME Business Hub", "supplier": "KNIME"}
 {"cnas": ["VulnCheck", "VulDB"], "cpe": ["cpe:2.3:a:krayin:laravel-crm"], "cve_count": 16, "kev_count": 0, "key": "krayin/laravel-crm", "last_cve": "2026-09-27", "product": "laravel-crm", "supplier": "krayin"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "laradashboard/laradashboard", "last_cve": "2026-11-02", "product": "laradashboard", "supplier": "laradashboard"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "latepoint/appointment-booking-plugin-latepoint-calendar-scheduling-for-wordpress", "last_cve": "2026-11-07", "product": "Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress", "supplier": "latepoint"}
 {"cnas": ["lenovo"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "lenovo/desktop-bios", "last_cve": "2023-11-08", "product": "Desktop BIOS", "supplier": "Lenovo"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "litonice13/master-addons-for-elementor-widgets-extensions-theme-builder-popup-builder-template-kits", "last_cve": "2026-06-06", "product": "Master Addons For Elementor – Widgets, Extensions, Theme Builder, Popup Builder & Template Kits", "supplier": "litonice13"}
 {"cnas": ["trellix"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "mcafee/network-security-management-nsm", "last_cve": "2021-01-05", "product": "Network Security Management (NSM)", "supplier": "McAfee"}
@@ -3367,7 +3371,6 @@
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "wbsairback/white-bear-solutions", "last_cve": "2024-04-15", "product": "White Bear Solutions", "supplier": "WBSAirback"}
 {"cnas": ["VulDB", "VulnCheck", "CERT-In"], "cpe": ["cpe:2.3:a:webkul:bagisto"], "cve_count": 16, "kev_count": 0, "key": "webkul/bagisto", "last_cve": "2026-11-03", "product": "Bagisto", "supplier": "Webkul"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "wpdirectorykit/wp-directory-kit", "last_cve": "2026-10-31", "product": "WP Directory Kit", "supplier": "wpdirectorykit"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "wpsoul/greenshift-animation-and-page-builder-blocks", "last_cve": "2026-10-29", "product": "Greenshift – animation and page builder blocks", "supplier": "wpsoul"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "wpvividplugins/wpvivid-backup-migration-staging", "last_cve": "2026-08-01", "product": "WPvivid — Backup, Migration & Staging", "supplier": "wpvividplugins"}
 {"cnas": ["VulDB", "VulnCheck"], "cpe": ["cpe:2.3:a:xuxueli:xxl-job"], "cve_count": 16, "kev_count": 0, "key": "xuxueli/xxl-job", "last_cve": "2026-09-21", "product": "xxl-job", "supplier": "Xuxueli"}
 {"cnas": ["Zoom"], "cpe": [], "cve_count": 16, "kev_count": 0, "key": "zoom-video-communications-inc/zoom-clients", "last_cve": "2024-02-14", "product": "Zoom Clients", "supplier": "Zoom Video Communications, Inc."}
@@ -3382,7 +3385,6 @@
 {"cnas": ["AMD"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "amd/amd-ryzentm-ai-max-300-series-processors", "last_cve": "2026-11-03", "product": "AMD Ryzen™ AI Max 300 Series Processors", "supplier": "AMD"}
 {"cnas": ["AMD"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "amd/amd-ryzentm-embedded-v1000-series-processors-formerly-codenamed-raven-ridge", "last_cve": "2026-06-01", "product": "AMD Ryzen™ Embedded V1000 Series Processors (formerly codenamed \"Raven Ridge\")", "supplier": "AMD"}
 {"cnas": ["apache"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "apache-software-foundation/apache-geode", "last_cve": "2022-10-25", "product": "Apache Geode", "supplier": "Apache Software Foundation"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "artbees/jupiter-x-core", "last_cve": "2026-10-28", "product": "Jupiter X Core", "supplier": "artbees"}
 {"cnas": ["talos"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "automationdirect/p3-550e", "last_cve": "2024-05-28", "product": "P3-550E", "supplier": "AutomationDirect"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "automationdirect/productivity-suite", "last_cve": "2026-07-16", "product": "Productivity Suite", "supplier": "AutomationDirect"}
 {"cnas": ["Axis"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "axis-communications-ab/axis-camera-station-pro", "last_cve": "2026-10-28", "product": "AXIS Camera Station Pro", "supplier": "Axis Communications AB"}
@@ -3394,6 +3396,7 @@
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:campcodes:retro_basketball_shoes_online_store"], "cve_count": 15, "kev_count": 0, "key": "campcodes/retro-basketball-shoes-online-store", "last_cve": "2025-12-11", "product": "Retro Basketball Shoes Online Store", "supplier": "Campcodes"}
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "canaldenuncia/canaldenuncia-app", "last_cve": "2025-11-04", "product": "CanalDenuncia.app", "supplier": "CanalDenuncia"}
 {"cnas": ["Canon"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "canon-inc/satera-mf750c-series", "last_cve": "2026-01-15", "product": "Satera MF750C Series", "supplier": "Canon Inc."}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "cbutlerjr/wp-members-membership-plugin", "last_cve": "2026-11-07", "product": "WP-Members Membership Plugin", "supplier": "cbutlerjr"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "cisco/cisco-asr-5000-series-software", "last_cve": "2024-11-18", "product": "Cisco ASR 5000 Series Software", "supplier": "Cisco"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "cisco/cisco-firepower-extensible-operating-system-fxos", "last_cve": "2026-02-25", "product": "Cisco Firepower Extensible Operating System (FXOS)", "supplier": "Cisco"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "cisco/cisco-secure-web-appliance", "last_cve": "2026-04-15", "product": "Cisco Secure Web Appliance", "supplier": "Cisco"}
@@ -3580,13 +3583,13 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "sourcecodester/computer-laboratory-management-system", "last_cve": "2026-03-08", "product": "Computer Laboratory Management System", "supplier": "SourceCodester"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "sourcecodester/hotel-and-lodge-management-system", "last_cve": "2025-10-08", "product": "Hotel and Lodge Management System", "supplier": "SourceCodester"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "stoatchat/stoatchat", "last_cve": "2026-09-26", "product": "stoatchat", "supplier": "stoatchat"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "stylemix/motors-car-dealership-classified-listings-plugin", "last_cve": "2026-11-05", "product": "Motors – Car Dealership & Classified Listings Plugin", "supplier": "stylemix"}
 {"cnas": ["TV"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "teamviewer/full-client", "last_cve": "2026-10-27", "product": "Full Client", "supplier": "TeamViewer"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:tenda:ac9_firmware"], "cve_count": 15, "kev_count": 0, "key": "tenda/ac9", "last_cve": "2026-10-02", "product": "AC9", "supplier": "Tenda"}
 {"cnas": ["CSA"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "three-learning/koollab-lms", "last_cve": "2026-07-29", "product": "Koollab LMS", "supplier": "Three Learning"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:totolink:n150rt_firmware"], "cve_count": 15, "kev_count": 0, "key": "totolink/n150rt", "last_cve": "2026-09-28", "product": "N150RT", "supplier": "TOTOLINK"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:totolink:n300rh_firmware"], "cve_count": 15, "kev_count": 0, "key": "totolink/n300rh", "last_cve": "2026-05-31", "product": "N300RH", "supplier": "Totolink"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "unclecode/crawl4ai", "last_cve": "2026-10-29", "product": "crawl4ai", "supplier": "unclecode"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "wpbakery/wpbakery-page-builder", "last_cve": "2026-11-07", "product": "WPBakery Page Builder", "supplier": "wpbakery"}
 {"cnas": ["mitre", "CERT-PL"], "cpe": [], "cve_count": 15, "kev_count": 0, "key": "xmlsoft/libxml2", "last_cve": "2026-09-05", "product": "libxml2", "supplier": "xmlsoft"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:yeqifu:warehouse"], "cve_count": 15, "kev_count": 0, "key": "yeqifu/warehouse", "last_cve": "2026-08-05", "product": "warehouse", "supplier": "yeqifu"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:zhijiantianya:ruoyi-vue-pro"], "cve_count": 15, "kev_count": 0, "key": "zhijiantianya/ruoyi-vue-pro", "last_cve": "2026-10-25", "product": "ruoyi-vue-pro", "supplier": "zhijiantianya"}
@@ -3607,7 +3610,6 @@
 {"cnas": ["icscert"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "botslab/g980h", "last_cve": "2026-09-24", "product": "G980H", "supplier": "Botslab"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:campcodes:supplier_management_system"], "cve_count": 14, "kev_count": 0, "key": "campcodes/supplier-management-system", "last_cve": "2026-01-05", "product": "Supplier Management System", "supplier": "Campcodes"}
 {"cnas": ["Canon"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "canon-inc/satera-lbp670c-series", "last_cve": "2026-01-15", "product": "Satera LBP670C Series", "supplier": "Canon Inc."}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "cbutlerjr/wp-members-membership-plugin", "last_cve": "2026-09-11", "product": "WP-Members Membership Plugin", "supplier": "cbutlerjr"}
 {"cnas": ["@huntrdev", "@huntr_ai"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "chatwoot/chatwoot-chatwoot", "last_cve": "2025-03-20", "product": "chatwoot/chatwoot", "supplier": "chatwoot"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "cisco/cisco-rv130w-wireless-n-multifunction-vpn-router-firmware", "last_cve": "2020-07-16", "product": "Cisco RV130W Wireless-N Multifunction VPN Router Firmware", "supplier": "Cisco"}
 {"cnas": ["cisco"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "cisco/cisco-session-initiation-protocol-sip-software", "last_cve": "2026-09-02", "product": "Cisco Session Initiation Protocol (SIP) Software", "supplier": "Cisco"}
@@ -3625,6 +3627,7 @@
 {"cnas": ["jpcert", "VulnCheck"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "contec-co-ltd/conprosys-hmi-system-chs", "last_cve": "2025-07-01", "product": "CONPROSYS HMI System (CHS)", "supplier": "Contec Co., Ltd."}
 {"cnas": ["crafter"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "crafter-software/crafter-cms", "last_cve": "2022-09-13", "product": "Crafter CMS", "supplier": "Crafter Software"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "d-link/dar-7000", "last_cve": "2025-03-01", "product": "DAR-7000", "supplier": "D-Link"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "davidanderson/redux-framework", "last_cve": "2026-11-07", "product": "Redux Framework", "supplier": "davidanderson"}
 {"cnas": ["Gridware"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "db-electronica-telecomunicazioni-s-p-a/mozart-fm-transmitter", "last_cve": "2025-11-26", "product": "Mozart FM Transmitter", "supplier": "DB Electronica Telecomunicazioni S.p.A."}
 {"cnas": ["dell"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "dell/avamar", "last_cve": "2025-02-05", "product": "Avamar", "supplier": "Dell"}
 {"cnas": ["icscert", "Deltaww"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "delta-electronics/cncsoft-g2", "last_cve": "2025-09-24", "product": "CNCSoft-G2", "supplier": "Delta Electronics"}
@@ -3654,7 +3657,6 @@
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "knowns-dev/knowns", "last_cve": "2026-09-10", "product": "knowns", "supplier": "knowns-dev"}
 {"cnas": ["VulDB", "VulnCheck", "zdi"], "cpe": ["cpe:2.3:a:langgenius:dify"], "cve_count": 14, "kev_count": 0, "key": "langgenius/dify", "last_cve": "2026-11-06", "product": "dify", "supplier": "langgenius"}
 {"cnas": ["@huntr_ai"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "langgenius/langgenius-dify", "last_cve": "2025-10-22", "product": "langgenius/dify", "supplier": "langgenius"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "latepoint/appointment-booking-plugin-latepoint-calendar-scheduling-for-wordpress", "last_cve": "2026-10-17", "product": "Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress", "supplier": "latepoint"}
 {"cnas": ["lenovo"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "lenovo/pc-manager", "last_cve": "2026-03-11", "product": "PC Manager", "supplier": "Lenovo"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:linlinjava:litemall"], "cve_count": 14, "kev_count": 0, "key": "linlinjava/litemall", "last_cve": "2026-10-05", "product": "litemall", "supplier": "linlinjava"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "luxion/keyshot", "last_cve": "2026-10-21", "product": "KeyShot", "supplier": "Luxion"}
@@ -3766,6 +3768,7 @@
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "toshiba-tec-corporation/multiple-mfps-multifunction-printers", "last_cve": "2024-11-26", "product": "Multiple MFPs (multifunction printers)", "supplier": "Toshiba Tec Corporation"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:totolink:a3002mu"], "cve_count": 14, "kev_count": 0, "key": "totolink/a3002mu", "last_cve": "2026-10-05", "product": "A3002MU", "supplier": "Totolink"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:totolink:ac1200_t8"], "cve_count": 14, "kev_count": 0, "key": "totolink/ac1200-t8", "last_cve": "2026-06-08", "product": "AC1200 T8", "supplier": "TOTOLINK"}
+{"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:totolink:ca300-poe_firmware"], "cve_count": 14, "kev_count": 0, "key": "totolink/ca300-poe", "last_cve": "2026-11-07", "product": "CA300-PoE", "supplier": "TOTOLINK"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "totolink/lr1200gb", "last_cve": "2024-02-23", "product": "LR1200GB", "supplier": "Totolink"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "totolink/n200re", "last_cve": "2025-07-08", "product": "N200RE", "supplier": "Totolink"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:trendnet:tew-821dap_firmware"], "cve_count": 14, "kev_count": 0, "key": "trendnet/tew-821dap", "last_cve": "2026-08-22", "product": "TEW-821DAP", "supplier": "TRENDnet"}
@@ -3774,7 +3777,6 @@
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:utt:hiper_1250gw"], "cve_count": 14, "kev_count": 0, "key": "utt/hiper-1250gw", "last_cve": "2026-08-24", "product": "HiPER 1250GW", "supplier": "UTT"}
 {"cnas": ["vmware"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "vmware/vmware-esxi", "last_cve": "2020-06-25", "product": "VMware ESXi", "supplier": "VMware"}
 {"cnas": ["hackerone"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "webpros/plesk", "last_cve": "2026-09-23", "product": "Plesk", "supplier": "WebPros"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "wpbakery/wpbakery-page-builder", "last_cve": "2026-09-01", "product": "WPBakery Page Builder", "supplier": "wpbakery"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "wpextended/the-ultimate-wordpress-toolkit-wp-extended", "last_cve": "2026-03-22", "product": "The Ultimate WordPress Toolkit – WP Extended", "supplier": "wpextended"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 14, "kev_count": 0, "key": "xpro/xpro-addons-140-widgets-for-elementor", "last_cve": "2026-08-05", "product": "Xpro Addons — 140+ Widgets for Elementor", "supplier": "xpro"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:chancms:chancms"], "cve_count": 14, "kev_count": 0, "key": "yanyutao0402/chancms", "last_cve": "2025-10-17", "product": "ChanCMS", "supplier": "yanyutao0402"}
@@ -3846,6 +3848,7 @@
 {"cnas": ["Fidelis"], "cpe": [], "cve_count": 13, "kev_count": 0, "key": "fidelis-cybersecurity/fidelis-network", "last_cve": "2022-05-17", "product": "Fidelis Network", "supplier": "Fidelis Cybersecurity"}
 {"cnas": ["@huntrdev", "@huntr_ai"], "cpe": [], "cve_count": 13, "kev_count": 0, "key": "flatpressblog/flatpressblog-flatpress", "last_cve": "2025-03-20", "product": "flatpressblog/flatpress", "supplier": "flatpressblog"}
 {"cnas": ["CIRCL"], "cpe": [], "cve_count": 13, "kev_count": 0, "key": "flowintel/flowintel", "last_cve": "2026-08-27", "product": "flowintel", "supplier": "flowintel"}
+{"cnas": ["Wordfence", "jpcert"], "cpe": [], "cve_count": 13, "kev_count": 0, "key": "foliovision/fv-flowplayer-video-player", "last_cve": "2026-11-07", "product": "FV Flowplayer Video Player", "supplier": "foliovision"}
 {"cnas": ["fortinet"], "cpe": [], "cve_count": 13, "kev_count": 0, "key": "fortinet/fortinet-fortiportal", "last_cve": "2022-03-01", "product": "Fortinet FortiPortal", "supplier": "Fortinet"}
 {"cnas": ["fortinet"], "cpe": ["cpe:2.3:a:fortinet:fortisoar_on-premise", "cpe:2.3:a:fortinet:fortisoaron-premise"], "cve_count": 13, "kev_count": 0, "key": "fortinet/fortisoar-on-premise", "last_cve": "2026-09-08", "product": "FortiSOAR on-premise", "supplier": "Fortinet"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:foundationagents:metagpt"], "cve_count": 13, "kev_count": 0, "key": "foundationagents/metagpt", "last_cve": "2026-08-06", "product": "MetaGPT", "supplier": "FoundationAgents"}
@@ -4049,7 +4052,6 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "code-projects/vehicle-showroom-management-system", "last_cve": "2026-04-13", "product": "Vehicle Showroom Management System", "supplier": "code-projects"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:code-projects:voting_system"], "cve_count": 12, "kev_count": 0, "key": "code-projects/voting-system", "last_cve": "2025-10-08", "product": "Voting System", "supplier": "code-projects"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "contrid/newsletters", "last_cve": "2026-10-31", "product": "Newsletters", "supplier": "contrid"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "davidanderson/redux-framework", "last_cve": "2026-11-05", "product": "Redux Framework", "supplier": "davidanderson"}
 {"cnas": ["dell"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "dell/appsync", "last_cve": "2026-08-18", "product": "AppSync", "supplier": "Dell"}
 {"cnas": ["dell"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "dell/rsa-archer", "last_cve": "2020-05-04", "product": "RSA Archer", "supplier": "Dell"}
 {"cnas": ["icscert", "Deltaww"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "delta-electronics/dialink", "last_cve": "2025-09-11", "product": "DIALink", "supplier": "Delta Electronics"}
@@ -4067,7 +4069,6 @@
 {"cnas": ["facebook", "Meta"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "facebook/proxygen", "last_cve": "2026-09-28", "product": "proxygen", "supplier": "Facebook"}
 {"cnas": ["openjs"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "fastify/fastify", "last_cve": "2026-11-02", "product": "fastify", "supplier": "fastify"}
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "flexense/sync-breeze-enterprise-server", "last_cve": "2026-01-28", "product": "Sync Breeze Enterprise Server", "supplier": "Flexense"}
-{"cnas": ["Wordfence", "jpcert"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "foliovision/fv-flowplayer-video-player", "last_cve": "2026-10-30", "product": "FV Flowplayer Video Player", "supplier": "foliovision"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "fontforge/fontforge", "last_cve": "2025-12-31", "product": "FontForge", "supplier": "FontForge"}
 {"cnas": ["fortinet"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "fortinet/fortinet-fortisandbox", "last_cve": "2022-04-06", "product": "Fortinet FortiSandbox", "supplier": "Fortinet"}
 {"cnas": ["Fluid Attacks"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "frappe/frappe-framework", "last_cve": "2026-06-24", "product": "Frappe Framework", "supplier": "Frappe"}
@@ -4091,6 +4092,7 @@
 {"cnas": ["intel"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "intel-corporation/intel-r-csme-server-platform-services-trusted-execution-engine-and-intel-r-active-management-technology", "last_cve": "2019-03-14", "product": "Intel(R) CSME, Server Platform Services, Trusted Execution Engine and Intel(R) Active Management Technology", "supplier": "Intel Corporation"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "itsourcecode/construction-management-system", "last_cve": "2026-04-27", "product": "Construction Management System", "supplier": "itsourcecode"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "jetmonsters/getwid-gutenberg-blocks", "last_cve": "2026-10-10", "product": "Getwid – Gutenberg Blocks", "supplier": "jetmonsters"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "jetmonsters/jetformbuilder-dynamic-blocks-form-builder", "last_cve": "2026-11-07", "product": "JetFormBuilder — Dynamic Blocks Form Builder", "supplier": "jetmonsters"}
 {"cnas": ["juniper"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "juniper-networks/juniper-atp", "last_cve": "2019-01-15", "product": "Juniper ATP", "supplier": "Juniper Networks"}
 {"cnas": ["juniper"], "cpe": [], "cve_count": 12, "kev_count": 0, "key": "juniper-networks/session-smart-conductor", "last_cve": "2026-10-28", "product": "Session Smart Conductor", "supplier": "Juniper Networks"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:kishor-23:food-waste-management-system"], "cve_count": 12, "kev_count": 0, "key": "kishor-23/food-waste-management-system", "last_cve": "2026-10-05", "product": "food-waste-management-system", "supplier": "kishor-23"}
@@ -4844,6 +4846,7 @@
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "codesys/codesys-control-for-linux-arm-sl", "last_cve": "2026-05-26", "product": "CODESYS Control for Linux ARM SL", "supplier": "CODESYS"}
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "codesys/codesys-runtime-toolkit", "last_cve": "2026-05-26", "product": "CODESYS Runtime Toolkit", "supplier": "CODESYS"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:comfast:cf-n1-s"], "cve_count": 10, "kev_count": 0, "key": "comfast/cf-n1-s", "last_cve": "2026-09-20", "product": "CF-N1-S", "supplier": "Comfast"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "cozmoslabs/translatepress-translate-multilingual-sites-with-ai-translation", "last_cve": "2026-11-07", "product": "TranslatePress – Translate Multilingual sites with AI Translation", "supplier": "cozmoslabs"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "creativethemeshq/blocksy-companion", "last_cve": "2026-10-10", "product": "Blocksy Companion", "supplier": "creativethemeshq"}
 {"cnas": ["redhat"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "cryptocat/cryptocat", "last_cve": "2019-11-14", "product": "Cryptocat", "supplier": "Cryptocat"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "cservit/affiliate-toolkit-multi-network-affiliate-amazon-product-display", "last_cve": "2026-10-28", "product": "affiliate-toolkit – Multi-Network Affiliate & Amazon Product Display", "supplier": "cservit"}
@@ -5166,6 +5169,7 @@
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:wavlink:wl-wn578w2_firmware"], "cve_count": 10, "kev_count": 0, "key": "wavlink/wl-wn578w2", "last_cve": "2026-03-22", "product": "WL-WN578W2", "supplier": "Wavlink"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "world-wide-broadcast-network/avideo", "last_cve": "2025-12-19", "product": "AVideo", "supplier": "World Wide Broadcast Network"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "wpchill/kali-forms-contact-form-drag-and-drop-builder", "last_cve": "2026-08-01", "product": "Kali Forms — Contact Form & Drag-and-Drop Builder", "supplier": "wpchill"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "wpchill/modula-image-gallery-photo-grid-video-gallery", "last_cve": "2026-11-07", "product": "Modula Image Gallery – Photo Grid & Video Gallery", "supplier": "wpchill"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "wpgmaps/wp-go-maps-formerly-wp-google-maps", "last_cve": "2026-03-18", "product": "WP Go Maps (formerly WP Google Maps)", "supplier": "wpgmaps"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "wpwax/directorist-ai-powered-business-directory-listings-classified-ads", "last_cve": "2026-10-14", "product": "Directorist: AI-Powered Business Directory, Listings & Classified Ads", "supplier": "wpwax"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 10, "kev_count": 0, "key": "yokogawa-electric-corporation/exaopc", "last_cve": "2022-03-11", "product": "Exaopc", "supplier": "Yokogawa Electric Corporation"}
@@ -5424,7 +5428,6 @@
 {"cnas": ["jenkins"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "jenkins-project/jenkins-email-extension-plugin", "last_cve": "2026-05-27", "product": "Jenkins Email Extension Plugin", "supplier": "Jenkins Project"}
 {"cnas": ["JetBrains"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "jetbrains/goland", "last_cve": "2026-10-30", "product": "GoLand", "supplier": "JetBrains"}
 {"cnas": ["JetBrains"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "jetbrains/rider", "last_cve": "2026-10-30", "product": "Rider", "supplier": "JetBrains"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "jetmonsters/jetformbuilder-dynamic-blocks-form-builder", "last_cve": "2026-11-03", "product": "JetFormBuilder — Dynamic Blocks Form Builder", "supplier": "jetmonsters"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "jhumanj/opnform", "last_cve": "2025-10-08", "product": "OpnForm", "supplier": "JhumanJ"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "joeybling/bootplus", "last_cve": "2025-01-24", "product": "bootplus", "supplier": "JoeyBling"}
 {"cnas": ["Joomla"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "joomshaper-com/helix-ultimate-extension-for-joomla", "last_cve": "2026-11-02", "product": "Helix Ultimate extension for Joomla", "supplier": "joomshaper.com"}
@@ -5441,12 +5444,14 @@
 {"cnas": ["lenovo"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "lenovo/pcmanager", "last_cve": "2022-08-23", "product": "PCManager", "supplier": "Lenovo"}
 {"cnas": ["lenovo"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "lenovo/thinksystem-smm", "last_cve": "2018-11-27", "product": "ThinkSystem SMM", "supplier": "Lenovo"}
 {"cnas": ["LGE"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "lg-electronics/lg-v60-thin-q-5g-lmv600vm", "last_cve": "2023-09-27", "product": "LG V60 Thin Q 5G(LMV600VM)", "supplier": "LG Electronics"}
+{"cnas": ["VulnCheck"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "libexpat/libexpat", "last_cve": "2026-11-07", "product": "libexpat", "supplier": "libexpat"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "libssh2/libssh2", "last_cve": "2026-07-24", "product": "libssh2", "supplier": "libssh2"}
 {"cnas": ["LY-Corporation", "LINE"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "line-corporation/line-client-for-ios", "last_cve": "2025-12-15", "product": "LINE client for iOS", "supplier": "LINE Corporation"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:o:linksys:e1700_firmware"], "cve_count": 9, "kev_count": 0, "key": "linksys/e1700", "last_cve": "2026-10-12", "product": "E1700", "supplier": "Linksys"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "lxc/incus", "last_cve": "2026-10-22", "product": "incus", "supplier": "lxc"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "maxsite/cms", "last_cve": "2026-04-26", "product": "CMS", "supplier": "MaxSite"}
 {"cnas": ["mitre"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "mbed/mbedtls", "last_cve": "2025-07-20", "product": "mbedtls", "supplier": "Mbed"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "melograno/booking-for-appointments-and-events-calendar-amelia", "last_cve": "2026-11-07", "product": "Booking for Appointments and Events Calendar – Amelia", "supplier": "melograno"}
 {"cnas": ["icscert", "VulDB"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "microdicom/dicom-viewer", "last_cve": "2025-06-10", "product": "DICOM Viewer", "supplier": "MicroDicom"}
 {"cnas": ["microsoft"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "microsoft-corporation/asp-net-core", "last_cve": "2018-03-14", "product": "ASP.NET Core", "supplier": "Microsoft Corporation"}
 {"cnas": ["microsoft"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "microsoft-corporation/microsoft-edge-chakracore", "last_cve": "2018-02-15", "product": "Microsoft Edge, ChakraCore", "supplier": "Microsoft Corporation"}
@@ -5704,7 +5709,6 @@
 {"cnas": ["certcc"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "wi-fi-alliance/wi-fi-protected-access-wpa-and-wpa2", "last_cve": "2017-10-17", "product": "Wi-Fi Protected Access (WPA and WPA2)", "supplier": "Wi-Fi Alliance"}
 {"cnas": ["wikimedia-foundation"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "wikimedia-foundation/checkuser", "last_cve": "2026-07-01", "product": "CheckUser", "supplier": "Wikimedia Foundation"}
 {"cnas": ["Wordfence", "jpcert"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "wp-statistics/wp-statistics", "last_cve": "2022-02-24", "product": "WP Statistics", "supplier": "WP Statistics"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "wpchill/modula-image-gallery-photo-grid-video-gallery", "last_cve": "2026-10-16", "product": "Modula Image Gallery – Photo Grid & Video Gallery", "supplier": "wpchill"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "wplegalpages/cookie-banner-for-gdpr-ccpa-wplp-cookie-consent", "last_cve": "2026-07-10", "product": "Cookie Banner for GDPR / CCPA – WPLP Cookie Consent", "supplier": "wplegalpages"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "wpmet/elementskit-pro", "last_cve": "2026-08-28", "product": "ElementsKit Pro", "supplier": "wpmet"}
 {"cnas": ["Xerox"], "cpe": [], "cve_count": 9, "kev_count": 0, "key": "xerox/freeflow-core", "last_cve": "2026-02-27", "product": "FreeFlow Core", "supplier": "Xerox"}
@@ -5974,7 +5978,6 @@
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "codesys/codesys-remote-target-visu-toolkit", "last_cve": "2024-09-25", "product": "CODESYS Remote Target Visu Toolkit", "supplier": "CODESYS"}
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "codesys/codesys-virtual-control-sl", "last_cve": "2026-05-26", "product": "CODESYS Virtual Control SL", "supplier": "CODESYS"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:cosmicstack-labs:mercury-agent"], "cve_count": 8, "kev_count": 0, "key": "cosmicstack-labs/mercury-agent", "last_cve": "2026-09-14", "product": "mercury-agent", "supplier": "cosmicstack-labs"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "cozmoslabs/translatepress-translate-multilingual-sites-with-ai-translation", "last_cve": "2026-10-16", "product": "TranslatePress – Translate Multilingual sites with AI Translation", "supplier": "cozmoslabs"}
 {"cnas": ["@huntrdev"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "crater-invoice/crater-invoice-crater", "last_cve": "2022-03-29", "product": "crater-invoice/crater", "supplier": "crater-invoice"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "creativethemeshq/blocksy", "last_cve": "2026-06-09", "product": "Blocksy", "supplier": "creativethemeshq"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "d-link/dar-8000", "last_cve": "2023-09-25", "product": "DAR-8000", "supplier": "D-Link"}
@@ -6002,6 +6005,7 @@
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "dos-co-ltd/ss1", "last_cve": "2025-08-28", "product": "SS1", "supplier": "DOS Co., Ltd."}
 {"cnas": ["drupal"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "drupal-org/drupal-core", "last_cve": "2018-08-06", "product": "Drupal Core", "supplier": "Drupal.org"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "e-excellence/u-office-force", "last_cve": "2026-03-02", "product": "U-Office Force", "supplier": "e-Excellence"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "e4jvikwp/vikbooking-hotel-booking-engine-pms", "last_cve": "2026-11-07", "product": "VikBooking Hotel Booking Engine & PMS", "supplier": "e4jvikwp"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "e4jvikwp/vikrentcar-car-rental-management-system", "last_cve": "2026-10-31", "product": "VikRentCar Car Rental Management System", "supplier": "e4jvikwp"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "ec-cube-co-ltd/ec-cube", "last_cve": "2021-07-01", "product": "EC-CUBE", "supplier": "EC-CUBE CO.,LTD."}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "ecovacs-robotics/deebot-pro-k1vac", "last_cve": "2026-08-10", "product": "DEEBOT PRO K1VAC", "supplier": "ECOVACS ROBOTICS"}
@@ -6017,6 +6021,7 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "elefant/cms", "last_cve": "2022-06-20", "product": "CMS", "supplier": "Elefant"}
 {"cnas": ["ERIC"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "ericsson/indoor-connect-8855", "last_cve": "2026-03-25", "product": "Indoor Connect 8855", "supplier": "Ericsson"}
 {"cnas": ["Esri"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "esri/arcgis-enterprise", "last_cve": "2022-12-30", "product": "ArcGIS Enterprise", "supplier": "Esri"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "extendthemes/kubio-ai-page-builder", "last_cve": "2026-11-07", "product": "Kubio AI Page Builder", "supplier": "extendthemes"}
 {"cnas": ["intel"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "extensible-firmware-interface-development-kit-edk-ii/extensible-firmware-interface-development-kit-edk-ii", "last_cve": "2019-03-27", "product": "Extensible Firmware Interface Development Kit (EDK II)", "supplier": "Extensible Firmware Interface Development Kit (EDK II)"}
 {"cnas": ["f5"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "f5/big-ip-ltm-aam-afm-analytics-apm-asm-dns-edge-gateway-fps-gtm-link-controller-pem-webaccelerator", "last_cve": "2019-11-01", "product": "BIG-IP (LTM, AAM, AFM, Analytics, APM, ASM, DNS, Edge Gateway, FPS, GTM, Link Controller, PEM, WebAccelerator)", "supplier": "F5"}
 {"cnas": ["f5"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "f5/nginx-ingress-controller", "last_cve": "2026-10-14", "product": "NGINX Ingress Controller", "supplier": "F5"}
@@ -6105,6 +6110,7 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "itsourcecode/online-discussion-forum", "last_cve": "2025-09-22", "product": "Online Discussion Forum", "supplier": "itsourcecode"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "itsourcecode/online-student-enrollment-system", "last_cve": "2024-05-27", "product": "Online Student Enrollment System", "supplier": "itsourcecode"}
 {"cnas": ["ivanti"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "ivanti/xtraction", "last_cve": "2026-10-13", "product": "Xtraction", "supplier": "Ivanti"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "jackdewey/link-library", "last_cve": "2026-11-07", "product": "Link Library", "supplier": "jackdewey"}
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "janobe/chool-event-management-system", "last_cve": "2024-08-06", "product": "chool Event Management System", "supplier": "Janobe"}
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "janobe/janobe-debit-card-payment", "last_cve": "2024-08-06", "product": "Janobe Debit Card Payment", "supplier": "Janobe"}
 {"cnas": ["VulDB", "VulnCheck"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "jeecgboot/jimureport", "last_cve": "2026-08-17", "product": "JimuReport", "supplier": "jeecgboot"}
@@ -6139,7 +6145,6 @@
 {"cnas": ["lenovo"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "lenovo/xclarity-administrator-lxca", "last_cve": "2020-03-13", "product": "XClarity Administrator (LXCA)", "supplier": "Lenovo"}
 {"cnas": ["VulDB", "VulnCheck"], "cpe": ["cpe:2.3:a:lenve:vhr"], "cve_count": 8, "kev_count": 0, "key": "lenve/vhr", "last_cve": "2026-10-13", "product": "vhr", "supplier": "lenve"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "liangliangyy/djangoblog", "last_cve": "2026-04-20", "product": "DjangoBlog", "supplier": "liangliangyy"}
-{"cnas": ["VulnCheck"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "libexpat/libexpat", "last_cve": "2026-10-28", "product": "libexpat", "supplier": "libexpat"}
 {"cnas": ["ENISA", "VulDB"], "cpe": ["cpe:2.3:o:linksys:mr9600_firmware"], "cve_count": 8, "kev_count": 0, "key": "linksys/mr9600", "last_cve": "2026-04-25", "product": "MR9600", "supplier": "Linksys"}
 {"cnas": ["VulDB", "JFROG"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "litmuschaos/litmus", "last_cve": "2025-12-08", "product": "Litmus", "supplier": "LitmusChaos"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "livecomposer/live-composer-free-wordpress-website-builder", "last_cve": "2026-09-22", "product": "Live Composer – Free WordPress Website Builder", "supplier": "livecomposer"}
@@ -6256,6 +6261,7 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "patrick-mvuma/patients-waiting-area-queue-management-system", "last_cve": "2026-02-25", "product": "Patients Waiting Area Queue Management System", "supplier": "Patrick Mvuma"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "paultgoodchild/shield-blocks-bots-protects-users-and-prevents-security-breaches", "last_cve": "2026-02-19", "product": "Shield: Blocks Bots, Protects Users, and Prevents Security Breaches", "supplier": "paultgoodchild"}
 {"cnas": ["mitre"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "pcre/pcre2", "last_cve": "2026-09-30", "product": "PCRE2", "supplier": "PCRE"}
+{"cnas": ["Wordfence", "Patchstack"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "pencidesign/soledad", "last_cve": "2026-11-07", "product": "Soledad", "supplier": "pencidesign"}
 {"cnas": ["Patchstack", "Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "perfmatters/perfmatters", "last_cve": "2026-07-02", "product": "Perfmatters", "supplier": "Perfmatters"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "philips/hue-bridge", "last_cve": "2026-03-13", "product": "Hue Bridge", "supplier": "Philips"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "philips/vue-pacs", "last_cve": "2024-07-18", "product": "Vue PACS", "supplier": "Philips"}
@@ -6491,6 +6497,7 @@
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "woobewoo/product-filter-for-woocommerce-by-wbw", "last_cve": "2026-10-31", "product": "Product Filter for WooCommerce by WBW", "supplier": "woobewoo"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "wordpresschef/salon-booking-system-free-version", "last_cve": "2026-07-10", "product": "Salon Booking System – Free Version", "supplier": "wordpresschef"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "wpchill/download-monitor", "last_cve": "2026-10-02", "product": "Download Monitor", "supplier": "wpchill"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "wpchill/strong-testimonials", "last_cve": "2026-11-07", "product": "Strong Testimonials", "supplier": "wpchill"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "wpeverest/everest-forms-contact-form-payment-form-quiz-survey-custom-form-builder", "last_cve": "2026-05-27", "product": "Everest Forms – Contact Form, Payment Form, Quiz, Survey & Custom Form Builder", "supplier": "wpeverest"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "wpmudev/hustle-email-marketing-lead-generation-optins-popups", "last_cve": "2026-10-31", "product": "Hustle – Email Marketing, Lead Generation, Optins, Popups", "supplier": "wpmudev"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 8, "kev_count": 0, "key": "wptravelengine/wp-travel-engine-tour-booking-plugin-tour-operator-software", "last_cve": "2026-09-22", "product": "WP Travel Engine – Tour Booking Plugin – Tour Operator Software", "supplier": "wptravelengine"}
@@ -6871,8 +6878,8 @@
 {"cnas": ["icscert"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "dominion-voting-systems/imagecast-x-firmware", "last_cve": "2022-06-24", "product": "ImageCast X firmware", "supplier": "Dominion Voting Systems"}
 {"cnas": ["SEC-VLab"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "dormakaba/kaba-exos-9300", "last_cve": "2026-01-26", "product": "Kaba exos 9300", "supplier": "dormakaba"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:ujcms:ujcms"], "cve_count": 7, "kev_count": 0, "key": "dromara/ujcms", "last_cve": "2026-09-20", "product": "UJCMS", "supplier": "Dromara"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "dylanjkotze/zephyr-project-manager", "last_cve": "2026-11-07", "product": "Zephyr Project Manager", "supplier": "dylanjkotze"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "e-excellence-inc/u-office-force", "last_cve": "2022-10-31", "product": "U-Office Force", "supplier": "e-Excellence Inc."}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "e4jvikwp/vikbooking-hotel-booking-engine-pms", "last_cve": "2026-10-10", "product": "VikBooking Hotel Booking Engine & PMS", "supplier": "e4jvikwp"}
 {"cnas": ["SEC-VLab"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "echarge-hardy-barth/cph2-cpp2-charging-stations", "last_cve": "2025-05-21", "product": "cPH2 / cPP2 charging stations", "supplier": "eCharge Hardy Barth"}
 {"cnas": ["eclipse"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "eclipse-foundation/eclipse-openj9", "last_cve": "2026-10-21", "product": "Eclipse OpenJ9", "supplier": "Eclipse Foundation"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "edge22/generateblocks", "last_cve": "2026-08-01", "product": "GenerateBlocks", "supplier": "edge22"}
@@ -6897,7 +6904,6 @@
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:eleveo:quality_management"], "cve_count": 7, "kev_count": 0, "key": "eleveo/quality-management", "last_cve": "2026-09-28", "product": "Quality Management", "supplier": "Eleveo"}
 {"cnas": ["ESET"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "eset-spol-s-r-o/eset-mail-security-for-ibm-domino", "last_cve": "2024-09-27", "product": "ESET Mail Security for IBM Domino", "supplier": "ESET, spol. s r.o."}
 {"cnas": ["ESET"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "eset-spol-s-r-o/eset-security-ultimate", "last_cve": "2025-07-18", "product": "ESET Security Ultimate", "supplier": "ESET, spol. s r.o."}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "extendthemes/kubio-ai-page-builder", "last_cve": "2026-10-02", "product": "Kubio AI Page Builder", "supplier": "extendthemes"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "eyecix/jobsearch-wp-job-board", "last_cve": "2025-04-25", "product": "JobSearch WP Job Board", "supplier": "eyecix"}
 {"cnas": ["NCSC.ch"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "ezcast/ezcast-pro-ii", "last_cve": "2026-01-27", "product": "EZCast Pro II", "supplier": "EZCast"}
 {"cnas": ["CERT-PL"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "f-f-filipowski/mh-developer", "last_cve": "2026-09-28", "product": "mH-DEVELOPER", "supplier": "F&F Filipowski"}
@@ -7018,7 +7024,6 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "itsourcecode/open-source-job-portal", "last_cve": "2025-09-28", "product": "Open Source Job Portal", "supplier": "itsourcecode"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "itsourcecode/vehicle-management-system", "last_cve": "2026-02-21", "product": "Vehicle Management System", "supplier": "itsourcecode"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "jackdewey/community-events", "last_cve": "2026-03-07", "product": "Community Events", "supplier": "jackdewey"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "jackdewey/link-library", "last_cve": "2026-10-15", "product": "Link Library", "supplier": "jackdewey"}
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "janobe/janobe-credit-card", "last_cve": "2024-08-06", "product": "Janobe Credit Card", "supplier": "Janobe"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "japan-total-system-co-ltd/groupsession", "last_cve": "2021-07-28", "product": "GroupSession", "supplier": "Japan Total System Co.,Ltd."}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:jaychouchannel:tourism-management-system"], "cve_count": 7, "kev_count": 0, "key": "jaychouchannel/tourism-management-system", "last_cve": "2026-09-13", "product": "Tourism-Management-System", "supplier": "jaychouchannel"}
@@ -7074,7 +7079,6 @@
 {"cnas": ["MediaTek"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "mediatek-inc/en7528-en7580", "last_cve": "2023-02-06", "product": "EN7528, EN7580", "supplier": "MediaTek, Inc."}
 {"cnas": ["MediaTek"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "mediatek-inc/mt2718-mt6739-mt6761-mt6765-mt6768-mt6781-mt6789-mt6833-mt6835-mt6853-mt6855-mt6877-mt6878-mt6879-mt6883-mt6885-mt6886-mt6889-mt6893-mt6895-mt6897-mt6899-mt6983-mt6985-mt6989-mt6991-mt8196-mt8676-mt8678-mt8792-mt8793", "last_cve": "2025-12-02", "product": "MT2718, MT6739, MT6761, MT6765, MT6768, MT6781, MT6789, MT6833, MT6835, MT6853, MT6855, MT6877, MT6878, MT6879, MT6883, MT6885, MT6886, MT6889, MT6893, MT6895, MT6897, MT6899, MT6983, MT6985, MT6989, MT6991, MT8196, MT8676, MT8678, MT8792, MT8793", "supplier": "MediaTek, Inc."}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "melapress/wp-activity-log", "last_cve": "2026-10-31", "product": "WP Activity Log", "supplier": "melapress"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "melograno/booking-for-appointments-and-events-calendar-amelia", "last_cve": "2026-10-31", "product": "Booking for Appointments and Events Calendar – Amelia", "supplier": "melograno"}
 {"cnas": ["facebook"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "meta-platforms-inc/executorch", "last_cve": "2025-08-07", "product": "ExecuTorch", "supplier": "Meta Platforms, Inc"}
 {"cnas": ["microfocus"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "micro-focus/micro-focus-enterprise-developer-micro-focus-enterprise-server", "last_cve": "2018-10-12", "product": "Micro Focus Enterprise Developer, Micro Focus Enterprise Server", "supplier": "Micro Focus"}
 {"cnas": ["microfocus"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "micro-focus/netiq-access-manager", "last_cve": "2022-05-02", "product": "NetIQ Access Manager", "supplier": "Micro Focus"}
@@ -7190,7 +7194,6 @@
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "owen2345/camaleoncms", "last_cve": "2026-08-12", "product": "CamaleonCMS", "supplier": "owen2345"}
 {"cnas": ["VulnCheck", "CERT-PL"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "pac4j/pac4j", "last_cve": "2026-08-29", "product": "pac4j", "supplier": "pac4j"}
 {"cnas": ["palo_alto"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "palo-alto-networks/panorama", "last_cve": "2026-07-09", "product": "Panorama", "supplier": "Palo Alto Networks"}
-{"cnas": ["Wordfence", "Patchstack"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "pencidesign/soledad", "last_cve": "2025-08-16", "product": "Soledad", "supplier": "pencidesign"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "ph7software/ph7builder", "last_cve": "2026-10-11", "product": "ph7builder", "supplier": "ph7software"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "philips/patient-information-center-ix-picix", "last_cve": "2020-09-11", "product": "Patient Information Center iX (PICiX)", "supplier": "Philips"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "philips/vue-motion", "last_cve": "2022-04-01", "product": "Vue Motion", "supplier": "Philips"}
@@ -7227,6 +7230,7 @@
 {"cnas": ["qualcomm"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "qualcomm-inc/snapdragon-auto-snapdragon-consumer-iot-snapdragon-industrial-iot-snapdragon-mobile-snapdragon-wearables", "last_cve": "2022-06-14", "product": "Snapdragon Auto, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Wearables", "supplier": "Qualcomm, Inc."}
 {"cnas": ["qualcomm"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "qualcomm-inc/snapdragon-auto-snapdragon-consumer-iot-snapdragon-mobile", "last_cve": "2020-11-12", "product": "Snapdragon Auto, Snapdragon Consumer IOT, Snapdragon Mobile", "supplier": "Qualcomm, Inc."}
 {"cnas": ["qualcomm"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "qualcomm-inc/snapdragon-compute-snapdragon-connectivity-snapdragon-industrial-iot-snapdragon-mobile", "last_cve": "2022-09-16", "product": "Snapdragon Compute, Snapdragon Connectivity, Snapdragon Industrial IOT, Snapdragon Mobile", "supplier": "Qualcomm, Inc."}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "rabilal/js-help-desk-ai-powered-support-ticketing-system", "last_cve": "2026-11-07", "product": "JS Help Desk – AI-Powered Support & Ticketing System", "supplier": "rabilal"}
 {"cnas": ["ENISA"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "radiflow/isap-smart-collector", "last_cve": "2026-06-16", "product": "iSAP Smart Collector", "supplier": "Radiflow"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "rapid-software-llc/rapid-scada", "last_cve": "2024-02-01", "product": "Rapid SCADA", "supplier": "Rapid Software LLC"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "rebelcode/rss-aggregator-rss-import-news-feeds-feed-to-post-and-autoblogging", "last_cve": "2026-03-07", "product": "RSS Aggregator – RSS Import, News Feeds, Feed to Post, and Autoblogging", "supplier": "rebelcode"}
@@ -7504,9 +7508,9 @@
 {"cnas": ["VulnCheck", "redhat"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "websitebaker/websitebaker", "last_cve": "2026-01-15", "product": "WebsiteBaker", "supplier": "websitebaker"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "webtoffee/export-and-import-users-and-customers", "last_cve": "2026-10-30", "product": "Export and Import Users and Customers", "supplier": "webtoffee"}
 {"cnas": ["Wordfence", "Patchstack"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "wedevs/dokan-pro", "last_cve": "2026-07-23", "product": "Dokan Pro", "supplier": "wedevs"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "wedevs/wedocs-ai-powered-knowledge-base-docs-documentation-wiki-ai-chatbot", "last_cve": "2026-11-07", "product": "weDocs: AI Powered Knowledge Base, Docs, Documentation, Wiki & AI Chatbot", "supplier": "wedevs"}
 {"cnas": ["talos"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "weston-embedded/uc-http", "last_cve": "2024-02-20", "product": "uC-HTTP", "supplier": "Weston Embedded"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "withstars/books-management-system", "last_cve": "2025-04-27", "product": "Books-Management-System", "supplier": "withstars"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "wpchill/strong-testimonials", "last_cve": "2026-10-03", "product": "Strong Testimonials", "supplier": "wpchill"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "wpdevteam/notificationx-fomo-live-sales-notification-woocommerce-sales-popup-gdpr-social-proof-announcement-banner-floating-notification-bar", "last_cve": "2026-10-16", "product": "NotificationX – FOMO, Live Sales Notification, WooCommerce Sales Popup, GDPR, Social Proof, Announcement Banner & Floating Notification Bar", "supplier": "wpdevteam"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "wpmanageninja/fluent-forms-customizable-contact-forms-survey-quiz-conversational-form-builder", "last_cve": "2026-10-10", "product": "Fluent Forms – Customizable Contact Forms, Survey, Quiz, & Conversational Form Builder", "supplier": "wpmanageninja"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 7, "kev_count": 0, "key": "wpovernight/pdf-invoices-packing-slips-for-woocommerce", "last_cve": "2026-10-31", "product": "PDF Invoices & Packing Slips for WooCommerce", "supplier": "wpovernight"}
@@ -7603,6 +7607,7 @@
 {"cnas": ["B.Braun", "icscert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "b-braun-melsungen-ag/onlinesuite", "last_cve": "2025-06-06", "product": "OnlineSuite", "supplier": "B. Braun Melsungen AG"}
 {"cnas": ["ABB"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "b-r-industrial-automation/automation-runtime", "last_cve": "2025-10-07", "product": "Automation Runtime", "supplier": "B&R Industrial Automation"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:bdtask:multi-store_inventory_management_system"], "cve_count": 6, "kev_count": 0, "key": "bdtask/multi-store-inventory-management-system", "last_cve": "2026-05-31", "product": "Multi-Store Inventory Management System", "supplier": "Bdtask"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "bfintal/stackable-page-builder-gutenberg-blocks", "last_cve": "2026-11-07", "product": "Stackable – Page Builder Gutenberg Blocks", "supplier": "bfintal"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "bg5sbk/minicms", "last_cve": "2026-01-05", "product": "MiniCMS", "supplier": "bg5sbk"}
 {"cnas": ["f5"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "big-ip/big-ip-ltm-aam-afm-analytics-apm-asm-dns-edge-gateway-fps-gtm-link-controller-pem-webaccelerator", "last_cve": "2019-03-28", "product": "BIG-IP (LTM, AAM, AFM, Analytics, APM, ASM, DNS, Edge Gateway, FPS, GTM, Link Controller, PEM, WebAccelerator)", "supplier": "BIG-IP"}
 {"cnas": ["BLSOPS"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "black-lantern-security/bbot", "last_cve": "2026-07-08", "product": "BBOT", "supplier": "Black Lantern Security"}
@@ -7890,7 +7895,6 @@
 {"cnas": ["icscert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "dover-fueling-solutions-dfs/progauge-maglink-lx-console", "last_cve": "2024-09-24", "product": "ProGauge MAGLINK LX CONSOLE", "supplier": "Dover Fueling Solutions (DFS)"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "dover-fueling-solutions-dfs/progauge-maglink-lx4-console", "last_cve": "2024-09-24", "product": "ProGauge MAGLINK LX4 CONSOLE", "supplier": "Dover Fueling Solutions (DFS)"}
 {"cnas": ["VulnCheck", "VulDB"], "cpe": ["cpe:2.3:a:dromara:ruoyi-vue-plus"], "cve_count": 6, "kev_count": 0, "key": "dromara/ruoyi-vue-plus", "last_cve": "2026-10-30", "product": "RuoYi-Vue-Plus", "supplier": "dromara"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "dylanjkotze/zephyr-project-manager", "last_cve": "2026-09-08", "product": "Zephyr Project Manager", "supplier": "dylanjkotze"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "e107/e107-cms", "last_cve": "2026-05-10", "product": "e107 CMS", "supplier": "e107"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "easyappointments/easy-appointments", "last_cve": "2026-09-19", "product": "Easy Appointments", "supplier": "easyappointments"}
 {"cnas": ["eclipse"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "eclipse-foundation/eclipse-milo", "last_cve": "2026-08-04", "product": "Eclipse Milo", "supplier": "Eclipse Foundation"}
@@ -7935,6 +7939,7 @@
 {"cnas": ["fortinet"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "fortinet/fortinet-fortiwan", "last_cve": "2022-04-06", "product": "Fortinet FortiWAN", "supplier": "Fortinet"}
 {"cnas": ["fortinet"], "cpe": ["cpe:2.3:a:fortinet:fortisase"], "cve_count": 6, "kev_count": 0, "key": "fortinet/fortisase", "last_cve": "2025-12-09", "product": "FortiSASE", "supplier": "Fortinet"}
 {"cnas": ["Fortra"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "fortra/core-privileged-access-manager-boks", "last_cve": "2026-10-01", "product": "Core Privileged Access Manager (BoKS)", "supplier": "Fortra"}
+{"cnas": ["VulnCheck"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "fraunhoferhhi/vvdec", "last_cve": "2026-11-07", "product": "vvdec", "supplier": "fraunhoferhhi"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "fresenius-kabi/vigilant-software-suite-mastermed-dashboard", "last_cve": "2022-01-21", "product": "Vigilant Software Suite (Mastermed Dashboard)", "supplier": "Fresenius Kabi"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "frontaccounting/frontaccounting", "last_cve": "2026-08-27", "product": "FrontAccounting", "supplier": "FrontAccounting"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "fuji-electric-co-ltd-and-hakko-electronics-co-ltd/tellus-and-tellus-lite", "last_cve": "2023-06-19", "product": "TELLUS and TELLUS Lite", "supplier": "FUJI ELECTRIC CO., LTD. and Hakko Electronics Co., Ltd."}
@@ -8239,6 +8244,7 @@
 {"cnas": ["nvidia"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "nvidia/tensorrt", "last_cve": "2026-10-06", "product": "TensorRT", "supplier": "NVIDIA"}
 {"cnas": ["nvidia"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "nvidia/vgpu-software-and-cloud-gaming", "last_cve": "2024-06-13", "product": "vGPU software and Cloud Gaming", "supplier": "nvidia"}
 {"cnas": ["Zowe"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "open-mainframe-project/zowe", "last_cve": "2024-10-10", "product": "Zowe", "supplier": "Open Mainframe Project"}
+{"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:openbmb:internet_of_agents"], "cve_count": 6, "kev_count": 0, "key": "openbmb/internet-of-agents", "last_cve": "2026-11-07", "product": "Internet of Agents", "supplier": "OpenBMB"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "openclaw/openclaw-windows-node", "last_cve": "2026-09-30", "product": "OpenClaw Windows Node", "supplier": "OpenClaw"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "openfind/mail2000", "last_cve": "2023-06-02", "product": "Mail2000", "supplier": "Openfind"}
 {"cnas": ["talos"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "openplc/openplc-v3", "last_cve": "2025-10-07", "product": "OpenPLC_v3", "supplier": "OpenPLC"}
@@ -8295,6 +8301,7 @@
 {"cnas": ["talos"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "peplink/surf-soho-hw1", "last_cve": "2023-10-11", "product": "Surf SOHO HW1", "supplier": "Peplink"}
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "perfex-crm/perfex-crm", "last_cve": "2025-09-29", "product": "Perfex CRM", "supplier": "Perfex CRM"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "peterschulznl/wp-data-access-app-builder-for-tables-forms-charts-maps-dashboards", "last_cve": "2026-08-26", "product": "WP Data Access – App Builder for Tables, Forms, Charts, Maps & Dashboards", "supplier": "peterschulznl"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "peterschulznl/wp-data-access-app-builder-for-tables-forms-dashboards-charts-maps", "last_cve": "2026-11-07", "product": "WP Data Access – App Builder for Tables, Forms, Dashboards, Charts & Maps", "supplier": "peterschulznl"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "petlibrio/smart-pet-feeder-platform", "last_cve": "2026-01-03", "product": "Smart Pet Feeder Platform", "supplier": "Petlibrio"}
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "phoenix-contact/plcnext-engineer", "last_cve": "2026-11-04", "product": "PLCnext Engineer", "supplier": "Phoenix Contact"}
 {"cnas": ["hackerone"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "phpbb/phpbb", "last_cve": "2026-10-23", "product": "phpBB", "supplier": "phpBB"}
@@ -8336,7 +8343,6 @@
 {"cnas": ["qualcomm"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "qualcomm-technologies-inc/snapdragon-automobile-snapdragon-mobile-snapdragon-wear", "last_cve": "2019-05-06", "product": "Snapdragon Automobile, Snapdragon Mobile, Snapdragon Wear", "supplier": "Qualcomm Technologies, Inc."}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "quanta-computer/qoca-aim-ai-medical-cloud-platform", "last_cve": "2026-01-05", "product": "QOCA aim AI Medical Cloud Platform", "supplier": "Quanta Computer"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "quickjs-ng/quickjs", "last_cve": "2026-03-12", "product": "quickjs", "supplier": "quickjs-ng"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "rabilal/js-help-desk-ai-powered-support-ticketing-system", "last_cve": "2026-10-30", "product": "JS Help Desk – AI-Powered Support & Ticketing System", "supplier": "rabilal"}
 {"cnas": ["rapid7"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "rapid7/appspider-pro", "last_cve": "2025-09-30", "product": "AppSpider Pro", "supplier": "Rapid7"}
 {"cnas": ["rapid7"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "rapid7/metasploit-pro", "last_cve": "2026-05-15", "product": "Metasploit Pro", "supplier": "Rapid7"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "realmag777/active-products-tables-for-woocommerce-use-constructor-to-create-tables", "last_cve": "2025-03-26", "product": "Active Products Tables for WooCommerce. Use constructor to create tables", "supplier": "realmag777"}
@@ -8593,7 +8599,6 @@
 {"cnas": ["icscert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "webaccess/webaccess-scada", "last_cve": "2019-06-28", "product": "WebAccess/SCADA", "supplier": "WebAccess"}
 {"cnas": ["Wordfence", "jpcert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "webnus/modern-events-calendar-lite", "last_cve": "2025-07-12", "product": "Modern Events Calendar Lite", "supplier": "webnus/"}
 {"cnas": ["openjs"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "webpack-dev-server/webpack-dev-server", "last_cve": "2026-10-22", "product": "webpack-dev-server", "supplier": "webpack-dev-server"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "wedevs/wedocs-ai-powered-knowledge-base-docs-documentation-wiki-ai-chatbot", "last_cve": "2026-07-03", "product": "weDocs: AI Powered Knowledge Base, Docs, Documentation, Wiki & AI Chatbot", "supplier": "wedevs"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "weintek/cmt-fhd", "last_cve": "2023-10-19", "product": "cMT-FHD", "supplier": "Weintek"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "weintek/cmt-hdm", "last_cve": "2023-10-19", "product": "cMT-HDM", "supplier": "Weintek"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "weka/interest-security-scanner", "last_cve": "2022-03-28", "product": "INTEREST Security Scanner", "supplier": "WEKA"}
@@ -8603,6 +8608,7 @@
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "welotec/tk500-v3", "last_cve": "2026-11-03", "product": "TK500-v3", "supplier": "Welotec"}
 {"cnas": ["WDC PSIRT"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "western-digital/my-cloud-home", "last_cve": "2022-12-01", "product": "My Cloud Home", "supplier": "Western Digital"}
 {"cnas": ["WDC PSIRT"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "western-digital/my-cloud-home-and-my-cloud-home-duo", "last_cve": "2023-06-12", "product": "My Cloud Home and My Cloud Home Duo", "supplier": "Western Digital"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "westguard/ws-form-lite-drag-drop-contact-form-builder", "last_cve": "2026-11-07", "product": "WS Form LITE – Drag & Drop Contact Form Builder", "supplier": "westguard"}
 {"cnas": ["talos"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "weston-embedded/cesium-net", "last_cve": "2023-11-14", "product": "Cesium NET", "supplier": "Weston Embedded"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "whyun/wpcom-member", "last_cve": "2026-10-10", "product": "WPCOM Member", "supplier": "whyun"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 6, "kev_count": 0, "key": "wisdomgarden/tronclass", "last_cve": "2026-10-14", "product": "Tronclass", "supplier": "WisdomGarden"}
@@ -8751,7 +8757,6 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "benner/modernanet", "last_cve": "2025-02-25", "product": "ModernaNet", "supplier": "Benner"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:besen:bs20_ev_charging_station"], "cve_count": 5, "kev_count": 0, "key": "besen/bs20-ev-charging-station", "last_cve": "2026-05-24", "product": "BS20 EV Charging Station", "supplier": "Besen"}
 {"cnas": ["BT"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "beyondtrust/privilege-management-for-windows", "last_cve": "2026-02-02", "product": "Privilege Management for Windows", "supplier": "BeyondTrust"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "bfintal/stackable-page-builder-gutenberg-blocks", "last_cve": "2025-01-22", "product": "Stackable – Page Builder Gutenberg Blocks", "supplier": "bfintal"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "billion-electric/m100", "last_cve": "2025-02-11", "product": "M100", "supplier": "Billion Electric"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "billion-electric/m120n", "last_cve": "2025-02-11", "product": "M120N", "supplier": "Billion Electric"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "billion-electric/m150", "last_cve": "2025-02-11", "product": "M150", "supplier": "Billion Electric"}
@@ -8967,6 +8972,7 @@
 {"cnas": ["Wordfence", "Patchstack"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "etruel/wpematico-rss-feed-fetcher", "last_cve": "2026-10-16", "product": "WPeMatico RSS Feed Fetcher", "supplier": "etruel"}
 {"cnas": ["NCSC-NL"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "etsi/tetra-standard", "last_cve": "2023-12-05", "product": "TETRA Standard", "supplier": "ETSI"}
 {"cnas": ["Mandiant"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "explorance/blue", "last_cve": "2026-01-28", "product": "Blue", "supplier": "Explorance"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "expresstech/quiz-and-survey-master-qsm-quiz-maker-survey-maker", "last_cve": "2026-11-07", "product": "Quiz and Survey Master (QSM) – Quiz Maker & Survey Maker", "supplier": "expresstech"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "f/prompts-chat", "last_cve": "2026-04-03", "product": "prompts.chat", "supplier": "f"}
 {"cnas": ["f5"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "f5-networks-inc/big-ip", "last_cve": "2018-10-08", "product": "BIG-IP", "supplier": "F5 Networks, Inc."}
 {"cnas": ["f5"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "f5-networks-inc/big-ip-asm", "last_cve": "2018-07-25", "product": "BIG-IP (ASM)", "supplier": "F5 Networks, Inc."}
@@ -9234,6 +9240,7 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "keerti1924/php-mysql-user-login-system", "last_cve": "2024-03-07", "product": "PHP-MYSQL-User-Login-System", "supplier": "keerti1924"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "keysight/ixia-vision-product-family", "last_cve": "2025-09-30", "product": "Ixia Vision Product Family", "supplier": "Keysight"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "kicode111/like-girl", "last_cve": "2025-06-12", "product": "like-girl", "supplier": "kiCode111"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "kodezen/ablocks-gutenberg-blocks-user-dashboard-builder-popup-builder-form-builder-animation-builder", "last_cve": "2026-11-07", "product": "aBlocks – Gutenberg Blocks, User Dashboard Builder, Popup Builder, Form Builder & Animation Builder", "supplier": "kodezen"}
 {"cnas": ["rapid7"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "konica-minolta-inc/bizhub-3000mf", "last_cve": "2025-06-25", "product": "bizhub 3000MF", "supplier": "Konica Minolta, Inc."}
 {"cnas": ["rapid7"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "konica-minolta-inc/bizhub-3080mf", "last_cve": "2025-06-25", "product": "bizhub 3080MF", "supplier": "Konica Minolta, Inc."}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "konica-minolta-inc/bizhub-series", "last_cve": "2022-01-04", "product": "bizhub series", "supplier": "KONICA MINOLTA, INC."}
@@ -9708,6 +9715,7 @@
 {"cnas": ["cisa-cg"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "opexus/foiaxpress", "last_cve": "2025-10-16", "product": "FOIAXpress", "supplier": "OPEXUS"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "opnsense/core", "last_cve": "2026-10-30", "product": "core", "supplier": "opnsense"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "optimizingmatters/autoptimize", "last_cve": "2026-10-02", "product": "Autoptimize", "supplier": "optimizingmatters"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "optimole/optimole-optimize-images-convert-webp-avif-cdn-lazy-load-image-optimization", "last_cve": "2026-11-07", "product": "Optimole – Optimize Images | Convert WebP & AVIF | CDN & Lazy Load | Image Optimization", "supplier": "optimole"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "optimole/optimole-optimize-images-in-real-time", "last_cve": "2026-04-11", "product": "Optimole – Optimize Images in Real Time", "supplier": "optimole"}
 {"cnas": ["Dragos"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "opto-22/snap-pac-s1", "last_cve": "2023-08-24", "product": "SNAP PAC S1", "supplier": "OPTO 22"}
 {"cnas": ["oracle"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "oracle-corporation/application-testing-suite", "last_cve": "2020-01-15", "product": "Application Testing Suite", "supplier": "Oracle Corporation"}
@@ -9749,6 +9757,7 @@
 {"cnas": ["oracle"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "oracle/jrockit", "last_cve": "2017-01-27", "product": "JRockit", "supplier": "Oracle"}
 {"cnas": ["oracle"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "oracle/peoplesoft-enterprise-pt-peopletools", "last_cve": "2017-01-27", "product": "PeopleSoft Enterprise PT PeopleTools", "supplier": "Oracle"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "originlab/originpro", "last_cve": "2026-08-20", "product": "OriginPro", "supplier": "OriginLab"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "osamaesh/wp-visitor-statistics-real-time-traffic", "last_cve": "2026-11-07", "product": "WP Visitor Statistics (Real Time Traffic)", "supplier": "osamaesh"}
 {"cnas": ["VulnCheck", "INCIBE"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "oscommerce/oscommerce", "last_cve": "2026-02-27", "product": "osCommerce", "supplier": "Oscommerce"}
 {"cnas": ["DIVD", "zdi"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "osnexus/quantastor", "last_cve": "2026-08-20", "product": "QuantaStor", "supplier": "OSNEXUS"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:osuuu:lightpicture"], "cve_count": 5, "kev_count": 0, "key": "osuuu/lightpicture", "last_cve": "2026-04-19", "product": "LightPicture", "supplier": "osuuu"}
@@ -10089,7 +10098,6 @@
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "toshiba-lighting-technology-corporation/toshiba-home-gateway-hem-gw16a-and-toshiba-home-gateway-hem-gw26a", "last_cve": "2019-01-09", "product": "Toshiba Home gateway HEM-GW16A and Toshiba Home gateway HEM-GW26A", "supplier": "Toshiba Lighting & Technology Corporation"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "toshiba-lighting-technology-corporation/toshiba-home-gateway-hem-gw26a", "last_cve": "2017-07-07", "product": "Toshiba Home gateway HEM-GW26A", "supplier": "Toshiba Lighting & Technology Corporation"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:totolink:a3000ru"], "cve_count": 5, "kev_count": 0, "key": "totolink/a3000ru", "last_cve": "2026-07-09", "product": "A3000RU", "supplier": "TOTOLINK"}
-{"cnas": ["VulDB"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "totolink/ca300-poe", "last_cve": "2025-06-25", "product": "CA300-PoE", "supplier": "TOTOLINK"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:totolink:cp450", "cpe:2.3:o:totolink:cp450_firmware"], "cve_count": 5, "kev_count": 0, "key": "totolink/cp450", "last_cve": "2026-09-03", "product": "CP450", "supplier": "TOTOLINK"}
 {"cnas": ["TPLink"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "tp-link-systems-inc/ax53-v1-0", "last_cve": "2026-04-08", "product": "AX53 v1.0", "supplier": "TP-Link Systems Inc."}
 {"cnas": ["TPLink"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "tp-link-systems-inc/ex220-br-v1-0-1-20-1-28-1-29-1-8", "last_cve": "2026-08-10", "product": "EX220(BR) V1.0/1.20/1.28/1.29/1.8", "supplier": "TP-Link Systems Inc."}
@@ -10196,7 +10204,6 @@
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "weidmueller/ie-sw-vl08mt-8tx", "last_cve": "2025-05-27", "product": "IE-SW-VL08MT-8TX", "supplier": "Weidmueller"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "weintek/cmt-ctrl01", "last_cve": "2026-01-22", "product": "cMT-CTRL01", "supplier": "Weintek"}
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "westermo/pmi-110-f2g", "last_cve": "2020-10-15", "product": "PMI-110-F2G", "supplier": "Westermo"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "westguard/ws-form-lite-drag-drop-contact-form-builder", "last_cve": "2026-08-22", "product": "WS Form LITE – Drag & Drop Contact Form Builder", "supplier": "westguard"}
 {"cnas": ["VulnCheck", "VulDB"], "cpe": ["cpe:2.3:a:wger-project:wger"], "cve_count": 5, "kev_count": 0, "key": "wger-project/wger", "last_cve": "2026-09-06", "product": "wger", "supplier": "wger-project"}
 {"cnas": ["certcc"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "wi-fi-alliance/hostapd-with-sae-support", "last_cve": "2019-04-17", "product": "hostapd with SAE support", "supplier": "Wi-Fi Alliance"}
 {"cnas": ["certcc"], "cpe": [], "cve_count": 5, "kev_count": 0, "key": "wi-fi-alliance/wpa-supplicant-with-sae-support", "last_cve": "2019-04-17", "product": "wpa_supplicant with SAE support", "supplier": "Wi-Fi Alliance"}
@@ -10855,7 +10862,6 @@
 {"cnas": ["VulnCheck", "VulDB"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "expressgateway/express-gateway", "last_cve": "2026-10-07", "product": "express-gateway", "supplier": "ExpressGateway"}
 {"cnas": ["openjs"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "expressjs/multer", "last_cve": "2026-03-04", "product": "multer", "supplier": "expressjs"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "expresstech/quiz-and-survey-master", "last_cve": "2022-01-17", "product": "Quiz And Survey Master", "supplier": "ExpressTech"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "expresstech/quiz-and-survey-master-qsm-quiz-maker-survey-maker", "last_cve": "2026-10-10", "product": "Quiz and Survey Master (QSM) – Quiz Maker & Survey Maker", "supplier": "expresstech"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "extra-innovation-inc/acmailer-cgi", "last_cve": "2026-08-19", "product": "acmailer CGI", "supplier": "Extra Innovation Inc."}
 {"cnas": ["TR-CERT"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "extremepacs/extreme-xds", "last_cve": "2025-03-06", "product": "Extreme XDS", "supplier": "ExtremePacs"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "eyale-vc/contact-form-builder-by-vcita", "last_cve": "2024-12-05", "product": "Contact Form Builder by vcita", "supplier": "eyale-vc"}
@@ -10932,6 +10938,7 @@
 {"cnas": ["GEHC"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "ge-healthcare/vivid-iq", "last_cve": "2024-05-14", "product": "Vivid iq", "supplier": "GE HealthCare"}
 {"cnas": ["GEHC"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "ge-healthcare/vivid-t", "last_cve": "2024-05-14", "product": "Vivid T", "supplier": "GE HealthCare"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "general-industrial-controls/lynx-gateway", "last_cve": "2025-11-14", "product": "Lynx+ Gateway", "supplier": "General Industrial Controls"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "genetechproducts/pie-register-user-registration-profiles-content-restriction", "last_cve": "2026-11-07", "product": "Pie Register – User Registration, Profiles & Content Restriction", "supplier": "genetechproducts"}
 {"cnas": ["krcert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "genians/genian-nac-suite-v5-0", "last_cve": "2023-08-17", "product": "Genian NAC Suite V5.0", "supplier": "Genians"}
 {"cnas": ["krcert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "genians/genian-ztna", "last_cve": "2023-08-17", "product": "Genian ZTNA", "supplier": "Genians"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "geovision/door-access-control-device", "last_cve": "2020-07-08", "product": "Door Access Control Device", "supplier": "GeoVision"}
@@ -11141,6 +11148,7 @@
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "interactivegeomaps/mapgeo-interactive-geo-maps", "last_cve": "2026-05-14", "product": "MapGeo – Interactive Geo Maps", "supplier": "interactivegeomaps"}
 {"cnas": ["mitre"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "intevation/openslides", "last_cve": "2025-03-21", "product": "OpenSlides", "supplier": "Intevation"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "invt/hmitool", "last_cve": "2025-07-21", "product": "HMITool", "supplier": "INVT"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "iovamihai/affiliate-program-suite-slicewp-affiliates", "last_cve": "2026-11-07", "product": "Affiliate Program Suite — SliceWP Affiliates", "supplier": "iovamihai"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "ipcomm/ipcomm-ipdio", "last_cve": "2022-03-09", "product": "IPCOMM ipDIO", "supplier": "IPCOMM"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "iroad/dash-cam-fx2", "last_cve": "2025-03-16", "product": "Dash Cam FX2", "supplier": "IROAD"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "iroad/dash-cam-x6", "last_cve": "2025-03-16", "product": "Dash Cam X6", "supplier": "IROAD"}
@@ -11809,6 +11817,7 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "rachelos/werss-we-mp-rss", "last_cve": "2026-02-20", "product": "WeRSS we-mp-rss", "supplier": "rachelos"}
 {"cnas": ["VulnCheck", "fedora"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "radare2/radare2", "last_cve": "2026-05-15", "product": "radare2", "supplier": "radare2"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:rafymrx:toko-online-roti"], "cve_count": 4, "kev_count": 0, "key": "rafymrx/toko-online-roti", "last_cve": "2026-07-16", "product": "TOKO-ONLINE-ROTI", "supplier": "RafyMrX"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "rainbowgeek/seopress-ai-seo-plugin-on-site-seo", "last_cve": "2026-11-07", "product": "SEOPress – AI SEO Plugin & On-site SEO", "supplier": "rainbowgeek"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "rainbowgeek/seopress-on-site-seo-analytics", "last_cve": "2024-10-02", "product": "SEOPress – On-site SEO & Analytics", "supplier": "rainbowgeek"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:raisulislamg4:student_management_system_by_php"], "cve_count": 4, "kev_count": 0, "key": "raisulislamg4/student-management-system-by-php", "last_cve": "2026-06-01", "product": "student_management_system_by_php", "supplier": "raisulislamg4"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:ramon-victor:freegpt-webui"], "cve_count": 4, "kev_count": 0, "key": "ramon-victor/freegpt-webui", "last_cve": "2026-09-04", "product": "freegpt-webui", "supplier": "ramon-victor"}
@@ -12371,12 +12380,15 @@
 {"cnas": ["VulDB", "VulnCheck"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "weaver/e-cology", "last_cve": "2025-06-24", "product": "e-cology", "supplier": "Weaver"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "web2py/web2py", "last_cve": "2026-02-05", "product": "web2py", "supplier": "web2py"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "webcodingplace/ultimate-classified-listings", "last_cve": "2025-09-11", "product": "Ultimate Classified Listings", "supplier": "webcodingplace"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "webguyio/stop-spammers-classic", "last_cve": "2026-11-07", "product": "Stop Spammers Classic", "supplier": "webguyio"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "webilia/listdom-ai-powered-business-directory-with-classifieds-ads-listings", "last_cve": "2026-10-10", "product": "Listdom: AI-powered Business Directory with Classifieds Ads Listings", "supplier": "webilia"}
 {"cnas": ["VulnCheck", "jpcert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "webmin/usermin", "last_cve": "2026-11-06", "product": "usermin", "supplier": "webmin"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "websoudan/mw-wp-form", "last_cve": "2026-10-29", "product": "MW WP Form", "supplier": "websoudan"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "webtoffee/product-import-export-for-woocommerce-import-export-product-csv-suite", "last_cve": "2025-03-26", "product": "Product Import Export for WooCommerce – Import Export Product CSV Suite", "supplier": "webtoffee"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "webwizards/marketking", "last_cve": "2026-09-22", "product": "MarketKing", "supplier": "WebWizards"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wecon-technology-co-ltd/levistudiou", "last_cve": "2018-10-09", "product": "LeviStudioU", "supplier": "WECON Technology Co., Ltd"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wedevs/subscribe2-form-email-subscribers-newsletters", "last_cve": "2026-11-07", "product": "Subscribe2 – Form, Email Subscribers & Newsletters", "supplier": "wedevs"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wedevs/user-frontend-membership-user-registration-user-profile-user-directory-content-restriction-with-frontend-post-submission", "last_cve": "2026-11-07", "product": "User Frontend – Membership, User Registration, User Profile, User Directory & Content Restriction with Frontend Post Submission", "supplier": "wedevs"}
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "weidmueller/energy-meter-750-230-2540910000", "last_cve": "2026-03-10", "product": "ENERGY METER 750-230 (2540910000)", "supplier": "Weidmueller"}
 {"cnas": ["CERTVDE"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "weidmueller/energy-meter-750-24-2540900000", "last_cve": "2026-03-10", "product": "ENERGY METER 750-24 (2540900000)", "supplier": "Weidmueller"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "weintek/cmt3092x-firmware", "last_cve": "2026-07-24", "product": "cMT3092X firmware", "supplier": "Weintek"}
@@ -12427,6 +12439,7 @@
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wpshuffle/frontend-post-submission-manager-lite-frontend-posting-wordpress-plugin", "last_cve": "2026-02-18", "product": "Frontend Post Submission Manager Lite – Frontend Posting WordPress Plugin", "supplier": "wpshuffle"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wpswings/return-refund-and-exchange-for-woocommerce", "last_cve": "2025-11-21", "product": "Return Refund and Exchange For WooCommerce", "supplier": "wpswings"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wpswings/ultimate-gift-cards-for-woocommerce", "last_cve": "2025-06-03", "product": "Ultimate Gift Cards for WooCommerce", "supplier": "wpswings"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wpvibes/dynific-addons-for-elementor-formerly-anywhere-elementor", "last_cve": "2026-11-07", "product": "Dynific Addons for Elementor (formerly Anywhere Elementor)", "supplier": "wpvibes"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wpvibes/form-vibes-database-manager-for-forms", "last_cve": "2026-01-06", "product": "Form Vibes – Database Manager for Forms", "supplier": "wpvibes"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wpxpo/post-grid-gutenberg-blocks-postx", "last_cve": "2026-10-10", "product": "Post Grid Gutenberg Blocks – PostX", "supplier": "wpxpo"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 4, "kev_count": 0, "key": "wpzoom/wpzoom-addons-for-elementor-starter-templates-widgets", "last_cve": "2026-02-11", "product": "WPZOOM Addons for Elementor – Starter Templates & Widgets", "supplier": "wpzoom"}
@@ -12646,17 +12659,20 @@
 {"cnas": ["AMD"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "amd/ryzentm-master", "last_cve": "2023-08-15", "product": "Ryzen™ Master", "supplier": "AMD"}
 {"cnas": ["AMD"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "amd/ryzentm-threadrippertm-pro-processor", "last_cve": "2023-03-23", "product": "Ryzen™ Threadripper™ PRO Processor", "supplier": "AMD"}
 {"cnas": ["AMD"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "amd/vitistm-unified-installer-for-fpgas-adaptive-socs-in-windows", "last_cve": "2026-08-11", "product": "Vitis™ Unified Installer for FPGAs & Adaptive SoCs in Windows", "supplier": "AMD"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "amelia/booking-for-appointments-and-events-calendar-amelia-pro", "last_cve": "2026-11-07", "product": "Booking for Appointments and Events Calendar – Amelia Pro", "supplier": "Amelia"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "amentotech/workreap", "last_cve": "2025-06-12", "product": "Workreap", "supplier": "AmentoTech"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:amirsanni:mini-inventory-and-sales-management-system"], "cve_count": 3, "kev_count": 0, "key": "amirsanni/mini-inventory-and-sales-management-system", "last_cve": "2026-09-28", "product": "Mini-Inventory-and-Sales-Management-System", "supplier": "amirsanni"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "amlogic/amlogic-android-sdk", "last_cve": "2026-11-02", "product": "Amlogic Android SDK", "supplier": "Amlogic"}
 {"cnas": ["INCD"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "amodat/amodat", "last_cve": "2022-06-13", "product": "Amodat", "supplier": "Amodat"}
 {"cnas": ["@huntrdev"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ampache/ampache-ampache", "last_cve": "2023-02-10", "product": "ampache/ampache", "supplier": "ampache"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "amu02aftab/category-and-taxonomy-meta-fields", "last_cve": "2024-10-22", "product": "Category and Taxonomy Meta Fields", "supplier": "amu02aftab"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "andy-moyle/church-admin", "last_cve": "2026-11-07", "product": "Church Admin", "supplier": "andy_moyle"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "anhui-deshun-intelligent-technology/jieshun-jielink-jsotc2016", "last_cve": "2024-08-19", "product": "Jieshun JieLink+ JSOTC2016", "supplier": "Anhui Deshun Intelligent Technology"}
 {"cnas": ["TR-CERT"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ankaref-innovation-and-technology-inc/librid-libref", "last_cve": "2026-09-10", "product": "LIBRID/LIBREF", "supplier": "Ankaref Innovation and Technology Inc."}
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "anon-proxy-server/anon-proxy-server", "last_cve": "2026-03-31", "product": "Anon Proxy Server", "supplier": "Anon Proxy Server"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "anssilaitila/shared-files-frontend-file-upload-form-secure-file-sharing", "last_cve": "2025-06-03", "product": "Shared Files – Frontend File Upload Form & Secure File Sharing", "supplier": "anssilaitila"}
 {"cnas": ["talos"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "antenna-house/antennahouse", "last_cve": "2018-04-24", "product": "AntennaHouse", "supplier": "Antenna House"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "antoineh/football-pool", "last_cve": "2026-11-07", "product": "Football Pool", "supplier": "antoineh"}
 {"cnas": ["apache"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "apache-software-foundation/apache-arrow", "last_cve": "2026-02-17", "product": "Apache Arrow", "supplier": "Apache Software Foundation"}
 {"cnas": ["apache"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "apache-software-foundation/apache-brooklyn", "last_cve": "2017-09-13", "product": "Apache Brooklyn", "supplier": "Apache Software Foundation"}
 {"cnas": ["apache"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "apache-software-foundation/apache-flume", "last_cve": "2022-10-26", "product": "Apache Flume", "supplier": "Apache Software Foundation"}
@@ -13332,6 +13348,7 @@
 {"cnas": ["ERIC"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ericsson/site-controller-6610", "last_cve": "2025-10-13", "product": "Site Controller 6610", "supplier": "Ericsson"}
 {"cnas": ["VulDB", "VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "erupts/erupt", "last_cve": "2026-10-16", "product": "erupt", "supplier": "erupts"}
 {"cnas": ["mitre"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "es/iperf3", "last_cve": "2025-08-03", "product": "iperf3", "supplier": "ES"}
+{"cnas": ["VulDB", "GitLab"], "cpe": ["cpe:2.3:a:esengine:deepseek-reasonix"], "cve_count": 3, "kev_count": 0, "key": "esengine/deepseek-reasonix", "last_cve": "2026-11-07", "product": "DeepSeek-Reasonix", "supplier": "esengine"}
 {"cnas": ["Anthropic", "VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "esnet/iperf3", "last_cve": "2026-09-30", "product": "iperf3", "supplier": "esnet"}
 {"cnas": ["Esri"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "esri/arcgis-desktop", "last_cve": "2021-03-25", "product": "ArcGIS Desktop", "supplier": "Esri"}
 {"cnas": ["Esri"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "esri/arcgis-desktop-background-geoprocessing", "last_cve": "2021-03-25", "product": "ArcGIS Desktop Background Geoprocessing", "supplier": "Esri"}
@@ -13502,7 +13519,6 @@
 {"cnas": ["GEN"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "gen-digital/avast-antivirus-avast-one-avast-premium-security-avast-ultimate", "last_cve": "2026-11-06", "product": "Avast Antivirus, Avast One, Avast Premium Security, Avast Ultimate", "supplier": "Gen Digital"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "generalsandman/tinyweb", "last_cve": "2026-07-28", "product": "TinyWeb", "supplier": "GeneralSandman"}
 {"cnas": ["Patchstack"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "genetech/pie-register-premium", "last_cve": "2024-12-09", "product": "Pie Register Premium", "supplier": "Genetech"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "genetechproducts/pie-register-user-registration-profiles-content-restriction", "last_cve": "2026-04-04", "product": "Pie Register – User Registration, Profiles & Content Restriction", "supplier": "genetechproducts"}
 {"cnas": ["krcert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "genians-inc/genian-ssl-pns-frodo-core", "last_cve": "2026-10-01", "product": "Genian SSL PNS (frodo-core)", "supplier": "Genians, Inc"}
 {"cnas": ["GV"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "geovision-inc/gv-asmanager", "last_cve": "2026-10-19", "product": "GV-ASManager", "supplier": "GeoVision Inc."}
 {"cnas": ["GV"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "geovision-inc/gv-ip-device-utility", "last_cve": "2026-07-24", "product": "GV-IP Device Utility", "supplier": "GeoVision Inc."}
@@ -13853,6 +13869,7 @@
 {"cnas": ["redhat"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "icedtea/icedtea-web", "last_cve": "2019-07-31", "product": "icedtea-web", "supplier": "IcedTea"}
 {"cnas": ["zdi"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "icewarp/icewarp", "last_cve": "2026-03-13", "product": "IceWarp", "supplier": "IceWarp"}
 {"cnas": ["INCIBE"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "icewarp/icewarp-mail-server", "last_cve": "2025-05-16", "product": "Icewarp Mail Server", "supplier": "Icewarp"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "icopydoc/yml-for-yandex-market", "last_cve": "2026-11-07", "product": "YML for Yandex Market", "supplier": "icopydoc"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ics-cert/advantech-webaccess-hmi-designer", "last_cve": "2018-04-25", "product": "Advantech WebAccess HMI Designer", "supplier": "ICS-CERT"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ics-cert/delta-electronics-wplsoft", "last_cve": "2018-05-04", "product": "Delta Electronics WPLSoft", "supplier": "ICS-CERT"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ics-cert/dr-195-164-ger-infinity-delta", "last_cve": "2019-01-28", "product": "Dr&#195;&#164;ger Infinity Delta", "supplier": "ICS-CERT"}
@@ -13905,7 +13922,6 @@
 {"cnas": ["VulnCheck", "TuranSec"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "invoiceninja/invoiceninja", "last_cve": "2026-11-04", "product": "invoiceninja", "supplier": "invoiceninja"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "iobit/protected-folder", "last_cve": "2025-01-05", "product": "Protected Folder", "supplier": "IObit"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "iosix/io-1020-micro-eld", "last_cve": "2024-04-12", "product": "IO-1020 Micro ELD", "supplier": "IOSiX"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "iovamihai/affiliate-program-suite-slicewp-affiliates", "last_cve": "2026-05-06", "product": "Affiliate Program Suite — SliceWP Affiliates", "supplier": "iovamihai"}
 {"cnas": ["VulnCheck", "Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ip2location/ip2location-country-blocker", "last_cve": "2026-09-09", "product": "IP2Location Country Blocker", "supplier": "IP2Location"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "iqonicdesign/streamit", "last_cve": "2025-04-08", "product": "Streamit", "supplier": "iqonicdesign"}
 {"cnas": ["flexera"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "irfanview/mrsid-plugin", "last_cve": "2020-01-02", "product": "MrSID plugin", "supplier": "IrfanView"}
@@ -13924,6 +13940,7 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "itsourcecode/sanitize-or-validate-this-input", "last_cve": "2026-04-06", "product": "sanitize or validate this input", "supplier": "itsourcecode"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "itsourcecode/simple-online-hotel-reservation-system", "last_cve": "2024-06-25", "product": "Simple Online Hotel Reservation System", "supplier": "itsourcecode"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "itsourcecode/ticket-reservation-system", "last_cve": "2024-08-03", "product": "Ticket Reservation System", "supplier": "itsourcecode"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "iubenda/iubenda-all-in-one-compliance-for-gdpr-ccpa-cookie-consent-more", "last_cve": "2026-11-07", "product": "iubenda | All-in-one Compliance for GDPR / CCPA Cookie Consent + more", "supplier": "iubenda"}
 {"cnas": ["hackerone"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ivanti/dsm", "last_cve": "2025-07-12", "product": "DSM", "supplier": "Ivanti"}
 {"cnas": ["ivanti"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ivanti/ivanti-neurons-for-itsm", "last_cve": "2026-09-08", "product": "Ivanti Neurons for ITSM", "supplier": "Ivanti"}
 {"cnas": ["ivanti"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ivanti/neurons-for-itsm-cloud", "last_cve": "2026-06-01", "product": "Neurons for ITSM (Cloud)", "supplier": "Ivanti"}
@@ -14030,6 +14047,7 @@
 {"cnas": ["JetBrains"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "jetbrains/datagrip", "last_cve": "2026-10-30", "product": "DataGrip", "supplier": "JetBrains"}
 {"cnas": ["JetBrains"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "jetbrains/junie", "last_cve": "2026-04-17", "product": "Junie", "supplier": "JetBrains"}
 {"cnas": ["JetBrains"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "jetbrains/rustrover", "last_cve": "2026-10-30", "product": "RustRover", "supplier": "JetBrains"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "jetmonsters/motopress-appointment-booking", "last_cve": "2026-11-07", "product": "MotoPress Appointment Booking", "supplier": "jetmonsters"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "jetmonsters/motopress-hotel-booking", "last_cve": "2026-09-15", "product": "MotoPress Hotel Booking", "supplier": "jetmonsters"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "jetmonsters/timetable-and-event-schedule-by-motopress", "last_cve": "2026-05-28", "product": "Timetable and Event Schedule by MotoPress", "supplier": "jetmonsters"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "jfarthing84/theme-my-login", "last_cve": "2026-10-16", "product": "Theme My Login", "supplier": "jfarthing84"}
@@ -14081,7 +14099,6 @@
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "kkcal/epg-search-result-viewer-kkcald", "last_cve": "2018-02-01", "product": "epg search result viewer(kkcald)", "supplier": "kkcal"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "kleor/contact-manager", "last_cve": "2026-10-28", "product": "Contact Manager", "supplier": "kleor"}
 {"cnas": ["KNIME"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "knime/knime-analytics-platform", "last_cve": "2026-10-23", "product": "KNIME Analytics Platform", "supplier": "KNIME"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "kodezen/ablocks-gutenberg-blocks-user-dashboard-builder-popup-builder-form-builder-animation-builder", "last_cve": "2026-10-24", "product": "aBlocks – Gutenberg Blocks, User Dashboard Builder, Popup Builder, Form Builder & Animation Builder", "supplier": "kodezen"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "kodezen/academy-lms-ai-course-builder-quizzes-certificates-elearning", "last_cve": "2026-11-03", "product": "Academy LMS – AI Course Builder, Quizzes, Certificates & eLearning", "supplier": "kodezen"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "kodezen/storeengine-complete-ecommerce-solution-with-memberships-licensing-affiliates-more", "last_cve": "2026-08-16", "product": "StoreEngine — Complete eCommerce Solution with Memberships, Licensing, Affiliates & More", "supplier": "kodezen"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "kofimokome/message-filter-for-contact-form-7", "last_cve": "2026-05-01", "product": "Message Filter for Contact Form 7", "supplier": "kofimokome"}
@@ -14153,6 +14170,7 @@
 {"cnas": ["VulnCheck", "Kaspersky"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "libvnc/libvncserver", "last_cve": "2026-03-24", "product": "LibVNCServer", "supplier": "LibVNC"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "libyal/libpff", "last_cve": "2026-10-26", "product": "libpff", "supplier": "libyal"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "life-sciences-computing-corporation/opendolphin", "last_cve": "2018-11-15", "product": "OpenDolphin", "supplier": "Life Sciences Computing Corporation"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "lifterlms/lifterlms-wp-lms-for-elearning-online-courses-quizzes", "last_cve": "2026-11-07", "product": "LifterLMS – WP LMS for eLearning, Online Courses, & Quizzes", "supplier": "lifterlms"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "light-wonder-inc-shfl-entertainment-inc-shuffle-master-inc/deck-mate-2", "last_cve": "2025-11-03", "product": "Deck Mate 2", "supplier": "Light & Wonder, Inc. / SHFL Entertainment, Inc. / Shuffle Master, Inc."}
 {"cnas": ["@huntrdev"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "linagora/linagora-twake", "last_cve": "2023-05-12", "product": "linagora/twake", "supplier": "linagora"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "line-corporation/line-for-ios", "last_cve": "2023-10-31", "product": "LINE for iOS", "supplier": "LINE Corporation"}
@@ -14799,7 +14817,6 @@
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "opacewebdesign/opace-ai-scribe-seo-content-creator-humaizer-for-openai-anthropic", "last_cve": "2025-01-10", "product": "Opace AI Scribe: SEO Content Creator & Humaizer for OpenAI & Anthropic", "supplier": "opacewebdesign"}
 {"cnas": ["tenable"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "open-dental/open-dental", "last_cve": "2018-12-12", "product": "Open Dental", "supplier": "Open Dental"}
 {"cnas": ["OAI", "mitre"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "openai/codex-cli", "last_cve": "2026-09-01", "product": "Codex CLI", "supplier": "OpenAI"}
-{"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:openbmb:internet_of_agents"], "cve_count": 3, "kev_count": 0, "key": "openbmb/internet-of-agents", "last_cve": "2026-11-06", "product": "Internet of Agents", "supplier": "OpenBMB"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:openclaw:clawscan"], "cve_count": 3, "kev_count": 0, "key": "openclaw/clawscan", "last_cve": "2026-10-14", "product": "ClawScan", "supplier": "OpenClaw"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "openclaw/voice-call", "last_cve": "2026-09-26", "product": "voice-call", "supplier": "openclaw"}
 {"cnas": ["twcert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "openfind/mail2000-v7-0", "last_cve": "2024-07-15", "product": "Mail2000 V7.0", "supplier": "Openfind"}
@@ -14937,7 +14954,6 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "oretnom23/fast-food-ordering-system", "last_cve": "2022-08-27", "product": "Fast Food Ordering System", "supplier": "oretnom23"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "orientdb/orientdb", "last_cve": "2026-02-20", "product": "OrientDB", "supplier": "Orientdb"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "orionsec/orion-ops", "last_cve": "2025-12-01", "product": "orion-ops", "supplier": "orionsec"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "osamaesh/wp-visitor-statistics-real-time-traffic", "last_cve": "2026-10-28", "product": "WP Visitor Statistics (Real Time Traffic)", "supplier": "osamaesh"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ossur/mobile-logic-application", "last_cve": "2025-01-17", "product": "Mobile Logic Application", "supplier": "Ossur"}
 {"cnas": ["VulDB"], "cpe": ["cpe:2.3:a:ousl-group-brinarybrains:school_student_management_system"], "cve_count": 3, "kev_count": 0, "key": "ousl-group-brinarybrains/school-student-management-system", "last_cve": "2026-05-31", "product": "School Student Management System", "supplier": "OUSL-GROUP-BrinaryBrains"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "outback-power/mojave-inverter", "last_cve": "2025-02-13", "product": "Mojave Inverter", "supplier": "Outback Power"}
@@ -15144,6 +15160,7 @@
 {"cnas": ["Patchstack", "Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "pressaholic/wordpress-video-robot-the-ultimate-video-importer", "last_cve": "2025-05-19", "product": "WordPress Video Robot - The Ultimate Video Importer", "supplier": "pressaholic"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "presstigers/simple-job-board", "last_cve": "2024-08-24", "product": "Simple Job Board", "supplier": "presstigers"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "princeahmed/wp-radio-worldwide-online-radio-stations-directory-for-wordpress", "last_cve": "2024-10-16", "product": "WP Radio – Worldwide Online Radio Stations Directory for WordPress", "supplier": "princeahmed"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "printcart/printcart-store-web-to-print-product-designer-for-woocommerce", "last_cve": "2026-11-07", "product": "Printcart Store – Web to Print Product Designer for WooCommerce", "supplier": "printcart"}
 {"cnas": ["certcc"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "printerlogic/management-software", "last_cve": "2019-05-08", "product": "Management Software", "supplier": "PrinterLogic"}
 {"cnas": ["schneider"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "proclima/proclima-all-versions-prior-to-version-8-0-0", "last_cve": "2019-07-15", "product": "ProClima all versions prior to version 8.0.0", "supplier": "ProClima"}
 {"cnas": ["ProgressSoftware"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "progress-software/progress-telerik-fiddler-everywhere", "last_cve": "2026-11-06", "product": "Progress® Telerik® Fiddler® Everywhere", "supplier": "Progress Software"}
@@ -15208,7 +15225,6 @@
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "radiometrics/vizair", "last_cve": "2025-11-04", "product": "VizAir", "supplier": "Radiometrics"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "raimersoft/rarmaradio", "last_cve": "2026-03-22", "product": "RarmaRadio", "supplier": "Raimersoft"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "raimersoft/tapinradio", "last_cve": "2026-02-06", "product": "TapinRadio", "supplier": "Raimersoft"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "rainbowgeek/seopress-ai-seo-plugin-on-site-seo", "last_cve": "2026-10-31", "product": "SEOPress – AI SEO Plugin & On-site SEO", "supplier": "rainbowgeek"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "rakuten-mobile-inc/rakuten-casa", "last_cve": "2022-06-13", "product": "Rakuten Casa", "supplier": "Rakuten Mobile, Inc."}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "rakuten-mobile-inc/rakuten-turbo-5g", "last_cve": "2024-11-20", "product": "Rakuten Turbo 5G", "supplier": "Rakuten Mobile, Inc."}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "rameez-iqbal/real-estate-manager-property-listing-and-agent-management", "last_cve": "2026-10-10", "product": "Real Estate Manager – Property Listing and Agent Management", "supplier": "rameez_iqbal"}
@@ -15305,6 +15321,7 @@
 {"cnas": ["redhat"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "rsyslog/rsyslog", "last_cve": "2019-11-14", "product": "rsyslog", "supplier": "rsyslog"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "rti/connext-dds-professional", "last_cve": "2022-05-05", "product": "Connext DDS Professional", "supplier": "RTI"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "rti/connext-dds-secure", "last_cve": "2022-05-05", "product": "Connext DDS Secure", "supplier": "RTI"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "rubengc/gamipress-gamification-plugin-to-reward-points-badges-ranks-in-wordpress-now-with-ai", "last_cve": "2026-11-07", "product": "GamiPress – Gamification plugin to reward points, badges & ranks in WordPress, now with AI", "supplier": "rubengc"}
 {"cnas": ["mitre", "hackerone"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ruby/resolv", "last_cve": "2026-08-27", "product": "resolv", "supplier": "Ruby"}
 {"cnas": ["mitre"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ruckus/network-director", "last_cve": "2025-08-04", "product": "Network Director", "supplier": "RUCKUS"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "ruijie/rg-ew1200g", "last_cve": "2023-08-18", "product": "RG-EW1200G", "supplier": "Ruijie"}
@@ -15377,6 +15394,7 @@
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "saturdaydrive/ninja-forms-excel-export", "last_cve": "2026-07-17", "product": "Ninja Forms - Excel Export", "supplier": "SaturdayDrive"}
 {"cnas": ["TR-CERT"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "saysis/starcities", "last_cve": "2023-03-10", "product": "Starcities", "supplier": "Saysis"}
 {"cnas": ["VulnCheck", "sba-research"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "sbabic/swupdate", "last_cve": "2026-10-12", "product": "swupdate", "supplier": "sbabic"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "sbouey/falang-multilanguage-for-wordpress", "last_cve": "2026-11-07", "product": "Falang multilanguage for WordPress", "supplier": "sbouey"}
 {"cnas": ["tenable"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "scada-lts/scada-lts", "last_cve": "2026-09-16", "product": "Scada-LTS", "supplier": "Scada-LTS"}
 {"cnas": ["schneider"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "schneider-electric-se/eurotherm-by-schneider-electric-guicon-v2-0-gold-build-683-0", "last_cve": "2019-02-06", "product": "Eurotherm by Schneider Electric GUIcon V2.0 (Gold Build 683.0)", "supplier": "Schneider Electric SE"}
 {"cnas": ["schneider"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "schneider-electric-se/evlink-parking-v3-2-0-12-v1-and-earlier", "last_cve": "2018-12-24", "product": "EVLink Parking v3.2.0-12_v1 and earlier", "supplier": "Schneider Electric SE"}
@@ -15430,6 +15448,7 @@
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "sevone/network-management-system", "last_cve": "2022-06-03", "product": "Network Management System", "supplier": "SevOne"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "sezero/libmikmod", "last_cve": "2026-10-06", "product": "libmikmod", "supplier": "sezero"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "sh1zen/multi-uploader-for-gravity-forms", "last_cve": "2026-09-17", "product": "Multi Uploader for Gravity Forms", "supplier": "sh1zen"}
+{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "shapedplugin/real-testimonials-testimonial-slider-collect-customer-reviews-and-video-testimonials", "last_cve": "2026-11-07", "product": "Real Testimonials – Testimonial Slider, Collect Customer Reviews and Video Testimonials", "supplier": "shapedplugin"}
 {"cnas": ["jpcert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "sharp-corporation/sharp-mfps", "last_cve": "2026-08-03", "product": "Sharp MFPs", "supplier": "Sharp Corporation"}
 {"cnas": ["VulnCheck"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "shd101wyy/markdown-preview-enhanced", "last_cve": "2026-06-05", "product": "Markdown Preview Enhanced", "supplier": "shd101wyy"}
 {"cnas": ["VulDB"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "shenzhen-dashi-tongzhou-information-technology/agilebpm", "last_cve": "2025-06-05", "product": "AgileBPM", "supplier": "Shenzhen Dashi Tongzhou Information Technology"}
@@ -16052,6 +16071,7 @@
 {"cnas": ["Patchstack"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "themefusion/fusion-builder", "last_cve": "2024-06-19", "product": "Fusion Builder", "supplier": "ThemeFusion"}
 {"cnas": ["Patchstack"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "themegoods/photography", "last_cve": "2026-07-23", "product": "Photography", "supplier": "ThemeGoods"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "themegrill/colormag", "last_cve": "2025-08-20", "product": "ColorMag", "supplier": "themegrill"}
+{"cnas": ["Wordfence", "Patchstack"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "themehigh/checkout-field-editor-for-woocommerce-pro", "last_cve": "2026-11-07", "product": "Checkout Field Editor for WooCommerce (Pro)", "supplier": "Themehigh"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "themehigh/payment-gateway-of-stripe-for-woocommerce", "last_cve": "2026-09-19", "product": "Payment Gateway of Stripe for WooCommerce", "supplier": "themehigh"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "themehunk/vayu-blocks-website-builder-for-the-block-editor", "last_cve": "2025-09-03", "product": "Vayu Blocks – Website Builder for the Block Editor", "supplier": "themehunk"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "themeisle/menu-icons-by-themeisle", "last_cve": "2026-02-03", "product": "Menu Icons by ThemeIsle", "supplier": "themeisle"}
@@ -16327,7 +16347,6 @@
 {"cnas": ["TR-CERT"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "webbeyaz-web-design/medikum-web", "last_cve": "2026-07-08", "product": "Mediküm Web", "supplier": "Webbeyaz Web Design"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "webfactory/login-lockdown-protection", "last_cve": "2025-12-13", "product": "Login Lockdown & Protection", "supplier": "webfactory"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "webfactory/wp-reset", "last_cve": "2025-10-07", "product": "WP Reset", "supplier": "webfactory"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "webguyio/stop-spammers-classic", "last_cve": "2026-01-28", "product": "Stop Spammers Classic", "supplier": "webguyio"}
 {"cnas": ["hackerone"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "webpros/configserver-security-firewall", "last_cve": "2026-09-10", "product": "ConfigServer Security & Firewall", "supplier": "WebPros"}
 {"cnas": ["hackerone"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "webpros/whmcs", "last_cve": "2026-09-14", "product": "WHMCS", "supplier": "WebPros"}
 {"cnas": ["OpenText"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "webroot/secureanywhere-web-shield", "last_cve": "2024-10-03", "product": "SecureAnywhere - Web Shield", "supplier": "Webroot"}
@@ -16336,9 +16355,7 @@
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "wecon/pi-studio-hmi", "last_cve": "2018-10-08", "product": "PI Studio HMI", "supplier": "WECON"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "wecon/plc-editor", "last_cve": "2021-11-22", "product": "PLC Editor", "supplier": "WECON"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "wedevs/storegrowth-upsell-bogo-quick-view-direct-checkout-side-cart-for-woocommerce", "last_cve": "2026-07-28", "product": "StoreGrowth – Upsell, BOGO, Quick View, Direct Checkout & Side Cart for WooCommerce", "supplier": "wedevs"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "wedevs/subscribe2-form-email-subscribers-newsletters", "last_cve": "2025-02-19", "product": "Subscribe2 – Form, Email Subscribers & Newsletters", "supplier": "wedevs"}
 {"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "wedevs/user-frontend-ai-powered-frontend-posting-user-directory-profile-builder-membership-user-registration", "last_cve": "2026-07-09", "product": "User Frontend: AI Powered Frontend Posting, User Directory, Profile Builder, Membership & User Registration", "supplier": "wedevs"}
-{"cnas": ["Wordfence"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "wedevs/user-frontend-membership-user-registration-user-profile-user-directory-content-restriction-with-frontend-post-submission", "last_cve": "2026-10-31", "product": "User Frontend – Membership, User Registration, User Profile, User Directory & Content Restriction with Frontend Post Submission", "supplier": "wedevs"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "weintek/cmt-g01-g02", "last_cve": "2022-05-16", "product": "cMT-G01/G02", "supplier": "Weintek"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "weintek/cmt-g03-g04", "last_cve": "2022-05-16", "product": "cMT-G03/G04", "supplier": "Weintek"}
 {"cnas": ["icscert"], "cpe": [], "cve_count": 3, "kev_count": 0, "key": "weintek/cmt-svr-1xx-2xx", "last_cve": "2022-05-16", "product": "cMT-SVR-1xx/2xx", "supplier": "Weintek"}
