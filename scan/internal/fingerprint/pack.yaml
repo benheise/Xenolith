@@ -1,0 +1,159 @@
+# Fingerprints for the watchlist components in components.yaml.
+#
+# Used by `python -m xenolith fingerprint <file or folder>` (see CONTRIBUTING.md
+# section 3) and meant to be shared with the planned xenolith-scan tool
+# (design/xenolith-scan.md). Each one was checked against a real build of the
+# component; tests/test_pipeline.py keeps synthetic samples of every rule.
+#
+# Per component:
+#   name, group      what a finding is reported as (must match the component's
+#                    notices_names in components.yaml; a test checks this)
+#   purl             template; {version} is filled in when known
+#   strings          version strings in executables and libraries (ELF, PE, Mach-O).
+#                    contains: literal bytes checked first (fast)
+#                    regex: Python regex over bytes; group v is the version
+#                    requires_any: other literals, one of which must also occur
+#                    name: report under this name instead
+#   symbols          ELF only: function names that must be *defined* in the file
+#                    (imports don't count). Presence without a version.
+#   probes           ELF x86-64 / AArch64: read the constant a version function
+#                    returns. decode: brotli_hex | webp_hex | lzma_number
+#   markers          byte sequences that only the component's own code contains
+#                    (static tables). Presence without a version; finds statically
+#                    linked, stripped copies.
+#   paths            files inside a tree or archive (jar, war, zip, tar): regex on the
+#                    path; version from: pom (pom.properties), manifest, package_json,
+#                    or the regex's group v. confidence 0-1.
+#
+# Confidence guide: 0.9 package metadata or exact version string; 0.8 version
+# probe; 0.7 defined symbols; 0.6 class or marker presence; 0.5 file name only.
+
+version: 1
+
+components:
+  openssl:
+    name: openssl
+    purl: pkg:generic/openssl@{version}
+    strings:
+      # Programs built against OpenSSL keep its header version string too (PHP
+      # prints it in phpinfo), so require text only libcrypto itself contains.
+      - contains: "OpenSSL "
+        regex: 'OpenSSL (?P<v>\d+\.\d+\.\d+[a-z]{0,2})(?:-fips)? +\d{1,2} [A-Z][a-z]{2} \d{4}'
+        requires_any: ["OPENSSLDIR:"]
+
+  openssh:
+    name: openssh
+    purl: pkg:generic/openssh@{version}
+    strings:
+      # Other SSH implementations quote OpenSSH banners in bug-compatibility
+      # tables, so a config-file name OpenSSH itself uses must also be present.
+      - contains: "OpenSSH_"
+        regex: 'OpenSSH_(?P<v>\d+\.\d+(?:p\d+)?)'
+        requires_any: ["sshd_config", "ssh_config", "ssh-keysign"]
+
+  curl:
+    name: curl
+    purl: pkg:generic/curl@{version}
+    strings:
+      - contains: "libcurl/"
+        regex: '(?<![\w.-])libcurl/(?P<v>\d+\.\d+\.\d+)'
+      - contains: "curl/"
+        regex: '(?<![\w./-])curl/(?P<v>\d+\.\d+\.\d+)'
+        requires_any: ["curl_easy_"]
+
+  glibc:
+    name: glibc
+    purl: pkg:generic/glibc@{version}
+    strings:
+      - contains: "GNU C Library"
+        regex: 'GNU C Library [^\n\x00]{0,80}?release version (?P<v>\d+\.\d+(?:\.\d+)?)'
+
+  php:
+    name: php
+    purl: pkg:generic/php@{version}
+    strings:
+      - contains: "X-Powered-By: PHP/"
+        regex: 'X-Powered-By: PHP/(?P<v>\d+\.\d+\.\d+)'
+
+  xz:
+    name: liblzma
+    purl: pkg:generic/xz@{version}
+    strings:
+      - contains: "(XZ Utils)"
+        regex: 'xz \(XZ Utils\) (?P<v>\d+\.\d+\.\d+)'
+        name: XZ Utils
+    symbols: [lzma_code, lzma_stream_decoder]
+    probes:
+      - {symbol: lzma_version_number, decode: lzma_number}
+
+  brotli:
+    name: brotli
+    purl: pkg:generic/brotli@{version}
+    symbols: [BrotliDecoderDecompressStream]
+    probes:
+      - {symbol: BrotliDecoderVersion, decode: brotli_hex}
+      - {symbol: BrotliEncoderVersion, decode: brotli_hex}
+    markers:
+      # Start of the built-in dictionary (RFC 7932 appendix A). Ports to other
+      # languages (Go, Rust, Java) carry it too, so this alone doesn't prove the
+      # C library; the note says so.
+      - bytes: "timedownlifeleftbackcodedatashowonlysitecityopenjustlikefreeworktextyear"
+        note: "Brotli built-in dictionary found; could be the C library or a port"
+
+  libwebp:
+    name: libwebp
+    purl: pkg:generic/libwebp@{version}
+    symbols: [WebPDecode, WebPGetInfo]
+    probes:
+      - {symbol: WebPGetDecoderVersion, decode: webp_hex}
+
+  log4j-core:
+    group: org.apache.logging.log4j
+    name: log4j-core
+    purl: pkg:maven/org.apache.logging.log4j/log4j-core@{version}
+    paths:
+      - {regex: '(?:^|/)META-INF/maven/org\.apache\.logging\.log4j/log4j-core/pom\.properties$', version: pom, confidence: 0.9}
+      - {regex: '(?:^|/)org/apache/logging/log4j/core/lookup/JndiLookup\.class$', confidence: 0.6,
+         note: "JndiLookup class present (possibly a shaded copy)"}
+      - {regex: '(?:^|/)log4j-core-(?P<v>2\.\d+(?:\.\d+)*(?:-rc\d+)?)\.jar$', confidence: 0.5}
+
+  log4j-1:
+    group: log4j
+    name: log4j
+    purl: pkg:maven/log4j/log4j@{version}
+    paths:
+      - {regex: '(?:^|/)META-INF/maven/log4j/log4j/pom\.properties$', version: pom, confidence: 0.9}
+      # The log4j-1.2-api bridge also has org/apache/log4j/*, but not the socket classes.
+      - {regex: '(?:^|/)org/apache/log4j/net/SocketNode\.class$', confidence: 0.6,
+         note: "Log4j 1.x SocketNode class present (log4j 1.x or its reload4j fork)"}
+      - {regex: '(?:^|/)log4j-(?P<v>1\.\d+(?:\.\d+)*)\.jar$', confidence: 0.5}
+
+  commons-text:
+    group: org.apache.commons
+    name: commons-text
+    purl: pkg:maven/org.apache.commons/commons-text@{version}
+    paths:
+      - {regex: '(?:^|/)META-INF/maven/org\.apache\.commons/commons-text/pom\.properties$', version: pom, confidence: 0.9}
+      - {regex: '(?:^|/)org/apache/commons/text/StringSubstitutor\.class$', confidence: 0.6}
+      - {regex: '(?:^|/)commons-text-(?P<v>\d+\.\d+(?:\.\d+)*)\.jar$', confidence: 0.5}
+
+  spring-framework:
+    group: org.springframework
+    name: spring-beans
+    purl: pkg:maven/org.springframework/spring-beans@{version}
+    paths:
+      # Spring jars are built with Gradle: no pom.properties, but a manifest.
+      - {regex: '(?:^|/)META-INF/MANIFEST\.MF$', version: manifest, confidence: 0.9,
+         manifest_title: '^spring-beans$'}
+      - {regex: '(?:^|/)org/springframework/beans/BeanWrapperImpl\.class$', confidence: 0.6}
+      - {regex: '(?:^|/)spring-beans-(?P<v>\d+\.\d+\.\d+(?:\.RELEASE)?)\.jar$', confidence: 0.5}
+
+  react-server-components:
+    name: react-server-dom-webpack
+    purl: pkg:npm/react-server-dom-webpack@{version}
+    paths:
+      - {regex: '(?:^|/)node_modules/(?P<name>react-server-dom-(?:webpack|turbopack|parcel|esm))/package\.json$',
+         version: package_json, confidence: 0.9}
+      # Next.js vendors its own copy
+      - {regex: '(?:^|/)next/dist/compiled/(?P<name>react-server-dom-(?:webpack|turbopack))(?:-experimental)?/package\.json$',
+         version: package_json, confidence: 0.9}

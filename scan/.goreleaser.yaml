@@ -1,0 +1,73 @@
+# GoReleaser configuration for xenolith-scan (run from the scan/ directory; the
+# release workflow tags as scan/vX.Y.Z). Every binary is signed with Sigstore cosign
+# (keyless) and ships with a checksums file and its own SBOM; SLSA provenance is
+# attached by the workflow.
+version: 2
+project_name: xenolith-scan
+
+before:
+  hooks:
+    - make sync
+    - go mod tidy
+
+builds:
+  - id: xenolith-scan
+    main: ./cmd/xenolith-scan
+    binary: xenolith-scan
+    env: [CGO_ENABLED=0]
+    flags: [-trimpath]
+    ldflags: ["-s -w -X main.Version={{ .Version }}"]
+    goos: [linux, darwin, windows]
+    goarch: [amd64, arm64, arm, riscv64, ppc64le, s390x]
+    goarm: ["7"]
+    ignore:
+      - { goos: darwin, goarch: arm }
+      - { goos: darwin, goarch: riscv64 }
+      - { goos: darwin, goarch: ppc64le }
+      - { goos: darwin, goarch: s390x }
+      - { goos: windows, goarch: arm }
+      - { goos: windows, goarch: riscv64 }
+      - { goos: windows, goarch: ppc64le }
+      - { goos: windows, goarch: s390x }
+
+archives:
+  - id: default
+    formats: [tar.gz]
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+    files: [README.md]
+
+checksum:
+  name_template: checksums.txt
+  algorithm: sha256
+
+sboms:
+  - artifacts: archive
+    documents: ["{{ .ArtifactName }}.cdx.json"]
+    cmd: syft
+    args: ["$artifact", "--output", "cyclonedx-json=$document"]
+
+signs:
+  - cmd: cosign
+    certificate: "${artifact}.pem"
+    args: ["sign-blob", "--yes", "--output-certificate=${certificate}", "--output-signature=${signature}", "${artifact}"]
+    artifacts: checksum
+    output: true
+
+release:
+  github:
+    owner: benheise
+    name: Xenolith
+  name_template: "xenolith-scan {{ .Version }}"
+  header: |
+    `xenolith-scan` finds the third-party components inside a commercial product's installer,
+    firmware image, archive, disk image or container image, and writes a submission for Xenolith.
+    Verify a download: `cosign verify-blob --certificate checksums.txt.pem --signature checksums.txt.sig checksums.txt`
+    then compare the file's sha256 against checksums.txt.
+
+changelog:
+  use: github
+  filters:
+    include: ["^scan"]

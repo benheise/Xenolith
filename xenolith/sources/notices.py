@@ -45,6 +45,7 @@ import yaml
 from .. import fetch
 from ..catalog import Catalog, normalize_name
 from ..model import make_assertion, slug
+from .community_sbom import STATEMENT_CONFIDENCE
 
 SOURCE_ID = "notices"
 MAX_BYTES = 60 * 1024 * 1024
@@ -1127,6 +1128,10 @@ def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
         stats["components"] += len(inv.get("components", []))
         hits: dict[str, list[dict]] = {}
         for c in inv.get("components", []):
+            # Scanner findings carry a confidence; below the line they stay searchable
+            # in the inventory but don't become statements (design/xenolith-scan.md).
+            if c.get("confidence") is not None and float(c["confidence"]) < STATEMENT_CONFIDENCE:
+                continue
             cid = catalog.match_component(c["name"], c.get("version", ""))
             if cid:
                 hits.setdefault(cid, []).append(c)

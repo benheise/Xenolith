@@ -1,0 +1,93 @@
+name: xenolith-scan
+description: >
+  Scan a release artifact for the third-party components it ships and (optionally) open a
+  pull request that adds the component list to Xenolith, the open census of components in
+  commercial products. Static analysis only; nothing from the artifact is executed.
+author: Xenolith contributors
+branding:
+  icon: layers
+  color: gray-dark
+
+inputs:
+  artifact:
+    description: Path to the file, directory or image reference to scan (one per run)
+    required: true
+  supplier:
+    description: Vendor name as it should appear in Xenolith
+    required: true
+  product:
+    description: Product name
+    required: true
+  version:
+    description: Product version of this artifact
+    required: true
+  type:
+    description: application, firmware, operating-system, container, device or platform
+    required: false
+    default: application
+  source-url:
+    description: Public download link for the artifact, if there is one
+    required: false
+    default: ""
+  submit:
+    description: "Open the pull request against benheise/Xenolith (needs a token with public repo access in GH_TOKEN). Set to 'true' only once your organization has approved publishing the list."
+    required: false
+    default: "false"
+  helpers:
+    description: auto or none (optional unpackers 7z, innoextract, unblob when installed on the runner)
+    required: false
+    default: auto
+  ref:
+    description: Git ref of benheise/Xenolith to build the scanner from (a tag like scan/v0.1.0, or main)
+    required: false
+    default: main
+
+outputs:
+  submission:
+    description: Path to submission.cdx.json
+    value: ${{ steps.scan.outputs.submission }}
+  report:
+    description: Path to the local report (report.html)
+    value: ${{ steps.scan.outputs.report }}
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-go@v5
+      with:
+        go-version: stable
+        cache: false
+
+    - name: Install xenolith-scan
+      shell: bash
+      run: go install github.com/benheise/Xenolith/scan/cmd/xenolith-scan@${{ inputs.ref }}
+
+    - name: Scan
+      id: scan
+      shell: bash
+      run: |
+        out="${RUNNER_TEMP}/xenolith-out"
+        "$(go env GOPATH)/bin/xenolith-scan" scan "${{ inputs.artifact }}" \
+          --supplier "${{ inputs.supplier }}" --product "${{ inputs.product }}" --version "${{ inputs.version }}" \
+          --type "${{ inputs.type }}" --helpers "${{ inputs.helpers }}" --yes --attest --out "$out" \
+          ${{ inputs.source-url != '' && format('--source-url "{0}"', inputs.source-url) || '' }}
+        echo "submission=$out/submission.cdx.json" >> "$GITHUB_OUTPUT"
+        echo "report=$out/report.html" >> "$GITHUB_OUTPUT"
+        echo "out=$out" >> "$GITHUB_OUTPUT"
+
+    - name: Upload the local report as a workflow artifact (stays in your repository)
+      uses: actions/upload-artifact@v4
+      with:
+        name: xenolith-scan-${{ inputs.product }}-${{ inputs.version }}
+        path: |
+          ${{ steps.scan.outputs.out }}/report.html
+          ${{ steps.scan.outputs.out }}/not-inspected.txt
+          ${{ steps.scan.outputs.out }}/submission.cdx.json
+        if-no-files-found: error
+
+    - name: Submit to Xenolith
+      if: inputs.submit == 'true'
+      shell: bash
+      env:
+        GH_TOKEN: ${{ env.GH_TOKEN }}
+      run: "$(go env GOPATH)/bin/xenolith-scan" submit "${{ steps.scan.outputs.out }}" --attest

@@ -1,0 +1,30 @@
+# Evaluation corpus for xenolith-scan: freely downloadable artifacts whose maker states
+# what they bundle, so recall can be measured. Keep URLs and hashes here, never binaries.
+#
+#   xenolith-scan eval scan/corpus/manifest.yaml
+#
+# inventory: a Xenolith-style inventory JSON ({"components": [{"name", "version"}]}).
+# The ones under scan/corpus/truth/ transcribe the maker's own statement (release notes,
+# build notes); for products Xenolith already tracks, point at data/notices/<supplier>/*.json.
+artifacts:
+  - artifact: https://files.pythonhosted.org/packages/cp312/B/Brotli/Brotli-1.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: d0c5516f0aed654134a2fc936325cc2e642f8a0e096d075209672eb321cff408
+    supplier: Google
+    product: Brotli (Python package)
+    version: "1.1.0"
+    inventory: scan/corpus/truth/brotli-1.1.0.json
+    note: "The wheel statically links the Brotli C library; the version comes from the BrotliDecoderVersion() probe (no version string in the binary)."
+  - artifact: https://files.pythonhosted.org/packages/cp39/c/cryptography/cryptography-43.0.3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: 0f996e7268af62598f2fc1204afa98a3b5712313a55c4c9d434aef49cadc91d4
+    supplier: PyCA
+    product: cryptography (Python package)
+    version: "43.0.3"
+    inventory: scan/corpus/truth/cryptography-43.0.3.json
+    note: "The 43.0.3 changelog says the wheels were compiled with OpenSSL 3.3.2; the scanner reads it from the version string."
+  - artifact: https://files.pythonhosted.org/packages/cp312/l/lxml/lxml-5.3.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: c24037349665434f375645fa9d1f5304800cec574d0310f618490c871fd902b3
+    supplier: lxml
+    product: lxml (Python package)
+    version: "5.3.0"
+    inventory: scan/corpus/truth/lxml-5.3.0.json
+    note: "Statically links libxml2 and libxslt (lxml's release notes name the versions). Neither is on the watchlist and Syft has no classifier for them: a known gap, kept here so the gap is measured."

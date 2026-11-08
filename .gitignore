@@ -4,3 +4,9 @@ __pycache__/
 /src/
 /tmp/
 .DS_Store
+# xenolith-scan build and scan outputs
+/scan/xenolith-scan
+/scan/xenolith-scan.exe
+/scan/dist/
+xenolith-out/
+xenolith-eval/

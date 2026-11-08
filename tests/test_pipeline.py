@@ -420,6 +420,36 @@ class CommunitySbomTest(unittest.TestCase):
         self.assertTrue(any("attestation" in e for e in errors))
         self.assertTrue(any("metadata.component.version" in e for e in errors))
 
+    def test_low_confidence_findings_stay_out_of_statements(self):
+        """xenolith-scan marks each finding with a confidence; below 0.7 it stays in the inventory only."""
+        cat = catalog.load()
+        bom = json.loads(self.EXAMPLE.read_text())
+        bom["components"] = [
+            {"type": "library", "name": "openssl", "version": "3.0.13", "purl": "pkg:generic/openssl@3.0.13",
+             "evidence": {"identity": [{"field": "purl", "confidence": 0.9, "methods": [{"technique": "binary-analysis", "confidence": 0.9}]}]},
+             "properties": [{"name": "xenolith:found_by", "value": "xenolith-fingerprint"}]},
+            {"type": "library", "name": "log4j-core", "group": "org.apache.logging.log4j", "version": "2.14.1",
+             "evidence": {"identity": [{"field": "purl", "confidence": 0.5, "methods": [{"technique": "filename", "confidence": 0.5}]}]},
+             "properties": [{"name": "xenolith:confidence", "value": "0.50"}]},
+            {"type": "library", "name": "brotli", "version": "1.0.9",
+             "properties": [{"name": "xenolith:confidence", "value": "0.6"}]},
+        ]
+        with tempfile.TemporaryDirectory() as d:
+            repo = Path(d)
+            target = repo / "community" / "sboms" / "example-networks" / "gateway.cdx.json"
+            target.parent.mkdir(parents=True)
+            target.write_text(json.dumps(bom))
+            invs, errors = community_sbom.load_all(repo)
+            self.assertEqual(errors, [])
+            comps = {c["name"]: c for c in invs[0]["components"]}
+            self.assertEqual(comps["openssl"]["confidence"], 0.9)
+            self.assertEqual(comps["openssl"]["found_by"], "xenolith-fingerprint")
+            self.assertEqual(comps["org.apache.logging.log4j:log4j-core"]["confidence"], 0.5)
+            self.assertEqual(comps["brotli"]["confidence"], 0.6)
+            community_sbom.write_inventories(invs, repo / "data")
+            rows, _ = notices.assertions(cat, repo / "data")
+        self.assertEqual({a["component"] for a in rows}, {"openssl"})   # low-confidence findings make no statement
+
 
 from xenolith import prepare  # noqa: E402
 
@@ -648,7 +678,7 @@ class FingerprintTest(unittest.TestCase):
                                   artifact_sha256="a" * 64, attest=True)
             inv, errors = community_sbom.check(out, "community/sboms/acme/gateway--1-0.cdx.json")
         self.assertEqual(errors, [])
-        self.assertEqual(inv["components"], [{"name": "openssl", "version": "3.0.13"}])
+        self.assertEqual(inv["components"], [{"name": "openssl", "version": "3.0.13", "confidence": 0.9, "found_by": "xenolith-fingerprint"}])
         self.assertNotIn("occurrences", json.dumps(out))                       # paths stay local
 
 

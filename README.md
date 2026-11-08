@@ -31,7 +31,7 @@ The exact field lists, examples and the commands to check your change locally ar
 
 **Don't submit** anything confidential, anything you aren't permitted to share, or statements you can't link to. If you work for a vendor, the best contribution of all is publishing your product's SBOM or notices at a stable public URL and adding that URL.
 
-**Generating an SBOM for a product nobody has documented?** `python -m xenolith fingerprint <folder or archive> -o scan.cdx.json` finds the watchlist components in extracted firmware, an install folder or a jar/war/tgz, including statically linked and shaded copies, entirely offline. `python -m xenolith prepare scan.cdx.json --supplier … --product … --version … --artifact <file> --attest` then adds the required fields, hashes the artifact, strips local paths and validates the result ([how](CONTRIBUTING.md#3-submit-an-sbom)). It also accepts Syft, cve-bin-tool or blint output. [design/xenolith-scan.md](design/xenolith-scan.md) is the plan for a single cross-platform scanner that does the whole job in one step.
+**Generating an SBOM for a product nobody has documented?** [`xenolith-scan`](scan/README.md) does it in one command, offline: `xenolith-scan scan acme-fw-7.2.9.bin` unpacks the installer, firmware image, archive, disk image or container image (nothing is executed or mounted), runs Syft's catalogers, the Xenolith fingerprint pack (statically linked and shaded copies of the watchlist components) and the notices files found inside the product, confirms the product identity against this registry, and writes a submission that passes the intake check plus a local report of where everything was found and what it couldn't open. `review` keeps or drops low-confidence findings, `submit --attest` opens the pull request, `diff` compares two releases, and a [GitHub Action](scan/action/README.md) lets vendors publish every release. The Python pieces remain: `python -m xenolith fingerprint` (the reference implementation of the pack) and `python -m xenolith prepare` (turns any scanner's CycloneDX or SPDX output into a submission; [how](CONTRIBUTING.md#3-submit-an-sbom)).
 
 ## How it works
 
@@ -102,6 +102,7 @@ Incident trackers are ingested from local clones: `git clone --depth 1 https://g
 | Path | What |
 |---|---|
 | `catalog/` | Component watchlist with affected ranges, fingerprints, wanted list, data source registry, CSAF provider list, notices document list, identity aliases, extra TLS intermediates |
+| `scan/` | `xenolith-scan`, the Go scanner (its own module; `make -C scan build`), its evaluation corpus and the vendor GitHub Action |
 | `community/` | Contributions: `assertions.csv`, `sboms/` and `examples/` |
 | `data/assertions/` | Normalized statements per source (NDJSON). The open data dump |
 | `data/notices/`, `data/community_sboms/` | Full component inventories, one JSON file per document or SBOM |
@@ -123,7 +124,8 @@ Incident trackers are ingested from local clones: `git clone --depth 1 https://g
 - [x] Product identity: name canonicalization, alias table and automatic CPE linking
 - [x] CycloneDX 1.6 export of any product's inventory; CycloneDX SBOM submissions
 - [x] `xenolith prepare`: turns any scanner's CycloneDX or SPDX output into a validated, path-stripped submission
-- [ ] `xenolith-scan`: one cross-platform, offline binary that unpacks an installer, firmware image or container and produces a submission ([design](design/xenolith-scan.md))
+- [x] `xenolith-scan`: one cross-platform, offline Go binary ([scan/](scan/README.md), [design](design/xenolith-scan.md)): recursive unpacking (zip, tar, gz/bz2/xz/zstd, 7z, deb, rpm, cpio, squashfs, ISO, ext4, disk images, AppImage, asar; MSI/NSIS/Inno/DMG/VMDK via 7-Zip and innoextract, firmware via unblob), Syft embedded, the fingerprint pack, notices files inside products, product identity against the registry, `review`, `submit`, `diff`, `eval`, a vendor GitHub Action and signed releases
+- [ ] `xenolith-scan` next: run helpers from the "full" container image when Docker is available; optional blint deep mode; read-only collection from a running appliance; a larger evaluation corpus with vendor-published ground truth
 - [x] `catalog/fingerprints.yaml` and `python -m xenolith fingerprint`: version strings, defined symbols, version-function constants, static data and archive metadata for every watchlist component
 - [ ] Transparency Exchange API (TEA) client to collect vendor SBOMs as vendors publish them
 - [ ] More notices sources (Oracle licensing manuals, Splunk credits and JetBrains need custom handling)

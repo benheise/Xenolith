@@ -1,0 +1,72 @@
+name: Release xenolith-scan
+
+on:
+  push:
+    tags: ["scan/v*"]
+
+permissions:
+  contents: write
+  id-token: write   # Sigstore keyless signing and SLSA provenance
+  attestations: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    outputs:
+      hashes: ${{ steps.hash.outputs.hashes }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: scan/go.mod
+          cache-dependency-path: scan/go.sum
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: sigstore/cosign-installer@v3
+
+      - uses: anchore/sbom-action/download-syft@v0
+
+      - name: Tests
+        working-directory: scan
+        run: |
+          cmp ../catalog/fingerprints.yaml internal/fingerprint/pack.yaml
+          go test ./...
+
+      - name: GoReleaser
+        uses: goreleaser/goreleaser-action@v6
+        with:
+          version: "~> v2"
+          workdir: scan
+          args: release --clean
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GORELEASER_CURRENT_TAG: ${{ github.ref_name }}
+
+      - name: Build provenance attestation (GitHub)
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: |
+            scan/dist/*.tar.gz
+            scan/dist/*.zip
+
+      - name: Collect hashes for SLSA
+        id: hash
+        working-directory: scan/dist
+        run: echo "hashes=$(sha256sum *.tar.gz *.zip | base64 -w0)" >> "$GITHUB_OUTPUT"
+
+  provenance:
+    needs: [release]
+    permissions:
+      actions: read
+      id-token: write
+      contents: write
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v2.0.0
+    with:
+      base64-subjects: ${{ needs.release.outputs.hashes }}
+      upload-assets: true

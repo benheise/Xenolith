@@ -1,0 +1,91 @@
+name: xenolith-scan tests
+
+on:
+  pull_request:
+    paths: ["scan/**", "catalog/fingerprints.yaml", ".github/workflows/scan-ci.yml"]
+  push:
+    branches: [main]
+    paths: ["scan/**", "catalog/fingerprints.yaml", ".github/workflows/scan-ci.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: scan/go.mod
+          cache-dependency-path: scan/go.sum
+
+      - name: Embedded fingerprint pack matches the catalog
+        shell: bash
+        run: cmp catalog/fingerprints.yaml scan/internal/fingerprint/pack.yaml
+
+      - name: Vet
+        working-directory: scan
+        run: go vet ./...
+
+      - name: Unit tests
+        working-directory: scan
+        run: go test ./...
+
+      - name: Build
+        working-directory: scan
+        run: go build -trimpath -o xenolith-scan${{ runner.os == 'Windows' && '.exe' || '' }} ./cmd/xenolith-scan
+
+      - name: Smoke scan (synthetic artifact)
+        shell: bash
+        working-directory: scan
+        run: |
+          python3 - <<'PY'
+          import io, tarfile, zipfile
+          def elf(p): return b"\x7fELF\x02\x01\x01" + b"\x00"*9 + p
+          jar = io.BytesIO()
+          with zipfile.ZipFile(jar, "w") as z:
+              z.writestr("META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties", "version=2.14.1\n")
+          files = {"usr/lib/libcrypto.so.3": elf(b"OpenSSL 3.0.13 30 Jan 2024\x00OPENSSLDIR: \"/x\"\x00"),
+                   "opt/app/lib/log4j-core-2.14.1.jar": jar.getvalue(),
+                   "var/lib/dpkg/status": b"Package: zlib1g\nStatus: install ok installed\nArchitecture: amd64\nVersion: 1:1.2.13.dfsg-1\n\n"}
+          with tarfile.open("smoke.tar.gz", "w:gz") as t:
+              for n, d in files.items():
+                  ti = tarfile.TarInfo(n); ti.size = len(d); t.addfile(ti, io.BytesIO(d))
+          PY
+          ./xenolith-scan* scan smoke.tar.gz --supplier Acme --product Smoke --version 1.0 --yes --attest --out smoke-out
+          python3 -c "
+          import json; s = json.load(open('smoke-out/submission.cdx.json'))
+          names = {(c['name'], c.get('version')) for c in s['components']}
+          assert ('openssl', '3.0.13') in names and ('log4j-core', '2.14.1') in names and ('zlib1g', '1:1.2.13.dfsg-1') in names, names
+          print('smoke ok:', sorted(names))"
+
+  submission-validates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: scan/go.mod
+          cache-dependency-path: scan/go.sum
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Build and scan
+        working-directory: scan
+        run: |
+          go build -o xenolith-scan ./cmd/xenolith-scan
+          mkdir -p smoke/opt && printf 'THIRD-PARTY SOFTWARE NOTICES\n\n- zlib 1.2.13\n- OpenSSL 3.0.13\n- libxml2 2.11.5\n' > smoke/opt/THIRD-PARTY-NOTICES.txt
+          tar czf smoke.tgz smoke
+          ./xenolith-scan scan smoke.tgz --supplier Acme --product Smoke --version 1.0 --yes --attest --out smoke-out
+      - name: The submission passes Xenolith's intake check
+        run: |
+          mkdir -p community/sboms/acme
+          cp scan/smoke-out/submission.cdx.json community/sboms/acme/smoke--1-0.cdx.json
+          python -m xenolith community --check

@@ -40,6 +40,28 @@ def _props(meta: dict) -> dict[str, str]:
     return out
 
 
+STATEMENT_CONFIDENCE = 0.7   # scanner findings below this stay in the inventory but make no statement
+
+
+def _confidence(c: dict) -> float | None:
+    """Scanner confidence from CycloneDX evidence.identity[].confidence or the xenolith:confidence property."""
+    best = None
+    for ident in ((c.get("evidence") or {}).get("identity") or []):
+        try:
+            v = float(ident.get("confidence"))
+        except (TypeError, ValueError, AttributeError):
+            continue
+        best = v if best is None else max(best, v)
+    if best is None:
+        for p in c.get("properties") or []:
+            if isinstance(p, dict) and p.get("name") == "xenolith:confidence":
+                try:
+                    best = float(p.get("value"))
+                except (TypeError, ValueError):
+                    pass
+    return best
+
+
 def _walk(components: list) -> list[dict]:
     out, stack = [], list(components or [])
     while stack:
@@ -47,7 +69,18 @@ def _walk(components: list) -> list[dict]:
         if isinstance(c, dict):
             if c.get("name"):
                 name = f"{c['group']}:{c['name']}" if c.get("group") else str(c["name"])
-                out.append({"name": name, "version": str(c.get("version") or "")})
+                entry = {"name": name, "version": str(c.get("version") or "")}
+                conf = _confidence(c)
+                if conf is not None:
+                    entry["confidence"] = round(conf, 2)
+                found_by = next((p.get("value") for p in c.get("properties") or []
+                                 if isinstance(p, dict) and p.get("name") == "xenolith:found_by"), None)
+                if found_by:
+                    entry["found_by"] = str(found_by)[:200]
+            else:
+                entry = None
+            if entry:
+                out.append(entry)
             stack.extend(c.get("components") or [])
     seen, uniq = set(), []
     for c in out:

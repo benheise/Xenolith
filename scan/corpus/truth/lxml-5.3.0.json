@@ -1,0 +1,2 @@
+{"supplier": "lxml", "product": "lxml (Python package)", "version": "5.3.0", "source": "https://lxml.de/5.3/changes-5.3.0.html",
+ "components": [{"name": "libxml2", "version": "2.12.9"}, {"name": "libxslt", "version": "1.1.42"}]}
