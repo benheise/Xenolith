@@ -3,6 +3,12 @@ name: Release xenolith-scan
 on:
   push:
     tags: ["scan/v*"]
+  workflow_dispatch:
+    inputs:
+      snapshot:
+        description: "Snapshot build: run GoReleaser without publishing or signing (checks the release pipeline)"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -38,7 +44,27 @@ jobs:
           cmp ../catalog/fingerprints.yaml internal/fingerprint/pack.yaml
           go test ./...
 
+      - name: GoReleaser (snapshot)
+        if: github.event_name == 'workflow_dispatch'
+        uses: goreleaser/goreleaser-action@v6
+        with:
+          version: "~> v2"
+          workdir: scan
+          args: release --snapshot --clean --skip=publish,sign
+
+      - name: Snapshot artifacts
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: xenolith-scan-snapshot
+          path: |
+            scan/dist/*.tar.gz
+            scan/dist/*.zip
+            scan/dist/checksums.txt
+            scan/dist/*.cdx.json
+
       - name: GoReleaser
+        if: github.event_name == 'push'
         uses: goreleaser/goreleaser-action@v6
         with:
           version: "~> v2"
@@ -49,6 +75,7 @@ jobs:
           GORELEASER_CURRENT_TAG: ${{ github.ref_name }}
 
       - name: Build provenance attestation (GitHub)
+        if: github.event_name == 'push'
         uses: actions/attest-build-provenance@v1
         with:
           subject-path: |
@@ -57,10 +84,12 @@ jobs:
 
       - name: Collect hashes for SLSA
         id: hash
+        if: github.event_name == 'push'
         working-directory: scan/dist
         run: echo "hashes=$(sha256sum *.tar.gz *.zip | base64 -w0)" >> "$GITHUB_OUTPUT"
 
   provenance:
+    if: github.event_name == 'push'
     needs: [release]
     permissions:
       actions: read
