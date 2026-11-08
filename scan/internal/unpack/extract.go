@@ -11,7 +11,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/fs"
 	"os"
 	"path"
 	"path/filepath"
@@ -661,41 +660,63 @@ func (r *Result) extractSquashfs(p string, offset int64, dir, location string, d
 	if err != nil {
 		return 0, err
 	}
+	// Walk one path element at a time. The library cleans names with filepath.Clean,
+	// so on Windows "usr/sbin" becomes "usr\sbin" and fs.WalkDir/Open find nothing;
+	// single names have no separator to rewrite.
 	n := 0
 	var limitErr error
-	walkErr := fs.WalkDir(rd, ".", func(name string, d fs.DirEntry, err error) error {
+	var walk func(d squashfs.FS, prefix string, level int)
+	walk = func(d squashfs.FS, prefix string, level int) {
+		if level > 256 || limitErr != nil {
+			return
+		}
+		entries, err := d.ReadDir(".")
 		if err != nil {
-			r.skip(location+"!/"+name, err.Error())
-			return nil
+			r.skip(location+"!/"+prefix, err.Error())
+			return
 		}
-		if limitErr != nil {
-			return fs.SkipAll
+		for _, e := range entries {
+			if limitErr != nil {
+				return
+			}
+			name := e.Name()
+			if name == "" || name == "." || name == ".." || strings.Contains(name, "/") {
+				continue
+			}
+			full := path.Join(prefix, name)
+			fh, err := d.OpenFile(name)
+			if err != nil {
+				r.skip(location+"!/"+full, err.Error())
+				continue
+			}
+			switch {
+			case fh.IsDir():
+				sub, err := fh.FS()
+				fh.Close()
+				if err != nil {
+					r.skip(location+"!/"+full, err.Error())
+					continue
+				}
+				walk(sub, full, level+1)
+			case fh.IsRegular():
+				info, err := fh.Stat()
+				if err != nil {
+					fh.Close()
+					continue
+				}
+				ok, werr := r.writeMember(dir, location, full, info.Size(), depth, fh)
+				fh.Close()
+				if ok {
+					n++
+				}
+				if errors.Is(werr, errLimit) {
+					limitErr = werr
+				}
+			default:
+				fh.Close()
+			}
 		}
-		if !d.Type().IsRegular() {
-			return nil
-		}
-		info, err := d.Info()
-		if err != nil {
-			return nil
-		}
-		fh, err := rd.Open(name)
-		if err != nil {
-			r.skip(location+"!/"+name, err.Error())
-			return nil
-		}
-		ok, werr := r.writeMember(dir, location, name, info.Size(), depth, fh)
-		fh.Close()
-		if ok {
-			n++
-		}
-		if errors.Is(werr, errLimit) {
-			limitErr = werr
-			return fs.SkipAll
-		}
-		return nil
-	})
-	if limitErr != nil {
-		return n, limitErr
 	}
-	return n, walkErr
+	walk(rd.FS, "", 0)
+	return n, limitErr
 }
