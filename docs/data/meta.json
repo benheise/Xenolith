@@ -1,8 +1,8 @@
 {
- "built": "2026-11-08T19:45:33Z",
+ "built": "2026-11-09T16:51:42Z",
  "counts": {
-  "assertions": 13371,
-  "products_with_data": 7247,
+  "assertions": 13374,
+  "products_with_data": 7250,
   "inventories": 301,
   "inventory_components": 162571,
   "cpe_linked_clusters": 21,
@@ -67,13 +67,13 @@
    ],
    "assertions": 841,
    "products": 754,
-   "contains": 463,
+   "contains": 465,
    "in_range": 3,
    "verdicts": {
-    "fixed": 170,
+    "fixed": 172,
     "workaround": 9,
     "affected": 200,
-    "under_investigation": 79,
+    "under_investigation": 77,
     "not_affected": 201,
     "present": 84,
     "absent": 96,
@@ -126,12 +126,12 @@
      ]
     }
    ],
-   "assertions": 189,
-   "products": 162,
-   "contains": 170,
+   "assertions": 192,
+   "products": 165,
+   "contains": 173,
    "in_range": 38,
    "verdicts": {
-    "fixed": 115,
+    "fixed": 118,
     "present": 40,
     "not_affected": 11,
     "workaround": 15,
@@ -708,7 +708,7 @@
    "license": "EUPL-1.2",
    "notes": "Rows in package-level segments (runtime builds, frameworks and libraries, OS distributions, container images, developer tooling) are excluded. Those are open source packages already indexed by deps.dev, OSV and distro trackers.",
    "assertions": 564,
-   "latest": "2026-11-04",
+   "latest": "2026-11-09",
    "fv": "hand-listed",
    "dp": [
     "https://github.com/NCSC-NL/php2shell"
@@ -749,10 +749,10 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 1038,
-   "latest": "2026-11-07",
+   "assertions": 1041,
+   "latest": "2026-11-09",
    "publishers": {
-    "Red Hat Product Security": 492,
+    "Red Hat Product Security": 495,
     "Siemens ProductCERT": 331,
     "CISA": 72,
     "ABB PSIRT": 46,
