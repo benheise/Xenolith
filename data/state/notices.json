@@ -9,6 +9,16 @@
 "html_table"
 ]
 },
+"https://artifacts.elastic.co/reports/dependencies/dependencies-8.19.25.html": {
+"fetched": "2026-11-10",
+"kind": "html",
+"n": 5168,
+"sha": "57f882c1ad5db46aacaeb2e1da8022bf39109da231c532c76bb2a29b4dd3dab8",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
 "https://artifacts.elastic.co/reports/dependencies/dependencies-9.4.9.html": {
 "fetched": "2026-11-08",
 "kind": "html",
