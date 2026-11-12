@@ -1,8 +1,8 @@
 {
- "built": "2026-11-11T14:42:38Z",
+ "built": "2026-11-12T15:36:00Z",
  "counts": {
-  "assertions": 13433,
-  "products_with_data": 7279,
+  "assertions": 13440,
+  "products_with_data": 7286,
   "inventories": 302,
   "inventory_components": 167739,
   "cpe_linked_clusters": 21,
@@ -65,15 +65,15 @@
      ]
     }
    ],
-   "assertions": 839,
-   "products": 753,
-   "contains": 463,
+   "assertions": 845,
+   "products": 759,
+   "contains": 470,
    "in_range": 3,
    "verdicts": {
-    "fixed": 172,
+    "fixed": 182,
     "workaround": 7,
-    "affected": 200,
-    "under_investigation": 77,
+    "affected": 197,
+    "under_investigation": 76,
     "not_affected": 201,
     "present": 84,
     "absent": 96,
@@ -126,12 +126,12 @@
      ]
     }
    ],
-   "assertions": 249,
-   "products": 222,
-   "contains": 220,
+   "assertions": 250,
+   "products": 223,
+   "contains": 221,
    "in_range": 38,
    "verdicts": {
-    "fixed": 126,
+    "fixed": 127,
     "present": 40,
     "not_affected": 13,
     "workaround": 49,
@@ -708,8 +708,8 @@
    "url": "https://github.com/NCSC-NL/php2shell",
    "license": "EUPL-1.2",
    "notes": "Rows in package-level segments (runtime builds, frameworks and libraries, OS distributions, container images, developer tooling) are excluded. Those are open source packages already indexed by deps.dev, OSV and distro trackers.",
-   "assertions": 564,
-   "latest": "2026-11-09",
+   "assertions": 568,
+   "latest": "2026-11-12",
    "fv": "hand-listed",
    "dp": [
     "https://github.com/NCSC-NL/php2shell"
@@ -750,13 +750,13 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 1096,
-   "latest": "2026-11-11",
+   "assertions": 1099,
+   "latest": "2026-11-12",
    "publishers": {
     "Red Hat Product Security": 496,
     "Siemens ProductCERT": 383,
     "CISA": 72,
-    "ABB PSIRT": 46,
+    "ABB PSIRT": 49,
     "Cisco": 40,
     "Schneider Electric CPCERT": 24,
     "Microsoft Security Response Center": 23,
