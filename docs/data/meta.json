@@ -1,14 +1,14 @@
 {
- "built": "2026-11-12T15:36:00Z",
+ "built": "2026-11-13T14:54:29Z",
  "counts": {
-  "assertions": 13440,
-  "products_with_data": 7286,
+  "assertions": 13546,
+  "products_with_data": 7309,
   "inventories": 302,
   "inventory_components": 167739,
   "cpe_linked_clusters": 21,
   "cpe_linked_entries": 23,
   "spine_products": 15962,
-  "spine_only_shown": 4727,
+  "spine_only_shown": 4723,
   "components": 13,
   "wanted": 86,
   "wanted_fulfilled": 3
@@ -65,18 +65,18 @@
      ]
     }
    ],
-   "assertions": 845,
+   "assertions": 904,
    "products": 759,
-   "contains": 470,
+   "contains": 481,
    "in_range": 3,
    "verdicts": {
-    "fixed": 182,
+    "fixed": 188,
     "workaround": 7,
-    "affected": 197,
+    "affected": 202,
     "under_investigation": 76,
     "not_affected": 201,
     "present": 84,
-    "absent": 96,
+    "absent": 144,
     "runtime_dependent": 2
    }
   },
@@ -126,16 +126,16 @@
      ]
     }
    ],
-   "assertions": 250,
-   "products": 223,
-   "contains": 221,
+   "assertions": 297,
+   "products": 246,
+   "contains": 260,
    "in_range": 38,
    "verdicts": {
-    "fixed": 127,
+    "fixed": 164,
     "present": 40,
     "not_affected": 13,
-    "workaround": 49,
-    "absent": 16,
+    "workaround": 51,
+    "absent": 24,
     "affected": 5
    }
   },
@@ -750,16 +750,16 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 1099,
+   "assertions": 1205,
    "latest": "2026-11-12",
    "publishers": {
     "Red Hat Product Security": 496,
     "Siemens ProductCERT": 383,
-    "CISA": 72,
+    "CISA": 154,
     "ABB PSIRT": 49,
+    "Microsoft Security Response Center": 47,
     "Cisco": 40,
     "Schneider Electric CPCERT": 24,
-    "Microsoft Security Response Center": 23,
     "SICK PSIRT": 10,
     "Open-Xchange GmbH": 1,
     "Intevation GmbH": 1
