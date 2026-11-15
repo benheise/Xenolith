@@ -93,6 +93,16 @@
 ]
 },
 {
+"key": "ibm/power-hardware-management-console",
+"keys": [
+"ibm/hardware-management-console",
+"ibm/power-hardware-management-console"
+],
+"cpes": [
+"ibm:power_hardware_management_console"
+]
+},
+{
 "key": "ibm/sterling-b2b-integrator",
 "keys": [
 "ibm/sterling-b2b-integrator",
