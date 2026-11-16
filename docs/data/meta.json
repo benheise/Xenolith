@@ -1,8 +1,8 @@
 {
- "built": "2026-11-15T14:19:22Z",
+ "built": "2026-11-16T16:26:20Z",
  "counts": {
-  "assertions": 13547,
-  "products_with_data": 7309,
+  "assertions": 13549,
+  "products_with_data": 7311,
   "inventories": 302,
   "inventory_components": 167739,
   "cpe_linked_clusters": 22,
@@ -65,14 +65,14 @@
      ]
     }
    ],
-   "assertions": 904,
-   "products": 759,
-   "contains": 481,
+   "assertions": 906,
+   "products": 761,
+   "contains": 483,
    "in_range": 3,
    "verdicts": {
     "fixed": 188,
     "workaround": 7,
-    "affected": 202,
+    "affected": 204,
     "under_investigation": 76,
     "not_affected": 201,
     "present": 84,
@@ -751,11 +751,11 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 1206,
-   "latest": "2026-11-13",
+   "assertions": 1208,
+   "latest": "2026-11-16",
    "publishers": {
     "Red Hat Product Security": 496,
-    "Siemens ProductCERT": 383,
+    "Siemens ProductCERT": 385,
     "CISA": 154,
     "ABB PSIRT": 49,
     "Microsoft Security Response Center": 48,
