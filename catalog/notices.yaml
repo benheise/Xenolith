@@ -142,6 +142,53 @@ discover:
       macOS: {latest: 4}
       iOS: {latest: 4}
 
+  # JetBrains: jetbrains.com/legal/third-party-software is drawn in the browser from
+  # JetBrains' product release API, where every release links a third-party-libraries.json
+  # (name, version and license per library). Read from the API directly; no browser needed.
+  # per_minor keeps the newest release of each year.minor line (TeamCity 2026.2.2, 2026.1.6, ...).
+  # YouTrack and Hub list each build under the same API version, so the build is taken
+  # from the file name.
+  - supplier: JetBrains
+    type: jetbrains
+    index: https://www.jetbrains.com/legal/third-party-software/
+    versions_url: https://data.services.jetbrains.com/products?code=TC,YTD,HB,IDES,DLE,IIU,PCP,WS,GO,PS,RD,CL,RM,DG,RR,TBA,GW&fields=name,code,releases.version,releases.downloads,releases.type
+    version_from_url: '(?:youtrack|hub)-(?P<version>\d{4}\.\d+\.\d+)\.json$'
+    per_minor: true
+    latest: 1
+    products:
+      TC: {name: TeamCity, latest: 3}
+      YTD: {name: YouTrack, latest: 2}
+      HB: {name: Hub, latest: 2}
+      IDES: {name: IDE Services, latest: 2}
+      DLE: {name: Datalore Enterprise, latest: 2}
+      IIU: {name: IntelliJ IDEA, latest: 2}
+      PCP: PyCharm
+      WS: WebStorm
+      GO: GoLand
+      PS: PhpStorm
+      RD: Rider
+      CL: CLion
+      RM: RubyMine
+      DG: DataGrip
+      RR: RustRover
+      TBA: Toolbox App
+      GW: Gateway
+
+  # Oracle: each Fusion Middleware 14.1.2 product has its own Licensing Information User
+  # Manual, one page with a "Provider | Component | Release Version" table (the release
+  # version is the component's). The 14.1.2 chapter of the FMW licensing manual links them
+  # all. Left out: the GraalVM manual (GraalVM's own components, not a 14.1.2 product); the
+  # WebLogic 15.1.1 and 26.1 manuals (one page per component, no versions); and the older
+  # "Application Server Products" chapter, where 11g to 14.1.1 rows share one table and the
+  # versions sit inside the component names.
+  - supplier: Oracle
+    index: https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html
+    link: '/en/middleware/fusion-middleware/14\.1\.2/(?!grllc/)[a-z]+lc/index\.html$'
+    title: '^(?P<product>(?:Oracle|Database|User) .+?)\s*$'
+    version_from_url: '/(?P<version>14\.1\.2)/'
+    rename:
+      Oracle Webservices Manage: Oracle Web Services Manager
+
 documents:
   # ManageEngine: ADSelfService Plus publishes a "third-party components" PDF
   # (bundled JARs with versions), updated per build.
@@ -294,7 +341,8 @@ documents:
   # XWiki content is served from docs.helixops.ai. Innovation Suite is the platform
   # under BMC Helix ITSM; 26.x pages are a Product/Library|Version|License table,
   # 25.2/26.1 list libraries without versions. Operations Management pages up to
-  # 23.3 list "name version" lines per license; 25.x pages render client-side.
+  # 25.1 list "name version" lines per license (25.1's is plain HTML after all, checked
+  # in a browser in November 2026); no 25.2 or later page exists under the same path.
   - supplier: BMC
     product: BMC Helix Innovation Suite
     version: "26.2"
@@ -310,6 +358,12 @@ documents:
     version: "25.2"
     url: https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is252/Third-party-product-terms-of-use/
     found_at: https://docs.helixops.ai/bin/IT-Operations-Management/On-Premises-Deployment/BMC-Helix-On-premises-Deployment/Third-party-product-terms-of-use/
+  - supplier: BMC
+    product: BMC Helix Operations Management
+    version: "25.1"
+    # Same path as the 23.x pages; no plain page links it (the space's navigation tree is
+    # built in the browser), so it has no found_at.
+    url: https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom251/Third-party-product-terms-of-use/
   - supplier: BMC
     product: BMC Helix Operations Management
     version: "23.3"
@@ -390,18 +444,22 @@ documents:
 #   SonicWall, Synology, HPE Aruba: no public component lists (GPL source on request or tarballs only).
 #   Atlassian: SBOMs ship inside the installation directory only.
 #   Adobe: notices PDFs list only attribution-required components, without versions; low value.
-#   JetBrains: legal/third-party-software is rendered client-side; needs its JSON endpoint.
+#   JetBrains: legal/third-party-software is drawn client-side from the release API; crawled from the API (see discover).
 #   Check Point: one prose copyright page, no per-product component list.
 #   Docker Desktop: acknowledgements only inside the app.
 #   Axis: per-model text files exist only for legacy firmware (5.x).
 #   Nutanix, Zscaler: no public component lists found.
-#   SolarWinds Platform (NPM, SAM, NCM ...): list withdrawn; "request an SBOM". Kiwi pages render client-side.
-#   ManageEngine OpManager: thirdparty-library-dependency.html renders client-side.
+#   SolarWinds Platform (NPM, SAM, NCM ...): list withdrawn; "request an SBOM". Kiwi Syslog Server and Kiwi
+#     CatTools (NG and legacy) were withdrawn the same way; rendering them in a browser shows only that notice.
+#   ManageEngine OpManager (and OpUtils, NetFlow Analyzer, NCM, OpManager Plus): thirdparty-library-dependency.html
+#     answers HTTP 404; the OpManager MSP page loads its table from that page, so a browser shows it empty too.
 #   Veritas NetBackup: notices are an HTML book of license texts without versions.
 #   Progress MOVEit Transfer: since 2020 only in notice.txt inside the installation.
 #   docs.bmc.com: HTTP 403 for automated clients (the docs.helixops.ai mirror works, see above).
 #   BeyondTrust: the open source/copyright page answers HTTP 403.
-#   Microsoft: 3rdpartycode.microsoft.com renders its disclosures client-side.
+#   Microsoft: 3rdpartycode.microsoft.com now redirects to opensource.microsoft.com/3pc, whose table comes from
+#     a JSON API (/3pc/downloads?q=...&page=N&size=100: product, release, source archive). About 41,000
+#     archives, only for components with source-disclosure licenses, and none for Exchange or SharePoint.
 #   IBM QRadar: license information documents need an IBM ID.
 #   Huawei: per-release Open Source Software Notices sit behind the support login.
 #   Apple: opensource.apple.com embeds the release list in a JS bundle (Apple project versions, not upstream).

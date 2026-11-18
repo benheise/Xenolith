@@ -54,7 +54,7 @@ products:
   - {supplier: Citrix, product: "NetScaler ADC and Gateway (13.1, 14.1)", key: citrix/netscaler-adc, category: Application delivery / SSL VPN, why: [kev], status: partial,
      lead: "Only the 11.1 Third Party Notices PDF is public so far; look for per-release notices on docs.netscaler.com or the download pages."}
   - {supplier: Microsoft, product: Exchange Server and SharePoint Server, key: microsoft/exchange-server, category: Collaboration, why: [kev], status: nothing-found,
-     lead: "Microsoft's third-party notices archive (3rdpartycode.microsoft.com) renders client-side and no Exchange/SharePoint notices file is linked from the legal page; on the wanted list."}
+     lead: "3rdpartycode.microsoft.com now redirects to opensource.microsoft.com/3pc, a table drawn from a JSON search API (/3pc/downloads?q=...); it has no Exchange or SharePoint entries (searched November 2026), and no notices file is linked from the legal page. On the wanted list."}
   - {supplier: Synacor, product: Zimbra Collaboration, key: synacor/zimbra-collaboration-suite, category: Email and collaboration, why: [kev], status: lead-found,
      lead: "Crawled: open_source_licenses_<version>.txt on files.zimbra.com, discovered from the downloads page (8.8, 9.0, 10.0, 10.1)."}
   - {supplier: SAP, product: NetWeaver AS Java, key: sap/netweaver, category: Application server, why: [kev], status: nothing-found,
@@ -154,3 +154,15 @@ products:
      url: https://docs.nvidia.com/networking/display/mftv4270/3rd+part+mft+dependencies}
   - {supplier: TIBCO, product: JasperReports Server (commercial), category: Reporting server, why: [kev], status: nothing-found,
      lead: "docs.tibco.com publishes EULAs (TIB_*_license.pdf) only; on the wanted list."}
+
+  # Pages that looked client-side, checked with a browser and their data sources (November 2026)
+  - {supplier: JetBrains, product: TeamCity, key: jetbrains/teamcity, category: CI/CD server, why: [kev], status: lead-found,
+     lead: "Crawled: jetbrains.com/legal/third-party-software is drawn from JetBrains' release API, which links a third-party-libraries.json per release. TeamCity (three release lines), YouTrack, Hub, IDE Services, Datalore Enterprise and 12 IDEs and tools are in.",
+     url: https://www.jetbrains.com/legal/third-party-software/}
+  - {supplier: Oracle, product: WebLogic Server, key: oracle/weblogic-server, category: Application server, why: [kev], status: lead-found,
+     lead: "Crawled: every Fusion Middleware 14.1.2 product's Licensing Information User Manual has a component and version table (23 manuals, linked from the 14.1.2 chapter of the FMW licensing manual). The WebLogic 15.1.1 and 26.1 manuals name components without versions.",
+     url: https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html}
+  - {supplier: SolarWinds, product: Kiwi Syslog Server and Kiwi CatTools, category: Network management, why: [], status: nothing-found,
+     lead: "Not client-side after all: the third-party pages were withdrawn and say to request an SBOM, also when loaded in a browser. On the wanted list."}
+  - {supplier: ManageEngine, product: OpManager, key: zohocorp/manageengine-opmanager, category: Network monitoring, why: [], status: nothing-found,
+     lead: "thirdparty-library-dependency.html answers HTTP 404, as do the OpUtils, NetFlow Analyzer and NCM copies; the OpManager MSP page loads its table from the OpManager page and is empty in a browser. On the wanted list."}

@@ -3,6 +3,40 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-18: JetBrains and Oracle notices, and a browser fetch for client-side pages
+
+- **JetBrains.** The third-party software page on jetbrains.com is drawn in the browser
+  from JetBrains' product release API, where each release links a
+  `third-party-libraries.json` (name, version and license for every library). A new
+  discovery rule (`type: jetbrains`) reads it directly: TeamCity (2026.2.2, 2026.1.6,
+  2025.11.8), YouTrack, Hub, IDE Services and Datalore Enterprise (two release lines each),
+  IntelliJ IDEA (two) and PyCharm, WebStorm, GoLand, PhpStorm, Rider, CLion, RubyMine,
+  DataGrip, RustRover, Toolbox App and Gateway (the latest each): 24 lists of 118 to 2,022
+  libraries. JetBrains Runtime, the OpenJDK build inside the IDEs (listed as version 21),
+  now counts as `openjdk` for Java4Shell.
+- **Oracle.** Each Fusion Middleware 14.1.2 product has its own Licensing Information User
+  Manual with a component and version table; a discovery rule on the 14.1.2 chapter of the
+  FMW licensing manual picks up all 23 of them (WebLogic Server, HTTP Server with curl
+  8.10.0 and OpenSSL 3.0.15, SOA Suite, WebCenter, Data Integrator and the rest). The
+  WebLogic 15.1.1 and 26.1 manuals name components without versions and are left out.
+- **BMC Helix Operations Management 25.1** added: its third-party page is plain HTML (2,357
+  components), not client-side as noted before.
+- **Browser fetch (`render: true`).** Documents and discovery rules can ask to be loaded
+  in headless Chromium when their HTML is an empty shell. The plain fetch always comes
+  first and decides; HTTP errors, login forms and bot challenges are never rendered. No
+  catalog entry needs it yet: every page tried turned out to have a data source or to be
+  gone, so the refresh workflow installs no browser.
+- **Checked and not crawlable.** SolarWinds Kiwi Syslog Server and Kiwi CatTools: the
+  pages were withdrawn ("request an SBOM"), also in a browser. ManageEngine OpManager:
+  the third-party library page answers HTTP 404 (as do the OpUtils, NetFlow Analyzer and
+  NCM copies). Microsoft's third-party archive moved to opensource.microsoft.com/3pc,
+  backed by a JSON search API, but has nothing for Exchange or SharePoint.
+- **Fixes.** "Log4j 1.7.36" (SLF4J's log4j-over-slf4j bridge, as JetBrains lists it) and
+  "log4j 1.2-api" (Log4j 2's bridge) no longer count as Log4j 1. License names are no
+  longer read as components from license texts. Re-matching offline
+  (`notices --match-only`) keeps the discovery paths an online run recorded instead of
+  re-inferring them.
+
 ## 2026-11-18: xenolith-scan recognises bundled Java runtimes
 
 - **Fingerprint.** The shared fingerprint pack (`catalog/fingerprints.yaml`, used by

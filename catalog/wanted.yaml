@@ -250,7 +250,7 @@ vendors:
 
   - supplier: JetBrains
     blocked: client-side
-    detail: "jetbrains.com/legal/third-party-software renders its list in the browser; needs the JSON endpoint behind it."
+    detail: "jetbrains.com/legal/third-party-software renders its list in the browser. Found in November 2026: the data comes from JetBrains' release API, one third-party-libraries.json per release, now crawled (notices.yaml)."
     where: "Help > About > third-party software in each IDE, and the license folder in the installation directory."
     products:
       - product: IntelliJ IDEA
@@ -361,20 +361,20 @@ vendors:
           - {component: openssl, confidence: possible, basis: "Agents and polling engines; Windows/.NET products often bundle OpenSSL for agents."}
           - {component: curl, confidence: possible, basis: "Agents on Linux."}
       - product: Kiwi Syslog Server
-        blocked: client-side
-        detail: "The third-party page renders its list in the browser."
+        blocked: withdrawn
+        detail: "The third-party page no longer lists components (checked in a browser, November 2026); it says to request an SBOM."
         guesses:
           - {name: IPWorks ActiveX, confidence: named, version: "22.0.8668", basis: "SolarWinds Kiwi Syslog Server third-party page (seen in search results).", source: "https://documentation.solarwinds.com/en/success_center/kss/content/kss_third_party_software_list.htm"}
       - product: Kiwi CatTools
-        blocked: client-side
-        detail: "The third-party page renders its list in the browser."
+        blocked: withdrawn
+        detail: "Both the CatTools NG and the legacy (3.12.7 and earlier) pages say the license information is now in the build and to request an SBOM (checked November 2026)."
         guesses:
           - {name: WeOnlyDo! COM Secure Shell Client ActiveX, confidence: named, version: "3.1.6.247", basis: "SolarWinds Kiwi CatTools third-party page (seen in search results).", source: "https://documentation.solarwinds.com/en/success_center/kct/content/kct_third_party_software_list.htm"}
 
   - supplier: ManageEngine
-    blocked: client-side
-    detail: "OpManager's thirdparty-library-dependency.html loads its table in the browser."
-    where: "<install-dir>/lib and the third-party license files; the help page loads it from a script."
+    blocked: withdrawn
+    detail: "OpManager's thirdparty-library-dependency.html now answers HTTP 404, as do the OpUtils, NetFlow Analyzer, NCM and OpManager Plus copies; the OpManager MSP page loads its table from the OpManager page, so it is empty too (checked in a browser, November 2026)."
+    where: "<install-dir>/lib and the third-party license files."
     products:
       - product: OpManager
         guesses:
@@ -435,7 +435,7 @@ vendors:
 
   - supplier: Oracle
     blocked: needs-parser
-    detail: "Oracle publishes a Licensing Information User Manual per product release listing third-party components, but each manual needs its own parser."
+    detail: "Oracle publishes a Licensing Information User Manual per product release. The Fusion Middleware 14.1.2 manuals (WebLogic, HTTP Server, SOA and 20 more) have a component and version table and are crawled since November 2026; the WebLogic 15.1.1 and 26.1 manuals name components without versions."
     where: "docs.oracle.com > product > Licensing Information User Manual."
     products:
       - product: WebLogic Server
@@ -459,8 +459,8 @@ vendors:
 
   - supplier: Microsoft
     blocked: client-side
-    detail: "Microsoft's third-party notices archive (3rdpartycode.microsoft.com) loads its disclosures in the browser; no per-product Exchange or SharePoint notices file is linked from the legal page."
-    where: "3rdpartycode.microsoft.com (search for the product), or the ThirdPartyNotices files in the installation media."
+    detail: "Microsoft's third-party source archive (3rdpartycode.microsoft.com, now opensource.microsoft.com/3pc) has no Exchange or SharePoint entries (searched November 2026), and no per-product notices file is linked from the legal page."
+    where: "The ThirdPartyNotices files in the installation media."
     products:
       - product: Exchange Server
         key: microsoft/exchange-server

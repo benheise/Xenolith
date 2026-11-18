@@ -25,7 +25,11 @@ Extractors (all run; results are merged and de-duplicated):
   url_lines          "jedis 2.9.0: https://github.com/... MIT" (Extreme Networks)
   license_groups     "Packages that use this license: (D-Bus 1.14.8, ...)" (Extreme Networks)
   jar_names          versioned jar file names in running text: "commons-text-1.10.0.jar" (ManageEngine)
-  sbom            CycloneDX JSON, SPDX 2 JSON / tag-value, SPDX 3 JSON-LD
+  sbom            CycloneDX JSON, SPDX 2 JSON / tag-value, SPDX 3 JSON-LD, plain JSON arrays of
+                  {name, version} (JetBrains third-party-libraries.json)
+
+Documents and discovery rules marked `render: true` are loaded in headless Chromium when
+the plain page is an empty client-side shell (see _get_rendered); never around a refusal.
 """
 
 from __future__ import annotations
@@ -38,7 +42,7 @@ import re
 from datetime import date, datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 import yaml
 
@@ -119,7 +123,10 @@ NAME_HEADERS = {"name", "component", "component(s)", "components", "component na
                 "open source component", "open source software", "project", "module", "third party software",
                 "third-party software", "oss component", "software name", "product/library", "product / library",
                 "library/dependency", "library name", "third-party component", "third party component", "tps name"}
-VERSION_HEADERS = {"version", "component version", "package version", "version number", "release"}
+# "release version" is the component's version in Oracle's 14.1.2 licensing manuals. (The older
+# Fusion Middleware chapter's plural "Release Versions" column names Oracle releases, not
+# component versions, so it is deliberately not listed.)
+VERSION_HEADERS = {"version", "component version", "package version", "version number", "release", "release version"}
 
 
 def _header_index(row: list[str]) -> tuple[int, int | None] | None:
@@ -189,7 +196,11 @@ def ex_html_table(html: str | None) -> list[tuple[str, str]]:
 
 
 def _split_multi(cell: str) -> list[str]:
-    """'zlib, libpng' in a name cell lists several components (Oracle-style tables)."""
+    """'zlib, libpng' in a name cell lists several components (Oracle-style tables).
+
+    Commas inside parentheses belong to one name: 'BSAFE Software (CCME, MES, Crypto J)'."""
+    if re.search(r"\([^)]*,[^)]*\)", cell):
+        return [cell]
     parts = [p.strip() for p in re.split(r"\s*[,;]\s*|\n", cell) if p.strip()]
     return parts if len(parts) > 1 and all(len(p) < 60 for p in parts) else [cell]
 
@@ -283,6 +294,7 @@ def ex_gt_list(text: str) -> list[tuple[str, str]]:
         body = m.group("body")
         mm = re.match(r"^(?P<name>.+?)-(?P<ver>v?\d[\w.\-+~:]*)$", body)
         name, ver = (mm.group("name"), mm.group("ver")) if mm else split_name_version(body)
+        ver = re.sub(r"\s+\(.*$", "", ver)          # "9.1 (org.ow2.asm:asm:9.1," -> "9.1"
         if plausible(name):
             out.append((name, ver))
     return out
@@ -448,7 +460,7 @@ def ex_url_lines(text: str) -> list[tuple[str, str]]:
     out = []
     for m in URL_LINE.finditer(text or ""):
         name = m.group("n").strip()
-        if plausible(name):
+        if plausible(name) and not LICENSE_ONLY.match(name.lstrip("*•- ")):     # "LGPL v2.1: https://..."
             out.append((name, m.group("v")))
     return out
 
@@ -641,6 +653,12 @@ def ex_dropdown_heads(html: str | None) -> list[tuple[str, str]]:
 
 def ex_sbom(obj) -> list[tuple[str, str]]:
     out = []
+    if isinstance(obj, list):
+        # Plain JSON arrays of {"name", "version", ...} (JetBrains third-party-libraries.json)
+        for c in obj:
+            if isinstance(c, dict) and isinstance(c.get("name"), str) and c["name"].strip():
+                out.append((c["name"].strip(), str(c.get("version") or "")))
+        return out
     if not isinstance(obj, dict):
         return out
     if obj.get("bomFormat") == "CycloneDX":
@@ -695,7 +713,9 @@ def extract(body: bytes, content_type: str, url: str) -> tuple[list[dict], list[
     else:
         raw = body.decode("utf-8-sig", errors="replace")
         stripped = raw.lstrip()
-        if stripped.startswith("{") and ("json" in ct or lower_url.endswith(".json") or '"bomFormat"' in raw[:2000] or '"spdxVersion"' in raw[:2000] or '"@graph"' in raw[:4000]):
+        is_json = "json" in ct or lower_url.endswith(".json")
+        if (stripped.startswith("{") and (is_json or '"bomFormat"' in raw[:2000] or '"spdxVersion"' in raw[:2000] or '"@graph"' in raw[:4000])) \
+                or (stripped.startswith("[") and is_json):
             try:
                 obj = json.loads(raw)
                 kind = "sbom"
@@ -776,11 +796,15 @@ def discover(rule: dict, log=print) -> list[dict]:
     named groups product and version, applied to the link text), optional
     product_prefix, product (fixed name), version_from_url (regex with group
     version applied to the URL when the link text has none), product_from_url
-    (regex with group product applied to the URL; underscores become spaces)}.
+    (regex with group product applied to the URL; underscores become spaces),
+    rename (product name as found -> name to use), render (load the index in a
+    browser when its plain HTML has no matching links)}.
     """
     page = fetch.get_text(rule["index"], timeout=90)
     link_re = re.compile(rule["link"], re.I)
     title_re = re.compile(rule["title"], re.I)
+    if rule.get("render") and not any(link_re.search(u) for u, _ in _anchor_links(page, rule["index"])):
+        page = _render_checked(rule["index"], page)        # links are added by a script
     url_ver = re.compile(rule["version_from_url"], re.I) if rule.get("version_from_url") else None
     url_prod = re.compile(rule["product_from_url"], re.I) if rule.get("product_from_url") else None
     docs: dict[str, dict] = {}
@@ -794,6 +818,7 @@ def discover(rule: dict, log=print) -> list[dict]:
         product = rule.get("product") or (rule.get("product_prefix", "") + (m.groupdict().get("product") or "")).strip()
         if url_prod and (pm := url_prod.search(url)):
             product = (rule.get("product_prefix", "") + pm.group("product").replace("_", " ")).strip()
+        product = (rule.get("rename") or {}).get(product, product)
         version = m.groupdict().get("version") or ""
         if not version and url_ver and (vm := url_ver.search(url)):
             version = vm.group("version")
@@ -974,6 +999,53 @@ def discover_embedded_json(rule: dict, log=print) -> list[dict]:
     return docs
 
 
+def discover_jetbrains(rule: dict, log=print) -> list[dict]:
+    """JetBrains' product release API, the data behind jetbrains.com/legal/third-party-software.
+
+    Each release in https://data.services.jetbrains.com/products carries a link to its
+    third-party-libraries.json (name, version, license per library).
+
+    rule: {type: jetbrains, supplier, versions_url (the products API, filtered by code),
+           products: {code: product name, or {name, latest}}, release_types (default
+           [release]), version_from_url (regex with group version, for releases whose API
+           version repeats across builds: YouTrack "2026.2" -> youtrack-2026.2.19840.json),
+           per_minor (keep only the newest release of each year.minor line, so `latest`
+           spans release lines rather than patch releases),
+           latest (newest versions kept per product, default 2)}
+    """
+    data = fetch.get_json(rule["versions_url"])
+    types = set(rule.get("release_types") or ["release"])
+    url_ver = re.compile(rule["version_from_url"]) if rule.get("version_from_url") else None
+    wanted = rule.get("products") or {}
+    docs = []
+    for item in data if isinstance(data, list) else []:
+        spec = wanted.get(item.get("code"))
+        if spec is None:
+            continue
+        spec = spec if isinstance(spec, dict) else {"name": spec}
+        keep = int(spec.get("latest") or rule.get("latest", 2))
+        found: dict[str, str] = {}
+        lines: set[str] = set()
+        for rel in item.get("releases") or []:            # newest first
+            link = (((rel.get("downloads") or {}).get("thirdPartyLibrariesJson") or {}).get("link") or "")
+            if rel.get("type") not in types or not link.startswith("https://"):
+                continue
+            version = str(rel.get("version") or "")
+            if url_ver and (m := url_ver.search(link)):
+                version = m.group("version")
+            line = ".".join(version.split(".")[:2]) if rule.get("per_minor") else version
+            if version and line not in lines:
+                lines.add(line)
+                found[version] = link
+            if len(found) >= keep:
+                break
+        for version, link in found.items():
+            docs.append({"supplier": rule["supplier"], "product": spec["name"], "version": version, "url": link,
+                         "discovered_by": rule["versions_url"]})
+        log(f"  {rule['supplier']} {spec['name']}: {', '.join(found) or 'no third-party list'}")
+    return docs
+
+
 def rule_start(rule: dict) -> str:
     """Where a discovery rule's trail starts: its index page, versions API or release list."""
     if rule.get("type") == "apple_releases":
@@ -1016,8 +1088,11 @@ def load_registry(path: Path, *, discover_docs: bool = True, log=print) -> list[
                              else discover_autoindex(rule, log=log) if kind == "autoindex"
                              else discover_table(rule, log=log) if kind == "table"
                              else discover_embedded_json(rule, log=log) if kind == "embedded_json"
+                             else discover_jetbrains(rule, log=log) if kind == "jetbrains"
                              else discover(rule, log=log))
                 for d in found:
+                    if rule.get("render"):
+                        d = {**d, "render": True}
                     docs.setdefault(d["url"], {**d, **doc_provenance(d, rule)})
             except fetch.FetchError as e:
                 log(f"  ! discovery failed for {rule.get('index') or rule.get('versions_url')}: {e}")
@@ -1050,6 +1125,9 @@ def infer_provenance(url: str, supplier: str, cfg: dict) -> dict:
         elif kind == "apple_releases":
             if url.startswith(rule_start(rule)):
                 return doc_provenance({}, rule)
+        elif kind == "jetbrains":
+            if re.match(r"https://(?:resources|download)\.jetbrains\.com/", url):
+                return doc_provenance({"discovered_by": rule["versions_url"]}, rule)
         elif rule.get("link") and re.search(rule["link"], url, re.I):
             return doc_provenance({}, rule)
     if len(rules) == 1:
@@ -1071,6 +1149,7 @@ def stamp_inventories(registry_path: Path, data_dir: Path, docs: list[dict] | No
     """
     cfg = yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}
     by_url = {d["url"]: d for d in docs or []}
+    starts = {(r.get("supplier"), rule_start(r)) for r in cfg.get("discover") or []}
     changed = 0
     for p in sorted((data_dir / "notices").rglob("*.json")):
         try:
@@ -1078,8 +1157,13 @@ def stamp_inventories(registry_path: Path, data_dir: Path, docs: list[dict] | No
         except (OSError, json.JSONDecodeError):
             continue
         d = by_url.get(inv.get("url", ""))
-        prov = ({"found_via": d["found_via"], "discovery_path": d.get("discovery_path", [])} if d and d.get("found_via")
-                else infer_provenance(inv.get("url", ""), inv.get("supplier", ""), cfg))
+        path = inv.get("discovery_path") or []
+        if d and d.get("found_via"):
+            prov = {"found_via": d["found_via"], "discovery_path": d.get("discovery_path", [])}
+        elif inv.get("found_via") == "auto-discovered" and path and (inv.get("supplier"), path[0]) in starts:
+            continue        # stamped by an online run from a rule that still exists: more exact than inference
+        else:
+            prov = infer_provenance(inv.get("url", ""), inv.get("supplier", ""), cfg)
         if inv.get("found_via") != prov["found_via"] or inv.get("discovery_path", []) != prov["discovery_path"]:
             inv["found_via"], inv["discovery_path"] = prov["found_via"], prov["discovery_path"]
             write_inventory(p, inv)
@@ -1117,18 +1201,23 @@ def crawl(registry_path: Path, *, data_dir: Path, max_fetch: int = 80, refresh_d
     for d in todo[:max_fetch]:
         url = d["url"]
         inline = d.get("components")        # discovery that already produced the component list (Apple)
+        rendered = False
         if inline is not None:
             body, ctype = json.dumps(inline, sort_keys=True).encode(), "application/json"
         else:
             try:
-                body, ctype = _get(url)
+                if d.get("render"):
+                    body, ctype, rendered = _get_rendered(url)
+                else:
+                    body, ctype = _get(url)
             except fetch.FetchError as e:
                 stats["errors"] += 1
                 state[url] = {**state.get(url, {}), "fetched": today.isoformat(), "status": "error", "error": str(e)[:200]}
                 log(f"  ! {e}")
                 continue
         stats["fetched"] += 1
-        sha = hashlib.sha256(body).hexdigest()
+        # A rendered page's markup carries per-load tokens; its text is what stays put.
+        sha = hashlib.sha256(html_to_text(body.decode("utf-8")).encode("utf-8") if rendered else body).hexdigest()
         inv = inventory_path(data_dir, d)
         if state.get(url, {}).get("sha") == sha and inv.exists():
             state[url].update(fetched=today.isoformat())
@@ -1147,13 +1236,14 @@ def crawl(registry_path: Path, *, data_dir: Path, max_fetch: int = 80, refresh_d
         status = "ok" if comps else "empty"
         stats["parsed" if comps else "empty"] += 1
         state[url] = {"fetched": today.isoformat(), "status": status, "sha": sha, "n": len(comps),
-                      "via": used, "kind": kind}
+                      "via": used, "kind": kind, **({"rendered": True} if rendered else {})}
         if comps:
             write_inventory(inv, {
                 "supplier": d["supplier"], "product": d["product"], "version": d.get("version", ""),
                 "url": url, "retrieved": today.isoformat(), "sha256": sha, "kind": kind,
                 "extractors": used, "components": comps,
                 "found_via": d.get("found_via", "hand-listed"), "discovery_path": d.get("discovery_path", []),
+                **({"rendered": True} if rendered else {}),
             })
         log(f"  {d['supplier']} {d['product']} {d.get('version', '')}: {len(comps)} components via {', '.join(used) or 'nothing'}")
     stats["remaining"] = max(0, len(todo) - max_fetch)
@@ -1172,6 +1262,103 @@ def _exists(url: str) -> bool:
             return 200 <= resp.status < 300
     except Exception:  # noqa: BLE001
         return False
+
+
+# ----------------------------------------------------------------- rendered fetch (opt-in)
+#
+# `render: true` on a document or discovery rule loads a page in headless Chromium, for
+# pages a script builds in the browser (the plain HTML is an empty shell). It is only used
+# after a plain fetch succeeded and found nothing, and it is never a way around a refusal:
+# an HTTP error, a login form or a bot challenge on either fetch stays an error. The browser
+# announces itself: Chromium's own headless user agent plus Xenolith's.
+
+BLOCK_STATUS = {401, 403, 407, 429}
+WALL = re.compile(r"(?i)\b(?:captcha|just a moment|attention required|access denied|checking your browser|"
+                  r"verify (?:that )?you are (?:a )?human|are you a robot|pardon our interruption|request unsuccessful|"
+                  r"enable javascript and cookies to continue|please (?:sign|log) ?in|(?:sign|log) ?in to (?:continue|view))\b")
+LOGIN_URL = re.compile(r"(?i)/(?:login|log-in|signin|sign-in|sso|saml2?|oauth2?|authorize)(?:[/?.#]|$)")
+
+
+def _wall(html: str) -> str | None:
+    """The login or bot-challenge marker a page shows instead of content, if any.
+
+    Looks at the title, and at the visible text only when there is little of it, so a
+    notices page that merely mentions "access denied" in a license text is not a wall."""
+    m = re.search(r"(?is)<title[^>]*>(.*?)</title>", html)
+    title = htmllib.unescape(m.group(1)) if m else ""
+    text = html_to_text(html)
+    short = len(re.sub(r"\s+", "", text)) < 1500
+    for hay in (title, text if short else ""):
+        if hay and (w := WALL.search(hay)):
+            return w.group(0)
+    if short and re.search(r"(?i)<input[^>]+type=[\"']?password", html):
+        return "password form"
+    return None
+
+
+def _render_html(url: str, timeout: float = 90) -> tuple[int, str, str]:
+    """Load url in headless Chromium; returns (HTTP status, rendered HTML, final URL).
+
+    Tests replace this function; it is the only code that starts a browser."""
+    import os
+    from .. import USER_AGENT
+    try:
+        from playwright.sync_api import TimeoutError as PlaywrightTimeout, sync_playwright
+    except ImportError as e:
+        raise fetch.FetchError(f"{url}: render: true needs Playwright "
+                               "(pip install playwright && python -m playwright install chromium)") from e
+    proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True, executable_path=os.environ.get("XENOLITH_CHROMIUM") or None,
+                                        proxy={"server": proxy} if proxy else None)
+            try:
+                probe = browser.new_page()
+                ua = probe.evaluate("navigator.userAgent")
+                probe.close()
+                page = browser.new_context(user_agent=f"{ua} {USER_AGENT}").new_page()
+                resp = page.goto(url, wait_until="load", timeout=timeout * 1000)
+                try:
+                    page.wait_for_load_state("networkidle", timeout=20000)
+                except PlaywrightTimeout:
+                    pass                      # analytics that never go quiet; the content is there by now
+                return (resp.status if resp else 0), page.content(), page.url
+            finally:
+                browser.close()
+    except fetch.FetchError:
+        raise
+    except Exception as e:  # noqa: BLE001 - browser failures become ordinary fetch errors
+        raise fetch.FetchError(f"{url}: render failed: {e}") from e
+
+
+def _render_checked(url: str, plain_html: str) -> str:
+    """Render a page whose plain fetch succeeded; refuse login and bot walls on either fetch."""
+    if w := _wall(plain_html):
+        raise fetch.FetchError(f"{url}: the plain fetch got a login or bot page ({w}); not rendered")
+    status, html, final = _render_html(url)
+    if status in BLOCK_STATUS or not (200 <= status < 300):
+        raise fetch.FetchError(f"{url}: HTTP {status} in the browser; not retried")
+    if final != url and LOGIN_URL.search(urlsplit(final).path or "/"):
+        raise fetch.FetchError(f"{url}: the browser was sent to a login page ({final})")
+    if w := _wall(html):
+        raise fetch.FetchError(f"{url}: the browser got a login or bot page ({w})")
+    return html
+
+
+def _get_rendered(url: str) -> tuple[bytes, str, bool]:
+    """Fetch a `render: true` document: (body, content type, whether it was rendered).
+
+    The plain fetch comes first and decides: an error stays an error, a non-HTML body or a
+    page the extractors can already read is used as is, and only an HTML page with no
+    components is loaded in the browser."""
+    body, ctype = _get(url)
+    raw = body.decode("utf-8-sig", errors="replace")
+    if body[:5] == b"%PDF-" or not ("html" in ctype.lower() or re.search(r"(?i)<html|<body", raw[:20000])):
+        return body, ctype, False
+    comps, _, _ = extract(body, ctype, url)
+    if comps:
+        return body, ctype, False
+    return _render_checked(url, raw).encode("utf-8"), "text/html; charset=utf-8", True
 
 
 def _get(url: str) -> tuple[bytes, str]:
