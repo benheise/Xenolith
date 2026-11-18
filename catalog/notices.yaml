@@ -435,6 +435,26 @@ documents:
     url: https://support.axway.com/fr/articles/download-attachment/hash/7331c59682b7507655685cce49664d46-1/kb/194100
     found_at: https://support.axway.com/kb/194100/language/en
 
+# Corrections: entries in a vendor's list that are known to be wrong. They stay in the stored
+# inventory exactly as published (and searchable on the site) but make no statement; a
+# statement that keeps other entries says what was set aside and links the evidence.
+# products, names and versions are full-match regexes. Each correction needs a reason and
+# evidence; `notices` reports corrections that no longer match anything.
+corrections:
+  # YouTrack's and Hub's lists end with an old block of unprefixed Maven names (Spring
+  # 4.0.1.RELEASE, Jetty 9.2.10, SLF4J 1.7.5, Jersey 2.17) that includes log4j-api,
+  # log4j-core and log4j-slf4j-impl 2.10.0, attributed to slf4j.org. Log4j 2.10.0 is the
+  # pre-Log4Shell version: JetBrains fixed both products in December 2021 and has shipped
+  # Log4j 2.17 or later since; the same lists name the current log4j-core (2.20.0, 2.24.3).
+  - supplier: JetBrains
+    products: 'YouTrack|Hub'
+    names: 'log4j-(?:api|core|slf4j-impl)'
+    versions: '2\.10\.0'
+    reason: "a stale entry: JetBrains has shipped Log4j 2.17 or later in YouTrack and Hub since December 2021"
+    evidence:
+      - https://blog.jetbrains.com/youtrack/2021/12/youtrack-update-regarding-log4j2-vulnerability/
+      - https://blog.jetbrains.com/blog/2021/12/13/log4j-vulnerability-and-jetbrains-products-and-services/
+
 # Vendors checked and not crawlable (November 2026):
 #   Cisco "Open Source Used In" PDFs: blocked for automated clients (HTTP 403).
 #   VMware/Broadcom open_source_licenses.txt: behind the Broadcom support login.

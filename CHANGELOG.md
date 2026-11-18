@@ -31,6 +31,13 @@ site features. Daily data refreshes aren't listed; `git log` has the full histor
   the third-party library page answers HTTP 404 (as do the OpUtils, NetFlow Analyzer and
   NCM copies). Microsoft's third-party archive moved to opensource.microsoft.com/3pc,
   backed by a JSON search API, but has nothing for Exchange or SharePoint.
+- **Corrections for vendor lists.** A new `corrections:` section in `catalog/notices.yaml`
+  sets aside entries in a vendor's list that are known to be wrong, with a reason and
+  evidence. They stay in the stored inventory as published, and the statement says what
+  wasn't counted and links the evidence. First use: YouTrack's and Hub's lists carry an old
+  block that includes Log4j 2.10.0 (the pre-Log4Shell version, attributed to slf4j.org),
+  although JetBrains has shipped Log4j 2.17 or later in both since December 2021; the
+  products no longer show Log4j in the Log4Shell range.
 - **Fixes.** "Log4j 1.7.36" (SLF4J's log4j-over-slf4j bridge, as JetBrains lists it) and
   "log4j 1.2-api" (Log4j 2's bridge) no longer count as Log4j 1. License names are no
   longer read as components from license texts. Re-matching offline

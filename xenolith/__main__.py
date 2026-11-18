@@ -87,9 +87,11 @@ def cmd_notices(args) -> int:
         print(f"notices crawl: {json.dumps(stats)}")
     else:
         notices.stamp_inventories(ROOT / "catalog" / "notices.yaml", DATA)   # offline, from the catalog
-    rows, stats = notices.assertions(cat, DATA)
+    rows, stats = notices.assertions(cat, DATA, notices.load_corrections(ROOT / "catalog" / "notices.yaml"))
     n = write_ndjson(DATA / "assertions" / "notices.ndjson", dedupe(rows))
-    print(f"notices: {n} assertions from {stats['inventories']} inventories ({stats['components']} components)")
+    print(f"notices: {n} assertions from {stats['inventories']} inventories ({stats['components']} components); "
+          f"{stats['set_aside']} listed entries set aside by corrections"
+          + (f", {stats['corrections_unused']} correction(s) matched nothing" if stats["corrections_unused"] else ""))
     return 0
 
 
@@ -140,7 +142,7 @@ def cmd_community(args) -> int:
     if not args.check:
         write_ndjson(DATA / "assertions" / "community.ndjson", dedupe(rows))
         community_sbom.write_inventories(sboms, DATA)
-        nrows, _ = notices.assertions(cat, DATA)
+        nrows, _ = notices.assertions(cat, DATA, notices.load_corrections(ROOT / "catalog" / "notices.yaml"))
         write_ndjson(DATA / "assertions" / "notices.ndjson", dedupe(nrows))
     print(f"community: {len(rows)} valid rows, {len(sboms)} valid SBOM file(s)")
     return 0

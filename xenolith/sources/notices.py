@@ -1408,25 +1408,92 @@ def version_in_name(name: str) -> str:
     return found[-1] if found else ""
 
 
-def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
-    """Match every stored inventory against the watchlist."""
+CORRECTION_FIELDS = {"supplier", "products", "names", "versions", "reason", "evidence"}
+
+
+def validate_corrections(cfg: dict) -> list[str]:
+    """Problems with the `corrections:` section of catalog/notices.yaml."""
+    errors = []
+    for i, c in enumerate(cfg.get("corrections") or []):
+        where = f"corrections[{i}]"
+        if not isinstance(c, dict):
+            errors.append(f"{where}: must be a mapping")
+            continue
+        if extra := set(c) - CORRECTION_FIELDS:
+            errors.append(f"{where}: unexpected field(s) {', '.join(sorted(extra))}")
+        for field in ("supplier", "names", "reason", "evidence"):
+            if not str(c.get(field) or "").strip():
+                errors.append(f"{where}: {field} is required")
+        for e in [c.get("evidence")] if isinstance(c.get("evidence"), str) else (c.get("evidence") or []):
+            if not str(e).startswith("https://"):
+                errors.append(f"{where}: evidence must be https URLs")
+        for field in ("products", "names", "versions"):
+            try:
+                re.compile(str(c.get(field) or ".*"))
+            except re.error as e:
+                errors.append(f"{where}: {field} is not a valid regex ({e})")
+    return errors
+
+
+def load_corrections(registry_path: Path) -> list[dict]:
+    """Vendor list entries known to be wrong (catalog/notices.yaml `corrections:`).
+
+    Each names a supplier, products, component names and versions (full-match regexes),
+    a reason and evidence. Matching entries stay in the stored inventory exactly as the
+    vendor published them but make no statement."""
+    cfg = (yaml.safe_load(registry_path.read_text(encoding="utf-8")) or {}) if registry_path.exists() else {}
+    if errors := validate_corrections(cfg):
+        raise ValueError("; ".join(errors))
     out = []
-    stats = {"inventories": 0, "components": 0, "matches": 0}
+    for c in cfg.get("corrections") or []:
+        evidence = [c["evidence"]] if isinstance(c["evidence"], str) else list(c["evidence"])
+        out.append({**c, "evidence": evidence, "_product": re.compile(str(c.get("products") or ".*")),
+                    "_name": re.compile(str(c["names"]), re.I), "_version": re.compile(str(c.get("versions") or ".*"))})
+    return out
+
+
+def assertions(catalog: Catalog, data_dir: Path, corrections: list[dict] | None = None) -> tuple[list[dict], dict]:
+    """Match every stored inventory against the watchlist.
+
+    `corrections` defaults to the shipped catalog's (load_corrections); pass [] for none."""
+    if corrections is None:
+        from ..catalog import CATALOG
+        corrections = load_corrections(CATALOG / "notices.yaml")
+    out = []
+    stats = {"inventories": 0, "components": 0, "matches": 0, "set_aside": 0}
+    used = [0] * len(corrections)
     for _, inv in iter_inventories(data_dir):
         stats["inventories"] += 1
         stats["components"] += len(inv.get("components", []))
+        rules = [(i, r) for i, r in enumerate(corrections)
+                 if r["supplier"] == inv.get("supplier") and r["_product"].fullmatch(inv.get("product", ""))]
         hits: dict[str, list[dict]] = {}
+        aside: dict[str, list[tuple[dict, dict]]] = {}
         for c in inv.get("components", []):
             # Scanner findings carry a confidence; below the line they stay searchable
             # in the inventory but don't become statements (design/xenolith-scan.md).
             if c.get("confidence") is not None and float(c["confidence"]) < STATEMENT_CONFIDENCE:
                 continue
             cid = catalog.match_component(c["name"], c.get("version", ""))
-            if cid:
-                hits.setdefault(cid, []).append(c)
+            if not cid:
+                continue
+            rule = next(((i, r) for i, r in rules if r["_name"].fullmatch(c["name"])
+                         and r["_version"].fullmatch(c.get("version") or "")), None)
+            if rule:
+                used[rule[0]] += 1
+                stats["set_aside"] += 1
+                aside.setdefault(cid, []).append((c, rule[1]))
+                continue
+            hits.setdefault(cid, []).append(c)
         for cid, comps in hits.items():
             stats["matches"] += 1
             listed = "; ".join(f"{c['name']} {c['version']}".strip() for c in comps[:6])
+            dropped = aside.get(cid, [])
+            set_aside = ""
+            if dropped:
+                names = ", ".join(dict.fromkeys(f"{c['name']} {c['version']}".strip() for c, _ in dropped))
+                reasons = "; ".join(dict.fromkeys(r["reason"].strip().rstrip(".") for _, r in dropped))
+                set_aside = f" Not counted: {names} ({reasons})."
             versions = ", ".join(dict.fromkeys(v for c in comps if (v := c.get("version") or version_in_name(c["name"]))))
             pv = inv.get("version", "")
             evidence = inv.get("evidence", "notices-file")
@@ -1444,9 +1511,11 @@ def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
                 source=inv.get("source", SOURCE_ID),
                 publisher=inv["supplier"] if evidence != "binary-scan" else "Community submission",
                 source_url=inv["url"],
-                references=[r for r in (inv.get("submission"),) if r],
+                references=[r for r in (inv.get("submission"),) if r]
+                           + list(dict.fromkeys(e for _, r in dropped for e in r["evidence"])),
                 notes=f"{where} for {inv['product']}{' ' + pv if pv else ''} as: {listed}."
-                      + (f" Artifact: {inv['artifact']} (sha256 {inv['artifact_sha256'][:16]}…)." if inv.get("artifact_sha256") else ""),
+                      + (f" Artifact: {inv['artifact']} (sha256 {inv['artifact_sha256'][:16]}…)." if inv.get("artifact_sha256") else "")
+                      + set_aside,
                 category={"notices-file": "Third-party notices", "vendor-sbom": "Vendor SBOM",
                           "binary-scan": "Binary scan"}[evidence],
                 updated=inv.get("retrieved", ""),
@@ -1455,6 +1524,7 @@ def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
                 discovery_path=inv.get("discovery_path", []),
                 sha256=inv.get("sha256", ""),
             ))
+    stats["corrections_unused"] = sum(1 for n in used if not n)
     return out, stats
 
 

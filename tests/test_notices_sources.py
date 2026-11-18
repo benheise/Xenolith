@@ -308,5 +308,64 @@ class OfflineStampTest(unittest.TestCase):
             self.assertEqual(json.loads(stale.read_text())["discovery_path"], ["https://docs.example/a"])
 
 
+class CorrectionsTest(unittest.TestCase):
+    RULE = {"supplier": "JetBrains", "products": "YouTrack|Hub", "names": "log4j-(?:api|core|slf4j-impl)",
+            "versions": r"2\.10\.0", "reason": "a stale entry", "evidence": "https://blog.example/log4j"}
+
+    def write(self, data: Path, product: str, comps: list[dict]) -> None:
+        notices.write_inventory(data / "notices" / "jetbrains" / f"{product}.json", {
+            "supplier": "JetBrains", "product": product, "version": "2026.2", "url": f"https://r.example/{product}.json",
+            "retrieved": "2026-11-18", "sha256": "0" * 64, "components": comps})
+
+    def run_with(self, corrections, setup):
+        with tempfile.TemporaryDirectory() as d:
+            data = Path(d)
+            setup(data)
+            reg = data / "notices.yaml"
+            reg.write_text(yaml.safe_dump({"corrections": corrections}))
+            return notices.assertions(catalog.load(), data, notices.load_corrections(reg))
+
+    def test_set_aside_entry_is_named_and_sourced(self):
+        def setup(data):
+            self.write(data, "YouTrack", [{"name": "log4j-core", "version": "2.10.0"},
+                                          {"name": "org.apache.logging.log4j:log4j-core", "version": "2.24.3"}])
+            self.write(data, "Hub", [{"name": "log4j-core", "version": "2.10.0"}])           # nothing else listed
+            self.write(data, "TeamCity", [{"name": "log4j-core", "version": "2.10.0"}])      # not covered
+        rows, stats = self.run_with([self.RULE], setup)
+        by = {r["product"]: r for r in rows if r["component"] == "log4j-core"}
+        self.assertEqual(by["YouTrack"]["component_version"], "2.24.3")
+        self.assertIn("Not counted: log4j-core 2.10.0 (a stale entry).", by["YouTrack"]["notes"])
+        self.assertIn("https://blog.example/log4j", by["YouTrack"]["references"])
+        self.assertNotIn("Hub", by)                                     # only the stale entry: no statement
+        self.assertEqual(by["TeamCity"]["component_version"], "2.10.0")
+        self.assertEqual((stats["set_aside"], stats["corrections_unused"]), (2, 0))
+
+    def test_unused_corrections_are_reported(self):
+        _, stats = self.run_with([self.RULE], lambda data: self.write(
+            data, "YouTrack", [{"name": "org.apache.logging.log4j:log4j-core", "version": "2.24.3"}]))
+        self.assertEqual((stats["set_aside"], stats["corrections_unused"]), (0, 1))
+
+    def test_validation(self):
+        bad = {"corrections": [{"supplier": "X", "names": "(", "reason": "", "evidence": "http://x", "note": "?"}]}
+        errors = " | ".join(notices.validate_corrections(bad))
+        for needle in ("unexpected field", "reason is required", "evidence must be https", "names is not a valid regex"):
+            self.assertIn(needle, errors)
+        with tempfile.TemporaryDirectory() as d:
+            reg = Path(d) / "notices.yaml"
+            reg.write_text(yaml.safe_dump(bad))
+            with self.assertRaises(ValueError):
+                notices.load_corrections(reg)
+
+    def test_shipped_corrections(self):
+        reg = ROOT / "catalog" / "notices.yaml"
+        self.assertEqual(notices.validate_corrections(yaml.safe_load(reg.read_text(encoding="utf-8"))), [])
+        rule = next(r for r in notices.load_corrections(reg) if r["supplier"] == "JetBrains")
+        self.assertTrue(rule["_product"].fullmatch("YouTrack") and rule["_product"].fullmatch("Hub"))
+        self.assertIsNone(rule["_product"].fullmatch("TeamCity"))
+        self.assertTrue(rule["_name"].fullmatch("log4j-core") and rule["_version"].fullmatch("2.10.0"))
+        self.assertIsNone(rule["_name"].fullmatch("org.apache.logging.log4j:log4j-core"))   # the current entries stay
+        self.assertIsNone(rule["_version"].fullmatch("2.20.0"))
+
+
 if __name__ == "__main__":
     unittest.main()
