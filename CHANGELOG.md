@@ -30,6 +30,13 @@ Java runtime, so customers can't fix them by updating the host's Java.
   under investigation (2026-11-17); Keycloak says its 26.8.2 server images (OpenJDK 21.0.13)
   and Operator image (OpenJDK 25) are affected, with a JVM flag as the only workaround so far
   (2026-11-18).
+- **Products from Calif's disclosure** ([calif.io/java4shell](https://calif.io/java4shell), 2026-11-17):
+  Calif demonstrated code execution without logging in on Keycloak, Jira, Confluence, Artifactory,
+  Jenkins and PingFederate, and by a logged-in user on Apache Kafka, Solr, Elasticsearch, Gerrit
+  and Spinnaker, all on affected Java builds. Products that bundle their own Java (Jira and
+  Confluence Data Center, Artifactory, Elasticsearch, Keycloak images, Spinnaker images) are
+  recorded as affected; those that run on the Java the customer installs (Jenkins, PingFederate,
+  Kafka, Solr, Gerrit) as runtime-dependent: patch the host's Java.
 - **SAP.** No SAP statement yet. SAP's own knowledge base shows SapMachine 17 bundled in HANA
   XS Advanced (17.0.15 in its example, which is in range; HANA Cockpit runs on XSA) and
   SapMachine 21 as the runtime of SAP Commerce Cloud 2211-jdk21.x (hosted by SAP). Both are
@@ -39,8 +46,8 @@ Java runtime, so customers can't fix them by updating the host's Java.
   Red Hat build of OpenJDK 17/21/25, JBoss EAP 7 and 8, JBoss Web Server, Data Grid, AMQ Broker,
   streams for Apache Kafka, Red Hat build of Keycloak and others) and 9 not affected (OpenJDK 8
   and 11 builds, RHEL 6 and 7, Fuse 7, Single Sign-On 7 and others). Other CSAF providers'
-  advisories arrive on daily refreshes as they publish. The census now holds 141 Java4Shell
-  statements about 95 products.
+  advisories arrive on daily refreshes as they publish. With Calif's list, the census
+  holds 152 Java4Shell statements about 105 products.
 - **Still open.** As of 2026-11-18 there is no community vendor-status tracker for Java4Shell,
   and Atlassian, Jenkins/CloudBees, JFrog, Ping Identity, Confluent, Elastic, Gerrit and
   Spinnaker hadn't published product guidance. Products that run on the host's Java (Jenkins
