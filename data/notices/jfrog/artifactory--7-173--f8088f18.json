@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "OpenJDK",
+"version": "25.0.4.1"
+}
+],
+"discovery_path": [
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases"
+],
+"extractors": [
+"version_table"
+],
+"found_via": "auto-discovered",
+"kind": "version-table",
+"product": "Artifactory",
+"retrieved": "2026-11-18",
+"sha256": "48da4a17ab7e4b044872604ba4cf2a76df346bbd9f1be41094d11f4ebf046f4b",
+"supplier": "JFrog",
+"url": "https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.173",
+"version": "7.173"
+}

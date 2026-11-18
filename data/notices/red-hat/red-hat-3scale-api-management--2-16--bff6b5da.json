@@ -1,0 +1,210 @@
+{
+"components": [
+{
+"name": "3amp-2.16",
+"version": ""
+},
+{
+"name": "3scale-amp2/3scale-auth-wasm-rhel8",
+"version": "sha256:21000a89f44c3e40f78566a4779540d751112d4c5e897c511c4ca667ce20d1bf"
+},
+{
+"name": "3scale-amp2/3scale-auth-wasm-rhel8",
+"version": "sha256:9936d444c7e4bc72b09920c1ff8ced29da32e64f7fe0e60d15d445156b1042e1"
+},
+{
+"name": "3scale-amp2/3scale-auth-wasm-rhel8",
+"version": "sha256:d431fc5ca6fcb9a55b3fa4c89bc515f0819b74bd3d277bc48fe3999db47fd958"
+},
+{
+"name": "3scale-amp2/3scale-auth-wasm-rhel8",
+"version": "sha256:f848569a12dc41233084528b2f98642b9bca622d430e2fdb0fc1063b6597e4e0"
+},
+{
+"name": "3scale-amp2/3scale-rhel9-operator",
+"version": "sha256:092a6f6213856951cc2c35e23c6a8d150bffb73c53033f1abca3190fafd3b829"
+},
+{
+"name": "3scale-amp2/3scale-rhel9-operator",
+"version": "sha256:2d8a7d83ffd6624cf3474030a715a7338da5b580dbd7c5358e03f4fbcb327036"
+},
+{
+"name": "3scale-amp2/3scale-rhel9-operator",
+"version": "sha256:2e515d0300056564c02c4e1d354d17929ab94eaa41c720dd901ca0938b417cc2"
+},
+{
+"name": "3scale-amp2/3scale-rhel9-operator",
+"version": "sha256:6b3cebb0148b4c8cb8e2463f4903f74850f93a88ed1dbe4742137350761e10f3"
+},
+{
+"name": "3scale-amp2/3scale-rhel9-operator-metadata",
+"version": "sha256:14f379287884f864bd8ac991d5fb192981af930a34709265d9e521b60aab17b2"
+},
+{
+"name": "3scale-amp2/3scale-rhel9-operator-metadata",
+"version": "sha256:3fc2fa955d4c5b9ff59d2957b34f30a98a84fa2f2e3399c5727640b6ba5f0d68"
+},
+{
+"name": "3scale-amp2/3scale-rhel9-operator-metadata",
+"version": "sha256:65fc9943cf615d982c0838db4a32f98f43c327a10e67803629de0c852ebfdd82"
+},
+{
+"name": "3scale-amp2/3scale-rhel9-operator-metadata",
+"version": "sha256:a8643bfccaba6e4df25c6390890560bc161ab7f03add10e568fb489e9fd52da7"
+},
+{
+"name": "3scale-amp2/apicast-gateway-rhel8",
+"version": "sha256:722e4dd9627767e8319a58d74760863d75eda6f52035656c5098c3bfecb5166f"
+},
+{
+"name": "3scale-amp2/apicast-gateway-rhel8",
+"version": "sha256:8d676e3d22e95734d5491ab91905deef22a8b26f5c11764042a329cbeee15ce9"
+},
+{
+"name": "3scale-amp2/apicast-gateway-rhel8",
+"version": "sha256:956a0449d65c481a65c7ae0d3a85e546f7070f276b4292ed2f45e37d135058d3"
+},
+{
+"name": "3scale-amp2/apicast-gateway-rhel8",
+"version": "sha256:ab991c15e518b4a2a7f371cc0f6c39d73f0239f1b117900a20672b1bca138331"
+},
+{
+"name": "3scale-amp2/apicast-gateway-rhel8",
+"version": "sha256:dcc163a566427bb07cd94050a46b7537200fdb9f06119089e18ce4106bc8d99d"
+},
+{
+"name": "3scale-amp2/apicast-rhel7-operator-metadata",
+"version": "sha256:253d3a95d935ed7aa861132599748164fb8861f236946c97b359c764ec3969fd"
+},
+{
+"name": "3scale-amp2/apicast-rhel7-operator-metadata",
+"version": "sha256:774c6d74626b380e020fee273d4a9025a324868085aa474e9f3eda85b0d48cdc"
+},
+{
+"name": "3scale-amp2/apicast-rhel7-operator-metadata",
+"version": "sha256:b5b7d0b434faee488bddb96a2ce061d395a90c920c66c245713e91c66feecb08"
+},
+{
+"name": "3scale-amp2/apicast-rhel7-operator-metadata",
+"version": "sha256:d7b524ae5eda330ceba3a7f7ed6929f8e3a0bd745e4764cdb5cc6b2945ff735d"
+},
+{
+"name": "3scale-amp2/apicast-rhel7-operator-metadata",
+"version": "sha256:f6bc58a77f8315354bfda87a4fab913abd8d7aa6a212f4426116f445895e9630"
+},
+{
+"name": "3scale-amp2/apicast-rhel9-operator",
+"version": "sha256:192833eea788653266026b573a861ac12e8eeeb52c171cc091d5b88b78d60ed8"
+},
+{
+"name": "3scale-amp2/apicast-rhel9-operator",
+"version": "sha256:1eefd15733200ece9b4be4b1fc5127e792a373dec6af65a396061fead17facaa"
+},
+{
+"name": "3scale-amp2/apicast-rhel9-operator",
+"version": "sha256:54eb4a9c54d4dbf2b16c8d6b699e27ae740ce0ea8be249e8fb1ed119aff2288f"
+},
+{
+"name": "3scale-amp2/apicast-rhel9-operator",
+"version": "sha256:73228825f953ce637f0e6cb402f274c1e5856f839fe916bdbba459f5ea5e2fbe"
+},
+{
+"name": "3scale-amp2/apicast-rhel9-operator",
+"version": "sha256:c32b9032eff7a68c74fdfdc6aa7602a320e726cfa39dc096cb97fceed6771b2a"
+},
+{
+"name": "3scale-amp2/backend-rhel8",
+"version": "sha256:805d5895f1234b055d8c6d7854c3c936699cb79ece3ef49ba065e8112f6134b9"
+},
+{
+"name": "3scale-amp2/backend-rhel8",
+"version": "sha256:a6eb9942970d503d6544b9758be5dd8d2cef128544abc05a2536a042fa4059ab"
+},
+{
+"name": "3scale-amp2/backend-rhel8",
+"version": "sha256:c00080845978ba7adbe272139dad0a5c2114c1ebf6bdefb23f314232a59c6ced"
+},
+{
+"name": "3scale-amp2/backend-rhel8",
+"version": "sha256:f26a1a1a18b173bca5dbfb4f81dbc7a0712d19480f96230b31acaf103fb775e7"
+},
+{
+"name": "3scale-amp2/manticore-rhel9",
+"version": "sha256:010c1425a96a3c95e958c6b4499d0927f41c4c76214f0b7e688209a6aadc53be"
+},
+{
+"name": "3scale-amp2/manticore-rhel9",
+"version": "sha256:6ef9c1fde33473ec89478a5dbfc00fbd45eb52d928dd5002e0e138a839748d87"
+},
+{
+"name": "3scale-amp2/manticore-rhel9",
+"version": "sha256:7f935793abca714bb7bc85bc15b05e90998a194e14dea138c569fa83243bfd78"
+},
+{
+"name": "3scale-amp2/manticore-rhel9",
+"version": "sha256:fed1722779a987f503dc5e5528e833671a6f2ee9da61db064e5af5d1fbb18862"
+},
+{
+"name": "3scale-amp2/system-rhel9",
+"version": "sha256:0084ecb03ad80eca7ee38234b5650e69464d8fe9aa6b24be546f08c74b90b885"
+},
+{
+"name": "3scale-amp2/system-rhel9",
+"version": "sha256:0317eefcee569f3e93dba772e019ce185584256dc1ac58bf6823a2a83c26449f"
+},
+{
+"name": "3scale-amp2/system-rhel9",
+"version": "sha256:7c3e3b2b3aee3865c60fef8ab2b9e2c050311666ae71bb6992d98d6ddbea9559"
+},
+{
+"name": "3scale-amp2/system-rhel9",
+"version": "sha256:eed1dc35f229b8a436e3cd364a8a22be189229d3cc0e7e19d597f2cbddbc9adb"
+},
+{
+"name": "3scale-amp2/toolbox-rhel9",
+"version": "sha256:598e8403f61b6f8d27651d5ae6257723d70175cb29f6d6b2545ba4a0ff26f548"
+},
+{
+"name": "3scale-amp2/toolbox-rhel9",
+"version": "sha256:8c13234f50921501cb2c92a0ac16919955d8bab8205217fdea567afd65f3444d"
+},
+{
+"name": "3scale-amp2/toolbox-rhel9",
+"version": "sha256:d1ab9b8c02975dacc464784cf296e8069fd42051b9e04b2ee5e98d628ededb5a"
+},
+{
+"name": "3scale-amp2/toolbox-rhel9",
+"version": "sha256:fd93d7b8b82fc3bf60c681ea05a01dd3bd86fce1afa89928381b98e620335eae"
+},
+{
+"name": "3scale-amp2/zync-rhel9",
+"version": "sha256:2c1464cf6b4d0670f008f1f9edf28a0d93cb003edbd9dd76ef3b5aee66f45319"
+},
+{
+"name": "3scale-amp2/zync-rhel9",
+"version": "sha256:2ff05fe6f3672ef8523c5ab2fab13c7264b672ef2ba51bd65afffe4e0363227e"
+},
+{
+"name": "3scale-amp2/zync-rhel9",
+"version": "sha256:8032a4255f03692d566204850b43ad48daee765f754b05fd5ae3005018069b11"
+},
+{
+"name": "3scale-amp2/zync-rhel9",
+"version": "sha256:c0f035951148a55ffd078a682b1041341f4ba1e80da56b70196aefbfb0b0afce"
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat 3scale API Management",
+"retrieved": "2026-11-18",
+"sha256": "31f2d63f00c65888554a86fa5bd60417ab8293c56e1c790dfd158387ed1658a0",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/3amp-2.16.json.bz2",
+"version": "2.16"
+}

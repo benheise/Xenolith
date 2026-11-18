@@ -1,0 +1,970 @@
+{
+"components": [
+{
+"name": "annotations-api",
+"version": "3.0"
+},
+{
+"name": "apache",
+"version": "23.0.0.redhat-00001"
+},
+{
+"name": "apache",
+"version": "27.0.0.redhat-00001"
+},
+{
+"name": "apache",
+"version": "27.0.0.redhat-00004"
+},
+{
+"name": "apache",
+"version": "29.0.0.redhat-00001"
+},
+{
+"name": "bootstrap",
+"version": "11.0.21"
+},
+{
+"name": "bootstrap",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "broken.war",
+"version": ""
+},
+{
+"name": "bug69135-lib.jar",
+"version": ""
+},
+{
+"name": "bug69623-lib",
+"version": "UNKNOWN"
+},
+{
+"name": "bug69623-lib.jar",
+"version": ""
+},
+{
+"name": "capi.dll",
+"version": ""
+},
+{
+"name": "catalina",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "catalina-ant",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "catalina-ssi",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "catalina-storeconfig",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "commons-cli",
+"version": "1.5.0.redhat-00001"
+},
+{
+"name": "commons-daemon",
+"version": "1.3.3"
+},
+{
+"name": "commons-daemon.jar",
+"version": ""
+},
+{
+"name": "commons-parent",
+"version": "52.0.0.redhat-00001"
+},
+{
+"name": "commons-parent",
+"version": "54.0.0.redhat-00001"
+},
+{
+"name": "commons-parent",
+"version": "56.0.0.redhat-00001"
+},
+{
+"name": "context.jar",
+"version": ""
+},
+{
+"name": "context.war",
+"version": ""
+},
+{
+"name": "contextCopyXMLFalse",
+"version": "UNKNOWN"
+},
+{
+"name": "contextCopyXMLFalse.war",
+"version": ""
+},
+{
+"name": "contextCopyXMLTrue",
+"version": "UNKNOWN"
+},
+{
+"name": "contextCopyXMLTrue.war",
+"version": ""
+},
+{
+"name": "contextUnpackWARFalse.war",
+"version": ""
+},
+{
+"name": "contextUnpackWARTrue.war",
+"version": ""
+},
+{
+"name": "dir1-internal.jar",
+"version": ""
+},
+{
+"name": "dir1.jar",
+"version": ""
+},
+{
+"name": "ecj",
+"version": "4.38.0.redhat-00001"
+},
+{
+"name": "el-api",
+"version": "6.0"
+},
+{
+"name": "jakartaee-migration",
+"version": "1.0.6.redhat-00003"
+},
+{
+"name": "jasper",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "jasper-el",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "jaspic-api",
+"version": "3.1"
+},
+{
+"name": "jasypt",
+"version": "1.9.2.redhat-1"
+},
+{
+"name": "jboss-logging",
+"version": "3.6.2.Final-redhat-00001"
+},
+{
+"name": "jboss-parent",
+"version": "19.0.0.redhat-2"
+},
+{
+"name": "jboss-parent",
+"version": "21.0.0.redhat-1"
+},
+{
+"name": "jboss-parent",
+"version": "34.0.0.redhat-00005"
+},
+{
+"name": "jboss-parent",
+"version": "39.0.0.redhat-00009"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk17-rhel9-openshift",
+"version": "sha256:1c81eb0fd46eec782f8517d3f74cd63d4b252c735560b415f2b03e9a4bbd9bc2"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk17-rhel9-openshift",
+"version": "sha256:48e85e1ba44433feb111924090b729173b2ab5e773c3a917c9b11c3b2ae0b377"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk17-rhel9-openshift",
+"version": "sha256:b43756cfd5724a5fda257a8b78519850e9e9f890423c2574030b3691f95b02ea"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk17-rhel9-openshift",
+"version": "sha256:b7ef6b754419885d83e902b08fb005d5eef643444497e3c80a6c230efcd9f6ec"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk17-rhel9-openshift",
+"version": "sha256:e649f9a4d602a3be2adcb962d27377694634a552adc3a3959c7bf3272255482e"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk21-rhel9-openshift",
+"version": "sha256:34b17fb3af26d9e17e00d84f300dc98f849f110f5e1b56eef9189688c665ed0a"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk21-rhel9-openshift",
+"version": "sha256:7d466448867b895693ec7a75c8d8dc4e3487a0a204b3f67b37b662e9f3106d4a"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk21-rhel9-openshift",
+"version": "sha256:c56fc8ea93a82afb3bba63f1ff7ec04af74635676ecbf403256311f1ba5b061c"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk21-rhel9-openshift",
+"version": "sha256:e4b5636e222017c3ea58001025e8f285ba96cb610ad4d2ff7ceef5e962453256"
+},
+{
+"name": "jboss-webserver-7/jws70-openjdk21-rhel9-openshift",
+"version": "sha256:e5914799437ede3ac0593a043c736ec99b1a33554949a76befe10bf31f8455e1"
+},
+{
+"name": "jsp-api",
+"version": "4.0"
+},
+{
+"name": "jws-7",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-application-server.zip",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-application-server.zip",
+"version": "7.0.0.CR2"
+},
+{
+"name": "jws-7.0.0.CR2-docs.zip",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-docs.zip",
+"version": "7.0.0.CR2"
+},
+{
+"name": "jws-7.0.0.CR2-maven-repository.zip",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-maven-repository.zip",
+"version": "7.0.0.CR2"
+},
+{
+"name": "jws-7.0.0.CR2-optional-native-components-RHEL10-x86_64.zip",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-optional-native-components-RHEL10-x86_64.zip",
+"version": "7.0.0.CR2"
+},
+{
+"name": "jws-7.0.0.CR2-optional-native-components-RHEL8-x86_64.zip",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-optional-native-components-RHEL8-x86_64.zip",
+"version": "7.0.0.CR2"
+},
+{
+"name": "jws-7.0.0.CR2-optional-native-components-RHEL9-x86_64.zip",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-optional-native-components-RHEL9-x86_64.zip",
+"version": "7.0.0.CR2"
+},
+{
+"name": "jws-7.0.0.CR2-optional-native-components-win6-x86_64.zip",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-optional-native-components-win6-x86_64.zip",
+"version": "7.0.0.CR2"
+},
+{
+"name": "jws-7.0.0.CR2-src.zip",
+"version": ""
+},
+{
+"name": "jws-7.0.0.CR2-src.zip",
+"version": "7.0.0.CR2"
+},
+{
+"name": "jws7-mod_cluster",
+"version": "2.1.1-1.Final_redhat_00001.1.el9jws"
+},
+{
+"name": "jws7-mod_cluster-src-zip",
+"version": "2.1.1-1.Final_redhat_00001.1.el9jws"
+},
+{
+"name": "jws7-mod_cluster-tomcat",
+"version": "2.1.1-1.Final_redhat_00001.1.el9jws"
+},
+{
+"name": "jws7-tomcat",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-admin-webapps",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-docs-webapp",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-el-5.0-api",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-javadoc",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-jsp-3.1-api",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-lib",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-native",
+"version": "1.3.7-4.redhat_4.el9jws"
+},
+{
+"name": "jws7-tomcat-native-debuginfo",
+"version": "1.3.7-4.redhat_4.el9jws"
+},
+{
+"name": "jws7-tomcat-native-devel",
+"version": "1.3.7-4.redhat_4.el9jws"
+},
+{
+"name": "jws7-tomcat-native-src-zip",
+"version": "1.3.7-4.redhat_4.el9jws"
+},
+{
+"name": "jws7-tomcat-selinux",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-servlet-6.0-api",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-src-zip",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-webapps",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "jws7-tomcat-zip",
+"version": "11.0.21-10.redhat_00010.1.el9jws"
+},
+{
+"name": "libapr-1.dll",
+"version": ""
+},
+{
+"name": "libcrypto-3-x64.dll",
+"version": ""
+},
+{
+"name": "libssl-3-x64.dll",
+"version": ""
+},
+{
+"name": "libtcnative-1.dll",
+"version": ""
+},
+{
+"name": "libtcnative-1.so",
+"version": ""
+},
+{
+"name": "mod_cluster-bom",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-container",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-container-spi",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-container-spi",
+"version": "2.1.1.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-container-tomcat-10.1",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-container-tomcat-11.0",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-container-tomcat-11.0",
+"version": "2.1.1.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-container-tomcat-9.0",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-core",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-core",
+"version": "2.1.1.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-distribution",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-load-spi",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-load-spi",
+"version": "2.1.1.Final-redhat-00001"
+},
+{
+"name": "mod_cluster-parent",
+"version": "2.1.0.Final-redhat-00001"
+},
+{
+"name": "noContext.war",
+"version": ""
+},
+{
+"name": "non-static-resources",
+"version": "UNKNOWN"
+},
+{
+"name": "non-static-resources.jar",
+"version": ""
+},
+{
+"name": "openssl.exe",
+"version": ""
+},
+{
+"name": "padlock.dll",
+"version": ""
+},
+{
+"name": "pom.xml",
+"version": ""
+},
+{
+"name": "resources",
+"version": "UNKNOWN"
+},
+{
+"name": "resources.jar",
+"version": ""
+},
+{
+"name": "resources2",
+"version": "UNKNOWN"
+},
+{
+"name": "resources2.jar",
+"version": ""
+},
+{
+"name": "rsrc",
+"version": "UNKNOWN"
+},
+{
+"name": "rsrc.jar",
+"version": ""
+},
+{
+"name": "sample.war",
+"version": ""
+},
+{
+"name": "servlet-api",
+"version": "6.1"
+},
+{
+"name": "static-resources.jar",
+"version": ""
+},
+{
+"name": "taglibs-standard-impl",
+"version": "1.2.5"
+},
+{
+"name": "taglibs-standard-impl-1.2.5-migrated-0.0.1.jar",
+"version": ""
+},
+{
+"name": "taglibs-standard-spec",
+"version": "1.2.5"
+},
+{
+"name": "taglibs-standard-spec-1.2.5-migrated-0.0.1.jar",
+"version": ""
+},
+{
+"name": "test-lib.jar",
+"version": ""
+},
+{
+"name": "tomcat",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-annotations-api",
+"version": "11.0.21.redhat-00001"
+},
+{
+"name": "tomcat-annotations-api",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-annotations-api.pom",
+"version": ""
+},
+{
+"name": "tomcat-api",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-api",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-api.pom",
+"version": ""
+},
+{
+"name": "tomcat-bootstrap",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-catalina",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-catalina-ant",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-catalina-ant.pom",
+"version": ""
+},
+{
+"name": "tomcat-catalina-ha",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-catalina-ha.pom",
+"version": ""
+},
+{
+"name": "tomcat-catalina.pom",
+"version": ""
+},
+{
+"name": "tomcat-coyote",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-coyote",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-coyote-ffm",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-coyote-ffm",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-coyote-ffm.pom",
+"version": ""
+},
+{
+"name": "tomcat-coyote.pom",
+"version": ""
+},
+{
+"name": "tomcat-dbcp",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-dbcp",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-dbcp.pom",
+"version": ""
+},
+{
+"name": "tomcat-el-api",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-el-api.pom",
+"version": ""
+},
+{
+"name": "tomcat-embed-core",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-embed-core.pom",
+"version": ""
+},
+{
+"name": "tomcat-embed-el",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-embed-el.pom",
+"version": ""
+},
+{
+"name": "tomcat-embed-jasper",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-embed-jasper.pom",
+"version": ""
+},
+{
+"name": "tomcat-embed-programmatic.pom",
+"version": ""
+},
+{
+"name": "tomcat-embed-websocket",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-embed-websocket.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-cs",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-cs.jar",
+"version": ""
+},
+{
+"name": "tomcat-i18n-cs.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-de",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-de.jar",
+"version": ""
+},
+{
+"name": "tomcat-i18n-de.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-es",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-i18n-es",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-es.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-fr",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-i18n-fr",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-fr.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-ja",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-i18n-ja",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-ja.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-ko",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-ko.jar",
+"version": ""
+},
+{
+"name": "tomcat-i18n-ko.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-pt-BR",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-pt-BR.jar",
+"version": ""
+},
+{
+"name": "tomcat-i18n-pt-BR.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-ru",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-ru.jar",
+"version": ""
+},
+{
+"name": "tomcat-i18n-ru.pom",
+"version": ""
+},
+{
+"name": "tomcat-i18n-zh-CN",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-i18n-zh-CN.jar",
+"version": ""
+},
+{
+"name": "tomcat-i18n-zh-CN.pom",
+"version": ""
+},
+{
+"name": "tomcat-jasper",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-jasper-el",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-jasper-el.pom",
+"version": ""
+},
+{
+"name": "tomcat-jasper.pom",
+"version": ""
+},
+{
+"name": "tomcat-jaspic-api",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-jaspic-api.pom",
+"version": ""
+},
+{
+"name": "tomcat-jdbc",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-jdbc",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-jdbc.pom",
+"version": ""
+},
+{
+"name": "tomcat-jni",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-jni",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-jni.pom",
+"version": ""
+},
+{
+"name": "tomcat-jsp-api",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-jsp-api.pom",
+"version": ""
+},
+{
+"name": "tomcat-juli",
+"version": "11.0.21"
+},
+{
+"name": "tomcat-juli",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-juli",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-juli.pom",
+"version": ""
+},
+{
+"name": "tomcat-parent",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-servlet-api",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-servlet-api.pom",
+"version": ""
+},
+{
+"name": "tomcat-ssi",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-ssi.pom",
+"version": ""
+},
+{
+"name": "tomcat-storeconfig",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-storeconfig.pom",
+"version": ""
+},
+{
+"name": "tomcat-tribes",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-tribes.pom",
+"version": ""
+},
+{
+"name": "tomcat-util",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-util",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-util-scan",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-util-scan",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-util-scan.pom",
+"version": ""
+},
+{
+"name": "tomcat-util.pom",
+"version": ""
+},
+{
+"name": "tomcat-vault",
+"version": "1.1.11.Final-redhat-00003"
+},
+{
+"name": "tomcat-websocket",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-websocket",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "tomcat-websocket-api",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-websocket-api.pom",
+"version": ""
+},
+{
+"name": "tomcat-websocket-client-api",
+"version": "11.0.21.redhat-00004"
+},
+{
+"name": "tomcat-websocket-client-api.pom",
+"version": ""
+},
+{
+"name": "tomcat-websocket.pom",
+"version": ""
+},
+{
+"name": "tomcat.pom",
+"version": ""
+},
+{
+"name": "tomcat11.exe",
+"version": ""
+},
+{
+"name": "tomcat11w.exe",
+"version": ""
+},
+{
+"name": "war-url-connection.war",
+"version": ""
+},
+{
+"name": "websocket-api",
+"version": "11.0.21.redhat-00010"
+},
+{
+"name": "websocket-client-api",
+"version": "11.0.21.redhat-00010"
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat JBoss Web Server",
+"retrieved": "2026-11-18",
+"sha256": "a8f675230f2f4cb9d3300630b3f07c66fca735695c82b231bf76aae45f740e01",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/jws-7.json.bz2",
+"version": "7"
+}

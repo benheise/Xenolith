@@ -1,0 +1,702 @@
+{
+"components": [
+{
+"name": "api-ms-win-core-console-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-console-l1-2-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-datetime-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-debug-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-errorhandling-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-fibers-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-fibers-l1-1-1.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-file-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-file-l1-2-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-file-l2-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-handle-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-heap-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-interlocked-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-kernel32-legacy-l1-1-1.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-libraryloader-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-localization-l1-2-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-memory-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-namedpipe-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-processenvironment-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-processthreads-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-processthreads-l1-1-1.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-profile-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-rtlsupport-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-string-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-synch-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-synch-l1-2-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-sysinfo-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-sysinfo-l1-2-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-timezone-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-core-util-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-conio-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-convert-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-environment-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-filesystem-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-heap-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-locale-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-math-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-multibyte-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-private-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-process-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-runtime-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-stdio-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-string-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-time-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "api-ms-win-crt-utility-l1-1-0.dll",
+"version": ""
+},
+{
+"name": "attach.dll",
+"version": ""
+},
+{
+"name": "awt.dll",
+"version": ""
+},
+{
+"name": "CodePointIM.jar",
+"version": ""
+},
+{
+"name": "dt_shmem.dll",
+"version": ""
+},
+{
+"name": "dt_socket.dll",
+"version": ""
+},
+{
+"name": "extnet.dll",
+"version": ""
+},
+{
+"name": "FileChooserDemo.jar",
+"version": ""
+},
+{
+"name": "Font2DTest.jar",
+"version": ""
+},
+{
+"name": "fontmanager.dll",
+"version": ""
+},
+{
+"name": "freetype.dll",
+"version": ""
+},
+{
+"name": "instrument.dll",
+"version": ""
+},
+{
+"name": "J2Ddemo.jar",
+"version": ""
+},
+{
+"name": "j2gss.dll",
+"version": ""
+},
+{
+"name": "j2pcsc.dll",
+"version": ""
+},
+{
+"name": "j2pkcs11.dll",
+"version": ""
+},
+{
+"name": "jaas.dll",
+"version": ""
+},
+{
+"name": "jabswitch.exe",
+"version": ""
+},
+{
+"name": "jaccessinspector.exe",
+"version": ""
+},
+{
+"name": "jaccesswalker.exe",
+"version": ""
+},
+{
+"name": "jar.exe",
+"version": ""
+},
+{
+"name": "jarsigner.exe",
+"version": ""
+},
+{
+"name": "java-21-openjdk-21.0.10.0.7-1.portable.debuginfo.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.10.0.7-1.portable.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.10.0.7-1.portable.jre.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.portable.debuginfo.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.portable.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.portable.jre.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.debuginfo.x86_64.zip",
+"version": ""
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.debuginfo.x86_64.zip",
+"version": "sha256:712d563b57cd330125201a2572d76979390274b1e9f578dda28cac7cbe30eb54"
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.jdk.x86_64.msi",
+"version": ""
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.jdk.x86_64.msi",
+"version": "sha256:cca39a5da77767e4d5b871050dfcfb0232be3d4b8138651b77ca8b019ffbd4f2"
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.jdk.x86_64.zip",
+"version": ""
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.jdk.x86_64.zip",
+"version": "sha256:5e293b3192021a19b754b35e4e1d4d77983497c4b8c4a95f995e039b89e9cc99"
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.jre.x86_64.msi",
+"version": ""
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.jre.x86_64.msi",
+"version": "sha256:51b17c1f310ea2f975dedb1ab217c47fb1e68b54836859a09be8bdcfb69032ca"
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.jre.x86_64.zip",
+"version": ""
+},
+{
+"name": "java-21-openjdk-21.0.11.0.10-1.win.jre.x86_64.zip",
+"version": "sha256:3ae127d8058d67a584eec731fc837f54fef26d890532fb0eabdd630973248acc"
+},
+{
+"name": "java-21-openjdk-21.0.13.0.9-3.0.portable.debuginfo.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.13.0.9-3.0.portable.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.13.0.9-3.0.portable.jre.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.2.0.13-1.portable.debuginfo.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.2.0.13-1.portable.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.2.0.13-1.portable.jre.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.3.0.9-1.portable.debuginfo.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.3.0.9-1.portable.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.3.0.9-1.portable.jre.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.3.0.9-3.portable.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.3.0.9-3.portable.jre.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.7.0.6-2.portable.debuginfo.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.7.0.6-2.portable.jdk.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java-21-openjdk-21.0.7.0.6-2.portable.jre.x86_64.tar.xz",
+"version": "0.0.0"
+},
+{
+"name": "java.dll",
+"version": ""
+},
+{
+"name": "java.exe",
+"version": ""
+},
+{
+"name": "javaaccessbridge.dll",
+"version": ""
+},
+{
+"name": "javac.exe",
+"version": ""
+},
+{
+"name": "javadoc.exe",
+"version": ""
+},
+{
+"name": "javajpeg.dll",
+"version": ""
+},
+{
+"name": "javap.exe",
+"version": ""
+},
+{
+"name": "javaw.exe",
+"version": ""
+},
+{
+"name": "jawt.dll",
+"version": ""
+},
+{
+"name": "jcmd.exe",
+"version": ""
+},
+{
+"name": "jconsole.exe",
+"version": ""
+},
+{
+"name": "jdb.exe",
+"version": ""
+},
+{
+"name": "jdeprscan.exe",
+"version": ""
+},
+{
+"name": "jdeps.exe",
+"version": ""
+},
+{
+"name": "jdwp.dll",
+"version": ""
+},
+{
+"name": "jfr.exe",
+"version": ""
+},
+{
+"name": "jhsdb.exe",
+"version": ""
+},
+{
+"name": "jimage.dll",
+"version": ""
+},
+{
+"name": "jimage.exe",
+"version": ""
+},
+{
+"name": "jinfo.exe",
+"version": ""
+},
+{
+"name": "jli.dll",
+"version": ""
+},
+{
+"name": "jlink.exe",
+"version": ""
+},
+{
+"name": "jmap.exe",
+"version": ""
+},
+{
+"name": "jmod.exe",
+"version": ""
+},
+{
+"name": "jpackage.dll",
+"version": ""
+},
+{
+"name": "jpackage.exe",
+"version": ""
+},
+{
+"name": "jps.exe",
+"version": ""
+},
+{
+"name": "jrt-fs.jar",
+"version": ""
+},
+{
+"name": "jrunscript.exe",
+"version": ""
+},
+{
+"name": "jshell.exe",
+"version": ""
+},
+{
+"name": "jsound.dll",
+"version": ""
+},
+{
+"name": "jstack.exe",
+"version": ""
+},
+{
+"name": "jstat.exe",
+"version": ""
+},
+{
+"name": "jstatd.exe",
+"version": ""
+},
+{
+"name": "jsvml.dll",
+"version": ""
+},
+{
+"name": "jvm.dll",
+"version": ""
+},
+{
+"name": "jwebserver.exe",
+"version": ""
+},
+{
+"name": "keytool.exe",
+"version": ""
+},
+{
+"name": "kinit.exe",
+"version": ""
+},
+{
+"name": "klist.exe",
+"version": ""
+},
+{
+"name": "ktab.exe",
+"version": ""
+},
+{
+"name": "lcms.dll",
+"version": ""
+},
+{
+"name": "le.dll",
+"version": ""
+},
+{
+"name": "management.dll",
+"version": ""
+},
+{
+"name": "management_agent.dll",
+"version": ""
+},
+{
+"name": "management_ext.dll",
+"version": ""
+},
+{
+"name": "Metalworks.jar",
+"version": ""
+},
+{
+"name": "mlib_image.dll",
+"version": ""
+},
+{
+"name": "msvcp140.dll",
+"version": ""
+},
+{
+"name": "net.dll",
+"version": ""
+},
+{
+"name": "nio.dll",
+"version": ""
+},
+{
+"name": "Notepad.jar",
+"version": ""
+},
+{
+"name": "openjdk-21",
+"version": ""
+},
+{
+"name": "prefs.dll",
+"version": ""
+},
+{
+"name": "rmi.dll",
+"version": ""
+},
+{
+"name": "rmiregistry.exe",
+"version": ""
+},
+{
+"name": "SampleTree.jar",
+"version": ""
+},
+{
+"name": "saproc.dll",
+"version": ""
+},
+{
+"name": "serialver.exe",
+"version": ""
+},
+{
+"name": "splashscreen.dll",
+"version": ""
+},
+{
+"name": "src.zip",
+"version": ""
+},
+{
+"name": "sspi_bridge.dll",
+"version": ""
+},
+{
+"name": "Stylepad.jar",
+"version": ""
+},
+{
+"name": "sunmscapi.dll",
+"version": ""
+},
+{
+"name": "SwingSet2.jar",
+"version": ""
+},
+{
+"name": "syslookup.dll",
+"version": ""
+},
+{
+"name": "TableExample.jar",
+"version": ""
+},
+{
+"name": "TransparentRuler.jar",
+"version": ""
+},
+{
+"name": "ucrtbase.dll",
+"version": ""
+},
+{
+"name": "vcruntime140.dll",
+"version": ""
+},
+{
+"name": "vcruntime140_1.dll",
+"version": ""
+},
+{
+"name": "verify.dll",
+"version": ""
+},
+{
+"name": "w2k_lsa_auth.dll",
+"version": ""
+},
+{
+"name": "windowsaccessbridge-64.dll",
+"version": ""
+},
+{
+"name": "zip.dll",
+"version": ""
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat build of OpenJDK",
+"retrieved": "2026-11-18",
+"sha256": "8d69603dcadc67a435b3b77496fc528967f55e2a97796d159dc2106b7190d328",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/openjdk-21.json.bz2",
+"version": "21"
+}

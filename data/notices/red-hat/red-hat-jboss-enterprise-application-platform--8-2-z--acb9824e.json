@@ -1,0 +1,102 @@
+{
+"components": [
+{
+"name": "eap-8.2.z",
+"version": ""
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-builder-openshift-rhel9",
+"version": "sha256:2b4635e8c8019fc253c51bd9ea0a533e64099eaa04ad4c8e1f37733b69d09342"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-builder-openshift-rhel9",
+"version": "sha256:3b1f36d6b2da509c2263b434e9eac1f956df4542c07d65187881fe96c8735b85"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-builder-openshift-rhel9",
+"version": "sha256:435802b6a4809bd112d35b726577757fd6bd191d3e5f3347a67b3322e54f3705"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-builder-openshift-rhel9",
+"version": "sha256:b7d1b7f96c024b4374099d3c6b8b49b8ead87002cc2c6b9e5e4fd44a0493d67b"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-builder-openshift-rhel9",
+"version": "sha256:bffe2c88aa8107766f09c440031c711ff2517010cc678251917891485f6bf3bb"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-runtime-openshift-rhel9",
+"version": "sha256:7cd1b48eda5c913feb9739cea50d2c0bed6f40e9a77139f4cdcdf924804f99e3"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-runtime-openshift-rhel9",
+"version": "sha256:8f6315aebb31d3db9a34fc88d7c5ee080482c6079443819232919222a5eda4c8"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-runtime-openshift-rhel9",
+"version": "sha256:93d8ff8b9575a7ec345e0b62e21ead3c2dd4b7a203819884d0d00010bd632edd"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-runtime-openshift-rhel9",
+"version": "sha256:cb5fc7d6ba5342c03948e00c279c49e4c7ce59c4d5b6ace27e08168655907c6b"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk21-runtime-openshift-rhel9",
+"version": "sha256:f882d4341afa5c3b1467225dc6241ac97fcd75c516adecdba13a28e53262e13e"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-builder-openshift-rhel9",
+"version": "sha256:22c2f9c627421f8a0556083735c0b5cebfde46e24cd0da86b5ffd5816384c2fa"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-builder-openshift-rhel9",
+"version": "sha256:453deff783748e62f1523ec0241fe537d0f73c3c33d616c9f1355da2cdceed4b"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-builder-openshift-rhel9",
+"version": "sha256:725ec8a859f7b4ff707beb3d47ab055ebabcf82e48aeb9d699404cfad11b1df3"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-builder-openshift-rhel9",
+"version": "sha256:856650668e4d3dedcb85f958e4318f855e8a4128ad22c9effca78da20eee541c"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-builder-openshift-rhel9",
+"version": "sha256:d1ab4dc5169ffa2ad5c6ca8357f72223a226d2eace7ec3491ff978e0d739d84e"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-runtime-openshift-rhel9",
+"version": "sha256:0866df56285fd5a8e943644dde3c2978c020998bd995228e451d984c20cf4a69"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-runtime-openshift-rhel9",
+"version": "sha256:3374625f189e529f383432621a6dae113b813f0f295cb412c783f3a2e47d9dda"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-runtime-openshift-rhel9",
+"version": "sha256:3709cf62b0ee509f448d951b52f51e4d8c6533ccb57c8ba2f51cb9a16b8e7ba3"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-runtime-openshift-rhel9",
+"version": "sha256:ab4045b72ca1b7d3f2dda1eb4432bf4a1e898bca13821e4d8bc651cd6107ab3c"
+},
+{
+"name": "jboss-eap-8-tech-preview/eap82-openjdk25-runtime-openshift-rhel9",
+"version": "sha256:ef567c8fa3677596417428a783d9082c58b27a2bcd981bc2c91809861e5066f9"
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat JBoss Enterprise Application Platform",
+"retrieved": "2026-11-18",
+"sha256": "cc6b8a6804762290804ce23cc4cd38db14ec85fef784068da0099ba1144652eb",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/eap-8.2.z.json.bz2",
+"version": "8.2.z"
+}

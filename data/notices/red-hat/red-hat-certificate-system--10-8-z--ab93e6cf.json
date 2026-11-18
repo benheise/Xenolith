@@ -1,0 +1,138 @@
+{
+"components": [
+{
+"name": "certificate_system_10.8.z",
+"version": ""
+},
+{
+"name": "commons-lang3",
+"version": "3.12.0"
+},
+{
+"name": "jss",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "jss-base",
+"version": "5.9.1-SNAPSHOT"
+},
+{
+"name": "jss-debuginfo",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "jss-debugsource",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "jss-examples",
+"version": "5.9.1-SNAPSHOT"
+},
+{
+"name": "jss-parent",
+"version": "5.9.1-SNAPSHOT"
+},
+{
+"name": "jss-tomcat",
+"version": "5.9.1-SNAPSHOT"
+},
+{
+"name": "jss-tomcat-10.1",
+"version": "5.9.1-SNAPSHOT"
+},
+{
+"name": "jss-tomcat-9.0",
+"version": "5.9.1-SNAPSHOT"
+},
+{
+"name": "junit-jupiter",
+"version": "5.9.0"
+},
+{
+"name": "junit-platform-launcher",
+"version": "1.9.0"
+},
+{
+"name": "libjss",
+"version": "5.9.1-SNAPSHOT"
+},
+{
+"name": "libjss-symkey",
+"version": "5.9.1-SNAPSHOT"
+},
+{
+"name": "opentest4j",
+"version": "1.2.0"
+},
+{
+"name": "redhat-jss",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "redhat-jss-debuginfo",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "redhat-jss-javadoc",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "redhat-jss-tomcat",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "redhat-jss-tools",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "redhat-jss-tools-debuginfo",
+"version": "5.9.3-1.module+el8pki+25047+fa5d9f52"
+},
+{
+"name": "slf4j-api",
+"version": "1.7.32"
+},
+{
+"name": "slf4j-jdk14",
+"version": "1.7.32"
+},
+{
+"name": "tomcat-catalina",
+"version": "10.1.36"
+},
+{
+"name": "tomcat-catalina",
+"version": "9.0.83"
+},
+{
+"name": "tomcat-coyote",
+"version": "10.1.36"
+},
+{
+"name": "tomcat-coyote",
+"version": "9.0.62"
+},
+{
+"name": "tomcat-juli",
+"version": "10.1.36"
+},
+{
+"name": "tomcat-juli",
+"version": "9.0.62"
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat Certificate System",
+"retrieved": "2026-11-18",
+"sha256": "1efe27ecc6aa6f6e89ba34c2dca7508e9cf3c18a53103946b5066a9ca942c8d2",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/certificate_system_10.8.z.json.bz2",
+"version": "10.8.z"
+}

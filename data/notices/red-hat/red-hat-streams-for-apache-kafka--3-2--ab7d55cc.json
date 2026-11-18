@@ -1,0 +1,266 @@
+{
+"components": [
+{
+"name": "amq-st-3.2",
+"version": ""
+},
+{
+"name": "github.com/alecthomas/kingpin/v2",
+"version": "v2.4.0"
+},
+{
+"name": "github.com/alecthomas/units",
+"version": "v0.0.0-20240626203959-61d1e3462e30"
+},
+{
+"name": "github.com/aws/aws-msk-iam-sasl-signer-go",
+"version": "v1.0.0"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2",
+"version": "v1.19.0"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/config",
+"version": "v1.18.28"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/credentials",
+"version": "v1.13.27"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/feature/ec2/imds",
+"version": "v1.13.5"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/internal/configsources",
+"version": "v1.1.35"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2",
+"version": "v2.4.29"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/internal/ini",
+"version": "v1.3.36"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/service/internal/presigned-url",
+"version": "v1.9.29"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/service/sso",
+"version": "v1.12.13"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/service/ssooidc",
+"version": "v1.14.13"
+},
+{
+"name": "github.com/aws/aws-sdk-go-v2/service/sts",
+"version": "v1.19.3"
+},
+{
+"name": "github.com/aws/smithy-go",
+"version": "v1.13.5"
+},
+{
+"name": "github.com/beorn7/perks",
+"version": "v1.0.1"
+},
+{
+"name": "github.com/cespare/xxhash/v2",
+"version": "v2.3.0"
+},
+{
+"name": "github.com/danielqsj/kafka_exporter",
+"version": "UNKNOWN"
+},
+{
+"name": "github.com/danielqsj/kafka_exporter",
+"version": "v1.0.0"
+},
+{
+"name": "github.com/danielqsj/kafka_exporter",
+"version": "v1.9.0"
+},
+{
+"name": "github.com/davecgh/go-spew",
+"version": "v1.1.1"
+},
+{
+"name": "github.com/eapache/go-resiliency",
+"version": "v1.7.0"
+},
+{
+"name": "github.com/eapache/go-xerial-snappy",
+"version": "v0.0.0-20230731223053-c322873962e3"
+},
+{
+"name": "github.com/eapache/queue",
+"version": "v1.1.0"
+},
+{
+"name": "github.com/go-kit/log",
+"version": "v0.2.1"
+},
+{
+"name": "github.com/go-logfmt/logfmt",
+"version": "v0.6.0"
+},
+{
+"name": "github.com/go-logr/logr",
+"version": "v1.4.2"
+},
+{
+"name": "github.com/golang/snappy",
+"version": "v0.0.4"
+},
+{
+"name": "github.com/hashicorp/errwrap",
+"version": "v1.1.0"
+},
+{
+"name": "github.com/hashicorp/go-multierror",
+"version": "v1.1.1"
+},
+{
+"name": "github.com/hashicorp/go-uuid",
+"version": "v1.0.3"
+},
+{
+"name": "github.com/IBM/sarama",
+"version": "v1.45.0"
+},
+{
+"name": "github.com/jcmturner/aescts/v2",
+"version": "v2.0.0"
+},
+{
+"name": "github.com/jcmturner/dnsutils/v2",
+"version": "v2.0.0"
+},
+{
+"name": "github.com/jcmturner/gofork",
+"version": "v1.7.6"
+},
+{
+"name": "github.com/jcmturner/gokrb5/v8",
+"version": "v8.4.4"
+},
+{
+"name": "github.com/jcmturner/rpc/v2",
+"version": "v2.0.3"
+},
+{
+"name": "github.com/klauspost/compress",
+"version": "v1.17.11"
+},
+{
+"name": "github.com/krallistic/kazoo-go",
+"version": "v0.0.0-20170526135507-a15279744f4e"
+},
+{
+"name": "github.com/munnerz/goautoneg",
+"version": "v0.0.0-20191010083416-a7dc8b61c822"
+},
+{
+"name": "github.com/pierrec/lz4/v4",
+"version": "v4.1.22"
+},
+{
+"name": "github.com/pkg/errors",
+"version": "v0.9.1"
+},
+{
+"name": "github.com/prometheus/client_golang",
+"version": "v1.20.0"
+},
+{
+"name": "github.com/prometheus/client_model",
+"version": "v0.6.1"
+},
+{
+"name": "github.com/prometheus/common",
+"version": "v0.55.0"
+},
+{
+"name": "github.com/prometheus/procfs",
+"version": "v0.15.1"
+},
+{
+"name": "github.com/rcrowley/go-metrics",
+"version": "v0.0.0-20201227073835-cf1acfcdf475"
+},
+{
+"name": "github.com/samuel/go-zookeeper",
+"version": "v0.0.0-20201211165307-7117e9ea2414"
+},
+{
+"name": "github.com/xdg-go/pbkdf2",
+"version": "v1.0.0"
+},
+{
+"name": "github.com/xdg-go/scram",
+"version": "v1.1.2"
+},
+{
+"name": "github.com/xdg-go/stringprep",
+"version": "v1.0.4"
+},
+{
+"name": "github.com/xhit/go-str2duration/v2",
+"version": "v2.1.0"
+},
+{
+"name": "golang-github-danielqsj-kafka_exporter",
+"version": "1.9.0-14.el9"
+},
+{
+"name": "golang.org/x/crypto",
+"version": "v0.32.0"
+},
+{
+"name": "golang.org/x/net",
+"version": "v0.34.0"
+},
+{
+"name": "golang.org/x/sys",
+"version": "v0.29.0"
+},
+{
+"name": "golang.org/x/text",
+"version": "v0.21.0"
+},
+{
+"name": "google.golang.org/protobuf",
+"version": "v1.34.2"
+},
+{
+"name": "k8s.io/klog/v2",
+"version": "v2.130.1"
+},
+{
+"name": "kafka_exporter",
+"version": "1.9.0-14.el9"
+},
+{
+"name": "stdlib",
+"version": "go1.25.11"
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat streams for Apache Kafka",
+"retrieved": "2026-11-18",
+"sha256": "69a991f3fbe436f300df04b8ff55ace880b402ccf2ea93c6bdc151836d36739b",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/amq-st-3.2.json.bz2",
+"version": "3.2"
+}

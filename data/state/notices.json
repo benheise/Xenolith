@@ -370,6 +370,166 @@
 "html_table"
 ]
 },
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.146.28": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "a97ba947ad9c19adcae8e21902eed63e8c65c7fa8737a3e49143ddf9759c0bc6",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.146.43": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "4333dfbb7ed4d4f08834f6fec6c31383a2fd1e2a80303d5ece133b361bf04a3d",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.146.45": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "bae038d345a729675ac888eb29f9bc0fe37d41f1cecd9d16d36c7b97feeeeb17",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.146.7": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "c24c381eb93543c169342c77f87fd679630192f603aeffdd72c4bfa315b0d8c6",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.161.20": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "a97ba947ad9c19adcae8e21902eed63e8c65c7fa8737a3e49143ddf9759c0bc6",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.161.24": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "4333dfbb7ed4d4f08834f6fec6c31383a2fd1e2a80303d5ece133b361bf04a3d",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.161.36": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "bae038d345a729675ac888eb29f9bc0fe37d41f1cecd9d16d36c7b97feeeeb17",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.173.8": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "bae038d345a729675ac888eb29f9bc0fe37d41f1cecd9d16d36c7b97feeeeb17",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.104.5-to-7.111.4": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "9b53e9bf1eb2a4de69d0de878c4ecd17ef1837c055b2c0146858d135ea6ddf80",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.111.7": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "30b6529165e922f6dcf87638ae636a6dadf9d4371f2a44d54ee7c9fa78a7266c",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.125.4": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "04e127bb792e309a613995c6236473b6e82c8537d1fd907a773f9346eb4b1ab7",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.133": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "2023ef010b5efdec302c95b497b9968608aecae2f7f56474c61bbe227df147bc",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.146": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "75e3927eea55e5afdfaa93344d0ae3005c8fbadede39a40871bd751342707092",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.161": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "2c068de3b4bd318b1d63a161dfe31a0b0c7ece4616a6fbf0afd532747a4c1a02",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.173": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "48da4a17ab7e4b044872604ba4cf2a76df346bbd9f1be41094d11f4ebf046f4b",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#openjdk-7.90.10-to-7.98.14": {
+"fetched": "2026-11-18",
+"kind": "version-table",
+"n": 1,
+"sha": "673ac30e86fa9beae460d9e6be4e8bc8e6b006578340eb0f9302dfcc0a45f75f",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
 "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/awglc/index.html": {
 "fetched": "2026-11-18",
 "kind": "html",
@@ -2297,6 +2457,46 @@
 "jar_names"
 ]
 },
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.2/19.2.10-ee.0.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 2702,
+"sha": "1f0f193e496478bf4cdd76a3f5df369e07e9b54899318e2697bfbe79cff06cd3",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.3/19.3.9-ee.0.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 2713,
+"sha": "cb84abf04535ff853cacbe94da84075c1628285818ed34bfa0bb4da11a587feb",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.4/19.4.8-ee.0.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 2708,
+"sha": "31cadd979957b581b9ad5c71843a67ecd5b672d69b1edef1781bc3ba56e9f7b4",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.5/19.5.6-ee.0.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 2710,
+"sha": "522702f7ff1ee2e4f76841f330f48a9290dc869ae536c3c0af399f7ee1e5c332",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://help.ivanti.com/ht/help/en_US/ISM/2024/ITSM_AttributionReport__Q22024.pdf": {
 "fetched": "2026-11-08",
 "kind": "pdf",
@@ -3157,6 +3357,196 @@
 "kind": "sbom",
 "n": 1011,
 "sha": "89f07b3bb0f151b25e051bf2081154099b520281085a8ccae8cb89c800abb9a9",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/3amp-2.16.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 48,
+"sha": "31f2d63f00c65888554a86fa5bd60417ab8293c56e1c790dfd158387ed1658a0",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/amq-7.14.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 3143,
+"sha": "e2c0a6653a91dff5dc90364b439682342869134518f312cf36ecef1baf2d6581",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/amq-st-3.2.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 62,
+"sha": "69a991f3fbe436f300df04b8ff55ace880b402ccf2ea93c6bdc151836d36739b",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/ansible_automation_platform-2.7.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 5012,
+"sha": "1fd7d3e3a901f32d154d9df8cae4f051028e30ce5a9c371a6f03af370e226eb8",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/certificate_system_10.8.z.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 30,
+"sha": "1efe27ecc6aa6f6e89ba34c2dca7508e9cf3c18a53103946b5066a9ca942c8d2",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/directory_server_13.2.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 1428,
+"sha": "d42917188b7419335ad6c15d29474ec169e5578d9c8eed95852da1acb4e6bcfc",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/eap-8.1.z.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 3085,
+"sha": "552e599bbb77a62affb64d78280ca52f9742af8e30ed00359f25bdbba46a0a35",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/eap-8.2.z.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 21,
+"sha": "cc6b8a6804762290804ce23cc4cd38db14ec85fef784068da0099ba1144652eb",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/jdg-8.6.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 771,
+"sha": "a6f6b8aa3ed1b2a654347dc17b1c35aace2a5efac6e7a1b47e70a378f8043495",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/jws-7.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 238,
+"sha": "a8f675230f2f4cb9d3300630b3f07c66fca735695c82b231bf76aae45f740e01",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/openjdk-17.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 417,
+"sha": "7b1713c8e8edbb2fce489d1eec7eb0c5d29633c70c611cccd9ffc39c2c3d7b1c",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/openjdk-21.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 171,
+"sha": "8d69603dcadc67a435b3b77496fc528967f55e2a97796d159dc2106b7190d328",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/openjdk-25.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 145,
+"sha": "dd97b87eb342a28646b66088ae45225e83c63a97dfd7bc48d4c856177fa416bf",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/quay-3.18.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 54,
+"sha": "fce1187a1322e241d374d5559bca236e8e05a2a620c3e99668156dd09abf4657",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/rhacs-5.0.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 5547,
+"sha": "e9f9aae9153269cc54bccfbc17452c3d896c69414376105b2a48b12bc8e7b9d0",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/rhbk-26.4.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 2035,
+"sha": "536f266297f6a64117fa70bc90da73cd25774f744d01d3d7acaa3d4cee7715e6",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/rhbk-26.6.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 1665,
+"sha": "2da124b1dfd68c192d8d109657e3664327234234c55a17122f36ec115f712c53",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/rhsso-7.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 774,
+"sha": "900377773faac0277c88626cae8e56e641c42e21ddc06ad3c9b8dcd587139926",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://security.access.redhat.com/data/sbom/v1/spdx/satellite_6.19.json.bz2": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 7688,
+"sha": "eb0f69ee6293be83cdd39448f535a869787deb42b830df0562815486a00dc1d4",
 "status": "ok",
 "via": [
 "sbom"

@@ -1,0 +1,3102 @@
+{
+"components": [
+{
+"name": "accessors-smart",
+"version": "2.6.0.redhat-00001"
+},
+{
+"name": "aesh",
+"version": "2.8.4.redhat-00001"
+},
+{
+"name": "agroal-api",
+"version": "2.4.0.redhat-00001"
+},
+{
+"name": "agroal-api",
+"version": "2.8.0.redhat-00001"
+},
+{
+"name": "agroal-pool",
+"version": "2.4.0.redhat-00001"
+},
+{
+"name": "agroal-pool",
+"version": "2.8.0.redhat-00001"
+},
+{
+"name": "asm",
+"version": "9.7.1.redhat-00002"
+},
+{
+"name": "caffeine",
+"version": "3.1.8.redhat-00002"
+},
+{
+"name": "caffeine",
+"version": "3.2.3.redhat-00003"
+},
+{
+"name": "client",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "client",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "client",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "client_java",
+"version": "1.4.3.redhat-00001"
+},
+{
+"name": "client_java_parent",
+"version": "1.4.3.redhat-00001"
+},
+{
+"name": "commons-codec",
+"version": "1.17.1.redhat-00001"
+},
+{
+"name": "commons-codec",
+"version": "1.19.0.redhat-00003"
+},
+{
+"name": "commons-compress",
+"version": "1.27.1.redhat-00001"
+},
+{
+"name": "commons-compress",
+"version": "1.28.0.redhat-00002"
+},
+{
+"name": "commons-io",
+"version": "2.18.0.redhat-00001"
+},
+{
+"name": "commons-io",
+"version": "2.21.0.redhat-00001"
+},
+{
+"name": "commons-lang3",
+"version": "3.18.0.redhat-00002"
+},
+{
+"name": "commons-lang3",
+"version": "3.20.0.redhat-00001"
+},
+{
+"name": "commons-math3",
+"version": "3.6.1.redhat-00003"
+},
+{
+"name": "custom-module",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "custom-module",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "custom-module",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "datagrid/datagrid-8",
+"version": "sha256:3313d167223695b2af8e04762571ecc4a90b306d1d6869d0f482ab926f5f3f03"
+},
+{
+"name": "datagrid/datagrid-8",
+"version": "sha256:9c3837c9c10f2a92c7f60d088545cd360251436292e1954cc24b7c220b32a403"
+},
+{
+"name": "datagrid/datagrid-8",
+"version": "sha256:b384833f382bb01f195517c4288bcbe84b996a245b7e718878ca90e65555bb3d"
+},
+{
+"name": "datagrid/datagrid-8",
+"version": "sha256:bf0e5174159bc681936ce9ab1c2f6649dc4d3724ffa6554c45ed6bf8c3fa08ad"
+},
+{
+"name": "datagrid/datagrid-8",
+"version": "sha256:d6b8f1099e4be24c101283669698a82e0153db1600202a4059114d85e9086898"
+},
+{
+"name": "datagrid/datagrid-8-prod-operator-bundle",
+"version": "sha256:44fb6a2256236f0ecdb8a3253ff7b7cf354a97fce06d99083da4fd33882ed924"
+},
+{
+"name": "datagrid/datagrid-8-prod-operator-bundle",
+"version": "sha256:4f67c604dc98077efa3831acd9bf20a2852e24f53af44fc874548658e3535695"
+},
+{
+"name": "datagrid/datagrid-8-prod-operator-bundle",
+"version": "sha256:da1bd86215a5f6ca568041a1ba4af178158aac2ee9125526faae173a0c8024b8"
+},
+{
+"name": "datagrid/datagrid-8-prod-operator-bundle",
+"version": "sha256:ddc2b5f42911382c6ff3f5eef870b4606abfb56f93007240583d0003227b4b59"
+},
+{
+"name": "datagrid/datagrid-8-prod-operator-bundle",
+"version": "sha256:f021ad58e5f223b608243c7cf87ac2f021c37362d2be04ffa051bdf44cdee128"
+},
+{
+"name": "datagrid/datagrid-8-rhel9-operator",
+"version": "sha256:43eacfacaf77023cbef155650222a5ff53c0987fdd8a700e478d2eb501c5ee7d"
+},
+{
+"name": "datagrid/datagrid-8-rhel9-operator",
+"version": "sha256:5b6976ac8ea1f9a421702946528345fd0711e5e423a7431730549ccd4bb9c968"
+},
+{
+"name": "datagrid/datagrid-8-rhel9-operator",
+"version": "sha256:6b67d10a8562b2cd7fd267a066761de9501c95fa02f3e74ecdc65c5955f16f98"
+},
+{
+"name": "datagrid/datagrid-8-rhel9-operator",
+"version": "sha256:ca721ed58e2d93fb152cdb411357e45735943f348a3d7591526e878c409b7088"
+},
+{
+"name": "datagrid/datagrid-8-rhel9-operator",
+"version": "sha256:d6c101cd4d66881dd28df416678409702d80cf61f1e0d7f068741d831ddbe2ff"
+},
+{
+"name": "embedded",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "embedded",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "embedded",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "error_prone_annotations",
+"version": "2.44.0.redhat-00001"
+},
+{
+"name": "error_prone_parent",
+"version": "2.44.0.redhat-00001"
+},
+{
+"name": "gdx-jnigen-loader",
+"version": "2.5.2.redhat-00001"
+},
+{
+"name": "h2",
+"version": "2.4.240.redhat-00001"
+},
+{
+"name": "HdrHistogram",
+"version": "2.1.12.redhat-00005"
+},
+{
+"name": "HdrHistogram",
+"version": "2.2.2.redhat-00005"
+},
+{
+"name": "hibernate-commons-annotations",
+"version": "6.0.6.Final-redhat-00001"
+},
+{
+"name": "hibernate-models",
+"version": "1.0.1.redhat-00001"
+},
+{
+"name": "hibernate-search-backend-lucene",
+"version": "7.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-backend-lucene",
+"version": "8.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-bom",
+"version": "8.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-engine",
+"version": "7.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-engine",
+"version": "8.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-mapper-pojo-base",
+"version": "7.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-mapper-pojo-base",
+"version": "8.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-util-common",
+"version": "7.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-util-common",
+"version": "8.1.2.Final-redhat-00002"
+},
+{
+"name": "hibernate-search-v5migrationhelper-engine",
+"version": "7.1.2.Final-redhat-00002"
+},
+{
+"name": "hppc",
+"version": "0.10.0.redhat-00001"
+},
+{
+"name": "hppc",
+"version": "0.9.1.redhat-00001"
+},
+{
+"name": "infinispan-anchored-keys",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-anchored-keys",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-anchored-keys",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-api",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-api",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-api",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-archetypes",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-archetypes",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-archetypes",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-bom",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-bom",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-bom",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-build-configuration-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-build-configuration-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-build-configuration-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-jdbc",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cachestore-jdbc",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-jdbc",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-jdbc-common",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cachestore-jdbc-common",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-jdbc-common",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-remote",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cachestore-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-remote",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-rocksdb",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cachestore-rocksdb",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-rocksdb",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-sql",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cachestore-sql",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-sql",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cdi-common",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cdi-common",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cdi-common",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cdi-embedded",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cdi-embedded",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cdi-embedded",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cdi-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cdi-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cdi-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cdi-remote",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cdi-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cdi-remote",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cdi-weld-se-it",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cdi-weld-se-it",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cdi-weld-se-it",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-checkstyle",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-checkstyle",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-checkstyle",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-cli-client",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-cli-client",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-cli-client",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod-graalvm",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod-graalvm",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod-graalvm",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod-test",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod-test",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-client-rest",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-client-rest",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-client-rest",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-clustered-counter",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-clustered-counter",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-clustered-counter",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-clustered-lock",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-clustered-lock",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-clustered-lock",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-commons",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-commons",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-commons",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-commons-graalvm",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-commons-graalvm",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-commons-graalvm",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-commons-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-commons-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-commons-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-commons-spi",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-commons-spi",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-commons-spi",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-commons-test",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-commons-test",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-commons-test",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-component-annotations",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-component-annotations",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-component-annotations",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-component-processor",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-component-processor",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-component-processor",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-console",
+"version": "15.0.11.Final-redhat-00003"
+},
+{
+"name": "infinispan-console",
+"version": "16.0.11.Final-redhat-00001"
+},
+{
+"name": "infinispan-console",
+"version": "16.0.7.Final-redhat-00001"
+},
+{
+"name": "infinispan-core",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-core",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-core",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-core-graalvm",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-core-graalvm",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-core-graalvm",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-counter-api",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-counter-api",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-defaults-maven-plugin",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-defaults-maven-plugin",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-distribution",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-distribution",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-docs",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-docs",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-docs",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-endpoint-interop-it",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-endpoint-interop-it",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-endpoint-interop-it",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-graalvm-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-graalvm-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-graalvm-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-gridfs",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-gridfs",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-gridfs",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-commons",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-commons",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-commons",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-spi",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-spi",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-spi",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-v62",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-v66",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-hibernate-cache-v66",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-hibernate-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-hibernate-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-hibernate-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-hotrod",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-integrationtests-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-integrationtests-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-integrationtests-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-javadoc-all",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-javadoc-all",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-jboss-marshalling",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-jboss-marshalling",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-jboss-marshalling",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-jboss-marshalling-it",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-jboss-marshalling-it",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-jboss-marshalling-it",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-jcache",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-jcache",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-jcache",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-jcache-commons",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-jcache-commons",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-jcache-commons",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-jcache-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-jcache-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-jcache-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-jcache-remote",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-jcache-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-jcache-remote",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-jcache-tck-runner-embedded",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-jcache-tck-runner-embedded",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-jcache-tck-runner-remote",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-jcache-tck-runner-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-key-value-store-client",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-key-value-store-client",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-key-value-store-client",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-logging-annotations",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-logging-annotations",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-logging-annotations",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-logging-processor",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-logging-processor",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-logging-processor",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-lua51-platform",
+"version": "1.0.0.redhat-00001"
+},
+{
+"name": "infinispan-multimap",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-multimap",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-multimap",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-objectfilter",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-persistence-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-persistence-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-persistence-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-quarkus-cli",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-quarkus-cli",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-quarkus-cli",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-quarkus-integration-test-cli",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-quarkus-integration-test-cli",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-quarkus-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-quarkus-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-quarkus-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-query",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-query",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-query",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-query-core",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-query-dsl",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-remote-query-client",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-remote-query-server",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-scripting",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-scripting",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-scripting",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-core",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-core",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-core",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-hotrod",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-hotrod",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-hotrod",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-insights",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-insights",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-insights",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-integration",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-integration",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-integration",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-integrationtests-commons",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-integrationtests-commons",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-integrationtests-commons",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-memcached",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-memcached",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-memcached",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-resp",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-resp",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-resp",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-rest",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-rest",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-rest",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-rollingupgrade-tests",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-rollingupgrade-tests",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-router",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-router",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-router",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-runtime",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-runtime",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-runtime",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-core",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-core",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-core",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-junit4",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-junit4",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-junit4",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-junit5",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-junit5",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-server-testdriver-junit5",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-server-tests",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-server-tests",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-embedded",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-embedded",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-embedded",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-embedded-tests",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-embedded-tests",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-embedded-tests",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-remote",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-remote",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-session-tests",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-session-tests",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot3-starter-session-tests",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-embedded",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-embedded",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-embedded-tests",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-embedded-tests",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-remote",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-session-tests",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-boot4-starter-session-tests",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-common",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-common",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-embedded",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-embedded",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring-remote",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring6-commmon",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring6-commmon",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring6-common",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring6-embedded",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring6-embedded",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring6-embedded",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring6-parent",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring6-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring6-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring6-remote",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-spring6-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring6-remote",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring7-embedded",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring7-embedded",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring7-parent",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring7-parent",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-spring7-remote",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-spring7-remote",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-tasks",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-tasks",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-tasks",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-tasks-api",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-tasks-api",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-tasks-api",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-testdriver-parent-pom",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-testdriver-parent-pom",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-testdriver-parent-pom",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-third-party-integrationtests",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-third-party-integrationtests",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-third-party-integrationtests",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "infinispan-tools",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "infinispan-tools",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "infinispan-tools",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "IntelliJ_IDEA_Code_Style.jar",
+"version": ""
+},
+{
+"name": "jackson-annotations",
+"version": "2.16.2.redhat-00001"
+},
+{
+"name": "jackson-annotations",
+"version": "2.21.1.redhat-00013"
+},
+{
+"name": "jackson-annotations",
+"version": "2.21.3.redhat-00001"
+},
+{
+"name": "jackson-base",
+"version": "2.21.1.redhat-00013"
+},
+{
+"name": "jackson-base",
+"version": "2.21.3.redhat-00001"
+},
+{
+"name": "jackson-bom",
+"version": "2.21.1.redhat-00013"
+},
+{
+"name": "jackson-bom",
+"version": "2.21.3.redhat-00001"
+},
+{
+"name": "jackson-core",
+"version": "2.16.2.redhat-00001"
+},
+{
+"name": "jackson-core",
+"version": "2.21.1.redhat-00013"
+},
+{
+"name": "jackson-core",
+"version": "2.21.3.redhat-00001"
+},
+{
+"name": "jackson-databind",
+"version": "2.16.2.redhat-00001"
+},
+{
+"name": "jackson-databind",
+"version": "2.21.1.redhat-00013"
+},
+{
+"name": "jackson-databind",
+"version": "2.21.3.redhat-00001"
+},
+{
+"name": "jackson-datatype-jdk8",
+"version": "2.16.2.redhat-00001"
+},
+{
+"name": "jackson-datatype-jdk8",
+"version": "2.21.1.redhat-00013"
+},
+{
+"name": "jackson-datatype-jdk8",
+"version": "2.21.3.redhat-00001"
+},
+{
+"name": "jackson-datatype-jsr310",
+"version": "2.16.2.redhat-00001"
+},
+{
+"name": "jackson-datatype-jsr310",
+"version": "2.21.1.redhat-00013"
+},
+{
+"name": "jackson-datatype-jsr310",
+"version": "2.21.3.redhat-00001"
+},
+{
+"name": "jackson-modules-java8",
+"version": "2.21.1.redhat-00013"
+},
+{
+"name": "jackson-modules-java8",
+"version": "2.21.3.redhat-00001"
+},
+{
+"name": "jackson-parent",
+"version": "2.21.0.redhat-00011"
+},
+{
+"name": "jakarta.json",
+"version": "2.0.1.redhat-00001"
+},
+{
+"name": "jakarta.servlet-api",
+"version": "5.0.0.redhat-00001"
+},
+{
+"name": "jakarta.transaction-api",
+"version": "2.0.1.redhat-00004"
+},
+{
+"name": "jandex",
+"version": "3.3.0.redhat-00001"
+},
+{
+"name": "jandex",
+"version": "3.5.2.redhat-00001"
+},
+{
+"name": "jandex-parent",
+"version": "3.5.2.redhat-00001"
+},
+{
+"name": "jansi",
+"version": "2.4.0.redhat-00003"
+},
+{
+"name": "jboss-datagrid-packaging",
+"version": "8.5.5.Final-redhat-00001"
+},
+{
+"name": "jboss-datagrid-packaging",
+"version": "8.6.0.redhat-00001"
+},
+{
+"name": "jboss-datagrid-packaging",
+"version": "8.6.1.redhat-00001"
+},
+{
+"name": "jboss-logging",
+"version": "3.6.1.Final-redhat-00001"
+},
+{
+"name": "jboss-logging",
+"version": "3.6.2.Final-redhat-00001"
+},
+{
+"name": "jboss-logging-annotations",
+"version": "3.0.3.Final-redhat-00007"
+},
+{
+"name": "jboss-logging-processor",
+"version": "3.0.3.Final-redhat-00007"
+},
+{
+"name": "jboss-logging-tools-parent",
+"version": "3.0.3.Final-redhat-00007"
+},
+{
+"name": "jboss-marshalling",
+"version": "2.2.2.Final-redhat-00001"
+},
+{
+"name": "jboss-marshalling",
+"version": "2.2.3.Final-redhat-00001"
+},
+{
+"name": "jboss-marshalling",
+"version": "2.3.0.redhat-00001"
+},
+{
+"name": "jboss-marshalling-parent",
+"version": "2.3.0.redhat-00001"
+},
+{
+"name": "jboss-marshalling-river",
+"version": "2.2.2.Final-redhat-00001"
+},
+{
+"name": "jboss-marshalling-river",
+"version": "2.2.3.Final-redhat-00001"
+},
+{
+"name": "jboss-marshalling-river",
+"version": "2.3.0.redhat-00001"
+},
+{
+"name": "jboss-parent",
+"version": "51.0.0.redhat-00001"
+},
+{
+"name": "jboss-threads",
+"version": "3.6.1.Final-redhat-00001"
+},
+{
+"name": "jboss-threads",
+"version": "3.9.1.redhat-00001"
+},
+{
+"name": "jcl-over-slf4j",
+"version": "1.7.32.redhat-00003"
+},
+{
+"name": "jcl-over-slf4j",
+"version": "1.7.36.redhat-00006"
+},
+{
+"name": "jdg-8.6",
+"version": ""
+},
+{
+"name": "jgroups",
+"version": "5.3.16.Final-redhat-00001"
+},
+{
+"name": "jgroups",
+"version": "5.5.1.Final-redhat-00001"
+},
+{
+"name": "jgroups",
+"version": "5.5.5.Final-redhat-00001"
+},
+{
+"name": "jmh-core",
+"version": "1.37.0.redhat-00001"
+},
+{
+"name": "jopt-simple",
+"version": "5.0.4.redhat-00002"
+},
+{
+"name": "json-path",
+"version": "2.10.0.redhat-00001"
+},
+{
+"name": "json-smart",
+"version": "2.6.0.redhat-00001"
+},
+{
+"name": "jspecify",
+"version": "1.0.0.redhat-00001"
+},
+{
+"name": "jsr223",
+"version": "4.0.2.redhat-00002"
+},
+{
+"name": "kubernetes-client",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-client-api",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-client-project",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-httpclient-vertx",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-admissionregistration",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-apiextensions",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-apps",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-autoscaling",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-batch",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-certificates",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-common",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-coordination",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-core",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-discovery",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-events",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-extensions",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-flowcontrol",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-gatewayapi",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-generator",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-metrics",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-networking",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-node",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-policy",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-rbac",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-resource",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-scheduling",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "kubernetes-model-storageclass",
+"version": "7.4.0.redhat-00002"
+},
+{
+"name": "LatencyUtils",
+"version": "2.0.3.redhat-00005"
+},
+{
+"name": "lettuce-core",
+"version": "6.5.4.RELEASE-redhat-00001"
+},
+{
+"name": "lettuce-core",
+"version": "6.8.1.RELEASE-redhat-00001"
+},
+{
+"name": "log4j",
+"version": "2.25.4.redhat-00001"
+},
+{
+"name": "log4j-api",
+"version": "2.23.1.redhat-00002"
+},
+{
+"name": "log4j-api",
+"version": "2.25.3.redhat-00003"
+},
+{
+"name": "log4j-api",
+"version": "2.25.4.redhat-00001"
+},
+{
+"name": "log4j-bom",
+"version": "2.25.4.redhat-00001"
+},
+{
+"name": "log4j-core",
+"version": "2.23.1.redhat-00002"
+},
+{
+"name": "log4j-core",
+"version": "2.25.3.redhat-00003"
+},
+{
+"name": "log4j-core",
+"version": "2.25.4.redhat-00001"
+},
+{
+"name": "log4j-jul",
+"version": "2.23.1.redhat-00002"
+},
+{
+"name": "log4j-jul",
+"version": "2.25.3.redhat-00003"
+},
+{
+"name": "log4j-jul",
+"version": "2.25.4.redhat-00001"
+},
+{
+"name": "log4j-slf4j-impl",
+"version": "2.23.1.redhat-00002"
+},
+{
+"name": "log4j-slf4j-impl",
+"version": "2.25.3.redhat-00003"
+},
+{
+"name": "log4j-slf4j-impl",
+"version": "2.25.4.redhat-00001"
+},
+{
+"name": "lua51",
+"version": "4.0.2.redhat-00002"
+},
+{
+"name": "luajava",
+"version": "4.0.2.redhat-00002"
+},
+{
+"name": "lucene-analysis-common",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "lucene-analysis-common",
+"version": "9.9.2.redhat-00001"
+},
+{
+"name": "lucene-core",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "lucene-core",
+"version": "9.9.2.redhat-00002"
+},
+{
+"name": "lucene-facet",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "lucene-facet",
+"version": "9.9.2.redhat-00002"
+},
+{
+"name": "lucene-highlighter",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "lucene-highlighter",
+"version": "9.9.2.redhat-00001"
+},
+{
+"name": "lucene-join",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "lucene-join",
+"version": "9.9.2.redhat-00002"
+},
+{
+"name": "lucene-memory",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "lucene-queries",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "lucene-queries",
+"version": "9.9.2.redhat-00002"
+},
+{
+"name": "lucene-queryparser",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "lucene-queryparser",
+"version": "9.9.2.redhat-00002"
+},
+{
+"name": "lucene-sandbox",
+"version": "9.12.3.redhat-00001"
+},
+{
+"name": "maven",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-artifact",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-builder-support",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-core",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-model",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-model-builder",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-plugin-api",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-repository-metadata",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-resolver-provider",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-settings",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-settings-builder",
+"version": "3.9.15.redhat-00001"
+},
+{
+"name": "maven-wrapper.jar",
+"version": ""
+},
+{
+"name": "micrometer-commons",
+"version": "1.12.13.redhat-00001"
+},
+{
+"name": "micrometer-commons",
+"version": "1.16.0.redhat-00002"
+},
+{
+"name": "micrometer-core",
+"version": "1.12.13.redhat-00001"
+},
+{
+"name": "micrometer-core",
+"version": "1.16.0.redhat-00002"
+},
+{
+"name": "micrometer-observation",
+"version": "1.12.13.redhat-00001"
+},
+{
+"name": "micrometer-observation",
+"version": "1.16.0.redhat-00002"
+},
+{
+"name": "micrometer-observation-test",
+"version": "1.16.0.redhat-00002"
+},
+{
+"name": "micrometer-registry-prometheus",
+"version": "1.12.13.redhat-00001"
+},
+{
+"name": "micrometer-registry-prometheus",
+"version": "1.16.0.redhat-00002"
+},
+{
+"name": "micrometer-registry-prometheus-simpleclient",
+"version": "1.16.0.redhat-00002"
+},
+{
+"name": "netty-buffer",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-buffer",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-buffer",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-codec",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-codec",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-codec",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-codec-dns",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-codec-dns",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-codec-dns",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-codec-http",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-codec-http",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-codec-http",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-codec-http2",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-codec-http2",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-codec-http2",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-common",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-common",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-common",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-handler",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-handler",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-handler",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-parent",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-resolver",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-resolver",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-resolver",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-resolver-dns",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-resolver-dns",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-resolver-dns",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-transport",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-transport",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-transport",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-transport-classes-epoll",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-transport-classes-epoll",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-transport-classes-epoll",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-transport-native-epoll",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-transport-native-epoll",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-transport-native-epoll",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "netty-transport-native-unix-common",
+"version": "4.1.121.Final-redhat-00003"
+},
+{
+"name": "netty-transport-native-unix-common",
+"version": "4.1.130.Final-redhat-00001"
+},
+{
+"name": "netty-transport-native-unix-common",
+"version": "4.1.133.Final-redhat-00002"
+},
+{
+"name": "opentelemetry-api",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-api",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-api-events",
+"version": "1.32.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-api-incubator",
+"version": "1.39.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-context",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-context",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-common",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-common",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-otlp",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-otlp",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-otlp-common",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-otlp-common",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-sender-jdk",
+"version": "1.32.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-sender-jdk",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-common",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-common",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-extension-autoconfigure",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-extension-autoconfigure",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-extension-autoconfigure-spi",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-extension-autoconfigure-spi",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-logs",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-logs",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-metrics",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-metrics",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-trace",
+"version": "1.32.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-trace",
+"version": "1.39.0.redhat-00001"
+},
+{
+"name": "oss-parent",
+"version": "75.0.0.redhat-00004"
+},
+{
+"name": "parent",
+"version": "5.0.14.Final-redhat-00002"
+},
+{
+"name": "parent",
+"version": "6.0.6.redhat-00001"
+},
+{
+"name": "parent",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "pom.xml",
+"version": ""
+},
+{
+"name": "prometheus-metrics-config",
+"version": "1.3.10.redhat-00001"
+},
+{
+"name": "prometheus-metrics-config",
+"version": "1.4.3.redhat-00001"
+},
+{
+"name": "prometheus-metrics-core",
+"version": "1.4.3.redhat-00001"
+},
+{
+"name": "prometheus-metrics-exposition-formats",
+"version": "1.3.10.redhat-00001"
+},
+{
+"name": "prometheus-metrics-exposition-textformats",
+"version": "1.3.10.redhat-00001"
+},
+{
+"name": "prometheus-metrics-model",
+"version": "1.3.10.redhat-00001"
+},
+{
+"name": "prometheus-metrics-model",
+"version": "1.4.3.redhat-00001"
+},
+{
+"name": "prometheus-metrics-tracer",
+"version": "1.4.3.redhat-00001"
+},
+{
+"name": "prometheus-metrics-tracer-common",
+"version": "1.4.3.redhat-00001"
+},
+{
+"name": "proto-sample-domain-implementation",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "proto-sample-domain-implementation",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "proto-schema-compatibility-maven-plugin",
+"version": "5.0.14.Final-redhat-00002"
+},
+{
+"name": "proto-schema-compatibility-maven-plugin",
+"version": "6.0.6.redhat-00001"
+},
+{
+"name": "proto-schema-compatibility-maven-plugin",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "protostream",
+"version": "5.0.14.Final-redhat-00002"
+},
+{
+"name": "protostream",
+"version": "6.0.6.redhat-00001"
+},
+{
+"name": "protostream",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "protostream-aggregator",
+"version": "5.0.14.Final-redhat-00002"
+},
+{
+"name": "protostream-aggregator",
+"version": "6.0.6.redhat-00001"
+},
+{
+"name": "protostream-aggregator",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "protostream-integrationtests",
+"version": "5.0.14.Final-redhat-00002"
+},
+{
+"name": "protostream-integrationtests",
+"version": "6.0.6.redhat-00001"
+},
+{
+"name": "protostream-integrationtests",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "protostream-processor",
+"version": "5.0.14.Final-redhat-00002"
+},
+{
+"name": "protostream-processor",
+"version": "6.0.6.redhat-00001"
+},
+{
+"name": "protostream-processor",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "protostream-processor-tests",
+"version": "6.0.6.redhat-00001"
+},
+{
+"name": "protostream-processor-tests",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "protostream-processor-tests-kotlin",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "protostream-types",
+"version": "5.0.14.Final-redhat-00002"
+},
+{
+"name": "protostream-types",
+"version": "6.0.6.redhat-00001"
+},
+{
+"name": "protostream-types",
+"version": "6.0.7.redhat-00001"
+},
+{
+"name": "reactive-streams",
+"version": "1.0.4.redhat-00004"
+},
+{
+"name": "reactive-streams",
+"version": "1.0.4.redhat-00005"
+},
+{
+"name": "reactor-core",
+"version": "3.6.6.redhat-00001"
+},
+{
+"name": "readline",
+"version": "2.6.0.redhat-00001"
+},
+{
+"name": "redhat-datagrid-8.5.5.CR1-cli.zip",
+"version": "8.5.5.CR1"
+},
+{
+"name": "redhat-datagrid-8.5.5.CR1-maven-repository.zip",
+"version": ""
+},
+{
+"name": "redhat-datagrid-8.5.5.CR1-maven-repository.zip",
+"version": "8.5.5.CR1"
+},
+{
+"name": "redhat-datagrid-8.5.5.CR1-server.zip",
+"version": "8.5.5.CR1"
+},
+{
+"name": "redhat-datagrid-8.5.5.CR1-sources.zip",
+"version": "8.5.5.CR1"
+},
+{
+"name": "redhat-datagrid-8.6.0.CR1-cli.zip",
+"version": "8.6.0.CR1"
+},
+{
+"name": "redhat-datagrid-8.6.0.CR1-maven-repository.zip",
+"version": ""
+},
+{
+"name": "redhat-datagrid-8.6.0.CR1-maven-repository.zip",
+"version": "8.6.0.CR1"
+},
+{
+"name": "redhat-datagrid-8.6.0.CR1-server.zip",
+"version": "8.6.0.CR1"
+},
+{
+"name": "redhat-datagrid-8.6.1.CR1-cli.zip",
+"version": "8.6.1.CR1"
+},
+{
+"name": "redhat-datagrid-8.6.1.CR1-maven-repository.zip",
+"version": ""
+},
+{
+"name": "redhat-datagrid-8.6.1.CR1-maven-repository.zip",
+"version": "8.6.1.CR1"
+},
+{
+"name": "redhat-datagrid-8.6.1.CR1-server.zip",
+"version": "8.6.1.CR1"
+},
+{
+"name": "redhat-datagrid-8.6.1.CR1-sources.zip",
+"version": "8.6.1.CR1"
+},
+{
+"name": "redis-authx-core",
+"version": "0.1.1.redhat-00001"
+},
+{
+"name": "runtimes-java",
+"version": "2.0.4.redhat-00003"
+},
+{
+"name": "runtimes-java-api",
+"version": "2.0.4.redhat-00003"
+},
+{
+"name": "runtimes-java-core-runtime",
+"version": "2.0.4.redhat-00003"
+},
+{
+"name": "rxjava",
+"version": "3.1.10.redhat-00001"
+},
+{
+"name": "rxjava",
+"version": "3.1.12.redhat-00001"
+},
+{
+"name": "server-task",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "server-task",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "server-task",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "simpleclient",
+"version": "0.16.0.redhat-00008"
+},
+{
+"name": "simpleclient_common",
+"version": "0.16.0.redhat-00008"
+},
+{
+"name": "sizeof",
+"version": "0.3.0.redhat-00001"
+},
+{
+"name": "slf4j-api",
+"version": "1.7.36.redhat-00006"
+},
+{
+"name": "smallrye-common-annotation",
+"version": "2.12.0.redhat-00001"
+},
+{
+"name": "smallrye-common-annotation",
+"version": "2.13.8.redhat-00001"
+},
+{
+"name": "smallrye-common-constraint",
+"version": "2.12.0.redhat-00001"
+},
+{
+"name": "smallrye-common-cpu",
+"version": "2.12.0.redhat-00001"
+},
+{
+"name": "smallrye-common-function",
+"version": "2.12.0.redhat-00001"
+},
+{
+"name": "smallrye-common-parent",
+"version": "2.13.8.redhat-00001"
+},
+{
+"name": "sshd",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "sshd-common",
+"version": "2.12.1.redhat-00002"
+},
+{
+"name": "sshd-common",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "store",
+"version": "15.0.19.Final-redhat-00001"
+},
+{
+"name": "store",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "store",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "testcontainers-infinispan",
+"version": "16.0.12.redhat-00001"
+},
+{
+"name": "testcontainers-infinispan",
+"version": "16.0.8.redhat-00001"
+},
+{
+"name": "weld-environment-common",
+"version": "5.1.6.Final-redhat-00001"
+},
+{
+"name": "weld-se-core",
+"version": "5.1.6.Final-redhat-00001"
+},
+{
+"name": "weld-se-parent",
+"version": "5.1.6.Final-redhat-00001"
+},
+{
+"name": "wildfly-common",
+"version": "1.7.0.Final-redhat-00003"
+},
+{
+"name": "wildfly-elytron-asn1",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-asn1",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-auth",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-auth",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-auth-server",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-auth-server",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-auth-server-http",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-auth-server-http",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-auth-server-sasl",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-auth-server-sasl",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-auth-util",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-auth-util",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-base",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-base",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-client",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-client",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-credential",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-credential",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-credential-source-impl",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-credential-source-impl",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-credential-store",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-credential-store",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-encryption",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-encryption",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-http",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-http",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-http-basic",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-http-basic",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-http-bearer",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-http-bearer",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-http-cert",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-http-cert",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-http-digest",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-http-digest",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-http-spnego",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-http-spnego",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-http-util",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-http-util",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-json-util",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-json-util",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-keystore",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-keystore",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-mechanism",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-mechanism-digest",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-digest",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-mechanism-gssapi",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-gssapi",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-mechanism-http",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-http",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-mechanism-oauth2",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-oauth2",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-mechanism-scram",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-scram",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-parent",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-password-impl",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-password-impl",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-permission",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-permission",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-provider-util",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-provider-util",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-realm",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-realm",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-realm-ldap",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-realm-ldap",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-realm-token",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-realm-token",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl-digest",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-digest",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl-external",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-external",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl-gs2",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-gs2",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl-gssapi",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-gssapi",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl-localuser",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-localuser",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl-oauth2",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-oauth2",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl-plain",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-plain",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-sasl-scram",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-scram",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-security-manager-action",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-security-manager-action",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-ssh-util",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-ssh-util",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-ssl",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-ssl",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-util",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-util",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-x500",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-x500",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-x500-cert",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-x500-cert",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-x500-cert-util",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-x500-cert-util",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "wildfly-elytron-x500-principal",
+"version": "2.6.2.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-x500-principal",
+"version": "2.7.0.Final-redhat-00002"
+},
+{
+"name": "xstream",
+"version": "1.4.21.redhat-00001"
+},
+{
+"name": "zjsonpatch",
+"version": "7.4.0.redhat-00002"
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat Data Grid",
+"retrieved": "2026-11-18",
+"sha256": "a6f6b8aa3ed1b2a654347dc17b1c35aace2a5efac6e7a1b47e70a378f8043495",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/jdg-8.6.json.bz2",
+"version": "8.6"
+}

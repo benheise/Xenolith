@@ -1,0 +1,6678 @@
+{
+"components": [
+{
+"name": "acorn",
+"version": "8.15.0"
+},
+{
+"name": "acorn-jsx",
+"version": "5.3.2"
+},
+{
+"name": "acorn-walk",
+"version": "8.3.4"
+},
+{
+"name": "aesh",
+"version": "2.8.2.redhat-00001"
+},
+{
+"name": "agent-base",
+"version": "7.1.4"
+},
+{
+"name": "agroal-api",
+"version": "3.0.1.redhat-00001"
+},
+{
+"name": "agroal-narayana",
+"version": "3.0.1.redhat-00001"
+},
+{
+"name": "agroal-pool",
+"version": "3.0.1.redhat-00001"
+},
+{
+"name": "ajv",
+"version": "6.12.6"
+},
+{
+"name": "ajv",
+"version": "8.12.0"
+},
+{
+"name": "ajv",
+"version": "8.13.0"
+},
+{
+"name": "ajv-draft-04",
+"version": "1.0.0"
+},
+{
+"name": "ajv-formats",
+"version": "3.0.1"
+},
+{
+"name": "alien-signals",
+"version": "0.4.14"
+},
+{
+"name": "angus-activation",
+"version": "2.0.3.redhat-00001"
+},
+{
+"name": "angus-mail",
+"version": "2.0.5.redhat-00001"
+},
+{
+"name": "ansi-escapes",
+"version": "7.2.0"
+},
+{
+"name": "ansi-regex",
+"version": "5.0.1"
+},
+{
+"name": "ansi-regex",
+"version": "6.2.2"
+},
+{
+"name": "ansi-styles",
+"version": "4.3.0"
+},
+{
+"name": "ansi-styles",
+"version": "5.2.0"
+},
+{
+"name": "ansi-styles",
+"version": "6.2.3"
+},
+{
+"name": "antlr4-runtime",
+"version": "4.13.2.redhat-00001"
+},
+{
+"name": "anymatch",
+"version": "3.1.3"
+},
+{
+"name": "apache-mime4j-core",
+"version": "0.8.12.redhat-00001"
+},
+{
+"name": "apache-mime4j-dom",
+"version": "0.8.12.redhat-00001"
+},
+{
+"name": "apache-mime4j-storage",
+"version": "0.8.12.redhat-00001"
+},
+{
+"name": "api",
+"version": "1.9.0"
+},
+{
+"name": "api-extractor",
+"version": "7.52.10"
+},
+{
+"name": "api-extractor-model",
+"version": "7.30.7"
+},
+{
+"name": "arc",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "arc",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "arc",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "arc-processor",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "arg",
+"version": "4.1.3"
+},
+{
+"name": "argparse",
+"version": "1.0.10"
+},
+{
+"name": "argparse",
+"version": "1.0.38"
+},
+{
+"name": "argparse",
+"version": "2.0.1"
+},
+{
+"name": "args-pathspec",
+"version": "1.0.3"
+},
+{
+"name": "args-pathspec",
+"version": "1.0.4"
+},
+{
+"name": "argv-parser",
+"version": "1.1.1"
+},
+{
+"name": "argv-parser",
+"version": "2.0.1"
+},
+{
+"name": "aria-query",
+"version": "5.0.4"
+},
+{
+"name": "aria-query",
+"version": "5.3.0"
+},
+{
+"name": "aria-query",
+"version": "5.3.2"
+},
+{
+"name": "array-buffer-byte-length",
+"version": "1.0.2"
+},
+{
+"name": "array-includes",
+"version": "3.1.9"
+},
+{
+"name": "array.prototype.findlast",
+"version": "1.2.5"
+},
+{
+"name": "array.prototype.flat",
+"version": "1.3.3"
+},
+{
+"name": "array.prototype.flatmap",
+"version": "1.3.3"
+},
+{
+"name": "array.prototype.tosorted",
+"version": "1.1.4"
+},
+{
+"name": "arraybuffer.prototype.slice",
+"version": "1.0.4"
+},
+{
+"name": "asm",
+"version": "9.9.1.redhat-00001"
+},
+{
+"name": "asm-analysis",
+"version": "9.9.1.redhat-00001"
+},
+{
+"name": "asm-commons",
+"version": "9.9.1.redhat-00001"
+},
+{
+"name": "asm-tree",
+"version": "9.9.1.redhat-00001"
+},
+{
+"name": "asm-util",
+"version": "9.9.1.redhat-00001"
+},
+{
+"name": "assertion-error",
+"version": "2.0.1"
+},
+{
+"name": "async-function",
+"version": "1.0.0"
+},
+{
+"name": "asyncutil",
+"version": "0.1.0.redhat-00010"
+},
+{
+"name": "attr-accept",
+"version": "2.2.5"
+},
+{
+"name": "auth-token",
+"version": "6.0.0"
+},
+{
+"name": "available-typed-arrays",
+"version": "1.0.7"
+},
+{
+"name": "axe-core",
+"version": "4.11.0"
+},
+{
+"name": "b4a",
+"version": "1.7.1"
+},
+{
+"name": "background",
+"version": "11.3.14"
+},
+{
+"name": "bail",
+"version": "2.0.2"
+},
+{
+"name": "balanced-match",
+"version": "1.0.2"
+},
+{
+"name": "balanced-match",
+"version": "3.0.1"
+},
+{
+"name": "balanced-match",
+"version": "4.0.4"
+},
+{
+"name": "bare-events",
+"version": "2.6.1"
+},
+{
+"name": "bare-fs",
+"version": "4.4.4"
+},
+{
+"name": "bare-os",
+"version": "3.6.2"
+},
+{
+"name": "bare-path",
+"version": "3.0.0"
+},
+{
+"name": "bare-stream",
+"version": "2.7.0"
+},
+{
+"name": "bare-url",
+"version": "2.2.2"
+},
+{
+"name": "base64-js",
+"version": "1.5.1"
+},
+{
+"name": "baseline-browser-mapping",
+"version": "2.8.10"
+},
+{
+"name": "bcpkix-jdk18on",
+"version": "1.86.0.redhat-00001"
+},
+{
+"name": "bcprov-jdk18on",
+"version": "1.86.0.redhat-00001"
+},
+{
+"name": "bcutil-jdk18on",
+"version": "1.86.0.redhat-00001"
+},
+{
+"name": "before-after-hook",
+"version": "4.0.0"
+},
+{
+"name": "bidi-js",
+"version": "1.0.3"
+},
+{
+"name": "binary-extensions",
+"version": "2.3.0"
+},
+{
+"name": "bl",
+"version": "1.2.3"
+},
+{
+"name": "bootstrap",
+"version": "3.4.1"
+},
+{
+"name": "brace-expansion",
+"version": "1.1.12"
+},
+{
+"name": "brace-expansion",
+"version": "2.0.2"
+},
+{
+"name": "brace-expansion",
+"version": "4.0.1"
+},
+{
+"name": "brace-expansion",
+"version": "5.0.6"
+},
+{
+"name": "braces",
+"version": "3.0.3"
+},
+{
+"name": "brotli4j",
+"version": "1.23.0.redhat-00002"
+},
+{
+"name": "browser-stdout",
+"version": "1.3.1"
+},
+{
+"name": "browserify-zlib",
+"version": "0.1.4"
+},
+{
+"name": "browserslist",
+"version": "4.26.3"
+},
+{
+"name": "btf",
+"version": "1.3.0.redhat-00005"
+},
+{
+"name": "buffer",
+"version": "5.7.1"
+},
+{
+"name": "buffer-alloc",
+"version": "1.2.0"
+},
+{
+"name": "buffer-alloc-unsafe",
+"version": "1.1.0"
+},
+{
+"name": "buffer-crc32",
+"version": "0.2.13"
+},
+{
+"name": "buffer-fill",
+"version": "1.0.0"
+},
+{
+"name": "buffer-from",
+"version": "1.1.2"
+},
+{
+"name": "byte-buddy",
+"version": "1.17.8.redhat-00001"
+},
+{
+"name": "byte-buddy-agent",
+"version": "1.17.8.redhat-00001"
+},
+{
+"name": "bytes",
+"version": "1.8.0"
+},
+{
+"name": "caffeine",
+"version": "3.2.4.redhat-00001"
+},
+{
+"name": "call-bind",
+"version": "1.0.8"
+},
+{
+"name": "call-bind-apply-helpers",
+"version": "1.0.2"
+},
+{
+"name": "call-bound",
+"version": "1.0.4"
+},
+{
+"name": "callsites",
+"version": "3.1.0"
+},
+{
+"name": "camelcase",
+"version": "6.3.0"
+},
+{
+"name": "camelize-ts",
+"version": "3.0.0"
+},
+{
+"name": "caniuse-lite",
+"version": "1.0.30001746"
+},
+{
+"name": "ccount",
+"version": "2.0.1"
+},
+{
+"name": "chai",
+"version": "5.2.2"
+},
+{
+"name": "chai",
+"version": "5.2.3"
+},
+{
+"name": "chai",
+"version": "6.2.2"
+},
+{
+"name": "chalk",
+"version": "4.1.2"
+},
+{
+"name": "chalk",
+"version": "5.6.2"
+},
+{
+"name": "character-entities",
+"version": "2.0.2"
+},
+{
+"name": "character-entities-html4",
+"version": "2.1.0"
+},
+{
+"name": "character-entities-legacy",
+"version": "3.0.0"
+},
+{
+"name": "character-reference-invalid",
+"version": "2.0.1"
+},
+{
+"name": "chokidar",
+"version": "3.6.0"
+},
+{
+"name": "chokidar",
+"version": "4.0.3"
+},
+{
+"name": "classcat",
+"version": "5.0.5"
+},
+{
+"name": "classmate",
+"version": "1.7.1.redhat-00001"
+},
+{
+"name": "cli-cursor",
+"version": "5.0.0"
+},
+{
+"name": "cli-truncate",
+"version": "5.2.0"
+},
+{
+"name": "cliui",
+"version": "8.0.1"
+},
+{
+"name": "cliui",
+"version": "8.0.2"
+},
+{
+"name": "code-frame",
+"version": "7.27.1"
+},
+{
+"name": "codemodel",
+"version": "4.0.7.redhat-00001"
+},
+{
+"name": "codemodel",
+"version": "4.0.9.redhat-00001"
+},
+{
+"name": "color-convert",
+"version": "2.0.1"
+},
+{
+"name": "color-helpers",
+"version": "5.1.0"
+},
+{
+"name": "color-name",
+"version": "1.1.4"
+},
+{
+"name": "com.h2database.h2-2.4.240.redhat-00001.jar",
+"version": ""
+},
+{
+"name": "comma-separated-tokens",
+"version": "2.0.3"
+},
+{
+"name": "commander",
+"version": "14.0.2"
+},
+{
+"name": "commander",
+"version": "2.20.3"
+},
+{
+"name": "commondir",
+"version": "1.0.1"
+},
+{
+"name": "commons-codec",
+"version": "1.21.0.redhat-00001"
+},
+{
+"name": "commons-collections4",
+"version": "4.5.0.redhat-00001"
+},
+{
+"name": "commons-compress",
+"version": "1.28.0.redhat-00002"
+},
+{
+"name": "commons-io",
+"version": "2.21.0.redhat-00001"
+},
+{
+"name": "commons-lang3",
+"version": "3.20.0.redhat-00001"
+},
+{
+"name": "commons-logging-jboss-logging",
+"version": "2.0.0.Final-redhat-00001"
+},
+{
+"name": "compare-versions",
+"version": "6.1.1"
+},
+{
+"name": "compat",
+"version": "2.0.0"
+},
+{
+"name": "compat-data",
+"version": "7.28.4"
+},
+{
+"name": "compiler-core",
+"version": "3.5.18"
+},
+{
+"name": "compiler-dom",
+"version": "3.5.18"
+},
+{
+"name": "compiler-vue2",
+"version": "2.7.16"
+},
+{
+"name": "concat-map",
+"version": "0.0.1"
+},
+{
+"name": "confbox",
+"version": "0.1.8"
+},
+{
+"name": "confbox",
+"version": "0.2.2"
+},
+{
+"name": "config-array",
+"version": "0.21.1"
+},
+{
+"name": "config-helpers",
+"version": "0.4.2"
+},
+{
+"name": "controls",
+"version": "11.2.14"
+},
+{
+"name": "convert-source-map",
+"version": "2.0.0"
+},
+{
+"name": "cookie",
+"version": "1.1.1"
+},
+{
+"name": "core",
+"version": "0.17.0"
+},
+{
+"name": "core",
+"version": "0.19.1"
+},
+{
+"name": "core",
+"version": "0.2.9"
+},
+{
+"name": "core",
+"version": "1.0.0"
+},
+{
+"name": "core",
+"version": "1.15.8"
+},
+{
+"name": "core",
+"version": "11.11.4"
+},
+{
+"name": "core",
+"version": "3.4.0.redhat-00001"
+},
+{
+"name": "core",
+"version": "7.0.6"
+},
+{
+"name": "core",
+"version": "7.28.0"
+},
+{
+"name": "core",
+"version": "7.28.4"
+},
+{
+"name": "core-linux-x64-gnu",
+"version": "1.15.8"
+},
+{
+"name": "core-linux-x64-musl",
+"version": "1.15.8"
+},
+{
+"name": "core-util-is",
+"version": "1.0.3"
+},
+{
+"name": "counter",
+"version": "0.1.3"
+},
+{
+"name": "crac",
+"version": "1.5.0.redhat-00001"
+},
+{
+"name": "crd-generator-api-v2",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "create-require",
+"version": "1.1.1"
+},
+{
+"name": "cross-env",
+"version": "10.1.0"
+},
+{
+"name": "cross-spawn",
+"version": "7.0.6"
+},
+{
+"name": "css-calc",
+"version": "2.1.4"
+},
+{
+"name": "css-color",
+"version": "4.1.1"
+},
+{
+"name": "css-color-parser",
+"version": "3.1.0"
+},
+{
+"name": "css-parser-algorithms",
+"version": "3.0.5"
+},
+{
+"name": "css-syntax-patches-for-csstree",
+"version": "1.0.22"
+},
+{
+"name": "css-tokenizer",
+"version": "3.0.4"
+},
+{
+"name": "css-tools",
+"version": "4.4.4"
+},
+{
+"name": "css-tree",
+"version": "3.1.0"
+},
+{
+"name": "css.escape",
+"version": "1.5.1"
+},
+{
+"name": "cssom",
+"version": "0.9.30"
+},
+{
+"name": "cssstyle",
+"version": "5.3.6"
+},
+{
+"name": "csstype",
+"version": "3.1.3"
+},
+{
+"name": "d3",
+"version": "7.4.3"
+},
+{
+"name": "d3-array",
+"version": "3.2.1"
+},
+{
+"name": "d3-axis",
+"version": "3.0.6"
+},
+{
+"name": "d3-brush",
+"version": "3.0.6"
+},
+{
+"name": "d3-chord",
+"version": "3.0.6"
+},
+{
+"name": "d3-color",
+"version": "3.1.0"
+},
+{
+"name": "d3-color",
+"version": "3.1.3"
+},
+{
+"name": "d3-contour",
+"version": "3.0.6"
+},
+{
+"name": "d3-delaunay",
+"version": "6.0.4"
+},
+{
+"name": "d3-dispatch",
+"version": "3.0.1"
+},
+{
+"name": "d3-dispatch",
+"version": "3.0.7"
+},
+{
+"name": "d3-drag",
+"version": "3.0.0"
+},
+{
+"name": "d3-drag",
+"version": "3.0.7"
+},
+{
+"name": "d3-dsv",
+"version": "3.0.7"
+},
+{
+"name": "d3-ease",
+"version": "3.0.1"
+},
+{
+"name": "d3-ease",
+"version": "3.0.2"
+},
+{
+"name": "d3-fetch",
+"version": "3.0.7"
+},
+{
+"name": "d3-force",
+"version": "3.0.10"
+},
+{
+"name": "d3-format",
+"version": "3.0.4"
+},
+{
+"name": "d3-geo",
+"version": "3.1.0"
+},
+{
+"name": "d3-hierarchy",
+"version": "3.1.7"
+},
+{
+"name": "d3-interpolate",
+"version": "3.0.1"
+},
+{
+"name": "d3-interpolate",
+"version": "3.0.4"
+},
+{
+"name": "d3-path",
+"version": "3.1.1"
+},
+{
+"name": "d3-polygon",
+"version": "3.0.2"
+},
+{
+"name": "d3-quadtree",
+"version": "3.0.6"
+},
+{
+"name": "d3-random",
+"version": "3.0.3"
+},
+{
+"name": "d3-scale",
+"version": "4.0.9"
+},
+{
+"name": "d3-scale-chromatic",
+"version": "3.1.0"
+},
+{
+"name": "d3-selection",
+"version": "3.0.0"
+},
+{
+"name": "d3-selection",
+"version": "3.0.11"
+},
+{
+"name": "d3-shape",
+"version": "3.1.7"
+},
+{
+"name": "d3-time",
+"version": "3.0.4"
+},
+{
+"name": "d3-time-format",
+"version": "4.0.3"
+},
+{
+"name": "d3-timer",
+"version": "3.0.1"
+},
+{
+"name": "d3-timer",
+"version": "3.0.2"
+},
+{
+"name": "d3-transition",
+"version": "3.0.1"
+},
+{
+"name": "d3-transition",
+"version": "3.0.9"
+},
+{
+"name": "d3-zoom",
+"version": "3.0.0"
+},
+{
+"name": "d3-zoom",
+"version": "3.0.8"
+},
+{
+"name": "dagre",
+"version": "0.7.53"
+},
+{
+"name": "dagre",
+"version": "1.1.8"
+},
+{
+"name": "data-urls",
+"version": "6.0.0"
+},
+{
+"name": "data-view-buffer",
+"version": "1.0.2"
+},
+{
+"name": "data-view-byte-length",
+"version": "1.0.2"
+},
+{
+"name": "data-view-byte-offset",
+"version": "1.0.1"
+},
+{
+"name": "de-indent",
+"version": "1.0.2"
+},
+{
+"name": "debug",
+"version": "4.4.1"
+},
+{
+"name": "debug",
+"version": "4.4.3"
+},
+{
+"name": "decamelize",
+"version": "4.0.0"
+},
+{
+"name": "decimal.js",
+"version": "10.6.0"
+},
+{
+"name": "decode-named-character-reference",
+"version": "1.2.0"
+},
+{
+"name": "decompress",
+"version": "4.2.1"
+},
+{
+"name": "decompress-tar",
+"version": "4.1.1"
+},
+{
+"name": "decompress-tarbz2",
+"version": "4.1.1"
+},
+{
+"name": "decompress-targz",
+"version": "4.1.1"
+},
+{
+"name": "decompress-unzip",
+"version": "4.0.1"
+},
+{
+"name": "deep-eql",
+"version": "4.0.2"
+},
+{
+"name": "deep-is",
+"version": "0.1.4"
+},
+{
+"name": "deepmerge",
+"version": "4.3.1"
+},
+{
+"name": "define-data-property",
+"version": "1.1.4"
+},
+{
+"name": "define-properties",
+"version": "1.2.1"
+},
+{
+"name": "dequal",
+"version": "2.0.3"
+},
+{
+"name": "detect-libc",
+"version": "2.1.2"
+},
+{
+"name": "devlop",
+"version": "1.1.0"
+},
+{
+"name": "diff",
+"version": "4.0.2"
+},
+{
+"name": "diff",
+"version": "7.0.0"
+},
+{
+"name": "doctrine",
+"version": "2.1.0"
+},
+{
+"name": "dom",
+"version": "10.4.1"
+},
+{
+"name": "dom-accessibility-api",
+"version": "0.5.16"
+},
+{
+"name": "dom-accessibility-api",
+"version": "0.6.3"
+},
+{
+"name": "dom-selector",
+"version": "6.7.6"
+},
+{
+"name": "dtd-parser",
+"version": "1.5.1.redhat-00001"
+},
+{
+"name": "dunder-proto",
+"version": "1.0.1"
+},
+{
+"name": "duplexify",
+"version": "3.7.1"
+},
+{
+"name": "eastasianwidth",
+"version": "0.2.0"
+},
+{
+"name": "electron-to-chromium",
+"version": "1.5.228"
+},
+{
+"name": "emoji-regex",
+"version": "10.6.0"
+},
+{
+"name": "emoji-regex",
+"version": "8.0.0"
+},
+{
+"name": "emoji-regex",
+"version": "9.2.2"
+},
+{
+"name": "end-of-stream",
+"version": "1.4.5"
+},
+{
+"name": "endpoint",
+"version": "11.0.2"
+},
+{
+"name": "entities",
+"version": "4.5.0"
+},
+{
+"name": "entities",
+"version": "6.0.1"
+},
+{
+"name": "environment",
+"version": "1.1.0"
+},
+{
+"name": "error_prone_annotations",
+"version": "2.47.0.redhat-00001"
+},
+{
+"name": "es-abstract",
+"version": "1.24.0"
+},
+{
+"name": "es-define-property",
+"version": "1.0.1"
+},
+{
+"name": "es-errors",
+"version": "1.3.0"
+},
+{
+"name": "es-iterator-helpers",
+"version": "1.2.1"
+},
+{
+"name": "es-module-lexer",
+"version": "2.1.0"
+},
+{
+"name": "es-object-atoms",
+"version": "1.1.1"
+},
+{
+"name": "es-set-tostringtag",
+"version": "2.1.0"
+},
+{
+"name": "es-shim-unscopables",
+"version": "1.1.0"
+},
+{
+"name": "es-to-primitive",
+"version": "1.3.0"
+},
+{
+"name": "esbuild",
+"version": "0.27.7"
+},
+{
+"name": "escalade",
+"version": "3.2.0"
+},
+{
+"name": "escape-string-regexp",
+"version": "4.0.0"
+},
+{
+"name": "eslint",
+"version": "9.39.2"
+},
+{
+"name": "eslint-config-prettier",
+"version": "10.1.8"
+},
+{
+"name": "eslint-plugin",
+"version": "8.42.0"
+},
+{
+"name": "eslint-plugin-lodash",
+"version": "8.0.0"
+},
+{
+"name": "eslint-plugin-playwright",
+"version": "2.4.0"
+},
+{
+"name": "eslint-plugin-prettier",
+"version": "5.5.4"
+},
+{
+"name": "eslint-plugin-react",
+"version": "7.37.5"
+},
+{
+"name": "eslint-plugin-react-compiler",
+"version": "19.1.0-rc.2"
+},
+{
+"name": "eslint-plugin-react-hooks",
+"version": "6.1.0"
+},
+{
+"name": "eslint-scope",
+"version": "8.4.0"
+},
+{
+"name": "eslint-utils",
+"version": "4.9.1"
+},
+{
+"name": "eslint-visitor-keys",
+"version": "3.4.3"
+},
+{
+"name": "eslint-visitor-keys",
+"version": "4.2.1"
+},
+{
+"name": "eslintrc",
+"version": "3.3.3"
+},
+{
+"name": "espree",
+"version": "10.4.0"
+},
+{
+"name": "esquery",
+"version": "1.7.0"
+},
+{
+"name": "esrecurse",
+"version": "4.3.0"
+},
+{
+"name": "estraverse",
+"version": "5.3.0"
+},
+{
+"name": "estree",
+"version": "1.0.8"
+},
+{
+"name": "estree-walker",
+"version": "2.0.2"
+},
+{
+"name": "estree-walker",
+"version": "3.0.3"
+},
+{
+"name": "esutils",
+"version": "2.0.3"
+},
+{
+"name": "eventemitter3",
+"version": "5.0.4"
+},
+{
+"name": "expect",
+"version": "4.1.8"
+},
+{
+"name": "expect-type",
+"version": "1.3.0"
+},
+{
+"name": "expressly",
+"version": "6.0.0.redhat-00002"
+},
+{
+"name": "exsolve",
+"version": "1.0.7"
+},
+{
+"name": "extend",
+"version": "3.0.2"
+},
+{
+"name": "faker",
+"version": "10.2.0"
+},
+{
+"name": "fast-content-type-parse",
+"version": "3.0.0"
+},
+{
+"name": "fast-deep-equal",
+"version": "3.1.3"
+},
+{
+"name": "fast-diff",
+"version": "1.3.0"
+},
+{
+"name": "fast-fifo",
+"version": "1.3.2"
+},
+{
+"name": "fast-glob",
+"version": "3.3.3"
+},
+{
+"name": "fast-json-stable-stringify",
+"version": "2.1.0"
+},
+{
+"name": "fast-levenshtein",
+"version": "2.0.6"
+},
+{
+"name": "fastq",
+"version": "1.19.1"
+},
+{
+"name": "fd-slicer",
+"version": "1.1.0"
+},
+{
+"name": "fdir",
+"version": "6.5.0"
+},
+{
+"name": "file-entry-cache",
+"version": "8.0.0"
+},
+{
+"name": "file-exists",
+"version": "1.1.1"
+},
+{
+"name": "file-saver",
+"version": "2.0.5"
+},
+{
+"name": "file-saver",
+"version": "2.0.7"
+},
+{
+"name": "file-selector",
+"version": "2.1.2"
+},
+{
+"name": "file-type",
+"version": "3.9.0"
+},
+{
+"name": "file-type",
+"version": "5.2.0"
+},
+{
+"name": "file-type",
+"version": "6.2.0"
+},
+{
+"name": "fill-range",
+"version": "7.1.1"
+},
+{
+"name": "find-up",
+"version": "5.0.0"
+},
+{
+"name": "flat",
+"version": "5.0.2"
+},
+{
+"name": "flat",
+"version": "6.0.1"
+},
+{
+"name": "flat-cache",
+"version": "4.0.1"
+},
+{
+"name": "flatted",
+"version": "3.4.2"
+},
+{
+"name": "focus-trap",
+"version": "7.6.2"
+},
+{
+"name": "follow-redirects",
+"version": "1.15.9"
+},
+{
+"name": "font-awesome",
+"version": "4.7.0"
+},
+{
+"name": "for-each",
+"version": "0.3.5"
+},
+{
+"name": "foreground-child",
+"version": "3.3.1"
+},
+{
+"name": "freemarker",
+"version": "2.3.35.redhat-00001"
+},
+{
+"name": "fs-constants",
+"version": "1.0.0"
+},
+{
+"name": "fs-extra",
+"version": "11.3.3"
+},
+{
+"name": "fs.realpath",
+"version": "1.0.0"
+},
+{
+"name": "fs.scandir",
+"version": "2.1.5"
+},
+{
+"name": "fs.stat",
+"version": "2.0.5"
+},
+{
+"name": "fs.walk",
+"version": "1.2.8"
+},
+{
+"name": "function-bind",
+"version": "1.1.2"
+},
+{
+"name": "function.prototype.name",
+"version": "1.1.8"
+},
+{
+"name": "functions-have-names",
+"version": "1.2.3"
+},
+{
+"name": "gen-mapping",
+"version": "0.3.12"
+},
+{
+"name": "gen-mapping",
+"version": "0.3.13"
+},
+{
+"name": "generated-bytecode.jar",
+"version": ""
+},
+{
+"name": "generator",
+"version": "7.28.0"
+},
+{
+"name": "generator",
+"version": "7.28.3"
+},
+{
+"name": "generator-annotations",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "gensync",
+"version": "1.0.0-beta.2"
+},
+{
+"name": "geojson",
+"version": "7946.0.16"
+},
+{
+"name": "get-caller-file",
+"version": "2.0.5"
+},
+{
+"name": "get-east-asian-width",
+"version": "1.4.0"
+},
+{
+"name": "get-east-asian-width",
+"version": "1.6.0"
+},
+{
+"name": "get-intrinsic",
+"version": "1.3.0"
+},
+{
+"name": "get-proto",
+"version": "1.0.1"
+},
+{
+"name": "get-stream",
+"version": "2.3.1"
+},
+{
+"name": "get-symbol-description",
+"version": "1.1.0"
+},
+{
+"name": "get-tsconfig",
+"version": "4.14.0"
+},
+{
+"name": "get-tsconfig",
+"version": "4.14.3"
+},
+{
+"name": "gizmo",
+"version": "1.10.1.redhat-00001"
+},
+{
+"name": "gizmo2",
+"version": "2.1.1.redhat-00001"
+},
+{
+"name": "glob",
+"version": "10.5.0"
+},
+{
+"name": "glob",
+"version": "7.2.3"
+},
+{
+"name": "glob-parent",
+"version": "5.1.2"
+},
+{
+"name": "glob-parent",
+"version": "6.0.2"
+},
+{
+"name": "globals",
+"version": "14.0.0"
+},
+{
+"name": "globals",
+"version": "16.5.0"
+},
+{
+"name": "globalthis",
+"version": "1.0.4"
+},
+{
+"name": "gopd",
+"version": "1.2.0"
+},
+{
+"name": "graceful-fs",
+"version": "4.2.11"
+},
+{
+"name": "graphemer",
+"version": "1.4.0"
+},
+{
+"name": "graphlib",
+"version": "2.2.4"
+},
+{
+"name": "graphql",
+"version": "9.0.3"
+},
+{
+"name": "grpc-api",
+"version": "1.81.0.redhat-00001"
+},
+{
+"name": "grpc-context",
+"version": "1.81.0.redhat-00001"
+},
+{
+"name": "grpc-core",
+"version": "1.81.0.redhat-00001"
+},
+{
+"name": "grpc-netty",
+"version": "1.81.0.redhat-00001"
+},
+{
+"name": "grpc-protobuf",
+"version": "1.81.0.redhat-00001"
+},
+{
+"name": "grpc-protobuf-lite",
+"version": "1.81.0.redhat-00001"
+},
+{
+"name": "grpc-stub",
+"version": "1.81.0.redhat-00001"
+},
+{
+"name": "grpc-util",
+"version": "1.81.0.redhat-00001"
+},
+{
+"name": "gson",
+"version": "2.13.2.redhat-00003"
+},
+{
+"name": "guava",
+"version": "33.7.2.jre-redhat-00002"
+},
+{
+"name": "gunzip-maybe",
+"version": "1.4.2"
+},
+{
+"name": "gunzip-maybe",
+"version": "1.4.3"
+},
+{
+"name": "has-bigints",
+"version": "1.1.0"
+},
+{
+"name": "has-flag",
+"version": "4.0.0"
+},
+{
+"name": "has-property-descriptors",
+"version": "1.0.2"
+},
+{
+"name": "has-proto",
+"version": "1.2.0"
+},
+{
+"name": "has-symbols",
+"version": "1.1.0"
+},
+{
+"name": "has-tostringtag",
+"version": "1.0.2"
+},
+{
+"name": "hashes",
+"version": "2.0.1"
+},
+{
+"name": "hasown",
+"version": "2.0.2"
+},
+{
+"name": "hast",
+"version": "2.3.10"
+},
+{
+"name": "hast",
+"version": "3.0.4"
+},
+{
+"name": "hast-util-from-html",
+"version": "2.0.3"
+},
+{
+"name": "hast-util-from-parse5",
+"version": "8.0.3"
+},
+{
+"name": "hast-util-parse-selector",
+"version": "3.1.1"
+},
+{
+"name": "hast-util-parse-selector",
+"version": "4.0.0"
+},
+{
+"name": "hast-util-to-html",
+"version": "9.0.5"
+},
+{
+"name": "hast-util-to-string",
+"version": "3.0.1"
+},
+{
+"name": "hast-util-whitespace",
+"version": "3.0.0"
+},
+{
+"name": "hastscript",
+"version": "7.2.0"
+},
+{
+"name": "hastscript",
+"version": "9.0.1"
+},
+{
+"name": "HdrHistogram",
+"version": "2.2.2.redhat-00005"
+},
+{
+"name": "he",
+"version": "1.2.0"
+},
+{
+"name": "helper-annotate-as-pure",
+"version": "7.27.3"
+},
+{
+"name": "helper-compilation-targets",
+"version": "7.27.2"
+},
+{
+"name": "helper-create-class-features-plugin",
+"version": "7.28.3"
+},
+{
+"name": "helper-globals",
+"version": "7.28.0"
+},
+{
+"name": "helper-member-expression-to-functions",
+"version": "7.27.1"
+},
+{
+"name": "helper-module-imports",
+"version": "7.27.1"
+},
+{
+"name": "helper-module-transforms",
+"version": "7.27.3"
+},
+{
+"name": "helper-module-transforms",
+"version": "7.28.3"
+},
+{
+"name": "helper-optimise-call-expression",
+"version": "7.27.1"
+},
+{
+"name": "helper-plugin-utils",
+"version": "7.27.1"
+},
+{
+"name": "helper-replace-supers",
+"version": "7.27.1"
+},
+{
+"name": "helper-skip-transparent-expression-wrappers",
+"version": "7.27.1"
+},
+{
+"name": "helper-string-parser",
+"version": "7.27.1"
+},
+{
+"name": "helper-validator-identifier",
+"version": "7.28.5"
+},
+{
+"name": "helper-validator-option",
+"version": "7.27.1"
+},
+{
+"name": "helpers",
+"version": "7.28.2"
+},
+{
+"name": "helpers",
+"version": "7.28.4"
+},
+{
+"name": "hermes-estree",
+"version": "0.25.1"
+},
+{
+"name": "hermes-parser",
+"version": "0.25.1"
+},
+{
+"name": "hibernate-community-dialects",
+"version": "7.2.25.Final-redhat-00001"
+},
+{
+"name": "hibernate-core",
+"version": "7.2.25.Final-redhat-00001"
+},
+{
+"name": "hibernate-graalvm",
+"version": "7.2.25.Final-redhat-00001"
+},
+{
+"name": "hibernate-models",
+"version": "1.0.1.redhat-00001"
+},
+{
+"name": "hibernate-validator",
+"version": "9.1.0.Final-redhat-00001"
+},
+{
+"name": "hibernate-validator",
+"version": "9.1.3.Final-redhat-00002"
+},
+{
+"name": "html-encoding-sniffer",
+"version": "6.0.0"
+},
+{
+"name": "html-parse-stringify",
+"version": "3.0.1"
+},
+{
+"name": "html-void-elements",
+"version": "3.0.0"
+},
+{
+"name": "http-proxy-agent",
+"version": "7.0.2"
+},
+{
+"name": "httpclient",
+"version": "4.5.14.redhat-00016"
+},
+{
+"name": "httpcore",
+"version": "4.4.16.redhat-00011"
+},
+{
+"name": "https-proxy-agent",
+"version": "7.0.6"
+},
+{
+"name": "husky",
+"version": "9.1.7"
+},
+{
+"name": "i18next",
+"version": "25.7.3"
+},
+{
+"name": "i18next-fetch-backend",
+"version": "7.0.0"
+},
+{
+"name": "ieee754",
+"version": "1.2.1"
+},
+{
+"name": "ignore",
+"version": "5.3.2"
+},
+{
+"name": "ignore",
+"version": "7.0.5"
+},
+{
+"name": "immediate",
+"version": "3.0.6"
+},
+{
+"name": "import-fresh",
+"version": "3.3.1"
+},
+{
+"name": "import-lazy",
+"version": "4.0.0"
+},
+{
+"name": "imurmurhash",
+"version": "0.1.4"
+},
+{
+"name": "indent-string",
+"version": "4.0.0"
+},
+{
+"name": "infinispan-api",
+"version": "16.0.14.redhat-00001"
+},
+{
+"name": "infinispan-cachestore-remote",
+"version": "16.0.14.redhat-00001"
+},
+{
+"name": "infinispan-client-hotrod",
+"version": "16.0.14.redhat-00001"
+},
+{
+"name": "infinispan-commons",
+"version": "16.0.14.redhat-00001"
+},
+{
+"name": "infinispan-core",
+"version": "16.0.14.redhat-00001"
+},
+{
+"name": "infinispan-counter-api",
+"version": "16.0.14.redhat-00001"
+},
+{
+"name": "infinispan-multimap",
+"version": "16.0.14.redhat-00001"
+},
+{
+"name": "inflight",
+"version": "1.0.6"
+},
+{
+"name": "inherits",
+"version": "2.0.4"
+},
+{
+"name": "internal-slot",
+"version": "1.1.0"
+},
+{
+"name": "interpret",
+"version": "1.4.0"
+},
+{
+"name": "invariant",
+"version": "1.0.0"
+},
+{
+"name": "io.fabric8.kubernetes-httpclient-vertx-7.5.2.redhat-00003.jar",
+"version": ""
+},
+{
+"name": "is-alphabetical",
+"version": "2.0.1"
+},
+{
+"name": "is-alphanumerical",
+"version": "2.0.1"
+},
+{
+"name": "is-array-buffer",
+"version": "3.0.5"
+},
+{
+"name": "is-async-function",
+"version": "2.1.1"
+},
+{
+"name": "is-bigint",
+"version": "1.1.0"
+},
+{
+"name": "is-binary-path",
+"version": "2.1.0"
+},
+{
+"name": "is-boolean-object",
+"version": "1.2.2"
+},
+{
+"name": "is-callable",
+"version": "1.2.7"
+},
+{
+"name": "is-core-module",
+"version": "2.16.1"
+},
+{
+"name": "is-data-view",
+"version": "1.0.2"
+},
+{
+"name": "is-date-object",
+"version": "1.1.0"
+},
+{
+"name": "is-decimal",
+"version": "2.0.1"
+},
+{
+"name": "is-deflate",
+"version": "1.0.0"
+},
+{
+"name": "is-extglob",
+"version": "2.1.1"
+},
+{
+"name": "is-finalizationregistry",
+"version": "1.1.1"
+},
+{
+"name": "is-fullwidth-code-point",
+"version": "3.0.0"
+},
+{
+"name": "is-fullwidth-code-point",
+"version": "5.1.0"
+},
+{
+"name": "is-generator-function",
+"version": "1.1.0"
+},
+{
+"name": "is-glob",
+"version": "4.0.3"
+},
+{
+"name": "is-gzip",
+"version": "1.0.0"
+},
+{
+"name": "is-hexadecimal",
+"version": "2.0.1"
+},
+{
+"name": "is-map",
+"version": "2.0.3"
+},
+{
+"name": "is-module",
+"version": "1.0.0"
+},
+{
+"name": "is-natural-number",
+"version": "4.0.1"
+},
+{
+"name": "is-negative-zero",
+"version": "2.0.3"
+},
+{
+"name": "is-number",
+"version": "7.0.0"
+},
+{
+"name": "is-number-object",
+"version": "1.1.1"
+},
+{
+"name": "is-path-inside",
+"version": "3.0.3"
+},
+{
+"name": "is-plain-obj",
+"version": "2.1.0"
+},
+{
+"name": "is-plain-obj",
+"version": "4.1.0"
+},
+{
+"name": "is-potential-custom-element-name",
+"version": "1.0.1"
+},
+{
+"name": "is-reference",
+"version": "1.2.1"
+},
+{
+"name": "is-regex",
+"version": "1.2.1"
+},
+{
+"name": "is-set",
+"version": "2.0.3"
+},
+{
+"name": "is-shared-array-buffer",
+"version": "1.0.4"
+},
+{
+"name": "is-stream",
+"version": "1.1.0"
+},
+{
+"name": "is-string",
+"version": "1.1.1"
+},
+{
+"name": "is-symbol",
+"version": "1.1.1"
+},
+{
+"name": "is-typed-array",
+"version": "1.1.15"
+},
+{
+"name": "is-unicode-supported",
+"version": "0.1.0"
+},
+{
+"name": "is-weakmap",
+"version": "2.0.2"
+},
+{
+"name": "is-weakref",
+"version": "1.1.1"
+},
+{
+"name": "is-weakset",
+"version": "2.0.4"
+},
+{
+"name": "isarray",
+"version": "1.0.0"
+},
+{
+"name": "isarray",
+"version": "2.0.5"
+},
+{
+"name": "isexe",
+"version": "2.0.0"
+},
+{
+"name": "istack-commons-runtime",
+"version": "3.0.10.redhat-00003"
+},
+{
+"name": "istack-commons-tools",
+"version": "3.0.10.redhat-00003"
+},
+{
+"name": "iterator.prototype",
+"version": "1.1.5"
+},
+{
+"name": "jackson-annotations",
+"version": "2.21.0.redhat-00002"
+},
+{
+"name": "jackson-core",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-core",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-coreutils",
+"version": "2.0.0.redhat-00011"
+},
+{
+"name": "jackson-databind",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-databind",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-dataformat-cbor",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-dataformat-yaml",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-dataformat-yaml",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-datatype-jdk8",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-datatype-jdk8",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-datatype-jsr310",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-datatype-jsr310",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-jakarta-rs-base",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-jakarta-rs-base",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-jakarta-rs-json-provider",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-jakarta-rs-json-provider",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-jakarta-rs-yaml-provider",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-jakarta-rs-yaml-provider",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-module-jakarta-xmlbind-annotations",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-module-jakarta-xmlbind-annotations",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-module-jsonSchema",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-module-jsonSchema",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackson-module-parameter-names",
+"version": "2.21.5.redhat-00001"
+},
+{
+"name": "jackson-module-parameter-names",
+"version": "2.21.8.redhat-00001"
+},
+{
+"name": "jackspeak",
+"version": "3.4.3"
+},
+{
+"name": "jakarta.activation-api",
+"version": "2.1.4.redhat-00001"
+},
+{
+"name": "jakarta.annotation-api",
+"version": "3.0.0.redhat-00003"
+},
+{
+"name": "jakarta.el-api",
+"version": "6.0.1.redhat-00002"
+},
+{
+"name": "jakarta.enterprise.cdi-api",
+"version": "4.1.0.redhat-00001"
+},
+{
+"name": "jakarta.enterprise.lang-model",
+"version": "4.1.0.redhat-00001"
+},
+{
+"name": "jakarta.inject-api",
+"version": "2.0.1.redhat-00007"
+},
+{
+"name": "jakarta.interceptor-api",
+"version": "2.2.0.redhat-00001"
+},
+{
+"name": "jakarta.json-api",
+"version": "2.1.3.redhat-00002"
+},
+{
+"name": "jakarta.mail-api",
+"version": "2.1.1.redhat-00001"
+},
+{
+"name": "jakarta.persistence-api",
+"version": "3.2.0.redhat-00002"
+},
+{
+"name": "jakarta.resource-api",
+"version": "2.1.0.redhat-00001"
+},
+{
+"name": "jakarta.servlet-api",
+"version": "6.0.0.redhat-00007"
+},
+{
+"name": "jakarta.transaction-api",
+"version": "2.0.1.redhat-00004"
+},
+{
+"name": "jakarta.validation-api",
+"version": "3.1.1.redhat-00002"
+},
+{
+"name": "jakarta.ws.rs-api",
+"version": "3.1.0.redhat-00003"
+},
+{
+"name": "jakarta.xml.bind-api",
+"version": "4.0.5.redhat-00001"
+},
+{
+"name": "jakarta.xml.soap-api",
+"version": "3.0.0.redhat-00002"
+},
+{
+"name": "jandex",
+"version": "3.5.3.redhat-00001"
+},
+{
+"name": "jandex-gizmo2",
+"version": "3.5.3.redhat-00001"
+},
+{
+"name": "jansi",
+"version": "4.2.1.redhat-00002"
+},
+{
+"name": "java-diff-utils",
+"version": "4.16.0.redhat-00001"
+},
+{
+"name": "java-diff-utils",
+"version": "4.17.0.redhat-00001"
+},
+{
+"name": "java10-shim",
+"version": "20260101.1.0.redhat-00001"
+},
+{
+"name": "java8-shim",
+"version": "20260101.1.0.redhat-00001"
+},
+{
+"name": "javase",
+"version": "3.4.0.redhat-00001"
+},
+{
+"name": "jaxb-core",
+"version": "4.0.8.redhat-00001"
+},
+{
+"name": "jaxb-core",
+"version": "4.0.8.redhat-00002"
+},
+{
+"name": "jaxb-jxc",
+"version": "4.0.7.redhat-00001"
+},
+{
+"name": "jaxb-jxc",
+"version": "4.0.9.redhat-00001"
+},
+{
+"name": "jaxb-runtime",
+"version": "4.0.8.redhat-00001"
+},
+{
+"name": "jaxb-runtime",
+"version": "4.0.8.redhat-00002"
+},
+{
+"name": "jaxb-xjc",
+"version": "4.0.7.redhat-00001"
+},
+{
+"name": "jaxb-xjc",
+"version": "4.0.9.redhat-00001"
+},
+{
+"name": "jboss-invocation",
+"version": "2.0.0.Final-redhat-00001"
+},
+{
+"name": "jboss-logging",
+"version": "3.6.2.Final-redhat-00001"
+},
+{
+"name": "jboss-logmanager",
+"version": "3.2.1.Final-redhat-00001"
+},
+{
+"name": "jboss-threads",
+"version": "3.9.2.redhat-00002"
+},
+{
+"name": "jboss-transaction-spi",
+"version": "8.0.0.Final-redhat-00001"
+},
+{
+"name": "jctools-core",
+"version": "4.0.5.redhat-00004"
+},
+{
+"name": "jdk-classfile-backport",
+"version": "26.0.0.redhat-00001"
+},
+{
+"name": "jest-dom",
+"version": "6.9.1"
+},
+{
+"name": "jfreechart",
+"version": "1.5.3.redhat-00001"
+},
+{
+"name": "jgroups",
+"version": "5.5.5.Final-redhat-00001"
+},
+{
+"name": "jju",
+"version": "1.4.0"
+},
+{
+"name": "jna",
+"version": "5.8.0.redhat-00003"
+},
+{
+"name": "jquery",
+"version": "4.0.0"
+},
+{
+"name": "js",
+"version": "9.39.2"
+},
+{
+"name": "js-tokens",
+"version": "4.0.0"
+},
+{
+"name": "js-yaml",
+"version": "4.1.1"
+},
+{
+"name": "jsdom",
+"version": "27.4.0"
+},
+{
+"name": "jsesc",
+"version": "3.1.0"
+},
+{
+"name": "json-buffer",
+"version": "3.0.1"
+},
+{
+"name": "json-patch",
+"version": "1.13.0.redhat-00008"
+},
+{
+"name": "json-schema",
+"version": "7.0.15"
+},
+{
+"name": "json-schema-traverse",
+"version": "0.4.1"
+},
+{
+"name": "json-schema-traverse",
+"version": "1.0.0"
+},
+{
+"name": "json-stable-stringify-without-jsonify",
+"version": "1.0.1"
+},
+{
+"name": "json5",
+"version": "2.2.3"
+},
+{
+"name": "jsonc-parser",
+"version": "3.3.1"
+},
+{
+"name": "jsonfile",
+"version": "6.2.0"
+},
+{
+"name": "jspecify",
+"version": "1.0.0.redhat-00001"
+},
+{
+"name": "jsx-ast-utils",
+"version": "3.3.5"
+},
+{
+"name": "jszip",
+"version": "3.10.1"
+},
+{
+"name": "jts-core",
+"version": "1.19.0.redhat-00002"
+},
+{
+"name": "keycloak-account-ui",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-admin-cli",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-admin-client",
+"version": "26.0.9.redhat-00001"
+},
+{
+"name": "keycloak-admin-ui",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-admin-v2-api",
+"version": "26.6.6.redhat-00001"
+},
+{
+"name": "keycloak-admin-v2-api",
+"version": "26.6.7.redhat-00003"
+},
+{
+"name": "keycloak-admin-v2-api",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-admin-v2-rest",
+"version": "26.6.6.redhat-00001"
+},
+{
+"name": "keycloak-admin-v2-rest",
+"version": "26.6.7.redhat-00003"
+},
+{
+"name": "keycloak-admin-v2-rest",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-authz-policy-common",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-client-common-synced",
+"version": "26.0.9.redhat-00001"
+},
+{
+"name": "keycloak-common",
+"version": "26.6.6.redhat-00001"
+},
+{
+"name": "keycloak-common",
+"version": "26.6.7.redhat-00003"
+},
+{
+"name": "keycloak-common",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-config-api",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-core",
+"version": "26.6.6.redhat-00001"
+},
+{
+"name": "keycloak-core",
+"version": "26.6.7.redhat-00003"
+},
+{
+"name": "keycloak-core",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-crypto-default",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-crypto-fips1402",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-ipatuura-federation",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-js",
+"version": "26.2.2"
+},
+{
+"name": "keycloak-kerberos-federation",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-ldap-federation",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-model-infinispan",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-model-jpa",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-model-storage",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-model-storage-private",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-model-storage-services",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-operator",
+"version": "26.6.6.redhat-00001"
+},
+{
+"name": "keycloak-operator",
+"version": "26.6.7.redhat-00003"
+},
+{
+"name": "keycloak-operator",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-operator-26.6.6.redhat-00001.jar",
+"version": ""
+},
+{
+"name": "keycloak-operator-26.6.6.redhat-00001.zip",
+"version": "26.6.6.CR1"
+},
+{
+"name": "keycloak-operator-26.6.7.redhat-00003.jar",
+"version": ""
+},
+{
+"name": "keycloak-operator-26.6.7.redhat-00003.zip",
+"version": "sha256:ce978fba0bb17e48968ae90d043ba20b4f4750965ae6e02affd6768c3211d9dd"
+},
+{
+"name": "keycloak-operator-26.6.9.redhat-00002.jar",
+"version": ""
+},
+{
+"name": "keycloak-operator-26.6.9.redhat-00002.zip",
+"version": "sha256:cbd99918e699dab1d49f42534793b3fea2ec032434f7be1c489b5570d87cfb61"
+},
+{
+"name": "keycloak-quarkus-dist",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-quarkus-server",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-quarkus-server-deployment",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-rest-admin-ui-ext",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-saml-core",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-saml-core-public",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-scim-core",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-scim-model",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-scim-services",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-server-spi",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-server-spi-private",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-services",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-sssd-federation",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-themes",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak-themes-vendor",
+"version": "26.6.9.redhat-00002"
+},
+{
+"name": "keycloak.jar",
+"version": ""
+},
+{
+"name": "keycloak/rhbk-openshift-rhel9",
+"version": "sha256:04b0afc934adba6f0fc62d371927f9b405555b764379a12ae2d1aee3e899fe15"
+},
+{
+"name": "keycloak/rhbk-openshift-rhel9",
+"version": "sha256:088100d6690db46248966ca581ce645a28bce379505ccf414ae309240221bb21"
+},
+{
+"name": "keycloak/rhbk-openshift-rhel9",
+"version": "sha256:0de6b0a3bfe5135725e33bb1da8fd22c1fc94e754814d6c3ddef92105a094116"
+},
+{
+"name": "keycloak/rhbk-openshift-rhel9",
+"version": "sha256:91937e38d3507d29a4bc5898a77abda62a204b508c77c730cd0bc745dcdb0d03"
+},
+{
+"name": "keycloak/rhbk-openshift-rhel9",
+"version": "sha256:cadcb5911714c8ffcd851c0035f04aa399d3677579bcad825b6b296fefe0b288"
+},
+{
+"name": "keycloak/rhbk-rhel9-operator",
+"version": "sha256:003b5b770b54ee6139a598a1dfb249d7971bc863f3b926c01a7aedea59be5cbc"
+},
+{
+"name": "keycloak/rhbk-rhel9-operator",
+"version": "sha256:1be1c23fb1385c9e01ffe3b27afa9a30ad0da3b7c016623529b529ec8f548f1a"
+},
+{
+"name": "keycloak/rhbk-rhel9-operator",
+"version": "sha256:5d136e0b6bb93f99b8d5ff25c1888cd98e20391b99227bfcda6386986e9603d6"
+},
+{
+"name": "keycloak/rhbk-rhel9-operator",
+"version": "sha256:923b40198c0d38a481a76ebaf3a28b262599d12382e6d666803df37bceb3cf14"
+},
+{
+"name": "keycloak/rhbk-rhel9-operator",
+"version": "sha256:b5a575021f691de0533a43da73ec72908c6521da7326ea922977491ab281565b"
+},
+{
+"name": "keycloak/rhbk-rhel9-operator-bundle",
+"version": "sha256:6d43917ace52331b28623246d61a202de7fd49bbc462578b7676ce0c90eeaead"
+},
+{
+"name": "keycloak/rhbk-rhel9-operator-bundle",
+"version": "sha256:a6ba34e988281526ce4a9d2a6e28ceaa218b1fcf6de88a3c51d0573949d67165"
+},
+{
+"name": "keyv",
+"version": "4.5.4"
+},
+{
+"name": "kiota-abstractions",
+"version": "1.0.0-preview.103"
+},
+{
+"name": "kiota-abstractions",
+"version": "1.0.0-preview.99"
+},
+{
+"name": "kiota-gen",
+"version": "1.0.2"
+},
+{
+"name": "kiota-http-fetchlibrary",
+"version": "1.0.0-preview.103"
+},
+{
+"name": "kiota-http-fetchlibrary",
+"version": "1.0.0-preview.99"
+},
+{
+"name": "kiota-serialization-form",
+"version": "1.0.0-preview.103"
+},
+{
+"name": "kiota-serialization-form",
+"version": "1.0.0-preview.99"
+},
+{
+"name": "kiota-serialization-json",
+"version": "1.0.0-preview.103"
+},
+{
+"name": "kiota-serialization-json",
+"version": "1.0.0-preview.99"
+},
+{
+"name": "kiota-serialization-multipart",
+"version": "1.0.0-preview.103"
+},
+{
+"name": "kiota-serialization-multipart",
+"version": "1.0.0-preview.99"
+},
+{
+"name": "kiota-serialization-text",
+"version": "1.0.0-preview.103"
+},
+{
+"name": "kiota-serialization-text",
+"version": "1.0.0-preview.99"
+},
+{
+"name": "kolorist",
+"version": "1.8.0"
+},
+{
+"name": "kubernetes-client",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-client-api",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-admissionregistration",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-apiextensions",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-apps",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-autoscaling",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-batch",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-certificates",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-common",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-coordination",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-core",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-discovery",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-events",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-extensions",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-flowcontrol",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-gatewayapi",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-metrics",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-networking",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-node",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-policy",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-rbac",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-resource",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-scheduling",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "kubernetes-model-storageclass",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "language-core",
+"version": "2.2.0"
+},
+{
+"name": "language-core",
+"version": "2.4.22"
+},
+{
+"name": "LatencyUtils",
+"version": "2.0.3.redhat-00005"
+},
+{
+"name": "levn",
+"version": "0.4.1"
+},
+{
+"name": "lie",
+"version": "3.3.0"
+},
+{
+"name": "lightningcss",
+"version": "1.30.2"
+},
+{
+"name": "lightningcss-linux-x64-gnu",
+"version": "1.30.2"
+},
+{
+"name": "lightningcss-linux-x64-musl",
+"version": "1.30.2"
+},
+{
+"name": "lint-staged",
+"version": "17.0.7"
+},
+{
+"name": "linux-x64",
+"version": "0.27.7"
+},
+{
+"name": "liquibase-core",
+"version": "4.33.0.redhat-00001"
+},
+{
+"name": "listr2",
+"version": "10.2.1"
+},
+{
+"name": "local-pkg",
+"version": "1.1.1"
+},
+{
+"name": "locate-path",
+"version": "6.0.0"
+},
+{
+"name": "lodash",
+"version": "4.17.20"
+},
+{
+"name": "lodash",
+"version": "4.18.1"
+},
+{
+"name": "lodash-es",
+"version": "4.17.12"
+},
+{
+"name": "lodash-es",
+"version": "4.18.1"
+},
+{
+"name": "lodash.merge",
+"version": "4.6.2"
+},
+{
+"name": "log-symbols",
+"version": "4.1.0"
+},
+{
+"name": "log-update",
+"version": "6.1.0"
+},
+{
+"name": "loose-envify",
+"version": "1.4.0"
+},
+{
+"name": "lru-cache",
+"version": "10.4.3"
+},
+{
+"name": "lru-cache",
+"version": "11.2.4"
+},
+{
+"name": "lru-cache",
+"version": "5.1.1"
+},
+{
+"name": "lru-cache",
+"version": "6.0.0"
+},
+{
+"name": "lz-string",
+"version": "1.5.0"
+},
+{
+"name": "magic-string",
+"version": "0.30.17"
+},
+{
+"name": "magic-string",
+"version": "0.30.21"
+},
+{
+"name": "make-dir",
+"version": "1.3.0"
+},
+{
+"name": "make-error",
+"version": "1.3.6"
+},
+{
+"name": "mariadb-java-client",
+"version": "3.5.9.redhat-00001"
+},
+{
+"name": "math-intrinsics",
+"version": "1.1.0"
+},
+{
+"name": "mdast",
+"version": "4.0.4"
+},
+{
+"name": "mdast-util-to-hast",
+"version": "13.2.1"
+},
+{
+"name": "mdn-data",
+"version": "2.12.2"
+},
+{
+"name": "merge2",
+"version": "1.4.1"
+},
+{
+"name": "micromark-util-character",
+"version": "2.1.1"
+},
+{
+"name": "micromark-util-encode",
+"version": "2.0.1"
+},
+{
+"name": "micromark-util-sanitize-uri",
+"version": "2.0.1"
+},
+{
+"name": "micromark-util-symbol",
+"version": "2.0.1"
+},
+{
+"name": "micromark-util-types",
+"version": "2.0.2"
+},
+{
+"name": "micromatch",
+"version": "4.0.8"
+},
+{
+"name": "micrometer-commons",
+"version": "1.16.6.redhat-00001"
+},
+{
+"name": "micrometer-commons",
+"version": "1.16.7.redhat-00002"
+},
+{
+"name": "micrometer-core",
+"version": "1.16.6.redhat-00001"
+},
+{
+"name": "micrometer-core",
+"version": "1.16.7.redhat-00002"
+},
+{
+"name": "micrometer-observation",
+"version": "1.16.6.redhat-00001"
+},
+{
+"name": "micrometer-observation",
+"version": "1.16.7.redhat-00002"
+},
+{
+"name": "micrometer-registry-prometheus-simpleclient",
+"version": "1.16.7.redhat-00002"
+},
+{
+"name": "micrometer-support",
+"version": "5.3.3.redhat-00001"
+},
+{
+"name": "micrometer-support",
+"version": "5.3.4.redhat-00001"
+},
+{
+"name": "microprofile-config-api",
+"version": "3.1.1.redhat-00001"
+},
+{
+"name": "microprofile-context-propagation-api",
+"version": "1.3.0.redhat-00002"
+},
+{
+"name": "microprofile-health-api",
+"version": "4.0.1.redhat-00003"
+},
+{
+"name": "microprofile-openapi-api",
+"version": "4.1.1.redhat-00001"
+},
+{
+"name": "microprofile-reactive-streams-operators-api",
+"version": "3.0.1.redhat-00002"
+},
+{
+"name": "mimic-function",
+"version": "5.0.1"
+},
+{
+"name": "min-indent",
+"version": "1.0.1"
+},
+{
+"name": "minimap",
+"version": "11.7.14"
+},
+{
+"name": "minimatch",
+"version": "10.2.5"
+},
+{
+"name": "minimatch",
+"version": "3.1.5"
+},
+{
+"name": "minimatch",
+"version": "9.0.9"
+},
+{
+"name": "minipass",
+"version": "7.1.2"
+},
+{
+"name": "mlly",
+"version": "1.7.4"
+},
+{
+"name": "mocha",
+"version": "10.0.10"
+},
+{
+"name": "mocha",
+"version": "11.7.5"
+},
+{
+"name": "mocker",
+"version": "4.1.8"
+},
+{
+"name": "module-importer",
+"version": "1.0.1"
+},
+{
+"name": "ms",
+"version": "2.1.3"
+},
+{
+"name": "msg-simple",
+"version": "1.2.0.redhat-00004"
+},
+{
+"name": "muggle-string",
+"version": "0.4.1"
+},
+{
+"name": "mustache",
+"version": "4.2.0"
+},
+{
+"name": "mutiny",
+"version": "3.1.1.redhat-00001"
+},
+{
+"name": "mutiny-smallrye-context-propagation",
+"version": "3.1.1.redhat-00001"
+},
+{
+"name": "mutiny-zero-flow-adapters",
+"version": "1.1.1.redhat-00001"
+},
+{
+"name": "mysql-connector-j",
+"version": "9.6.0.redhat-00001"
+},
+{
+"name": "nanoid",
+"version": "3.3.11"
+},
+{
+"name": "napi",
+"version": "0.36.3"
+},
+{
+"name": "napi-linux-x64-gnu",
+"version": "0.36.3"
+},
+{
+"name": "napi-linux-x64-musl",
+"version": "0.36.3"
+},
+{
+"name": "narayana-jta",
+"version": "7.3.3.Final-redhat-00001"
+},
+{
+"name": "narayana-jts-integration",
+"version": "7.3.3.Final-redhat-00001"
+},
+{
+"name": "nashorn-core",
+"version": "15.4.0.redhat-00011"
+},
+{
+"name": "native-linux-x86_64",
+"version": "1.23.0.redhat-00002"
+},
+{
+"name": "nativeimage",
+"version": "25.0.3.0-1-redhat-00001"
+},
+{
+"name": "natural-compare",
+"version": "1.4.0"
+},
+{
+"name": "netty-buffer",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-buffer",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-buffer",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-codec",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-codec",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-codec",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-codec-dns",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-codec-dns",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-codec-dns",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-codec-haproxy",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-codec-haproxy",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-codec-haproxy",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-codec-http",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-codec-http",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-codec-http",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-codec-http2",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-codec-http2",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-codec-http2",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-codec-socks",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-codec-socks",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-codec-socks",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-common",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-common",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-common",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-handler",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-handler",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-handler",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-handler-proxy",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-handler-proxy",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-handler-proxy",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-resolver",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-resolver",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-resolver",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-resolver-dns",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-resolver-dns",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-resolver-dns",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-tcnative-classes",
+"version": "2.0.78.Final-redhat-00002"
+},
+{
+"name": "netty-tcnative-classes",
+"version": "2.0.81.Final-redhat-00001"
+},
+{
+"name": "netty-tcnative-classes",
+"version": "2.0.84.Final-redhat-00002"
+},
+{
+"name": "netty-transport",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-transport",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-transport",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-transport-classes-epoll",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-transport-native-epoll",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "netty-transport-native-unix-common",
+"version": "4.1.136.Final-redhat-00001"
+},
+{
+"name": "netty-transport-native-unix-common",
+"version": "4.1.137.Final-redhat-00001"
+},
+{
+"name": "netty-transport-native-unix-common",
+"version": "4.1.139.Final-redhat-00001"
+},
+{
+"name": "node",
+"version": "0.16.7"
+},
+{
+"name": "node",
+"version": "24.2.0"
+},
+{
+"name": "node",
+"version": "24.9.1"
+},
+{
+"name": "node",
+"version": "25.0.3"
+},
+{
+"name": "node",
+"version": "25.0.8"
+},
+{
+"name": "node-core-library",
+"version": "5.14.0"
+},
+{
+"name": "node-releases",
+"version": "2.0.21"
+},
+{
+"name": "node-resizer",
+"version": "2.2.14"
+},
+{
+"name": "node-toolbar",
+"version": "1.3.14"
+},
+{
+"name": "node10",
+"version": "1.0.11"
+},
+{
+"name": "node12",
+"version": "1.0.11"
+},
+{
+"name": "node14",
+"version": "1.0.3"
+},
+{
+"name": "node16",
+"version": "1.0.4"
+},
+{
+"name": "normalize-path",
+"version": "3.0.0"
+},
+{
+"name": "npm-run-path",
+"version": "6.0.0"
+},
+{
+"name": "nwsapi",
+"version": "2.3.9"
+},
+{
+"name": "object-assign",
+"version": "4.1.1"
+},
+{
+"name": "object-inspect",
+"version": "1.13.4"
+},
+{
+"name": "object-keys",
+"version": "1.1.1"
+},
+{
+"name": "object-schema",
+"version": "2.1.7"
+},
+{
+"name": "object.assign",
+"version": "4.1.7"
+},
+{
+"name": "object.entries",
+"version": "1.1.9"
+},
+{
+"name": "object.fromentries",
+"version": "2.0.8"
+},
+{
+"name": "object.values",
+"version": "1.2.1"
+},
+{
+"name": "obug",
+"version": "2.1.1"
+},
+{
+"name": "once",
+"version": "1.4.0"
+},
+{
+"name": "onetime",
+"version": "7.0.0"
+},
+{
+"name": "openapi-types",
+"version": "27.0.0"
+},
+{
+"name": "opencsv",
+"version": "5.11.2.redhat-00001"
+},
+{
+"name": "openshift-client",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-client-api",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-autoscaling",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-config",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-console",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-hive",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-installer",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-machine",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-machineconfiguration",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-miscellaneous",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-monitoring",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-operator",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-operatorhub",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-storageversionmigrator",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-tuned",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "openshift-model-whereabouts",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "opentelemetry-apache-httpclient-4.3",
+"version": "2.23.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-api",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-api-incubator",
+"version": "1.57.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-common",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-context",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-common",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-otlp",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-exporter-otlp-common",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-instrumentation-annotations",
+"version": "2.23.0.redhat-00001"
+},
+{
+"name": "opentelemetry-instrumentation-annotations-support",
+"version": "2.23.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-instrumentation-api",
+"version": "2.23.0.redhat-00001"
+},
+{
+"name": "opentelemetry-instrumentation-api-incubator",
+"version": "2.23.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-jdbc",
+"version": "2.23.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-micrometer-1.5",
+"version": "2.23.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-runtime-telemetry-java17",
+"version": "2.23.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-runtime-telemetry-java8",
+"version": "2.23.0.alpha-redhat-00001"
+},
+{
+"name": "opentelemetry-sdk",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-common",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-extension-autoconfigure",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-extension-autoconfigure-spi",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-logs",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-metrics",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-sdk-trace",
+"version": "1.57.0.redhat-00001"
+},
+{
+"name": "opentelemetry-semconv",
+"version": "1.37.0.redhat-00001"
+},
+{
+"name": "opentelemetry-semconv-incubating",
+"version": "1.37.0.alpha-redhat-00001"
+},
+{
+"name": "operator-framework-core",
+"version": "5.3.3.redhat-00001"
+},
+{
+"name": "operator-framework-core",
+"version": "5.3.4.redhat-00001"
+},
+{
+"name": "optionator",
+"version": "0.9.4"
+},
+{
+"name": "owasp-java-html-sanitizer",
+"version": "20260101.1.0.redhat-00001"
+},
+{
+"name": "own-keys",
+"version": "1.0.1"
+},
+{
+"name": "p-debounce",
+"version": "5.1.0"
+},
+{
+"name": "p-limit",
+"version": "3.1.0"
+},
+{
+"name": "p-locate",
+"version": "5.0.0"
+},
+{
+"name": "package-json-from-dist",
+"version": "1.0.1"
+},
+{
+"name": "pako",
+"version": "0.2.9"
+},
+{
+"name": "pako",
+"version": "1.0.11"
+},
+{
+"name": "parent-module",
+"version": "1.0.1"
+},
+{
+"name": "parse-entities",
+"version": "4.0.2"
+},
+{
+"name": "parse-numeric-range",
+"version": "1.3.0"
+},
+{
+"name": "parse5",
+"version": "7.3.0"
+},
+{
+"name": "parse5",
+"version": "8.0.0"
+},
+{
+"name": "parseargs",
+"version": "0.11.0"
+},
+{
+"name": "parser",
+"version": "7.28.0"
+},
+{
+"name": "parser",
+"version": "7.28.4"
+},
+{
+"name": "parser",
+"version": "8.42.0"
+},
+{
+"name": "parsson",
+"version": "1.1.7.redhat-00003"
+},
+{
+"name": "path-browserify",
+"version": "1.0.1"
+},
+{
+"name": "path-exists",
+"version": "4.0.0"
+},
+{
+"name": "path-is-absolute",
+"version": "1.0.1"
+},
+{
+"name": "path-key",
+"version": "3.1.1"
+},
+{
+"name": "path-key",
+"version": "4.0.0"
+},
+{
+"name": "path-parse",
+"version": "1.0.7"
+},
+{
+"name": "path-scurry",
+"version": "1.11.1"
+},
+{
+"name": "pathe",
+"version": "2.0.3"
+},
+{
+"name": "patternfly",
+"version": "3.59.5"
+},
+{
+"name": "patternfly",
+"version": "4.224.5"
+},
+{
+"name": "patternfly",
+"version": "5.4.2"
+},
+{
+"name": "peek-stream",
+"version": "1.1.3"
+},
+{
+"name": "pend",
+"version": "1.2.0"
+},
+{
+"name": "perfmark-api",
+"version": "0.27.0.redhat-00003"
+},
+{
+"name": "picocli",
+"version": "4.7.7.redhat-00002"
+},
+{
+"name": "picocolors",
+"version": "1.1.1"
+},
+{
+"name": "picomatch",
+"version": "2.3.2"
+},
+{
+"name": "picomatch",
+"version": "4.0.4"
+},
+{
+"name": "pify",
+"version": "2.3.0"
+},
+{
+"name": "pify",
+"version": "3.0.0"
+},
+{
+"name": "pinkie",
+"version": "2.0.4"
+},
+{
+"name": "pinkie-promise",
+"version": "2.0.1"
+},
+{
+"name": "pkg-types",
+"version": "1.3.1"
+},
+{
+"name": "pkg-types",
+"version": "2.2.0"
+},
+{
+"name": "playwright",
+"version": "1.60.0"
+},
+{
+"name": "playwright",
+"version": "1.64.1"
+},
+{
+"name": "playwright",
+"version": "4.11.0"
+},
+{
+"name": "playwright-core",
+"version": "1.60.0"
+},
+{
+"name": "playwright-core",
+"version": "1.64.1"
+},
+{
+"name": "plugin-commonjs",
+"version": "29.0.0"
+},
+{
+"name": "plugin-kit",
+"version": "0.4.1"
+},
+{
+"name": "plugin-node-resolve",
+"version": "16.0.3"
+},
+{
+"name": "plugin-paginate-rest",
+"version": "14.0.0"
+},
+{
+"name": "plugin-proposal-private-methods",
+"version": "7.18.6"
+},
+{
+"name": "plugin-react-swc",
+"version": "4.2.2"
+},
+{
+"name": "plugin-replace",
+"version": "6.0.3"
+},
+{
+"name": "plugin-request-log",
+"version": "6.0.0"
+},
+{
+"name": "plugin-rest-endpoint-methods",
+"version": "17.0.0"
+},
+{
+"name": "plugin-terser",
+"version": "1.0.0"
+},
+{
+"name": "pluginutils",
+"version": "1.0.0-beta.47"
+},
+{
+"name": "pluginutils",
+"version": "5.2.0"
+},
+{
+"name": "pluginutils",
+"version": "5.3.0"
+},
+{
+"name": "pnpm",
+"version": "10.14.0"
+},
+{
+"name": "possible-typed-array-names",
+"version": "1.1.0"
+},
+{
+"name": "postcss",
+"version": "8.5.6"
+},
+{
+"name": "postgresql",
+"version": "42.7.13.redhat-00001"
+},
+{
+"name": "prelude-ls",
+"version": "1.2.1"
+},
+{
+"name": "prettier",
+"version": "3.6.2"
+},
+{
+"name": "prettier-linter-helpers",
+"version": "1.0.0"
+},
+{
+"name": "pretty-format",
+"version": "27.5.1"
+},
+{
+"name": "pretty-format",
+"version": "4.1.8"
+},
+{
+"name": "prismjs",
+"version": "1.26.5"
+},
+{
+"name": "process-nextick-args",
+"version": "2.0.1"
+},
+{
+"name": "project-service",
+"version": "8.42.0"
+},
+{
+"name": "promise-deferred",
+"version": "1.1.1"
+},
+{
+"name": "prop-types",
+"version": "15.7.15"
+},
+{
+"name": "prop-types",
+"version": "15.8.1"
+},
+{
+"name": "proper-lockfile",
+"version": "4.1.2"
+},
+{
+"name": "properties-file",
+"version": "3.6.3"
+},
+{
+"name": "property-information",
+"version": "6.5.0"
+},
+{
+"name": "property-information",
+"version": "7.1.0"
+},
+{
+"name": "proto-google-common-protos",
+"version": "2.65.1.redhat-00001"
+},
+{
+"name": "protobuf-java",
+"version": "4.33.2.redhat-00003"
+},
+{
+"name": "protostream",
+"version": "6.0.7.redhat-00002"
+},
+{
+"name": "protostream-types",
+"version": "6.0.7.redhat-00002"
+},
+{
+"name": "pump",
+"version": "2.0.1"
+},
+{
+"name": "pump",
+"version": "3.0.3"
+},
+{
+"name": "pumpify",
+"version": "1.5.1"
+},
+{
+"name": "punycode",
+"version": "2.3.1"
+},
+{
+"name": "quansync",
+"version": "0.2.10"
+},
+{
+"name": "quarkus-agroal",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-agroal-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-agroal-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-arc",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-arc",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-arc",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-arc-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-arc-test-supplement",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-arc-test-supplement-decorator",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-assistant-deployment-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-assistant-dev",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-bootstrap-app-model",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-bootstrap-core",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-bootstrap-json",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-bootstrap-runner",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-bootstrap-runner",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-bootstrap-runner",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-builder",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-caffeine",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-caffeine-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-class-change-agent",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-classloader-commons",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-classloader-commons",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-classloader-commons",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-container-image",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-container-image",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-container-image",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-core",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-core",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-core",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-core-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-credentials",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-credentials",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-credentials",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-credentials-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-datasource",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-datasource-common",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-datasource-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-datasource-deployment-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-development-mode-spi",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-development-mode-spi",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-development-mode-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-devservices",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-devui-deployment-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-fs-util",
+"version": "1.4.2.redhat-00001"
+},
+{
+"name": "quarkus-grpc-common",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-grpc-common-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-hibernate-orm",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-hibernate-orm-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-hibernate-orm-deployment-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-hibernate-validator",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-hibernate-validator-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-hibernate-validator-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-http-core",
+"version": "5.5.0.redhat-00001"
+},
+{
+"name": "quarkus-http-http-core",
+"version": "5.5.0.redhat-00001"
+},
+{
+"name": "quarkus-http-servlet",
+"version": "5.5.0.redhat-00001"
+},
+{
+"name": "quarkus-jackson",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-jackson",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-jackson",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jackson-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jackson-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jaxrs-spi-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-h2",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-h2-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-mariadb",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-mariadb-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-mssql",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-mssql-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-mysql",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-mysql-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-oracle",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-oracle-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-postgresql",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jdbc-postgresql-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jsonp",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-jsonp",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-jsonp",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-jsonp-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-kubernetes",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-kubernetes",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-kubernetes",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-kubernetes-client",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-kubernetes-client",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-kubernetes-client",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-kubernetes-client-internal",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-kubernetes-client-internal",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-kubernetes-client-internal",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-kubernetes-service-binding-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-kubernetes-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-local-cache",
+"version": "0.5.0.redhat-00001"
+},
+{
+"name": "quarkus-logging-json",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-logging-json-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-micrometer",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-micrometer-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-micrometer-opentelemetry",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-micrometer-opentelemetry-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-micrometer-registry-prometheus",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-micrometer-registry-prometheus-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-mutiny",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-mutiny",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-mutiny",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-mutiny-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-narayana-jta",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-narayana-jta-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-netty",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-netty",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-netty",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-netty-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-openshift-client",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-openshift-client",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-openshift-client",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-opentelemetry",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-opentelemetry-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-operator-sdk",
+"version": "7.7.4.redhat-00003"
+},
+{
+"name": "quarkus-operator-sdk",
+"version": "7.7.5.redhat-00001"
+},
+{
+"name": "quarkus-operator-sdk-common",
+"version": "7.7.4.redhat-00003"
+},
+{
+"name": "quarkus-operator-sdk-common",
+"version": "7.7.5.redhat-00001"
+},
+{
+"name": "quarkus-panache-common",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-panache-common-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-panache-hibernate-common",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-panache-hibernate-common-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-reactive-datasource-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-reactive-routes",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-reactive-routes-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-common",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-common-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-jackson",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-jackson-common",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-jackson-common-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-jackson-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-server-spi-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-rest-spi-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-resteasy-common-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-resteasy-server-common-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-run.jar",
+"version": ""
+},
+{
+"name": "quarkus-security",
+"version": "2.3.2.redhat-00001"
+},
+{
+"name": "quarkus-security-runtime-spi",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-security-runtime-spi",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-security-runtime-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-security-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-context-propagation",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-smallrye-context-propagation",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-context-propagation",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-context-propagation-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-context-propagation-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-health",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-smallrye-health",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-health",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-health-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-health-dev",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-health-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-openapi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-openapi-common-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-openapi-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-openapi-dev",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-smallrye-openapi-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-swagger-ui",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-swagger-ui-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-tls-registry",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-tls-registry",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-tls-registry",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-tls-registry-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-tls-registry-deployment-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-tls-registry-spi",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-tls-registry-spi",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-tls-registry-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-transaction-annotations",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-undertow-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-value-registry",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-value-registry",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-value-registry",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-vertx",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-vertx",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-vertx",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-vertx-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-vertx-deployment-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-vertx-http",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-vertx-http",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-vertx-http",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-vertx-http-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-vertx-http-deployment-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-vertx-latebound-mdc-provider",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-vertx-latebound-mdc-provider",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-vertx-latebound-mdc-provider",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-vertx-utils",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-virtual-threads",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "quarkus-virtual-threads",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "quarkus-virtual-threads",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-virtual-threads-deployment",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "quarkus-websockets-next-spi",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "queue-microtask",
+"version": "1.2.3"
+},
+{
+"name": "qute-core",
+"version": "3.33.3.redhat-00002"
+},
+{
+"name": "qute-core",
+"version": "3.33.3.redhat-00005"
+},
+{
+"name": "qute-core",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "rdf-urdna",
+"version": "1.1.0.redhat-00001"
+},
+{
+"name": "react",
+"version": "16.3.1"
+},
+{
+"name": "react",
+"version": "18.3.1"
+},
+{
+"name": "react",
+"version": "18.3.23"
+},
+{
+"name": "react-core",
+"version": "5.4.14"
+},
+{
+"name": "react-dom",
+"version": "18.3.1"
+},
+{
+"name": "react-dom",
+"version": "18.3.7"
+},
+{
+"name": "react-dropzone",
+"version": "14.3.8"
+},
+{
+"name": "react-hook-form",
+"version": "7.70.0"
+},
+{
+"name": "react-i18next",
+"version": "16.5.1"
+},
+{
+"name": "react-icons",
+"version": "5.4.2"
+},
+{
+"name": "react-is",
+"version": "16.13.1"
+},
+{
+"name": "react-is",
+"version": "17.0.2"
+},
+{
+"name": "react-router",
+"version": "6.30.4"
+},
+{
+"name": "react-router",
+"version": "7.18.2"
+},
+{
+"name": "react-router-dom",
+"version": "6.30.4"
+},
+{
+"name": "react-router-dom",
+"version": "7.18.2"
+},
+{
+"name": "react-styles",
+"version": "5.4.1"
+},
+{
+"name": "react-table",
+"version": "5.4.16"
+},
+{
+"name": "react-textarea-code-editor",
+"version": "3.1.1"
+},
+{
+"name": "react-tokens",
+"version": "5.4.1"
+},
+{
+"name": "reactflow",
+"version": "11.11.4"
+},
+{
+"name": "reactive-streams",
+"version": "1.0.4.redhat-00005"
+},
+{
+"name": "readable-stream",
+"version": "2.3.8"
+},
+{
+"name": "readdirp",
+"version": "3.6.0"
+},
+{
+"name": "readdirp",
+"version": "4.1.2"
+},
+{
+"name": "readline",
+"version": "2.6.3.redhat-00002"
+},
+{
+"name": "rechoir",
+"version": "0.6.2"
+},
+{
+"name": "redent",
+"version": "3.0.0"
+},
+{
+"name": "reflect.getprototypeof",
+"version": "1.0.10"
+},
+{
+"name": "refractor",
+"version": "4.9.0"
+},
+{
+"name": "regexp.prototype.flags",
+"version": "1.5.4"
+},
+{
+"name": "regexpp",
+"version": "4.12.2"
+},
+{
+"name": "rehype",
+"version": "13.0.2"
+},
+{
+"name": "rehype-parse",
+"version": "9.0.1"
+},
+{
+"name": "rehype-prism-plus",
+"version": "2.0.0"
+},
+{
+"name": "rehype-stringify",
+"version": "10.0.1"
+},
+{
+"name": "relaxng-datatype",
+"version": "4.0.7.redhat-00001"
+},
+{
+"name": "relaxng-datatype",
+"version": "4.0.9.redhat-00001"
+},
+{
+"name": "remapping",
+"version": "2.3.0"
+},
+{
+"name": "remapping",
+"version": "2.3.5"
+},
+{
+"name": "request",
+"version": "10.0.7"
+},
+{
+"name": "request-error",
+"version": "7.1.0"
+},
+{
+"name": "require-directory",
+"version": "2.1.1"
+},
+{
+"name": "require-from-string",
+"version": "2.0.2"
+},
+{
+"name": "resolve",
+"version": "1.20.2"
+},
+{
+"name": "resolve",
+"version": "1.22.10"
+},
+{
+"name": "resolve",
+"version": "2.0.0-next.5"
+},
+{
+"name": "resolve-from",
+"version": "4.0.0"
+},
+{
+"name": "resolve-pkg-maps",
+"version": "1.0.0"
+},
+{
+"name": "resolve-uri",
+"version": "3.1.2"
+},
+{
+"name": "rest",
+"version": "22.0.1"
+},
+{
+"name": "resteasy-client",
+"version": "6.2.16.Final-redhat-00002"
+},
+{
+"name": "resteasy-client",
+"version": "6.2.16.Final-redhat-00003"
+},
+{
+"name": "resteasy-client",
+"version": "6.2.19.Final-redhat-00003"
+},
+{
+"name": "resteasy-client-api",
+"version": "6.2.16.Final-redhat-00002"
+},
+{
+"name": "resteasy-client-api",
+"version": "6.2.16.Final-redhat-00003"
+},
+{
+"name": "resteasy-client-api",
+"version": "6.2.19.Final-redhat-00003"
+},
+{
+"name": "resteasy-core",
+"version": "6.2.16.Final-redhat-00002"
+},
+{
+"name": "resteasy-core",
+"version": "6.2.16.Final-redhat-00003"
+},
+{
+"name": "resteasy-core",
+"version": "6.2.19.Final-redhat-00003"
+},
+{
+"name": "resteasy-core-spi",
+"version": "6.2.16.Final-redhat-00002"
+},
+{
+"name": "resteasy-core-spi",
+"version": "6.2.16.Final-redhat-00003"
+},
+{
+"name": "resteasy-core-spi",
+"version": "6.2.19.Final-redhat-00003"
+},
+{
+"name": "resteasy-jackson2-provider",
+"version": "6.2.16.Final-redhat-00002"
+},
+{
+"name": "resteasy-jackson2-provider",
+"version": "6.2.16.Final-redhat-00003"
+},
+{
+"name": "resteasy-jackson2-provider",
+"version": "6.2.19.Final-redhat-00003"
+},
+{
+"name": "resteasy-jaxb-provider",
+"version": "6.2.16.Final-redhat-00002"
+},
+{
+"name": "resteasy-jaxb-provider",
+"version": "6.2.16.Final-redhat-00003"
+},
+{
+"name": "resteasy-jaxb-provider",
+"version": "6.2.19.Final-redhat-00003"
+},
+{
+"name": "resteasy-multipart-provider",
+"version": "6.2.16.Final-redhat-00002"
+},
+{
+"name": "resteasy-multipart-provider",
+"version": "6.2.16.Final-redhat-00003"
+},
+{
+"name": "resteasy-multipart-provider",
+"version": "6.2.19.Final-redhat-00003"
+},
+{
+"name": "resteasy-reactive",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "resteasy-reactive-common",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "resteasy-reactive-common-processor",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "resteasy-reactive-common-types",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "resteasy-reactive-jackson",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "resteasy-reactive-processor",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "resteasy-reactive-vertx",
+"version": "3.33.4.redhat-00005"
+},
+{
+"name": "resteasy-tracing-api",
+"version": "2.0.2.Final-redhat-00001"
+},
+{
+"name": "restore-cursor",
+"version": "5.1.0"
+},
+{
+"name": "retry",
+"version": "0.12.0"
+},
+{
+"name": "retry",
+"version": "0.4.3"
+},
+{
+"name": "reusify",
+"version": "1.1.0"
+},
+{
+"name": "rfc4648",
+"version": "1.5.4"
+},
+{
+"name": "rfdc",
+"version": "1.4.1"
+},
+{
+"name": "rhbk-26.6",
+"version": ""
+},
+{
+"name": "rhbk-26.6.9.CR1-quarkus-dist.zip",
+"version": "sha256:538acd77443429870007491fc27fc8dd67a766b5c0b66fe6d1f0a2f94de66318"
+},
+{
+"name": "rig-package",
+"version": "0.5.3"
+},
+{
+"name": "rngom",
+"version": "2.3.3.b02-redhat-00004"
+},
+{
+"name": "rollup",
+"version": "4.59.0"
+},
+{
+"name": "rollup-linux-x64-gnu",
+"version": "4.59.0"
+},
+{
+"name": "rollup-linux-x64-musl",
+"version": "4.59.0"
+},
+{
+"name": "rollup-plugin-peer-deps-external",
+"version": "2.2.4"
+},
+{
+"name": "router",
+"version": "1.23.3"
+},
+{
+"name": "run-parallel",
+"version": "1.2.0"
+},
+{
+"name": "runner",
+"version": "4.1.8"
+},
+{
+"name": "runtime",
+"version": "7.28.2"
+},
+{
+"name": "runtime",
+"version": "7.28.4"
+},
+{
+"name": "rxjava",
+"version": "3.1.12.redhat-00001"
+},
+{
+"name": "saaj-impl",
+"version": "2.0.1.redhat-00005"
+},
+{
+"name": "safe-array-concat",
+"version": "1.1.3"
+},
+{
+"name": "safe-buffer",
+"version": "5.1.2"
+},
+{
+"name": "safe-buffer",
+"version": "5.2.1"
+},
+{
+"name": "safe-push-apply",
+"version": "1.0.0"
+},
+{
+"name": "safe-regex-test",
+"version": "1.1.0"
+},
+{
+"name": "saxes",
+"version": "6.0.0"
+},
+{
+"name": "scheduler",
+"version": "0.23.2"
+},
+{
+"name": "scope-manager",
+"version": "8.42.0"
+},
+{
+"name": "seek-bzip",
+"version": "1.0.6"
+},
+{
+"name": "semver",
+"version": "6.3.1"
+},
+{
+"name": "semver",
+"version": "7.5.4"
+},
+{
+"name": "semver",
+"version": "7.7.2"
+},
+{
+"name": "serialize-javascript",
+"version": "7.0.5"
+},
+{
+"name": "service",
+"version": "1.23.0.redhat-00002"
+},
+{
+"name": "set-cookie-parser",
+"version": "2.7.2"
+},
+{
+"name": "set-function-length",
+"version": "1.2.2"
+},
+{
+"name": "set-function-name",
+"version": "2.0.2"
+},
+{
+"name": "set-proto",
+"version": "1.0.0"
+},
+{
+"name": "setimmediate",
+"version": "1.0.5"
+},
+{
+"name": "shared",
+"version": "3.5.18"
+},
+{
+"name": "shebang-command",
+"version": "2.0.0"
+},
+{
+"name": "shebang-regex",
+"version": "3.0.0"
+},
+{
+"name": "shelljs",
+"version": "0.8.5"
+},
+{
+"name": "side-channel",
+"version": "1.1.0"
+},
+{
+"name": "side-channel-list",
+"version": "1.0.0"
+},
+{
+"name": "side-channel-map",
+"version": "1.0.1"
+},
+{
+"name": "side-channel-weakmap",
+"version": "1.0.2"
+},
+{
+"name": "siginfo",
+"version": "2.0.0"
+},
+{
+"name": "signal-exit",
+"version": "3.0.7"
+},
+{
+"name": "signal-exit",
+"version": "4.1.0"
+},
+{
+"name": "simple-git",
+"version": "3.36.0"
+},
+{
+"name": "simple-git",
+"version": "4.0.2"
+},
+{
+"name": "simpleclient",
+"version": "0.16.0.redhat-00008"
+},
+{
+"name": "simpleclient_common",
+"version": "0.16.0.redhat-00008"
+},
+{
+"name": "simpleclient_tracer_common",
+"version": "0.16.0.redhat-00008"
+},
+{
+"name": "simpleclient_tracer_otel",
+"version": "0.16.0.redhat-00008"
+},
+{
+"name": "simpleclient_tracer_otel_agent",
+"version": "0.16.0.redhat-00008"
+},
+{
+"name": "slf4j-api",
+"version": "2.0.17.redhat-00001"
+},
+{
+"name": "slf4j-jboss-logmanager",
+"version": "2.0.2.Final-redhat-00001"
+},
+{
+"name": "slice-ansi",
+"version": "7.1.2"
+},
+{
+"name": "slice-ansi",
+"version": "8.0.0"
+},
+{
+"name": "smallrye-common-annotation",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-classloader",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-constraint",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-cpu",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-expression",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-function",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-io",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-net",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-os",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-process",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-ref",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-resource",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-common-vertx-context",
+"version": "2.16.0.redhat-00001"
+},
+{
+"name": "smallrye-config",
+"version": "3.16.0.redhat-00001"
+},
+{
+"name": "smallrye-config-common",
+"version": "3.16.0.redhat-00001"
+},
+{
+"name": "smallrye-config-core",
+"version": "3.16.0.redhat-00001"
+},
+{
+"name": "smallrye-config-source-keystore",
+"version": "3.16.0.redhat-00001"
+},
+{
+"name": "smallrye-config-source-yaml",
+"version": "3.16.0.redhat-00001"
+},
+{
+"name": "smallrye-config-validator",
+"version": "3.16.0.redhat-00001"
+},
+{
+"name": "smallrye-context-propagation",
+"version": "2.3.0.redhat-00001"
+},
+{
+"name": "smallrye-context-propagation",
+"version": "2.3.0.redhat-00004"
+},
+{
+"name": "smallrye-context-propagation-api",
+"version": "2.3.0.redhat-00001"
+},
+{
+"name": "smallrye-context-propagation-api",
+"version": "2.3.0.redhat-00004"
+},
+{
+"name": "smallrye-context-propagation-jta",
+"version": "2.3.0.redhat-00004"
+},
+{
+"name": "smallrye-context-propagation-storage",
+"version": "2.3.0.redhat-00001"
+},
+{
+"name": "smallrye-context-propagation-storage",
+"version": "2.3.0.redhat-00004"
+},
+{
+"name": "smallrye-fault-tolerance-vertx",
+"version": "6.10.1.redhat-00001"
+},
+{
+"name": "smallrye-fault-tolerance-vertx",
+"version": "6.10.2.redhat-00001"
+},
+{
+"name": "smallrye-health",
+"version": "4.3.0.redhat-00001"
+},
+{
+"name": "smallrye-health-api",
+"version": "4.3.0.redhat-00001"
+},
+{
+"name": "smallrye-health-provided-checks",
+"version": "4.3.0.redhat-00001"
+},
+{
+"name": "smallrye-health-ui",
+"version": "4.3.0.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-auth-common",
+"version": "3.21.6.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-auth-common",
+"version": "3.23.1.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-bridge-common",
+"version": "3.21.6.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-bridge-common",
+"version": "3.23.1.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-core",
+"version": "3.21.6.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-core",
+"version": "3.23.1.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-runtime",
+"version": "3.21.6.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-runtime",
+"version": "3.23.1.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-uri-template",
+"version": "3.21.6.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-uri-template",
+"version": "3.23.1.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-web",
+"version": "3.21.6.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-web",
+"version": "3.23.1.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-web-common",
+"version": "3.21.6.redhat-00001"
+},
+{
+"name": "smallrye-mutiny-vertx-web-common",
+"version": "3.23.1.redhat-00001"
+},
+{
+"name": "smallrye-open-api-core",
+"version": "4.2.4.redhat-00001"
+},
+{
+"name": "smallrye-open-api-jaxrs",
+"version": "4.2.4.redhat-00001"
+},
+{
+"name": "smallrye-open-api-model",
+"version": "4.2.4.redhat-00001"
+},
+{
+"name": "smallrye-open-api-spring",
+"version": "4.2.4.redhat-00001"
+},
+{
+"name": "smallrye-open-api-ui",
+"version": "4.2.4.redhat-00001"
+},
+{
+"name": "smallrye-open-api-vertx",
+"version": "4.2.4.redhat-00001"
+},
+{
+"name": "smallrye-private-key-pem-parser",
+"version": "0.9.3.redhat-00001"
+},
+{
+"name": "smallrye-private-key-pem-parser",
+"version": "0.9.4.redhat-00001"
+},
+{
+"name": "smallrye-reactive-converter-api",
+"version": "3.0.3.redhat-00001"
+},
+{
+"name": "smallrye-reactive-converter-mutiny",
+"version": "3.0.3.redhat-00001"
+},
+{
+"name": "smob",
+"version": "1.5.0"
+},
+{
+"name": "snakeyaml",
+"version": "2.0.0.redhat-00012"
+},
+{
+"name": "snakeyaml-engine",
+"version": "2.6.0.redhat-00004"
+},
+{
+"name": "snakeyaml-engine",
+"version": "2.6.0.redhat-00005"
+},
+{
+"name": "snapshot",
+"version": "4.1.8"
+},
+{
+"name": "source-map",
+"version": "0.3.10"
+},
+{
+"name": "source-map",
+"version": "0.6.1"
+},
+{
+"name": "source-map",
+"version": "2.4.22"
+},
+{
+"name": "source-map-js",
+"version": "1.2.1"
+},
+{
+"name": "source-map-support",
+"version": "0.5.21"
+},
+{
+"name": "source-map-support",
+"version": "0.8.1"
+},
+{
+"name": "sourcemap-codec",
+"version": "1.5.4"
+},
+{
+"name": "sourcemap-codec",
+"version": "1.5.5"
+},
+{
+"name": "space-separated-tokens",
+"version": "2.0.2"
+},
+{
+"name": "spec",
+"version": "1.1.0"
+},
+{
+"name": "sprintf-js",
+"version": "1.0.3"
+},
+{
+"name": "spy",
+"version": "4.1.8"
+},
+{
+"name": "stackback",
+"version": "0.0.2"
+},
+{
+"name": "stax-ex",
+"version": "2.0.1.redhat-00002"
+},
+{
+"name": "std-env",
+"version": "4.1.0"
+},
+{
+"name": "std-uritemplate",
+"version": "2.0.12"
+},
+{
+"name": "std-uritemplate",
+"version": "2.0.8"
+},
+{
+"name": "stop-iteration-iterator",
+"version": "1.1.0"
+},
+{
+"name": "stream-shift",
+"version": "1.0.3"
+},
+{
+"name": "streamx",
+"version": "2.22.1"
+},
+{
+"name": "string-argv",
+"version": "0.3.2"
+},
+{
+"name": "string-width",
+"version": "4.2.3"
+},
+{
+"name": "string-width",
+"version": "5.1.2"
+},
+{
+"name": "string-width",
+"version": "7.2.0"
+},
+{
+"name": "string-width",
+"version": "8.2.1"
+},
+{
+"name": "string.prototype.matchall",
+"version": "4.0.12"
+},
+{
+"name": "string.prototype.repeat",
+"version": "1.0.0"
+},
+{
+"name": "string.prototype.trim",
+"version": "1.2.10"
+},
+{
+"name": "string.prototype.trimend",
+"version": "1.0.9"
+},
+{
+"name": "string.prototype.trimstart",
+"version": "1.0.8"
+},
+{
+"name": "string_decoder",
+"version": "1.1.1"
+},
+{
+"name": "stringify-entities",
+"version": "4.0.4"
+},
+{
+"name": "strip-ansi",
+"version": "6.0.1"
+},
+{
+"name": "strip-ansi",
+"version": "7.1.2"
+},
+{
+"name": "strip-dirs",
+"version": "2.1.0"
+},
+{
+"name": "strip-indent",
+"version": "3.0.0"
+},
+{
+"name": "strip-json-comments",
+"version": "3.1.1"
+},
+{
+"name": "structured-clone",
+"version": "1.3.0"
+},
+{
+"name": "supports-color",
+"version": "7.2.0"
+},
+{
+"name": "supports-color",
+"version": "8.1.1"
+},
+{
+"name": "supports-preserve-symlinks-flag",
+"version": "1.0.0"
+},
+{
+"name": "symbol-tree",
+"version": "3.2.4"
+},
+{
+"name": "synckit",
+"version": "0.11.11"
+},
+{
+"name": "tabbable",
+"version": "6.2.0"
+},
+{
+"name": "tar-fs",
+"version": "2.0.4"
+},
+{
+"name": "tar-fs",
+"version": "3.1.1"
+},
+{
+"name": "tar-stream",
+"version": "1.6.2"
+},
+{
+"name": "tar-stream",
+"version": "3.1.4"
+},
+{
+"name": "tar-stream",
+"version": "3.1.7"
+},
+{
+"name": "template",
+"version": "7.27.2"
+},
+{
+"name": "terminal",
+"version": "0.15.4"
+},
+{
+"name": "terser",
+"version": "5.43.1"
+},
+{
+"name": "test",
+"version": "1.60.0"
+},
+{
+"name": "test",
+"version": "1.64.1"
+},
+{
+"name": "text-decoder",
+"version": "1.2.3"
+},
+{
+"name": "through",
+"version": "2.3.8"
+},
+{
+"name": "through2",
+"version": "2.0.5"
+},
+{
+"name": "tiny-invariant",
+"version": "1.3.3"
+},
+{
+"name": "tinybench",
+"version": "2.9.0"
+},
+{
+"name": "tinyduration",
+"version": "3.4.1"
+},
+{
+"name": "tinyexec",
+"version": "1.0.4"
+},
+{
+"name": "tinyexec",
+"version": "1.2.4"
+},
+{
+"name": "tinyglobby",
+"version": "0.2.15"
+},
+{
+"name": "tinyrainbow",
+"version": "3.1.0"
+},
+{
+"name": "titanium-json-ld",
+"version": "1.3.3.redhat-00001"
+},
+{
+"name": "tldts",
+"version": "7.0.19"
+},
+{
+"name": "tldts-core",
+"version": "7.0.19"
+},
+{
+"name": "to-buffer",
+"version": "1.2.2"
+},
+{
+"name": "to-regex-range",
+"version": "5.0.1"
+},
+{
+"name": "tough-cookie",
+"version": "6.0.0"
+},
+{
+"name": "tr46",
+"version": "6.0.0"
+},
+{
+"name": "trace-mapping",
+"version": "0.3.29"
+},
+{
+"name": "trace-mapping",
+"version": "0.3.31"
+},
+{
+"name": "trace-mapping",
+"version": "0.3.9"
+},
+{
+"name": "transformed-bytecode.jar",
+"version": ""
+},
+{
+"name": "traverse",
+"version": "7.28.0"
+},
+{
+"name": "traverse",
+"version": "7.28.4"
+},
+{
+"name": "trim-lines",
+"version": "3.0.1"
+},
+{
+"name": "trough",
+"version": "2.2.0"
+},
+{
+"name": "ts-api-utils",
+"version": "2.1.0"
+},
+{
+"name": "ts-command-line",
+"version": "5.0.2"
+},
+{
+"name": "ts-node",
+"version": "10.9.2"
+},
+{
+"name": "tsconfig-utils",
+"version": "8.42.0"
+},
+{
+"name": "tsdoc",
+"version": "0.15.1"
+},
+{
+"name": "tsdoc-config",
+"version": "0.17.1"
+},
+{
+"name": "tslib",
+"version": "2.8.1"
+},
+{
+"name": "tsx",
+"version": "4.21.0"
+},
+{
+"name": "twitter4j-core",
+"version": "4.1.2.redhat-00001"
+},
+{
+"name": "txw2",
+"version": "4.0.8.redhat-00001"
+},
+{
+"name": "txw2",
+"version": "4.0.8.redhat-00002"
+},
+{
+"name": "type-check",
+"version": "0.4.0"
+},
+{
+"name": "type-utils",
+"version": "8.42.0"
+},
+{
+"name": "typed-array-buffer",
+"version": "1.0.3"
+},
+{
+"name": "typed-array-byte-length",
+"version": "1.0.3"
+},
+{
+"name": "typed-array-byte-offset",
+"version": "1.0.4"
+},
+{
+"name": "typed-array-length",
+"version": "1.0.7"
+},
+{
+"name": "types",
+"version": "0.1.25"
+},
+{
+"name": "types",
+"version": "16.0.0"
+},
+{
+"name": "types",
+"version": "7.28.2"
+},
+{
+"name": "types",
+"version": "7.28.4"
+},
+{
+"name": "types",
+"version": "8.42.0"
+},
+{
+"name": "typescript",
+"version": "2.4.22"
+},
+{
+"name": "typescript",
+"version": "5.8.2"
+},
+{
+"name": "typescript",
+"version": "5.9.3"
+},
+{
+"name": "typescript-eslint",
+"version": "8.42.0"
+},
+{
+"name": "typescript-estree",
+"version": "8.42.0"
+},
+{
+"name": "uap-java",
+"version": "1.6.1.redhat-00002"
+},
+{
+"name": "ufo",
+"version": "1.6.1"
+},
+{
+"name": "unbox-primitive",
+"version": "1.1.0"
+},
+{
+"name": "unbzip2-stream",
+"version": "1.4.3"
+},
+{
+"name": "undici-types",
+"version": "7.10.0"
+},
+{
+"name": "undici-types",
+"version": "7.16.0"
+},
+{
+"name": "unicorn-magic",
+"version": "0.3.0"
+},
+{
+"name": "unified",
+"version": "11.0.5"
+},
+{
+"name": "unist",
+"version": "2.0.11"
+},
+{
+"name": "unist",
+"version": "3.0.3"
+},
+{
+"name": "unist-util-filter",
+"version": "5.0.1"
+},
+{
+"name": "unist-util-is",
+"version": "6.0.0"
+},
+{
+"name": "unist-util-position",
+"version": "5.0.0"
+},
+{
+"name": "unist-util-stringify-position",
+"version": "4.0.0"
+},
+{
+"name": "unist-util-visit",
+"version": "5.0.0"
+},
+{
+"name": "unist-util-visit-parents",
+"version": "6.0.1"
+},
+{
+"name": "universal-user-agent",
+"version": "7.0.3"
+},
+{
+"name": "universalify",
+"version": "2.0.1"
+},
+{
+"name": "update-browserslist-db",
+"version": "1.1.3"
+},
+{
+"name": "uri-js",
+"version": "4.4.1"
+},
+{
+"name": "url-template",
+"version": "3.1.1"
+},
+{
+"name": "use-react-router-breadcrumbs",
+"version": "4.0.1"
+},
+{
+"name": "use-sync-external-store",
+"version": "1.6.0"
+},
+{
+"name": "util-deprecate",
+"version": "1.0.2"
+},
+{
+"name": "utils",
+"version": "4.1.8"
+},
+{
+"name": "utils",
+"version": "8.42.0"
+},
+{
+"name": "uuid",
+"version": "13.0.2"
+},
+{
+"name": "v8-compile-cache-lib",
+"version": "3.0.1"
+},
+{
+"name": "validation-api",
+"version": "1.1.0.Final-redhat-00002"
+},
+{
+"name": "vertx-auth-common",
+"version": "4.5.31.redhat-00001"
+},
+{
+"name": "vertx-auth-common",
+"version": "4.5.32.redhat-00001"
+},
+{
+"name": "vertx-auth-common",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-bridge-common",
+"version": "4.5.31.redhat-00001"
+},
+{
+"name": "vertx-bridge-common",
+"version": "4.5.32.redhat-00001"
+},
+{
+"name": "vertx-bridge-common",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-codegen",
+"version": "4.5.31.redhat-00001"
+},
+{
+"name": "vertx-codegen",
+"version": "4.5.32.redhat-00001"
+},
+{
+"name": "vertx-core",
+"version": "4.5.31.redhat-00001"
+},
+{
+"name": "vertx-core",
+"version": "4.5.32.redhat-00001"
+},
+{
+"name": "vertx-core",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-grpc",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-grpc-client",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-grpc-common",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-grpc-server",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-mutiny-generator",
+"version": "3.21.6.redhat-00001"
+},
+{
+"name": "vertx-web",
+"version": "4.5.31.redhat-00001"
+},
+{
+"name": "vertx-web",
+"version": "4.5.32.redhat-00001"
+},
+{
+"name": "vertx-web",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-web-client",
+"version": "4.5.31.redhat-00001"
+},
+{
+"name": "vertx-web-client",
+"version": "4.5.32.redhat-00001"
+},
+{
+"name": "vertx-web-client",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vertx-web-common",
+"version": "4.5.31.redhat-00001"
+},
+{
+"name": "vertx-web-common",
+"version": "4.5.32.redhat-00001"
+},
+{
+"name": "vertx-web-common",
+"version": "4.5.35.redhat-00001"
+},
+{
+"name": "vfile",
+"version": "6.0.3"
+},
+{
+"name": "vfile-location",
+"version": "5.0.3"
+},
+{
+"name": "vfile-message",
+"version": "4.0.3"
+},
+{
+"name": "visitor-keys",
+"version": "8.42.0"
+},
+{
+"name": "vite",
+"version": "7.3.5"
+},
+{
+"name": "vite-plugin-checker",
+"version": "0.12.0"
+},
+{
+"name": "vite-plugin-dts",
+"version": "4.5.4"
+},
+{
+"name": "vite-plugin-lib-inject-css",
+"version": "2.2.2"
+},
+{
+"name": "vitest",
+"version": "4.1.8"
+},
+{
+"name": "void-elements",
+"version": "3.1.0"
+},
+{
+"name": "vscode-uri",
+"version": "3.1.0"
+},
+{
+"name": "w3c-xmlserializer",
+"version": "5.0.0"
+},
+{
+"name": "web-namespaces",
+"version": "2.0.1"
+},
+{
+"name": "webauthn4j-core",
+"version": "0.30.3.RELEASE-redhat-00001"
+},
+{
+"name": "webauthn4j-util",
+"version": "0.30.3.RELEASE-redhat-00001"
+},
+{
+"name": "webidl-conversions",
+"version": "8.0.1"
+},
+{
+"name": "whatwg-mimetype",
+"version": "4.0.0"
+},
+{
+"name": "whatwg-url",
+"version": "15.1.0"
+},
+{
+"name": "which",
+"version": "2.0.2"
+},
+{
+"name": "which-boxed-primitive",
+"version": "1.1.1"
+},
+{
+"name": "which-builtin-type",
+"version": "1.2.1"
+},
+{
+"name": "which-collection",
+"version": "1.0.2"
+},
+{
+"name": "which-typed-array",
+"version": "1.1.19"
+},
+{
+"name": "why-is-node-running",
+"version": "2.3.0"
+},
+{
+"name": "wildfly-common",
+"version": "1.5.4.Final-format-001-redhat-00002"
+},
+{
+"name": "wildfly-elytron-asn1",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-auth",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-auth-server",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-base",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-credential",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-http",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-keystore",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-digest",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-gssapi",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-oauth2",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-mechanism-scram",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-password-impl",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-permission",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-provider-util",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-digest",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-external",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-gs2",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-gssapi",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-oauth2",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-plain",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-sasl-scram",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-security-manager-action",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-ssl",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-util",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-x500",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-x500-cert",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wildfly-elytron-x500-cert-util",
+"version": "2.8.5.Final-redhat-00001"
+},
+{
+"name": "wireit",
+"version": "0.14.12"
+},
+{
+"name": "word",
+"version": "25.0.3.0-1-redhat-00001"
+},
+{
+"name": "word-wrap",
+"version": "1.2.5"
+},
+{
+"name": "workerpool",
+"version": "9.3.4"
+},
+{
+"name": "wrap-ansi",
+"version": "10.0.0"
+},
+{
+"name": "wrap-ansi",
+"version": "7.0.0"
+},
+{
+"name": "wrap-ansi",
+"version": "8.1.0"
+},
+{
+"name": "wrap-ansi",
+"version": "9.0.2"
+},
+{
+"name": "wrappy",
+"version": "1.0.2"
+},
+{
+"name": "ws",
+"version": "8.18.3"
+},
+{
+"name": "xml-name-validator",
+"version": "5.0.0"
+},
+{
+"name": "xmlchars",
+"version": "2.2.0"
+},
+{
+"name": "xmlsec",
+"version": "3.0.6.redhat-00001"
+},
+{
+"name": "xsom",
+"version": "2.3.3.b02-redhat-00004"
+},
+{
+"name": "xtend",
+"version": "4.0.2"
+},
+{
+"name": "y18n",
+"version": "5.0.8"
+},
+{
+"name": "yallist",
+"version": "3.1.1"
+},
+{
+"name": "yallist",
+"version": "4.0.0"
+},
+{
+"name": "yaml",
+"version": "2.8.3"
+},
+{
+"name": "yaml",
+"version": "2.9.0"
+},
+{
+"name": "yargs",
+"version": "17.7.2"
+},
+{
+"name": "yargs-parser",
+"version": "21.1.1"
+},
+{
+"name": "yargs-unparser",
+"version": "2.0.0"
+},
+{
+"name": "yauzl",
+"version": "2.10.0"
+},
+{
+"name": "yn",
+"version": "3.1.1"
+},
+{
+"name": "yocto-queue",
+"version": "0.1.0"
+},
+{
+"name": "zjsonpatch",
+"version": "7.5.2.redhat-00003"
+},
+{
+"name": "zod",
+"version": "3.25.76"
+},
+{
+"name": "zod-validation-error",
+"version": "3.5.3"
+},
+{
+"name": "zustand",
+"version": "4.5.7"
+},
+{
+"name": "zwitch",
+"version": "2.0.4"
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat build of Keycloak",
+"retrieved": "2026-11-18",
+"sha256": "2da124b1dfd68c192d8d109657e3664327234234c55a17122f36ec115f712c53",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/rhbk-26.6.json.bz2",
+"version": "26.6"
+}

@@ -1,0 +1,22 @@
+{
+"components": [
+{
+"name": "Apache Tomcat",
+"version": "11.0.26"
+}
+],
+"discovery_path": [
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases"
+],
+"extractors": [
+"version_table"
+],
+"found_via": "auto-discovered",
+"kind": "version-table",
+"product": "Artifactory",
+"retrieved": "2026-11-18",
+"sha256": "bae038d345a729675ac888eb29f9bc0fe37d41f1cecd9d16d36c7b97feeeeb17",
+"supplier": "JFrog",
+"url": "https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.146.45",
+"version": "7.146.45"
+}

@@ -1,0 +1,234 @@
+{
+"components": [
+{
+"name": "art-images_amd64",
+"version": "clair-rhel9-3.18.3-20261027.123054"
+},
+{
+"name": "art-images_amd64",
+"version": "quay-bridge-rhel9-operator-3.18.3-20261027.123054"
+},
+{
+"name": "art-images_amd64",
+"version": "quay-builder-qemu-rhcos-rhel8-3.18.3-20261027.082327"
+},
+{
+"name": "art-images_amd64",
+"version": "quay-builder-rhel9-3.18.3-20261027.144705"
+},
+{
+"name": "art-images_amd64",
+"version": "quay-container-security-rhel9-operator-3.18.3-20261104.153154"
+},
+{
+"name": "art-images_amd64",
+"version": "quay-rhel9-3.18.3-20261106.191329"
+},
+{
+"name": "art-images_amd64",
+"version": "quay-rhel9-operator-3.18.3-20261104.153154"
+},
+{
+"name": "art-images_arm64",
+"version": "clair-rhel9-3.18.3-20261027.123054"
+},
+{
+"name": "art-images_arm64",
+"version": "quay-bridge-rhel9-operator-3.18.3-20261027.123054"
+},
+{
+"name": "art-images_arm64",
+"version": "quay-builder-qemu-rhcos-rhel8-3.18.3-20261027.082327"
+},
+{
+"name": "art-images_arm64",
+"version": "quay-builder-rhel9-3.18.3-20261027.144705"
+},
+{
+"name": "art-images_arm64",
+"version": "quay-container-security-rhel9-operator-3.18.3-20261104.153154"
+},
+{
+"name": "art-images_arm64",
+"version": "quay-rhel9-3.18.3-20261106.191329"
+},
+{
+"name": "art-images_arm64",
+"version": "quay-rhel9-operator-3.18.3-20261104.153154"
+},
+{
+"name": "art-images_ppc64le",
+"version": "clair-rhel9-3.18.3-20261027.123054"
+},
+{
+"name": "art-images_ppc64le",
+"version": "quay-bridge-rhel9-operator-3.18.3-20261027.123054"
+},
+{
+"name": "art-images_ppc64le",
+"version": "quay-builder-qemu-rhcos-rhel8-3.18.3-20261027.082327"
+},
+{
+"name": "art-images_ppc64le",
+"version": "quay-builder-rhel9-3.18.3-20261027.144705"
+},
+{
+"name": "art-images_ppc64le",
+"version": "quay-container-security-rhel9-operator-3.18.3-20261104.153154"
+},
+{
+"name": "art-images_ppc64le",
+"version": "quay-rhel9-3.18.3-20261106.191329"
+},
+{
+"name": "art-images_ppc64le",
+"version": "quay-rhel9-operator-3.18.3-20261104.153154"
+},
+{
+"name": "art-images_s390x",
+"version": "clair-rhel9-3.18.3-20261027.123054"
+},
+{
+"name": "art-images_s390x",
+"version": "quay-bridge-rhel9-operator-3.18.3-20261027.123054"
+},
+{
+"name": "art-images_s390x",
+"version": "quay-builder-qemu-rhcos-rhel8-3.18.3-20261027.082327"
+},
+{
+"name": "art-images_s390x",
+"version": "quay-builder-rhel9-3.18.3-20261027.144705"
+},
+{
+"name": "art-images_s390x",
+"version": "quay-container-security-rhel9-operator-3.18.3-20261104.153154"
+},
+{
+"name": "art-images_s390x",
+"version": "quay-rhel9-3.18.3-20261106.191329"
+},
+{
+"name": "art-images_s390x",
+"version": "quay-rhel9-operator-3.18.3-20261104.153154"
+},
+{
+"name": "container-security-operator-v3-18",
+"version": ""
+},
+{
+"name": "container-security-operator-v3-18_amd64",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "container-security-operator-v3-18_arm64",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "container-security-operator-v3-18_ppc64le",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "container-security-operator-v3-18_s390x",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "quay-3-18-container-security-operator",
+"version": ""
+},
+{
+"name": "quay-3-18-container-security-operator-bundle",
+"version": ""
+},
+{
+"name": "quay-3-18-quay-bridge-operator",
+"version": ""
+},
+{
+"name": "quay-3-18-quay-bridge-operator-bundle",
+"version": ""
+},
+{
+"name": "quay-3-18-quay-builder",
+"version": ""
+},
+{
+"name": "quay-3-18-quay-builder-qemu",
+"version": ""
+},
+{
+"name": "quay-3-18-quay-clair",
+"version": ""
+},
+{
+"name": "quay-3-18-quay-operator",
+"version": ""
+},
+{
+"name": "quay-3-18-quay-operator-bundle",
+"version": ""
+},
+{
+"name": "quay-3-18-quay-quay",
+"version": ""
+},
+{
+"name": "quay-3.18",
+"version": ""
+},
+{
+"name": "quay-bridge-operator-v3-18",
+"version": ""
+},
+{
+"name": "quay-bridge-operator-v3-18_amd64",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "quay-bridge-operator-v3-18_arm64",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "quay-bridge-operator-v3-18_ppc64le",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "quay-bridge-operator-v3-18_s390x",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "quay-operator-v3-18",
+"version": ""
+},
+{
+"name": "quay-operator-v3-18_amd64",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "quay-operator-v3-18_arm64",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "quay-operator-v3-18_ppc64le",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+},
+{
+"name": "quay-operator-v3-18_s390x",
+"version": "a16d3a01ee9705c824289836b4fc8897065a6a53"
+}
+],
+"discovery_path": [
+"https://security.access.redhat.com/data/sbom/v1/index.txt"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Red Hat Quay",
+"retrieved": "2026-11-18",
+"sha256": "fce1187a1322e241d374d5559bca236e8e05a2a620c3e99668156dd09abf4657",
+"supplier": "Red Hat",
+"url": "https://security.access.redhat.com/data/sbom/v1/spdx/quay-3.18.json.bz2",
+"version": "3.18"
+}
