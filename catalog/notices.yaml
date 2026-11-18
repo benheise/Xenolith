@@ -142,6 +142,59 @@ discover:
       macOS: {latest: 4}
       iOS: {latest: 4}
 
+  # GitLab: the Omnibus package publishes a license manifest per release (every bundled
+  # program and library with its version, including nginx, OpenSSL, curl, PostgreSQL and
+  # the Ruby, Go and JavaScript dependencies). Release numbers come from the omnibus-gitlab
+  # tags; the newest patch of the four newest minors that has a manifest is kept.
+  - type: versions_json
+    supplier: GitLab
+    product: GitLab Enterprise Edition (self-managed)
+    versions_url: https://gitlab.com/api/v4/projects/gitlab-org%2Fomnibus-gitlab/repository/tags?order_by=version&per_page=100
+    field: name
+    version_regex: '^(?P<version>\d+\.\d+\.\d+)\+ee\.0$'
+    keep_latest_per_minor: true
+    limit: 4
+    url_template: https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/{minor}/{version}-ee.0.json
+
+  # Red Hat publishes an SPDX 2.3 SBOM per product stream (bzip2-compressed JSON, with
+  # purls and exact versions), listed in a plain index.txt next to its CSAF/VEX feed.
+  # Customer-run products only; the operating system and platform streams (RHEL,
+  # OpenShift, OpenStack) are left out: their SBOMs run to hundreds of megabytes.
+  # Versions ending in .z are Red Hat's maintenance streams (EAP 8.1.z = 8.1 updates).
+  - type: file_index
+    supplier: Red Hat
+    index: https://security.access.redhat.com/data/sbom/v1/index.txt
+    link: '^spdx/(?P<product>[a-z0-9_]+(?:-[a-z]+)*?)[-_](?P<version>\d[\w.]*?)\.json\.bz2$'
+    latest: 1
+    products:
+      rhbk: {name: Red Hat build of Keycloak, latest: 2}
+      rhsso: Red Hat Single Sign-On
+      eap: {name: Red Hat JBoss Enterprise Application Platform, latest: 2}
+      jws: Red Hat JBoss Web Server
+      amq: Red Hat AMQ
+      amq-st: Red Hat streams for Apache Kafka
+      jdg: Red Hat Data Grid
+      satellite: Red Hat Satellite
+      ansible_automation_platform: Red Hat Ansible Automation Platform
+      quay: Red Hat Quay
+      directory_server: Red Hat Directory Server
+      certificate_system: Red Hat Certificate System
+      3amp: Red Hat 3scale API Management
+      rhacs: Red Hat Advanced Cluster Security for Kubernetes
+      openjdk: {name: Red Hat build of OpenJDK, latest: 3}
+
+  # JFrog publishes, per Artifactory release, the OpenJDK and Tomcat versions it bundles
+  # (two tables on the release index). Each row becomes a short inventory.
+  - type: version_table
+    supplier: JFrog
+    product: Artifactory
+    index: https://docs.jfrog.com/releases/docs/about-artifactory-releases
+    latest: 8
+    tables:
+      - {version_column: Artifactory Version, value_column: OpenJDK Version, component: OpenJDK}
+      - {version_column: Artifactory Product Version, value_column: Tomcat Version, component: Apache Tomcat,
+         value_regex: 'Artifactory Service:\s*(?P<v>\d+\.\d+\.\d+)'}
+
   # JetBrains: jetbrains.com/legal/third-party-software is drawn in the browser from
   # JetBrains' product release API, where every release links a third-party-libraries.json
   # (name, version and license per library). Read from the API directly; no browser needed.
@@ -454,6 +507,18 @@ corrections:
     evidence:
       - https://blog.jetbrains.com/youtrack/2021/12/youtrack-update-regarding-log4j2-vulnerability/
       - https://blog.jetbrains.com/blog/2021/12/13/log4j-vulnerability-and-jetbrains-products-and-services/
+  # The rest of the same block: "log4j 1.2" and Spring 4.0.1.RELEASE (spring-aop, -beans,
+  # -context, -core, -expression, -web and the like). No vendor statement rules these out
+  # directly; they are set aside as part of the stale block by maintainer decision
+  # (November 2026). The same lists name the current Spring (6.2.11) separately.
+  - supplier: JetBrains
+    products: 'YouTrack|Hub'
+    names: 'log4j|spring-[a-z-]+'
+    versions: '1\.2|4\.0\.1\.RELEASE'
+    reason: "part of the same stale block as Log4j 2.10.0, next to the current Spring 6.2.11; set aside by maintainer decision without a direct vendor statement"
+    evidence:
+      - https://resources.jetbrains.com/storage/third-party-libraries/youtrack/youtrack-2026.2.19840.json
+      - https://resources.jetbrains.com/storage/third-party-libraries/hub/hub-2026.2.52570.json
 
 # Vendors checked and not crawlable (November 2026):
 #   Cisco "Open Source Used In" PDFs: blocked for automated clients (HTTP 403).
@@ -463,6 +528,10 @@ corrections:
 #   Juniper: per-release attribution pages stop at Junos 16.1; newer ones moved behind HPE networking docs.
 #   SonicWall, Synology, HPE Aruba: no public component lists (GPL source on request or tarballs only).
 #   Atlassian: SBOMs ship inside the installation directory only.
+#   Barracuda (Web Application Firewall, CloudGen Firewall): the open source list is shown only in the
+#     appliance's own interface, with source tarballs on request.
+#   Ping Identity (PingFederate, PingDirectory, PingAccess): LICENSE files carry a generic open source
+#     clause without a versioned component list; the Docker Hub pages point to no public list.
 #   Adobe: notices PDFs list only attribution-required components, without versions; low value.
 #   JetBrains: legal/third-party-software is drawn client-side from the release API; crawled from the API (see discover).
 #   Check Point: one prose copyright page, no per-product component list.

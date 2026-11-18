@@ -34,6 +34,7 @@ the plain page is an empty client-side shell (see _get_rendered); never around a
 
 from __future__ import annotations
 
+import bz2
 import hashlib
 import html as htmllib
 import io
@@ -651,8 +652,46 @@ def ex_dropdown_heads(html: str | None) -> list[tuple[str, str]]:
     return out
 
 
+TAG_PREFIX = re.compile(r"^(?:release|rel|version|ver|v)(?=[-_.]?\d)[-_.]?", re.I)
+
+
+def tag_version(name: str, version: str) -> str:
+    """A release tag as a version: "curl-8_23_0" -> "8.23.0", "OpenSSL_1_1_1n" -> "1.1.1n",
+    "release-1.31.7" -> "1.31.7", "v1.2.12" -> "1.2.12". Anything else is returned as is."""
+    v = (version or "").strip()
+    base = re.escape(re.sub(r"[-_ ]?(?:lib|libs)$", "", name.strip()))
+    v = re.sub(rf"^(?:lib)?{base}[-_]?(?=v?\d)", "", v, flags=re.I)
+    v = TAG_PREFIX.sub("", v)
+    if re.fullmatch(r"\d+(?:_\d+)+[a-z]?\d*", v):
+        v = v.replace("_", ".")
+    return v
+
+
+def ex_license_manifest(obj) -> list[tuple[str, str]]:
+    """Omnibus (Chef) license manifests, as GitLab publishes per release:
+    {software: {"license": ..., "version": <tag>, "dependencies": {software: {...}}}}."""
+    if not isinstance(obj, dict):
+        return []
+    entries = [v for v in obj.values() if isinstance(v, dict)]
+    if len(entries) < 5 or sum(1 for v in entries if "license" in v and "version" in v) < 0.8 * len(entries):
+        return []
+    out: dict[str, str] = {}
+
+    def walk(tree: dict) -> None:
+        for name, info in tree.items():
+            if not isinstance(info, dict) or "version" not in info:
+                continue
+            if name not in out and not re.fullmatch(r"[0-9a-f]{40}", str(info.get("version") or "")):
+                out[name] = tag_version(name, str(info.get("version") or ""))
+            walk(info.get("dependencies") or {})
+    walk(obj)
+    return [(n, v) for n, v in out.items() if n not in ("version-manifest", "package-scripts", "config_guess")]
+
+
 def ex_sbom(obj) -> list[tuple[str, str]]:
     out = []
+    if (manifest := ex_license_manifest(obj)):
+        return manifest
     if isinstance(obj, list):
         # Plain JSON arrays of {"name", "version", ...} (JetBrains third-party-libraries.json)
         for c in obj:
@@ -703,10 +742,31 @@ def ex_spdx_tag(text: str) -> list[tuple[str, str]]:
     return out
 
 
+MAX_DECOMPRESSED = 300 * 1024 * 1024
+
+
+def decompress(body: bytes) -> bytes:
+    """bzip2-compressed documents (Red Hat's SBOMs are .json.bz2), capped at MAX_DECOMPRESSED."""
+    if body[:3] != b"BZh":
+        return body
+    d = bz2.BZ2Decompressor()
+    out = d.decompress(body, max_length=MAX_DECOMPRESSED)
+    if not d.eof:
+        raise ValueError(f"document is larger than {MAX_DECOMPRESSED // 2**20} MB uncompressed")
+    return out
+
+
 def extract(body: bytes, content_type: str, url: str) -> tuple[list[dict], list[str], str]:
     """Return (components [{name, version}], extractors that produced results, document kind)."""
     ct = (content_type or "").lower()
     lower_url = url.lower().split("?")[0]
+    if body[:3] == b"BZh":
+        try:
+            body = decompress(body)
+        except (OSError, ValueError, EOFError):
+            return [], [], "bzip2"
+        lower_url = re.sub(r"\.bz2$", "", lower_url)
+        ct = "application/json" if lower_url.endswith(".json") else ct
     kind, text, html, obj = "text", "", None, None
     if body[:5] == b"%PDF-" or "pdf" in ct or lower_url.endswith(".pdf"):
         kind, text = "pdf", pdf_to_text(body)
@@ -830,16 +890,30 @@ def discover(rule: dict, log=print) -> list[dict]:
     return list(docs.values())
 
 
+def _doc_url(template: str, version: str) -> str:
+    return template.format(version=version, minor=".".join(version.split(".")[:2]))
+
+
 def discover_versions(rule: dict, log=print) -> list[dict]:
     """Build document URLs from a JSON list of released versions (Elastic's artifacts API).
 
     rule: {type: versions_json, supplier, product, versions_url, field, url_template,
-           exclude (regex), keep_latest_per_minor (bool), limit (int)}
+           exclude (regex), version_regex (group `version`), keep_latest_per_minor (bool),
+           limit (int)}. versions_url may answer {field: [versions]} or a list of objects
+    whose `field` holds the version; url_template may use {version} and {minor} (19.5).
     """
     data = fetch.get_json(rule["versions_url"])
-    versions = [v for v in data.get(rule.get("field", "versions"), []) if isinstance(v, str)]
+    field = rule.get("field", "versions")
+    if isinstance(data, list):                  # a list of objects (GitLab's tags API): take `field` of each
+        raw = [item.get(field) for item in data if isinstance(item, dict)]
+    else:
+        raw = data.get(field, [])
+    versions = [v for v in raw if isinstance(v, str)]
     if rule.get("exclude"):
         versions = [v for v in versions if not re.search(rule["exclude"], v)]
+    if rule.get("version_regex"):               # "19.5.6+ee.0" -> "19.5.6"
+        vre = re.compile(rule["version_regex"])
+        versions = list(dict.fromkeys(m.group("version") for v in versions if (m := vre.search(v))))
     versions = [v for v in versions if re.match(r"^\d+(\.\d+)*$", v)]
     key = lambda v: [int(x) for x in v.split(".")]
     versions.sort(key=key, reverse=True)
@@ -852,7 +926,7 @@ def discover_versions(rule: dict, log=print) -> list[dict]:
         latest = []
         for minor in sorted(by_minor, reverse=True):
             for v in by_minor[minor][:4]:
-                if _exists(rule["url_template"].format(version=v)):
+                if _exists(_doc_url(rule["url_template"], v)):
                     latest.append(v)
                     break
             if len(latest) >= int(rule.get("limit", 4)):
@@ -860,7 +934,7 @@ def discover_versions(rule: dict, log=print) -> list[dict]:
         versions = latest
     versions = versions[: int(rule.get("limit", 4))]
     docs = [{"supplier": rule["supplier"], "product": rule["product"], "version": v,
-             "url": rule["url_template"].format(version=v), "discovered_by": rule["versions_url"]} for v in versions]
+             "url": _doc_url(rule["url_template"], v), "discovered_by": rule["versions_url"]} for v in versions]
     log(f"  {rule['supplier']} {rule['product']}: versions {', '.join(versions)}")
     return docs
 
@@ -965,6 +1039,86 @@ def discover_table(rule: dict, log=print) -> list[dict]:
             docs.append({"supplier": rule["supplier"], "product": product, "version": v,
                          "url": versions[v], "discovered_by": rule["index"]})
     log(f"  {rule['supplier']}: {len(docs)} documents for {len(by_product)} products from {rule['index']}")
+    return docs
+
+
+def discover_file_index(rule: dict, log=print) -> list[dict]:
+    """A plain-text index of document paths, one per line (Red Hat's SBOM index.txt).
+
+    rule: {type: file_index, supplier, index, link (regex on each line, groups product
+           and version), products: {key: product name, or {name, latest}}, latest
+           (newest versions kept per product, default 2)}
+    """
+    from ..versions import version_key
+    link_re = re.compile(rule["link"])
+    found: dict[str, dict[str, str]] = {}
+    for line in fetch.get_text(rule["index"], timeout=90).splitlines():
+        m = link_re.search(line.strip())
+        if m and m.group("product") in (rule.get("products") or {}) and version_key(m.group("version")) is not None:
+            found.setdefault(m.group("product"), {})[m.group("version")] = urljoin(rule["index"], line.strip())
+    docs = []
+    for key, spec in (rule.get("products") or {}).items():
+        spec = spec if isinstance(spec, dict) else {"name": spec}
+        versions = found.get(key, {})
+        keep = sorted(versions, key=version_key, reverse=True)[: int(spec.get("latest") or rule.get("latest", 2))]
+        for v in keep:
+            docs.append({"supplier": rule["supplier"], "product": spec["name"], "version": v,
+                         "url": versions[v], "discovered_by": rule["index"]})
+        if not keep:
+            log(f"  ! {rule['supplier']} {spec['name']}: nothing in {rule['index']}")
+    log(f"  {rule['supplier']}: {len(docs)} documents for {len(found)} products from {rule['index']}")
+    return docs
+
+
+def discover_version_table(rule: dict, log=print) -> list[dict]:
+    """A vendor page with a table of the component versions each product release bundles
+    (JFrog: Artifactory version | OpenJDK version). Each row becomes an inline document.
+
+    rule: {type: version_table, supplier, product, index, latest (rows kept per table,
+           default 6), tables: [{version_column (header text), value_column (header
+           text), component (name to record), value_regex (optional; group v picks the
+           version out of the cell)}]}
+    """
+    from ..versions import version_key
+    page = fetch.get_text(rule["index"], timeout=90)
+    tables = []
+    for table in re.findall(r"(?is)<table\b.*?</table>", page):
+        rows = [[re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", " ", c))).strip()
+                 for c in re.findall(r"(?is)<t[hd][^>]*>(.*?)</t[hd]>", row)]
+                for row in re.findall(r"(?is)<tr[^>]*>(.*?)</tr>", table)]
+        if rows:
+            tables.append(rows)
+    keep = int(rule.get("latest", 6))
+    docs = []
+    for spec in rule["tables"]:
+        want_v, want_c = spec["version_column"].lower(), spec["value_column"].lower()
+        rows = next((t for t in tables if [h.lower() for h in t[0]][:2] == [want_v, want_c]), None)
+        if rows is None:
+            log(f"  ! {rule['supplier']} {rule['product']}: no table headed {spec['version_column']!r} | {spec['value_column']!r}")
+            continue
+        value_re = re.compile(spec["value_regex"]) if spec.get("value_regex") else None
+        kept = 0
+        for cells in rows[1:]:
+            if len(cells) < 2 or version_key(cells[0]) is None:
+                continue
+            value = cells[1]
+            if value_re:
+                m = value_re.search(value)
+                if not m:
+                    continue
+                value = m.group("v")
+            if version_key(value) is None:
+                continue
+            product_version = re.sub(r"\s*-\s*", " to ", cells[0])          # "7.59.9-7.68.20" -> "7.59.9 to 7.68.20"
+            slug = re.sub(r"[^a-z0-9.]+", "-", f"{spec['component']}-{product_version}".lower()).strip("-")
+            docs.append({"supplier": rule["supplier"], "product": rule["product"], "version": product_version,
+                         "url": f"{rule['index']}#{slug}", "discovered_by": rule["index"],
+                         "components": [{"name": spec["component"], "version": value}],
+                         "kind": "version-table", "via": ["version_table"]})
+            kept += 1
+            if kept >= keep:
+                break
+    log(f"  {rule['supplier']} {rule['product']}: {len(docs)} release rows from {rule['index']}")
     return docs
 
 
@@ -1089,6 +1243,8 @@ def load_registry(path: Path, *, discover_docs: bool = True, log=print) -> list[
                              else discover_table(rule, log=log) if kind == "table"
                              else discover_embedded_json(rule, log=log) if kind == "embedded_json"
                              else discover_jetbrains(rule, log=log) if kind == "jetbrains"
+                             else discover_version_table(rule, log=log) if kind == "version_table"
+                             else discover_file_index(rule, log=log) if kind == "file_index"
                              else discover(rule, log=log))
                 for d in found:
                     if rule.get("render"):
@@ -1124,6 +1280,12 @@ def infer_provenance(url: str, supplier: str, cfg: dict) -> dict:
                 return doc_provenance({}, rule)
         elif kind == "apple_releases":
             if url.startswith(rule_start(rule)):
+                return doc_provenance({}, rule)
+        elif kind == "file_index":
+            if url.startswith(rule["index"].rsplit("/", 1)[0] + "/"):
+                return doc_provenance({}, rule)
+        elif kind == "version_table":
+            if url.startswith(rule["index"] + "#"):
                 return doc_provenance({}, rule)
         elif kind == "jetbrains":
             if re.match(r"https://(?:resources|download)\.jetbrains\.com/", url):
@@ -1491,7 +1653,8 @@ def assertions(catalog: Catalog, data_dir: Path, corrections: list[dict] | None 
             dropped = aside.get(cid, [])
             set_aside = ""
             if dropped:
-                names = ", ".join(dict.fromkeys(f"{c['name']} {c['version']}".strip() for c, _ in dropped))
+                listed_aside = list(dict.fromkeys(f"{c['name']} {c['version']}".strip() for c, _ in dropped))
+                names = ", ".join(listed_aside[:3]) + (f" and {len(listed_aside) - 3} more" if len(listed_aside) > 3 else "")
                 reasons = "; ".join(dict.fromkeys(r["reason"].strip().rstrip(".") for _, r in dropped))
                 set_aside = f" Not counted: {names} ({reasons})."
             versions = ", ".join(dict.fromkeys(v for c in comps if (v := c.get("version") or version_in_name(c["name"]))))

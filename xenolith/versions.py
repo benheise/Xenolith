@@ -55,7 +55,12 @@ def java_version(v: str) -> str:
     return s
 
 
-STYLES = {"java": java_version}
+def erlang_version(v: str) -> str:
+    """Erlang/OTP release strings: OTP-27.3.2, otp_26.2.5 and erlang-27.1 compare as the release."""
+    return re.sub(r"^(?:otp|erlang)[-_ /]?(?=\d)", "", (v or "").strip().lower())
+
+
+STYLES = {"java": java_version, "erlang": erlang_version}
 
 
 def in_range(version: str, rng: dict) -> bool | None:

@@ -3,6 +3,71 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-18: nine more watchlist components, Java4Shell vendor statements, Red Hat, GitLab and JFrog sources
+
+From a research pass on components worth tracking, Java4Shell developments and new public
+component lists. Every range below was checked against the CVE record (or the project's own
+advisory where the record has none) and every vendor statement against the vendor's page.
+
+- **Watchlist: 14 → 23 components.** Each is commonly bundled as a private copy inside
+  appliances and enterprise servers, so OS patching doesn't reach it:
+  - nginx: **NGINX2Root** (CVE-2026-123007 and four more, disclosed 18 November 2026; fixed in
+    1.30.7 and 1.31.9). GitLab's own manifests show nginx 1.31.7 in every current release.
+  - Apache Tomcat: partial PUT RCE (CVE-2025-24813, KEV) and Ghostcat (CVE-2020-1938, KEV).
+  - sudo: Baron Samedit (CVE-2021-3156, KEV) and the chroot escalation (CVE-2025-32463, KEV).
+  - jQuery: `<option>` HTML injection (CVE-2020-11023, KEV).
+  - Erlang/OTP: SSH pre-authentication RCE (CVE-2025-32433, KEV).
+  - Apache ActiveMQ Classic: OpenWire RCE (CVE-2023-46604, KEV); Artemis is excluded.
+  - Apache Struts 2: S2-045 (CVE-2017-5638, KEV) and the S2-066/S2-067 upload flaws; Struts 1
+    is excluded.
+  - Apache HTTP Server: path traversal and RCE in 2.4.49 and 2.4.50 (CVE-2021-41773/42013, KEV).
+  - Squid: **Squidbleed** (CVE-2026-47729, fixed in 7.6).
+
+  Re-matching the stored inventories gave 362 new statements straight away (jQuery in 61
+  products, Tomcat in 20, sudo in 19, nginx in 13). Left out on purpose: the Linux kernel and
+  polkit (fixes ship as backports, so version ranges would mislead), HTTP/2 Rapid Reset (one
+  CVE across many implementations), Jenkins core and GeoServer (no listings found yet), and
+  libexpat, SnakeYAML and Jackson (no exploited incident).
+- **Java4Shell: 67 new vendor statements.**
+  - Cisco (advisory v1.1): 13 products affected, among them Catalyst Center, Secure Network
+    Analytics, Secure Workload, Smart Software Manager On-Prem and Intersight Virtual
+    Appliance; 11 not affected (ISE, ASA, FMC, FTD, NX-OS, IOS XR, SD-WAN); IOS XE and UCS
+    Central still under investigation. Cisco's CSAF file has no product tree yet, so these
+    come from the advisory page.
+  - PaperCut NG/MF Application and Site Server 25.0.0–25.0.13 and 26.0.0–26.0.6 (workaround;
+    fixed release planned for the week of 23 November).
+  - Sophos (Java not present in UTM, the macOS agents, the mobile apps and the AV engine),
+    Graylog (fixed package revisions), Openfire (uses the host's Java), Ory (no JVM), and Red
+    Hat Single Sign-On 7.6 (affected only on OpenJDK 17).
+  - Fixed Java builds: Oracle Java SE (17.0.21.1, 21.0.13.1, 25.0.5.1, 27.0.1.1, 8u513-perf),
+    GraalVM for JDK and GraalVM Enterprise, Eclipse Temurin (17.0.21.1+2, 21.0.13.1+2, 25.0.5.1+2, 27.0.1.1+4), Azul Zulu and Azul
+    Prime (26.08.110.0, 26.02.510.0), the Microsoft Build of OpenJDK, Amazon Corretto, and
+    Amazon Linux 2 and 2023.
+  - The incident now shows a note on the component page. It covers the AVX-512 VBMI
+    condition, the extra Oracle builds the ranges can't express (Java 8 Enterprise
+    Performance Pack 8u511b33-perf and GraalVM Enterprise 21.3.20.0.3) and the
+    `-XX:-UseBASE64Intrinsics` mitigation.
+  - Not yet published as of 18 November: statements from Atlassian, Jenkins, Ping Identity
+    and Elastic. Splunk is investigating (SVD-2026-1102). Red Hat, Ubuntu and Debian stable
+    fixes are pending. The CVE is not in CISA's KEV catalog; CISA's SSVC entry says no
+    exploitation has been seen.
+- **New sources.**
+  - Red Hat's public SPDX SBOMs for 15 customer-run products (`type: file_index`;
+    bzip2-compressed documents are unpacked): Keycloak, Single Sign-On, JBoss EAP and Web
+    Server, AMQ, streams for Kafka, Data Grid, Satellite, Ansible Automation Platform, Quay,
+    Directory Server, Certificate System, 3scale, Advanced Cluster Security and OpenJDK.
+  - GitLab's Omnibus license manifest for each self-managed release (`versions_json` now
+    takes a tag list; the new extractor reads Omnibus manifests).
+  - JFrog's table of the OpenJDK and Tomcat versions bundled in each Artifactory release
+    (`type: version_table`). Artifactory 7.173 ships OpenJDK 25.0.4.1, which is in the
+    Java4Shell range.
+- **Corrections.** The rest of JetBrains' stale YouTrack/Hub block (log4j 1.2, Spring
+  4.0.1.RELEASE) is set aside too, by maintainer decision. The statement for each product
+  names what wasn't counted.
+- **Fixes.** The Rust `curl` crate (0.4.x) no longer counts as curl. Barracuda (lists only
+  inside the appliance) and Ping Identity (no versioned list) were added to the vendors
+  checked and found not crawlable.
+
 ## 2026-11-18: JetBrains and Oracle notices, and a browser fetch for client-side pages
 
 - **JetBrains.** The third-party software page on jetbrains.com is drawn in the browser

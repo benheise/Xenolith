@@ -1,15 +1,15 @@
 {
- "built": "2026-11-18T20:04:07Z",
+ "built": "2026-11-18T21:57:28Z",
  "counts": {
-  "assertions": 13857,
-  "products_with_data": 7410,
+  "assertions": 14282,
+  "products_with_data": 7453,
   "inventories": 350,
   "inventory_components": 186911,
   "cpe_linked_clusters": 22,
   "cpe_linked_entries": 24,
   "spine_products": 16129,
-  "spine_only_shown": 4749,
-  "components": 14,
+  "spine_only_shown": 4744,
+  "components": 23,
   "wanted": 83,
   "wanted_fulfilled": 6
  },
@@ -340,15 +340,15 @@
      ]
     }
    ],
-   "assertions": 3944,
-   "products": 3830,
-   "contains": 126,
-   "in_range": 31,
+   "assertions": 3940,
+   "products": 3829,
+   "contains": 122,
+   "in_range": 27,
    "verdicts": {
     "not_affected": 3809,
     "workaround": 11,
     "fixed": 62,
-    "present": 36,
+    "present": 32,
     "under_investigation": 9,
     "affected": 17
    }
@@ -607,7 +607,7 @@
    "assertions": 83,
    "products": 58,
    "contains": 83,
-   "in_range": 27,
+   "in_range": 23,
    "verdicts": {
     "present": 52,
     "fixed": 26,
@@ -727,6 +727,7 @@
      "cves": [
       "CVE-2026-114938"
      ],
+     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigation: -XX:-UseBASE64Intrinsics.",
      "affected": [
       {
        "cves": [
@@ -755,18 +756,598 @@
      "trackers": []
     }
    ],
-   "assertions": 171,
-   "products": 123,
-   "contains": 117,
+   "assertions": 238,
+   "products": 190,
+   "contains": 146,
    "in_range": 24,
    "verdicts": {
-    "runtime_dependent": 5,
-    "affected": 6,
-    "under_investigation": 35,
+    "fixed": 14,
+    "runtime_dependent": 7,
+    "affected": 19,
+    "under_investigation": 37,
     "present": 87,
-    "workaround": 24,
-    "not_affected": 9,
-    "absent": 5
+    "not_affected": 29,
+    "workaround": 26,
+    "absent": 19
+   }
+  },
+  {
+   "id": "nginx",
+   "name": "nginx",
+   "upstream": "https://nginx.org/",
+   "purl": "pkg:generic/nginx",
+   "cpe": "cpe:2.3:a:f5:nginx",
+   "aliases": [
+    "nginx open source",
+    "NGINX2Root"
+   ],
+   "incidents": [
+    {
+     "name": "NGINX2Root",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-123007",
+      "CVE-2026-123634",
+      "CVE-2026-123633",
+      "CVE-2026-121810",
+      "CVE-2026-113425"
+     ],
+     "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root. Disabling HTTP/2 blocks only CVE-2026-123007 and CVE-2026-123633.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-123007"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.9.5",
+         "fixed": "1.30.7"
+        },
+        {
+         "introduced": "1.31.0",
+         "fixed": "1.31.9"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-123634"
+       ],
+       "ranges": [
+        {
+         "introduced": "0.6.18",
+         "fixed": "1.30.7"
+        },
+        {
+         "introduced": "1.31.0",
+         "fixed": "1.31.9"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-123633"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.19.7",
+         "fixed": "1.30.7"
+        },
+        {
+         "introduced": "1.31.0",
+         "fixed": "1.31.9"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-121810"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.25.0",
+         "fixed": "1.30.7"
+        },
+        {
+         "introduced": "1.31.0",
+         "fixed": "1.31.9"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-113425"
+       ],
+       "ranges": [
+        {
+         "introduced": "0.5.33",
+         "fixed": "1.30.7"
+        },
+        {
+         "introduced": "1.31.0",
+         "fixed": "1.31.9"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 45,
+   "products": 13,
+   "contains": 45,
+   "in_range": 41,
+   "verdicts": {
+    "present": 45
+   }
+  },
+  {
+   "id": "tomcat",
+   "name": "Apache Tomcat",
+   "upstream": "https://tomcat.apache.org/",
+   "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core",
+   "cpe": "cpe:2.3:a:apache:tomcat",
+   "aliases": [
+    "tomcat-embed-core",
+    "catalina",
+    "coyote",
+    "Ghostcat"
+   ],
+   "incidents": [
+    {
+     "name": "Tomcat partial PUT remote code execution",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-24813"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2025-24813"
+       ],
+       "ranges": [
+        {
+         "introduced": "8.5.0",
+         "last_affected": "8.5.100"
+        },
+        {
+         "introduced": "9.0.0.M1",
+         "fixed": "9.0.99"
+        },
+        {
+         "introduced": "10.1.0-M1",
+         "fixed": "10.1.35"
+        },
+        {
+         "introduced": "11.0.0-M1",
+         "fixed": "11.0.3"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    },
+    {
+     "name": "Ghostcat (AJP file read and inclusion)",
+     "year": 2020,
+     "cves": [
+      "CVE-2020-1938"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2020-1938"
+       ],
+       "ranges": [
+        {
+         "introduced": "7.0.0",
+         "fixed": "7.0.100"
+        },
+        {
+         "introduced": "8.5.0",
+         "fixed": "8.5.51"
+        },
+        {
+         "introduced": "9.0.0.M1",
+         "fixed": "9.0.31"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 39,
+   "products": 22,
+   "contains": 39,
+   "in_range": 24,
+   "verdicts": {
+    "present": 39
+   }
+  },
+  {
+   "id": "sudo",
+   "name": "sudo",
+   "upstream": "https://www.sudo.ws/",
+   "purl": "pkg:generic/sudo",
+   "cpe": "cpe:2.3:a:sudo_project:sudo",
+   "aliases": [
+    "Baron Samedit"
+   ],
+   "incidents": [
+    {
+     "name": "Baron Samedit (sudoedit heap overflow)",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-3156"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2021-3156"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.7.7",
+         "last_affected": "1.7.10p9"
+        },
+        {
+         "introduced": "1.8.2",
+         "fixed": "1.9.5p2"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    },
+    {
+     "name": "sudo chroot privilege escalation",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-32463"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2025-32463"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.9.14",
+         "fixed": "1.9.17p1"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 38,
+   "products": 19,
+   "contains": 38,
+   "in_range": 17,
+   "verdicts": {
+    "present": 38
+   }
+  },
+  {
+   "id": "jquery",
+   "name": "jQuery",
+   "upstream": "https://jquery.com/",
+   "purl": "pkg:npm/jquery",
+   "cpe": "cpe:2.3:a:jquery:jquery",
+   "aliases": [
+    "jquery.min.js"
+   ],
+   "incidents": [
+    {
+     "name": "jQuery <option> HTML injection (XSS)",
+     "year": 2020,
+     "cves": [
+      "CVE-2020-11023"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2020-11023"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.0.3",
+         "fixed": "3.5.0"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 115,
+   "products": 61,
+   "contains": 115,
+   "in_range": 59,
+   "verdicts": {
+    "present": 115
+   }
+  },
+  {
+   "id": "erlang-otp",
+   "name": "Erlang/OTP",
+   "upstream": "https://www.erlang.org/",
+   "purl": "pkg:github/erlang/otp",
+   "cpe": "cpe:2.3:a:erlang:erlang/otp",
+   "aliases": [
+    "erlang",
+    "otp",
+    "erlang ssh"
+   ],
+   "incidents": [
+    {
+     "name": "Erlang/OTP SSH pre-authentication RCE",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-32433"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2025-32433"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "25.3.2.20"
+        },
+        {
+         "introduced": "26.0",
+         "fixed": "26.2.5.11"
+        },
+        {
+         "introduced": "27.0",
+         "fixed": "27.3.3"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 39,
+   "products": 15,
+   "contains": 39,
+   "in_range": 33,
+   "verdicts": {
+    "present": 39
+   }
+  },
+  {
+   "id": "activemq",
+   "name": "Apache ActiveMQ (Classic)",
+   "upstream": "https://activemq.apache.org/",
+   "purl": "pkg:maven/org.apache.activemq/activemq-client",
+   "cpe": "cpe:2.3:a:apache:activemq",
+   "aliases": [
+    "activemq-client",
+    "activemq-broker",
+    "ActiveMQ Classic"
+   ],
+   "incidents": [
+    {
+     "name": "ActiveMQ OpenWire deserialization RCE",
+     "year": 2023,
+     "cves": [
+      "CVE-2023-46604"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2023-46604"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "5.15.16"
+        },
+        {
+         "introduced": "5.16.0",
+         "fixed": "5.16.7"
+        },
+        {
+         "introduced": "5.17.0",
+         "fixed": "5.17.6"
+        },
+        {
+         "introduced": "5.18.0",
+         "fixed": "5.18.3"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 16,
+   "products": 9,
+   "contains": 16,
+   "in_range": 13,
+   "verdicts": {
+    "present": 16
+   }
+  },
+  {
+   "id": "struts2",
+   "name": "Apache Struts 2",
+   "upstream": "https://struts.apache.org/",
+   "purl": "pkg:maven/org.apache.struts/struts2-core",
+   "cpe": "cpe:2.3:a:apache:struts",
+   "aliases": [
+    "struts2-core",
+    "xwork-core"
+   ],
+   "incidents": [
+    {
+     "name": "S2-045 Jakarta multipart RCE (Equifax breach)",
+     "year": 2017,
+     "cves": [
+      "CVE-2017-5638"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2017-5638"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.3.0",
+         "fixed": "2.3.32"
+        },
+        {
+         "introduced": "2.5.0",
+         "fixed": "2.5.10.1"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    },
+    {
+     "name": "Struts file upload path traversal (S2-066, S2-067)",
+     "year": 2024,
+     "cves": [
+      "CVE-2023-50164",
+      "CVE-2024-53677"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2023-50164"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0.0",
+         "fixed": "2.5.33"
+        },
+        {
+         "introduced": "6.0.0",
+         "fixed": "6.3.0.2"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2024-53677"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0.0",
+         "fixed": "6.4.0"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 5,
+   "products": 3,
+   "contains": 5,
+   "in_range": 5,
+   "verdicts": {
+    "present": 5
+   }
+  },
+  {
+   "id": "apache-httpd",
+   "name": "Apache HTTP Server",
+   "upstream": "https://httpd.apache.org/",
+   "purl": "pkg:generic/httpd",
+   "cpe": "cpe:2.3:a:apache:http_server",
+   "aliases": [
+    "httpd",
+    "apache2"
+   ],
+   "incidents": [
+    {
+     "name": "httpd path traversal and RCE (2.4.49, 2.4.50)",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-41773",
+      "CVE-2021-42013"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2021-41773"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.4.49",
+         "fixed": "2.4.50"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-42013"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.4.49",
+         "fixed": "2.4.51"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 62,
+   "products": 19,
+   "contains": 62,
+   "in_range": 0,
+   "verdicts": {
+    "present": 62
+   }
+  },
+  {
+   "id": "squid",
+   "name": "Squid caching proxy",
+   "upstream": "https://www.squid-cache.org/",
+   "purl": "pkg:generic/squid",
+   "cpe": "cpe:2.3:a:squid-cache:squid",
+   "aliases": [
+    "squid-cache",
+    "Squidbleed"
+   ],
+   "incidents": [
+    {
+     "name": "Squidbleed (FTP directory listing over-read)",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-47729"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-47729"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "7.6"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 3,
+   "products": 2,
+   "contains": 3,
+   "in_range": 3,
+   "verdicts": {
+    "present": 3
    }
   }
  ],
@@ -846,7 +1427,7 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 1050,
+   "assertions": 1408,
    "latest": "2026-11-18",
    "fv": "auto-discovered",
    "dp": [
@@ -860,7 +1441,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 66,
+   "assertions": 133,
    "latest": "2026-11-18",
    "fv": "community",
    "dp": [

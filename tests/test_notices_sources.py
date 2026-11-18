@@ -367,5 +367,143 @@ class CorrectionsTest(unittest.TestCase):
         self.assertIsNone(rule["_version"].fullmatch("2.20.0"))
 
 
+class NewSourcesTest(unittest.TestCase):
+    """GitLab license manifests, JFrog's bundled-version tables, Red Hat's SBOM index."""
+
+    def test_tag_versions(self):
+        for name, tag, want in [("curl", "curl-8_23_0", "8.23.0"), ("openssl", "OpenSSL_1_1_1n", "1.1.1n"),
+                                ("openssl", "openssl-3.6.3", "3.6.3"), ("nginx", "release-1.31.7", "1.31.7"),
+                                ("zlib", "v1.2.12", "1.2.12"), ("libgcrypt", "libgcrypt-1.10.2", "1.10.2"),
+                                ("libxml2", "2.15.4", "2.15.4"), ("libedit", "20120601-3.0", "20120601-3.0")]:
+            self.assertEqual(notices.tag_version(name, tag), want, tag)
+
+    def test_license_manifest(self):
+        manifest = {
+            "openssl": {"license": "Apache-2.0", "version": "openssl-3.6.3", "status": "acceptable"},
+            "nginx": {"license": "BSD-2-Clause", "version": "release-1.31.7",
+                      "dependencies": {"pcre2": {"license": "BSD", "version": "10.44"},
+                                       "openssl": {"license": "Apache-2.0", "version": "openssl-3.6.3"}}},
+            "curl": {"license": "MIT", "version": "curl-8_23_0"},
+            "config_guess": {"license": "GPL-3.0", "version": "c9092d05347c925a26f6887980e185206e13f9d6"},
+            "postgresql": {"license": "PostgreSQL", "version": "17.11"},
+            "redis": {"license": "BSD-3-Clause", "version": "7.2.16"},
+        }
+        body = json.dumps(manifest).encode()
+        comps, used, kind = notices.extract(body, "application/json", "https://g.example/gitlab-ee/19.5/19.5.6-ee.0.json")
+        self.assertEqual(kind, "sbom")
+        self.assertEqual({(c["name"], c["version"]) for c in comps},
+                         {("openssl", "3.6.3"), ("nginx", "1.31.7"), ("pcre2", "10.44"), ("curl", "8.23.0"),
+                          ("postgresql", "17.11"), ("redis", "7.2.16")})
+        self.assertEqual(notices.ex_license_manifest({"name": "x", "version": "1"}), [])   # not a manifest
+
+    def test_versions_json_from_a_tag_list(self):
+        tags = [{"name": n} for n in ("19.6.0+rc43.ee.0", "19.6.0+ee.0", "19.6.0+ce.0", "19.5.6+ee.0", "19.5.5+ee.0",
+                                      "19.4.8+ee.0", "19.3.9+ee.0")]
+        rule = {"type": "versions_json", "supplier": "GitLab", "product": "GitLab EE", "versions_url": "https://api.example/tags",
+                "field": "name", "version_regex": r"^(?P<version>\d+\.\d+\.\d+)\+ee\.0$", "keep_latest_per_minor": True,
+                "limit": 3, "url_template": "https://g.example/gitlab-ee/{minor}/{version}-ee.0.json"}
+        published = {"https://g.example/gitlab-ee/19.5/19.5.6-ee.0.json", "https://g.example/gitlab-ee/19.4/19.4.8-ee.0.json",
+                     "https://g.example/gitlab-ee/19.3/19.3.9-ee.0.json"}       # 19.6.0's manifest isn't out yet
+        with Patch((fetch_mod, "get_json", lambda url, **kw: tags), (notices, "_exists", lambda url: url in published)):
+            docs = notices.discover_versions(rule, log=lambda *a: None)
+        self.assertEqual([(d["version"], d["url"]) for d in docs],
+                         [("19.5.6", "https://g.example/gitlab-ee/19.5/19.5.6-ee.0.json"),
+                          ("19.4.8", "https://g.example/gitlab-ee/19.4/19.4.8-ee.0.json"),
+                          ("19.3.9", "https://g.example/gitlab-ee/19.3/19.3.9-ee.0.json")])
+
+    def test_version_table(self):
+        page = ("<table><tr><th>Artifactory Version</th><th>OpenJDK Version</th></tr>"
+                "<tr><td>7.173</td><td>25.0.4.1</td></tr><tr><td>7.146</td><td>21.0.11</td></tr>"
+                "<tr><td>7.59.9-7.68.20</td><td>17.0.6</td></tr></table>"
+                "<table><tr><th>Artifactory Product Version</th><th>Tomcat Version</th></tr>"
+                "<tr><td>7.173.8</td><td>Artifactory Service: 11.0.26 Access Service: 11.0.25</td></tr></table>")
+        rule = {"type": "version_table", "supplier": "JFrog", "product": "Artifactory", "index": "https://docs.example/releases",
+                "latest": 2, "tables": [
+                    {"version_column": "Artifactory Version", "value_column": "OpenJDK Version", "component": "OpenJDK"},
+                    {"version_column": "Artifactory Product Version", "value_column": "Tomcat Version",
+                     "component": "Apache Tomcat", "value_regex": r"Artifactory Service:\s*(?P<v>\d+\.\d+\.\d+)"}]}
+        with Patch((fetch_mod, "get_text", lambda url, **kw: page)):
+            docs = notices.discover_version_table(rule, log=lambda *a: None)
+        self.assertEqual([(d["version"], d["components"]) for d in docs],
+                         [("7.173", [{"name": "OpenJDK", "version": "25.0.4.1"}]),
+                          ("7.146", [{"name": "OpenJDK", "version": "21.0.11"}]),
+                          ("7.173.8", [{"name": "Apache Tomcat", "version": "11.0.26"}])])
+        self.assertEqual(len({d["url"] for d in docs}), 3)                  # one inventory per row
+        cat = catalog.load()
+        self.assertEqual(cat.match_component("OpenJDK", "25.0.4.1"), "openjdk")
+        self.assertEqual(cat.match_component("Apache Tomcat", "11.0.26"), "tomcat")
+
+    def test_file_index_and_bzip2(self):
+        import bz2
+        index = "spdx/rhbk-26.4.json.bz2\nspdx/rhbk-26.6.json.bz2\nspdx/eap-7.4.z.json.bz2\nspdx/eap-8.1.z.json.bz2\nspdx/rhel-9.9.z.json.bz2\n"
+        rule = {"type": "file_index", "supplier": "Red Hat", "index": "https://s.example/sbom/v1/index.txt", "latest": 1,
+                "link": r"^spdx/(?P<product>[a-z0-9_]+(?:-[a-z]+)*?)[-_](?P<version>\d[\w.]*?)\.json\.bz2$",
+                "products": {"rhbk": {"name": "Red Hat build of Keycloak", "latest": 2}, "eap": "Red Hat JBoss EAP"}}
+        with Patch((fetch_mod, "get_text", lambda url, **kw: index)):
+            docs = notices.discover_file_index(rule, log=lambda *a: None)
+        self.assertEqual([(d["product"], d["version"], d["url"]) for d in docs],
+                         [("Red Hat build of Keycloak", "26.6", "https://s.example/sbom/v1/spdx/rhbk-26.6.json.bz2"),
+                          ("Red Hat build of Keycloak", "26.4", "https://s.example/sbom/v1/spdx/rhbk-26.4.json.bz2"),
+                          ("Red Hat JBoss EAP", "8.1.z", "https://s.example/sbom/v1/spdx/eap-8.1.z.json.bz2")])
+        spdx = {"spdxVersion": "SPDX-2.3", "packages": [{"name": "log4j-core", "versionInfo": "2.25.5.redhat-00001"},
+                                                        {"name": "jquery", "versionInfo": "3.4.1"}]}
+        comps, used, kind = notices.extract(bz2.compress(json.dumps(spdx).encode()), "application/octet-stream",
+                                            "https://s.example/sbom/v1/spdx/eap-8.1.z.json.bz2")
+        self.assertEqual((kind, {(c["name"], c["version"]) for c in comps}),
+                         ("sbom", {("log4j-core", "2.25.5.redhat-00001"), ("jquery", "3.4.1")}))
+        self.assertEqual(notices.extract(b"BZh9 not really bzip2", "application/octet-stream", "https://x/a.json.bz2")[0], [])
+
+
+class WatchlistAdditionsTest(unittest.TestCase):
+    def test_new_components_match_and_range(self):
+        from xenolith import versions
+        cat = catalog.load()
+        cases = [("nginx", "1.24.0", "nginx"), ("nginx-bin", "1.20.1", "nginx"), ("nginx-filesystem", "1.20.1", None),
+                 ("ingress-nginx", "1.9.0", None), ("Apache Tomcat", "9.0.98", "tomcat"),
+                 ("org.apache.tomcat.embed:tomcat-embed-core", "10.1.19", "tomcat"), ("tomcat-jdbc", "9.0.1", None),
+                 ("Apache Tomcat Native Library", "1.2.3", None), ("tomcat-embed-el", "9.0.1", None),
+                 ("sudo", "1.8.27", "sudo"), ("jQuery", "3.4.1", "jquery"), ("jQuery UI", "1.12.1", None),
+                 ("@types/jquery", "3.5", None), ("erlang-otp", "26.0.2", "erlang-otp"), ("OTP", "23.3", "erlang-otp"),
+                 ("WildFly Elytron - SASL OTP", "1.0", None), ("Apache ActiveMQ", "5.14.5", "activemq"),
+                 ("Apache ActiveMQ", "2.6.3", None), ("ActiveMQ Artemis", "2.30.0", None),
+                 ("Apache Struts", "2.3.37", "struts2"), ("Apache Struts", "1.3.10", None), ("struts-core", "1.3.10", None),
+                 ("Apache HTTP Server", "2.4.49", "apache-httpd"), ("httpd-tools", "2.4.37", None),
+                 ("Apache HttpClient", "4.5", None), ("Squid Cache", "3.5.28", "squid"), ("SquidClamav", "6.0", None),
+                 ("curl", "0.4.44", None), ("curl", "8.23.0", "curl")]
+        for name, version, want in cases:
+            self.assertEqual(cat.match_component(name, version), want, f"{name} {version}")
+
+        def status(cid, version):
+            comp = cat.components[cid]
+            return versions.check([version], comp.affected, comp.version_style)["status"]
+        expected = {("nginx", "1.30.6"): "in_range", ("nginx", "1.30.7"): "outside", ("nginx", "1.31.8"): "in_range",
+                    ("nginx", "1.31.9"): "outside", ("tomcat", "8.5.100"): "in_range", ("tomcat", "9.0.99"): "outside",
+                    ("tomcat", "10.1.34"): "in_range", ("tomcat", "9.0.30"): "in_range",         # Ghostcat
+                    ("sudo", "1.9.5p1"): "in_range", ("sudo", "1.9.5p2"): "outside", ("sudo", "1.9.17_p1"): "outside",
+                    ("erlang-otp", "OTP-26.2.5"): "in_range", ("erlang-otp", "26.2.5.11"): "outside",
+                    ("erlang-otp", "27.3.4.1"): "outside", ("activemq", "5.17.7"): "outside", ("activemq", "5.14.5"): "in_range",
+                    ("jquery", "3.4.1"): "in_range", ("jquery", "3.5.0"): "outside", ("squid", "7.5"): "in_range",
+                    ("squid", "7.6"): "outside", ("struts2", "2.3.37"): "in_range", ("struts2", "6.4.0"): "outside"}
+        for (cid, version), want in expected.items():
+            self.assertEqual(status(cid, version), want, f"{cid} {version}")
+
+    def test_every_incident_is_sourced_and_ranged(self):
+        cat = catalog.load()
+        for comp in cat.components.values():
+            for inc in comp.incidents:
+                self.assertTrue(inc.get("cves"), comp.id)
+                ranged = {c for a in inc.get("affected") or [] for c in a["cves"]}
+                self.assertEqual(ranged, set(inc["cves"]), f"{comp.id}: {inc['name']} needs ranges for every CVE")
+        self.assertIn("8u513-perf", next(i for i in cat.components["openjdk"].incidents)["note"])
+
+    def test_second_jetbrains_correction(self):
+        rules = [r for r in notices.load_corrections(ROOT / "catalog" / "notices.yaml") if r["supplier"] == "JetBrains"]
+        stale = rules[1]
+        for name, version in [("log4j", "1.2"), ("spring-aop", "4.0.1.RELEASE"), ("spring-context", "4.0.1.RELEASE")]:
+            self.assertTrue(stale["_name"].fullmatch(name) and stale["_version"].fullmatch(version), name)
+        self.assertIsNone(stale["_version"].fullmatch("6.2.11"))
+        self.assertIsNone(stale["_name"].fullmatch("org.springframework:spring-core"))
+
+
 if __name__ == "__main__":
     unittest.main()

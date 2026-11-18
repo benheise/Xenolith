@@ -416,6 +416,7 @@ async function showComponent(id, filterKey, text) {
     <div class="small" style="margin-top:4px"><b>${esc(i.name)}</b> (${esc(i.year)}):
       ${(i.cves || []).map(v => `<a class="cve" href="https://www.cve.org/CVERecord?id=${esc(v)}" target="_blank" rel="noopener">${esc(v)}</a>`).join(" ")}
       ${(i.trackers || []).map(u => ` · tracker: ${link(u)}`).join("")}
+      ${i.note ? `<div class="muted">${esc(i.note)}</div>` : ""}
     </div>`).join("");
   app.innerHTML = `
     <button class="back" id="back">← All components</button>

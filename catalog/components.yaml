@@ -208,7 +208,7 @@ components:
     cpe: cpe:2.3:a:haxx:curl
     aliases: [libcurl]
     notices_names:
-      - '^curl$'
+      - {pattern: '^curl$', version: '^(?!v?0\.)'}    # the Rust 'curl' crate is 0.4.x
       - '^libcurl\d*$'
       - '^(?:lib)?curl[-_ ]minimal$'
       - '^curl[-_ ]libs$'
@@ -344,6 +344,13 @@ components:
         # Only exploitable on x86-64 CPUs with AVX-512 VBMI; Java 8 and 11 are not affected.
         # Oracle's Java 8 performance builds (8u511b33-perf) are also affected but can't be
         # told apart from ordinary 8u builds by version string, so they aren't ranged here.
+        # The CVE record also lists GraalVM for JDK 17.0.21.0.3 and 21.0.13.0.3 (covered by
+        # the ranges) and GraalVM Enterprise Edition 21.3.20.0.3, which has its own numbering.
+        note: >-
+          Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core
+          chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8
+          Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM
+          Enterprise Edition 21.3.20.0.3. Interim mitigation: -XX:-UseBASE64Intrinsics.
         affected:
           - cves: [CVE-2026-114938]
             ranges:
@@ -352,3 +359,266 @@ components:
               - {introduced: '22', fixed: '25.0.5.1'}
               - {introduced: '26', fixed: '27.0.1.1'}
         trackers: []
+
+  # Added November 2026 from a research pass on components that are bundled privately inside
+  # appliances and enterprise servers (so OS patching doesn't reach them) and have a named or
+  # CISA KEV-listed incident. Ranges come from the CVE records' CNA 'affected' data (or the
+  # project's own advisory where the CNA record has none, as noted).
+
+  - id: nginx
+    name: nginx
+    upstream: https://nginx.org/
+    purl: pkg:generic/nginx
+    cpe: cpe:2.3:a:f5:nginx
+    aliases: [nginx open source, NGINX2Root]
+    notices_names:
+      - '^nginx$'
+      - '^nginx[-_ ](?:bin|core|full|light|extras|mainline|stable)$'
+      - '^nginx/nginx$'
+    incidents:
+      - name: NGINX2Root
+        year: 2026
+        cves: [CVE-2026-123007, CVE-2026-123634, CVE-2026-123633, CVE-2026-121810, CVE-2026-113425]
+        # F5's CVE records of 2026-11-18: affected from the version that added each module,
+        # fixed in 1.30.7 (stable) and 1.31.9 (mainline); older lines get no fix.
+        note: >-
+          CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point;
+          the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.
+          Disabling HTTP/2 blocks only CVE-2026-123007 and CVE-2026-123633.
+        affected:
+          - cves: [CVE-2026-123007]
+            ranges:
+              - {introduced: '1.9.5', fixed: '1.30.7'}
+              - {introduced: '1.31.0', fixed: '1.31.9'}
+          - cves: [CVE-2026-123634]
+            ranges:
+              - {introduced: '0.6.18', fixed: '1.30.7'}
+              - {introduced: '1.31.0', fixed: '1.31.9'}
+          - cves: [CVE-2026-123633]
+            ranges:
+              - {introduced: '1.19.7', fixed: '1.30.7'}
+              - {introduced: '1.31.0', fixed: '1.31.9'}
+          - cves: [CVE-2026-121810]
+            ranges:
+              - {introduced: '1.25.0', fixed: '1.30.7'}
+              - {introduced: '1.31.0', fixed: '1.31.9'}
+          - cves: [CVE-2026-113425]
+            ranges:
+              - {introduced: '0.5.33', fixed: '1.30.7'}
+              - {introduced: '1.31.0', fixed: '1.31.9'}
+        trackers: []
+
+  - id: tomcat
+    name: Apache Tomcat
+    upstream: https://tomcat.apache.org/
+    purl: pkg:maven/org.apache.tomcat.embed/tomcat-embed-core
+    cpe: cpe:2.3:a:apache:tomcat
+    aliases: [tomcat-embed-core, catalina, coyote, Ghostcat]
+    notices_names:
+      - '^(?:the )?(?:apache[-_ ])?tomcat(?:[-_ ]?\d+(?:\.\d+)?)?$'          # Apache Tomcat, tomcat9, Apache Tomcat 7.0
+      - '^(?:apache[-_ ])?tomcat[-_ ]embed(?:[-_ ]core)?$'
+      - '^tomcat[-_ ](?:catalina|coyote)$'
+      - '^catalina(?:\.jar)?$'
+      - '^org\.apache\.tomcat(?:\.embed)?:tomcat-(?:embed-core|catalina|coyote)$'
+    incidents:
+      - name: Tomcat partial PUT remote code execution
+        year: 2025
+        cves: [CVE-2025-24813]
+        affected:   # [introduced, fixed) from the CVE record; 8.5 is end of life and has no fix
+          - cves: [CVE-2025-24813]
+            ranges:
+              - {introduced: '8.5.0', last_affected: '8.5.100'}
+              - {introduced: '9.0.0.M1', fixed: '9.0.99'}
+              - {introduced: '10.1.0-M1', fixed: '10.1.35'}
+              - {introduced: '11.0.0-M1', fixed: '11.0.3'}
+        trackers: []
+      - name: Ghostcat (AJP file read and inclusion)
+        year: 2020
+        cves: [CVE-2020-1938]
+        affected:
+          - cves: [CVE-2020-1938]
+            ranges:
+              - {introduced: '7.0.0', fixed: '7.0.100'}
+              - {introduced: '8.5.0', fixed: '8.5.51'}
+              - {introduced: '9.0.0.M1', fixed: '9.0.31'}
+        trackers: []
+
+  - id: sudo
+    name: sudo
+    upstream: https://www.sudo.ws/
+    purl: pkg:generic/sudo
+    cpe: cpe:2.3:a:sudo_project:sudo
+    aliases: [Baron Samedit]
+    notices_names:
+      - '^sudo$'
+      - '^sudo[-_ ](?:ldap|common)$'
+    incidents:
+      - name: Baron Samedit (sudoedit heap overflow)
+        year: 2021
+        cves: [CVE-2021-3156]
+        # The CVE record has no ranges; these are from sudo's own advisory
+        # (https://www.sudo.ws/security/advisories/unescape_overflow/).
+        affected:
+          - cves: [CVE-2021-3156]
+            ranges:
+              - {introduced: '1.7.7', last_affected: '1.7.10p9'}
+              - {introduced: '1.8.2', fixed: '1.9.5p2'}
+        trackers: []
+      - name: sudo chroot privilege escalation
+        year: 2025
+        cves: [CVE-2025-32463]
+        affected:
+          - cves: [CVE-2025-32463]
+            ranges:
+              - {introduced: '1.9.14', fixed: '1.9.17p1'}
+        trackers: []
+
+  - id: jquery
+    name: jQuery
+    upstream: https://jquery.com/
+    purl: pkg:npm/jquery
+    cpe: cpe:2.3:a:jquery:jquery
+    aliases: [jquery.min.js]
+    notices_names:
+      - '^jquery$'
+      - '^jquery[-_ /]jquery$'
+      - '^(?:libjs|js|node)[-_]jquery$'
+      - '^jquery(?:\.min)?\.js$'
+      - '^org\.webjars(?:\.npm|\.bower)?:jquery$'
+    incidents:
+      - name: jQuery <option> HTML injection (XSS)
+        year: 2020
+        cves: [CVE-2020-11023]
+        affected:
+          - cves: [CVE-2020-11023]
+            ranges:
+              - {introduced: '1.0.3', fixed: '3.5.0'}
+        trackers: []
+
+  - id: erlang-otp
+    name: Erlang/OTP
+    upstream: https://www.erlang.org/
+    purl: pkg:github/erlang/otp
+    cpe: cpe:2.3:a:erlang:erlang/otp
+    aliases: [erlang, otp, erlang ssh]
+    version_style: erlang
+    notices_names:
+      - '^erlang(?:[-_ /]otp)?$'
+      - '^erlang[-_ ](?:base|ssh)$'
+      - {pattern: '^otp$', version: '^(?:otp[-_ ]?)?(?:1[7-9]|[23]\d)(?:[.\-_]|$)'}
+    incidents:
+      - name: Erlang/OTP SSH pre-authentication RCE
+        year: 2025
+        cves: [CVE-2025-32433]
+        affected:
+          - cves: [CVE-2025-32433]
+            ranges:
+              - {introduced: '0', fixed: '25.3.2.20'}
+              - {introduced: '26.0', fixed: '26.2.5.11'}
+              - {introduced: '27.0', fixed: '27.3.3'}
+        trackers: []
+
+  - id: activemq
+    name: Apache ActiveMQ (Classic)
+    upstream: https://activemq.apache.org/
+    purl: pkg:maven/org.apache.activemq/activemq-client
+    cpe: cpe:2.3:a:apache:activemq
+    aliases: [activemq-client, activemq-broker, ActiveMQ Classic]
+    notices_names:
+      # Classic only: Artemis (2.x) is a different code base and isn't affected.
+      - {pattern: '^(?:apache[-_ ])?activemq(?:[-_ ]classic)?$', version: '^[4-6]\.'}
+      - {pattern: '^activemq[-_ ](?:client|broker|all|core|openwire[-_]legacy|kahadb[-_]store|spring|pool|jms[-_]pool|http|stomp|mqtt|amqp|web|console|runtime[-_]config|jaas)$', version: '^[4-6]\.'}
+      - '^apache activemq activemq-[4-6]\.\d+(?:\.\d+)?$'
+      - {pattern: '^org\.apache\.activemq:activemq-(?:client|broker|all|openwire-legacy|kahadb-store|spring|pool|jms-pool|http|stomp|mqtt|amqp|web|console|runtime-config|jaas)$', version: '^[4-6]\.'}
+    incidents:
+      - name: ActiveMQ OpenWire deserialization RCE
+        year: 2023
+        cves: [CVE-2023-46604]
+        affected:
+          - cves: [CVE-2023-46604]
+            ranges:
+              - {introduced: '0', fixed: '5.15.16'}
+              - {introduced: '5.16.0', fixed: '5.16.7'}
+              - {introduced: '5.17.0', fixed: '5.17.6'}
+              - {introduced: '5.18.0', fixed: '5.18.3'}
+        trackers: []
+
+  - id: struts2
+    name: Apache Struts 2
+    upstream: https://struts.apache.org/
+    purl: pkg:maven/org.apache.struts/struts2-core
+    cpe: cpe:2.3:a:apache:struts
+    aliases: [struts2-core, xwork-core]
+    notices_names:
+      # Struts 1 (1.x, struts-core, struts-taglib) is a different code base.
+      - {pattern: '^(?:apache[-_ ])?struts\s*2?$', version: '^[2-7]\.'}
+      - '^struts2[-_ ]core$'
+      - '^org\.apache\.struts:struts2-core$'
+      - {pattern: '^(?:org\.apache\.struts\.xwork|opensymphony):xwork(?:-core)?$', version: '^2\.'}
+      - {pattern: '^xwork(?:[-_ ]core)?$', version: '^2\.'}
+    incidents:
+      - name: S2-045 Jakarta multipart RCE (Equifax breach)
+        year: 2017
+        cves: [CVE-2017-5638]
+        affected:
+          - cves: [CVE-2017-5638]
+            ranges:
+              - {introduced: '2.3.0', fixed: '2.3.32'}
+              - {introduced: '2.5.0', fixed: '2.5.10.1'}
+        trackers: []
+      - name: Struts file upload path traversal (S2-066, S2-067)
+        year: 2024
+        cves: [CVE-2023-50164, CVE-2024-53677]
+        affected:
+          - cves: [CVE-2023-50164]
+            ranges:
+              - {introduced: '2.0.0', fixed: '2.5.33'}
+              - {introduced: '6.0.0', fixed: '6.3.0.2'}
+          - cves: [CVE-2024-53677]
+            ranges:
+              - {introduced: '2.0.0', fixed: '6.4.0'}
+        trackers: []
+
+  - id: apache-httpd
+    name: Apache HTTP Server
+    upstream: https://httpd.apache.org/
+    purl: pkg:generic/httpd
+    cpe: cpe:2.3:a:apache:http_server
+    aliases: [httpd, apache2]
+    notices_names:
+      - '^(?:apache[-_ ])?httpd(?:[-_ ]core)?$'
+      - '^(?:the )?apache http server(?: project)?$'
+      - '^apache[-_ ]server$'
+      - '^apache2(?:[-_ ]bin)?$'
+    incidents:
+      - name: httpd path traversal and RCE (2.4.49, 2.4.50)
+        year: 2021
+        cves: [CVE-2021-41773, CVE-2021-42013]
+        affected:
+          - cves: [CVE-2021-41773]
+            ranges:
+              - {introduced: '2.4.49', fixed: '2.4.50'}
+          - cves: [CVE-2021-42013]
+            ranges:
+              - {introduced: '2.4.49', fixed: '2.4.51'}
+        trackers: []
+
+  - id: squid
+    name: Squid caching proxy
+    upstream: https://www.squid-cache.org/
+    purl: pkg:generic/squid
+    cpe: cpe:2.3:a:squid-cache:squid
+    aliases: [squid-cache, Squidbleed]
+    notices_names:
+      - {pattern: '^squid(?:[-_ ]?cache)?\d?$', version: '^(?:$|[1-9]\.)'}
+      - '^squid[-_ ]proxy$'
+    incidents:
+      - name: Squidbleed (FTP directory listing over-read)
+        year: 2026
+        cves: [CVE-2026-47729]
+        affected:   # every release before 7.6 (the bug dates from 1997)
+          - cves: [CVE-2026-47729]
+            ranges:
+              - {introduced: '0', fixed: '7.6'}
+        trackers: []
+
