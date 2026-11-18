@@ -1,0 +1,3279 @@
+{
+"components": [
+{
+"name": "@convergencelabs/monaco-collab-ext",
+"version": "0.4.0"
+},
+{
+"name": "@datatools/drt",
+"version": "0.0.24"
+},
+{
+"name": "@duckdb/duckdb-wasm",
+"version": "1.29.0"
+},
+{
+"name": "@jupyter-widgets/base",
+"version": "6.0.11"
+},
+{
+"name": "@jupyter-widgets/base-manager",
+"version": "1.0.12"
+},
+{
+"name": "@jupyter-widgets/controls",
+"version": "5.0.12"
+},
+{
+"name": "@jupyter-widgets/html-manager",
+"version": "1.0.14"
+},
+{
+"name": "@jupyter-widgets/output",
+"version": "6.0.11"
+},
+{
+"name": "@jupyterlab/outputarea",
+"version": "4.5.5"
+},
+{
+"name": "@lexical/clipboard",
+"version": "0.11.1"
+},
+{
+"name": "@lexical/html",
+"version": "0.11.1"
+},
+{
+"name": "@lexical/plain-text",
+"version": "0.11.1"
+},
+{
+"name": "@lexical/utils",
+"version": "0.11.1"
+},
+{
+"name": "@lumino/messaging",
+"version": "1.10.3"
+},
+{
+"name": "@lumino/widgets",
+"version": "1.37.2"
+},
+{
+"name": "@rescui/typography",
+"version": "0.7.4"
+},
+{
+"name": "@rescui/ui-contexts",
+"version": "0.3.4"
+},
+{
+"name": "@rollup/plugin-alias",
+"version": "5.1.1"
+},
+{
+"name": "@rollup/plugin-commonjs",
+"version": "28.0.3"
+},
+{
+"name": "@rollup/plugin-inject",
+"version": "5.0.5"
+},
+{
+"name": "@rollup/plugin-json",
+"version": "6.1.0"
+},
+{
+"name": "@rollup/plugin-node-resolve",
+"version": "16.0.0"
+},
+{
+"name": "@rollup/plugin-replace",
+"version": "6.0.2"
+},
+{
+"name": "@rollup/plugin-wasm",
+"version": "6.2.2"
+},
+{
+"name": "@shikijs/monaco",
+"version": "4.2.0"
+},
+{
+"name": "@types/prettier",
+"version": "2.4.4"
+},
+{
+"name": "@webteam/button",
+"version": "7.0.13"
+},
+{
+"name": "@webteam/colors",
+"version": "1.0.37"
+},
+{
+"name": "@webteam/data-services",
+"version": "0.23.1"
+},
+{
+"name": "@webteam/focus-manager",
+"version": "0.3.10"
+},
+{
+"name": "@webteam/icons",
+"version": "3.1.11"
+},
+{
+"name": "@webteam/input",
+"version": "6.0.14"
+},
+{
+"name": "@webteam/layout",
+"version": "0.16.12"
+},
+{
+"name": "@webteam/typography",
+"version": "7.0.1"
+},
+{
+"name": "@webteam/ui-contexts",
+"version": "0.10.5"
+},
+{
+"name": "@xterm/addon-fit",
+"version": "0.10.0"
+},
+{
+"name": "@xterm/xterm",
+"version": "5.5.0"
+},
+{
+"name": "at.yawk.lz4:lz4-java",
+"version": "1.11.3"
+},
+{
+"name": "ch.qos.logback:logback-classic",
+"version": "1.5.34"
+},
+{
+"name": "ch.qos.logback:logback-core",
+"version": "1.5.34"
+},
+{
+"name": "cloud.jetbrains.sdk:jbai-gec-api",
+"version": "2.4.1"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-http-client-runtime",
+"version": "10.0.2"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-http-client-runtime-jvm",
+"version": "10.0.2"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-http-shared-runtime",
+"version": "10.0.2"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-http-shared-runtime-jvm",
+"version": "10.0.2"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-json",
+"version": "10.0.2"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-json-jvm",
+"version": "10.0.2"
+},
+{
+"name": "com.amazon.ion:ion-java",
+"version": "1.11.11"
+},
+{
+"name": "com.amazonaws:aws-java-sdk-core",
+"version": "1.12.783"
+},
+{
+"name": "com.amazonaws:aws-java-sdk-sts",
+"version": "1.12.783"
+},
+{
+"name": "com.amazonaws:jmespath-java",
+"version": "1.12.783"
+},
+{
+"name": "com.auth0:java-jwt",
+"version": "4.4.0"
+},
+{
+"name": "com.dynatrace.hash4j:hash4j",
+"version": "0.30.0"
+},
+{
+"name": "com.esotericsoftware:kryo5",
+"version": "5.6.0"
+},
+{
+"name": "com.ethlo.time:itu",
+"version": "1.14.0"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-annotations",
+"version": "2.18.2"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-annotations",
+"version": "2.22"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-core",
+"version": "2.18.2"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-core",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-core",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-databind",
+"version": "2.18.2"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-databind",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-databind",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-cbor",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-toml",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-toml",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-xml",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-xml",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-base",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.jr:jackson-jr-objects",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.jr:jackson-jr-objects",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-jsonSchema",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-kotlin",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-kotlin",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.jackson:jackson-bom",
+"version": "2.18.2"
+},
+{
+"name": "com.fasterxml.jackson:jackson-bom",
+"version": "2.19.0"
+},
+{
+"name": "com.fasterxml.jackson:jackson-bom",
+"version": "2.22.3"
+},
+{
+"name": "com.fasterxml.woodstox:woodstox-core",
+"version": "7.0.0"
+},
+{
+"name": "com.fasterxml:aalto-xml",
+"version": "1.3.4"
+},
+{
+"name": "com.fasterxml:classmate",
+"version": "1.7.0"
+},
+{
+"name": "com.github.ben-manes.caffeine:caffeine",
+"version": "3.2.4"
+},
+{
+"name": "com.github.docker-java:docker-java-api",
+"version": "3.7.1"
+},
+{
+"name": "com.github.docker-java:docker-java-core",
+"version": "3.7.1"
+},
+{
+"name": "com.github.docker-java:docker-java-transport",
+"version": "3.7.1"
+},
+{
+"name": "com.github.docker-java:docker-java-transport-httpclient5",
+"version": "3.7.1"
+},
+{
+"name": "com.github.lamba92:kotlinx-document-store-core",
+"version": "0.0.4"
+},
+{
+"name": "com.github.lamba92:kotlinx-document-store-mvstore",
+"version": "0.0.4"
+},
+{
+"name": "com.github.mwiede:jsch",
+"version": "0.2.11"
+},
+{
+"name": "com.github.spullara.cli-parser:cli-parser",
+"version": "1.1.6"
+},
+{
+"name": "com.github.spullara.mustache.java:compiler",
+"version": "0.9.2"
+},
+{
+"name": "com.github.victools:jsonschema-generator",
+"version": "4.38.0"
+},
+{
+"name": "com.github.victools:jsonschema-module-jackson",
+"version": "4.38.0"
+},
+{
+"name": "com.github.victools:jsonschema-module-swagger-2",
+"version": "4.38.0"
+},
+{
+"name": "com.github.virtuald:curvesapi",
+"version": "1.08"
+},
+{
+"name": "com.github.weisj:jsvg",
+"version": "2.2.0"
+},
+{
+"name": "com.google.android:annotations",
+"version": "4.1.1.4"
+},
+{
+"name": "com.google.api-client:google-api-client",
+"version": "2.7.2"
+},
+{
+"name": "com.google.api-client:google-api-client-gson",
+"version": "2.7.2"
+},
+{
+"name": "com.google.api.grpc:gapic-google-cloud-storage-v2",
+"version": "2.63.0"
+},
+{
+"name": "com.google.api.grpc:grpc-google-cloud-storage-v2",
+"version": "2.63.0"
+},
+{
+"name": "com.google.api.grpc:proto-google-cloud-monitoring-v3",
+"version": "3.52.0"
+},
+{
+"name": "com.google.api.grpc:proto-google-cloud-storage-v2",
+"version": "2.63.0"
+},
+{
+"name": "com.google.api.grpc:proto-google-common-protos",
+"version": "2.51.0"
+},
+{
+"name": "com.google.api.grpc:proto-google-common-protos",
+"version": "2.65.1"
+},
+{
+"name": "com.google.api.grpc:proto-google-iam-v1",
+"version": "1.60.1"
+},
+{
+"name": "com.google.api:api-common",
+"version": "2.53.0"
+},
+{
+"name": "com.google.api:api-common",
+"version": "2.57.1"
+},
+{
+"name": "com.google.api:gax",
+"version": "2.74.1"
+},
+{
+"name": "com.google.api:gax-grpc",
+"version": "2.74.1"
+},
+{
+"name": "com.google.api:gax-httpjson",
+"version": "2.74.1"
+},
+{
+"name": "com.google.apis:google-api-services-drive",
+"version": "v3-rev20220815-2.0.0"
+},
+{
+"name": "com.google.apis:google-api-services-oauth2",
+"version": "v2-rev20200213-2.0.0"
+},
+{
+"name": "com.google.apis:google-api-services-storage",
+"version": "v1-rev20251118-2.0.0"
+},
+{
+"name": "com.google.auth:google-auth-library-credentials",
+"version": "1.35.0"
+},
+{
+"name": "com.google.auth:google-auth-library-credentials",
+"version": "1.42.1"
+},
+{
+"name": "com.google.auth:google-auth-library-oauth2-http",
+"version": "1.35.0"
+},
+{
+"name": "com.google.auth:google-auth-library-oauth2-http",
+"version": "1.42.1"
+},
+{
+"name": "com.google.auto.value:auto-value-annotations",
+"version": "1.11.0"
+},
+{
+"name": "com.google.cloud.opentelemetry:detector-resources-support",
+"version": "0.33.0"
+},
+{
+"name": "com.google.cloud.opentelemetry:exporter-metrics",
+"version": "0.33.0"
+},
+{
+"name": "com.google.cloud.opentelemetry:shared-resourcemapping",
+"version": "0.33.0"
+},
+{
+"name": "com.google.cloud:google-cloud-core",
+"version": "2.64.1"
+},
+{
+"name": "com.google.cloud:google-cloud-core-grpc",
+"version": "2.64.1"
+},
+{
+"name": "com.google.cloud:google-cloud-core-http",
+"version": "2.64.1"
+},
+{
+"name": "com.google.cloud:google-cloud-monitoring",
+"version": "3.52.0"
+},
+{
+"name": "com.google.cloud:google-cloud-storage",
+"version": "2.63.0"
+},
+{
+"name": "com.google.cloud:libraries-bom",
+"version": "26.48.0"
+},
+{
+"name": "com.google.code.findbugs:jsr305",
+"version": "3.0.2"
+},
+{
+"name": "com.google.code.gson:gson",
+"version": "2.13.1"
+},
+{
+"name": "com.google.code.gson:gson",
+"version": "2.13.2"
+},
+{
+"name": "com.google.code.gson:gson",
+"version": "2.14.0"
+},
+{
+"name": "com.google.dagger:dagger",
+"version": "2.23.2"
+},
+{
+"name": "com.google.errorprone:error_prone_annotations",
+"version": "2.3.4"
+},
+{
+"name": "com.google.errorprone:error_prone_annotations",
+"version": "2.38.0"
+},
+{
+"name": "com.google.errorprone:error_prone_annotations",
+"version": "2.48.0"
+},
+{
+"name": "com.google.errorprone:error_prone_annotations",
+"version": "2.49.0"
+},
+{
+"name": "com.google.errorprone:error_prone_annotations",
+"version": "2.50.0"
+},
+{
+"name": "com.google.guava:failureaccess",
+"version": "1.0.1"
+},
+{
+"name": "com.google.guava:failureaccess",
+"version": "1.0.3"
+},
+{
+"name": "com.google.guava:guava",
+"version": "29.0-jre"
+},
+{
+"name": "com.google.guava:guava",
+"version": "33.4.8-jre"
+},
+{
+"name": "com.google.guava:guava",
+"version": "33.7.1-jre"
+},
+{
+"name": "com.google.guava:listenablefuture",
+"version": "9999.0-empty-to-avoid-conflict-with-guava"
+},
+{
+"name": "com.google.http-client:google-http-client",
+"version": "1.47.0"
+},
+{
+"name": "com.google.http-client:google-http-client",
+"version": "2.1.0"
+},
+{
+"name": "com.google.http-client:google-http-client-apache-v2",
+"version": "1.45.2"
+},
+{
+"name": "com.google.http-client:google-http-client-apache-v2",
+"version": "2.1.0"
+},
+{
+"name": "com.google.http-client:google-http-client-appengine",
+"version": "2.1.0"
+},
+{
+"name": "com.google.http-client:google-http-client-gson",
+"version": "1.47.0"
+},
+{
+"name": "com.google.http-client:google-http-client-gson",
+"version": "2.1.0"
+},
+{
+"name": "com.google.http-client:google-http-client-jackson2",
+"version": "2.1.0"
+},
+{
+"name": "com.google.j2objc:j2objc-annotations",
+"version": "1.3"
+},
+{
+"name": "com.google.j2objc:j2objc-annotations",
+"version": "3.0.0"
+},
+{
+"name": "com.google.j2objc:j2objc-annotations",
+"version": "3.1"
+},
+{
+"name": "com.google.oauth-client:google-oauth-client",
+"version": "1.36.0"
+},
+{
+"name": "com.google.oauth-client:google-oauth-client",
+"version": "1.39.0"
+},
+{
+"name": "com.google.protobuf:protobuf-java",
+"version": "4.31.0"
+},
+{
+"name": "com.google.protobuf:protobuf-java",
+"version": "4.33.2"
+},
+{
+"name": "com.google.protobuf:protobuf-java",
+"version": "4.33.4"
+},
+{
+"name": "com.google.protobuf:protobuf-java",
+"version": "4.35.1"
+},
+{
+"name": "com.google.protobuf:protobuf-java-util",
+"version": "3.25.5"
+},
+{
+"name": "com.google.protobuf:protobuf-java-util",
+"version": "4.33.2"
+},
+{
+"name": "com.google.protobuf:protobuf-kotlin",
+"version": "3.25.5"
+},
+{
+"name": "com.google.protobuf:protobuf-kotlin",
+"version": "4.33.4"
+},
+{
+"name": "com.google.re2j:re2j",
+"version": "1.8"
+},
+{
+"name": "com.googlecode.javaewah:JavaEWAH",
+"version": "1.2.3"
+},
+{
+"name": "com.googlecode.json-simple:json-simple",
+"version": "1.1.1"
+},
+{
+"name": "com.h2database:h2-mvstore",
+"version": "2.4.240"
+},
+{
+"name": "com.hierynomus:asn-one",
+"version": "0.6.0"
+},
+{
+"name": "com.hierynomus:smbj",
+"version": "0.11.5"
+},
+{
+"name": "com.jayway.jsonpath:json-path",
+"version": "2.10.0"
+},
+{
+"name": "com.jcraft:jsch.agentproxy.connector-factory",
+"version": "0.0.9"
+},
+{
+"name": "com.jcraft:jsch.agentproxy.core",
+"version": "0.0.9"
+},
+{
+"name": "com.jcraft:jsch.agentproxy.pageant",
+"version": "0.0.9"
+},
+{
+"name": "com.jcraft:jsch.agentproxy.sshagent",
+"version": "0.0.9"
+},
+{
+"name": "com.jcraft:jsch.agentproxy.sshj",
+"version": "0.0.9"
+},
+{
+"name": "com.jcraft:jsch.agentproxy.usocket-jna",
+"version": "0.0.9"
+},
+{
+"name": "com.jcraft:jsch.agentproxy.usocket-nc",
+"version": "0.0.9"
+},
+{
+"name": "com.jcraft:jzlib",
+"version": "1.1.3"
+},
+{
+"name": "com.jgoodies:forms",
+"version": "1.1-preview"
+},
+{
+"name": "com.jgoodies:jgoodies-common",
+"version": "1.4.0"
+},
+{
+"name": "com.knuddels:jtokkit",
+"version": "1.1.0"
+},
+{
+"name": "com.konghq:unirest-java",
+"version": "3.14.0"
+},
+{
+"name": "com.miglayout:miglayout-core",
+"version": "11.4.3"
+},
+{
+"name": "com.miglayout:miglayout-swing",
+"version": "11.4.3"
+},
+{
+"name": "com.networknt:json-schema-validator",
+"version": "2.0.1"
+},
+{
+"name": "com.nimbusds:nimbus-jose-jwt",
+"version": "10.4.2"
+},
+{
+"name": "com.soywiz.korlibs.krypto:krypto",
+"version": "4.0.10"
+},
+{
+"name": "com.soywiz.korlibs.krypto:krypto-jvm",
+"version": "4.0.10"
+},
+{
+"name": "com.squareup.okhttp3:logging-interceptor",
+"version": "4.12.0"
+},
+{
+"name": "com.squareup.okhttp3:okhttp",
+"version": "4.12.0"
+},
+{
+"name": "com.squareup.okhttp3:okhttp",
+"version": "5.3.2"
+},
+{
+"name": "com.squareup.okhttp3:okhttp-jvm",
+"version": "5.3.2"
+},
+{
+"name": "com.squareup.okio:okio",
+"version": "3.16.4"
+},
+{
+"name": "com.squareup.okio:okio",
+"version": "3.6.0"
+},
+{
+"name": "com.squareup.okio:okio-jvm",
+"version": "3.16.4"
+},
+{
+"name": "com.squareup.okio:okio-jvm",
+"version": "3.6.0"
+},
+{
+"name": "com.squareup.retrofit2:converter-jackson",
+"version": "2.6.3"
+},
+{
+"name": "com.squareup.retrofit2:retrofit",
+"version": "2.6.3"
+},
+{
+"name": "com.thoughtworks.xstream:xstream",
+"version": "1.4.21"
+},
+{
+"name": "com.typesafe:config",
+"version": "1.4.5"
+},
+{
+"name": "com.zaxxer:HikariCP",
+"version": "5.1.0"
+},
+{
+"name": "com.zaxxer:SparseBitSet",
+"version": "1.3"
+},
+{
+"name": "commons-cli:commons-cli",
+"version": "1.11.0"
+},
+{
+"name": "commons-codec:commons-codec",
+"version": "1.21.0"
+},
+{
+"name": "commons-codec:commons-codec",
+"version": "1.22.1"
+},
+{
+"name": "commons-io:commons-io",
+"version": "2.21.0"
+},
+{
+"name": "commons-io:commons-io",
+"version": "2.22.0"
+},
+{
+"name": "commons-logging:commons-logging",
+"version": "1.2"
+},
+{
+"name": "create-react-class",
+"version": "15.7.0"
+},
+{
+"name": "css.escape",
+"version": "1.5.1"
+},
+{
+"name": "dk.brics:automaton",
+"version": "1.12-4"
+},
+{
+"name": "dompurify",
+"version": "3.4.13"
+},
+{
+"name": "eu.neilalexander:jnacl",
+"version": "1.0.0"
+},
+{
+"name": "express",
+"version": "5.2.1"
+},
+{
+"name": "history",
+"version": "4.10.1"
+},
+{
+"name": "info.picocli:picocli",
+"version": "3.9.6"
+},
+{
+"name": "io.github.classgraph:classgraph",
+"version": "4.8.195"
+},
+{
+"name": "io.github.microutils:kotlin-logging",
+"version": "1.5.4"
+},
+{
+"name": "io.github.oshai:kotlin-logging",
+"version": "7.0.14"
+},
+{
+"name": "io.github.oshai:kotlin-logging-jvm",
+"version": "7.0.14"
+},
+{
+"name": "io.github.x-stream:mxparser",
+"version": "1.2.2"
+},
+{
+"name": "io.github.z4kn4fein:semver-jvm",
+"version": "2.0.0"
+},
+{
+"name": "io.grpc:grpc-alts",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-api",
+"version": "1.70.0"
+},
+{
+"name": "io.grpc:grpc-api",
+"version": "1.73.0"
+},
+{
+"name": "io.grpc:grpc-api",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-auth",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-context",
+"version": "1.70.0"
+},
+{
+"name": "io.grpc:grpc-context",
+"version": "1.73.0"
+},
+{
+"name": "io.grpc:grpc-context",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-core",
+"version": "1.73.0"
+},
+{
+"name": "io.grpc:grpc-core",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-googleapis",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-grpclb",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-inprocess",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-kotlin-stub",
+"version": "1.4.3"
+},
+{
+"name": "io.grpc:grpc-netty-shaded",
+"version": "1.73.0"
+},
+{
+"name": "io.grpc:grpc-netty-shaded",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-opentelemetry",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-protobuf",
+"version": "1.73.0"
+},
+{
+"name": "io.grpc:grpc-protobuf",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-protobuf-lite",
+"version": "1.73.0"
+},
+{
+"name": "io.grpc:grpc-protobuf-lite",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-rls",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-services",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-stub",
+"version": "1.73.0"
+},
+{
+"name": "io.grpc:grpc-stub",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-util",
+"version": "1.73.0"
+},
+{
+"name": "io.grpc:grpc-util",
+"version": "1.76.2"
+},
+{
+"name": "io.grpc:grpc-xds",
+"version": "1.76.2"
+},
+{
+"name": "io.gsonfire:gson-fire",
+"version": "1.9.0"
+},
+{
+"name": "io.jsonwebtoken:jjwt-api",
+"version": "0.11.5"
+},
+{
+"name": "io.jsonwebtoken:jjwt-jackson",
+"version": "0.11.5"
+},
+{
+"name": "io.ktor:ktor-client-auth-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-cio",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-cio-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-content-negotiation",
+"version": "3.0.3"
+},
+{
+"name": "io.ktor:ktor-client-content-negotiation",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-content-negotiation-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-content-negotiation-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-core",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-core-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-core-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-encoding",
+"version": "3.0.3"
+},
+{
+"name": "io.ktor:ktor-client-encoding-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-java-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-logging",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-logging-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-client-okhttp-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-events",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-events",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-events-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-http",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-http",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-http-cio",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-http-cio",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-http-cio-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-http-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-io",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-io-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-io-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-network",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-network",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-network-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-network-tls",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-network-tls-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-serialization",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-serialization",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-gson-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-jackson-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx-json",
+"version": "3.0.3"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx-json",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx-json-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx-protobuf",
+"version": "3.0.3"
+},
+{
+"name": "io.ktor:ktor-server-cio-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-server-content-negotiation-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-core",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-server-core",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-core-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-server-core-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-netty-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-sse",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-sse",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-sse-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-sse-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-utils",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-utils",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-utils-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-utils-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-websocket-serialization",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-websocket-serialization",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-websocket-serialization-jvm",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-websocket-serialization-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-websockets",
+"version": "3.4.1"
+},
+{
+"name": "io.ktor:ktor-websockets",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-websockets-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.kubernetes:client-java",
+"version": "24.0.0"
+},
+{
+"name": "io.kubernetes:client-java-api",
+"version": "24.0.0"
+},
+{
+"name": "io.kubernetes:client-java-proto",
+"version": "24.0.0"
+},
+{
+"name": "io.micrometer:context-propagation",
+"version": "1.1.4"
+},
+{
+"name": "io.micrometer:micrometer-commons",
+"version": "1.15.12"
+},
+{
+"name": "io.micrometer:micrometer-core",
+"version": "1.15.12"
+},
+{
+"name": "io.micrometer:micrometer-observation",
+"version": "1.15.12"
+},
+{
+"name": "io.netty:netty-all",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-buffer",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-buffer",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-codec",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-base",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-classes-quic",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-compression",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-dns",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-haproxy",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-http",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-codec-http",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-http2",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-codec-http2",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-http3",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-marshalling",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-memcache",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-mqtt",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-native-quic",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-protobuf",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-redis",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-smtp",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-socks",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-stomp",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-codec-xml",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-common",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-common",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-handler",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-handler",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-handler-proxy",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-handler-ssl-ocsp",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-resolver",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-resolver",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-resolver-dns",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-resolver-dns-classes-macos",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-resolver-dns-native-macos",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-transport",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-classes-epoll",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-transport-classes-epoll",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-classes-io_uring",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-classes-kqueue",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-native-epoll",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-native-io_uring",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-native-kqueue",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-native-unix-common",
+"version": "4.1.130.Final"
+},
+{
+"name": "io.netty:netty-transport-native-unix-common",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-rxtx",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-sctp",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.netty:netty-transport-udt",
+"version": "4.2.18.Final"
+},
+{
+"name": "io.opencensus:opencensus-api",
+"version": "0.31.1"
+},
+{
+"name": "io.opencensus:opencensus-contrib-http-util",
+"version": "0.31.1"
+},
+{
+"name": "io.opentelemetry.contrib:opentelemetry-gcp-resources",
+"version": "1.37.0-alpha"
+},
+{
+"name": "io.opentelemetry.semconv:opentelemetry-semconv",
+"version": "1.29.0-alpha"
+},
+{
+"name": "io.opentelemetry.semconv:opentelemetry-semconv",
+"version": "1.44.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-api",
+"version": "1.51.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-api",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-bom",
+"version": "1.42.1"
+},
+{
+"name": "io.opentelemetry:opentelemetry-common",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-context",
+"version": "1.51.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-context",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-exporter-common",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-exporter-otlp-common",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-exporter-sender-jdk",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-extension-kotlin",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk",
+"version": "1.51.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-common",
+"version": "1.51.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-common",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi",
+"version": "1.51.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-logs",
+"version": "1.51.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-logs",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-metrics",
+"version": "1.51.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-metrics",
+"version": "1.66.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-trace",
+"version": "1.51.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-trace",
+"version": "1.66.0"
+},
+{
+"name": "io.perfmark:perfmark-api",
+"version": "0.27.0"
+},
+{
+"name": "io.projectreactor:reactor-core",
+"version": "3.4.1"
+},
+{
+"name": "io.projectreactor:reactor-core",
+"version": "3.7.19"
+},
+{
+"name": "io.prometheus:simpleclient",
+"version": "0.16.0"
+},
+{
+"name": "io.prometheus:simpleclient_common",
+"version": "0.16.0"
+},
+{
+"name": "io.prometheus:simpleclient_hotspot",
+"version": "0.16.0"
+},
+{
+"name": "io.prometheus:simpleclient_httpserver",
+"version": "0.16.0"
+},
+{
+"name": "io.prometheus:simpleclient_servlet_common",
+"version": "0.16.0"
+},
+{
+"name": "io.prometheus:simpleclient_servlet_jakarta",
+"version": "0.16.0"
+},
+{
+"name": "io.prometheus:simpleclient_tracer_common",
+"version": "0.16.0"
+},
+{
+"name": "io.prometheus:simpleclient_tracer_otel",
+"version": "0.16.0"
+},
+{
+"name": "io.prometheus:simpleclient_tracer_otel_agent",
+"version": "0.16.0"
+},
+{
+"name": "io.r2dbc:r2dbc-spi",
+"version": "1.0.0.RELEASE"
+},
+{
+"name": "io.swagger.core.v3:swagger-annotations-jakarta",
+"version": "2.2.38"
+},
+{
+"name": "io.swagger:swagger-annotations",
+"version": "1.6.16"
+},
+{
+"name": "it.unimi.dsi:fastutil",
+"version": "8.4.0"
+},
+{
+"name": "it.unimi.dsi:fastutil-core",
+"version": "8.5.11"
+},
+{
+"name": "jakarta.activation:jakarta.activation-api",
+"version": "2.1.3"
+},
+{
+"name": "jakarta.annotation:jakarta.annotation-api",
+"version": "2.1.1"
+},
+{
+"name": "jakarta.annotation:jakarta.annotation-api",
+"version": "3.0.0"
+},
+{
+"name": "jakarta.enterprise:jakarta.enterprise.cdi-api",
+"version": "4.0.1"
+},
+{
+"name": "jakarta.enterprise:jakarta.enterprise.lang-model",
+"version": "4.0.1"
+},
+{
+"name": "jakarta.inject:jakarta.inject-api",
+"version": "2.0.1"
+},
+{
+"name": "jakarta.interceptor:jakarta.interceptor-api",
+"version": "2.1.0"
+},
+{
+"name": "jakarta.mail:jakarta.mail-api",
+"version": "2.1.3"
+},
+{
+"name": "jakarta.servlet:jakarta.servlet-api",
+"version": "6.1.0"
+},
+{
+"name": "jakarta.transaction:jakarta.transaction-api",
+"version": "2.0.1"
+},
+{
+"name": "jakarta.validation:jakarta.validation-api",
+"version": "3.1.1"
+},
+{
+"name": "jakarta.ws.rs:jakarta.ws.rs-api",
+"version": "2.1.6"
+},
+{
+"name": "jakarta.xml.bind:jakarta.xml.bind-api",
+"version": "4.0.1"
+},
+{
+"name": "javax.activation:javax.activation-api",
+"version": "1.2.0"
+},
+{
+"name": "javax.annotation:javax.annotation-api",
+"version": "1.3.2"
+},
+{
+"name": "javax.inject:javax.inject",
+"version": "1"
+},
+{
+"name": "javax.validation:validation-api",
+"version": "1.1.0.Final"
+},
+{
+"name": "javax.ws.rs:javax.ws.rs-api",
+"version": "2.1.1"
+},
+{
+"name": "javax.xml.bind:jaxb-api",
+"version": "2.3.1"
+},
+{
+"name": "jaxen:jaxen",
+"version": "1.2.0"
+},
+{
+"name": "jest-cli",
+"version": "30.3.0"
+},
+{
+"name": "jest-environment-jsdom",
+"version": "30.3.0"
+},
+{
+"name": "jest-junit",
+"version": "17.0.0"
+},
+{
+"name": "jetbrains.datatools:query",
+"version": "0.0.9"
+},
+{
+"name": "joda-time:joda-time",
+"version": "2.12.2"
+},
+{
+"name": "joda-time:joda-time",
+"version": "2.12.7"
+},
+{
+"name": "jsdom",
+"version": "26.1.0"
+},
+{
+"name": "less",
+"version": "4.2.0"
+},
+{
+"name": "lexical",
+"version": "0.11.1"
+},
+{
+"name": "markdown-it",
+"version": "14.3.0"
+},
+{
+"name": "me.xuender:unidecode",
+"version": "0.0.7"
+},
+{
+"name": "monaco-editor",
+"version": "0.53.0"
+},
+{
+"name": "monaco-markdown",
+"version": "0.0.12"
+},
+{
+"name": "net.engio:mbassador",
+"version": "1.3.0"
+},
+{
+"name": "net.i2p.crypto:eddsa",
+"version": "0.3.0"
+},
+{
+"name": "net.java.dev.jna:jna",
+"version": "5.18.1"
+},
+{
+"name": "net.java.dev.jna:jna",
+"version": "5.19.1"
+},
+{
+"name": "net.java.dev.jna:jna-platform",
+"version": "5.14.0"
+},
+{
+"name": "net.java.dev.jna:jna-platform",
+"version": "5.19.1"
+},
+{
+"name": "net.jcip:jcip-annotations",
+"version": "1.0"
+},
+{
+"name": "net.logstash.logback:logstash-logback-encoder",
+"version": "8.1"
+},
+{
+"name": "net.minidev:accessors-smart",
+"version": "2.6.0"
+},
+{
+"name": "net.minidev:json-smart",
+"version": "2.6.0"
+},
+{
+"name": "one.util:streamex",
+"version": "0.8.4"
+},
+{
+"name": "org.antlr:antlr-runtime",
+"version": "3.5.3"
+},
+{
+"name": "org.antlr:antlr4-runtime",
+"version": "4.13.1"
+},
+{
+"name": "org.antlr:ST4",
+"version": "4.3.4"
+},
+{
+"name": "org.apache.commons:commons-collections4",
+"version": "4.5.0"
+},
+{
+"name": "org.apache.commons:commons-compress",
+"version": "1.28.0"
+},
+{
+"name": "org.apache.commons:commons-lang3",
+"version": "3.19.0"
+},
+{
+"name": "org.apache.commons:commons-lang3",
+"version": "3.20.0"
+},
+{
+"name": "org.apache.commons:commons-math3",
+"version": "3.6.1"
+},
+{
+"name": "org.apache.commons:commons-text",
+"version": "1.10.0"
+},
+{
+"name": "org.apache.httpcomponents.client5:httpclient5",
+"version": "5.6.3"
+},
+{
+"name": "org.apache.httpcomponents.core5:httpcore5",
+"version": "5.4.3"
+},
+{
+"name": "org.apache.httpcomponents.core5:httpcore5-h2",
+"version": "5.4.3"
+},
+{
+"name": "org.apache.httpcomponents:httpasyncclient",
+"version": "4.1.5"
+},
+{
+"name": "org.apache.httpcomponents:httpclient",
+"version": "4.5.14"
+},
+{
+"name": "org.apache.httpcomponents:httpcore",
+"version": "4.4.16"
+},
+{
+"name": "org.apache.httpcomponents:httpcore-nio",
+"version": "4.4.13"
+},
+{
+"name": "org.apache.httpcomponents:httpmime",
+"version": "4.5.13"
+},
+{
+"name": "org.apache.httpcomponents:httpmime",
+"version": "4.5.14"
+},
+{
+"name": "org.apache.logging.log4j:log4j-api",
+"version": "2.24.3"
+},
+{
+"name": "org.apache.logging.log4j:log4j-api",
+"version": "2.25.5"
+},
+{
+"name": "org.apache.logging.log4j:log4j-to-slf4j",
+"version": "2.25.5"
+},
+{
+"name": "org.apache.maven.resolver:maven-resolver-api",
+"version": "1.9.22"
+},
+{
+"name": "org.apache.maven.resolver:maven-resolver-connector-basic",
+"version": "1.9.22"
+},
+{
+"name": "org.apache.maven.resolver:maven-resolver-impl",
+"version": "1.9.22"
+},
+{
+"name": "org.apache.maven.resolver:maven-resolver-named-locks",
+"version": "1.9.22"
+},
+{
+"name": "org.apache.maven.resolver:maven-resolver-spi",
+"version": "1.9.22"
+},
+{
+"name": "org.apache.maven.resolver:maven-resolver-transport-file",
+"version": "1.9.22"
+},
+{
+"name": "org.apache.maven.resolver:maven-resolver-transport-http",
+"version": "1.9.22"
+},
+{
+"name": "org.apache.maven.resolver:maven-resolver-util",
+"version": "1.9.22"
+},
+{
+"name": "org.apache.maven:maven-artifact",
+"version": "3.9.9"
+},
+{
+"name": "org.apache.maven:maven-builder-support",
+"version": "3.9.9"
+},
+{
+"name": "org.apache.maven:maven-model",
+"version": "3.9.9"
+},
+{
+"name": "org.apache.maven:maven-model-builder",
+"version": "3.9.9"
+},
+{
+"name": "org.apache.maven:maven-repository-metadata",
+"version": "3.9.9"
+},
+{
+"name": "org.apache.maven:maven-resolver-provider",
+"version": "3.9.9"
+},
+{
+"name": "org.apache.poi:poi",
+"version": "5.4.0"
+},
+{
+"name": "org.apache.poi:poi-ooxml",
+"version": "5.4.0"
+},
+{
+"name": "org.apache.poi:poi-ooxml-lite",
+"version": "5.4.0"
+},
+{
+"name": "org.apache.sshd:sshd-osgi",
+"version": "2.17.1"
+},
+{
+"name": "org.apache.sshd:sshd-sftp",
+"version": "2.17.1"
+},
+{
+"name": "org.apache.tomcat.embed:tomcat-embed-core",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat.embed:tomcat-embed-websocket",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-annotations-api",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-api",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-catalina",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-coyote",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-el-api",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-jaspic-api",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-jni",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-jsp-api",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-juli",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-servlet-api",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-util",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.tomcat:tomcat-util-scan",
+"version": "10.1.61"
+},
+{
+"name": "org.apache.velocity:velocity-engine-core",
+"version": "2.3"
+},
+{
+"name": "org.apache.xmlbeans:xmlbeans",
+"version": "5.3.0"
+},
+{
+"name": "org.aspectj:aspectjweaver",
+"version": "1.9.22.1"
+},
+{
+"name": "org.bidib.com.github.markusbernhardt:proxy-vole",
+"version": "2.0.2"
+},
+{
+"name": "org.bitbucket.b_c:jose4j",
+"version": "0.9.6"
+},
+{
+"name": "org.bouncycastle:bcpg-jdk18on",
+"version": "1.86"
+},
+{
+"name": "org.bouncycastle:bcpkix-jdk18on",
+"version": "1.82"
+},
+{
+"name": "org.bouncycastle:bcpkix-jdk18on",
+"version": "1.86"
+},
+{
+"name": "org.bouncycastle:bcprov-jdk18on",
+"version": "1.86"
+},
+{
+"name": "org.bouncycastle:bcutil-jdk18on",
+"version": "1.82"
+},
+{
+"name": "org.bouncycastle:bcutil-jdk18on",
+"version": "1.86"
+},
+{
+"name": "org.checkerframework:checker-qual",
+"version": "2.11.1"
+},
+{
+"name": "org.checkerframework:checker-qual",
+"version": "3.49.0"
+},
+{
+"name": "org.codehaus.janino:commons-compiler",
+"version": "3.1.7"
+},
+{
+"name": "org.codehaus.janino:janino",
+"version": "3.1.7"
+},
+{
+"name": "org.codehaus.jettison:jettison",
+"version": "1.5.7"
+},
+{
+"name": "org.codehaus.mojo:animal-sniffer-annotations",
+"version": "1.24"
+},
+{
+"name": "org.codehaus.plexus:plexus-interpolation",
+"version": "1.27"
+},
+{
+"name": "org.codehaus.plexus:plexus-utils",
+"version": "3.6.1"
+},
+{
+"name": "org.codehaus.woodstox:stax2-api",
+"version": "4.2.2"
+},
+{
+"name": "org.conscrypt:conscrypt-openjdk-uber",
+"version": "2.5.2"
+},
+{
+"name": "org.eclipse.angus:angus-activation",
+"version": "2.0.2"
+},
+{
+"name": "org.eclipse.angus:angus-mail",
+"version": "2.0.4"
+},
+{
+"name": "org.eclipse.jetty.alpn:alpn-api",
+"version": "1.1.3.v20160715"
+},
+{
+"name": "org.eclipse.jetty.compression:jetty-compression-common",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.compression:jetty-compression-gzip",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.compression:jetty-compression-server",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.ee10.websocket:jetty-ee10-websocket-jetty-server",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.ee10.websocket:jetty-ee10-websocket-servlet",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.ee10:jetty-ee10-annotations",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.ee10:jetty-ee10-plus",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.ee10:jetty-ee10-servlet",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.ee10:jetty-ee10-servlets",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.ee10:jetty-ee10-webapp",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.ee:jetty-ee-webapp",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.websocket:jetty-websocket-core-client",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.websocket:jetty-websocket-core-common",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.websocket:jetty-websocket-core-server",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.websocket:jetty-websocket-jetty-api",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.websocket:jetty-websocket-jetty-client",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.websocket:jetty-websocket-jetty-common",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty.websocket:jetty-websocket-jetty-server",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-alpn-client",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-annotations",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-client",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-http",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-io",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-jndi",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-plus",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-security",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-server",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-session",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-util",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jetty:jetty-xml",
+"version": "12.1.9"
+},
+{
+"name": "org.eclipse.jgit:org.eclipse.jgit",
+"version": "7.6.0.202603022253-r"
+},
+{
+"name": "org.eclipse.jgit:org.eclipse.jgit.ssh.apache",
+"version": "7.6.0.202603022253-r"
+},
+{
+"name": "org.eclipse.lsp4j:org.eclipse.lsp4j.debug",
+"version": "1.0.0"
+},
+{
+"name": "org.eclipse.lsp4j:org.eclipse.lsp4j.jsonrpc.debug",
+"version": "1.0.0"
+},
+{
+"name": "org.eclipse.sisu:org.eclipse.sisu.inject",
+"version": "0.9.0.M3"
+},
+{
+"name": "org.eclipse.xtext:org.eclipse.xtext.xbase.lib",
+"version": "2.40.0"
+},
+{
+"name": "org.flywaydb:flyway-core",
+"version": "10.20.1"
+},
+{
+"name": "org.flywaydb:flyway-database-postgresql",
+"version": "10.20.1"
+},
+{
+"name": "org.fusesource.jansi:jansi",
+"version": "2.4.2"
+},
+{
+"name": "org.glassfish.hk2.external:aopalliance-repackaged",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2.external:jakarta.inject",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2:hk2-api",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2:hk2-locator",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2:hk2-utils",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2:osgi-resource-locator",
+"version": "1.0.3"
+},
+{
+"name": "org.glassfish.jersey.core:jersey-client",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.core:jersey-common",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.ext:jersey-entity-filtering",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.inject:jersey-hk2",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.media:jersey-media-json-jackson",
+"version": "2.46"
+},
+{
+"name": "org.hdrhistogram:HdrHistogram",
+"version": "2.2.2"
+},
+{
+"name": "org.hibernate.validator:hibernate-validator",
+"version": "9.0.1.Final"
+},
+{
+"name": "org.imgscalr:imgscalr-lib",
+"version": "4.2"
+},
+{
+"name": "org.java-websocket:Java-WebSocket",
+"version": "1.6.0"
+},
+{
+"name": "org.javadelight:delight-rhino-sandbox",
+"version": "0.2.5"
+},
+{
+"name": "org.javasimon:javasimon-core",
+"version": "4.1.3"
+},
+{
+"name": "org.javassist:javassist",
+"version": "3.30.2-GA"
+},
+{
+"name": "org.jboss.logging:jboss-logging",
+"version": "3.6.1.Final"
+},
+{
+"name": "org.jetbrains.jediterm:jediterm-core",
+"version": "3.76"
+},
+{
+"name": "org.jetbrains.jediterm:jediterm-ui",
+"version": "3.76"
+},
+{
+"name": "org.jetbrains.kotlin-wrappers:kotlin-css-jvm",
+"version": "2026.6.1"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-metadata-jvm",
+"version": "2.4.20-RC3"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-reflect",
+"version": "2.3.0"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-reflect",
+"version": "2.4.20-RC3"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib",
+"version": "2.4.20"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-common",
+"version": "2.4.20"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+"version": "1.8.0"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+"version": "1.8.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+"version": "1.9.10"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+"version": "2.2.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+"version": "2.3.0"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+"version": "1.8.0"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+"version": "1.8.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+"version": "1.9.10"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+"version": "2.2.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+"version": "2.3.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-collections-immutable-jvm",
+"version": "0.5.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-bom",
+"version": "1.10.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-core",
+"version": "1.10.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm",
+"version": "1.10.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-slf4j",
+"version": "1.10.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-datetime",
+"version": "0.5.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-datetime",
+"version": "0.6.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-datetime-jvm",
+"version": "0.7.1-0.6.x-compat"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-html-jvm",
+"version": "0.12.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-io-bytestring",
+"version": "0.7.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-io-bytestring",
+"version": "0.8.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-io-bytestring-jvm",
+"version": "0.7.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-io-bytestring-jvm",
+"version": "0.8.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-io-core",
+"version": "0.8.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-io-core-jvm",
+"version": "0.7.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-io-core-jvm",
+"version": "0.8.2"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-bom",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-cbor",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-cbor-jvm",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-core",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-json",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-json-io",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-json-io-jvm",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-protobuf-jvm",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.nativecerts:jvm-native-trusted-roots",
+"version": "2.0.8"
+},
+{
+"name": "org.jetbrains.packagesearch:packagesearch-api-client-jvm",
+"version": "3.4.0"
+},
+{
+"name": "org.jetbrains.packagesearch:packagesearch-api-models",
+"version": "3.4.0"
+},
+{
+"name": "org.jetbrains.packagesearch:packagesearch-api-models-jvm",
+"version": "3.4.0"
+},
+{
+"name": "org.jetbrains.packagesearch:packagesearch-http-models",
+"version": "3.4.0"
+},
+{
+"name": "org.jetbrains.packagesearch:packagesearch-http-models-jvm",
+"version": "3.4.0"
+},
+{
+"name": "org.jetbrains.packagesearch:packagesearch-version-utils",
+"version": "3.4.0"
+},
+{
+"name": "org.jetbrains.packagesearch:packagesearch-version-utils-jvm",
+"version": "3.4.0"
+},
+{
+"name": "org.jetbrains.pty4j:pty4j",
+"version": "0.13.4"
+},
+{
+"name": "org.jetbrains.runtime:jbr-api",
+"version": "1.9.0"
+},
+{
+"name": "org.jetbrains.teamcity:serviceMessages",
+"version": "2024.07"
+},
+{
+"name": "org.jetbrains:annotations",
+"version": "13.0"
+},
+{
+"name": "org.jetbrains:annotations",
+"version": "19.0.0"
+},
+{
+"name": "org.jetbrains:annotations",
+"version": "23.0.0"
+},
+{
+"name": "org.jetbrains:annotations",
+"version": "24.0.1"
+},
+{
+"name": "org.jetbrains:annotations",
+"version": "26.1.0"
+},
+{
+"name": "org.jetbrains:ij-parsing-core",
+"version": "0.3.102"
+},
+{
+"name": "org.jetbrains:kotlin-parser",
+"version": "0.3.102"
+},
+{
+"name": "org.jetbrains:markdown",
+"version": "0.1.41"
+},
+{
+"name": "org.jetbrains:markdown-jvm",
+"version": "0.7.13"
+},
+{
+"name": "org.jetbrains:python-parser",
+"version": "0.3.102"
+},
+{
+"name": "org.jetbrains:r-parser",
+"version": "0.3.102"
+},
+{
+"name": "org.jooq:jooq",
+"version": "3.20.8"
+},
+{
+"name": "org.jooq:jooq-meta",
+"version": "3.20.8"
+},
+{
+"name": "org.jsoup:jsoup",
+"version": "1.23.2"
+},
+{
+"name": "org.jspecify:jspecify",
+"version": "1.0.0"
+},
+{
+"name": "org.jspecify:jspecify",
+"version": "1.0.1"
+},
+{
+"name": "org.latencyutils:LatencyUtils",
+"version": "2.0.3"
+},
+{
+"name": "org.locationtech.jts.io:jts-io-common",
+"version": "1.19.0"
+},
+{
+"name": "org.locationtech.jts:jts-core",
+"version": "1.19.0"
+},
+{
+"name": "org.locationtech.proj4j:proj4j",
+"version": "1.3.0"
+},
+{
+"name": "org.locationtech.proj4j:proj4j-epsg",
+"version": "1.3.0"
+},
+{
+"name": "org.mozilla:rhino-runtime",
+"version": "1.7.15.1"
+},
+{
+"name": "org.ow2.asm:asm",
+"version": "9.8"
+},
+{
+"name": "org.ow2.asm:asm",
+"version": "9.9.1"
+},
+{
+"name": "org.ow2.asm:asm-analysis",
+"version": "9.8"
+},
+{
+"name": "org.ow2.asm:asm-commons",
+"version": "9.9.1"
+},
+{
+"name": "org.ow2.asm:asm-tree",
+"version": "9.8"
+},
+{
+"name": "org.ow2.asm:asm-tree",
+"version": "9.9.1"
+},
+{
+"name": "org.postgresql:postgresql",
+"version": "42.7.12"
+},
+{
+"name": "org.reactivestreams:reactive-streams",
+"version": "1.0.3"
+},
+{
+"name": "org.reactivestreams:reactive-streams",
+"version": "1.0.4"
+},
+{
+"name": "org.slf4j:jcl-over-slf4j",
+"version": "1.7.36"
+},
+{
+"name": "org.slf4j:jul-to-slf4j",
+"version": "2.0.18"
+},
+{
+"name": "org.slf4j:log4j-over-slf4j",
+"version": "1.7.36"
+},
+{
+"name": "org.slf4j:slf4j-api",
+"version": "2.0.17"
+},
+{
+"name": "org.slf4j:slf4j-api",
+"version": "2.0.18"
+},
+{
+"name": "org.slf4j:slf4j-jdk14",
+"version": "2.0.13"
+},
+{
+"name": "org.snakeyaml:snakeyaml-engine",
+"version": "2.9"
+},
+{
+"name": "org.springframework.ai:spring-ai-commons",
+"version": "1.1.8"
+},
+{
+"name": "org.springframework.ai:spring-ai-model",
+"version": "1.1.8"
+},
+{
+"name": "org.springframework.ai:spring-ai-openai",
+"version": "1.1.8"
+},
+{
+"name": "org.springframework.ai:spring-ai-retry",
+"version": "1.1.8"
+},
+{
+"name": "org.springframework.ai:spring-ai-template-st",
+"version": "1.1.8"
+},
+{
+"name": "org.springframework.retry:spring-retry",
+"version": "2.0.13"
+},
+{
+"name": "org.springframework.session:spring-session-core",
+"version": "3.4.2"
+},
+{
+"name": "org.springframework.session:spring-session-jdbc",
+"version": "3.4.2"
+},
+{
+"name": "org.springframework.vault:spring-vault-core",
+"version": "3.1.1"
+},
+{
+"name": "org.springframework:spring-aop",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-aspects",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-beans",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-context",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-context-support",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-core",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-expression",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-jcl",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-jdbc",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-messaging",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-tx",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-web",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-webflux",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-webmvc",
+"version": "6.2.19"
+},
+{
+"name": "org.springframework:spring-websocket",
+"version": "6.2.19"
+},
+{
+"name": "org.swinglabs:swingx-core",
+"version": "1.6.2-2"
+},
+{
+"name": "org.teavm:cli",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-c-incremental",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-classlib",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-core",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-devserver",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-extension-apis",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-extension-spi",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-extension-spi-util",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-interop",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-jso",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-jso-apis",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-jso-impl",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-metaprogramming-api",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-metaprogramming-impl",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-platform",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-relocated-libs-asm",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-relocated-libs-asm-analysis",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-relocated-libs-asm-commons",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-relocated-libs-asm-tree",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-relocated-libs-asm-util",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-relocated-libs-hppc",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-relocated-libs-rhino",
+"version": "0.15.0"
+},
+{
+"name": "org.teavm:teavm-tooling",
+"version": "0.15.0"
+},
+{
+"name": "org.threeten:threetenbp",
+"version": "1.7.0"
+},
+{
+"name": "org.tukaani:xz",
+"version": "1.12"
+},
+{
+"name": "org.yaml:snakeyaml",
+"version": "2.4"
+},
+{
+"name": "org.yaml:snakeyaml",
+"version": "2.5"
+},
+{
+"name": "org.zeromq:jeromq",
+"version": "0.5.3"
+},
+{
+"name": "oro:oro",
+"version": "2.0.8"
+},
+{
+"name": "postcss-import",
+"version": "16.1.1"
+},
+{
+"name": "postcss-nesting",
+"version": "14.0.0"
+},
+{
+"name": "postcss-url",
+"version": "10.1.4"
+},
+{
+"name": "react",
+"version": "18.3.1"
+},
+{
+"name": "react-dom",
+"version": "18.3.1"
+},
+{
+"name": "react-router-dom",
+"version": "5.1.2"
+},
+{
+"name": "react-virtualized",
+"version": "9.22.3"
+},
+{
+"name": "rollup",
+"version": "4.59.0"
+},
+{
+"name": "rollup-plugin-external-globals",
+"version": "0.13.0"
+},
+{
+"name": "rollup-plugin-includepaths",
+"version": "0.2.4"
+},
+{
+"name": "rollup-plugin-polyfill-node",
+"version": "0.13.0"
+},
+{
+"name": "rollup-plugin-postcss",
+"version": "4.0.2"
+},
+{
+"name": "shiki",
+"version": "4.2.0"
+},
+{
+"name": "software.amazon.awssdk:annotations",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:apache-client",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:arns",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:auth",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:aws-core",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:aws-query-protocol",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:aws-xml-protocol",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:checksums",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:checksums-spi",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:crt-core",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:ec2",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:endpoints-spi",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:http-auth",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:http-auth-aws",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:http-auth-aws-eventstream",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:http-auth-spi",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:http-client-spi",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:identity-spi",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:json-utils",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:metrics-spi",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:netty-nio-client",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:profiles",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:protocol-core",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:regions",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:retries",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:retries-spi",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:s3",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:sdk-core",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:third-party-jackson-core",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:utils",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.awssdk:utils-lite",
+"version": "2.41.34"
+},
+{
+"name": "software.amazon.eventstream:eventstream",
+"version": "1.0.1"
+},
+{
+"name": "terser",
+"version": "5.44.1"
+},
+{
+"name": "tools.jackson.core:jackson-core",
+"version": "3.2.2"
+},
+{
+"name": "tools.jackson.core:jackson-databind",
+"version": "3.2.2"
+},
+{
+"name": "tools.jackson.dataformat:jackson-dataformat-toml",
+"version": "3.2.2"
+},
+{
+"name": "tools.jackson.dataformat:jackson-dataformat-yaml",
+"version": "3.2.2"
+},
+{
+"name": "tools.jackson.jr:jackson-jr-objects",
+"version": "3.2.2"
+},
+{
+"name": "tools.jackson.module:jackson-module-kotlin",
+"version": "3.2.2"
+},
+{
+"name": "tools.jackson:jackson-bom",
+"version": "3.2.2"
+},
+{
+"name": "tslib",
+"version": "2.5.0"
+},
+{
+"name": "typescript",
+"version": "5.8.2"
+},
+{
+"name": "xmlpull:xmlpull",
+"version": "1.1.3.1"
+}
+],
+"discovery_path": [
+"https://www.jetbrains.com/legal/third-party-software/",
+"https://data.services.jetbrains.com/products?code=TC,YTD,HB,IDES,DLE,IIU,PCP,WS,GO,PS,RD,CL,RM,DG,RR,TBA,GW&fields=name,code,releases.version,releases.downloads,releases.type"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Datalore Enterprise",
+"retrieved": "2026-11-18",
+"sha256": "5dab52b4a74f1d06887d35cd3ff2663fab96f1e4e52fac3974721df944446de6",
+"supplier": "JetBrains",
+"url": "https://resources.jetbrains.com/storage/third-party-libraries/datalore/datalore-enterprise-2026.4.1-third-party-libraries.json",
+"version": "2026.4.1"
+}

@@ -1,0 +1,30 @@
+{
+"components": [
+{
+"name": "Firebase Admin Java SDK",
+"version": "9.2.0"
+},
+{
+"name": "pushy",
+"version": "0.15.2"
+},
+{
+"name": "Smack",
+"version": "4.4.8"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "User Messaging Service",
+"retrieved": "2026-11-18",
+"sha256": "6a3a4e5d785d57fd98a69da4709a737f073eb808ea99b9b9711802a2ed72f674",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/umslc/index.html",
+"version": "14.1.2"
+}

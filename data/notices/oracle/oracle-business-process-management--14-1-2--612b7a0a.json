@@ -1,0 +1,208 @@
+{
+"components": [
+{
+"name": "Annotations for JVM-bas",
+"version": "24.0.1"
+},
+{
+"name": "Ant",
+"version": "1.10.14"
+},
+{
+"name": "ANTLR Java Runtime",
+"version": "3.5.3"
+},
+{
+"name": "antlr-runtime",
+"version": "3.5.2"
+},
+{
+"name": "Apache FOP",
+"version": "2.9"
+},
+{
+"name": "ASM",
+"version": "9.1"
+},
+{
+"name": "ASM",
+"version": "9.6"
+},
+{
+"name": "AVRO",
+"version": "1.11.3"
+},
+{
+"name": "Batik SVG Toolkit",
+"version": "1.17"
+},
+{
+"name": "CGLIB",
+"version": "3.3"
+},
+{
+"name": "cglib",
+"version": "3.3.0"
+},
+{
+"name": "Commons CLI",
+"version": "1.4"
+},
+{
+"name": "Commons Codec",
+"version": "1.16.0"
+},
+{
+"name": "Commons Compress",
+"version": "1.26.0"
+},
+{
+"name": "Commons FileUpload",
+"version": "1.5"
+},
+{
+"name": "Commons IO",
+"version": "2.15.1"
+},
+{
+"name": "Commons Lang",
+"version": "3.14.0"
+},
+{
+"name": "Commons Logging",
+"version": "1.3.0"
+},
+{
+"name": "commons-logging",
+"version": "1.2"
+},
+{
+"name": "Groovy",
+"version": "3.0.18"
+},
+{
+"name": "Guava",
+"version": "33.1.0"
+},
+{
+"name": "httpclient5",
+"version": "5.2.3"
+},
+{
+"name": "httpcore5",
+"version": "5.2.3"
+},
+{
+"name": "iCal4J",
+"version": "3.2.14"
+},
+{
+"name": "ICU4J",
+"version": "74.1"
+},
+{
+"name": "Jackson Annotations",
+"version": "2.16.0"
+},
+{
+"name": "Jackson Core",
+"version": "2.16.0"
+},
+{
+"name": "Jackson Databind",
+"version": "2.16.0"
+},
+{
+"name": "jakarta-regexp",
+"version": "1.2"
+},
+{
+"name": "JQuery",
+"version": "3.7.1"
+},
+{
+"name": "Mina SSHD-common",
+"version": "2.12.0"
+},
+{
+"name": "Mina SSHD-core",
+"version": "2.12.0"
+},
+{
+"name": "mina-core",
+"version": "2.2.3"
+},
+{
+"name": "Objenesis",
+"version": "3.2"
+},
+{
+"name": "POI",
+"version": "5.2.5"
+},
+{
+"name": "poi-ooxml",
+"version": "5.2.5"
+},
+{
+"name": "poi-ooxml-full",
+"version": "5.2.5"
+},
+{
+"name": "poi-ooxml-lite",
+"version": "5.2.5"
+},
+{
+"name": "poi-scratchpad",
+"version": "5.2.5"
+},
+{
+"name": "Quartz Job Scheduler",
+"version": "2.3.2"
+},
+{
+"name": "slf4j-jdk14",
+"version": "2.0.9"
+},
+{
+"name": "Spring Framework",
+"version": "5.3.39.1"
+},
+{
+"name": "SVNKit",
+"version": "1.10.0"
+},
+{
+"name": "tika-core",
+"version": "2.9.1"
+},
+{
+"name": "Xalan Java",
+"version": "2.7.3"
+},
+{
+"name": "Xerces2 Java",
+"version": "2.12.2"
+},
+{
+"name": "XMLBeans",
+"version": "5.2.0"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table",
+"gt_list",
+"jar_names"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle Business Process Management",
+"retrieved": "2026-11-18",
+"sha256": "63b6edda79bf895aba34dd97842dea62e3b6298ba427cc0c458c43c6bc8b59c0",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/bpmlc/index.html",
+"version": "14.1.2"
+}

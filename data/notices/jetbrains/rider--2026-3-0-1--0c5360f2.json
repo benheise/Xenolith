@@ -1,0 +1,2515 @@
+{
+"components": [
+{
+"name": ".babelrc JSON Schema (.babelrc-schema.json)",
+"version": "JSON schema for Babel 6+ configuration files"
+},
+{
+"name": ".eslintrc JSON Schema (.eslintrc-schema.json)",
+"version": "JSON schema for ESLint 4 configuration files"
+},
+{
+"name": ".NET Runtime",
+"version": "8.0.0-preview1"
+},
+{
+"name": "@parcel/watcher",
+"version": "2.0.0"
+},
+{
+"name": "A fast Java JSON schema validator",
+"version": "3.0.0-jetbrains.11"
+},
+{
+"name": "aalto-xml",
+"version": "1.4.0"
+},
+{
+"name": "Agent Host Protocol Kotlin client",
+"version": "1.0.0"
+},
+{
+"name": "AhoCorasickDoubleArrayTrie",
+"version": "1.2.3"
+},
+{
+"name": "Amazon Ion Java",
+"version": "1.12.1"
+},
+{
+"name": "AndroidX Navigation Event Compose Desktop",
+"version": "1.1.1"
+},
+{
+"name": "AndroidX Navigation Event Desktop",
+"version": "1.1.1"
+},
+{
+"name": "antlr4-runtime",
+"version": "4.13.2"
+},
+{
+"name": "ANTLRv2 Runtime",
+"version": "2.7.7.3"
+},
+{
+"name": "Apache Commons CLI",
+"version": "1.11.0"
+},
+{
+"name": "Apache Commons Codec",
+"version": "1.22.1"
+},
+{
+"name": "Apache Commons Compress",
+"version": "1.28.0"
+},
+{
+"name": "Apache Commons Exec",
+"version": "1.6.0"
+},
+{
+"name": "Apache Commons Imaging (JetBrains's fork)",
+"version": "1.0-RC-1"
+},
+{
+"name": "Apache Commons IO",
+"version": "2.22.0"
+},
+{
+"name": "Apache Commons Lang",
+"version": "3.20.0"
+},
+{
+"name": "Apache Commons Logging",
+"version": "1.4.0"
+},
+{
+"name": "Apache Commons Net",
+"version": "3.9.0"
+},
+{
+"name": "Apache Commons Pool",
+"version": "2.13.1"
+},
+{
+"name": "Apache Commons Text",
+"version": "1.15.0"
+},
+{
+"name": "Apache Commons VFS (JetBrains's fork)",
+"version": "3.0.10"
+},
+{
+"name": "Apache Commons VFS Jackrabbit 2",
+"version": "3.0.10"
+},
+{
+"name": "Apache Ivy",
+"version": "2.6.0"
+},
+{
+"name": "Apache Lucene",
+"version": "10.5.1"
+},
+{
+"name": "apache.commons.collections4",
+"version": "4.6.0"
+},
+{
+"name": "apache.commons.math4.core",
+"version": "4.0-beta1"
+},
+{
+"name": "apache.logging.log4j.to.slf4j",
+"version": "2.26.1"
+},
+{
+"name": "Appccelerate.StateMachine",
+"version": "3.3.0"
+},
+{
+"name": "Application Insights API",
+"version": "2.23.0"
+},
+{
+"name": "Application Insights for Java",
+"version": "3.7.10"
+},
+{
+"name": "AsciiDoc support for Visual Studio Code",
+"version": "3.2.4"
+},
+{
+"name": "ASM (JetBrains's fork)",
+"version": "9.6.1"
+},
+{
+"name": "ASM Tools",
+"version": "9.10.1"
+},
+{
+"name": "AspectJ",
+"version": "1.9.25.1"
+},
+{
+"name": "AssertJ fluent assertions",
+"version": "4.0.0-M1"
+},
+{
+"name": "AssertJ Swing",
+"version": "3.17.1"
+},
+{
+"name": "AsyncAPI React Component",
+"version": "2.6.0"
+},
+{
+"name": "Atlassian Commonmark",
+"version": "0.17.0"
+},
+{
+"name": "Autofac Package",
+"version": "4.8.1"
+},
+{
+"name": "AutoMapper Package",
+"version": "10.1.2"
+},
+{
+"name": "Automaton",
+"version": "1.12-4"
+},
+{
+"name": "Azure Core Netty HTTP plugin library for Java",
+"version": "1.15.12"
+},
+{
+"name": "Azure Core Package",
+"version": "1.49.0"
+},
+{
+"name": "Azure Core shared library for Java",
+"version": "1.56.1"
+},
+{
+"name": "Azure Identity client library for Java",
+"version": "1.13.1"
+},
+{
+"name": "Azure Identity Package",
+"version": "1.17.0"
+},
+{
+"name": "Azure JSON shared library for Java",
+"version": "1.5.0"
+},
+{
+"name": "Azure Resource Manager resources client library for Java",
+"version": "2.51.0"
+},
+{
+"name": "Azure Storage Blobs Package",
+"version": "12.18.0"
+},
+{
+"name": "Azure Storage Common Package",
+"version": "12.17.0"
+},
+{
+"name": "azure-toolkit-auth-lib",
+"version": "0.53.0"
+},
+{
+"name": "azure-toolkit-common-lib",
+"version": "0.53.0"
+},
+{
+"name": "azure-toolkit-identity-lib",
+"version": "0.53.0"
+},
+{
+"name": "azure.core.management",
+"version": "1.18.0"
+},
+{
+"name": "Bash-Preexec",
+"version": "0.5.0"
+},
+{
+"name": "batik",
+"version": "1.16.0-35"
+},
+{
+"name": "BeatyBit Armature Core Package",
+"version": "2.0.0.22"
+},
+{
+"name": "BeatyBit Armature Interface Package",
+"version": "2.0.0.22"
+},
+{
+"name": "BeatyBit Armature Package",
+"version": "2.0.0.22"
+},
+{
+"name": "BeatyBit Bits Package",
+"version": "0.0.20"
+},
+{
+"name": "blockmap",
+"version": "1.0.10"
+},
+{
+"name": "Bodymovin",
+"version": "5.5.10"
+},
+{
+"name": "Boost",
+"version": "1.80.0"
+},
+{
+"name": "bouncy-castle-pgp",
+"version": "1.86"
+},
+{
+"name": "bouncy-castle-provider",
+"version": "1.86"
+},
+{
+"name": "BouncyCastle.NET Cryptography",
+"version": "2.5.1"
+},
+{
+"name": "brotli",
+"version": "0.1.2"
+},
+{
+"name": "caffeine",
+"version": "3.3.0"
+},
+{
+"name": "Castle Core Package",
+"version": "4.4.1"
+},
+{
+"name": "CGLib",
+"version": "3.3.0"
+},
+{
+"name": "ChromeProtocol Core Package",
+"version": "1.2.3"
+},
+{
+"name": "ChromeProtocol Domains Package",
+"version": "1.2.3"
+},
+{
+"name": "ChromeProtocol Runtime Package",
+"version": "1.2.3"
+},
+{
+"name": "Clang-Format",
+"version": "24.0.0.2407"
+},
+{
+"name": "Clang-tidy",
+"version": "23.1.0"
+},
+{
+"name": "classgraph",
+"version": "4.8.195"
+},
+{
+"name": "CLDR plural rules (derived data)",
+"version": "48"
+},
+{
+"name": "Clikt",
+"version": "5.1.0"
+},
+{
+"name": "CLR Memory Diagnostics (ClrMD)",
+"version": "4.0.20261020.8"
+},
+{
+"name": "CMake For VisualStudio Code",
+"version": "0.0.17"
+},
+{
+"name": "Coil",
+"version": "3.2.0"
+},
+{
+"name": "Command Line Interface Parser for Java",
+"version": "1.1.6"
+},
+{
+"name": "Common Annotations for the JavaTM Platform API",
+"version": "1.3.2"
+},
+{
+"name": "Common interfaces, helpers and data models classes for Java Authentication Library",
+"version": "0.6.4"
+},
+{
+"name": "Compose Multiplatform",
+"version": "1.12.1"
+},
+{
+"name": "Compose Runtime",
+"version": "1.12.1"
+},
+{
+"name": "Compose Runtime Retained",
+"version": "1.12.1"
+},
+{
+"name": "Compose Runtime Saveable Desktop",
+"version": "1.12.1"
+},
+{
+"name": "Compose Swing UI",
+"version": "0.1.0-alpha06"
+},
+{
+"name": "Compose Swing UI Animation",
+"version": "0.1.0-alpha06"
+},
+{
+"name": "Compose Swing UI Foundation",
+"version": "0.1.0-alpha06"
+},
+{
+"name": "CronExpressionDescriptor Package",
+"version": "2.45.0"
+},
+{
+"name": "Cronos",
+"version": "0.13.0"
+},
+{
+"name": "dbus-java",
+"version": "4.2.1"
+},
+{
+"name": "DebuggerComInteropAnalyzer",
+"version": "1.0.1"
+},
+{
+"name": "devtools-logo",
+"version": "custom revision"
+},
+{
+"name": "docker-java-api",
+"version": "3.3.0"
+},
+{
+"name": "docker-java-core",
+"version": "3.3.3"
+},
+{
+"name": "docker-java-transport",
+"version": "3.3.3"
+},
+{
+"name": "docker-java-transport-httpclient5",
+"version": "3.3.3"
+},
+{
+"name": "DockerUtils.cs",
+"version": "1.0.5"
+},
+{
+"name": "Dynamic Data",
+"version": "6.16.2.20260924"
+},
+{
+"name": "eclipse.lsp4j",
+"version": "1.0.0"
+},
+{
+"name": "eclipse.lsp4j.debug",
+"version": "1.0.0"
+},
+{
+"name": "eclipse.lsp4j.jsonrpc",
+"version": "1.0.0"
+},
+{
+"name": "eclipse.lsp4j.jsonrpc.debug",
+"version": "1.0.0"
+},
+{
+"name": "EditorConfig Java Parser",
+"version": "0.3.0"
+},
+{
+"name": "emoji-java",
+"version": "5.1.1"
+},
+{
+"name": "entities",
+"version": "custom revision"
+},
+{
+"name": "eslint",
+"version": "3.17"
+},
+{
+"name": "ExCSS .NET Stylesheet Parser",
+"version": "4.2.4"
+},
+{
+"name": "Fantomas Core Package",
+"version": "7.0.3"
+},
+{
+"name": "Fantomas FCS Package",
+"version": "7.0.3"
+},
+{
+"name": "fastutil",
+"version": "8.5.18-jb1"
+},
+{
+"name": "Feather Icons",
+"version": "v4.29.1"
+},
+{
+"name": "FiraCode",
+"version": "1.206"
+},
+{
+"name": "Flexmark",
+"version": "0.64.8"
+},
+{
+"name": "Flow library files",
+"version": "0.81.0"
+},
+{
+"name": "freeportfinder",
+"version": "1.1.1"
+},
+{
+"name": "fsevents",
+"version": "2.3.2"
+},
+{
+"name": "FSharp Core Package",
+"version": "10.0.103"
+},
+{
+"name": "github.oshi.core",
+"version": "7.6.1"
+},
+{
+"name": "Godot Tools",
+"version": "2.3.0.5"
+},
+{
+"name": "GodotTools IdeMessaging Package",
+"version": "1.1.2"
+},
+{
+"name": "Google Blink source code",
+"version": "custom revision"
+},
+{
+"name": "Google FlatBuffers Package",
+"version": "23.5.26"
+},
+{
+"name": "google.auth.library.oauth2.http",
+"version": "1.40.0"
+},
+{
+"name": "google.oauth.client",
+"version": "1.31.5"
+},
+{
+"name": "GoogleAnalyticsTracker.Core",
+"version": "7.0.1"
+},
+{
+"name": "GoogleAnalyticsTracker.Simple",
+"version": "7.0.1"
+},
+{
+"name": "googlecode.plist.dd",
+"version": "1.30"
+},
+{
+"name": "GraalVM JavaScript",
+"version": "24.0.2"
+},
+{
+"name": "Groovy",
+"version": "3.0.25"
+},
+{
+"name": "Groovy JSR-223",
+"version": "3.0.25"
+},
+{
+"name": "gRPC Kotlin: Stub",
+"version": "1.4.3"
+},
+{
+"name": "grpc-services",
+"version": "1.44.0"
+},
+{
+"name": "gRPC: Core",
+"version": "1.73.0"
+},
+{
+"name": "gRPC: Netty Shaded",
+"version": "1.73.0"
+},
+{
+"name": "gRPC: Protobuf",
+"version": "1.73.0"
+},
+{
+"name": "gRPC: Stub",
+"version": "1.73.0"
+},
+{
+"name": "Gson",
+"version": "2.14.0"
+},
+{
+"name": "Guava",
+"version": "33.7.1-jre"
+},
+{
+"name": "HarfBuzzSharp - Native Assets for Win32",
+"version": "7.3.0.3"
+},
+{
+"name": "hash4j",
+"version": "0.31.0"
+},
+{
+"name": "HashiCorp Syntax",
+"version": "0.6.0"
+},
+{
+"name": "HDR Histogram",
+"version": "2.2.2"
+},
+{
+"name": "hppc",
+"version": "0.9.1"
+},
+{
+"name": "HtmlAgilityPack Package",
+"version": "1.12.4"
+},
+{
+"name": "htmlparser2",
+"version": "custom revision"
+},
+{
+"name": "HttpComponents HttpClient",
+"version": "4.5.14"
+},
+{
+"name": "Ice4j",
+"version": "3.0-54-g2baae57"
+},
+{
+"name": "ICU4J (shaded in GraalVM JavaScript)",
+"version": "24.0.2"
+},
+{
+"name": "ILSpy Decompiler Engine",
+"version": "8.2.0.7535"
+},
+{
+"name": "imgscalr",
+"version": "4.2"
+},
+{
+"name": "Implementation of json-rpc for .NET",
+"version": "1.0.2"
+},
+{
+"name": "Inconsolata",
+"version": "001.010"
+},
+{
+"name": "Incremental DOM",
+"version": "0.7.0"
+},
+{
+"name": "indriya",
+"version": "1.3"
+},
+{
+"name": "ini4j (JetBrains's fork)",
+"version": "0.5.5-2"
+},
+{
+"name": "IntelliJ IDEA Code Coverage Agent",
+"version": "1.0.777"
+},
+{
+"name": "intellij-markdown",
+"version": "0.7.16"
+},
+{
+"name": "io.github.z4kn4fein.semver.jvm",
+"version": "2.0.0"
+},
+{
+"name": "io.modelcontextprotocol.kotlin.sdk",
+"version": "0.15.0"
+},
+{
+"name": "ISO RELAX",
+"version": "20030108"
+},
+{
+"name": "Jackson",
+"version": "2.22.2"
+},
+{
+"name": "Jackson Databind",
+"version": "2.22.2"
+},
+{
+"name": "Jackson Dataformat TOML",
+"version": "2.22.2"
+},
+{
+"name": "Jackson Dataformat XML",
+"version": "2.22.2"
+},
+{
+"name": "Jackson Dataformat YAML",
+"version": "2.22.2"
+},
+{
+"name": "Jackson Datatype JDK8",
+"version": "2.22.2"
+},
+{
+"name": "Jackson Datatype JSR310",
+"version": "2.22.2"
+},
+{
+"name": "Jackson Module Kotlin",
+"version": "2.22.2"
+},
+{
+"name": "jackson-annotations",
+"version": "2.22"
+},
+{
+"name": "jackson-jr-objects",
+"version": "2.22.2"
+},
+{
+"name": "Jakarta ORO",
+"version": "2.0.8"
+},
+{
+"name": "Jansi",
+"version": "2.4.3"
+},
+{
+"name": "Java Server Pages (JSP) for Visual Studio Code",
+"version": "0.0.3"
+},
+{
+"name": "java-atk-wrapper",
+"version": "263.35"
+},
+{
+"name": "java-compatibility",
+"version": "1.0.1"
+},
+{
+"name": "java-diff-utils",
+"version": "4.17"
+},
+{
+"name": "Java-WebSocket",
+"version": "1.6.0"
+},
+{
+"name": "JavaBeans Activation Framework",
+"version": "1.2.0"
+},
+{
+"name": "JavaFacker",
+"version": "1.0.2"
+},
+{
+"name": "JAXB (Java Architecture for XML Binding) API",
+"version": "2.3.1"
+},
+{
+"name": "JAXB (JSR 222) Reference Implementation",
+"version": "2.3.9"
+},
+{
+"name": "Jaxen",
+"version": "1.2.0"
+},
+{
+"name": "Jayway JsonPath",
+"version": "3.0.0"
+},
+{
+"name": "JCEF",
+"version": "150.0.14-g7c1aa68-chromium-150.0.7871.129-api-1.21-263-b16"
+},
+{
+"name": "JCIP Annotations",
+"version": "1.0"
+},
+{
+"name": "JCodings",
+"version": "1.0.55"
+},
+{
+"name": "JDOM (JetBrains's fork)",
+"version": "2"
+},
+{
+"name": "jediterm-core",
+"version": "3.76"
+},
+{
+"name": "jediterm-ui",
+"version": "3.76"
+},
+{
+"name": "JetBrains Annotations",
+"version": "26.1.0"
+},
+{
+"name": "JetBrains Annotations Package",
+"version": "2026.2.0"
+},
+{
+"name": "JetBrains Avalonia Angle Windows Natives windows-arm64 Package",
+"version": "2.1.25547.20250602"
+},
+{
+"name": "JetBrains Avalonia Angle Windows Natives windows-x64 Package",
+"version": "2.1.25547.20250602"
+},
+{
+"name": "JetBrains Avalonia Angle Windows Natives windows-x86 Package",
+"version": "2.1.25547.20250602"
+},
+{
+"name": "JetBrains Avalonia AvaloniaEdit Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Controls ColorPicker Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Desktop Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Diagnostics Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Fonts Inter Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia FreeDesktop Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Native Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Remote Protocol Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Skia Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Themes Simple Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia Win32 Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Avalonia X11 Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains ColorTextBlock Avalonia Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains DotNetCore Runtime linux-arm Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime linux-arm64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime linux-musl-arm Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime linux-musl-arm64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime linux-musl-x64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime linux-x64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime macos-arm64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime macos-x64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime SupplementaryPackages Sdk linux-arm64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime SupplementaryPackages Sdk linux-x64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime SupplementaryPackages Sdk macos-arm64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime SupplementaryPackages Sdk macos-x64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime SupplementaryPackages Sdk windows-arm64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime SupplementaryPackages Sdk windows-x64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime windows-arm64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains DotNetCore Runtime windows-x64 Package",
+"version": "10.0.20261102.21"
+},
+{
+"name": "JetBrains FormatRipper Package",
+"version": "3.0.0"
+},
+{
+"name": "JetBrains FSharp Compiler Service Package",
+"version": "2026.3.2"
+},
+{
+"name": "JetBrains HabitatDetector Package",
+"version": "1.5.1"
+},
+{
+"name": "JetBrains HarfBuzzSharp Package",
+"version": "8.3.1.1"
+},
+{
+"name": "JetBrains ICorDebug Mobile Package",
+"version": "2.0.20261026.6"
+},
+{
+"name": "JetBrains ICorDebug Package",
+"version": "2.0.20261026.6"
+},
+{
+"name": "JetBrains IlUtils Package",
+"version": "1.0.4"
+},
+{
+"name": "JetBrains Lifetimes Package",
+"version": "2026.3.2"
+},
+{
+"name": "JetBrains Markdown Avalonia Html Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Markdown Avalonia Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Markdown Avalonia Svg Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Markdown Avalonia SyntaxHigh Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Markdown Avalonia Tight Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Microsoft Artifacts Authentication Package",
+"version": "0.2.3.11"
+},
+{
+"name": "JetBrains Microsoft FileFormats Package",
+"version": "1.0.150601.3"
+},
+{
+"name": "JetBrains Microsoft SymbolStore Package",
+"version": "1.0.150601.3"
+},
+{
+"name": "JetBrains monodoc Package",
+"version": "2024.10.6"
+},
+{
+"name": "JetBrains NuGet Commands Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet Common Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet Configurations Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet Credentials Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet DependencyResolver Core Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet Frameworks Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet LibraryModel Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet PackageManagement Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet Packaging Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet ProjectModel Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet Protocol Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet Resolver Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains NuGet Versioning Package",
+"version": "7.11.20261006.180"
+},
+{
+"name": "JetBrains Profiler Api Package",
+"version": "1.4.14"
+},
+{
+"name": "JetBrains Profiler SelfApi Package",
+"version": "2.5.19"
+},
+{
+"name": "JetBrains RdFramework Package",
+"version": "2026.3.2"
+},
+{
+"name": "JetBrains RdFramework Reflection Package",
+"version": "2026.3.2"
+},
+{
+"name": "JetBrains ReactiveUI Package",
+"version": "22.2.1.663"
+},
+{
+"name": "JetBrains Repack DiaSymReader PortablePdb Package",
+"version": "1.7.0.20241003"
+},
+{
+"name": "JetBrains Repack Google Protobuf Package",
+"version": "3.25.0"
+},
+{
+"name": "JetBrains ReSharper TestRunner Adapters MsTest Package",
+"version": "2.16.1.51"
+},
+{
+"name": "JetBrains ReSharper TestRunner Adapters NUnit2 Package",
+"version": "2.16.1.37"
+},
+{
+"name": "JetBrains ReSharper TestRunner Adapters NUnit3 Package",
+"version": "2.16.1.82"
+},
+{
+"name": "JetBrains ReSharper TestRunner Adapters VsTest Package",
+"version": "2.16.1.14"
+},
+{
+"name": "JetBrains ReSharper TestRunner Adapters XUnit Package",
+"version": "2.16.1.47"
+},
+{
+"name": "JetBrains ReSharper TestRunner Adapters XUnit3 Package",
+"version": "2.16.1.18"
+},
+{
+"name": "JetBrains ReSharper TestRunner Adapters XUnit3_2 Package",
+"version": "2.16.1.9"
+},
+{
+"name": "JetBrains ReSharper TestRunner Package",
+"version": "2.16.1.115"
+},
+{
+"name": "JetBrains ReverseMarkdown Package",
+"version": "4.7.0.435"
+},
+{
+"name": "JetBrains Roslyn References Repack Package",
+"version": "42.42.20261031.184437"
+},
+{
+"name": "JetBrains Runtime",
+"version": "21"
+},
+{
+"name": "JetBrains Runtime API",
+"version": "1.9.0"
+},
+{
+"name": "JetBrains SharpGen Runtime COM Package",
+"version": "2.0.20261026.6"
+},
+{
+"name": "JetBrains SharpGen Runtime Package",
+"version": "2.0.20261026.6"
+},
+{
+"name": "JetBrains ShimSkiaSharp Package",
+"version": "3.4.0.663"
+},
+{
+"name": "JetBrains SignatureVerifier Package",
+"version": "3.0.0"
+},
+{
+"name": "JetBrains Splat Builder Package",
+"version": "17.1.1.663"
+},
+{
+"name": "JetBrains Splat Core Package",
+"version": "17.1.1.663"
+},
+{
+"name": "JetBrains Splat Logging Package",
+"version": "17.1.1.663"
+},
+{
+"name": "JetBrains Splat Package",
+"version": "17.1.1.663"
+},
+{
+"name": "JetBrains Svg Controls Avalonia Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Svg Controls Skia Avalonia Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Svg Custom Package",
+"version": "3.4.0.663"
+},
+{
+"name": "JetBrains Svg Model Package",
+"version": "3.4.0.663"
+},
+{
+"name": "JetBrains Svg Skia Package",
+"version": "3.4.0.663"
+},
+{
+"name": "JetBrains Tmds DBus Protocol Package",
+"version": "0.21.2.435"
+},
+{
+"name": "JetBrains Xaml Behaviors Interactions Custom Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Xaml Behaviors Interactions Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains Xaml Behaviors Interactivity Package",
+"version": "11.3.11.663"
+},
+{
+"name": "JetBrains.DesignerInterop",
+"version": "20261006.78.0"
+},
+{
+"name": "JetBrains.EnvDTE",
+"version": "20261006.78.0"
+},
+{
+"name": "JetBrains.EnvDTE.Client",
+"version": "20261006.78.0"
+},
+{
+"name": "JetBrains.EnvDTE.Host",
+"version": "20261006.78.0"
+},
+{
+"name": "JetBrains.SharpZipLib.Stripped",
+"version": "1.3.3.37"
+},
+{
+"name": "JetBrains.VisualStudio.Interop",
+"version": "20261006.78.0"
+},
+{
+"name": "Jettison",
+"version": "1.5.7"
+},
+{
+"name": "JGit (Settings Sync and SettingsRepo)",
+"version": "6.6.1.202309021850-r-jb-202510311356"
+},
+{
+"name": "Jgoodies binding",
+"version": "2.13.0"
+},
+{
+"name": "JGoodies Common",
+"version": "1.4.0"
+},
+{
+"name": "JGoodies Forms",
+"version": "1.1-preview"
+},
+{
+"name": "JGraphT",
+"version": "1.5.3"
+},
+{
+"name": "Jing",
+"version": "20030619"
+},
+{
+"name": "Jitsi Utilities",
+"version": "1.0-112-gd92472a"
+},
+{
+"name": "Jline",
+"version": "3.24.1"
+},
+{
+"name": "JNA",
+"version": "5.19.1"
+},
+{
+"name": "jnaerator-runtime",
+"version": "0.12"
+},
+{
+"name": "Joni",
+"version": "2.2.7"
+},
+{
+"name": "JOOX",
+"version": "2.0.1"
+},
+{
+"name": "JRuby Parser 0.5.3",
+"version": "0.5.3"
+},
+{
+"name": "JRuby Parser 0.5.4",
+"version": "0.5.4"
+},
+{
+"name": "jsch-agent-proxy",
+"version": "0.0.9"
+},
+{
+"name": "jsch-agent-proxy-sshj",
+"version": "0.0.9"
+},
+{
+"name": "JSON in Java",
+"version": "20240205"
+},
+{
+"name": "JSON Schema",
+"version": "custom revision"
+},
+{
+"name": "JSON Schema (schema.json)",
+"version": "draft-04"
+},
+{
+"name": "JSON Schema (schema06.json)",
+"version": "draft-06"
+},
+{
+"name": "JSON Schema (schema07.json)",
+"version": "draft-07"
+},
+{
+"name": "JSON Schema for Typings TypeScript definitions manager (typings-schema.json)",
+"version": "custom revision"
+},
+{
+"name": "Json.NET",
+"version": "13.0.3"
+},
+{
+"name": "jsoup",
+"version": "1.23.2"
+},
+{
+"name": "jspecify",
+"version": "1.0.1"
+},
+{
+"name": "JSTUN",
+"version": "0.7.5.20200723"
+},
+{
+"name": "jsvg",
+"version": "2.2.0"
+},
+{
+"name": "jts-io-common",
+"version": "1.20.0"
+},
+{
+"name": "jzlib",
+"version": "1.1.3"
+},
+{
+"name": "Kconfig for the Zephyr Project",
+"version": "1.2.0"
+},
+{
+"name": "KMermaid",
+"version": "0.7.2"
+},
+{
+"name": "KMermaid merman implementation",
+"version": "0.7.2"
+},
+{
+"name": "Koog",
+"version": "1.1.1-develop-20260826-0208"
+},
+{
+"name": "Kotlin Coroutines for Guava",
+"version": "1.11.0-intellij-1"
+},
+{
+"name": "Kotlin Coroutines for JDK 8",
+"version": "1.11.0-intellij-1"
+},
+{
+"name": "Kotlin Coroutines for Slf4j",
+"version": "1.11.0-intellij-1"
+},
+{
+"name": "Kotlin library providing basic IO primitives",
+"version": "0.9.1"
+},
+{
+"name": "Kotlin Logging",
+"version": "8.0.4"
+},
+{
+"name": "Kotlin multiplatform / multi-format serialization",
+"version": "1.11.0"
+},
+{
+"name": "Kotlin reflection library",
+"version": "2.4.21-RC"
+},
+{
+"name": "Kotlin Standard Library",
+"version": "2.4.21-RC"
+},
+{
+"name": "kotlin-metadata",
+"version": "2.4.21-RC"
+},
+{
+"name": "kotlinx-coroutines-reactor",
+"version": "1.8.1"
+},
+{
+"name": "kotlinx-datetime-jvm",
+"version": "0.7.1-0.6.x-compat"
+},
+{
+"name": "kotlinx.html",
+"version": "0.12.0"
+},
+{
+"name": "Kryo",
+"version": "2.24.0"
+},
+{
+"name": "kryo",
+"version": "5.6.0"
+},
+{
+"name": "Ktor Client Core",
+"version": "3.6.0"
+},
+{
+"name": "ktor-client-auth",
+"version": "3.6.0"
+},
+{
+"name": "ktor-client-cio-internal",
+"version": "3.6.0"
+},
+{
+"name": "ktor-client-content-negotiation",
+"version": "3.6.0"
+},
+{
+"name": "ktor-client-encoding",
+"version": "3.6.0"
+},
+{
+"name": "ktor-client-java",
+"version": "3.6.0"
+},
+{
+"name": "ktor-client-logging",
+"version": "3.6.0"
+},
+{
+"name": "ktor-serialization-kotlinx-json",
+"version": "3.6.0"
+},
+{
+"name": "ktor.io TLS",
+"version": "3.6.0"
+},
+{
+"name": "Kubernetes Client Java",
+"version": "26.0.0"
+},
+{
+"name": "KUSVG",
+"version": "0.7.2"
+},
+{
+"name": "Language Tool (JetBrains's fork)",
+"version": "6.8.28"
+},
+{
+"name": "Language Tool (JetBrains's fork, English)",
+"version": "6.8.28"
+},
+{
+"name": "Lets-Plot for Kotlin",
+"version": "4.14.1"
+},
+{
+"name": "Lets-Plot Swing",
+"version": "4.10.3"
+},
+{
+"name": "LevelDB",
+"version": "1.2.1"
+},
+{
+"name": "Library for RenderDoc integration in Rider",
+"version": "2025.2.1"
+},
+{
+"name": "libunwind",
+"version": "1.4.0"
+},
+{
+"name": "llama.cpp",
+"version": "git snapshot"
+},
+{
+"name": "LLVM Demangler",
+"version": "21.1.8"
+},
+{
+"name": "Log4j",
+"version": "1.7.36"
+},
+{
+"name": "Lucene.Net",
+"version": "3.0.3"
+},
+{
+"name": "lz4-java",
+"version": "1.11.3"
+},
+{
+"name": "Maven Resolver Provider",
+"version": "3.9.9"
+},
+{
+"name": "MDX for Visual Studio Code",
+"version": "1.8.7"
+},
+{
+"name": "merman",
+"version": "0.7.2"
+},
+{
+"name": "microba",
+"version": "custom revision"
+},
+{
+"name": "MicroCom Runtime Package",
+"version": "0.11.0"
+},
+{
+"name": "Microsoft Authentication Extensions for Java",
+"version": "1.3.0"
+},
+{
+"name": "Microsoft Authentication Library (MSAL) for Java",
+"version": "1.15.1"
+},
+{
+"name": "Microsoft Authentication Library (MSAL) for Java",
+"version": "1.21.0"
+},
+{
+"name": "Microsoft Authentication Library for .NET",
+"version": "4.80.0"
+},
+{
+"name": "Microsoft Bcl AsyncInterfaces Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Bcl Cryptography Package",
+"version": "9.0.10"
+},
+{
+"name": "Microsoft Bcl Memory Package",
+"version": "9.0.0"
+},
+{
+"name": "Microsoft Bcl TimeProvider Package",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft Build Framework Package",
+"version": "17.9.5"
+},
+{
+"name": "Microsoft Build Package",
+"version": "17.9.5"
+},
+{
+"name": "Microsoft Build Utilities Core Package",
+"version": "17.9.5"
+},
+{
+"name": "Microsoft CodeAnalysis FlowAnalysis Utilities Package",
+"version": "2.9.5"
+},
+{
+"name": "Microsoft Diagnostics NETCore Client Package",
+"version": "0.2.510501"
+},
+{
+"name": "Microsoft DiaSymReader Package",
+"version": "2.0.0"
+},
+{
+"name": "Microsoft Expression Blend SDK",
+"version": "3.0.40218.1"
+},
+{
+"name": "Microsoft Extensions Caching Abstractions Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Extensions Caching Memory Package",
+"version": "8.0.1"
+},
+{
+"name": "Microsoft Extensions Configuration Abstractions Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Extensions DependencyInjection Abstractions Package",
+"version": "8.0.2"
+},
+{
+"name": "Microsoft Extensions DependencyInjection Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Extensions DependencyModel Package",
+"version": "3.0.0"
+},
+{
+"name": "Microsoft Extensions FileProviders Abstractions Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Extensions FileSystemGlobbing Package",
+"version": "6.0.0"
+},
+{
+"name": "Microsoft Extensions Http Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Extensions Logging Abstractions Package",
+"version": "8.0.3"
+},
+{
+"name": "Microsoft Extensions Logging Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Extensions Options Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Extensions Primitives Package",
+"version": "8.0.0"
+},
+{
+"name": "Microsoft Identity Client Extensions Msal Package",
+"version": "4.80.0"
+},
+{
+"name": "Microsoft IdentityModel Abstractions Package",
+"version": "8.14.0"
+},
+{
+"name": "Microsoft IdentityModel JsonWebTokens Package",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft IdentityModel Logging Package",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft IdentityModel Protocols OpenIdConnect Package",
+"version": "7.7.1"
+},
+{
+"name": "Microsoft IdentityModel Protocols Package",
+"version": "7.7.1"
+},
+{
+"name": "Microsoft IdentityModel Tokens Package",
+"version": "6.35.0"
+},
+{
+"name": "Microsoft IO Redist Package",
+"version": "6.0.1"
+},
+{
+"name": "Microsoft NET StringTools Package",
+"version": "17.6.3"
+},
+{
+"name": "Microsoft Owin FileSystems Package",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft Owin Host HttpListener Package",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft Owin Hosting Package",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft Owin Package",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft Owin StaticFiles Package",
+"version": "4.2.2"
+},
+{
+"name": "Microsoft Research Detours Package",
+"version": "4.0.1"
+},
+{
+"name": "Microsoft SQL Server Data-Tier Application Framework",
+"version": "170.2.70"
+},
+{
+"name": "Microsoft SQL Server ScriptDOM",
+"version": "170.128.0"
+},
+{
+"name": "Microsoft SqlServer Types Package",
+"version": "160.1000.6"
+},
+{
+"name": "Microsoft TraceEvent Library",
+"version": "3.1.17"
+},
+{
+"name": "Microsoft VisualStudio SolutionPersistence Package",
+"version": "1.0.52"
+},
+{
+"name": "Microsoft VisualStudio Threading Package",
+"version": "17.13.2"
+},
+{
+"name": "Microsoft VisualStudio Validation Package",
+"version": "17.8.8"
+},
+{
+"name": "Microsoft Web Administration Package",
+"version": "11.1.0"
+},
+{
+"name": "Microsoft Web WebView2 Package",
+"version": "1.0.3800.47"
+},
+{
+"name": "Microsoft Windows SymSrv",
+"version": "10.1.20240419"
+},
+{
+"name": "Microsoft Xml Document Transformation",
+"version": "3.2.0"
+},
+{
+"name": "Microsoft.AspNetCore.Watch.BrowserRefresh",
+"version": "1.0.6"
+},
+{
+"name": "Microsoft.Data.SqlClient",
+"version": "6.1.2"
+},
+{
+"name": "Microsoft.Extensions.DotNetDeltaApplier",
+"version": "2.0.3"
+},
+{
+"name": "Microsoft.IO.RecyclableMemoryStream",
+"version": "2.3.2"
+},
+{
+"name": "Microsoft.SqlServer.Server",
+"version": "1.0.0"
+},
+{
+"name": "Microsoft.TestPlatform.TranslationLayer",
+"version": "16.0.0.20191015"
+},
+{
+"name": "Microsoft.Win32.Registry",
+"version": "5.0.0"
+},
+{
+"name": "Microsoft.Win32.SystemEvents",
+"version": "4.7.0"
+},
+{
+"name": "MigLayout",
+"version": "11.4.3"
+},
+{
+"name": "Mono.Cecil",
+"version": "0.11.5"
+},
+{
+"name": "Mono.Debugger.Libs",
+"version": "1.0.0"
+},
+{
+"name": "morfologik-fsa",
+"version": "2.1.9"
+},
+{
+"name": "morfologik-fsa-builders",
+"version": "2.1.9"
+},
+{
+"name": "morfologik-speller",
+"version": "2.1.9"
+},
+{
+"name": "morfologik-stemming",
+"version": "2.1.9"
+},
+{
+"name": "MSAL.NET extension for public client broker support",
+"version": "4.80.0"
+},
+{
+"name": "MSAL.NET extension for public client broker support.",
+"version": "0.19.4"
+},
+{
+"name": "mvstore",
+"version": "2.5.250"
+},
+{
+"name": "NanoXML",
+"version": "2.2.3"
+},
+{
+"name": "Native dependencies (arm64) for Microsoft TraceEvent Library",
+"version": "3.1.17"
+},
+{
+"name": "Native dependencies (x64) for Microsoft TraceEvent Library",
+"version": "3.1.17"
+},
+{
+"name": "Native dependencies (x86) for Microsoft TraceEvent Library",
+"version": "3.1.17"
+},
+{
+"name": "net.loomchild.segment",
+"version": "2.0.3"
+},
+{
+"name": "netty-buffer",
+"version": "4.2.18.Final"
+},
+{
+"name": "netty-codec-compression",
+"version": "4.2.18.Final"
+},
+{
+"name": "netty-codec-http",
+"version": "4.2.18.Final"
+},
+{
+"name": "netty-codec-protobuf",
+"version": "4.2.18.Final"
+},
+{
+"name": "netty-handler-proxy",
+"version": "4.2.18.Final"
+},
+{
+"name": "ngram-slp",
+"version": "0.0.3"
+},
+{
+"name": "Night Config",
+"version": "3.9.0"
+},
+{
+"name": "Nimbus Content Type",
+"version": "1.15.1"
+},
+{
+"name": "Nimbus JOSE + JWT",
+"version": "1.15.1"
+},
+{
+"name": "Nimbus Language Tags",
+"version": "1.15.1"
+},
+{
+"name": "Nimbus OAuth 2.0 & 2.1 SDK with OpenID Connect extensions",
+"version": "1.15.1"
+},
+{
+"name": "NVelocity Package",
+"version": "1.0.3"
+},
+{
+"name": "Objenesis",
+"version": "3.6"
+},
+{
+"name": "opencsv",
+"version": "5.12.0"
+},
+{
+"name": "opentelemetry",
+"version": "1.66.0"
+},
+{
+"name": "opentelemetry-exporter-otlp-common",
+"version": "1.66.0"
+},
+{
+"name": "opentelemetry-exporter-sender-jdk",
+"version": "1.66.0"
+},
+{
+"name": "opentelemetry-extension-kotlin",
+"version": "1.66.0"
+},
+{
+"name": "opentelemetry-sdk-autoconfigure-spi",
+"version": "1.66.0"
+},
+{
+"name": "opentelemetry-semconv",
+"version": "1.44.0"
+},
+{
+"name": "org.eclipse.xtext.xbase",
+"version": "2.44.0"
+},
+{
+"name": "org.scilab.forge:jlatexmath",
+"version": "1.0.7"
+},
+{
+"name": "OWIN",
+"version": "1.0"
+},
+{
+"name": "package.json JSON Schema (packageJsonSchema.json)",
+"version": "custom revision"
+},
+{
+"name": "Plexus Utils",
+"version": "3.6.1"
+},
+{
+"name": "plist-cil Package",
+"version": "2.2.0"
+},
+{
+"name": "Polly Package",
+"version": "7.2.3"
+},
+{
+"name": "Prettier JSON Schema (prettierrc-schema.json)",
+"version": "custom revision"
+},
+{
+"name": "proj4j",
+"version": "1.4.3"
+},
+{
+"name": "proj4j-epsg",
+"version": "1.4.3"
+},
+{
+"name": "protobuf-java-util",
+"version": "3.25.5"
+},
+{
+"name": "protobuf-kotlin",
+"version": "3.25.5"
+},
+{
+"name": "Protocol Buffers",
+"version": "3.0.0"
+},
+{
+"name": "Protocol Buffers",
+"version": "3.25.5"
+},
+{
+"name": "Proxy Vole",
+"version": "2.0.2"
+},
+{
+"name": "pty4j",
+"version": "0.14.0"
+},
+{
+"name": "Quiche",
+"version": "90"
+},
+{
+"name": "rd core",
+"version": "2026.3.2"
+},
+{
+"name": "rd framework",
+"version": "2026.3.2"
+},
+{
+"name": "rd generator",
+"version": "2026.3.2"
+},
+{
+"name": "rd Swing integration",
+"version": "2026.3.2"
+},
+{
+"name": "rd text buffers",
+"version": "2026.3.2"
+},
+{
+"name": "Reactor Netty",
+"version": "1.1.22"
+},
+{
+"name": "Redoc",
+"version": "2.39"
+},
+{
+"name": "Relax NG Object Model",
+"version": "custom revision"
+},
+{
+"name": "Rhino JavaScript Engine",
+"version": "1.7.15.1"
+},
+{
+"name": "Rhino JavaScript Engine (number to string conversion)",
+"version": "1.7.14"
+},
+{
+"name": "Roboto",
+"version": "1.100141"
+},
+{
+"name": "RxJava",
+"version": "1.3.8"
+},
+{
+"name": "Schema Kenerator",
+"version": "2.7.2"
+},
+{
+"name": "semver",
+"version": "6.3.0"
+},
+{
+"name": "semver4j",
+"version": "3.1.0"
+},
+{
+"name": "SkiaSharp",
+"version": "2.88.9"
+},
+{
+"name": "SkiaSharp - Native Assets for Win32",
+"version": "2.88.9"
+},
+{
+"name": "SkiaSharp.HarfBuzz",
+"version": "2.88.9"
+},
+{
+"name": "Skiko",
+"version": "0.150.1"
+},
+{
+"name": "Skiko Runtime",
+"version": "0.150.1"
+},
+{
+"name": "slf4j-api",
+"version": "2.0.19"
+},
+{
+"name": "slf4j-jdk14",
+"version": "2.0.19"
+},
+{
+"name": "SnakeYAML",
+"version": "2.7"
+},
+{
+"name": "snakeyaml-engine",
+"version": "2.9"
+},
+{
+"name": "SourceCodePro",
+"version": "2.010"
+},
+{
+"name": "Sprache.JetBrains",
+"version": "2.3.1"
+},
+{
+"name": "SQLitePCLRaw.core",
+"version": "1.1.2"
+},
+{
+"name": "Squareup Okio",
+"version": "3.18.2"
+},
+{
+"name": "Squareup Wire",
+"version": "4.9.6"
+},
+{
+"name": "ssh-nio-fs",
+"version": "1.0.23"
+},
+{
+"name": "SSHJ",
+"version": "0.38.0-idea2"
+},
+{
+"name": "StreamEx",
+"version": "0.8.4"
+},
+{
+"name": "Stubs for Microsoft.WindowsDesktop.App",
+"version": "0.0.18"
+},
+{
+"name": "Stylelint JSON Schema (.stylelintrc-schema.json)",
+"version": "custom revision"
+},
+{
+"name": "Swagger UI Dist",
+"version": "5.32.15"
+},
+{
+"name": "System Buffers Package",
+"version": "4.6.0"
+},
+{
+"name": "System ClientModel Package",
+"version": "1.7.0"
+},
+{
+"name": "System CodeDom Package",
+"version": "8.0.0"
+},
+{
+"name": "System Collections Immutable Package",
+"version": "8.0.0"
+},
+{
+"name": "System Composition AttributedModel Package",
+"version": "8.0.0"
+},
+{
+"name": "System Composition Convention Package",
+"version": "8.0.0"
+},
+{
+"name": "System Composition Hosting Package",
+"version": "8.0.0"
+},
+{
+"name": "System Composition Runtime Package",
+"version": "8.0.0"
+},
+{
+"name": "System Composition TypedParts Package",
+"version": "8.0.0"
+},
+{
+"name": "System Configuration ConfigurationManager Package",
+"version": "8.0.0"
+},
+{
+"name": "System Diagnostics DiagnosticSource Package",
+"version": "8.0.1"
+},
+{
+"name": "System Diagnostics EventLog Package",
+"version": "8.0.0"
+},
+{
+"name": "System Drawing Common Package",
+"version": "8.0.0"
+},
+{
+"name": "System Formats Asn1 Package",
+"version": "9.0.10"
+},
+{
+"name": "System IdentityModel Tokens Jwt Package",
+"version": "7.7.1"
+},
+{
+"name": "System IO Hashing Package",
+"version": "8.0.0"
+},
+{
+"name": "System IO Packaging Package",
+"version": "8.0.1"
+},
+{
+"name": "System IO Pipelines Package",
+"version": "8.0.0"
+},
+{
+"name": "System Memory Data Package",
+"version": "8.0.1"
+},
+{
+"name": "System Memory Package",
+"version": "4.6.0"
+},
+{
+"name": "System Numerics Vectors Package",
+"version": "4.6.0"
+},
+{
+"name": "System Reactive Package",
+"version": "6.0.0"
+},
+{
+"name": "System Reflection Metadata Package",
+"version": "8.0.0"
+},
+{
+"name": "System Reflection MetadataLoadContext Package",
+"version": "10.0.2"
+},
+{
+"name": "System Runtime CompilerServices Unsafe Package",
+"version": "6.1.0"
+},
+{
+"name": "System Security AccessControl Package",
+"version": "6.0.0"
+},
+{
+"name": "System Security Cryptography Pkcs Package",
+"version": "8.0.1"
+},
+{
+"name": "System Security Cryptography ProtectedData Package",
+"version": "9.0.6"
+},
+{
+"name": "System Security Permissions Package",
+"version": "8.0.0"
+},
+{
+"name": "System Text Encoding CodePages Package",
+"version": "8.0.0"
+},
+{
+"name": "System Text Encodings Web Package",
+"version": "8.0.0"
+},
+{
+"name": "System Text Json Package",
+"version": "8.0.6"
+},
+{
+"name": "System Threading Channels Package",
+"version": "8.0.0"
+},
+{
+"name": "System Threading Tasks Dataflow Package",
+"version": "6.0.0"
+},
+{
+"name": "System.ComponentModel.Annotations",
+"version": "4.5.0"
+},
+{
+"name": "System.Data.Common",
+"version": "4.3.0"
+},
+{
+"name": "System.Diagnostics.TraceSource",
+"version": "4.0.0"
+},
+{
+"name": "System.IO.FileSystem.AccessControl",
+"version": "5.0.0"
+},
+{
+"name": "System.IO.FileSystem.Primitives",
+"version": "4.3.0"
+},
+{
+"name": "System.Reflection.DispatchProxy",
+"version": "4.4.0"
+},
+{
+"name": "System.Reflection.TypeExtensions",
+"version": "4.7.0"
+},
+{
+"name": "System.Runtime",
+"version": "4.3.1"
+},
+{
+"name": "System.Runtime.InteropServices.RuntimeInformation",
+"version": "4.3.0"
+},
+{
+"name": "System.Security.Principal.Windows",
+"version": "5.0.0"
+},
+{
+"name": "System.ServiceProcess.ServiceController",
+"version": "4.7.0"
+},
+{
+"name": "System.Threading.Tasks.Extensions",
+"version": "4.5.4"
+},
+{
+"name": "System.ValueTuple",
+"version": "4.5.0"
+},
+{
+"name": "TagSoup",
+"version": "1.2.1"
+},
+{
+"name": "Tailwind CSS Language Server",
+"version": "0.0.4"
+},
+{
+"name": "TeamCity Service Messages read/write access",
+"version": "3.0.20210120.1"
+},
+{
+"name": "The Erlang LS extension for VSCode",
+"version": "0.0.43"
+},
+{
+"name": "TLS Channel",
+"version": "0.8.0"
+},
+{
+"name": "Trang",
+"version": "custom revision"
+},
+{
+"name": "Trove4j (JetBrains's fork)",
+"version": "1.0.20221201"
+},
+{
+"name": "tsconfig JSON Schema (tsconfig-schema.json)",
+"version": "custom revision"
+},
+{
+"name": "TSLint JSON Schema (tslint-schema.json)",
+"version": "custom revision"
+},
+{
+"name": "tsx",
+"version": "4.15.6"
+},
+{
+"name": "TypeScript",
+"version": "1.6.2"
+},
+{
+"name": "Unidecode",
+"version": "0.0.7"
+},
+{
+"name": "unit-api",
+"version": "1.0"
+},
+{
+"name": "uom-lib-common",
+"version": "1.1"
+},
+{
+"name": "usvg",
+"version": "0.7.2"
+},
+{
+"name": "UTF-8/16/32 C++ library",
+"version": "2.2.2"
+},
+{
+"name": "Velocity",
+"version": "2.4.1"
+},
+{
+"name": "Vestris Resource Lib",
+"version": "1.4.20210120.2"
+},
+{
+"name": "Vim Script language support for Atom",
+"version": "1.2.1"
+},
+{
+"name": "Visual Studio Code",
+"version": "1.90.0"
+},
+{
+"name": "Volar Language Server",
+"version": "1.11.1"
+},
+{
+"name": "Volar Language Server",
+"version": "2.x"
+},
+{
+"name": "VS Code Twig Language 2",
+"version": "0.9.4"
+},
+{
+"name": "Vue Language Server",
+"version": "1.8.27"
+},
+{
+"name": "Vue Language Server",
+"version": "2.x"
+},
+{
+"name": "Vue TypeScript Plugin",
+"version": "3.x"
+},
+{
+"name": "W3C CSS Validation Service",
+"version": "2.2.6"
+},
+{
+"name": "webpack 2.x-3.x JSON Schema (webpack-schema.json)",
+"version": "2.x-3.x"
+},
+{
+"name": "webpack 4.x (webpack-schema4.json) and plugins (webpackPlugins/**) JSON Schemas",
+"version": "4.x"
+},
+{
+"name": "webstorm-styled-components",
+"version": "custom revision"
+},
+{
+"name": "Windows 7 API Code Pack — Core + Shell, without PDBs",
+"version": "1.1.20210120.1"
+},
+{
+"name": "winp",
+"version": "1.30.1"
+},
+{
+"name": "WiX: Windows Installer XML Toolset",
+"version": "3.11.0"
+},
+{
+"name": "WPF Contrib",
+"version": "2.0.20170610"
+},
+{
+"name": "Xerces",
+"version": "2.12.2"
+},
+{
+"name": "Xerial SQLite JDBC",
+"version": "3.42.0-jb.1"
+},
+{
+"name": "Xerial SQLite JDBC",
+"version": "3.53.4.0"
+},
+{
+"name": "xml-apis-ext",
+"version": "1.3.04"
+},
+{
+"name": "xml-resolver",
+"version": "1.2"
+},
+{
+"name": "XMLBeans",
+"version": "5.4.0"
+},
+{
+"name": "XStream",
+"version": "1.4.21"
+},
+{
+"name": "xUnit.net",
+"version": "1.9.2"
+},
+{
+"name": "xUnit.net [Abstractions]",
+"version": "2.0.3"
+},
+{
+"name": "xUnit.net [Runner Utility]",
+"version": "2.4.1"
+},
+{
+"name": "XZ for Java",
+"version": "1.12"
+},
+{
+"name": "YamlDotNet Signed Package",
+"version": "5.2.1"
+},
+{
+"name": "yFiles",
+"version": "2.13"
+},
+{
+"name": "zip-signer",
+"version": "0.1.43"
+}
+],
+"discovery_path": [
+"https://www.jetbrains.com/legal/third-party-software/",
+"https://data.services.jetbrains.com/products?code=TC,YTD,HB,IDES,DLE,IIU,PCP,WS,GO,PS,RD,CL,RM,DG,RR,TBA,GW&fields=name,code,releases.version,releases.downloads,releases.type"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "Rider",
+"retrieved": "2026-11-18",
+"sha256": "122a8c49cb0d355f2c9090be008d26ae1cc5fd60b66f67cc9b62fb7509821afe",
+"supplier": "JetBrains",
+"url": "https://resources.jetbrains.com/storage/third-party-libraries/dotnet/JetBrains.Rider-2026.3.0.1-third-party-libraries.json",
+"version": "2026.3.0.1"
+}

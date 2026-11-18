@@ -1,0 +1,94 @@
+{
+"components": [
+{
+"name": "Bouncy Castle Crypto AP",
+"version": "1.78"
+},
+{
+"name": "Commons Codec",
+"version": "1.16.1"
+},
+{
+"name": "Commons Lang",
+"version": "3.14.0"
+},
+{
+"name": "FTPServer",
+"version": "1.1.1"
+},
+{
+"name": "Guava",
+"version": "33.1.0"
+},
+{
+"name": "Jackson Annotations",
+"version": "2.14.0-rc1"
+},
+{
+"name": "Jackson Core",
+"version": "2.14.0-rc1"
+},
+{
+"name": "Jackson Databind",
+"version": "2.14.0-rc1"
+},
+{
+"name": "jersey-media-json-jackso",
+"version": "2.39.1"
+},
+{
+"name": "log4j-1.2-api",
+"version": "2.22.1"
+},
+{
+"name": "log4j-over-slf4j",
+"version": "2.0.9"
+},
+{
+"name": "Mina SSHD-cli",
+"version": "2.12.0"
+},
+{
+"name": "Mina SSHD-common",
+"version": "2.12.0"
+},
+{
+"name": "Mina SSHD-core",
+"version": "2.12.0"
+},
+{
+"name": "Mina SSHD-mina",
+"version": "2.12.0"
+},
+{
+"name": "Mina SSHD-scp",
+"version": "2.12.0"
+},
+{
+"name": "Mina SSHD-sftp",
+"version": "2.12.0"
+},
+{
+"name": "mina-core",
+"version": "2.2.3"
+},
+{
+"name": "slf4j-api",
+"version": "2.0.11"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle Managed File Transfer",
+"retrieved": "2026-11-18",
+"sha256": "9ef7e365c3192df4ee23211e7bf2a64a4f0c110856b3b0e865b863ed4a4cfc4f",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/mftlc/index.html",
+"version": "14.1.2"
+}

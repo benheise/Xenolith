@@ -1,0 +1,90 @@
+{
+"components": [
+{
+"name": "Byte Buddy",
+"version": "1.14.12"
+},
+{
+"name": "Commons Beanutils",
+"version": "1.9.4"
+},
+{
+"name": "Commons IO",
+"version": "2.15.1"
+},
+{
+"name": "Commons Lang",
+"version": "3.14.0"
+},
+{
+"name": "Guava",
+"version": "32.0.1"
+},
+{
+"name": "httpclient5",
+"version": "5.2.3"
+},
+{
+"name": "httpcore5",
+"version": "5.2.3"
+},
+{
+"name": "jsoup",
+"version": "1.16.1"
+},
+{
+"name": "log4j-over-slf4j",
+"version": "2.0.9"
+},
+{
+"name": "OWASP Java Encoder Pr",
+"version": "1.2.3"
+},
+{
+"name": "OWASP Java HTML Saniti",
+"version": "20220608.1"
+},
+{
+"name": "POI",
+"version": "5.2.3"
+},
+{
+"name": "swagger-annotations",
+"version": "1.6.12"
+},
+{
+"name": "swagger-core",
+"version": "1.6.12"
+},
+{
+"name": "swagger-jaxrs",
+"version": "1.6.12"
+},
+{
+"name": "swagger-jersey2-jaxrs",
+"version": "1.6.12"
+},
+{
+"name": "swagger-models",
+"version": "1.6.12"
+},
+{
+"name": "TinyMCE",
+"version": "6.8.4"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle WebCenter Portal",
+"retrieved": "2026-11-18",
+"sha256": "a506bc5642ecb9d292a221dc104c2ca03af9c000d102adf8f684fe57396cc9cd",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/wcplc/index.html",
+"version": "14.1.2"
+}

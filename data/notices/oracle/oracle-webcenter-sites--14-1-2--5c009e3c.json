@@ -1,0 +1,592 @@
+{
+"components": [
+{
+"name": "ANTLR4 Java Runtime",
+"version": "4.13.1"
+},
+{
+"name": "Apache Commons JEXL",
+"version": "3.3"
+},
+{
+"name": "Apache Tika",
+"version": "2.9.1"
+},
+{
+"name": "ASM",
+"version": "9.1"
+},
+{
+"name": "ASM",
+"version": "9.6"
+},
+{
+"name": "CAS",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-audit",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-authentication",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-configuration",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-configuration-model",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-cookie",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-events",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-logout",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-mfa",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-monitor",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-protocol",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-services",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-throttle",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-ticket",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-util",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-validation",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-web",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-api-webflow",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-audit",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-audit-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-authentication",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-authentication-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-authentication-attributes",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-authentication-mfa",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-authentication-mfa-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-authentication-throttle",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-configuration",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-configuration-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-cookie",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-cookie-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-events-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-logging",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-logging-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-logout",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-logout-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-monitor",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-notifications",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-rest",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-rest-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-services",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-services-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-services-authentication",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-services-registry",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-tickets",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-tickets-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-util",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-util-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-validation",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-validation-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-web",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-web-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-webflow",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-webflow-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-webflow-mfa",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-core-webflow-mfa-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-actions",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-actions-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-ehcache-ticket-registry",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-geolocation",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-json-service-registry",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-ldap-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-pac4j-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-pac4j-authentication",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-pac4j-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-person-directory",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-person-directory-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-rest",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-rest-authentication",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-rest-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-saml-core-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-themes",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-themes-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-throttle",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-throttle-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-thymeleaf",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-token-core-api",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-validation",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-support-validation-core",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-webapp-config",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-webapp-init",
+"version": "6.6.2"
+},
+{
+"name": "cas-server-webapp-resources",
+"version": "6.6.2"
+},
+{
+"name": "CGLIB",
+"version": "3.3"
+},
+{
+"name": "cglib",
+"version": "3.3.0"
+},
+{
+"name": "Classmate",
+"version": "1.6.0"
+},
+{
+"name": "Commons Collections",
+"version": "4.5.0-M1"
+},
+{
+"name": "Commons Configuration",
+"version": "2.10.1"
+},
+{
+"name": "Commons FileUpload",
+"version": "1.5"
+},
+{
+"name": "Commons IO",
+"version": "2.15.1"
+},
+{
+"name": "Commons Lang",
+"version": "3.14.0"
+},
+{
+"name": "Commons Logging",
+"version": "1.3.0"
+},
+{
+"name": "Commons Validator",
+"version": "1.8.0"
+},
+{
+"name": "Dojo",
+"version": "1.17.3"
+},
+{
+"name": "dom4j",
+"version": "2.1.4"
+},
+{
+"name": "Groovy",
+"version": "3.0.18"
+},
+{
+"name": "GSON",
+"version": "2.10.1"
+},
+{
+"name": "Guava",
+"version": "33.0.0"
+},
+{
+"name": "Guava",
+"version": "33.1.0"
+},
+{
+"name": "Guice",
+"version": "6.0.0"
+},
+{
+"name": "guice-servlet",
+"version": "6.0.0"
+},
+{
+"name": "Hibernate Validator",
+"version": "6.2.5.Final"
+},
+{
+"name": "httpcore5",
+"version": "5.2.3"
+},
+{
+"name": "httpcore5-h2",
+"version": "5.2.3"
+},
+{
+"name": "Jackson Annotations",
+"version": "2.15.2"
+},
+{
+"name": "Jackson Core",
+"version": "2.15.2"
+},
+{
+"name": "Jackson Databind",
+"version": "2.15.2"
+},
+{
+"name": "jackson-dataformat-xml",
+"version": "2.15.2"
+},
+{
+"name": "jackson-dataformat-yam",
+"version": "2.17.0"
+},
+{
+"name": "jackson-datatype-joda",
+"version": "2.17.0"
+},
+{
+"name": "jackson-jaxrs-base",
+"version": "2.15.2"
+},
+{
+"name": "jackson-jaxrs-json-provi",
+"version": "2.15.2"
+},
+{
+"name": "jackson-jaxrs-json-provi",
+"version": "2.17.0"
+},
+{
+"name": "jackson-jaxrs-xml-provid",
+"version": "2.15.2"
+},
+{
+"name": "jackson-jaxrs-xml-provid",
+"version": "2.17.0"
+},
+{
+"name": "jackson-module-jaxb-an",
+"version": "2.15.2"
+},
+{
+"name": "jackson-module-jsonSch",
+"version": "2.17.0"
+},
+{
+"name": "Javassist",
+"version": "3.29.2-GA"
+},
+{
+"name": "Jettison",
+"version": "1.5.4"
+},
+{
+"name": "jsoup",
+"version": "1.16.1"
+},
+{
+"name": "jsoup",
+"version": "1.17.2"
+},
+{
+"name": "log4j-1.2-api",
+"version": "2.22.1"
+},
+{
+"name": "Log4j-API",
+"version": "2.22.1"
+},
+{
+"name": "log4j-core",
+"version": "2.22.1"
+},
+{
+"name": "Lucene",
+"version": "9.9.1"
+},
+{
+"name": "Metadata Extractor",
+"version": "2.19.0"
+},
+{
+"name": "metrics-core",
+"version": "4.2.25"
+},
+{
+"name": "Object-Graph Navigation",
+"version": "3.4.2"
+},
+{
+"name": "Objenesis",
+"version": "3.2"
+},
+{
+"name": "Oracle OpenSearch Rest",
+"version": "2.3.0"
+},
+{
+"name": "POI",
+"version": "5.2.3"
+},
+{
+"name": "slf4j-api",
+"version": "2.0.11"
+},
+{
+"name": "Spring Framework",
+"version": "5.3.39.1"
+},
+{
+"name": "stax2-api",
+"version": "4.2.2"
+},
+{
+"name": "tika-core",
+"version": "2.9.1"
+},
+{
+"name": "TinyMCE",
+"version": "6.8.4"
+},
+{
+"name": "Xerces2 Java",
+"version": "2.12.2"
+},
+{
+"name": "XStream",
+"version": "1.4.20"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table",
+"gt_list",
+"jar_names"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle WebCenter Sites",
+"retrieved": "2026-11-18",
+"sha256": "53e8e793b0f2c9dd9c2b5f20e68c7009468d1cddf12b170a5ee6e328c1034829",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/wcslc/index.html",
+"version": "14.1.2"
+}

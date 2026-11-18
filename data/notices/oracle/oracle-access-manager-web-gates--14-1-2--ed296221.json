@@ -1,0 +1,26 @@
+{
+"components": [
+{
+"name": "JsonCpp",
+"version": "1.9.5"
+},
+{
+"name": "Xerces for C++",
+"version": "3.2.5"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle Access Manager Web Gates",
+"retrieved": "2026-11-18",
+"sha256": "c4666866cda810c209a17bb5323128f74ef43ca59f549d58ef111ab966d6aeba",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/awglc/index.html",
+"version": "14.1.2"
+}

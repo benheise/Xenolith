@@ -1,0 +1,136 @@
+{
+"components": [
+{
+"name": "Ant",
+"version": "1.10.13"
+},
+{
+"name": "antlr-runtime",
+"version": "3.5.2"
+},
+{
+"name": "ASM",
+"version": "9.1"
+},
+{
+"name": "bcpkix-jdk18on",
+"version": "1.76"
+},
+{
+"name": "CGLIB",
+"version": "3.3"
+},
+{
+"name": "cglib",
+"version": "3.3.0"
+},
+{
+"name": "Commons Lang",
+"version": "3.14.0"
+},
+{
+"name": "Commons Net",
+"version": "3.9.0"
+},
+{
+"name": "Commons VFS",
+"version": "2.9.0"
+},
+{
+"name": "GSON",
+"version": "2.10.1"
+},
+{
+"name": "httpclient5",
+"version": "5.2.3"
+},
+{
+"name": "httpclient5",
+"version": "5.3.1"
+},
+{
+"name": "HyperSQL Database Engi",
+"version": "2.7.1"
+},
+{
+"name": "Jackson Annotations",
+"version": "2.15.2"
+},
+{
+"name": "Jackson Core",
+"version": "2.15.2"
+},
+{
+"name": "Jackson Databind",
+"version": "2.15.2"
+},
+{
+"name": "Javassist",
+"version": "3.29.2-GA"
+},
+{
+"name": "jetty-jaas",
+"version": "9.4.54.v20240208"
+},
+{
+"name": "JIDE Ultimate Suite",
+"version": "3.7.14"
+},
+{
+"name": "log4j-core",
+"version": "2.20.0"
+},
+{
+"name": "Mina SSHD-mina",
+"version": "2.12.1"
+},
+{
+"name": "Mina SSHD-scp",
+"version": "2.12.1"
+},
+{
+"name": "Mina SSHD-sftp",
+"version": "2.12.1"
+},
+{
+"name": "Objenesis",
+"version": "3.2"
+},
+{
+"name": "slf4j-simple",
+"version": "2.0.6"
+},
+{
+"name": "Spring Framework",
+"version": "5.3.39.1"
+},
+{
+"name": "sshd-putty",
+"version": "2.12.1"
+},
+{
+"name": "SVNKit",
+"version": "1.10.0"
+},
+{
+"name": "Woodstox XML Processo",
+"version": "6.4.0"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table",
+"gt_list",
+"jar_names"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle Data Integrator",
+"retrieved": "2026-11-18",
+"sha256": "887c4e86adf4d6c2152ceea63345e1553268702797cc3294749fd3345bb153ee",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/odilc/index.html",
+"version": "14.1.2"
+}

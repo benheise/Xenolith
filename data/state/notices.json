@@ -327,6 +327,17 @@
 "name_version_lines"
 ]
 },
+"https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom251/Third-party-product-terms-of-use/": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 2357,
+"sha": "096be48315e4e49c82145409dba1a50b9d0ae36164fdca303860ac105cb35f05",
+"status": "ok",
+"via": [
+"jar_names",
+"name_version_lines"
+]
+},
 "https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is252/Third-party-product-terms-of-use/": {
 "fetched": "2026-11-08",
 "kind": "html",
@@ -354,6 +365,246 @@
 "kind": "html",
 "n": 1108,
 "sha": "defb294c1617b73c0aa1465928f4d0e79fbc6788e48883c53483952d5b14e462",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/awglc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 2,
+"sha": "c4666866cda810c209a17bb5323128f74ef43ca59f549d58ef111ab966d6aeba",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/bpmlc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 47,
+"sha": "63b6edda79bf895aba34dd97842dea62e3b6298ba427cc0c458c43c6bc8b59c0",
+"status": "ok",
+"via": [
+"html_table",
+"gt_list",
+"jar_names"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/cohlc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 2,
+"sha": "7c8012c96561af954d88a66c59df33b4037debc76e574cf825fab7d21e61860f",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/dbalc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 1,
+"sha": "114b8025b56365cf5aacd1e95a35ba559c32667068f829d6d054c65167e348b9",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/edqlc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 19,
+"sha": "e858720ab15ce91ca3a4262aee5377bebbc49e904693779e65c7566fc0ab3fb7",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/jdvlc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 56,
+"sha": "fc5f40d30f23eb151e80b6e8787d649cc0930c3bc49b930c0fb3a12739aa07e6",
+"status": "ok",
+"via": [
+"html_table",
+"jar_names"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/jrflc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 1,
+"sha": "3c33c101320ccef414d212f586e76671191a210b18e038755fd07652b340242d",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/mftlc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 19,
+"sha": "9ef7e365c3192df4ee23211e7bf2a64a4f0c110856b3b0e865b863ed4a4cfc4f",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/oamlc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 22,
+"sha": "773c03a0a51f4998ad355bf84b537fef055522fd3be2b0d26a83b9a125891707",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/odilc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 29,
+"sha": "887c4e86adf4d6c2152ceea63345e1553268702797cc3294749fd3345bb153ee",
+"status": "ok",
+"via": [
+"html_table",
+"gt_list",
+"jar_names"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/ohslc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 15,
+"sha": "6ba656ebe5489397085430e73973599f4aba989a61dabb0dd81eb217523796e6",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/osblc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 5,
+"sha": "75bbd2fa9a2fdd34ddbcecb848989c83e2fb67d0961ed66102ee4c7930f085e4",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/plglc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 7,
+"sha": "509a95136b780e0a5c580adf9f6ab239502e13458e6636f60962c8b1160633df",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/psslc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 1,
+"sha": "37649d02a69ceb5c019104d4d5be10b7f647330036ea2d72278a8cbaa878c8ea",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/soalc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 27,
+"sha": "68f0e1b446d47644a1a8f9a435410c8158217083806e13c8d748a1314f105569",
+"status": "ok",
+"via": [
+"html_table",
+"gt_list",
+"jar_names"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/toplc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 4,
+"sha": "b827f6e424ca581494fadb55a94fcce9c52589cc76119f7d261f983808f89f73",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/umslc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 3,
+"sha": "6a3a4e5d785d57fd98a69da4709a737f073eb808ea99b9b9711802a2ed72f674",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/wcclc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 21,
+"sha": "e1657ac89bead3c93ca697095e79b596b888150232d0d8255c5feeb40e9a930a",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/wcplc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 18,
+"sha": "a506bc5642ecb9d292a221dc104c2ca03af9c000d102adf8f684fe57396cc9cd",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/wcslc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 143,
+"sha": "53e8e793b0f2c9dd9c2b5f20e68c7009468d1cddf12b170a5ee6e328c1034829",
+"status": "ok",
+"via": [
+"html_table",
+"gt_list",
+"jar_names"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/weclc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 6,
+"sha": "01f1605692a0f891ac4bfa8de4ef130982293a4b14859f19be05af078290126d",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/wlslc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 98,
+"sha": "2bfb3fcbf27e3399abf06ca51943028bea9f9ad799150175f51572538cfb7d8b",
+"status": "ok",
+"via": [
+"html_table",
+"jar_names"
+]
+},
+"https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/wsmlc/index.html": {
+"fetched": "2026-11-18",
+"kind": "html",
+"n": 16,
+"sha": "3547920beaf8bd501ec4ca98939bcda7f7f5f8c45c0820a04c4e210a974580d7",
 "status": "ok",
 "via": [
 "html_table"
@@ -1227,6 +1478,16 @@
 "status": "ok",
 "via": [
 "html_table"
+]
+},
+"https://download.jetbrains.com/idea/gateway/JetBrainsGateway-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 159,
+"sha": "9f23de04021cdffa545ee90855418334d67e7df7ff39a153953232df4638777c",
+"status": "ok",
+"via": [
+"sbom"
 ]
 },
 "https://download.manageengine.com/products/self-service-password/adselfservice-plus-third-party-apps-list.pdf": {
@@ -2669,6 +2930,236 @@
 "status": "ok",
 "via": [
 "component_license"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/cpp/CLion-2026.3.0.1-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 343,
+"sha": "28f02e93fe08815968f788eef879765f6ad1d9036a970398f9ca83282e18ab20",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/datagrip/datagrip-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 283,
+"sha": "ecc1692b04a3cf1f18f365e2774b963f9e40d1b2c58c09ccf817ee2986264ee8",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/datalore/datalore-enterprise-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 844,
+"sha": "d8501f9a80c0f34fabf36386e93059c7c024f31b9f1f9df9d3e942c946d62e63",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/datalore/datalore-enterprise-2026.4.1-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 815,
+"sha": "5dab52b4a74f1d06887d35cd3ff2663fab96f1e4e52fac3974721df944446de6",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/dotnet/JetBrains.Rider-2026.3.0.1-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 624,
+"sha": "122a8c49cb0d355f2c9090be008d26ae1cc5fd60b66f67cc9b62fb7509821afe",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/go/goland-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 300,
+"sha": "46744332659ea72adb3a61d9c5dbc56da6d78b6c38692c76fbecafb299aeb933",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/hub/hub-2026.1.14165.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 424,
+"sha": "14ef7ec65e57ea66557aeba2c0b27eb369b442c78c9b5c12e12cac87e4947d14",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/hub/hub-2026.2.52570.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 418,
+"sha": "fc2ee9bed01d96a28757017a17f63ced1eefb818d36d52b96b9798ed7db3ebcb",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/ide-services/ide-services-2026.0.2.1011.third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 957,
+"sha": "fa04d92c90aeaa8506dfdf165a587ed78745465a6ee8bd1e04429e43682207c6",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/ide-services/ide-services-2026.1.5.120.third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 880,
+"sha": "57998df866e904329a55e06a97bcfb89fb33639e768983830ba9c95dad30cade",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/idea/idea-2026.2.5-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 327,
+"sha": "d5ff4150fa4d0189360393afd2bb5218b6e9f630bf0ba3172fa7c6d5449448aa",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/idea/idea-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 340,
+"sha": "00fa4b88d2d1dd36a6f5972be83555fec81510bdc4e147ef0fd3ec3a30696860",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/python/pycharmPY-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 2022,
+"sha": "1a446da2ad430c3ee47e3200c5b5f606b3cb9766ac8fa1c6b66762ef72f1b529",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/ruby/RubyMine-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 311,
+"sha": "9df47134ca68c77c828664d018041c021ac5112a29f8f44618631edc20aa87e6",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/rustrover/RustRover-2026.3.1-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 304,
+"sha": "a7b3c01a9cf58dce993160c0b8db4d5ad3bb138948e376c7fa61b34122264d4c",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/teamcity/on-prem/tc-2025.11.8-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 1289,
+"sha": "fcdf979608114d498706ddd7a5182345b09ba4b134c5854b8439100be8e52728",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/teamcity/on-prem/tc-2026.1.6-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 1435,
+"sha": "198b14fc0af39f93982ad8c4ba3d173aee55454e49dd1fd94b48a593629de628",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/teamcity/on-prem/tc-2026.2.2-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 1417,
+"sha": "901d5dea714fcd9bb222515c36740656e1ffb1abdeecd7404771cb43ccdbe7be",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/toolbox/toolbox-3.9.1.89198.third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 118,
+"sha": "f4c3751c1fc8b84cb66613134a1ad1f2dd45a42359abedf042f9905d21f8baeb",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/webide/PhpStorm-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 311,
+"sha": "a14a49c06bc77df4a2c634cdc96adf86655d4ca6a19eadfaa5c585a650058b42",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/webstorm/WebStorm-2026.3-third-party-libraries.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 313,
+"sha": "2b07c5dd02a63d0d08626b75edb6091baea6a45812a1668959efa3252ae616d7",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/youtrack/youtrack-2026.1.14165.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 1008,
+"sha": "cdb437d8a4f67b91c8704c8a2e2391fd3fd9a220a2ba351cbafea71901f28bcd",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/youtrack/youtrack-2026.2.19840.json": {
+"fetched": "2026-11-18",
+"kind": "sbom",
+"n": 1011,
+"sha": "89f07b3bb0f151b25e051bf2081154099b520281085a8ccae8cb89c800abb9a9",
+"status": "ok",
+"via": [
+"sbom"
 ]
 },
 "https://support.axway.com/fr/articles/download-attachment/hash/7331c59682b7507655685cce49664d46-1/kb/194100": {

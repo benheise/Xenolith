@@ -1,0 +1,34 @@
+{
+"components": [
+{
+"name": "Antlr.runtime",
+"version": "3.5.3"
+},
+{
+"name": "DOM",
+"version": "Dom Level 3 core specification"
+},
+{
+"name": "EclipseLink",
+"version": "2.7.15"
+},
+{
+"name": "EclipseLink SDO (commonj.",
+"version": "2.1.1"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle TopLink",
+"retrieved": "2026-11-18",
+"sha256": "b827f6e424ca581494fadb55a94fcce9c52589cc76119f7d261f983808f89f73",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/toplc/index.html",
+"version": "14.1.2"
+}

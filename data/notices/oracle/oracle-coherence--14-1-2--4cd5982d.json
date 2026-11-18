@@ -1,0 +1,26 @@
+{
+"components": [
+{
+"name": "ASM",
+"version": "9.6"
+},
+{
+"name": "classgraph",
+"version": "4.8.175"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle Coherence",
+"retrieved": "2026-11-18",
+"sha256": "7c8012c96561af954d88a66c59df33b4037debc76e574cf825fab7d21e61860f",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/cohlc/index.html",
+"version": "14.1.2"
+}

@@ -1,0 +1,102 @@
+{
+"components": [
+{
+"name": "<img src=\"r/tptws/120/fi",
+"version": "1.1"
+},
+{
+"name": "Commons Codec",
+"version": "1.16.0"
+},
+{
+"name": "Commons Collections",
+"version": "3839ecf"
+},
+{
+"name": "Commons IO",
+"version": "2.15.1"
+},
+{
+"name": "Commons Lang",
+"version": "3.14.0"
+},
+{
+"name": "Commons Net",
+"version": "3.9.0"
+},
+{
+"name": "Commons Text",
+"version": "1.10.0"
+},
+{
+"name": "Commons VFS",
+"version": "2.9.0"
+},
+{
+"name": "Exchange Web Services (",
+"version": "2.0"
+},
+{
+"name": "FCK Editor",
+"version": "2.6.11"
+},
+{
+"name": "httpclient5",
+"version": "5.2.3"
+},
+{
+"name": "httpcore5",
+"version": "5.2.3"
+},
+{
+"name": "Jakarta ORO",
+"version": "2.0.8"
+},
+{
+"name": "OEM SDK",
+"version": "8.5.5413.1032"
+},
+{
+"name": "Optical Character Recog",
+"version": "-- not set --"
+},
+{
+"name": "POI",
+"version": "5.2.3"
+},
+{
+"name": "slf4j-api",
+"version": "2.0.11"
+},
+{
+"name": "slf4j-api",
+"version": "2.0.13"
+},
+{
+"name": "YUI (Yahoo User Interfac",
+"version": "2.9.0"
+},
+{
+"name": "YUI Compressor",
+"version": "2.4.8-958491d"
+},
+{
+"name": "ZXing",
+"version": "3.4.0"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle WebCenter Content",
+"retrieved": "2026-11-18",
+"sha256": "e1657ac89bead3c93ca697095e79b596b888150232d0d8255c5feeb40e9a930a",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/wcclc/index.html",
+"version": "14.1.2"
+}

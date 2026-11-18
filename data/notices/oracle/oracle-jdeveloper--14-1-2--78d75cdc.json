@@ -1,0 +1,243 @@
+{
+"components": [
+{
+"name": "<img src=\"r/tptws/120/fi",
+"version": "not specified"
+},
+{
+"name": "Antlr",
+"version": "3.1.3"
+},
+{
+"name": "antlr-runtime",
+"version": "3.4"
+},
+{
+"name": "ANTLR4 Java Runtime",
+"version": "4.13.1"
+},
+{
+"name": "ASM",
+"version": "9.5"
+},
+{
+"name": "Batik SVG Toolkit",
+"version": "1.17"
+},
+{
+"name": "BSAFE Software (CCME",
+"version": "6.3"
+},
+{
+"name": "Commons Beanutils",
+"version": "1.9.4"
+},
+{
+"name": "Commons Codec",
+"version": "1.16.0"
+},
+{
+"name": "Commons Collections",
+"version": "4.5.0-M1"
+},
+{
+"name": "Commons Compress",
+"version": "1.26.0"
+},
+{
+"name": "Commons EL",
+"version": "1.0"
+},
+{
+"name": "Commons IO",
+"version": "2.13.0"
+},
+{
+"name": "Commons Lang",
+"version": "3.14.0"
+},
+{
+"name": "Commons Logging",
+"version": "1.3.0"
+},
+{
+"name": "Commons Net",
+"version": "3.9.0"
+},
+{
+"name": "Derby",
+"version": "10.16.1.1.1905560-wls"
+},
+{
+"name": "Eclipse Equinox",
+"version": "3.6"
+},
+{
+"name": "Eclipse Equinox",
+"version": "3.9.1"
+},
+{
+"name": "Eclipse Tyrus",
+"version": "2.1.4"
+},
+{
+"name": "FreeMarker",
+"version": "2.3.32"
+},
+{
+"name": "Groovy",
+"version": "3.0.18"
+},
+{
+"name": "GSON",
+"version": "2.10.1"
+},
+{
+"name": "Guava",
+"version": "32.0.1"
+},
+{
+"name": "httpclient5",
+"version": "5.2.3"
+},
+{
+"name": "ICU4J",
+"version": "74.1"
+},
+{
+"name": "indexer-core",
+"version": "7.1.2"
+},
+{
+"name": "Jackson Annotations",
+"version": "2.17.0"
+},
+{
+"name": "Jackson Core",
+"version": "2.17.0"
+},
+{
+"name": "JavaEWAH",
+"version": "1.2.3"
+},
+{
+"name": "Jettison",
+"version": "1.5.4"
+},
+{
+"name": "JGit",
+"version": "6.7.0.202309050840-r"
+},
+{
+"name": "JZlib",
+"version": "1.1.3"
+},
+{
+"name": "Log4J",
+"version": "2.20.0"
+},
+{
+"name": "lucene-core",
+"version": "9.10.0"
+},
+{
+"name": "Maven",
+"version": "3.9.4"
+},
+{
+"name": "Maven Archetype",
+"version": "3.2.1"
+},
+{
+"name": "Microsoft Visual Studio 2",
+"version": "17.8.3"
+},
+{
+"name": "Microsoft.Web.WebVie",
+"version": "1.0.1774.30"
+},
+{
+"name": "MiGLayout-Core",
+"version": "11.2"
+},
+{
+"name": "MiGLayout-Swing",
+"version": "11.2"
+},
+{
+"name": "Mina SSHD-common",
+"version": "2.12.0"
+},
+{
+"name": "Mina SSHD-core",
+"version": "2.12.0"
+},
+{
+"name": "MyFaces Trinidad",
+"version": "2.1.1"
+},
+{
+"name": "OSGi specification",
+"version": "4.2"
+},
+{
+"name": "OSGi specification",
+"version": "5.0"
+},
+{
+"name": "OWASP Java HTML Saniti",
+"version": "20220608.1"
+},
+{
+"name": "POI",
+"version": "4.1.1"
+},
+{
+"name": "Presentation Graphics S",
+"version": "None specified"
+},
+{
+"name": "slf4j-api",
+"version": "2.0.6"
+},
+{
+"name": "stax2-api",
+"version": "4.2.2"
+},
+{
+"name": "StringTemplate",
+"version": "3.1-1"
+},
+{
+"name": "SVNKit",
+"version": "1.10.0"
+},
+{
+"name": "velocity-engine-core",
+"version": "2.3"
+},
+{
+"name": "Woodstox XML Processo",
+"version": "6.4.0"
+},
+{
+"name": "xpp3",
+"version": "1.1.6"
+}
+],
+"discovery_path": [
+"https://docs.oracle.com/en/middleware/fusion-middleware/fmwlc/oracle-fusion-middleware-14_1_2_0_0-release.html"
+],
+"extractors": [
+"html_table",
+"jar_names"
+],
+"found_via": "auto-discovered",
+"kind": "html",
+"product": "Oracle JDeveloper",
+"retrieved": "2026-11-18",
+"sha256": "fc5f40d30f23eb151e80b6e8787d649cc0930c3bc49b930c0fb3a12739aa07e6",
+"supplier": "Oracle",
+"url": "https://docs.oracle.com/en/middleware/fusion-middleware/14.1.2/jdvlc/index.html",
+"version": "14.1.2"
+}
