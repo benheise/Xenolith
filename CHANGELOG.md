@@ -34,8 +34,13 @@ Java runtime, so customers can't fix them by updating the host's Java.
   XS Advanced (17.0.15 in its example, which is in range; HANA Cockpit runs on XSA) and
   SapMachine 21 as the runtime of SAP Commerce Cloud 2211-jdk21.x (hosted by SAP). Both are
   recorded as "present".
-- **CSAF.** With the CVE on the watchlist, the next refresh picks up Red Hat's VEX data and
-  other CSAF providers' advisories as they publish.
+- **CSAF.** With the CVE on the watchlist, the refresh run straight after this pass picked up
+  Red Hat's VEX data: 30 Red Hat products, 21 affected with only a workaround so far (RHEL 8–10,
+  Red Hat build of OpenJDK 17/21/25, JBoss EAP 7 and 8, JBoss Web Server, Data Grid, AMQ Broker,
+  streams for Apache Kafka, Red Hat build of Keycloak and others) and 9 not affected (OpenJDK 8
+  and 11 builds, RHEL 6 and 7, Fuse 7, Single Sign-On 7 and others). Other CSAF providers'
+  advisories arrive on daily refreshes as they publish. The census now holds 141 Java4Shell
+  statements about 95 products.
 - **Still open.** As of 2026-11-18 there is no community vendor-status tracker for Java4Shell,
   and Atlassian, Jenkins/CloudBees, JFrog, Ping Identity, Confluent, Elastic, Gerrit and
   Spinnaker hadn't published product guidance. Products that run on the host's Java (Jenkins
