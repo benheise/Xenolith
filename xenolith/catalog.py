@@ -24,6 +24,7 @@ class Component:
     aliases: list[str] = field(default_factory=list)
     incidents: list[dict] = field(default_factory=list)
     notices_names: list = field(default_factory=list)
+    version_style: str = ""   # "java": drop build/packaging suffixes before range checks
 
     @property
     def cves(self) -> list[str]:
@@ -102,6 +103,7 @@ def load(catalog_dir: Path = CATALOG) -> Catalog:
             aliases=list(c.get("aliases", [])),
             incidents=list(c.get("incidents", [])),
             notices_names=list(c.get("notices_names", [])),
+            version_style=c.get("version_style", ""),
         )
         comps[c["id"]].matchers()  # validate regexes at load time
     src_raw = yaml.safe_load((catalog_dir / "sources.yaml").read_text(encoding="utf-8"))

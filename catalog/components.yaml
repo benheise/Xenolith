@@ -297,3 +297,55 @@ components:
           - cves: [CVE-2023-4911]
             ranges:
               - {introduced: '2.34', fixed: '2.39'}
+
+  - id: openjdk
+    name: OpenJDK / HotSpot Java runtime (JDK, JRE)
+    upstream: https://openjdk.org/
+    purl: pkg:github/openjdk/jdk
+    cpe: cpe:2.3:a:oracle:openjdk
+    aliases: [java4shell, javableed, java runtime, jdk, jre, hotspot, temurin, corretto, zulu, sapmachine, liberica]
+    # Java version strings carry build and packaging suffixes (17.0.15+6, 17.0.15_p6,
+    # 21.0.7+6~us1); version_style: java drops them before the range check.
+    # Distribution build numbers that aren't JDK versions (Zulu 17.70.201) can't be
+    # checked. IBM Semeru / OpenJ9 is a different JVM (not HotSpot) and isn't matched.
+    version_style: java
+    notices_names:
+      - '^openjdk(?:[- ]?\d+)?(?:[- ](?:jdk|jre)(?:[- ]headless)?)?$'      # openjdk, openjdk-17, openjdk17, openjdk-15-jre-headless
+      - '^openjdk[-/ ](?:zulu|java)$'
+      - '^java-\d+(?:\.\d+\.\d+)?-openjdk(?:-headless|-devel)?$'           # RHEL / Fedora packages
+      - '^(?:openjdk|java hotspot\(tm\)) 64-bit server vm$'
+      - '^unofficial openjdk build$'
+      - '^(?:eclipse )?temurin(?:[- ]?\d+)?(?: (?:jdk|jre))?$'
+      - '^adoptium/temurin\d+-binaries(?:jdk|jre)?$'
+      - '^adoptopenjdk(?:[- ]?\d+)?(?:[- ](?:jdk|jre))?(?:[- ]hotspot)?$'
+      - '^(?:amazon )?corretto(?:[-/ ]corretto)?(?:[- ]?\d+)?$'
+      - '^java-\d+-amazon-corretto(?:-headless|-devel)?$'
+      - '^(?:azul )?zulu(?: (?:jdk|jre|openjdk))?(?:[- ]?\d+)?$'
+      - '^zulu builds of openjdk(?: for (?:windows|linux|macos))?$'
+      - '^(?:bell-sw/|bellsoft )?liberica(?: (?:jdk|jre))?(?:[- ]?\d+)?$'
+      - '^sapmachine(?:[- ]?\d+)?(?: (?:jdk|jre))?(?: sapmachine-\d[\d.]*)?$'
+      - '^(?:microsoft build of openjdk|msopenjdk)(?:[- ]?\d+)?$'
+      - '^red hat build of openjdk(?: \d+)?$'
+      - '^(?:oracle )?graalvm(?: (?:for jdk|community edition|enterprise edition|ce|ee))?(?:[- ]?\d+)?$'
+      - '^(?:bundled )?(?:oracle |sun )?java(?:\(tm\))?(?: se)? (?:runtime environment|development kit|jre|jdk)$'
+      - '^java runtime(?: environment)?$'
+      - '^(?:sun )?java platform standard edition(?: sdk)? \((?:jre|j2sdk)\) \((?:j2re|jdk)\)$'
+      - '^(?:jre|jdk)(?:[- ]?\d+(?:u\d*)?)?$'
+    incidents:
+      - name: Java4Shell (HotSpot AVX-512 Base64 decoder heap overflow)
+        year: 2026
+        cves: [CVE-2026-114938]
+        # From the OpenJDK Vulnerability Group advisory of 2026-11-17 and Oracle's November
+        # 2026 Critical Security Patch Update. The AVX-512 decoder arrived in JDK 18 and was
+        # backported to 17.0.6; non-LTS 18-20, 22-24 and 26 are affected and end of life.
+        # Only exploitable on x86-64 CPUs with AVX-512 VBMI; Java 8 and 11 are not affected.
+        # Oracle's Java 8 performance builds (8u511b33-perf) are also affected but can't be
+        # told apart from ordinary 8u builds by version string, so they aren't ranged here.
+        affected:
+          - cves: [CVE-2026-114938]
+            ranges:
+              - {introduced: '17.0.6', fixed: '17.0.21.1'}
+              - {introduced: '18', fixed: '21.0.13.1'}
+              - {introduced: '22', fixed: '25.0.5.1'}
+              - {introduced: '26', fixed: '27.0.1.1'}
+        trackers: []

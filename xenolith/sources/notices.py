@@ -1211,6 +1211,16 @@ def iter_inventories(data_dir: Path):
             continue
 
 
+NAME_VERSION = re.compile(r"(?<![\w.])v?(\d+(?:\.\d+){1,3})(?![\w.])")
+
+
+def version_in_name(name: str) -> str:
+    """The version some notices put in the component name instead of the version
+    column ("SapMachine sapmachine-17.0.17"); empty when there isn't one."""
+    found = NAME_VERSION.findall(name or "")
+    return found[-1] if found else ""
+
+
 def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
     """Match every stored inventory against the watchlist."""
     out = []
@@ -1230,7 +1240,7 @@ def assertions(catalog: Catalog, data_dir: Path) -> tuple[list[dict], dict]:
         for cid, comps in hits.items():
             stats["matches"] += 1
             listed = "; ".join(f"{c['name']} {c['version']}".strip() for c in comps[:6])
-            versions = ", ".join(dict.fromkeys(c["version"] for c in comps if c.get("version")))
+            versions = ", ".join(dict.fromkeys(v for c in comps if (v := c.get("version") or version_in_name(c["name"]))))
             pv = inv.get("version", "")
             evidence = inv.get("evidence", "notices-file")
             where = {"notices-file": f"Listed in {inv['supplier']}'s open source notices",

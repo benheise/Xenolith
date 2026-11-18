@@ -179,7 +179,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
         slim = []
         in_range = 0
         for a in rows:
-            rc = range_check(a["component_version"].split(", "), comp.affected) if a.get("component_version") else None
+            rc = (range_check(a["component_version"].split(", "), comp.affected, comp.version_style)
+                  if a.get("component_version") else None)
             if rc and rc["status"] == "in_range":
                 in_range += 1
                 vulnerable_versions[(a["product_key"], comp.id)] = True

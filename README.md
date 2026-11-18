@@ -4,7 +4,7 @@
 
 **An open census of which commercial products embed which third-party components.**
 
-🔎 **Search it:** https://benheise.github.io/Xenolith/ &nbsp;·&nbsp; 🤝 **Contribute:** [three ways, below](#contribute) &nbsp;·&nbsp; 📄 **Formats:** [CONTRIBUTING.md](CONTRIBUTING.md)
+🔎 **Search it:** https://benheise.github.io/Xenolith/ &nbsp;·&nbsp; 🤝 **Contribute:** [three ways, below](#contribute) &nbsp;·&nbsp; 📄 **Formats:** [CONTRIBUTING.md](CONTRIBUTING.md) &nbsp;·&nbsp; 📰 **Changes:** [CHANGELOG.md](CHANGELOG.md)
 
 ## What this repository is for
 

@@ -42,6 +42,22 @@ def version_key(v: str) -> list[tuple] | None:
     return key
 
 
+def java_version(v: str) -> str:
+    """Java version strings without build and packaging suffixes: 17.0.15+6, 17.0.15_p6,
+    21.0.7+6~us1, 13~24 and jdk-17.0.2 all compare as the release they name. Java 8's
+    1.8.0_402 and 8u402 are left alone (the underscore number is the update)."""
+    s = (v or "").strip().lower()
+    s = re.sub(r"^(?:jdk|jre)[-_ ]?(?=\d)", "", s)
+    s = re.sub(r"\+.*$", "", s)
+    s = re.sub(r"_p\d+.*$", "", s)
+    s = re.sub(r"~.*$", "", s)
+    s = re.sub(r"-(?:b\d+|ea|ga|lts)\b.*$", "", s)
+    return s
+
+
+STYLES = {"java": java_version}
+
+
 def in_range(version: str, rng: dict) -> bool | None:
     vk = version_key(version)
     if vk is None:
@@ -58,13 +74,15 @@ def in_range(version: str, rng: dict) -> bool | None:
     return True
 
 
-def check(versions: Iterable[str], affected: list[dict]) -> dict:
+def check(versions: Iterable[str], affected: list[dict], style: str = "") -> dict:
     """Check component versions against a component's affected entries.
 
     Returns {"status": "in_range" | "outside" | "unknown", "cves": [...], "versions": [...]}
     where versions are the listed versions that fell in range.
     """
     versions = [v.strip() for v in versions if v and v.strip()]
+    if style in STYLES:
+        versions = [STYLES[style](v) for v in versions]
     if not versions or not affected:
         return {"status": "unknown", "cves": [], "versions": []}
     parsed = [v for v in versions if version_key(v) is not None]

@@ -1,15 +1,15 @@
 {
- "built": "2026-11-17T16:29:40Z",
+ "built": "2026-11-18T13:40:23Z",
  "counts": {
-  "assertions": 13549,
-  "products_with_data": 7311,
+  "assertions": 13660,
+  "products_with_data": 7348,
   "inventories": 302,
   "inventory_components": 167739,
   "cpe_linked_clusters": 22,
   "cpe_linked_entries": 24,
   "spine_products": 16129,
-  "spine_only_shown": 4768,
-  "components": 13,
+  "spine_only_shown": 4762,
+  "components": 14,
   "wanted": 86,
   "wanted_fulfilled": 3
  },
@@ -699,6 +699,70 @@
     "not_affected": 2,
     "workaround": 10
    }
+  },
+  {
+   "id": "openjdk",
+   "name": "OpenJDK / HotSpot Java runtime (JDK, JRE)",
+   "upstream": "https://openjdk.org/",
+   "purl": "pkg:github/openjdk/jdk",
+   "cpe": "cpe:2.3:a:oracle:openjdk",
+   "aliases": [
+    "java4shell",
+    "javableed",
+    "java runtime",
+    "jdk",
+    "jre",
+    "hotspot",
+    "temurin",
+    "corretto",
+    "zulu",
+    "sapmachine",
+    "liberica"
+   ],
+   "incidents": [
+    {
+     "name": "Java4Shell (HotSpot AVX-512 Base64 decoder heap overflow)",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-114938"
+     ],
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-114938"
+       ],
+       "ranges": [
+        {
+         "introduced": "17.0.6",
+         "fixed": "17.0.21.1"
+        },
+        {
+         "introduced": "18",
+         "fixed": "21.0.13.1"
+        },
+        {
+         "introduced": "22",
+         "fixed": "25.0.5.1"
+        },
+        {
+         "introduced": "26",
+         "fixed": "27.0.1.1"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 111,
+   "products": 65,
+   "contains": 76,
+   "in_range": 11,
+   "verdicts": {
+    "under_investigation": 35,
+    "present": 74,
+    "workaround": 2
+   }
   }
  ],
  "sources": [
@@ -777,7 +841,7 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 890,
+   "assertions": 962,
    "latest": "2026-11-10",
    "fv": "auto-discovered",
    "dp": [
@@ -791,8 +855,8 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 16,
-   "latest": "2025-10-01",
+   "assertions": 55,
+   "latest": "2026-11-18",
    "fv": "community",
    "dp": [
     "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv#L3"
