@@ -51,7 +51,11 @@ Contributor workflow: [CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom)
      or a literal; x86, x86-64, AArch64), for the watchlist components and for common
      libraries the census does not track (zlib, SQLite, libpng, Electron, Chromium,
      Node.js and others, marked `watchlist: false`). This is what finds a statically
-     linked Brotli or OpenSSL with no package metadata.
+     linked Brotli or OpenSSL with no package metadata, and a Java runtime a product
+     bundles: HotSpot's `libjvm.so` / `jvm.dll` carries its build string ("OpenJDK
+     64-Bit Server VM (17.0.15+6) for linux-amd64 JRE (17.0.15+6)"), reported as
+     `openjdk` with the full Java version. IBM Semeru's OpenJ9 VM is reported
+     separately as `eclipse openj9`, since it isn't HotSpot.
    - **notices files inside the product** (THIRD-PARTY-NOTICES, LICENSES.chromium.html,
      embedded CycloneDX/SPDX files).
 3. **Identify the product** from what the artifact says (PE VERSIONINFO, Info.plist,

@@ -119,6 +119,33 @@ func keys(m map[string]Finding) []string {
 	return out
 }
 
+func TestJavaRuntimes(t *testing.T) {
+	pack, err := LoadEmbedded()
+	if err != nil {
+		t.Fatal(err)
+	}
+	s := New(pack)
+	elf := func(text string) []byte { return append([]byte{0x7f, 'E', 'L', 'F', 0}, []byte(text)...) }
+	jni := "\x00JNI_CreateJavaVM\x00"
+	// build strings as real libjvm.so / jvm.dll files carry them (Temurin, Oracle 8, Zulu's vendor tag)
+	s.Binary(elf(jni+`OpenJDK 64-Bit Server VM (17.0.15+6) for linux-amd64 JRE (17.0.15+6), built on Apr 15 2025 by "admin"`), "a/lib/server/libjvm.so")
+	s.Binary(append([]byte("MZ"), []byte(jni+`OpenJDK 64-Bit Server VM (21.0.7+6-LTS) for windows-amd64 JRE (21.0.7+6-LTS), built on 2025-04-15T00:00:00Z`)...), "b/bin/server/jvm.dll")
+	s.Binary(elf(jni+`Java HotSpot(TM) 64-Bit Server VM (25.401-b10) for linux-amd64 JRE (1.8.0_401-b10), built on Dec 19 2023`), "c/lib/server/libjvm.so")
+	s.Binary(elf(jni+`OpenJDK 64-Bit Server VM (17.0.13+11-LTS) for linux-amd64 JRE (Zulu17.54+33-CA) (17.0.13+11-LTS), built on 2024-10-07`), "d/lib/server/libjvm.so")
+	// the same text in a program that doesn't define the JVM, and OpenJ9 (not HotSpot)
+	s.Binary(elf(`OpenJDK 64-Bit Server VM (21.0.1+12) for linux-amd64 JRE (21.0.1+12), built on x`), "e/bin/logviewer")
+	s.Binary(elf("Eclipse OpenJ9 VM\x00openj9-0.51.0\x0017.0.15+6\x00"), "f/lib/default/libj9vm29.so")
+	got := findings(t, s)
+	for _, want := range []string{"openjdk@17.0.15+6", "openjdk@21.0.7+6-LTS", "openjdk@1.8.0_401-b10", "openjdk@17.0.13+11-LTS", "openj9@0.51.0"} {
+		if _, ok := got[want]; !ok {
+			t.Errorf("missing %s; got %v", want, keys(got))
+		}
+	}
+	if n := count(s.Findings, "openjdk"); n != 4 {
+		t.Errorf("want 4 HotSpot runtimes (not the log viewer or OpenJ9), got %d: %v", n, keys(got))
+	}
+}
+
 func TestEmbeddedPackMatchesCatalog(t *testing.T) {
 	// The embedded copy must be the catalog's file (make sync).
 	catalog, err := os.ReadFile(filepath.Join("..", "..", "..", "catalog", "fingerprints.yaml"))

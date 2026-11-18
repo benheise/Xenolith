@@ -185,6 +185,23 @@ components:
           rewrite: {regex: '^\d+\.\d+\.\d+-experimental-', to: '0.0.0-experimental-'}
           note: version read from the React build vendored alongside (React packages are released in lockstep)
 
+  openjdk:
+    name: openjdk
+    purl: pkg:generic/openjdk@{version}
+    strings:
+      # The HotSpot JVM library (lib/server/libjvm.so, bin/server/jvm.dll, libjvm.dylib)
+      # carries its build string: "OpenJDK 64-Bit Server VM (17.0.15+6) for linux-amd64
+      # JRE (17.0.15+6), built on ...". Checked on Temurin 17.0.15+6 (Linux) and 21.0.7+6
+      # (Windows), SapMachine 21.0.7, Liberica 17.0.15+10 (server and client VMs) and
+      # Ubuntu's openjdk-21 21.0.12.1. The version is the JRE's full version string
+      # (17.0.15+6, 21.0.7+6-LTS), the same as the release file Syft reads, so the two
+      # merge; the census drops the build suffix before its range check. Java 8 reads
+      # 1.8.0_402-b06. A vendor tag in its own parentheses is skipped. IBM Semeru
+      # (OpenJ9, not HotSpot) has no such string; see openj9 below.
+      - contains: " VM ("
+        regex: '(?:OpenJDK|Java HotSpot\(TM\)) (?:64-Bit )?(?:Server|Client|Minimal|Zero) VM \([^)]{1,80}\) for [\w-]{3,40} JRE \((?:[^)]{1,60}\) \()?(?P<v>\d+(?:\.\d+){0,4}(?:_\d+)?(?:[+-][^)\s]{1,60})?)\)(?: \([^)]{0,60}\))?, built on'
+        requires_any: ["JNI_CreateJavaVM"]
+
   # ---- detect-only (watchlist: false) -------------------------------------------------
   # Common native libraries the evaluation corpus showed Syft does not identify in
   # vendor builds (Pillow, psycopg2, Splunk, Wireshark, Electron apps). Each rule was
@@ -395,3 +412,14 @@ components:
       # MIT Kerberos's build brand (Wireshark's krb5_64.dll: "KRB5_BRAND: krb5-1.22.1-final 1.22.1")
       - contains: "KRB5_BRAND: krb5-"
         regex: 'KRB5_BRAND: krb5-(?P<v>\d+\.\d+(?:\.\d+)?)'
+
+  openj9:
+    name: eclipse openj9
+    purl: pkg:generic/openj9@{version}
+    watchlist: false
+    strings:
+      # IBM Semeru's lib/default/libj9vm29.so (17.0.15+6 with OpenJ9 0.51.0): a Java runtime
+      # that isn't HotSpot, reported so a scan says which JVM it found. The version is
+      # OpenJ9's, not Java's.
+      - contains: "Eclipse OpenJ9 VM"
+        regex: 'openj9-(?P<v>\d+\.\d+\.\d+)'

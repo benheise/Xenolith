@@ -2,7 +2,7 @@
  "supplier": "Elastic",
  "product": "Elasticsearch (Linux x86-64 tarball)",
  "version": "8.15.0",
- "source": "https://github.com/elastic/elasticsearch/blob/v8.15.0/build-tools-internal/version.properties (runtime dependency versions; test-only entries left out). The bundled JDK pin there (22.0.1+8) is reported by the JDK as 22.0.1+8-16 and is left out of the comparison",
+ "source": "https://github.com/elastic/elasticsearch/blob/v8.15.0/build-tools-internal/version.properties (runtime dependency versions; test-only entries left out). The bundled JDK pin there (22.0.1+8) is listed as the JDK reports itself, 22.0.1+8-16 (its release file and libjvm build string)",
  "components": [
   {
    "name": "elasticsearch",
@@ -103,6 +103,10 @@
   {
    "name": "super-csv",
    "version": "2.4.0"
+  },
+  {
+   "name": "openjdk",
+   "version": "22.0.1+8-16"
   }
  ]
 }

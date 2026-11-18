@@ -3,6 +3,20 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-18: xenolith-scan recognises bundled Java runtimes
+
+- **Fingerprint.** The shared fingerprint pack (`catalog/fingerprints.yaml`, used by
+  `xenolith-scan` and `python -m xenolith fingerprint`) now finds the HotSpot Java runtime
+  a product bundles by the build string in `libjvm.so` / `jvm.dll` and reports it as
+  `openjdk` with the full Java version, linked to the Java4Shell watchlist entry. Syft's
+  reading of the runtime's `release` file merges into the same component.
+- **Checked on real builds:** Temurin 17.0.15+6 (Linux) and 21.0.7+6 (Windows), SapMachine
+  21.0.7, Liberica 17.0.15+10 and Ubuntu's openjdk-21. IBM Semeru (OpenJ9, not HotSpot) is
+  reported separately as `eclipse openj9` instead of being counted as affected.
+- **Evaluation corpus:** added the Temurin 17.0.15+6 JRE, and Elasticsearch 8.15.0's
+  bundled JDK (22.0.1+8-16) is now part of its ground truth; both are found at the right
+  version.
+
 ## 2026-11-18: Java4Shell pass (CVE-2026-114938)
 
 Java4Shell is a heap overflow in the HotSpot JVM's AVX-512 Base64 decoder, fixed on

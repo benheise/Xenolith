@@ -784,6 +784,31 @@ class FingerprintTest(unittest.TestCase):
         found = self.scan(tree)
         self.assertEqual(found[("react-server-components", "")]["confidence"], 0.9)
 
+    def test_java_runtimes(self):
+        # build strings as real libjvm.so / jvm.dll files carry them (Temurin, SapMachine, Oracle 8),
+        # a vendor tag in its own parentheses, and OpenJ9, which is not HotSpot
+        elf, pe = b"\x7fELF" + b"\x00" * 60, b"MZ" + b"\x00" * 62
+        jni = b"\x00JNI_CreateJavaVM\x00"
+        found = self.scan({
+            "a/lib/server/libjvm.so": elf + jni + b"OpenJDK 64-Bit Server VM (17.0.15+6) for linux-amd64 JRE (17.0.15+6), "
+                                                  b"built on Apr 15 2025 00:00:00 by \"admin\" with gcc 10.3.0\x00",
+            "b/bin/server/jvm.dll": pe + jni + b"OpenJDK 64-Bit Server VM (21.0.7+6-LTS) for windows-amd64 JRE (21.0.7+6-LTS), "
+                                               b"built on 2025-04-15T00:00:00Z by \"admin\" with MS VC++ 17.7 (VS2022)\x00",
+            "c/lib/server/libjvm.so": elf + jni + b"Java HotSpot(TM) 64-Bit Server VM (25.401-b10) for linux-amd64 JRE "
+                                                  b"(1.8.0_401-b10), built on Dec 19 2023 by \"java_re\" with gcc 7.3.0\x00",
+            "d/lib/server/libjvm.so": elf + jni + b"OpenJDK 64-Bit Server VM (17.0.13+11-LTS) for linux-amd64 JRE "
+                                                  b"(Zulu17.54+33-CA) (17.0.13+11-LTS), built on 2024-10-07 by \"zulu_re\"\x00",
+            # the same text in a program that doesn't define the JVM (an hs_err log reader)
+            "e/bin/logviewer": elf + b"OpenJDK 64-Bit Server VM (21.0.1+12) for linux-amd64 JRE (21.0.1+12), built on x\x00",
+            "f/lib/default/libj9vm29.so": elf + b"Eclipse OpenJ9 VM\x00openj9-0.51.0\x0017.0.15+6\x00",
+        })
+        self.assertEqual({k for k in found if k[0] in ("openjdk", "openj9")},
+                         {("openjdk", "17.0.15+6"), ("openjdk", "21.0.7+6-LTS"), ("openjdk", "1.8.0_401-b10"),
+                          ("openjdk", "17.0.13+11-LTS"), ("openj9", "0.51.0")})
+        cat = catalog.load()
+        self.assertEqual(cat.match_component(found[("openjdk", "17.0.15+6")]["name"], "17.0.15+6"), "openjdk")
+        self.assertIsNone(cat.match_component(found[("openj9", "0.51.0")]["name"], "0.51.0"))
+
     def test_names_match_watchlist(self):
         cat = catalog.load()
         samples = {"brotli": "1.1.0", "xz": "5.4.5", "log4j-1": "1.2.17", "log4j-core": "2.14.1"}

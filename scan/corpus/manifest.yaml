@@ -193,6 +193,14 @@ artifacts:
     version: "4.4.19"
     inventory: scan/corpus/truth/wireshark-4.4.19-windows-x64.json
     note: "Cabinet members are named by File-table keys; the MSI tables restore the installed paths (0 components before, 55 after). Needs 7-Zip on PATH. The MSI does not carry the Npcap installer, so libpcap is expected missing."
+  - artifact: https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_x64_linux_hotspot_17.0.15_6.tar.gz
+    found_at: https://github.com/adoptium/temurin17-binaries/releases/tag/jdk-17.0.15%2B6
+    sha256: aaed740c38ff1e87a4b920f9deb165d419d9fdf23f423740d2ecb280eeab9647
+    supplier: Eclipse Adoptium
+    product: Eclipse Temurin JRE (Linux x64)
+    version: "17.0.15+6"
+    inventory: scan/corpus/truth/temurin-jre-17.0.15.json
+    note: "A Java runtime as products bundle it (Java4Shell range). The openjdk fingerprint reads HotSpot's build string in lib/server/libjvm.so and merges with Syft's reading of the release file. GIFLIB and libjpeg are statically linked without version strings: a measured gap."
   - artifact: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.15.0-linux-x86_64.tar.gz
     found_at: https://www.elastic.co/downloads/past-releases/elasticsearch-8-15-0
     sha256: d4179fe2c37b2c7ddc13d8e1f8e61e3a0fa613861310ee5f54db08784b415166
