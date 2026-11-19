@@ -3,6 +3,41 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-19: Java4Shell recheck
+
+Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 121 new statements,
+each read on the vendor's own page.
+
+- **No status changes** on existing rows. Cisco is still at v1.2 (fixed releases TBD), PaperCut's
+  fixed release is still planned for the week of 23 November, the Keycloak Operator image is
+  unchanged, Barracuda still has Data Inspector and WAF-as-a-Service / Active DDoS Protection
+  under investigation, Atlassian's patches still wait on Temurin builds, Elastic's fixed releases
+  (8.19.26, 9.4.10, 9.5.7, 9.6.0) are not out yet, and Splunk names no new products.
+- **New vendors:**
+  - BellSoft: Liberica JDK fixed in 17.0.21.1, 21.0.13.1, 25.0.5.1 and 27.0.1.1.
+  - Okta: Access Gateway (2026.45.1), LDAP Agent (5.26.3), On-Premises Provisioning Agent (3.3.4)
+    and RADIUS Agent (2.30.0) fixed; Auth0 not affected.
+  - Citrix (CTX697367, a script-drawn page read in the browser): Cloudpaging Server 9.9 and later
+    runs on JRE 17 and needs the Azul Zulu JRE update; Linux VDA, Analytics, XenMobile Server,
+    Secure Access, App Layering and UniconOS Management under investigation; 15 products,
+    including NetScaler ADC and Gateway, not affected.
+  - Fortinet (FG-IR-26-278): 47 products under investigation, 28 confirmed not impacted.
+  - Google: GCP-2026-082 (Distroless Java, Cloud Buildpacks, Dataproc, Dataflow, App Engine
+    standard and Cloud Run on interim mitigations; Container-Optimized OS has no Java; GKE control
+    plane not affected) and the Apigee bulletin (Apigee X fixed in 1-18-0-apigee-10, hybrid in
+    1.17.4; OPDK 4.54 depends on the JDK installed; Edge Public Cloud, Microgateway, Integrated
+    Portals and API Gateway not affected).
+  - Quarkus: the framework runs on the JDK you provide; its Mandrel and GraalVM CE builder images
+    ship with the -XX:-UseBASE64Intrinsics workaround.
+- Siemens SSA-272816 (Industrial Edge Management) is already in through Siemens' CSAF feed.
+- Exploitation unchanged: probing and exploit attempts, no confirmed compromise, not in CISA KEV.
+- Left out: Esri's ArcGIS post (HTTP 403 to automated clients); SapMachine, whose release data
+  lists 17.0.21.1, 21.0.13.1, 25.0.5.1 and 27.0.1.1 builds, but no SapMachine page naming the CVE
+  was found; and claims seen only in news or social media (Epic Systems not affected, GraalVM
+  Native Image 25.1 and later affected with a fix due in 25.6, Omnissa Horizon, UniFi).
+- Still silent: Ping Identity, JFrog (product statement), Broadcom, IBM, Oracle's own products,
+  SAP and JetBrains. Sophos' page refused the connection, so its rows stay at advisory v3.
+
 ## 2026-11-19: second criteria pass; 41 → 47 components, 12 more incidents on existing ones
 
 The rest of the backlog was checked against the criteria, 17 months of oss-security (July 2025

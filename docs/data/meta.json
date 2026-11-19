@@ -1,14 +1,14 @@
 {
- "built": "2026-11-19T21:36:43Z",
+ "built": "2026-11-19T22:50:41Z",
  "counts": {
-  "assertions": 17774,
-  "products_with_data": 8232,
+  "assertions": 17895,
+  "products_with_data": 8316,
   "inventories": 393,
   "inventory_components": 234558,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4711,
+  "spine_only_shown": 4704,
   "components": 47,
   "wanted": 83,
   "wanted_fulfilled": 6
@@ -848,19 +848,19 @@
      "trackers": []
     }
    ],
-   "assertions": 303,
-   "products": 240,
-   "contains": 202,
+   "assertions": 424,
+   "products": 361,
+   "contains": 217,
    "in_range": 34,
    "verdicts": {
-    "fixed": 47,
-    "runtime_dependent": 9,
-    "workaround": 26,
+    "fixed": 54,
+    "runtime_dependent": 12,
+    "workaround": 34,
     "affected": 29,
-    "under_investigation": 3,
-    "not_affected": 65,
+    "under_investigation": 56,
+    "not_affected": 113,
     "present": 100,
-    "absent": 24
+    "absent": 26
    }
   },
   {
@@ -2958,7 +2958,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 203,
+   "assertions": 324,
    "latest": "2026-11-19",
    "fv": "community",
    "dp": [
