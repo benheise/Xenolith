@@ -1,14 +1,14 @@
 {
- "built": "2026-11-19T21:12:39Z",
+ "built": "2026-11-19T21:15:23Z",
  "counts": {
-  "assertions": 15728,
-  "products_with_data": 7663,
+  "assertions": 16431,
+  "products_with_data": 7878,
   "inventories": 393,
   "inventory_components": 234558,
-  "cpe_linked_clusters": 22,
-  "cpe_linked_entries": 24,
+  "cpe_linked_clusters": 23,
+  "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4730,
+  "spine_only_shown": 4716,
   "components": 41,
   "wanted": 83,
   "wanted_fulfilled": 6
@@ -1454,12 +1454,15 @@
      "trackers": []
     }
    ],
-   "assertions": 156,
-   "products": 57,
-   "contains": 156,
+   "assertions": 217,
+   "products": 103,
+   "contains": 217,
    "in_range": 105,
    "verdicts": {
-    "present": 156
+    "workaround": 5,
+    "present": 156,
+    "fixed": 53,
+    "affected": 3
    }
   },
   {
@@ -1521,12 +1524,16 @@
      "trackers": []
     }
    ],
-   "assertions": 112,
-   "products": 36,
-   "contains": 112,
+   "assertions": 261,
+   "products": 94,
+   "contains": 254,
    "in_range": 71,
    "verdicts": {
-    "present": 112
+    "workaround": 9,
+    "present": 112,
+    "fixed": 129,
+    "affected": 4,
+    "not_affected": 7
    }
   },
   {
@@ -1563,12 +1570,17 @@
      "trackers": []
     }
    ],
-   "assertions": 44,
-   "products": 9,
-   "contains": 44,
+   "assertions": 87,
+   "products": 52,
+   "contains": 79,
    "in_range": 34,
    "verdicts": {
-    "present": 44
+    "present": 44,
+    "fixed": 33,
+    "absent": 1,
+    "affected": 1,
+    "not_affected": 7,
+    "workaround": 1
    }
   },
   {
@@ -1606,12 +1618,15 @@
      "trackers": []
     }
    ],
-   "assertions": 22,
-   "products": 12,
-   "contains": 22,
+   "assertions": 30,
+   "products": 20,
+   "contains": 27,
    "in_range": 4,
    "verdicts": {
-    "present": 22
+    "present": 22,
+    "workaround": 4,
+    "not_affected": 3,
+    "fixed": 1
    }
   },
   {
@@ -1645,12 +1660,15 @@
      "trackers": []
     }
    ],
-   "assertions": 58,
-   "products": 24,
-   "contains": 58,
+   "assertions": 68,
+   "products": 34,
+   "contains": 63,
    "in_range": 3,
    "verdicts": {
-    "present": 58
+    "present": 58,
+    "fixed": 4,
+    "affected": 1,
+    "not_affected": 5
    }
   },
   {
@@ -1692,12 +1710,15 @@
      "trackers": []
     }
    ],
-   "assertions": 12,
-   "products": 7,
-   "contains": 12,
+   "assertions": 57,
+   "products": 52,
+   "contains": 56,
    "in_range": 6,
    "verdicts": {
-    "present": 12
+    "present": 12,
+    "fixed": 43,
+    "not_affected": 1,
+    "affected": 1
    }
   },
   {
@@ -1733,12 +1754,15 @@
      "trackers": []
     }
    ],
-   "assertions": 25,
-   "products": 14,
-   "contains": 25,
+   "assertions": 51,
+   "products": 29,
+   "contains": 39,
    "in_range": 12,
    "verdicts": {
-    "present": 25
+    "fixed": 12,
+    "present": 25,
+    "affected": 2,
+    "not_affected": 12
    }
   },
   {
@@ -1772,12 +1796,15 @@
      "trackers": []
     }
    ],
-   "assertions": 1,
-   "products": 1,
-   "contains": 1,
+   "assertions": 28,
+   "products": 28,
+   "contains": 27,
    "in_range": 1,
    "verdicts": {
-    "present": 1
+    "present": 1,
+    "fixed": 22,
+    "workaround": 4,
+    "not_affected": 1
    }
   },
   {
@@ -1811,12 +1838,15 @@
      "trackers": []
     }
    ],
-   "assertions": 77,
-   "products": 43,
-   "contains": 77,
+   "assertions": 129,
+   "products": 94,
+   "contains": 121,
    "in_range": 34,
    "verdicts": {
-    "present": 77
+    "present": 77,
+    "affected": 18,
+    "not_affected": 8,
+    "fixed": 26
    }
   },
   {
@@ -1882,12 +1912,16 @@
      "trackers": []
     }
    ],
-   "assertions": 92,
-   "products": 57,
-   "contains": 92,
+   "assertions": 165,
+   "products": 125,
+   "contains": 161,
    "in_range": 36,
    "verdicts": {
-    "present": 92
+    "present": 92,
+    "fixed": 47,
+    "workaround": 12,
+    "affected": 10,
+    "not_affected": 4
    }
   },
   {
@@ -1925,12 +1959,15 @@
      "trackers": []
     }
    ],
-   "assertions": 76,
-   "products": 40,
-   "contains": 76,
+   "assertions": 149,
+   "products": 113,
+   "contains": 146,
    "in_range": 24,
    "verdicts": {
-    "present": 76
+    "present": 76,
+    "fixed": 64,
+    "affected": 6,
+    "not_affected": 3
    }
   },
   {
@@ -1964,12 +2001,15 @@
      "trackers": []
     }
    ],
-   "assertions": 37,
-   "products": 24,
-   "contains": 37,
+   "assertions": 74,
+   "products": 61,
+   "contains": 57,
    "in_range": 13,
    "verdicts": {
-    "present": 37
+    "present": 37,
+    "not_affected": 17,
+    "affected": 9,
+    "fixed": 11
    }
   },
   {
@@ -2003,12 +2043,15 @@
      "trackers": []
     }
    ],
-   "assertions": 24,
-   "products": 14,
-   "contains": 24,
+   "assertions": 54,
+   "products": 43,
+   "contains": 49,
    "in_range": 17,
    "verdicts": {
-    "present": 24
+    "present": 24,
+    "affected": 13,
+    "not_affected": 5,
+    "fixed": 12
    }
   },
   {
@@ -2042,12 +2085,15 @@
      "trackers": []
     }
    ],
-   "assertions": 24,
-   "products": 15,
-   "contains": 24,
+   "assertions": 40,
+   "products": 31,
+   "contains": 34,
    "in_range": 0,
    "verdicts": {
-    "present": 24
+    "present": 24,
+    "not_affected": 6,
+    "fixed": 3,
+    "affected": 7
    }
   },
   {
@@ -2101,12 +2147,15 @@
      "trackers": []
     }
    ],
-   "assertions": 40,
-   "products": 22,
-   "contains": 40,
+   "assertions": 75,
+   "products": 57,
+   "contains": 68,
    "in_range": 17,
    "verdicts": {
-    "present": 40
+    "present": 40,
+    "fixed": 21,
+    "workaround": 7,
+    "not_affected": 7
    }
   },
   {
@@ -2140,12 +2189,15 @@
      "trackers": []
     }
    ],
-   "assertions": 24,
-   "products": 11,
-   "contains": 24,
+   "assertions": 31,
+   "products": 18,
+   "contains": 26,
    "in_range": 18,
    "verdicts": {
-    "present": 24
+    "present": 24,
+    "fixed": 2,
+    "absent": 1,
+    "not_affected": 4
    }
   },
   {
@@ -2179,12 +2231,13 @@
      "trackers": []
     }
    ],
-   "assertions": 37,
-   "products": 20,
+   "assertions": 48,
+   "products": 31,
    "contains": 37,
    "in_range": 13,
    "verdicts": {
-    "present": 37
+    "present": 37,
+    "not_affected": 11
    }
   }
  ],
@@ -2238,18 +2291,19 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 1722,
+   "assertions": 2425,
    "latest": "2026-11-19",
    "publishers": {
-    "Red Hat Product Security": 842,
-    "Siemens ProductCERT": 419,
-    "CISA": 249,
-    "Cisco": 56,
-    "Microsoft Security Response Center": 55,
-    "ABB PSIRT": 49,
-    "Schneider Electric CPCERT": 29,
+    "Red Hat Product Security": 1427,
+    "Siemens ProductCERT": 451,
+    "CISA": 297,
+    "Microsoft Security Response Center": 82,
+    "Cisco": 60,
+    "ABB PSIRT": 53,
+    "Schneider Electric CPCERT": 31,
     "SICK PSIRT": 20,
     "Open-Xchange GmbH": 2,
+    "Stackable GmbH": 1,
     "Intevation GmbH": 1
    },
    "fv": "hand-listed",

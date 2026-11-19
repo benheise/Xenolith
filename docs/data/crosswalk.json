@@ -203,6 +203,16 @@
 ]
 },
 {
+"key": "red-hat/jboss-operations-network-3",
+"keys": [
+"red-hat/jboss-operations-network-3",
+"red-hat/jboss-operations-network-3-3"
+],
+"cpes": [
+"redhat:jboss_operations_network"
+]
+},
+{
 "key": "sailpoint/identityiq",
 "keys": [
 "sailpoint-technologies/identityiq",
