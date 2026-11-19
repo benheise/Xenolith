@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T00:11:41Z",
+ "built": "2026-11-19T00:14:04Z",
  "counts": {
   "assertions": 14741,
   "products_with_data": 7622,
@@ -761,13 +761,13 @@
    "contains": 154,
    "in_range": 33,
    "verdicts": {
-    "fixed": 15,
+    "fixed": 17,
     "runtime_dependent": 8,
     "affected": 19,
     "under_investigation": 37,
     "present": 99,
     "not_affected": 24,
-    "workaround": 21,
+    "workaround": 19,
     "absent": 16
    }
   },
