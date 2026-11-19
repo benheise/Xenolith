@@ -170,6 +170,23 @@ python -m xenolith prepare scan.cdx.json \
 
 ## Other changes
 
+**What belongs on the watchlist.** The census stores every component a vendor lists; the watchlist is the subset that gets version-range checks and vendor statements. A component belongs on it when products commonly bundle it and it has a critical or high-severity bug reachable over the network that meets at least one of these:
+
+- it is exploited in the wild (CISA KEV or another credible report);
+- it has a name or a public exploit or proof of concept;
+- it has set off a wave of vendor advisories, with several unrelated vendors publishing statements about it.
+
+CISA KEV is one signal among these, never the filter: Java4Shell, NGINX2Root and Squidbleed were added before any KEV listing. Look for candidates in oss-security, critical GitHub advisories, vendor advisory waves and KEV, and rank them by how many products in the stored inventories list the component.
+
+Four limits apply however serious the bug is:
+
+- **A version check has to mean something.** If fixes mostly ship as backports or depend on how the product was built (the Linux kernel, polkit, the musl-only OpenSSH bug), a version range would flag nearly every product, so leave it out.
+- **One CVE, one component.** A protocol bug shared by many implementations (HTTP/2 Rapid Reset) doesn't fit.
+- **The name has to match cleanly.** If another package shares the name and its version numbers overlap (Axis 1 and Axis2, the MongoDB server and its drivers), match only unambiguous names or leave it out.
+- **The bug has to matter to someone who runs the product.** Bugs that need the embedding application to misuse the library in an unusual way (most prototype-pollution findings) are low priority; say so in the incident `note` when a condition applies.
+
+The census doesn't check every stored component against every CVE. That would bury vendor statements under scanner noise; use a scanner for that.
+
 **Add a component to the watchlist.** Add an entry to [`catalog/components.yaml`](catalog/components.yaml) with `id`, `name`, the incident's CVEs, the `affected:` ranges copied from the CVE record (`last_affected` for a line with no fix), and `notices_names` patterns for how the component appears in notices. Maven and Go coordinates need their own patterns, and an ambiguous name can be tied to a version pattern (`{pattern, version}`), as for Struts 2 versus Struts 1. A short `note` on an incident is shown on the component's page. A CVE can belong to one component only, so a protocol bug shared by many implementations (HTTP/2 Rapid Reset) doesn't fit. Every stored notices document and SBOM is re-matched on the next build, and the CSAF crawl picks up the new CVEs from advisories it has already read.
 
 **Add or improve a fingerprint.** [`catalog/fingerprints.yaml`](catalog/fingerprints.yaml) tells `python -m xenolith fingerprint` and `xenolith-scan` (which embeds a copy; `make -C scan sync` refreshes it and a Go test checks it) how to recognise each watchlist component: version strings in executables, functions a library defines, the constant its version function returns, static data only it contains, and package metadata paths inside archives. Check a new rule against a real build of the component and add a synthetic sample to `FingerprintTest` in `tests/test_pipeline.py`; the test suite also checks that every fingerprint reports a name the watchlist matches.

@@ -501,6 +501,53 @@ class WatchlistAdditionsTest(unittest.TestCase):
         comp = cat.components["axis1"]
         self.assertEqual(versions.check(["1.4"], comp.affected, comp.version_style)["status"], "in_range")
 
+    def test_criteria_pass_components_match_only_their_own_names(self):
+        from xenolith import versions
+        cat = catalog.load()
+        cases = [("zlib", "1.2.11", "zlib"), ("libexpat", "2.2.5", "expat"), ("freetype2", "2.9.1", "freetype"),
+                 ("libssh", "0.7.3", "libssh"), ("libssh2", "1.9.0", None), ("rsync", "3.2.7", "rsync"),
+                 ("Samba", "3.5.1", "samba"), ("samba", "0.1.0", None), ("Dnsmasq", "2.80", "dnsmasq"),
+                 ("libvpx", "1.6.0", "libvpx"), ("org.yaml:snakeyaml", "1.33", "snakeyaml"), ("SnakeYAML", "2.2", "snakeyaml"),
+                 ("com.fasterxml.jackson.core:jackson-databind", "2.9.6", "jackson-databind"),
+                 ("Jackson Databind", "2.8.9", "jackson-databind"), ("jackson-databind-nullable", "0.2.6", None),
+                 ("tools.jackson.core:jackson-databind", "3.0.0", None), ("jackson-core", "2.9.6", None),
+                 ("Apache Commons Collections", "3.2.1", "commons-collections"),
+                 ("org.apache.commons:commons-collections4", "4.0", "commons-collections"),
+                 ("XStream", "1.4.7", "xstream"), ("com.thoughtworks.xstream:xstream", "1.4.19", "xstream"),
+                 ("h2", "1.4.197", "h2"), ("h2", "0.4.13", None), ("H2 Database Engine", "2.1.214", "h2"),
+                 ("Apache Commons Configuration", "2.7", "commons-configuration"),
+                 ("PostgreSQL JDBC Driver (pgjdbc)", "42.2.10", "pgjdbc"), ("postgresql", "42.7.2", "pgjdbc"),
+                 ("postgresql", "17.11", None), ("PostgreSQL", "9.6.10", None),
+                 ("org.apache.tika:tika-core", "2.9.1", "tika"), ("Apache Tika", "1.16", "tika"),
+                 ("org.apache.tika:tika-langdetect-tika", "3.2.3", None),
+                 ("Apache Commons FileUpload", "1.3.2", "commons-fileupload"), ("jQuery FileUpload", "9.0", None),
+                 ("angular-material-fileupload", "3.0.2", None), ("redis", "6.2.6", None), ("bash", "4.2.46", None)]
+        for name, version, want in cases:
+            self.assertEqual(cat.match_component(name, version), want, f"{name} {version}")
+
+        def status(cid, version):
+            comp = cat.components[cid]
+            return versions.check([version], comp.affected, comp.version_style)["status"]
+        expected = {("zlib", "1.2.12"): "in_range", ("zlib", "1.2.13"): "outside", ("expat", "2.4.4"): "in_range",
+                    ("expat", "2.4.8"): "in_range", ("expat", "2.4.9"): "outside", ("freetype", "2.13.0"): "in_range",
+                    ("freetype", "2.13.1"): "outside", ("libssh", "0.5.4"): "outside", ("libssh", "0.7.3"): "in_range",
+                    ("libssh", "0.8.4"): "outside", ("rsync", "3.1.3"): "outside", ("rsync", "3.3.0"): "in_range",
+                    ("rsync", "3.4.0"): "outside", ("samba", "3.0.33"): "outside", ("samba", "4.2.14"): "in_range",
+                    ("samba", "4.19.8"): "outside", ("dnsmasq", "2.81"): "in_range", ("dnsmasq", "2.85"): "outside",
+                    ("snakeyaml", "1.33"): "in_range", ("snakeyaml", "2.0"): "outside",
+                    ("jackson-databind", "2.8.9"): "in_range",        # past CVE-2017-7525, still in CVE-2020-8840
+                    ("jackson-databind", "2.9.10.3"): "outside", ("jackson-databind", "2.13.4.2"): "outside",
+                    ("commons-collections", "3.2.1"): "in_range", ("commons-collections", "3.2.2"): "outside",
+                    ("commons-collections", "4.0"): "in_range", ("commons-collections", "4.4"): "outside",
+                    ("xstream", "1.4.7"): "in_range", ("xstream", "1.4.20"): "outside", ("h2", "1.4.197"): "in_range",
+                    ("h2", "2.1.214"): "outside", ("commons-configuration", "1.10"): "outside",
+                    ("commons-configuration", "2.7"): "in_range", ("commons-configuration", "2.10.1"): "outside",
+                    ("pgjdbc", "42.2.10"): "in_range", ("pgjdbc", "42.7.2"): "outside", ("pgjdbc", "42.4.3"): "in_range",
+                    ("tika", "2.9.1"): "in_range", ("tika", "3.2.3"): "outside", ("tika", "1.12"): "outside",
+                    ("commons-fileupload", "1.3.2"): "in_range", ("commons-fileupload", "1.5"): "outside"}
+        for (cid, version), want in expected.items():
+            self.assertEqual(status(cid, version), want, f"{cid} {version}")
+
     def test_every_incident_is_sourced_and_ranged(self):
         cat = catalog.load()
         for comp in cat.components.values():

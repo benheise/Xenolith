@@ -3,6 +3,55 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-19: watchlist criteria written down; 24 → 41 components
+
+The watchlist was never meant to be limited to CISA KEV entries, but recent passes looked for
+new components only there. [CONTRIBUTING.md](CONTRIBUTING.md#other-changes) now states the
+criteria: commonly bundled, a critical or high remote bug, and exploited, named or with a public
+exploit, or the cause of a vendor advisory wave. Four limits stay (a version check has to mean
+something, one CVE per component, a clean name match, and a bug that matters to whoever runs
+the product).
+
+A first pass against those criteria ranked candidates by how many stored product lists name
+them and swept the 840 most-listed packages against OSV. Seventeen components were added, with
+ranges from each CVE record, the project's advisory or the reviewed GitHub advisory:
+
+| Component | Incident | Products listing it | Statements in range |
+|---|---|---|---|
+| zlib | CVE-2022-37434 | 57 | 105 |
+| Expat | CVE-2022-25235, -25236, -25315; CVE-2022-40674 | 36 | 71 |
+| jackson-databind | CVE-2017-7525, CVE-2020-8840 | 57 | 36 |
+| SnakeYAML | CVE-2022-1471 | 43 | 34 |
+| FreeType | CVE-2025-27363 (KEV) | 9 | 34 |
+| Commons Collections | CVE-2015-7501 | 40 | 24 |
+| Apache Tika | CVE-2025-66516 | 11 | 18 |
+| H2 | CVE-2021-42392 | 14 | 17 |
+| pgjdbc | CVE-2024-1597 | 22 | 17 |
+| XStream | CVE-2021-39144 (KEV) | 24 | 13 |
+| Commons FileUpload | CVE-2016-1000031 | 20 | 13 |
+| dnsmasq | DNSpooq, CVE-2020-25681 and -25682 | 14 | 12 |
+| Samba | SambaCry, CVE-2017-7494 (KEV) | 7 | 6 |
+| libssh | CVE-2018-10933 | 12 | 4 |
+| rsync | CVE-2024-12084 | 24 | 3 |
+| libvpx | CVE-2023-5217 (KEV) | 1 | 1 |
+| Commons Configuration | CVE-2022-33980 | 15 | 0 |
+
+"In range" means the listed version falls in the affected range. Most of these bugs need a
+condition in the product (noted on each component's page), so it is a lead to check, not a
+finding. The zlib, Expat and libssh fingerprints now link to the watchlist.
+
+Considered and left out, with the limit that applied:
+
+- Bash (Shellshock), libxml2: fixes ship as distribution backports, so listed versions mislead.
+- Redis (RediShell), MongoDB (MongoBleed): the server shares its name with client libraries
+  whose version numbers overlap.
+- lodash, minimist, axios and other prototype-pollution findings: they depend on how the
+  embedding application uses the library.
+- SQLite (Magellan): needs attacker-controlled SQL, which few embedders allow.
+- Chromium, Electron, Node.js: a steady stream of exploited bugs; any pinned range goes stale.
+- Not yet checked against the criteria: net-snmp (CVE-2025-68615), Apache MINA, Commons
+  BeanUtils, Velocity, Groovy, Xalan, BusyBox.
+
 ## 2026-11-19 (evening): second recheck
 
 - **Java4Shell:**

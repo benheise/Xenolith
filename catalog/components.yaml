@@ -659,3 +659,370 @@ components:
             ranges:
               - {introduced: '0', last_affected: '1.4'}
         trackers: []
+
+  # ---- Added 2026-11-19 under the watchlist criteria in CONTRIBUTING.md ("What belongs on the
+  # watchlist"): commonly bundled, critical or high remote bug, and exploited, named / public
+  # exploit, or a vendor advisory wave. Java ranges are from the reviewed GitHub advisory for
+  # each CVE (read through OSV); the others from the CVE record or the project's own advisory.
+
+  - id: zlib
+    name: zlib
+    upstream: https://zlib.net/
+    purl: pkg:generic/zlib
+    cpe: cpe:2.3:a:zlib:zlib
+    aliases: [libz, zlib1]
+    notices_names:
+      - {pattern: '^(?:zlib|libz)$', version: '^v?1\.'}   # the Ruby and Python "zlib" packages use other numbering
+    incidents:
+      - name: inflate() gzip header extra-field overflow
+        year: 2022
+        cves: [CVE-2022-37434]
+        note: >-
+          Only applications that call inflateGetHeader are affected. It set off advisories from
+          most vendors that bundle zlib; proof-of-concept code is public.
+        affected:   # CVE record: "zlib through 1.2.12"; fixed in 1.2.13
+          - cves: [CVE-2022-37434]
+            ranges:
+              - {introduced: '0', fixed: '1.2.13'}
+        trackers: []
+
+  - id: expat
+    name: Expat (libexpat)
+    upstream: https://libexpat.github.io/
+    purl: pkg:generic/expat
+    cpe: cpe:2.3:a:libexpat_project:libexpat
+    aliases: [libexpat, expat XML parser]
+    notices_names:
+      - '^(?:lib)?expat$'
+    incidents:
+      - name: Expat 2.4.5 parser memory corruption
+        year: 2022
+        cves: [CVE-2022-25235, CVE-2022-25236, CVE-2022-25315]
+        note: Reachable by parsing untrusted XML. Triggered advisories across vendors that bundle Expat.
+        affected:   # CVE records: "before 2.4.5"
+          - cves: [CVE-2022-25235, CVE-2022-25236, CVE-2022-25315]
+            ranges:
+              - {introduced: '0', fixed: '2.4.5'}
+        trackers: []
+      - name: doContent use-after-free
+        year: 2022
+        cves: [CVE-2022-40674]
+        affected:   # CVE record: "before 2.4.9"
+          - cves: [CVE-2022-40674]
+            ranges:
+              - {introduced: '0', fixed: '2.4.9'}
+        trackers: []
+
+  - id: freetype
+    name: FreeType
+    upstream: https://freetype.org/
+    purl: pkg:generic/freetype
+    cpe: cpe:2.3:a:freetype:freetype
+    aliases: [freetype2, libfreetype]
+    notices_names:
+      - '^(?:lib)?freetype2?$'
+    incidents:
+      - name: Variable-font subglyph out-of-bounds write
+        year: 2025
+        cves: [CVE-2025-27363]
+        note: Exploited in the wild; in CISA KEV since May 2025. Triggered by parsing a crafted font.
+        affected:   # CNA record (Facebook): 2.13.0 and below
+          - cves: [CVE-2025-27363]
+            ranges:
+              - {introduced: '0', last_affected: '2.13.0'}
+        trackers: []
+
+  - id: libssh
+    name: libssh
+    upstream: https://www.libssh.org/
+    purl: pkg:generic/libssh
+    cpe: cpe:2.3:a:libssh:libssh
+    notices_names:
+      - '^libssh$'          # libssh2 is a different library
+    incidents:
+      - name: Server authentication bypass
+        year: 2018
+        cves: [CVE-2018-10933]
+        note: Only products that use libssh as an SSH server are exposed; clients are not. Public exploits exist.
+        affected:   # libssh.org advisory: 0.6 and later; fixed in 0.7.6 and 0.8.4
+          - cves: [CVE-2018-10933]
+            ranges:
+              - {introduced: '0.6.0', fixed: '0.7.6'}
+              - {introduced: '0.8.0', fixed: '0.8.4'}
+        trackers: []
+
+  - id: rsync
+    name: rsync
+    upstream: https://rsync.samba.org/
+    purl: pkg:generic/rsync
+    cpe: cpe:2.3:a:samba:rsync
+    notices_names:
+      - '^rsync$'
+    incidents:
+      - name: Daemon checksum-length heap overflow
+        year: 2025
+        cves: [CVE-2024-12084]
+        note: >-
+          Reachable by anyone who can connect to an rsync daemon with anonymous read access. One
+          of six rsync bugs disclosed together in January 2025; fixed in 3.4.0.
+        affected:   # CNA record (Red Hat): 3.2.7 and 3.3.0
+          - cves: [CVE-2024-12084]
+            ranges:
+              - {introduced: '3.2.7', fixed: '3.4.0'}
+        trackers: []
+
+  - id: samba
+    name: Samba
+    upstream: https://www.samba.org/
+    purl: pkg:generic/samba
+    cpe: cpe:2.3:a:samba:samba
+    notices_names:
+      - {pattern: '^samba$', version: '^[34]\.'}
+    incidents:
+      - name: SambaCry
+        year: 2017
+        cves: [CVE-2017-7494]
+        note: Needs a share the attacker can write to. Exploited in the wild; in CISA KEV.
+        affected:   # CVE record: since 3.5.0, before 4.6.4, 4.5.10 and 4.4.14
+          - cves: [CVE-2017-7494]
+            ranges:
+              - {introduced: '3.5.0', fixed: '4.4.14'}
+              - {introduced: '4.5.0', fixed: '4.5.10'}
+              - {introduced: '4.6.0', fixed: '4.6.4'}
+        trackers: []
+
+  - id: dnsmasq
+    name: dnsmasq
+    upstream: https://thekelleys.org.uk/dnsmasq/doc.html
+    purl: pkg:generic/dnsmasq
+    cpe: cpe:2.3:a:thekelleys:dnsmasq
+    notices_names:
+      - '^dnsmasq$'
+    incidents:
+      - name: DNSpooq
+        year: 2021
+        cves: [CVE-2020-25681, CVE-2020-25682]
+        note: >-
+          The two memory-corruption bugs of the DNSpooq set; both need DNSSEC validation turned
+          on. Proof-of-concept code is public.
+        affected:   # CVE records: before 2.83
+          - cves: [CVE-2020-25681, CVE-2020-25682]
+            ranges:
+              - {introduced: '0', fixed: '2.83'}
+        trackers: []
+
+  - id: libvpx
+    name: libvpx
+    upstream: https://chromium.googlesource.com/webm/libvpx
+    purl: pkg:generic/libvpx
+    cpe: cpe:2.3:a:webmproject:libvpx
+    notices_names:
+      - '^libvpx$'
+    incidents:
+      - name: VP8 encoder heap overflow
+        year: 2023
+        cves: [CVE-2023-5217]
+        note: Exploited in the wild through browsers; in CISA KEV. Bundled the same way as libwebp.
+        affected:   # CNA record (Chrome): libvpx before 1.13.1
+          - cves: [CVE-2023-5217]
+            ranges:
+              - {introduced: '0', fixed: '1.13.1'}
+        trackers: []
+
+  - id: snakeyaml
+    name: SnakeYAML
+    upstream: https://bitbucket.org/snakeyaml/snakeyaml
+    purl: pkg:maven/org.yaml/snakeyaml
+    cpe: cpe:2.3:a:snakeyaml_project:snakeyaml
+    notices_names:
+      - '^(?:org\.yaml:)?snakeyaml$'
+    incidents:
+      - name: Constructor deserialization RCE
+        year: 2022
+        cves: [CVE-2022-1471]
+        note: >-
+          Exploitable when the product parses untrusted YAML with the default Constructor.
+          Public exploits exist, and it triggered advisories across Java vendors.
+        affected:   # GHSA-mjmj-j48q-9wg2: before 2.0
+          - cves: [CVE-2022-1471]
+            ranges:
+              - {introduced: '0', fixed: '2.0'}
+        trackers: []
+
+  - id: jackson-databind
+    name: jackson-databind
+    upstream: https://github.com/FasterXML/jackson-databind
+    purl: pkg:maven/com.fasterxml.jackson.core/jackson-databind
+    cpe: cpe:2.3:a:fasterxml:jackson-databind
+    notices_names:
+      - '^(?:com\.fasterxml\.jackson(?:\.core)?:|fasterxml-)?jackson[- ]databind$'
+    incidents:
+      - name: Polymorphic deserialization RCE
+        year: 2017
+        cves: [CVE-2017-7525, CVE-2020-8840]
+        note: >-
+          The first and one of the last of the 2017-2020 gadget-chain bugs. Exploitable only when
+          the product turns on polymorphic (default) typing for untrusted JSON; public exploits exist.
+        affected:   # GHSA-qxxx-2pp7-5hmx and GHSA-4w82-r329-3q67
+          - cves: [CVE-2017-7525]
+            ranges:
+              - {introduced: '0', fixed: '2.6.7.1'}
+              - {introduced: '2.7.0', fixed: '2.7.9.1'}
+              - {introduced: '2.8.0', fixed: '2.8.9'}
+          - cves: [CVE-2020-8840]
+            ranges:
+              - {introduced: '2.0.0', fixed: '2.6.7.4'}
+              - {introduced: '2.7.0', fixed: '2.7.9.7'}
+              - {introduced: '2.8.0', fixed: '2.8.11.5'}
+              - {introduced: '2.9.0', fixed: '2.9.10.3'}
+        trackers: []
+
+  - id: commons-collections
+    name: Apache Commons Collections
+    upstream: https://commons.apache.org/proper/commons-collections/
+    purl: pkg:maven/commons-collections/commons-collections
+    cpe: cpe:2.3:a:apache:commons_collections
+    notices_names:
+      - '^(?:commons-collections:commons-collections|org\.apache\.commons:commons-collections4)$'
+      - '^(?:apache[- ])?commons[- ]collections4?$'
+    incidents:
+      - name: InvokerTransformer deserialization gadget
+        year: 2015
+        cves: [CVE-2015-7501]
+        note: >-
+          The gadget chain behind the 2015 wave of Java deserialization attacks (WebLogic,
+          WebSphere, JBoss, Jenkins). Exploitable where the product deserializes untrusted Java
+          objects; ysoserial has a ready-made payload.
+        affected:   # GHSA-fjq5-5j5f-mvxh: 3.x before 3.2.2, 4.0 before 4.1
+          - cves: [CVE-2015-7501]
+            ranges:
+              - {introduced: '0', fixed: '3.2.2'}
+              - {introduced: '4.0', fixed: '4.1'}
+        trackers: []
+
+  - id: xstream
+    name: XStream
+    upstream: https://x-stream.github.io/
+    purl: pkg:maven/com.thoughtworks.xstream/xstream
+    cpe: cpe:2.3:a:xstream:xstream
+    notices_names:
+      - '^(?:com\.thoughtworks\.xstream:)?xstream$'
+    incidents:
+      - name: Unmarshalling RCE
+        year: 2021
+        cves: [CVE-2021-39144]
+        note: Exploited in the wild (VMware NSX Manager and Cloud Foundation); in CISA KEV.
+        affected:   # GHSA-j9h8-phrw-h4fh: before 1.4.18
+          - cves: [CVE-2021-39144]
+            ranges:
+              - {introduced: '0', fixed: '1.4.18'}
+        trackers: []
+
+  - id: h2
+    name: H2 Database Engine
+    upstream: https://h2database.com/
+    purl: pkg:maven/com.h2database/h2
+    cpe: cpe:2.3:a:h2database:h2
+    notices_names:
+      - '^com\.h2database:h2$'
+      - {pattern: '^h2(?: database(?: engine)?)?$', version: '^[12]\.\d+\.\d+'}   # not the Rust h2 crate (0.x)
+    incidents:
+      - name: Console JNDI remote code execution
+        year: 2022
+        cves: [CVE-2021-42392]
+        note: >-
+          Unauthenticated when the H2 web console is reachable; same JNDI root cause as
+          Log4Shell. Public exploits exist.
+        affected:   # GHSA-h376-j262-vhq6: 1.1.100 up to 2.0.204; fixed in 2.0.206
+          - cves: [CVE-2021-42392]
+            ranges:
+              - {introduced: '1.1.100', fixed: '2.0.206'}
+        trackers: []
+
+  - id: commons-configuration
+    name: Apache Commons Configuration
+    upstream: https://commons.apache.org/proper/commons-configuration/
+    purl: pkg:maven/org.apache.commons/commons-configuration2
+    cpe: cpe:2.3:a:apache:commons_configuration
+    notices_names:
+      - '^(?:org\.apache\.commons:commons-configuration2|commons-configuration:commons-configuration)$'
+      - '^(?:apache[- ])?commons[- ]configuration2?$'
+    incidents:
+      - name: Variable interpolation RCE
+        year: 2022
+        cves: [CVE-2022-33980]
+        note: >-
+          The same script, dns and url lookups as Text4Shell, reachable when untrusted values are
+          interpolated. Commons Configuration 1.x is not affected.
+        affected:   # GHSA-xj57-8qj4-c4m6: 2.4 to 2.7; fixed in 2.8.0
+          - cves: [CVE-2022-33980]
+            ranges:
+              - {introduced: '2.4', fixed: '2.8.0'}
+        trackers: []
+
+  - id: pgjdbc
+    name: PostgreSQL JDBC Driver (pgjdbc)
+    upstream: https://jdbc.postgresql.org/
+    purl: pkg:maven/org.postgresql/postgresql
+    cpe: cpe:2.3:a:postgresql:postgresql_jdbc_driver
+    notices_names:
+      - '^org\.postgresql:postgresql$'
+      - '^(?:postgresql jdbc(?: driver)?(?: \(pgjdbc\))?|pgjdbc)$'
+      - {pattern: '^postgresql$', version: '^42\.'}     # the server uses 9.x to 18.x
+    incidents:
+      - name: Simple-query-mode SQL injection
+        year: 2024
+        cves: [CVE-2024-1597]
+        note: >-
+          Only with the non-default PreferQueryMode=SIMPLE. Rated 10.0 and patched in six
+          branches at once, which set off advisories across Java vendors.
+        affected:   # GHSA-24rp-q3w6-vc56
+          - cves: [CVE-2024-1597]
+            ranges:
+              - {introduced: '0', fixed: '42.2.28'}
+              - {introduced: '42.3.0', fixed: '42.3.9'}
+              - {introduced: '42.4.0', fixed: '42.4.4'}
+              - {introduced: '42.5.0', fixed: '42.5.5'}
+              - {introduced: '42.6.0', fixed: '42.6.1'}
+              - {introduced: '42.7.0', fixed: '42.7.2'}
+        trackers: []
+
+  - id: tika
+    name: Apache Tika
+    upstream: https://tika.apache.org/
+    purl: pkg:maven/org.apache.tika/tika-core
+    cpe: cpe:2.3:a:apache:tika
+    notices_names:
+      - '^org\.apache\.tika:tika-(?:core|parsers|parser-pdf-module)$'
+      - '^(?:apache[- ])?tika(?:-core)?$'
+    incidents:
+      - name: XFA-in-PDF XML external entity injection
+        year: 2025
+        cves: [CVE-2025-66516]
+        note: >-
+          Rated 10.0. Triggered by parsing a crafted PDF; the fix is in tika-core, so updating
+          only the PDF parser module is not enough.
+        affected:   # GHSA-f58c-gq56-vjjf: tika-core 1.13 to 3.2.1; fixed in 3.2.2
+          - cves: [CVE-2025-66516]
+            ranges:
+              - {introduced: '1.13', fixed: '3.2.2'}
+        trackers: []
+
+  - id: commons-fileupload
+    name: Apache Commons FileUpload
+    upstream: https://commons.apache.org/proper/commons-fileupload/
+    purl: pkg:maven/commons-fileupload/commons-fileupload
+    cpe: cpe:2.3:a:apache:commons_fileupload
+    notices_names:
+      - '^commons-fileupload:commons-fileupload(?::jar)?$'
+      - '^(?:apache[- ])?commons[- ]fileupload$'
+    incidents:
+      - name: DiskFileItem deserialization RCE
+        year: 2016
+        cves: [CVE-2016-1000031]
+        note: Exploitable where the product deserializes untrusted Java objects; a ysoserial payload exists.
+        affected:   # GHSA-7x9j-7223-rg5m: before 1.3.3
+          - cves: [CVE-2016-1000031]
+            ranges:
+              - {introduced: '0', fixed: '1.3.3'}
+        trackers: []

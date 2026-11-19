@@ -210,7 +210,6 @@ components:
   zlib:
     name: zlib
     purl: pkg:generic/zlib@{version}
-    watchlist: false
     strings:
       # the copyright banners deflate.c and inflate.c keep (Splunk UF's libz 1.2.11)
       - contains: " Copyright 1995-"
@@ -300,7 +299,6 @@ components:
   expat:
     name: expat
     purl: pkg:generic/expat@{version}
-    watchlist: false
     strings:
       # XML_ExpatVersion()'s string (Debian's libexpat1 2.9.0)
       - contains: "expat_"
@@ -380,7 +378,6 @@ components:
   libssh:
     name: libssh
     purl: pkg:generic/libssh@{version}
-    watchlist: false
     strings:
       # the client banner libssh compiles in (Wireshark's libssh.dll: SSH-2.0-libssh_0.12.2)
       - contains: "SSH-2.0-libssh_"

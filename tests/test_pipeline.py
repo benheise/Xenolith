@@ -280,7 +280,10 @@ class NoticesMatchTest(unittest.TestCase):
         self.assertEqual(cat.match_component("org.apache.logging.log4j:log4j-core", "2.14.1"), "log4j-core")
         self.assertEqual(cat.match_component("libbrotlidec", ""), "brotli")
         self.assertIsNone(cat.match_component("phpseclib", ""))
-        self.assertIsNone(cat.match_component("zlib", "1.2.13"))
+        self.assertIsNone(cat.match_component("bzip2", "1.0.8"))
+        self.assertEqual(cat.match_component("zlib", "1.2.13"), "zlib")
+        self.assertIsNone(cat.match_component("zlib", "3.2.3"))            # the Ruby gem
+        self.assertIsNone(cat.match_component("zlib-ng", "2.1.5"))
 
     def test_assertions_and_inventory_build(self):
         cat = catalog.load()
@@ -289,7 +292,7 @@ class NoticesMatchTest(unittest.TestCase):
             inv = {"supplier": "Acme", "product": "Gateway OS", "version": "7.2", "url": "https://acme.example/oss.html",
                    "retrieved": "2026-11-08", "extractors": ["html_table"],
                    "components": [{"name": "php", "version": "7.4.33"}, {"name": "php-cli", "version": "7.4.33"},
-                                  {"name": "zlib", "version": "1.2.11"}]}
+                                  {"name": "bzip2", "version": "1.0.8"}]}
             path = notices.inventory_path(data, inv)
             path.parent.mkdir(parents=True)
             path.write_text(json.dumps(inv))
@@ -305,7 +308,7 @@ class NoticesMatchTest(unittest.TestCase):
             products = {p["k"]: p for p in json.loads((out / "products.json").read_text())}
             self.assertEqual(products["acme/gateway-os"]["inv"], 3)
             index = json.loads((out / "inventory_index.json").read_text())
-            self.assertIn("zlib", index["n"])
+            self.assertIn("bzip2", index["n"])
             self.assertTrue((out / "inventory" / "acme__gateway-os.json").exists())
 
 
@@ -402,7 +405,7 @@ class CommunitySbomTest(unittest.TestCase):
             community_sbom.write_inventories(invs, repo / "data")
             rows, _ = notices.assertions(cat, repo / "data")
         by = {a["component"]: a for a in rows}
-        self.assertEqual(set(by), {"brotli", "openssl", "php"})
+        self.assertEqual(set(by), {"brotli", "openssl", "php", "zlib"})
         self.assertEqual(by["brotli"]["evidence"], "binary-scan")
         self.assertEqual(by["brotli"]["component_version"], "1.0.9")
         for a in rows:
@@ -726,7 +729,8 @@ class FingerprintTest(unittest.TestCase):
         # detect-only components carry no watchlist link in the submission
         doc = fpm.to_cyclonedx(list(found.values()), self.fps, "x")
         for c in doc["components"]:
-            self.assertNotIn("xenolith:component", {p["name"] for p in c["properties"]}, c["name"])
+            linked = "xenolith:component" in {p["name"] for p in c["properties"]}
+            self.assertEqual(linked, c["name"] in ("zlib", "expat"), c["name"])     # the two that are on the watchlist
 
     def test_archives(self):
         log4j = jar({"META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties": b"groupId=org.apache.logging.log4j\nversion=2.14.1\n",

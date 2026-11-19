@@ -141,8 +141,10 @@ func TestDetectOnlyRules(t *testing.T) {
 		got := ""
 		for _, f := range s.Findings {
 			got = f.Component + " " + f.Version
-			if f.Watchlist {
-				t.Errorf("%s: detect-only finding marked as watchlist", name)
+			// zlib and expat moved to the watchlist in November 2026; the rest stay detect-only
+			onWatchlist := f.Component == "zlib" || f.Component == "expat"
+			if f.Watchlist != onWatchlist {
+				t.Errorf("%s: watchlist = %v, want %v", name, f.Watchlist, onWatchlist)
 			}
 		}
 		if got != c.want {
