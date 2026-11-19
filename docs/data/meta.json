@@ -1,15 +1,15 @@
 {
- "built": "2026-11-19T00:14:04Z",
+ "built": "2026-11-19T14:25:47Z",
  "counts": {
-  "assertions": 14741,
-  "products_with_data": 7622,
+  "assertions": 14803,
+  "products_with_data": 7651,
   "inventories": 389,
   "inventory_components": 230094,
   "cpe_linked_clusters": 22,
   "cpe_linked_entries": 24,
   "spine_products": 16129,
-  "spine_only_shown": 4740,
-  "components": 23,
+  "spine_only_shown": 4730,
+  "components": 24,
   "wanted": 83,
   "wanted_fulfilled": 6
  },
@@ -727,7 +727,7 @@
      "cves": [
       "CVE-2026-114938"
      ],
-     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigations (either one): -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only, since JVMs on ARM64 fail to start with it. Not in CISA KEV as of 2026-11-19.",
+     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigations (either one): -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only, since JVMs on ARM64 fail to start with it. Probing and exploit attempts have been seen since 18 November (GreyNoise, watchTowr); no confirmed compromise and not in CISA KEV as of 2026-11-19.",
      "affected": [
       {
        "cves": [
@@ -756,19 +756,19 @@
      "trackers": []
     }
    ],
-   "assertions": 239,
-   "products": 181,
-   "contains": 154,
+   "assertions": 263,
+   "products": 201,
+   "contains": 167,
    "in_range": 33,
    "verdicts": {
-    "fixed": 17,
-    "runtime_dependent": 8,
+    "fixed": 21,
+    "runtime_dependent": 9,
+    "workaround": 28,
     "affected": 19,
-    "under_investigation": 37,
+    "under_investigation": 5,
+    "not_affected": 60,
     "present": 99,
-    "not_affected": 24,
-    "workaround": 19,
-    "absent": 16
+    "absent": 22
    }
   },
   {
@@ -873,15 +873,16 @@
      "trackers": []
     }
    ],
-   "assertions": 66,
-   "products": 19,
-   "contains": 65,
+   "assertions": 92,
+   "products": 45,
+   "contains": 81,
    "in_range": 46,
    "verdicts": {
+    "fixed": 10,
     "present": 50,
-    "workaround": 11,
-    "affected": 4,
-    "not_affected": 1
+    "not_affected": 11,
+    "affected": 6,
+    "workaround": 15
    }
   },
   {
@@ -1372,6 +1373,50 @@
     "fixed": 1,
     "workaround": 5
    }
+  },
+  {
+   "id": "axis1",
+   "name": "Apache Axis 1.x (SOAP engine)",
+   "upstream": "https://axis.apache.org/axis/",
+   "purl": "pkg:maven/org.apache.axis/axis",
+   "cpe": "cpe:2.3:a:apache:axis",
+   "aliases": [
+    "axis 1.4",
+    "axis.jar",
+    "axis-jaxrpc",
+    "axis-saaj"
+   ],
+   "incidents": [
+    {
+     "name": "Axis 1.x SOAP fault class instantiation RCE",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-90436"
+     ],
+     "note": "Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end of life with no upstream fix; CISA added it to KEV on 18 November 2026.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-90436"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "last_affected": "1.4"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 12,
+   "products": 8,
+   "contains": 12,
+   "in_range": 7,
+   "verdicts": {
+    "present": 12
+   }
   }
  ],
  "sources": [
@@ -1450,7 +1495,7 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 1480,
+   "assertions": 1492,
    "latest": "2026-11-18",
    "fv": "auto-discovered",
    "dp": [
@@ -1464,8 +1509,8 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 134,
-   "latest": "2026-11-18",
+   "assertions": 184,
+   "latest": "2026-11-19",
    "fv": "community",
    "dp": [
     "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv#L3"

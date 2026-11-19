@@ -487,6 +487,20 @@ class WatchlistAdditionsTest(unittest.TestCase):
         for (cid, version), want in expected.items():
             self.assertEqual(status(cid, version), want, f"{cid} {version}")
 
+    def test_axis1_is_kept_apart_from_axis2(self):
+        from xenolith import versions
+        cat = catalog.load()
+        cases = [("org.apache.axis:axis", "1.4", "axis1"), ("axis:axis", "1.2.1", "axis1"),
+                 ("com.springsource.org.apache.axis", "1.4.0", "axis1"), ("Apache Axis", "1.4", "axis1"),
+                 ("axis", "1.2-RC3", "axis1"), ("axis-saaj", "1.4", "axis1"),
+                 ("Apache Axis", "1.4.1", None), ("Apache Axis", "1.7.8", None),          # Axis2 releases
+                 ("Apache Axis", "2.0 - SAAJ 1.3", None), ("Axis (Java)", "1.5.1", None),
+                 ("org.apache.axis2:axis2-kernel", "1.8.2", None), ("d3-axis", "3.0.0", None)]
+        for name, version, want in cases:
+            self.assertEqual(cat.match_component(name, version), want, f"{name} {version}")
+        comp = cat.components["axis1"]
+        self.assertEqual(versions.check(["1.4"], comp.affected, comp.version_style)["status"], "in_range")
+
     def test_every_incident_is_sourced_and_ranged(self):
         cat = catalog.load()
         for comp in cat.components.values():

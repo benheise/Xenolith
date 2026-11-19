@@ -353,7 +353,9 @@ components:
           Enterprise Edition 21.3.20.0.3. Interim mitigations (either one):
           -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with
           -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only,
-          since JVMs on ARM64 fail to start with it. Not in CISA KEV as of 2026-11-19.
+          since JVMs on ARM64 fail to start with it. Probing and exploit attempts have been seen
+          since 18 November (GreyNoise, watchTowr); no confirmed compromise and not in CISA KEV
+          as of 2026-11-19.
         affected:
           - cves: [CVE-2026-114938]
             ranges:
@@ -625,3 +627,31 @@ components:
               - {introduced: '0', fixed: '7.6'}
         trackers: []
 
+
+  # Added 2026-11-19: CISA added CVE-2026-90436 to KEV on 2026-11-18. Axis 1.x is end of life, so
+  # there is no upstream fix; only vendor-patched copies or removal close it. Axis2 (org.apache.axis2,
+  # versions 1.0 to 1.8) is a different code base, and its version numbers overlap Axis 1's, so
+  # only unambiguous names are matched: Axis 1 Maven coordinates, and "axis" names with an Axis 1
+  # version (1.0 to 1.4, including release candidates). Labels like "Axis (Java) 1.5.1" are Axis2.
+  - id: axis1
+    name: Apache Axis 1.x (SOAP engine)
+    upstream: https://axis.apache.org/axis/
+    purl: pkg:maven/org.apache.axis/axis
+    cpe: cpe:2.3:a:apache:axis
+    aliases: [axis 1.4, axis.jar, axis-jaxrpc, axis-saaj]
+    notices_names:
+      - '^(?:org\.apache\.axis|axis):axis(?:-(?:jaxrpc|saaj|ant))?$'
+      - '^com\.springsource\.org\.apache\.axis$'
+      - {pattern: '^(?:apache[-_ ])?axis(?:[-_ ](?:1|jaxrpc|saaj))?$', version: '^1\.(?:[0-3](?:\.\d+)?|4(?:\.0+)?)(?:[-_. ]?(?:rc|beta|alpha)\d*)?$'}
+    incidents:
+      - name: Axis 1.x SOAP fault class instantiation RCE
+        year: 2026
+        cves: [CVE-2026-90436]
+        note: >-
+          Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end
+          of life with no upstream fix; CISA added it to KEV on 18 November 2026.
+        affected:   # CNA record: every Axis 1.x release up to and including 1.4
+          - cves: [CVE-2026-90436]
+            ranges:
+              - {introduced: '0', last_affected: '1.4'}
+        trackers: []

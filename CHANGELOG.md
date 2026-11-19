@@ -3,6 +3,39 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-19: Java4Shell and NGINX2Root recheck; Apache Axis 1.x added
+
+Every statement below was checked on the vendor's own page.
+
+- **Java4Shell (CVE-2026-114938):**
+  - Barracuda: 30 of its 35 products moved from under investigation to not affected; Email
+    Gateway Defense and MSP / Maestro are remediated (hosted). Data Inspector and WAF-as-a-Service
+    / Active DDoS Protection are still under investigation.
+  - Keycloak: fixed container image 26.8.2-3 (tags latest, 26.8, 26.8.2), on Red Hat OpenJDK
+    21.0.13.1. The Operator image is unchanged (workaround).
+  - New vendor statements: Atlassian (six Data Center products, workaround
+    `-XX:UseAVX=2 -XX:+IgnoreUnrecognizedVMOptions` until patches), Elastic (Elasticsearch,
+    Logstash and ECE on a workaround with fixes planned; Kibana, Beats, Elastic Agent, APM Server,
+    ECK and Maps Server don't use Java), the Jenkins project (patch the Java you run) and Splunk
+    (Enterprise, Universal Forwarder, SOAR and its cloud services unaffected).
+  - Incident note: probing and exploit attempts seen since 18 November; no confirmed compromise,
+    not in KEV.
+- **NGINX2Root (CVE-2026-123007 and four more):** F5's per-product table (NGINX Plus, Instance
+  Manager, F5 WAF and DoS for NGINX, App Protect WAF and DoS, Gateway Fabric, Ingress Controller;
+  BIG-IP, BIG-IQ and F5OS not vulnerable), Synology (DSM, DSM Enterprise, BeeStation OS, APM on a
+  workaround with DSM fixes due 20 November; SRM not affected), and fixed packages from Ubuntu,
+  Amazon Linux 2023, Amazon Linux 2 and AlmaLinux.
+- **Watchlist: 23 → 24 components.** Apache Axis 1.x: unauthenticated class instantiation through
+  SOAP faults (CVE-2026-90436), added to CISA KEV on 18 November. Axis 1 is end of life with no
+  upstream fix. Matching uses only unambiguous Axis 1 names, because Axis2's version numbers
+  overlap. Stored inventories show it in BMC Helix Innovation Suite, Extreme Networks' Site Engine,
+  IQ Controller and Universal Compute Platform, and four JetBrains IDEs.
+- Considered and left out: OpenSSH CVE-2026-123158 (KEV, but only musl-based builds without PAM,
+  so a version range would flag nearly every product), PHP CVE-2026-115560 (non-default
+  configuration, due in PHP's 19 November releases) and NGINX Rift CVE-2026-42945 (not in KEV).
+- Still silent on Java4Shell: Ping Identity, JFrog (product statement), Broadcom, Esri, IBM,
+  Oracle's own products, SAP, JetBrains, BellSoft Liberica and SapMachine.
+
 ## 2026-11-19: Java4Shell sources from Censys' advisory
 
 Followed every source linked from [Censys' CVE-2026-114938 advisory](https://censys.com/advisory/cve-2026-114938/).
