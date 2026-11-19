@@ -1,8 +1,8 @@
 {
- "built": "2026-11-19T14:25:47Z",
+ "built": "2026-11-19T14:27:54Z",
  "counts": {
-  "assertions": 14803,
-  "products_with_data": 7651,
+  "assertions": 14833,
+  "products_with_data": 7654,
   "inventories": 389,
   "inventory_components": 230094,
   "cpe_linked_clusters": 22,
@@ -756,17 +756,17 @@
      "trackers": []
     }
    ],
-   "assertions": 263,
-   "products": 201,
-   "contains": 167,
+   "assertions": 283,
+   "products": 221,
+   "contains": 185,
    "in_range": 33,
    "verdicts": {
-    "fixed": 21,
+    "fixed": 43,
     "runtime_dependent": 9,
-    "workaround": 28,
+    "workaround": 24,
     "affected": 19,
     "under_investigation": 5,
-    "not_affected": 60,
+    "not_affected": 62,
     "present": 99,
     "absent": 22
    }
@@ -873,16 +873,16 @@
      "trackers": []
     }
    ],
-   "assertions": 92,
-   "products": 45,
-   "contains": 81,
+   "assertions": 101,
+   "products": 46,
+   "contains": 89,
    "in_range": 46,
    "verdicts": {
     "fixed": 10,
     "present": 50,
-    "not_affected": 11,
-    "affected": 6,
-    "workaround": 15
+    "not_affected": 12,
+    "affected": 7,
+    "workaround": 22
    }
   },
   {
@@ -1410,12 +1410,13 @@
      "trackers": []
     }
    ],
-   "assertions": 12,
-   "products": 8,
-   "contains": 12,
+   "assertions": 13,
+   "products": 9,
+   "contains": 13,
    "in_range": 7,
    "verdicts": {
-    "present": 12
+    "present": 12,
+    "workaround": 1
    }
   }
  ],
@@ -1469,10 +1470,10 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 1692,
-   "latest": "2026-11-18",
+   "assertions": 1722,
+   "latest": "2026-11-19",
    "publishers": {
-    "Red Hat Product Security": 812,
+    "Red Hat Product Security": 842,
     "Siemens ProductCERT": 419,
     "CISA": 249,
     "Cisco": 56,
