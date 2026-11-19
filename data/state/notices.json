@@ -3202,6 +3202,16 @@
 "sbom"
 ]
 },
+"https://resources.jetbrains.com/storage/third-party-libraries/hub/hub-2026.1.14193.json": {
+"fetched": "2026-11-19",
+"kind": "sbom",
+"n": 424,
+"sha": "14ef7ec65e57ea66557aeba2c0b27eb369b442c78c9b5c12e12cac87e4947d14",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://resources.jetbrains.com/storage/third-party-libraries/hub/hub-2026.2.52570.json": {
 "fetched": "2026-11-18",
 "kind": "sbom",
@@ -3254,6 +3264,16 @@
 },
 "https://resources.jetbrains.com/storage/third-party-libraries/python/pycharmPY-2026.3-third-party-libraries.json": {
 "fetched": "2026-11-18",
+"kind": "sbom",
+"n": 2022,
+"sha": "1a446da2ad430c3ee47e3200c5b5f606b3cb9766ac8fa1c6b66762ef72f1b529",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/python/pycharmPY-2026.3.0.1-third-party-libraries.json": {
+"fetched": "2026-11-19",
 "kind": "sbom",
 "n": 2022,
 "sha": "1a446da2ad430c3ee47e3200c5b5f606b3cb9766ac8fa1c6b66762ef72f1b529",
@@ -3352,11 +3372,31 @@
 "sbom"
 ]
 },
+"https://resources.jetbrains.com/storage/third-party-libraries/youtrack/youtrack-2026.1.14193.json": {
+"fetched": "2026-11-19",
+"kind": "sbom",
+"n": 1007,
+"sha": "0540d9e10961b62514c357fb5bba2cd276e2915ad597527415407d1b5ce6a28e",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://resources.jetbrains.com/storage/third-party-libraries/youtrack/youtrack-2026.2.19840.json": {
 "fetched": "2026-11-18",
 "kind": "sbom",
 "n": 1011,
 "sha": "89f07b3bb0f151b25e051bf2081154099b520281085a8ccae8cb89c800abb9a9",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/youtrack/youtrack-2026.2.19862.json": {
+"fetched": "2026-11-19",
+"kind": "sbom",
+"n": 1011,
+"sha": "751c209723487b8e53d3f6ed4ae69e6d36898e10ecb329a4fb52f514aa2a176a",
 "status": "ok",
 "via": [
 "sbom"
