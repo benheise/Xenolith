@@ -1,7 +1,7 @@
 {
- "built": "2026-11-18T22:56:14Z",
+ "built": "2026-11-19T00:11:41Z",
  "counts": {
-  "assertions": 14740,
+  "assertions": 14741,
   "products_with_data": 7622,
   "inventories": 389,
   "inventory_components": 230094,
@@ -727,7 +727,7 @@
      "cves": [
       "CVE-2026-114938"
      ],
-     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigation: -XX:-UseBASE64Intrinsics.",
+     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigations (either one): -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only, since JVMs on ARM64 fail to start with it. Not in CISA KEV as of 2026-11-19.",
      "affected": [
       {
        "cves": [
@@ -756,13 +756,13 @@
      "trackers": []
     }
    ],
-   "assertions": 238,
-   "products": 180,
+   "assertions": 239,
+   "products": 181,
    "contains": 154,
    "in_range": 33,
    "verdicts": {
     "fixed": 15,
-    "runtime_dependent": 7,
+    "runtime_dependent": 8,
     "affected": 19,
     "under_investigation": 37,
     "present": 99,
@@ -1464,7 +1464,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 133,
+   "assertions": 134,
    "latest": "2026-11-18",
    "fv": "community",
    "dp": [

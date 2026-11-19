@@ -3,6 +3,22 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-19: Java4Shell sources from Censys' advisory
+
+Followed every source linked from [Censys' CVE-2026-114938 advisory](https://censys.com/advisory/cve-2026-114938/).
+
+- **Apache Tomcat** (new statement, runtime_dependent): Wiz reports it proved remote
+  exploitation feasible against Tomcat ([Wiz](https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk),
+  2026-11-17). Wiz also names Jenkins and Confluence; their existing rows now say so.
+- **Amazon Corretto**: exact fixed builds from the Corretto changelogs (17.0.21.1.2,
+  21.0.13.1.2, 25.0.5.1.2, 27.0.1.1.4).
+- **Java4Shell incident note**: adds the second mitigation, `-XX:UseAVX=2` (x86-64 only; JVMs
+  on ARM64 fail to start with it), named by Calif, Red Hat and Wiz and tested by VulnCheck,
+  and that the CVE isn't in CISA KEV.
+- Already covered: the OpenJDK advisory, Oracle's November CSPU, RHSA-2026:100573 (via Red
+  Hat's CSAF), Calif's product list and the CVE record. CISA's alert page refused automated
+  access and wasn't read.
+
 ## 2026-11-18: nine more watchlist components, Java4Shell vendor statements, Red Hat, GitLab and JFrog sources
 
 From a research pass on components worth tracking, Java4Shell developments and new public
