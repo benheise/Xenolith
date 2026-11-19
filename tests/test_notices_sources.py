@@ -477,11 +477,11 @@ class WatchlistAdditionsTest(unittest.TestCase):
             comp = cat.components[cid]
             return versions.check([version], comp.affected, comp.version_style)["status"]
         expected = {("nginx", "1.30.6"): "in_range", ("nginx", "1.30.7"): "outside", ("nginx", "1.31.8"): "in_range",
-                    ("nginx", "1.31.9"): "outside", ("tomcat", "8.5.100"): "in_range", ("tomcat", "9.0.99"): "outside",
+                    ("nginx", "1.31.9"): "outside", ("tomcat", "8.5.100"): "in_range", ("tomcat", "9.0.99"): "in_range", ("tomcat", "9.0.118"): "outside",
                     ("tomcat", "10.1.34"): "in_range", ("tomcat", "9.0.30"): "in_range",         # Ghostcat
                     ("sudo", "1.9.5p1"): "in_range", ("sudo", "1.9.5p2"): "outside", ("sudo", "1.9.17_p1"): "outside",
                     ("erlang-otp", "OTP-26.2.5"): "in_range", ("erlang-otp", "26.2.5.11"): "outside",
-                    ("erlang-otp", "27.3.4.1"): "outside", ("activemq", "5.17.7"): "outside", ("activemq", "5.14.5"): "in_range",
+                    ("erlang-otp", "27.3.4.1"): "outside", ("activemq", "5.17.7"): "in_range", ("activemq", "5.19.4"): "outside", ("activemq", "5.14.5"): "in_range",
                     ("jquery", "3.4.1"): "in_range", ("jquery", "3.5.0"): "outside", ("squid", "7.5"): "in_range",
                     ("squid", "7.6"): "outside", ("struts2", "2.3.37"): "in_range", ("struts2", "6.4.0"): "outside"}
         for (cid, version), want in expected.items():
@@ -545,6 +545,39 @@ class WatchlistAdditionsTest(unittest.TestCase):
                     ("pgjdbc", "42.2.10"): "in_range", ("pgjdbc", "42.7.2"): "outside", ("pgjdbc", "42.4.3"): "in_range",
                     ("tika", "2.9.1"): "in_range", ("tika", "3.2.3"): "outside", ("tika", "1.12"): "outside",
                     ("commons-fileupload", "1.3.2"): "in_range", ("commons-fileupload", "1.5"): "outside"}
+        for (cid, version), want in expected.items():
+            self.assertEqual(status(cid, version), want, f"{cid} {version}")
+
+    def test_second_criteria_pass(self):
+        from xenolith import versions
+        cat = catalog.load()
+        cases = [("net-snmp", "5.8", "net-snmp"), ("net-snmp-agent-libs", "5.9.1", "net-snmp"), ("Net-SNMP Distributed MIBs", "5.8", None),
+                 ("Apache Commons BeanUtils", "1.9.2", "commons-beanutils"), ("Commons BeanUtils Bean Collections", "1.8.3", None),
+                 ("Groovy", "2.4.3", "groovy"), ("org.codehaus.groovy:groovy-all", "2.4.12", "groovy"), ("Groovy JSR-223", "2.4.3", None),
+                 ("org.codehaus.groovy:groovy-json", "2.4.3", None), ("Spring Security", "5.6.3", "spring-security"),
+                 ("spring-security-crypto", "5.6.3", None), ("spring-security-oauth2-core", "5.6.3", None),
+                 ("Ghostscript", "9.26", "ghostscript"), ("ImageMagick", "6.5.5-10", "imagemagick"), ("imagemagick-dev", "1.0", None)]
+        for name, version, want in cases:
+            self.assertEqual(cat.match_component(name, version), want, f"{name} {version}")
+
+        def cves(cid, version):
+            comp = cat.components[cid]
+            return set(versions.check([version], comp.affected, comp.version_style).get("cves") or [])
+        def status(cid, version):
+            comp = cat.components[cid]
+            return versions.check([version], comp.affected, comp.version_style)["status"]
+        expected = {("openssl", "1.0.1f"): "in_range", ("openssl", "1.0.1g"): "outside", ("openssl", "1.0.2k"): "outside",
+                    ("openssl", "3.0.18"): "in_range", ("openssl", "3.0.19"): "outside", ("openssl", "3.5.5"): "outside",
+                    ("tomcat", "9.0.116"): "in_range", ("tomcat", "8.0.46"): "in_range", ("tomcat", "11.0.22"): "outside",
+                    ("struts2", "2.5.25"): "in_range", ("struts2", "2.5.26"): "in_range",      # 2.5.26 is still before S2-066's fix
+                    ("struts2", "6.4.0"): "outside", ("apache-httpd", "2.4.59"): "in_range", ("apache-httpd", "2.4.60"): "outside",
+                    ("php", "8.2.19"): "in_range", ("activemq", "6.2.2"): "in_range", ("activemq", "6.2.3"): "outside",
+                    ("net-snmp", "5.9.4"): "in_range", ("net-snmp", "5.9.5"): "outside",
+                    ("commons-beanutils", "1.7.0"): "in_range", ("commons-beanutils", "1.9.4"): "in_range",
+                    ("commons-beanutils", "1.11.0"): "outside", ("groovy", "2.4.3"): "in_range", ("groovy", "2.4.4"): "outside",
+                    ("groovy", "1.6.0"): "outside", ("spring-security", "5.6.3"): "in_range", ("spring-security", "5.6.4"): "outside",
+                    ("spring-security", "6.2.8"): "outside", ("ghostscript", "9.26"): "in_range", ("ghostscript", "10.03.1"): "outside",
+                    ("imagemagick", "6.5.5-10"): "in_range", ("imagemagick", "6.9.10-23"): "outside", ("imagemagick", "7.0.5.4"): "outside"}
         for (cid, version), want in expected.items():
             self.assertEqual(status(cid, version), want, f"{cid} {version}")
 

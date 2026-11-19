@@ -3,6 +3,38 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-19: second criteria pass; 41 → 47 components, 12 more incidents on existing ones
+
+The rest of the backlog was checked against the criteria, 17 months of oss-security (July 2025
+to November 2026, 3,042 threads) were matched to the components named in stored product lists,
+and CISA KEV was checked for bugs in components already tracked.
+
+- **New components:** Net-SNMP (CVE-2025-68615), Commons BeanUtils (CVE-2014-0114,
+  CVE-2019-10086, CVE-2025-48734), Groovy (CVE-2015-3253), Spring Security (CVE-2022-22978),
+  Ghostscript (CVE-2023-36664, CVE-2024-29510) and ImageMagick (ImageTragick, KEV).
+- **More incidents on tracked components**, which until now carried one or two each:
+  - OpenSSL: Heartbleed (KEV) and the January 2026 CMS stack overflow, CVE-2025-15467.
+    Entries in an affected range went from 1 to 77.
+  - Apache HTTP Server: CVE-2024-38475 (KEV); 0 to 43.
+  - Tomcat: CVE-2017-12617 (KEV), CVE-2026-34486 (KEV) and the May 2026 fixes
+    (CVE-2026-41293, -43512, -43515); 25 to 37.
+  - ActiveMQ: CVE-2026-34197 (KEV); 14 to 17.
+  - Struts 2: CVE-2017-9805, CVE-2018-11776 and CVE-2020-17530 (all KEV).
+  - PHP: CVE-2024-4577 (KEV; PHP-CGI on Windows only).
+- **Checked and left out:**
+  - Apache MINA (CVE-2024-52046): rated 10.0, but no public exploit and only for
+    applications that use ObjectSerializationDecoder.
+  - Velocity, Xalan: need attacker-supplied templates or stylesheets.
+  - BusyBox: applet bugs that need local or crafted-file input, not a network path.
+  - Jetty, Netty: denial of service and desync bugs; MadeYouReset spans many implementations.
+  - Telerik UI for ASP.NET AJAX, Exim, Roundcube: in KEV, but no stored product list names them.
+  - Samba CVE-2025-10230: only AD domain controllers with a WINS hook script.
+  - libssh2 CVE-2026-55200: critical but one release (1.11.1) and no public exploit yet.
+  - FreeType CVE-2020-15999 (KEV): the CVE record gives Chrome versions only and the
+    FreeType change log was unreachable, so the range is unverified.
+- Still open: Spring Cloud Gateway and Function, Spring Data Commons, older Java SE KEV
+  entries, MySQL Group Replication (CVE-2026-60163), rsync's 2026 fixes, dnsmasq's May 2026 fixes.
+
 ## 2026-11-19: watchlist criteria written down; 24 → 41 components
 
 The watchlist was never meant to be limited to CISA KEV entries, but recent passes looked for

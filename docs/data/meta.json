@@ -1,7 +1,7 @@
 {
- "built": "2026-11-19T21:15:23Z",
+ "built": "2026-11-19T21:33:43Z",
  "counts": {
-  "assertions": 16431,
+  "assertions": 16664,
   "products_with_data": 7878,
   "inventories": 393,
   "inventory_components": 234558,
@@ -9,7 +9,7 @@
   "cpe_linked_entries": 25,
   "spine_products": 16129,
   "spine_only_shown": 4716,
-  "components": 41,
+  "components": 47,
   "wanted": 83,
   "wanted_fulfilled": 6
  },
@@ -63,6 +63,36 @@
      "trackers": [
       "https://github.com/NCSC-NL/php2shell"
      ]
+    },
+    {
+     "name": "PHP-CGI argument injection on Windows",
+     "year": 2024,
+     "cves": [
+      "CVE-2024-4577"
+     ],
+     "note": "Only PHP run as CGI behind Apache on Windows, in certain code pages. Exploited in the wild within days; in CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2024-4577"
+       ],
+       "ranges": [
+        {
+         "introduced": "8.1.0",
+         "fixed": "8.1.29"
+        },
+        {
+         "introduced": "8.2.0",
+         "fixed": "8.2.20"
+        },
+        {
+         "introduced": "8.3.0",
+         "fixed": "8.3.8"
+        }
+       ]
+      }
+     ],
+     "trackers": []
     }
    ],
    "assertions": 906,
@@ -554,12 +584,72 @@
        ]
       }
      ]
+    },
+    {
+     "name": "Heartbleed",
+     "year": 2014,
+     "cves": [
+      "CVE-2014-0160"
+     ],
+     "note": "Reads server or client memory over TLS, including private keys. Exploited in the wild; in CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2014-0160"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.0.1",
+         "fixed": "1.0.1g"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    },
+    {
+     "name": "CMS AuthEnvelopedData stack overflow",
+     "year": 2026,
+     "cves": [
+      "CVE-2025-15467"
+     ],
+     "note": "Reachable without a key where the product parses untrusted CMS or PKCS#7 data (S/MIME, for example). Fixed in the January 2026 OpenSSL releases.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2025-15467"
+       ],
+       "ranges": [
+        {
+         "introduced": "3.0.0",
+         "fixed": "3.0.19"
+        },
+        {
+         "introduced": "3.3.0",
+         "fixed": "3.3.6"
+        },
+        {
+         "introduced": "3.4.0",
+         "fixed": "3.4.4"
+        },
+        {
+         "introduced": "3.5.0",
+         "fixed": "3.5.5"
+        },
+        {
+         "introduced": "3.6.0",
+         "fixed": "3.6.1"
+        }
+       ]
+      }
+     ],
+     "trackers": []
     }
    ],
    "assertions": 256,
    "products": 109,
    "contains": 235,
-   "in_range": 1,
+   "in_range": 77,
    "verdicts": {
     "present": 202,
     "workaround": 5,
@@ -959,12 +1049,128 @@
       }
      ],
      "trackers": []
+    },
+    {
+     "name": "JSP upload through HTTP PUT",
+     "year": 2017,
+     "cves": [
+      "CVE-2017-12617"
+     ],
+     "note": "Needs HTTP PUT enabled (readonly=false on the Default servlet). Exploited in the wild; in CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2017-12617"
+       ],
+       "ranges": [
+        {
+         "introduced": "7.0.0",
+         "last_affected": "7.0.81"
+        },
+        {
+         "introduced": "8.0.0.RC1",
+         "last_affected": "8.0.46"
+        },
+        {
+         "introduced": "8.5.0",
+         "last_affected": "8.5.22"
+        },
+        {
+         "introduced": "9.0.0.M1",
+         "last_affected": "9.0.0"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    },
+    {
+     "name": "EncryptInterceptor bypass",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-34486"
+     ],
+     "note": "Affects clusters that rely on EncryptInterceptor, and only these three releases. In CISA KEV since August 2026.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-34486"
+       ],
+       "ranges": [
+        {
+         "introduced": "9.0.116",
+         "last_affected": "9.0.116"
+        },
+        {
+         "introduced": "10.1.53",
+         "last_affected": "10.1.53"
+        },
+        {
+         "introduced": "11.0.20",
+         "last_affected": "11.0.20"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    },
+    {
+     "name": "May 2026 HTTP/2, DIGEST and security-constraint fixes",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-41293",
+      "CVE-2026-43512",
+      "CVE-2026-43515"
+     ],
+     "note": "Scored critical by CVSS, though Apache rates them low to moderate. Exploits are public, and the fixes set off advisories from Atlassian, Ubuntu and others. Tomcat 8.5 is affected and gets no fix.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-41293"
+       ],
+       "ranges": [
+        {
+         "introduced": "8.5.0",
+         "fixed": "9.0.118"
+        },
+        {
+         "introduced": "10.1.0-M1",
+         "fixed": "10.1.55"
+        },
+        {
+         "introduced": "11.0.0-M1",
+         "fixed": "11.0.22"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-43512",
+        "CVE-2026-43515"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "9.0.118"
+        },
+        {
+         "introduced": "10.1.0-M1",
+         "fixed": "10.1.55"
+        },
+        {
+         "introduced": "11.0.0-M1",
+         "fixed": "11.0.22"
+        }
+       ]
+      }
+     ],
+     "trackers": []
     }
    ],
    "assertions": 115,
    "products": 90,
    "contains": 105,
-   "in_range": 25,
+   "in_range": 37,
    "verdicts": {
     "present": 49,
     "fixed": 51,
@@ -1179,12 +1385,38 @@
       }
      ],
      "trackers": []
+    },
+    {
+     "name": "Jolokia MBean remote code execution",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-34197"
+     ],
+     "note": "Needs a login to the web console's Jolokia API. In CISA KEV since April 2026.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-34197"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "5.19.4"
+        },
+        {
+         "introduced": "6.0.0",
+         "fixed": "6.2.3"
+        }
+       ]
+      }
+     ],
+     "trackers": []
     }
    ],
    "assertions": 35,
    "products": 26,
    "contains": 35,
-   "in_range": 14,
+   "in_range": 17,
    "verdicts": {
     "fixed": 16,
     "present": 17,
@@ -1263,6 +1495,60 @@
       }
      ],
      "trackers": []
+    },
+    {
+     "name": "OGNL and REST plugin remote code execution (S2-052, S2-057, S2-061)",
+     "year": 2017,
+     "cves": [
+      "CVE-2017-9805",
+      "CVE-2018-11776",
+      "CVE-2020-17530"
+     ],
+     "note": "All three are exploited in the wild and in CISA KEV. Each needs a condition: the REST plugin (2017), alwaysSelectFullNamespace (2018), or forced OGNL evaluation of user input in tag attributes (2020).",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2017-9805"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.1.1",
+         "fixed": "2.3.34"
+        },
+        {
+         "introduced": "2.5.0",
+         "fixed": "2.5.13"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2018-11776"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.3",
+         "last_affected": "2.3.34"
+        },
+        {
+         "introduced": "2.5",
+         "last_affected": "2.5.16"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2020-17530"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0.0",
+         "last_affected": "2.5.25"
+        }
+       ]
+      }
+     ],
+     "trackers": []
     }
    ],
    "assertions": 53,
@@ -1318,12 +1604,34 @@
       }
      ],
      "trackers": []
+    },
+    {
+     "name": "mod_rewrite filesystem mapping (code execution or source disclosure)",
+     "year": 2024,
+     "cves": [
+      "CVE-2024-38475"
+     ],
+     "note": "Needs mod_rewrite rules whose substitution starts with a backreference or variable. Exploited in the wild; in CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2024-38475"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.4.0",
+         "last_affected": "2.4.59"
+        }
+       ]
+      }
+     ],
+     "trackers": []
     }
    ],
    "assertions": 78,
    "products": 28,
    "contains": 64,
-   "in_range": 0,
+   "in_range": 43,
    "verdicts": {
     "present": 62,
     "affected": 1,
@@ -2239,6 +2547,298 @@
     "present": 37,
     "not_affected": 11
    }
+  },
+  {
+   "id": "net-snmp",
+   "name": "Net-SNMP",
+   "upstream": "http://www.net-snmp.org/",
+   "purl": "pkg:generic/net-snmp",
+   "cpe": "cpe:2.3:a:net-snmp:net-snmp",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "snmptrapd buffer overflow",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-68615"
+     ],
+     "note": "Only products that run snmptrapd and accept traps from untrusted hosts are exposed. Rated 9.8; proof-of-concept code is public. Distribution packages carry backported fixes.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2025-68615"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "5.9.5"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 114,
+   "products": 31,
+   "contains": 114,
+   "in_range": 100,
+   "verdicts": {
+    "present": 114
+   }
+  },
+  {
+   "id": "commons-beanutils",
+   "name": "Apache Commons BeanUtils",
+   "upstream": "https://commons.apache.org/proper/commons-beanutils/",
+   "purl": "pkg:maven/commons-beanutils/commons-beanutils",
+   "cpe": "cpe:2.3:a:apache:commons_beanutils",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Class-loader access through the class property",
+     "year": 2014,
+     "cves": [
+      "CVE-2014-0114",
+      "CVE-2019-10086"
+     ],
+     "note": "The bug behind the 2014 Struts 1 class-loader attacks (a Metasploit module exists). 1.9.4 was the first release to block the class property by default.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2014-0114"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.8.0",
+         "fixed": "1.9.4"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2019-10086"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "1.9.4"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    },
+    {
+     "name": "declaredClass property access on enums",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-48734"
+     ],
+     "note": "Exploitable where property paths come from untrusted input. Triggered advisories across Java vendors in 2025.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2025-48734"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.0",
+         "fixed": "1.11.0"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 56,
+   "products": 31,
+   "contains": 56,
+   "in_range": 40,
+   "verdicts": {
+    "present": 56
+   }
+  },
+  {
+   "id": "groovy",
+   "name": "Apache Groovy",
+   "upstream": "https://groovy-lang.org/",
+   "purl": "pkg:maven/org.codehaus.groovy/groovy",
+   "cpe": "cpe:2.3:a:apache:groovy",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "MethodClosure deserialization gadget",
+     "year": 2015,
+     "cves": [
+      "CVE-2015-3253"
+     ],
+     "note": "Exploitable where the product deserializes untrusted Java objects with Groovy on the classpath; ysoserial has a payload.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2015-3253"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.7.0",
+         "fixed": "2.4.4"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 34,
+   "products": 23,
+   "contains": 34,
+   "in_range": 3,
+   "verdicts": {
+    "present": 34
+   }
+  },
+  {
+   "id": "spring-security",
+   "name": "Spring Security",
+   "upstream": "https://spring.io/projects/spring-security",
+   "purl": "pkg:maven/org.springframework.security/spring-security-core",
+   "cpe": "cpe:2.3:a:vmware:spring_security",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "RegexRequestMatcher authorization bypass",
+     "year": 2022,
+     "cves": [
+      "CVE-2022-22978"
+     ],
+     "note": "Only applications that use RegexRequestMatcher with a dot in the pattern. Rated 9.8; proof-of-concept code is public.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2022-22978"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "5.4.11"
+        },
+        {
+         "introduced": "5.5.0",
+         "fixed": "5.5.7"
+        },
+        {
+         "introduced": "5.6.0",
+         "fixed": "5.6.4"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 22,
+   "products": 11,
+   "contains": 22,
+   "in_range": 6,
+   "verdicts": {
+    "present": 22
+   }
+  },
+  {
+   "id": "ghostscript",
+   "name": "Ghostscript",
+   "upstream": "https://www.ghostscript.com/",
+   "purl": "pkg:generic/ghostscript",
+   "cpe": "cpe:2.3:a:artifex:ghostscript",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Pipe-device and format-string sandbox escapes",
+     "year": 2023,
+     "cves": [
+      "CVE-2023-36664",
+      "CVE-2024-29510"
+     ],
+     "note": "Code execution from a crafted PostScript, EPS or PDF file, which matters where the product converts or prints untrusted documents. Public exploits exist for both.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2023-36664"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "10.01.2"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2024-29510"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "10.03.1"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 4,
+   "products": 3,
+   "contains": 4,
+   "in_range": 2,
+   "verdicts": {
+    "present": 4
+   }
+  },
+  {
+   "id": "imagemagick",
+   "name": "ImageMagick",
+   "upstream": "https://imagemagick.org/",
+   "purl": "pkg:generic/imagemagick",
+   "cpe": "cpe:2.3:a:imagemagick:imagemagick",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "ImageTragick",
+     "year": 2016,
+     "cves": [
+      "CVE-2016-3714"
+     ],
+     "note": "Command injection from a crafted image where the product converts untrusted uploads. Exploited in the wild; in CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2016-3714"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "6.9.3-10"
+        },
+        {
+         "introduced": "7.0.0",
+         "fixed": "7.0.1-1"
+        }
+       ]
+      }
+     ],
+     "trackers": []
+    }
+   ],
+   "assertions": 3,
+   "products": 3,
+   "contains": 3,
+   "in_range": 2,
+   "verdicts": {
+    "present": 3
+   }
   }
  ],
  "sources": [
@@ -2318,7 +2918,7 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 2368,
+   "assertions": 2601,
    "latest": "2026-11-19",
    "fv": "auto-discovered",
    "dp": [
