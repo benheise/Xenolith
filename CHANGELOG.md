@@ -3,6 +3,28 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-19 (evening): second recheck
+
+- **Java4Shell:**
+  - Cisco advisory v1.2: IOS XE and UCS Central moved to not affected, and 10 more products
+    were added as affected: Crosswork Assurance UX, Crosswork Workflow Manager, NextFusion,
+    Ultra Cloud Core NRF, AppDynamics On-Prem Enterprise Console, Finesse, UCCE, Unified CVP,
+    Unified Intelligence Center and Virtualized Voice Browser. Planned fixed releases for Smart
+    Software Manager On-Prem, cnBNG and CAF are now in the rows.
+  - Sophos advisory v3: Taegis fixed (hosted); Taegis Log Collector and NDR don't contain Java.
+  - Distribution packages: Debian 12 and 13 fixed; Ubuntu fixed, except its CRaC builds.
+  - Incident note: a proof of concept that triggers the bug is public.
+- **NGINX2Root:** Debian 13 fixed (DSA-6642-1); Debian 12 still vulnerable. Incident note: public
+  proof of concept (Rapid7), not in KEV.
+- **Apache Axis 1.x:** Confluence Data Center (fixed in 9.2.28; 10.x removed the SOAP API).
+  Incident note: Rapid7 saw exploitation against Confluence and N-able N-central from 13
+  November. N-able's own page refused automated access, so N-central has no row.
+- PHP shipped 8.5.13, 8.4.28, 8.3.37 and 8.2.36 today, fixing CVE-2026-115560 and two more
+  session-handling bugs. These are left out of the PHP2Shell incident because they need unusual
+  configurations.
+- No new watchlist components: the only component-level KEV entries since 18 November are Axis
+  and the musl-only OpenSSH bug.
+
 ## 2026-11-19: Java4Shell and NGINX2Root recheck; Apache Axis 1.x added
 
 Every statement below was checked on the vendor's own page.
@@ -32,7 +54,7 @@ Every statement below was checked on the vendor's own page.
   IQ Controller and Universal Compute Platform, and four JetBrains IDEs.
 - Considered and left out: OpenSSH CVE-2026-123158 (KEV, but only musl-based builds without PAM,
   so a version range would flag nearly every product), PHP CVE-2026-115560 (non-default
-  configuration, due in PHP's 19 November releases) and NGINX Rift CVE-2026-42945 (not in KEV).
+  configuration; fixed in PHP's 19 November releases) and NGINX Rift CVE-2026-42945 (not in KEV).
 - Still silent on Java4Shell: Ping Identity, JFrog (product statement), Broadcom, Esri, IBM,
   Oracle's own products, SAP, JetBrains, BellSoft Liberica and SapMachine.
 

@@ -1,8 +1,8 @@
 {
- "built": "2026-11-19T16:03:11Z",
+ "built": "2026-11-19T20:51:10Z",
  "counts": {
-  "assertions": 14833,
-  "products_with_data": 7654,
+  "assertions": 14852,
+  "products_with_data": 7664,
   "inventories": 389,
   "inventory_components": 230094,
   "cpe_linked_clusters": 22,
@@ -727,7 +727,7 @@
      "cves": [
       "CVE-2026-114938"
      ],
-     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigations (either one): -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only, since JVMs on ARM64 fail to start with it. Probing and exploit attempts have been seen since 18 November (GreyNoise, watchTowr); no confirmed compromise and not in CISA KEV as of 2026-11-19.",
+     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigations (either one): -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only, since JVMs on ARM64 fail to start with it. A proof of concept that triggers the bug is public, and probing and exploit attempts have been seen since 18 November (GreyNoise, watchTowr); no confirmed compromise and not in CISA KEV as of 2026-11-19.",
      "affected": [
       {
        "cves": [
@@ -756,19 +756,19 @@
      "trackers": []
     }
    ],
-   "assertions": 283,
-   "products": 221,
-   "contains": 185,
+   "assertions": 299,
+   "products": 237,
+   "contains": 199,
    "in_range": 33,
    "verdicts": {
-    "fixed": 43,
+    "fixed": 47,
     "runtime_dependent": 9,
     "workaround": 24,
-    "affected": 19,
-    "under_investigation": 5,
-    "not_affected": 62,
+    "affected": 29,
+    "under_investigation": 3,
+    "not_affected": 64,
     "present": 99,
-    "absent": 22
+    "absent": 24
    }
   },
   {
@@ -792,7 +792,7 @@
       "CVE-2026-121810",
       "CVE-2026-113425"
      ],
-     "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root. Disabling HTTP/2 blocks only CVE-2026-123007 and CVE-2026-123633.",
+     "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root. Disabling HTTP/2 blocks only CVE-2026-123007 and CVE-2026-123633. A proof of concept for CVE-2026-123007 is public (Rapid7); not in CISA KEV as of 2026-11-19.",
      "affected": [
       {
        "cves": [
@@ -873,15 +873,15 @@
      "trackers": []
     }
    ],
-   "assertions": 101,
-   "products": 46,
-   "contains": 89,
+   "assertions": 103,
+   "products": 48,
+   "contains": 91,
    "in_range": 46,
    "verdicts": {
-    "fixed": 10,
+    "fixed": 11,
     "present": 50,
+    "affected": 8,
     "not_affected": 12,
-    "affected": 7,
     "workaround": 22
    }
   },
@@ -1393,7 +1393,7 @@
      "cves": [
       "CVE-2026-90436"
      ],
-     "note": "Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end of life with no upstream fix; CISA added it to KEV on 18 November 2026.",
+     "note": "Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end of life with no upstream fix; CISA added it to KEV on 18 November 2026. Rapid7 saw it exploited against Confluence Data Center (with the SOAP remote API on) and N-able N-central (with the Legacy API on) from 13 November; a Metasploit module followed on 17 November.",
      "affected": [
       {
        "cves": [
@@ -1410,11 +1410,12 @@
      "trackers": []
     }
    ],
-   "assertions": 13,
-   "products": 9,
-   "contains": 13,
+   "assertions": 14,
+   "products": 10,
+   "contains": 14,
    "in_range": 7,
    "verdicts": {
+    "fixed": 1,
     "present": 12,
     "workaround": 1
    }
@@ -1510,11 +1511,11 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 184,
+   "assertions": 203,
    "latest": "2026-11-19",
    "fv": "community",
    "dp": [
-    "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv#L3"
+    "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv#L204"
    ]
   },
   {

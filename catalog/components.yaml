@@ -353,9 +353,9 @@ components:
           Enterprise Edition 21.3.20.0.3. Interim mitigations (either one):
           -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with
           -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only,
-          since JVMs on ARM64 fail to start with it. Probing and exploit attempts have been seen
-          since 18 November (GreyNoise, watchTowr); no confirmed compromise and not in CISA KEV
-          as of 2026-11-19.
+          since JVMs on ARM64 fail to start with it. A proof of concept that triggers the bug is
+          public, and probing and exploit attempts have been seen since 18 November (GreyNoise,
+          watchTowr); no confirmed compromise and not in CISA KEV as of 2026-11-19.
         affected:
           - cves: [CVE-2026-114938]
             ranges:
@@ -389,7 +389,8 @@ components:
         note: >-
           CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point;
           the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.
-          Disabling HTTP/2 blocks only CVE-2026-123007 and CVE-2026-123633.
+          Disabling HTTP/2 blocks only CVE-2026-123007 and CVE-2026-123633. A proof of concept
+          for CVE-2026-123007 is public (Rapid7); not in CISA KEV as of 2026-11-19.
         affected:
           - cves: [CVE-2026-123007]
             ranges:
@@ -649,7 +650,10 @@ components:
         cves: [CVE-2026-90436]
         note: >-
           Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end
-          of life with no upstream fix; CISA added it to KEV on 18 November 2026.
+          of life with no upstream fix; CISA added it to KEV on 18 November 2026. Rapid7 saw it
+          exploited against Confluence Data Center (with the SOAP remote API on) and N-able
+          N-central (with the Legacy API on) from 13 November; a Metasploit module followed on
+          17 November.
         affected:   # CNA record: every Axis 1.x release up to and including 1.4
           - cves: [CVE-2026-90436]
             ranges:
