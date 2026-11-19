@@ -1,14 +1,14 @@
 {
- "built": "2026-11-19T21:33:43Z",
+ "built": "2026-11-19T21:36:43Z",
  "counts": {
-  "assertions": 16664,
-  "products_with_data": 7878,
+  "assertions": 17774,
+  "products_with_data": 8232,
   "inventories": 393,
   "inventory_components": 234558,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4716,
+  "spine_only_shown": 4711,
   "components": 47,
   "wanted": 83,
   "wanted_fulfilled": 6
@@ -95,16 +95,16 @@
      "trackers": []
     }
    ],
-   "assertions": 906,
-   "products": 761,
-   "contains": 483,
+   "assertions": 915,
+   "products": 768,
+   "contains": 487,
    "in_range": 3,
    "verdicts": {
-    "fixed": 189,
+    "fixed": 194,
     "workaround": 7,
-    "affected": 203,
+    "affected": 202,
     "under_investigation": 76,
-    "not_affected": 201,
+    "not_affected": 206,
     "present": 84,
     "absent": 144,
     "runtime_dependent": 2
@@ -646,16 +646,18 @@
      "trackers": []
     }
    ],
-   "assertions": 256,
-   "products": 109,
-   "contains": 235,
+   "assertions": 925,
+   "products": 472,
+   "contains": 594,
    "in_range": 77,
    "verdicts": {
+    "workaround": 263,
+    "fixed": 127,
     "present": 202,
-    "workaround": 5,
-    "fixed": 28,
+    "not_affected": 82,
     "under_investigation": 1,
-    "not_affected": 20
+    "affected": 2,
+    "absent": 248
    }
   },
   {
@@ -846,14 +848,14 @@
      "trackers": []
     }
    ],
-   "assertions": 301,
-   "products": 238,
-   "contains": 200,
+   "assertions": 303,
+   "products": 240,
+   "contains": 202,
    "in_range": 34,
    "verdicts": {
     "fixed": 47,
     "runtime_dependent": 9,
-    "workaround": 24,
+    "workaround": 26,
     "affected": 29,
     "under_investigation": 3,
     "not_affected": 65,
@@ -1167,15 +1169,17 @@
      "trackers": []
     }
    ],
-   "assertions": 115,
-   "products": 90,
-   "contains": 105,
+   "assertions": 258,
+   "products": 123,
+   "contains": 227,
    "in_range": 37,
    "verdicts": {
     "present": 49,
-    "fixed": 51,
-    "not_affected": 10,
-    "workaround": 5
+    "fixed": 145,
+    "workaround": 27,
+    "absent": 11,
+    "not_affected": 20,
+    "affected": 6
    }
   },
   {
@@ -1413,14 +1417,16 @@
      "trackers": []
     }
    ],
-   "assertions": 35,
-   "products": 26,
-   "contains": 35,
+   "assertions": 44,
+   "products": 35,
+   "contains": 36,
    "in_range": 17,
    "verdicts": {
-    "fixed": 16,
+    "fixed": 17,
     "present": 17,
-    "workaround": 2
+    "workaround": 2,
+    "not_affected": 7,
+    "absent": 1
    }
   },
   {
@@ -1551,14 +1557,14 @@
      "trackers": []
     }
    ],
-   "assertions": 53,
-   "products": 33,
+   "assertions": 63,
+   "products": 37,
    "contains": 6,
    "in_range": 5,
    "verdicts": {
     "fixed": 1,
     "present": 5,
-    "not_affected": 47
+    "not_affected": 57
    }
   },
   {
@@ -1628,15 +1634,15 @@
      "trackers": []
     }
    ],
-   "assertions": 78,
-   "products": 28,
-   "contains": 64,
+   "assertions": 99,
+   "products": 47,
+   "contains": 83,
    "in_range": 43,
    "verdicts": {
     "present": 62,
     "affected": 1,
-    "fixed": 1,
-    "not_affected": 14
+    "fixed": 20,
+    "not_affected": 16
    }
   },
   {
@@ -2579,12 +2585,15 @@
      "trackers": []
     }
    ],
-   "assertions": 114,
-   "products": 31,
-   "contains": 114,
+   "assertions": 144,
+   "products": 61,
+   "contains": 143,
    "in_range": 100,
    "verdicts": {
-    "present": 114
+    "present": 114,
+    "fixed": 27,
+    "workaround": 2,
+    "not_affected": 1
    }
   },
   {
@@ -2652,12 +2661,17 @@
      "trackers": []
     }
    ],
-   "assertions": 56,
-   "products": 31,
-   "contains": 56,
+   "assertions": 176,
+   "products": 143,
+   "contains": 167,
    "in_range": 40,
    "verdicts": {
-    "present": 56
+    "present": 56,
+    "fixed": 76,
+    "affected": 15,
+    "workaround": 20,
+    "absent": 4,
+    "not_affected": 5
    }
   },
   {
@@ -2691,12 +2705,15 @@
      "trackers": []
     }
    ],
-   "assertions": 34,
-   "products": 23,
-   "contains": 34,
+   "assertions": 58,
+   "products": 47,
+   "contains": 57,
    "in_range": 3,
    "verdicts": {
-    "present": 34
+    "present": 34,
+    "not_affected": 1,
+    "fixed": 16,
+    "workaround": 7
    }
   },
   {
@@ -2738,12 +2755,15 @@
      "trackers": []
     }
    ],
-   "assertions": 22,
-   "products": 11,
-   "contains": 22,
+   "assertions": 42,
+   "products": 31,
+   "contains": 34,
    "in_range": 6,
    "verdicts": {
-    "present": 22
+    "present": 22,
+    "not_affected": 8,
+    "fixed": 2,
+    "affected": 10
    }
   },
   {
@@ -2789,12 +2809,16 @@
      "trackers": []
     }
    ],
-   "assertions": 4,
-   "products": 3,
-   "contains": 4,
+   "assertions": 41,
+   "products": 24,
+   "contains": 38,
    "in_range": 2,
    "verdicts": {
-    "present": 4
+    "present": 4,
+    "fixed": 30,
+    "not_affected": 3,
+    "workaround": 3,
+    "affected": 1
    }
   },
   {
@@ -2832,12 +2856,14 @@
      "trackers": []
     }
    ],
-   "assertions": 3,
-   "products": 3,
-   "contains": 3,
+   "assertions": 19,
+   "products": 19,
+   "contains": 19,
    "in_range": 2,
    "verdicts": {
-    "present": 3
+    "present": 3,
+    "workaround": 2,
+    "fixed": 14
    }
   }
  ],
@@ -2849,8 +2875,8 @@
    "url": "https://github.com/NCSC-NL/php2shell",
    "license": "EUPL-1.2",
    "notes": "Rows in package-level segments (runtime builds, frameworks and libraries, OS distributions, container images, developer tooling) are excluded. Those are open source packages already indexed by deps.dev, OSV and distro trackers.",
-   "assertions": 568,
-   "latest": "2026-11-12",
+   "assertions": 571,
+   "latest": "2026-11-19",
    "fv": "hand-listed",
    "dp": [
     "https://github.com/NCSC-NL/php2shell"
@@ -2891,15 +2917,15 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 2425,
+   "assertions": 3532,
    "latest": "2026-11-19",
    "publishers": {
-    "Red Hat Product Security": 1427,
-    "Siemens ProductCERT": 451,
-    "CISA": 297,
-    "Microsoft Security Response Center": 82,
+    "Red Hat Product Security": 1891,
+    "Siemens ProductCERT": 754,
+    "CISA": 618,
+    "Microsoft Security Response Center": 85,
+    "ABB PSIRT": 69,
     "Cisco": 60,
-    "ABB PSIRT": 53,
     "Schneider Electric CPCERT": 31,
     "SICK PSIRT": 20,
     "Open-Xchange GmbH": 2,
