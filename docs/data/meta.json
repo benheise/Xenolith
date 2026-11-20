@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T22:50:08Z",
+ "built": "2026-11-20T22:50:59Z",
  "exploitation_levels": [
   "exploited",
   "attempted",
@@ -7,8 +7,8 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20214,
-  "products_with_data": 8672,
+  "assertions": 20223,
+  "products_with_data": 8678,
   "inventories": 398,
   "inventory_components": 239659,
   "cpe_linked_clusters": 23,
@@ -1024,18 +1024,19 @@
     }
    ],
    "kev": 13,
-   "assertions": 746,
-   "products": 462,
-   "contains": 520,
+   "assertions": 755,
+   "products": 471,
+   "contains": 525,
    "in_range": 34,
    "verdicts": {
-    "fixed": 334,
+    "fixed": 336,
     "runtime_dependent": 14,
-    "workaround": 35,
+    "workaround": 38,
     "affected": 51,
     "under_investigation": 52,
-    "not_affected": 130,
+    "not_affected": 133,
     "present": 100,
+    "unknown": 1,
     "absent": 30
    },
    "exploitation": {
@@ -6931,7 +6932,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 733,
+   "assertions": 742,
    "latest": "2026-11-20",
    "fv": "community",
    "dp": [

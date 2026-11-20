@@ -3,6 +3,39 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-20: Java4Shell recheck
+
+Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new statements and
+6 updated rows (320 Java4Shell statements in all), each read on the vendor's own page.
+
+- **Status changes:**
+  - Cisco (advisory v1.3, 20 November): Catalyst Center moved from affected to not affected.
+    NextFusion Platform, listed as affected in v1.2, is gone from v1.3 with no note in the revision
+    history; its row is now `unknown`. Secure Network Analytics now has patches planned for 7.6.1,
+    7.6.0 and 7.5.3 (date not set). Every other fixed release is still TBD.
+  - Splunk (SVD-2026-1102, 20 November): AppDynamics On-Premises Events Service, EUM Server and
+    Enterprise Console moved from affected to workaround (-XX:-UseBASE64Intrinsics).
+- **New products from vendors already tracked:**
+  - Cisco v1.3 adds Crosswork Hierarchical Controller, Optical Networking Controller, HyperFlex HX
+    Data Platform and Unified Contact Center Enterprise Cloud Connect (fix planned in 15.0(1)SU3).
+  - Splunk adds Splunk Attack Analyzer as affected, no fix named.
+- **New vendor:** JetBrains (two posts of 20 November). YouTrack Server fixed in 2026.2.19884,
+  2026.1.14193 and 2025.3.178461 with a patched bundled Java; TeamCity's 2026.1.6 and 2026.2.2
+  Docker images republished with a patched Java, other installs need their Java updated;
+  TeamCity Cloud and YouTrack Cloud not affected.
+- **No change:** PaperCut (26.0.7 still planned for the week of 23 November; no 25.x fix date),
+  Keycloak (Operator image still on the workaround), Barracuda (last updated 18 November),
+  Atlassian (patches still wait on Temurin), Elastic (8.19.26, 9.4.10, 9.5.7 and 9.6.0 not
+  released yet), Jenkins, Tenable, Fortinet, Eclipse Temurin.
+- Exploitation unchanged: probing and exploit attempts, no confirmed compromise, not in CISA KEV.
+- **Not added:** ManageEngine's community post gives Java patch IDs for Endpoint Central users,
+  not a status for any ManageEngine product. Esri's ArcGIS post still refuses automated access
+  (HTTP 403). Sophos' advisory timed out; the copy read through another fetcher was v3, older than
+  the v5 already in the census, so its rows are unchanged.
+- Still silent: Ping Identity, JFrog (product statement), CloudBees, Broadcom (VMware Tanzu,
+  Symantec), IBM (no Semeru or WebSphere bulletin), Oracle's own products, SAP, SapMachine,
+  JetBrains Runtime and the IDEs.
+
 ## 2026-11-20: KEV gap list closed
 
 Every KEV entry that fits the watchlist rules is now tracked: 392 of 1,790 KEV CVEs (21.9%),
