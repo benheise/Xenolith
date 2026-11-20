@@ -2497,6 +2497,16 @@
 "sbom"
 ]
 },
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.6/19.6.0-ee.0.json": {
+"fetched": "2026-11-20",
+"kind": "sbom",
+"n": 2740,
+"sha": "d8b0d6f6101f35910a055139cc0346f833b560d452474d63d7c6874a56796315",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://help.ivanti.com/ht/help/en_US/ISM/2024/ITSM_AttributionReport__Q22024.pdf": {
 "fetched": "2026-11-08",
 "kind": "pdf",
@@ -2927,6 +2937,16 @@
 "component_license"
 ]
 },
+"https://opensource.netapp.com/ONTAP_Mediator/1.13/NOTICE.pdf": {
+"fetched": "2026-11-20",
+"kind": "pdf",
+"n": 117,
+"sha": "90db97ea54a72b47e44decf5724babd0923d8c3f200721713e88a2561cb4ee5e",
+"status": "ok",
+"via": [
+"component_license"
+]
+},
 "https://opensource.netapp.com/ONTAP_Select_Deploy/9.17.1/NOTICE.pdf": {
 "fetched": "2026-11-08",
 "kind": "pdf",
@@ -3172,6 +3192,16 @@
 "sbom"
 ]
 },
+"https://resources.jetbrains.com/storage/third-party-libraries/datalore/datalore-enterprise-2026.4.2-third-party-libraries.json": {
+"fetched": "2026-11-20",
+"kind": "sbom",
+"n": 815,
+"sha": "5dab52b4a74f1d06887d35cd3ff2663fab96f1e4e52fac3974721df944446de6",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://resources.jetbrains.com/storage/third-party-libraries/dotnet/JetBrains.Rider-2026.3.0.1-third-party-libraries.json": {
 "fetched": "2026-11-18",
 "kind": "sbom",
@@ -3214,6 +3244,16 @@
 },
 "https://resources.jetbrains.com/storage/third-party-libraries/hub/hub-2026.2.52570.json": {
 "fetched": "2026-11-18",
+"kind": "sbom",
+"n": 418,
+"sha": "fc2ee9bed01d96a28757017a17f63ced1eefb818d36d52b96b9798ed7db3ebcb",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/hub/hub-2026.2.52586.json": {
+"fetched": "2026-11-20",
 "kind": "sbom",
 "n": 418,
 "sha": "fc2ee9bed01d96a28757017a17f63ced1eefb818d36d52b96b9798ed7db3ebcb",
@@ -3397,6 +3437,16 @@
 "kind": "sbom",
 "n": 1011,
 "sha": "751c209723487b8e53d3f6ed4ae69e6d36898e10ecb329a4fb52f514aa2a176a",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://resources.jetbrains.com/storage/third-party-libraries/youtrack/youtrack-2026.2.19884.json": {
+"fetched": "2026-11-20",
+"kind": "sbom",
+"n": 1011,
+"sha": "bab469b4163db3cab3052736f9e9a1522d3bba9f2692186ff6e25c4c8235b6ba",
 "status": "ok",
 "via": [
 "sbom"

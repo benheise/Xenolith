@@ -1,14 +1,14 @@
 {
- "built": "2026-11-19T22:53:12Z",
+ "built": "2026-11-20T15:45:28Z",
  "counts": {
-  "assertions": 17895,
-  "products_with_data": 8316,
-  "inventories": 393,
-  "inventory_components": 234558,
+  "assertions": 18072,
+  "products_with_data": 8424,
+  "inventories": 398,
+  "inventory_components": 239659,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4704,
+  "spine_only_shown": 4703,
   "components": 47,
   "wanted": 83,
   "wanted_fulfilled": 6
@@ -95,8 +95,8 @@
      "trackers": []
     }
    ],
-   "assertions": 915,
-   "products": 768,
+   "assertions": 1026,
+   "products": 879,
    "contains": 487,
    "in_range": 3,
    "verdicts": {
@@ -106,7 +106,7 @@
     "under_investigation": 76,
     "not_affected": 206,
     "present": 84,
-    "absent": 144,
+    "absent": 255,
     "runtime_dependent": 2
    }
   },
@@ -324,9 +324,9 @@
      ]
     }
    ],
-   "assertions": 7400,
+   "assertions": 7402,
    "products": 6145,
-   "contains": 2582,
+   "contains": 2584,
    "in_range": 11,
    "verdicts": {
     "not_affected": 4258,
@@ -335,7 +335,7 @@
     "fixed": 1356,
     "under_investigation": 159,
     "workaround": 251,
-    "present": 49
+    "present": 51
    }
   },
   {
@@ -415,12 +415,12 @@
      ]
     }
    ],
-   "assertions": 108,
+   "assertions": 109,
    "products": 41,
-   "contains": 101,
+   "contains": 102,
    "in_range": 1,
    "verdicts": {
-    "present": 101,
+    "present": 102,
     "not_affected": 7
    }
   },
@@ -540,12 +540,12 @@
      ]
     }
    ],
-   "assertions": 201,
+   "assertions": 202,
    "products": 88,
-   "contains": 193,
+   "contains": 194,
    "in_range": 26,
    "verdicts": {
-    "present": 137,
+    "present": 138,
     "fixed": 45,
     "not_affected": 4,
     "workaround": 11,
@@ -646,14 +646,14 @@
      "trackers": []
     }
    ],
-   "assertions": 925,
+   "assertions": 926,
    "products": 472,
-   "contains": 594,
+   "contains": 595,
    "in_range": 77,
    "verdicts": {
     "workaround": 263,
     "fixed": 127,
-    "present": 202,
+    "present": 203,
     "not_affected": 82,
     "under_investigation": 1,
     "affected": 2,
@@ -696,12 +696,12 @@
      ]
     }
    ],
-   "assertions": 86,
+   "assertions": 89,
    "products": 58,
-   "contains": 86,
+   "contains": 89,
    "in_range": 23,
    "verdicts": {
-    "present": 55,
+    "present": 58,
     "fixed": 26,
     "workaround": 5
    }
@@ -737,12 +737,12 @@
      ]
     }
    ],
-   "assertions": 89,
+   "assertions": 91,
    "products": 68,
-   "contains": 76,
+   "contains": 78,
    "in_range": 5,
    "verdicts": {
-    "present": 52,
+    "present": 54,
     "under_investigation": 1,
     "fixed": 19,
     "not_affected": 12,
@@ -848,14 +848,14 @@
      "trackers": []
     }
    ],
-   "assertions": 424,
-   "products": 361,
-   "contains": 217,
+   "assertions": 426,
+   "products": 363,
+   "contains": 219,
    "in_range": 34,
    "verdicts": {
     "fixed": 54,
     "runtime_dependent": 12,
-    "workaround": 34,
+    "workaround": 36,
     "affected": 29,
     "under_investigation": 56,
     "not_affected": 113,
@@ -965,16 +965,16 @@
      "trackers": []
     }
    ],
-   "assertions": 103,
-   "products": 48,
-   "contains": 91,
-   "in_range": 46,
+   "assertions": 135,
+   "products": 65,
+   "contains": 116,
+   "in_range": 47,
    "verdicts": {
-    "fixed": 11,
-    "present": 50,
-    "affected": 8,
-    "not_affected": 12,
-    "workaround": 22
+    "fixed": 40,
+    "present": 51,
+    "affected": 11,
+    "not_affected": 19,
+    "workaround": 14
    }
   },
   {
@@ -1169,13 +1169,13 @@
      "trackers": []
     }
    ],
-   "assertions": 258,
-   "products": 123,
-   "contains": 227,
+   "assertions": 260,
+   "products": 124,
+   "contains": 229,
    "in_range": 37,
    "verdicts": {
-    "present": 49,
-    "fixed": 145,
+    "fixed": 146,
+    "present": 50,
     "workaround": 27,
     "absent": 11,
     "not_affected": 20,
@@ -1282,12 +1282,12 @@
      "trackers": []
     }
    ],
-   "assertions": 236,
+   "assertions": 238,
    "products": 171,
-   "contains": 216,
+   "contains": 218,
    "in_range": 62,
    "verdicts": {
-    "present": 126,
+    "present": 128,
     "workaround": 15,
     "fixed": 75,
     "not_affected": 20
@@ -1974,12 +1974,12 @@
      "trackers": []
     }
    ],
-   "assertions": 68,
+   "assertions": 69,
    "products": 34,
-   "contains": 63,
+   "contains": 64,
    "in_range": 3,
    "verdicts": {
-    "present": 58,
+    "present": 59,
     "fixed": 4,
     "affected": 1,
     "not_affected": 5
@@ -2152,12 +2152,12 @@
      "trackers": []
     }
    ],
-   "assertions": 129,
+   "assertions": 132,
    "products": 94,
-   "contains": 121,
+   "contains": 124,
    "in_range": 34,
    "verdicts": {
-    "present": 77,
+    "present": 80,
     "affected": 18,
     "not_affected": 8,
     "fixed": 26
@@ -2226,12 +2226,12 @@
      "trackers": []
     }
    ],
-   "assertions": 165,
+   "assertions": 168,
    "products": 125,
-   "contains": 161,
-   "in_range": 36,
+   "contains": 164,
+   "in_range": 38,
    "verdicts": {
-    "present": 92,
+    "present": 95,
     "fixed": 47,
     "workaround": 12,
     "affected": 10,
@@ -2273,12 +2273,12 @@
      "trackers": []
     }
    ],
-   "assertions": 149,
+   "assertions": 152,
    "products": 113,
-   "contains": 146,
-   "in_range": 24,
+   "contains": 149,
+   "in_range": 26,
    "verdicts": {
-    "present": 76,
+    "present": 79,
     "fixed": 64,
     "affected": 6,
     "not_affected": 3
@@ -2315,12 +2315,12 @@
      "trackers": []
     }
    ],
-   "assertions": 74,
+   "assertions": 75,
    "products": 61,
-   "contains": 57,
+   "contains": 58,
    "in_range": 13,
    "verdicts": {
-    "present": 37,
+    "present": 38,
     "not_affected": 17,
     "affected": 9,
     "fixed": 11
@@ -2461,12 +2461,12 @@
      "trackers": []
     }
    ],
-   "assertions": 75,
+   "assertions": 78,
    "products": 57,
-   "contains": 68,
+   "contains": 71,
    "in_range": 17,
    "verdicts": {
-    "present": 40,
+    "present": 43,
     "fixed": 21,
     "workaround": 7,
     "not_affected": 7
@@ -2503,12 +2503,12 @@
      "trackers": []
     }
    ],
-   "assertions": 31,
+   "assertions": 32,
    "products": 18,
-   "contains": 26,
+   "contains": 27,
    "in_range": 18,
    "verdicts": {
-    "present": 24,
+    "present": 25,
     "fixed": 2,
     "absent": 1,
     "not_affected": 4
@@ -2545,12 +2545,12 @@
      "trackers": []
     }
    ],
-   "assertions": 48,
+   "assertions": 49,
    "products": 31,
-   "contains": 37,
+   "contains": 38,
    "in_range": 13,
    "verdicts": {
-    "present": 37,
+    "present": 38,
     "not_affected": 11
    }
   },
@@ -2661,12 +2661,12 @@
      "trackers": []
     }
    ],
-   "assertions": 176,
+   "assertions": 178,
    "products": 143,
-   "contains": 167,
+   "contains": 169,
    "in_range": 40,
    "verdicts": {
-    "present": 56,
+    "present": 58,
     "fixed": 76,
     "affected": 15,
     "workaround": 20,
@@ -2917,14 +2917,14 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 3532,
-   "latest": "2026-11-19",
+   "assertions": 3677,
+   "latest": "2026-11-20",
    "publishers": {
-    "Red Hat Product Security": 1891,
-    "Siemens ProductCERT": 754,
+    "Red Hat Product Security": 1910,
+    "Siemens ProductCERT": 875,
     "CISA": 618,
-    "Microsoft Security Response Center": 85,
-    "ABB PSIRT": 69,
+    "Microsoft Security Response Center": 89,
+    "ABB PSIRT": 70,
     "Cisco": 60,
     "Schneider Electric CPCERT": 31,
     "SICK PSIRT": 20,
@@ -2944,8 +2944,8 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 2601,
-   "latest": "2026-11-19",
+   "assertions": 2633,
+   "latest": "2026-11-20",
    "fv": "auto-discovered",
    "dp": [
     "https://docs.paloaltonetworks.com/oss-listings"
