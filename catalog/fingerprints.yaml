@@ -318,7 +318,6 @@ components:
   chromium:
     name: chromium
     purl: pkg:generic/chromium@{version}
-    watchlist: false
     strings:
       # the Chromium version embedded in Electron and Qt WebEngine (a browser's own
       # binary is identified by Syft's chrome classifier)

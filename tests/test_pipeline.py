@@ -748,7 +748,7 @@ class FingerprintTest(unittest.TestCase):
         doc = fpm.to_cyclonedx(list(found.values()), self.fps, "x")
         for c in doc["components"]:
             linked = "xenolith:component" in {p["name"] for p in c["properties"]}
-            self.assertEqual(linked, c["name"] in ("zlib", "expat"), c["name"])     # the two that are on the watchlist
+            self.assertEqual(linked, c["name"] in ("zlib", "expat", "chromium"), c["name"])     # the three that are on the watchlist
 
     def test_archives(self):
         log4j = jar({"META-INF/maven/org.apache.logging.log4j/log4j-core/pom.properties": b"groupId=org.apache.logging.log4j\nversion=2.14.1\n",

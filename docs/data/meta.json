@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T22:10:50Z",
+ "built": "2026-11-20T22:44:36Z",
  "exploitation_levels": [
   "exploited",
   "attempted",
@@ -7,15 +7,15 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 18448,
-  "products_with_data": 8512,
+  "assertions": 18879,
+  "products_with_data": 8536,
   "inventories": 398,
   "inventory_components": 239659,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4690,
-  "components": 56,
+  "spine_only_shown": 4677,
+  "components": 91,
   "wanted": 83,
   "wanted_fulfilled": 6
  },
@@ -109,13 +109,66 @@
      "kev_ransomware": [
       "CVE-2024-4577"
      ]
+    },
+    {
+     "name": "php-cgi and PHP-FPM remote code execution",
+     "year": 2019,
+     "cves": [
+      "CVE-2012-1823",
+      "CVE-2019-11043"
+     ],
+     "note": "Both in CISA KEV. CVE-2012-1823 needs PHP run as a CGI script (php-cgi): a query string without an equals sign is read as command-line options. CVE-2019-11043 needs PHP-FPM behind nginx with a common fastcgi_split_path_info setup; used in ransomware attacks per KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2012-1823"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "5.3.12"
+        },
+        {
+         "introduced": "5.4.0",
+         "fixed": "5.4.2"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2019-11043"
+       ],
+       "ranges": [
+        {
+         "introduced": "7.1.0",
+         "fixed": "7.1.33"
+        },
+        {
+         "introduced": "7.2.0",
+         "fixed": "7.2.24"
+        },
+        {
+         "introduced": "7.3.0",
+         "fixed": "7.3.11"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2012-1823": "2022-03-25",
+      "CVE-2019-11043": "2022-03-25"
+     },
+     "kev_ransomware": [
+      "CVE-2019-11043"
+     ]
     }
    ],
-   "kev": 3,
+   "kev": 5,
    "assertions": 1027,
    "products": 879,
    "contains": 488,
-   "in_range": 3,
+   "in_range": 10,
    "verdicts": {
     "fixed": 194,
     "workaround": 7,
@@ -923,9 +976,54 @@
       }
      ],
      "trackers": []
+    },
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2016,
+     "cves": [
+      "CVE-2010-0840",
+      "CVE-2011-3544",
+      "CVE-2012-0507",
+      "CVE-2012-1723",
+      "CVE-2012-4681",
+      "CVE-2012-5076",
+      "CVE-2013-0422",
+      "CVE-2013-0431",
+      "CVE-2013-2423",
+      "CVE-2013-2465",
+      "CVE-2015-2590",
+      "CVE-2015-4902",
+      "CVE-2016-3427"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2010-0840": "2022-05-25",
+      "CVE-2011-3544": "2022-03-03",
+      "CVE-2012-0507": "2022-03-03",
+      "CVE-2012-1723": "2022-03-03",
+      "CVE-2012-4681": "2022-03-03",
+      "CVE-2012-5076": "2022-03-28",
+      "CVE-2013-0422": "2022-05-25",
+      "CVE-2013-0431": "2022-05-25",
+      "CVE-2013-2423": "2022-05-25",
+      "CVE-2013-2465": "2022-03-28",
+      "CVE-2015-2590": "2022-03-03",
+      "CVE-2015-4902": "2022-03-03",
+      "CVE-2016-3427": "2023-05-12"
+     },
+     "kev_ransomware": [
+      "CVE-2012-0507",
+      "CVE-2012-1723",
+      "CVE-2012-4681",
+      "CVE-2013-0422",
+      "CVE-2013-0431",
+      "CVE-2013-2465"
+     ]
     }
    ],
-   "kev": 0,
+   "kev": 13,
    "assertions": 464,
    "products": 397,
    "contains": 247,
@@ -1263,9 +1361,66 @@
       }
      ],
      "trackers": []
+    },
+    {
+     "name": "JMX listener and Windows PUT remote code execution",
+     "year": 2017,
+     "cves": [
+      "CVE-2016-8735",
+      "CVE-2017-12615"
+     ],
+     "note": "Both in CISA KEV. CVE-2016-8735 needs JmxRemoteLifecycleListener in use and the JMX ports reachable. CVE-2017-12615 is Tomcat 7 on Windows with HTTP PUT enabled (the readonly parameter set to false); used in ransomware attacks per KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2016-8735"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "6.0.48"
+        },
+        {
+         "introduced": "7.0.0",
+         "fixed": "7.0.73"
+        },
+        {
+         "introduced": "8.0.0",
+         "fixed": "8.0.39"
+        },
+        {
+         "introduced": "8.5.0",
+         "fixed": "8.5.7"
+        },
+        {
+         "introduced": "9.0.0.M1",
+         "fixed": "9.0.0.M12"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2017-12615"
+       ],
+       "ranges": [
+        {
+         "introduced": "7.0.0",
+         "last_affected": "7.0.79"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2016-8735": "2023-05-12",
+      "CVE-2017-12615": "2022-03-25"
+     },
+     "kev_ransomware": [
+      "CVE-2017-12615"
+     ]
     }
    ],
-   "kev": 4,
+   "kev": 6,
    "assertions": 260,
    "products": 124,
    "contains": 229,
@@ -1540,9 +1695,34 @@
      "kev": {
       "CVE-2026-34197": "2026-04-16"
      }
+    },
+    {
+     "name": "Fileserver upload remote code execution",
+     "year": 2016,
+     "cves": [
+      "CVE-2016-3088"
+     ],
+     "note": "An HTTP PUT then MOVE to the Fileserver web application uploads and runs a file. In CISA KEV. The Fileserver was removed in 5.14.0.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2016-3088"
+       ],
+       "ranges": [
+        {
+         "introduced": "5.0.0",
+         "fixed": "5.14.0"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2016-3088": "2022-02-10"
+     }
     }
    ],
-   "kev": 2,
+   "kev": 3,
    "assertions": 44,
    "products": 35,
    "contains": 36,
@@ -1693,9 +1873,85 @@
       "CVE-2018-11776": "2021-11-03",
       "CVE-2020-17530": "2021-11-03"
      }
+    },
+    {
+     "name": "Earlier OGNL remote code execution flaws (S2-008, S2-016, S2-032, S2-048)",
+     "year": 2017,
+     "cves": [
+      "CVE-2012-0391",
+      "CVE-2013-2251",
+      "CVE-2016-3081",
+      "CVE-2017-9791"
+     ],
+     "note": "Four older code execution flaws, all in CISA KEV. CVE-2013-2251 (action:, redirect: prefixes) and CVE-2012-0391 need nothing special; CVE-2016-3081 needs Dynamic Method Invocation on; CVE-2017-9791 needs the Struts 1 plugin and has no single fixed release in its record, so every 2.1.x and 2.3.x is flagged.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2012-0391"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0.0",
+         "fixed": "2.2.3.1"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2013-2251"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.0.0",
+         "last_affected": "2.3.15"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2016-3081"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.3.19",
+         "last_affected": "2.3.20.2"
+        },
+        {
+         "introduced": "2.3.21",
+         "last_affected": "2.3.24.1"
+        },
+        {
+         "introduced": "2.3.25",
+         "last_affected": "2.3.28"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2017-9791"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.1.0",
+         "last_affected": "2.1.8.1"
+        },
+        {
+         "introduced": "2.3.0",
+         "last_affected": "2.3.37"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2012-0391": "2022-01-21",
+      "CVE-2013-2251": "2022-03-25",
+      "CVE-2016-3081": "2026-10-08",
+      "CVE-2017-9791": "2022-02-10"
+     }
     }
    ],
-   "kev": 4,
+   "kev": 8,
    "assertions": 63,
    "products": 37,
    "contains": 6,
@@ -1783,9 +2039,50 @@
      "kev": {
       "CVE-2024-38475": "2025-05-01"
      }
+    },
+    {
+     "name": "mod_proxy request forgery and local root escalation",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-40438",
+      "CVE-2019-0211"
+     ],
+     "note": "Both in CISA KEV. CVE-2021-40438 lets a crafted request make mod_proxy forward to a server the attacker picks (used in ransomware attacks per KEV); it needs mod_proxy on. CVE-2019-0211 is local: code already running in a child process, such as a hosted script, becomes root at the next graceful restart.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2021-40438"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.4.0",
+         "last_affected": "2.4.48"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2019-0211"
+       ],
+       "ranges": [
+        {
+         "introduced": "2.4.17",
+         "last_affected": "2.4.38"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2021-40438": "2021-12-01",
+      "CVE-2019-0211": "2021-11-03"
+     },
+     "kev_ransomware": [
+      "CVE-2021-40438"
+     ]
     }
    ],
-   "kev": 3,
+   "kev": 5,
    "assertions": 99,
    "products": 47,
    "contains": 83,
@@ -2051,9 +2348,34 @@
      "kev": {
       "CVE-2025-27363": "2025-05-06"
      }
+    },
+    {
+     "name": "PNG sbit heap overflow (Chrome zero-day)",
+     "year": 2020,
+     "cves": [
+      "CVE-2020-15999"
+     ],
+     "note": "Heap overflow when loading embedded PNG bitmaps in a font. Exploited through Chrome in October 2020 and in CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2020-15999"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "2.10.4"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2020-15999": "2021-11-03"
+     }
     }
    ],
-   "kev": 1,
+   "kev": 2,
    "assertions": 87,
    "products": 52,
    "contains": 79,
@@ -3030,9 +3352,34 @@
       }
      ],
      "trackers": []
+    },
+    {
+     "name": "-dSAFER bypass through .rsdparams",
+     "year": 2017,
+     "cves": [
+      "CVE-2017-8291"
+     ],
+     "note": "Command execution from a crafted EPS file despite -dSAFER. Exploited in April 2017 and in CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2017-8291"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "last_affected": "9.21"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2017-8291": "2022-05-24"
+     }
     }
    ],
-   "kev": 0,
+   "kev": 1,
    "assertions": 41,
    "products": 24,
    "contains": 38,
@@ -3082,9 +3429,41 @@
      "kev": {
       "CVE-2016-3714": "2024-09-09"
      }
+    },
+    {
+     "name": "ImageTragick file deletion and request forgery",
+     "year": 2016,
+     "cves": [
+      "CVE-2016-3715",
+      "CVE-2016-3718"
+     ],
+     "note": "The other two ImageTragick flaws in CISA KEV. A crafted image deletes files (EPHEMERAL coder) or makes the server send HTTP or FTP requests. Same fixed releases as CVE-2016-3714.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2016-3715",
+        "CVE-2016-3718"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "6.9.3-10"
+        },
+        {
+         "introduced": "7.0.0",
+         "fixed": "7.0.1-1"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2016-3715": "2021-11-03",
+      "CVE-2016-3718": "2021-11-03"
+     }
     }
    ],
-   "kev": 1,
+   "kev": 3,
    "assertions": 19,
    "products": 19,
    "contains": 19,
@@ -3174,16 +3553,16 @@
     }
    ],
    "kev": 2,
-   "assertions": 19,
+   "assertions": 21,
    "products": 15,
-   "contains": 7,
+   "contains": 9,
    "in_range": 0,
    "verdicts": {
     "not_affected": 12,
-    "fixed": 7
+    "fixed": 9
    },
    "exploitation": {
-    "exploited": 1
+    "exploited": 2
    }
   },
   {
@@ -3263,12 +3642,12 @@
     }
    ],
    "kev": 18,
-   "assertions": 13,
-   "products": 3,
-   "contains": 13,
+   "assertions": 30,
+   "products": 4,
+   "contains": 30,
    "in_range": 0,
    "verdicts": {
-    "fixed": 13
+    "fixed": 30
    },
    "exploitation": {
     "exploited": 2
@@ -3375,15 +3754,17 @@
     }
    ],
    "kev": 21,
-   "assertions": 26,
-   "products": 11,
-   "contains": 23,
+   "assertions": 52,
+   "products": 12,
+   "contains": 49,
    "in_range": 0,
    "verdicts": {
-    "fixed": 23,
+    "fixed": 49,
     "not_affected": 3
    },
-   "exploitation": {}
+   "exploitation": {
+    "exploited": 2
+   }
   },
   {
    "id": "pan-os",
@@ -3454,13 +3835,13 @@
     }
    ],
    "kev": 13,
-   "assertions": 23,
+   "assertions": 33,
    "products": 5,
-   "contains": 16,
+   "contains": 26,
    "in_range": 0,
    "verdicts": {
     "not_affected": 7,
-    "fixed": 16
+    "fixed": 26
    },
    "exploitation": {
     "exploited": 1
@@ -3536,12 +3917,12 @@
     }
    ],
    "kev": 15,
-   "assertions": 123,
+   "assertions": 137,
    "products": 17,
-   "contains": 119,
+   "contains": 133,
    "in_range": 0,
    "verdicts": {
-    "fixed": 118,
+    "fixed": 132,
     "not_affected": 4,
     "workaround": 1
    },
@@ -3673,12 +4054,12 @@
     }
    ],
    "kev": 40,
-   "assertions": 81,
+   "assertions": 123,
    "products": 33,
-   "contains": 81,
+   "contains": 123,
    "in_range": 0,
    "verdicts": {
-    "fixed": 52,
+    "fixed": 94,
     "workaround": 29
    },
    "exploitation": {
@@ -3738,12 +4119,12 @@
     }
    ],
    "kev": 9,
-   "assertions": 21,
-   "products": 7,
-   "contains": 21,
+   "assertions": 28,
+   "products": 8,
+   "contains": 28,
    "in_range": 0,
    "verdicts": {
-    "fixed": 21
+    "fixed": 28
    },
    "exploitation": {
     "exploited": 2
@@ -3789,12 +4170,12 @@
     }
    ],
    "kev": 3,
-   "assertions": 7,
+   "assertions": 9,
    "products": 4,
-   "contains": 6,
+   "contains": 8,
    "in_range": 0,
    "verdicts": {
-    "fixed": 6,
+    "fixed": 8,
     "unknown": 1
    },
    "exploitation": {
@@ -3868,16 +4249,2539 @@
     }
    ],
    "kev": 13,
-   "assertions": 13,
+   "assertions": 25,
    "products": 5,
-   "contains": 13,
+   "contains": 25,
    "in_range": 0,
    "verdicts": {
-    "fixed": 13
+    "fixed": 25
    },
    "exploitation": {
     "exploited": 1
    }
+  },
+  {
+   "id": "struts1",
+   "name": "Apache Struts 1",
+   "upstream": "https://struts.apache.org/struts1eol-announcement.html",
+   "purl": "pkg:maven/struts/struts",
+   "cpe": "cpe:2.3:a:apache:struts",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "ActionForm multipart handler access",
+     "year": 2006,
+     "cves": [
+      "CVE-2006-1547"
+     ],
+     "note": "A multipart form parameter reaches getMultipartRequestHandler and crashes the application. In CISA KEV. Struts 1 has been end of life since 2013, so any copy is unmaintained.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2006-1547"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "1.2.9"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2006-1547": "2022-01-21"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 8,
+   "products": 6,
+   "contains": 8,
+   "in_range": 0,
+   "verdicts": {
+    "present": 8
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "spring-cloud-function",
+   "name": "Spring Cloud Function",
+   "upstream": "https://spring.io/projects/spring-cloud-function",
+   "purl": "pkg:maven/org.springframework.cloud/spring-cloud-function-context",
+   "cpe": "cpe:2.3:a:vmware:spring_cloud_function",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Routing expression remote code execution",
+     "year": 2022,
+     "cves": [
+      "CVE-2022-22963"
+     ],
+     "note": "A crafted routing-expression header runs code when the routing function is used. In CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2022-22963"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "last_affected": "3.1.6"
+        },
+        {
+         "introduced": "3.2.0",
+         "last_affected": "3.2.2"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2022-22963": "2022-08-25"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 0,
+   "products": 0,
+   "contains": 0,
+   "in_range": 0,
+   "verdicts": {},
+   "exploitation": {}
+  },
+  {
+   "id": "spring-cloud-config",
+   "name": "Spring Cloud Config Server",
+   "upstream": "https://spring.io/projects/spring-cloud-config",
+   "purl": "pkg:maven/org.springframework.cloud/spring-cloud-config-server",
+   "cpe": "cpe:2.3:a:vmware:spring_cloud_config",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Config server directory traversal",
+     "year": 2020,
+     "cves": [
+      "CVE-2020-5410"
+     ],
+     "note": "A crafted URL makes the config server return arbitrary configuration files. In CISA KEV.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2020-5410"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "2.1.9"
+        },
+        {
+         "introduced": "2.2.0",
+         "fixed": "2.2.3"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2020-5410": "2022-03-25"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 0,
+   "products": 0,
+   "contains": 0,
+   "in_range": 0,
+   "verdicts": {},
+   "exploitation": {}
+  },
+  {
+   "id": "spring-data-commons",
+   "name": "Spring Data Commons",
+   "upstream": "https://spring.io/projects/spring-data",
+   "purl": "pkg:maven/org.springframework.data/spring-data-commons",
+   "cpe": "cpe:2.3:a:pivotal_software:spring_data_commons",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Property binder remote code execution",
+     "year": 2018,
+     "cves": [
+      "CVE-2018-1273"
+     ],
+     "note": "Crafted request parameters to a Spring Data REST or projection-backed endpoint run code with no login. In CISA KEV; used in ransomware attacks.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2018-1273"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "last_affected": "1.13.10"
+        },
+        {
+         "introduced": "2.0.0",
+         "last_affected": "2.0.5"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2018-1273": "2022-03-25"
+     },
+     "kev_ransomware": [
+      "CVE-2018-1273"
+     ]
+    }
+   ],
+   "kev": 1,
+   "assertions": 13,
+   "products": 7,
+   "contains": 13,
+   "in_range": 1,
+   "verdicts": {
+    "present": 13
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "chromium",
+   "name": "Chromium (browser engine: V8, Blink, Skia, ANGLE)",
+   "upstream": "https://www.chromium.org/",
+   "purl": "pkg:generic/chromium",
+   "cpe": "cpe:2.3:a:google:chrome",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2026,
+     "cves": [
+      "CVE-2016-1646",
+      "CVE-2016-5198",
+      "CVE-2017-5030",
+      "CVE-2017-5070",
+      "CVE-2018-6065",
+      "CVE-2018-17463",
+      "CVE-2018-17480",
+      "CVE-2019-5786",
+      "CVE-2019-5825",
+      "CVE-2019-13720",
+      "CVE-2020-6418",
+      "CVE-2020-6572",
+      "CVE-2020-16009",
+      "CVE-2020-16010",
+      "CVE-2020-16013",
+      "CVE-2020-16017",
+      "CVE-2021-4102",
+      "CVE-2021-21148",
+      "CVE-2021-21166",
+      "CVE-2021-21193",
+      "CVE-2021-21206",
+      "CVE-2021-21220",
+      "CVE-2021-21224",
+      "CVE-2021-30533",
+      "CVE-2021-30551",
+      "CVE-2021-30554",
+      "CVE-2021-30563",
+      "CVE-2021-30632",
+      "CVE-2021-30633",
+      "CVE-2021-37973",
+      "CVE-2021-37975",
+      "CVE-2021-37976",
+      "CVE-2021-38000",
+      "CVE-2021-38003",
+      "CVE-2022-0609",
+      "CVE-2022-1096",
+      "CVE-2022-1364",
+      "CVE-2022-2856",
+      "CVE-2022-3038",
+      "CVE-2022-3075",
+      "CVE-2022-3723",
+      "CVE-2022-4135",
+      "CVE-2022-4262",
+      "CVE-2023-2033",
+      "CVE-2023-2136",
+      "CVE-2023-3079",
+      "CVE-2023-4762",
+      "CVE-2023-6345",
+      "CVE-2023-7024",
+      "CVE-2024-0519",
+      "CVE-2024-4671",
+      "CVE-2024-4761",
+      "CVE-2024-4947",
+      "CVE-2024-5274",
+      "CVE-2024-7965",
+      "CVE-2024-7971",
+      "CVE-2025-2783",
+      "CVE-2025-5419",
+      "CVE-2025-6554",
+      "CVE-2025-6558",
+      "CVE-2025-10585",
+      "CVE-2025-13223",
+      "CVE-2025-14174",
+      "CVE-2026-2441",
+      "CVE-2026-3909",
+      "CVE-2026-3910",
+      "CVE-2026-5281",
+      "CVE-2026-11645",
+      "CVE-2026-85046",
+      "CVE-2026-87491",
+      "CVE-2026-125350"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2016-1646"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "49.0.2623.108"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2016-5198"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "54.0.2840.90"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2017-5030"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "57.0.2987.98"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2017-5070"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "59.0.3071.86"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2018-6065"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "65.0.3325.146"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2018-17463"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "70.0.3538.64"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2018-17480"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "71.0.3578.80"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2019-5786"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "72.0.3626.121"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2019-5825"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "73.0.3683.86"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2019-13720"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "78.0.3904.87"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2020-6418"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "80.0.3987.122"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2020-6572"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "81.0.4044.92"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2020-16009"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "86.0.4240.183"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2020-16010"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "86.0.4240.185"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2020-16013",
+        "CVE-2020-16017"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "86.0.4240.198"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-4102"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "96.0.4664.110"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-21148"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "88.0.4324.150"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-21166"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "89.0.4389.72"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-21193"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "89.0.4389.90"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-21206",
+        "CVE-2021-21220"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "89.0.4389.128"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-21224"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "90.0.4430.85"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-30533"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "91.0.4472.77"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-30551"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "91.0.4472.101"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-30554"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "91.0.4472.114"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-30563"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "91.0.4472.164"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-30632",
+        "CVE-2021-30633"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "93.0.4577.82"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-37973"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "94.0.4606.61"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-37975",
+        "CVE-2021-37976"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "94.0.4606.71"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2021-38000",
+        "CVE-2021-38003"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "95.0.4638.69"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-0609"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "98.0.4758.102"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-1096"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "99.0.4844.84"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-1364"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "100.0.4896.127"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-2856"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "104.0.5112.101"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-3038"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "105.0.5195.52"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-3075"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "105.0.5195.102"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-3723"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "107.0.5304.87"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-4135"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "107.0.5304.121"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2022-4262"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "108.0.5359.94"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2023-2033"
+       ],
+       "ranges": [
+        {
+         "introduced": "112.0.5615.121",
+         "fixed": "112.0.5615.121"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2023-2136"
+       ],
+       "ranges": [
+        {
+         "introduced": "112.0.5615.137",
+         "fixed": "112.0.5615.137"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2023-3079"
+       ],
+       "ranges": [
+        {
+         "introduced": "114.0.5735.110",
+         "fixed": "114.0.5735.110"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2023-4762"
+       ],
+       "ranges": [
+        {
+         "introduced": "116.0.5845.179",
+         "fixed": "116.0.5845.179"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2023-6345"
+       ],
+       "ranges": [
+        {
+         "introduced": "119.0.6045.199",
+         "fixed": "119.0.6045.199"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2023-7024"
+       ],
+       "ranges": [
+        {
+         "introduced": "120.0.6099.129",
+         "fixed": "120.0.6099.129"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2024-0519"
+       ],
+       "ranges": [
+        {
+         "introduced": "120.0.6099.224",
+         "fixed": "120.0.6099.224"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2024-4671"
+       ],
+       "ranges": [
+        {
+         "introduced": "124.0.6367.201",
+         "fixed": "124.0.6367.201"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2024-4761"
+       ],
+       "ranges": [
+        {
+         "introduced": "124.0.6367.207",
+         "fixed": "124.0.6367.207"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2024-4947"
+       ],
+       "ranges": [
+        {
+         "introduced": "125.0.6422.60",
+         "fixed": "125.0.6422.60"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2024-5274"
+       ],
+       "ranges": [
+        {
+         "introduced": "125.0.6422.112",
+         "fixed": "125.0.6422.112"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2024-7965",
+        "CVE-2024-7971"
+       ],
+       "ranges": [
+        {
+         "introduced": "128.0.6613.84",
+         "fixed": "128.0.6613.84"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2025-2783"
+       ],
+       "ranges": [
+        {
+         "introduced": "134.0.6998.177",
+         "fixed": "134.0.6998.177"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2025-5419"
+       ],
+       "ranges": [
+        {
+         "introduced": "137.0.7151.68",
+         "fixed": "137.0.7151.68"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2025-6554"
+       ],
+       "ranges": [
+        {
+         "introduced": "138.0.7204.96",
+         "fixed": "138.0.7204.96"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2025-6558"
+       ],
+       "ranges": [
+        {
+         "introduced": "138.0.7204.157",
+         "fixed": "138.0.7204.157"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2025-10585"
+       ],
+       "ranges": [
+        {
+         "introduced": "140.0.7339.185",
+         "fixed": "140.0.7339.185"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2025-13223"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "142.0.7444.175"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2025-14174"
+       ],
+       "ranges": [
+        {
+         "introduced": "143.0.7499.110",
+         "fixed": "143.0.7499.110"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-2441"
+       ],
+       "ranges": [
+        {
+         "introduced": "145.0.7632.75",
+         "fixed": "145.0.7632.75"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-3909",
+        "CVE-2026-3910"
+       ],
+       "ranges": [
+        {
+         "introduced": "146.0.7680.75",
+         "fixed": "146.0.7680.75"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-5281"
+       ],
+       "ranges": [
+        {
+         "introduced": "146.0.7680.178",
+         "fixed": "146.0.7680.178"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-11645"
+       ],
+       "ranges": [
+        {
+         "introduced": "149.0.7827.103",
+         "fixed": "149.0.7827.103"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-85046"
+       ],
+       "ranges": [
+        {
+         "introduced": "152.0.7977.82",
+         "fixed": "152.0.7977.82"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-87491"
+       ],
+       "ranges": [
+        {
+         "introduced": "153.0.8010.36",
+         "fixed": "153.0.8010.36"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2026-125350"
+       ],
+       "ranges": [
+        {
+         "introduced": "157.0.8103.50",
+         "fixed": "157.0.8103.50"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2016-1646": "2022-06-08",
+      "CVE-2016-5198": "2022-06-08",
+      "CVE-2017-5030": "2022-06-08",
+      "CVE-2017-5070": "2022-06-08",
+      "CVE-2018-6065": "2022-06-08",
+      "CVE-2018-17463": "2022-06-08",
+      "CVE-2018-17480": "2022-06-08",
+      "CVE-2019-5786": "2022-05-23",
+      "CVE-2019-5825": "2022-06-08",
+      "CVE-2019-13720": "2022-05-23",
+      "CVE-2020-6418": "2021-11-03",
+      "CVE-2020-6572": "2022-01-10",
+      "CVE-2020-16009": "2021-11-03",
+      "CVE-2020-16010": "2021-11-03",
+      "CVE-2020-16013": "2021-11-03",
+      "CVE-2020-16017": "2021-11-03",
+      "CVE-2021-4102": "2021-12-15",
+      "CVE-2021-21148": "2021-11-03",
+      "CVE-2021-21166": "2021-11-03",
+      "CVE-2021-21193": "2021-11-03",
+      "CVE-2021-21206": "2021-11-03",
+      "CVE-2021-21220": "2021-11-03",
+      "CVE-2021-21224": "2021-11-03",
+      "CVE-2021-30533": "2022-06-27",
+      "CVE-2021-30551": "2021-11-03",
+      "CVE-2021-30554": "2021-11-03",
+      "CVE-2021-30563": "2021-11-03",
+      "CVE-2021-30632": "2021-11-03",
+      "CVE-2021-30633": "2021-11-03",
+      "CVE-2021-37973": "2021-11-03",
+      "CVE-2021-37975": "2021-11-03",
+      "CVE-2021-37976": "2021-11-03",
+      "CVE-2021-38000": "2021-11-03",
+      "CVE-2021-38003": "2021-11-03",
+      "CVE-2022-0609": "2022-02-15",
+      "CVE-2022-1096": "2022-03-28",
+      "CVE-2022-1364": "2022-04-15",
+      "CVE-2022-2856": "2022-08-18",
+      "CVE-2022-3038": "2023-03-30",
+      "CVE-2022-3075": "2022-09-08",
+      "CVE-2022-3723": "2022-10-28",
+      "CVE-2022-4135": "2022-11-28",
+      "CVE-2022-4262": "2022-12-05",
+      "CVE-2023-2033": "2023-04-17",
+      "CVE-2023-2136": "2023-04-21",
+      "CVE-2023-3079": "2023-06-07",
+      "CVE-2023-4762": "2024-02-06",
+      "CVE-2023-6345": "2023-11-30",
+      "CVE-2023-7024": "2024-01-02",
+      "CVE-2024-0519": "2024-01-17",
+      "CVE-2024-4671": "2024-05-13",
+      "CVE-2024-4761": "2024-05-16",
+      "CVE-2024-4947": "2024-05-20",
+      "CVE-2024-5274": "2024-05-28",
+      "CVE-2024-7965": "2024-08-28",
+      "CVE-2024-7971": "2024-08-26",
+      "CVE-2025-2783": "2025-03-27",
+      "CVE-2025-5419": "2025-06-05",
+      "CVE-2025-6554": "2025-07-02",
+      "CVE-2025-6558": "2025-07-22",
+      "CVE-2025-10585": "2025-09-23",
+      "CVE-2025-13223": "2025-11-19",
+      "CVE-2025-14174": "2025-12-12",
+      "CVE-2026-2441": "2026-02-17",
+      "CVE-2026-3909": "2026-03-13",
+      "CVE-2026-3910": "2026-03-13",
+      "CVE-2026-5281": "2026-04-01",
+      "CVE-2026-11645": "2026-06-09",
+      "CVE-2026-85046": "2026-09-04",
+      "CVE-2026-87491": "2026-09-09",
+      "CVE-2026-125350": "2026-11-10"
+     }
+    }
+   ],
+   "kev": 71,
+   "assertions": 3,
+   "products": 1,
+   "contains": 3,
+   "in_range": 0,
+   "verdicts": {
+    "present": 3
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "elasticsearch",
+   "name": "Elasticsearch",
+   "upstream": "https://www.elastic.co/elasticsearch",
+   "purl": "pkg:maven/org.elasticsearch/elasticsearch",
+   "cpe": "cpe:2.3:a:elastic:elasticsearch",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2015,
+     "cves": [
+      "CVE-2014-3120",
+      "CVE-2015-1427"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2014-3120"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "1.2"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2015-1427"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "1.3.8"
+        },
+        {
+         "introduced": "1.4.0",
+         "fixed": "1.4.3"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2014-3120": "2022-03-25",
+      "CVE-2015-1427": "2022-03-25"
+     }
+    }
+   ],
+   "kev": 2,
+   "assertions": 32,
+   "products": 10,
+   "contains": 32,
+   "in_range": 1,
+   "verdicts": {
+    "present": 32
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "kibana",
+   "name": "Kibana",
+   "upstream": "https://www.elastic.co/kibana",
+   "purl": "pkg:generic/kibana",
+   "cpe": "cpe:2.3:a:elastic:kibana",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2019,
+     "cves": [
+      "CVE-2019-7609"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2019-7609"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "5.6.15"
+        },
+        {
+         "introduced": "6.0.0",
+         "fixed": "6.6.1"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2019-7609": "2022-01-10"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 2,
+   "products": 1,
+   "contains": 2,
+   "in_range": 2,
+   "verdicts": {
+    "present": 2
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "bind",
+   "name": "ISC BIND",
+   "upstream": "https://www.isc.org/bind/",
+   "purl": "pkg:generic/bind",
+   "cpe": "cpe:2.3:a:isc:bind",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2015,
+     "cves": [
+      "CVE-2015-5477"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2015-5477": "2026-10-08"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 26,
+   "products": 6,
+   "contains": 26,
+   "in_range": 0,
+   "verdicts": {
+    "present": 26
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "inetutils",
+   "name": "GNU InetUtils",
+   "upstream": "https://www.gnu.org/software/inetutils/",
+   "purl": "pkg:generic/inetutils",
+   "cpe": "cpe:2.3:a:gnu:inetutils",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-24061"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2026-24061"
+       ],
+       "ranges": [
+        {
+         "introduced": "1.9.3",
+         "last_affected": "2.7"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2026-24061": "2026-01-26"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 28,
+   "products": 4,
+   "contains": 28,
+   "in_range": 0,
+   "verdicts": {
+    "present": 28
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "shiro",
+   "name": "Apache Shiro",
+   "upstream": "https://shiro.apache.org/",
+   "purl": "pkg:maven/org.apache.shiro/shiro-core",
+   "cpe": "cpe:2.3:a:apache:shiro",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2016,
+     "cves": [
+      "CVE-2016-4437"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2016-4437"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "1.2.5"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2016-4437": "2021-11-03"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 3,
+   "products": 1,
+   "contains": 3,
+   "in_range": 0,
+   "verdicts": {
+    "present": 3
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "jboss-seam",
+   "name": "JBoss Seam 2",
+   "upstream": "https://www.seamframework.org/",
+   "purl": "pkg:maven/org.jboss.seam/jboss-seam",
+   "cpe": "cpe:2.3:a:redhat:jboss_seam",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2010,
+     "cves": [
+      "CVE-2010-1871"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2010-1871": "2021-12-10"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 0,
+   "products": 0,
+   "contains": 0,
+   "in_range": 0,
+   "verdicts": {},
+   "exploitation": {}
+  },
+  {
+   "id": "unrar",
+   "name": "UnRAR",
+   "upstream": "https://www.rarlab.com/rar_add.htm",
+   "purl": "pkg:generic/unrar",
+   "cpe": "cpe:2.3:a:rarlab:unrar",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2022,
+     "cves": [
+      "CVE-2022-30333"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2022-30333"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "6.12"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2022-30333": "2022-08-09"
+     },
+     "kev_ransomware": [
+      "CVE-2022-30333"
+     ]
+    }
+   ],
+   "kev": 1,
+   "assertions": 8,
+   "products": 2,
+   "contains": 8,
+   "in_range": 8,
+   "verdicts": {
+    "present": 8
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "starlette",
+   "name": "Starlette",
+   "upstream": "https://www.starlette.io/",
+   "purl": "pkg:pypi/starlette",
+   "cpe": "cpe:2.3:a:encode:starlette",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-48710"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2026-48710": "2026-09-02"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 8,
+   "products": 4,
+   "contains": 8,
+   "in_range": 0,
+   "verdicts": {
+    "present": 8
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "rails",
+   "name": "Ruby on Rails",
+   "upstream": "https://rubyonrails.org/",
+   "purl": "pkg:gem/rails",
+   "cpe": "cpe:2.3:a:rubyonrails:rails",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2016,
+     "cves": [
+      "CVE-2014-0130",
+      "CVE-2016-0752"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2014-0130"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "3.2.18"
+        },
+        {
+         "introduced": "4.0.0",
+         "fixed": "4.0.5"
+        },
+        {
+         "introduced": "4.1.0",
+         "fixed": "4.1.1"
+        }
+       ]
+      },
+      {
+       "cves": [
+        "CVE-2016-0752"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "3.2.22.1"
+        },
+        {
+         "introduced": "4.0.0",
+         "fixed": "4.1.14.1"
+        },
+        {
+         "introduced": "4.2.0",
+         "fixed": "4.2.5.1"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2014-0130": "2022-03-25",
+      "CVE-2016-0752": "2022-03-25"
+     }
+    },
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2019,
+     "cves": [
+      "CVE-2019-5418"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2019-5418": "2025-07-07"
+     }
+    }
+   ],
+   "kev": 3,
+   "assertions": 8,
+   "products": 3,
+   "contains": 8,
+   "in_range": 0,
+   "verdicts": {
+    "present": 8
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "git",
+   "name": "Git",
+   "upstream": "https://git-scm.com/",
+   "purl": "pkg:generic/git",
+   "cpe": "cpe:2.3:a:git-scm:git",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-48384"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2025-48384": "2025-08-25"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 8,
+   "products": 4,
+   "contains": 8,
+   "in_range": 0,
+   "verdicts": {
+    "present": 8
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "jenkins",
+   "name": "Jenkins core",
+   "upstream": "https://www.jenkins.io/",
+   "purl": "pkg:maven/org.jenkins-ci.main/jenkins-core",
+   "cpe": "cpe:2.3:a:jenkins:jenkins",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2024,
+     "cves": [
+      "CVE-2015-5317",
+      "CVE-2017-1000353",
+      "CVE-2018-1000861",
+      "CVE-2024-23897"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2015-5317": "2023-05-12",
+      "CVE-2017-1000353": "2025-10-02",
+      "CVE-2018-1000861": "2022-02-10",
+      "CVE-2024-23897": "2024-08-19"
+     },
+     "kev_ransomware": [
+      "CVE-2024-23897"
+     ]
+    }
+   ],
+   "kev": 4,
+   "assertions": 0,
+   "products": 0,
+   "contains": 0,
+   "in_range": 0,
+   "verdicts": {},
+   "exploitation": {}
+  },
+  {
+   "id": "exiftool",
+   "name": "ExifTool",
+   "upstream": "https://exiftool.org/",
+   "purl": "pkg:generic/exiftool",
+   "cpe": "cpe:2.3:a:exiftool_project:exiftool",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-22204"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2021-22204": "2021-11-17"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 5,
+   "products": 1,
+   "contains": 5,
+   "in_range": 0,
+   "verdicts": {
+    "present": 5
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "telerik-ui",
+   "name": "Telerik UI for ASP.NET AJAX",
+   "upstream": "https://www.telerik.com/products/aspnet-ajax.aspx",
+   "purl": "pkg:nuget/Telerik.Web.UI",
+   "cpe": "cpe:2.3:a:telerik:ui_for_asp.net_ajax",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2019,
+     "cves": [
+      "CVE-2019-18935"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2019-18935"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "last_affected": "2019.3.1023"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2019-18935": "2021-11-03"
+     },
+     "kev_ransomware": [
+      "CVE-2019-18935"
+     ]
+    },
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2017,
+     "cves": [
+      "CVE-2017-9248",
+      "CVE-2017-11317",
+      "CVE-2017-11357"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2017-9248": "2021-11-03",
+      "CVE-2017-11317": "2022-04-11",
+      "CVE-2017-11357": "2023-01-26"
+     },
+     "kev_ransomware": [
+      "CVE-2017-11357"
+     ]
+    }
+   ],
+   "kev": 4,
+   "assertions": 0,
+   "products": 0,
+   "contains": 0,
+   "in_range": 0,
+   "verdicts": {},
+   "exploitation": {}
+  },
+  {
+   "id": "spark",
+   "name": "Apache Spark",
+   "upstream": "https://spark.apache.org/",
+   "purl": "pkg:maven/org.apache.spark/spark-core_2.12",
+   "cpe": "cpe:2.3:a:apache:spark",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2022,
+     "cves": [
+      "CVE-2022-33891"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2022-33891"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "last_affected": "3.0.3"
+        },
+        {
+         "introduced": "0",
+         "last_affected": "3.1.2"
+        },
+        {
+         "introduced": "0",
+         "last_affected": "3.2.1"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2022-33891": "2023-03-07"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 4,
+   "products": 1,
+   "contains": 4,
+   "in_range": 2,
+   "verdicts": {
+    "present": 4
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "flink",
+   "name": "Apache Flink",
+   "upstream": "https://flink.apache.org/",
+   "purl": "pkg:maven/org.apache.flink/flink-runtime",
+   "cpe": "cpe:2.3:a:apache:flink",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2020,
+     "cves": [
+      "CVE-2020-17519"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2020-17519": "2024-05-23"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 1,
+   "products": 1,
+   "contains": 1,
+   "in_range": 0,
+   "verdicts": {
+    "present": 1
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "phpunit",
+   "name": "PHPUnit",
+   "upstream": "https://phpunit.de/",
+   "purl": "pkg:composer/phpunit/phpunit",
+   "cpe": "cpe:2.3:a:phpunit_project:phpunit",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2017,
+     "cves": [
+      "CVE-2017-9841"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2017-9841"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "4.8.28"
+        },
+        {
+         "introduced": "5.0.0",
+         "fixed": "5.6.3"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2017-9841": "2022-02-15"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 3,
+   "products": 1,
+   "contains": 3,
+   "in_range": 3,
+   "verdicts": {
+    "present": 3
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "phpmailer",
+   "name": "PHPMailer",
+   "upstream": "https://github.com/PHPMailer/PHPMailer",
+   "purl": "pkg:composer/phpmailer/phpmailer",
+   "cpe": "cpe:2.3:a:phpmailer_project:phpmailer",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2016,
+     "cves": [
+      "CVE-2016-10033"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2016-10033"
+       ],
+       "ranges": [
+        {
+         "introduced": "0",
+         "fixed": "5.2.18"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2016-10033": "2025-07-07"
+     }
+    }
+   ],
+   "kev": 1,
+   "assertions": 3,
+   "products": 1,
+   "contains": 3,
+   "in_range": 0,
+   "verdicts": {
+    "present": 3
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "minio",
+   "name": "MinIO",
+   "upstream": "https://min.io/",
+   "purl": "pkg:golang/github.com/minio/minio",
+   "cpe": "cpe:2.3:a:minio:minio",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2023,
+     "cves": [
+      "CVE-2023-28432",
+      "CVE-2023-28434"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2023-28432": "2023-04-21",
+      "CVE-2023-28434": "2023-09-19"
+     }
+    }
+   ],
+   "kev": 2,
+   "assertions": 2,
+   "products": 2,
+   "contains": 2,
+   "in_range": 0,
+   "verdicts": {
+    "present": 2
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "grafana",
+   "name": "Grafana",
+   "upstream": "https://grafana.com/",
+   "purl": "pkg:golang/github.com/grafana/grafana",
+   "cpe": "cpe:2.3:a:grafana:grafana",
+   "aliases": [],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-43798"
+     ],
+     "note": "Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.",
+     "affected": [
+      {
+       "cves": [
+        "CVE-2021-43798"
+       ],
+       "ranges": [
+        {
+         "introduced": "8.0.0",
+         "fixed": "8.0.7"
+        },
+        {
+         "introduced": "8.1.0",
+         "fixed": "8.1.8"
+        },
+        {
+         "introduced": "8.2.0",
+         "fixed": "8.2.7"
+        },
+        {
+         "introduced": "8.3.0",
+         "fixed": "8.3.1"
+        }
+       ]
+      }
+     ],
+     "trackers": [],
+     "kev": {
+      "CVE-2021-43798": "2025-10-09"
+     }
+    },
+    {
+     "name": "Exploited flaws without version data (CISA KEV)",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-39226"
+     ],
+     "note": "Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.",
+     "unranged": true,
+     "trackers": [],
+     "kev": {
+      "CVE-2021-39226": "2022-08-25"
+     }
+    }
+   ],
+   "kev": 2,
+   "assertions": 2,
+   "products": 1,
+   "contains": 2,
+   "in_range": 0,
+   "verdicts": {
+    "present": 2
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "webkit",
+   "name": "WebKit (Safari, iOS, iPadOS, macOS, visionOS, WebKitGTK)",
+   "upstream": "https://webkit.org/",
+   "purl": "pkg:generic/webkit",
+   "cpe": "cpe:2.3:a:apple:safari",
+   "aliases": [
+    "safari",
+    "webkitgtk",
+    "wpe webkit"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2025,
+     "cves": [
+      "CVE-2019-8720",
+      "CVE-2021-1870",
+      "CVE-2021-1871",
+      "CVE-2021-1879",
+      "CVE-2021-30661",
+      "CVE-2021-30663",
+      "CVE-2021-30665",
+      "CVE-2021-30666",
+      "CVE-2021-30761",
+      "CVE-2021-30762",
+      "CVE-2023-23529",
+      "CVE-2023-28204",
+      "CVE-2023-28205",
+      "CVE-2023-32373",
+      "CVE-2023-32409",
+      "CVE-2023-32435",
+      "CVE-2023-32439",
+      "CVE-2023-37450",
+      "CVE-2023-41993",
+      "CVE-2023-42916",
+      "CVE-2023-42917",
+      "CVE-2024-23222",
+      "CVE-2025-24201",
+      "CVE-2025-43529"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2019 to 2025).",
+     "trackers": [],
+     "kev": {
+      "CVE-2019-8720": "2022-05-23",
+      "CVE-2021-1870": "2021-11-03",
+      "CVE-2021-1871": "2021-11-03",
+      "CVE-2021-1879": "2021-11-03",
+      "CVE-2021-30661": "2021-11-03",
+      "CVE-2021-30663": "2021-11-03",
+      "CVE-2021-30665": "2021-11-03",
+      "CVE-2021-30666": "2021-11-03",
+      "CVE-2021-30761": "2021-11-03",
+      "CVE-2021-30762": "2021-11-03",
+      "CVE-2023-23529": "2023-02-14",
+      "CVE-2023-28204": "2023-05-22",
+      "CVE-2023-28205": "2023-04-10",
+      "CVE-2023-32373": "2023-05-22",
+      "CVE-2023-32409": "2023-05-22",
+      "CVE-2023-32435": "2023-06-23",
+      "CVE-2023-32439": "2023-06-23",
+      "CVE-2023-37450": "2023-07-13",
+      "CVE-2023-41993": "2023-09-25",
+      "CVE-2023-42916": "2023-12-04",
+      "CVE-2023-42917": "2023-12-04",
+      "CVE-2024-23222": "2024-01-23",
+      "CVE-2025-24201": "2025-03-13",
+      "CVE-2025-43529": "2025-12-15"
+     }
+    }
+   ],
+   "kev": 24,
+   "assertions": 55,
+   "products": 7,
+   "contains": 55,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 55
+   },
+   "exploitation": {
+    "exploited": 3
+   }
+  },
+  {
+   "id": "gecko",
+   "name": "Mozilla Gecko (Firefox, Firefox ESR, Thunderbird)",
+   "upstream": "https://www.mozilla.org/security/advisories/",
+   "purl": "pkg:generic/gecko",
+   "cpe": "cpe:2.3:a:mozilla:firefox",
+   "aliases": [
+    "firefox",
+    "thunderbird",
+    "firefox esr"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2024,
+     "cves": [
+      "CVE-2010-3765",
+      "CVE-2013-1675",
+      "CVE-2013-1690",
+      "CVE-2015-4495",
+      "CVE-2016-9079",
+      "CVE-2019-11707",
+      "CVE-2019-11708",
+      "CVE-2019-17026",
+      "CVE-2020-6819",
+      "CVE-2020-6820",
+      "CVE-2022-26485",
+      "CVE-2022-26486",
+      "CVE-2024-9680"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2010 to 2024).",
+     "trackers": [],
+     "kev": {
+      "CVE-2010-3765": "2025-10-06",
+      "CVE-2013-1675": "2022-03-03",
+      "CVE-2013-1690": "2022-03-28",
+      "CVE-2015-4495": "2022-05-25",
+      "CVE-2016-9079": "2023-06-22",
+      "CVE-2019-11707": "2022-05-23",
+      "CVE-2019-11708": "2022-05-23",
+      "CVE-2019-17026": "2021-11-03",
+      "CVE-2020-6819": "2021-11-03",
+      "CVE-2020-6820": "2021-11-03",
+      "CVE-2022-26485": "2022-03-07",
+      "CVE-2022-26486": "2022-03-07",
+      "CVE-2024-9680": "2024-10-15"
+     },
+     "kev_ransomware": [
+      "CVE-2024-9680"
+     ]
+    }
+   ],
+   "kev": 13,
+   "assertions": 27,
+   "products": 3,
+   "contains": 27,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 27
+   },
+   "exploitation": {
+    "exploited": 2
+   }
+  },
+  {
+   "id": "junos",
+   "name": "Juniper Junos OS",
+   "upstream": "https://supportportal.juniper.net/s/global-search/%40uri?language=en_US#f-sf_articletype=Security%20Advisories",
+   "purl": "pkg:generic/junos",
+   "cpe": "cpe:2.3:o:juniper:junos",
+   "aliases": [
+    "junos os",
+    "j-web"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2025,
+     "cves": [
+      "CVE-2020-1631",
+      "CVE-2023-36844",
+      "CVE-2023-36845",
+      "CVE-2023-36846",
+      "CVE-2023-36847",
+      "CVE-2023-36851",
+      "CVE-2025-21590"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2020 to 2025).",
+     "trackers": [],
+     "kev": {
+      "CVE-2020-1631": "2022-03-25",
+      "CVE-2023-36844": "2023-11-13",
+      "CVE-2023-36845": "2023-11-13",
+      "CVE-2023-36846": "2023-11-13",
+      "CVE-2023-36847": "2023-11-13",
+      "CVE-2023-36851": "2023-11-13",
+      "CVE-2025-21590": "2025-03-13"
+     }
+    }
+   ],
+   "kev": 7,
+   "assertions": 4,
+   "products": 1,
+   "contains": 4,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 4
+   },
+   "exploitation": {
+    "exploited": 1
+   }
+  },
+  {
+   "id": "cisco-ios-xr",
+   "name": "Cisco IOS XR",
+   "upstream": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+   "purl": "pkg:generic/cisco-ios-xr",
+   "cpe": "cpe:2.3:o:cisco:ios_xr",
+   "aliases": [
+    "ios xr"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2022,
+     "cves": [
+      "CVE-2009-2055",
+      "CVE-2010-3035",
+      "CVE-2020-3118",
+      "CVE-2020-3566",
+      "CVE-2020-3569",
+      "CVE-2022-20821"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2009 to 2022).",
+     "trackers": [],
+     "kev": {
+      "CVE-2009-2055": "2022-03-25",
+      "CVE-2010-3035": "2022-03-25",
+      "CVE-2020-3118": "2021-11-03",
+      "CVE-2020-3566": "2021-11-03",
+      "CVE-2020-3569": "2021-11-03",
+      "CVE-2022-20821": "2022-05-23"
+     }
+    }
+   ],
+   "kev": 6,
+   "assertions": 4,
+   "products": 1,
+   "contains": 4,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 4
+   },
+   "exploitation": {
+    "exploited": 1
+   }
+  },
+  {
+   "id": "zyxel-zld",
+   "name": "Zyxel ZLD firewall firmware",
+   "upstream": "https://www.zyxel.com/global/en/support/security-advisories",
+   "purl": "pkg:generic/zyxel-zld",
+   "cpe": "cpe:2.3:o:zyxel:zld_firmware",
+   "aliases": [
+    "zld",
+    "usg flex",
+    "atp",
+    "zywall"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2024,
+     "cves": [
+      "CVE-2020-29583",
+      "CVE-2022-30525",
+      "CVE-2023-28771",
+      "CVE-2023-33009",
+      "CVE-2023-33010",
+      "CVE-2024-11667"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2020 to 2024).",
+     "trackers": [],
+     "kev": {
+      "CVE-2020-29583": "2021-11-03",
+      "CVE-2022-30525": "2022-05-16",
+      "CVE-2023-28771": "2023-05-31",
+      "CVE-2023-33009": "2023-06-05",
+      "CVE-2023-33010": "2023-06-05",
+      "CVE-2024-11667": "2024-12-03"
+     },
+     "kev_ransomware": [
+      "CVE-2024-11667"
+     ]
+    }
+   ],
+   "kev": 6,
+   "assertions": 12,
+   "products": 5,
+   "contains": 12,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 12
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "manageengine",
+   "name": "Zoho ManageEngine shared platform",
+   "upstream": "https://www.manageengine.com/security/advisory/",
+   "purl": "pkg:generic/manageengine",
+   "cpe": "cpe:2.3:a:zohocorp:manageengine",
+   "aliases": [
+    "manageengine"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2022,
+     "cves": [
+      "CVE-2019-8394",
+      "CVE-2020-10189",
+      "CVE-2021-40539",
+      "CVE-2022-28810",
+      "CVE-2022-35405",
+      "CVE-2022-47966"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2019 to 2022).",
+     "trackers": [],
+     "kev": {
+      "CVE-2019-8394": "2021-11-03",
+      "CVE-2020-10189": "2021-11-03",
+      "CVE-2021-40539": "2021-11-03",
+      "CVE-2022-28810": "2023-03-07",
+      "CVE-2022-35405": "2022-09-22",
+      "CVE-2022-47966": "2023-01-23"
+     },
+     "kev_ransomware": [
+      "CVE-2021-40539",
+      "CVE-2022-47966"
+     ]
+    }
+   ],
+   "kev": 6,
+   "assertions": 4,
+   "products": 1,
+   "contains": 4,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 4
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "ivanti-connect-secure",
+   "name": "Ivanti Connect Secure, Policy Secure and ZTA gateways",
+   "upstream": "https://www.ivanti.com/blog/topics/security-advisory",
+   "purl": "pkg:generic/ivanti-connect-secure",
+   "cpe": "cpe:2.3:a:ivanti:connect_secure",
+   "aliases": [
+    "pulse connect secure",
+    "pulse secure",
+    "ics"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2026,
+     "cves": [
+      "CVE-2019-11510",
+      "CVE-2019-11539",
+      "CVE-2020-8243",
+      "CVE-2020-8260",
+      "CVE-2021-22893",
+      "CVE-2021-22894",
+      "CVE-2021-22899",
+      "CVE-2021-22900",
+      "CVE-2023-46805",
+      "CVE-2024-21887",
+      "CVE-2024-21893",
+      "CVE-2025-0282",
+      "CVE-2025-22457",
+      "CVE-2026-104935",
+      "CVE-2026-111357",
+      "CVE-2026-118527"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2019 to 2026).",
+     "trackers": [],
+     "kev": {
+      "CVE-2019-11510": "2021-11-03",
+      "CVE-2019-11539": "2021-11-03",
+      "CVE-2020-8243": "2021-11-03",
+      "CVE-2020-8260": "2021-11-03",
+      "CVE-2021-22893": "2021-11-03",
+      "CVE-2021-22894": "2021-11-03",
+      "CVE-2021-22899": "2021-11-03",
+      "CVE-2021-22900": "2021-11-03",
+      "CVE-2023-46805": "2024-01-10",
+      "CVE-2024-21887": "2024-01-10",
+      "CVE-2024-21893": "2024-01-31",
+      "CVE-2025-0282": "2025-01-08",
+      "CVE-2025-22457": "2025-04-04",
+      "CVE-2026-104935": "2026-10-13",
+      "CVE-2026-111357": "2026-10-30",
+      "CVE-2026-118527": "2026-10-30"
+     },
+     "kev_ransomware": [
+      "CVE-2019-11510",
+      "CVE-2019-11539",
+      "CVE-2021-22893",
+      "CVE-2023-46805",
+      "CVE-2024-21887",
+      "CVE-2024-21893",
+      "CVE-2025-0282",
+      "CVE-2025-22457"
+     ]
+    }
+   ],
+   "kev": 16,
+   "assertions": 14,
+   "products": 3,
+   "contains": 14,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 14
+   },
+   "exploitation": {
+    "exploited": 2
+   }
+  },
+  {
+   "id": "check-point-gaia",
+   "name": "Check Point Gaia (Security Gateway and Management)",
+   "upstream": "https://support.checkpoint.com/",
+   "purl": "pkg:generic/check-point-gaia",
+   "cpe": "cpe:2.3:o:checkpoint:gaia_os",
+   "aliases": [
+    "gaia",
+    "quantum security gateway"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2026,
+     "cves": [
+      "CVE-2024-24919",
+      "CVE-2026-50751",
+      "CVE-2026-85102",
+      "CVE-2026-93616",
+      "CVE-2026-123039"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2024 to 2026).",
+     "trackers": [],
+     "kev": {
+      "CVE-2024-24919": "2024-05-30",
+      "CVE-2026-50751": "2026-06-08",
+      "CVE-2026-85102": "2026-09-22",
+      "CVE-2026-93616": "2026-09-22",
+      "CVE-2026-123039": "2026-11-13"
+     },
+     "kev_ransomware": [
+      "CVE-2024-24919",
+      "CVE-2026-50751"
+     ]
+    }
+   ],
+   "kev": 5,
+   "assertions": 8,
+   "products": 4,
+   "contains": 8,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 8
+   },
+   "exploitation": {
+    "exploited": 2
+   }
+  },
+  {
+   "id": "cleo-file-transfer",
+   "name": "Cleo Harmony, VLTrader and LexiCom",
+   "upstream": "https://support.cleo.com/",
+   "purl": "pkg:generic/cleo-file-transfer",
+   "cpe": "cpe:2.3:a:cleo:harmony",
+   "aliases": [
+    "harmony",
+    "vltrader",
+    "lexicom"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2024,
+     "cves": [
+      "CVE-2024-50623",
+      "CVE-2024-55956"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2024 to 2024).",
+     "trackers": [],
+     "kev": {
+      "CVE-2024-50623": "2024-12-13",
+      "CVE-2024-55956": "2024-12-17"
+     },
+     "kev_ransomware": [
+      "CVE-2024-50623",
+      "CVE-2024-55956"
+     ]
+    }
+   ],
+   "kev": 2,
+   "assertions": 0,
+   "products": 0,
+   "contains": 0,
+   "in_range": 0,
+   "verdicts": {},
+   "exploitation": {}
+  },
+  {
+   "id": "wso2-carbon",
+   "name": "WSO2 Carbon platform",
+   "upstream": "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/",
+   "purl": "pkg:generic/wso2-carbon",
+   "cpe": "cpe:2.3:a:wso2:api_manager",
+   "aliases": [
+    "wso2 api manager",
+    "wso2 identity server"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2026,
+     "cves": [
+      "CVE-2022-29464",
+      "CVE-2026-5430"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2022 to 2026).",
+     "trackers": [],
+     "kev": {
+      "CVE-2022-29464": "2022-04-25",
+      "CVE-2026-5430": "2026-09-24"
+     },
+     "kev_ransomware": [
+      "CVE-2022-29464"
+     ]
+    }
+   ],
+   "kev": 2,
+   "assertions": 0,
+   "products": 0,
+   "contains": 0,
+   "in_range": 0,
+   "verdicts": {},
+   "exploitation": {}
+  },
+  {
+   "id": "vmware-workspace-one",
+   "name": "VMware Workspace ONE Access and Identity Manager",
+   "upstream": "https://support.broadcom.com/web/ecx/security-advisory",
+   "purl": "pkg:generic/vmware-workspace-one",
+   "cpe": "cpe:2.3:a:vmware:workspace_one_access",
+   "aliases": [
+    "workspace one access",
+    "identity manager",
+    "vidm"
+   ],
+   "incidents": [
+    {
+     "name": "Exploited flaws (CISA KEV)",
+     "year": 2022,
+     "cves": [
+      "CVE-2020-3950",
+      "CVE-2020-4006",
+      "CVE-2022-22954",
+      "CVE-2022-22960"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family (2020 to 2022).",
+     "trackers": [],
+     "kev": {
+      "CVE-2020-3950": "2021-11-03",
+      "CVE-2020-4006": "2021-11-03",
+      "CVE-2022-22954": "2022-04-14",
+      "CVE-2022-22960": "2022-04-15"
+     },
+     "kev_ransomware": [
+      "CVE-2022-22954"
+     ]
+    }
+   ],
+   "kev": 4,
+   "assertions": 4,
+   "products": 4,
+   "contains": 4,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 4
+   },
+   "exploitation": {}
   }
  ],
  "sources": [
@@ -3957,7 +6861,7 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 2633,
+   "assertions": 2800,
    "latest": "2026-11-20",
    "fv": "auto-discovered",
    "dp": [
@@ -3971,7 +6875,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 469,
+   "assertions": 733,
    "latest": "2026-11-20",
    "fv": "community",
    "dp": [

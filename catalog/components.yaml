@@ -52,6 +52,25 @@ components:
               - {introduced: '8.2.0', fixed: '8.2.20'}
               - {introduced: '8.3.0', fixed: '8.3.8'}
         trackers: []
+      - name: php-cgi and PHP-FPM remote code execution
+        year: 2019
+        cves: [CVE-2012-1823, CVE-2019-11043]
+        note: >-
+          Both in CISA KEV. CVE-2012-1823 needs PHP run as a CGI script (php-cgi): a query
+          string without an equals sign is read as command-line options. CVE-2019-11043 needs
+          PHP-FPM behind nginx with a common fastcgi_split_path_info setup; used in ransomware
+          attacks per KEV.
+        affected:   # CVE records
+          - cves: [CVE-2012-1823]
+            ranges:
+              - {introduced: '0', fixed: '5.3.12'}
+              - {introduced: '5.4.0', fixed: '5.4.2'}
+          - cves: [CVE-2019-11043]
+            ranges:
+              - {introduced: '7.1.0', fixed: '7.1.33'}
+              - {introduced: '7.2.0', fixed: '7.2.24'}
+              - {introduced: '7.3.0', fixed: '7.3.11'}
+        trackers: []
 
   - id: brotli
     name: Google Brotli (C library)
@@ -404,6 +423,14 @@ components:
               - {introduced: '22', fixed: '25.0.5.1'}
               - {introduced: '26', fixed: '27.0.1.1'}
         trackers: []
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2016
+        cves: [CVE-2010-0840, CVE-2011-3544, CVE-2012-0507, CVE-2012-1723, CVE-2012-4681,
+               CVE-2012-5076, CVE-2013-0422, CVE-2013-0431, CVE-2013-2423, CVE-2013-2465,
+               CVE-2015-2590, CVE-2015-4902, CVE-2016-3427]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
 
   # Added November 2026 from a research pass on components that are bundled privately inside
   # appliances and enterprise servers (so OS patching doesn't reach them) and have a named or
@@ -531,6 +558,25 @@ components:
               - {introduced: '10.1.0-M1', fixed: '10.1.55'}
               - {introduced: '11.0.0-M1', fixed: '11.0.22'}
         trackers: []
+      - name: JMX listener and Windows PUT remote code execution
+        year: 2017
+        cves: [CVE-2016-8735, CVE-2017-12615]
+        note: >-
+          Both in CISA KEV. CVE-2016-8735 needs JmxRemoteLifecycleListener in use and the JMX
+          ports reachable. CVE-2017-12615 is Tomcat 7 on Windows with HTTP PUT enabled (the
+          readonly parameter set to false); used in ransomware attacks per KEV.
+        affected:   # CVE records
+          - cves: [CVE-2016-8735]
+            ranges:
+              - {introduced: '0', fixed: '6.0.48'}
+              - {introduced: '7.0.0', fixed: '7.0.73'}
+              - {introduced: '8.0.0', fixed: '8.0.39'}
+              - {introduced: '8.5.0', fixed: '8.5.7'}
+              - {introduced: '9.0.0.M1', fixed: '9.0.0.M12'}
+          - cves: [CVE-2017-12615]
+            ranges:
+              - {introduced: '7.0.0', last_affected: '7.0.79'}
+        trackers: []
 
   - id: sudo
     name: sudo
@@ -642,6 +688,15 @@ components:
               - {introduced: '0', fixed: '5.19.4'}
               - {introduced: '6.0.0', fixed: '6.2.3'}
         trackers: []
+      - name: Fileserver upload remote code execution
+        year: 2016
+        cves: [CVE-2016-3088]
+        note: An HTTP PUT then MOVE to the Fileserver web application uploads and runs a file. In CISA KEV. The Fileserver was removed in 5.14.0.
+        affected:   # CVE record: 5.x before 5.14.0
+          - cves: [CVE-2016-3088]
+            ranges:
+              - {introduced: '5.0.0', fixed: '5.14.0'}
+        trackers: []
 
   - id: struts2
     name: Apache Struts 2
@@ -697,6 +752,31 @@ components:
             ranges:
               - {introduced: '2.0.0', last_affected: '2.5.25'}
         trackers: []
+      - name: Earlier OGNL remote code execution flaws (S2-008, S2-016, S2-032, S2-048)
+        year: 2017
+        cves: [CVE-2012-0391, CVE-2013-2251, CVE-2016-3081, CVE-2017-9791]
+        note: >-
+          Four older code execution flaws, all in CISA KEV. CVE-2013-2251 (action:, redirect:
+          prefixes) and CVE-2012-0391 need nothing special; CVE-2016-3081 needs Dynamic Method
+          Invocation on; CVE-2017-9791 needs the Struts 1 plugin and has no single fixed
+          release in its record, so every 2.1.x and 2.3.x is flagged.
+        affected:   # CVE records: before 2.2.3.1; 2.0.0 through 2.3.15; 2.3.19 to 2.3.28 in three runs; 2.1.x and 2.3.x
+          - cves: [CVE-2012-0391]
+            ranges:
+              - {introduced: '2.0.0', fixed: '2.2.3.1'}
+          - cves: [CVE-2013-2251]
+            ranges:
+              - {introduced: '2.0.0', last_affected: '2.3.15'}
+          - cves: [CVE-2016-3081]
+            ranges:
+              - {introduced: '2.3.19', last_affected: '2.3.20.2'}
+              - {introduced: '2.3.21', last_affected: '2.3.24.1'}
+              - {introduced: '2.3.25', last_affected: '2.3.28'}
+          - cves: [CVE-2017-9791]
+            ranges:
+              - {introduced: '2.1.0', last_affected: '2.1.8.1'}
+              - {introduced: '2.3.0', last_affected: '2.3.37'}
+        trackers: []
 
   - id: apache-httpd
     name: Apache HTTP Server
@@ -730,6 +810,22 @@ components:
           - cves: [CVE-2024-38475]
             ranges:
               - {introduced: '2.4.0', last_affected: '2.4.59'}
+        trackers: []
+      - name: mod_proxy request forgery and local root escalation
+        year: 2021
+        cves: [CVE-2021-40438, CVE-2019-0211]
+        note: >-
+          Both in CISA KEV. CVE-2021-40438 lets a crafted request make mod_proxy forward to a
+          server the attacker picks (used in ransomware attacks per KEV); it needs mod_proxy on.
+          CVE-2019-0211 is local: code already running in a child process, such as a hosted
+          script, becomes root at the next graceful restart.
+        affected:   # CVE records: 2.4.48 and earlier; 2.4.17 to 2.4.38
+          - cves: [CVE-2021-40438]
+            ranges:
+              - {introduced: '2.4.0', last_affected: '2.4.48'}
+          - cves: [CVE-2019-0211]
+            ranges:
+              - {introduced: '2.4.17', last_affected: '2.4.38'}
         trackers: []
 
   - id: squid
@@ -853,6 +949,15 @@ components:
           - cves: [CVE-2025-27363]
             ranges:
               - {introduced: '0', last_affected: '2.13.0'}
+        trackers: []
+      - name: PNG sbit heap overflow (Chrome zero-day)
+        year: 2020
+        cves: [CVE-2020-15999]
+        note: Heap overflow when loading embedded PNG bitmaps in a font. Exploited through Chrome in October 2020 and in CISA KEV.
+        affected:   # CVE record gives only the Chrome version; OSV lists FreeType releases up to 2.10.3 as affected
+          - cves: [CVE-2020-15999]
+            ranges:
+              - {introduced: '0', fixed: '2.10.4'}
         trackers: []
 
   - id: libssh
@@ -1268,6 +1373,15 @@ components:
             ranges:
               - {introduced: '0', fixed: '10.03.1'}
         trackers: []
+      - name: -dSAFER bypass through .rsdparams
+        year: 2017
+        cves: [CVE-2017-8291]
+        note: Command execution from a crafted EPS file despite -dSAFER. Exploited in April 2017 and in CISA KEV.
+        affected:   # CVE record says "through 2017-04-26"; 9.21 was the current release then and 9.22 has the fix
+          - cves: [CVE-2017-8291]
+            ranges:
+              - {introduced: '0', last_affected: '9.21'}
+        trackers: []
 
   - id: imagemagick
     name: ImageMagick
@@ -1283,6 +1397,16 @@ components:
         note: Command injection from a crafted image where the product converts untrusted uploads. Exploited in the wild; in CISA KEV.
         affected:   # CVE record: before 6.9.3-10, and 7.x before 7.0.1-1
           - cves: [CVE-2016-3714]
+            ranges:
+              - {introduced: '0', fixed: '6.9.3-10'}
+              - {introduced: '7.0.0', fixed: '7.0.1-1'}
+        trackers: []
+      - name: ImageTragick file deletion and request forgery
+        year: 2016
+        cves: [CVE-2016-3715, CVE-2016-3718]
+        note: The other two ImageTragick flaws in CISA KEV. A crafted image deletes files (EPHEMERAL coder) or makes the server send HTTP or FTP requests. Same fixed releases as CVE-2016-3714.
+        affected:   # CVE records: before 6.9.3-10, and 7.x before 7.0.1-1
+          - cves: [CVE-2016-3715, CVE-2016-3718]
             ranges:
               - {introduced: '0', fixed: '6.9.3-10'}
               - {introduced: '7.0.0', fixed: '7.0.1-1'}
@@ -1626,3 +1750,855 @@ components:
           so they can be found by CVE; no vendor statements have been read for them yet.
         trackers: []
 
+  - id: struts1
+    name: Apache Struts 1
+    upstream: https://struts.apache.org/struts1eol-announcement.html
+    purl: pkg:maven/struts/struts
+    cpe: cpe:2.3:a:apache:struts
+    notices_names:
+      - {pattern: '^(?:apache[-_ ]|jakarta[-_ ])?struts$', version: '^1\.'}
+      - '^struts:struts$'
+      - '^org\.apache\.struts:struts-core$'
+      - '^struts[-_ ]core$'
+    incidents:
+      - name: ActionForm multipart handler access
+        year: 2006
+        cves: [CVE-2006-1547]
+        note: A multipart form parameter reaches getMultipartRequestHandler and crashes the application. In CISA KEV. Struts 1 has been end of life since 2013, so any copy is unmaintained.
+        affected:   # CVE record: before 1.2.9
+          - cves: [CVE-2006-1547]
+            ranges:
+              - {introduced: '0', fixed: '1.2.9'}
+        trackers: []
+
+  - id: spring-cloud-function
+    name: Spring Cloud Function
+    upstream: https://spring.io/projects/spring-cloud-function
+    purl: pkg:maven/org.springframework.cloud/spring-cloud-function-context
+    cpe: cpe:2.3:a:vmware:spring_cloud_function
+    notices_names:
+      - '^org\.springframework\.cloud:spring-cloud-function-(?:context|core|web)$'
+      - '^spring[- ]cloud[- ]function(?:-(?:context|core|web))?$'
+    incidents:
+      - name: Routing expression remote code execution
+        year: 2022
+        cves: [CVE-2022-22963]
+        note: A crafted routing-expression header runs code when the routing function is used. In CISA KEV.
+        affected:   # CVE record: 3.1.6, 3.2.2 and older
+          - cves: [CVE-2022-22963]
+            ranges:
+              - {introduced: '0', last_affected: '3.1.6'}
+              - {introduced: '3.2.0', last_affected: '3.2.2'}
+        trackers: []
+
+  - id: spring-cloud-config
+    name: Spring Cloud Config Server
+    upstream: https://spring.io/projects/spring-cloud-config
+    purl: pkg:maven/org.springframework.cloud/spring-cloud-config-server
+    cpe: cpe:2.3:a:vmware:spring_cloud_config
+    notices_names:
+      - '^org\.springframework\.cloud:spring-cloud-config-server$'
+      - '^spring[- ]cloud[- ]config(?:-server)?$'
+    incidents:
+      - name: Config server directory traversal
+        year: 2020
+        cves: [CVE-2020-5410]
+        note: A crafted URL makes the config server return arbitrary configuration files. In CISA KEV.
+        affected:   # CVE record: 2.2.x before 2.2.3, 2.1.x before 2.1.9, and older
+          - cves: [CVE-2020-5410]
+            ranges:
+              - {introduced: '0', fixed: '2.1.9'}
+              - {introduced: '2.2.0', fixed: '2.2.3'}
+        trackers: []
+
+  - id: spring-data-commons
+    name: Spring Data Commons
+    upstream: https://spring.io/projects/spring-data
+    purl: pkg:maven/org.springframework.data/spring-data-commons
+    cpe: cpe:2.3:a:pivotal_software:spring_data_commons
+    notices_names:
+      - '^org\.springframework\.data:spring-data-commons$'
+      - '^spring[- ]data[- ]commons$'
+    incidents:
+      - name: Property binder remote code execution
+        year: 2018
+        cves: [CVE-2018-1273]
+        note: Crafted request parameters to a Spring Data REST or projection-backed endpoint run code with no login. In CISA KEV; used in ransomware attacks.
+        affected:   # CVE record: 1.13 to 1.13.10, 2.0 to 2.0.5, and older
+          - cves: [CVE-2018-1273]
+            ranges:
+              - {introduced: '0', last_affected: '1.13.10'}
+              - {introduced: '2.0.0', last_affected: '2.0.5'}
+        trackers: []
+
+  - id: chromium
+    name: "Chromium (browser engine: V8, Blink, Skia, ANGLE)"
+    upstream: https://www.chromium.org/
+    purl: pkg:generic/chromium
+    cpe: cpe:2.3:a:google:chrome
+    notices_names:
+      - '^chromium$'
+      - '^google[- ]chrome$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2026
+        cves: [CVE-2016-1646, CVE-2016-5198, CVE-2017-5030, CVE-2017-5070, CVE-2018-6065,
+               CVE-2018-17463, CVE-2018-17480, CVE-2019-5786, CVE-2019-5825, CVE-2019-13720,
+               CVE-2020-6418, CVE-2020-6572, CVE-2020-16009, CVE-2020-16010, CVE-2020-16013,
+               CVE-2020-16017, CVE-2021-4102, CVE-2021-21148, CVE-2021-21166,
+               CVE-2021-21193, CVE-2021-21206, CVE-2021-21220, CVE-2021-21224,
+               CVE-2021-30533, CVE-2021-30551, CVE-2021-30554, CVE-2021-30563,
+               CVE-2021-30632, CVE-2021-30633, CVE-2021-37973, CVE-2021-37975,
+               CVE-2021-37976, CVE-2021-38000, CVE-2021-38003, CVE-2022-0609, CVE-2022-1096,
+               CVE-2022-1364, CVE-2022-2856, CVE-2022-3038, CVE-2022-3075, CVE-2022-3723,
+               CVE-2022-4135, CVE-2022-4262, CVE-2023-2033, CVE-2023-2136, CVE-2023-3079,
+               CVE-2023-4762, CVE-2023-6345, CVE-2023-7024, CVE-2024-0519, CVE-2024-4671,
+               CVE-2024-4761, CVE-2024-4947, CVE-2024-5274, CVE-2024-7965, CVE-2024-7971,
+               CVE-2025-2783, CVE-2025-5419, CVE-2025-6554, CVE-2025-6558, CVE-2025-10585,
+               CVE-2025-13223, CVE-2025-14174, CVE-2026-2441, CVE-2026-3909, CVE-2026-3910,
+               CVE-2026-5281, CVE-2026-11645, CVE-2026-85046, CVE-2026-87491,
+               CVE-2026-125350]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2016-1646]
+            ranges:
+              - {introduced: '0', fixed: '49.0.2623.108'}
+          - cves: [CVE-2016-5198]
+            ranges:
+              - {introduced: '0', fixed: '54.0.2840.90'}
+          - cves: [CVE-2017-5030]
+            ranges:
+              - {introduced: '0', fixed: '57.0.2987.98'}
+          - cves: [CVE-2017-5070]
+            ranges:
+              - {introduced: '0', fixed: '59.0.3071.86'}
+          - cves: [CVE-2018-6065]
+            ranges:
+              - {introduced: '0', fixed: '65.0.3325.146'}
+          - cves: [CVE-2018-17463]
+            ranges:
+              - {introduced: '0', fixed: '70.0.3538.64'}
+          - cves: [CVE-2018-17480]
+            ranges:
+              - {introduced: '0', fixed: '71.0.3578.80'}
+          - cves: [CVE-2019-5786]
+            ranges:
+              - {introduced: '0', fixed: '72.0.3626.121'}
+          - cves: [CVE-2019-5825]
+            ranges:
+              - {introduced: '0', fixed: '73.0.3683.86'}
+          - cves: [CVE-2019-13720]
+            ranges:
+              - {introduced: '0', fixed: '78.0.3904.87'}
+          - cves: [CVE-2020-6418]
+            ranges:
+              - {introduced: '0', fixed: '80.0.3987.122'}
+          - cves: [CVE-2020-6572]
+            ranges:
+              - {introduced: '0', fixed: '81.0.4044.92'}
+          - cves: [CVE-2020-16009]
+            ranges:
+              - {introduced: '0', fixed: '86.0.4240.183'}
+          - cves: [CVE-2020-16010]
+            ranges:
+              - {introduced: '0', fixed: '86.0.4240.185'}
+          - cves: [CVE-2020-16013, CVE-2020-16017]
+            ranges:
+              - {introduced: '0', fixed: '86.0.4240.198'}
+          - cves: [CVE-2021-4102]
+            ranges:
+              - {introduced: '0', fixed: '96.0.4664.110'}
+          - cves: [CVE-2021-21148]
+            ranges:
+              - {introduced: '0', fixed: '88.0.4324.150'}
+          - cves: [CVE-2021-21166]
+            ranges:
+              - {introduced: '0', fixed: '89.0.4389.72'}
+          - cves: [CVE-2021-21193]
+            ranges:
+              - {introduced: '0', fixed: '89.0.4389.90'}
+          - cves: [CVE-2021-21206, CVE-2021-21220]
+            ranges:
+              - {introduced: '0', fixed: '89.0.4389.128'}
+          - cves: [CVE-2021-21224]
+            ranges:
+              - {introduced: '0', fixed: '90.0.4430.85'}
+          - cves: [CVE-2021-30533]
+            ranges:
+              - {introduced: '0', fixed: '91.0.4472.77'}
+          - cves: [CVE-2021-30551]
+            ranges:
+              - {introduced: '0', fixed: '91.0.4472.101'}
+          - cves: [CVE-2021-30554]
+            ranges:
+              - {introduced: '0', fixed: '91.0.4472.114'}
+          - cves: [CVE-2021-30563]
+            ranges:
+              - {introduced: '0', fixed: '91.0.4472.164'}
+          - cves: [CVE-2021-30632, CVE-2021-30633]
+            ranges:
+              - {introduced: '0', fixed: '93.0.4577.82'}
+          - cves: [CVE-2021-37973]
+            ranges:
+              - {introduced: '0', fixed: '94.0.4606.61'}
+          - cves: [CVE-2021-37975, CVE-2021-37976]
+            ranges:
+              - {introduced: '0', fixed: '94.0.4606.71'}
+          - cves: [CVE-2021-38000, CVE-2021-38003]
+            ranges:
+              - {introduced: '0', fixed: '95.0.4638.69'}
+          - cves: [CVE-2022-0609]
+            ranges:
+              - {introduced: '0', fixed: '98.0.4758.102'}
+          - cves: [CVE-2022-1096]
+            ranges:
+              - {introduced: '0', fixed: '99.0.4844.84'}
+          - cves: [CVE-2022-1364]
+            ranges:
+              - {introduced: '0', fixed: '100.0.4896.127'}
+          - cves: [CVE-2022-2856]
+            ranges:
+              - {introduced: '0', fixed: '104.0.5112.101'}
+          - cves: [CVE-2022-3038]
+            ranges:
+              - {introduced: '0', fixed: '105.0.5195.52'}
+          - cves: [CVE-2022-3075]
+            ranges:
+              - {introduced: '0', fixed: '105.0.5195.102'}
+          - cves: [CVE-2022-3723]
+            ranges:
+              - {introduced: '0', fixed: '107.0.5304.87'}
+          - cves: [CVE-2022-4135]
+            ranges:
+              - {introduced: '0', fixed: '107.0.5304.121'}
+          - cves: [CVE-2022-4262]
+            ranges:
+              - {introduced: '0', fixed: '108.0.5359.94'}
+          - cves: [CVE-2023-2033]
+            ranges:
+              - {introduced: '112.0.5615.121', fixed: '112.0.5615.121'}
+          - cves: [CVE-2023-2136]
+            ranges:
+              - {introduced: '112.0.5615.137', fixed: '112.0.5615.137'}
+          - cves: [CVE-2023-3079]
+            ranges:
+              - {introduced: '114.0.5735.110', fixed: '114.0.5735.110'}
+          - cves: [CVE-2023-4762]
+            ranges:
+              - {introduced: '116.0.5845.179', fixed: '116.0.5845.179'}
+          - cves: [CVE-2023-6345]
+            ranges:
+              - {introduced: '119.0.6045.199', fixed: '119.0.6045.199'}
+          - cves: [CVE-2023-7024]
+            ranges:
+              - {introduced: '120.0.6099.129', fixed: '120.0.6099.129'}
+          - cves: [CVE-2024-0519]
+            ranges:
+              - {introduced: '120.0.6099.224', fixed: '120.0.6099.224'}
+          - cves: [CVE-2024-4671]
+            ranges:
+              - {introduced: '124.0.6367.201', fixed: '124.0.6367.201'}
+          - cves: [CVE-2024-4761]
+            ranges:
+              - {introduced: '124.0.6367.207', fixed: '124.0.6367.207'}
+          - cves: [CVE-2024-4947]
+            ranges:
+              - {introduced: '125.0.6422.60', fixed: '125.0.6422.60'}
+          - cves: [CVE-2024-5274]
+            ranges:
+              - {introduced: '125.0.6422.112', fixed: '125.0.6422.112'}
+          - cves: [CVE-2024-7965, CVE-2024-7971]
+            ranges:
+              - {introduced: '128.0.6613.84', fixed: '128.0.6613.84'}
+          - cves: [CVE-2025-2783]
+            ranges:
+              - {introduced: '134.0.6998.177', fixed: '134.0.6998.177'}
+          - cves: [CVE-2025-5419]
+            ranges:
+              - {introduced: '137.0.7151.68', fixed: '137.0.7151.68'}
+          - cves: [CVE-2025-6554]
+            ranges:
+              - {introduced: '138.0.7204.96', fixed: '138.0.7204.96'}
+          - cves: [CVE-2025-6558]
+            ranges:
+              - {introduced: '138.0.7204.157', fixed: '138.0.7204.157'}
+          - cves: [CVE-2025-10585]
+            ranges:
+              - {introduced: '140.0.7339.185', fixed: '140.0.7339.185'}
+          - cves: [CVE-2025-13223]
+            ranges:
+              - {introduced: '0', fixed: '142.0.7444.175'}
+          - cves: [CVE-2025-14174]
+            ranges:
+              - {introduced: '143.0.7499.110', fixed: '143.0.7499.110'}
+          - cves: [CVE-2026-2441]
+            ranges:
+              - {introduced: '145.0.7632.75', fixed: '145.0.7632.75'}
+          - cves: [CVE-2026-3909, CVE-2026-3910]
+            ranges:
+              - {introduced: '146.0.7680.75', fixed: '146.0.7680.75'}
+          - cves: [CVE-2026-5281]
+            ranges:
+              - {introduced: '146.0.7680.178', fixed: '146.0.7680.178'}
+          - cves: [CVE-2026-11645]
+            ranges:
+              - {introduced: '149.0.7827.103', fixed: '149.0.7827.103'}
+          - cves: [CVE-2026-85046]
+            ranges:
+              - {introduced: '152.0.7977.82', fixed: '152.0.7977.82'}
+          - cves: [CVE-2026-87491]
+            ranges:
+              - {introduced: '153.0.8010.36', fixed: '153.0.8010.36'}
+          - cves: [CVE-2026-125350]
+            ranges:
+              - {introduced: '157.0.8103.50', fixed: '157.0.8103.50'}
+        trackers: []
+
+  - id: elasticsearch
+    name: "Elasticsearch"
+    upstream: https://www.elastic.co/elasticsearch
+    purl: pkg:maven/org.elasticsearch/elasticsearch
+    cpe: cpe:2.3:a:elastic:elasticsearch
+    notices_names:
+      - '^elasticsearch$'
+      - '^org\.elasticsearch:elasticsearch$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2015
+        cves: [CVE-2014-3120, CVE-2015-1427]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2014-3120]
+            ranges:
+              - {introduced: '0', fixed: '1.2'}
+          - cves: [CVE-2015-1427]
+            ranges:
+              - {introduced: '0', fixed: '1.3.8'}
+              - {introduced: '1.4.0', fixed: '1.4.3'}
+        trackers: []
+
+  - id: kibana
+    name: "Kibana"
+    upstream: https://www.elastic.co/kibana
+    purl: pkg:generic/kibana
+    cpe: cpe:2.3:a:elastic:kibana
+    notices_names:
+      - '^kibana$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2019
+        cves: [CVE-2019-7609]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2019-7609]
+            ranges:
+              - {introduced: '0', fixed: '5.6.15'}
+              - {introduced: '6.0.0', fixed: '6.6.1'}
+        trackers: []
+
+  - id: bind
+    name: "ISC BIND"
+    upstream: https://www.isc.org/bind/
+    purl: pkg:generic/bind
+    cpe: cpe:2.3:a:isc:bind
+    notices_names:
+      - '^(?:isc[- ])?bind9?$'
+    incidents:
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2015
+        cves: [CVE-2015-5477]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: inetutils
+    name: "GNU InetUtils"
+    upstream: https://www.gnu.org/software/inetutils/
+    purl: pkg:generic/inetutils
+    cpe: cpe:2.3:a:gnu:inetutils
+    notices_names:
+      - '^(?:gnu[- ])?inetutils$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2026
+        cves: [CVE-2026-24061]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2026-24061]
+            ranges:
+              - {introduced: '1.9.3', last_affected: '2.7'}
+        trackers: []
+
+  - id: shiro
+    name: "Apache Shiro"
+    upstream: https://shiro.apache.org/
+    purl: pkg:maven/org.apache.shiro/shiro-core
+    cpe: cpe:2.3:a:apache:shiro
+    notices_names:
+      - '^org\.apache\.shiro:shiro-(?:core|web|all)$'
+      - '^(?:apache[- ])?shiro(?:-(?:core|web|all))?$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2016
+        cves: [CVE-2016-4437]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2016-4437]
+            ranges:
+              - {introduced: '0', fixed: '1.2.5'}
+        trackers: []
+
+  - id: jboss-seam
+    name: "JBoss Seam 2"
+    upstream: https://www.seamframework.org/
+    purl: pkg:maven/org.jboss.seam/jboss-seam
+    cpe: cpe:2.3:a:redhat:jboss_seam
+    notices_names:
+      - '^org\.jboss\.seam:jboss-seam$'
+      - '^jboss[- ]seam$'
+    incidents:
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2010
+        cves: [CVE-2010-1871]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: unrar
+    name: "UnRAR"
+    upstream: https://www.rarlab.com/rar_add.htm
+    purl: pkg:generic/unrar
+    cpe: cpe:2.3:a:rarlab:unrar
+    notices_names:
+      - '^unrar(?:[- ]?(?:src|free|lib|dll))?$'
+      - '^libunrar$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2022
+        cves: [CVE-2022-30333]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2022-30333]
+            ranges:
+              - {introduced: '0', fixed: '6.12'}
+        trackers: []
+
+  - id: starlette
+    name: "Starlette"
+    upstream: https://www.starlette.io/
+    purl: pkg:pypi/starlette
+    cpe: cpe:2.3:a:encode:starlette
+    notices_names:
+      - '^starlette$'
+    incidents:
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2026
+        cves: [CVE-2026-48710]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: rails
+    name: "Ruby on Rails"
+    upstream: https://rubyonrails.org/
+    purl: pkg:gem/rails
+    cpe: cpe:2.3:a:rubyonrails:rails
+    notices_names:
+      - '^(?:ruby on )?rails$'
+      - '^action(?:pack|view)$'
+      - '^activerecord$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2016
+        cves: [CVE-2014-0130, CVE-2016-0752]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2014-0130]
+            ranges:
+              - {introduced: '0', fixed: '3.2.18'}
+              - {introduced: '4.0.0', fixed: '4.0.5'}
+              - {introduced: '4.1.0', fixed: '4.1.1'}
+          - cves: [CVE-2016-0752]
+            ranges:
+              - {introduced: '0', fixed: '3.2.22.1'}
+              - {introduced: '4.0.0', fixed: '4.1.14.1'}
+              - {introduced: '4.2.0', fixed: '4.2.5.1'}
+        trackers: []
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2019
+        cves: [CVE-2019-5418]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: git
+    name: "Git"
+    upstream: https://git-scm.com/
+    purl: pkg:generic/git
+    cpe: cpe:2.3:a:git-scm:git
+    notices_names:
+      - '^git$'
+    incidents:
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2025
+        cves: [CVE-2025-48384]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: jenkins
+    name: "Jenkins core"
+    upstream: https://www.jenkins.io/
+    purl: pkg:maven/org.jenkins-ci.main/jenkins-core
+    cpe: cpe:2.3:a:jenkins:jenkins
+    notices_names:
+      - '^jenkins(?:[- ]core)?$'
+      - '^org\.jenkins-ci\.main:jenkins-core$'
+    incidents:
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2024
+        cves: [CVE-2015-5317, CVE-2017-1000353, CVE-2018-1000861, CVE-2024-23897]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: exiftool
+    name: "ExifTool"
+    upstream: https://exiftool.org/
+    purl: pkg:generic/exiftool
+    cpe: cpe:2.3:a:exiftool_project:exiftool
+    notices_names:
+      - '^(?:image[-:]+)?exiftool$'
+      - '^libimage-exiftool-perl$'
+    incidents:
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2021
+        cves: [CVE-2021-22204]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: telerik-ui
+    name: "Telerik UI for ASP.NET AJAX"
+    upstream: https://www.telerik.com/products/aspnet-ajax.aspx
+    purl: pkg:nuget/Telerik.Web.UI
+    cpe: cpe:2.3:a:telerik:ui_for_asp.net_ajax
+    notices_names:
+      - '^telerik(?:[. ]web[. ]ui| ui for asp\.net ajax)$'
+      - '^telerik\.web\.ui$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2019
+        cves: [CVE-2019-18935]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2019-18935]
+            ranges:
+              - {introduced: '0', last_affected: '2019.3.1023'}
+        trackers: []
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2017
+        cves: [CVE-2017-9248, CVE-2017-11317, CVE-2017-11357]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: spark
+    name: "Apache Spark"
+    upstream: https://spark.apache.org/
+    purl: pkg:maven/org.apache.spark/spark-core_2.12
+    cpe: cpe:2.3:a:apache:spark
+    notices_names:
+      - '^org\.apache\.spark:spark-core(?:_[0-9.]+)?$'
+      - '^(?:apache[- ])?spark(?:-core(?:_[0-9.]+)?)?$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2022
+        cves: [CVE-2022-33891]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2022-33891]
+            ranges:
+              - {introduced: '0', last_affected: '3.0.3'}
+              - {introduced: '0', last_affected: '3.1.2'}
+              - {introduced: '0', last_affected: '3.2.1'}
+        trackers: []
+
+  - id: flink
+    name: "Apache Flink"
+    upstream: https://flink.apache.org/
+    purl: pkg:maven/org.apache.flink/flink-runtime
+    cpe: cpe:2.3:a:apache:flink
+    notices_names:
+      - '^org\.apache\.flink:flink-(?:runtime|dist)(?:_[0-9.]+)?$'
+      - '^(?:apache[- ])?flink$'
+    incidents:
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2020
+        cves: [CVE-2020-17519]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: phpunit
+    name: "PHPUnit"
+    upstream: https://phpunit.de/
+    purl: pkg:composer/phpunit/phpunit
+    cpe: cpe:2.3:a:phpunit_project:phpunit
+    notices_names:
+      - '^(?:phpunit/)?phpunit$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2017
+        cves: [CVE-2017-9841]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2017-9841]
+            ranges:
+              - {introduced: '0', fixed: '4.8.28'}
+              - {introduced: '5.0.0', fixed: '5.6.3'}
+        trackers: []
+
+  - id: phpmailer
+    name: "PHPMailer"
+    upstream: https://github.com/PHPMailer/PHPMailer
+    purl: pkg:composer/phpmailer/phpmailer
+    cpe: cpe:2.3:a:phpmailer_project:phpmailer
+    notices_names:
+      - '^(?:phpmailer/)?phpmailer$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2016
+        cves: [CVE-2016-10033]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2016-10033]
+            ranges:
+              - {introduced: '0', fixed: '5.2.18'}
+        trackers: []
+
+  - id: minio
+    name: "MinIO"
+    upstream: https://min.io/
+    purl: pkg:golang/github.com/minio/minio
+    cpe: cpe:2.3:a:minio:minio
+    notices_names:
+      - '^minio$'
+      - '^github\.com/minio/minio$'
+    incidents:
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2023
+        cves: [CVE-2023-28432, CVE-2023-28434]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  - id: grafana
+    name: "Grafana"
+    upstream: https://grafana.com/
+    purl: pkg:golang/github.com/grafana/grafana
+    cpe: cpe:2.3:a:grafana:grafana
+    notices_names:
+      - '^grafana$'
+      - '^github\.com/grafana/grafana$'
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2021
+        cves: [CVE-2021-43798]
+        note: Each of these is in CISA KEV. Version ranges are taken from the CVE records as published; read the record before relying on one.
+        affected:   # generated from the CVE records (structured versions, or the description for older records)
+          - cves: [CVE-2021-43798]
+            ranges:
+              - {introduced: '8.0.0', fixed: '8.0.7'}
+              - {introduced: '8.1.0', fixed: '8.1.8'}
+              - {introduced: '8.2.0', fixed: '8.2.7'}
+              - {introduced: '8.3.0', fixed: '8.3.1'}
+        trackers: []
+      - name: Exploited flaws without version data (CISA KEV)
+        year: 2021
+        cves: [CVE-2021-39226]
+        note: Each of these is in CISA KEV, but its CVE record has no usable version data, so no product is flagged by version for them.
+        unranged: true
+        trackers: []
+
+  # ---- More first-party engines, added from CISA KEV's own product naming. ----
+
+  # Apple's browser engine, in Safari and in every browser on iOS and iPadOS; WebKitGTK and WPE ship the same code.
+  - id: webkit
+    name: "WebKit (Safari, iOS, iPadOS, macOS, visionOS, WebKitGTK)"
+    upstream: https://webkit.org/
+    purl: pkg:generic/webkit
+    cpe: cpe:2.3:a:apple:safari
+    aliases: [safari, webkitgtk, wpe webkit]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2025
+        cves: [CVE-2019-8720, CVE-2021-1870, CVE-2021-1871, CVE-2021-1879, CVE-2021-30661,
+               CVE-2021-30663, CVE-2021-30665, CVE-2021-30666, CVE-2021-30761,
+               CVE-2021-30762, CVE-2023-23529, CVE-2023-28204, CVE-2023-28205,
+               CVE-2023-32373, CVE-2023-32409, CVE-2023-32435, CVE-2023-32439,
+               CVE-2023-37450, CVE-2023-41993, CVE-2023-42916, CVE-2023-42917,
+               CVE-2024-23222, CVE-2025-24201, CVE-2025-43529]
+        note: Every CVE here is one CISA lists as exploited in this product family (2019 to 2025).
+        trackers: []
+
+  # Mozilla's engine, shared by Firefox, Firefox ESR and Thunderbird and by browsers built on them.
+  - id: gecko
+    name: "Mozilla Gecko (Firefox, Firefox ESR, Thunderbird)"
+    upstream: https://www.mozilla.org/security/advisories/
+    purl: pkg:generic/gecko
+    cpe: cpe:2.3:a:mozilla:firefox
+    aliases: [firefox, thunderbird, firefox esr]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2024
+        cves: [CVE-2010-3765, CVE-2013-1675, CVE-2013-1690, CVE-2015-4495, CVE-2016-9079,
+               CVE-2019-11707, CVE-2019-11708, CVE-2019-17026, CVE-2020-6819, CVE-2020-6820,
+               CVE-2022-26485, CVE-2022-26486, CVE-2024-9680]
+        note: Every CVE here is one CISA lists as exploited in this product family (2010 to 2024).
+        trackers: []
+
+  # One Junos codebase runs SRX firewalls, EX and QFX switches and MX routers.
+  - id: junos
+    name: "Juniper Junos OS"
+    upstream: https://supportportal.juniper.net/s/global-search/%40uri?language=en_US#f-sf_articletype=Security%20Advisories
+    purl: pkg:generic/junos
+    cpe: cpe:2.3:o:juniper:junos
+    aliases: [junos os, j-web]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2025
+        cves: [CVE-2020-1631, CVE-2023-36844, CVE-2023-36845, CVE-2023-36846,
+               CVE-2023-36847, CVE-2023-36851, CVE-2025-21590]
+        note: Every CVE here is one CISA lists as exploited in this product family (2020 to 2025).
+        trackers: []
+
+  # IOS XR runs ASR 9000, NCS and 8000 series routers.
+  - id: cisco-ios-xr
+    name: "Cisco IOS XR"
+    upstream: https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+    purl: pkg:generic/cisco-ios-xr
+    cpe: cpe:2.3:o:cisco:ios_xr
+    aliases: [ios xr]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2022
+        cves: [CVE-2009-2055, CVE-2010-3035, CVE-2020-3118, CVE-2020-3566, CVE-2020-3569,
+               CVE-2022-20821]
+        note: Every CVE here is one CISA lists as exploited in this product family (2009 to 2022).
+        trackers: []
+
+  # ZLD firmware is shared by the ATP, USG FLEX, USG, VPN and ZyWALL firewall lines.
+  - id: zyxel-zld
+    name: "Zyxel ZLD firewall firmware"
+    upstream: https://www.zyxel.com/global/en/support/security-advisories
+    purl: pkg:generic/zyxel-zld
+    cpe: cpe:2.3:o:zyxel:zld_firmware
+    aliases: [zld, usg flex, atp, zywall]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2024
+        cves: [CVE-2020-29583, CVE-2022-30525, CVE-2023-28771, CVE-2023-33009,
+               CVE-2023-33010, CVE-2024-11667]
+        note: Every CVE here is one CISA lists as exploited in this product family (2020 to 2024).
+        trackers: []
+
+  # ManageEngine products are built on one platform, so a flaw there reaches many of them (24 for CVE-2022-47966).
+  - id: manageengine
+    name: "Zoho ManageEngine shared platform"
+    upstream: https://www.manageengine.com/security/advisory/
+    purl: pkg:generic/manageengine
+    cpe: cpe:2.3:a:zohocorp:manageengine
+    aliases: [manageengine]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2022
+        cves: [CVE-2019-8394, CVE-2020-10189, CVE-2021-40539, CVE-2022-28810,
+               CVE-2022-35405, CVE-2022-47966]
+        note: Every CVE here is one CISA lists as exploited in this product family (2019 to 2022).
+        trackers: []
+
+  # Connect Secure (formerly Pulse Connect Secure), Policy Secure and Neurons for ZTA gateways share one codebase.
+  - id: ivanti-connect-secure
+    name: "Ivanti Connect Secure, Policy Secure and ZTA gateways"
+    upstream: https://www.ivanti.com/blog/topics/security-advisory
+    purl: pkg:generic/ivanti-connect-secure
+    cpe: cpe:2.3:a:ivanti:connect_secure
+    aliases: [pulse connect secure, pulse secure, ics]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2026
+        cves: [CVE-2019-11510, CVE-2019-11539, CVE-2020-8243, CVE-2020-8260, CVE-2021-22893,
+               CVE-2021-22894, CVE-2021-22899, CVE-2021-22900, CVE-2023-46805,
+               CVE-2024-21887, CVE-2024-21893, CVE-2025-0282, CVE-2025-22457,
+               CVE-2026-104935, CVE-2026-111357, CVE-2026-118527]
+        note: Every CVE here is one CISA lists as exploited in this product family (2019 to 2026).
+        trackers: []
+
+  # Gaia OS runs Quantum Security Gateways, Security Management, Spark and Maestro.
+  - id: check-point-gaia
+    name: "Check Point Gaia (Security Gateway and Management)"
+    upstream: https://support.checkpoint.com/
+    purl: pkg:generic/check-point-gaia
+    cpe: cpe:2.3:o:checkpoint:gaia_os
+    aliases: [gaia, quantum security gateway]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2026
+        cves: [CVE-2024-24919, CVE-2026-50751, CVE-2026-85102, CVE-2026-93616,
+               CVE-2026-123039]
+        note: Every CVE here is one CISA lists as exploited in this product family (2024 to 2026).
+        trackers: []
+
+  # The three Cleo file transfer products share one server.
+  - id: cleo-file-transfer
+    name: "Cleo Harmony, VLTrader and LexiCom"
+    upstream: https://support.cleo.com/
+    purl: pkg:generic/cleo-file-transfer
+    cpe: cpe:2.3:a:cleo:harmony
+    aliases: [harmony, vltrader, lexicom]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2024
+        cves: [CVE-2024-50623, CVE-2024-55956]
+        note: Every CVE here is one CISA lists as exploited in this product family (2024 to 2024).
+        trackers: []
+
+  # WSO2 API Manager, Identity Server, Enterprise Integrator and others are built on the Carbon platform.
+  - id: wso2-carbon
+    name: "WSO2 Carbon platform"
+    upstream: https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/
+    purl: pkg:generic/wso2-carbon
+    cpe: cpe:2.3:a:wso2:api_manager
+    aliases: [wso2 api manager, wso2 identity server]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2026
+        cves: [CVE-2022-29464, CVE-2026-5430]
+        note: Every CVE here is one CISA lists as exploited in this product family (2022 to 2026).
+        trackers: []
+
+  # Workspace ONE Access, Identity Manager and the products that embed them (vRealize Automation, Cloud Foundation) share this code.
+  - id: vmware-workspace-one
+    name: "VMware Workspace ONE Access and Identity Manager"
+    upstream: https://support.broadcom.com/web/ecx/security-advisory
+    purl: pkg:generic/vmware-workspace-one
+    cpe: cpe:2.3:a:vmware:workspace_one_access
+    aliases: [workspace one access, identity manager, vidm]
+    notices_names: []
+    incidents:
+      - name: Exploited flaws (CISA KEV)
+        year: 2022
+        cves: [CVE-2020-3950, CVE-2020-4006, CVE-2022-22954, CVE-2022-22960]
+        note: Every CVE here is one CISA lists as exploited in this product family (2020 to 2022).
+        trackers: []

@@ -3,6 +3,41 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-20: KEV gap list closed
+
+Every KEV entry that fits the watchlist rules is now tracked: 392 of 1,790 KEV CVEs (21.9%),
+up from 168. The watchlist has 91 components and 446 CVEs. What is left untracked is outside
+the rules, listed at the end.
+
+- **Tracked components brought up to date** with ranges from the CVE records: Struts (4 more),
+  Tomcat (2), httpd (2), ActiveMQ, PHP (2), ImageMagick (2), Ghostscript, FreeType. New
+  components `struts1`, `spring-cloud-function`, `spring-cloud-config`, `spring-data-commons`.
+- **The 108 engine CVEs added earlier now have statements.** 97 vendor advisories opened and
+  named their CVE; 129 statements and the exploitation flags come from them. 11 could not be
+  read (old Fortinet and Cisco pages that returned errors or moved) and keep only their KEV row.
+- **Chromium** (71 CVEs, ranges from the Chrome CVE records) for products that list Chromium or
+  Chrome in their notices. Electron and CEF are not matched: their version numbers are their own.
+- **Third-party components found in at least two stored inventories:** Elasticsearch, Kibana,
+  BIND, InetUtils, Shiro, JBoss Seam, UnRAR, Starlette, Rails, Git, Jenkins core, ExifTool,
+  Telerik UI, Spark, Flink, PHPUnit, PHPMailer, MinIO, Grafana, and 13 old Java SE flaws under
+  `openjdk`. Where a CVE record has no usable version data the incident is marked `unranged`
+  (new flag) instead of guessing.
+- **More vendor engines:** `webkit` (24), `gecko` (13), `ivanti-connect-secure` (16), `junos` (7),
+  `cisco-ios-xr` (6), `zyxel-zld` (6), `manageengine` (6), `check-point-gaia` (5),
+  `vmware-workspace-one` (4), `cleo-file-transfer` (2), `wso2-carbon` (2). 73 of their 91
+  advisories were read, giving 125 statements; 18 could not be read (Cleo and WSO2 refused
+  automated access; several Pulse Secure and ManageEngine pages have moved).
+- **Statements generated from advisories** carry a short factual note (the KEV name of the flaw,
+  its KEV date, whether the vendor reports exploitation) and the versions from the vendor's CVE
+  record. They were machine-read, with the exploitation sentences checked by hand.
+- **Criteria:** "commonly bundled" is now measured as presence in at least two stored inventories.
+
+**Still untracked, by rule (1,398 entries):** single-vendor products and applications (Windows,
+Office, Exchange, routers, CMSs); Apple OS components other than WebKit, which KEV does not
+name; the Linux kernel, Bash, polkit and chipset code, where a version check means nothing;
+open-source servers no stored inventory lists (Roundcube, Exim, Drupal, OFBiz and others);
+OpenSSH CVE-2026-123158 (musl-only). SonicWall SonicOS and SMA are single product lines.
+
 ## 2026-11-20: More engines, embedded products and a KEV coverage report
 
 **New engines (52 to 56 components), 29 statements read on the vendors' advisories:**

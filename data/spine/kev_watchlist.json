@@ -1,5 +1,5 @@
 {
- "tracked": 222,
+ "tracked": 446,
  "cves": {
   "CVE-2004-1464": {
    "added": "2023-05-19",
@@ -7,11 +7,137 @@
    "vendor": "Cisco",
    "product": "IOS"
   },
+  "CVE-2006-1547": {
+   "added": "2022-01-21",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Struts 1"
+  },
   "CVE-2008-4128": {
    "added": "2026-07-13",
    "ransomware": false,
    "vendor": "Cisco",
    "product": "IOS"
+  },
+  "CVE-2009-2055": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XR"
+  },
+  "CVE-2010-0840": {
+   "added": "2022-05-25",
+   "ransomware": false,
+   "vendor": "Oracle",
+   "product": "Java Runtime Environment (JRE)"
+  },
+  "CVE-2010-1871": {
+   "added": "2021-12-10",
+   "ransomware": false,
+   "vendor": "Red Hat",
+   "product": "JBoss Seam 2"
+  },
+  "CVE-2010-3035": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XR"
+  },
+  "CVE-2010-3765": {
+   "added": "2025-10-06",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Multiple Products"
+  },
+  "CVE-2011-3544": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Oracle",
+   "product": "Java SE JDK and JRE"
+  },
+  "CVE-2012-0391": {
+   "added": "2022-01-21",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Struts 2"
+  },
+  "CVE-2012-0507": {
+   "added": "2022-03-03",
+   "ransomware": true,
+   "vendor": "Oracle",
+   "product": "Java SE"
+  },
+  "CVE-2012-1723": {
+   "added": "2022-03-03",
+   "ransomware": true,
+   "vendor": "Oracle",
+   "product": "Java SE"
+  },
+  "CVE-2012-1823": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "PHP",
+   "product": "PHP"
+  },
+  "CVE-2012-4681": {
+   "added": "2022-03-03",
+   "ransomware": true,
+   "vendor": "Oracle",
+   "product": "Java SE"
+  },
+  "CVE-2012-5076": {
+   "added": "2022-03-28",
+   "ransomware": false,
+   "vendor": "Oracle",
+   "product": "Java SE"
+  },
+  "CVE-2013-0422": {
+   "added": "2022-05-25",
+   "ransomware": true,
+   "vendor": "Oracle",
+   "product": "Java Runtime Environment (JRE)"
+  },
+  "CVE-2013-0431": {
+   "added": "2022-05-25",
+   "ransomware": true,
+   "vendor": "Oracle",
+   "product": "Java Runtime Environment (JRE)"
+  },
+  "CVE-2013-1675": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox"
+  },
+  "CVE-2013-1690": {
+   "added": "2022-03-28",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox and Thunderbird"
+  },
+  "CVE-2013-2251": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Struts"
+  },
+  "CVE-2013-2423": {
+   "added": "2022-05-25",
+   "ransomware": false,
+   "vendor": "Oracle",
+   "product": "Java Runtime Environment (JRE)"
+  },
+  "CVE-2013-2465": {
+   "added": "2022-03-28",
+   "ransomware": true,
+   "vendor": "Oracle",
+   "product": "Java SE"
+  },
+  "CVE-2014-0130": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Rails",
+   "product": "Ruby on Rails"
   },
   "CVE-2014-0160": {
    "added": "2022-05-04",
@@ -25,11 +151,113 @@
    "vendor": "Cisco",
    "product": "Adaptive Security Appliance (ASA)"
   },
+  "CVE-2014-3120": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Elastic",
+   "product": "Elasticsearch"
+  },
+  "CVE-2015-1427": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Elastic",
+   "product": "Elasticsearch"
+  },
+  "CVE-2015-2590": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Oracle",
+   "product": "Java SE"
+  },
+  "CVE-2015-4495": {
+   "added": "2022-05-25",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox"
+  },
+  "CVE-2015-4902": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Oracle",
+   "product": "Java SE"
+  },
+  "CVE-2015-5317": {
+   "added": "2023-05-12",
+   "ransomware": false,
+   "vendor": "Jenkins",
+   "product": "Jenkins User Interface (UI)"
+  },
+  "CVE-2015-5477": {
+   "added": "2026-10-08",
+   "ransomware": false,
+   "vendor": "ISC",
+   "product": "BIND"
+  },
+  "CVE-2016-0752": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Rails",
+   "product": "Ruby on Rails"
+  },
+  "CVE-2016-10033": {
+   "added": "2025-07-07",
+   "ransomware": false,
+   "vendor": "PHP",
+   "product": "PHPMailer"
+  },
+  "CVE-2016-1646": {
+   "added": "2022-06-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2016-3081": {
+   "added": "2026-10-08",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Struts"
+  },
+  "CVE-2016-3088": {
+   "added": "2022-02-10",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "ActiveMQ"
+  },
+  "CVE-2016-3427": {
+   "added": "2023-05-12",
+   "ransomware": false,
+   "vendor": "Oracle",
+   "product": "Java SE and JRockit"
+  },
   "CVE-2016-3714": {
    "added": "2024-09-09",
    "ransomware": false,
    "vendor": "ImageMagick",
    "product": "ImageMagick"
+  },
+  "CVE-2016-3715": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "ImageMagick",
+   "product": "ImageMagick"
+  },
+  "CVE-2016-3718": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "ImageMagick",
+   "product": "ImageMagick"
+  },
+  "CVE-2016-4437": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Shiro"
+  },
+  "CVE-2016-5198": {
+   "added": "2022-06-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
   },
   "CVE-2016-6366": {
    "added": "2022-05-24",
@@ -48,6 +276,36 @@
    "ransomware": false,
    "vendor": "Cisco",
    "product": "IOS, IOS XR, and IOS XE"
+  },
+  "CVE-2016-8735": {
+   "added": "2023-05-12",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Tomcat"
+  },
+  "CVE-2016-9079": {
+   "added": "2023-06-22",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox, Firefox ESR, and Thunderbird"
+  },
+  "CVE-2017-1000353": {
+   "added": "2025-10-02",
+   "ransomware": false,
+   "vendor": "Jenkins",
+   "product": "Jenkins"
+  },
+  "CVE-2017-11317": {
+   "added": "2022-04-11",
+   "ransomware": false,
+   "vendor": "Telerik",
+   "product": "User Interface (UI) for ASP.NET AJAX"
+  },
+  "CVE-2017-11357": {
+   "added": "2023-01-26",
+   "ransomware": true,
+   "vendor": "Telerik",
+   "product": "User Interface (UI) for ASP.NET AJAX"
   },
   "CVE-2017-12231": {
    "added": "2022-03-03",
@@ -97,6 +355,12 @@
    "vendor": "Cisco",
    "product": "IOS XE Software"
   },
+  "CVE-2017-12615": {
+   "added": "2022-03-25",
+   "ransomware": true,
+   "vendor": "Apache",
+   "product": "Tomcat"
+  },
   "CVE-2017-12617": {
    "added": "2022-03-25",
    "ransomware": false,
@@ -114,6 +378,18 @@
    "ransomware": false,
    "vendor": "Cisco",
    "product": "IOS and IOS XE"
+  },
+  "CVE-2017-5030": {
+   "added": "2022-06-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2017-5070": {
+   "added": "2022-06-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
   },
   "CVE-2017-5638": {
    "added": "2021-11-03",
@@ -187,11 +463,35 @@
    "vendor": "Samba",
    "product": "Samba"
   },
+  "CVE-2017-8291": {
+   "added": "2022-05-24",
+   "ransomware": false,
+   "vendor": "Artifex",
+   "product": "Ghostscript"
+  },
+  "CVE-2017-9248": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Progress",
+   "product": "ASP.NET AJAX and Sitefinity"
+  },
+  "CVE-2017-9791": {
+   "added": "2022-02-10",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Struts 1"
+  },
   "CVE-2017-9805": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apache",
    "product": "Struts"
+  },
+  "CVE-2017-9841": {
+   "added": "2022-02-15",
+   "ransomware": false,
+   "vendor": "PHPUnit",
+   "product": "PHPUnit"
   },
   "CVE-2018-0151": {
    "added": "2022-03-03",
@@ -283,11 +583,23 @@
    "vendor": "Cisco",
    "product": "Adaptive Security Appliance (ASA)"
   },
+  "CVE-2018-1000861": {
+   "added": "2022-02-10",
+   "ransomware": false,
+   "vendor": "Jenkins",
+   "product": "Jenkins Stapler Web Framework"
+  },
   "CVE-2018-11776": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apache",
    "product": "Struts"
+  },
+  "CVE-2018-1273": {
+   "added": "2022-03-25",
+   "ransomware": true,
+   "vendor": "VMware Tanzu",
+   "product": "Spring Data Commons"
   },
   "CVE-2018-13374": {
    "added": "2022-09-08",
@@ -313,11 +625,83 @@
    "vendor": "Fortinet",
    "product": "FortiOS and FortiProxy"
   },
+  "CVE-2018-17463": {
+   "added": "2022-06-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2018-17480": {
+   "added": "2022-06-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2018-6065": {
+   "added": "2022-06-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2019-0211": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "HTTP Server"
+  },
+  "CVE-2019-11043": {
+   "added": "2022-03-25",
+   "ransomware": true,
+   "vendor": "PHP",
+   "product": "FastCGI Process Manager (FPM)"
+  },
+  "CVE-2019-11510": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Ivanti",
+   "product": "Pulse Connect Secure"
+  },
+  "CVE-2019-11539": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Ivanti",
+   "product": "Pulse Connect Secure and Pulse Policy Secure"
+  },
+  "CVE-2019-11707": {
+   "added": "2022-05-23",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox and Thunderbird"
+  },
+  "CVE-2019-11708": {
+   "added": "2022-05-23",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox and Thunderbird"
+  },
+  "CVE-2019-13720": {
+   "added": "2022-05-23",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chrome WebAudio"
+  },
   "CVE-2019-1579": {
    "added": "2022-01-10",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
    "product": "PAN-OS"
+  },
+  "CVE-2019-17026": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox and Thunderbird"
+  },
+  "CVE-2019-18935": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Progress",
+   "product": "Telerik UI for ASP.NET AJAX"
   },
   "CVE-2019-19781": {
    "added": "2021-11-03",
@@ -325,17 +709,59 @@
    "vendor": "Citrix",
    "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
   },
+  "CVE-2019-5418": {
+   "added": "2025-07-07",
+   "ransomware": false,
+   "vendor": "Rails",
+   "product": "Ruby on Rails"
+  },
   "CVE-2019-5591": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Fortinet",
    "product": "FortiOS"
   },
+  "CVE-2019-5786": {
+   "added": "2022-05-23",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chrome Blink"
+  },
+  "CVE-2019-5825": {
+   "added": "2022-06-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
   "CVE-2019-6693": {
    "added": "2025-06-25",
    "ransomware": true,
    "vendor": "Fortinet",
    "product": "FortiOS"
+  },
+  "CVE-2019-7609": {
+   "added": "2022-01-10",
+   "ransomware": false,
+   "vendor": "Elastic",
+   "product": "Kibana"
+  },
+  "CVE-2019-8394": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Zoho",
+   "product": "ManageEngine"
+  },
+  "CVE-2019-8720": {
+   "added": "2022-05-23",
+   "ransomware": false,
+   "vendor": "WebKitGTK",
+   "product": "WebKitGTK"
+  },
+  "CVE-2020-10189": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Zoho",
+   "product": "ManageEngine"
   },
   "CVE-2020-11023": {
    "added": "2025-01-23",
@@ -348,6 +774,48 @@
    "ransomware": true,
    "vendor": "Fortinet",
    "product": "FortiOS"
+  },
+  "CVE-2020-15999": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chrome FreeType"
+  },
+  "CVE-2020-16009": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2020-16010": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chrome for Android UI"
+  },
+  "CVE-2020-16013": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2020-16017": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chrome"
+  },
+  "CVE-2020-1631": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Juniper",
+   "product": "Junos OS"
+  },
+  "CVE-2020-17519": {
+   "added": "2024-05-23",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Flink"
   },
   "CVE-2020-17530": {
    "added": "2021-11-03",
@@ -367,6 +835,18 @@
    "vendor": "Palo Alto Networks",
    "product": "PAN-OS"
   },
+  "CVE-2020-29583": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Zyxel",
+   "product": "Multiple Products"
+  },
+  "CVE-2020-3118": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XR"
+  },
   "CVE-2020-3259": {
    "added": "2024-02-15",
    "ransomware": true,
@@ -379,17 +859,71 @@
    "vendor": "Cisco",
    "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
   },
+  "CVE-2020-3566": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XR"
+  },
+  "CVE-2020-3569": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XR"
+  },
   "CVE-2020-3580": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Cisco",
    "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
   },
+  "CVE-2020-3950": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "Multiple Products"
+  },
   "CVE-2020-3952": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "VMware",
    "product": "vCenter Server"
+  },
+  "CVE-2020-4006": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "Multiple Products"
+  },
+  "CVE-2020-5410": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "VMware Tanzu",
+   "product": "Spring Cloud Configuration (Config) Server"
+  },
+  "CVE-2020-6418": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2020-6572": {
+   "added": "2022-01-10",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chrome Media"
+  },
+  "CVE-2020-6819": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox and Thunderbird"
+  },
+  "CVE-2020-6820": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox and Thunderbird"
   },
   "CVE-2020-8193": {
    "added": "2021-11-03",
@@ -408,6 +942,72 @@
    "ransomware": false,
    "vendor": "Citrix",
    "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+  },
+  "CVE-2020-8243": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Ivanti",
+   "product": "Pulse Connect Secure"
+  },
+  "CVE-2020-8260": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Ivanti",
+   "product": "Pulse Connect Secure"
+  },
+  "CVE-2021-1870": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "iOS, iPadOS, and macOS"
+  },
+  "CVE-2021-1871": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "iOS, iPadOS, and macOS"
+  },
+  "CVE-2021-1879": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "iOS, iPadOS, and watchOS"
+  },
+  "CVE-2021-21148": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2021-21166": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium"
+  },
+  "CVE-2021-21193": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Blink"
+  },
+  "CVE-2021-21206": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Blink"
+  },
+  "CVE-2021-21220": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2021-21224": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
   },
   "CVE-2021-21972": {
    "added": "2021-11-03",
@@ -439,11 +1039,113 @@
    "vendor": "VMware",
    "product": "vCenter Server"
   },
+  "CVE-2021-22204": {
+   "added": "2021-11-17",
+   "ransomware": false,
+   "vendor": "Perl",
+   "product": "Exiftool"
+  },
+  "CVE-2021-22893": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Ivanti",
+   "product": "Pulse Connect Secure"
+  },
+  "CVE-2021-22894": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Ivanti",
+   "product": "Pulse Connect Secure"
+  },
+  "CVE-2021-22899": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Ivanti",
+   "product": "Pulse Connect Secure"
+  },
+  "CVE-2021-22900": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Ivanti",
+   "product": "Pulse Connect Secure"
+  },
   "CVE-2021-22991": {
    "added": "2022-01-18",
    "ransomware": false,
    "vendor": "F5",
    "product": "BIG-IP Traffic Management Microkernel"
+  },
+  "CVE-2021-30533": {
+   "added": "2022-06-27",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium PopupBlocker"
+  },
+  "CVE-2021-30551": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2021-30554": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium WebGL"
+  },
+  "CVE-2021-30563": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2021-30632": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2021-30633": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Indexed DB API"
+  },
+  "CVE-2021-30661": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2021-30663": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2021-30665": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2021-30666": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "iOS"
+  },
+  "CVE-2021-30761": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "iOS"
+  },
+  "CVE-2021-30762": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "iOS"
   },
   "CVE-2021-3156": {
    "added": "2022-04-06",
@@ -451,11 +1153,65 @@
    "vendor": "Sudo",
    "product": "Sudo"
   },
+  "CVE-2021-37973": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Portals"
+  },
+  "CVE-2021-37975": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2021-37976": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium"
+  },
+  "CVE-2021-38000": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Intents"
+  },
+  "CVE-2021-38003": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
   "CVE-2021-39144": {
    "added": "2023-03-10",
    "ransomware": false,
    "vendor": "XStream",
    "product": "XStream"
+  },
+  "CVE-2021-39226": {
+   "added": "2022-08-25",
+   "ransomware": false,
+   "vendor": "Grafana Labs",
+   "product": "Grafana"
+  },
+  "CVE-2021-40438": {
+   "added": "2021-12-01",
+   "ransomware": true,
+   "vendor": "Apache",
+   "product": "Apache"
+  },
+  "CVE-2021-40539": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Zoho",
+   "product": "ManageEngine"
+  },
+  "CVE-2021-4102": {
+   "added": "2021-12-15",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
   },
   "CVE-2021-41773": {
    "added": "2021-11-03",
@@ -468,6 +1224,12 @@
    "ransomware": true,
    "vendor": "Apache",
    "product": "HTTP Server"
+  },
+  "CVE-2021-43798": {
+   "added": "2025-10-09",
+   "ransomware": false,
+   "vendor": "Grafana Labs",
+   "product": "Grafana"
   },
   "CVE-2021-44168": {
    "added": "2021-12-10",
@@ -493,11 +1255,35 @@
    "vendor": "Palo Alto Networks",
    "product": "PAN-OS"
   },
+  "CVE-2022-0609": {
+   "added": "2022-02-15",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Animation"
+  },
+  "CVE-2022-1096": {
+   "added": "2022-03-28",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2022-1364": {
+   "added": "2022-04-15",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
   "CVE-2022-20775": {
    "added": "2026-02-25",
    "ransomware": false,
    "vendor": "Cisco",
    "product": "SD-WAN"
+  },
+  "CVE-2022-20821": {
+   "added": "2022-05-23",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XR"
   },
   "CVE-2022-22948": {
    "added": "2024-07-17",
@@ -505,17 +1291,107 @@
    "vendor": "VMware",
    "product": "vCenter Server"
   },
+  "CVE-2022-22954": {
+   "added": "2022-04-14",
+   "ransomware": true,
+   "vendor": "VMware",
+   "product": "Workspace ONE Access and Identity Manager"
+  },
+  "CVE-2022-22960": {
+   "added": "2022-04-15",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "Multiple Products"
+  },
+  "CVE-2022-22963": {
+   "added": "2022-08-25",
+   "ransomware": false,
+   "vendor": "VMware Tanzu",
+   "product": "Spring Cloud"
+  },
   "CVE-2022-22965": {
    "added": "2022-04-04",
    "ransomware": false,
    "vendor": "VMware",
    "product": "Spring Framework"
   },
+  "CVE-2022-26485": {
+   "added": "2022-03-07",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox"
+  },
+  "CVE-2022-26486": {
+   "added": "2022-03-07",
+   "ransomware": false,
+   "vendor": "Mozilla",
+   "product": "Firefox"
+  },
   "CVE-2022-27518": {
    "added": "2022-12-13",
    "ransomware": false,
    "vendor": "Citrix",
    "product": "Application Delivery Controller (ADC) and Gateway"
+  },
+  "CVE-2022-2856": {
+   "added": "2022-08-18",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Intents"
+  },
+  "CVE-2022-28810": {
+   "added": "2023-03-07",
+   "ransomware": false,
+   "vendor": "Zoho",
+   "product": "ManageEngine"
+  },
+  "CVE-2022-29464": {
+   "added": "2022-04-25",
+   "ransomware": true,
+   "vendor": "WSO2",
+   "product": "Multiple Products"
+  },
+  "CVE-2022-30333": {
+   "added": "2022-08-09",
+   "ransomware": true,
+   "vendor": "RARLAB",
+   "product": "UnRAR"
+  },
+  "CVE-2022-3038": {
+   "added": "2023-03-30",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Network Service"
+  },
+  "CVE-2022-30525": {
+   "added": "2022-05-16",
+   "ransomware": false,
+   "vendor": "Zyxel",
+   "product": "Multiple Firewalls"
+  },
+  "CVE-2022-3075": {
+   "added": "2022-09-08",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Mojo"
+  },
+  "CVE-2022-33891": {
+   "added": "2023-03-07",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Spark"
+  },
+  "CVE-2022-35405": {
+   "added": "2022-09-22",
+   "ransomware": false,
+   "vendor": "Zoho",
+   "product": "ManageEngine"
+  },
+  "CVE-2022-3723": {
+   "added": "2022-10-28",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
   },
   "CVE-2022-40684": {
    "added": "2022-10-11",
@@ -529,11 +1405,29 @@
    "vendor": "Fortinet",
    "product": "FortiOS"
   },
+  "CVE-2022-4135": {
+   "added": "2022-11-28",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium GPU"
+  },
   "CVE-2022-42475": {
    "added": "2022-12-13",
    "ransomware": true,
    "vendor": "Fortinet",
    "product": "FortiOS"
+  },
+  "CVE-2022-4262": {
+   "added": "2022-12-05",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2022-47966": {
+   "added": "2023-01-23",
+   "ransomware": true,
+   "vendor": "Zoho",
+   "product": "ManageEngine"
   },
   "CVE-2023-20109": {
    "added": "2023-10-10",
@@ -559,11 +1453,101 @@
    "vendor": "Cisco",
    "product": "Cisco IOS XE Web UI"
   },
+  "CVE-2023-2033": {
+   "added": "2023-04-17",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2023-2136": {
+   "added": "2023-04-21",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Skia"
+  },
+  "CVE-2023-23529": {
+   "added": "2023-02-14",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
   "CVE-2023-27997": {
    "added": "2023-06-13",
    "ransomware": true,
    "vendor": "Fortinet",
    "product": "FortiOS and FortiProxy SSL-VPN"
+  },
+  "CVE-2023-28204": {
+   "added": "2023-05-22",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-28205": {
+   "added": "2023-04-10",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-28432": {
+   "added": "2023-04-21",
+   "ransomware": false,
+   "vendor": "MinIO",
+   "product": "MinIO"
+  },
+  "CVE-2023-28434": {
+   "added": "2023-09-19",
+   "ransomware": false,
+   "vendor": "MinIO",
+   "product": "MinIO"
+  },
+  "CVE-2023-28771": {
+   "added": "2023-05-31",
+   "ransomware": false,
+   "vendor": "Zyxel",
+   "product": "Multiple Firewalls"
+  },
+  "CVE-2023-3079": {
+   "added": "2023-06-07",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2023-32373": {
+   "added": "2023-05-22",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-32409": {
+   "added": "2023-05-22",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-32435": {
+   "added": "2023-06-23",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-32439": {
+   "added": "2023-06-23",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-33009": {
+   "added": "2023-06-05",
+   "ransomware": false,
+   "vendor": "Zyxel",
+   "product": "Multiple Firewalls"
+  },
+  "CVE-2023-33010": {
+   "added": "2023-06-05",
+   "ransomware": false,
+   "vendor": "Zyxel",
+   "product": "Multiple Firewalls"
   },
   "CVE-2023-34048": {
    "added": "2024-01-22",
@@ -577,11 +1561,77 @@
    "vendor": "Citrix",
    "product": "NetScaler ADC and NetScaler Gateway"
   },
+  "CVE-2023-36844": {
+   "added": "2023-11-13",
+   "ransomware": false,
+   "vendor": "Juniper",
+   "product": "Junos OS"
+  },
+  "CVE-2023-36845": {
+   "added": "2023-11-13",
+   "ransomware": false,
+   "vendor": "Juniper",
+   "product": "Junos OS"
+  },
+  "CVE-2023-36846": {
+   "added": "2023-11-13",
+   "ransomware": false,
+   "vendor": "Juniper",
+   "product": "Junos OS"
+  },
+  "CVE-2023-36847": {
+   "added": "2023-11-13",
+   "ransomware": false,
+   "vendor": "Juniper",
+   "product": "Junos OS"
+  },
+  "CVE-2023-36851": {
+   "added": "2023-11-13",
+   "ransomware": false,
+   "vendor": "Juniper",
+   "product": "Junos OS"
+  },
+  "CVE-2023-37450": {
+   "added": "2023-07-13",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-41993": {
+   "added": "2023-09-25",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-42916": {
+   "added": "2023-12-04",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2023-42917": {
+   "added": "2023-12-04",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
   "CVE-2023-46604": {
    "added": "2023-11-02",
    "ransomware": true,
    "vendor": "Apache",
    "product": "ActiveMQ"
+  },
+  "CVE-2023-46805": {
+   "added": "2024-01-10",
+   "ransomware": true,
+   "vendor": "Ivanti",
+   "product": "Connect Secure and Policy Secure"
+  },
+  "CVE-2023-4762": {
+   "added": "2024-02-06",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
   },
   "CVE-2023-4863": {
    "added": "2023-09-13",
@@ -607,6 +1657,12 @@
    "vendor": "Google",
    "product": "Chromium libvpx"
   },
+  "CVE-2023-6345": {
+   "added": "2023-11-30",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Skia"
+  },
   "CVE-2023-6548": {
    "added": "2024-01-17",
    "ransomware": false,
@@ -619,11 +1675,29 @@
    "vendor": "Citrix",
    "product": "NetScaler ADC and NetScaler Gateway"
   },
+  "CVE-2023-7024": {
+   "added": "2024-01-02",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium WebRTC"
+  },
   "CVE-2024-0012": {
    "added": "2024-11-18",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
    "product": "PAN-OS"
+  },
+  "CVE-2024-0519": {
+   "added": "2024-01-17",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2024-11667": {
+   "added": "2024-12-03",
+   "ransomware": true,
+   "vendor": "Zyxel",
+   "product": "Multiple Firewalls"
   },
   "CVE-2024-20353": {
    "added": "2024-04-24",
@@ -649,11 +1723,41 @@
    "vendor": "Fortinet",
    "product": "FortiOS"
   },
+  "CVE-2024-21887": {
+   "added": "2024-01-10",
+   "ransomware": true,
+   "vendor": "Ivanti",
+   "product": "Connect Secure and Policy Secure"
+  },
+  "CVE-2024-21893": {
+   "added": "2024-01-31",
+   "ransomware": true,
+   "vendor": "Ivanti",
+   "product": "Connect Secure, Policy Secure, and Neurons"
+  },
   "CVE-2024-23113": {
    "added": "2024-10-09",
    "ransomware": false,
    "vendor": "Fortinet",
    "product": "Multiple Products"
+  },
+  "CVE-2024-23222": {
+   "added": "2024-01-23",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2024-23897": {
+   "added": "2024-08-19",
+   "ransomware": true,
+   "vendor": "Jenkins",
+   "product": "Jenkins Command Line Interface (CLI)"
+  },
+  "CVE-2024-24919": {
+   "added": "2024-05-30",
+   "ransomware": true,
+   "vendor": "Check Point",
+   "product": "Quantum Security Gateways"
   },
   "CVE-2024-3393": {
    "added": "2024-12-30",
@@ -697,17 +1801,71 @@
    "vendor": "PHP Group",
    "product": "PHP"
   },
+  "CVE-2024-4671": {
+   "added": "2024-05-13",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium"
+  },
+  "CVE-2024-4761": {
+   "added": "2024-05-16",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2024-4947": {
+   "added": "2024-05-20",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2024-50623": {
+   "added": "2024-12-13",
+   "ransomware": true,
+   "vendor": "Cleo",
+   "product": "Multiple Products"
+  },
+  "CVE-2024-5274": {
+   "added": "2024-05-28",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
   "CVE-2024-55591": {
    "added": "2025-01-14",
    "ransomware": true,
    "vendor": "Fortinet",
    "product": "FortiOS and FortiProxy"
   },
+  "CVE-2024-55956": {
+   "added": "2024-12-17",
+   "ransomware": true,
+   "vendor": "Cleo",
+   "product": "Multiple Products"
+  },
+  "CVE-2024-7965": {
+   "added": "2024-08-28",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2024-7971": {
+   "added": "2024-08-26",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
   "CVE-2024-9474": {
    "added": "2024-11-18",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
    "product": "PAN-OS"
+  },
+  "CVE-2024-9680": {
+   "added": "2024-10-15",
+   "ransomware": true,
+   "vendor": "Mozilla",
+   "product": "Firefox"
   },
   "CVE-2025-0108": {
    "added": "2025-02-18",
@@ -720,6 +1878,30 @@
    "ransomware": false,
    "vendor": "Palo Alto Networks",
    "product": "PAN-OS"
+  },
+  "CVE-2025-0282": {
+   "added": "2025-01-08",
+   "ransomware": true,
+   "vendor": "Ivanti",
+   "product": "Connect Secure, Policy Secure, and ZTA Gateways"
+  },
+  "CVE-2025-10585": {
+   "added": "2025-09-23",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2025-13223": {
+   "added": "2025-11-19",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2025-14174": {
+   "added": "2025-12-12",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium"
   },
   "CVE-2025-20333": {
    "added": "2025-09-25",
@@ -743,6 +1925,24 @@
    "added": "2025-12-17",
    "ransomware": false,
    "vendor": "Cisco",
+   "product": "Multiple Products"
+  },
+  "CVE-2025-21590": {
+   "added": "2025-03-13",
+   "ransomware": false,
+   "vendor": "Juniper",
+   "product": "Junos OS"
+  },
+  "CVE-2025-22457": {
+   "added": "2025-04-04",
+   "ransomware": true,
+   "vendor": "Ivanti",
+   "product": "Connect Secure, Policy Secure, and ZTA Gateways"
+  },
+  "CVE-2025-24201": {
+   "added": "2025-03-13",
+   "ransomware": false,
+   "vendor": "Apple",
    "product": "Multiple Products"
   },
   "CVE-2025-24472": {
@@ -769,6 +1969,12 @@
    "vendor": "FreeType",
    "product": "FreeType"
   },
+  "CVE-2025-2783": {
+   "added": "2025-03-27",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium Mojo"
+  },
   "CVE-2025-32433": {
    "added": "2025-06-09",
    "ransomware": false,
@@ -780,6 +1986,24 @@
    "ransomware": false,
    "vendor": "Sudo",
    "product": "Sudo"
+  },
+  "CVE-2025-43529": {
+   "added": "2025-12-15",
+   "ransomware": false,
+   "vendor": "Apple",
+   "product": "Multiple Products"
+  },
+  "CVE-2025-48384": {
+   "added": "2025-08-25",
+   "ransomware": false,
+   "vendor": "Git",
+   "product": "Git"
+  },
+  "CVE-2025-5419": {
+   "added": "2025-06-05",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
   },
   "CVE-2025-55182": {
    "added": "2025-12-05",
@@ -811,6 +2035,18 @@
    "vendor": "Citrix",
    "product": "NetScaler ADC and Gateway"
   },
+  "CVE-2025-6554": {
+   "added": "2025-07-02",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2025-6558": {
+   "added": "2025-07-22",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium"
+  },
   "CVE-2025-68686": {
    "added": "2026-07-27",
    "ransomware": false,
@@ -841,6 +2077,12 @@
    "vendor": "Palo Alto Networks",
    "product": "PAN-OS"
   },
+  "CVE-2026-104935": {
+   "added": "2026-10-13",
+   "ransomware": false,
+   "vendor": "Ivanti",
+   "product": "Connect Secure"
+  },
   "CVE-2026-109618": {
    "added": "2026-10-26",
    "ransomware": false,
@@ -853,17 +2095,47 @@
    "vendor": "PHP Group",
    "product": "PHP"
   },
+  "CVE-2026-111357": {
+   "added": "2026-10-30",
+   "ransomware": false,
+   "vendor": "Ivanti",
+   "product": "Connect Secure"
+  },
   "CVE-2026-111497": {
    "added": "2026-10-27",
    "ransomware": false,
    "vendor": "Google",
    "product": "Brotli"
   },
+  "CVE-2026-11645": {
+   "added": "2026-06-09",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2026-118527": {
+   "added": "2026-10-30",
+   "ransomware": false,
+   "vendor": "Ivanti",
+   "product": "Connect Secure"
+  },
+  "CVE-2026-123039": {
+   "added": "2026-11-13",
+   "ransomware": false,
+   "vendor": "Check Point",
+   "product": "Multiple Products"
+  },
   "CVE-2026-123890": {
    "added": "2026-11-20",
    "ransomware": false,
    "vendor": "Broadcom",
    "product": "VMware vCenter"
+  },
+  "CVE-2026-125350": {
+   "added": "2026-11-10",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium"
   },
   "CVE-2026-19490": {
    "added": "2026-09-09",
@@ -919,6 +2191,18 @@
    "vendor": "Cisco",
    "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)"
   },
+  "CVE-2026-24061": {
+   "added": "2026-01-26",
+   "ransomware": false,
+   "vendor": "GNU",
+   "product": "InetUtils"
+  },
+  "CVE-2026-2441": {
+   "added": "2026-02-17",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium"
+  },
   "CVE-2026-24858": {
    "added": "2026-01-27",
    "ransomware": false,
@@ -942,6 +2226,42 @@
    "ransomware": false,
    "vendor": "Apache",
    "product": "Tomcat"
+  },
+  "CVE-2026-3909": {
+   "added": "2026-03-13",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Skia"
+  },
+  "CVE-2026-3910": {
+   "added": "2026-03-13",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2026-48710": {
+   "added": "2026-09-02",
+   "ransomware": false,
+   "vendor": "Kludex",
+   "product": "Starlette"
+  },
+  "CVE-2026-50751": {
+   "added": "2026-06-08",
+   "ransomware": true,
+   "vendor": "Check Point",
+   "product": "Security Gateway"
+  },
+  "CVE-2026-5281": {
+   "added": "2026-04-01",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Dawn"
+  },
+  "CVE-2026-5430": {
+   "added": "2026-09-24",
+   "ransomware": false,
+   "vendor": "WSO2",
+   "product": "Multiple Products"
   },
   "CVE-2026-59310": {
    "added": "2026-08-18",
@@ -979,6 +2299,24 @@
    "vendor": "Citrix",
    "product": "NetScaler ADC and NetScaler Gateway"
   },
+  "CVE-2026-85046": {
+   "added": "2026-09-04",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
+  "CVE-2026-85102": {
+   "added": "2026-09-22",
+   "ransomware": false,
+   "vendor": "Check Point",
+   "product": "Multiple Products"
+  },
+  "CVE-2026-87491": {
+   "added": "2026-09-09",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium V8"
+  },
   "CVE-2026-88771": {
    "added": "2026-09-27",
    "ransomware": false,
@@ -1002,6 +2340,12 @@
    "ransomware": false,
    "vendor": "Apache",
    "product": "Axis"
+  },
+  "CVE-2026-93616": {
+   "added": "2026-09-22",
+   "ransomware": false,
+   "vendor": "Check Point",
+   "product": "Multiple Products"
   },
   "CVE-2026-94127": {
    "added": "2026-09-22",

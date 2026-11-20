@@ -466,7 +466,7 @@ class WatchlistAdditionsTest(unittest.TestCase):
                  ("@types/jquery", "3.5", None), ("erlang-otp", "26.0.2", "erlang-otp"), ("OTP", "23.3", "erlang-otp"),
                  ("WildFly Elytron - SASL OTP", "1.0", None), ("Apache ActiveMQ", "5.14.5", "activemq"),
                  ("Apache ActiveMQ", "2.6.3", None), ("ActiveMQ Artemis", "2.30.0", None),
-                 ("Apache Struts", "2.3.37", "struts2"), ("Apache Struts", "1.3.10", None), ("struts-core", "1.3.10", None),
+                 ("Apache Struts", "2.3.37", "struts2"), ("Apache Struts", "1.3.10", "struts1"), ("struts-core", "1.3.10", "struts1"),
                  ("Apache HTTP Server", "2.4.49", "apache-httpd"), ("httpd-tools", "2.4.37", None),
                  ("Apache HttpClient", "4.5", None), ("Squid Cache", "3.5.28", "squid"), ("SquidClamav", "6.0", None),
                  ("curl", "0.4.44", None), ("curl", "8.23.0", "curl")]
@@ -588,6 +588,9 @@ class WatchlistAdditionsTest(unittest.TestCase):
                 self.assertTrue(inc.get("cves"), comp.id)
                 if not comp.notices_names:
                     continue   # a vendor's own engine: no notices rows to range-check; versions live in the statements
+                if inc.get("unranged"):
+                    self.assertFalse(inc.get("affected"), f"{comp.id}: {inc['name']} is marked unranged but has ranges")
+                    continue   # CVE record has no usable version data yet; the incident says so
                 ranged = {c for a in inc.get("affected") or [] for c in a["cves"]}
                 self.assertEqual(ranged, set(inc["cves"]), f"{comp.id}: {inc['name']} needs ranges for every CVE")
         self.assertIn("8u513-perf", next(i for i in cat.components["openjdk"].incidents)["note"])
