@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T23:51:08Z",
+ "built": "2026-11-20T23:52:54Z",
  "threats": [
   {
    "c": "vcenter",
@@ -108,7 +108,7 @@
    ],
    "flagged_total": 11,
    "products": 365,
-   "unfixed": 81
+   "unfixed": 80
   },
   {
    "c": "check-point-gaia",
@@ -1488,9 +1488,9 @@
    "contains": 525,
    "in_range": 34,
    "verdicts": {
-    "fixed": 336,
+    "fixed": 337,
     "runtime_dependent": 14,
-    "workaround": 38,
+    "workaround": 37,
     "affected": 51,
     "under_investigation": 52,
     "not_affected": 133,
