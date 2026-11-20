@@ -36,6 +36,19 @@ Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new 
   Symantec), IBM (no Semeru or WebSphere bulletin), Oracle's own products, SAP, SapMachine,
   JetBrains Runtime and the IDEs.
 
+## 2026-11-20: Threats tab
+
+The site now opens on a **Threats** tab: the five watchlist flaws with the newest sign of
+exploitation, newest first, with ten more behind a button. The census moved to `#census`.
+
+- A sign is a CISA KEV listing, a statement marked exploited or attempted, or a demonstrated
+  exploit. An item is dated by its newest sign, so an old flaw newly added to KEV rises again.
+- Each card shows the level, CVEs, KEV date and ransomware flag, the incident note, the products
+  named in attacks, and how many products have a vendor statement or no stated fix.
+- Incidents that only list KEV entries appear as one item per CVE, titled with KEV's name.
+- Below the list: this year's watchlist flaws with no exploitation report yet.
+- The feed is built into `docs/data/meta.json` (`threats`, `watching`) on every refresh.
+
 ## 2026-11-20: KEV gap list closed
 
 Every KEV entry that fits the watchlist rules is now tracked: 392 of 1,790 KEV CVEs (21.9%),

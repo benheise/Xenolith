@@ -108,6 +108,85 @@ def _best(assertions: list[dict]) -> dict:
     return min(newest_first, key=lambda a: EVIDENCE_RANK.get(a["evidence"], 9))
 
 
+# Incidents that only list KEV entries: the feed shows each of their CVEs as its own item.
+BULK_INCIDENTS = ("Exploited flaws (CISA KEV)", "Earlier exploited flaws (CISA KEV)", "Exploited flaws without version data (CISA KEV)")
+THREATS_LIMIT = 15
+
+
+def _clip(text: str, limit: int = 300) -> str:
+    """Cut a note at a sentence end near `limit` characters."""
+    text = " ".join((text or "").split())
+    if len(text) <= limit:
+        return text
+    cut = text.rfind(". ", 0, limit)
+    return text[: cut + 1] if cut > limit // 2 else text[: limit - 1].rstrip() + "…"
+
+
+def build_threats(catalog: Catalog, assertions: list[dict], kev_cves: dict[str, dict]) -> tuple[list[dict], list[dict]]:
+    """The front-page feed: watchlist flaws with an exploitation signal, newest signal first.
+
+    A signal is a CISA KEV listing or a statement carrying an exploitation level (exploited,
+    attempted, demonstrated). An item's date is its newest signal, so a flaw from last year
+    that was added to KEV yesterday is news again. Returns (threats, watching): `watching` is
+    this year's incidents with no signal yet, the ones to keep an eye on.
+    """
+    rank = {level: i for i, level in enumerate(EXPLOITATION)}
+    flagged: dict[tuple[str, str], list[dict]] = defaultdict(list)   # (component, cve) -> flagged statements
+    stated: dict[tuple[str, str], set[str]] = defaultdict(set)       # (component, cve) -> products with any statement
+    open_products: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for a in assertions:
+        for cve, status in a["cves"].items():
+            key = (a["component"], cve)
+            stated[key].add(a["product_key"])
+            if status in ("affected", "workaround"):
+                open_products[key].add(a["product_key"])
+            if a.get("exploitation"):
+                flagged[key].append(a)
+    items: list[dict] = []
+    watching: list[dict] = []
+    this_year = datetime.now(timezone.utc).year
+    for comp in catalog.components.values():
+        for inc in comp.incidents:
+            cves = [c.upper() for c in inc.get("cves", [])]
+            bulk = inc.get("name") in BULK_INCIDENTS
+            for group in ([[c] for c in cves] if bulk else [cves]):
+                kev = {c: kev_cves[c] for c in group if c in kev_cves}
+                rows = [a for c in group for a in flagged.get((comp.id, c), [])]
+                products = {k for c in group for k in stated.get((comp.id, c), ())}
+                unfixed = {k for c in group for k in open_products.get((comp.id, c), ())}
+                if not kev and not rows:
+                    if not bulk and inc.get("year") == this_year:
+                        watching.append({"c": comp.id, "component": comp.name, "title": inc.get("name", ""), "cves": group,
+                                         "note": _clip(inc.get("note", ""), 220), "products": len(products), "unfixed": len(unfixed)})
+                    continue
+                level = "exploited" if kev else min((a["exploitation"] for a in rows), key=lambda l: rank[l])
+                if any(a["exploitation"] == "exploited" for a in rows):
+                    level = "exploited"
+                # A statement that only relays KEV carries one date for several CVEs; KEV's own
+                # per-CVE dates are used for those instead.
+                dates = [k["added"] for k in kev.values()] + [a["updated"] for a in rows if "cisagov/kev-data" not in a["source_url"]]
+                dates = dates or [a["updated"] for a in rows]
+                seen: dict[str, dict] = {}
+                for a in sorted(rows, key=lambda a: (rank[a["exploitation"]], a["supplier"], a["product"])):
+                    seen.setdefault(a["product_key"], {"k": a["product_key"], "s": a["supplier"], "p": a["product"], "x": a["exploitation"]})
+                title = inc.get("name", "")
+                if bulk:
+                    k = kev.get(group[0], {})
+                    title = re.sub(r"\s+Vulnerabilit(?:y|ies)$", "", k.get("name") or group[0])
+                items.append({
+                    "c": comp.id, "component": comp.name, "title": title, "cves": group, "level": level,
+                    "date": max(dates),
+                    **({"kev": min(k["added"] for k in kev.values()), "kev_cves": len(kev)} if kev else {}),
+                    **({"ransomware": True} if any(k.get("ransomware") for k in kev.values()) else {}),
+                    "note": "" if bulk else _clip(inc.get("note", "")),
+                    "flagged": list(seen.values())[:6], "flagged_total": len(seen),
+                    "products": len(products), "unfixed": len(unfixed),
+                })
+    items.sort(key=lambda t: (t["date"], -rank[t["level"]], t["flagged_total"], t["products"]), reverse=True)
+    watching.sort(key=lambda w: (w["unfixed"], w["products"]), reverse=True)
+    return items[:THREATS_LIMIT], watching[:5]
+
+
 def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: int = 10) -> dict:
     assertions = load_assertions(data_dir)
     spine = load_spine(data_dir)
@@ -307,8 +386,12 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             entry["fv"], entry["dp"] = source_prov[sid][0], list(source_prov[sid][1])
         sources_meta.append(entry)
 
+    threats, watching = build_threats(catalog, assertions, kev_cves)
+
     meta = {
         "built": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "threats": threats,
+        "watching": watching,
         "exploitation_levels": list(EXPLOITATION),
         "counts": {
             "assertions": len(assertions),

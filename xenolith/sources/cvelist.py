@@ -93,7 +93,8 @@ def watchlist_kev(kev_rows: list[dict], tracked: set[str]) -> dict[str, dict]:
         cve = (r.get("cveID") or "").upper()
         if cve in tracked:
             out[cve] = {"added": r.get("dateAdded", ""), "ransomware": r.get("knownRansomwareCampaignUse", "") == "Known",
-                        "vendor": r.get("vendorProject", ""), "product": r.get("product", "")}
+                        "vendor": r.get("vendorProject", ""), "product": r.get("product", ""),
+                        "name": r.get("vulnerabilityName", "")}
     return dict(sorted(out.items()))
 
 

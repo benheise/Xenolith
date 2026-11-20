@@ -5,2353 +5,2745 @@
    "added": "2023-05-19",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS"
+   "product": "IOS",
+   "name": "Cisco IOS Denial-of-Service Vulnerability"
   },
   "CVE-2006-1547": {
    "added": "2022-01-21",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Struts 1"
+   "product": "Struts 1",
+   "name": "Apache Struts 1 ActionForm Denial-of-Service Vulnerability"
   },
   "CVE-2008-4128": {
    "added": "2026-07-13",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS"
+   "product": "IOS",
+   "name": "Cisco IOS Cross-Site Request Forgery Vulnerability"
   },
   "CVE-2009-2055": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XR"
+   "product": "IOS XR",
+   "name": "Cisco IOS XR Border Gateway Protocol (BGP) Denial-of-Service Vulnerability"
   },
   "CVE-2010-0840": {
    "added": "2022-05-25",
    "ransomware": false,
    "vendor": "Oracle",
-   "product": "Java Runtime Environment (JRE)"
+   "product": "Java Runtime Environment (JRE)",
+   "name": "Oracle JRE Unspecified Vulnerability"
   },
   "CVE-2010-1871": {
    "added": "2021-12-10",
    "ransomware": false,
    "vendor": "Red Hat",
-   "product": "JBoss Seam 2"
+   "product": "JBoss Seam 2",
+   "name": "Red Hat Linux JBoss Seam 2 Remote Code Execution Vulnerability"
   },
   "CVE-2010-3035": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XR"
+   "product": "IOS XR",
+   "name": "Cisco IOS XR Border Gateway Protocol (BGP) Denial-of-Service Vulnerability"
   },
   "CVE-2010-3765": {
    "added": "2025-10-06",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Mozilla Multiple Products Remote Code Execution Vulnerability"
   },
   "CVE-2011-3544": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Oracle",
-   "product": "Java SE JDK and JRE"
+   "product": "Java SE JDK and JRE",
+   "name": "Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability"
   },
   "CVE-2012-0391": {
    "added": "2022-01-21",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Struts 2"
+   "product": "Struts 2",
+   "name": "Apache Struts 2 Improper Input Validation Vulnerability"
   },
   "CVE-2012-0507": {
    "added": "2022-03-03",
    "ransomware": true,
    "vendor": "Oracle",
-   "product": "Java SE"
+   "product": "Java SE",
+   "name": "Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability"
   },
   "CVE-2012-1723": {
    "added": "2022-03-03",
    "ransomware": true,
    "vendor": "Oracle",
-   "product": "Java SE"
+   "product": "Java SE",
+   "name": "Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability"
   },
   "CVE-2012-1823": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "PHP",
-   "product": "PHP"
+   "product": "PHP",
+   "name": "PHP-CGI Query String Parameter Vulnerability"
   },
   "CVE-2012-4681": {
    "added": "2022-03-03",
    "ransomware": true,
    "vendor": "Oracle",
-   "product": "Java SE"
+   "product": "Java SE",
+   "name": "Oracle Java SE Runtime Environment (JRE) Arbitrary Code Execution Vulnerability"
   },
   "CVE-2012-5076": {
    "added": "2022-03-28",
    "ransomware": false,
    "vendor": "Oracle",
-   "product": "Java SE"
+   "product": "Java SE",
+   "name": "Oracle Java SE Sandbox Bypass Vulnerability"
   },
   "CVE-2013-0422": {
    "added": "2022-05-25",
    "ransomware": true,
    "vendor": "Oracle",
-   "product": "Java Runtime Environment (JRE)"
+   "product": "Java Runtime Environment (JRE)",
+   "name": "Oracle JRE Remote Code Execution Vulnerability"
   },
   "CVE-2013-0431": {
    "added": "2022-05-25",
    "ransomware": true,
    "vendor": "Oracle",
-   "product": "Java Runtime Environment (JRE)"
+   "product": "Java Runtime Environment (JRE)",
+   "name": "Oracle JRE Sandbox Bypass Vulnerability"
   },
   "CVE-2013-1675": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox"
+   "product": "Firefox",
+   "name": "Mozilla Firefox Information Disclosure Vulnerability"
   },
   "CVE-2013-1690": {
    "added": "2022-03-28",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox and Thunderbird"
+   "product": "Firefox and Thunderbird",
+   "name": "Mozilla Firefox and Thunderbird Denial-of-Service Vulnerability"
   },
   "CVE-2013-2251": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Struts"
+   "product": "Struts",
+   "name": "Apache Struts Improper Input Validation Vulnerability"
   },
   "CVE-2013-2423": {
    "added": "2022-05-25",
    "ransomware": false,
    "vendor": "Oracle",
-   "product": "Java Runtime Environment (JRE)"
+   "product": "Java Runtime Environment (JRE)",
+   "name": "Oracle JRE Unspecified Vulnerability"
   },
   "CVE-2013-2465": {
    "added": "2022-03-28",
    "ransomware": true,
    "vendor": "Oracle",
-   "product": "Java SE"
+   "product": "Java SE",
+   "name": "Oracle Java SE Unspecified Vulnerability"
   },
   "CVE-2014-0130": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Rails",
-   "product": "Ruby on Rails"
+   "product": "Ruby on Rails",
+   "name": "Ruby on Rails Directory Traversal Vulnerability"
   },
   "CVE-2014-0160": {
    "added": "2022-05-04",
    "ransomware": false,
    "vendor": "OpenSSL",
-   "product": "OpenSSL"
+   "product": "OpenSSL",
+   "name": "OpenSSL Information Disclosure Vulnerability"
   },
   "CVE-2014-2120": {
    "added": "2024-11-12",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA)"
+   "product": "Adaptive Security Appliance (ASA)",
+   "name": "Cisco Adaptive Security Appliance (ASA) Cross-Site Scripting (XSS) Vulnerability"
   },
   "CVE-2014-3120": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Elastic",
-   "product": "Elasticsearch"
+   "product": "Elasticsearch",
+   "name": "Elasticsearch Remote Code Execution Vulnerability"
   },
   "CVE-2015-1427": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Elastic",
-   "product": "Elasticsearch"
+   "product": "Elasticsearch",
+   "name": "Elasticsearch Groovy Scripting Engine Remote Code Execution Vulnerability"
   },
   "CVE-2015-2590": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Oracle",
-   "product": "Java SE"
+   "product": "Java SE",
+   "name": "Oracle Java SE and Java SE Embedded Remote Code Execution Vulnerability"
   },
   "CVE-2015-4495": {
    "added": "2022-05-25",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox"
+   "product": "Firefox",
+   "name": "Mozilla Firefox Security Feature Bypass Vulnerability"
   },
   "CVE-2015-4902": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Oracle",
-   "product": "Java SE"
+   "product": "Java SE",
+   "name": "Oracle Java SE Integrity Check Vulnerability"
   },
   "CVE-2015-5317": {
    "added": "2023-05-12",
    "ransomware": false,
    "vendor": "Jenkins",
-   "product": "Jenkins User Interface (UI)"
+   "product": "Jenkins User Interface (UI)",
+   "name": "Jenkins User Interface (UI) Information Disclosure Vulnerability"
   },
   "CVE-2015-5477": {
    "added": "2026-10-08",
    "ransomware": false,
    "vendor": "ISC",
-   "product": "BIND"
+   "product": "BIND",
+   "name": "ISC BIND Data Processing Errors Vulnerability"
   },
   "CVE-2016-0752": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Rails",
-   "product": "Ruby on Rails"
+   "product": "Ruby on Rails",
+   "name": "Ruby on Rails Directory Traversal Vulnerability"
   },
   "CVE-2016-10033": {
    "added": "2025-07-07",
    "ransomware": false,
    "vendor": "PHP",
-   "product": "PHPMailer"
+   "product": "PHPMailer",
+   "name": "PHPMailer Command Injection Vulnerability"
   },
   "CVE-2016-1646": {
    "added": "2022-06-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Read Vulnerability"
   },
   "CVE-2016-3081": {
    "added": "2026-10-08",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Struts"
+   "product": "Struts",
+   "name": "Apache Struts Command Injection Vulnerability"
   },
   "CVE-2016-3088": {
    "added": "2022-02-10",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "ActiveMQ"
+   "product": "ActiveMQ",
+   "name": "Apache ActiveMQ Improper Input Validation Vulnerability"
   },
   "CVE-2016-3427": {
    "added": "2023-05-12",
    "ransomware": false,
    "vendor": "Oracle",
-   "product": "Java SE and JRockit"
+   "product": "Java SE and JRockit",
+   "name": "Oracle Java SE and JRockit Unspecified Vulnerability"
   },
   "CVE-2016-3714": {
    "added": "2024-09-09",
    "ransomware": false,
    "vendor": "ImageMagick",
-   "product": "ImageMagick"
+   "product": "ImageMagick",
+   "name": "ImageMagick Improper Input Validation Vulnerability"
   },
   "CVE-2016-3715": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "ImageMagick",
-   "product": "ImageMagick"
+   "product": "ImageMagick",
+   "name": "ImageMagick Arbitrary File Deletion Vulnerability"
   },
   "CVE-2016-3718": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "ImageMagick",
-   "product": "ImageMagick"
+   "product": "ImageMagick",
+   "name": "ImageMagick Server-Side Request Forgery (SSRF) Vulnerability"
   },
   "CVE-2016-4437": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Shiro"
+   "product": "Shiro",
+   "name": "Apache Shiro Code Execution Vulnerability"
   },
   "CVE-2016-5198": {
    "added": "2022-06-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Memory Vulnerability"
   },
   "CVE-2016-6366": {
    "added": "2022-05-24",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA)"
+   "product": "Adaptive Security Appliance (ASA)",
+   "name": "Cisco Adaptive Security Appliance (ASA) SNMP Buffer Overflow Vulnerability"
   },
   "CVE-2016-6367": {
    "added": "2022-05-24",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA)"
+   "product": "Adaptive Security Appliance (ASA)",
+   "name": "Cisco Adaptive Security Appliance (ASA) CLI Remote Code Execution Vulnerability"
   },
   "CVE-2016-6415": {
    "added": "2023-05-19",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS, IOS XR, and IOS XE"
+   "product": "IOS, IOS XR, and IOS XE",
+   "name": "Cisco IOS, IOS XR, and IOS XE IKEv1 Information Disclosure Vulnerability"
   },
   "CVE-2016-8735": {
    "added": "2023-05-12",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Tomcat"
+   "product": "Tomcat",
+   "name": "Apache Tomcat Remote Code Execution Vulnerability"
   },
   "CVE-2016-9079": {
    "added": "2023-06-22",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox, Firefox ESR, and Thunderbird"
+   "product": "Firefox, Firefox ESR, and Thunderbird",
+   "name": "Mozilla Firefox, Firefox ESR, and Thunderbird Use-After-Free Vulnerability"
   },
   "CVE-2017-1000353": {
    "added": "2025-10-02",
    "ransomware": false,
    "vendor": "Jenkins",
-   "product": "Jenkins"
+   "product": "Jenkins",
+   "name": "Jenkins Remote Code Execution Vulnerability"
   },
   "CVE-2017-11317": {
    "added": "2022-04-11",
    "ransomware": false,
    "vendor": "Telerik",
-   "product": "User Interface (UI) for ASP.NET AJAX"
+   "product": "User Interface (UI) for ASP.NET AJAX",
+   "name": "Telerik UI for ASP.NET AJAX Unrestricted File Upload Vulnerability"
   },
   "CVE-2017-11357": {
    "added": "2023-01-26",
    "ransomware": true,
    "vendor": "Telerik",
-   "product": "User Interface (UI) for ASP.NET AJAX"
+   "product": "User Interface (UI) for ASP.NET AJAX",
+   "name": "Telerik UI for ASP.NET AJAX Insecure Direct Object Reference Vulnerability"
   },
   "CVE-2017-12231": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS software"
+   "product": "IOS software",
+   "name": "Cisco IOS Software Network Address Translation Denial-of-Service Vulnerability"
   },
   "CVE-2017-12232": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS software"
+   "product": "IOS software",
+   "name": "Cisco IOS Software for Cisco Integrated Services Routers Denial-of-Service Vulnerability"
   },
   "CVE-2017-12233": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS software"
+   "product": "IOS software",
+   "name": "Cisco IOS Software Common Industrial Protocol Request Denial-of-Service Vulnerability"
   },
   "CVE-2017-12234": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS software"
+   "product": "IOS software",
+   "name": "Cisco IOS Software Common Industrial Protocol Request Denial-of-Service Vulnerability"
   },
   "CVE-2017-12235": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS software"
+   "product": "IOS software",
+   "name": "Cisco IOS Software for Cisco Industrial Ethernet Switches PROFINET Denial-of-Service Vulnerability"
   },
   "CVE-2017-12237": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software Internet Key Exchange Denial-of-Service Vulnerability"
   },
   "CVE-2017-12240": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software DHCP Remote Code Execution Vulnerability"
   },
   "CVE-2017-12319": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XE Software"
+   "product": "IOS XE Software",
+   "name": "Cisco IOS XE Software Ethernet Virtual Private Network Border Gateway Protocol Denial-of-Service Vulnerability"
   },
   "CVE-2017-12615": {
    "added": "2022-03-25",
    "ransomware": true,
    "vendor": "Apache",
-   "product": "Tomcat"
+   "product": "Tomcat",
+   "name": "Apache Tomcat on Windows Remote Code Execution Vulnerability"
   },
   "CVE-2017-12617": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Tomcat"
+   "product": "Tomcat",
+   "name": "Apache Tomcat Remote Code Execution Vulnerability"
   },
   "CVE-2017-15944": {
    "added": "2022-08-18",
    "ransomware": false,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Remote Code Execution Vulnerability"
   },
   "CVE-2017-3881": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE"
+   "product": "IOS and IOS XE",
+   "name": "Cisco IOS and IOS XE Remote Code Execution Vulnerability"
   },
   "CVE-2017-5030": {
    "added": "2022-06-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Memory Corruption Vulnerability"
   },
   "CVE-2017-5070": {
    "added": "2022-06-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2017-5638": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Apache",
-   "product": "Struts"
+   "product": "Struts",
+   "name": "Apache Struts Remote Code Execution Vulnerability"
   },
   "CVE-2017-6627": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS Software and Cisco IOS XE Software UDP Packet Processing Denial-of-Service Vulnerability"
   },
   "CVE-2017-6663": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS Software and Cisco IOS XE Software Denial-of-Service Vulnerability"
   },
   "CVE-2017-6736": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software SNMP Remote Code Execution Vulnerability"
   },
   "CVE-2017-6737": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software SNMP Remote Code Execution Vulnerability"
   },
   "CVE-2017-6738": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software SNMP Remote Code Execution Vulnerability"
   },
   "CVE-2017-6739": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software SNMP Remote Code Execution Vulnerability"
   },
   "CVE-2017-6740": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software SNMP Remote Code Execution Vulnerability"
   },
   "CVE-2017-6742": {
    "added": "2023-04-19",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software SNMP Remote Code Execution Vulnerability"
   },
   "CVE-2017-6743": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software SNMP Remote Code Execution Vulnerability"
   },
   "CVE-2017-6744": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS software"
+   "product": "IOS software",
+   "name": "Cisco IOS Software SNMP Remote Code Execution Vulnerability"
   },
   "CVE-2017-7494": {
    "added": "2023-03-30",
    "ransomware": true,
    "vendor": "Samba",
-   "product": "Samba"
+   "product": "Samba",
+   "name": "Samba Remote Code Execution Vulnerability"
   },
   "CVE-2017-8291": {
    "added": "2022-05-24",
    "ransomware": false,
    "vendor": "Artifex",
-   "product": "Ghostscript"
+   "product": "Ghostscript",
+   "name": "Artifex Ghostscript Type Confusion Vulnerability"
   },
   "CVE-2017-9248": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Progress",
-   "product": "ASP.NET AJAX and Sitefinity"
+   "product": "ASP.NET AJAX and Sitefinity",
+   "name": "Progress Telerik UI for ASP.NET AJAX and Sitefinity Cryptographic Weakness Vulnerability"
   },
   "CVE-2017-9791": {
    "added": "2022-02-10",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Struts 1"
+   "product": "Struts 1",
+   "name": "Apache Struts 1 Improper Input Validation Vulnerability"
   },
   "CVE-2017-9805": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Struts"
+   "product": "Struts",
+   "name": "Apache Struts Deserialization of Untrusted Data Vulnerability"
   },
   "CVE-2017-9841": {
    "added": "2022-02-15",
    "ransomware": false,
    "vendor": "PHPUnit",
-   "product": "PHPUnit"
+   "product": "PHPUnit",
+   "name": "PHPUnit Command Injection Vulnerability"
   },
   "CVE-2018-0151": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS Software and Cisco IOS XE Software Quality of Service Remote Code Execution Vulnerability"
   },
   "CVE-2018-0154": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS Software"
+   "product": "IOS Software",
+   "name": "Cisco IOS Software Integrated Services Module for VPN Denial-of-Service Vulnerability"
   },
   "CVE-2018-0156": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS Software and Cisco IOS XE Software"
+   "product": "IOS Software and Cisco IOS XE Software",
+   "name": "Cisco IOS Software and Cisco IOS XE Software Smart Install Denial-of-Service Vulnerability"
   },
   "CVE-2018-0158": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS Software and Cisco IOS XE Software"
+   "product": "IOS Software and Cisco IOS XE Software",
+   "name": "Cisco IOS and XE Software Internet Key Exchange Memory Leak Vulnerability"
   },
   "CVE-2018-0159": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS Software and Cisco IOS XE Software"
+   "product": "IOS Software and Cisco IOS XE Software",
+   "name": "Cisco IOS and XE Software Internet Key Exchange Version 1 Denial-of-Service Vulnerability"
   },
   "CVE-2018-0161": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS Software"
+   "product": "IOS Software",
+   "name": "Cisco IOS Software Resource Management Errors Vulnerability"
   },
   "CVE-2018-0167": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS, XR, and XE Software"
+   "product": "IOS, XR, and XE Software",
+   "name": "Cisco IOS, XR, and XE Software Buffer Overflow Vulnerability"
   },
   "CVE-2018-0171": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE"
+   "product": "IOS and IOS XE",
+   "name": "Cisco IOS and IOS XE Software Smart Install Remote Code Execution Vulnerability"
   },
   "CVE-2018-0172": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software Improper Input Validation Vulnerability"
   },
   "CVE-2018-0173": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE Software"
+   "product": "IOS and IOS XE Software",
+   "name": "Cisco IOS and IOS XE Software Improper Input Validation Vulnerability"
   },
   "CVE-2018-0174": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XE Software"
+   "product": "IOS XE Software",
+   "name": "Cisco IOS Software and Cisco IOS XE Software Improper Input Validation Vulnerability"
   },
   "CVE-2018-0175": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS, XR, and XE Software"
+   "product": "IOS, XR, and XE Software",
+   "name": "Cisco IOS, XR, and XE Software Buffer Overflow Vulnerability"
   },
   "CVE-2018-0179": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS Software"
+   "product": "IOS Software",
+   "name": "Cisco IOS Software Denial-of-Service Vulnerability"
   },
   "CVE-2018-0180": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS Software"
+   "product": "IOS Software",
+   "name": "Cisco IOS Software Denial-of-Service Vulnerability"
   },
   "CVE-2018-0296": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA)"
+   "product": "Adaptive Security Appliance (ASA)",
+   "name": "Cisco Adaptive Security Appliance (ASA) Denial-of-Service Vulnerability"
   },
   "CVE-2018-1000861": {
    "added": "2022-02-10",
    "ransomware": false,
    "vendor": "Jenkins",
-   "product": "Jenkins Stapler Web Framework"
+   "product": "Jenkins Stapler Web Framework",
+   "name": "Jenkins Stapler Web Framework Deserialization of Untrusted Data Vulnerability"
   },
   "CVE-2018-11776": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Struts"
+   "product": "Struts",
+   "name": "Apache Struts Remote Code Execution Vulnerability"
   },
   "CVE-2018-1273": {
    "added": "2022-03-25",
    "ransomware": true,
    "vendor": "VMware Tanzu",
-   "product": "Spring Data Commons"
+   "product": "Spring Data Commons",
+   "name": "VMware Tanzu Spring Data Commons Property Binder Vulnerability"
   },
   "CVE-2018-13374": {
    "added": "2022-09-08",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS and FortiADC"
+   "product": "FortiOS and FortiADC",
+   "name": "Fortinet FortiOS and FortiADC Improper Access Control Vulnerability"
   },
   "CVE-2018-13379": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS SSL VPN Path Traversal Vulnerability"
   },
   "CVE-2018-13382": {
    "added": "2022-01-10",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS and FortiProxy"
+   "product": "FortiOS and FortiProxy",
+   "name": "Fortinet FortiOS and FortiProxy Improper Authorization"
   },
   "CVE-2018-13383": {
    "added": "2022-01-10",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS and FortiProxy"
+   "product": "FortiOS and FortiProxy",
+   "name": "Fortinet FortiOS and FortiProxy Out-of-bounds Write"
   },
   "CVE-2018-17463": {
    "added": "2022-06-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Remote Code Execution Vulnerability"
   },
   "CVE-2018-17480": {
    "added": "2022-06-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Write Vulnerability"
   },
   "CVE-2018-6065": {
    "added": "2022-06-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Integer Overflow Vulnerability"
   },
   "CVE-2019-0211": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "HTTP Server"
+   "product": "HTTP Server",
+   "name": "Apache HTTP Server Privilege Escalation Vulnerability"
   },
   "CVE-2019-11043": {
    "added": "2022-03-25",
    "ransomware": true,
    "vendor": "PHP",
-   "product": "FastCGI Process Manager (FPM)"
+   "product": "FastCGI Process Manager (FPM)",
+   "name": "PHP FastCGI Process Manager (FPM) Buffer Overflow Vulnerability"
   },
   "CVE-2019-11510": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Ivanti",
-   "product": "Pulse Connect Secure"
+   "product": "Pulse Connect Secure",
+   "name": "Ivanti Pulse Connect Secure Arbitrary File Read Vulnerability"
   },
   "CVE-2019-11539": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Ivanti",
-   "product": "Pulse Connect Secure and Pulse Policy Secure"
+   "product": "Pulse Connect Secure and Pulse Policy Secure",
+   "name": "Ivanti Pulse Connect Secure and Policy Secure Command Injection Vulnerability"
   },
   "CVE-2019-11707": {
    "added": "2022-05-23",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox and Thunderbird"
+   "product": "Firefox and Thunderbird",
+   "name": "Mozilla Firefox and Thunderbird Type Confusion Vulnerability"
   },
   "CVE-2019-11708": {
    "added": "2022-05-23",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox and Thunderbird"
+   "product": "Firefox and Thunderbird",
+   "name": "Mozilla Firefox and Thunderbird Sandbox Escape Vulnerability"
   },
   "CVE-2019-13720": {
    "added": "2022-05-23",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chrome WebAudio"
+   "product": "Chrome WebAudio",
+   "name": "Google Chrome WebAudio Use-After-Free Vulnerability"
   },
   "CVE-2019-1579": {
    "added": "2022-01-10",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Remote Code Execution Vulnerability"
   },
   "CVE-2019-17026": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox and Thunderbird"
+   "product": "Firefox and Thunderbird",
+   "name": "Mozilla Firefox And Thunderbird Type Confusion Vulnerability"
   },
   "CVE-2019-18935": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Progress",
-   "product": "Telerik UI for ASP.NET AJAX"
+   "product": "Telerik UI for ASP.NET AJAX",
+   "name": "Progress Telerik UI for ASP.NET AJAX Deserialization of Untrusted Data Vulnerability"
   },
   "CVE-2019-19781": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Citrix",
-   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance",
+   "name": "Citrix ADC, Gateway, and SD-WAN WANOP Appliance Code Execution Vulnerability"
   },
   "CVE-2019-5418": {
    "added": "2025-07-07",
    "ransomware": false,
    "vendor": "Rails",
-   "product": "Ruby on Rails"
+   "product": "Ruby on Rails",
+   "name": "Rails Ruby on Rails Path Traversal Vulnerability"
   },
   "CVE-2019-5591": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS Default Configuration Vulnerability"
   },
   "CVE-2019-5786": {
    "added": "2022-05-23",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chrome Blink"
+   "product": "Chrome Blink",
+   "name": "Google Chrome Blink Use-After-Free Vulnerability"
   },
   "CVE-2019-5825": {
    "added": "2022-06-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Write Vulnerability"
   },
   "CVE-2019-6693": {
    "added": "2025-06-25",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS Use of Hard-Coded Credentials Vulnerability"
   },
   "CVE-2019-7609": {
    "added": "2022-01-10",
    "ransomware": false,
    "vendor": "Elastic",
-   "product": "Kibana"
+   "product": "Kibana",
+   "name": "Kibana Arbitrary Code Execution"
   },
   "CVE-2019-8394": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Zoho",
-   "product": "ManageEngine"
+   "product": "ManageEngine",
+   "name": "Zoho ManageEngine ServiceDesk Plus (SDP) File Upload Vulnerability"
   },
   "CVE-2019-8720": {
    "added": "2022-05-23",
    "ransomware": false,
    "vendor": "WebKitGTK",
-   "product": "WebKitGTK"
+   "product": "WebKitGTK",
+   "name": "WebKitGTK Memory Corruption Vulnerability"
   },
   "CVE-2020-10189": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Zoho",
-   "product": "ManageEngine"
+   "product": "ManageEngine",
+   "name": "Zoho ManageEngine Desktop Central File Upload Vulnerability"
   },
   "CVE-2020-11023": {
    "added": "2025-01-23",
    "ransomware": false,
    "vendor": "JQuery",
-   "product": "JQuery"
+   "product": "JQuery",
+   "name": "JQuery Cross-Site Scripting (XSS) Vulnerability"
   },
   "CVE-2020-12812": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS SSL VPN Improper Authentication Vulnerability"
   },
   "CVE-2020-15999": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chrome FreeType"
+   "product": "Chrome FreeType",
+   "name": "Google Chrome FreeType Heap Buffer Overflow Vulnerability"
   },
   "CVE-2020-16009": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2020-16010": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chrome for Android UI"
+   "product": "Chrome for Android UI",
+   "name": "Google Chrome for Android UI Heap Buffer Overflow Vulnerability"
   },
   "CVE-2020-16013": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Incorrect Implementation Vulnerabililty"
   },
   "CVE-2020-16017": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chrome"
+   "product": "Chrome",
+   "name": "Google Chrome Use-After-Free Vulnerability"
   },
   "CVE-2020-1631": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Juniper",
-   "product": "Junos OS"
+   "product": "Junos OS",
+   "name": "Juniper Junos OS Path Traversal Vulnerability"
   },
   "CVE-2020-17519": {
    "added": "2024-05-23",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Flink"
+   "product": "Flink",
+   "name": "Apache Flink Improper Access Control Vulnerability"
   },
   "CVE-2020-17530": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Struts"
+   "product": "Struts",
+   "name": "Apache Struts Remote Code Execution Vulnerability"
   },
   "CVE-2020-1938": {
    "added": "2022-03-03",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Tomcat"
+   "product": "Tomcat",
+   "name": "Apache Tomcat Improper Privilege Management Vulnerability"
   },
   "CVE-2020-2021": {
    "added": "2022-03-25",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability"
   },
   "CVE-2020-29583": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Zyxel",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Zyxel Multiple Products Use of Hard-Coded Credentials Vulnerability"
   },
   "CVE-2020-3118": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XR"
+   "product": "IOS XR",
+   "name": "Cisco IOS XR Software Discovery Protocol Format String Vulnerability"
   },
   "CVE-2020-3259": {
    "added": "2024-02-15",
    "ransomware": true,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)",
+   "name": "Cisco ASA and FTD Information Disclosure Vulnerability"
   },
   "CVE-2020-3452": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)",
+   "name": "Cisco ASA and FTD Read-Only Path Traversal Vulnerability"
   },
   "CVE-2020-3566": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XR"
+   "product": "IOS XR",
+   "name": "Cisco IOS XR Software DVMRP Memory Exhaustion Vulnerability"
   },
   "CVE-2020-3569": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XR"
+   "product": "IOS XR",
+   "name": "Cisco IOS XR Software DVMRP Memory Exhaustion Vulnerability"
   },
   "CVE-2020-3580": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)",
+   "name": "Cisco ASA and FTD Cross-Site Scripting (XSS) Vulnerability"
   },
   "CVE-2020-3950": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "VMware Multiple Products Privilege Escalation Vulnerability"
   },
   "CVE-2020-3952": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server Information Disclosure Vulnerability"
   },
   "CVE-2020-4006": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Multiple VMware Products Command Injection Vulnerability"
   },
   "CVE-2020-5410": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "VMware Tanzu",
-   "product": "Spring Cloud Configuration (Config) Server"
+   "product": "Spring Cloud Configuration (Config) Server",
+   "name": "VMware Tanzu Spring Cloud Config Directory Traversal Vulnerability"
   },
   "CVE-2020-6418": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2020-6572": {
    "added": "2022-01-10",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chrome Media"
+   "product": "Chrome Media",
+   "name": "Google Chrome Media Use-After-Free Vulnerability"
   },
   "CVE-2020-6819": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox and Thunderbird"
+   "product": "Firefox and Thunderbird",
+   "name": "Mozilla Firefox And Thunderbird Use-After-Free Vulnerability"
   },
   "CVE-2020-6820": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox and Thunderbird"
+   "product": "Firefox and Thunderbird",
+   "name": "Mozilla Firefox And Thunderbird Use-After-Free Vulnerability"
   },
   "CVE-2020-8193": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance",
+   "name": "Citrix ADC, Gateway, and SD-WAN WANOP Appliance Authorization Bypass Vulnerability"
   },
   "CVE-2020-8195": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance",
+   "name": "Citrix ADC, Gateway, and SD-WAN WANOP Appliance Information Disclosure Vulnerability"
   },
   "CVE-2020-8196": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance",
+   "name": "Citrix ADC, Gateway, and SD-WAN WANOP Appliance Information Disclosure Vulnerability"
   },
   "CVE-2020-8243": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Ivanti",
-   "product": "Pulse Connect Secure"
+   "product": "Pulse Connect Secure",
+   "name": "Ivanti Pulse Connect Secure Code Execution Vulnerability"
   },
   "CVE-2020-8260": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Ivanti",
-   "product": "Pulse Connect Secure"
+   "product": "Pulse Connect Secure",
+   "name": "Ivanti Pulse Connect Secure Code Execution Vulnerability"
   },
   "CVE-2021-1870": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "iOS, iPadOS, and macOS"
+   "product": "iOS, iPadOS, and macOS",
+   "name": "Apple iOS, iPadOS, and macOS WebKit Remote Code Execution Vulnerability"
   },
   "CVE-2021-1871": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "iOS, iPadOS, and macOS"
+   "product": "iOS, iPadOS, and macOS",
+   "name": "Apple iOS, iPadOS, and macOS WebKit Remote Code Execution Vulnerability"
   },
   "CVE-2021-1879": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "iOS, iPadOS, and watchOS"
+   "product": "iOS, iPadOS, and watchOS",
+   "name": "Apple iOS, iPadOS, and watchOS WebKit Cross-Site Scripting (XSS) Vulnerability"
   },
   "CVE-2021-21148": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Heap Buffer Overflow Vulnerability"
   },
   "CVE-2021-21166": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium"
+   "product": "Chromium",
+   "name": "Google Chromium Race Condition Vulnerability"
   },
   "CVE-2021-21193": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Blink"
+   "product": "Chromium Blink",
+   "name": "Google Chromium Blink Use-After-Free Vulnerability"
   },
   "CVE-2021-21206": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Blink"
+   "product": "Chromium Blink",
+   "name": "Google Chromium Blink Use-After-Free Vulnerability"
   },
   "CVE-2021-21220": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Improper Input Validation Vulnerability"
   },
   "CVE-2021-21224": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2021-21972": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server Remote Code Execution Vulnerability"
   },
   "CVE-2021-21973": {
    "added": "2022-03-07",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "vCenter Server and Cloud Foundation"
+   "product": "vCenter Server and Cloud Foundation",
+   "name": "VMware vCenter Server and Cloud Foundation Server Side Request Forgery (SSRF) Vulnerability"
   },
   "CVE-2021-21985": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server Improper Input Validation Vulnerability"
   },
   "CVE-2021-22005": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server File Upload Vulnerability"
   },
   "CVE-2021-22017": {
    "added": "2022-01-10",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server Improper Access Control"
   },
   "CVE-2021-22204": {
    "added": "2021-11-17",
    "ransomware": false,
    "vendor": "Perl",
-   "product": "Exiftool"
+   "product": "Exiftool",
+   "name": "ExifTool Remote Code Execution Vulnerability"
   },
   "CVE-2021-22893": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Ivanti",
-   "product": "Pulse Connect Secure"
+   "product": "Pulse Connect Secure",
+   "name": "Ivanti Pulse Connect Secure Use-After-Free Vulnerability"
   },
   "CVE-2021-22894": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Ivanti",
-   "product": "Pulse Connect Secure"
+   "product": "Pulse Connect Secure",
+   "name": "Ivanti Pulse Connect Secure Collaboration Suite Buffer Overflow Vulnerability"
   },
   "CVE-2021-22899": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Ivanti",
-   "product": "Pulse Connect Secure"
+   "product": "Pulse Connect Secure",
+   "name": "Ivanti Pulse Connect Secure Command Injection Vulnerability"
   },
   "CVE-2021-22900": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Ivanti",
-   "product": "Pulse Connect Secure"
+   "product": "Pulse Connect Secure",
+   "name": "Ivanti Pulse Connect Secure Unrestricted File Upload Vulnerability"
   },
   "CVE-2021-22991": {
    "added": "2022-01-18",
    "ransomware": false,
    "vendor": "F5",
-   "product": "BIG-IP Traffic Management Microkernel"
+   "product": "BIG-IP Traffic Management Microkernel",
+   "name": "F5 BIG-IP Traffic Management Microkernel Buffer Overflow"
   },
   "CVE-2021-30533": {
    "added": "2022-06-27",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium PopupBlocker"
+   "product": "Chromium PopupBlocker",
+   "name": "Google Chromium PopupBlocker Security Bypass Vulnerability"
   },
   "CVE-2021-30551": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2021-30554": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium WebGL"
+   "product": "Chromium WebGL",
+   "name": "Google Chromium WebGL Use-After-Free Vulnerability"
   },
   "CVE-2021-30563": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2021-30632": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Write Vulnerability"
   },
   "CVE-2021-30633": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Indexed DB API"
+   "product": "Chromium Indexed DB API",
+   "name": "Google Chromium Indexed DB API Use-After-Free Vulnerability"
   },
   "CVE-2021-30661": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Storage Use-After-Free Vulnerability"
   },
   "CVE-2021-30663": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Integer Overflow Vulnerability"
   },
   "CVE-2021-30665": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Memory Corruption Vulnerability"
   },
   "CVE-2021-30666": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "iOS"
+   "product": "iOS",
+   "name": "Apple iOS WebKit Buffer Overflow Vulnerability"
   },
   "CVE-2021-30761": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "iOS"
+   "product": "iOS",
+   "name": "Apple iOS WebKit Memory Corruption Vulnerability"
   },
   "CVE-2021-30762": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "iOS"
+   "product": "iOS",
+   "name": "Apple iOS WebKit Use-After-Free Vulnerability"
   },
   "CVE-2021-3156": {
    "added": "2022-04-06",
    "ransomware": false,
    "vendor": "Sudo",
-   "product": "Sudo"
+   "product": "Sudo",
+   "name": "Sudo Heap-Based Buffer Overflow Vulnerability"
   },
   "CVE-2021-37973": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Portals"
+   "product": "Chromium Portals",
+   "name": "Google Chromium Portals Use-After-Free Vulnerability"
   },
   "CVE-2021-37975": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Use-After-Free Vulnerability"
   },
   "CVE-2021-37976": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium"
+   "product": "Chromium",
+   "name": "Google Chromium Information Disclosure Vulnerability"
   },
   "CVE-2021-38000": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Intents"
+   "product": "Chromium Intents",
+   "name": "Google Chromium Intents Improper Input Validation Vulnerability"
   },
   "CVE-2021-38003": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Memory Corruption Vulnerability"
   },
   "CVE-2021-39144": {
    "added": "2023-03-10",
    "ransomware": false,
    "vendor": "XStream",
-   "product": "XStream"
+   "product": "XStream",
+   "name": "XStream Remote Code Execution Vulnerability"
   },
   "CVE-2021-39226": {
    "added": "2022-08-25",
    "ransomware": false,
    "vendor": "Grafana Labs",
-   "product": "Grafana"
+   "product": "Grafana",
+   "name": "Grafana Authentication Bypass Vulnerability"
   },
   "CVE-2021-40438": {
    "added": "2021-12-01",
    "ransomware": true,
    "vendor": "Apache",
-   "product": "Apache"
+   "product": "Apache",
+   "name": "Apache HTTP Server-Side Request Forgery (SSRF)"
   },
   "CVE-2021-40539": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Zoho",
-   "product": "ManageEngine"
+   "product": "ManageEngine",
+   "name": "Zoho ManageEngine ADSelfService Plus Authentication Bypass Vulnerability"
   },
   "CVE-2021-4102": {
    "added": "2021-12-15",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Use-After-Free Vulnerability"
   },
   "CVE-2021-41773": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Apache",
-   "product": "HTTP Server"
+   "product": "HTTP Server",
+   "name": "Apache HTTP Server Path Traversal Vulnerability"
   },
   "CVE-2021-42013": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Apache",
-   "product": "HTTP Server"
+   "product": "HTTP Server",
+   "name": "Apache HTTP Server Path Traversal Vulnerability"
   },
   "CVE-2021-43798": {
    "added": "2025-10-09",
    "ransomware": false,
    "vendor": "Grafana Labs",
-   "product": "Grafana"
+   "product": "Grafana",
+   "name": "Grafana Path Traversal Vulnerability"
   },
   "CVE-2021-44168": {
    "added": "2021-12-10",
    "ransomware": false,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS Arbitrary File Download"
   },
   "CVE-2021-44228": {
    "added": "2021-12-10",
    "ransomware": true,
    "vendor": "Apache",
-   "product": "Log4j2"
+   "product": "Log4j2",
+   "name": "Apache Log4j2 Remote Code Execution Vulnerability"
   },
   "CVE-2021-45046": {
    "added": "2023-05-01",
    "ransomware": true,
    "vendor": "Apache",
-   "product": "Log4j2"
+   "product": "Log4j2",
+   "name": "Apache Log4j2 Deserialization of Untrusted Data Vulnerability"
   },
   "CVE-2022-0028": {
    "added": "2022-08-22",
    "ransomware": false,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Reflected Amplification Denial-of-Service Vulnerability"
   },
   "CVE-2022-0609": {
    "added": "2022-02-15",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Animation"
+   "product": "Chromium Animation",
+   "name": "Google Chromium Animation Use-After-Free Vulnerability"
   },
   "CVE-2022-1096": {
    "added": "2022-03-28",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2022-1364": {
    "added": "2022-04-15",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2022-20775": {
    "added": "2026-02-25",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "SD-WAN"
+   "product": "SD-WAN",
+   "name": "Cisco SD-WAN Path Traversal Vulnerability"
   },
   "CVE-2022-20821": {
    "added": "2022-05-23",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XR"
+   "product": "IOS XR",
+   "name": "Cisco IOS XR Open Port Vulnerability"
   },
   "CVE-2022-22948": {
    "added": "2024-07-17",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server Incorrect Default File Permissions Vulnerability"
   },
   "CVE-2022-22954": {
    "added": "2022-04-14",
    "ransomware": true,
    "vendor": "VMware",
-   "product": "Workspace ONE Access and Identity Manager"
+   "product": "Workspace ONE Access and Identity Manager",
+   "name": "VMware Workspace ONE Access and Identity Manager Server-Side Template Injection Vulnerability"
   },
   "CVE-2022-22960": {
    "added": "2022-04-15",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "VMware Multiple Products Privilege Escalation Vulnerability"
   },
   "CVE-2022-22963": {
    "added": "2022-08-25",
    "ransomware": false,
    "vendor": "VMware Tanzu",
-   "product": "Spring Cloud"
+   "product": "Spring Cloud",
+   "name": "VMware Tanzu Spring Cloud Function Remote Code Execution Vulnerability"
   },
   "CVE-2022-22965": {
    "added": "2022-04-04",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "Spring Framework"
+   "product": "Spring Framework",
+   "name": "Spring Framework JDK 9+ Remote Code Execution Vulnerability"
   },
   "CVE-2022-26485": {
    "added": "2022-03-07",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox"
+   "product": "Firefox",
+   "name": "Mozilla Firefox Use-After-Free Vulnerability"
   },
   "CVE-2022-26486": {
    "added": "2022-03-07",
    "ransomware": false,
    "vendor": "Mozilla",
-   "product": "Firefox"
+   "product": "Firefox",
+   "name": "Mozilla Firefox Use-After-Free Vulnerability"
   },
   "CVE-2022-27518": {
    "added": "2022-12-13",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "Application Delivery Controller (ADC) and Gateway"
+   "product": "Application Delivery Controller (ADC) and Gateway",
+   "name": "Citrix Application Delivery Controller (ADC) and Gateway Authentication Bypass Vulnerability"
   },
   "CVE-2022-2856": {
    "added": "2022-08-18",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Intents"
+   "product": "Chromium Intents",
+   "name": "Google Chromium Intents Insufficient Input Validation Vulnerability"
   },
   "CVE-2022-28810": {
    "added": "2023-03-07",
    "ransomware": false,
    "vendor": "Zoho",
-   "product": "ManageEngine"
+   "product": "ManageEngine",
+   "name": "Zoho ManageEngine ADSelfService Plus Remote Code Execution Vulnerability"
   },
   "CVE-2022-29464": {
    "added": "2022-04-25",
    "ransomware": true,
    "vendor": "WSO2",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "WSO2 Multiple Products Unrestrictive Upload of File Vulnerability"
   },
   "CVE-2022-30333": {
    "added": "2022-08-09",
    "ransomware": true,
    "vendor": "RARLAB",
-   "product": "UnRAR"
+   "product": "UnRAR",
+   "name": "RARLAB UnRAR Directory Traversal Vulnerability"
   },
   "CVE-2022-3038": {
    "added": "2023-03-30",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Network Service"
+   "product": "Chromium Network Service",
+   "name": "Google Chromium Network Service Use-After-Free Vulnerability"
   },
   "CVE-2022-30525": {
    "added": "2022-05-16",
    "ransomware": false,
    "vendor": "Zyxel",
-   "product": "Multiple Firewalls"
+   "product": "Multiple Firewalls",
+   "name": "Zyxel Multiple Firewalls OS Command Injection Vulnerability"
   },
   "CVE-2022-3075": {
    "added": "2022-09-08",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Mojo"
+   "product": "Chromium Mojo",
+   "name": "Google Chromium Mojo Insufficient Data Validation Vulnerability"
   },
   "CVE-2022-33891": {
    "added": "2023-03-07",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Spark"
+   "product": "Spark",
+   "name": "Apache Spark Command Injection Vulnerability"
   },
   "CVE-2022-35405": {
    "added": "2022-09-22",
    "ransomware": false,
    "vendor": "Zoho",
-   "product": "ManageEngine"
+   "product": "ManageEngine",
+   "name": "Zoho ManageEngine Multiple Products Remote Code Execution Vulnerability"
   },
   "CVE-2022-3723": {
    "added": "2022-10-28",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2022-40684": {
    "added": "2022-10-11",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Fortinet Multiple Products Authentication Bypass Vulnerability"
   },
   "CVE-2022-41328": {
    "added": "2023-03-14",
    "ransomware": false,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS Path Traversal Vulnerability"
   },
   "CVE-2022-4135": {
    "added": "2022-11-28",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium GPU"
+   "product": "Chromium GPU",
+   "name": "Google Chromium GPU Heap Buffer Overflow Vulnerability"
   },
   "CVE-2022-42475": {
    "added": "2022-12-13",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS Heap-Based Buffer Overflow Vulnerability"
   },
   "CVE-2022-4262": {
    "added": "2022-12-05",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2022-47966": {
    "added": "2023-01-23",
    "ransomware": true,
    "vendor": "Zoho",
-   "product": "ManageEngine"
+   "product": "ManageEngine",
+   "name": "Zoho ManageEngine Multiple Products Remote Code Execution Vulnerability"
   },
   "CVE-2023-20109": {
    "added": "2023-10-10",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE"
+   "product": "IOS and IOS XE",
+   "name": "Cisco IOS and IOS XE Group Encrypted Transport VPN Out-of-Bounds Write Vulnerability"
   },
   "CVE-2023-20198": {
    "added": "2023-10-16",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS XE Web UI"
+   "product": "IOS XE Web UI",
+   "name": "Cisco IOS XE Web UI Privilege Escalation Vulnerability"
   },
   "CVE-2023-20269": {
    "added": "2023-09-13",
    "ransomware": true,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance and Firepower Threat Defense"
+   "product": "Adaptive Security Appliance and Firepower Threat Defense",
+   "name": "Cisco Adaptive Security Appliance and Firepower Threat Defense Unauthorized Access Vulnerability"
   },
   "CVE-2023-20273": {
    "added": "2023-10-23",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Cisco IOS XE Web UI"
+   "product": "Cisco IOS XE Web UI",
+   "name": "Cisco IOS XE Web UI Command Injection Vulnerability"
   },
   "CVE-2023-2033": {
    "added": "2023-04-17",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2023-2136": {
    "added": "2023-04-21",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Skia"
+   "product": "Chromium Skia",
+   "name": "Google Chrome Skia Integer Overflow Vulnerability"
   },
   "CVE-2023-23529": {
    "added": "2023-02-14",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Type Confusion Vulnerability"
   },
   "CVE-2023-27997": {
    "added": "2023-06-13",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS and FortiProxy SSL-VPN"
+   "product": "FortiOS and FortiProxy SSL-VPN",
+   "name": "Fortinet FortiOS and FortiProxy SSL-VPN Heap-Based Buffer Overflow Vulnerability"
   },
   "CVE-2023-28204": {
    "added": "2023-05-22",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Out-of-Bounds Read Vulnerability"
   },
   "CVE-2023-28205": {
    "added": "2023-04-10",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Use-After-Free Vulnerability"
   },
   "CVE-2023-28432": {
    "added": "2023-04-21",
    "ransomware": false,
    "vendor": "MinIO",
-   "product": "MinIO"
+   "product": "MinIO",
+   "name": "MinIO Information Disclosure Vulnerability"
   },
   "CVE-2023-28434": {
    "added": "2023-09-19",
    "ransomware": false,
    "vendor": "MinIO",
-   "product": "MinIO"
+   "product": "MinIO",
+   "name": "MinIO Security Feature Bypass Vulnerability"
   },
   "CVE-2023-28771": {
    "added": "2023-05-31",
    "ransomware": false,
    "vendor": "Zyxel",
-   "product": "Multiple Firewalls"
+   "product": "Multiple Firewalls",
+   "name": "Zyxel Multiple Firewalls OS Command Injection Vulnerability"
   },
   "CVE-2023-3079": {
    "added": "2023-06-07",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2023-32373": {
    "added": "2023-05-22",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Use-After-Free Vulnerability"
   },
   "CVE-2023-32409": {
    "added": "2023-05-22",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Sandbox Escape Vulnerability"
   },
   "CVE-2023-32435": {
    "added": "2023-06-23",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Memory Corruption Vulnerability"
   },
   "CVE-2023-32439": {
    "added": "2023-06-23",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Type Confusion Vulnerability"
   },
   "CVE-2023-33009": {
    "added": "2023-06-05",
    "ransomware": false,
    "vendor": "Zyxel",
-   "product": "Multiple Firewalls"
+   "product": "Multiple Firewalls",
+   "name": "Zyxel Multiple Firewalls Buffer Overflow Vulnerability"
   },
   "CVE-2023-33010": {
    "added": "2023-06-05",
    "ransomware": false,
    "vendor": "Zyxel",
-   "product": "Multiple Firewalls"
+   "product": "Multiple Firewalls",
+   "name": "Zyxel Multiple Firewalls Buffer Overflow Vulnerability"
   },
   "CVE-2023-34048": {
    "added": "2024-01-22",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server Out-of-Bounds Write Vulnerability"
   },
   "CVE-2023-3519": {
    "added": "2023-07-19",
    "ransomware": true,
    "vendor": "Citrix",
-   "product": "NetScaler ADC and NetScaler Gateway"
+   "product": "NetScaler ADC and NetScaler Gateway",
+   "name": "Citrix NetScaler ADC and NetScaler Gateway Code Injection Vulnerability"
   },
   "CVE-2023-36844": {
    "added": "2023-11-13",
    "ransomware": false,
    "vendor": "Juniper",
-   "product": "Junos OS"
+   "product": "Junos OS",
+   "name": "Juniper Junos OS EX Series PHP External Variable Modification Vulnerability"
   },
   "CVE-2023-36845": {
    "added": "2023-11-13",
    "ransomware": false,
    "vendor": "Juniper",
-   "product": "Junos OS"
+   "product": "Junos OS",
+   "name": "Juniper Junos OS EX Series and SRX Series PHP External Variable Modification Vulnerability"
   },
   "CVE-2023-36846": {
    "added": "2023-11-13",
    "ransomware": false,
    "vendor": "Juniper",
-   "product": "Junos OS"
+   "product": "Junos OS",
+   "name": "Juniper Junos OS SRX Series Missing Authentication for Critical Function Vulnerability"
   },
   "CVE-2023-36847": {
    "added": "2023-11-13",
    "ransomware": false,
    "vendor": "Juniper",
-   "product": "Junos OS"
+   "product": "Junos OS",
+   "name": "Juniper Junos OS EX Series Missing Authentication for Critical Function Vulnerability"
   },
   "CVE-2023-36851": {
    "added": "2023-11-13",
    "ransomware": false,
    "vendor": "Juniper",
-   "product": "Junos OS"
+   "product": "Junos OS",
+   "name": "Juniper Junos OS SRX Series Missing Authentication for Critical Function Vulnerability"
   },
   "CVE-2023-37450": {
    "added": "2023-07-13",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Code Execution Vulnerability"
   },
   "CVE-2023-41993": {
    "added": "2023-09-25",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Code Execution Vulnerability"
   },
   "CVE-2023-42916": {
    "added": "2023-12-04",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Out-of-Bounds Read Vulnerability"
   },
   "CVE-2023-42917": {
    "added": "2023-12-04",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Memory Corruption Vulnerability"
   },
   "CVE-2023-46604": {
    "added": "2023-11-02",
    "ransomware": true,
    "vendor": "Apache",
-   "product": "ActiveMQ"
+   "product": "ActiveMQ",
+   "name": "Apache ActiveMQ Deserialization of Untrusted Data Vulnerability"
   },
   "CVE-2023-46805": {
    "added": "2024-01-10",
    "ransomware": true,
    "vendor": "Ivanti",
-   "product": "Connect Secure and Policy Secure"
+   "product": "Connect Secure and Policy Secure",
+   "name": "Ivanti Connect Secure and Policy Secure Authentication Bypass Vulnerability"
   },
   "CVE-2023-4762": {
    "added": "2024-02-06",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2023-4863": {
    "added": "2023-09-13",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium WebP"
+   "product": "Chromium WebP",
+   "name": "Google Chromium WebP Heap-Based Buffer Overflow Vulnerability"
   },
   "CVE-2023-4911": {
    "added": "2023-11-21",
    "ransomware": false,
    "vendor": "GNU",
-   "product": "GNU C Library"
+   "product": "GNU C Library",
+   "name": "GNU C Library Buffer Overflow Vulnerability"
   },
   "CVE-2023-4966": {
    "added": "2023-10-18",
    "ransomware": true,
    "vendor": "Citrix",
-   "product": "NetScaler ADC and NetScaler Gateway"
+   "product": "NetScaler ADC and NetScaler Gateway",
+   "name": "Citrix NetScaler ADC and NetScaler Gateway Buffer Overflow Vulnerability"
   },
   "CVE-2023-5217": {
    "added": "2023-10-02",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium libvpx"
+   "product": "Chromium libvpx",
+   "name": "Google Chromium libvpx Heap Buffer Overflow Vulnerability"
   },
   "CVE-2023-6345": {
    "added": "2023-11-30",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Skia"
+   "product": "Chromium Skia",
+   "name": "Google Skia Integer Overflow Vulnerability"
   },
   "CVE-2023-6548": {
    "added": "2024-01-17",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler ADC and NetScaler Gateway"
+   "product": "NetScaler ADC and NetScaler Gateway",
+   "name": "Citrix NetScaler ADC and NetScaler Gateway Code Injection Vulnerability"
   },
   "CVE-2023-6549": {
    "added": "2024-01-17",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler ADC and NetScaler Gateway"
+   "product": "NetScaler ADC and NetScaler Gateway",
+   "name": "Citrix NetScaler ADC and NetScaler Gateway Buffer Overflow Vulnerability"
   },
   "CVE-2023-7024": {
    "added": "2024-01-02",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium WebRTC"
+   "product": "Chromium WebRTC",
+   "name": "Google Chromium WebRTC Heap Buffer Overflow Vulnerability"
   },
   "CVE-2024-0012": {
    "added": "2024-11-18",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Management Interface Authentication Bypass Vulnerability"
   },
   "CVE-2024-0519": {
    "added": "2024-01-17",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Memory Access Vulnerability"
   },
   "CVE-2024-11667": {
    "added": "2024-12-03",
    "ransomware": true,
    "vendor": "Zyxel",
-   "product": "Multiple Firewalls"
+   "product": "Multiple Firewalls",
+   "name": "Zyxel Multiple Firewalls Path Traversal Vulnerability"
   },
   "CVE-2024-20353": {
    "added": "2024-04-24",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)",
+   "name": "Cisco ASA and FTD Denial of Service Vulnerability"
   },
   "CVE-2024-20359": {
    "added": "2024-04-24",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)",
+   "name": "Cisco ASA and FTD Privilege Escalation Vulnerability"
   },
   "CVE-2024-20481": {
    "added": "2024-10-24",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)",
+   "name": "Cisco ASA and FTD Denial-of-Service Vulnerability"
   },
   "CVE-2024-21762": {
    "added": "2024-02-09",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS Out-of-Bound Write Vulnerability"
   },
   "CVE-2024-21887": {
    "added": "2024-01-10",
    "ransomware": true,
    "vendor": "Ivanti",
-   "product": "Connect Secure and Policy Secure"
+   "product": "Connect Secure and Policy Secure",
+   "name": "Ivanti Connect Secure and Policy Secure Command Injection Vulnerability"
   },
   "CVE-2024-21893": {
    "added": "2024-01-31",
    "ransomware": true,
    "vendor": "Ivanti",
-   "product": "Connect Secure, Policy Secure, and Neurons"
+   "product": "Connect Secure, Policy Secure, and Neurons",
+   "name": "Ivanti Connect Secure, Policy Secure, and Neurons Server-Side Request Forgery (SSRF) Vulnerability"
   },
   "CVE-2024-23113": {
    "added": "2024-10-09",
    "ransomware": false,
    "vendor": "Fortinet",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Fortinet Multiple Products Format String Vulnerability"
   },
   "CVE-2024-23222": {
    "added": "2024-01-23",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Type Confusion Vulnerability"
   },
   "CVE-2024-23897": {
    "added": "2024-08-19",
    "ransomware": true,
    "vendor": "Jenkins",
-   "product": "Jenkins Command Line Interface (CLI)"
+   "product": "Jenkins Command Line Interface (CLI)",
+   "name": "Jenkins Command Line Interface (CLI) Path Traversal Vulnerability"
   },
   "CVE-2024-24919": {
    "added": "2024-05-30",
    "ransomware": true,
    "vendor": "Check Point",
-   "product": "Quantum Security Gateways"
+   "product": "Quantum Security Gateways",
+   "name": "Check Point Quantum Security Gateways Information Disclosure Vulnerability"
   },
   "CVE-2024-3393": {
    "added": "2024-12-30",
    "ransomware": false,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Malicious DNS Packet Vulnerability"
   },
   "CVE-2024-3400": {
    "added": "2024-04-12",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Command Injection Vulnerability"
   },
   "CVE-2024-37079": {
    "added": "2026-01-23",
    "ransomware": false,
    "vendor": "Broadcom",
-   "product": "VMware vCenter Server"
+   "product": "VMware vCenter Server",
+   "name": "Broadcom VMware vCenter Server Out-of-bounds Write Vulnerability"
   },
   "CVE-2024-38475": {
    "added": "2025-05-01",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "HTTP Server"
+   "product": "HTTP Server",
+   "name": "Apache HTTP Server Improper Escaping of Output Vulnerability"
   },
   "CVE-2024-38812": {
    "added": "2024-11-20",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server Heap-Based Buffer Overflow Vulnerability"
   },
   "CVE-2024-38813": {
    "added": "2024-11-20",
    "ransomware": false,
    "vendor": "VMware",
-   "product": "vCenter Server"
+   "product": "vCenter Server",
+   "name": "VMware vCenter Server Privilege Escalation Vulnerability"
   },
   "CVE-2024-4577": {
    "added": "2024-06-12",
    "ransomware": true,
    "vendor": "PHP Group",
-   "product": "PHP"
+   "product": "PHP",
+   "name": "PHP-CGI OS Command Injection Vulnerability"
   },
   "CVE-2024-4671": {
    "added": "2024-05-13",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium"
+   "product": "Chromium",
+   "name": "Google Chromium Visuals Use-After-Free Vulnerability"
   },
   "CVE-2024-4761": {
    "added": "2024-05-16",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Memory Write Vulnerability"
   },
   "CVE-2024-4947": {
    "added": "2024-05-20",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2024-50623": {
    "added": "2024-12-13",
    "ransomware": true,
    "vendor": "Cleo",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Cleo Multiple Products Unrestricted File Upload Vulnerability"
   },
   "CVE-2024-5274": {
    "added": "2024-05-28",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2024-55591": {
    "added": "2025-01-14",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS and FortiProxy"
+   "product": "FortiOS and FortiProxy",
+   "name": "Fortinet FortiOS and FortiProxy Authentication Bypass Vulnerability"
   },
   "CVE-2024-55956": {
    "added": "2024-12-17",
    "ransomware": true,
    "vendor": "Cleo",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Cleo Multiple Products Unauthenticated File Upload Vulnerability"
   },
   "CVE-2024-7965": {
    "added": "2024-08-28",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Inappropriate Implementation Vulnerability"
   },
   "CVE-2024-7971": {
    "added": "2024-08-26",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2024-9474": {
    "added": "2024-11-18",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Management Interface OS Command Injection Vulnerability"
   },
   "CVE-2024-9680": {
    "added": "2024-10-15",
    "ransomware": true,
    "vendor": "Mozilla",
-   "product": "Firefox"
+   "product": "Firefox",
+   "name": "Mozilla Firefox Use-After-Free Vulnerability"
   },
   "CVE-2025-0108": {
    "added": "2025-02-18",
    "ransomware": false,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability"
   },
   "CVE-2025-0111": {
    "added": "2025-02-20",
    "ransomware": false,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS File Read Vulnerability"
   },
   "CVE-2025-0282": {
    "added": "2025-01-08",
    "ransomware": true,
    "vendor": "Ivanti",
-   "product": "Connect Secure, Policy Secure, and ZTA Gateways"
+   "product": "Connect Secure, Policy Secure, and ZTA Gateways",
+   "name": "Ivanti Connect Secure, Policy Secure, and ZTA Gateways Stack-Based Buffer Overflow Vulnerability"
   },
   "CVE-2025-10585": {
    "added": "2025-09-23",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2025-13223": {
    "added": "2025-11-19",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2025-14174": {
    "added": "2025-12-12",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium"
+   "product": "Chromium",
+   "name": "Google Chromium Out of Bounds Memory Access Vulnerability"
   },
   "CVE-2025-20333": {
    "added": "2025-09-25",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense"
+   "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
+   "name": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Buffer Overflow Vulnerability"
   },
   "CVE-2025-20352": {
    "added": "2025-09-29",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "IOS and IOS XE"
+   "product": "IOS and IOS XE",
+   "name": "Cisco IOS and IOS XE Software SNMP Denial of Service and Remote Code Execution Vulnerability"
   },
   "CVE-2025-20362": {
    "added": "2025-09-25",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense"
+   "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense",
+   "name": "Cisco Secure Firewall Adaptive Security (ASA) Appliance and Secure Firewall Threat Defense (FTD) Missing Authorization Vulnerability"
   },
   "CVE-2025-20393": {
    "added": "2025-12-17",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Cisco Multiple Products Improper Input Validation Vulnerability"
   },
   "CVE-2025-21590": {
    "added": "2025-03-13",
    "ransomware": false,
    "vendor": "Juniper",
-   "product": "Junos OS"
+   "product": "Junos OS",
+   "name": "Juniper Junos OS Improper Isolation or Compartmentalization Vulnerability"
   },
   "CVE-2025-22457": {
    "added": "2025-04-04",
    "ransomware": true,
    "vendor": "Ivanti",
-   "product": "Connect Secure, Policy Secure, and ZTA Gateways"
+   "product": "Connect Secure, Policy Secure, and ZTA Gateways",
+   "name": "Ivanti Connect Secure, Policy Secure, and ZTA Gateways Stack-Based Buffer Overflow Vulnerability"
   },
   "CVE-2025-24201": {
    "added": "2025-03-13",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products WebKit Out-of-Bounds Write Vulnerability"
   },
   "CVE-2025-24472": {
    "added": "2025-03-18",
    "ransomware": true,
    "vendor": "Fortinet",
-   "product": "FortiOS and FortiProxy"
+   "product": "FortiOS and FortiProxy",
+   "name": "Fortinet FortiOS and FortiProxy Authentication Bypass Vulnerability"
   },
   "CVE-2025-24813": {
    "added": "2025-04-01",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Tomcat"
+   "product": "Tomcat",
+   "name": "Apache Tomcat Path Equivalence Vulnerability"
   },
   "CVE-2025-25249": {
    "added": "2026-09-09",
    "ransomware": false,
    "vendor": "Fortinet",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability"
   },
   "CVE-2025-27363": {
    "added": "2025-05-06",
    "ransomware": false,
    "vendor": "FreeType",
-   "product": "FreeType"
+   "product": "FreeType",
+   "name": "FreeType Out-of-Bounds Write Vulnerability"
   },
   "CVE-2025-2783": {
    "added": "2025-03-27",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium Mojo"
+   "product": "Chromium Mojo",
+   "name": "Google Chromium Mojo Sandbox Escape Vulnerability"
   },
   "CVE-2025-32433": {
    "added": "2025-06-09",
    "ransomware": false,
    "vendor": "Erlang",
-   "product": "Erlang/OTP"
+   "product": "Erlang/OTP",
+   "name": "Erlang Erlang/OTP SSH Server Missing Authentication for Critical Function Vulnerability"
   },
   "CVE-2025-32463": {
    "added": "2025-09-29",
    "ransomware": false,
    "vendor": "Sudo",
-   "product": "Sudo"
+   "product": "Sudo",
+   "name": "Sudo Inclusion of Functionality from Untrusted Control Sphere Vulnerability"
   },
   "CVE-2025-43529": {
    "added": "2025-12-15",
    "ransomware": false,
    "vendor": "Apple",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Apple Multiple Products Use-After-Free WebKit Vulnerability"
   },
   "CVE-2025-48384": {
    "added": "2025-08-25",
    "ransomware": false,
    "vendor": "Git",
-   "product": "Git"
+   "product": "Git",
+   "name": "Git Link Following Vulnerability"
   },
   "CVE-2025-5419": {
    "added": "2025-06-05",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability"
   },
   "CVE-2025-55182": {
    "added": "2025-12-05",
    "ransomware": true,
    "vendor": "Meta",
-   "product": "React Server Components"
+   "product": "React Server Components",
+   "name": "Meta React Server Components Remote Code Execution Vulnerability"
   },
   "CVE-2025-5777": {
    "added": "2025-07-10",
    "ransomware": true,
    "vendor": "Citrix",
-   "product": "NetScaler ADC and Gateway"
+   "product": "NetScaler ADC and Gateway",
+   "name": "Citrix NetScaler ADC and Gateway Out-of-Bounds Read Vulnerability"
   },
   "CVE-2025-59718": {
    "added": "2025-12-16",
    "ransomware": false,
    "vendor": "Fortinet",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Fortinet Multiple Products Improper Verification of Cryptographic Signature Vulnerability"
   },
   "CVE-2025-61624": {
    "added": "2026-10-16",
    "ransomware": false,
    "vendor": "Fortinet",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Fortinet Multiple Products Path Traversal Vulnerability"
   },
   "CVE-2025-6543": {
    "added": "2025-06-30",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler ADC and Gateway"
+   "product": "NetScaler ADC and Gateway",
+   "name": "Citrix NetScaler ADC and Gateway Buffer Overflow Vulnerability"
   },
   "CVE-2025-6554": {
    "added": "2025-07-02",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2025-6558": {
    "added": "2025-07-22",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium"
+   "product": "Chromium",
+   "name": "Google Chromium ANGLE and GPU Improper Input Validation Vulnerability"
   },
   "CVE-2025-68686": {
    "added": "2026-07-27",
    "ransomware": false,
    "vendor": "Fortinet",
-   "product": "FortiOS"
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability"
   },
   "CVE-2025-7775": {
    "added": "2025-08-26",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler"
+   "product": "NetScaler",
+   "name": "Citrix NetScaler Memory Overflow Vulnerability"
   },
   "CVE-2026-0257": {
    "added": "2026-05-29",
    "ransomware": true,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability"
   },
   "CVE-2026-0300": {
    "added": "2026-05-06",
    "ransomware": false,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Out-of-bounds Write Vulnerability"
   },
   "CVE-2026-0322": {
    "added": "2026-10-14",
    "ransomware": false,
    "vendor": "Palo Alto Networks",
-   "product": "PAN-OS"
+   "product": "PAN-OS",
+   "name": "Palo Alto Networks PAN-OS Code Injection Vulnerability"
   },
   "CVE-2026-104935": {
    "added": "2026-10-13",
    "ransomware": false,
    "vendor": "Ivanti",
-   "product": "Connect Secure"
+   "product": "Connect Secure",
+   "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability"
   },
   "CVE-2026-109618": {
    "added": "2026-10-26",
    "ransomware": false,
    "vendor": "PHP Group",
-   "product": "PHP"
+   "product": "PHP",
+   "name": "PHP Memory Corruption Vulnerability"
   },
   "CVE-2026-109619": {
    "added": "2026-10-26",
    "ransomware": false,
    "vendor": "PHP Group",
-   "product": "PHP"
+   "product": "PHP",
+   "name": "PHP Stale Internal Request-State Vulnerability"
   },
   "CVE-2026-111357": {
    "added": "2026-10-30",
    "ransomware": false,
    "vendor": "Ivanti",
-   "product": "Connect Secure"
+   "product": "Connect Secure",
+   "name": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability"
   },
   "CVE-2026-111497": {
    "added": "2026-10-27",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Brotli"
+   "product": "Brotli",
+   "name": "Google Brotli Unchecked Return Value Vulnerability"
   },
   "CVE-2026-11645": {
    "added": "2026-06-09",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability"
   },
   "CVE-2026-118527": {
    "added": "2026-10-30",
    "ransomware": false,
    "vendor": "Ivanti",
-   "product": "Connect Secure"
+   "product": "Connect Secure",
+   "name": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability"
   },
   "CVE-2026-123039": {
    "added": "2026-11-13",
    "ransomware": false,
    "vendor": "Check Point",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability"
   },
   "CVE-2026-123890": {
    "added": "2026-11-20",
    "ransomware": false,
    "vendor": "Broadcom",
-   "product": "VMware vCenter"
+   "product": "VMware vCenter",
+   "name": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability"
   },
   "CVE-2026-125350": {
    "added": "2026-11-10",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium"
+   "product": "Chromium",
+   "name": "Google Chromium Use-After-Free Vulnerability"
   },
   "CVE-2026-19490": {
    "added": "2026-09-09",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler"
+   "product": "NetScaler",
+   "name": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability"
   },
   "CVE-2026-20122": {
    "added": "2026-04-20",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Catalyst SD-WAN Manger"
+   "product": "Catalyst SD-WAN Manger",
+   "name": "Cisco Catalyst SD-WAN Manager Incorrect Use of Privileged APIs Vulnerability"
   },
   "CVE-2026-20127": {
    "added": "2026-02-25",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Catalyst SD-WAN Controller and Manager"
+   "product": "Catalyst SD-WAN Controller and Manager",
+   "name": "Cisco Catalyst SD-WAN Controller and Manager Authentication Bypass Vulnerability"
   },
   "CVE-2026-20128": {
    "added": "2026-04-20",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Catalyst SD-WAN Manager"
+   "product": "Catalyst SD-WAN Manager",
+   "name": "Cisco Catalyst SD-WAN Manager Storing Passwords in a Recoverable Format Vulnerability"
   },
   "CVE-2026-20133": {
    "added": "2026-04-20",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Catalyst SD-WAN Manager"
+   "product": "Catalyst SD-WAN Manager",
+   "name": "Cisco Catalyst SD-WAN Manager Exposure of Sensitive Information to an Unauthorized Actor Vulnerability"
   },
   "CVE-2026-20182": {
    "added": "2026-05-14",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Catalyst SD-WAN"
+   "product": "Catalyst SD-WAN",
+   "name": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability"
   },
   "CVE-2026-20245": {
    "added": "2026-06-09",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Catalyst SD-WAN Manager"
+   "product": "Catalyst SD-WAN Manager",
+   "name": "Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability"
   },
   "CVE-2026-20262": {
    "added": "2026-06-15",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Catalyst SD-WAN Manager"
+   "product": "Catalyst SD-WAN Manager",
+   "name": "Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability"
   },
   "CVE-2026-20349": {
    "added": "2026-08-11",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)"
+   "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)",
+   "name": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability"
   },
   "CVE-2026-24061": {
    "added": "2026-01-26",
    "ransomware": false,
    "vendor": "GNU",
-   "product": "InetUtils"
+   "product": "InetUtils",
+   "name": "GNU InetUtils Argument Injection Vulnerability"
   },
   "CVE-2026-2441": {
    "added": "2026-02-17",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium"
+   "product": "Chromium",
+   "name": "Google Chromium CSS Use-After-Free Vulnerability"
   },
   "CVE-2026-24858": {
    "added": "2026-01-27",
    "ransomware": false,
    "vendor": "Fortinet",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Fortinet Multiple Products Authentication Bypass Using an Alternate Path or Channel Vulnerability"
   },
   "CVE-2026-3055": {
    "added": "2026-03-30",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler"
+   "product": "NetScaler",
+   "name": "Citrix NetScaler Out-of-Bounds Read Vulnerability"
   },
   "CVE-2026-34197": {
    "added": "2026-04-16",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "ActiveMQ"
+   "product": "ActiveMQ",
+   "name": "Apache ActiveMQ Improper Input Validation Vulnerability"
   },
   "CVE-2026-34486": {
    "added": "2026-08-04",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Tomcat"
+   "product": "Tomcat",
+   "name": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability"
   },
   "CVE-2026-3909": {
    "added": "2026-03-13",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Skia"
+   "product": "Skia",
+   "name": "Google Skia Out-of-Bounds Write Vulnerability"
   },
   "CVE-2026-3910": {
    "added": "2026-03-13",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Improper Restriction of Operations Within the Bounds of a Memory Buffer Vulnerability"
   },
   "CVE-2026-48710": {
    "added": "2026-09-02",
    "ransomware": false,
    "vendor": "Kludex",
-   "product": "Starlette"
+   "product": "Starlette",
+   "name": "Kludex Starlette HTTP Request/Response Smuggling Vulnerability"
   },
   "CVE-2026-50751": {
    "added": "2026-06-08",
    "ransomware": true,
    "vendor": "Check Point",
-   "product": "Security Gateway"
+   "product": "Security Gateway",
+   "name": "Check Point Security Gateway Improper Authentication Vulnerability"
   },
   "CVE-2026-5281": {
    "added": "2026-04-01",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Dawn"
+   "product": "Dawn",
+   "name": "Google Dawn Use-After-Free Vulnerability"
   },
   "CVE-2026-5430": {
    "added": "2026-09-24",
    "ransomware": false,
    "vendor": "WSO2",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "WSO2 Multiple Products Path Traversal Vulnerability"
   },
   "CVE-2026-59310": {
    "added": "2026-08-18",
    "ransomware": true,
    "vendor": "Broadcom",
-   "product": "VMware vCenter"
+   "product": "VMware vCenter",
+   "name": "Broadcom VMware vCenter Path Traversal Vulnerability"
   },
   "CVE-2026-76418": {
    "added": "2026-10-29",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Secure Firewall ASA Software and Cisco Secure FTD Software"
+   "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+   "name": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability"
   },
   "CVE-2026-76461": {
    "added": "2026-09-14",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Secure Email Gateway"
+   "product": "Secure Email Gateway",
+   "name": "Cisco Secure Email Gateway SQL Injection Vulnerability"
   },
   "CVE-2026-76504": {
    "added": "2026-09-30",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Catalyst SD-WAN Manager"
+   "product": "Catalyst SD-WAN Manager",
+   "name": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability"
   },
   "CVE-2026-76519": {
    "added": "2026-10-14",
    "ransomware": false,
    "vendor": "Cisco",
-   "product": "Secure Email Gateway"
+   "product": "Secure Email Gateway",
+   "name": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability"
   },
   "CVE-2026-8452": {
    "added": "2026-08-26",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler ADC and NetScaler Gateway"
+   "product": "NetScaler ADC and NetScaler Gateway",
+   "name": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability"
   },
   "CVE-2026-85046": {
    "added": "2026-09-04",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Type Confusion Vulnerability"
   },
   "CVE-2026-85102": {
    "added": "2026-09-22",
    "ransomware": false,
    "vendor": "Check Point",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Check Point Multiple Products Improper Certificate Validation Vulnerability"
   },
   "CVE-2026-87491": {
    "added": "2026-09-09",
    "ransomware": false,
    "vendor": "Google",
-   "product": "Chromium V8"
+   "product": "Chromium V8",
+   "name": "Google Chromium V8 Out of Bounds Write Vulnerability"
   },
   "CVE-2026-88771": {
    "added": "2026-09-27",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler"
+   "product": "NetScaler",
+   "name": "Citrix NetScaler Improper Input Validation Vulnerability"
   },
   "CVE-2026-88772": {
    "added": "2026-09-27",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler"
+   "product": "NetScaler",
+   "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability"
   },
   "CVE-2026-88779": {
    "added": "2026-10-04",
    "ransomware": false,
    "vendor": "Citrix",
-   "product": "NetScaler"
+   "product": "NetScaler",
+   "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability"
   },
   "CVE-2026-90436": {
    "added": "2026-11-18",
    "ransomware": false,
    "vendor": "Apache",
-   "product": "Axis"
+   "product": "Axis",
+   "name": "Apache Axis Unsafe Reflection Vulnerability"
   },
   "CVE-2026-93616": {
    "added": "2026-09-22",
    "ransomware": false,
    "vendor": "Check Point",
-   "product": "Multiple Products"
+   "product": "Multiple Products",
+   "name": "Check Point Multiple Products Path Traversal Vulnerability"
   },
   "CVE-2026-94127": {
    "added": "2026-09-22",
    "ransomware": false,
    "vendor": "F5",
-   "product": "BIG-IP APM"
+   "product": "BIG-IP APM",
+   "name": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability"
   }
  }
 }

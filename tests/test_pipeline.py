@@ -189,6 +189,26 @@ class CommunityTest(unittest.TestCase):
         self.assertEqual(errors, [])
 
 
+class ThreatFeedTest(unittest.TestCase):
+    def test_feed_ranks_by_newest_signal(self):
+        from xenolith import build as build_mod
+        from xenolith.model import make_assertion
+        cat = catalog.load()
+        mk = lambda product, cve, date, level, url="https://lab.example/post": make_assertion(
+            component="openjdk", supplier="Acme", product=product, cves={cve: "affected"}, evidence="community",
+            source="community", source_url=url, updated=date, exploitation=level)
+        rows = [mk("Portal", "CVE-2026-114938", "2026-11-17", "demonstrated_preauth"),
+                mk("Hub", "CVE-2026-114938", "2026-11-19", "attempted")]
+        kev = {"CVE-2021-44228": {"added": "2021-12-10", "ransomware": True, "name": "Apache Log4j2 Remote Code Execution Vulnerability"}}
+        threats, watching = build_mod.build_threats(cat, rows, kev)
+        self.assertEqual([t["c"] for t in threats], ["openjdk", "log4j-core"])          # newest signal first
+        self.assertEqual((threats[0]["level"], threats[0]["date"], threats[0]["flagged_total"]), ("attempted", "2026-11-19", 2))
+        self.assertEqual((threats[1]["level"], threats[1]["kev"], threats[1].get("ransomware")), ("exploited", "2021-12-10", True))
+        self.assertTrue(all(w["c"] != "openjdk" for w in watching))                      # a flaw with a signal is not "watching"
+        relay = [mk("Portal", "CVE-2021-44228", "2026-11-20", "exploited", "https://github.com/cisagov/kev-data/blob/main/known_exploited_vulnerabilities.csv")]
+        self.assertEqual(build_mod.build_threats(cat, relay, kev)[0][0]["date"], "2021-12-10")   # a KEV relay row keeps KEV's date
+
+
 class BuildTest(unittest.TestCase):
     def test_build_outputs(self):
         cat = catalog.load()

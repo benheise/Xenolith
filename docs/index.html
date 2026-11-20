@@ -102,6 +102,11 @@
     border-bottom: 2px solid transparent; margin-bottom: -1px; }
   .tabs a:hover { color: var(--ink); }
   .tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+  /* Threats tab */
+  .threat { display: flex; gap: 12px; align-items: flex-start; }
+  .threat .rank { font-size: 22px; font-weight: 700; color: var(--neutral); min-width: 1.4em; line-height: 1.2; }
+  .threat h3 { margin: 0 0 2px; }
+  .threat .when { white-space: nowrap; }
   /* "Why it matters" tab */
   .why section { margin: 34px 0 0; }
   .why h2 { font-size: 22px; margin: 2px 0 10px; }
@@ -163,7 +168,8 @@
       <p>Which commercial products embed this component?</p>
     </div>
     <nav class="tabs" aria-label="Sections">
-      <a href="#" data-tab="census" id="tab-census">Census</a>
+      <a href="#" data-tab="threats" id="tab-threats">Threats</a>
+      <a href="#census" data-tab="census" id="tab-census">Census</a>
       <a href="#why" data-tab="why">Why it matters</a>
     </nav>
   </header>
@@ -249,7 +255,7 @@ async function component(id) {
 // ---------------------------------------------------------------- routing
 function parseHash() {
   const h = new URLSearchParams(location.hash.replace(/^#/, ""));
-  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), w: h.get("w"), why: h.has("why"), f: h.get("f") || "all", t: h.get("t") || "" };
+  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), w: h.get("w"), why: h.has("why"), census: h.has("census"), f: h.get("f") || "all", t: h.get("t") || "" };
 }
 function setTab(name) {
   document.querySelectorAll(".tabs a").forEach(a => {
@@ -268,11 +274,12 @@ window.addEventListener("hashchange", route);
 let lastView = null;
 function route() {
   if (!META) return;
-  const { c, p, q, w, why, f, t } = parseHash();
-  const view = c ? `c:${c}` : p ? `p:${p}` : q ? "q" : w ? "wanted" : why ? "why" : "home";
+  const { c, p, q, w, why, census, f, t } = parseHash();
+  const view = c ? `c:${c}` : p ? `p:${p}` : q ? "q" : w ? "wanted" : why ? "why" : census ? "home" : "threats";
   if (view !== lastView) { window.scrollTo(0, 0); lastView = view; }
-  setTab(view === "why" ? "why" : "census");
+  setTab(view === "why" ? "why" : view === "threats" ? "threats" : "census");
   if (view === "why") { input.value = ""; return showWhy(); }
+  if (view === "threats") { input.value = ""; return showThreats(); }
   if (c && META.components.some(x => x.id === c)) { input.value = ""; return showComponent(c, f, t); }
   if (p) { input.value = ""; return showProduct(p); }
   if (q) { if (input.value !== q) input.value = q; return showSearch(q); }
@@ -286,7 +293,7 @@ input.addEventListener("input", () => {
   clearTimeout(typingTimer);
   typingTimer = setTimeout(() => {
     const q = input.value.trim();
-    go(q ? { q } : {}, true);
+    go(q ? { q } : { census: 1 }, true);
   }, 160);
 });
 input.addEventListener("keydown", e => {
@@ -296,7 +303,8 @@ input.addEventListener("keydown", e => {
   }
 });
 $("#home-link").addEventListener("click", e => { e.preventDefault(); go({}); });
-$("#tab-census").addEventListener("click", e => { e.preventDefault(); go({}); });
+$("#tab-threats").addEventListener("click", e => { e.preventDefault(); go({}); });
+$("#tab-census").addEventListener("click", e => { e.preventDefault(); go({ census: 1 }); });
 
 // ---------------------------------------------------------------- search
 function componentTerms(comp) {
@@ -463,7 +471,7 @@ async function showComponent(id, filterKey, text) {
     <input class="filter" id="tfilter" type="search" placeholder="Filter by vendor or product…" value="${esc(text)}">
     <div class="list" id="rows"></div>
     <button class="chip more" id="more" hidden>Show more</button>`;
-  $("#back").addEventListener("click", () => go({}));
+  $("#back").addEventListener("click", () => go({ census: 1 }));
   app.querySelectorAll("[data-f]").forEach(el => el.addEventListener("click", () => go({ c: id, f: el.dataset.f, t: $("#tfilter").value.trim() })));
   let tt = null;
   $("#tfilter").addEventListener("input", e => {
@@ -572,7 +580,7 @@ async function showProduct(key) {
     ${comps.length || p.inv ? "" : `<p class="notice">No composition data for this product yet. It is listed because it appears in CVE records or the CISA KEV catalog.</p>`}
     <div id="inventory"></div>
     <p class="small muted" style="margin-top:18px">Know what this product embeds? <a href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contribute a notices link, statement or SBOM</a>, or <a href="${esc(issue)}" target="_blank" rel="noopener">open an issue</a>.</p>`;
-  $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
+  $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({ census: 1 }));
   if (p.inv) renderInventory(key);
 }
 
@@ -639,6 +647,65 @@ function downloadCycloneDX(p, d) {
 }
 
 // ---------------------------------------------------------------- home
+// ---------------------------------------------------------------- Threats tab (default)
+const THREAT_WHY = {
+  exploited: "Being used in real attacks.",
+  attempted: "Attackers are trying it; no confirmed compromise yet.",
+  demonstrated_preauth: "A working exploit exists that needs no login. Not seen in attacks yet.",
+  demonstrated_postauth: "A working exploit exists that needs a login. Not seen in attacks yet.",
+};
+let threatsShown = 5;
+function threatCard(t, i) {
+  const cves = t.cves.slice(0, 4).map(v => `<a class="cve" href="https://www.cve.org/CVERecord?id=${esc(v)}" target="_blank" rel="noopener">${esc(v)}</a>`).join(" ")
+    + (t.cves.length > 4 ? ` <span class="small muted">+${t.cves.length - 4} more</span>` : "");
+  const facts = [];
+  if (t.kev) facts.push(`In CISA KEV since ${esc(t.kev)}${t.kev_cves > 1 ? ` (${t.kev_cves} CVEs)` : ""}`);
+  if (t.ransomware) facts.push("used in ransomware attacks");
+  const flagged = (t.flagged || []).map(f =>
+    `<a href="#p=${encodeURIComponent(f.k)}" data-p="${esc(f.k)}" title="${esc(EXPLOIT[f.x] ? EXPLOIT[f.x][0] : f.x)}">${esc(f.p.toLowerCase().startsWith(f.s.toLowerCase()) ? f.p : `${f.s} ${f.p}`)}</a>`).join(", ");
+  const more = t.flagged_total > (t.flagged || []).length ? ` and ${t.flagged_total - t.flagged.length} more` : "";
+  const named = t.level === "exploited" ? "Products named in attacks" : "Products with a working exploit";
+  return `<div class="card threat">
+    <div class="rank" aria-hidden="true">${i + 1}</div>
+    <div class="grow">
+      <div class="row"><div class="grow"><h3><a href="#c=${encodeURIComponent(t.c)}">${esc(t.title)}</a></h3>
+        <div class="small muted">${esc(t.component)}</div></div>
+        <div class="small muted when" title="Date of the newest exploitation report">${esc(t.date)}</div></div>
+      <div class="meta">${exploitBadge(t.level)} <span class="small muted">${esc(THREAT_WHY[t.level] || "")}</span></div>
+      <div class="cves">${cves}</div>
+      ${facts.length ? `<div class="meta">${facts.join(" · ")}</div>` : ""}
+      ${t.note ? `<div class="meta">${esc(t.note)}</div>` : ""}
+      ${flagged ? `<div class="meta"><b>${named}:</b> ${flagged}${more}</div>` : ""}
+      <div class="meta"><a href="#c=${encodeURIComponent(t.c)}${t.flagged_total ? `&f=${t.level === "exploited" ? "exploited" : t.level === "attempted" ? "attempted" : "demonstrated"}` : ""}">
+        ${t.products ? `${fmt(t.products)} product${t.products === 1 ? "" : "s"} with a vendor statement` : "See the component"}${t.unfixed ? `, ${fmt(t.unfixed)} with no fix stated` : ""} →</a></div>
+    </div>
+  </div>`;
+}
+function showThreats() {
+  const all = META.threats || [];
+  statusEl.textContent = `Top exploited vulnerabilities · updated ${META.built.slice(0, 10)}`;
+  const shown = all.slice(0, threatsShown);
+  const watching = (META.watching || []).map(w => `<div class="small" style="margin-top:6px">
+      <a href="#c=${encodeURIComponent(w.c)}"><b>${esc(w.title)}</b></a> <span class="muted">(${esc(w.component)})</span>
+      ${w.cves.slice(0, 2).map(v => `<span class="cve">${esc(v)}</span>`).join(" ")}${w.cves.length > 2 ? ` <span class="muted">+${w.cves.length - 2}</span>` : ""}
+      ${w.products ? `<span class="muted">· ${fmt(w.products)} products with statements</span>` : ""}</div>`).join("");
+  app.innerHTML = `
+    <h2>What attackers are using now</h2>
+    <p>The ${shown.length} flaws in widely embedded components and vendor engines with the newest sign of exploitation, newest first.
+      A sign is a <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV</a> listing,
+      a vendor or responder naming a product hit in attacks, or a researcher's working exploit. Open one to see which products ship the
+      affected code and what each vendor says.</p>
+    ${shown.length ? shown.map(threatCard).join("") : `<p class="muted">No exploitation reports in the current data.</p>`}
+    ${all.length > threatsShown ? `<p><button class="chip" id="more-threats">Show ${Math.min(10, all.length - threatsShown)} more</button></p>` : ""}
+    ${watching ? `<h2>Not exploited yet, worth watching</h2>
+      <p class="small muted">This year's flaws on the watchlist with no exploitation report so far.</p>${watching}` : ""}
+    <p class="small muted" style="margin-top:18px">Ranked by the date of the newest report, then by how strong it is. Only flaws on the
+      <a href="#census">watchlist</a> appear, so a bug in a single product with no shared component is not listed here.</p>`;
+  const more = $("#more-threats");
+  if (more) more.addEventListener("click", () => { threatsShown += 10; showThreats(); });
+  bindCards();
+}
+
 function showHome() {
   const k = META.counts;
   statusEl.textContent = `${fmt(k.assertions)} sourced statements about ${fmt(k.products_with_data)} products · updated ${META.built.slice(0, 10)}`;
@@ -724,7 +791,7 @@ async function showWanted(focus) {
     <h2>${fmt(open.length)} products wanted</h2>
     <div class="list">${open.map(card).join("")}</div>
     ${queueSection(WANTED.queue)}`;
-  $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
+  $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({ census: 1 }));
   if (focus && focus !== "all") {
     const el = document.getElementById(`w-${focus}`);
     if (el) { el.scrollIntoView(); el.style.borderColor = "var(--accent)"; }
@@ -1035,7 +1102,7 @@ function showWhy() {
       Corrections: <a href="${REPO}/issues" target="_blank" rel="noopener">open an issue</a>.</p>
     </section>
   </article>`;
-  $("#why-search").addEventListener("click", e => { e.preventDefault(); go({}); input.focus(); });
+  $("#why-search").addEventListener("click", e => { e.preventDefault(); go({ census: 1 }); input.focus(); });
 }
 
 function renderFooter() {

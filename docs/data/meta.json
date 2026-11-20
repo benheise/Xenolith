@@ -1,5 +1,464 @@
 {
- "built": "2026-11-20T22:53:14Z",
+ "built": "2026-11-20T23:51:08Z",
+ "threats": [
+  {
+   "c": "vcenter",
+   "component": "VMware vCenter",
+   "title": "vCenter 2026 exploited flaws",
+   "cves": [
+    "CVE-2026-123890",
+    "CVE-2026-59310",
+    "CVE-2024-37079"
+   ],
+   "level": "exploited",
+   "date": "2026-11-20",
+   "kev": "2026-01-23",
+   "kev_cves": 3,
+   "ransomware": true,
+   "note": "Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), added to KEV on 2026-11-20, a day after publication.",
+   "flagged": [
+    {
+     "k": "vmware/vcenter-server",
+     "s": "VMware",
+     "p": "vCenter Server",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 5,
+   "unfixed": 0
+  },
+  {
+   "c": "axis1",
+   "component": "Apache Axis 1.x (SOAP engine)",
+   "title": "Axis 1.x SOAP fault class instantiation RCE",
+   "cves": [
+    "CVE-2026-90436"
+   ],
+   "level": "exploited",
+   "date": "2026-11-18",
+   "kev": "2026-11-18",
+   "kev_cves": 1,
+   "note": "Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end of life with no upstream fix; CISA added it to KEV on 18 November 2026.",
+   "flagged": [
+    {
+     "k": "atlassian/confluence-data-center",
+     "s": "Atlassian",
+     "p": "Confluence Data Center",
+     "x": "exploited"
+    },
+    {
+     "k": "n-able/n-central",
+     "s": "N-able",
+     "p": "N-central",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 2,
+   "products": 3,
+   "unfixed": 1
+  },
+  {
+   "c": "openjdk",
+   "component": "OpenJDK / HotSpot Java runtime (JDK, JRE)",
+   "title": "Java4Shell (HotSpot AVX-512 Base64 decoder heap overflow)",
+   "cves": [
+    "CVE-2026-114938"
+   ],
+   "level": "demonstrated_preauth",
+   "date": "2026-11-17",
+   "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3.",
+   "flagged": [
+    {
+     "k": "atlassian/confluence-data-center",
+     "s": "Atlassian",
+     "p": "Confluence Data Center",
+     "x": "demonstrated_preauth"
+    },
+    {
+     "k": "atlassian/jira-data-center",
+     "s": "Atlassian",
+     "p": "Jira Data Center",
+     "x": "demonstrated_preauth"
+    },
+    {
+     "k": "jfrog/artifactory",
+     "s": "JFrog",
+     "p": "Artifactory",
+     "x": "demonstrated_preauth"
+    },
+    {
+     "k": "jenkins-project/jenkins",
+     "s": "Jenkins Project",
+     "p": "Jenkins",
+     "x": "demonstrated_preauth"
+    },
+    {
+     "k": "keycloak/keycloak",
+     "s": "Keycloak",
+     "p": "Keycloak",
+     "x": "demonstrated_preauth"
+    },
+    {
+     "k": "ping-identity/pingfederate",
+     "s": "Ping Identity",
+     "p": "PingFederate",
+     "x": "demonstrated_preauth"
+    }
+   ],
+   "flagged_total": 11,
+   "products": 365,
+   "unfixed": 81
+  },
+  {
+   "c": "check-point-gaia",
+   "component": "Check Point Gaia (Security Gateway and Management)",
+   "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource",
+   "cves": [
+    "CVE-2026-123039"
+   ],
+   "level": "exploited",
+   "date": "2026-11-13",
+   "kev": "2026-11-13",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [],
+   "flagged_total": 0,
+   "products": 2,
+   "unfixed": 0
+  },
+  {
+   "c": "chromium",
+   "component": "Chromium (browser engine: V8, Blink, Skia, ANGLE)",
+   "title": "Google Chromium Use-After-Free",
+   "cves": [
+    "CVE-2026-125350"
+   ],
+   "level": "exploited",
+   "date": "2026-11-10",
+   "kev": "2026-11-10",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [],
+   "flagged_total": 0,
+   "products": 4,
+   "unfixed": 1
+  },
+  {
+   "c": "ivanti-connect-secure",
+   "component": "Ivanti Connect Secure, Policy Secure and ZTA gateways",
+   "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers",
+   "cves": [
+    "CVE-2026-118527"
+   ],
+   "level": "exploited",
+   "date": "2026-11-03",
+   "kev": "2026-10-30",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [
+    {
+     "k": "ivanti/connect-secure",
+     "s": "Ivanti",
+     "p": "Connect Secure",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 1,
+   "unfixed": 0
+  },
+  {
+   "c": "ivanti-connect-secure",
+   "component": "Ivanti Connect Secure, Policy Secure and ZTA gateways",
+   "title": "Ivanti Connect Secure Missing Authentication for Critical Function",
+   "cves": [
+    "CVE-2026-111357"
+   ],
+   "level": "exploited",
+   "date": "2026-10-30",
+   "kev": "2026-10-30",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [
+    {
+     "k": "ivanti/connect-secure",
+     "s": "Ivanti",
+     "p": "Connect Secure",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 1,
+   "unfixed": 0
+  },
+  {
+   "c": "cisco-asa",
+   "component": "Cisco Secure Firewall ASA (also inside FTD)",
+   "title": "ASA and FTD remote access VPN exploited flaws",
+   "cves": [
+    "CVE-2025-20333",
+    "CVE-2025-20362",
+    "CVE-2026-20349",
+    "CVE-2026-76418"
+   ],
+   "level": "exploited",
+   "date": "2026-10-29",
+   "kev": "2025-09-25",
+   "kev_cves": 4,
+   "note": "Four flaws in the SSL remote access VPN web service shared by ASA and FTD, all in CISA KEV. CVE-2025-20333 (code execution as root for a VPN user, 9.9) and CVE-2025-20362 (reaching restricted URLs with no login) are chained; Cisco reported a new attack variant in November 2025 that reloads unpatche…",
+   "flagged": [
+    {
+     "k": "cisco/secure-firewall-adaptive-security-appliance",
+     "s": "Cisco",
+     "p": "Secure Firewall Adaptive Security Appliance (ASA) Software",
+     "x": "exploited"
+    },
+    {
+     "k": "cisco/secure-firewall-threat-defense",
+     "s": "Cisco",
+     "p": "Secure Firewall Threat Defense (FTD) Software",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 2,
+   "products": 16,
+   "unfixed": 0
+  },
+  {
+   "c": "php",
+   "component": "PHP runtime",
+   "title": "PHP2Shell",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "level": "exploited",
+   "date": "2026-10-29",
+   "kev": "2026-10-26",
+   "kev_cves": 2,
+   "note": "",
+   "flagged": [
+    {
+     "k": "palo-alto-networks/pan-os",
+     "s": "Palo Alto Networks",
+     "p": "PAN-OS",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 859,
+   "unfixed": 204
+  },
+  {
+   "c": "brotli",
+   "component": "Google Brotli (C library)",
+   "title": "Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)",
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "level": "exploited",
+   "date": "2026-10-27",
+   "kev": "2026-10-27",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [],
+   "flagged_total": 0,
+   "products": 243,
+   "unfixed": 56
+  },
+  {
+   "c": "fortios",
+   "component": "Fortinet FortiOS (shared code in FortiProxy, FortiSwitchManager and others)",
+   "title": "Fortinet Multiple Products Path Traversal",
+   "cves": [
+    "CVE-2025-61624"
+   ],
+   "level": "exploited",
+   "date": "2026-10-16",
+   "kev": "2026-10-16",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [
+    {
+     "k": "fortinet/fortios",
+     "s": "Fortinet",
+     "p": "FortiOS",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 5,
+   "unfixed": 0
+  },
+  {
+   "c": "f5-tmm",
+   "component": "F5 Traffic Management Microkernel (TMM)",
+   "title": "BIG-IP APM OAuth heap overflow",
+   "cves": [
+    "CVE-2026-94127"
+   ],
+   "level": "exploited",
+   "date": "2026-10-15",
+   "kev": "2026-09-22",
+   "kev_cves": 1,
+   "note": "Heap overflow (CWE-122, 9.8) that runs code with no login when BIG-IP APM acts as an OAuth Authorization Server on a virtual server; APM used only as an OAuth client or resource server is not exposed.",
+   "flagged": [
+    {
+     "k": "f5/big-ip-apm",
+     "s": "F5",
+     "p": "BIG-IP APM",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 4,
+   "unfixed": 0
+  },
+  {
+   "c": "pan-os",
+   "component": "Palo Alto Networks PAN-OS",
+   "title": "PAN-OS 2026 exploited flaws",
+   "cves": [
+    "CVE-2026-0300",
+    "CVE-2026-0257",
+    "CVE-2026-0322"
+   ],
+   "level": "exploited",
+   "date": "2026-10-14",
+   "kev": "2026-05-06",
+   "kev_cves": 3,
+   "ransomware": true,
+   "note": "Three flaws in different services, all in CISA KEV, with exploitation or exploit attempts reported by Palo Alto Networks for each. CVE-2026-0300: buffer overflow in the User-ID Authentication Portal (captive portal), code execution as root with no login on PA-Series and VM-Series firewalls that hav…",
+   "flagged": [
+    {
+     "k": "palo-alto-networks/pan-os",
+     "s": "Palo Alto Networks",
+     "p": "PAN-OS",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 5,
+   "unfixed": 0
+  },
+  {
+   "c": "cisco-asyncos",
+   "component": "Cisco AsyncOS (Secure Email Gateway, Secure Email and Web Manager)",
+   "title": "Cisco Secure Email Gateway Relative Path Traversal",
+   "cves": [
+    "CVE-2026-76519"
+   ],
+   "level": "exploited",
+   "date": "2026-10-14",
+   "kev": "2026-10-14",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [
+    {
+     "k": "cisco/secure-email-gateway",
+     "s": "Cisco",
+     "p": "Secure Email Gateway",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 2,
+   "unfixed": 0
+  },
+  {
+   "c": "ivanti-connect-secure",
+   "component": "Ivanti Connect Secure, Policy Secure and ZTA gateways",
+   "title": "Ivanti Connect Secure Authentication Bypass by Spoofing",
+   "cves": [
+    "CVE-2026-104935"
+   ],
+   "level": "exploited",
+   "date": "2026-10-13",
+   "kev": "2026-10-13",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [
+    {
+     "k": "ivanti/connect-secure",
+     "s": "Ivanti",
+     "p": "Connect Secure",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 1,
+   "unfixed": 0
+  }
+ ],
+ "watching": [
+  {
+   "c": "openssl",
+   "component": "OpenSSL",
+   "title": "CMS AuthEnvelopedData stack overflow",
+   "cves": [
+    "CVE-2025-15467"
+   ],
+   "note": "Reachable without a key where the product parses untrusted CMS or PKCS#7 data (S/MIME, for example). Fixed in the January 2026 OpenSSL releases.",
+   "products": 345,
+   "unfixed": 122
+  },
+  {
+   "c": "nginx",
+   "component": "nginx",
+   "title": "NGINX2Root",
+   "cves": [
+    "CVE-2026-123007",
+    "CVE-2026-123634",
+    "CVE-2026-123633",
+    "CVE-2026-121810",
+    "CVE-2026-113425"
+   ],
+   "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.",
+   "products": 52,
+   "unfixed": 15
+  },
+  {
+   "c": "tomcat",
+   "component": "Apache Tomcat",
+   "title": "May 2026 HTTP/2, DIGEST and security-constraint fixes",
+   "cves": [
+    "CVE-2026-41293",
+    "CVE-2026-43512",
+    "CVE-2026-43515"
+   ],
+   "note": "Scored critical by CVSS, though Apache rates them low to moderate. Exploits are public, and the fixes set off advisories from Atlassian, Ubuntu and others. Tomcat 8.5 is affected and gets no fix.",
+   "products": 34,
+   "unfixed": 13
+  },
+  {
+   "c": "squid",
+   "component": "Squid caching proxy",
+   "title": "Squidbleed (FTP directory listing over-read)",
+   "cves": [
+    "CVE-2026-47729"
+   ],
+   "note": "",
+   "products": 6,
+   "unfixed": 5
+  },
+  {
+   "c": "f5-tmm",
+   "component": "F5 Traffic Management Microkernel (TMM)",
+   "title": "BIG-IP TMM iRule and APM stack overflows (out-of-band notification)",
+   "cves": [
+    "CVE-2026-116953",
+    "CVE-2026-120285",
+    "CVE-2026-120292",
+    "CVE-2026-120722",
+    "CVE-2026-121805",
+    "CVE-2026-123637"
+   ],
+   "note": "Six stack overflows (CWE-121) in the data plane, each 9.8 on CVSS 3.1: a request with no login can crash TMM and may run code.",
+   "products": 15,
+   "unfixed": 0
+  }
+ ],
  "exploitation_levels": [
   "exploited",
   "attempted",
