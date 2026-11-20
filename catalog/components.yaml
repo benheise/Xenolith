@@ -390,9 +390,12 @@ components:
           Enterprise Edition 21.3.20.0.3. Interim mitigations (either one):
           -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with
           -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only,
-          since JVMs on ARM64 fail to start with it. A proof of concept that triggers the bug is
-          public, and probing and exploit attempts have been seen since 18 November (GreyNoise,
-          watchTowr); no confirmed compromise and not in CISA KEV as of 2026-11-19.
+          since JVMs on ARM64 fail to start with it. Crashing an affected JVM is easy (a
+          burst of malformed requests); code execution needs heap grooming and a separate exploit
+          profile for each application, and no public exploit does that. A proof of concept that
+          triggers the bug is public, VulnCheck supplies a full exploit to its customers, and
+          probing and blind exploit attempts have been seen since 18 November (GreyNoise,
+          watchTowr); no confirmed compromise and not in CISA KEV as of 2026-11-20.
         affected:
           - cves: [CVE-2026-114938]
             ranges:

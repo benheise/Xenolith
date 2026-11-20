@@ -3,6 +3,38 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-20: Java4Shell research pass
+
+Fresh read of every Java4Shell (CVE-2026-114938) source, plus new vendor pages. 34 new statements
+and 8 updated rows (311 Java4Shell statements in all). Still not in CISA KEV; no confirmed
+compromise.
+
+- **Status changes:**
+  - Citrix (CTX697367, modified 20 November): Linux VDA, Analytics, XenMobile Server, App Layering
+    and UniconOS Management moved from under investigation to impacted, fixed builds to be named.
+    Cloudpaging Server is now listed as not impacted, where the 19 November reading had 9.9 and
+    later needing a JRE update. Secure Access is still under investigation.
+  - Ubuntu: the CRaC builds on 26.04 and 26.10 are fixed.
+- **New products from vendors already tracked:**
+  - Sophos (advisory v5): Mobile EAS Proxy 9.8.3 and earlier bundle an affected runtime, fixed in
+    9.8.4; Phish Threat fixed; Endpoint Protection and Home for Windows have no Java.
+  - Splunk (SVD-2026-1102): ten AppDynamics on-premises products and agents confirmed affected,
+    fixes in development; DB Connect, ITSI and the AppDynamics Java Agent depend on the Java you
+    install; Apps & Add-ons, On-Call and AppDynamics SaaS unaffected.
+- **New vendors:**
+  - Palo Alto Networks: four Idira (privileged access) products fixed in named releases; PAN-OS,
+    Panorama, WF-500-B and the PAN-DB private cloud appliance not impacted.
+  - Tenable: Enclave Security and Tenable OT affected, patches pending; Security Center and
+    Nessus do not include Java.
+  - Mimecast: assessment continues, no customer action.
+  - TuxCare: OpenJDK 17 builds fixed.
+- **No change:** Cisco (still v1.2), Barracuda, PaperCut, Keycloak, Atlassian, Elastic, Jenkins,
+  Debian, Fortinet (47 under investigation, 28 not impacted), Google, Okta.
+- **Not added:** Gurucul's advisory and CISA's alert page both refused automated access, so
+  neither was read; CISA's test results are known here only through press reports.
+- The openjdk incident note now says what exploitation takes: a crash is easy, code execution
+  needs a separate exploit for each application.
+
 ## 2026-11-19: Java4Shell recheck
 
 Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 121 new statements,

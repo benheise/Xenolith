@@ -1,8 +1,8 @@
 {
- "built": "2026-11-20T15:45:28Z",
+ "built": "2026-11-20T18:28:52Z",
  "counts": {
-  "assertions": 18072,
-  "products_with_data": 8424,
+  "assertions": 18106,
+  "products_with_data": 8449,
   "inventories": 398,
   "inventory_components": 239659,
   "cpe_linked_clusters": 23,
@@ -819,7 +819,7 @@
      "cves": [
       "CVE-2026-114938"
      ],
-     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigations (either one): -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only, since JVMs on ARM64 fail to start with it. A proof of concept that triggers the bug is public, and probing and exploit attempts have been seen since 18 November (GreyNoise, watchTowr); no confirmed compromise and not in CISA KEV as of 2026-11-19.",
+     "note": "Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Interim mitigations (either one): -XX:-UseBASE64Intrinsics (preferred; VulnCheck tested it with -XX:+UnlockDiagnosticVMOptions ahead of it), or -XX:UseAVX=2 on x86-64 hosts only, since JVMs on ARM64 fail to start with it. Crashing an affected JVM is easy (a burst of malformed requests); code execution needs heap grooming and a separate exploit profile for each application, and no public exploit does that. A proof of concept that triggers the bug is public, VulnCheck supplies a full exploit to its customers, and probing and blind exploit attempts have been seen since 18 November (GreyNoise, watchTowr); no confirmed compromise and not in CISA KEV as of 2026-11-20.",
      "affected": [
       {
        "cves": [
@@ -848,19 +848,19 @@
      "trackers": []
     }
    ],
-   "assertions": 426,
-   "products": 363,
-   "contains": 219,
+   "assertions": 460,
+   "products": 396,
+   "contains": 243,
    "in_range": 34,
    "verdicts": {
-    "fixed": 54,
-    "runtime_dependent": 12,
+    "fixed": 61,
+    "runtime_dependent": 14,
     "workaround": 36,
-    "affected": 29,
-    "under_investigation": 56,
-    "not_affected": 113,
+    "affected": 46,
+    "under_investigation": 52,
+    "not_affected": 121,
     "present": 100,
-    "absent": 26
+    "absent": 30
    }
   },
   {
@@ -2958,8 +2958,8 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 324,
-   "latest": "2026-11-19",
+   "assertions": 358,
+   "latest": "2026-11-20",
    "fv": "community",
    "dp": [
     "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv#L204"
