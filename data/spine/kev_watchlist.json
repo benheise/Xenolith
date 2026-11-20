@@ -1,11 +1,29 @@
 {
- "tracked": 105,
+ "tracked": 222,
  "cves": {
+  "CVE-2004-1464": {
+   "added": "2023-05-19",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS"
+  },
+  "CVE-2008-4128": {
+   "added": "2026-07-13",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS"
+  },
   "CVE-2014-0160": {
    "added": "2022-05-04",
    "ransomware": false,
    "vendor": "OpenSSL",
    "product": "OpenSSL"
+  },
+  "CVE-2014-2120": {
+   "added": "2024-11-12",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA)"
   },
   "CVE-2016-3714": {
    "added": "2024-09-09",
@@ -13,17 +31,155 @@
    "vendor": "ImageMagick",
    "product": "ImageMagick"
   },
+  "CVE-2016-6366": {
+   "added": "2022-05-24",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA)"
+  },
+  "CVE-2016-6367": {
+   "added": "2022-05-24",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA)"
+  },
+  "CVE-2016-6415": {
+   "added": "2023-05-19",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS, IOS XR, and IOS XE"
+  },
+  "CVE-2017-12231": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS software"
+  },
+  "CVE-2017-12232": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS software"
+  },
+  "CVE-2017-12233": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS software"
+  },
+  "CVE-2017-12234": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS software"
+  },
+  "CVE-2017-12235": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS software"
+  },
+  "CVE-2017-12237": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-12240": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-12319": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XE Software"
+  },
   "CVE-2017-12617": {
    "added": "2022-03-25",
    "ransomware": false,
    "vendor": "Apache",
    "product": "Tomcat"
   },
+  "CVE-2017-15944": {
+   "added": "2022-08-18",
+   "ransomware": false,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2017-3881": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE"
+  },
   "CVE-2017-5638": {
    "added": "2021-11-03",
    "ransomware": true,
    "vendor": "Apache",
    "product": "Struts"
+  },
+  "CVE-2017-6627": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6663": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6736": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6737": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6738": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6739": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6740": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6742": {
+   "added": "2023-04-19",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6743": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2017-6744": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS software"
   },
   "CVE-2017-7494": {
    "added": "2023-03-30",
@@ -37,17 +193,161 @@
    "vendor": "Apache",
    "product": "Struts"
   },
+  "CVE-2018-0151": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2018-0154": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS Software"
+  },
+  "CVE-2018-0156": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS Software and Cisco IOS XE Software"
+  },
+  "CVE-2018-0158": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS Software and Cisco IOS XE Software"
+  },
+  "CVE-2018-0159": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS Software and Cisco IOS XE Software"
+  },
+  "CVE-2018-0161": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS Software"
+  },
+  "CVE-2018-0167": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS, XR, and XE Software"
+  },
+  "CVE-2018-0171": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE"
+  },
+  "CVE-2018-0172": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2018-0173": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE Software"
+  },
+  "CVE-2018-0174": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XE Software"
+  },
+  "CVE-2018-0175": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS, XR, and XE Software"
+  },
+  "CVE-2018-0179": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS Software"
+  },
+  "CVE-2018-0180": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS Software"
+  },
+  "CVE-2018-0296": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA)"
+  },
   "CVE-2018-11776": {
    "added": "2021-11-03",
    "ransomware": false,
    "vendor": "Apache",
    "product": "Struts"
   },
+  "CVE-2018-13374": {
+   "added": "2022-09-08",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS and FortiADC"
+  },
+  "CVE-2018-13379": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
+  },
+  "CVE-2018-13382": {
+   "added": "2022-01-10",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS and FortiProxy"
+  },
+  "CVE-2018-13383": {
+   "added": "2022-01-10",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS and FortiProxy"
+  },
+  "CVE-2019-1579": {
+   "added": "2022-01-10",
+   "ransomware": true,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2019-19781": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Citrix",
+   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+  },
+  "CVE-2019-5591": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
+  },
+  "CVE-2019-6693": {
+   "added": "2025-06-25",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
+  },
   "CVE-2020-11023": {
    "added": "2025-01-23",
    "ransomware": false,
    "vendor": "JQuery",
    "product": "JQuery"
+  },
+  "CVE-2020-12812": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
   },
   "CVE-2020-17530": {
    "added": "2021-11-03",
@@ -60,6 +360,90 @@
    "ransomware": false,
    "vendor": "Apache",
    "product": "Tomcat"
+  },
+  "CVE-2020-2021": {
+   "added": "2022-03-25",
+   "ransomware": true,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2020-3259": {
+   "added": "2024-02-15",
+   "ransomware": true,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+  },
+  "CVE-2020-3452": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+  },
+  "CVE-2020-3580": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+  },
+  "CVE-2020-3952": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
+  "CVE-2020-8193": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+  },
+  "CVE-2020-8195": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+  },
+  "CVE-2020-8196": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "Application Delivery Controller (ADC), Gateway, and SD-WAN WANOP Appliance"
+  },
+  "CVE-2021-21972": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
+  "CVE-2021-21973": {
+   "added": "2022-03-07",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "vCenter Server and Cloud Foundation"
+  },
+  "CVE-2021-21985": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
+  "CVE-2021-22005": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
+  "CVE-2021-22017": {
+   "added": "2022-01-10",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
+  "CVE-2021-22991": {
+   "added": "2022-01-18",
+   "ransomware": false,
+   "vendor": "F5",
+   "product": "BIG-IP Traffic Management Microkernel"
   },
   "CVE-2021-3156": {
    "added": "2022-04-06",
@@ -85,6 +469,12 @@
    "vendor": "Apache",
    "product": "HTTP Server"
   },
+  "CVE-2021-44168": {
+   "added": "2021-12-10",
+   "ransomware": false,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
+  },
   "CVE-2021-44228": {
    "added": "2021-12-10",
    "ransomware": true,
@@ -97,11 +487,95 @@
    "vendor": "Apache",
    "product": "Log4j2"
   },
+  "CVE-2022-0028": {
+   "added": "2022-08-22",
+   "ransomware": false,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2022-20775": {
+   "added": "2026-02-25",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "SD-WAN"
+  },
+  "CVE-2022-22948": {
+   "added": "2024-07-17",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
   "CVE-2022-22965": {
    "added": "2022-04-04",
    "ransomware": false,
    "vendor": "VMware",
    "product": "Spring Framework"
+  },
+  "CVE-2022-27518": {
+   "added": "2022-12-13",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "Application Delivery Controller (ADC) and Gateway"
+  },
+  "CVE-2022-40684": {
+   "added": "2022-10-11",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "Multiple Products"
+  },
+  "CVE-2022-41328": {
+   "added": "2023-03-14",
+   "ransomware": false,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
+  },
+  "CVE-2022-42475": {
+   "added": "2022-12-13",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
+  },
+  "CVE-2023-20109": {
+   "added": "2023-10-10",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE"
+  },
+  "CVE-2023-20198": {
+   "added": "2023-10-16",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS XE Web UI"
+  },
+  "CVE-2023-20269": {
+   "added": "2023-09-13",
+   "ransomware": true,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance and Firepower Threat Defense"
+  },
+  "CVE-2023-20273": {
+   "added": "2023-10-23",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Cisco IOS XE Web UI"
+  },
+  "CVE-2023-27997": {
+   "added": "2023-06-13",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS and FortiProxy SSL-VPN"
+  },
+  "CVE-2023-34048": {
+   "added": "2024-01-22",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
+  "CVE-2023-3519": {
+   "added": "2023-07-19",
+   "ransomware": true,
+   "vendor": "Citrix",
+   "product": "NetScaler ADC and NetScaler Gateway"
   },
   "CVE-2023-46604": {
    "added": "2023-11-02",
@@ -121,11 +595,83 @@
    "vendor": "GNU",
    "product": "GNU C Library"
   },
+  "CVE-2023-4966": {
+   "added": "2023-10-18",
+   "ransomware": true,
+   "vendor": "Citrix",
+   "product": "NetScaler ADC and NetScaler Gateway"
+  },
   "CVE-2023-5217": {
    "added": "2023-10-02",
    "ransomware": false,
    "vendor": "Google",
    "product": "Chromium libvpx"
+  },
+  "CVE-2023-6548": {
+   "added": "2024-01-17",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler ADC and NetScaler Gateway"
+  },
+  "CVE-2023-6549": {
+   "added": "2024-01-17",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler ADC and NetScaler Gateway"
+  },
+  "CVE-2024-0012": {
+   "added": "2024-11-18",
+   "ransomware": true,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2024-20353": {
+   "added": "2024-04-24",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+  },
+  "CVE-2024-20359": {
+   "added": "2024-04-24",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+  },
+  "CVE-2024-20481": {
+   "added": "2024-10-24",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD)"
+  },
+  "CVE-2024-21762": {
+   "added": "2024-02-09",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
+  },
+  "CVE-2024-23113": {
+   "added": "2024-10-09",
+   "ransomware": false,
+   "vendor": "Fortinet",
+   "product": "Multiple Products"
+  },
+  "CVE-2024-3393": {
+   "added": "2024-12-30",
+   "ransomware": false,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2024-3400": {
+   "added": "2024-04-12",
+   "ransomware": true,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2024-37079": {
+   "added": "2026-01-23",
+   "ransomware": false,
+   "vendor": "Broadcom",
+   "product": "VMware vCenter Server"
   },
   "CVE-2024-38475": {
    "added": "2025-05-01",
@@ -133,11 +679,47 @@
    "vendor": "Apache",
    "product": "HTTP Server"
   },
+  "CVE-2024-38812": {
+   "added": "2024-11-20",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
+  "CVE-2024-38813": {
+   "added": "2024-11-20",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "vCenter Server"
+  },
   "CVE-2024-4577": {
    "added": "2024-06-12",
    "ransomware": true,
    "vendor": "PHP Group",
    "product": "PHP"
+  },
+  "CVE-2024-55591": {
+   "added": "2025-01-14",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS and FortiProxy"
+  },
+  "CVE-2024-9474": {
+   "added": "2024-11-18",
+   "ransomware": true,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2025-0108": {
+   "added": "2025-02-18",
+   "ransomware": false,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2025-0111": {
+   "added": "2025-02-20",
+   "ransomware": false,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
   },
   "CVE-2025-20333": {
    "added": "2025-09-25",
@@ -145,11 +727,29 @@
    "vendor": "Cisco",
    "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense"
   },
+  "CVE-2025-20352": {
+   "added": "2025-09-29",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "IOS and IOS XE"
+  },
   "CVE-2025-20362": {
    "added": "2025-09-25",
    "ransomware": false,
    "vendor": "Cisco",
    "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense"
+  },
+  "CVE-2025-20393": {
+   "added": "2025-12-17",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Multiple Products"
+  },
+  "CVE-2025-24472": {
+   "added": "2025-03-18",
+   "ransomware": true,
+   "vendor": "Fortinet",
+   "product": "FortiOS and FortiProxy"
   },
   "CVE-2025-24813": {
    "added": "2025-04-01",
@@ -187,11 +787,41 @@
    "vendor": "Meta",
    "product": "React Server Components"
   },
+  "CVE-2025-5777": {
+   "added": "2025-07-10",
+   "ransomware": true,
+   "vendor": "Citrix",
+   "product": "NetScaler ADC and Gateway"
+  },
   "CVE-2025-59718": {
    "added": "2025-12-16",
    "ransomware": false,
    "vendor": "Fortinet",
    "product": "Multiple Products"
+  },
+  "CVE-2025-61624": {
+   "added": "2026-10-16",
+   "ransomware": false,
+   "vendor": "Fortinet",
+   "product": "Multiple Products"
+  },
+  "CVE-2025-6543": {
+   "added": "2025-06-30",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler ADC and Gateway"
+  },
+  "CVE-2025-68686": {
+   "added": "2026-07-27",
+   "ransomware": false,
+   "vendor": "Fortinet",
+   "product": "FortiOS"
+  },
+  "CVE-2025-7775": {
+   "added": "2025-08-26",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler"
   },
   "CVE-2026-0257": {
    "added": "2026-05-29",
@@ -229,11 +859,59 @@
    "vendor": "Google",
    "product": "Brotli"
   },
+  "CVE-2026-123890": {
+   "added": "2026-11-20",
+   "ransomware": false,
+   "vendor": "Broadcom",
+   "product": "VMware vCenter"
+  },
   "CVE-2026-19490": {
    "added": "2026-09-09",
    "ransomware": false,
    "vendor": "Citrix",
    "product": "NetScaler"
+  },
+  "CVE-2026-20122": {
+   "added": "2026-04-20",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Catalyst SD-WAN Manger"
+  },
+  "CVE-2026-20127": {
+   "added": "2026-02-25",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Catalyst SD-WAN Controller and Manager"
+  },
+  "CVE-2026-20128": {
+   "added": "2026-04-20",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Catalyst SD-WAN Manager"
+  },
+  "CVE-2026-20133": {
+   "added": "2026-04-20",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Catalyst SD-WAN Manager"
+  },
+  "CVE-2026-20182": {
+   "added": "2026-05-14",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Catalyst SD-WAN"
+  },
+  "CVE-2026-20245": {
+   "added": "2026-06-09",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Catalyst SD-WAN Manager"
+  },
+  "CVE-2026-20262": {
+   "added": "2026-06-15",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Catalyst SD-WAN Manager"
   },
   "CVE-2026-20349": {
    "added": "2026-08-11",
@@ -265,11 +943,35 @@
    "vendor": "Apache",
    "product": "Tomcat"
   },
+  "CVE-2026-59310": {
+   "added": "2026-08-18",
+   "ransomware": true,
+   "vendor": "Broadcom",
+   "product": "VMware vCenter"
+  },
   "CVE-2026-76418": {
    "added": "2026-10-29",
    "ransomware": false,
    "vendor": "Cisco",
    "product": "Secure Firewall ASA Software and Cisco Secure FTD Software"
+  },
+  "CVE-2026-76461": {
+   "added": "2026-09-14",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Secure Email Gateway"
+  },
+  "CVE-2026-76504": {
+   "added": "2026-09-30",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Catalyst SD-WAN Manager"
+  },
+  "CVE-2026-76519": {
+   "added": "2026-10-14",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Secure Email Gateway"
   },
   "CVE-2026-8452": {
    "added": "2026-08-26",

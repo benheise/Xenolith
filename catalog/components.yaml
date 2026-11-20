@@ -1339,6 +1339,13 @@ components:
           earlier exploited APM flaw, CVE-2025-53521, is in the apmd process, not TMM, and is
           not tracked here.
         trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2021
+        cves: [CVE-2021-22991]
+        note: >-
+          Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2021 to 2021)
+          so they can be found by CVE; no vendor statements have been read for them yet.
+        trackers: []
 
   # Shared by NetScaler ADC and NetScaler Gateway (one firmware build), and by the NetScaler
   # instances inside Secure Private Access hybrid deployments.
@@ -1363,6 +1370,15 @@ components:
           a SAML identity provider. Being current on 14.1-73.41 or 13.1-64.28 (FIPS:
           14.1-73.41 FIPS, 13.1-37.282) covers all six. Citrix-managed cloud services are
           patched by Citrix.
+        trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2025
+        cves: [CVE-2019-19781, CVE-2020-8193, CVE-2020-8195, CVE-2020-8196,
+               CVE-2022-27518, CVE-2023-3519, CVE-2023-4966, CVE-2023-6548,
+               CVE-2023-6549, CVE-2025-5777, CVE-2025-6543, CVE-2025-7775]
+        note: >-
+          Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2019 to 2025)
+          so they can be found by CVE; no vendor statements have been read for them yet.
         trackers: []
 
   # FortiOS code is reused in FortiProxy, FortiSwitchManager, FortiPAM and, for the FortiCloud
@@ -1396,6 +1412,17 @@ components:
           request with no login can run code. Fortinet rates it hard to exploit because of
           ASLR and PIE (7.4), but it is in CISA KEV since 2026-09-09.
         trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2025
+        cves: [CVE-2018-13374, CVE-2018-13379, CVE-2018-13382, CVE-2018-13383,
+               CVE-2019-5591, CVE-2019-6693, CVE-2020-12812, CVE-2021-44168,
+               CVE-2022-40684, CVE-2022-41328, CVE-2022-42475, CVE-2023-27997,
+               CVE-2024-21762, CVE-2024-23113, CVE-2024-55591, CVE-2025-24472,
+               CVE-2025-61624, CVE-2025-68686]
+        note: >-
+          Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2018 to 2025)
+          so they can be found by CVE; no vendor statements have been read for them yet.
+        trackers: []
 
   # One PAN-OS codebase runs PA-Series and VM-Series firewalls, Panorama, Prisma Access and
   # Cloud NGFW; each advisory says which of them a flaw reaches.
@@ -1421,6 +1448,15 @@ components:
           Panorama. Keeping the captive portal and the management interface off untrusted
           networks removes most of the risk for the first and third.
         trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2025
+        cves: [CVE-2017-15944, CVE-2019-1579, CVE-2020-2021, CVE-2022-0028,
+               CVE-2024-0012, CVE-2024-3393, CVE-2024-3400, CVE-2024-9474,
+               CVE-2025-0108, CVE-2025-0111]
+        note: >-
+          Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2017 to 2025)
+          so they can be found by CVE; no vendor statements have been read for them yet.
+        trackers: []
 
   # The ASA code runs standalone as ASA Software and inside Firewall Threat Defense (FTD).
   - id: cisco-asa
@@ -1444,3 +1480,149 @@ components:
           releases differ by train, so use the Cisco Software Checker. Firewall Management
           Center is not affected by any of the four.
         trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2024
+        cves: [CVE-2014-2120, CVE-2016-6366, CVE-2016-6367, CVE-2018-0296,
+               CVE-2020-3259, CVE-2020-3452, CVE-2020-3580, CVE-2023-20269,
+               CVE-2024-20353, CVE-2024-20359, CVE-2024-20481]
+        note: >-
+          Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2014 to 2024)
+          so they can be found by CVE; no vendor statements have been read for them yet.
+        trackers: []
+
+  # IOS and IOS XE share large parts of their code (SNMP, Smart Install); IOS XE also runs
+  # on Catalyst SD-WAN routers and on Meraki-managed Catalyst switches.
+  - id: cisco-ios-xe
+    name: Cisco IOS and IOS XE
+    upstream: https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+    purl: pkg:generic/cisco-ios-xe
+    cpe: cpe:2.3:o:cisco:ios_xe
+    aliases: [ios, ios xe, cisco ios]
+    notices_names: []
+    incidents:
+      - name: IOS XE web UI takeover
+        year: 2023
+        cves: [CVE-2023-20198, CVE-2023-20273]
+        note: >-
+          Chained in mass compromises in October 2023: CVE-2023-20198 (10.0) creates an
+          administrator with no login through the web UI, and CVE-2023-20273 uses that account
+          to run commands as root and plant an implant. Both in CISA KEV. Only IOS XE devices
+          with the HTTP or HTTPS server feature on are exposed; ip http active-session-modules
+          none (and the secure- equivalent) blocks it.
+        trackers: []
+      - name: SNMP stack overflow
+        year: 2025
+        cves: [CVE-2025-20352]
+        note: >-
+          Stack overflow in the SNMP subsystem of IOS and IOS XE. A crafted SNMP packet from a
+          low-privileged user reloads the device; with high privileges it runs code as root
+          (7.7). It needs valid SNMP credentials or a community string, and every SNMP version
+          is affected. In CISA KEV since 2025-09-29. No workaround; excluding the affected
+          OID is the mitigation.
+        trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2023
+        cves: [CVE-2004-1464, CVE-2008-4128, CVE-2016-6415, CVE-2017-3881,
+               CVE-2017-6627, CVE-2017-6663, CVE-2017-6736, CVE-2017-6737,
+               CVE-2017-6738, CVE-2017-6739, CVE-2017-6740, CVE-2017-6742,
+               CVE-2017-6743, CVE-2017-6744, CVE-2017-12231, CVE-2017-12232,
+               CVE-2017-12233, CVE-2017-12234, CVE-2017-12235, CVE-2017-12237,
+               CVE-2017-12240, CVE-2017-12319, CVE-2018-0151, CVE-2018-0154,
+               CVE-2018-0156, CVE-2018-0158, CVE-2018-0159, CVE-2018-0161,
+               CVE-2018-0167, CVE-2018-0171, CVE-2018-0172, CVE-2018-0173,
+               CVE-2018-0174, CVE-2018-0175, CVE-2018-0179, CVE-2018-0180,
+               CVE-2023-20109]
+        note: >-
+          Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2004 to 2023)
+          so they can be found by CVE; no vendor statements have been read for them yet.
+        trackers: []
+
+  # Controller (vSmart), Manager (vManage) and Validator (vBond) share the peering code.
+  - id: cisco-sdwan
+    name: Cisco Catalyst SD-WAN control components
+    upstream: https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+    purl: pkg:generic/cisco-sdwan
+    cpe: cpe:2.3:a:cisco:catalyst_sd-wan_manager
+    aliases: [vmanage, vsmart, vbond, viptela]
+    notices_names: []
+    incidents:
+      - name: SD-WAN peering authentication bypass
+        year: 2026
+        cves: [CVE-2026-20127, CVE-2026-20182]
+        note: >-
+          Two flaws in peering authentication (10.0 each): a crafted request with no login
+          gets an internal high-privileged account on the Controller, then NETCONF access to
+          change the SD-WAN fabric's configuration. CVE-2026-20182 was found after the first
+          fix. Controller, Manager and Validator are affected whatever their configuration;
+          internet-exposed control components are the ones at risk. Both in CISA KEV. No
+          workaround. Cisco publishes indicators of compromise and asks suspected victims to
+          open a TAC case.
+        trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2026
+        cves: [CVE-2022-20775, CVE-2026-20122, CVE-2026-20128, CVE-2026-20133,
+               CVE-2026-20245, CVE-2026-20262, CVE-2026-76504]
+        note: >-
+          These are in the SD-WAN Manager (and one in the older SD-WAN software); CISA lists each as exploited. Listed from the KEV catalog (2022 to 2026)
+          so they can be found by CVE; no vendor statements have been read for them yet.
+        trackers: []
+
+  # AsyncOS runs Secure Email Gateway, Secure Email and Web Manager and Secure Web Appliance.
+  - id: cisco-asyncos
+    name: Cisco AsyncOS (Secure Email Gateway, Secure Email and Web Manager)
+    upstream: https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+    purl: pkg:generic/cisco-asyncos
+    cpe: cpe:2.3:o:cisco:asyncos
+    aliases: [asyncos, ironport, secure email gateway]
+    notices_names: []
+    incidents:
+      - name: Spam Quarantine remote command execution
+        year: 2025
+        cves: [CVE-2025-20393]
+        note: >-
+          A request with no login runs commands as root through the Spam Quarantine feature
+          (10.0). Cisco found it in December 2025 during an attack campaign that left a
+          persistence mechanism on appliances; Talos tracks the actor as UAT-9686. Only
+          appliances with Spam Quarantine on and reachable from the internet are exposed, and
+          the feature is off by default. In CISA KEV. No workaround.
+        trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2026
+        cves: [CVE-2026-76461, CVE-2026-76519]
+        note: >-
+          CISA lists both as exploited in Secure Email Gateway. Listed from the KEV catalog (2026 to 2026)
+          so they can be found by CVE; no vendor statements have been read for them yet.
+        trackers: []
+
+  # vCenter ships on its own and inside Cloud Foundation, vSphere Foundation and Telco Cloud.
+  - id: vcenter
+    name: VMware vCenter
+    upstream: https://support.broadcom.com/web/ecx/security-advisory
+    purl: pkg:generic/vmware-vcenter
+    cpe: cpe:2.3:a:vmware:vcenter_server
+    aliases: [vcenter server, vcsa]
+    notices_names: []
+    incidents:
+      - name: vCenter 2026 exploited flaws
+        year: 2026
+        cves: [CVE-2026-123890, CVE-2026-59310, CVE-2024-37079]
+        note: >-
+          Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA
+          KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service
+          (VMSA-2026-0009), added to KEV on 2026-11-20, a day after publication.
+          CVE-2026-59310: directory traversal in the Syslog server leading to code execution
+          (VMSA-2026-0006); KEV flags it as used in ransomware attacks. CVE-2024-37079: DCERPC
+          heap overflow (VMSA-2024-0012); Broadcom said in January 2026 it has information that
+          it was exploited. No workarounds. vCenter 7.0 only gets fixes under an extended
+          support contract.
+        trackers: []
+      - name: Earlier exploited flaws (CISA KEV)
+        year: 2024
+        cves: [CVE-2020-3952, CVE-2021-21972, CVE-2021-21973, CVE-2021-21985,
+               CVE-2021-22005, CVE-2021-22017, CVE-2022-22948, CVE-2023-34048,
+               CVE-2024-38812, CVE-2024-38813]
+        note: >-
+          Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2020 to 2024)
+          so they can be found by CVE; no vendor statements have been read for them yet.
+        trackers: []
+

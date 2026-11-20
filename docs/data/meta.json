@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T21:03:47Z",
+ "built": "2026-11-20T22:08:01Z",
  "exploitation_levels": [
   "exploited",
   "attempted",
@@ -7,15 +7,15 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 18248,
-  "products_with_data": 8470,
+  "assertions": 18282,
+  "products_with_data": 8477,
   "inventories": 398,
   "inventory_components": 239659,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4701,
-  "components": 52,
+  "spine_only_shown": 4694,
+  "components": 56,
   "wanted": 83,
   "wanted_fulfilled": 6
  },
@@ -112,21 +112,23 @@
     }
    ],
    "kev": 3,
-   "assertions": 1026,
+   "assertions": 1027,
    "products": 879,
-   "contains": 487,
+   "contains": 488,
    "in_range": 3,
    "verdicts": {
     "fixed": 194,
     "workaround": 7,
-    "affected": 202,
+    "affected": 203,
     "under_investigation": 76,
     "not_affected": 206,
     "present": 84,
     "absent": 255,
     "runtime_dependent": 2
    },
-   "exploitation": {}
+   "exploitation": {
+    "exploited": 1
+   }
   },
   {
    "id": "brotli",
@@ -364,20 +366,22 @@
     }
    ],
    "kev": 2,
-   "assertions": 7402,
+   "assertions": 7403,
    "products": 6145,
-   "contains": 2584,
+   "contains": 2585,
    "in_range": 11,
    "verdicts": {
     "not_affected": 4258,
     "unknown": 401,
     "affected": 926,
-    "fixed": 1356,
+    "fixed": 1357,
     "under_investigation": 159,
     "workaround": 251,
     "present": 51
    },
-   "exploitation": {}
+   "exploitation": {
+    "exploited": 1
+   }
   },
   {
    "id": "log4j-1",
@@ -549,17 +553,19 @@
     }
    ],
    "kev": 1,
-   "assertions": 48,
-   "products": 35,
-   "contains": 47,
+   "assertions": 49,
+   "products": 36,
+   "contains": 48,
    "in_range": 7,
    "verdicts": {
     "present": 16,
-    "fixed": 30,
+    "fixed": 31,
     "workaround": 1,
     "not_affected": 1
    },
-   "exploitation": {}
+   "exploitation": {
+    "exploited": 1
+   }
   },
   {
    "id": "curl",
@@ -2293,17 +2299,19 @@
     }
    ],
    "kev": 1,
-   "assertions": 28,
-   "products": 28,
-   "contains": 27,
+   "assertions": 29,
+   "products": 29,
+   "contains": 28,
    "in_range": 1,
    "verdicts": {
+    "fixed": 23,
     "present": 1,
-    "fixed": 22,
     "workaround": 4,
     "not_affected": 1
    },
-   "exploitation": {}
+   "exploitation": {
+    "exploited": 1
+   }
   },
   {
    "id": "snakeyaml",
@@ -2509,17 +2517,19 @@
     }
    ],
    "kev": 1,
-   "assertions": 75,
-   "products": 61,
-   "contains": 58,
+   "assertions": 76,
+   "products": 62,
+   "contains": 59,
    "in_range": 13,
    "verdicts": {
     "present": 38,
     "not_affected": 17,
     "affected": 9,
-    "fixed": 11
+    "fixed": 12
    },
-   "exploitation": {}
+   "exploitation": {
+    "exploited": 1
+   }
   },
   {
    "id": "h2",
@@ -3149,9 +3159,21 @@
      "kev": {
       "CVE-2026-94127": "2026-09-22"
      }
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2021,
+     "cves": [
+      "CVE-2021-22991"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2021 to 2021) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2021-22991": "2022-01-18"
+     }
     }
    ],
-   "kev": 1,
+   "kev": 2,
    "assertions": 19,
    "products": 15,
    "contains": 7,
@@ -3198,9 +3220,49 @@
       "CVE-2026-88772": "2026-09-27",
       "CVE-2026-88779": "2026-10-04"
      }
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2025,
+     "cves": [
+      "CVE-2019-19781",
+      "CVE-2020-8193",
+      "CVE-2020-8195",
+      "CVE-2020-8196",
+      "CVE-2022-27518",
+      "CVE-2023-3519",
+      "CVE-2023-4966",
+      "CVE-2023-6548",
+      "CVE-2023-6549",
+      "CVE-2025-5777",
+      "CVE-2025-6543",
+      "CVE-2025-7775"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2019 to 2025) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2019-19781": "2021-11-03",
+      "CVE-2020-8193": "2021-11-03",
+      "CVE-2020-8195": "2021-11-03",
+      "CVE-2020-8196": "2021-11-03",
+      "CVE-2022-27518": "2022-12-13",
+      "CVE-2023-3519": "2023-07-19",
+      "CVE-2023-4966": "2023-10-18",
+      "CVE-2023-6548": "2024-01-17",
+      "CVE-2023-6549": "2024-01-17",
+      "CVE-2025-5777": "2025-07-10",
+      "CVE-2025-6543": "2025-06-30",
+      "CVE-2025-7775": "2025-08-26"
+     },
+     "kev_ransomware": [
+      "CVE-2019-19781",
+      "CVE-2023-3519",
+      "CVE-2023-4966",
+      "CVE-2025-5777"
+     ]
     }
    ],
-   "kev": 6,
+   "kev": 18,
    "assertions": 13,
    "products": 3,
    "contains": 13,
@@ -3249,9 +3311,70 @@
      "kev": {
       "CVE-2025-25249": "2026-09-09"
      }
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2025,
+     "cves": [
+      "CVE-2018-13374",
+      "CVE-2018-13379",
+      "CVE-2018-13382",
+      "CVE-2018-13383",
+      "CVE-2019-5591",
+      "CVE-2019-6693",
+      "CVE-2020-12812",
+      "CVE-2021-44168",
+      "CVE-2022-40684",
+      "CVE-2022-41328",
+      "CVE-2022-42475",
+      "CVE-2023-27997",
+      "CVE-2024-21762",
+      "CVE-2024-23113",
+      "CVE-2024-55591",
+      "CVE-2025-24472",
+      "CVE-2025-61624",
+      "CVE-2025-68686"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2018 to 2025) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2018-13374": "2022-09-08",
+      "CVE-2018-13379": "2021-11-03",
+      "CVE-2018-13382": "2022-01-10",
+      "CVE-2018-13383": "2022-01-10",
+      "CVE-2019-5591": "2021-11-03",
+      "CVE-2019-6693": "2025-06-25",
+      "CVE-2020-12812": "2021-11-03",
+      "CVE-2021-44168": "2021-12-10",
+      "CVE-2022-40684": "2022-10-11",
+      "CVE-2022-41328": "2023-03-14",
+      "CVE-2022-42475": "2022-12-13",
+      "CVE-2023-27997": "2023-06-13",
+      "CVE-2024-21762": "2024-02-09",
+      "CVE-2024-23113": "2024-10-09",
+      "CVE-2024-55591": "2025-01-14",
+      "CVE-2025-24472": "2025-03-18",
+      "CVE-2025-61624": "2026-10-16",
+      "CVE-2025-68686": "2026-07-27"
+     },
+     "kev_ransomware": [
+      "CVE-2018-13374",
+      "CVE-2018-13379",
+      "CVE-2018-13382",
+      "CVE-2018-13383",
+      "CVE-2019-5591",
+      "CVE-2019-6693",
+      "CVE-2020-12812",
+      "CVE-2022-40684",
+      "CVE-2022-42475",
+      "CVE-2023-27997",
+      "CVE-2024-21762",
+      "CVE-2024-55591",
+      "CVE-2025-24472"
+     ]
     }
    ],
-   "kev": 3,
+   "kev": 21,
    "assertions": 20,
    "products": 11,
    "contains": 17,
@@ -3291,9 +3414,46 @@
      "kev_ransomware": [
       "CVE-2026-0257"
      ]
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2025,
+     "cves": [
+      "CVE-2017-15944",
+      "CVE-2019-1579",
+      "CVE-2020-2021",
+      "CVE-2022-0028",
+      "CVE-2024-0012",
+      "CVE-2024-3393",
+      "CVE-2024-3400",
+      "CVE-2024-9474",
+      "CVE-2025-0108",
+      "CVE-2025-0111"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2017 to 2025) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2017-15944": "2022-08-18",
+      "CVE-2019-1579": "2022-01-10",
+      "CVE-2020-2021": "2022-03-25",
+      "CVE-2022-0028": "2022-08-22",
+      "CVE-2024-0012": "2024-11-18",
+      "CVE-2024-3393": "2024-12-30",
+      "CVE-2024-3400": "2024-04-12",
+      "CVE-2024-9474": "2024-11-18",
+      "CVE-2025-0108": "2025-02-18",
+      "CVE-2025-0111": "2025-02-20"
+     },
+     "kev_ransomware": [
+      "CVE-2019-1579",
+      "CVE-2020-2021",
+      "CVE-2024-0012",
+      "CVE-2024-3400",
+      "CVE-2024-9474"
+     ]
     }
    ],
-   "kev": 3,
+   "kev": 13,
    "assertions": 17,
    "products": 5,
    "contains": 10,
@@ -3336,9 +3496,46 @@
       "CVE-2026-20349": "2026-08-11",
       "CVE-2026-76418": "2026-10-29"
      }
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2024,
+     "cves": [
+      "CVE-2014-2120",
+      "CVE-2016-6366",
+      "CVE-2016-6367",
+      "CVE-2018-0296",
+      "CVE-2020-3259",
+      "CVE-2020-3452",
+      "CVE-2020-3580",
+      "CVE-2023-20269",
+      "CVE-2024-20353",
+      "CVE-2024-20359",
+      "CVE-2024-20481"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2014 to 2024) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2014-2120": "2024-11-12",
+      "CVE-2016-6366": "2022-05-24",
+      "CVE-2016-6367": "2022-05-24",
+      "CVE-2018-0296": "2021-11-03",
+      "CVE-2020-3259": "2024-02-15",
+      "CVE-2020-3452": "2021-11-03",
+      "CVE-2020-3580": "2021-11-03",
+      "CVE-2023-20269": "2023-09-13",
+      "CVE-2024-20353": "2024-04-24",
+      "CVE-2024-20359": "2024-04-24",
+      "CVE-2024-20481": "2024-10-24"
+     },
+     "kev_ransomware": [
+      "CVE-2020-3259",
+      "CVE-2020-3580",
+      "CVE-2023-20269"
+     ]
     }
    ],
-   "kev": 4,
+   "kev": 15,
    "assertions": 62,
    "products": 16,
    "contains": 58,
@@ -3349,6 +3546,335 @@
    },
    "exploitation": {
     "exploited": 2
+   }
+  },
+  {
+   "id": "cisco-ios-xe",
+   "name": "Cisco IOS and IOS XE",
+   "upstream": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+   "purl": "pkg:generic/cisco-ios-xe",
+   "cpe": "cpe:2.3:o:cisco:ios_xe",
+   "aliases": [
+    "ios",
+    "ios xe",
+    "cisco ios"
+   ],
+   "incidents": [
+    {
+     "name": "IOS XE web UI takeover",
+     "year": 2023,
+     "cves": [
+      "CVE-2023-20198",
+      "CVE-2023-20273"
+     ],
+     "note": "Chained in mass compromises in October 2023: CVE-2023-20198 (10.0) creates an administrator with no login through the web UI, and CVE-2023-20273 uses that account to run commands as root and plant an implant. Both in CISA KEV. Only IOS XE devices with the HTTP or HTTPS server feature on are exposed; ip http active-session-modules none (and the secure- equivalent) blocks it.",
+     "trackers": [],
+     "kev": {
+      "CVE-2023-20198": "2023-10-16",
+      "CVE-2023-20273": "2023-10-23"
+     }
+    },
+    {
+     "name": "SNMP stack overflow",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-20352"
+     ],
+     "note": "Stack overflow in the SNMP subsystem of IOS and IOS XE. A crafted SNMP packet from a low-privileged user reloads the device; with high privileges it runs code as root (7.7). It needs valid SNMP credentials or a community string, and every SNMP version is affected. In CISA KEV since 2025-09-29. No workaround; excluding the affected OID is the mitigation.",
+     "trackers": [],
+     "kev": {
+      "CVE-2025-20352": "2025-09-29"
+     }
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2023,
+     "cves": [
+      "CVE-2004-1464",
+      "CVE-2008-4128",
+      "CVE-2016-6415",
+      "CVE-2017-3881",
+      "CVE-2017-6627",
+      "CVE-2017-6663",
+      "CVE-2017-6736",
+      "CVE-2017-6737",
+      "CVE-2017-6738",
+      "CVE-2017-6739",
+      "CVE-2017-6740",
+      "CVE-2017-6742",
+      "CVE-2017-6743",
+      "CVE-2017-6744",
+      "CVE-2017-12231",
+      "CVE-2017-12232",
+      "CVE-2017-12233",
+      "CVE-2017-12234",
+      "CVE-2017-12235",
+      "CVE-2017-12237",
+      "CVE-2017-12240",
+      "CVE-2017-12319",
+      "CVE-2018-0151",
+      "CVE-2018-0154",
+      "CVE-2018-0156",
+      "CVE-2018-0158",
+      "CVE-2018-0159",
+      "CVE-2018-0161",
+      "CVE-2018-0167",
+      "CVE-2018-0171",
+      "CVE-2018-0172",
+      "CVE-2018-0173",
+      "CVE-2018-0174",
+      "CVE-2018-0175",
+      "CVE-2018-0179",
+      "CVE-2018-0180",
+      "CVE-2023-20109"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2004 to 2023) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2004-1464": "2023-05-19",
+      "CVE-2008-4128": "2026-07-13",
+      "CVE-2016-6415": "2023-05-19",
+      "CVE-2017-3881": "2022-03-25",
+      "CVE-2017-6627": "2022-03-03",
+      "CVE-2017-6663": "2022-03-03",
+      "CVE-2017-6736": "2022-03-03",
+      "CVE-2017-6737": "2022-03-03",
+      "CVE-2017-6738": "2022-03-03",
+      "CVE-2017-6739": "2022-03-03",
+      "CVE-2017-6740": "2022-03-03",
+      "CVE-2017-6742": "2023-04-19",
+      "CVE-2017-6743": "2022-03-03",
+      "CVE-2017-6744": "2022-03-03",
+      "CVE-2017-12231": "2022-03-03",
+      "CVE-2017-12232": "2022-03-03",
+      "CVE-2017-12233": "2022-03-03",
+      "CVE-2017-12234": "2022-03-03",
+      "CVE-2017-12235": "2022-03-03",
+      "CVE-2017-12237": "2022-03-03",
+      "CVE-2017-12240": "2022-03-03",
+      "CVE-2017-12319": "2022-03-03",
+      "CVE-2018-0151": "2022-03-03",
+      "CVE-2018-0154": "2022-03-03",
+      "CVE-2018-0156": "2022-03-03",
+      "CVE-2018-0158": "2022-03-03",
+      "CVE-2018-0159": "2022-03-03",
+      "CVE-2018-0161": "2022-03-03",
+      "CVE-2018-0167": "2022-03-03",
+      "CVE-2018-0171": "2021-11-03",
+      "CVE-2018-0172": "2022-03-03",
+      "CVE-2018-0173": "2022-03-03",
+      "CVE-2018-0174": "2022-03-03",
+      "CVE-2018-0175": "2022-03-03",
+      "CVE-2018-0179": "2022-03-03",
+      "CVE-2018-0180": "2022-03-03",
+      "CVE-2023-20109": "2023-10-10"
+     }
+    }
+   ],
+   "kev": 40,
+   "assertions": 5,
+   "products": 2,
+   "contains": 5,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 5
+   },
+   "exploitation": {
+    "exploited": 2
+   }
+  },
+  {
+   "id": "cisco-sdwan",
+   "name": "Cisco Catalyst SD-WAN control components",
+   "upstream": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+   "purl": "pkg:generic/cisco-sdwan",
+   "cpe": "cpe:2.3:a:cisco:catalyst_sd-wan_manager",
+   "aliases": [
+    "vmanage",
+    "vsmart",
+    "vbond",
+    "viptela"
+   ],
+   "incidents": [
+    {
+     "name": "SD-WAN peering authentication bypass",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-20127",
+      "CVE-2026-20182"
+     ],
+     "note": "Two flaws in peering authentication (10.0 each): a crafted request with no login gets an internal high-privileged account on the Controller, then NETCONF access to change the SD-WAN fabric's configuration. CVE-2026-20182 was found after the first fix. Controller, Manager and Validator are affected whatever their configuration; internet-exposed control components are the ones at risk. Both in CISA KEV. No workaround. Cisco publishes indicators of compromise and asks suspected victims to open a TAC case.",
+     "trackers": [],
+     "kev": {
+      "CVE-2026-20127": "2026-02-25",
+      "CVE-2026-20182": "2026-05-14"
+     }
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2026,
+     "cves": [
+      "CVE-2022-20775",
+      "CVE-2026-20122",
+      "CVE-2026-20128",
+      "CVE-2026-20133",
+      "CVE-2026-20245",
+      "CVE-2026-20262",
+      "CVE-2026-76504"
+     ],
+     "note": "These are in the SD-WAN Manager (and one in the older SD-WAN software); CISA lists each as exploited. Listed from the KEV catalog (2022 to 2026) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2022-20775": "2026-02-25",
+      "CVE-2026-20122": "2026-04-20",
+      "CVE-2026-20128": "2026-04-20",
+      "CVE-2026-20133": "2026-04-20",
+      "CVE-2026-20245": "2026-06-09",
+      "CVE-2026-20262": "2026-06-15",
+      "CVE-2026-76504": "2026-09-30"
+     }
+    }
+   ],
+   "kev": 9,
+   "assertions": 8,
+   "products": 3,
+   "contains": 8,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 8
+   },
+   "exploitation": {
+    "exploited": 2
+   }
+  },
+  {
+   "id": "cisco-asyncos",
+   "name": "Cisco AsyncOS (Secure Email Gateway, Secure Email and Web Manager)",
+   "upstream": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+   "purl": "pkg:generic/cisco-asyncos",
+   "cpe": "cpe:2.3:o:cisco:asyncos",
+   "aliases": [
+    "asyncos",
+    "ironport",
+    "secure email gateway"
+   ],
+   "incidents": [
+    {
+     "name": "Spam Quarantine remote command execution",
+     "year": 2025,
+     "cves": [
+      "CVE-2025-20393"
+     ],
+     "note": "A request with no login runs commands as root through the Spam Quarantine feature (10.0). Cisco found it in December 2025 during an attack campaign that left a persistence mechanism on appliances; Talos tracks the actor as UAT-9686. Only appliances with Spam Quarantine on and reachable from the internet are exposed, and the feature is off by default. In CISA KEV. No workaround.",
+     "trackers": [],
+     "kev": {
+      "CVE-2025-20393": "2025-12-17"
+     }
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-76461",
+      "CVE-2026-76519"
+     ],
+     "note": "CISA lists both as exploited in Secure Email Gateway. Listed from the KEV catalog (2026 to 2026) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2026-76461": "2026-09-14",
+      "CVE-2026-76519": "2026-10-14"
+     }
+    }
+   ],
+   "kev": 3,
+   "assertions": 3,
+   "products": 3,
+   "contains": 2,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 2,
+    "unknown": 1
+   },
+   "exploitation": {
+    "exploited": 2
+   }
+  },
+  {
+   "id": "vcenter",
+   "name": "VMware vCenter",
+   "upstream": "https://support.broadcom.com/web/ecx/security-advisory",
+   "purl": "pkg:generic/vmware-vcenter",
+   "cpe": "cpe:2.3:a:vmware:vcenter_server",
+   "aliases": [
+    "vcenter server",
+    "vcsa"
+   ],
+   "incidents": [
+    {
+     "name": "vCenter 2026 exploited flaws",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-123890",
+      "CVE-2026-59310",
+      "CVE-2024-37079"
+     ],
+     "note": "Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), added to KEV on 2026-11-20, a day after publication. CVE-2026-59310: directory traversal in the Syslog server leading to code execution (VMSA-2026-0006); KEV flags it as used in ransomware attacks. CVE-2024-37079: DCERPC heap overflow (VMSA-2024-0012); Broadcom said in January 2026 it has information that it was exploited. No workarounds. vCenter 7.0 only gets fixes under an extended support contract.",
+     "trackers": [],
+     "kev": {
+      "CVE-2026-123890": "2026-11-20",
+      "CVE-2026-59310": "2026-08-18",
+      "CVE-2024-37079": "2026-01-23"
+     },
+     "kev_ransomware": [
+      "CVE-2026-59310"
+     ]
+    },
+    {
+     "name": "Earlier exploited flaws (CISA KEV)",
+     "year": 2024,
+     "cves": [
+      "CVE-2020-3952",
+      "CVE-2021-21972",
+      "CVE-2021-21973",
+      "CVE-2021-21985",
+      "CVE-2021-22005",
+      "CVE-2021-22017",
+      "CVE-2022-22948",
+      "CVE-2023-34048",
+      "CVE-2024-38812",
+      "CVE-2024-38813"
+     ],
+     "note": "Every CVE here is one CISA lists as exploited in this product family. Listed from the KEV catalog (2020 to 2024) so they can be found by CVE; no vendor statements have been read for them yet.",
+     "trackers": [],
+     "kev": {
+      "CVE-2020-3952": "2021-11-03",
+      "CVE-2021-21972": "2021-11-03",
+      "CVE-2021-21973": "2022-03-07",
+      "CVE-2021-21985": "2021-11-03",
+      "CVE-2021-22005": "2021-11-03",
+      "CVE-2021-22017": "2022-01-10",
+      "CVE-2022-22948": "2024-07-17",
+      "CVE-2023-34048": "2024-01-22",
+      "CVE-2024-38812": "2024-11-20",
+      "CVE-2024-38813": "2024-11-20"
+     },
+     "kev_ransomware": [
+      "CVE-2021-21972",
+      "CVE-2021-21985",
+      "CVE-2021-22005"
+     ]
+    }
+   ],
+   "kev": 13,
+   "assertions": 13,
+   "products": 5,
+   "contains": 13,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 13
+   },
+   "exploitation": {
+    "exploited": 1
    }
   }
  ],
@@ -3443,7 +3969,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 435,
+   "assertions": 469,
    "latest": "2026-11-20",
    "fv": "community",
    "dp": [

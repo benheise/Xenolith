@@ -229,6 +229,7 @@ The census doesn't check every stored component against every CVE. That would bu
 ```bash
 pip install -r requirements.txt
 python -m xenolith community --check     # validates assertions.csv and every file in community/sboms/
+python -m xenolith kev --coverage         # how much of CISA KEV the census covers (prints only)
 python -m unittest discover -s tests
 ```
 

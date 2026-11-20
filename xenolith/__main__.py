@@ -157,9 +157,52 @@ def _write_watchlist_kev(kev: list[dict]) -> int:
     return len(found)
 
 
+def kev_coverage(kev: list[dict]) -> dict:
+    """How much of CISA KEV the census covers, three ways: the CVE is on the watchlist, the
+    product is in the registry, the product has composition data (statements or a notices
+    inventory). The watchlist tracks shared components, so the first number is small by design."""
+    from collections import Counter
+    from .identity import product_key
+    tracked = set(catalog_mod.load().cve_to_component)
+    products = {p["k"]: p for p in json.loads((DOCS_DATA / "products.json").read_text(encoding="utf-8"))} \
+        if (DOCS_DATA / "products.json").exists() else {}
+    pairs = Counter((r.get("vendorProject", ""), r.get("product", "")) for r in kev)
+    in_registry = with_data = 0
+    missing: list[tuple[str, str, int]] = []
+    untracked = Counter()
+    for (vendor, product), count in pairs.items():
+        p = products.get(product_key(vendor, product))
+        if p:
+            in_registry += 1
+            if p.get("n") or p.get("inv"):
+                with_data += 1
+        else:
+            missing.append((vendor, product, count))
+    for r in kev:
+        if (r.get("cveID") or "").upper() not in tracked:
+            untracked[(r.get("vendorProject", ""), r.get("product", ""))] += 1
+    return {
+        "kev_cves": len(kev), "tracked_cves": sum(1 for r in kev if (r.get("cveID") or "").upper() in tracked),
+        "kev_products": len(pairs), "products_in_registry": in_registry, "products_with_composition_data": with_data,
+        "products_missing": sorted(missing, key=lambda m: -m[2])[:25],
+        "top_untracked": untracked.most_common(40),
+    }
+
+
 def cmd_kev(args) -> int:
     """Check every watchlist CVE against CISA KEV (a small daily fetch, unlike the full spine)."""
-    n = _write_watchlist_kev(cvelist.load_kev(Path(args.kev) if args.kev else None))
+    kev = cvelist.load_kev(Path(args.kev) if args.kev else None)
+    if args.coverage:
+        c = kev_coverage(kev)
+        pct = lambda a, b: f"{a} of {b} ({100 * a / b:.1f}%)" if b else "0"
+        print(f"KEV CVEs on the watchlist:           {pct(c['tracked_cves'], c['kev_cves'])}")
+        print(f"KEV products in the registry:        {pct(c['products_in_registry'], c['kev_products'])}")
+        print(f"KEV products with composition data:  {pct(c['products_with_composition_data'], c['kev_products'])}")
+        print("Largest KEV products not on the watchlist (entries):")
+        for (vendor, product), count in c["top_untracked"]:
+            print(f"  {count:4d}  {vendor} | {product}")
+        return 0
+    n = _write_watchlist_kev(kev)
     print(f"kev: {n} watchlist CVEs are in CISA KEV")
     return 0
 
@@ -237,6 +280,7 @@ def main(argv: list[str] | None = None) -> int:
 
     k = sub.add_parser("kev", help="check watchlist CVEs against CISA KEV")
     k.add_argument("--kev", help="path to a downloaded KEV CSV (default: fetch it)")
+    k.add_argument("--coverage", action="store_true", help="report how much of KEV the census covers; writes nothing")
     k.set_defaults(fn=cmd_kev)
     s = sub.add_parser("spine", help="build the product spine from cvelistV5 and CISA KEV")
     s.add_argument("--cves", help="path to an extracted cvelistV5 'cves' directory (omit for KEV-only)")

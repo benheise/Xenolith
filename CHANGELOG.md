@@ -3,6 +3,37 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-20: More engines, embedded products and a KEV coverage report
+
+**New engines (52 to 56 components), 29 statements read on the vendors' advisories:**
+
+- `cisco-ios-xe` (IOS and IOS XE): the 2023 web UI takeover (CVE-2023-20198, CVE-2023-20273) and
+  the SNMP overflow CVE-2025-20352.
+- `cisco-sdwan` (Controller, Manager, Validator): peering authentication bypasses CVE-2026-20127
+  and CVE-2026-20182.
+- `cisco-asyncos` (Secure Email Gateway, Secure Email and Web Manager): CVE-2025-20393.
+- `vcenter` (vCenter, Cloud Foundation, vSphere Foundation, Telco Cloud): CVE-2026-123890,
+  CVE-2026-59310, CVE-2024-37079.
+- Left out: SonicWall SonicOS and SMA1000 (one product each, no shared engine).
+
+**Products exploited through an embedded component**, each from a source that names the product:
+
+- PAN-OS through PHP (PHP2Shell): Palo Alto Networks reports active exploitation of exposed
+  management interfaces.
+- VMware Cloud Foundation (NSX-V) through XStream: VMware reports exploitation in the wild.
+- VMware Horizon through Log4j (Sophos).
+- Google Chrome through libvpx (Google) and libwebp (CERT-EU relaying Google).
+- Not marked: Next.js for React2Shell and any product for the Brotli flaw. No source opened
+  names a product that was compromised.
+
+**KEV depth for the engines:** each first-party engine gains an "Earlier exploited flaws (CISA
+KEV)" incident with the 108 other KEV entries CISA files under that product family. They are
+findable by CVE and carry the KEV badge; no vendor statements have been read for them yet.
+
+**KEV coverage report:** `python -m xenolith kev --coverage` prints how much of the catalog the
+census covers. On 20 November (1,790 entries): 168 CVEs on the watchlist (9.4%), 748 of 751
+KEV products in the registry (99.6%), 85 with composition data (11.3%).
+
 ## 2026-11-20: First-party engines and an exploitation review
 
 **Criteria.** The watchlist now also takes a vendor's own engine that it ships across several
