@@ -42,6 +42,15 @@ VERDICT_PRIORITY = (
     "unknown",
 )
 
+# Exploitation signal for one product and CVE, strongest first. It is separate from the
+# status: a product can have a fix out and still be the one attackers are breaking into.
+EXPLOITATION = (
+    "exploited",              # confirmed compromise of this product in the wild through this CVE
+    "attempted",              # exploit attempts aimed at this product have been observed; no confirmed compromise
+    "demonstrated_preauth",   # a named researcher has a working exploit for this product that needs no login
+    "demonstrated_postauth",  # a named researcher has a working exploit for this product that needs a login
+)
+
 CONTAINS_TRUE = {"affected", "workaround", "fixed", "present"}
 CONTAINS_FALSE = {"absent"}
 
@@ -65,7 +74,7 @@ ASSERTION_FIELDS = (
     "id", "component", "supplier", "product", "product_key", "version",
     "cves", "verdict", "contains", "evidence", "source", "publisher",
     "source_url", "references", "notes", "category", "updated", "component_version", "cpes",
-    "found_via", "discovery_path", "sha256",
+    "found_via", "discovery_path", "sha256", "exploitation",
 )
 
 _SHA256 = re.compile(r"[0-9a-f]{64}")
@@ -160,6 +169,7 @@ def make_assertion(
     found_via: str = "",
     discovery_path: Iterable[str] = (),
     sha256: str = "",
+    exploitation: str = "",
 ) -> dict:
     """Build a normalized assertion.
 
@@ -175,6 +185,8 @@ def make_assertion(
         raise ValueError(f"unknown status {status!r}")
     if evidence not in EVIDENCE:
         raise ValueError(f"unknown evidence type {evidence!r}")
+    if exploitation and exploitation not in EXPLOITATION:
+        raise ValueError(f"unknown exploitation level {exploitation!r}")
     statuses = list(cves.values()) or [status or "unknown"]
     v = verdict(statuses)
     version = clean_text(version, 300)
@@ -210,6 +222,8 @@ def make_assertion(
     cpes = sorted({c for c in cpes if c})[:8]
     if cpes:
         out["cpes"] = cpes   # CPE vendor:product pairs naming the product (used to link sources)
+    if exploitation:
+        out["exploitation"] = exploitation
     out.update(provenance(found_via, discovery_path, sha256))
     return out
 

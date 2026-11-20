@@ -58,6 +58,9 @@
   .badge { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px;
     border: 1px solid currentColor; white-space: nowrap; }
   .v-affected { color: var(--affected); } .v-workaround { color: var(--workaround); }
+  .badge.x-exploited { background: var(--affected); border-color: var(--affected); color: var(--bg); }
+  .badge.x-attempted, .badge.x-demonstrated_preauth { color: var(--affected); }
+  .badge.x-demonstrated_postauth { color: var(--workaround); }
   .v-fixed { color: var(--fixed); } .v-under_investigation { color: var(--investigating); }
   .v-runtime_dependent { color: var(--runtime); } .v-present { color: var(--present); }
   .v-not_affected, .v-absent, .v-unknown { color: var(--neutral); }
@@ -179,6 +182,18 @@ const VERDICTS = {
   under_investigation: "Investigating", runtime_dependent: "Uses host runtime",
   present: "Contains (not assessed)", not_affected: "Not affected", absent: "Not present", unknown: "No status"
 };
+// Exploitation reported for a product, strongest first. Separate from the status badge.
+const EXPLOIT = {
+  exploited: ["Exploited in the wild", "Confirmed compromise of this product through this vulnerability. Patch or isolate it now."],
+  attempted: ["Exploit attempts seen", "Attempts aimed at this product have been observed. No confirmed compromise."],
+  demonstrated_preauth: ["Exploit shown, no login needed", "A named researcher has a working exploit for this product that needs no login. Not seen in attacks."],
+  demonstrated_postauth: ["Exploit shown, login needed", "A named researcher has a working exploit for this product that needs a login. Not seen in attacks."],
+};
+const EXPLOIT_RANK = Object.fromEntries(Object.keys(EXPLOIT).map((k, i) => [k, i]));
+function exploitBadge(level, cves) {
+  const e = EXPLOIT[level]; if (!e) return "";
+  return `<span class="badge x-${esc(level)}" title="${esc(e[1])}">${esc(e[0])}${cves && cves.length ? ` (${esc(cves.join(", "))})` : ""}</span>`;
+}
 const CONTAINS = new Set(["affected", "workaround", "fixed", "present"]);
 const EVIDENCE = {
   "tracker": "Incident tracker", "vendor-advisory": "Vendor advisory", "vendor-sbom": "Vendor SBOM",
@@ -193,7 +208,11 @@ const FILTERS = [
   ["not_affected", "Not affected / not present", r => r.st === "not_affected" || r.st === "absent"],
   ["runtime_dependent", "Host runtime", r => r.st === "runtime_dependent"],
   ["in_range", "Vulnerable version listed", r => r.rc === "in_range"],
+  ["exploited", "Exploited in the wild", r => r.px === "exploited"],
+  ["attempted", "Exploit attempts seen", r => r.px === "attempted"],
+  ["demonstrated", "Exploit shown", r => r.px === "demonstrated_preauth" || r.px === "demonstrated_postauth"],
 ];
+const EXPLOIT_FILTERS = new Set(["exploited", "attempted", "demonstrated"]);   // hidden when a component has none
 const PAGE = 50;
 const REPO = "https://github.com/benheise/Xenolith";
 
@@ -384,13 +403,14 @@ function productCard(p) {
   const badges = comps.length
     ? comps.map(([cid, st]) => `<span class="badge v-${esc(vr.has(cid) ? "workaround" : st)}" title="${esc(VERDICTS[st] || st)}">${esc(compName(cid))}: ${esc(vr.has(cid) && st === "present" ? "vulnerable version listed" : (VERDICTS[st] || st))}</span>`).join("")
     : `<span class="small muted">${p.inv ? "No watchlist components listed" : "No composition data yet"}</span>`;
+  const exploits = Object.entries(p.x || {}).map(([cid, level]) => exploitBadge(level, [compName(cid)])).join("");
   const facts = [];
   if (p.inv) facts.push(`${fmt(p.inv)} components in vendor notices`);
   if (p.cv) facts.push(`${fmt(p.cv)} CVE${p.cv === 1 ? "" : "s"}${p.kev ? ` · ${fmt(p.kev)} in CISA KEV` : ""}`);
   const spine = facts.length ? `<div class="meta">${facts.join(" · ")}</div>` : "";
   return `<button class="card" data-p="${esc(p.k)}">
     <div class="supplier">${esc(p.s)}</div><div class="product">${esc(p.p)}</div>
-    <div class="comp-badges">${badges}</div>${spine}
+    <div class="comp-badges">${exploits}${badges}</div>${spine}
   </button>`;
 }
 function compName(id) { const c = META.components.find(x => x.id === id); return c ? c.id : id; }
@@ -409,6 +429,9 @@ async function showComponent(id, filterKey, text) {
   const filt = FILTERS.find(f => f[0] === filterKey) || FILTERS[0];
   const t = norm(text);
   const visible = rows.filter(r => filt[2](r) && (!t || norm(`${r.s} ${r.p} ${r.v} ${r.pub}`).includes(t)));
+  // Products with an exploitation report come first, strongest level first; the order is otherwise unchanged.
+  const xr = r => r.px ? EXPLOIT_RANK[r.px] : 99;
+  visible.sort((a, b) => xr(a) - xr(b));
   const counts = Object.fromEntries(FILTERS.map(f => [f[0], rows.filter(f[2]).length]));
   statusEl.textContent = `${fmt(visible.length)} of ${fmt(rows.length)} statements shown`;
 
@@ -428,9 +451,10 @@ async function showComponent(id, filterKey, text) {
       <div class="stat"><b>${fmt(c.contains)}</b><span>confirmed to contain it</span></div>
       <div class="stat"><b>${fmt((c.verdicts || {}).affected || 0)}</b><span>affected, no fix stated</span></div>
       ${c.in_range ? `<div class="stat"><b>${fmt(c.in_range)}</b><span>list a vulnerable version</span></div>` : ""}
+      ${Object.keys(EXPLOIT).filter(k => (c.exploitation || {})[k]).map(k => `<div class="stat"><b>${fmt(c.exploitation[k])}</b><span>${esc(EXPLOIT[k][0].toLowerCase())}</span></div>`).join("")}
     </div>
     <div class="chips" role="group" aria-label="Filter by status">
-      ${FILTERS.map(f => `<button class="chip" data-f="${f[0]}" aria-pressed="${f[0] === filt[0]}">${esc(f[1])} <span class="muted">${fmt(counts[f[0]])}</span></button>`).join("")}
+      ${FILTERS.filter(f => !EXPLOIT_FILTERS.has(f[0]) || counts[f[0]] || f[0] === filt[0]).map(f => `<button class="chip" data-f="${f[0]}" aria-pressed="${f[0] === filt[0]}">${esc(f[1])} <span class="muted">${fmt(counts[f[0]])}</span></button>`).join("")}
     </div>
     <input class="filter" id="tfilter" type="search" placeholder="Filter by vendor or product…" value="${esc(text)}">
     <div class="list" id="rows"></div>
@@ -502,6 +526,7 @@ function statementCard(r, opts = {}) {
       <a class="product" href="#p=${encodeURIComponent(r.k)}" data-p="${esc(r.k)}">${esc(r.p)}</a>`;
   return `<div class="card">
     <div class="row"><div class="grow">${head}</div>${badge(r.st)}</div>
+    ${r.px ? `<div class="meta">${exploitBadge(r.px, r.pxc)} <span class="small muted">${esc(EXPLOIT[r.px][1])}${r.x ? "" : " See the row that reports it for the source."}</span></div>` : ""}
     ${r.v ? `<div class="meta">${r.e === "notices-file" ? "Product version" : "Versions"}: ${esc(r.v)}</div>` : ""}
     ${r.cv ? `<div class="meta">Component version: <b>${esc(r.cv)}</b></div>` : ""}
     ${r.rc === "in_range" ? `<div class="meta"><span class="badge v-workaround">Vulnerable version listed</span>

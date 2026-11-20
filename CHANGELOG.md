@@ -3,6 +3,21 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-20: Exploitation signal
+
+Statements can now say whether a product is being exploited, apart from its status.
+
+- **New `exploitation` column** in `community/assertions.csv`: `exploited`, `attempted`,
+  `demonstrated_preauth`, `demonstrated_postauth`. The bar for each level is in CONTRIBUTING.md.
+  Files with the old ten-column header still load.
+- **Site:** a product with a report shows a badge on every statement and on its product card,
+  sorts first on the component page, and each level has its own filter and count.
+- **Java4Shell (CVE-2026-114938) as of 20 November:** no product is confirmed exploited and no
+  observed attempt is tied to a product (the GreyNoise, watchTowr, Cloudflare and Previdian
+  reports are sensor hits). Marked from Calif's write-up: exploit shown with no login needed for
+  Keycloak, Jira, Confluence, Artifactory, Jenkins and PingFederate; login needed for Kafka,
+  Solr, Elasticsearch, Gerrit and Spinnaker.
+
 ## 2026-11-20: Java4Shell research pass
 
 Fresh read of every Java4Shell (CVE-2026-114938) source, plus new vendor pages. 34 new statements

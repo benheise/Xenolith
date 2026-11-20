@@ -166,6 +166,24 @@ class CommunityTest(unittest.TestCase):
         for a in rows:
             check_schema(self, a)
 
+    def test_exploitation_column(self):
+        cat = catalog.load()
+        with tempfile.TemporaryDirectory() as d:
+            p = self.write(d, "openjdk,Acme,Portal,,affected,CVE-2026-114938,community,https://lab.example/post,2026-11-20,,demonstrated_preauth\n"
+                              "openjdk,Acme,Hub,,fixed,CVE-2026-114938,vendor-advisory,https://acme.example/sa,2026-11-20,,exploited\n"
+                              "openjdk,Acme,Bad,,affected,CVE-2026-114938,,https://x.example,2026-11-20,,rumoured\n"
+                              "openjdk,Acme,NoCve,,present,,,https://x.example,2026-11-20,,exploited\n")
+            rows, errors = community.load(p, cat)
+            legacy = Path(d) / "legacy.csv"
+            legacy.write_text(",".join(community.LEGACY_COLUMNS) + "\n"
+                              "openjdk,Acme,Old,,affected,CVE-2026-114938,,https://x.example,2026-11-20,\n", encoding="utf-8")
+            old_rows, old_errors = community.load(legacy, cat)
+        self.assertEqual([r.get("exploitation") for r in rows], ["demonstrated_preauth", "exploited"])
+        self.assertEqual(rows[1]["verdict"], "fixed")   # a fix being out does not clear the signal
+        self.assertEqual(len(errors), 2)
+        self.assertEqual((len(old_rows), old_errors), (1, []))
+        self.assertNotIn("exploitation", old_rows[0])
+
     def test_repo_csv_is_valid(self):
         rows, errors = community.load(ROOT / "community" / "assertions.csv", catalog.load())
         self.assertEqual(errors, [])

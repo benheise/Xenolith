@@ -1,5 +1,11 @@
 {
- "built": "2026-11-20T18:32:38Z",
+ "built": "2026-11-20T20:06:25Z",
+ "exploitation_levels": [
+  "exploited",
+  "attempted",
+  "demonstrated_preauth",
+  "demonstrated_postauth"
+ ],
  "counts": {
   "assertions": 18109,
   "products_with_data": 8449,
@@ -108,7 +114,8 @@
     "present": 84,
     "absent": 255,
     "runtime_dependent": 2
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "brotli",
@@ -167,7 +174,8 @@
     "workaround": 88,
     "absent": 32,
     "affected": 10
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "react-server-components",
@@ -217,7 +225,8 @@
    "in_range": 0,
    "verdicts": {
     "not_affected": 9
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "log4j-core",
@@ -336,7 +345,8 @@
     "under_investigation": 159,
     "workaround": 251,
     "present": 51
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "log4j-1",
@@ -381,7 +391,8 @@
     "present": 32,
     "under_investigation": 9,
     "affected": 17
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "xz",
@@ -422,7 +433,8 @@
    "verdicts": {
     "present": 102,
     "not_affected": 7
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "openssh",
@@ -465,7 +477,8 @@
     "present": 113,
     "not_affected": 12,
     "fixed": 21
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "libwebp",
@@ -507,7 +520,8 @@
     "fixed": 30,
     "workaround": 1,
     "not_affected": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "curl",
@@ -550,7 +564,8 @@
     "not_affected": 4,
     "workaround": 11,
     "absent": 4
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "openssl",
@@ -658,7 +673,8 @@
     "under_investigation": 1,
     "affected": 2,
     "absent": 248
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "spring-framework",
@@ -704,7 +720,8 @@
     "present": 58,
     "fixed": 26,
     "workaround": 5
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "commons-text",
@@ -747,7 +764,8 @@
     "fixed": 19,
     "not_affected": 12,
     "workaround": 5
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "glibc",
@@ -790,7 +808,8 @@
     "fixed": 19,
     "not_affected": 2,
     "workaround": 10
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "openjdk",
@@ -861,6 +880,10 @@
     "not_affected": 121,
     "present": 100,
     "absent": 30
+   },
+   "exploitation": {
+    "demonstrated_postauth": 5,
+    "demonstrated_preauth": 6
    }
   },
   {
@@ -975,7 +998,8 @@
     "affected": 11,
     "not_affected": 19,
     "workaround": 14
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "tomcat",
@@ -1180,7 +1204,8 @@
     "absent": 11,
     "not_affected": 20,
     "affected": 6
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "sudo",
@@ -1248,7 +1273,8 @@
     "workaround": 2,
     "fixed": 50,
     "not_affected": 9
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "jquery",
@@ -1291,7 +1317,8 @@
     "workaround": 15,
     "fixed": 75,
     "not_affected": 20
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "erlang-otp",
@@ -1343,7 +1370,8 @@
     "fixed": 55,
     "present": 39,
     "affected": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "activemq",
@@ -1427,7 +1455,8 @@
     "workaround": 2,
     "not_affected": 7,
     "absent": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "struts2",
@@ -1565,7 +1594,8 @@
     "fixed": 1,
     "present": 5,
     "not_affected": 57
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "apache-httpd",
@@ -1643,7 +1673,8 @@
     "affected": 1,
     "fixed": 20,
     "not_affected": 16
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "squid",
@@ -1686,7 +1717,8 @@
     "present": 3,
     "fixed": 1,
     "workaround": 5
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "axis1",
@@ -1732,7 +1764,8 @@
     "fixed": 1,
     "present": 13,
     "workaround": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "zlib",
@@ -1777,7 +1810,8 @@
     "present": 156,
     "fixed": 53,
     "affected": 3
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "expat",
@@ -1848,7 +1882,8 @@
     "fixed": 129,
     "affected": 4,
     "not_affected": 7
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "freetype",
@@ -1895,7 +1930,8 @@
     "affected": 1,
     "not_affected": 7,
     "workaround": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "libssh",
@@ -1941,7 +1977,8 @@
     "workaround": 4,
     "not_affected": 3,
     "fixed": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "rsync",
@@ -1983,7 +2020,8 @@
     "fixed": 4,
     "affected": 1,
     "not_affected": 5
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "samba",
@@ -2033,7 +2071,8 @@
     "fixed": 43,
     "not_affected": 1,
     "affected": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "dnsmasq",
@@ -2077,7 +2116,8 @@
     "present": 25,
     "affected": 2,
     "not_affected": 12
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "libvpx",
@@ -2119,7 +2159,8 @@
     "fixed": 22,
     "workaround": 4,
     "not_affected": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "snakeyaml",
@@ -2161,7 +2202,8 @@
     "affected": 18,
     "not_affected": 8,
     "fixed": 26
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "jackson-databind",
@@ -2236,7 +2278,8 @@
     "workaround": 12,
     "affected": 10,
     "not_affected": 4
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "commons-collections",
@@ -2282,7 +2325,8 @@
     "fixed": 64,
     "affected": 6,
     "not_affected": 3
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "xstream",
@@ -2324,7 +2368,8 @@
     "not_affected": 17,
     "affected": 9,
     "fixed": 11
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "h2",
@@ -2366,7 +2411,8 @@
     "affected": 13,
     "not_affected": 5,
     "fixed": 12
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "commons-configuration",
@@ -2408,7 +2454,8 @@
     "not_affected": 6,
     "fixed": 3,
     "affected": 7
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "pgjdbc",
@@ -2470,7 +2517,8 @@
     "fixed": 21,
     "workaround": 7,
     "not_affected": 7
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "tika",
@@ -2512,7 +2560,8 @@
     "fixed": 2,
     "absent": 1,
     "not_affected": 4
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "commons-fileupload",
@@ -2552,7 +2601,8 @@
    "verdicts": {
     "present": 38,
     "not_affected": 11
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "net-snmp",
@@ -2594,7 +2644,8 @@
     "fixed": 27,
     "workaround": 2,
     "not_affected": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "commons-beanutils",
@@ -2672,7 +2723,8 @@
     "workaround": 20,
     "absent": 4,
     "not_affected": 5
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "groovy",
@@ -2714,7 +2766,8 @@
     "not_affected": 1,
     "fixed": 16,
     "workaround": 7
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "spring-security",
@@ -2764,7 +2817,8 @@
     "not_affected": 8,
     "fixed": 2,
     "affected": 10
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "ghostscript",
@@ -2819,7 +2873,8 @@
     "not_affected": 3,
     "workaround": 3,
     "affected": 1
-   }
+   },
+   "exploitation": {}
   },
   {
    "id": "imagemagick",
@@ -2864,7 +2919,8 @@
     "present": 3,
     "workaround": 2,
     "fixed": 14
-   }
+   },
+   "exploitation": {}
   }
  ],
  "sources": [

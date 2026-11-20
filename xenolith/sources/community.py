@@ -7,11 +7,12 @@ import re
 from pathlib import Path
 
 from ..catalog import Catalog, CVE_RE
-from ..model import EVIDENCE, STATUSES, make_assertion
+from ..model import EVIDENCE, EXPLOITATION, STATUSES, make_assertion
 
 SOURCE_ID = "community"
 COLUMNS = ["component", "supplier", "product", "versions", "status", "cves",
-           "evidence", "source_url", "date", "notes"]
+           "evidence", "source_url", "date", "notes", "exploitation"]
+LEGACY_COLUMNS = COLUMNS[:-1]   # files written before the exploitation column existed still load
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 REPO_FILE_URL = "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv"
 
@@ -24,10 +25,11 @@ def load(path: Path, catalog: Catalog) -> tuple[list[dict], list[str]]:
         return out, errors
     with path.open(encoding="utf-8", newline="") as fh:
         reader = csv.DictReader(fh)
-        if reader.fieldnames != COLUMNS:
+        if reader.fieldnames not in (COLUMNS, LEGACY_COLUMNS):
             return out, [f"{path.name}: header must be exactly: {','.join(COLUMNS)}"]
         for n, row in enumerate(reader, start=2):
-            row = {k: (v or "").strip() for k, v in row.items()}
+            row = {k: (v or "").strip() for k, v in row.items() if k}
+            row.setdefault("exploitation", "")
             if not any(row.values()):
                 continue
             where = f"{path.name} line {n}"
@@ -57,6 +59,13 @@ def load(path: Path, catalog: Catalog) -> tuple[list[dict], list[str]]:
             if wrong:
                 errors.append(f"{where}: {', '.join(wrong)} not listed for {comp} in catalog/components.yaml")
                 continue
+            if row["exploitation"]:
+                if row["exploitation"] not in EXPLOITATION:
+                    errors.append(f"{where}: exploitation must be empty or one of {', '.join(EXPLOITATION)}")
+                    continue
+                if not cves:
+                    errors.append(f"{where}: an exploitation level needs the CVE it applies to")
+                    continue
             out.append(make_assertion(
                 component=comp,
                 supplier=row["supplier"],
@@ -72,5 +81,6 @@ def load(path: Path, catalog: Catalog) -> tuple[list[dict], list[str]]:
                 updated=row["date"],
                 found_via="community",
                 discovery_path=[f"{REPO_FILE_URL}#L{n}"],
+                exploitation=row["exploitation"],
             ))
     return out, errors

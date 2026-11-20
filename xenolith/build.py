@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .catalog import Catalog, normalize_name
-from .model import dedupe, product_key, read_ndjson
+from .model import EXPLOITATION, dedupe, product_key, read_ndjson
 from .sources.notices import iter_inventories
 from .versions import check as range_check
 from . import crosswalk
@@ -171,6 +171,20 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             out["h"] = a["sha256"]
         return out
 
+    # Strongest exploitation level reported for each product and component. Every statement
+    # about that product carries it ("px"), so a vendor's own row shows the signal even when
+    # the report came from someone else; the row that made the report also carries "x".
+    exploit_rank = {level: i for i, level in enumerate(EXPLOITATION)}
+    product_exploit: dict[tuple[str, str], str] = {}
+    exploit_cves: dict[tuple[str, str], list[str]] = {}
+    for a in assertions:
+        level = a.get("exploitation")
+        if level:
+            pk = (a["product_key"], a["component"])
+            if pk not in product_exploit or exploit_rank[level] < exploit_rank[product_exploit[pk]]:
+                product_exploit[pk] = level
+                exploit_cves[pk] = sorted(a["cves"])
+
     components_meta = []
     vulnerable_versions: dict[tuple[str, str], bool] = {}
     for comp in catalog.components.values():
@@ -192,6 +206,9 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
                 "n": a["notes"][:FRONTEND_NOTES_LIMIT], "cat": a.get("category"), "d": a["updated"],
                 **({"cv": a["component_version"]} if a.get("component_version") else {}),
                 **({"rc": rc["status"], "rcc": rc["cves"], "rcv": rc["versions"]} if rc and rc["status"] != "unknown" else {}),
+                **({"x": a["exploitation"]} if a.get("exploitation") else {}),
+                **({"px": product_exploit[(a["product_key"], comp.id)], "pxc": exploit_cves[(a["product_key"], comp.id)]}
+                   if (a["product_key"], comp.id) in product_exploit else {}),
                 **prov_fields(a),
             })
         (comp_dir / f"{comp.id}.json").write_text(json.dumps(slim, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
@@ -203,6 +220,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             "contains": sum(1 for a in rows if a["contains"] is True),
             "in_range": in_range,
             "verdicts": dict(verdicts),
+            # products per exploitation level, strongest level per product
+            "exploitation": dict(Counter(level for (_, cid), level in product_exploit.items() if cid == comp.id)),
         })
 
     inventories = build_inventories(data_dir, out_dir, remap)
@@ -223,6 +242,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             **({"vr": sorted(cid for (k, cid) in vulnerable_versions if k == key)}
                if any(k == key for (k, _) in vulnerable_versions) else {}),
             **({"cpe": sorted(product_cpes[key])[:4]} if product_cpes.get(key) else {}),
+            **({"x": {cid: product_exploit[(key, cid)] for cid in sorted(comps) if (key, cid) in product_exploit}}
+               if any((key, cid) in product_exploit for cid in comps) else {}),
         })
     spine_only = 0
     for sp in spine:
@@ -273,6 +294,7 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
 
     meta = {
         "built": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "exploitation_levels": list(EXPLOITATION),
         "counts": {
             "assertions": len(assertions),
             "products_with_data": len(set(by_product) | set(inventories)),

@@ -61,7 +61,7 @@ The output says how many components were extracted and by which parser. If it sa
 **File:** [`community/assertions.csv`](community/assertions.csv). One row per product and component. The header must stay exactly:
 
 ```
-component,supplier,product,versions,status,cves,evidence,source_url,date,notes
+component,supplier,product,versions,status,cves,evidence,source_url,date,notes,exploitation
 ```
 
 | Column | Required | Allowed values / format |
@@ -76,6 +76,7 @@ component,supplier,product,versions,status,cves,evidence,source_url,date,notes
 | `source_url` | yes | `https://` link to the evidence |
 | `date` | yes | `YYYY-MM-DD`, the date the source made the statement |
 | `notes` | no | Short context in your own words |
+| `exploitation` | no | Empty, or `exploited`, `attempted`, `demonstrated_preauth`, `demonstrated_postauth`. See below |
 
 What the statuses mean:
 
@@ -89,6 +90,17 @@ What the statuses mean:
 | `not_affected` | Not affected (component may or may not be present) |
 | `present` | The component is in the product; no CVE is assessed |
 | `absent` | The component is not in the product |
+
+**Exploitation** is a separate signal from the status, because a product can have a fix out and still be the one attackers are breaking into. It is the strongest reason to patch a product now, so the bar is a named source that says it about this product, not about the vulnerability in general.
+
+| Level | Use when a named source says | Not enough |
+|---|---|---|
+| `exploited` | This product was compromised in the wild through this CVE (the vendor, a national CERT, CISA KEV naming the product, or an incident responder) | The CVE is in KEV but the report names another product |
+| `attempted` | Exploit attempts aimed at this product were observed, with no confirmed compromise | Internet-wide scanning or honeypot hits that are not tied to a product |
+| `demonstrated_preauth` | A researcher has a working exploit for this product that needs no login, even if it is private | A crash-only proof of concept |
+| `demonstrated_postauth` | The same, but the exploit needs a login | |
+
+Put the level on a row whose `source_url` is the report itself (usually a `community` evidence row beside the vendor's own row), with the CVE in `cves`. The site shows the strongest level on every statement for that product and lists those products first. Raise a level when a better source appears; never lower `exploited`.
 
 Examples:
 
