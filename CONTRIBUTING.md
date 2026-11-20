@@ -182,11 +182,18 @@ python -m xenolith prepare scan.cdx.json \
 
 ## Other changes
 
-**What belongs on the watchlist.** The census stores every component a vendor lists; the watchlist is the subset that gets version-range checks and vendor statements. A component belongs on it when products commonly bundle it and it has a critical or high-severity bug reachable over the network that meets at least one of these:
+**What belongs on the watchlist.** The census stores every component a vendor lists; the watchlist is the subset that gets version-range checks and vendor statements. A component belongs on it when it is shared (see below) and it has a critical or high-severity bug reachable over the network that meets at least one of these:
 
 - it is exploited in the wild (CISA KEV or another credible report);
 - it has a name or a public exploit or proof of concept;
 - it has set off a wave of vendor advisories, with several unrelated vendors publishing statements about it.
+
+"Shared" means either of two things:
+
+- **A third-party component** that products from different vendors commonly bundle (Log4j, OpenSSL, nginx).
+- **A vendor's own engine** that the vendor ships across several of its product lines and reports on product by product: the F5 Traffic Management Microkernel in BIG-IP modules and BIG-IP Next, FortiOS code in FortiProxy and FortiSwitchManager, the VPN engine behind Ivanti Connect Secure, Policy Secure and ZTA gateways. One bug there puts several products on the list at once, and the vendor's advisory is the only place that says which. A flaw in a single product with no shared engine doesn't qualify; that is what the vendor's own advisory feed is for.
+
+A first-party engine never shows up in a notices file, so its entry has no `notices_names` and needs no `affected:` ranges (there is nothing to range-check; the versions go in each statement), and its statements all come from the vendor's advisories. Name the entry after the engine or the product family (`f5-tmm`, `fortios`), and say in a comment which product lines share it.
 
 CISA KEV is one signal among these, never the filter: Java4Shell, NGINX2Root and Squidbleed were added before any KEV listing. Look for candidates in oss-security, critical GitHub advisories, vendor advisory waves and KEV, and rank them by how many products in the stored inventories list the component.
 

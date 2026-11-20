@@ -61,6 +61,7 @@
   .badge.x-exploited { background: var(--affected); border-color: var(--affected); color: var(--bg); }
   .badge.x-attempted, .badge.x-demonstrated_preauth { color: var(--affected); }
   .badge.x-demonstrated_postauth { color: var(--workaround); }
+  .badge[class*="x-"] { white-space: normal; border-radius: 12px; }
   .v-fixed { color: var(--fixed); } .v-under_investigation { color: var(--investigating); }
   .v-runtime_dependent { color: var(--runtime); } .v-present { color: var(--present); }
   .v-not_affected, .v-absent, .v-unknown { color: var(--neutral); }
@@ -394,6 +395,7 @@ function compCard(c) {
   return `<button class="card" data-c="${esc(c.id)}">
     <h3>${esc(c.name)}</h3>
     <div class="small muted">${incs}</div>
+    ${c.kev ? `<div class="small" style="margin-top:4px"><span class="badge x-exploited">Exploited (CISA KEV)</span></div>` : ""}
     <div class="small" style="margin-top:6px"><b>${fmt(c.products)}</b> products · <b>${fmt(c.contains)}</b> confirmed to contain it</div>
   </button>`;
 }
@@ -439,6 +441,8 @@ async function showComponent(id, filterKey, text) {
     <div class="small" style="margin-top:4px"><b>${esc(i.name)}</b> (${esc(i.year)}):
       ${(i.cves || []).map(v => `<a class="cve" href="https://www.cve.org/CVERecord?id=${esc(v)}" target="_blank" rel="noopener">${esc(v)}</a>`).join(" ")}
       ${(i.trackers || []).map(u => ` · tracker: ${link(u)}`).join("")}
+      ${i.kev ? `<div><span class="badge x-exploited" title="CISA lists this vulnerability as exploited in the wild. KEV names the component, not the products that embed it.">Exploited in the wild (CISA KEV)</span>
+        <span class="small muted">${Object.entries(i.kev).map(([v, d]) => `${esc(v)} since ${esc(d)}`).join(" · ")}${(i.kev_ransomware || []).length ? " · used in ransomware attacks" : ""}</span></div>` : ""}
       ${i.note ? `<div class="muted">${esc(i.note)}</div>` : ""}
     </div>`).join("");
   app.innerHTML = `

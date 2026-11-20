@@ -148,8 +148,25 @@ def cmd_community(args) -> int:
     return 0
 
 
+def _write_watchlist_kev(kev: list[dict]) -> int:
+    tracked = set(catalog_mod.load().cve_to_component)
+    found = cvelist.watchlist_kev(kev, tracked)
+    path = DATA / "spine" / "kev_watchlist.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"tracked": len(tracked), "cves": found}, indent=1) + "\n", encoding="utf-8")
+    return len(found)
+
+
+def cmd_kev(args) -> int:
+    """Check every watchlist CVE against CISA KEV (a small daily fetch, unlike the full spine)."""
+    n = _write_watchlist_kev(cvelist.load_kev(Path(args.kev) if args.kev else None))
+    print(f"kev: {n} watchlist CVEs are in CISA KEV")
+    return 0
+
+
 def cmd_spine(args) -> int:
     kev = cvelist.load_kev(Path(args.kev) if args.kev else None)
+    _write_watchlist_kev(kev)
     out, stats = cvelist.build(Path(args.cves) if args.cves else None, kev, min_cves=args.min_cves)
     n = write_ndjson(DATA / "spine" / "products.ndjson", out)
     print(f"spine: {n} products  {json.dumps(stats)}")
@@ -218,6 +235,9 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("-o", "--output", help="output path (default community/sboms/<supplier>/<product>--<version>.cdx.json)")
     r.set_defaults(fn=lambda a: prepare_mod.run(a, ROOT, catalog_mod.load()))
 
+    k = sub.add_parser("kev", help="check watchlist CVEs against CISA KEV")
+    k.add_argument("--kev", help="path to a downloaded KEV CSV (default: fetch it)")
+    k.set_defaults(fn=cmd_kev)
     s = sub.add_parser("spine", help="build the product spine from cvelistV5 and CISA KEV")
     s.add_argument("--cves", help="path to an extracted cvelistV5 'cves' directory (omit for KEV-only)")
     s.add_argument("--kev", help="local KEV CSV (default: download from cisagov/kev-data)")

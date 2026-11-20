@@ -3,6 +3,41 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-20: First-party engines and an exploitation review
+
+**Criteria.** The watchlist now also takes a vendor's own engine that it ships across several
+product lines and reports on product by product (CONTRIBUTING.md, "What belongs on the
+watchlist"). These entries have no notices patterns and need no version ranges.
+
+**New components (48 to 52), 60 statements, each read on the vendor's advisory:**
+
+- `netscaler` (NetScaler ADC and Gateway): CVE-2026-3055, CVE-2026-8452, CVE-2026-19490,
+  CVE-2026-88771, CVE-2026-88772, CVE-2026-88779. Citrix reports exploits of 88771 and 88772.
+- `fortios` (FortiOS code in FortiProxy, FortiSwitchManager, FortiWeb, FortiManager,
+  FortiAnalyzer, FortiNAC-F): the FortiCloud SSO login bypasses CVE-2025-59718 and
+  CVE-2026-24858, and the CAPWAP daemon overflow CVE-2025-25249.
+- `pan-os` (firewalls, Panorama, Prisma Access, Cloud NGFW): CVE-2026-0300, CVE-2026-0257,
+  CVE-2026-0322.
+- `cisco-asa` (ASA Software and the ASA code in FTD): CVE-2025-20333, CVE-2025-20362,
+  CVE-2026-20349, CVE-2026-76418.
+- `f5-tmm` gains CVE-2026-94127 (BIG-IP APM OAuth), which F5 says has been exploited.
+
+**Exploitation review of the whole census:**
+
+- New `python -m xenolith kev` step checks every watchlist CVE against CISA KEV on each refresh.
+  51 of 105 tracked CVEs are listed, across 26 of 52 components. Each incident now shows it on
+  the component page and card. KEV names the component, not the products embedding it, so this
+  is separate from the product-level signal.
+- Products marked `exploited`, each from a source that names the product: NetScaler ADC and
+  Gateway, PAN-OS, Cisco ASA and FTD, BIG-IP APM, and for Apache Axis 1.x Confluence Data Center
+  and N-able N-central (Rapid7). PAN-OS also carries an `attempted` report for CVE-2026-0257.
+- Not marked: Fortinet products (Fortinet and CISA report exploitation without naming the
+  product) and every product embedding a third-party component whose KEV entry names only the
+  component (Log4j, Struts, Tomcat and the rest).
+- Looked at and left out: Ivanti Connect Secure (exploited, but one product, no shared engine),
+  Check Point Gaia (the exploited flaws are in different products), F5 CVE-2025-53521 (apmd, not
+  TMM), Fortinet CVE-2025-61624 (needs a privileged user).
+
 ## 2026-11-20: F5 TMM (BIG-IP data plane)
 
 New component `f5-tmm` (48 on the watchlist) for the six critical TMM stack overflows in F5's

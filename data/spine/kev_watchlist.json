@@ -1,0 +1,311 @@
+{
+ "tracked": 105,
+ "cves": {
+  "CVE-2014-0160": {
+   "added": "2022-05-04",
+   "ransomware": false,
+   "vendor": "OpenSSL",
+   "product": "OpenSSL"
+  },
+  "CVE-2016-3714": {
+   "added": "2024-09-09",
+   "ransomware": false,
+   "vendor": "ImageMagick",
+   "product": "ImageMagick"
+  },
+  "CVE-2017-12617": {
+   "added": "2022-03-25",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Tomcat"
+  },
+  "CVE-2017-5638": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Apache",
+   "product": "Struts"
+  },
+  "CVE-2017-7494": {
+   "added": "2023-03-30",
+   "ransomware": true,
+   "vendor": "Samba",
+   "product": "Samba"
+  },
+  "CVE-2017-9805": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Struts"
+  },
+  "CVE-2018-11776": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Struts"
+  },
+  "CVE-2020-11023": {
+   "added": "2025-01-23",
+   "ransomware": false,
+   "vendor": "JQuery",
+   "product": "JQuery"
+  },
+  "CVE-2020-17530": {
+   "added": "2021-11-03",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Struts"
+  },
+  "CVE-2020-1938": {
+   "added": "2022-03-03",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Tomcat"
+  },
+  "CVE-2021-3156": {
+   "added": "2022-04-06",
+   "ransomware": false,
+   "vendor": "Sudo",
+   "product": "Sudo"
+  },
+  "CVE-2021-39144": {
+   "added": "2023-03-10",
+   "ransomware": false,
+   "vendor": "XStream",
+   "product": "XStream"
+  },
+  "CVE-2021-41773": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Apache",
+   "product": "HTTP Server"
+  },
+  "CVE-2021-42013": {
+   "added": "2021-11-03",
+   "ransomware": true,
+   "vendor": "Apache",
+   "product": "HTTP Server"
+  },
+  "CVE-2021-44228": {
+   "added": "2021-12-10",
+   "ransomware": true,
+   "vendor": "Apache",
+   "product": "Log4j2"
+  },
+  "CVE-2021-45046": {
+   "added": "2023-05-01",
+   "ransomware": true,
+   "vendor": "Apache",
+   "product": "Log4j2"
+  },
+  "CVE-2022-22965": {
+   "added": "2022-04-04",
+   "ransomware": false,
+   "vendor": "VMware",
+   "product": "Spring Framework"
+  },
+  "CVE-2023-46604": {
+   "added": "2023-11-02",
+   "ransomware": true,
+   "vendor": "Apache",
+   "product": "ActiveMQ"
+  },
+  "CVE-2023-4863": {
+   "added": "2023-09-13",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium WebP"
+  },
+  "CVE-2023-4911": {
+   "added": "2023-11-21",
+   "ransomware": false,
+   "vendor": "GNU",
+   "product": "GNU C Library"
+  },
+  "CVE-2023-5217": {
+   "added": "2023-10-02",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Chromium libvpx"
+  },
+  "CVE-2024-38475": {
+   "added": "2025-05-01",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "HTTP Server"
+  },
+  "CVE-2024-4577": {
+   "added": "2024-06-12",
+   "ransomware": true,
+   "vendor": "PHP Group",
+   "product": "PHP"
+  },
+  "CVE-2025-20333": {
+   "added": "2025-09-25",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense"
+  },
+  "CVE-2025-20362": {
+   "added": "2025-09-25",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense"
+  },
+  "CVE-2025-24813": {
+   "added": "2025-04-01",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Tomcat"
+  },
+  "CVE-2025-25249": {
+   "added": "2026-09-09",
+   "ransomware": false,
+   "vendor": "Fortinet",
+   "product": "Multiple Products"
+  },
+  "CVE-2025-27363": {
+   "added": "2025-05-06",
+   "ransomware": false,
+   "vendor": "FreeType",
+   "product": "FreeType"
+  },
+  "CVE-2025-32433": {
+   "added": "2025-06-09",
+   "ransomware": false,
+   "vendor": "Erlang",
+   "product": "Erlang/OTP"
+  },
+  "CVE-2025-32463": {
+   "added": "2025-09-29",
+   "ransomware": false,
+   "vendor": "Sudo",
+   "product": "Sudo"
+  },
+  "CVE-2025-55182": {
+   "added": "2025-12-05",
+   "ransomware": true,
+   "vendor": "Meta",
+   "product": "React Server Components"
+  },
+  "CVE-2025-59718": {
+   "added": "2025-12-16",
+   "ransomware": false,
+   "vendor": "Fortinet",
+   "product": "Multiple Products"
+  },
+  "CVE-2026-0257": {
+   "added": "2026-05-29",
+   "ransomware": true,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2026-0300": {
+   "added": "2026-05-06",
+   "ransomware": false,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2026-0322": {
+   "added": "2026-10-14",
+   "ransomware": false,
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS"
+  },
+  "CVE-2026-109618": {
+   "added": "2026-10-26",
+   "ransomware": false,
+   "vendor": "PHP Group",
+   "product": "PHP"
+  },
+  "CVE-2026-109619": {
+   "added": "2026-10-26",
+   "ransomware": false,
+   "vendor": "PHP Group",
+   "product": "PHP"
+  },
+  "CVE-2026-111497": {
+   "added": "2026-10-27",
+   "ransomware": false,
+   "vendor": "Google",
+   "product": "Brotli"
+  },
+  "CVE-2026-19490": {
+   "added": "2026-09-09",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler"
+  },
+  "CVE-2026-20349": {
+   "added": "2026-08-11",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)"
+  },
+  "CVE-2026-24858": {
+   "added": "2026-01-27",
+   "ransomware": false,
+   "vendor": "Fortinet",
+   "product": "Multiple Products"
+  },
+  "CVE-2026-3055": {
+   "added": "2026-03-30",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler"
+  },
+  "CVE-2026-34197": {
+   "added": "2026-04-16",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "ActiveMQ"
+  },
+  "CVE-2026-34486": {
+   "added": "2026-08-04",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Tomcat"
+  },
+  "CVE-2026-76418": {
+   "added": "2026-10-29",
+   "ransomware": false,
+   "vendor": "Cisco",
+   "product": "Secure Firewall ASA Software and Cisco Secure FTD Software"
+  },
+  "CVE-2026-8452": {
+   "added": "2026-08-26",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler ADC and NetScaler Gateway"
+  },
+  "CVE-2026-88771": {
+   "added": "2026-09-27",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler"
+  },
+  "CVE-2026-88772": {
+   "added": "2026-09-27",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler"
+  },
+  "CVE-2026-88779": {
+   "added": "2026-10-04",
+   "ransomware": false,
+   "vendor": "Citrix",
+   "product": "NetScaler"
+  },
+  "CVE-2026-90436": {
+   "added": "2026-11-18",
+   "ransomware": false,
+   "vendor": "Apache",
+   "product": "Axis"
+  },
+  "CVE-2026-94127": {
+   "added": "2026-09-22",
+   "ransomware": false,
+   "vendor": "F5",
+   "product": "BIG-IP APM"
+  }
+ }
+}

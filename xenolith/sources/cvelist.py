@@ -85,6 +85,18 @@ def load_kev(path: Path | None = None) -> list[dict]:
     return list(csv.DictReader(io.StringIO(text)))
 
 
+def watchlist_kev(kev_rows: list[dict], tracked: set[str]) -> dict[str, dict]:
+    """KEV entries for the CVEs on the watchlist: the catalog's own evidence that a tracked
+    vulnerability is exploited. KEV names the component here, not the products embedding it."""
+    out: dict[str, dict] = {}
+    for r in kev_rows:
+        cve = (r.get("cveID") or "").upper()
+        if cve in tracked:
+            out[cve] = {"added": r.get("dateAdded", ""), "ransomware": r.get("knownRansomwareCampaignUse", "") == "Known",
+                        "vendor": r.get("vendorProject", ""), "product": r.get("product", "")}
+    return dict(sorted(out.items()))
+
+
 def iter_records(cve_dir: Path) -> Iterator[dict]:
     for path in cve_dir.rglob("CVE-*.json"):
         try:

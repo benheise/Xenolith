@@ -1288,9 +1288,11 @@ components:
               - {introduced: '7.0.0', fixed: '7.0.1-1'}
         trackers: []
 
-  # First-party engine, not a third-party library: it never appears in a notices file, so
-  # everything here comes from F5's own advisories. It is on the list because F5 ships the
-  # same engine in several product lines and publishes a status for each.
+  # ---- First-party engines: a vendor's own engine shared across its product lines. ----
+  # They never appear in a notices file, so there are no notices_names, the ranges are the
+  # vendor's release numbers, and every statement comes from the vendor's own advisories.
+
+  # Shared by the BIG-IP modules (LTM, APM, DNS, PEM...) and BIG-IP Next for Kubernetes / CNF.
   - id: f5-tmm
     name: F5 Traffic Management Microkernel (TMM)
     upstream: https://my.f5.com/manage/s/article/K44525501
@@ -1323,4 +1325,122 @@ components:
               - {introduced: '17.1.0', last_affected: '17.1.3'}
               - {introduced: '17.5.0', last_affected: '17.5.1'}
               - {introduced: '21.1.0', last_affected: '21.1.0'}
+        trackers: []
+      - name: BIG-IP APM OAuth heap overflow
+        year: 2026
+        cves: [CVE-2026-94127]
+        note: >-
+          Heap overflow (CWE-122, 9.8) that runs code with no login when BIG-IP APM acts as an
+          OAuth Authorization Server on a virtual server; APM used only as an OAuth client or
+          resource server is not exposed. F5 says it has been exploited and publishes
+          indicators of compromise; in CISA KEV since 2026-09-22. A public exploit exists
+          (watchTowr) that runs its payload inside TMM. Fixed in 21.1.0.3, 17.5.1.10 and
+          17.1.3.6. BIG-IP APM only; other modules and BIG-IP Next are not vulnerable. An
+          earlier exploited APM flaw, CVE-2025-53521, is in the apmd process, not TMM, and is
+          not tracked here.
+        trackers: []
+
+  # Shared by NetScaler ADC and NetScaler Gateway (one firmware build), and by the NetScaler
+  # instances inside Secure Private Access hybrid deployments.
+  - id: netscaler
+    name: Citrix NetScaler (ADC and Gateway firmware)
+    upstream: https://support.citrix.com/
+    purl: pkg:generic/netscaler
+    cpe: cpe:2.3:a:citrix:netscaler_application_delivery_controller
+    aliases: [netscaler adc, netscaler gateway, citrix adc, citrix gateway]
+    notices_names: []
+    incidents:
+      - name: NetScaler 2026 exploited flaws
+        year: 2026
+        cves: [CVE-2026-3055, CVE-2026-8452, CVE-2026-19490, CVE-2026-88771, CVE-2026-88772, CVE-2026-88779]
+        note: >-
+          Six flaws from five 2026 bulletins, all in CISA KEV. The worst are CVE-2026-88771
+          (code execution with no login in the default configuration, 9.5) and CVE-2026-88772
+          (memory overflow through DTLS, on by default on a VPN virtual server); Citrix says
+          both have been exploited on unmitigated systems. CVE-2026-19490 is an authentication
+          bypass and CVE-2026-8452 and CVE-2026-88779 are memory overflows on appliances set up
+          as a Gateway or AAA virtual server; CVE-2026-3055 is a memory over-read when set up as
+          a SAML identity provider. Being current on 14.1-73.41 or 13.1-64.28 (FIPS:
+          14.1-73.41 FIPS, 13.1-37.282) covers all six. Citrix-managed cloud services are
+          patched by Citrix.
+        trackers: []
+
+  # FortiOS code is reused in FortiProxy, FortiSwitchManager, FortiPAM and, for the FortiCloud
+  # single sign-on login, in FortiWeb, FortiManager and FortiAnalyzer.
+  - id: fortios
+    name: Fortinet FortiOS (shared code in FortiProxy, FortiSwitchManager and others)
+    upstream: https://fortiguard.fortinet.com/psirt
+    purl: pkg:generic/fortios
+    cpe: cpe:2.3:o:fortinet:fortios
+    aliases: [fortigate, fortiproxy, fortiswitchmanager]
+    notices_names: []
+    incidents:
+      - name: FortiCloud SSO login bypass
+        year: 2026
+        cves: [CVE-2025-59718, CVE-2026-24858]
+        note: >-
+          Two ways around the FortiCloud single sign-on admin login, both in CISA KEV. With
+          CVE-2025-59718 a forged SAML message logs in with no account (9.1); with
+          CVE-2026-24858 anyone with a FortiCloud account and a registered device could log in
+          to other customers' devices (9.4). Fortinet found the second being exploited by two
+          FortiCloud accounts in January 2026. Only devices with FortiCloud SSO login on are
+          exposed: it is off from the factory but is switched on when a device is registered to
+          FortiCare from the GUI unless the admin unticks it. Turning it off is the interim fix
+          (set admin-forticloud-sso-login disable).
+        trackers: []
+      - name: CAPWAP daemon heap overflow
+        year: 2026
+        cves: [CVE-2025-25249]
+        note: >-
+          Heap overflow in the cw_acd daemon of FortiOS and FortiSwitchManager: a crafted
+          request with no login can run code. Fortinet rates it hard to exploit because of
+          ASLR and PIE (7.4), but it is in CISA KEV since 2026-09-09.
+        trackers: []
+
+  # One PAN-OS codebase runs PA-Series and VM-Series firewalls, Panorama, Prisma Access and
+  # Cloud NGFW; each advisory says which of them a flaw reaches.
+  - id: pan-os
+    name: Palo Alto Networks PAN-OS
+    upstream: https://security.paloaltonetworks.com/
+    purl: pkg:generic/pan-os
+    cpe: cpe:2.3:o:paloaltonetworks:pan-os
+    aliases: [panos, globalprotect]
+    notices_names: []
+    incidents:
+      - name: PAN-OS 2026 exploited flaws
+        year: 2026
+        cves: [CVE-2026-0300, CVE-2026-0257, CVE-2026-0322]
+        note: >-
+          Three flaws in different services, all in CISA KEV, with exploitation or exploit
+          attempts reported by Palo Alto Networks for each. CVE-2026-0300: buffer overflow in the User-ID
+          Authentication Portal (captive portal), code execution as root with no login on
+          PA-Series and VM-Series firewalls that have the portal on. CVE-2026-0257: GlobalProtect
+          portal and gateway authentication bypass where authentication override cookies are
+          on; also reaches Prisma Access; used in ransomware attacks per KEV. CVE-2026-0322:
+          code execution in the management interface for a logged-in user, firewalls and
+          Panorama. Keeping the captive portal and the management interface off untrusted
+          networks removes most of the risk for the first and third.
+        trackers: []
+
+  # The ASA code runs standalone as ASA Software and inside Firewall Threat Defense (FTD).
+  - id: cisco-asa
+    name: Cisco Secure Firewall ASA (also inside FTD)
+    upstream: https://sec.cloudapps.cisco.com/security/center/publicationListing.x
+    purl: pkg:generic/cisco-asa
+    cpe: cpe:2.3:a:cisco:adaptive_security_appliance_software
+    aliases: [asa, ftd, firepower threat defense, lina]
+    notices_names: []
+    incidents:
+      - name: ASA and FTD remote access VPN exploited flaws
+        year: 2026
+        cves: [CVE-2025-20333, CVE-2025-20362, CVE-2026-20349, CVE-2026-76418]
+        note: >-
+          Four flaws in the SSL remote access VPN web service shared by ASA and FTD, all in
+          CISA KEV. CVE-2025-20333 (code execution as root for a VPN user, 9.9) and
+          CVE-2025-20362 (reaching restricted URLs with no login) are chained; Cisco reported a
+          new attack variant in November 2025 that reloads unpatched devices. CVE-2026-20349
+          and CVE-2026-76418 let a request with no login reload the device (8.6 each).
+          Only devices with the SSL VPN or other SSL listen sockets enabled are exposed; fixed
+          releases differ by train, so use the Cisco Software Checker. Firewall Management
+          Center is not affected by any of the four.
         trackers: []

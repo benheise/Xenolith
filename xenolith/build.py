@@ -184,6 +184,20 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
             if pk not in product_exploit or exploit_rank[level] < exploit_rank[product_exploit[pk]]:
                 product_exploit[pk] = level
                 exploit_cves[pk] = sorted(a["cves"])
+            elif level == product_exploit[pk]:   # several reports at the same level: list every CVE
+                exploit_cves[pk] = sorted(set(exploit_cves[pk]) | set(a["cves"]))
+
+    # CISA KEV status of each watchlist CVE (written by `python -m xenolith kev`).
+    kev_path = data_dir / "spine" / "kev_watchlist.json"
+    kev_cves: dict[str, dict] = json.loads(kev_path.read_text(encoding="utf-8"))["cves"] if kev_path.exists() else {}
+
+    def with_kev(incidents: list[dict]) -> list[dict]:
+        out = []
+        for inc in incidents:
+            listed = {c: kev_cves[c]["added"] for c in inc.get("cves", []) if c in kev_cves}
+            ransom = sorted(c for c in listed if kev_cves[c].get("ransomware"))
+            out.append({**inc, **({"kev": listed} if listed else {}), **({"kev_ransomware": ransom} if ransom else {})})
+        return out
 
     components_meta = []
     vulnerable_versions: dict[tuple[str, str], bool] = {}
@@ -215,7 +229,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
         verdicts = Counter(a["verdict"] for a in rows)
         components_meta.append({
             "id": comp.id, "name": comp.name, "upstream": comp.upstream, "purl": comp.purl,
-            "cpe": comp.cpe, "aliases": comp.aliases, "incidents": comp.incidents,
+            "cpe": comp.cpe, "aliases": comp.aliases, "incidents": with_kev(comp.incidents),
+            "kev": sum(1 for c in comp.cves if c in kev_cves),
             "assertions": len(rows), "products": len({a["product_key"] for a in rows}),
             "contains": sum(1 for a in rows if a["contains"] is True),
             "in_range": in_range,

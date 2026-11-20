@@ -72,6 +72,9 @@ jobs:
             echo "Not a full-registry day; keeping data/spine/products.ndjson"
           fi
 
+      - name: Check watchlist CVEs against CISA KEV
+        run: python -m xenolith kev || echo "KEV fetch failed; keeping data/spine/kev_watchlist.json"
+
       - name: Build site data
         run: python -m xenolith build
 

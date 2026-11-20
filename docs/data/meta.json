@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T20:45:17Z",
+ "built": "2026-11-20T21:01:10Z",
  "exploitation_levels": [
   "exploited",
   "attempted",
@@ -7,15 +7,15 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 18130,
-  "products_with_data": 8456,
+  "assertions": 18192,
+  "products_with_data": 8458,
   "inventories": 398,
   "inventory_components": 239659,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4702,
-  "components": 48,
+  "spine_only_shown": 4701,
+  "components": 52,
   "wanted": 83,
   "wanted_fulfilled": 6
  },
@@ -68,7 +68,11 @@
      ],
      "trackers": [
       "https://github.com/NCSC-NL/php2shell"
-     ]
+     ],
+     "kev": {
+      "CVE-2026-109618": "2026-10-26",
+      "CVE-2026-109619": "2026-10-26"
+     }
     },
     {
      "name": "PHP-CGI argument injection on Windows",
@@ -98,9 +102,16 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2024-4577": "2024-06-12"
+     },
+     "kev_ransomware": [
+      "CVE-2024-4577"
+     ]
     }
    ],
+   "kev": 3,
    "assertions": 1026,
    "products": 879,
    "contains": 487,
@@ -160,9 +171,13 @@
      ],
      "trackers": [
       "https://broccoli2shell.com/"
-     ]
+     ],
+     "kev": {
+      "CVE-2026-111497": "2026-10-27"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 372,
    "products": 267,
    "contains": 321,
@@ -216,9 +231,16 @@
         }
        ]
       }
+     ],
+     "kev": {
+      "CVE-2025-55182": "2025-12-05"
+     },
+     "kev_ransomware": [
+      "CVE-2025-55182"
      ]
     }
    ],
+   "kev": 1,
    "assertions": 9,
    "products": 9,
    "contains": 0,
@@ -330,9 +352,18 @@
      "trackers": [
       "https://github.com/NCSC-NL/log4shell",
       "https://github.com/cisagov/log4j-affected-db"
+     ],
+     "kev": {
+      "CVE-2021-44228": "2021-12-10",
+      "CVE-2021-45046": "2023-05-01"
+     },
+     "kev_ransomware": [
+      "CVE-2021-44228",
+      "CVE-2021-45046"
      ]
     }
    ],
+   "kev": 2,
    "assertions": 7402,
    "products": 6145,
    "contains": 2584,
@@ -380,6 +411,7 @@
      ]
     }
    ],
+   "kev": 0,
    "assertions": 3940,
    "products": 3829,
    "contains": 122,
@@ -426,6 +458,7 @@
      ]
     }
    ],
+   "kev": 0,
    "assertions": 109,
    "products": 41,
    "contains": 102,
@@ -468,6 +501,7 @@
      ]
     }
    ],
+   "kev": 0,
    "assertions": 161,
    "products": 70,
    "contains": 149,
@@ -508,9 +542,13 @@
         }
        ]
       }
-     ]
+     ],
+     "kev": {
+      "CVE-2023-4863": "2023-09-13"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 48,
    "products": 35,
    "contains": 47,
@@ -554,6 +592,7 @@
      ]
     }
    ],
+   "kev": 0,
    "assertions": 202,
    "products": 88,
    "contains": 194,
@@ -620,7 +659,10 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2014-0160": "2022-05-04"
+     }
     },
     {
      "name": "CMS AuthEnvelopedData stack overflow",
@@ -661,6 +703,7 @@
      "trackers": []
     }
    ],
+   "kev": 1,
    "assertions": 926,
    "products": 472,
    "contains": 595,
@@ -709,9 +752,13 @@
         }
        ]
       }
-     ]
+     ],
+     "kev": {
+      "CVE-2022-22965": "2022-04-04"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 89,
    "products": 58,
    "contains": 89,
@@ -754,6 +801,7 @@
      ]
     }
    ],
+   "kev": 0,
    "assertions": 91,
    "products": 68,
    "contains": 78,
@@ -796,9 +844,13 @@
         }
        ]
       }
-     ]
+     ],
+     "kev": {
+      "CVE-2023-4911": "2023-11-21"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 152,
    "products": 61,
    "contains": 150,
@@ -867,6 +919,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 464,
    "products": 397,
    "contains": 247,
@@ -988,6 +1041,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 140,
    "products": 67,
    "contains": 121,
@@ -1045,7 +1099,10 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2025-24813": "2025-04-01"
+     }
     },
     {
      "name": "Ghostcat (AJP file read and inclusion)",
@@ -1074,7 +1131,10 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2020-1938": "2022-03-03"
+     }
     },
     {
      "name": "JSP upload through HTTP PUT",
@@ -1108,7 +1168,10 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2017-12617": "2022-03-25"
+     }
     },
     {
      "name": "EncryptInterceptor bypass",
@@ -1138,7 +1201,10 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2026-34486": "2026-08-04"
+     }
     },
     {
      "name": "May 2026 HTTP/2, DIGEST and security-constraint fixes",
@@ -1193,6 +1259,7 @@
      "trackers": []
     }
    ],
+   "kev": 4,
    "assertions": 260,
    "products": 124,
    "contains": 229,
@@ -1240,7 +1307,10 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2021-3156": "2022-04-06"
+     }
     },
     {
      "name": "sudo chroot privilege escalation",
@@ -1261,9 +1331,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2025-32463": "2025-09-29"
+     }
     }
    ],
+   "kev": 2,
    "assertions": 99,
    "products": 79,
    "contains": 90,
@@ -1305,9 +1379,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2020-11023": "2025-01-23"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 238,
    "products": 171,
    "contains": 218,
@@ -1359,9 +1437,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2025-32433": "2025-06-09"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 95,
    "products": 52,
    "contains": 95,
@@ -1416,7 +1498,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2023-46604": "2023-11-02"
+     },
+     "kev_ransomware": [
+      "CVE-2023-46604"
+     ]
     },
     {
      "name": "Jolokia MBean remote code execution",
@@ -1442,9 +1530,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2026-34197": "2026-04-16"
+     }
     }
    ],
+   "kev": 2,
    "assertions": 44,
    "products": 35,
    "contains": 36,
@@ -1492,7 +1584,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2017-5638": "2021-11-03"
+     },
+     "kev_ransomware": [
+      "CVE-2017-5638"
+     ]
     },
     {
      "name": "Struts file upload path traversal (S2-066, S2-067)",
@@ -1583,9 +1681,15 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2017-9805": "2021-11-03",
+      "CVE-2018-11776": "2021-11-03",
+      "CVE-2020-17530": "2021-11-03"
+     }
     }
    ],
+   "kev": 4,
    "assertions": 63,
    "products": 37,
    "contains": 6,
@@ -1639,7 +1743,15 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2021-41773": "2021-11-03",
+      "CVE-2021-42013": "2021-11-03"
+     },
+     "kev_ransomware": [
+      "CVE-2021-41773",
+      "CVE-2021-42013"
+     ]
     },
     {
      "name": "mod_rewrite filesystem mapping (code execution or source disclosure)",
@@ -1661,9 +1773,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2024-38475": "2025-05-01"
+     }
     }
    ],
+   "kev": 3,
    "assertions": 99,
    "products": 47,
    "contains": 83,
@@ -1709,6 +1825,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 9,
    "products": 8,
    "contains": 9,
@@ -1753,19 +1870,25 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2026-90436": "2026-11-18"
+     }
     }
    ],
-   "assertions": 15,
-   "products": 10,
-   "contains": 15,
+   "kev": 1,
+   "assertions": 17,
+   "products": 11,
+   "contains": 17,
    "in_range": 8,
    "verdicts": {
-    "fixed": 1,
+    "fixed": 3,
     "present": 13,
     "workaround": 1
    },
-   "exploitation": {}
+   "exploitation": {
+    "exploited": 2
+   }
   },
   {
    "id": "zlib",
@@ -1801,6 +1924,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 217,
    "products": 103,
    "contains": 217,
@@ -1872,6 +1996,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 261,
    "products": 94,
    "contains": 254,
@@ -1916,9 +2041,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2025-27363": "2025-05-06"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 87,
    "products": 52,
    "contains": 79,
@@ -1968,6 +2097,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 30,
    "products": 20,
    "contains": 27,
@@ -2011,6 +2141,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 69,
    "products": 34,
    "contains": 64,
@@ -2059,9 +2190,16 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2017-7494": "2023-03-30"
+     },
+     "kev_ransomware": [
+      "CVE-2017-7494"
+     ]
     }
    ],
+   "kev": 1,
    "assertions": 57,
    "products": 52,
    "contains": 56,
@@ -2107,6 +2245,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 51,
    "products": 29,
    "contains": 39,
@@ -2147,9 +2286,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2023-5217": "2023-10-02"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 28,
    "products": 28,
    "contains": 27,
@@ -2193,6 +2336,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 132,
    "products": 94,
    "contains": 124,
@@ -2268,6 +2412,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 168,
    "products": 125,
    "contains": 164,
@@ -2316,6 +2461,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 152,
    "products": 113,
    "contains": 149,
@@ -2356,9 +2502,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2021-39144": "2023-03-10"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 75,
    "products": 61,
    "contains": 58,
@@ -2402,6 +2552,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 54,
    "products": 43,
    "contains": 49,
@@ -2445,6 +2596,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 40,
    "products": 31,
    "contains": 34,
@@ -2508,6 +2660,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 78,
    "products": 57,
    "contains": 71,
@@ -2551,6 +2704,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 32,
    "products": 18,
    "contains": 27,
@@ -2594,6 +2748,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 49,
    "products": 31,
    "contains": 38,
@@ -2635,6 +2790,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 144,
    "products": 61,
    "contains": 143,
@@ -2712,6 +2868,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 178,
    "products": 143,
    "contains": 169,
@@ -2757,6 +2914,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 58,
    "products": 47,
    "contains": 57,
@@ -2808,6 +2966,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 42,
    "products": 31,
    "contains": 34,
@@ -2863,6 +3022,7 @@
      "trackers": []
     }
    ],
+   "kev": 0,
    "assertions": 41,
    "products": 24,
    "contains": 38,
@@ -2908,9 +3068,13 @@
        ]
       }
      ],
-     "trackers": []
+     "trackers": [],
+     "kev": {
+      "CVE-2016-3714": "2024-09-09"
+     }
     }
    ],
+   "kev": 1,
    "assertions": 19,
    "products": 19,
    "contains": 19,
@@ -2973,17 +3137,219 @@
       }
      ],
      "trackers": []
+    },
+    {
+     "name": "BIG-IP APM OAuth heap overflow",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-94127"
+     ],
+     "note": "Heap overflow (CWE-122, 9.8) that runs code with no login when BIG-IP APM acts as an OAuth Authorization Server on a virtual server; APM used only as an OAuth client or resource server is not exposed. F5 says it has been exploited and publishes indicators of compromise; in CISA KEV since 2026-09-22. A public exploit exists (watchTowr) that runs its payload inside TMM. Fixed in 21.1.0.3, 17.5.1.10 and 17.1.3.6. BIG-IP APM only; other modules and BIG-IP Next are not vulnerable. An earlier exploited APM flaw, CVE-2025-53521, is in the apmd process, not TMM, and is not tracked here.",
+     "trackers": [],
+     "kev": {
+      "CVE-2026-94127": "2026-09-22"
+     }
     }
    ],
-   "assertions": 15,
+   "kev": 1,
+   "assertions": 19,
    "products": 15,
+   "contains": 7,
+   "in_range": 0,
+   "verdicts": {
+    "not_affected": 12,
+    "fixed": 7
+   },
+   "exploitation": {
+    "exploited": 1
+   }
+  },
+  {
+   "id": "netscaler",
+   "name": "Citrix NetScaler (ADC and Gateway firmware)",
+   "upstream": "https://support.citrix.com/",
+   "purl": "pkg:generic/netscaler",
+   "cpe": "cpe:2.3:a:citrix:netscaler_application_delivery_controller",
+   "aliases": [
+    "netscaler adc",
+    "netscaler gateway",
+    "citrix adc",
+    "citrix gateway"
+   ],
+   "incidents": [
+    {
+     "name": "NetScaler 2026 exploited flaws",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-3055",
+      "CVE-2026-8452",
+      "CVE-2026-19490",
+      "CVE-2026-88771",
+      "CVE-2026-88772",
+      "CVE-2026-88779"
+     ],
+     "note": "Six flaws from five 2026 bulletins, all in CISA KEV. The worst are CVE-2026-88771 (code execution with no login in the default configuration, 9.5) and CVE-2026-88772 (memory overflow through DTLS, on by default on a VPN virtual server); Citrix says both have been exploited on unmitigated systems. CVE-2026-19490 is an authentication bypass and CVE-2026-8452 and CVE-2026-88779 are memory overflows on appliances set up as a Gateway or AAA virtual server; CVE-2026-3055 is a memory over-read when set up as a SAML identity provider. Being current on 14.1-73.41 or 13.1-64.28 (FIPS: 14.1-73.41 FIPS, 13.1-37.282) covers all six. Citrix-managed cloud services are patched by Citrix.",
+     "trackers": [],
+     "kev": {
+      "CVE-2026-3055": "2026-03-30",
+      "CVE-2026-8452": "2026-08-26",
+      "CVE-2026-19490": "2026-09-09",
+      "CVE-2026-88771": "2026-09-27",
+      "CVE-2026-88772": "2026-09-27",
+      "CVE-2026-88779": "2026-10-04"
+     }
+    }
+   ],
+   "kev": 6,
+   "assertions": 13,
+   "products": 3,
+   "contains": 13,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 13
+   },
+   "exploitation": {
+    "exploited": 2
+   }
+  },
+  {
+   "id": "fortios",
+   "name": "Fortinet FortiOS (shared code in FortiProxy, FortiSwitchManager and others)",
+   "upstream": "https://fortiguard.fortinet.com/psirt",
+   "purl": "pkg:generic/fortios",
+   "cpe": "cpe:2.3:o:fortinet:fortios",
+   "aliases": [
+    "fortigate",
+    "fortiproxy",
+    "fortiswitchmanager"
+   ],
+   "incidents": [
+    {
+     "name": "FortiCloud SSO login bypass",
+     "year": 2026,
+     "cves": [
+      "CVE-2025-59718",
+      "CVE-2026-24858"
+     ],
+     "note": "Two ways around the FortiCloud single sign-on admin login, both in CISA KEV. With CVE-2025-59718 a forged SAML message logs in with no account (9.1); with CVE-2026-24858 anyone with a FortiCloud account and a registered device could log in to other customers' devices (9.4). Fortinet found the second being exploited by two FortiCloud accounts in January 2026. Only devices with FortiCloud SSO login on are exposed: it is off from the factory but is switched on when a device is registered to FortiCare from the GUI unless the admin unticks it. Turning it off is the interim fix (set admin-forticloud-sso-login disable).",
+     "trackers": [],
+     "kev": {
+      "CVE-2025-59718": "2025-12-16",
+      "CVE-2026-24858": "2026-01-27"
+     }
+    },
+    {
+     "name": "CAPWAP daemon heap overflow",
+     "year": 2026,
+     "cves": [
+      "CVE-2025-25249"
+     ],
+     "note": "Heap overflow in the cw_acd daemon of FortiOS and FortiSwitchManager: a crafted request with no login can run code. Fortinet rates it hard to exploit because of ASLR and PIE (7.4), but it is in CISA KEV since 2026-09-09.",
+     "trackers": [],
+     "kev": {
+      "CVE-2025-25249": "2026-09-09"
+     }
+    }
+   ],
+   "kev": 3,
+   "assertions": 16,
+   "products": 10,
+   "contains": 13,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 13,
+    "not_affected": 3
+   },
+   "exploitation": {}
+  },
+  {
+   "id": "pan-os",
+   "name": "Palo Alto Networks PAN-OS",
+   "upstream": "https://security.paloaltonetworks.com/",
+   "purl": "pkg:generic/pan-os",
+   "cpe": "cpe:2.3:o:paloaltonetworks:pan-os",
+   "aliases": [
+    "panos",
+    "globalprotect"
+   ],
+   "incidents": [
+    {
+     "name": "PAN-OS 2026 exploited flaws",
+     "year": 2026,
+     "cves": [
+      "CVE-2026-0300",
+      "CVE-2026-0257",
+      "CVE-2026-0322"
+     ],
+     "note": "Three flaws in different services, all in CISA KEV, with exploitation or exploit attempts reported by Palo Alto Networks for each. CVE-2026-0300: buffer overflow in the User-ID Authentication Portal (captive portal), code execution as root with no login on PA-Series and VM-Series firewalls that have the portal on. CVE-2026-0257: GlobalProtect portal and gateway authentication bypass where authentication override cookies are on; also reaches Prisma Access; used in ransomware attacks per KEV. CVE-2026-0322: code execution in the management interface for a logged-in user, firewalls and Panorama. Keeping the captive portal and the management interface off untrusted networks removes most of the risk for the first and third.",
+     "trackers": [],
+     "kev": {
+      "CVE-2026-0300": "2026-05-06",
+      "CVE-2026-0257": "2026-05-29",
+      "CVE-2026-0322": "2026-10-14"
+     },
+     "kev_ransomware": [
+      "CVE-2026-0257"
+     ]
+    }
+   ],
+   "kev": 3,
+   "assertions": 13,
+   "products": 4,
    "contains": 6,
    "in_range": 0,
    "verdicts": {
-    "fixed": 6,
-    "not_affected": 9
+    "not_affected": 7,
+    "fixed": 6
    },
-   "exploitation": {}
+   "exploitation": {
+    "exploited": 1
+   }
+  },
+  {
+   "id": "cisco-asa",
+   "name": "Cisco Secure Firewall ASA (also inside FTD)",
+   "upstream": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+   "purl": "pkg:generic/cisco-asa",
+   "cpe": "cpe:2.3:a:cisco:adaptive_security_appliance_software",
+   "aliases": [
+    "asa",
+    "ftd",
+    "firepower threat defense",
+    "lina"
+   ],
+   "incidents": [
+    {
+     "name": "ASA and FTD remote access VPN exploited flaws",
+     "year": 2026,
+     "cves": [
+      "CVE-2025-20333",
+      "CVE-2025-20362",
+      "CVE-2026-20349",
+      "CVE-2026-76418"
+     ],
+     "note": "Four flaws in the SSL remote access VPN web service shared by ASA and FTD, all in CISA KEV. CVE-2025-20333 (code execution as root for a VPN user, 9.9) and CVE-2025-20362 (reaching restricted URLs with no login) are chained; Cisco reported a new attack variant in November 2025 that reloads unpatched devices. CVE-2026-20349 and CVE-2026-76418 let a request with no login reload the device (8.6 each). Only devices with the SSL VPN or other SSL listen sockets enabled are exposed; fixed releases differ by train, so use the Cisco Software Checker. Firewall Management Center is not affected by any of the four.",
+     "trackers": [],
+     "kev": {
+      "CVE-2025-20333": "2025-09-25",
+      "CVE-2025-20362": "2025-09-25",
+      "CVE-2026-20349": "2026-08-11",
+      "CVE-2026-76418": "2026-10-29"
+     }
+    }
+   ],
+   "kev": 4,
+   "assertions": 14,
+   "products": 3,
+   "contains": 10,
+   "in_range": 0,
+   "verdicts": {
+    "fixed": 10,
+    "not_affected": 4
+   },
+   "exploitation": {
+    "exploited": 2
+   }
   }
  ],
  "sources": [
@@ -3077,11 +3443,11 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 373,
+   "assertions": 435,
    "latest": "2026-11-20",
    "fv": "community",
    "dp": [
-    "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv#L204"
+    "https://github.com/benheise/Xenolith/blob/main/community/assertions.csv#L435"
    ]
   },
   {

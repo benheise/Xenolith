@@ -586,6 +586,8 @@ class WatchlistAdditionsTest(unittest.TestCase):
         for comp in cat.components.values():
             for inc in comp.incidents:
                 self.assertTrue(inc.get("cves"), comp.id)
+                if not comp.notices_names:
+                    continue   # a vendor's own engine: no notices rows to range-check; versions live in the statements
                 ranged = {c for a in inc.get("affected") or [] for c in a["cves"]}
                 self.assertEqual(ranged, set(inc["cves"]), f"{comp.id}: {inc['name']} needs ranges for every CVE")
         self.assertIn("8u513-perf", next(i for i in cat.components["openjdk"].incidents)["note"])
