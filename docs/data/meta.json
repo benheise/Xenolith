@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T22:44:36Z",
+ "built": "2026-11-20T22:50:08Z",
  "exploitation_levels": [
   "exploited",
   "attempted",
@@ -7,14 +7,14 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 18879,
-  "products_with_data": 8536,
+  "assertions": 20214,
+  "products_with_data": 8672,
   "inventories": 398,
   "inventory_components": 239659,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4677,
+  "spine_only_shown": 4675,
   "components": 91,
   "wanted": 83,
   "wanted_fulfilled": 6
@@ -165,16 +165,16 @@
     }
    ],
    "kev": 5,
-   "assertions": 1027,
-   "products": 879,
-   "contains": 488,
+   "assertions": 1077,
+   "products": 921,
+   "contains": 535,
    "in_range": 10,
    "verdicts": {
-    "fixed": 194,
+    "fixed": 241,
     "workaround": 7,
     "affected": 203,
     "under_investigation": 76,
-    "not_affected": 206,
+    "not_affected": 209,
     "present": 84,
     "absent": 255,
     "runtime_dependent": 2
@@ -1024,17 +1024,17 @@
     }
    ],
    "kev": 13,
-   "assertions": 464,
-   "products": 397,
-   "contains": 247,
+   "assertions": 746,
+   "products": 462,
+   "contains": 520,
    "in_range": 34,
    "verdicts": {
-    "fixed": 66,
+    "fixed": 334,
     "runtime_dependent": 14,
     "workaround": 35,
-    "affected": 46,
+    "affected": 51,
     "under_investigation": 52,
-    "not_affected": 121,
+    "not_affected": 130,
     "present": 100,
     "absent": 30
    },
@@ -1421,17 +1421,17 @@
     }
    ],
    "kev": 6,
-   "assertions": 260,
-   "products": 124,
-   "contains": 229,
+   "assertions": 303,
+   "products": 127,
+   "contains": 254,
    "in_range": 37,
    "verdicts": {
-    "fixed": 146,
+    "fixed": 169,
     "present": 50,
     "workaround": 27,
     "absent": 11,
-    "not_affected": 20,
-    "affected": 6
+    "not_affected": 38,
+    "affected": 8
    },
    "exploitation": {}
   },
@@ -1723,15 +1723,15 @@
     }
    ],
    "kev": 3,
-   "assertions": 44,
-   "products": 35,
-   "contains": 36,
+   "assertions": 50,
+   "products": 40,
+   "contains": 40,
    "in_range": 17,
    "verdicts": {
-    "fixed": 17,
+    "fixed": 19,
     "present": 17,
-    "workaround": 2,
-    "not_affected": 7,
+    "workaround": 4,
+    "not_affected": 9,
     "absent": 1
    },
    "exploitation": {}
@@ -1952,14 +1952,14 @@
     }
    ],
    "kev": 8,
-   "assertions": 63,
-   "products": 37,
+   "assertions": 65,
+   "products": 38,
    "contains": 6,
    "in_range": 5,
    "verdicts": {
     "fixed": 1,
     "present": 5,
-    "not_affected": 57
+    "not_affected": 59
    },
    "exploitation": {}
   },
@@ -2083,15 +2083,16 @@
     }
    ],
    "kev": 5,
-   "assertions": 99,
-   "products": 47,
-   "contains": 83,
+   "assertions": 159,
+   "products": 90,
+   "contains": 135,
    "in_range": 43,
    "verdicts": {
     "present": 62,
-    "affected": 1,
-    "fixed": 20,
-    "not_affected": 16
+    "fixed": 68,
+    "affected": 3,
+    "not_affected": 24,
+    "workaround": 2
    },
    "exploitation": {}
   },
@@ -2376,16 +2377,16 @@
     }
    ],
    "kev": 2,
-   "assertions": 87,
-   "products": 52,
-   "contains": 79,
+   "assertions": 110,
+   "products": 71,
+   "contains": 99,
    "in_range": 34,
    "verdicts": {
     "present": 44,
-    "fixed": 33,
+    "fixed": 52,
+    "affected": 2,
     "absent": 1,
-    "affected": 1,
-    "not_affected": 7,
+    "not_affected": 10,
     "workaround": 1
    },
    "exploitation": {}
@@ -3380,16 +3381,16 @@
     }
    ],
    "kev": 1,
-   "assertions": 41,
-   "products": 24,
-   "contains": 38,
+   "assertions": 59,
+   "products": 42,
+   "contains": 56,
    "in_range": 2,
    "verdicts": {
     "present": 4,
-    "fixed": 30,
+    "fixed": 46,
     "not_affected": 3,
-    "workaround": 3,
-    "affected": 1
+    "affected": 3,
+    "workaround": 3
    },
    "exploitation": {}
   },
@@ -3464,14 +3465,15 @@
     }
    ],
    "kev": 3,
-   "assertions": 19,
+   "assertions": 51,
    "products": 19,
-   "contains": 19,
+   "contains": 50,
    "in_range": 2,
    "verdicts": {
     "present": 3,
-    "workaround": 2,
-    "fixed": 14
+    "workaround": 5,
+    "not_affected": 1,
+    "fixed": 42
    },
    "exploitation": {}
   },
@@ -4295,12 +4297,13 @@
     }
    ],
    "kev": 1,
-   "assertions": 8,
-   "products": 6,
-   "contains": 8,
+   "assertions": 10,
+   "products": 8,
+   "contains": 10,
    "in_range": 0,
    "verdicts": {
-    "present": 8
+    "present": 8,
+    "fixed": 2
    },
    "exploitation": {}
   },
@@ -4343,11 +4346,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 0,
-   "products": 0,
-   "contains": 0,
+   "assertions": 3,
+   "products": 3,
+   "contains": 2,
    "in_range": 0,
-   "verdicts": {},
+   "verdicts": {
+    "not_affected": 1,
+    "fixed": 2
+   },
    "exploitation": {}
   },
   {
@@ -4389,11 +4395,13 @@
     }
    ],
    "kev": 1,
-   "assertions": 0,
-   "products": 0,
-   "contains": 0,
+   "assertions": 2,
+   "products": 2,
+   "contains": 2,
    "in_range": 0,
-   "verdicts": {},
+   "verdicts": {
+    "fixed": 2
+   },
    "exploitation": {}
   },
   {
@@ -4438,12 +4446,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 13,
-   "products": 7,
-   "contains": 13,
+   "assertions": 17,
+   "products": 11,
+   "contains": 14,
    "in_range": 1,
    "verdicts": {
-    "present": 13
+    "present": 13,
+    "affected": 1,
+    "not_affected": 3
    },
    "exploitation": {}
   },
@@ -5322,12 +5332,16 @@
     }
    ],
    "kev": 71,
-   "assertions": 3,
-   "products": 1,
-   "contains": 3,
+   "assertions": 180,
+   "products": 41,
+   "contains": 120,
    "in_range": 0,
    "verdicts": {
-    "present": 3
+    "affected": 2,
+    "fixed": 108,
+    "present": 3,
+    "not_affected": 60,
+    "workaround": 7
    },
    "exploitation": {}
   },
@@ -5383,12 +5397,14 @@
     }
    ],
    "kev": 2,
-   "assertions": 32,
-   "products": 10,
-   "contains": 32,
+   "assertions": 44,
+   "products": 21,
+   "contains": 40,
    "in_range": 1,
    "verdicts": {
-    "present": 32
+    "present": 32,
+    "fixed": 8,
+    "not_affected": 4
    },
    "exploitation": {}
   },
@@ -5431,12 +5447,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 2,
-   "products": 1,
-   "contains": 2,
+   "assertions": 12,
+   "products": 11,
+   "contains": 4,
    "in_range": 2,
    "verdicts": {
-    "present": 2
+    "present": 2,
+    "not_affected": 8,
+    "fixed": 2
    },
    "exploitation": {}
   },
@@ -5463,12 +5481,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 26,
-   "products": 6,
-   "contains": 26,
+   "assertions": 54,
+   "products": 34,
+   "contains": 54,
    "in_range": 0,
    "verdicts": {
-    "present": 26
+    "present": 26,
+    "fixed": 27,
+    "affected": 1
    },
    "exploitation": {}
   },
@@ -5551,12 +5571,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 3,
-   "products": 1,
-   "contains": 3,
+   "assertions": 9,
+   "products": 7,
+   "contains": 9,
    "in_range": 0,
    "verdicts": {
-    "present": 3
+    "present": 3,
+    "affected": 4,
+    "fixed": 2
    },
    "exploitation": {}
   },
@@ -5583,11 +5605,13 @@
     }
    ],
    "kev": 1,
-   "assertions": 0,
-   "products": 0,
-   "contains": 0,
+   "assertions": 3,
+   "products": 3,
+   "contains": 3,
    "in_range": 0,
-   "verdicts": {},
+   "verdicts": {
+    "fixed": 3
+   },
    "exploitation": {}
   },
   {
@@ -5660,12 +5684,15 @@
     }
    ],
    "kev": 1,
-   "assertions": 8,
-   "products": 4,
-   "contains": 8,
+   "assertions": 28,
+   "products": 24,
+   "contains": 26,
    "in_range": 0,
    "verdicts": {
-    "present": 8
+    "fixed": 13,
+    "present": 8,
+    "not_affected": 2,
+    "workaround": 5
    },
    "exploitation": {}
   },
@@ -5746,12 +5773,15 @@
     }
    ],
    "kev": 3,
-   "assertions": 8,
-   "products": 3,
-   "contains": 8,
+   "assertions": 36,
+   "products": 26,
+   "contains": 36,
    "in_range": 0,
    "verdicts": {
-    "present": 8
+    "present": 8,
+    "workaround": 2,
+    "fixed": 21,
+    "affected": 5
    },
    "exploitation": {}
   },
@@ -5778,12 +5808,15 @@
     }
    ],
    "kev": 1,
-   "assertions": 8,
-   "products": 4,
-   "contains": 8,
+   "assertions": 37,
+   "products": 33,
+   "contains": 36,
    "in_range": 0,
    "verdicts": {
-    "present": 8
+    "present": 8,
+    "fixed": 27,
+    "workaround": 1,
+    "absent": 1
    },
    "exploitation": {}
   },
@@ -5819,11 +5852,16 @@
     }
    ],
    "kev": 4,
-   "assertions": 0,
-   "products": 0,
-   "contains": 0,
+   "assertions": 19,
+   "products": 18,
+   "contains": 18,
    "in_range": 0,
-   "verdicts": {},
+   "verdicts": {
+    "fixed": 8,
+    "affected": 9,
+    "workaround": 1,
+    "not_affected": 1
+   },
    "exploitation": {}
   },
   {
@@ -5849,12 +5887,13 @@
     }
    ],
    "kev": 1,
-   "assertions": 5,
-   "products": 1,
+   "assertions": 6,
+   "products": 2,
    "contains": 5,
    "in_range": 0,
    "verdicts": {
-    "present": 5
+    "present": 5,
+    "not_affected": 1
    },
    "exploitation": {}
   },
@@ -5916,11 +5955,13 @@
     }
    ],
    "kev": 4,
-   "assertions": 0,
-   "products": 0,
-   "contains": 0,
+   "assertions": 1,
+   "products": 1,
+   "contains": 1,
    "in_range": 0,
-   "verdicts": {},
+   "verdicts": {
+    "fixed": 1
+   },
    "exploitation": {}
   },
   {
@@ -5966,12 +6007,13 @@
     }
    ],
    "kev": 1,
-   "assertions": 4,
-   "products": 1,
+   "assertions": 8,
+   "products": 5,
    "contains": 4,
    "in_range": 2,
    "verdicts": {
-    "present": 4
+    "present": 4,
+    "not_affected": 4
    },
    "exploitation": {}
   },
@@ -5998,12 +6040,13 @@
     }
    ],
    "kev": 1,
-   "assertions": 1,
-   "products": 1,
+   "assertions": 3,
+   "products": 3,
    "contains": 1,
    "in_range": 0,
    "verdicts": {
-    "present": 1
+    "present": 1,
+    "not_affected": 2
    },
    "exploitation": {}
   },
@@ -6046,12 +6089,13 @@
     }
    ],
    "kev": 1,
-   "assertions": 3,
-   "products": 1,
+   "assertions": 4,
+   "products": 2,
    "contains": 3,
    "in_range": 3,
    "verdicts": {
-    "present": 3
+    "present": 3,
+    "not_affected": 1
    },
    "exploitation": {}
   },
@@ -6090,11 +6134,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 3,
-   "products": 1,
+   "assertions": 4,
+   "products": 2,
    "contains": 3,
    "in_range": 0,
    "verdicts": {
+    "not_affected": 1,
     "present": 3
    },
    "exploitation": {}
@@ -6193,12 +6238,16 @@
     }
    ],
    "kev": 2,
-   "assertions": 2,
-   "products": 1,
-   "contains": 2,
+   "assertions": 31,
+   "products": 22,
+   "contains": 17,
    "in_range": 0,
    "verdicts": {
-    "present": 2
+    "under_investigation": 1,
+    "present": 2,
+    "affected": 6,
+    "not_affected": 13,
+    "fixed": 9
    },
    "exploitation": {}
   },
@@ -6274,12 +6323,15 @@
     }
    ],
    "kev": 24,
-   "assertions": 55,
-   "products": 7,
-   "contains": 55,
+   "assertions": 280,
+   "products": 41,
+   "contains": 251,
    "in_range": 0,
    "verdicts": {
-    "fixed": 55
+    "fixed": 206,
+    "not_affected": 29,
+    "workaround": 18,
+    "affected": 27
    },
    "exploitation": {
     "exploited": 3
@@ -6338,12 +6390,15 @@
     }
    ],
    "kev": 13,
-   "assertions": 27,
-   "products": 3,
-   "contains": 27,
+   "assertions": 222,
+   "products": 54,
+   "contains": 216,
    "in_range": 0,
    "verdicts": {
-    "fixed": 27
+    "fixed": 205,
+    "not_affected": 6,
+    "affected": 9,
+    "workaround": 2
    },
    "exploitation": {
     "exploited": 2
@@ -6431,12 +6486,12 @@
     }
    ],
    "kev": 6,
-   "assertions": 4,
+   "assertions": 7,
    "products": 1,
-   "contains": 4,
+   "contains": 7,
    "in_range": 0,
    "verdicts": {
-    "fixed": 4
+    "fixed": 7
    },
    "exploitation": {
     "exploited": 1
@@ -6529,11 +6584,12 @@
     }
    ],
    "kev": 6,
-   "assertions": 4,
-   "products": 1,
+   "assertions": 18,
+   "products": 15,
    "contains": 4,
    "in_range": 0,
    "verdicts": {
+    "not_affected": 14,
     "fixed": 4
    },
    "exploitation": {}
@@ -6834,19 +6890,19 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 3908,
+   "assertions": 5243,
    "latest": "2026-11-20",
    "publishers": {
-    "Red Hat Product Security": 1913,
-    "Siemens ProductCERT": 885,
-    "CISA": 662,
-    "Cisco": 234,
-    "Microsoft Security Response Center": 89,
+    "Red Hat Product Security": 3203,
+    "Siemens ProductCERT": 892,
+    "CISA": 681,
+    "Cisco": 238,
+    "Microsoft Security Response Center": 103,
     "ABB PSIRT": 70,
     "Schneider Electric CPCERT": 31,
     "SICK PSIRT": 20,
     "Open-Xchange GmbH": 2,
-    "Stackable GmbH": 1,
+    "Stackable GmbH": 2,
     "Intevation GmbH": 1
    },
    "fv": "hand-listed",

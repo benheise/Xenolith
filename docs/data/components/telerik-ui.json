@@ -1,1 +1,1 @@
-[]
+[{"k":"hitachi-energy/esoms","s":"Hitachi Energy","p":"eSOMS","v":"fixed: < 6.3 of telerik software","c":{"CVE-2017-11317":"fixed","CVE-2017-11357":"fixed","CVE-2017-9248":"fixed","CVE-2019-18935":"fixed"},"st":"fixed","e":"vendor-advisory","src":"csaf","pub":"CISA","u":"https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2021/icsa-21-077-03.json","r":[],"n":"Hitachi ABB Power Grids eSOMS Telerik","cat":"CISA (ICS advisories)","d":"2021-03-18","fv":"hand-listed","dp":["https://www.cisa.gov/sites/default/files/csaf/provider-metadata.json"]}]
