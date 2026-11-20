@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T22:08:01Z",
+ "built": "2026-11-20T22:10:50Z",
  "exploitation_levels": [
   "exploited",
   "attempted",
@@ -7,14 +7,14 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 18282,
-  "products_with_data": 8477,
+  "assertions": 18448,
+  "products_with_data": 8512,
   "inventories": 398,
   "inventory_components": 239659,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4694,
+  "spine_only_shown": 4690,
   "components": 56,
   "wanted": 83,
   "wanted_fulfilled": 6
@@ -3375,12 +3375,12 @@
     }
    ],
    "kev": 21,
-   "assertions": 20,
+   "assertions": 26,
    "products": 11,
-   "contains": 17,
+   "contains": 23,
    "in_range": 0,
    "verdicts": {
-    "fixed": 17,
+    "fixed": 23,
     "not_affected": 3
    },
    "exploitation": {}
@@ -3454,13 +3454,13 @@
     }
    ],
    "kev": 13,
-   "assertions": 17,
+   "assertions": 23,
    "products": 5,
-   "contains": 10,
+   "contains": 16,
    "in_range": 0,
    "verdicts": {
     "not_affected": 7,
-    "fixed": 10
+    "fixed": 16
    },
    "exploitation": {
     "exploited": 1
@@ -3536,13 +3536,14 @@
     }
    ],
    "kev": 15,
-   "assertions": 62,
-   "products": 16,
-   "contains": 58,
+   "assertions": 123,
+   "products": 17,
+   "contains": 119,
    "in_range": 0,
    "verdicts": {
-    "fixed": 58,
-    "not_affected": 4
+    "fixed": 118,
+    "not_affected": 4,
+    "workaround": 1
    },
    "exploitation": {
     "exploited": 2
@@ -3672,12 +3673,13 @@
     }
    ],
    "kev": 40,
-   "assertions": 5,
-   "products": 2,
-   "contains": 5,
+   "assertions": 81,
+   "products": 33,
+   "contains": 81,
    "in_range": 0,
    "verdicts": {
-    "fixed": 5
+    "fixed": 52,
+    "workaround": 29
    },
    "exploitation": {
     "exploited": 2
@@ -3736,12 +3738,12 @@
     }
    ],
    "kev": 9,
-   "assertions": 8,
-   "products": 3,
-   "contains": 8,
+   "assertions": 21,
+   "products": 7,
+   "contains": 21,
    "in_range": 0,
    "verdicts": {
-    "fixed": 8
+    "fixed": 21
    },
    "exploitation": {
     "exploited": 2
@@ -3787,12 +3789,12 @@
     }
    ],
    "kev": 3,
-   "assertions": 3,
-   "products": 3,
-   "contains": 2,
+   "assertions": 7,
+   "products": 4,
+   "contains": 6,
    "in_range": 0,
    "verdicts": {
-    "fixed": 2,
+    "fixed": 6,
     "unknown": 1
    },
    "exploitation": {
@@ -3928,13 +3930,13 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 3742,
+   "assertions": 3908,
    "latest": "2026-11-20",
    "publishers": {
     "Red Hat Product Security": 1913,
-    "Siemens ProductCERT": 879,
-    "CISA": 626,
-    "Cisco": 110,
+    "Siemens ProductCERT": 885,
+    "CISA": 662,
+    "Cisco": 234,
     "Microsoft Security Response Center": 89,
     "ABB PSIRT": 70,
     "Schneider Electric CPCERT": 31,
