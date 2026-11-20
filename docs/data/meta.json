@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T21:01:10Z",
+ "built": "2026-11-20T21:03:47Z",
  "exploitation_levels": [
   "exploited",
   "attempted",
@@ -7,8 +7,8 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 18192,
-  "products_with_data": 8458,
+  "assertions": 18248,
+  "products_with_data": 8470,
   "inventories": 398,
   "inventory_components": 239659,
   "cpe_linked_clusters": 23,
@@ -3252,12 +3252,12 @@
     }
    ],
    "kev": 3,
-   "assertions": 16,
-   "products": 10,
-   "contains": 13,
+   "assertions": 20,
+   "products": 11,
+   "contains": 17,
    "in_range": 0,
    "verdicts": {
-    "fixed": 13,
+    "fixed": 17,
     "not_affected": 3
    },
    "exploitation": {}
@@ -3294,13 +3294,13 @@
     }
    ],
    "kev": 3,
-   "assertions": 13,
-   "products": 4,
-   "contains": 6,
+   "assertions": 17,
+   "products": 5,
+   "contains": 10,
    "in_range": 0,
    "verdicts": {
     "not_affected": 7,
-    "fixed": 6
+    "fixed": 10
    },
    "exploitation": {
     "exploited": 1
@@ -3339,12 +3339,12 @@
     }
    ],
    "kev": 4,
-   "assertions": 14,
-   "products": 3,
-   "contains": 10,
+   "assertions": 62,
+   "products": 16,
+   "contains": 58,
    "in_range": 0,
    "verdicts": {
-    "fixed": 10,
+    "fixed": 58,
     "not_affected": 4
    },
    "exploitation": {
@@ -3402,15 +3402,15 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 3686,
+   "assertions": 3742,
    "latest": "2026-11-20",
    "publishers": {
     "Red Hat Product Security": 1913,
-    "Siemens ProductCERT": 875,
-    "CISA": 622,
+    "Siemens ProductCERT": 879,
+    "CISA": 626,
+    "Cisco": 110,
     "Microsoft Security Response Center": 89,
     "ABB PSIRT": 70,
-    "Cisco": 62,
     "Schneider Electric CPCERT": 31,
     "SICK PSIRT": 20,
     "Open-Xchange GmbH": 2,
