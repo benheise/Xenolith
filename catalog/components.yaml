@@ -1287,3 +1287,40 @@ components:
               - {introduced: '0', fixed: '6.9.3-10'}
               - {introduced: '7.0.0', fixed: '7.0.1-1'}
         trackers: []
+
+  # First-party engine, not a third-party library: it never appears in a notices file, so
+  # everything here comes from F5's own advisories. It is on the list because F5 ships the
+  # same engine in several product lines and publishes a status for each.
+  - id: f5-tmm
+    name: F5 Traffic Management Microkernel (TMM)
+    upstream: https://my.f5.com/manage/s/article/K44525501
+    purl: pkg:generic/f5-tmm
+    cpe: cpe:2.3:a:f5:big-ip
+    aliases: [tmm, traffic management microkernel, BIG-IP data plane]
+    notices_names: []
+    incidents:
+      - name: BIG-IP TMM iRule and APM stack overflows (out-of-band notification)
+        year: 2026
+        cves: [CVE-2026-116953, CVE-2026-120285, CVE-2026-120292, CVE-2026-120722, CVE-2026-121805, CVE-2026-123637]
+        note: >-
+          Six stack overflows (CWE-121) in the data plane, each 9.8 on CVSS 3.1: a request with
+          no login can crash TMM and may run code. Each needs a specific setup on a virtual
+          server: an iRule on client traffic using GENERICMESSAGE::route (CVE-2026-116953),
+          DNS::scrape (CVE-2026-120722) or PEM::subscriber (CVE-2026-121805); an HTTP profile
+          with an iRule using PSC::ip_address (CVE-2026-120285) or MR::message route
+          (CVE-2026-120292); or an APM per-request policy with both the Client Information and
+          Endpoint Security agents (CVE-2026-123637). So the check is your iRules and APM
+          policies, not only the version. Affected: BIG-IP 21.1.0, 17.5.0 to 17.5.1 and 17.1.0
+          to 17.1.3, and BIG-IP Next for Kubernetes and CNF 2.2.0 to 2.4.2; older branches are
+          past support and were not evaluated. Fixes are engineering hotfixes only, with no
+          workaround. The management side is not exposed. No exploitation has been reported, I found no
+          public proof of concept, and none is in CISA KEV as of 2026-11-20. The same notification
+          has four TMM crash-only flaws in APM (CVE-2026-125272, CVE-2026-126822,
+          CVE-2026-126336, CVE-2026-121812), not tracked here.
+        affected:   # BIG-IP release numbers from F5's advisories; TMM has no version of its own
+          - cves: [CVE-2026-116953, CVE-2026-120285, CVE-2026-120292, CVE-2026-120722, CVE-2026-121805, CVE-2026-123637]
+            ranges:
+              - {introduced: '17.1.0', last_affected: '17.1.3'}
+              - {introduced: '17.5.0', last_affected: '17.5.1'}
+              - {introduced: '21.1.0', last_affected: '21.1.0'}
+        trackers: []

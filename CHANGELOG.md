@@ -3,6 +3,22 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-20: F5 TMM (BIG-IP data plane)
+
+New component `f5-tmm` (48 on the watchlist) for the six critical TMM stack overflows in F5's
+out-of-band notification of 18 November: CVE-2026-116953, CVE-2026-120285, CVE-2026-120292,
+CVE-2026-120722, CVE-2026-121805 and CVE-2026-123637. 15 statements, each read on F5's advisory.
+
+- **Affected, hotfix only:** BIG-IP (all modules), BIG-IP APM, BIG-IP DNS, BIG-IP PEM on 21.1.0,
+  17.5.0 to 17.5.1 and 17.1.0 to 17.1.3; BIG-IP Next for Kubernetes and BIG-IP CNF 2.2.0 to 2.4.2.
+- **Not affected:** BIG-IQ, F5 Insight, F5OS, F5OS-A, F5OS-C, F5 AI Gateway, F5 Distributed Cloud,
+  NGINX One Console and the NGINX products.
+- Each flaw needs a specific iRule command or APM policy on a virtual server; the incident note
+  lists them. No exploitation reported; not in CISA KEV.
+- TMM is F5's own engine, not a library other vendors bundle, so it sits outside the written
+  watchlist criteria and has no notices patterns; its ranges are BIG-IP release numbers. It is here because F5 ships
+  it across several product lines and states a status for each.
+
 ## 2026-11-20: Exploitation signal
 
 Statements can now say whether a product is being exploited, apart from its status.
