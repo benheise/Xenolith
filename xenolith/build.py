@@ -187,6 +187,95 @@ def build_threats(catalog: Catalog, assertions: list[dict], kev_cves: dict[str, 
     return items[:THREATS_LIMIT], watching[:5]
 
 
+SITE_URL = "https://benheise.github.io/Xenolith/"
+LEVEL_LABELS = {
+    "exploited": "Exploited in the wild",
+    "attempted": "Exploit attempts seen",
+    "demonstrated_preauth": "Working exploit, no login needed",
+    "demonstrated_postauth": "Working exploit, login needed",
+}
+
+
+def threat_summary(t: dict) -> str:
+    """One plain-text paragraph for a feed reader."""
+    parts = [f"{LEVEL_LABELS.get(t['level'], t['level'])}: {', '.join(t['cves'])} in {t['component']}."]
+    if t.get("kev"):
+        parts.append(f"In CISA KEV since {t['kev']}{' and used in ransomware attacks' if t.get('ransomware') else ''}.")
+    if t.get("epss") is not None:
+        parts.append(f"EPSS {t['epss'] * 100:.2f}%.")
+    if t.get("note"):
+        parts.append(t["note"])
+    if t.get("flagged"):
+        names = ", ".join(f["p"] if f["p"].lower().startswith(f["s"].lower()) else f"{f['s']} {f['p']}" for f in t["flagged"])
+        extra = t["flagged_total"] - len(t["flagged"])
+        parts.append(f"Products named: {names}{f' and {extra} more' if extra > 0 else ''}.")
+    if t.get("products"):
+        parts.append(f"{t['products']} products have a vendor statement, {t.get('unfixed', 0)} with no fix stated.")
+    return " ".join(parts)
+
+
+def build_feeds(threats: list[dict], out_dir: Path) -> None:
+    """Write the threat list as JSON Feed 1.1 (feed.json) and Atom (feed.xml).
+
+    An item's id is fixed by its component and first CVE, and its date is the newest
+    exploitation signal, so a reader shows an old flaw again when a new signal arrives.
+    """
+    from xml.sax.saxutils import escape, quoteattr
+    stamp = lambda d: f"{d[:10]}T00:00:00Z"
+    newest = max((t["date"] for t in threats), default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+    items = []
+    for t in threats:
+        url = SITE_URL + (f"#v={t['cves'][0]}" if len(t["cves"]) == 1 else f"#c={t['c']}")
+        items.append({
+            "id": f"tag:benheise.github.io,2026:xenolith/{t['c']}/{t['cves'][0]}",
+            "url": url, "title": t["title"] or t["cves"][0], "content_text": threat_summary(t),
+            "date_published": stamp(t.get("kev") or t["date"]), "date_modified": stamp(t["date"]),
+            "tags": [t["level"], t["c"], *t["cves"]],
+            "_xenolith": {k: t[k] for k in ("c", "component", "cves", "level", "date", "kev", "ransomware", "epss",
+                                            "flagged", "flagged_total", "products", "unfixed") if k in t},
+        })
+    feed = {
+        "version": "https://jsonfeed.org/version/1.1",
+        "title": "Xenolith: exploited flaws in shared components",
+        "home_page_url": SITE_URL, "feed_url": SITE_URL + "data/feed.json",
+        "description": "Flaws in widely embedded components and vendor engines with the newest sign of exploitation.",
+        "items": items,
+    }
+    (out_dir / "feed.json").write_text(json.dumps(feed, ensure_ascii=False, indent=1), encoding="utf-8")
+    entries = "".join(f"""
+  <entry>
+    <id>{escape(i['id'])}</id>
+    <title>{escape(i['title'])}</title>
+    <link rel="alternate" href={quoteattr(i['url'])}/>
+    <published>{i['date_published']}</published>
+    <updated>{i['date_modified']}</updated>
+    {''.join(f'<category term={quoteattr(tag)}/>' for tag in i['tags'])}
+    <summary>{escape(i['content_text'])}</summary>
+  </entry>""" for i in items)
+    (out_dir / "feed.xml").write_text(f"""<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>{SITE_URL}</id>
+  <title>{escape(feed['title'])}</title>
+  <subtitle>{escape(feed['description'])}</subtitle>
+  <link rel="self" href="{SITE_URL}data/feed.xml"/>
+  <link rel="alternate" href="{SITE_URL}"/>
+  <updated>{stamp(newest)}</updated>
+  <author><name>Xenolith</name></author>{entries}
+</feed>
+""", encoding="utf-8")
+
+
+INDEX_SHARDS = 256
+
+
+def name_shard(name: str) -> int:
+    """FNV-1a over the UTF-8 name; the site computes the same number to find a name's shard."""
+    h = 0x811C9DC5
+    for b in name.encode("utf-8"):
+        h = ((h ^ b) * 0x01000193) & 0xFFFFFFFF
+    return h % INDEX_SHARDS
+
+
 def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: int = 10) -> dict:
     assertions = load_assertions(data_dir)
     spine = load_spine(data_dir)
@@ -431,6 +520,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
         if best is not None:
             t["epss"] = best
 
+    build_feeds(threats, out_dir)
+
     meta = {
         "built": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "threats": threats,
@@ -483,7 +574,10 @@ def build_inventories(data_dir: Path, out_dir: Path, remap: dict[str, str] | Non
 
     docs/data/inventory/<product_key>.json   [{v, u, d, x, c: [[name, version], ...], e, fv, dp, h, a?}], newest version first
                                              (e evidence, fv found_via, dp discovery_path, h sha256, a scanned artifact)
-    docs/data/inventory_index.json           {p: [product_key, ...], n: {name: [[product idx, product version, component version], ...]}}
+    docs/data/inventory_names.json           {p: [product_key, ...], n: [name, ...], shards: 256}
+    docs/data/inventory_idx/<shard>.json     {name: [[product idx, product version, component version], ...]}
+                                             A name's shard is name_shard(name), so a search reads the name
+                                             list and only the shards its hits fall in.
     """
     inv_dir = out_dir / "inventory"
     inv_dir.mkdir(parents=True, exist_ok=True)
@@ -519,7 +613,15 @@ def build_inventories(data_dir: Path, out_dir: Path, remap: dict[str, str] | Non
     for old in inv_dir.glob("*.json"):
         if old.name not in written:
             old.unlink()
-    (out_dir / "inventory_index.json").write_text(
-        json.dumps({"p": keys, "n": dict(sorted(index.items()))}, ensure_ascii=False, separators=(",", ":")),
-        encoding="utf-8")
+    names = sorted(index)
+    (out_dir / "inventory_names.json").write_text(
+        json.dumps({"p": keys, "n": names, "shards": INDEX_SHARDS}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    shards: list[dict] = [{} for _ in range(INDEX_SHARDS)]
+    for name in names:
+        shards[name_shard(name)][name] = index[name]
+    idx_dir = out_dir / "inventory_idx"
+    idx_dir.mkdir(parents=True, exist_ok=True)
+    for i, shard in enumerate(shards):
+        (idx_dir / f"{i:02x}.json").write_text(json.dumps(shard, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (out_dir / "inventory_index.json").unlink(missing_ok=True)   # the single 6.7 MB file this replaced
     return out

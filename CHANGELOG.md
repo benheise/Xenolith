@@ -36,6 +36,22 @@ Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new 
   Symantec), IBM (no Semeru or WebSphere bulletin), Oracle's own products, SAP, SapMachine,
   JetBrains Runtime and the IDEs.
 
+## 2026-11-21: Threat feeds, lighter search, and the rest of the design review
+
+- **Feeds.** The build writes the threat list as Atom (`docs/data/feed.xml`) and JSON Feed 1.1
+  (`docs/data/feed.json`). An entry's id is fixed by component and first CVE and its `updated`
+  date is the newest exploitation signal, so readers resurface an old flaw when a new signal lands.
+- **Search index split.** `inventory_index.json` (6.7 MB, 1.1 MB compressed) is replaced by
+  `inventory_names.json` (259 KB compressed) and 256 shard files under `inventory_idx/`; a search
+  reads the names and only the shards its hits fall in (about 8 KB each). **The old file is gone.**
+- **Threat cards collapse** to three lines (title, level, first CVE, component, age) and open in
+  place; the first is open.
+- **Typeface.** Atkinson Hyperlegible Next and Mono, self-hosted under `docs/fonts/` (SIL OFL,
+  52 KB together). Chosen because it keeps 0/O and 1/l/I apart in CVE IDs, versions and hashes.
+- **CVE card** labels are sentence case; monospace is kept for identifiers only.
+- **One `h1` per view**; the site name is no longer a heading. Product page titles include the vendor.
+- Inline links have a 24 px hit area. Dates read "20 Nov 2026" everywhere on the site.
+
 ## 2026-11-21: Site usability and accessibility review
 
 The site was measured at phone and desktop widths in light and dark, then checked against WCAG 2.2 AA

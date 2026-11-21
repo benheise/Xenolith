@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://benheise.github.io/Xenolith/</id>
+  <title>Xenolith: exploited flaws in shared components</title>
+  <subtitle>Flaws in widely embedded components and vendor engines with the newest sign of exploitation.</subtitle>
+  <link rel="self" href="https://benheise.github.io/Xenolith/data/feed.xml"/>
+  <link rel="alternate" href="https://benheise.github.io/Xenolith/"/>
+  <updated>2026-11-20T00:00:00Z</updated>
+  <author><name>Xenolith</name></author>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/vcenter/CVE-2026-123890</id>
+    <title>vCenter 2026 exploited flaws</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#c=vcenter"/>
+    <published>2026-01-23T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <category term="exploited"/><category term="vcenter"/><category term="CVE-2026-123890"/><category term="CVE-2026-59310"/><category term="CVE-2024-37079"/>
+    <summary>Exploited in the wild: CVE-2026-123890, CVE-2026-59310, CVE-2024-37079 in VMware vCenter. In CISA KEV since 2026-01-23 and used in ransomware attacks. EPSS 61.67%. Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), added to KEV on 2026-11-20, a day after publication. Products named: VMware vCenter Server. 5 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/axis1/CVE-2026-90436</id>
+    <title>Axis 1.x SOAP fault class instantiation RCE</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-90436"/>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <category term="exploited"/><category term="axis1"/><category term="CVE-2026-90436"/>
+    <summary>Exploited in the wild: CVE-2026-90436 in Apache Axis 1.x (SOAP engine). In CISA KEV since 2026-11-18. EPSS 1.83%. Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end of life with no upstream fix; CISA added it to KEV on 18 November 2026. Products named: Atlassian Confluence Data Center, N-able N-central. 3 products have a vendor statement, 1 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/openjdk/CVE-2026-114938</id>
+    <title>Java4Shell (HotSpot AVX-512 Base64 decoder heap overflow)</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-114938"/>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <category term="demonstrated_preauth"/><category term="openjdk"/><category term="CVE-2026-114938"/>
+    <summary>Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 0.91%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 365 products have a vendor statement, 80 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/check-point-gaia/CVE-2026-123039</id>
+    <title>Check Point Multiple Products Incorrect Permission Assignment for Critical Resource</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-123039"/>
+    <published>2026-11-13T00:00:00Z</published>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <category term="exploited"/><category term="check-point-gaia"/><category term="CVE-2026-123039"/>
+    <summary>Exploited in the wild: CVE-2026-123039 in Check Point Gaia (Security Gateway and Management). In CISA KEV since 2026-11-13. EPSS 1.94%. 2 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/chromium/CVE-2026-125350</id>
+    <title>Google Chromium Use-After-Free</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-125350"/>
+    <published>2026-11-10T00:00:00Z</published>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <category term="exploited"/><category term="chromium"/><category term="CVE-2026-125350"/>
+    <summary>Exploited in the wild: CVE-2026-125350 in Chromium (browser engine: V8, Blink, Skia, ANGLE). In CISA KEV since 2026-11-10. EPSS 0.96%. 4 products have a vendor statement, 1 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/ivanti-connect-secure/CVE-2026-118527</id>
+    <title>Ivanti Connect Secure Generation of Predictable Numbers or Identifiers</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-118527"/>
+    <published>2026-10-30T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <category term="exploited"/><category term="ivanti-connect-secure"/><category term="CVE-2026-118527"/>
+    <summary>Exploited in the wild: CVE-2026-118527 in Ivanti Connect Secure, Policy Secure and ZTA gateways. In CISA KEV since 2026-10-30. EPSS 0.82%. Products named: Ivanti Connect Secure. 1 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/ivanti-connect-secure/CVE-2026-111357</id>
+    <title>Ivanti Connect Secure Missing Authentication for Critical Function</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-111357"/>
+    <published>2026-10-30T00:00:00Z</published>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <category term="exploited"/><category term="ivanti-connect-secure"/><category term="CVE-2026-111357"/>
+    <summary>Exploited in the wild: CVE-2026-111357 in Ivanti Connect Secure, Policy Secure and ZTA gateways. In CISA KEV since 2026-10-30. EPSS 0.53%. Products named: Ivanti Connect Secure. 1 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/cisco-asa/CVE-2025-20333</id>
+    <title>ASA and FTD remote access VPN exploited flaws</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#c=cisco-asa"/>
+    <published>2025-09-25T00:00:00Z</published>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <category term="exploited"/><category term="cisco-asa"/><category term="CVE-2025-20333"/><category term="CVE-2025-20362"/><category term="CVE-2026-20349"/><category term="CVE-2026-76418"/>
+    <summary>Exploited in the wild: CVE-2025-20333, CVE-2025-20362, CVE-2026-20349, CVE-2026-76418 in Cisco Secure Firewall ASA (also inside FTD). In CISA KEV since 2025-09-25. EPSS 86.69%. Four flaws in the SSL remote access VPN web service shared by ASA and FTD, all in CISA KEV. CVE-2025-20333 (code execution as root for a VPN user, 9.9) and CVE-2025-20362 (reaching restricted URLs with no login) are chained; Cisco reported a new attack variant in November 2025 that reloads unpatche… Products named: Cisco Secure Firewall Adaptive Security Appliance (ASA) Software, Cisco Secure Firewall Threat Defense (FTD) Software. 16 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/php/CVE-2026-109618</id>
+    <title>PHP2Shell</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#c=php"/>
+    <published>2026-10-26T00:00:00Z</published>
+    <updated>2026-10-29T00:00:00Z</updated>
+    <category term="exploited"/><category term="php"/><category term="CVE-2026-109618"/><category term="CVE-2026-109619"/>
+    <summary>Exploited in the wild: CVE-2026-109618, CVE-2026-109619 in PHP runtime. In CISA KEV since 2026-10-26. EPSS 100.00%. Products named: Palo Alto Networks PAN-OS. 859 products have a vendor statement, 204 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/brotli/CVE-2026-111497</id>
+    <title>Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-111497"/>
+    <published>2026-10-27T00:00:00Z</published>
+    <updated>2026-10-27T00:00:00Z</updated>
+    <category term="exploited"/><category term="brotli"/><category term="CVE-2026-111497"/>
+    <summary>Exploited in the wild: CVE-2026-111497 in Google Brotli (C library). In CISA KEV since 2026-10-27. EPSS 82.37%. 243 products have a vendor statement, 56 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/fortios/CVE-2025-61624</id>
+    <title>Fortinet Multiple Products Path Traversal</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2025-61624"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="exploited"/><category term="fortios"/><category term="CVE-2025-61624"/>
+    <summary>Exploited in the wild: CVE-2025-61624 in Fortinet FortiOS (shared code in FortiProxy, FortiSwitchManager and others). In CISA KEV since 2026-10-16. EPSS 1.40%. Products named: Fortinet FortiOS. 5 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/f5-tmm/CVE-2026-94127</id>
+    <title>BIG-IP APM OAuth heap overflow</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-94127"/>
+    <published>2026-09-22T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <category term="exploited"/><category term="f5-tmm"/><category term="CVE-2026-94127"/>
+    <summary>Exploited in the wild: CVE-2026-94127 in F5 Traffic Management Microkernel (TMM). In CISA KEV since 2026-09-22. EPSS 26.55%. Heap overflow (CWE-122, 9.8) that runs code with no login when BIG-IP APM acts as an OAuth Authorization Server on a virtual server; APM used only as an OAuth client or resource server is not exposed. Products named: F5 BIG-IP APM. 4 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/pan-os/CVE-2026-0300</id>
+    <title>PAN-OS 2026 exploited flaws</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#c=pan-os"/>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <category term="exploited"/><category term="pan-os"/><category term="CVE-2026-0300"/><category term="CVE-2026-0257"/><category term="CVE-2026-0322"/>
+    <summary>Exploited in the wild: CVE-2026-0300, CVE-2026-0257, CVE-2026-0322 in Palo Alto Networks PAN-OS. In CISA KEV since 2026-05-06 and used in ransomware attacks. EPSS 95.64%. Three flaws in different services, all in CISA KEV, with exploitation or exploit attempts reported by Palo Alto Networks for each. CVE-2026-0300: buffer overflow in the User-ID Authentication Portal (captive portal), code execution as root with no login on PA-Series and VM-Series firewalls that hav… Products named: Palo Alto Networks PAN-OS. 5 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/cisco-asyncos/CVE-2026-76519</id>
+    <title>Cisco Secure Email Gateway Relative Path Traversal</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-76519"/>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <category term="exploited"/><category term="cisco-asyncos"/><category term="CVE-2026-76519"/>
+    <summary>Exploited in the wild: CVE-2026-76519 in Cisco AsyncOS (Secure Email Gateway, Secure Email and Web Manager). In CISA KEV since 2026-10-14. EPSS 6.23%. Products named: Cisco Secure Email Gateway. 2 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+  <entry>
+    <id>tag:benheise.github.io,2026:xenolith/ivanti-connect-secure/CVE-2026-104935</id>
+    <title>Ivanti Connect Secure Authentication Bypass by Spoofing</title>
+    <link rel="alternate" href="https://benheise.github.io/Xenolith/#v=CVE-2026-104935"/>
+    <published>2026-10-13T00:00:00Z</published>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <category term="exploited"/><category term="ivanti-connect-secure"/><category term="CVE-2026-104935"/>
+    <summary>Exploited in the wild: CVE-2026-104935 in Ivanti Connect Secure, Policy Secure and ZTA gateways. In CISA KEV since 2026-10-13. EPSS 88.94%. Products named: Ivanti Connect Secure. 1 products have a vendor statement, 0 with no fix stated.</summary>
+  </entry>
+</feed>

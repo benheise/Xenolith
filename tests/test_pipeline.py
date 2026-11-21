@@ -219,6 +219,15 @@ class ThreatFeedTest(unittest.TestCase):
         self.assertEqual((threats[0]["level"], threats[0]["date"], threats[0]["flagged_total"]), ("attempted", "2026-11-19", 2))
         self.assertEqual((threats[1]["level"], threats[1]["kev"], threats[1].get("ransomware")), ("exploited", "2021-12-10", True))
         self.assertTrue(all(w["c"] != "openjdk" for w in watching))                      # a flaw with a signal is not "watching"
+        import tempfile, xml.etree.ElementTree as ET
+        with tempfile.TemporaryDirectory() as tmp:
+            build_mod.build_feeds(threats, Path(tmp))
+            feed = json.loads((Path(tmp) / "feed.json").read_text())
+            self.assertEqual([i["date_modified"] for i in feed["items"]], ["2026-11-19T00:00:00Z", "2021-12-10T00:00:00Z"])
+            self.assertIn("CVE-2021-44228", feed["items"][1]["content_text"])
+            ns = {"a": "http://www.w3.org/2005/Atom"}
+            entries = ET.parse(Path(tmp) / "feed.xml").getroot().findall("a:entry", ns)
+            self.assertEqual([e.find("a:id", ns).text for e in entries], [i["id"] for i in feed["items"]])
         relay = [mk("Portal", "CVE-2021-44228", "2026-11-20", "exploited", "https://github.com/cisagov/kev-data/blob/main/known_exploited_vulnerabilities.csv")]
         self.assertEqual(build_mod.build_threats(cat, relay, kev)[0][0]["date"], "2021-12-10")   # a KEV relay row keeps KEV's date
 
@@ -359,8 +368,14 @@ class NoticesMatchTest(unittest.TestCase):
             build.build(cat, data, out)
             products = {p["k"]: p for p in json.loads((out / "products.json").read_text())}
             self.assertEqual(products["acme/gateway-os"]["inv"], 3)
-            index = json.loads((out / "inventory_index.json").read_text())
-            self.assertIn("bzip2", index["n"])
+            names = json.loads((out / "inventory_names.json").read_text())
+            self.assertIn("bzip2", names["n"])
+            shard = json.loads((out / "inventory_idx" / f"{build.name_shard('bzip2'):02x}.json").read_text())
+            self.assertEqual(names["p"][shard["bzip2"][0][0]], "acme/gateway-os")
+            feed = json.loads((out / "feed.json").read_text())
+            self.assertEqual(feed["version"], "https://jsonfeed.org/version/1.1")
+            import xml.etree.ElementTree as ET
+            self.assertEqual(ET.parse(out / "feed.xml").getroot().tag, "{http://www.w3.org/2005/Atom}feed")
             self.assertTrue((out / "inventory" / "acme__gateway-os.json").exists())
 
 

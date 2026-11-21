@@ -8,10 +8,21 @@
 <meta property="og:title" content="Xenolith: exploited flaws and the products that embed them">
 <meta property="og:description" content="A feed of exploited flaws in shared components and vendor engines, and a census of which commercial products embed them, with sourced vendor statements.">
 <meta property="og:type" content="website">
+<link rel="alternate" type="application/atom+xml" title="Xenolith: exploited flaws (Atom)" href="data/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Xenolith: exploited flaws (JSON Feed)" href="data/feed.json">
+<link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Cpath d=%22M16 2 29 9v14L16 30 3 23V9z%22 fill=%22%232f6f6a%22/%3E%3Cpath d=%22M12 12h8v8h-8z%22 fill=%22%23f7f7f5%22/%3E%3C/svg%3E">
 <meta name="description" content="A feed of exploited flaws in shared components and vendor engines, and an open census of which commercial products embed them, with sourced vendor and tracker statements.">
 <style>
+  /* Atkinson Hyperlegible: drawn so that 0/O, 1/l/I and similar pairs cannot be confused, which matters
+     for CVE IDs, versions and hashes. Self-hosted (SIL OFL 1.1, fonts/OFL.txt); no third-party request. */
+  @font-face { font-family: "Atkinson Hyperlegible Next"; font-style: normal; font-weight: 200 800; font-display: swap;
+    src: url(fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2) format("woff2-variations"); }
+  @font-face { font-family: "Atkinson Hyperlegible Mono"; font-style: normal; font-weight: 200 800; font-display: swap;
+    src: url(fonts/atkinson-hyperlegible-mono-latin-wght-normal.woff2) format("woff2-variations"); }
   :root {
+    --sans: "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+    --mono: "Atkinson Hyperlegible Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     --bg: #f7f7f5; --panel: #ffffff; --ink: #1b1d1f; --muted: #5d636a; --line: #e3e3df;
     --accent: #2f6f6a; --accent-ink: #ffffff; --chip: #eeeeea; --edge: #7f858b;
     color-scheme: light dark;
@@ -30,7 +41,7 @@
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; scroll-padding-top: 84px; }
   body { margin: 0; background: var(--bg); color: var(--ink);
-    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif; }
+    font: 16px/1.5 var(--sans); }
   a { color: var(--accent); }
   a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   [tabindex="-1"]:focus { outline: none; }
@@ -39,8 +50,8 @@
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
   header { padding: 28px 0 8px; }
   .brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-  .brand h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
-  .brand h1 a { color: inherit; text-decoration: none; }
+  .brand .site { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); }
+  .brand .site a { color: inherit; text-decoration: none; }
   .brand p { margin: 0; color: var(--muted); }
   .searchlabel { display: block; margin-top: 12px; }
   .search { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; }
@@ -48,7 +59,9 @@
     border: 1px solid var(--edge); background: var(--panel); color: var(--ink); }
   .hint { color: var(--muted); font-size: 14px; margin: 0 2px; }
   main { padding-bottom: 40px; min-height: 50vh; }
-  h2 { font-size: 20px; margin: 20px 0 8px; letter-spacing: -0.01em; }
+  h1 { font-size: 22px; margin: 18px 0 8px; letter-spacing: -0.01em; line-height: 1.25; }
+  h2 { font-size: 19px; margin: 22px 0 8px; letter-spacing: -0.01em; }
+  :where(#app, footer) a { padding-block: 4px; }   /* inline links get a 24px-tall hit area without moving the text */
   h3 { font-size: 16px; margin: 0; }
   .muted { color: var(--muted); }
   .small { font-size: 14px; }
@@ -79,7 +92,7 @@
   .supplier { color: var(--muted); font-size: 14px; }
   .product { font-weight: 600; overflow-wrap: anywhere; }
   .meta { color: var(--muted); font-size: 13.5px; margin-top: 6px; overflow-wrap: anywhere; }
-  .hash { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; overflow-wrap: anywhere; }
+  .hash { font-family: var(--mono); font-size: 13px; overflow-wrap: anywhere; }
   .badge.fv { color: var(--accent); font-weight: 600; }
   .prov-missing { color: var(--workaround); }
   .guess { display: grid; grid-template-columns: minmax(110px, 30%) 1fr; gap: 2px 10px; padding: 6px 0; border-top: 1px dashed var(--line); font-size: 13.5px; }
@@ -90,7 +103,7 @@
   .conf-possible { color: var(--neutral); }
   .wanted-flag { border-left: 3px solid var(--workaround); padding: 8px 12px; margin: 12px 0; background: var(--panel); border-radius: 6px; font-size: 14px; }
   .cves { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-  .cve { display: inline-block; white-space: nowrap; font-size: 13px; line-height: 18px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--chip);
+  .cve { display: inline-block; white-space: nowrap; font-size: 13px; line-height: 18px; font-family: var(--mono); background: var(--chip);
     border-radius: 6px; padding: 3px 7px; }
   details { margin-top: 6px; } summary { cursor: pointer; color: var(--muted); font-size: 14px; padding: 3px 0; }
   a.product, a.act { display: inline-block; padding: 2px 0; }
@@ -105,7 +118,7 @@
   footer h2 { color: var(--ink); font-size: 16px; }
   footer ul { padding-left: 18px; margin: 6px 0; }
   .comp-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-  .kbd { font-family: ui-monospace, monospace; font-size: 13px; background: var(--chip); padding: 1px 5px; border-radius: 5px; }
+  .kbd { font-family: var(--mono); font-size: 13px; background: var(--chip); padding: 1px 5px; border-radius: 5px; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   /* tabs */
   .tabs { display: flex; gap: 2px; margin-top: 14px; border-bottom: 1px solid var(--line); }
@@ -114,36 +127,38 @@
   .tabs a:hover { color: var(--ink); }
   .tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
   /* CVE card */
-  .cvecard h2 { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 500; font-size: 26px; margin: 0; overflow-wrap: anywhere; }
+  .cvecard h1 { font-family: var(--mono); font-weight: 500; font-size: 26px; margin: 0; overflow-wrap: anywhere; }
   .cvecard .head { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 6px; }
-  .pill { display: inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; letter-spacing: .04em;
-    text-transform: uppercase; padding: 6px 12px; border-radius: 999px; border: 1px solid currentColor; }
+  .pill { display: inline-block; font-size: 14px; font-weight: 700;
+    padding: 5px 12px; border-radius: 999px; border: 1px solid currentColor; }
   .pill.low { color: var(--fixed); } .pill.medium { color: var(--investigating); } .pill.high { color: var(--workaround); }
   .pill.critical, .pill.yes { color: var(--affected); } .pill.no { color: var(--neutral); }
   .kv { display: grid; grid-template-columns: minmax(9em, 42%) 1fr; gap: 0; }
   .kv > div { padding: 12px 0; border-top: 1px solid var(--line); }
   .kv > div:nth-child(-n+2) { border-top: 0; }
-  .kv .k { color: var(--muted); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; padding-right: 10px; }
-  .kv .v { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 15px; overflow-wrap: anywhere; }
+  .kv .k { color: var(--muted); font-size: 14.5px; padding-right: 10px; }
+  .kv .v { font-size: 16px; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
   .kv .v .small { font-family: inherit; }
   a.cve { text-decoration: none; color: inherit; } a.cve:hover { text-decoration: underline; }
   /* Threats tab */
   .threat { display: flex; gap: 12px; align-items: flex-start; }
   .threat > .grow { flex: 1; min-width: 0; }
   .threat .rank { font-size: 22px; font-weight: 700; color: var(--neutral); min-width: 1.4em; line-height: 1.2; }
-  .threat h3 { margin: 0 0 2px; }
-  .threat .when { white-space: nowrap; text-align: right; }
-  .threat .when b { display: block; color: var(--ink); font-weight: 600; }
+  .threat h2 { font-size: 16px; margin: 0; flex: 1; min-width: 0; line-height: 1.35; }
+  .threat .tline { margin-top: 5px; display: flex; gap: 6px 8px; flex-wrap: wrap; align-items: center; }
+  .threat details { margin-top: 4px; } .threat summary { padding: 4px 0; }
+  .threat .when { white-space: nowrap; text-align: right; color: var(--muted); padding-top: 2px; }
+  .threat .when b { color: var(--ink); font-weight: 600; }
   ol.tlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
   /* "Why it matters" tab */
   .why section { margin: 34px 0 0; }
   .why h2 { font-size: 22px; margin: 2px 0 10px; }
   .why h3 { font-size: 16px; }
-  .kicker { margin: 0; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+  .kicker { margin: 0; color: var(--accent); font-size: 14px; font-weight: 700; }
   .lede { font-size: 18px; }
   .grid3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
   .hero { display: grid; grid-template-columns: 1fr 170px; gap: 24px; align-items: center; margin-top: 18px; }
-  .hero h2 { font-size: 30px; letter-spacing: -0.02em; margin: 4px 0 8px; }
+  .hero h1 { font-size: 30px; letter-spacing: -0.02em; margin: 4px 0 8px; }
   .art { width: 100%; height: auto; }
   .fact b { display: block; font-size: 30px; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 4px; font-variant-numeric: tabular-nums; }
   .fact.risk b { color: var(--affected); } .fact.good b { color: var(--accent); }
@@ -184,8 +199,8 @@
   .scroll-hint { display: none; color: var(--muted); font-size: 13px; margin: 0 0 4px; }
   @media (max-width: 640px) {
     .hero { grid-template-columns: 1fr; } .hero .art { display: none; }
-    .hero h2 { font-size: 26px; } .bars .lab { width: 120px; } .scroll-hint { display: block; }
-    header { padding: 16px 0 4px; } .brand h1 { font-size: 22px; } .brand p { font-size: 14px; }
+    .hero h1 { font-size: 26px; } .bars .lab { width: 120px; } .scroll-hint { display: block; }
+    header { padding: 16px 0 4px; } .brand .site { font-size: 22px; } .brand p { font-size: 14px; }
     .tabs { margin-top: 8px; } .tabs a { padding: 11px 12px; }
     .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; } .stat b { font-size: 20px; }
     .chips[role="group"] { flex-wrap: nowrap; overflow-x: auto; margin-right: -16px; padding: 2px 16px 2px 2px; scrollbar-width: none; }
@@ -198,7 +213,7 @@
 <div class="wrap">
   <header>
     <div class="brand">
-      <h1><a href="#" id="home-link">Xenolith</a></h1>
+      <p class="site"><a href="#" id="home-link">Xenolith</a></p>
       <p>Exploited flaws, and the commercial products that embed them</p>
     </div>
     <nav class="tabs" aria-label="Sections">
@@ -355,8 +370,8 @@ async function route() {
   else await showHome();
   if (seq !== routeSeq) return;
   // What a full page load would do: name the page, and put keyboard and screen-reader focus at its start.
-  const h = app.querySelector("h2");
-  const name = view === "q" ? `Search: ${q}` : h ? h.textContent.trim() : "";
+  const h = app.querySelector("h1");
+  const name = view === "q" ? `Search: ${q}` : h ? (h.dataset.title || h.textContent.trim()) : "";
   document.title = view === "threats" || !name ? HOME_TITLE : `${name} | Xenolith`;
   if (changed && !firstRoute && view !== "q" && h) { h.tabIndex = -1; h.focus({ preventScroll: true }); }
   firstRoute = false;
@@ -376,7 +391,7 @@ input.addEventListener("keydown", e => {
     if (hit) go({ c: hit.id });
   }
 });
-$("#skip").addEventListener("click", e => { e.preventDefault(); (app.querySelector("h2") || app).focus(); });
+$("#skip").addEventListener("click", e => { e.preventDefault(); (app.querySelector("h1") || app).focus(); });
 $("#home-link").addEventListener("click", e => { e.preventDefault(); go({}); });
 $("#tab-threats").addEventListener("click", e => { e.preventDefault(); go({}); });
 $("#tab-census").addEventListener("click", e => { e.preventDefault(); go({ census: 1 }); });
@@ -408,21 +423,37 @@ function matchProducts(q, limit = 60) {
 }
 
 async function inventoryIndex() {
-  if (!INVINDEX) INVINDEX = loadJSON("data/inventory_index.json").catch(() => ({ p: [], n: {} }));
+  if (!INVINDEX) INVINDEX = loadJSON("data/inventory_names.json").catch(() => ({ p: [], n: [], shards: 1 }));
   return INVINDEX;
 }
 function noticeMatches(idx, q) {
   const n = norm(q).trim();
   if (n.length < 2) return [];
-  const names = Object.keys(idx.n);
+  const names = idx.n;
   const exact = names.filter(x => x === n);
   const partial = n.length >= 3 ? names.filter(x => x !== n && (x.startsWith(n) || x.includes(n))).slice(0, 15) : [];
   return [...exact, ...partial].slice(0, 16);
 }
-function noticesSection(idx, hits) {
+// The rows for a name live in one of idx.shards files; the build picks the file with the same FNV-1a hash.
+function nameShard(name, count) {
+  let h = 0x811c9dc5;
+  for (const b of new TextEncoder().encode(name)) h = Math.imul(h ^ b, 0x01000193) >>> 0;
+  return h % count;
+}
+const shardCache = new Map();
+async function noticeRows(idx, hits) {
+  const out = {};
+  await Promise.all(hits.map(async name => {
+    const id = nameShard(name, idx.shards).toString(16).padStart(2, "0");
+    if (!shardCache.has(id)) shardCache.set(id, loadJSON(`data/inventory_idx/${id}.json`).catch(() => ({})));
+    out[name] = (await shardCache.get(id))[name] || [];
+  }));
+  return out;
+}
+function noticesSection(idx, hits, rowsBy) {
   if (!hits.length) return "";
   const blocks = hits.map(name => {
-    const rows = idx.n[name];
+    const rows = rowsBy[name] || [];
     const byProduct = new Map();
     for (const [pi, pv, cv] of rows) {
       const key = idx.p[pi];
@@ -448,10 +479,11 @@ async function showSearch(q) {
   const comps = matchComponents(q);
   const prods = matchProducts(q);
   const idx = await inventoryIndex();
-  if (input.value.trim() !== q) return;   // a newer search replaced this one
   const nhits = noticeMatches(idx, q);
+  const rowsBy = await noticeRows(idx, nhits);
+  if (input.value.trim() !== q) return;   // a newer search replaced this one
   statusEl.textContent = `${comps.length} component${comps.length === 1 ? "" : "s"}, ${fmt(prods.total)} product${prods.total === 1 ? "" : "s"}, ${nhits.length} notices name${nhits.length === 1 ? "" : "s"} match`;
-  let html = `<h2 class="sr-only">Search results for ${esc(q)}</h2>`;
+  let html = `<h1 class="sr-only">Search results for ${esc(q)}</h1>`;
   if (/^CVE-\d{4}-\d{4,}$/i.test(q.trim())) {
     html += `<div class="notice">Score card for ${cveLink(q.trim().toUpperCase())}: EPSS, CVSS, CISA KEV and affected products.</div>`;
   }
@@ -461,7 +493,7 @@ async function showSearch(q) {
   if (comps.length) {
     html += `<h2>Components</h2><div class="grid">${comps.map(compCard).join("")}</div>`;
   }
-  html += noticesSection(idx, nhits);
+  html += noticesSection(idx, nhits, rowsBy);
   if (prods.total) {
     html += `<h2>Products${prods.total > prods.items.length ? ` <span class="muted small">(first ${prods.items.length} of ${fmt(prods.total)})</span>` : ""}</h2>`;
     html += `<div class="list">${prods.items.map(productCard).join("")}</div>`;
@@ -528,12 +560,12 @@ async function showComponent(id, filterKey, text) {
       ${(i.cves || []).map(cveLink).join(" ")}
       ${(i.trackers || []).map(u => ` · tracker: ${link(u)}`).join("")}
       ${i.kev ? `<div><span class="badge x-exploited" title="CISA lists this vulnerability as exploited in the wild. KEV names the component, not the products that embed it.">Exploited in the wild (CISA KEV)</span>
-        <span class="small muted">${Object.entries(i.kev).map(([v, d]) => `${esc(v)} since ${esc(d)}`).join(" · ")}${(i.kev_ransomware || []).length ? " · used in ransomware attacks" : ""}</span></div>` : ""}
+        <span class="small muted">${Object.entries(i.kev).map(([v, d]) => `${esc(v)} since ${dateEl(d)}`).join(" · ")}${(i.kev_ransomware || []).length ? " · used in ransomware attacks" : ""}</span></div>` : ""}
       ${i.note ? `<div class="muted">${esc(i.note)}</div>` : ""}
     </div>`).join("");
   app.innerHTML = `
     <button class="back" id="back">← All components</button>
-    <h2>${esc(c.name)}</h2>
+    <h1>${esc(c.name)}</h1>
     <div class="small muted">Upstream: ${link(c.upstream)}${c.purl ? ` · <span class="kbd">${esc(c.purl)}</span>` : ""}</div>
     ${incidents}
     <div class="stats">
@@ -626,7 +658,7 @@ function statementCard(r, opts = {}) {
       The vendor may have backported a fix; ask them or check their advisory.</div>` : ""}
     ${r.rc === "outside" ? `<div class="meta">Listed version is outside the affected ranges in the CVE record. Older, end-of-life branches are often missing from those ranges.</div>` : ""}
     ${cves ? `<div class="cves">${cves}</div>` : ""}
-    <div class="meta">${esc(EVIDENCE[r.e] || r.e)} · ${link(r.u, who)}${r.d ? ` · as of ${esc(r.d)}` : ""}${r.cat && r.src !== "csaf" ? ` · ${esc(r.cat)}` : ""}</div>
+    <div class="meta">${esc(EVIDENCE[r.e] || r.e)} · ${link(r.u, who)}${r.d ? ` · as of ${dateEl(r.d)}` : ""}${r.cat && r.src !== "csaf" ? ` · ${esc(r.cat)}` : ""}</div>
     ${opts.inProduct ? (() => { const pv = rowProv(r), line = provParts(pv.fv, pv.dp, pv.h, r.e, false);
       return line ? `<div class="meta">${line}</div>` : ""; })() : ""}
     ${(r.n || refs) ? `<details><summary>Notes and references</summary>
@@ -650,7 +682,7 @@ async function showProduct(key) {
   app.innerHTML = `
     <button class="back" id="back">← Back</button>
     <div class="supplier" style="margin-top:12px">${esc(p.s)}</div>
-    <h2 style="margin-top:0">${esc(p.p)}</h2>
+    <h1 style="margin-top:0" data-title="${esc(p.p.toLowerCase().startsWith(p.s.toLowerCase()) ? p.p : `${p.s} ${p.p}`)}">${esc(p.p)}</h1>
     ${p.cv ? `<div class="stats"><div class="stat"><b>${fmt(p.cv)}</b><span>CVEs naming this product</span></div>
       <div class="stat"><b>${fmt(p.kev || 0)}</b><span>in CISA KEV</span></div></div>` : ""}
     ${p.cpe ? `<div class="meta">CPE: ${p.cpe.map(c => `<span class="kbd">${esc(c)}</span>`).join(" ")}</div>` : ""}
@@ -683,7 +715,7 @@ async function renderInventory(key) {
     const d = docs[cur], t = norm($("#invfilter").value);
     const rows = d.c.filter(([n]) => !t || norm(n).includes(t));
     const prov = provParts(d.fv, d.dp, d.h, d.e, true);
-    $("#invsrc").innerHTML = `Source: ${link(d.u)}${d.a ? ` (scan of ${esc(d.a)})` : ""} · retrieved ${esc(d.d)} · ${fmt(rows.length)} of ${fmt(d.c.length)} shown`
+    $("#invsrc").innerHTML = `Source: ${link(d.u)}${d.a ? ` (scan of ${esc(d.a)})` : ""} · retrieved ${dateEl(d.d)} · ${fmt(rows.length)} of ${fmt(d.c.length)} shown`
       + (prov ? `<br>${prov}` : "");
     $("#invtable").innerHTML = rows.slice(0, 400).map(([n, v]) =>
       `<tr><td style="padding:3px 6px 3px 0;overflow-wrap:anywhere">${esc(n)}</td><td style="padding:3px 0;text-align:right;white-space:nowrap" class="muted">${esc(v)}</td></tr>`).join("")
@@ -739,7 +771,7 @@ async function showCve(id) {
   const back = `<button class="back" id="back">← Back</button>`;
   if (!r) {
     statusEl.textContent = "Not on the watchlist";
-    app.innerHTML = `${back}<div class="card cvecard"><div class="head"><h2>${esc(id)}</h2></div>
+    app.innerHTML = `${back}<div class="card cvecard"><div class="head"><h1>${esc(id)}</h1></div>
       <p>This CVE is not on the watchlist, so the census has no card for it. The watchlist covers flaws in components and vendor engines
       shared by many products.</p>
       <p class="small">${link(`https://www.cve.org/CVERecord?id=${id}`, "CVE record")} · ${link(`https://nvd.nist.gov/vuln/detail/${id}`, "NVD")}</p></div>`;
@@ -747,14 +779,14 @@ async function showCve(id) {
     return;
   }
   const comp = META.components.find(x => x.id === r.c);
-  statusEl.textContent = `${id} · scores as of ${data.epss_date || META.built.slice(0, 10)}`;
+  statusEl.textContent = `${id}, scores as of ${fmtDate(data.epss_date || META.built)}`;
   const band = r.e != null ? epssBand(r.e) : null;
   const rows = [];
   const row = (k, v) => rows.push(`<div class="k">${k}</div><div class="v">${v}</div>`);
   row("EPSS probability", r.e != null ? `${epssPct(r.e)} <span class="small muted">(next 30 days)</span>` : `<span class="small muted">not scored yet</span>`);
   if (r.pc != null) row("Percentile", ordinal(r.pc));
   row("CVSS base score", r.cvss ? `${r.cvss.score.toFixed(1)}${r.cvss.severity ? ` ${esc(r.cvss.severity)}` : ""} <span class="small muted">v${esc(r.cvss.version)}</span>` : `<span class="small muted">none in the CVE record</span>`);
-  row("CISA KEV", r.k ? `<span class="pill yes">Yes · actively exploited</span>` : `<span class="pill no">No</span>`);
+  row("CISA KEV", r.k ? `<span class="pill yes">Yes, actively exploited</span>` : `<span class="pill no">No</span>`);
   if (r.k) row("KEV date added", dateEl(r.k));
   if (r.rw) row("Ransomware use", "Known");
   if (r.x) row("Named products", exploitBadge(r.x));
@@ -768,7 +800,7 @@ async function showCve(id) {
        a KEV listing is evidence that attacks have happened. When the two disagree, go with KEV.</div>` : "";
   app.innerHTML = `${back}
     <div class="card cvecard">
-      <div class="head"><h2>${esc(id)}</h2><div>${lead}${band ? `<span class="pill ${band}">EPSS ${band} · ${epssPct(r.e)}</span>` : ""}</div></div>
+      <div class="head"><h1>${esc(id)}</h1><div>${lead}${band ? `<span class="pill ${band}">EPSS ${band}, ${epssPct(r.e)}</span>` : ""}</div></div>
       <div class="small muted" style="margin-bottom:8px">${esc(r.i)}</div>
       <div class="kv">${rows.join("")}</div>
     </div>
@@ -793,30 +825,33 @@ const THREAT_WHY = {
 };
 let threatsShown = 5;
 function threatCard(t, i) {
-  const cves = t.cves.slice(0, 4).map(cveLink).join(" ")
-    + (t.cves.length > 4 ? ` <span class="small muted">+${t.cves.length - 4} more</span>` : "");
   const facts = [];
   if (t.kev) facts.push(`In CISA KEV since ${dateEl(t.kev)}${t.kev_cves > 1 ? ` (${t.kev_cves} CVEs)` : ""}`);
   if (t.ransomware) facts.push("used in ransomware attacks");
   if (t.epss != null) facts.push(`EPSS ${epssPct(t.epss)}`);
   const flagged = (t.flagged || []).map(f =>
-    `<a href="#p=${encodeURIComponent(f.k)}" data-p="${esc(f.k)}" title="${esc(EXPLOIT[f.x] ? EXPLOIT[f.x][0] : f.x)}">${esc(f.p.toLowerCase().startsWith(f.s.toLowerCase()) ? f.p : `${f.s} ${f.p}`)}</a>`).join(", ");
+    `<a href="#p=${encodeURIComponent(f.k)}" data-p="${esc(f.k)}">${esc(f.p.toLowerCase().startsWith(f.s.toLowerCase()) ? f.p : `${f.s} ${f.p}`)}</a>`).join(", ");
   const more = t.flagged_total > (t.flagged || []).length ? ` and ${t.flagged_total - t.flagged.length} more` : "";
   const named = t.level === "exploited" ? "Products named in attacks" : "Products with a working exploit";
   const rel = relDate(t.date);
+  const filter = t.flagged_total ? `&f=${t.level === "exploited" ? "exploited" : t.level === "attempted" ? "attempted" : "demonstrated"}` : "";
+  // Collapsed, a card is three lines: what, how bad and how new. The rest opens in place.
   return `<li class="card threat">
     <div class="rank" aria-hidden="true">${i + 1}</div>
     <div class="grow">
-      <div class="row"><div class="grow"><h3><a href="#c=${encodeURIComponent(t.c)}">${esc(t.title)}</a></h3>
-        <div class="small muted">${esc(t.component)}</div></div>
-        <div class="small muted when">${rel ? `<b>${rel}</b>` : ""}${dateEl(t.date)}</div></div>
-      <div class="meta">${exploitBadge(t.level)} <span class="small muted">${esc(THREAT_WHY[t.level] || "")}</span></div>
-      <div class="cves">${cves}</div>
-      ${facts.length ? `<div class="meta">${facts.join(" · ")}</div>` : ""}
-      ${t.note ? `<div class="meta">${esc(t.note)}</div>` : ""}
-      ${flagged ? `<div class="meta"><b>${named}:</b> ${flagged}${more}</div>` : ""}
-      <div class="meta"><a class="act" href="#c=${encodeURIComponent(t.c)}${t.flagged_total ? `&f=${t.level === "exploited" ? "exploited" : t.level === "attempted" ? "attempted" : "demonstrated"}` : ""}">
-        ${t.products ? `${fmt(t.products)} product${t.products === 1 ? "" : "s"} with a vendor statement` : "See the component"}${t.unfixed ? `, ${fmt(t.unfixed)} with no fix stated` : ""}</a></div>
+      <div class="row"><h2><a href="#c=${encodeURIComponent(t.c)}">${esc(t.title)}</a></h2>
+        <div class="small when">${rel ? `<b>${rel}</b>` : dateEl(t.date)}</div></div>
+      <div class="tline">${exploitBadge(t.level)} ${cveLink(t.cves[0])}${t.cves.length > 1 ? ` <span class="small muted">+${t.cves.length - 1}</span>` : ""}
+        <span class="small muted">${esc(t.component)}</span></div>
+      <details${i === 0 ? " open" : ""}><summary>Details<span class="sr-only"> for ${esc(t.title)}</span></summary>
+        <div class="meta">${esc(THREAT_WHY[t.level] || "")} Newest report ${dateEl(t.date)}.</div>
+        ${t.cves.length > 1 ? `<div class="cves">${t.cves.slice(0, 8).map(cveLink).join(" ")}${t.cves.length > 8 ? ` <span class="small muted">+${t.cves.length - 8} more</span>` : ""}</div>` : ""}
+        ${facts.length ? `<div class="meta">${facts.join(" · ")}</div>` : ""}
+        ${t.note ? `<div class="meta">${esc(t.note)}</div>` : ""}
+        ${flagged ? `<div class="meta"><b>${named}:</b> ${flagged}${more}</div>` : ""}
+        <div class="meta"><a class="act" href="#c=${encodeURIComponent(t.c)}${filter}">
+          ${t.products ? `${fmt(t.products)} product${t.products === 1 ? "" : "s"} with a vendor statement` : "See the component"}${t.unfixed ? `, ${fmt(t.unfixed)} with no fix stated` : ""}</a></div>
+      </details>
     </div>
   </li>`;
 }
@@ -829,7 +864,7 @@ function showThreats() {
       ${w.cves.slice(0, 2).map(cveLink).join(" ")}${w.cves.length > 2 ? ` <span class="muted">+${w.cves.length - 2}</span>` : ""}
       ${w.products ? `<span class="muted">· ${fmt(w.products)} products with statements</span>` : ""}</div>`).join("");
   app.innerHTML = `
-    <h2>What attackers are using now</h2>
+    <h1>What attackers are using now</h1>
     <p>Flaws in shared components and vendor engines with the newest sign of exploitation. Open one to see which products ship
       the affected code and what each vendor says.</p>
     <details><summary>How this list is built</summary>
@@ -839,12 +874,13 @@ function showThreats() {
       with no shared component is not listed here.</p></details>
     ${shown.length ? `<ol class="tlist" style="margin-top:12px">${shown.map(threatCard).join("")}</ol>` : `<p class="muted">No exploitation reports in the current data.</p>`}
     ${all.length > threatsShown ? `<p><button class="chip" id="more-threats">Show ${Math.min(10, all.length - threatsShown)} more</button></p>` : ""}
+    <p class="small">Follow this list: <a href="data/feed.xml">Atom feed</a>, <a href="data/feed.json">JSON feed</a></p>
     ${watching ? `<h2>Not exploited yet, worth watching</h2>
       <p class="small muted">This year's flaws on the watchlist with no exploitation report so far.</p>${watching}` : ""}`;
   const more = $("#more-threats");
   if (more) more.addEventListener("click", () => {
     const from = threatsShown; threatsShown += 10; showThreats();
-    const next = app.querySelectorAll("ol.tlist > li h3 a")[from];   // keep keyboard focus where the new items start
+    const next = app.querySelectorAll("ol.tlist > li h2 a")[from];   // keep keyboard focus where the new items start
     if (next) next.focus();
   });
   bindCards();
@@ -852,10 +888,10 @@ function showThreats() {
 
 function showHome() {
   const k = META.counts;
-  statusEl.textContent = `${fmt(k.assertions)} sourced statements about ${fmt(k.products_with_data)} products · updated ${META.built.slice(0, 10)}`;
+  statusEl.textContent = `${fmt(k.assertions)} sourced statements about ${fmt(k.products_with_data)} products, updated ${fmtDate(META.built)}`;
   const comps = [...META.components].sort((a, b) => b.products - a.products);
   app.innerHTML = `
-    <h2>Which products embed which component</h2>
+    <h1>Which products embed which component</h1>
     <p>When a vulnerability lands in a widely embedded component, the hard question is which <b>vendor products</b> ship it inside.
     Asset scanners can't see into appliances and SaaS. Xenolith collects vendor CSAF/VEX statements, vendors' own open source notices
     and community incident trackers into one searchable, permanent index, organized by component. Search any library name to see which
@@ -923,7 +959,7 @@ async function showWanted(focus) {
   const open = entries.filter(e => e.status !== "fulfilled");
   app.innerHTML = `
     <button class="back" id="back">← Back</button>
-    <h2>Wanted</h2>
+    <h1>Wanted</h1>
     <p>Widely deployed products whose component lists we tried to collect and couldn't: the vendor blocks automated downloads,
     keeps the list behind a login or inside the product, or doesn't publish one. If you have access to one of these products,
     the list is usually a few clicks away for you, and it's exactly what's missing here.</p>
@@ -1033,7 +1069,7 @@ function showWhy() {
     <div class="hero">
       <div>
         <p class="kicker">Why it matters</p>
-        <h2>Do you know what’s inside?</h2>
+        <h1>Do you know what’s inside?</h1>
         <p class="lede">Every major incident starts with the same question: <b>which of the products we already run have the vulnerable component inside?</b>
         This page sets out why that is still so hard to answer, why the rules won’t answer it for us, who is already doing better, and what the census does about it.</p>
         <p class="small muted">Also a conference talk: <a href="${DECK.pptx}" download>PowerPoint</a> · <a href="${DECK.pdf}" target="_blank" rel="noopener">PDF</a>
@@ -1265,7 +1301,7 @@ function renderFooter() {
     <p>All data is in the repository as NDJSON under <a href="${REPO}/tree/main/data" target="_blank" rel="noopener">data/</a>,
     refreshed daily. Contribute notices links, statements or SBOMs through <a href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">pull requests</a>.
     Statements are reproduced from their sources, with links. Always confirm against the vendor's own advisory before you act.</p>
-    <p>Built ${esc(META.built)} · <a href="${REPO}" target="_blank" rel="noopener">GitHub</a></p>`;
+    <p>Built ${dateEl(META.built)} · <a href="${REPO}" target="_blank" rel="noopener">GitHub</a></p>`;
 }
 
 // ---------------------------------------------------------------- boot
