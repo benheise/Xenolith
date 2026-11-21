@@ -3,6 +3,54 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-21: Java4Shell recheck
+
+Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 63 new statements from
+seven new vendors and one updated row (383 Java4Shell statements in all), each read on the
+vendor's own page.
+
+- **Status change:** Elastic Cloud Hosted stays on a workaround, but Elastic now says it deployed
+  the mitigating configuration change to the affected Azure deployments on 20 November (on the
+  19th it was still rolling it out).
+- **New vendors:**
+  - CloudBees (advisory of 18 November): CloudBees CI fixed in 2.580.2.38436, which starts the JVM
+    with -XX:-UseBASE64Intrinsics rather than updating Java; agents launched outside CloudBees'
+    images and installers need their own JDK patched.
+  - Sonatype: IQ Server 209.2 and 203.6 turn the affected optimization off; the latest Nexus
+    Repository release is patched (version not named); SaaS not affected.
+  - Dynatrace: OneAgent not affected; Managed, ActiveGate (1.327 and later) and Private Synthetic
+    fixed in builds of 18 and 19 November (Managed and ActiveGate through the JVM flag); public
+    Synthetic locations patched.
+  - Hitachi Vantara (technical alert, updated 20 November): 41 of its own products. VSP 360 is
+    affected (bundled OpenJDK 17 and 21) with no fix or mitigation yet; 23 are under investigation
+    (most VSP block storage, HCP for Cloud Scale, HCP Anywhere Enterprise, VSP One Object,
+    Advanced Server, IQ Studio, CCI, BCM, HDRS); 17 are not affected (VSP One File, HNAS, HCP,
+    HCP Anywhere, Ops Center and others). The alert's four third-party products (Brocade switches
+    and SANnav, Cisco MDS and Nexus, CyberSense) are left to their own vendors.
+  - ManageEngine (UEMS advisory): 12 on-premises products, Endpoint Central and its family, not
+    affected because their bundled Java is outside the affected range; the cloud editions moved
+    to JDK 17.0.21.1 on 18 November.
+  - Broadcom (KB 462982): CA Embedded Entitlements Manager 12.6.9.0 to 12.7.2.1 bundles Temurin 17
+    and is on a workaround; Broadcom's permanent fix is swapping in a fixed Temurin yourself.
+  - OPSWAT: MetaDefender OT Access bundles Java for its clientless tunnel but is not exploitable.
+- **No change:** Cisco (still v1.3 of 20 November, every fix TBD), Splunk (20 November), PaperCut
+  (26.0.7 still planned for the week of 23 November and not yet in the release history; no 25.x
+  date), Keycloak (Operator still on the workaround), Barracuda (last updated 18 November),
+  Atlassian (patches still wait on Temurin), Elastic self-managed (8.19.26, 9.4.10, 9.5.7 and
+  9.6.0 not out), Jenkins, Citrix, Fortinet, Tenable.
+- Exploitation unchanged: exploit attempts and privately held RCE exploits, no confirmed
+  compromise, not in CISA KEV (catalog last updated 20 November).
+- **Not added:** Sophos' advisory refused the connection again, so its rows are unchanged. Esri's
+  ArcGIS post still returns HTTP 403; its community thread only links to it. SapMachine offers
+  17.0.21.1, 21.0.13.1 and 25.0.5.1 builds on sapmachine.io, but no SAP page ties them to the CVE.
+  JFrog's research post covers Xray detection, not Artifactory's status; Symantec's protection
+  bulletin is detection content; Percona's and ManageEngine's cloud-services posts cover only
+  their own infrastructure. Claims seen only in news or aggregators (Epic Systems not affected,
+  GraalVM Native Image 25.1 and later affected with a fix due in 25.6) stay out.
+- Still silent: Ping Identity, JFrog (product statement), Broadcom's VMware Tanzu and Symantec
+  products, IBM (no Semeru or WebSphere bulletin), Oracle's own products, SAP, JetBrains Runtime
+  and the IDEs.
+
 ## 2026-11-20: Java4Shell recheck
 
 Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new statements and
