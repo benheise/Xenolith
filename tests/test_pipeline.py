@@ -189,6 +189,20 @@ class CommunityTest(unittest.TestCase):
         self.assertEqual(errors, [])
 
 
+class EpssTest(unittest.TestCase):
+    def test_details_pick_cna_score_then_adp(self):
+        from xenolith.sources import epss
+        rec = {"cveMetadata": {"datePublished": "2026-11-19T15:17:25.407Z"},
+               "containers": {"cna": {"descriptions": [{"lang": "en", "value": "An  example\nflaw."}], "metrics": []},
+                              "adp": [{"metrics": [{"cvssV3_1": {"baseScore": 9.8, "baseSeverity": "CRITICAL", "vectorString": "CVSS:3.1/AV:N"}}]}]}}
+        d = epss.details(rec)
+        self.assertEqual((d["published"], d["description"]), ("2026-11-19", "An example flaw."))
+        self.assertEqual((d["cvss"]["score"], d["cvss"]["severity"], d["cvss"]["version"]), (9.8, "Critical", "3.1"))
+        rec["containers"]["cna"]["metrics"] = [{"cvssV4_0": {"baseScore": 9.3, "baseSeverity": "CRITICAL", "vectorString": "CVSS:4.0/AV:N"}}]
+        self.assertEqual(epss.details(rec)["cvss"]["version"], "4.0")          # newest CVSS version wins
+        self.assertNotIn("cvss", epss.details({"containers": {"cna": {}}}))
+
+
 class ThreatFeedTest(unittest.TestCase):
     def test_feed_ranks_by_newest_signal(self):
         from xenolith import build as build_mod

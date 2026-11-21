@@ -36,6 +36,19 @@ Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new 
   Symantec), IBM (no Semeru or WebSphere bulletin), Oracle's own products, SAP, SapMachine,
   JetBrains Runtime and the IDEs.
 
+## 2026-11-21: EPSS scores and a card for every watchlist CVE
+
+- **EPSS:** `python -m xenolith epss` fetches FIRST.org's EPSS score and percentile for every
+  watchlist CVE on each refresh, and caches the CVSS score, publication date and description from
+  the CVE record (`data/spine/epss.json`, `data/spine/cve_details.json`).
+- **CVE card:** every CVE on the site now opens a score card (`#v=CVE-...`): EPSS probability
+  and percentile, CVSS, CISA KEV status and date, ransomware use, whether a product has been named
+  in attacks, the component, and how many products have a vendor statement. Searching a CVE ID
+  offers its card.
+- **When EPSS and KEV disagree** the card says so: 98 of the 392 KEV-listed watchlist CVEs score
+  under 10% on EPSS, six of them under 1%. EPSS is a forecast; KEV is evidence.
+- Threat cards show the highest EPSS score among their CVEs.
+
 ## 2026-11-20: Threats tab
 
 The site now opens on a **Threats** tab: the five watchlist flaws with the newest sign of

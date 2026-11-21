@@ -102,6 +102,20 @@
     border-bottom: 2px solid transparent; margin-bottom: -1px; }
   .tabs a:hover { color: var(--ink); }
   .tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+  /* CVE card */
+  .cvecard h2 { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 500; font-size: 26px; margin: 0; overflow-wrap: anywhere; }
+  .cvecard .head { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 6px; }
+  .pill { display: inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 700; letter-spacing: .04em;
+    text-transform: uppercase; padding: 6px 12px; border-radius: 999px; border: 1px solid currentColor; }
+  .pill.low { color: var(--fixed); } .pill.medium { color: var(--investigating); } .pill.high { color: var(--workaround); }
+  .pill.critical, .pill.yes { color: var(--affected); } .pill.no { color: var(--neutral); }
+  .kv { display: grid; grid-template-columns: minmax(9em, 42%) 1fr; gap: 0; }
+  .kv > div { padding: 12px 0; border-top: 1px solid var(--line); }
+  .kv > div:nth-child(-n+2) { border-top: 0; }
+  .kv .k { color: var(--muted); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; padding-right: 10px; }
+  .kv .v { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 15px; overflow-wrap: anywhere; }
+  .kv .v .small { font-family: inherit; }
+  a.cve { text-decoration: none; color: inherit; } a.cve:hover { text-decoration: underline; }
   /* Threats tab */
   .threat { display: flex; gap: 12px; align-items: flex-start; }
   .threat .rank { font-size: 22px; font-weight: 700; color: var(--neutral); min-width: 1.4em; line-height: 1.2; }
@@ -247,6 +261,9 @@ async function loadJSON(path) {
   if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
   return r.json();
 }
+let cveData = null;
+function cves() { return cveData || (cveData = loadJSON("data/cves.json")); }
+function cveLink(v) { return `<a class="cve" href="#v=${encodeURIComponent(v)}" title="Score card for ${esc(v)}">${esc(v)}</a>`; }
 async function component(id) {
   if (!compCache.has(id)) compCache.set(id, loadJSON(`data/components/${encodeURIComponent(id)}.json`));
   return compCache.get(id);
@@ -255,7 +272,7 @@ async function component(id) {
 // ---------------------------------------------------------------- routing
 function parseHash() {
   const h = new URLSearchParams(location.hash.replace(/^#/, ""));
-  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), w: h.get("w"), why: h.has("why"), census: h.has("census"), f: h.get("f") || "all", t: h.get("t") || "" };
+  return { c: h.get("c"), p: h.get("p"), q: h.get("q"), w: h.get("w"), v: h.get("v"), why: h.has("why"), census: h.has("census"), f: h.get("f") || "all", t: h.get("t") || "" };
 }
 function setTab(name) {
   document.querySelectorAll(".tabs a").forEach(a => {
@@ -274,12 +291,13 @@ window.addEventListener("hashchange", route);
 let lastView = null;
 function route() {
   if (!META) return;
-  const { c, p, q, w, why, census, f, t } = parseHash();
-  const view = c ? `c:${c}` : p ? `p:${p}` : q ? "q" : w ? "wanted" : why ? "why" : census ? "home" : "threats";
+  const { c, p, q, w, v, why, census, f, t } = parseHash();
+  const view = v ? `v:${v}` : c ? `c:${c}` : p ? `p:${p}` : q ? "q" : w ? "wanted" : why ? "why" : census ? "home" : "threats";
   if (view !== lastView) { window.scrollTo(0, 0); lastView = view; }
   setTab(view === "why" ? "why" : view === "threats" ? "threats" : "census");
   if (view === "why") { input.value = ""; return showWhy(); }
   if (view === "threats") { input.value = ""; return showThreats(); }
+  if (v) { input.value = ""; return showCve(v.toUpperCase()); }
   if (c && META.components.some(x => x.id === c)) { input.value = ""; return showComponent(c, f, t); }
   if (p) { input.value = ""; return showProduct(p); }
   if (q) { if (input.value !== q) input.value = q; return showSearch(q); }
@@ -377,6 +395,9 @@ async function showSearch(q) {
   const nhits = noticeMatches(idx, q);
   statusEl.textContent = `${comps.length} component${comps.length === 1 ? "" : "s"}, ${fmt(prods.total)} product${prods.total === 1 ? "" : "s"}, ${nhits.length} notices name${nhits.length === 1 ? "" : "s"} match`;
   let html = "";
+  if (/^CVE-\d{4}-\d{4,}$/i.test(q.trim())) {
+    html += `<div class="notice">Score card for ${cveLink(q.trim().toUpperCase())}: EPSS, CVSS, CISA KEV and affected products.</div>`;
+  }
   if (exact) {
     html += `<div class="notice">“${esc(q)}” is <b>${esc(exact.name)}</b>. <a href="#c=${encodeURIComponent(exact.id)}">See every product that embeds it →</a></div>`;
   }
@@ -447,7 +468,7 @@ async function showComponent(id, filterKey, text) {
 
   const incidents = (c.incidents || []).map(i => `
     <div class="small" style="margin-top:4px"><b>${esc(i.name)}</b> (${esc(i.year)}):
-      ${(i.cves || []).map(v => `<a class="cve" href="https://www.cve.org/CVERecord?id=${esc(v)}" target="_blank" rel="noopener">${esc(v)}</a>`).join(" ")}
+      ${(i.cves || []).map(cveLink).join(" ")}
       ${(i.trackers || []).map(u => ` · tracker: ${link(u)}`).join("")}
       ${i.kev ? `<div><span class="badge x-exploited" title="CISA lists this vulnerability as exploited in the wild. KEV names the component, not the products that embed it.">Exploited in the wild (CISA KEV)</span>
         <span class="small muted">${Object.entries(i.kev).map(([v, d]) => `${esc(v)} since ${esc(d)}`).join(" · ")}${(i.kev_ransomware || []).length ? " · used in ransomware attacks" : ""}</span></div>` : ""}
@@ -647,6 +668,60 @@ function downloadCycloneDX(p, d) {
 }
 
 // ---------------------------------------------------------------- home
+// ---------------------------------------------------------------- CVE card
+function epssPct(e) { const p = e * 100; return (p >= 10 ? p.toFixed(1) : p.toFixed(2)) + "%"; }
+function epssBand(e) { return e >= 0.5 ? "critical" : e >= 0.1 ? "high" : e >= 0.01 ? "medium" : "low"; }
+function ordinal(pc) { const n = (pc * 100).toFixed(1); return `${n}th`; }
+async function showCve(id) {
+  statusEl.textContent = `Loading ${id}…`;
+  let data;
+  try { data = await cves(); } catch (e) { app.innerHTML = `<p class="muted">Could not load CVE data (${esc(e.message)}).</p>`; return; }
+  const r = data.cves[id];
+  const back = `<button class="back" id="back">← Back</button>`;
+  if (!r) {
+    statusEl.textContent = "Not on the watchlist";
+    app.innerHTML = `${back}<div class="card cvecard"><div class="head"><h2>${esc(id)}</h2></div>
+      <p>This CVE is not on the watchlist, so the census has no card for it. The watchlist covers flaws in components and vendor engines
+      shared by many products.</p>
+      <p class="small">${link(`https://www.cve.org/CVERecord?id=${id}`, "CVE record")} · ${link(`https://nvd.nist.gov/vuln/detail/${id}`, "NVD")}</p></div>`;
+    $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
+    return;
+  }
+  const comp = META.components.find(x => x.id === r.c);
+  statusEl.textContent = `${id} · scores as of ${data.epss_date || META.built.slice(0, 10)}`;
+  const band = r.e != null ? epssBand(r.e) : null;
+  const rows = [];
+  const row = (k, v) => rows.push(`<div class="k">${k}</div><div class="v">${v}</div>`);
+  row("EPSS probability", r.e != null ? `${epssPct(r.e)} <span class="small muted">(next 30 days)</span>` : `<span class="small muted">not scored yet</span>`);
+  if (r.pc != null) row("Percentile", ordinal(r.pc));
+  row("CVSS base score", r.cvss ? `${r.cvss.score.toFixed(1)}${r.cvss.severity ? ` ${esc(r.cvss.severity)}` : ""} <span class="small muted">v${esc(r.cvss.version)}</span>` : `<span class="small muted">none in the CVE record</span>`);
+  row("CISA KEV", r.k ? `<span class="pill yes">Yes · actively exploited</span>` : `<span class="pill no">No</span>`);
+  if (r.k) row("KEV date added", esc(r.k));
+  if (r.rw) row("Ransomware use", "Known");
+  if (r.x) row("Named products", exploitBadge(r.x));
+  if (r.pub) row("Published", esc(r.pub));
+  row("Component", `<a href="#c=${encodeURIComponent(r.c)}">${esc(comp ? comp.name : r.c)}</a>`);
+  row("Products", r.n ? `<a href="#c=${encodeURIComponent(r.c)}">${fmt(r.n)} with a vendor statement</a>${r.u ? `, ${fmt(r.u)} with no fix stated` : ""}` : `<span class="small muted">no vendor statements yet</span>`);
+  const mismatch = r.k && r.e != null && r.e < 0.1
+    ? `<div class="notice">EPSS rates this ${band} (${epssPct(r.e)}), but it is in CISA KEV. EPSS is a forecast and often lags a fresh disclosure;
+       a KEV listing is evidence that attacks have happened. When the two disagree, go with KEV.</div>` : "";
+  app.innerHTML = `${back}
+    <div class="card cvecard">
+      <div class="head"><h2>${esc(id)}</h2>${band ? `<span class="pill ${band}" title="EPSS band: under 1% low, 1 to 10% medium, 10 to 50% high, 50% and over critical">${band} · ${epssPct(r.e)}</span>` : ""}</div>
+      <div class="small muted" style="margin-bottom:8px">${esc(r.i)}</div>
+      <div class="kv">${rows.join("")}</div>
+    </div>
+    ${mismatch}
+    ${r.d ? `<div class="card"><div class="kv"><div class="k" style="grid-column:1/-1;border:0;padding-bottom:4px">Description</div></div>
+      <p style="margin:0">${esc(r.d)}</p>
+      ${r.cvss && r.cvss.vector ? `<p class="small muted hash" style="margin:8px 0 0">${esc(r.cvss.vector)}</p>` : ""}</div>` : ""}
+    <p class="small">${link(`https://www.cve.org/CVERecord?id=${id}`, "CVE record")} · ${link(`https://nvd.nist.gov/vuln/detail/${id}`, "NVD")}
+      ${r.k ? ` · ${link(`https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=${id}`, "CISA KEV entry")}` : ""}
+      · ${link(`https://api.first.org/data/v1/epss?cve=${id}`, "EPSS (FIRST.org)")}</p>
+    <p class="small muted">EPSS scores come from FIRST.org and are refreshed daily. The description and CVSS score are from the CVE record.</p>`;
+  $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
+}
+
 // ---------------------------------------------------------------- Threats tab (default)
 const THREAT_WHY = {
   exploited: "Being used in real attacks.",
@@ -656,11 +731,12 @@ const THREAT_WHY = {
 };
 let threatsShown = 5;
 function threatCard(t, i) {
-  const cves = t.cves.slice(0, 4).map(v => `<a class="cve" href="https://www.cve.org/CVERecord?id=${esc(v)}" target="_blank" rel="noopener">${esc(v)}</a>`).join(" ")
+  const cves = t.cves.slice(0, 4).map(cveLink).join(" ")
     + (t.cves.length > 4 ? ` <span class="small muted">+${t.cves.length - 4} more</span>` : "");
   const facts = [];
   if (t.kev) facts.push(`In CISA KEV since ${esc(t.kev)}${t.kev_cves > 1 ? ` (${t.kev_cves} CVEs)` : ""}`);
   if (t.ransomware) facts.push("used in ransomware attacks");
+  if (t.epss != null) facts.push(`EPSS ${epssPct(t.epss)}`);
   const flagged = (t.flagged || []).map(f =>
     `<a href="#p=${encodeURIComponent(f.k)}" data-p="${esc(f.k)}" title="${esc(EXPLOIT[f.x] ? EXPLOIT[f.x][0] : f.x)}">${esc(f.p.toLowerCase().startsWith(f.s.toLowerCase()) ? f.p : `${f.s} ${f.p}`)}</a>`).join(", ");
   const more = t.flagged_total > (t.flagged || []).length ? ` and ${t.flagged_total - t.flagged.length} more` : "";

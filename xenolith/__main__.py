@@ -207,6 +207,22 @@ def cmd_kev(args) -> int:
     return 0
 
 
+def cmd_epss(args) -> int:
+    """Fetch today's EPSS scores, and any missing CVE record details, for the watchlist CVEs."""
+    from .sources import epss
+    cves = sorted(catalog_mod.load().cve_to_component)
+    spine = DATA / "spine"
+    spine.mkdir(parents=True, exist_ok=True)
+    scores = epss.fetch_epss(cves)
+    (spine / "epss.json").write_text(json.dumps(scores, separators=(",", ":")) + "\n", encoding="utf-8")
+    path = spine / "cve_details.json"
+    cache = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    det = epss.fetch_details(cves, cache)
+    path.write_text(json.dumps(det, indent=0, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"epss: {len(scores['scores'])} of {len(cves)} watchlist CVEs scored ({scores['date']}); record details for {len(det)}")
+    return 0
+
+
 def cmd_spine(args) -> int:
     kev = cvelist.load_kev(Path(args.kev) if args.kev else None)
     _write_watchlist_kev(kev)
@@ -282,6 +298,8 @@ def main(argv: list[str] | None = None) -> int:
     k.add_argument("--kev", help="path to a downloaded KEV CSV (default: fetch it)")
     k.add_argument("--coverage", action="store_true", help="report how much of KEV the census covers; writes nothing")
     k.set_defaults(fn=cmd_kev)
+    e = sub.add_parser("epss", help="fetch EPSS scores and CVE record details for watchlist CVEs")
+    e.set_defaults(fn=cmd_epss)
     s = sub.add_parser("spine", help="build the product spine from cvelistV5 and CISA KEV")
     s.add_argument("--cves", help="path to an extracted cvelistV5 'cves' directory (omit for KEV-only)")
     s.add_argument("--kev", help="local KEV CSV (default: download from cisagov/kev-data)")

@@ -388,9 +388,53 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
 
     threats, watching = build_threats(catalog, assertions, kev_cves)
 
+    # One record per watchlist CVE for the site's CVE card: EPSS, CVSS, KEV and the census's own signals.
+    def _load(name: str) -> dict:
+        path = data_dir / "spine" / name
+        return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    epss = _load("epss.json")
+    cve_details = _load("cve_details.json")
+    cve_cards: dict[str, dict] = {}
+    by_cve_products: dict[tuple[str, str], set[str]] = defaultdict(set)
+    by_cve_open: dict[tuple[str, str], set[str]] = defaultdict(set)
+    by_cve_level: dict[tuple[str, str], str] = {}
+    for a in assertions:
+        for cve, status in a["cves"].items():
+            key = (a["component"], cve)
+            by_cve_products[key].add(a["product_key"])
+            if status in ("affected", "workaround"):
+                by_cve_open[key].add(a["product_key"])
+            level = a.get("exploitation")
+            if level and (key not in by_cve_level or exploit_rank[level] < exploit_rank[by_cve_level[key]]):
+                by_cve_level[key] = level
+    for comp in catalog.components.values():
+        for inc in comp.incidents:
+            for cve in (c.upper() for c in inc.get("cves", [])):
+                det = cve_details.get(cve, {})
+                score = (epss.get("scores") or {}).get(cve)
+                kev = kev_cves.get(cve)
+                key = (comp.id, cve)
+                cve_cards[cve] = {
+                    "c": comp.id, "i": inc.get("name", ""),
+                    **({"e": score[0], "pc": score[1]} if score else {}),
+                    **({"cvss": det["cvss"]} if det.get("cvss") else {}),
+                    **({"pub": det["published"]} if det.get("published") else {}),
+                    **({"d": det["description"]} if det.get("description") else {}),
+                    **({"k": kev["added"], "kn": kev.get("name", "")} if kev else {}),
+                    **({"rw": True} if kev and kev.get("ransomware") else {}),
+                    **({"x": by_cve_level[key]} if key in by_cve_level else {}),
+                    "n": len(by_cve_products.get(key, ())), "u": len(by_cve_open.get(key, ())),
+                }
+    (out_dir / "cves.json").write_text(json.dumps({"epss_date": epss.get("date", ""), "cves": cve_cards}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    for t in threats:   # the feed shows the highest EPSS score among an item's CVEs
+        best = max((cve_cards[c]["e"] for c in t["cves"] if "e" in cve_cards.get(c, {})), default=None)
+        if best is not None:
+            t["epss"] = best
+
     meta = {
         "built": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "threats": threats,
+        "epss_date": epss.get("date", ""),
         "watching": watching,
         "exploitation_levels": list(EXPLOITATION),
         "counts": {
