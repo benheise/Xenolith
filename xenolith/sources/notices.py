@@ -1660,6 +1660,10 @@ def assertions(catalog: Catalog, data_dir: Path, corrections: list[dict] | None 
             versions = ", ".join(dict.fromkeys(v for c in comps if (v := c.get("version") or version_in_name(c["name"]))))
             pv = inv.get("version", "")
             evidence = inv.get("evidence", "notices-file")
+            # An image built from a distribution's packages (a dpkg, rpm or apk database inside)
+            # gets its fixes backported without a version change, so its versions say nothing
+            # about a CVE range. The statement is still made; the range check is skipped.
+            packaged = evidence_is_distro(inv)
             where = {"notices-file": f"Listed in {inv['supplier']}'s open source notices",
                      "vendor-sbom": f"Listed in {inv['supplier']}'s published SBOM",
                      "binary-scan": f"Found by a contributed binary scan ({inv.get('tool') or 'tool not stated'})"}[evidence]
@@ -1679,8 +1683,8 @@ def assertions(catalog: Catalog, data_dir: Path, corrections: list[dict] | None 
                 notes=f"{where} for {inv['product']}{' ' + pv if pv else ''} as: {listed}."
                       + (f" Artifact: {inv['artifact']} (sha256 {inv['artifact_sha256'][:16]}…)." if inv.get("artifact_sha256") else "")
                       + set_aside,
-                category={"notices-file": "Third-party notices", "vendor-sbom": "Vendor SBOM",
-                          "binary-scan": "Binary scan"}[evidence],
+                category=DISTRO_SCAN if packaged else {"notices-file": "Third-party notices", "vendor-sbom": "Vendor SBOM",
+                                                       "binary-scan": "Binary scan"}[evidence],
                 updated=inv.get("retrieved", ""),
                 component_version=versions,
                 found_via=inv.get("found_via", ""),
@@ -1689,6 +1693,17 @@ def assertions(catalog: Catalog, data_dir: Path, corrections: list[dict] | None 
             ))
     stats["corrections_unused"] = sum(1 for n in used if not n)
     return out, stats
+
+
+DISTRO_SCAN = "Binary scan (distribution packages)"
+_PACKAGE_DB = re.compile(r"(?:dpkg|rpm|apk)-db-cataloger")
+
+
+def evidence_is_distro(inv: dict, minimum: int = 20) -> bool:
+    """True for a scanned image whose components mostly come from a Linux package database."""
+    if inv.get("evidence") != "binary-scan":
+        return False
+    return sum(1 for c in inv.get("components", []) if _PACKAGE_DB.search(str(c.get("found_by", "")))) >= minimum
 
 
 def now() -> str:

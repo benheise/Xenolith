@@ -1,0 +1,91 @@
+{
+"artifact": "R7000-V1.0.11.136_10.2.120.zip",
+"artifact_sha256": "cf9728a563e78c0053155e2ed76b802f60a67fb87e1a266651ec9bce9b2b464a",
+"components": [
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "busybox",
+"version": "1.22.1"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "bzip2",
+"version": "1.0.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:binary-classifier-cataloger, xenolith-fingerprint",
+"name": "curl",
+"version": "7.36.0"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "curl",
+"version": "7.59.0"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "curl",
+"version": "7.61.1"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "curl",
+"version": "7.68.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:binary-classifier-cataloger, xenolith-fingerprint",
+"name": "openssl",
+"version": "1.0.2h"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "openssl",
+"version": "1.0.2r"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "zlib",
+"version": "1.2.11"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "zlib",
+"version": "1.2.5"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "zlib",
+"version": "1.2.8"
+}
+],
+"discovery_path": [
+"https://www.downloads.netgear.com/files/GDC/R7000/R7000-V1.0.11.136_10.2.120.zip",
+"https://github.com/benheise/Xenolith/blob/main/community/sboms/netgear/r7000--1-0-11-136.cdx.json"
+],
+"evidence": "binary-scan",
+"extractors": [
+"sbom"
+],
+"found_via": "community",
+"kind": "sbom",
+"product": "R7000",
+"retrieved": "2026-11-21",
+"sha256": "cf9728a563e78c0053155e2ed76b802f60a67fb87e1a266651ec9bce9b2b464a",
+"source": "community",
+"submission": "https://github.com/benheise/Xenolith/blob/main/community/sboms/netgear/r7000--1-0-11-136.cdx.json",
+"supplier": "NETGEAR",
+"tool": "xenolith-scan, syft, xenolith-fingerprint",
+"url": "https://www.downloads.netgear.com/files/GDC/R7000/R7000-V1.0.11.136_10.2.120.zip",
+"version": "1.0.11.136"
+}

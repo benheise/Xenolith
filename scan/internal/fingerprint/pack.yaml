@@ -27,6 +27,7 @@
 #                    linked, stripped copies.
 #   paths            files inside a tree or archive (jar, war, zip, tar): regex on the
 #                    path; version from: pom (pom.properties), manifest, package_json,
+#                    content (content_regex with group v, read from the file itself),
 #                    or the regex's group v. confidence 0-1.
 #
 #   watchlist        false for detect-only entries: components the scanner reports (with
@@ -319,12 +320,27 @@ components:
     name: chromium
     purl: pkg:generic/chromium@{version}
     strings:
-      # the Chromium version embedded in Electron and Qt WebEngine (a browser's own
-      # binary is identified by Syft's chrome classifier)
+      # the Chromium version embedded in Electron
       - contains: "Chrome/"
-        regex: 'Chrome/(?P<v>\d+\.\d+\.\d+\.\d+) (?:Electron|QtWebEngine)/'
+        regex: 'Chrome/(?P<v>\d+\.\d+\.\d+\.\d+) Electron/'
+      # A browser's own binary (Chrome, Edge) keeps the version right after the user-agent
+      # template: "(KHTML, like Gecko) %s Safari/537.36\0158.0.8127.36\0".
+      - contains: "(KHTML, like Gecko) %s Safari/537.36"
+        regex: '\(KHTML, like Gecko\) %s Safari/537\.36\x00(?P<v>\d{2,3}\.\d+\.\d{4}\.\d{1,3})\x00'
+
+  # Qt WebEngine names the Chromium release it was forked from ("QtWebEngine/5.15.19
+  # Chrome/87.0.4280.144"). Qt then backports security fixes onto that base for years, so
+  # the number is not a Chromium patch level and must not be range-checked as one
+  # (TeamViewer 15.83.3 ships exactly that string). Reported, not linked to the watchlist.
+  qtwebengine:
+    name: qtwebengine
+    purl: pkg:generic/qtwebengine@{version}
+    watchlist: false
+    strings:
       - contains: "QtWebEngine/"
-        regex: 'QtWebEngine/\d+\.\d+\.\d+ Chrome/(?P<v>\d+\.\d+\.\d+\.\d+)'
+        regex: 'QtWebEngine/(?P<v>\d+\.\d+\.\d+) Chrome/\d+\.\d+\.\d+\.\d+'
+      - contains: "Chrome/"
+        regex: 'Chrome/\d+\.\d+\.\d+\.\d+ QtWebEngine/(?P<v>\d+\.\d+\.\d+)'
 
   nodejs:
     name: node.js
@@ -419,3 +435,100 @@ components:
       # OpenJ9's, not Java's.
       - contains: "Eclipse OpenJ9 VM"
         regex: 'openj9-(?P<v>\d+\.\d+\.\d+)'
+
+  # ---- added November 2026 with the watchlist's KEV pass. Each was read off a Debian 12
+  # build (and Firefox ESR / Tor Browser for Gecko); the comments say which string.
+  git:
+    name: git
+    purl: pkg:generic/git@{version}
+    strings:
+      # The HTTP user agent, "git/2.39.5" (Git for Windows: "git/2.47.0.windows.1").
+      - contains: "git/"
+        regex: '(?<![\w./-])git/(?P<v>\d+\.\d+\.\d+(?:\.\d+)?)(?:\.windows\.\d+)?\x00'
+        requires_any: ["GIT_USER_AGENT"]
+
+  bind:
+    name: bind
+    purl: pkg:generic/bind@{version}
+    strings:
+      # named, dig, rndc and BIND's own libraries all link libisc-<version>.so (BIND 9.16+).
+      - contains: "libisc-9."
+        regex: 'libisc-(?P<v>9\.\d+\.\d+)'
+        confidence: 0.8
+
+  inetutils:
+    name: inetutils
+    purl: pkg:generic/inetutils@{version}
+    strings:
+      # gnulib's version_etc arguments: "2.4\0GNU inetutils" (telnetd, telnet, ftpd...).
+      - contains: "GNU inetutils"
+        regex: '\x00(?P<v>[12]\.\d{1,2}(?:\.\d{1,2})?)\x00GNU inetutils\x00'
+
+  exiftool:
+    name: exiftool
+    purl: pkg:generic/exiftool@{version}
+    paths:
+      - {regex: '(?:^|/)Image/ExifTool\.pm$', version: content, confidence: 0.9,
+         content_regex: '\$VERSION\s*=\s*.(?P<v>\d+\.\d+).;'}
+
+  gecko:
+    name: gecko
+    purl: pkg:generic/gecko@{version}
+    paths:
+      # Every Gecko application (Firefox, Thunderbird, Tor Browser) ships platform.ini
+      # next to libxul with the engine version as Milestone.
+      - {regex: '(?:^|/)platform\.ini$', version: content, confidence: 0.9,
+         content_regex: '(?m)^Milestone=(?P<v>\d+\.\d+(?:\.\d+)*(?:esr|[ab]\d+)?)\s*$'}
+
+  webkit:
+    name: webkitgtk
+    purl: pkg:generic/webkitgtk@{version}
+    strings:
+      # Assertion text keeps the source directory, "webkit2gtk-2.50.6/Source/...".
+      - contains: "gtk-2."
+        regex: 'webkit2?gtk-(?P<v>2\.\d+\.\d+)/Source/'
+        confidence: 0.8
+    symbols: [webkit_get_major_version, webkit_web_view_get_type]
+
+  dnsmasq:
+    name: dnsmasq
+    purl: pkg:generic/dnsmasq@{version}
+    strings:
+      - contains: "dnsmasq-"
+        regex: 'dnsmasq-(?P<v>\d+\.\d+(?:\.\d+)?(?:[a-z]+\d*)?)\x00'
+        requires_any: ["Simon Kelley", "version.bind"]
+
+  samba:
+    name: samba
+    purl: pkg:generic/samba@{version}
+    strings:
+      # Samba's private libraries version their symbols "SAMBA_4.17.12" (+ vendor suffix).
+      - contains: "SAMBA_"
+        regex: '\x00SAMBA_(?P<v>\d+\.\d+\.\d+)(?:_[A-Z0-9_]+)?\x00'
+
+  sudo:
+    name: sudo
+    purl: pkg:generic/sudo@{version}
+    strings:
+      - contains: "sudoers "
+        regex: '\x00sudoers (?P<v>1\.\d+\.\d+(?:p\d+)?)\x00'
+      - contains: "Sudo version %s"
+        regex: 'Sudo version %s\n\x00(?P<v>1\.\d+\.\d+(?:p\d+)?)\x00'
+
+  rsync:
+    name: rsync
+    purl: pkg:generic/rsync@{version}
+    strings:
+      # rsync keeps its version as a bare string; the protocol error text is its own.
+      - contains: "is your shell clean?"
+        regex: '\x00(?P<v>[23]\.\d\.\d{1,2}(?:pre\d+)?)\x00'
+        requires_any: ["protocol version mismatch -- is your shell clean?"]
+        confidence: 0.8
+
+  net-snmp:
+    name: net-snmp
+    purl: pkg:generic/net-snmp@{version}
+    strings:
+      - contains: "NET-SNMP version: %s"
+        regex: '\x00(?P<v>5\.\d{1,2}(?:\.\d{1,2}){1,2})\x00'
+        confidence: 0.8

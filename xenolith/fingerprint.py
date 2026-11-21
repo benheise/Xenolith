@@ -80,6 +80,10 @@ def load(path: Path = FINGERPRINTS) -> list[Fingerprint]:
         fp.paths = []
         for p in spec.get("paths") or []:
             rule = {**p, "regex": re.compile(p["regex"])}
+            if p.get("version") == "content":
+                if "(?P<v>" not in p.get("content_regex", ""):
+                    raise ValueError(f"fingerprints: {cid}: version: content needs content_regex with a (?P<v>...) group")
+                rule["content_regex"] = re.compile(p["content_regex"])
             if p.get("sibling"):
                 sb = p["sibling"]
                 rule["sibling"] = {**sb, "regex": re.compile(sb["regex"].encode())}
@@ -448,7 +452,7 @@ class Scanner:
                 if not m:
                     continue
                 version, how = m.groupdict().get("v") or "", rule.get("version")
-                if how in ("pom", "manifest", "package_json"):
+                if how in ("pom", "manifest", "package_json", "content"):
                     if content is None:
                         content = read() or b""
                     version = _metadata_version(how, content, rule)
@@ -599,6 +603,9 @@ def _metadata_version(how: str, content: bytes, rule: dict) -> str | None:
             return str(json.loads(text).get("version") or "")
         except (json.JSONDecodeError, AttributeError):
             return ""
+    if how == "content":      # the file states its own version (platform.ini, a Perl module)
+        m = rule["content_regex"].search(text)
+        return m.group("v") if m else None
     return ""
 
 

@@ -20,6 +20,7 @@ import (
 	_ "modernc.org/sqlite" // Syft needs a registered sqlite driver for newer RPM databases
 
 	"github.com/benheise/Xenolith/scan/internal/fingerprint"
+	"github.com/benheise/Xenolith/scan/internal/watchlist"
 	"github.com/benheise/Xenolith/scan/internal/notices"
 	"github.com/benheise/Xenolith/scan/internal/unpack"
 )
@@ -123,11 +124,19 @@ func Run(ctx context.Context, res *unpack.Result, opts Options) (*Report, error)
 		for _, nf := range found {
 			noticeFiles++
 			for _, c := range nf.Components {
+				// A name with no version in a credits file is a lead, not a statement:
+				// such files also list what the product was built with (Chromium's
+				// credits name glibc and build tools), so it stays below the line.
+				conf, notes := 0.75, []string{"listed in a notices file shipped inside the product (" + nf.Format + ")"}
+				if strings.TrimSpace(c.Version) == "" {
+					conf = 0.6
+					notes = append(notes, "no version given; credits files also list build-time dependencies")
+				}
 				all = append(all, Component{
-					Name: c.Name, Version: c.Version, Type: "library", Confidence: 0.75,
+					Name: c.Name, Version: c.Version, Type: "library", Confidence: conf,
 					Techniques: []string{"manifest-analysis"}, FoundBy: []string{"notices-file"},
 					Locations: []string{nf.Location}, Evidence: []string{c.Evidence},
-					Notes: []string{"listed in a notices file shipped inside the product (" + nf.Format + ")"},
+					Notes: notes,
 				})
 			}
 		}
@@ -551,6 +560,11 @@ func merge(all []Component) []Component {
 			c.Notes = notes
 		}
 		sort.Strings(c.Techniques)
+		// A finding the fingerprint pack did not link is linked by name, the way the census
+		// links a submitted SBOM's components (jenkins-core, shiro-core, a dpkg "bind9").
+		if c.Watchlist == "" {
+			c.Watchlist = watchlist.Match(c.Group, c.Name, c.Version)
+		}
 		out = append(out, *c)
 	}
 	sort.Slice(out, func(i, j int) bool {

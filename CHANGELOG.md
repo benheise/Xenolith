@@ -36,6 +36,37 @@ Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new 
   Symantec), IBM (no Semeru or WebSphere bulletin), Oracle's own products, SAP, SapMachine,
   JetBrains Runtime and the IDEs.
 
+## 2026-11-21: xenolith-scan covers the whole watchlist; 19 products scanned
+
+**Scanner**
+- **Every watchlist component is linked by name.** `xenolith-scan` now marks a finding as a
+  watchlist component with the same `notices_names` patterns the census uses on a submission
+  (`scan/internal/watchlist`, written by `tools/export_watchlist.py`; a test keeps it current).
+  Before, only the 18 components with a fingerprint were linked; now a `jenkins-core`,
+  `shiro-core`, `struts2-core` or `grafana` finding is too.
+- **Twelve new fingerprints**, each read off a real build: git, BIND, GNU inetutils, ExifTool,
+  Gecko, WebKitGTK, dnsmasq, Samba, sudo, rsync, Net-SNMP, and Chrome's own binary. Gecko and
+  WebKit gained watchlist names so a product that embeds them gets a statement.
+- **`version: content`** path rules read a version from the matched file itself
+  (`platform.ini`, `Image/ExifTool.pm`).
+- **Qt WebEngine is reported as itself** (`qtwebengine`), not as a Chromium patch level: Qt
+  backports fixes onto an old Chromium base, so "Chrome/87" in TeamViewer says nothing about
+  Chromium CVEs.
+- A name with no version in a credits file is a lead (0.6), not a statement.
+
+**Census**
+- **19 scans filed** under `community/sboms/`, 134 statements: Confluence, Jira and Bamboo Data
+  Center, Nexus Repository, Artifactory, Jenkins, Grafana, Metabase, Splunk Enterprise,
+  IntelliJ IDEA, Chrome, Tor Browser, Signal, 1Password, Postman, TeamViewer, Zoom, Netgear
+  R7000 and Ubiquiti EdgeRouter firmware.
+- **Images built from distribution packages skip the CVE range check** (new status `distro`):
+  Debian, RPM and Alpine packages get fixes backported under the same version.
+- Not scanned or not usable: MinIO (downloads withdrawn, HTTP 410), SonarQube (HTTP 403),
+  ManageEngine ServiceDesk Plus (installer too large for the string scan and not unpacked),
+  MikroTik RouterOS (`.npk` not unpacked), Microsoft Edge (no Chromium version in the binary),
+  TeamCity (dropped for disk space). IntelliJ IDEA and Artifactory are partial: both hit the
+  500,000-file unpack limit before their bundled Java runtime.
+
 ## 2026-11-21: Scores on every card, CVE lists that collapse
 
 - **Scores are visible without opening a CVE.** Threat cards and each incident on a component page

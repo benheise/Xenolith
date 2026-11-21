@@ -21,6 +21,7 @@ from pathlib import Path
 from .catalog import Catalog, normalize_name
 from .model import EXPLOITATION, dedupe, product_key, read_ndjson
 from .sources.notices import iter_inventories
+from .sources.notices import DISTRO_SCAN
 from .versions import check as range_check
 from . import crosswalk
 from . import wanted as wanted_mod
@@ -377,6 +378,8 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
         for a in rows:
             rc = (range_check(a["component_version"].split(", "), comp.affected, comp.version_style)
                   if a.get("component_version") else None)
+            if rc and a.get("category") == DISTRO_SCAN:
+                rc = {"status": "distro", "cves": [], "versions": []}   # backported fixes: versions don't map to ranges
             if rc and rc["status"] == "in_range":
                 in_range += 1
                 vulnerable_versions[(a["product_key"], comp.id)] = True

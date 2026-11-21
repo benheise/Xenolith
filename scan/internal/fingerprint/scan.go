@@ -149,7 +149,7 @@ func (s *Scanner) paths(location string, read func() []byte, sibling func(string
 			}
 			groups := named(rule.Regex, m)
 			version, how := groups["v"], rule.Version
-			if how == "pom" || how == "manifest" || how == "package_json" {
+			if how == "pom" || how == "manifest" || how == "package_json" || how == "content" {
 				v, ok := metadataVersion(how, read(), rule)
 				if !ok {
 					continue // a manifest of some other jar
@@ -237,6 +237,11 @@ func metadataVersion(how string, content []byte, rule PathRule) (string, bool) {
 			return v, true
 		}
 		return fields["Bundle-Version"], true
+	case "content":
+		if m := rule.ContentRegex.FindStringSubmatch(text); m != nil {
+			return m[rule.ContentRegex.SubexpIndex("v")], true
+		}
+		return "", false // not the file the rule means
 	case "package_json":
 		var doc struct {
 			Version any `json:"version"`

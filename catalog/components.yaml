@@ -2430,9 +2430,14 @@ components:
     purl: pkg:generic/webkit
     cpe: cpe:2.3:a:apple:safari
     aliases: [safari, webkitgtk, wpe webkit]
-    notices_names: []
+    notices_names:
+      - '^webkit(?:2)?gtk(?:[-+]?[346]\.[01])?$'
+      - '^wpe[- ]?webkit$'
+      - '^libwebkit2gtk-[\d.]+-\d+$'
+      - '^libjavascriptcoregtk-[\d.]+-\d+$'
     incidents:
       - name: Exploited flaws (CISA KEV)
+        unranged: true
         year: 2025
         cves: [CVE-2019-8720, CVE-2021-1870, CVE-2021-1871, CVE-2021-1879, CVE-2021-30661,
                CVE-2021-30663, CVE-2021-30665, CVE-2021-30666, CVE-2021-30761,
@@ -2450,9 +2455,13 @@ components:
     purl: pkg:generic/gecko
     cpe: cpe:2.3:a:mozilla:firefox
     aliases: [firefox, thunderbird, firefox esr]
-    notices_names: []
+    notices_names:
+      - '^gecko$'
+      - '^(?:mozilla[- ])?firefox(?:[- ]esr)?$'
+      - '^thunderbird$'
     incidents:
       - name: Exploited flaws (CISA KEV)
+        unranged: true
         year: 2024
         cves: [CVE-2010-3765, CVE-2013-1675, CVE-2013-1690, CVE-2015-4495, CVE-2016-9079,
                CVE-2019-11707, CVE-2019-11708, CVE-2019-17026, CVE-2020-6819, CVE-2020-6820,

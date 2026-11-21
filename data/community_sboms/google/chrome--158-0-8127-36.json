@@ -1,0 +1,37 @@
+{
+"artifact": "google-chrome-stable_current_amd64.deb",
+"artifact_sha256": "4696bce00b128f385a870ba2eb6eede61698f22374ea0d8e09af8a1c6543d397",
+"components": [
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "chromium",
+"version": "158.0.8127.36"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libjpeg-turbo",
+"version": "3.1.0"
+}
+],
+"discovery_path": [
+"https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
+"https://github.com/benheise/Xenolith/blob/main/community/sboms/google/chrome--158-0-8127-36.cdx.json"
+],
+"evidence": "binary-scan",
+"extractors": [
+"sbom"
+],
+"found_via": "community",
+"kind": "sbom",
+"product": "Chrome",
+"retrieved": "2026-11-21",
+"sha256": "4696bce00b128f385a870ba2eb6eede61698f22374ea0d8e09af8a1c6543d397",
+"source": "community",
+"submission": "https://github.com/benheise/Xenolith/blob/main/community/sboms/google/chrome--158-0-8127-36.cdx.json",
+"supplier": "Google",
+"tool": "xenolith-scan, syft, xenolith-fingerprint",
+"url": "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
+"version": "158.0.8127.36"
+}

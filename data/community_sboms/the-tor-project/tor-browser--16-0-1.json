@@ -1,0 +1,613 @@
+{
+"artifact": "tor-browser-linux-x86_64-16.0.1.tar.xz",
+"artifact_sha256": "5b36ad610c20c81faa72caf27d1cd3a11f14a327c320b4cec581400016ba78b0",
+"components": [
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "filippo.io/bigmod",
+"version": "v0.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "filippo.io/edwards25519",
+"version": "v1.2.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "filippo.io/keygen",
+"version": "v0.0.0-20240718133620-7f162efbbd87"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "firefox",
+"version": "153.7.0"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "gecko",
+"version": "153.7.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/andybalholm/brotli",
+"version": "v1.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/andybalholm/brotli",
+"version": "v1.2.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2",
+"version": "v1.43.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/config",
+"version": "v1.32.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/credentials",
+"version": "v1.19.34"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/feature/ec2/imds",
+"version": "v1.18.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/internal/configsources",
+"version": "v1.4.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2",
+"version": "v2.7.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/internal/v4a",
+"version": "v1.4.36"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding",
+"version": "v1.13.15"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/service/internal/presigned-url",
+"version": "v1.13.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/service/signin",
+"version": "v1.5.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/service/sqs",
+"version": "v1.46.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/service/sso",
+"version": "v1.33.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/service/ssooidc",
+"version": "v1.38.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/aws-sdk-go-v2/service/sts",
+"version": "v1.45.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/aws/smithy-go",
+"version": "v1.27.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/cloudflare/circl",
+"version": "v1.5.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/dchest/siphash",
+"version": "v1.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/flynn/noise",
+"version": "v1.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/golang/mock",
+"version": "v1.6.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/google/uuid",
+"version": "v1.6.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/klauspost/compress",
+"version": "v1.17.11"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/klauspost/compress",
+"version": "v1.19.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/klauspost/cpuid/v2",
+"version": "v2.4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/klauspost/reedsolomon",
+"version": "v1.14.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/libp2p/go-reuseport",
+"version": "v0.4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/miekg/dns",
+"version": "v1.1.72"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/mingyech/dtls/v2",
+"version": "v2.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/mroth/weightedrand",
+"version": "v1.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/patrickmn/go-cache",
+"version": "v2.1.0+incompatible"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pelletier/go-toml",
+"version": "v1.9.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/datachannel",
+"version": "v1.6.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/dtls/v3",
+"version": "v3.1.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/ice/v4",
+"version": "v4.4.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/interceptor",
+"version": "v0.1.47"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/logging",
+"version": "v0.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/logging",
+"version": "v0.2.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/mdns/v2",
+"version": "v2.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/randutil",
+"version": "v0.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/rtcp",
+"version": "v1.2.17"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/rtp",
+"version": "v1.10.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/sctp",
+"version": "v1.11.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/sctp",
+"version": "v1.8.37"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/sdp/v3",
+"version": "v3.0.19"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/srtp/v3",
+"version": "v3.0.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/stun",
+"version": "v0.6.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/stun/v3",
+"version": "v3.1.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/transport/v2",
+"version": "v2.2.10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/transport/v3",
+"version": "v3.0.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/transport/v4",
+"version": "v4.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/turn/v5",
+"version": "v5.0.12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pion/webrtc/v4",
+"version": "v4.2.18"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/pkg/errors",
+"version": "v0.9.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/realclientip/realclientip-go",
+"version": "v1.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/refraction-networking/conjure",
+"version": "v0.9.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/refraction-networking/ed25519",
+"version": "v0.1.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/refraction-networking/gotapdance",
+"version": "v1.7.10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/refraction-networking/obfs4",
+"version": "v0.1.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/refraction-networking/utls",
+"version": "v1.6.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/refraction-networking/utls",
+"version": "v1.8.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/sergeyfrolov/bsbuffer",
+"version": "v0.0.0-20180903213811-94e85abb8507"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/sirupsen/logrus",
+"version": "v1.9.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/theodorsm/covert-dtls",
+"version": "v1.5.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/tjfoc/gmsm",
+"version": "v1.4.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/txthinking/runnergroup",
+"version": "v0.0.0-20250224021307-5864ffeb65ae"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/txthinking/socks5",
+"version": "v0.0.0-20260601051520-339b044ab0eb"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/wlynxg/anet",
+"version": "v0.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/xtaci/kcp-go/v5",
+"version": "v5.6.72"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "github.com/xtaci/smux",
+"version": "v1.5.57"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.com/yawning/edwards25519-extra",
+"version": "v0.0.0-20231005122941-2149dcafc266"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/conjure",
+"version": ""
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/goptlib",
+"version": "v1.6.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird",
+"version": "v0.10.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/ptutil",
+"version": "v0.0.0-20250130151315-efaf4e0ec0d3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/ptutil",
+"version": "v0.0.0-20250815012447-418f76dcf315"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2",
+"version": "v2.11.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2",
+"version": "v2.15.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel",
+"version": "v0.0.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/crypto",
+"version": "v0.33.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/crypto",
+"version": "v0.57.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/net",
+"version": "v0.35.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/net",
+"version": "v0.59.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/sys",
+"version": "v0.30.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/sys",
+"version": "v0.48.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/text",
+"version": "v0.22.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/text",
+"version": "v0.42.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "golang.org/x/time",
+"version": "v0.15.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "google.golang.org/protobuf",
+"version": "v1.36.5"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libjpeg-turbo",
+"version": "3.1.4.1"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "openssl",
+"version": "3.5.9"
+},
+{
+"confidence": 0.8,
+"found_by": "xenolith-fingerprint",
+"name": "sqlite",
+"version": "3.53.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:go-module-binary-cataloger",
+"name": "stdlib",
+"version": "go1.26.10"
+}
+],
+"discovery_path": [
+"https://dist.torproject.org/torbrowser/16.0.1/tor-browser-linux-x86_64-16.0.1.tar.xz",
+"https://github.com/benheise/Xenolith/blob/main/community/sboms/the-tor-project/tor-browser--16-0-1.cdx.json"
+],
+"evidence": "binary-scan",
+"extractors": [
+"sbom"
+],
+"found_via": "community",
+"kind": "sbom",
+"product": "Tor Browser",
+"retrieved": "2026-11-21",
+"sha256": "5b36ad610c20c81faa72caf27d1cd3a11f14a327c320b4cec581400016ba78b0",
+"source": "community",
+"submission": "https://github.com/benheise/Xenolith/blob/main/community/sboms/the-tor-project/tor-browser--16-0-1.cdx.json",
+"supplier": "The Tor Project",
+"tool": "xenolith-scan, syft, xenolith-fingerprint",
+"url": "https://dist.torproject.org/torbrowser/16.0.1/tor-browser-linux-x86_64-16.0.1.tar.xz",
+"version": "16.0.1"
+}

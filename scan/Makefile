@@ -14,6 +14,7 @@ build: sync
 sync:
 	cp ../catalog/fingerprints.yaml internal/fingerprint/pack.yaml
 	@if [ -f ../docs/data/products.json ]; then python3 ../tools/export_registry.py; fi
+	python3 ../tools/export_watchlist.py
 
 test: sync
 	go test ./...

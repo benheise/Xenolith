@@ -266,3 +266,38 @@ func FuzzBinary(f *testing.F) {
 		s.binary(data, "fuzz") // the unrecovered path: any panic fails the fuzz run
 	})
 }
+
+// Rules added with the November 2026 watchlist pass: a version a file states about
+// itself (version: content) and plain version strings, as they sit in Debian 12 builds.
+func TestNovember2026Rules(t *testing.T) {
+	pack, err := LoadEmbedded()
+	if err != nil {
+		t.Fatal(err)
+	}
+	s := New(pack)
+	elf := func(body string) []byte { return append(append([]byte("\x7fELF"), make([]byte, 60)...), body...) }
+	s.Binary(elf("\x00git/2.39.5\x00GIT_USER_AGENT\x00"), "usr/bin/git")
+	s.Binary(elf("\x00libisc-9.18.49-1~deb12u3-Debian.so\x00"), "usr/sbin/named")
+	s.Binary(elf("\x002.4\x00GNU inetutils\x00"), "usr/sbin/telnetd")
+	s.Binary(elf("\x00SAMBA_4.17.12_DEBIAN_SAMBA4\x00"), "usr/lib/libsamba-util.so.0")
+	s.Binary(elf("Sudo version %s\n\x001.9.13p3\x00"), "usr/bin/sudo")
+	s.Binary(elf("protocol version mismatch -- is your shell clean?\x00\x003.5.0\x00copyright\x00"), "usr/bin/rsync")
+	s.Binary(elf("\x003.5.0\x00nothing of rsync\x00"), "usr/bin/other")
+	s.paths("opt/app/platform.ini", func() []byte { return []byte("[Build]\nMilestone=153.7.0\n") }, nil)
+	s.paths("opt/other/platform.ini", func() []byte { return []byte("[Platform]\nName=x\n") }, nil)
+	s.paths("usr/share/perl5/Image/ExifTool.pm", func() []byte { return []byte("$VERSION = '12.57';\n") }, nil)
+	got := map[string]string{}
+	for _, g := range Summarize(s.Findings) {
+		if _, dup := got[g.Component]; dup {
+			t.Errorf("%s found twice", g.Component)
+		}
+		got[g.Component] = g.Version
+	}
+	want := map[string]string{"git": "2.39.5", "bind": "9.18.49", "inetutils": "2.4", "samba": "4.17.12", "sudo": "1.9.13p3",
+		"rsync": "3.5.0", "gecko": "153.7.0", "exiftool": "12.57"}
+	for id, v := range want {
+		if got[id] != v {
+			t.Errorf("%s: got %q, want %q", id, got[id], v)
+		}
+	}
+}

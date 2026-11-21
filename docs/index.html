@@ -692,6 +692,8 @@ function statementCard(r, opts = {}) {
     ${r.rc === "in_range" ? `<div class="meta"><span class="badge v-workaround">Vulnerable version listed</span>
       ${esc((r.rcv || []).join(", "))} is in the affected range of ${(r.rcc || []).map(c => `<span class="cve">${esc(c)}</span>`).join(" ")}.
       The vendor may have backported a fix; ask them or check their advisory.</div>` : ""}
+    ${r.rc === "distro" ? `<div class="meta">Built from a Linux distribution's packages, which get security fixes backported without a
+      version change. The listed versions were not checked against CVE ranges; check the distribution's security tracker.</div>` : ""}
     ${r.rc === "outside" ? `<div class="meta">Listed version is outside the affected ranges in the CVE record. Older, end-of-life branches are often missing from those ranges.</div>` : ""}
     ${cves ? `<div class="cves">${cves}</div>` : ""}
     <div class="meta">${esc(EVIDENCE[r.e] || r.e)} · ${link(r.u, who)}${r.d ? ` · as of ${dateEl(r.d)}` : ""}${r.cat && r.src !== "csaf" ? ` · ${esc(r.cat)}` : ""}</div>

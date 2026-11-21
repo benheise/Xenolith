@@ -57,7 +57,16 @@ Contributor workflow: [CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom)
      `openjdk` with the full Java version. IBM Semeru's OpenJ9 VM is reported
      separately as `eclipse openj9`, since it isn't HotSpot.
    - **notices files inside the product** (THIRD-PARTY-NOTICES, LICENSES.chromium.html,
-     embedded CycloneDX/SPDX files).
+     embedded CycloneDX/SPDX files). A name such a file gives without a version is kept
+     as a lead (0.6): credits files also list what the product was built with.
+
+   Every finding is then **linked to the census watchlist by name**, with the same
+   patterns the census uses when it reads a submission (`catalog/components.yaml`,
+   embedded as `internal/watchlist/watchlist.min.json`; `make sync` refreshes it). So a
+   `jenkins-core` jar, a `shiro-core` jar or a dpkg `bind9` is marked as a watchlist
+   component without a fingerprint of its own. Fingerprints stay for what has no usable
+   name: statically linked libraries, runtimes inside a larger binary, and files that
+   state their own version (Gecko's `platform.ini`, `Image/ExifTool.pm`).
 3. **Identify the product** from what the artifact says (PE VERSIONINFO, Info.plist,
    os-release, image labels, the file name), match it against Xenolith's product registry
    (embedded snapshot, so the result lands on the existing page with its CPE), and confirm
@@ -72,6 +81,7 @@ Contributor workflow: [CONTRIBUTING.md §3](../CONTRIBUTING.md#3-submit-an-sbom)
 | Installed-package database, embedded build info, exact version string | 0.9 |
 | Version probe (constant returned by a version function), Syft binary classifier | 0.8 |
 | Notices file shipped in the product | 0.75 |
+| Name in a notices file with no version (a lead only) | 0.6 |
 | Declared manifest (lock file) not confirmed by an installed copy | 0.7 |
 | Defined symbols (presence, no version) | 0.7 |
 | Static data marker, class file present | 0.6 |

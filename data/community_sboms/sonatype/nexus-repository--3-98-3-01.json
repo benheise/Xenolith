@@ -1,0 +1,4393 @@
+{
+"artifact": "nexus-3.98.3-01.tar.gz",
+"artifact_sha256": "498caf64f28538d1875abf2db2365273ff4a6abc55b37b29ded7d33e634f0d74",
+"components": [
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "ae-jsonschemafriend-core",
+"version": "0.12.5-1"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "Apache Ant",
+"version": "1.10.2"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "Apache Ant",
+"version": "1.9.6"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "Apache commons-lang",
+"version": "3.5"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "Apache Felix",
+"version": "1.2.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "api-common",
+"version": "2.64.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "args4j",
+"version": "2.33"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "asm",
+"version": "9.11.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "asm-tree",
+"version": "9.11.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "aspectjrt",
+"version": "1.9.25.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "bc-fips",
+"version": "2.1.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "bcpg-fips",
+"version": "2.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "bcpg-jdk18on",
+"version": "1.86"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "bcpkix-fips",
+"version": "2.1.12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "bcpkix-jdk18on",
+"version": "1.86"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "bcprov-jdk18on",
+"version": "1.86"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "bcutil-fips",
+"version": "2.1.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "bcutil-jdk18on",
+"version": "1.86"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "btf",
+"version": "1.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "ch.qos.logback:logback-classic",
+"version": "1.6.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "ch.qos.logback:logback-core",
+"version": "1.6.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "checker-qual",
+"version": "3.55.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.atlassian.crowd.client:atlassian-crowd-rest-client",
+"version": "1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.azure:azure-core",
+"version": "1.58.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.azure:azure-core-http-netty",
+"version": "1.16.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.azure:azure-identity",
+"version": "1.18.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.azure:azure-json",
+"version": "1.5.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.azure:azure-storage-blob",
+"version": "12.33.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.azure:azure-storage-common",
+"version": "12.32.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.azure:azure-storage-internal-avro",
+"version": "12.18.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.azure:azure-xml",
+"version": "1.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.damnhandy:handy-uri-templates",
+"version": "2.1.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.ethlo.time:itu",
+"version": "1.14.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.core:jackson-annotations",
+"version": "2.22"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.core:jackson-core",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.core:jackson-databind",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-toml",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-xml",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-joda",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-base",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.jakarta.rs:jackson-jakarta-rs-json-provider",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+"version": "2.22.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml.woodstox:woodstox-core",
+"version": "6.7.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.fasterxml:classmate",
+"version": "1.7.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.github.stephenc.jcip:jcip-annotations",
+"version": "1.0-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.github.zafarkhaja:java-semver",
+"version": "0.9.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.android:annotations",
+"version": "4.1.1.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api-client:google-api-client",
+"version": "2.7.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:gapic-google-cloud-storage-v2",
+"version": "2.69.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:grpc-google-cloud-datastore-admin-v1",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:grpc-google-cloud-datastore-v1",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:grpc-google-cloud-storage-v2",
+"version": "2.69.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:proto-google-cloud-datastore-admin-v1",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:proto-google-cloud-datastore-v1",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:proto-google-cloud-monitoring-v3",
+"version": "3.52.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:proto-google-cloud-storage-v2",
+"version": "2.69.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:proto-google-common-protos",
+"version": "2.72.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api.grpc:proto-google-iam-v1",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api:gax",
+"version": "2.81.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api:gax-grpc",
+"version": "2.81.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.api:gax-httpjson",
+"version": "2.81.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.apis:google-api-services-storage",
+"version": "v1-rev20260204-2.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.auth:google-auth-library-credentials",
+"version": "1.37.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.auth:google-auth-library-oauth2-http",
+"version": "1.37.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.auto.value:auto-value-annotations",
+"version": "1.11.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.cloud.datastore:datastore-v1-proto-client",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.cloud:google-cloud-core",
+"version": "2.71.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.cloud:google-cloud-core-grpc",
+"version": "2.71.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.cloud:google-cloud-core-http",
+"version": "2.71.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.cloud:google-cloud-datastore",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.cloud:google-cloud-monitoring",
+"version": "3.52.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.cloud:google-cloud-storage",
+"version": "2.69.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.code.findbugs:jsr305",
+"version": "3.0.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.code.gson:gson",
+"version": "2.13.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.errorprone:error_prone_annotations",
+"version": "2.21.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.guava:failureaccess",
+"version": "1.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.guava:guava",
+"version": "33.7.2-jre"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.guava:listenablefuture",
+"version": "9999.0-empty-to-avoid-conflict-with-guava"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.http-client:google-http-client",
+"version": "1.47.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.http-client:google-http-client-apache-v2",
+"version": "1.47.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.http-client:google-http-client-appengine",
+"version": "1.47.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.http-client:google-http-client-gson",
+"version": "1.47.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.http-client:google-http-client-jackson2",
+"version": "1.47.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.http-client:google-http-client-protobuf",
+"version": "1.47.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.j2objc:j2objc-annotations",
+"version": "3.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.oauth-client:google-oauth-client",
+"version": "1.39.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.oauth-client:google-oauth-client-java6",
+"version": "1.39.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.google.oauth-client:google-oauth-client-jetty",
+"version": "1.39.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.googlecode.javaewah:JavaEWAH",
+"version": "1.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.ibm.icu:collate",
+"version": "75.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.ibm.icu:core",
+"version": "75.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.ibm.icu:currdata",
+"version": "75.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.ibm.icu:icu4j",
+"version": "75.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.ibm.icu:langdata",
+"version": "75.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.ibm.icu:regiondata",
+"version": "75.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.ibm.icu:translit",
+"version": "75.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.microsoft.azure:msal4j",
+"version": "1.23.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.microsoft.azure:msal4j-persistence-extension",
+"version": "1.3.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.networknt:json-schema-validator",
+"version": "2.0.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.neuvector:scanner",
+"version": "1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.nimbusds:content-type",
+"version": "2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.nimbusds:lang-tag",
+"version": "1.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.nimbusds:nimbus-jose-jwt",
+"version": "10.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.nimbusds:oauth2-oidc-sdk",
+"version": "11.23.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.data.commons:ai-utils",
+"version": "2.49"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.goodies.truezip:truezip-driver-file",
+"version": "7.9.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.goodies.truezip:truezip-driver-tar",
+"version": "7.9.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.goodies.truezip:truezip-driver-zip",
+"version": "7.9.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.goodies.truezip:truezip-file",
+"version": "7.9.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.goodies.truezip:truezip-kernel",
+"version": "7.9.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.goodies.truezip:truezip-path",
+"version": "7.9.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.insight.brain:insight-brain-client",
+"version": "2.1.18-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.insight.portal:insight-common-model",
+"version": "3.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.insight.portal:insight-error-handling",
+"version": "3.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.insight.scan:insight-scanner-hashing",
+"version": "1.25.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.insight.scan:insight-scanner-hashing-asm60",
+"version": "1.25.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.insight.scan:insight-scanner-hashing-asm71",
+"version": "1.25.0-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:insight-rm-common",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-analytics-common",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-api-extdirect-common-private",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-api-extension-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-api-rest-common-private",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-blobstore-database-sync",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-blobstore-group",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-blobstore-pro-s3",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-cleanup-pro-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-clm-oss-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-clm-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-common-pro-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-datastore-clustering",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-enterprise-edition",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-export-import-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-fips-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-firewall-common",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-firewall-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-group-deploy",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-healthcheck-base",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-hosted-repo-scan-analytics-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-ipallowlist-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-licensing-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-malicious-risk-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-oauth2-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-oidc-token-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-outreach-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-private-spring",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-pro-datastore-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-pro-edition",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-pro-plus-edition",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-pro-system-checks-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-proui-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-proximanova-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-replication-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-alpine",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-ansible-galaxy",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-aws-ecr-auth",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-cargo",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-cocoapods",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-composer",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-conan",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-conda",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-docker",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-evaluation",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-gitlfs",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-golang",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-helm",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-huggingface",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-move-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-npm",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-nuget",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-oci",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-openvsx",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-p2",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-pub",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-pypi",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-r",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-rubygems",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-swift",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-terraform",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-repository-yum",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-service-account-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-staging-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-tags-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-trash-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.common.components:nexus-usertoken-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-analytics-selfhosted",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-api-extdirect-selfhosted-private",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-api-rest-azure",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-api-rest-google",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-api-rest-selfhosted-private",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-blobstore-azure-cloud",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-blobstore-google-cloud",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-community-edition",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-community-edition-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-crowd-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-ldap-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-rutauth-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-saml-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-self-hosted-closed",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.components:nexus-self-hosted-pro",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus.selfhosted.distributions:sonatype-nexus-repository",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.nexus:nexus-git-utils",
+"version": "3.2.11-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sonatype.packageurl:packageurl-java",
+"version": "1.5.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.squareup:tape",
+"version": "1.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sun.activation:jakarta.activation",
+"version": "2.0.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sun.istack:istack-commons-runtime",
+"version": "4.1.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sun.istack:istack-commons-tools",
+"version": "4.1.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sun.mail:jakarta.mail",
+"version": "2.0.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sun.xml.bind.external:relaxng-datatype",
+"version": "4.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sun.xml.bind.external:rngom",
+"version": "4.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.sun.xml.bind.jaxb:isorelax",
+"version": "20090621"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.thoughtworks.paranamer:paranamer",
+"version": "2.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.thoughtworks.xstream:xstream",
+"version": "1.4.21"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.zaxxer:HikariCP",
+"version": "4.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "com.zaxxer:HikariCP-java7",
+"version": "2.4.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "commons-cli:commons-cli",
+"version": "1.9.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "commons-codec:commons-codec",
+"version": "1.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "commons-io:commons-io",
+"version": "2.20.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "commons-lang3",
+"version": "3.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "commons-validator:commons-validator",
+"version": "1.10.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "conscrypt-openjdk-uber",
+"version": "2.5.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "detector-resources-support",
+"version": "0.33.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "dom4j",
+"version": "1.6.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "eu.bitwalker:UserAgentUtils",
+"version": "1.21"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "exporter-metrics",
+"version": "0.33.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "file-management",
+"version": "3.0.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "font-awesome",
+"version": "4.7.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "freemarker",
+"version": "2.3.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "google-api-services-storage-v1-rev20260204",
+"version": "2.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-astbuilder",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-cli-commons",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-datetime",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-dateutil",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-jmx",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-json",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-jsr223",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-macro",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-nio",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-sql",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-templates",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "groovy-xml",
+"version": "5.0.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-alts",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-api",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-auth",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-context",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-core",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-googleapis",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-grpclb",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-inprocess",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-netty",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-opentelemetry",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-protobuf",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-protobuf-lite",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-rls",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-services",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-stub",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-util",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "grpc-xds",
+"version": "1.82.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "h2",
+"version": "2.4.240"
+},
+{
+"confidence": 0.8,
+"found_by": "xenolith-fingerprint",
+"name": "harfbuzz",
+"version": "14.2.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-archive-utils",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-client-utils",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-scanner-archive",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-scanner-container-image",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-scanner-core",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-scanner-manifest-model",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-scanner-model",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-scanner-model-io",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "insight-scanner-tools",
+"version": "3.0.74-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-annotation",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-core",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-healthchecks",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-httpclient",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-jakarta-servlet",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-jetty12",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-json",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-jvm",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-logback",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.dropwizard.metrics:metrics-servlet",
+"version": "4.2.40"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.github.classgraph:classgraph",
+"version": "4.8.181"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.github.erdtman:java-json-canonicalization",
+"version": "1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.github.x-stream:mxparser",
+"version": "1.2.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-buffer",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-base",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-classes-quic",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-compression",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-dns",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-http",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-http2",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-http3",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-marshalling",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-native-quic",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-protobuf",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-codec-socks",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-common",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-handler",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-handler-proxy",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-resolver",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-resolver-dns",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-resolver-dns-classes-macos",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-resolver-dns-native-macos",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-tcnative-boringssl-static",
+"version": "2.0.84.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-tcnative-classes",
+"version": "2.0.84.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-transport",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-transport-classes-epoll",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-transport-classes-kqueue",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-transport-native-epoll",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-transport-native-kqueue",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.netty:netty-transport-native-unix-common",
+"version": "4.2.18.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.prometheus:simpleclient",
+"version": "0.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.prometheus:simpleclient_common",
+"version": "0.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.prometheus:simpleclient_dropwizard",
+"version": "0.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.prometheus:simpleclient_servlet",
+"version": "0.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.prometheus:simpleclient_servlet_common",
+"version": "0.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.prometheus:simpleclient_tracer_common",
+"version": "0.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.prometheus:simpleclient_tracer_otel",
+"version": "0.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.prometheus:simpleclient_tracer_otel_agent",
+"version": "0.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.smallrye:jandex",
+"version": "3.4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.swagger.core.v3:swagger-annotations-jakarta",
+"version": "2.2.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.swagger.core.v3:swagger-core-jakarta",
+"version": "2.2.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.swagger.core.v3:swagger-integration-jakarta",
+"version": "2.2.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.swagger.core.v3:swagger-jaxrs2-jakarta",
+"version": "2.2.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "io.swagger.core.v3:swagger-models-jakarta",
+"version": "2.2.35"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jackson-coreutils",
+"version": "2.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.activation:jakarta.activation-api",
+"version": "2.1.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.annotation:jakarta.annotation-api",
+"version": "3.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.el:jakarta.el-api",
+"version": "5.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.enterprise:jakarta.enterprise.cdi-api",
+"version": "4.0.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.enterprise:jakarta.enterprise.lang-model",
+"version": "4.0.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.inject:jakarta.inject-api",
+"version": "2.0.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.interceptor:jakarta.interceptor-api",
+"version": "2.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.mail:jakarta.mail-api",
+"version": "2.1.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.servlet:jakarta.servlet-api",
+"version": "6.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.validation:jakarta.validation-api",
+"version": "3.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.ws.rs:jakarta.ws.rs-api",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jakarta.xml.bind:jakarta.xml.bind-api",
+"version": "4.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:pe-binary-package-cataloger",
+"name": "Java(TM) Native Access",
+"version": "5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "java-jwt",
+"version": "3.16.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "javaee-api",
+"version": "7.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "javax.cache:cache-api",
+"version": "1.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jdom2",
+"version": "2.0.6.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jib-build-plan",
+"version": "0.4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jib-core",
+"version": "0.28.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jna",
+"version": "5.13.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jna-platform",
+"version": "5.13.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "joda-time:joda-time",
+"version": "2.10.14"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jrt-fs",
+"version": "21.0.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "json-patch",
+"version": "1.13"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "jsoup",
+"version": "1.10.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "jspecify",
+"version": "1.0.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "JTHarness",
+"version": "5.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "JUnit",
+"version": "4.11"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "JUnit",
+"version": "4.12"
+},
+{
+"confidence": 0.8,
+"found_by": "xenolith-fingerprint",
+"name": "lcms2",
+"version": "2.19"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libpng",
+"version": "1.6.58"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "license-bundle",
+"version": "4.0.1"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-compat",
+"version": "3.5.2"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-core",
+"version": "3.5.2"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-plugin-annotations",
+"version": "3.5"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-plugin-api",
+"version": "3.5.2"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-resolver-api",
+"version": "1.1.1"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-resolver-connector-basic",
+"version": "1.1.1"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-resolver-impl",
+"version": "1.1.1"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-resolver-spi",
+"version": "1.1.1"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-resolver-transport-file",
+"version": "1.1.1"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-resolver-util",
+"version": "1.1.1"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "maven-settings",
+"version": "3.5.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "micrometer-commons",
+"version": "1.16.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "micrometer-observation",
+"version": "1.16.7"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "Mockito",
+"version": "2.16.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "model",
+"version": "2.1.33-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "msg-simple",
+"version": "1.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "net.bytebuddy:byte-buddy",
+"version": "1.17.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "net.java.dev.msv:xsdlib",
+"version": "2022.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "net.minidev:accessors-smart",
+"version": "2.5.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "net.minidev:json-smart",
+"version": "2.5.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "net.shibboleth:shib-networking",
+"version": "9.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "net.shibboleth:shib-security",
+"version": "9.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "net.shibboleth:shib-support",
+"version": "9.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "net.shibboleth:shib-velocity",
+"version": "9.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "nexus-licensing-extension",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "normalize.css",
+"version": "3.0.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "ognl:ognl",
+"version": "3.4.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opencensus-api",
+"version": "0.31.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opencensus-contrib-http-util",
+"version": "0.31.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-jvm-cataloger, xenolith-fingerprint",
+"name": "openjdk",
+"version": "21.0.13+9-LTS"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-api",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-common",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-context",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-extension-incubator",
+"version": "1.35.0-alpha"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-gcp-resources",
+"version": "1.37.0-alpha"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-grpc",
+"version": "1.6-2.1.0-alpha"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-instrumentation-api",
+"version": "2.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-instrumentation-api-incubator",
+"version": "2.1.0-alpha"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-sdk",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-sdk-common",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-sdk-extension-autoconfigure-spi",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-sdk-logs",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-sdk-metrics",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-sdk-trace",
+"version": "1.67.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "opentelemetry-semconv",
+"version": "1.29.0-alpha"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.antlr:antlr4-runtime",
+"version": "4.11.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-collections4",
+"version": "4.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-compress",
+"version": "1.26.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-csv",
+"version": "1.10.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-email2-core",
+"version": "2.0.0-M1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-email2-jakarta",
+"version": "2.0.0-M1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-fileupload2-core",
+"version": "2.0.0-M4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-fileupload2-jakarta-servlet6",
+"version": "2.0.0-M4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-jexl3",
+"version": "3.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.commons:commons-lang3",
+"version": "3.18.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger, xenolith-fingerprint",
+"name": "org.apache.commons:commons-text",
+"version": "1.14.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.httpcomponents.client5:httpclient5",
+"version": "5.6.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.httpcomponents.client5:httpclient5-cache",
+"version": "5.6.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.httpcomponents.core5:httpcore5",
+"version": "5.4.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.httpcomponents.core5:httpcore5-h2",
+"version": "5.4.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.httpcomponents:httpclient",
+"version": "4.5.14"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.httpcomponents:httpcore",
+"version": "4.4.15"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.httpcomponents:httpmime",
+"version": "4.5.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.james:apache-mime4j-core",
+"version": "0.8.12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.james:apache-mime4j-dom",
+"version": "0.8.15"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.james:apache-mime4j-storage",
+"version": "0.8.15"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.logging.log4j:log4j-api",
+"version": "2.25.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.logging.log4j:log4j-to-slf4j",
+"version": "2.25.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven.archetype:archetype-catalog",
+"version": "3.2.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven.indexer:indexer-reader",
+"version": "5.1.2-202109"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven.resolver:maven-resolver-api",
+"version": "1.9.27"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven.resolver:maven-resolver-spi",
+"version": "1.9.27"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven.resolver:maven-resolver-util",
+"version": "1.9.27"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven:maven-api-annotations",
+"version": "4.0.0-rc-5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven:maven-api-xml",
+"version": "4.0.0-rc-5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven:maven-artifact",
+"version": "3.9.10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven:maven-model",
+"version": "3.9.10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven:maven-repository-metadata",
+"version": "3.9.10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.maven:maven-xml",
+"version": "4.0.0-rc-5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.santuario:xmlsec",
+"version": "2.3.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.servicemix.bundles:org.apache.servicemix.bundles.xpp3",
+"version": "1.1.4c_7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro.crypto:shiro-hashes-argon2",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro.crypto:shiro-hashes-bcrypt",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-cache",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-config-core",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-config-ogdl",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-core",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-crypto-cipher",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-crypto-core",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-crypto-hash",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-event",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-lang",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-spring",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.shiro:shiro-web",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.tika:tika-core",
+"version": "3.2.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.apache.velocity:velocity-engine-core",
+"version": "2.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.codehaus.mojo:animal-sniffer-annotations",
+"version": "1.24"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.codehaus.plexus:plexus-interpolation",
+"version": "1.27"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.codehaus.plexus:plexus-utils",
+"version": "4.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.codehaus.plexus:plexus-xml",
+"version": "4.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.codehaus.woodstox:stax2-api",
+"version": "4.2.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.cryptacular:cryptacular",
+"version": "1.3.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.cyclonedx:cyclonedx-core-java",
+"version": "13.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.angus:angus-activation",
+"version": "2.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.angus:angus-core",
+"version": "2.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.angus:angus-mail",
+"version": "2.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.angus:imap",
+"version": "2.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.angus:logging-mailhandler",
+"version": "2.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.angus:pop3",
+"version": "2.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.angus:smtp",
+"version": "2.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty.compression:jetty-compression-common",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty.compression:jetty-compression-gzip",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty.compression:jetty-compression-server",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty.compression:jetty-compression-zstandard",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty.ee10:jetty-ee10-servlet",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty.ee10:jetty-ee10-webapp",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty.ee:jetty-ee-webapp",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty:jetty-http",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty:jetty-io",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty:jetty-jmx",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty:jetty-security",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty:jetty-server",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty:jetty-session",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty:jetty-util",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jetty:jetty-xml",
+"version": "12.1.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jgit:org.eclipse.jgit",
+"version": "7.4.0.202509020913-r"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.eclipse.jgit:org.eclipse.jgit.gpg.bc",
+"version": "7.4.0.202509020913-r"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.ehcache.modules:ehcache-107",
+"version": "3.10.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.ehcache.modules:ehcache-api",
+"version": "3.10.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.ehcache.modules:ehcache-core",
+"version": "3.10.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.ehcache.modules:ehcache-impl",
+"version": "3.10.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.ehcache.modules:ehcache-xml",
+"version": "3.10.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.ehcache.modules:ehcache-xml-spi",
+"version": "3.10.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.ehcache:sizeof",
+"version": "0.4.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.flywaydb:flyway-core",
+"version": "12.4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.flywaydb:flyway-database-postgresql",
+"version": "12.4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.glassfish.expressly:expressly",
+"version": "5.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.glassfish.jaxb:jaxb-core",
+"version": "4.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.glassfish.jaxb:jaxb-runtime",
+"version": "4.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.glassfish.jaxb:txw2",
+"version": "4.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.hibernate.validator:hibernate-validator",
+"version": "9.1.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.javassist:javassist",
+"version": "3.28.0-GA"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.javassist:javassist",
+"version": "3.30.2-GA"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.logging:jboss-logging",
+"version": "3.6.1.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.resteasy:resteasy-atom-provider",
+"version": "7.0.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.resteasy:resteasy-client",
+"version": "7.0.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.resteasy:resteasy-client-api",
+"version": "7.0.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.resteasy:resteasy-core",
+"version": "7.0.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.resteasy:resteasy-core-spi",
+"version": "7.0.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.resteasy:resteasy-jackson2-provider",
+"version": "7.0.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.resteasy:resteasy-jaxb-provider",
+"version": "7.0.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jboss.resteasy:resteasy-multipart-provider",
+"version": "7.0.5.Final"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jctools:jctools-core",
+"version": "4.0.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jctools:jctools-core-jdk11",
+"version": "4.0.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jruby.jcodings:jcodings",
+"version": "1.0.58"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jruby.joni:joni",
+"version": "2.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.json:json",
+"version": "20231013"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.jsoup:jsoup",
+"version": "1.23.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.mybatis:mybatis",
+"version": "3.5.19"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-core-api",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-core-impl",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-messaging-api",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-profile-api",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-saml-api",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-saml-impl",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-security-api",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-security-impl",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-soap-api",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-soap-impl",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-storage-api",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-xmlsec-api",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.opensaml:opensaml-xmlsec-impl",
+"version": "5.2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.owasp.encoder:encoder",
+"version": "1.4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.quartz-scheduler:quartz",
+"version": "2.3.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.redline-rpm:redline",
+"version": "1.2.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.semver4j:semver4j",
+"version": "4.3.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.slf4j:jcl-over-slf4j",
+"version": "2.0.20"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.slf4j:jul-to-slf4j",
+"version": "2.0.20"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.slf4j:log4j-over-slf4j",
+"version": "2.0.20"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.slf4j:slf4j-api",
+"version": "2.0.20"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.snakeyaml:snakeyaml-engine",
+"version": "2.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.aether:aether-api",
+"version": "1.13.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.aether:aether-util",
+"version": "1.13.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.directjngine:directjngine",
+"version": "2.4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.goodies:package-url-java",
+"version": "1.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-api-common-shared",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-api-extdirect-common",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-api-rest-common",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-audit",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-audit-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-base",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-blobstore",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-blobstore-api",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-blobstore-file",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-blobstore-s3",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-blobstore-tasks",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-bootstrap-spring",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-cache",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-capability",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-cleanup",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-cleanup-config",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-common",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-configuration",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-core",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-coreui-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-crypto",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-datastore",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-datastore-api",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-datastore-h2",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-datastore-mybatis",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-default-role-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-distributed-event-service-api",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-email",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-extdirect",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-extender-spring",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-formfields",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-httpclient",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-jetty-log",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-jmx",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-logging",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-mime",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-onboarding-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-outbound-request-context",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-plugin-api",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-quartz",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-rapture",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-repository-apt",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-repository-config",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-repository-content",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-repository-httpbridge",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-repository-maven",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-repository-raw",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-repository-services",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-repository-view",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-rest",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-rest-client",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-rest-jackson2",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-scheduling",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-script",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-script-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-search-sql",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-security",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-selector",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-servlet",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-siesta",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-spring",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-ssl",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-ssl-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-supportzip-api",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-swagger",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-task-log-cleanup",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-thread",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-transaction",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-ui-plugin",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-upgrade",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-validation",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-version",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-webhooks",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.common.components:nexus-webresources-api",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.selfhosted.components:nexus-api-extdirect-selfhosted",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.selfhosted.components:nexus-api-rest-selfhosted",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.sonatype.nexus.selfhosted.components:nexus-self-hosted",
+"version": "3.98.3-01"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.spdx:java-spdx-library",
+"version": "2.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.spdx:spdx-jackson-store",
+"version": "2.0.5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.spdx:spdx-java-core",
+"version": "1.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.spdx:spdx-java-model-2_X",
+"version": "1.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.spdx:spdx-java-model-3_0",
+"version": "1.0.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.spdx:spdx-v3jsonld-store",
+"version": "1.0.4"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint, syft:java-archive-cataloger",
+"name": "org.springframework:spring-beans",
+"version": "7.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.terracotta:offheap-store",
+"version": "2.5.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.terracotta:statistics",
+"version": "2.1.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.terracotta:terracotta-utilities-tools",
+"version": "0.0.15"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.threeten:threetenbp",
+"version": "1.7.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.xerial:sqlite-jdbc",
+"version": "3.50.3.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "org.yaml:snakeyaml",
+"version": "2.4"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "OSGi Service Platform Core Companion Code",
+"version": "6.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "perfmark-api",
+"version": "0.27.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "plexus-archiver",
+"version": "3.5"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "plexus-io",
+"version": "3.0.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "plexus-utils",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "portex_2.12",
+"version": "4.0.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "postgresql",
+"version": "42.7.14"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "protobuf-java",
+"version": "4.33.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "protobuf-java-util",
+"version": "4.33.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "re2j",
+"version": "1.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "reactive-streams",
+"version": "1.0.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "reactor-core",
+"version": "3.8.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "reactor-netty-core",
+"version": "1.3.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "reactor-netty-http",
+"version": "1.3.7"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "relaxng-datatype",
+"version": "1.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "Sax",
+"version": "0.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "scala-library",
+"version": "2.12.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "se.sawano.java:alphanumeric-comparator",
+"version": "1.4.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "shared-resourcemapping",
+"version": "0.33.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "sigstore-java",
+"version": "2.2.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "SigTest",
+"version": "4.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "sizeof-agent",
+"version": ""
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:annotations",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:apache-client",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:apache5-client",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:arns",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:auth",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:aws-core",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:aws-json-protocol",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:aws-query-protocol",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:aws-xml-protocol",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:checksums",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:checksums-spi",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:cloudfront",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:cloudwatch",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:cloudwatch-metric-publisher",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:crt-core",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:dynamodb",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:ecr",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:endpoints-spi",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:http-auth",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:http-auth-aws",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:http-auth-aws-eventstream",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:http-auth-spi",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:http-client-spi",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:identity-spi",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:json-utils",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:kms",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:metrics-spi",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:netty-nio-client",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:profiles",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:protocol-core",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:regions",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:retries",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:retries-spi",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:s3",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:s3-transfer-manager",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:sdk-core",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:smithy-rpcv2-protocol",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:sts",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:utils",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.awssdk:utils-lite",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "software.amazon.eventstream:eventstream",
+"version": "1.0.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-aop",
+"version": "7.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-boot",
+"version": "4.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-boot-autoconfigure",
+"version": "4.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-boot-jarmode-tools",
+"version": "4.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-boot-loader",
+"version": "4.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-context",
+"version": "7.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-core",
+"version": "7.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-expression",
+"version": "7.0.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-security-core",
+"version": "7.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-security-crypto",
+"version": "7.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-security-saml2-service-provider",
+"version": "7.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-security-web",
+"version": "7.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "spring-web",
+"version": "7.0.9"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "testng",
+"version": "6.14.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "third-party-jackson-core",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "third-party-jackson-dataformat-cbor",
+"version": "2.55.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "tomlj",
+"version": "1.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "tools.jackson.core:jackson-core",
+"version": "3.2.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "tools.jackson.core:jackson-databind",
+"version": "3.2.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "us.springett:cpe-parser",
+"version": "2.1.0"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "wagon-http-lightweight",
+"version": "3.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "xmlpull",
+"version": "1.1.3.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "xpp3_min",
+"version": "1.1.4c"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "xz",
+"version": "1.10"
+},
+{
+"confidence": 0.75,
+"found_by": "notices-file",
+"name": "xz for java",
+"version": "1.8"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "zlib",
+"version": "1.3.2"
+},
+{
+"confidence": 0.8,
+"found_by": "xenolith-fingerprint",
+"name": "zstd",
+"version": "1.5.7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "zstd-jni",
+"version": "1.5.7-25"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:java-archive-cataloger",
+"name": "zt-exec",
+"version": "1.12"
+}
+],
+"discovery_path": [
+"https://download.sonatype.com/nexus/3/nexus-3.98.3-01-linux-x86_64.tar.gz",
+"https://github.com/benheise/Xenolith/blob/main/community/sboms/sonatype/nexus-repository--3-98-3-01.cdx.json"
+],
+"evidence": "binary-scan",
+"extractors": [
+"sbom"
+],
+"found_via": "community",
+"kind": "sbom",
+"product": "Nexus Repository",
+"retrieved": "2026-11-21",
+"sha256": "498caf64f28538d1875abf2db2365273ff4a6abc55b37b29ded7d33e634f0d74",
+"source": "community",
+"submission": "https://github.com/benheise/Xenolith/blob/main/community/sboms/sonatype/nexus-repository--3-98-3-01.cdx.json",
+"supplier": "Sonatype",
+"tool": "xenolith-scan, syft, xenolith-fingerprint",
+"url": "https://download.sonatype.com/nexus/3/nexus-3.98.3-01-linux-x86_64.tar.gz",
+"version": "3.98.3-01"
+}

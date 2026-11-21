@@ -880,9 +880,53 @@ class FingerprintTest(unittest.TestCase):
         self.assertEqual(cat.match_component(found[("openjdk", "17.0.15+6")]["name"], "17.0.15+6"), "openjdk")
         self.assertIsNone(cat.match_component(found[("openj9", "0.51.0")]["name"], "0.51.0"))
 
+    def test_november_2026_rules(self):
+        """Strings as they sit in Debian 12 builds (and Firefox ESR's platform.ini)."""
+        elf = lambda body: b"\x7fELF" + b"\x00" * 60 + body
+        found = self.scan({
+            "usr/bin/git": elf(b"\x00git/2.39.5\x00GIT_USER_AGENT\x00\x002.39.5\x00"),
+            "usr/sbin/named": elf(b"\x00libjemalloc.so.2\x00libisc-9.18.49-1~deb12u3-Debian.so\x00"),
+            "usr/sbin/telnetd": elf(b"\x002.4\x00GNU inetutils\x00<bug-inetutils@gnu.org>\x00"),
+            "usr/share/perl5/Image/ExifTool.pm": b"package Image::ExifTool;\n$VERSION = '12.57';\n",
+            "opt/app/platform.ini": b"[Build]\nBuildID=20261103151912\nMilestone=153.7.0\n",
+            "opt/other/platform.ini": b"[Platform]\nName=something else\n",
+            "usr/lib/libwebkit2gtk-4.1.so.0": elf(b"(lambda at /build/reproducible-path/webkit2gtk-2.50.6/Source/WebCore/x.h:1)\x00"),
+            "usr/sbin/dnsmasq": elf(b"/etc/dnsmasq.conf\x00dnsmasq-2.90\x00version.bind\x00Simon Kelley\x00"),
+            "usr/lib/libsamba-util.so.0": elf(b"\x00LIBBSD_0.5\x00SAMBA_4.17.12_DEBIAN_SAMBA4\x00TEVENT_0.13.0\x00"),
+            "usr/bin/sudo": elf(b"Sudo version %s\n\x001.9.13p3\x00Configure options: %s\n\x00"),
+            "usr/bin/rsync": elf(b"protocol version mismatch -- is your shell clean?\x00\x003.5.0\x00copyright\x00"),
+            "usr/lib/libnetsnmp.so.40": elf(b"NET-SNMP version: %s\x00\x00\x005.9.3\x00container.c\x00"),
+            "usr/bin/curl-like": elf(b"\x003.5.0\x00no rsync text here\x00"),
+            "opt/tv/libQt5WebEngineCore.so.5": elf(b"Mozilla/5.0 QtWebEngine/5.15.19 Chrome/87.0.4280.144 Safari/537.36\x00"),
+            "opt/google/chrome/chrome": elf(b"(KHTML, like Gecko) %s Safari/537.36\x00158.0.8127.36\x00toString()"),
+        })
+        want = {("git", "2.39.5"), ("bind", "9.18.49"), ("inetutils", "2.4"), ("exiftool", "12.57"), ("gecko", "153.7.0"),
+                ("webkit", "2.50.6"), ("dnsmasq", "2.90"), ("samba", "4.17.12"), ("sudo", "1.9.13p3"), ("rsync", "3.5.0"),
+                ("net-snmp", "5.9.3"), ("chromium", "158.0.8127.36")}
+        self.assertEqual(want - set(found), set())
+        self.assertEqual({k for k in found if k[0] in {w[0] for w in want}}, want)   # one platform.ini, one rsync
+        self.assertIn(("qtwebengine", "5.15.19"), found)                   # Qt's fork is not a Chromium patch level
+        self.assertNotIn(("chromium", "87.0.4280.144"), found)
+
+    def test_scanner_watchlist_snapshot_is_current(self):
+        """xenolith-scan links findings by name from a snapshot of components.yaml."""
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("export_watchlist", ROOT / "tools" / "export_watchlist.py")
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        shipped = json.loads((ROOT / "scan" / "internal" / "watchlist" / "watchlist.min.json").read_text(encoding="utf-8"))
+        self.assertEqual(shipped, mod.rows(), "run `python tools/export_watchlist.py` after changing notices_names")
+
+    def test_distribution_images_skip_the_range_check(self):
+        from xenolith.sources import notices as nmod
+        deb = [{"name": f"pkg{i}", "version": "1-1", "found_by": "syft:dpkg-db-cataloger"} for i in range(25)]
+        self.assertTrue(nmod.evidence_is_distro({"evidence": "binary-scan", "components": deb}))
+        self.assertFalse(nmod.evidence_is_distro({"evidence": "binary-scan", "components": deb[:5]}))
+        self.assertFalse(nmod.evidence_is_distro({"evidence": "notices-file", "components": deb}))
+
     def test_names_match_watchlist(self):
         cat = catalog.load()
-        samples = {"brotli": "1.1.0", "xz": "5.4.5", "log4j-1": "1.2.17", "log4j-core": "2.14.1"}
+        samples = {"brotli": "1.1.0", "xz": "5.4.5", "log4j-1": "1.2.17", "log4j-core": "2.14.1", "samba": "4.17.12"}
         for fp in self.fps:
             if not fp.watchlist:
                 self.assertIsNone(cat.match_component(fp.name, "1.0.0"), f"{fp.id} is on the watchlist; drop watchlist: false")

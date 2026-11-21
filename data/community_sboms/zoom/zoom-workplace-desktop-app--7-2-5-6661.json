@@ -1,0 +1,103 @@
+{
+"artifact": "zoom_amd64.deb",
+"artifact_sha256": "5cd7b9f1e6dc7226a44193df23d0664790496e8267f26152b0cbbd5888025444",
+"components": [
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "bzip2",
+"version": "1.0.8"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "ffmpeg",
+"version": "61.7.103"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:elf-binary-package-cataloger",
+"name": "kf6-kglobalaccel",
+"version": "6.12.0-0ubuntu2"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libjpeg-turbo",
+"version": "3.0.0"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libjpeg-turbo",
+"version": "3.1.0"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libjpeg-turbo",
+"version": "3.2.0"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libpng",
+"version": "1.6.58"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libtiff",
+"version": "4.7.2"
+},
+{
+"confidence": 0.8,
+"found_by": "xenolith-fingerprint",
+"name": "libwebp",
+"version": "1.6.0"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "qtbase",
+"version": "6.8.9"
+},
+{
+"confidence": 0.8,
+"found_by": "xenolith-fingerprint",
+"name": "sqlite",
+"version": "3.50.4"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "zlib",
+"version": "1.3.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:deb-archive-cataloger",
+"name": "zoom",
+"version": "7.2.5.6661"
+}
+],
+"discovery_path": [
+"https://zoom.us/client/latest/zoom_amd64.deb",
+"https://github.com/benheise/Xenolith/blob/main/community/sboms/zoom/zoom-workplace-desktop-app--7-2-5-6661.cdx.json"
+],
+"evidence": "binary-scan",
+"extractors": [
+"sbom"
+],
+"found_via": "community",
+"kind": "sbom",
+"product": "Zoom Workplace desktop app",
+"retrieved": "2026-11-21",
+"sha256": "5cd7b9f1e6dc7226a44193df23d0664790496e8267f26152b0cbbd5888025444",
+"source": "community",
+"submission": "https://github.com/benheise/Xenolith/blob/main/community/sboms/zoom/zoom-workplace-desktop-app--7-2-5-6661.cdx.json",
+"supplier": "Zoom",
+"tool": "xenolith-scan, syft, xenolith-fingerprint",
+"url": "https://zoom.us/client/latest/zoom_amd64.deb",
+"version": "7.2.5.6661"
+}

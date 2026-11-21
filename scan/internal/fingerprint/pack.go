@@ -65,7 +65,8 @@ type Marker struct {
 // PathRule matches a file path inside a tree or archive.
 type PathRule struct {
 	Regex         *regexp.Regexp
-	Version       string // "", pom, manifest, package_json
+	Version       string // "", pom, manifest, package_json, content
+	ContentRegex  *regexp.Regexp // version: content reads group v from the file's own text
 	Confidence    float64
 	Note          string
 	ManifestTitle *regexp.Regexp
@@ -123,6 +124,7 @@ type rawPath struct {
 	Confidence    float64 `yaml:"confidence"`
 	Note          string  `yaml:"note"`
 	ManifestTitle string  `yaml:"manifest_title"`
+	ContentRegex  string  `yaml:"content_regex"`
 	Sibling       *struct {
 		Path       string  `yaml:"path"`
 		Regex      string  `yaml:"regex"`
@@ -183,6 +185,13 @@ func Load(data []byte) (*Pack, error) {
 			rule := PathRule{Regex: re, Version: p.Version, Confidence: p.Confidence, Note: p.Note}
 			if rule.Confidence == 0 {
 				rule.Confidence = 0.6
+			}
+			if p.Version == "content" {
+				cre, err := compile(p.ContentRegex)
+				if err != nil || cre.SubexpIndex("v") < 0 {
+					return nil, fmt.Errorf("fingerprints: %s: version: content needs content_regex with a (?P<v>...) group", id)
+				}
+				rule.ContentRegex = cre
 			}
 			if p.ManifestTitle != "" {
 				mt, err := compile(p.ManifestTitle)

@@ -1,0 +1,2365 @@
+{
+"artifact": "ER-e300.v2.0.9-hotfix.7.5622762.tar",
+"artifact_sha256": "057d117e770ee51da5f97dac40f5e44e224f0867346d4c7b2c5d4965ff63f3ef",
+"components": [
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "adduser",
+"version": "3.115"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "apt",
+"version": "1.4.10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "apt-transport-https",
+"version": "1.4.10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:python-installed-package-cataloger",
+"name": "argparse",
+"version": "1.2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "at",
+"version": "3.1.20-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "avahi-daemon",
+"version": "0.6.32-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "base-files",
+"version": "9.9+deb9u13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "base-passwd",
+"version": "3.5.43"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "bash",
+"version": "4.4-5"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "bash",
+"version": "4.4.12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "bash-completion",
+"version": "1:2.1-4.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "bcrelay",
+"version": "1.4.0-10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:python-installed-package-cataloger",
+"name": "beaker",
+"version": "1.8.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "binutils",
+"version": "9:1.27.2-ubnt1+t5622755.dev.stretch.v2.0.9.663bfa4df"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "bridge-utils",
+"version": "1.5-13+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "bsdmainutils",
+"version": "9.0.12+nmu1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "bsdutils",
+"version": "1:2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "busybox",
+"version": "1.27.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "busybox",
+"version": "9:1.27.2-ubnt1+t5622755.dev.stretch.v2.0.9.663bfa4df"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ca-certificates",
+"version": "20200601~deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "charon-cmd",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "conntrack",
+"version": "2:0.9.14-ubnt1+t5622755.dev.stretch.v2.0.9.c0a8b8a"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "coreutils",
+"version": "9:1.27.2-ubnt1+t5622755.dev.stretch.v2.0.9.663bfa4df"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "cron",
+"version": "3.0pl1-128+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:perl-cpan-installed-cataloger",
+"name": "Cstore",
+"version": ""
+},
+{
+"confidence": 0.9,
+"found_by": "syft:binary-classifier-cataloger, xenolith-fingerprint",
+"name": "curl",
+"version": "7.52.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "curl",
+"version": "7.52.1-5+deb9u10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "dash",
+"version": "0.5.8-2.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "dbus",
+"version": "1.10.32-0+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ddclient",
+"version": "3.8.3-1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "debconf",
+"version": "1.5.61"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "debian-archive-keyring",
+"version": "2017.5+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "debianutils",
+"version": "4.8.1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "diffutils",
+"version": "1:3.5-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "dmsetup",
+"version": "2:1.02.137-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "dns-root-data",
+"version": "2019031302~deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "dnsmasq",
+"version": "2.85"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "dnsmasq",
+"version": "2.85-1+t5622755.dev.stretch.v2.0.9.hotfix.2.3ad7a4e"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "dnsmasq-base",
+"version": "2.85-1+t5622755.dev.stretch.v2.0.9.hotfix.2.3ad7a4e"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "dnsmasq-utils",
+"version": "2.85-1+t5622755.dev.stretch.v2.0.9.hotfix.2.3ad7a4e"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "dpkg",
+"version": "1.18.25"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "e2fslibs",
+"version": "1.43.4-2+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "e2fsprogs",
+"version": "1.43.4-2+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "etherwake",
+"version": "1.09-4+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ethtool",
+"version": "1:4.8-1+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "expat",
+"version": "2.2.0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "findutils",
+"version": "4.6.0+git+20161106-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:python-installed-package-cataloger",
+"name": "flup",
+"version": "1.0.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "fping",
+"version": "3.15-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:python-installed-package-cataloger",
+"name": "funcsigs",
+"version": "1.0.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "gawk",
+"version": "1:4.1.4+dfsg-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "gcc-4.8-base",
+"version": "4.8.4-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "gcc-4.9-base",
+"version": "4.9.2-10+deb8u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "gcc-6-base",
+"version": "6.3.0-18+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "glibc",
+"version": "2.24"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "gnupg",
+"version": "2.1.18-8~deb9u4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "gnupg-agent",
+"version": "2.1.18-8~deb9u4"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "gnutls",
+"version": "3.5.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "gpgv",
+"version": "2.1.18-8~deb9u4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "grep",
+"version": "3.3-1~bpo9+1"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "gzip",
+"version": "1.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "gzip",
+"version": "1.6-5+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "hostname",
+"version": "3.18+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ifupdown",
+"version": "0.8.19"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "igmpproxy",
+"version": "1:0.2.1-ubnt1+t5622755.dev.stretch.v2.0.9.4dea0a9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "init",
+"version": "1.56~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "init-system-helpers",
+"version": "1.56~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "initscripts",
+"version": "2.88dsf-59.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "insserv",
+"version": "1.14.0-5.4+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "iperf",
+"version": "2.0.9+dfsg1-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "iperf3",
+"version": "3.6-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "iproute",
+"version": "1:0.1.18+t5622763.dev.stretch.v2.0.9.7989d4f0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ipset",
+"version": "6.30-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "iptables",
+"version": "1:1.4.21-ubnt1+t5622755.dev.stretch.v2.0.9.758af1b"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "iputils-ping",
+"version": "3:20161105-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "jq",
+"version": "1.5+dfsg-1.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "kmod",
+"version": "23-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "knot-host",
+"version": "2.4.0-3+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:binary-classifier-cataloger, xenolith-fingerprint",
+"name": "krb5",
+"version": "1.15"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "less",
+"version": "481-2.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libacl1",
+"version": "2.2.52-3+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libapparmor1",
+"version": "2.11.0-3+deb9u2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libapt-pkg5.0",
+"version": "1.4.10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libassuan0",
+"version": "2.5.2-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libatomic1",
+"version": "6.3.0-18+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libattr1",
+"version": "1:2.4.47-2+b2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libaudit-common",
+"version": "1:2.6.7-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libaudit1",
+"version": "1:2.6.7-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libavahi-common-data",
+"version": "0.6.32-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libavahi-common3",
+"version": "0.6.32-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libavahi-core7",
+"version": "0.6.32-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libblkid1",
+"version": "2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libboost-filesystem1.62.0",
+"version": "1.62.0+dfsg-4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libboost-serialization1.62.0",
+"version": "1.62.0+dfsg-4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libboost-system1.62.0",
+"version": "1.62.0+dfsg-4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libboost-thread1.62.0",
+"version": "1.62.0+dfsg-4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libbsd0",
+"version": "0.8.3-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libbz2-1.0",
+"version": "1.0.6-8.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libc-bin",
+"version": "2.24-11+deb9u4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libc6",
+"version": "2.24-11+deb9u4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcap-ng0",
+"version": "0.7.7-3+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcap2",
+"version": "1:2.25-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcap2-bin",
+"version": "1:2.25-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcharon-extra-plugins",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcomerr2",
+"version": "1.43.4-2+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcrypt-openssl-bignum-perl",
+"version": "0.07-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcrypt-openssl-rsa-perl",
+"version": "0.28-5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcryptsetup4",
+"version": "2:1.7.3-4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcurl3",
+"version": "7.52.1-5+deb9u10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libcurl3-gnutls",
+"version": "7.52.1-5+deb9u10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libdaemon0",
+"version": "0.14-6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libdb5.3",
+"version": "5.3.28-12+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libdb5.3++",
+"version": "5.3.28-12+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libdbus-1-3",
+"version": "1.10.32-0+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libdebconfclient0",
+"version": "0.227"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libdevmapper1.02.1",
+"version": "2:1.02.137-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libdnssec2",
+"version": "2.4.0-3+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libedit2",
+"version": "3.1-20160903-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libestr0",
+"version": "0.1.10-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libevent-2.0-5",
+"version": "2.0.21-stable-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libexpat1",
+"version": "2.2.0-2+deb9u3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libfastjson4",
+"version": "0.99.8-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libfdisk1",
+"version": "2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libffi6",
+"version": "3.2.1-6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libfile-sync-perl",
+"version": "0.11-2+b3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libfreeradius-client2",
+"version": "1.1.6-7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libgcc1",
+"version": "1:6.3.0-18+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libgcrypt20",
+"version": "1.7.6-2+deb9u3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libgdbm3",
+"version": "1.8.3-14"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libgmp10",
+"version": "2:6.1.2+dfsg-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libgnutls-openssl27",
+"version": "3.5.8-5+deb9u5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libgnutls30",
+"version": "3.5.8-5+deb9u5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libgpg-error0",
+"version": "1.26-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libgssapi-krb5-2",
+"version": "1.15-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libhogweed4",
+"version": "3.3-1+b2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libidn11",
+"version": "1.33-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libidn2-0",
+"version": "2.0.5-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libio-prompt-perl",
+"version": "0.997004-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libio-socket-ssl-perl",
+"version": "2.044-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libip4tc0",
+"version": "1.6.2-1.1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libiperf0",
+"version": "3.6-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libipset3",
+"version": "6.30-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libjansson4",
+"version": "2.9-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libjq1",
+"version": "1.5+dfsg-1.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libjson-c3",
+"version": "0.12.1-1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libjson-perl",
+"version": "2.90-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libk5crypto3",
+"version": "1.15-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libkeyutils1",
+"version": "1.5.9-9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libkmod2",
+"version": "23-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libknot5",
+"version": "2.4.0-3+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libkrb5-3",
+"version": "1.15-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libkrb5support0",
+"version": "1.15-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libksba8",
+"version": "1.3.5-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libldap-2.4-2",
+"version": "2.4.47+dfsg-3+deb10u2~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libldap-common",
+"version": "2.4.47+dfsg-3+deb10u2~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "liblmdb0",
+"version": "0.9.18-5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "liblocale-gettext-perl",
+"version": "1.07-3+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "liblognorm5",
+"version": "2.0.3-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libltdl7",
+"version": "2.4.6-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "liblz4-1",
+"version": "0.0~r131-2+b1"
+},
+{
+"confidence": 0.7,
+"found_by": "xenolith-fingerprint",
+"name": "liblzma",
+"version": ""
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "liblzma5",
+"version": "5.2.2-1.2+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "liblzo2-2",
+"version": "2.08-1.2+b2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libmnl0",
+"version": "1.0.4-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libmount1",
+"version": "2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libmpfr4",
+"version": "3.1.5-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libncurses5",
+"version": "6.0+20161126-1+deb9u2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libncursesw5",
+"version": "6.0+20161126-1+deb9u2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnet-ssleay-perl",
+"version": "1.80-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnetaddr-ip-perl",
+"version": "4.079+dfsg-1+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnetfilter-conntrack3",
+"version": "1.0.6-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnetfilter-log1",
+"version": "1.0.1-1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnettle6",
+"version": "3.3-1+b2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnfnetlink0",
+"version": "1.0.1-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnghttp2-14",
+"version": "1.18.1-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnl-3-200",
+"version": "3.4.0-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnl-cli-3-200",
+"version": "3.4.0-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnl-genl-3-200",
+"version": "3.4.0-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnl-nf-3-200",
+"version": "3.4.0-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnl-route-3-200",
+"version": "3.4.0-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libnpth0",
+"version": "1.3-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libonig4",
+"version": "6.1.3-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libopts25",
+"version": "1:5.18.12-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libp11-kit0",
+"version": "0.23.3-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpam-modules",
+"version": "1.1.8-3.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpam-modules-bin",
+"version": "1.1.8-3.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpam-radius-auth",
+"version": "1.3.16-5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpam-runtime",
+"version": "1.1.8-3.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpam-systemd",
+"version": "232-25+deb9u12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpam0g",
+"version": "1.1.8-3.6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpcap0.8",
+"version": "1.8.1-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpci3",
+"version": "1:3.5.2-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpcre3",
+"version": "2:8.39-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libperl5.24",
+"version": "5.24.1-3+deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpkcs11-helper1",
+"version": "1.21-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpopt0",
+"version": "1.16-10+b2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libprocps6",
+"version": "2:3.3.12-3+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpsl5",
+"version": "0.17.0-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpython-stdlib",
+"version": "2.7.13-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpython2.7-minimal",
+"version": "2.7.13-2+deb9u3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libpython2.7-stdlib",
+"version": "2.7.13-2+deb9u3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libreadline7",
+"version": "7.0-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "librtmp1",
+"version": "2.4+20151223.gitfa8646d.1-1+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsasl2-2",
+"version": "2.1.27~101-g0780600+dfsg-3+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsasl2-modules-db",
+"version": "2.1.27~101-g0780600+dfsg-3+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsctp1",
+"version": "1.0.18+dfsg-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libseccomp2",
+"version": "2.3.1-2.1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libselinux1",
+"version": "2.6-3+b3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsemanage-common",
+"version": "2.6-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsemanage1",
+"version": "2.6-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsepol1",
+"version": "2.6-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsigsegv2",
+"version": "2.10-5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsmartcols1",
+"version": "2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsnmp-base",
+"version": "5.7.3+dfsg-3+t5622756.dev.stretch.v2.0.9.hotfix.1.4d609bb"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsnmp30",
+"version": "5.7.3+dfsg-3+t5622756.dev.stretch.v2.0.9.hotfix.1.4d609bb"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsocket6-perl",
+"version": "0.27-1+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsort-versions-perl",
+"version": "1.62-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsqlite3-0",
+"version": "3.27.2-3~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libss2",
+"version": "1.43.4-2+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "libssh",
+"version": "0.8.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libssh2-1",
+"version": "1.7.0-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libssl1.0.2",
+"version": "1.0.2u-1~deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libssl1.1",
+"version": "1.1.1n-0+deb11u4.ui1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libstdc++6",
+"version": "6.3.0-18+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libstrongswan",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libstrongswan-extra-plugins",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libstrongswan-standard-plugins",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libswitch-perl",
+"version": "2.17-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libsystemd0",
+"version": "232-25+deb9u12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libtasn1-6",
+"version": "4.10-1.1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libterm-readkey-perl",
+"version": "2.37-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libtext-charwidth-perl",
+"version": "0.04-7+b5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libtext-iconv-perl",
+"version": "1.7-5+b4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libtext-wrapi18n-perl",
+"version": "0.06-7.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libtimedate-perl",
+"version": "2.3000-2+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libtinfo5",
+"version": "6.0+20161126-1+deb9u2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libtree-simple-perl",
+"version": "1.29-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libudev1",
+"version": "232-25+deb9u12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libunistring0",
+"version": "0.9.6+really0.9.3-0.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libupnp6",
+"version": "1:1.6.19+git20160116-1.2+deb9u1.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "liburi-perl",
+"version": "1.71-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libusb-1.0-0",
+"version": "2:1.0.21-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libustr-1.0-1",
+"version": "1.0.4-6"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libuuid1",
+"version": "2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libvyatta-cfg1",
+"version": "1:1.0.18+t5622759.dev.stretch.v2.0.9.eb5759b"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libwant-perl",
+"version": "0.29-1+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libwrap0",
+"version": "7.6.q-26"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "libzscanner1",
+"version": "2.4.0-3+deb9u1"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "lighttpd",
+"version": "1.4.55"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "linux-igd",
+"version": "1.0+cvs20070630-5+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "lldpd",
+"version": "1:0.5.5-ubnt3+t5622757.dev.stretch.v2.0.9.0790d7d"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "login",
+"version": "1:4.4-4.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "logrotate",
+"version": "3.11.0-0.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "lsb-base",
+"version": "9.20161125"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "lsof",
+"version": "4.89+dfsg-0.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "mawk",
+"version": "1.3.3-17+b3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "memtester",
+"version": "4.3.0-4+b1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "mgetty",
+"version": "1.1.36-3+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "mime-support",
+"version": "3.60"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "miniupnpd",
+"version": "1:1.8.20140203-ubnt7+t5622755.dev.stretch.f040a6b"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "mount",
+"version": "2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "mtd-utils",
+"version": "1:2.0.0-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "mtr-tiny",
+"version": "0.92-2~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "multiarch-support",
+"version": "2.24-11+deb9u4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ncurses-base",
+"version": "6.0+20161126-1+deb9u2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ncurses-bin",
+"version": "6.0+20161126-1+deb9u2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ndisc6",
+"version": "1.0.3-3"
+},
+{
+"confidence": 0.8,
+"found_by": "xenolith-fingerprint",
+"name": "net-snmp",
+"version": "5.7.3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "net-tools",
+"version": "1.60+git20161116.90da8a0-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "netbase",
+"version": "5.4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "netplug",
+"version": "1:1.2.9-ubnt3+t5622757.dev.stretch.v2.0.9.5396aec"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ntp",
+"version": "1:4.2.8p10+dfsg-3+deb9u2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ntpdate",
+"version": "1:4.2.8p10+dfsg-3+deb9u2"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "openssh",
+"version": "2.3"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "openssh",
+"version": "7.4p1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "openssh-client",
+"version": "1:7.4p1-10+deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "openssh-server",
+"version": "1:7.4p1-10+deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "openssh-sftp-server",
+"version": "1:7.4p1-10+deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "openssl",
+"version": "1.0.2u"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:binary-classifier-cataloger, xenolith-fingerprint",
+"name": "openssl",
+"version": "1.1.1n"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "openssl",
+"version": "1.1.1n-0+deb11u4.ui1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "openvpn",
+"version": "2.4.7-1~bpo9+1.ubnt1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "passwd",
+"version": "1:4.4-4.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "perl",
+"version": "5.24.1-3+deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "perl-base",
+"version": "5.24.1-3+deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "perl-modules-5.24",
+"version": "5.24.1-3+deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "perl-openssl-defaults",
+"version": "3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "pinentry-curses",
+"version": "1.0.0-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "pmacct",
+"version": "1:1.5.0rc1-ubnt4+t5622757.dev.stretch.v2.0.9.2aa504d"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ppp",
+"version": "2.4.7-1+1ubnt1+t5622757.dev.stretch.v2.0.9.c1e4495"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "pppoe",
+"version": "1:3.12-ubnt1+t5622757.dev.stretch.v2.0.9.3d5159e"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "pptp-linux",
+"version": "1.9.0+ds-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "pptpd",
+"version": "1.4.0-10"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "procps",
+"version": "2:3.3.12-3+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "psmisc",
+"version": "22.21-2.1+b2"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "python",
+"version": "2.7.13"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "python",
+"version": "2.7.13-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "python-beaker",
+"version": "1.8.1-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "python-flup",
+"version": "1.0.2-5"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "python-funcsigs",
+"version": "1.0.2-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "python-minimal",
+"version": "2.7.13-2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "python2.7",
+"version": "2.7.13-2+deb9u3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "python2.7-minimal",
+"version": "2.7.13-2+deb9u3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "radvd",
+"version": "2:2.16-1-ubnt1+t5622757.dev.stretch.v2.0.9.5ddf009"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "readline-common",
+"version": "7.0-3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "rsyslog",
+"version": "8.1901.0-1~bpo9+1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "sed",
+"version": "4.4-1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "sensible-utils",
+"version": "0.0.9+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "snmp",
+"version": "5.7.3+dfsg-3+t5622756.dev.stretch.v2.0.9.hotfix.1.4d609bb"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "snmpd",
+"version": "5.7.3+dfsg-3+t5622756.dev.stretch.v2.0.9.hotfix.1.4d609bb"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "squid",
+"version": "3.5.28+t5622761.dev.stretch.v2.0.9.0109949"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "squidguard",
+"version": "1:1.5-4-ubnt1+t5622757.dev.stretch.v2.0.9.1f2942f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ssh",
+"version": "1:7.4p1-10+deb9u7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ssmtp",
+"version": "2.64-8+b2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "startpar",
+"version": "0.59-3.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "strongswan-charon",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "strongswan-libcharon",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "strongswan-pki",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "strongswan-scepclient",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "strongswan-starter",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "strongswan-swanctl",
+"version": "5.6.3-1+ubnt1+t5622760.dev.stretch.v2.0.9.dd8ad667f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "sudo",
+"version": "1.8.19p1-2.1+deb9u3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "systemd",
+"version": "232-25+deb9u12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "systemd-sysv",
+"version": "232-25+deb9u12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "sysv-rc",
+"version": "2.88dsf-59.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "sysvinit-utils",
+"version": "2.88dsf-59.9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "tar",
+"version": "1.29b-1.1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "tcpdump",
+"version": "4.9.3-1~deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "tzdata",
+"version": "2020a-0+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-debian",
+"version": "9:0.1.23+t5622757.dev.stretch.v2.0.9.hotfix.1.79b887e"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-gui-common",
+"version": "0.1.9+t5622755.dev.stretch.v2.0.9.a69933c"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-igmpproxy",
+"version": "0.1.2+t5622757.dev.stretch.v2.0.9.d1c0fbc"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-l2tp",
+"version": "0.1+t5622757.dev.stretch.v2.0.9.6b97136"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-platform",
+"version": "1:0.1.18+t5622763.dev.stretch.v2.0.9.7989d4f0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-platform-priv",
+"version": "0.1.25+t5622763.dev.stretch.v2.0.9.7df6ecbc"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-pppoe-server",
+"version": "0.1.13+t5622757.dev.stretch.v2.0.9.1a6c97d"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-pptp",
+"version": "0.1.3+t5622757.dev.stretch.v2.0.9.6594c3a"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-protocols",
+"version": "0.1.0+t5622757.dev.stretch.v2.0.9.b329287"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-protocols-cfg",
+"version": "0.1.2+t5622758.dev.stretch.v2.0.9.b513b281"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-protocols-op",
+"version": "0.1.1+t5622758.dev.stretch.v2.0.9.e49819a"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-rtr-ui",
+"version": "0.1.42+t5622755.dev.stretch.76f4f594"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-udapi-server",
+"version": "1.0.1+t5622760.dev.stretch.v2.0.9.8916567"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ubnt-util",
+"version": "0.1.31+t5622755.dev.stretch.v2.0.9.84fe6b87"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "ucf",
+"version": "9:0.1.23+t5622757.dev.stretch.v2.0.9.hotfix.1.79b887e"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "udapi-bridge",
+"version": "0.27.0-1+t5622758.dev.stretch.f12ba30"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "udev",
+"version": "232-25+deb9u12"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "usbutils",
+"version": "1:007-4+deb9u1"
+},
+{
+"confidence": 0.8,
+"found_by": "syft:binary-classifier-cataloger",
+"name": "util-linux",
+"version": "2.29.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "util-linux",
+"version": "2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "uuid-runtime",
+"version": "2.29.2-1+deb9u1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-bash",
+"version": "1:4.1-ubnt4+t5622759.dev.stretch.v2.0.9.ef0fa53"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cfg",
+"version": "1:1.0.18+t5622759.dev.stretch.v2.0.9.eb5759b"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cfg-dhcp-relay",
+"version": "1:0.11.2+t5622759.dev.stretch.v2.0.9.e496d6b"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cfg-dhcp-server",
+"version": "1:0.13.12+t5622759.dev.stretch.v2.0.9.hotfix.2.dff5dc1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cfg-firewall",
+"version": "1:0.14.14+t5622759.dev.stretch.v2.0.9.95f8634"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cfg-op-pppoe",
+"version": "1:0.12.14+t5622759.dev.stretch.v2.0.9.c7087e1"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cfg-qos",
+"version": "1:0.16.12+t5622759.dev.stretch.v2.0.9.b7205a4"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cfg-system",
+"version": "1:0.20.22+t5622759.dev.stretch.b8284d80"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cfg-vpn",
+"version": "1:0.13.10+t5622759.dev.stretch.v2.0.9.6b59929"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-config-mgmt",
+"version": "1:0.32.4+t5622759.dev.stretch.v2.0.9.b7bba26"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-config-migrate",
+"version": "1:0.14.6+t5622759.dev.stretch.v2.0.9.190b524"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-conntrack",
+"version": "1:0.55.2+t5622759.dev.stretch.v2.0.9.d21a23f"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-cron",
+"version": "1:1.0.6+t5622759.dev.stretch.v2.0.9.dac031e"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-dhcp3-client",
+"version": "1:4.1-ESV-R15-ubnt1+t5622759.dev.stretch.v2.0.9.24c30f9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-dhcp3-common",
+"version": "1:4.1-ESV-R15-ubnt1+t5622759.dev.stretch.v2.0.9.24c30f9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-dhcp3-relay",
+"version": "1:4.1-ESV-R15-ubnt1+t5622759.dev.stretch.v2.0.9.24c30f9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-dhcp3-server",
+"version": "1:4.1-ESV-R15-ubnt1+t5622759.dev.stretch.v2.0.9.24c30f9"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-ipv6-rtradv",
+"version": "1:0.36.9+t5622759.dev.stretch.v2.0.9.288cd2d"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-keepalived",
+"version": "1:1.2.19-ubnt1+t5622759.dev.stretch.v2.0.9.1179648"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-lldp",
+"version": "1:0.21.2+t5622759.dev.stretch.v2.0.9.0d543b2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-nat",
+"version": "1:0.13.8+t5622759.dev.stretch.v2.0.9.abd4087"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-netflow",
+"version": "1:0.34.5+t5622759.dev.stretch.v2.0.9.25c5bd0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-op",
+"version": "1:0.14.19+t5622760.dev.stretch.v2.0.9.1e6d827"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-op-dhcp-server",
+"version": "1:0.14.8+t5622760.dev.stretch.v2.0.9.d3f9408"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-op-firewall",
+"version": "1:0.11.4+t5622760.dev.stretch.v2.0.9.af3d95c"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-op-qos",
+"version": "1:0.13.4+t5622760.dev.stretch.v2.0.9.5fea2e2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-op-vpn",
+"version": "1:0.14.4+t5622760.dev.stretch.v2.0.9.527d93d"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-openvpn",
+"version": "1:0.3.9+t5622760.dev.stretch.v2.0.9.hotfix.2.21942d7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-ravpn",
+"version": "1:0.13.12+t5622760.dev.stretch.v2.0.9.d514486"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-suspend",
+"version": "0.1+t5622761.dev.stretch.v2.0.9.7ed31e3"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-upnp",
+"version": "0.2.2+t5622760.dev.stretch.v2.0.9.260fa4b"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-webproxy",
+"version": "1:0.3.5+t5622760.dev.stretch.v2.0.9.92e0bc7"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-wirelessmodem",
+"version": "1:0.2.1+t5622760.dev.stretch.v2.0.9.6718f08"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyatta-zone",
+"version": "1:0.11.1+t5622760.dev.stretch.v2.0.9.fa5aff0"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "vyos-vpn-agile",
+"version": "0.2.7+t5622762.dev.stretch.v2.0.9.0aeb0bd"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "wide-dhcpv6-client",
+"version": "1:20080615-16-ubnt1+t5622760.dev.stretch.v2.0.9.2a8bc1a"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:python-installed-package-cataloger",
+"name": "wsgiref",
+"version": "0.1.2"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "xl2tpd",
+"version": "1.3.8+dfsg-1"
+},
+{
+"confidence": 0.9,
+"found_by": "xenolith-fingerprint",
+"name": "zlib",
+"version": "1.2.8"
+},
+{
+"confidence": 0.9,
+"found_by": "syft:dpkg-db-cataloger",
+"name": "zlib1g",
+"version": "1:1.2.8.dfsg-5+deb9u1"
+}
+],
+"discovery_path": [
+"https://dl.ui.com/firmwares/edgemax/v2.0.9-hotfix.7/ER-e300.v2.0.9-hotfix.7.5622762.tar",
+"https://github.com/benheise/Xenolith/blob/main/community/sboms/ubiquiti/edgerouter-edgeos-e300--2-0-9-hotfix-7.cdx.json"
+],
+"evidence": "binary-scan",
+"extractors": [
+"sbom"
+],
+"found_via": "community",
+"kind": "sbom",
+"product": "EdgeRouter (EdgeOS, e300)",
+"retrieved": "2026-11-21",
+"sha256": "057d117e770ee51da5f97dac40f5e44e224f0867346d4c7b2c5d4965ff63f3ef",
+"source": "community",
+"submission": "https://github.com/benheise/Xenolith/blob/main/community/sboms/ubiquiti/edgerouter-edgeos-e300--2-0-9-hotfix-7.cdx.json",
+"supplier": "Ubiquiti",
+"tool": "xenolith-scan, syft, xenolith-fingerprint",
+"url": "https://dl.ui.com/firmwares/edgemax/v2.0.9-hotfix.7/ER-e300.v2.0.9-hotfix.7.5622762.tar",
+"version": "2.0.9-hotfix.7"
+}
