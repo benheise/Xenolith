@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T22:57:58Z",
+ "built": "2026-11-21T23:01:12Z",
  "threats": [
   {
    "c": "vcenter",
@@ -664,8 +664,8 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20495,
-  "products_with_data": 8748,
+  "assertions": 20496,
+  "products_with_data": 8749,
   "inventories": 420,
   "inventory_components": 287797,
   "cpe_linked_clusters": 23,
@@ -2205,15 +2205,15 @@
     }
    ],
    "kev": 1,
-   "assertions": 246,
-   "products": 176,
+   "assertions": 247,
+   "products": 177,
    "contains": 226,
    "in_range": 62,
    "verdicts": {
     "present": 136,
     "workaround": 15,
     "fixed": 75,
-    "not_affected": 20
+    "not_affected": 21
    },
    "exploitation": {}
   },
@@ -7552,10 +7552,10 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 5285,
+   "assertions": 5286,
    "latest": "2026-11-21",
    "publishers": {
-    "Red Hat Product Security": 3244,
+    "Red Hat Product Security": 3245,
     "Siemens ProductCERT": 892,
     "CISA": 681,
     "Cisco": 238,
