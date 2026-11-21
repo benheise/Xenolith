@@ -232,7 +232,7 @@ def build_feeds(threats: list[dict], out_dir: Path) -> None:
             "date_published": stamp(t.get("kev") or t["date"]), "date_modified": stamp(t["date"]),
             "tags": [t["level"], t["c"], *t["cves"]],
             "_xenolith": {k: t[k] for k in ("c", "component", "cves", "level", "date", "kev", "ransomware", "epss",
-                                            "flagged", "flagged_total", "products", "unfixed") if k in t},
+                                            "flagged", "flagged_total", "products", "unfixed", "cvss", "scores") if k in t},
         })
     feed = {
         "version": "https://jsonfeed.org/version/1.1",
@@ -519,6 +519,16 @@ def build(catalog: Catalog, data_dir: Path, out_dir: Path, *, spine_min_cves: in
         best = max((cve_cards[c]["e"] for c in t["cves"] if "e" in cve_cards.get(c, {})), default=None)
         if best is not None:
             t["epss"] = best
+        # Per-CVE scores travel with the feed item, so the front page can rank and explain a
+        # group of CVEs without downloading cves.json. Worst first: KEV, then EPSS, then CVSS.
+        scores = [{"v": c, **({"s": cve_cards[c]["cvss"]["score"]} if "cvss" in cve_cards.get(c, {}) else {}),
+                   **({"e": cve_cards[c]["e"]} if "e" in cve_cards.get(c, {}) else {}),
+                   **({"k": cve_cards[c]["k"]} if "k" in cve_cards.get(c, {}) else {})} for c in t["cves"]]
+        scores.sort(key=lambda r: (r.get("k", ""), r.get("e", -1), r.get("s", -1)), reverse=True)
+        t["scores"] = scores
+        top = max((r["s"] for r in scores if "s" in r), default=None)
+        if top is not None:
+            t["cvss"] = top
 
     build_feeds(threats, out_dir)
 

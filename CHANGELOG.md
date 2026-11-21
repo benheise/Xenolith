@@ -36,6 +36,16 @@ Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new 
   Symantec), IBM (no Semeru or WebSphere bulletin), Oracle's own products, SAP, SapMachine,
   JetBrains Runtime and the IDEs.
 
+## 2026-11-21: Scores on every card, CVE lists that collapse
+
+- **Scores are visible without opening a CVE.** Threat cards and each incident on a component page
+  show the highest CVSS, the highest EPSS and how many of the CVEs are in CISA KEV.
+- **CVE lists are scored tables, worst first** (KEV, then EPSS, then CVSS), showing three rows with
+  a "Show all N CVEs" control. Chromium's 71 CVE chips now take the room of three rows.
+- **CVE card** opens with three tiles side by side: CVSS severity, EPSS likelihood (with its
+  percentile in words) and CISA KEV, then the description, then the details.
+- Threat feed items carry per-CVE scores (`scores`, `cvss`) in `meta.json` and `feed.json`.
+
 ## 2026-11-21: Threat feeds, lighter search, and the rest of the design review
 
 - **Feeds.** The build writes the threat list as Atom (`docs/data/feed.xml`) and JSON Feed 1.1

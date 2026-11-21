@@ -133,7 +133,7 @@
     padding: 5px 12px; border-radius: 999px; border: 1px solid currentColor; }
   .pill.low { color: var(--fixed); } .pill.medium { color: var(--investigating); } .pill.high { color: var(--workaround); }
   .pill.critical, .pill.yes { color: var(--affected); } .pill.no { color: var(--neutral); }
-  .kv { display: grid; grid-template-columns: minmax(9em, 42%) 1fr; gap: 0; }
+  .kv { display: grid; grid-template-columns: minmax(9em, 14em) 1fr; gap: 0; }
   .kv > div { padding: 12px 0; border-top: 1px solid var(--line); }
   .kv > div:nth-child(-n+2) { border-top: 0; }
   .kv .k { color: var(--muted); font-size: 14.5px; padding-right: 10px; }
@@ -150,6 +150,34 @@
   .threat .when { white-space: nowrap; text-align: right; color: var(--muted); padding-top: 2px; }
   .threat .when b { color: var(--ink); font-weight: 600; }
   ol.tlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  /* scored CVE list */
+  .metrics { display: flex; gap: 4px 16px; flex-wrap: wrap; margin-top: 6px; font-size: 14px; }
+  .metrics span { color: var(--muted); } .metrics b { color: var(--ink); font-variant-numeric: tabular-nums; margin-left: 4px; }
+  .metrics .hot b { color: var(--affected); }
+  .ctab { border-collapse: collapse; margin-top: 8px; font-size: 14px; width: 100%; max-width: 560px; }
+  .ctab th { text-align: left; font-weight: 400; color: var(--muted); font-size: 13px; padding: 2px 12px 4px 0; border-bottom: 1px solid var(--line); }
+  .ctab td { padding: 5px 12px 5px 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: middle; }
+  .ctab tr:last-child td { border-bottom: 0; } .ctab th.n, .ctab td.n { text-align: right; }
+  .ctab .cve { background: none; padding: 3px 0; text-decoration: underline; color: var(--accent); }
+  .ctab .sev { color: var(--muted); font-size: 13px; margin-left: 4px; }
+  .ebar { display: inline-block; width: 44px; height: 6px; border-radius: 3px; background: var(--chip); margin-left: 8px; vertical-align: middle; overflow: hidden; }
+  .ebar i { display: block; height: 100%; min-width: 2px; background: var(--neutral); }
+  .ebar.high i, .ebar.critical i { background: var(--affected); } .ebar.medium i { background: var(--workaround); }
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0 4px; }
+  .tile { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; min-width: 0; }
+  .tile .lab { color: var(--muted); font-size: 13px; } .tile .val { font-size: 26px; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .tile .sub { color: var(--muted); font-size: 13px; line-height: 1.35; } .tile.hot .val { color: var(--affected); }
+  .tile .ebar { display: block; width: 100%; margin: 4px 0; }
+  .cvecard .desc { margin: 14px 0 6px; max-width: 76ch; }
+  .kv > div:nth-child(-n+2) { border-top: 1px solid var(--line); }
+  @media (max-width: 640px) {
+    .ctab .ebar, .ctab .sev { display: none; } .ctab th, .ctab td { padding-right: 8px; }
+    .threat details > :not(summary) { margin-left: -43px; }
+    .tile { padding: 8px 9px; } .tile .val { font-size: 22px; }
+  }
+  .linkbtn { background: none; border: 0; color: var(--accent); font: inherit; font-size: 14px; text-decoration: underline; padding: 6px 0; cursor: pointer; min-height: 32px; }
+  .incident { border-top: 1px solid var(--line); padding: 10px 0 4px; margin-top: 10px; }
+  .incident h2 { font-size: 16px; margin: 0; }
   /* "Why it matters" tab */
   .why section { margin: 34px 0 0; }
   .why h2 { font-size: 22px; margin: 2px 0 10px; }
@@ -555,14 +583,17 @@ async function showComponent(id, filterKey, text) {
   const counts = Object.fromEntries(FILTERS.map(f => [f[0], rows.filter(f[2]).length]));
   statusEl.textContent = `${fmt(visible.length)} of ${fmt(rows.length)} statements shown`;
 
-  const incidents = (c.incidents || []).map(i => `
-    <div class="small" style="margin-top:4px"><b>${esc(i.name)}</b> (${esc(i.year)}):
-      ${(i.cves || []).map(cveLink).join(" ")}
-      ${(i.trackers || []).map(u => ` · tracker: ${link(u)}`).join("")}
-      ${i.kev ? `<div><span class="badge x-exploited" title="CISA lists this vulnerability as exploited in the wild. KEV names the component, not the products that embed it.">Exploited in the wild (CISA KEV)</span>
-        <span class="small muted">${Object.entries(i.kev).map(([v, d]) => `${esc(v)} since ${dateEl(d)}`).join(" · ")}${(i.kev_ransomware || []).length ? " · used in ransomware attacks" : ""}</span></div>` : ""}
-      ${i.note ? `<div class="muted">${esc(i.note)}</div>` : ""}
-    </div>`).join("");
+  const cv = await cves().then(d => d.cves).catch(() => ({}));
+  const incidents = (c.incidents || []).map(i => {
+    const rows = (i.cves || []).map(v => { const r = cv[v] || {}; return { v, s: r.cvss ? r.cvss.score : null, e: r.e, k: r.k || (i.kev || {})[v] }; });
+    return `<section class="incident">
+      <h2>${esc(i.name)} <span class="small muted" style="font-weight:400">${esc(i.year)}</span></h2>
+      ${rows.length ? cveMetrics(rows, (i.kev_ransomware || []).length ? `<span class="hot">Ransomware<b>Known use</b></span>` : "") : ""}
+      ${i.note ? `<div class="meta">${esc(i.note)}</div>` : ""}
+      ${rows.length ? cveTable(rows, i.name) : ""}
+      ${(i.trackers || []).length ? `<div class="meta">Trackers: ${i.trackers.map(u => link(u)).join(", ")}</div>` : ""}
+    </section>`;
+  }).join("");
   app.innerHTML = `
     <button class="back" id="back">← All components</button>
     <h1>${esc(c.name)}</h1>
@@ -783,31 +814,34 @@ async function showCve(id) {
   const band = r.e != null ? epssBand(r.e) : null;
   const rows = [];
   const row = (k, v) => rows.push(`<div class="k">${k}</div><div class="v">${v}</div>`);
-  row("EPSS probability", r.e != null ? `${epssPct(r.e)} <span class="small muted">(next 30 days)</span>` : `<span class="small muted">not scored yet</span>`);
-  if (r.pc != null) row("Percentile", ordinal(r.pc));
-  row("CVSS base score", r.cvss ? `${r.cvss.score.toFixed(1)}${r.cvss.severity ? ` ${esc(r.cvss.severity)}` : ""} <span class="small muted">v${esc(r.cvss.version)}</span>` : `<span class="small muted">none in the CVE record</span>`);
-  row("CISA KEV", r.k ? `<span class="pill yes">Yes, actively exploited</span>` : `<span class="pill no">No</span>`);
-  if (r.k) row("KEV date added", dateEl(r.k));
-  if (r.rw) row("Ransomware use", "Known");
-  if (r.x) row("Named products", exploitBadge(r.x));
+  if (r.x) row("Products named", exploitBadge(r.x));
   if (r.pub) row("Published", dateEl(r.pub));
   row("Component", `<a href="#c=${encodeURIComponent(r.c)}">${esc(comp ? comp.name : r.c)}</a>`);
   row("Products", r.n ? `<a href="#c=${encodeURIComponent(r.c)}">${fmt(r.n)} with a vendor statement</a>${r.u ? `, ${fmt(r.u)} with no fix stated` : ""}` : `<span class="small muted">no vendor statements yet</span>`);
+  if (r.cvss && r.cvss.vector) row("CVSS vector", `<span class="hash">${esc(r.cvss.vector)}</span>`);
   // Evidence of attacks outranks a forecast, so it leads the card when there is any.
-  const lead = r.k || r.x === "exploited" ? `<span class="pill yes" style="margin-right:6px">Exploited</span>` : "";
+  const lead = r.k || r.x === "exploited" ? `<span class="badge x-exploited">Exploited in the wild</span>` : r.x ? exploitBadge(r.x) : "";
   const mismatch = r.k && r.e != null && r.e < 0.1
-    ? `<div class="notice">EPSS rates this ${band} (${epssPct(r.e)}), but it is in CISA KEV. EPSS is a forecast and often lags a fresh disclosure;
+    ? `<div class="notice" style="margin-top:12px">EPSS rates this ${band} (${epssPct(r.e)}), but it is in CISA KEV. EPSS is a forecast and often lags a fresh disclosure;
        a KEV listing is evidence that attacks have happened. When the two disagree, go with KEV.</div>` : "";
+  // The three scores sit side by side so they can be read against each other: how bad if it
+  // lands (CVSS), how likely (EPSS), and whether it already has (KEV).
+  const tile = (label, value, sub, hot) => `<div class="tile${hot ? " hot" : ""}"><div class="lab">${label}</div><div class="val">${value}</div><div class="sub">${sub}</div></div>`;
+  const tiles = [
+    tile("CVSS severity", r.cvss ? r.cvss.score.toFixed(1) : "n/a", r.cvss ? `${esc(r.cvss.severity || sevWord(r.cvss.score))}, v${esc(r.cvss.version)}` : "none in the CVE record", r.cvss && r.cvss.score >= 9),
+    tile("EPSS likelihood", r.e != null ? epssPct(r.e) : "n/a",
+      r.e != null ? `<span class="ebar ${band}" aria-hidden="true"><i style="width:${Math.max(2, Math.round(r.e * 100))}%"></i></span>${band}${r.pc != null ? `, higher than ${(r.pc * 100).toFixed(0)}% of CVEs` : ""}` : "not scored yet", r.e != null && r.e >= 0.1),
+    tile("CISA KEV", r.k ? "Listed" : "No", r.k ? `since ${dateEl(r.k)}${r.rw ? ", ransomware use known" : ""}` : "not in the catalog", !!r.k),
+  ].join("");
   app.innerHTML = `${back}
     <div class="card cvecard">
-      <div class="head"><h1>${esc(id)}</h1><div>${lead}${band ? `<span class="pill ${band}">EPSS ${band}, ${epssPct(r.e)}</span>` : ""}</div></div>
-      <div class="small muted" style="margin-bottom:8px">${esc(r.i)}</div>
+      <div class="head"><h1>${esc(id)}</h1>${lead}</div>
+      <div class="small muted">${esc(r.i)}</div>
+      <div class="tiles">${tiles}</div>
+      ${mismatch}
+      ${r.d ? `<p class="desc">${esc(r.d)}</p>` : ""}
       <div class="kv">${rows.join("")}</div>
     </div>
-    ${mismatch}
-    ${r.d ? `<div class="card"><div class="kv"><div class="k" style="grid-column:1/-1;border:0;padding-bottom:4px">Description</div></div>
-      <p style="margin:0">${esc(r.d)}</p>
-      ${r.cvss && r.cvss.vector ? `<p class="small muted hash" style="margin:8px 0 0">${esc(r.cvss.vector)}</p>` : ""}</div>` : ""}
     <p class="small">${link(`https://www.cve.org/CVERecord?id=${id}`, "CVE record")} · ${link(`https://nvd.nist.gov/vuln/detail/${id}`, "NVD")}
       ${r.k ? ` · ${link(`https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=${id}`, "CISA KEV entry")}` : ""}
       · ${link(`https://api.first.org/data/v1/epss?cve=${id}`, "EPSS (FIRST.org)")}</p>
@@ -815,6 +849,43 @@ async function showCve(id) {
       1 to 10% medium, 10 to 50% high, 50% and over critical. The description and CVSS score are from the CVE record.</p>`;
   $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
 }
+
+// ---------------------------------------------------------------- scored CVE lists
+// A list of CVEs is shown as a small table, worst first, with the scores that say why each one
+// matters. Three rows show; the rest open on request, so 70 CVEs take the room of three.
+const CVE_SHOWN = 3;
+function sevWord(s) { return s >= 9 ? "Critical" : s >= 7 ? "High" : s >= 4 ? "Medium" : s > 0 ? "Low" : ""; }
+function cveSort(rows) {
+  return [...rows].sort((a, b) => (b.k || "").localeCompare(a.k || "") || (b.e ?? -1) - (a.e ?? -1) || (b.s ?? -1) - (a.s ?? -1));
+}
+function cveTable(rows, label) {
+  rows = cveSort(rows);
+  const tr = (r, i) => `<tr${i >= CVE_SHOWN ? " hidden" : ""}>
+    <td>${cveLink(r.v)}</td>
+    <td class="n">${r.s != null ? `${r.s.toFixed(1)}<span class="sev">${sevWord(r.s)}</span>` : `<span class="muted">n/a</span>`}</td>
+    <td class="n">${r.e != null ? `${epssPct(r.e)}<span class="ebar ${epssBand(r.e)}" aria-hidden="true"><i style="width:${Math.max(2, Math.round(r.e * 100))}%"></i></span>` : `<span class="muted">n/a</span>`}</td>
+    <td>${r.k ? dateEl(r.k) : `<span class="muted">No</span>`}</td></tr>`;
+  return `<table class="ctab"><caption class="sr-only">${esc(label)}: CVEs with scores, worst first</caption>
+    <thead><tr><th scope="col">CVE</th><th scope="col" class="n">CVSS</th><th scope="col" class="n">EPSS</th><th scope="col">KEV since</th></tr></thead>
+    <tbody>${rows.map(tr).join("")}</tbody></table>
+    ${rows.length > CVE_SHOWN ? `<button class="linkbtn" data-all-cves aria-expanded="false" data-n="${rows.length}">Show all ${rows.length} CVEs</button>` : ""}`;
+}
+function cveMetrics(rows, extra = "") {
+  const kev = rows.filter(r => r.k).length;
+  const e = Math.max(-1, ...rows.map(r => r.e ?? -1)), s = Math.max(-1, ...rows.map(r => r.s ?? -1));
+  return `<div class="metrics">
+    ${s >= 0 ? `<span${s >= 9 ? ' class="hot"' : ""}>${rows.length > 1 ? "Highest CVSS" : "CVSS"}<b>${s.toFixed(1)}</b></span>` : ""}
+    ${e >= 0 ? `<span${e >= 0.1 ? ' class="hot"' : ""}>${rows.length > 1 ? "Highest EPSS" : "EPSS"}<b>${epssPct(e)}</b></span>` : ""}
+    <span${kev ? ' class="hot"' : ""}>CISA KEV<b>${kev ? (rows.length > 1 ? `${kev} of ${rows.length} CVEs` : "Listed") : "No"}</b></span>${extra}</div>`;
+}
+app.addEventListener("click", ev => {
+  const b = ev.target.closest("[data-all-cves]");
+  if (!b) return;
+  const open = b.getAttribute("aria-expanded") !== "true";
+  b.previousElementSibling.querySelectorAll("tbody tr").forEach((tr, i) => { tr.hidden = !open && i >= CVE_SHOWN; });
+  b.setAttribute("aria-expanded", String(open));
+  b.textContent = open ? `Show the top ${CVE_SHOWN} only` : `Show all ${b.dataset.n} CVEs`;
+});
 
 // ---------------------------------------------------------------- Threats tab (default)
 const THREAT_WHY = {
@@ -825,29 +896,27 @@ const THREAT_WHY = {
 };
 let threatsShown = 5;
 function threatCard(t, i) {
-  const facts = [];
-  if (t.kev) facts.push(`In CISA KEV since ${dateEl(t.kev)}${t.kev_cves > 1 ? ` (${t.kev_cves} CVEs)` : ""}`);
-  if (t.ransomware) facts.push("used in ransomware attacks");
-  if (t.epss != null) facts.push(`EPSS ${epssPct(t.epss)}`);
   const flagged = (t.flagged || []).map(f =>
     `<a href="#p=${encodeURIComponent(f.k)}" data-p="${esc(f.k)}">${esc(f.p.toLowerCase().startsWith(f.s.toLowerCase()) ? f.p : `${f.s} ${f.p}`)}</a>`).join(", ");
   const more = t.flagged_total > (t.flagged || []).length ? ` and ${t.flagged_total - t.flagged.length} more` : "";
   const named = t.level === "exploited" ? "Products named in attacks" : "Products with a working exploit";
   const rel = relDate(t.date);
   const filter = t.flagged_total ? `&f=${t.level === "exploited" ? "exploited" : t.level === "attempted" ? "attempted" : "demonstrated"}` : "";
-  // Collapsed, a card is three lines: what, how bad and how new. The rest opens in place.
+  const scores = t.scores || t.cves.map(v => ({ v }));
+  const one = t.cves.length === 1;
+  // Collapsed, a card says what it is, how bad and how new. Scores come before CVE numbers:
+  // the numbers identify, the scores tell you whether to care.
   return `<li class="card threat">
     <div class="rank" aria-hidden="true">${i + 1}</div>
     <div class="grow">
       <div class="row"><h2><a href="#c=${encodeURIComponent(t.c)}">${esc(t.title)}</a></h2>
         <div class="small when">${rel ? `<b>${rel}</b>` : dateEl(t.date)}</div></div>
-      <div class="tline">${exploitBadge(t.level)} ${cveLink(t.cves[0])}${t.cves.length > 1 ? ` <span class="small muted">+${t.cves.length - 1}</span>` : ""}
-        <span class="small muted">${esc(t.component)}</span></div>
-      <details${i === 0 ? " open" : ""}><summary>Details<span class="sr-only"> for ${esc(t.title)}</span></summary>
+      <div class="tline">${exploitBadge(t.level)} <span class="small muted">${esc(t.component)}</span></div>
+      ${cveMetrics(scores, t.ransomware ? `<span class="hot">Ransomware<b>Known use</b></span>` : "")}
+      <details${i === 0 ? " open" : ""}><summary>${one ? esc(t.cves[0]) : `${t.cves.length} CVEs`} and affected products<span class="sr-only">: ${esc(t.title)}</span></summary>
         <div class="meta">${esc(THREAT_WHY[t.level] || "")} Newest report ${dateEl(t.date)}.</div>
-        ${t.cves.length > 1 ? `<div class="cves">${t.cves.slice(0, 8).map(cveLink).join(" ")}${t.cves.length > 8 ? ` <span class="small muted">+${t.cves.length - 8} more</span>` : ""}</div>` : ""}
-        ${facts.length ? `<div class="meta">${facts.join(" · ")}</div>` : ""}
         ${t.note ? `<div class="meta">${esc(t.note)}</div>` : ""}
+        ${cveTable(scores, t.title)}
         ${flagged ? `<div class="meta"><b>${named}:</b> ${flagged}${more}</div>` : ""}
         <div class="meta"><a class="act" href="#c=${encodeURIComponent(t.c)}${filter}">
           ${t.products ? `${fmt(t.products)} product${t.products === 1 ? "" : "s"} with a vendor statement` : "See the component"}${t.unfixed ? `, ${fmt(t.unfixed)} with no fix stated` : ""}</a></div>
