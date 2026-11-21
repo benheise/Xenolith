@@ -2477,6 +2477,16 @@
 "sbom"
 ]
 },
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.4/19.4.10-ee.0.json": {
+"fetched": "2026-11-21",
+"kind": "sbom",
+"n": 2708,
+"sha": "2975c5d38bd1014f529b84b00955354b0b1c5e6a5a748c204980acf371cd3e5b",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.4/19.4.8-ee.0.json": {
 "fetched": "2026-11-18",
 "kind": "sbom",
@@ -2497,11 +2507,31 @@
 "sbom"
 ]
 },
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.5/19.5.8-ee.0.json": {
+"fetched": "2026-11-21",
+"kind": "sbom",
+"n": 2710,
+"sha": "b0e4f5d1bd078e2be2b12638b89e347f6ee2d1f7a165b0ecda5e5c67eccb5a94",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.6/19.6.0-ee.0.json": {
 "fetched": "2026-11-20",
 "kind": "sbom",
 "n": 2740,
 "sha": "d8b0d6f6101f35910a055139cc0346f833b560d452474d63d7c6874a56796315",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.6/19.6.1-ee.0.json": {
+"fetched": "2026-11-21",
+"kind": "sbom",
+"n": 2740,
+"sha": "dfe611cd7f1dc191ac4985ab34e91cc5ff58ffe35456479b8b350e5e65afe135",
 "status": "ok",
 "via": [
 "sbom"

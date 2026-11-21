@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T03:20:53Z",
+ "built": "2026-11-21T14:57:03Z",
  "threats": [
   {
    "c": "vcenter",
@@ -32,7 +32,7 @@
     {
      "v": "CVE-2026-123890",
      "s": 9.8,
-     "e": 0.00843,
+     "e": 0.02985,
      "k": "2026-11-20"
     },
     {
@@ -79,12 +79,12 @@
    "flagged_total": 2,
    "products": 3,
    "unfixed": 1,
-   "epss": 0.01833,
+   "epss": 0.03813,
    "scores": [
     {
      "v": "CVE-2026-90436",
      "s": 9.8,
-     "e": 0.01833,
+     "e": 0.03813,
      "k": "2026-11-18"
     }
    ],
@@ -141,12 +141,12 @@
    "flagged_total": 11,
    "products": 365,
    "unfixed": 80,
-   "epss": 0.00907,
+   "epss": 0.45636,
    "scores": [
     {
      "v": "CVE-2026-114938",
      "s": 8.1,
-     "e": 0.00907
+     "e": 0.45636
     }
    ],
    "cvss": 8.1
@@ -167,12 +167,12 @@
    "flagged_total": 0,
    "products": 2,
    "unfixed": 0,
-   "epss": 0.01938,
+   "epss": 0.03269,
    "scores": [
     {
      "v": "CVE-2026-123039",
      "s": 7.8,
-     "e": 0.01938,
+     "e": 0.03269,
      "k": "2026-11-13"
     }
    ],
@@ -194,12 +194,12 @@
    "flagged_total": 0,
    "products": 4,
    "unfixed": 1,
-   "epss": 0.00962,
+   "epss": 0.0189,
    "scores": [
     {
      "v": "CVE-2026-125350",
      "s": 8.8,
-     "e": 0.00962,
+     "e": 0.0189,
      "k": "2026-11-10"
     }
    ],
@@ -228,12 +228,12 @@
    "flagged_total": 1,
    "products": 1,
    "unfixed": 0,
-   "epss": 0.00822,
+   "epss": 0.00991,
    "scores": [
     {
      "v": "CVE-2026-118527",
      "s": 4.3,
-     "e": 0.00822,
+     "e": 0.00991,
      "k": "2026-10-30"
     }
    ],
@@ -262,12 +262,12 @@
    "flagged_total": 1,
    "products": 1,
    "unfixed": 0,
-   "epss": 0.00533,
+   "epss": 0.00803,
    "scores": [
     {
      "v": "CVE-2026-111357",
      "s": 7.0,
-     "e": 0.00533,
+     "e": 0.00803,
      "k": "2026-10-30"
     }
    ],
@@ -310,7 +310,7 @@
     {
      "v": "CVE-2026-76418",
      "s": 8.6,
-     "e": 0.00821,
+     "e": 0.08547,
      "k": "2026-10-29"
     },
     {
@@ -391,12 +391,12 @@
    "flagged_total": 0,
    "products": 243,
    "unfixed": 56,
-   "epss": 0.8237,
+   "epss": 0.99931,
    "scores": [
     {
      "v": "CVE-2026-111497",
      "s": 9.2,
-     "e": 0.8237,
+     "e": 0.99931,
      "k": "2026-10-27"
     }
    ],
@@ -496,7 +496,7 @@
    "flagged_total": 1,
    "products": 5,
    "unfixed": 0,
-   "epss": 0.95642,
+   "epss": 0.96119,
    "scores": [
     {
      "v": "CVE-2026-0322",
@@ -507,7 +507,7 @@
     {
      "v": "CVE-2026-0257",
      "s": 7.8,
-     "e": 0.95642,
+     "e": 0.96119,
      "k": "2026-05-29"
     },
     {
@@ -576,19 +576,19 @@
    "flagged_total": 1,
    "products": 1,
    "unfixed": 0,
-   "epss": 0.88936,
+   "epss": 0.93096,
    "scores": [
     {
      "v": "CVE-2026-104935",
      "s": 8.6,
-     "e": 0.88936,
+     "e": 0.93096,
      "k": "2026-10-13"
     }
    ],
    "cvss": 8.6
   }
  ],
- "epss_date": "2026-11-20",
+ "epss_date": "2026-11-21",
  "watching": [
   {
    "c": "openssl",
@@ -613,8 +613,8 @@
     "CVE-2026-113425"
    ],
    "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.",
-   "products": 52,
-   "unfixed": 15
+   "products": 61,
+   "unfixed": 16
   },
   {
    "c": "tomcat",
@@ -664,10 +664,10 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20360,
-  "products_with_data": 8689,
-  "inventories": 417,
-  "inventory_components": 279639,
+  "assertions": 20432,
+  "products_with_data": 8688,
+  "inventories": 420,
+  "inventory_components": 287797,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
@@ -1173,12 +1173,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 112,
+   "assertions": 115,
    "products": 44,
-   "contains": 105,
+   "contains": 108,
    "in_range": 1,
    "verdicts": {
-    "present": 105,
+    "present": 108,
     "not_affected": 7
    },
    "exploitation": {}
@@ -1309,12 +1309,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 205,
+   "assertions": 208,
    "products": 90,
-   "contains": 197,
+   "contains": 200,
    "in_range": 26,
    "verdicts": {
-    "present": 141,
+    "present": 144,
     "fixed": 45,
     "not_affected": 4,
     "workaround": 11,
@@ -1420,14 +1420,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 933,
+   "assertions": 936,
    "products": 478,
-   "contains": 602,
+   "contains": 605,
    "in_range": 77,
    "verdicts": {
     "workaround": 263,
     "fixed": 127,
-    "present": 210,
+    "present": 213,
     "not_affected": 82,
     "under_investigation": 1,
     "affected": 2,
@@ -1804,15 +1804,15 @@
     }
    ],
    "kev": 0,
-   "assertions": 140,
-   "products": 67,
-   "contains": 121,
-   "in_range": 47,
+   "assertions": 185,
+   "products": 76,
+   "contains": 161,
+   "in_range": 50,
    "verdicts": {
-    "fixed": 45,
-    "present": 51,
-    "affected": 11,
-    "not_affected": 19,
+    "fixed": 81,
+    "present": 54,
+    "affected": 12,
+    "not_affected": 24,
     "workaround": 14
    },
    "exploitation": {}
@@ -2205,12 +2205,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 243,
+   "assertions": 246,
    "products": 176,
-   "contains": 223,
+   "contains": 226,
    "in_range": 62,
    "verdicts": {
-    "present": 133,
+    "present": 136,
     "workaround": 15,
     "fixed": 75,
     "not_affected": 20
@@ -3129,12 +3129,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 69,
+   "assertions": 72,
    "products": 34,
-   "contains": 64,
+   "contains": 67,
    "in_range": 3,
    "verdicts": {
-    "present": 59,
+    "present": 62,
     "fixed": 4,
     "affected": 1,
     "not_affected": 5
@@ -6055,12 +6055,12 @@
     }
    ],
    "kev": 2,
-   "assertions": 44,
+   "assertions": 47,
    "products": 21,
-   "contains": 40,
+   "contains": 43,
    "in_range": 1,
    "verdicts": {
-    "present": 32,
+    "present": 35,
     "fixed": 8,
     "not_affected": 4
    },
@@ -6431,12 +6431,12 @@
     }
    ],
    "kev": 3,
-   "assertions": 36,
+   "assertions": 39,
    "products": 26,
-   "contains": 36,
+   "contains": 39,
    "in_range": 0,
    "verdicts": {
-    "present": 8,
+    "present": 11,
     "workaround": 2,
     "fixed": 21,
     "affected": 5
@@ -6466,12 +6466,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 37,
+   "assertions": 40,
    "products": 33,
-   "contains": 36,
+   "contains": 39,
    "in_range": 0,
    "verdicts": {
-    "present": 8,
+    "present": 11,
     "fixed": 27,
     "workaround": 1,
     "absent": 1
@@ -6546,12 +6546,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 6,
+   "assertions": 9,
    "products": 2,
-   "contains": 5,
+   "contains": 8,
    "in_range": 0,
    "verdicts": {
-    "present": 5,
+    "present": 8,
     "not_affected": 1
    },
    "exploitation": {}
@@ -7552,14 +7552,14 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 5243,
-   "latest": "2026-11-20",
+   "assertions": 5285,
+   "latest": "2026-11-21",
    "publishers": {
-    "Red Hat Product Security": 3203,
+    "Red Hat Product Security": 3244,
     "Siemens ProductCERT": 892,
     "CISA": 681,
     "Cisco": 238,
-    "Microsoft Security Response Center": 103,
+    "Microsoft Security Response Center": 104,
     "ABB PSIRT": 70,
     "Schneider Electric CPCERT": 31,
     "SICK PSIRT": 20,
@@ -7579,8 +7579,8 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 2803,
-   "latest": "2026-11-20",
+   "assertions": 2833,
+   "latest": "2026-11-21",
    "fv": "auto-discovered",
    "dp": [
     "https://docs.paloaltonetworks.com/oss-listings"
