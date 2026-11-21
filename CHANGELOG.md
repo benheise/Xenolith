@@ -44,6 +44,8 @@ Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new 
   a "Show all N CVEs" control. Chromium's 71 CVE chips now take the room of three rows.
 - **CVE card** opens with three tiles side by side: CVSS severity, EPSS likelihood (with its
   percentile in words) and CISA KEV, then the description, then the details.
+- **EPSS band tag** (Low, Medium, High, Critical) beside every EPSS score: on threat cards, in CVE
+  tables and on the CVE card.
 - Threat feed items carry per-CVE scores (`scores`, `cvss`) in `meta.json` and `feed.json`.
 
 ## 2026-11-21: Threat feeds, lighter search, and the rest of the design review

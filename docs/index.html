@@ -171,10 +171,15 @@
   .cvecard .desc { margin: 14px 0 6px; max-width: 76ch; }
   .kv > div:nth-child(-n+2) { border-top: 1px solid var(--line); }
   @media (max-width: 640px) {
-    .ctab .ebar, .ctab .sev { display: none; } .ctab th, .ctab td { padding-right: 8px; }
+    .ctab .ebar, .ctab .sev { display: none; } .ctab th, .ctab td { padding-right: 7px; } .ctab .cve { font-size: 12.5px; } .ctab .etag { padding: 0 5px; } .ctab .yr.cur { display: none; } .kv { grid-template-columns: minmax(7.5em, 36%) 1fr; }
     .threat details > :not(summary) { margin-left: -43px; }
     .tile { padding: 8px 9px; } .tile .val { font-size: 22px; }
   }
+  .etag { display: inline-block; font-size: 12.5px; font-weight: 700; line-height: 1.3; padding: 1px 7px; border-radius: 999px; border: 1px solid currentColor;
+    vertical-align: middle; color: var(--neutral); letter-spacing: 0; }
+  .etag.medium { color: var(--investigating); } .etag.high { color: var(--workaround); }
+  .etag.critical { color: var(--bg); background: var(--affected); border-color: var(--affected); }
+  .tile .val .etag { vertical-align: 5px; margin-left: 2px; }
   .linkbtn { background: none; border: 0; color: var(--accent); font: inherit; font-size: 14px; text-decoration: underline; padding: 6px 0; cursor: pointer; min-height: 32px; }
   .incident { border-top: 1px solid var(--line); padding: 10px 0 4px; margin-top: 10px; }
   .incident h2 { font-size: 16px; margin: 0; }
@@ -793,6 +798,8 @@ function downloadCycloneDX(p, d) {
 // ---------------------------------------------------------------- CVE card
 function epssPct(e) { const p = e * 100; return (p >= 10 ? p.toFixed(1) : p.toFixed(2)) + "%"; }
 function epssBand(e) { return e >= 0.5 ? "critical" : e >= 0.1 ? "high" : e >= 0.01 ? "medium" : "low"; }
+const EPSS_HELP = "EPSS band: under 1% low, 1 to 10% medium, 10 to 50% high, 50% and over critical";
+function epssTag(e) { const b = epssBand(e); return `<span class="etag ${b}" title="${EPSS_HELP}">${b[0].toUpperCase() + b.slice(1)}</span>`; }
 function ordinal(pc) { const n = (pc * 100).toFixed(1); return `${n}th`; }
 async function showCve(id) {
   statusEl.textContent = `Loading ${id}…`;
@@ -829,8 +836,8 @@ async function showCve(id) {
   const tile = (label, value, sub, hot) => `<div class="tile${hot ? " hot" : ""}"><div class="lab">${label}</div><div class="val">${value}</div><div class="sub">${sub}</div></div>`;
   const tiles = [
     tile("CVSS severity", r.cvss ? r.cvss.score.toFixed(1) : "n/a", r.cvss ? `${esc(r.cvss.severity || sevWord(r.cvss.score))}, v${esc(r.cvss.version)}` : "none in the CVE record", r.cvss && r.cvss.score >= 9),
-    tile("EPSS likelihood", r.e != null ? epssPct(r.e) : "n/a",
-      r.e != null ? `<span class="ebar ${band}" aria-hidden="true"><i style="width:${Math.max(2, Math.round(r.e * 100))}%"></i></span>${band}${r.pc != null ? `, higher than ${(r.pc * 100).toFixed(0)}% of CVEs` : ""}` : "not scored yet", r.e != null && r.e >= 0.1),
+    tile("EPSS likelihood", r.e != null ? `${epssPct(r.e)} ${epssTag(r.e)}` : "n/a",
+      r.e != null ? `<span class="ebar ${band}" aria-hidden="true"><i style="width:${Math.max(2, Math.round(r.e * 100))}%"></i></span>${r.pc != null ? `higher than ${(r.pc * 100).toFixed(0)}% of CVEs` : "chance of exploitation in 30 days"}` : "not scored yet", r.e != null && r.e >= 0.1),
     tile("CISA KEV", r.k ? "Listed" : "No", r.k ? `since ${dateEl(r.k)}${r.rw ? ", ransomware use known" : ""}` : "not in the catalog", !!r.k),
   ].join("");
   app.innerHTML = `${back}
@@ -860,11 +867,12 @@ function cveSort(rows) {
 }
 function cveTable(rows, label) {
   rows = cveSort(rows);
+  const thisYear = String(new Date().getUTCFullYear());
   const tr = (r, i) => `<tr${i >= CVE_SHOWN ? " hidden" : ""}>
     <td>${cveLink(r.v)}</td>
     <td class="n">${r.s != null ? `${r.s.toFixed(1)}<span class="sev">${sevWord(r.s)}</span>` : `<span class="muted">n/a</span>`}</td>
-    <td class="n">${r.e != null ? `${epssPct(r.e)}<span class="ebar ${epssBand(r.e)}" aria-hidden="true"><i style="width:${Math.max(2, Math.round(r.e * 100))}%"></i></span>` : `<span class="muted">n/a</span>`}</td>
-    <td>${r.k ? dateEl(r.k) : `<span class="muted">No</span>`}</td></tr>`;
+    <td class="n">${r.e != null ? `${epssPct(r.e)} ${epssTag(r.e)}<span class="ebar ${epssBand(r.e)}" aria-hidden="true"><i style="width:${Math.max(2, Math.round(r.e * 100))}%"></i></span>` : `<span class="muted">n/a</span>`}</td>
+    <td>${r.k ? dateEl(r.k).replace(/ (\d{4})</, (m, y) => `<span class="yr${y === thisYear ? " cur" : ""}"> ${y}</span><`) : `<span class="muted">No</span>`}</td></tr>`;
   return `<table class="ctab"><caption class="sr-only">${esc(label)}: CVEs with scores, worst first</caption>
     <thead><tr><th scope="col">CVE</th><th scope="col" class="n">CVSS</th><th scope="col" class="n">EPSS</th><th scope="col">KEV since</th></tr></thead>
     <tbody>${rows.map(tr).join("")}</tbody></table>
@@ -875,7 +883,7 @@ function cveMetrics(rows, extra = "") {
   const e = Math.max(-1, ...rows.map(r => r.e ?? -1)), s = Math.max(-1, ...rows.map(r => r.s ?? -1));
   return `<div class="metrics">
     ${s >= 0 ? `<span${s >= 9 ? ' class="hot"' : ""}>${rows.length > 1 ? "Highest CVSS" : "CVSS"}<b>${s.toFixed(1)}</b></span>` : ""}
-    ${e >= 0 ? `<span${e >= 0.1 ? ' class="hot"' : ""}>${rows.length > 1 ? "Highest EPSS" : "EPSS"}<b>${epssPct(e)}</b></span>` : ""}
+    ${e >= 0 ? `<span${e >= 0.1 ? ' class="hot"' : ""}>${rows.length > 1 ? "Highest EPSS" : "EPSS"}<b>${epssPct(e)}</b> ${epssTag(e)}</span>` : ""}
     <span${kev ? ' class="hot"' : ""}>CISA KEV<b>${kev ? (rows.length > 1 ? `${kev} of ${rows.length} CVEs` : "Listed") : "No"}</b></span>${extra}</div>`;
 }
 app.addEventListener("click", ev => {
