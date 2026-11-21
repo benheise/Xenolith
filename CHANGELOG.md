@@ -36,6 +36,29 @@ Evening recheck of vendors still pending on Java4Shell (CVE-2026-114938). 9 new 
   Symantec), IBM (no Semeru or WebSphere bulletin), Oracle's own products, SAP, SapMachine,
   JetBrains Runtime and the IDEs.
 
+## 2026-11-21: Site usability and accessibility review
+
+The site was measured at phone and desktop widths in light and dark, then checked against WCAG 2.2 AA
+and published guidance on single-page apps and dashboards.
+
+- **Each view now behaves like a page.** The browser title names the view, and keyboard and
+  screen-reader focus moves to its heading. Before, the title never changed and the whole page was
+  one live region, so a screen reader re-read everything on each change.
+- **Skip link** to the content, and a message for browsers without JavaScript.
+- **Form controls are visible.** Search box, filter box and chip borders were 1.2:1 against the
+  page; they are now above 3:1 in both themes.
+- **Tap targets.** CVE chips, back links, product links and disclosure rows are at least 24 px tall.
+- **No type under 12 px**; most small labels moved to 13 px.
+- **Threats loads without the product list.** `products.json` (281 KB compressed) no longer blocks
+  the first screen; it loads in the background and views that need it wait for it.
+- **Phone layout.** Smaller header, only the search box stays pinned, filter chips scroll in one
+  row, figures sit in two columns. The first threat card starts about 95 px higher.
+- **Threat cards** are an ordered list, show "3 days ago" next to the date, and the explanation of
+  how the list is built is behind a disclosure. Text lines are capped near 76 characters.
+- **CVE card** leads with "Exploited" when there is evidence of attacks, ahead of the EPSS band.
+- The tagline and page title describe the Threats-first site. A CVE card keeps the tab it was
+  opened from. Arrow suffixes on links are gone.
+
 ## 2026-11-21: EPSS scores and a card for every watchlist CVE
 
 - **EPSS:** `python -m xenolith epss` fetches FIRST.org's EPSS score and percentile for every

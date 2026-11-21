@@ -3,13 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Xenolith: which products embed this component?</title>
+<title>Xenolith: exploited flaws and the products that embed them</title>
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Xenolith: exploited flaws and the products that embed them">
+<meta property="og:description" content="A feed of exploited flaws in shared components and vendor engines, and a census of which commercial products embed them, with sourced vendor statements.">
+<meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Cpath d=%22M16 2 29 9v14L16 30 3 23V9z%22 fill=%22%232f6f6a%22/%3E%3Cpath d=%22M12 12h8v8h-8z%22 fill=%22%23f7f7f5%22/%3E%3C/svg%3E">
-<meta name="description" content="Open census of which commercial and closed-source products embed which third-party components, with sourced vendor and tracker statements.">
+<meta name="description" content="A feed of exploited flaws in shared components and vendor engines, and an open census of which commercial products embed them, with sourced vendor and tracker statements.">
 <style>
   :root {
     --bg: #f7f7f5; --panel: #ffffff; --ink: #1b1d1f; --muted: #5d636a; --line: #e3e3df;
-    --accent: #2f6f6a; --accent-ink: #ffffff; --chip: #eeeeea;
+    --accent: #2f6f6a; --accent-ink: #ffffff; --chip: #eeeeea; --edge: #7f858b;
+    color-scheme: light dark;
     --affected: #b42318; --workaround: #b54708; --fixed: #067647; --investigating: #8a6a00;
     --runtime: #175cd3; --present: #6941c6; --neutral: #667085;
     --radius: 10px;
@@ -17,27 +22,31 @@
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #121416; --panel: #1b1e21; --ink: #e8e9ea; --muted: #a0a6ad; --line: #2c3035;
-      --accent: #5fb3ab; --accent-ink: #0d1f1d; --chip: #262a2e;
+      --accent: #5fb3ab; --accent-ink: #0d1f1d; --chip: #262a2e; --edge: #6f767d;
       --affected: #f97066; --workaround: #fdb022; --fixed: #47cd89; --investigating: #e5c454;
       --runtime: #84adff; --present: #b692f6; --neutral: #98a2b3;
     }
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 84px; }
   body { margin: 0; background: var(--bg); color: var(--ink);
     font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif; }
   a { color: var(--accent); }
-  a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  [tabindex="-1"]:focus { outline: none; }
+  .skip { position: absolute; left: 8px; top: -60px; z-index: 10; background: var(--accent); color: var(--accent-ink); padding: 10px 14px; border-radius: 0 0 8px 8px; }
+  .skip:focus { top: 0; }
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
   header { padding: 28px 0 8px; }
   .brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .brand h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
   .brand h1 a { color: inherit; text-decoration: none; }
   .brand p { margin: 0; color: var(--muted); }
-  .search { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 12px 0; }
+  .searchlabel { display: block; margin-top: 12px; }
+  .search { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 6px 0 8px; }
   .search input { width: 100%; font: inherit; font-size: 17px; padding: 13px 14px; border-radius: var(--radius);
-    border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
-  .hint { color: var(--muted); font-size: 14px; margin: 6px 2px 0; }
+    border: 1px solid var(--edge); background: var(--panel); color: var(--ink); }
+  .hint { color: var(--muted); font-size: 14px; margin: 0 2px; }
   main { padding-bottom: 40px; min-height: 50vh; }
   h2 { font-size: 20px; margin: 20px 0 8px; letter-spacing: -0.01em; }
   h3 { font-size: 16px; margin: 0; }
@@ -49,13 +58,13 @@
   button.card:hover { border-color: var(--accent); }
   .stats { display: flex; gap: 18px; flex-wrap: wrap; margin: 6px 0 2px; }
   .stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
-  .stat span { color: var(--muted); font-size: 13px; }
+  .stat span { color: var(--muted); font-size: 14px; }
   .chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0; }
-  .chip { border: 1px solid var(--line); background: var(--chip); color: var(--ink); border-radius: 999px;
-    padding: 5px 11px; font: inherit; font-size: 14px; cursor: pointer; }
+  .chip { border: 1px solid var(--edge); background: var(--chip); color: var(--ink); border-radius: 999px;
+    padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer; }
   .chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
   .chip[aria-pressed="true"] .muted { color: inherit; opacity: .85; }
-  .badge { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 2px 8px; border-radius: 999px;
+  .badge { display: inline-block; font-size: 13px; font-weight: 600; padding: 2px 8px; border-radius: 999px;
     border: 1px solid currentColor; white-space: nowrap; }
   .v-affected { color: var(--affected); } .v-workaround { color: var(--workaround); }
   .badge.x-exploited { background: var(--affected); border-color: var(--affected); color: var(--bg); }
@@ -70,25 +79,27 @@
   .supplier { color: var(--muted); font-size: 14px; }
   .product { font-weight: 600; overflow-wrap: anywhere; }
   .meta { color: var(--muted); font-size: 13.5px; margin-top: 6px; overflow-wrap: anywhere; }
-  .hash { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; overflow-wrap: anywhere; }
+  .hash { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; overflow-wrap: anywhere; }
   .badge.fv { color: var(--accent); font-weight: 600; }
   .prov-missing { color: var(--workaround); }
   .guess { display: grid; grid-template-columns: minmax(110px, 30%) 1fr; gap: 2px 10px; padding: 6px 0; border-top: 1px dashed var(--line); font-size: 13.5px; }
   .guess:first-of-type { border-top: 0; }
-  .conf { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); margin-left: 4px; }
+  .conf { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); margin-left: 4px; }
   .conf-named { color: var(--present); border-color: var(--present); }
   .conf-likely { color: var(--workaround); border-color: var(--workaround); }
   .conf-possible { color: var(--neutral); }
   .wanted-flag { border-left: 3px solid var(--workaround); padding: 8px 12px; margin: 12px 0; background: var(--panel); border-radius: 6px; font-size: 14px; }
   .cves { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-  .cve { white-space: nowrap; font-size: 12.5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--chip);
-    border-radius: 6px; padding: 2px 6px; }
-  details { margin-top: 6px; } summary { cursor: pointer; color: var(--muted); font-size: 13.5px; }
+  .cve { display: inline-block; white-space: nowrap; font-size: 13px; line-height: 18px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--chip);
+    border-radius: 6px; padding: 3px 7px; }
+  details { margin-top: 6px; } summary { cursor: pointer; color: var(--muted); font-size: 14px; padding: 3px 0; }
+  a.product, a.act { display: inline-block; padding: 2px 0; }
+  #app > p, #app > details, #app .meta, #app .notice, #app .card > p, footer p, footer li { max-width: 76ch; }
   .list { display: grid; gap: 8px; }
-  .filter { width: 100%; font: inherit; padding: 9px 12px; border-radius: var(--radius); border: 1px solid var(--line);
+  .filter { width: 100%; font: inherit; padding: 9px 12px; border-radius: var(--radius); border: 1px solid var(--edge);
     background: var(--panel); color: var(--ink); margin: 4px 0 10px; }
   .more { margin: 14px auto 0; display: block; }
-  .back { background: none; border: 0; color: var(--accent); font: inherit; padding: 0; cursor: pointer; margin-top: 8px; }
+  .back { background: none; border: 0; color: var(--accent); font: inherit; padding: 4px 0; min-height: 32px; cursor: pointer; margin-top: 4px; }
   .notice { border-left: 3px solid var(--accent); padding: 8px 12px; background: var(--panel); border-radius: 0 var(--radius) var(--radius) 0; }
   footer { border-top: 1px solid var(--line); padding: 20px 0 40px; color: var(--muted); font-size: 14px; }
   footer h2 { color: var(--ink); font-size: 16px; }
@@ -98,34 +109,37 @@
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   /* tabs */
   .tabs { display: flex; gap: 2px; margin-top: 14px; border-bottom: 1px solid var(--line); }
-  .tabs a { padding: 8px 12px; text-decoration: none; color: var(--muted); font-weight: 600; font-size: 15px;
+  .tabs a { padding: 10px 12px; text-decoration: none; color: var(--muted); font-weight: 600; font-size: 15px;
     border-bottom: 2px solid transparent; margin-bottom: -1px; }
   .tabs a:hover { color: var(--ink); }
   .tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
   /* CVE card */
   .cvecard h2 { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 500; font-size: 26px; margin: 0; overflow-wrap: anywhere; }
   .cvecard .head { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 6px; }
-  .pill { display: inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; font-weight: 700; letter-spacing: .04em;
+  .pill { display: inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; letter-spacing: .04em;
     text-transform: uppercase; padding: 6px 12px; border-radius: 999px; border: 1px solid currentColor; }
   .pill.low { color: var(--fixed); } .pill.medium { color: var(--investigating); } .pill.high { color: var(--workaround); }
   .pill.critical, .pill.yes { color: var(--affected); } .pill.no { color: var(--neutral); }
   .kv { display: grid; grid-template-columns: minmax(9em, 42%) 1fr; gap: 0; }
   .kv > div { padding: 12px 0; border-top: 1px solid var(--line); }
   .kv > div:nth-child(-n+2) { border-top: 0; }
-  .kv .k { color: var(--muted); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; padding-right: 10px; }
+  .kv .k { color: var(--muted); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; padding-right: 10px; }
   .kv .v { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 15px; overflow-wrap: anywhere; }
   .kv .v .small { font-family: inherit; }
   a.cve { text-decoration: none; color: inherit; } a.cve:hover { text-decoration: underline; }
   /* Threats tab */
   .threat { display: flex; gap: 12px; align-items: flex-start; }
+  .threat > .grow { flex: 1; min-width: 0; }
   .threat .rank { font-size: 22px; font-weight: 700; color: var(--neutral); min-width: 1.4em; line-height: 1.2; }
   .threat h3 { margin: 0 0 2px; }
-  .threat .when { white-space: nowrap; }
+  .threat .when { white-space: nowrap; text-align: right; }
+  .threat .when b { display: block; color: var(--ink); font-weight: 600; }
+  ol.tlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
   /* "Why it matters" tab */
   .why section { margin: 34px 0 0; }
   .why h2 { font-size: 22px; margin: 2px 0 10px; }
   .why h3 { font-size: 16px; }
-  .kicker { margin: 0; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+  .kicker { margin: 0; color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
   .lede { font-size: 18px; }
   .grid3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
   .hero { display: grid; grid-template-columns: 1fr 170px; gap: 24px; align-items: center; margin-top: 18px; }
@@ -133,9 +147,9 @@
   .art { width: 100%; height: auto; }
   .fact b { display: block; font-size: 30px; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 4px; font-variant-numeric: tabular-nums; }
   .fact.risk b { color: var(--affected); } .fact.good b { color: var(--accent); }
-  .fact .src { color: var(--muted); font-size: 12.5px; margin-top: 8px; }
+  .fact .src { color: var(--muted); font-size: 13px; margin-top: 8px; }
   .num { font-size: 26px; font-weight: 700; color: var(--accent); line-height: 1; }
-  .cite { font-size: 11px; vertical-align: super; line-height: 0; text-decoration: none; margin-left: 1px; }
+  .cite { font-size: 12px; vertical-align: super; line-height: 0; text-decoration: none; margin-left: 1px; }
   .callout { background: var(--ink); color: var(--bg); border-radius: var(--radius); padding: 14px 16px; margin-top: 10px; }
   .callout b { color: inherit; }
   .callout .cite { color: inherit; opacity: .8; }
@@ -171,15 +185,21 @@
   @media (max-width: 640px) {
     .hero { grid-template-columns: 1fr; } .hero .art { display: none; }
     .hero h2 { font-size: 26px; } .bars .lab { width: 120px; } .scroll-hint { display: block; }
+    header { padding: 16px 0 4px; } .brand h1 { font-size: 22px; } .brand p { font-size: 14px; }
+    .tabs { margin-top: 8px; } .tabs a { padding: 11px 12px; }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; } .stat b { font-size: 20px; }
+    .chips[role="group"] { flex-wrap: nowrap; overflow-x: auto; margin-right: -16px; padding: 2px 16px 2px 2px; scrollbar-width: none; }
+    .chips[role="group"]::-webkit-scrollbar { display: none; } .chips[role="group"] .chip { flex: none; }
   }
 </style>
 </head>
 <body>
+<a class="skip" href="#" id="skip">Skip to content</a>
 <div class="wrap">
   <header>
     <div class="brand">
       <h1><a href="#" id="home-link">Xenolith</a></h1>
-      <p>Which commercial products embed this component?</p>
+      <p>Exploited flaws, and the commercial products that embed them</p>
     </div>
     <nav class="tabs" aria-label="Sections">
       <a href="#" data-tab="threats" id="tab-threats">Threats</a>
@@ -187,13 +207,14 @@
       <a href="#why" data-tab="why">Why it matters</a>
     </nav>
   </header>
+  <label for="q" class="muted small searchlabel">Search a component, CVE, vendor or product</label>
   <div class="search" role="search">
-    <label for="q" class="muted small">Search a component, CVE, vendor or product</label>
-    <input id="q" type="search" autocomplete="off" spellcheck="false"
+    <input id="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search"
            placeholder="php, brotli, CVE-2021-44228, Cisco, FortiGate…">
-    <p class="hint" id="status">Loading census…</p>
   </div>
-  <main id="app" aria-live="polite"></main>
+  <p class="hint" id="status" role="status">Loading…</p>
+  <main id="app" tabindex="-1"><noscript><p>Xenolith draws its pages with JavaScript. The same data is in the
+    <a href="https://github.com/benheise/Xenolith/tree/main/data">repository</a> as plain files.</p></noscript></main>
   <footer id="footer"></footer>
 </div>
 <script>
@@ -254,6 +275,22 @@ function link(u, text) {
 function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } }
 function badge(st) { return `<span class="badge v-${esc(st)}">${esc(VERDICTS[st] || st)}</span>`; }
 function fmt(n) { return Number(n || 0).toLocaleString("en-US"); }
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+function fmtDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
+  return m ? `${Number(m[3])} ${MONTHS[Number(m[2]) - 1]} ${m[1]}` : String(iso || "");
+}
+function daysAgo(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
+  if (!m) return null;
+  const now = new Date();
+  return Math.round((Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) - Date.UTC(m[1], m[2] - 1, m[3])) / 864e5);
+}
+function relDate(iso) {
+  const d = daysAgo(iso);
+  return d == null || d < 0 || d > 30 ? "" : d === 0 ? "Today" : d === 1 ? "Yesterday" : `${d} days ago`;
+}
+function dateEl(iso) { return `<time datetime="${esc(String(iso).slice(0, 10))}">${esc(fmtDate(iso))}</time>`; }
 function norm(s) { return String(s || "").toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, ""); }
 
 async function loadJSON(path) {
@@ -288,22 +325,41 @@ function go(params, replace = false) {
 }
 window.addEventListener("hashchange", route);
 
-let lastView = null;
-function route() {
+let lastView = null, lastTab = "threats", routeSeq = 0, firstRoute = true;
+let productsReady = null;   // products.json is large; the Threats tab and CVE cards draw without it
+const HOME_TITLE = document.title;
+async function route() {
   if (!META) return;
+  const seq = ++routeSeq;
   const { c, p, q, w, v, why, census, f, t } = parseHash();
   const view = v ? `v:${v}` : c ? `c:${c}` : p ? `p:${p}` : q ? "q" : w ? "wanted" : why ? "why" : census ? "home" : "threats";
-  if (view !== lastView) { window.scrollTo(0, 0); lastView = view; }
-  setTab(view === "why" ? "why" : view === "threats" ? "threats" : "census");
-  if (view === "why") { input.value = ""; return showWhy(); }
-  if (view === "threats") { input.value = ""; return showThreats(); }
-  if (v) { input.value = ""; return showCve(v.toUpperCase()); }
-  if (c && META.components.some(x => x.id === c)) { input.value = ""; return showComponent(c, f, t); }
-  if (p) { input.value = ""; return showProduct(p); }
-  if (q) { if (input.value !== q) input.value = q; return showSearch(q); }
-  input.value = "";
-  if (w) return showWanted(w);
-  showHome();
+  const changed = view !== lastView;
+  if (changed) { window.scrollTo(0, 0); lastView = view; }
+  // A CVE card keeps the tab it was opened from; everything else belongs to one tab.
+  if (!v) lastTab = view === "why" ? "why" : view === "threats" ? "threats" : "census";
+  setTab(lastTab);
+  if (view !== "threats" && !v) {
+    if (!PRODUCTS.length) statusEl.textContent = "Loading the census…";
+    try { await productsReady; }
+    catch (e) { statusEl.textContent = "Could not load the product list. Check your connection and reload."; return; }
+    if (seq !== routeSeq) return;
+  }
+  if (!q) input.value = "";
+  if (view === "why") await showWhy();
+  else if (view === "threats") await showThreats();
+  else if (v) await showCve(v.toUpperCase());
+  else if (c && META.components.some(x => x.id === c)) await showComponent(c, f, t);
+  else if (p) await showProduct(p);
+  else if (q) { if (input.value !== q) input.value = q; await showSearch(q); }
+  else if (w) await showWanted(w);
+  else await showHome();
+  if (seq !== routeSeq) return;
+  // What a full page load would do: name the page, and put keyboard and screen-reader focus at its start.
+  const h = app.querySelector("h2");
+  const name = view === "q" ? `Search: ${q}` : h ? h.textContent.trim() : "";
+  document.title = view === "threats" || !name ? HOME_TITLE : `${name} | Xenolith`;
+  if (changed && !firstRoute && view !== "q" && h) { h.tabIndex = -1; h.focus({ preventScroll: true }); }
+  firstRoute = false;
 }
 
 let typingTimer = null;
@@ -320,6 +376,7 @@ input.addEventListener("keydown", e => {
     if (hit) go({ c: hit.id });
   }
 });
+$("#skip").addEventListener("click", e => { e.preventDefault(); (app.querySelector("h2") || app).focus(); });
 $("#home-link").addEventListener("click", e => { e.preventDefault(); go({}); });
 $("#tab-threats").addEventListener("click", e => { e.preventDefault(); go({}); });
 $("#tab-census").addEventListener("click", e => { e.preventDefault(); go({ census: 1 }); });
@@ -394,12 +451,12 @@ async function showSearch(q) {
   if (input.value.trim() !== q) return;   // a newer search replaced this one
   const nhits = noticeMatches(idx, q);
   statusEl.textContent = `${comps.length} component${comps.length === 1 ? "" : "s"}, ${fmt(prods.total)} product${prods.total === 1 ? "" : "s"}, ${nhits.length} notices name${nhits.length === 1 ? "" : "s"} match`;
-  let html = "";
+  let html = `<h2 class="sr-only">Search results for ${esc(q)}</h2>`;
   if (/^CVE-\d{4}-\d{4,}$/i.test(q.trim())) {
     html += `<div class="notice">Score card for ${cveLink(q.trim().toUpperCase())}: EPSS, CVSS, CISA KEV and affected products.</div>`;
   }
   if (exact) {
-    html += `<div class="notice">“${esc(q)}” is <b>${esc(exact.name)}</b>. <a href="#c=${encodeURIComponent(exact.id)}">See every product that embeds it →</a></div>`;
+    html += `<div class="notice">“${esc(q)}” is <b>${esc(exact.name)}</b>. <a href="#c=${encodeURIComponent(exact.id)}">See every product that embeds it</a></div>`;
   }
   if (comps.length) {
     html += `<h2>Components</h2><div class="grid">${comps.map(compCard).join("")}</div>`;
@@ -514,6 +571,8 @@ async function showComponent(id, filterKey, text) {
   more.addEventListener("click", page);
   if (!visible.length) list.innerHTML = `<p class="muted">No statements match this filter.</p>`;
   else page();
+  const on = app.querySelector('.chips .chip[aria-pressed="true"]');
+  if (on) on.parentElement.scrollLeft = Math.max(0, on.offsetLeft - on.parentElement.offsetLeft - 16);
   if (document.activeElement !== $("#tfilter") && text) { const f = $("#tfilter"); f.focus(); f.setSelectionRange(f.value.length, f.value.length); }
 }
 
@@ -696,18 +755,20 @@ async function showCve(id) {
   if (r.pc != null) row("Percentile", ordinal(r.pc));
   row("CVSS base score", r.cvss ? `${r.cvss.score.toFixed(1)}${r.cvss.severity ? ` ${esc(r.cvss.severity)}` : ""} <span class="small muted">v${esc(r.cvss.version)}</span>` : `<span class="small muted">none in the CVE record</span>`);
   row("CISA KEV", r.k ? `<span class="pill yes">Yes · actively exploited</span>` : `<span class="pill no">No</span>`);
-  if (r.k) row("KEV date added", esc(r.k));
+  if (r.k) row("KEV date added", dateEl(r.k));
   if (r.rw) row("Ransomware use", "Known");
   if (r.x) row("Named products", exploitBadge(r.x));
-  if (r.pub) row("Published", esc(r.pub));
+  if (r.pub) row("Published", dateEl(r.pub));
   row("Component", `<a href="#c=${encodeURIComponent(r.c)}">${esc(comp ? comp.name : r.c)}</a>`);
   row("Products", r.n ? `<a href="#c=${encodeURIComponent(r.c)}">${fmt(r.n)} with a vendor statement</a>${r.u ? `, ${fmt(r.u)} with no fix stated` : ""}` : `<span class="small muted">no vendor statements yet</span>`);
+  // Evidence of attacks outranks a forecast, so it leads the card when there is any.
+  const lead = r.k || r.x === "exploited" ? `<span class="pill yes" style="margin-right:6px">Exploited</span>` : "";
   const mismatch = r.k && r.e != null && r.e < 0.1
     ? `<div class="notice">EPSS rates this ${band} (${epssPct(r.e)}), but it is in CISA KEV. EPSS is a forecast and often lags a fresh disclosure;
        a KEV listing is evidence that attacks have happened. When the two disagree, go with KEV.</div>` : "";
   app.innerHTML = `${back}
     <div class="card cvecard">
-      <div class="head"><h2>${esc(id)}</h2>${band ? `<span class="pill ${band}" title="EPSS band: under 1% low, 1 to 10% medium, 10 to 50% high, 50% and over critical">${band} · ${epssPct(r.e)}</span>` : ""}</div>
+      <div class="head"><h2>${esc(id)}</h2><div>${lead}${band ? `<span class="pill ${band}">EPSS ${band} · ${epssPct(r.e)}</span>` : ""}</div></div>
       <div class="small muted" style="margin-bottom:8px">${esc(r.i)}</div>
       <div class="kv">${rows.join("")}</div>
     </div>
@@ -718,7 +779,8 @@ async function showCve(id) {
     <p class="small">${link(`https://www.cve.org/CVERecord?id=${id}`, "CVE record")} · ${link(`https://nvd.nist.gov/vuln/detail/${id}`, "NVD")}
       ${r.k ? ` · ${link(`https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=${id}`, "CISA KEV entry")}` : ""}
       · ${link(`https://api.first.org/data/v1/epss?cve=${id}`, "EPSS (FIRST.org)")}</p>
-    <p class="small muted">EPSS scores come from FIRST.org and are refreshed daily. The description and CVSS score are from the CVE record.</p>`;
+    <p class="small muted">EPSS is FIRST.org's estimate of the chance of exploitation in the next 30 days, refreshed daily: under 1% is low,
+      1 to 10% medium, 10 to 50% high, 50% and over critical. The description and CVSS score are from the CVE record.</p>`;
   $("#back").addEventListener("click", () => history.length > 1 ? history.back() : go({}));
 }
 
@@ -734,51 +796,57 @@ function threatCard(t, i) {
   const cves = t.cves.slice(0, 4).map(cveLink).join(" ")
     + (t.cves.length > 4 ? ` <span class="small muted">+${t.cves.length - 4} more</span>` : "");
   const facts = [];
-  if (t.kev) facts.push(`In CISA KEV since ${esc(t.kev)}${t.kev_cves > 1 ? ` (${t.kev_cves} CVEs)` : ""}`);
+  if (t.kev) facts.push(`In CISA KEV since ${dateEl(t.kev)}${t.kev_cves > 1 ? ` (${t.kev_cves} CVEs)` : ""}`);
   if (t.ransomware) facts.push("used in ransomware attacks");
   if (t.epss != null) facts.push(`EPSS ${epssPct(t.epss)}`);
   const flagged = (t.flagged || []).map(f =>
     `<a href="#p=${encodeURIComponent(f.k)}" data-p="${esc(f.k)}" title="${esc(EXPLOIT[f.x] ? EXPLOIT[f.x][0] : f.x)}">${esc(f.p.toLowerCase().startsWith(f.s.toLowerCase()) ? f.p : `${f.s} ${f.p}`)}</a>`).join(", ");
   const more = t.flagged_total > (t.flagged || []).length ? ` and ${t.flagged_total - t.flagged.length} more` : "";
   const named = t.level === "exploited" ? "Products named in attacks" : "Products with a working exploit";
-  return `<div class="card threat">
+  const rel = relDate(t.date);
+  return `<li class="card threat">
     <div class="rank" aria-hidden="true">${i + 1}</div>
     <div class="grow">
       <div class="row"><div class="grow"><h3><a href="#c=${encodeURIComponent(t.c)}">${esc(t.title)}</a></h3>
         <div class="small muted">${esc(t.component)}</div></div>
-        <div class="small muted when" title="Date of the newest exploitation report">${esc(t.date)}</div></div>
+        <div class="small muted when">${rel ? `<b>${rel}</b>` : ""}${dateEl(t.date)}</div></div>
       <div class="meta">${exploitBadge(t.level)} <span class="small muted">${esc(THREAT_WHY[t.level] || "")}</span></div>
       <div class="cves">${cves}</div>
       ${facts.length ? `<div class="meta">${facts.join(" · ")}</div>` : ""}
       ${t.note ? `<div class="meta">${esc(t.note)}</div>` : ""}
       ${flagged ? `<div class="meta"><b>${named}:</b> ${flagged}${more}</div>` : ""}
-      <div class="meta"><a href="#c=${encodeURIComponent(t.c)}${t.flagged_total ? `&f=${t.level === "exploited" ? "exploited" : t.level === "attempted" ? "attempted" : "demonstrated"}` : ""}">
-        ${t.products ? `${fmt(t.products)} product${t.products === 1 ? "" : "s"} with a vendor statement` : "See the component"}${t.unfixed ? `, ${fmt(t.unfixed)} with no fix stated` : ""} →</a></div>
+      <div class="meta"><a class="act" href="#c=${encodeURIComponent(t.c)}${t.flagged_total ? `&f=${t.level === "exploited" ? "exploited" : t.level === "attempted" ? "attempted" : "demonstrated"}` : ""}">
+        ${t.products ? `${fmt(t.products)} product${t.products === 1 ? "" : "s"} with a vendor statement` : "See the component"}${t.unfixed ? `, ${fmt(t.unfixed)} with no fix stated` : ""}</a></div>
     </div>
-  </div>`;
+  </li>`;
 }
 function showThreats() {
   const all = META.threats || [];
-  statusEl.textContent = `Top exploited vulnerabilities · updated ${META.built.slice(0, 10)}`;
+  statusEl.textContent = `${all.length} exploited flaws tracked, updated ${fmtDate(META.built)}`;
   const shown = all.slice(0, threatsShown);
   const watching = (META.watching || []).map(w => `<div class="small" style="margin-top:6px">
       <a href="#c=${encodeURIComponent(w.c)}"><b>${esc(w.title)}</b></a> <span class="muted">(${esc(w.component)})</span>
-      ${w.cves.slice(0, 2).map(v => `<span class="cve">${esc(v)}</span>`).join(" ")}${w.cves.length > 2 ? ` <span class="muted">+${w.cves.length - 2}</span>` : ""}
+      ${w.cves.slice(0, 2).map(cveLink).join(" ")}${w.cves.length > 2 ? ` <span class="muted">+${w.cves.length - 2}</span>` : ""}
       ${w.products ? `<span class="muted">· ${fmt(w.products)} products with statements</span>` : ""}</div>`).join("");
   app.innerHTML = `
     <h2>What attackers are using now</h2>
-    <p>The ${shown.length} flaws in widely embedded components and vendor engines with the newest sign of exploitation, newest first.
-      A sign is a <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV</a> listing,
-      a vendor or responder naming a product hit in attacks, or a researcher's working exploit. Open one to see which products ship the
-      affected code and what each vendor says.</p>
-    ${shown.length ? shown.map(threatCard).join("") : `<p class="muted">No exploitation reports in the current data.</p>`}
+    <p>Flaws in shared components and vendor engines with the newest sign of exploitation. Open one to see which products ship
+      the affected code and what each vendor says.</p>
+    <details><summary>How this list is built</summary>
+      <p class="small">A sign of exploitation is a <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV</a>
+      listing, a vendor or responder naming a product hit in attacks, or a researcher's working exploit. Flaws are ranked by the date of
+      the newest sign, then by how strong it is. Only flaws on the <a href="#census">watchlist</a> appear, so a bug in a single product
+      with no shared component is not listed here.</p></details>
+    ${shown.length ? `<ol class="tlist" style="margin-top:12px">${shown.map(threatCard).join("")}</ol>` : `<p class="muted">No exploitation reports in the current data.</p>`}
     ${all.length > threatsShown ? `<p><button class="chip" id="more-threats">Show ${Math.min(10, all.length - threatsShown)} more</button></p>` : ""}
     ${watching ? `<h2>Not exploited yet, worth watching</h2>
-      <p class="small muted">This year's flaws on the watchlist with no exploitation report so far.</p>${watching}` : ""}
-    <p class="small muted" style="margin-top:18px">Ranked by the date of the newest report, then by how strong it is. Only flaws on the
-      <a href="#census">watchlist</a> appear, so a bug in a single product with no shared component is not listed here.</p>`;
+      <p class="small muted">This year's flaws on the watchlist with no exploitation report so far.</p>${watching}` : ""}`;
   const more = $("#more-threats");
-  if (more) more.addEventListener("click", () => { threatsShown += 10; showThreats(); });
+  if (more) more.addEventListener("click", () => {
+    const from = threatsShown; threatsShown += 10; showThreats();
+    const next = app.querySelectorAll("ol.tlist > li h3 a")[from];   // keep keyboard focus where the new items start
+    if (next) next.focus();
+  });
   bindCards();
 }
 
@@ -787,11 +855,12 @@ function showHome() {
   statusEl.textContent = `${fmt(k.assertions)} sourced statements about ${fmt(k.products_with_data)} products · updated ${META.built.slice(0, 10)}`;
   const comps = [...META.components].sort((a, b) => b.products - a.products);
   app.innerHTML = `
+    <h2>Which products embed which component</h2>
     <p>When a vulnerability lands in a widely embedded component, the hard question is which <b>vendor products</b> ship it inside.
     Asset scanners can't see into appliances and SaaS. Xenolith collects vendor CSAF/VEX statements, vendors' own open source notices
     and community incident trackers into one searchable, permanent index, organized by component. Search any library name to see which
     products list it in their notices.</p>
-    <p class="small"><a href="#why">Why this matters: the incidents, the rules and the evidence →</a></p>
+    <p class="small"><a class="act" href="#why">Why this matters: the incidents, the rules and the evidence</a></p>
     <div class="stats">
       <div class="stat"><b>${fmt(k.assertions)}</b><span>sourced statements</span></div>
       <div class="stat"><b>${fmt(k.products_with_data)}</b><span>products with data</span></div>
@@ -1167,7 +1236,7 @@ function showWhy() {
           <li>Accept independent verification as evidence</li></ul></div>
       </div>
       <div class="callout"><b>Make day one a lookup, not a scramble.</b> The next Log4Shell is already shipping inside something you run.
-        <a href="#" id="why-search" style="color:inherit">Search the census →</a></div>
+        <a href="#" id="why-search" style="color:inherit">Search the census</a></div>
     </section>
 
     <section aria-labelledby="why-sources">
@@ -1202,14 +1271,18 @@ function renderFooter() {
 // ---------------------------------------------------------------- boot
 (async function boot() {
   try {
-    [META, PRODUCTS] = await Promise.all([loadJSON("data/meta.json"), loadJSON("data/products.json")]);
+    productsReady = loadJSON("data/products.json").then(ps => {
+      PRODUCTS = ps;
+      PINDEX = ps.map(p => norm(`${p.s} ${p.p} ${p.k}`));
+      for (const p of ps) PBYKEY.set(p.k, p);
+    });
+    productsReady.catch(() => {});   // reported by route() when a view needs it
+    META = await loadJSON("data/meta.json");
   } catch (e) {
     statusEl.textContent = "Could not load the census data.";
-    app.innerHTML = `<p class="muted">${esc(e.message)}</p>`;
+    app.innerHTML = `<p>The data did not load. Check your connection and reload the page.</p><p class="small muted">${esc(e.message)}</p>`;
     return;
   }
-  PINDEX = PRODUCTS.map(p => norm(`${p.s} ${p.p} ${p.k}`));
-  for (const p of PRODUCTS) PBYKEY.set(p.k, p);
   for (const s of META.sources) SOURCES[s.id] = s;
   renderFooter();
   route();
