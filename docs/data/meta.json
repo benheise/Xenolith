@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T23:01:12Z",
+ "built": "2026-11-22T00:37:31Z",
  "threats": [
   {
    "c": "vcenter",
@@ -15,7 +15,7 @@
    "kev": "2026-01-23",
    "kev_cves": 3,
    "ransomware": true,
-   "note": "Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), added to KEV on 2026-11-20, a day after publication.",
+   "note": "Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), used as a zero-day since early September 2026 according to Mandiant; in KEV since 2026-11-20, a day after publication.",
    "flagged": [
     {
      "k": "vmware/vcenter-server",
@@ -163,9 +163,16 @@
    "kev": "2026-11-13",
    "kev_cves": 1,
    "note": "",
-   "flagged": [],
-   "flagged_total": 0,
-   "products": 2,
+   "flagged": [
+    {
+     "k": "check-point/quantum-security-gateway",
+     "s": "Check Point",
+     "p": "Quantum Security Gateway",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 6,
    "unfixed": 0,
    "epss": 0.03269,
    "scores": [
@@ -177,6 +184,53 @@
     }
    ],
    "cvss": 7.8
+  },
+  {
+   "c": "php",
+   "component": "PHP runtime",
+   "title": "PHP2Shell",
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "level": "exploited",
+   "date": "2026-11-12",
+   "kev": "2026-10-26",
+   "kev_cves": 2,
+   "note": "",
+   "flagged": [
+    {
+     "k": "check-point/quantum-security-gateway",
+     "s": "Check Point",
+     "p": "Quantum Security Gateway",
+     "x": "exploited"
+    },
+    {
+     "k": "palo-alto-networks/pan-os",
+     "s": "Palo Alto Networks",
+     "p": "PAN-OS",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 2,
+   "products": 860,
+   "unfixed": 204,
+   "epss": 0.99999,
+   "scores": [
+    {
+     "v": "CVE-2026-109618",
+     "s": 9.2,
+     "e": 0.99999,
+     "k": "2026-10-26"
+    },
+    {
+     "v": "CVE-2026-109619",
+     "s": 9.2,
+     "e": 0.99999,
+     "k": "2026-10-26"
+    }
+   ],
+   "cvss": 9.2
   },
   {
    "c": "chromium",
@@ -333,47 +387,6 @@
     }
    ],
    "cvss": 9.9
-  },
-  {
-   "c": "php",
-   "component": "PHP runtime",
-   "title": "PHP2Shell",
-   "cves": [
-    "CVE-2026-109618",
-    "CVE-2026-109619"
-   ],
-   "level": "exploited",
-   "date": "2026-10-29",
-   "kev": "2026-10-26",
-   "kev_cves": 2,
-   "note": "",
-   "flagged": [
-    {
-     "k": "palo-alto-networks/pan-os",
-     "s": "Palo Alto Networks",
-     "p": "PAN-OS",
-     "x": "exploited"
-    }
-   ],
-   "flagged_total": 1,
-   "products": 859,
-   "unfixed": 204,
-   "epss": 0.99999,
-   "scores": [
-    {
-     "v": "CVE-2026-109618",
-     "s": 9.2,
-     "e": 0.99999,
-     "k": "2026-10-26"
-    },
-    {
-     "v": "CVE-2026-109619",
-     "s": 9.2,
-     "e": 0.99999,
-     "k": "2026-10-26"
-    }
-   ],
-   "cvss": 9.2
   },
   {
    "c": "brotli",
@@ -664,14 +677,14 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20496,
-  "products_with_data": 8749,
+  "assertions": 20503,
+  "products_with_data": 8752,
   "inventories": 420,
   "inventory_components": 287797,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16129,
-  "spine_only_shown": 4670,
+  "spine_only_shown": 4669,
   "components": 91,
   "wanted": 82,
   "wanted_fulfilled": 7
@@ -822,12 +835,12 @@
     }
    ],
    "kev": 5,
-   "assertions": 1077,
-   "products": 921,
-   "contains": 535,
+   "assertions": 1078,
+   "products": 922,
+   "contains": 536,
    "in_range": 10,
    "verdicts": {
-    "fixed": 241,
+    "fixed": 242,
     "workaround": 7,
     "affected": 203,
     "under_investigation": 76,
@@ -837,7 +850,7 @@
     "runtime_dependent": 2
    },
    "exploitation": {
-    "exploited": 1
+    "exploited": 2
    }
   },
   {
@@ -4861,7 +4874,7 @@
       "CVE-2026-59310",
       "CVE-2024-37079"
      ],
-     "note": "Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), added to KEV on 2026-11-20, a day after publication. CVE-2026-59310: directory traversal in the Syslog server leading to code execution (VMSA-2026-0006); KEV flags it as used in ransomware attacks. CVE-2024-37079: DCERPC heap overflow (VMSA-2024-0012); Broadcom said in January 2026 it has information that it was exploited. No workarounds. vCenter 7.0 only gets fixes under an extended support contract.",
+     "note": "Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), used as a zero-day since early September 2026 according to Mandiant; in KEV since 2026-11-20, a day after publication. CVE-2026-59310: directory traversal in the Syslog server leading to code execution (VMSA-2026-0006); KEV flags it as used in ransomware attacks. CVE-2024-37079: DCERPC heap overflow (VMSA-2024-0012); Broadcom said in January 2026 it has information that it was exploited. No workarounds. vCenter 7.0 only gets fixes under an extended support contract.",
      "trackers": [],
      "kev": {
       "CVE-2026-123890": "2026-11-20",
@@ -4909,12 +4922,12 @@
     }
    ],
    "kev": 13,
-   "assertions": 25,
+   "assertions": 26,
    "products": 5,
-   "contains": 25,
+   "contains": 26,
    "in_range": 0,
    "verdicts": {
-    "fixed": 25
+    "fixed": 26
    },
    "exploitation": {
     "exploited": 1
@@ -7370,12 +7383,13 @@
     }
    ],
    "kev": 5,
-   "assertions": 8,
-   "products": 4,
-   "contains": 8,
+   "assertions": 13,
+   "products": 7,
+   "contains": 11,
    "in_range": 0,
    "verdicts": {
-    "fixed": 8
+    "fixed": 11,
+    "not_affected": 2
    },
    "exploitation": {
     "exploited": 2
@@ -7593,7 +7607,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 939,
+   "assertions": 946,
    "latest": "2026-11-21",
    "fv": "community",
    "dp": [

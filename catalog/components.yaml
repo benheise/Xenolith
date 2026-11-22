@@ -1733,7 +1733,8 @@ components:
         note: >-
           Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA
           KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service
-          (VMSA-2026-0009), added to KEV on 2026-11-20, a day after publication.
+          (VMSA-2026-0009), used as a zero-day since early September 2026 according to Mandiant;
+          in KEV since 2026-11-20, a day after publication.
           CVE-2026-59310: directory traversal in the Syslog server leading to code execution
           (VMSA-2026-0006); KEV flags it as used in ransomware attacks. CVE-2024-37079: DCERPC
           heap overflow (VMSA-2024-0012); Broadcom said in January 2026 it has information that

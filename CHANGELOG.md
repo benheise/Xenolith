@@ -3,6 +3,58 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-22: Daily watch
+
+First run of the daily watch: scores, new CISA KEV entries, and the vendor pages behind every
+threat whose newest signal is under 14 days old (vCenter, Axis 1.x, Check Point Gaia, Chromium;
+Java4Shell stays with its own recheck until 25 November). 7 new statements and 2 rewritten
+(812 in all), each read on the source's own page.
+
+- **Exploitation, new:** Check Point Quantum Security Gateway is marked exploited for PHP2Shell
+  (CVE-2026-109618, CVE-2026-109619) and for the Gaia privilege escalation CVE-2026-123039.
+  Check Point's blog advisory and its research report (both 12 November) describe the chain: from
+  30 October attackers broke into unpatched internet-facing gateways through the Mobile Access
+  portal with PHP2Shell, about a week after the hotfix, then used CVE-2026-123039 to become root.
+  A couple of dozen systems in one region were compromised, a few followed by destructive
+  activity. PHP2Shell's newest signal moves from 29 October to 12 November.
+- **Exploitation, better source:** vCenter Server CVE-2026-123890 was already marked exploited
+  from CISA KEV. A statement now cites the report from Mandiant and Google's threat intelligence
+  group (19 November): a suspected China-linked group used the flaw as a zero-day in early
+  September 2026, on a vCenter already patched against CVE-2026-59309. The incident note says so.
+- **Statements rewritten:** the two Check Point rows for CVE-2026-123039 (Quantum Security
+  Gateway, Quantum Security Management) carried only the versions of the CVE record. They now
+  follow sk1000362: R82.20, R82.10, R82, R81.20, R81.10 and R81 affected; fixed in Jumbo Hotfix
+  Take 14 (R82.20), 52 (R82.10), 132 (R82) and 174 (R81.20); no fix listed for R81.10 and R81.
+- **New products from the same advisory:** Multi-Domain Security Management and Maestro
+  Orchestrator (fixed), Spark Firewalls and Smart-1 Cloud (not affected). Only the gateway carries
+  the exploitation level: the cases Check Point describes were all on gateways.
+- **No change:** Broadcom's VMSA-2026-0009.1 (20 November) only clarifies the VMware Tools
+  versions; Atlassian still names 9.2.28 as the one fixed Confluence release; Rapid7's Axis report
+  (updated 19 November) adds the KEV listing and a Metasploit module, both already noted. N-able's
+  2026.4 HF3 release notes can be read now and say the legacy APIs are permanently blocked, but
+  they do not name the CVE, so the N-central statement still rests on Rapid7's account.
+- **Scores:** FIRST.org had not published scores for 22 November when the run started (00:25
+  UTC), so EPSS stays at 21 November. CISA KEV is unchanged since 20 November (1,790 entries, 392
+  tracked). No tracked CVE entered KEV or changed EPSS band.
+- **KEV entries of 20 November left off the watchlist:** Cisco Expressway CVE-2026-76466 (one
+  product line). Apache Roller CVE-2026-129448 (no stored inventory lists Roller) and SAP NetWeaver
+  Enterprise Portal CVE-2025-42884 are listed for a decision, see below.
+- **Still open:**
+  - Apache XML-RPC as a watchlist component. The setting Roller's advisory tells users to turn
+    off (`enabledForExtensions`) is the library's, and three vendors' inventories list the
+    library or a fork of it (Extreme Networks, WatchGuard, JetBrains). The KEV CVE belongs to
+    Roller, and the library's own CVEs need the embedding product to enable the same setting.
+  - SAP NetWeaver as a vendor engine: 11 KEV entries now, but SAP's security notes sit behind the
+    support login, so per-product statements cannot be read.
+  - PHP2Shell is back inside the 14-day window with 860 products, too many to recheck one by
+    one each day. Which of its vendors a daily run should reopen is undecided.
+- **Not read:** Check Point's CheckMates thread on the November fixes and CISA's alert page for
+  the 20 November KEV additions (both HTTP 403; the KEV catalog itself was read from GitHub).
+  N-able's incident page is drawn in the browser and was not rendered.
+- **Skipped as secondary only:** news reports on the vCenter zero-day (the Mandiant report is
+  cited instead) and on the MONAI Label zero-day (not a watchlist component; no stored inventory
+  lists it).
+
 ## 2026-11-21: Java4Shell recheck
 
 Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 63 new statements from

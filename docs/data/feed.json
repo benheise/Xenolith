@@ -9,7 +9,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/vcenter/CVE-2026-123890",
    "url": "https://benheise.github.io/Xenolith/#c=vcenter",
    "title": "vCenter 2026 exploited flaws",
-   "content_text": "Exploited in the wild: CVE-2026-123890, CVE-2026-59310, CVE-2024-37079 in VMware vCenter. In CISA KEV since 2026-01-23 and used in ransomware attacks. EPSS 61.67%. Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), added to KEV on 2026-11-20, a day after publication. Products named: VMware vCenter Server. 5 products have a vendor statement, 0 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-123890, CVE-2026-59310, CVE-2024-37079 in VMware vCenter. In CISA KEV since 2026-01-23 and used in ransomware attacks. EPSS 61.67%. Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), used as a zero-day since early September 2026 according to Mandiant; in KEV since 2026-11-20, a day after publication. Products named: VMware vCenter Server. 5 products have a vendor statement, 0 with no fix stated.",
    "date_published": "2026-01-23T00:00:00Z",
    "date_modified": "2026-11-20T00:00:00Z",
    "tags": [
@@ -192,7 +192,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/check-point-gaia/CVE-2026-123039",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-123039",
    "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource",
-   "content_text": "Exploited in the wild: CVE-2026-123039 in Check Point Gaia (Security Gateway and Management). In CISA KEV since 2026-11-13. EPSS 3.27%. 2 products have a vendor statement, 0 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-123039 in Check Point Gaia (Security Gateway and Management). In CISA KEV since 2026-11-13. EPSS 3.27%. Products named: Check Point Quantum Security Gateway. 6 products have a vendor statement, 0 with no fix stated.",
    "date_published": "2026-11-13T00:00:00Z",
    "date_modified": "2026-11-13T00:00:00Z",
    "tags": [
@@ -210,9 +210,16 @@
     "date": "2026-11-13",
     "kev": "2026-11-13",
     "epss": 0.03269,
-    "flagged": [],
-    "flagged_total": 0,
-    "products": 2,
+    "flagged": [
+     {
+      "k": "check-point/quantum-security-gateway",
+      "s": "Check Point",
+      "p": "Quantum Security Gateway",
+      "x": "exploited"
+     }
+    ],
+    "flagged_total": 1,
+    "products": 6,
     "unfixed": 0,
     "cvss": 7.8,
     "scores": [
@@ -221,6 +228,64 @@
       "s": 7.8,
       "e": 0.03269,
       "k": "2026-11-13"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tag:benheise.github.io,2026:xenolith/php/CVE-2026-109618",
+   "url": "https://benheise.github.io/Xenolith/#c=php",
+   "title": "PHP2Shell",
+   "content_text": "Exploited in the wild: CVE-2026-109618, CVE-2026-109619 in PHP runtime. In CISA KEV since 2026-10-26. EPSS 100.00%. Products named: Check Point Quantum Security Gateway, Palo Alto Networks PAN-OS. 860 products have a vendor statement, 204 with no fix stated.",
+   "date_published": "2026-10-26T00:00:00Z",
+   "date_modified": "2026-11-12T00:00:00Z",
+   "tags": [
+    "exploited",
+    "php",
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "_xenolith": {
+    "c": "php",
+    "component": "PHP runtime",
+    "cves": [
+     "CVE-2026-109618",
+     "CVE-2026-109619"
+    ],
+    "level": "exploited",
+    "date": "2026-11-12",
+    "kev": "2026-10-26",
+    "epss": 0.99999,
+    "flagged": [
+     {
+      "k": "check-point/quantum-security-gateway",
+      "s": "Check Point",
+      "p": "Quantum Security Gateway",
+      "x": "exploited"
+     },
+     {
+      "k": "palo-alto-networks/pan-os",
+      "s": "Palo Alto Networks",
+      "p": "PAN-OS",
+      "x": "exploited"
+     }
+    ],
+    "flagged_total": 2,
+    "products": 860,
+    "unfixed": 204,
+    "cvss": 9.2,
+    "scores": [
+     {
+      "v": "CVE-2026-109618",
+      "s": 9.2,
+      "e": 0.99999,
+      "k": "2026-10-26"
+     },
+     {
+      "v": "CVE-2026-109619",
+      "s": 9.2,
+      "e": 0.99999,
+      "k": "2026-10-26"
      }
     ]
    }
@@ -420,58 +485,6 @@
       "s": 9.9,
       "e": 0.72037,
       "k": "2025-09-25"
-     }
-    ]
-   }
-  },
-  {
-   "id": "tag:benheise.github.io,2026:xenolith/php/CVE-2026-109618",
-   "url": "https://benheise.github.io/Xenolith/#c=php",
-   "title": "PHP2Shell",
-   "content_text": "Exploited in the wild: CVE-2026-109618, CVE-2026-109619 in PHP runtime. In CISA KEV since 2026-10-26. EPSS 100.00%. Products named: Palo Alto Networks PAN-OS. 859 products have a vendor statement, 204 with no fix stated.",
-   "date_published": "2026-10-26T00:00:00Z",
-   "date_modified": "2026-10-29T00:00:00Z",
-   "tags": [
-    "exploited",
-    "php",
-    "CVE-2026-109618",
-    "CVE-2026-109619"
-   ],
-   "_xenolith": {
-    "c": "php",
-    "component": "PHP runtime",
-    "cves": [
-     "CVE-2026-109618",
-     "CVE-2026-109619"
-    ],
-    "level": "exploited",
-    "date": "2026-10-29",
-    "kev": "2026-10-26",
-    "epss": 0.99999,
-    "flagged": [
-     {
-      "k": "palo-alto-networks/pan-os",
-      "s": "Palo Alto Networks",
-      "p": "PAN-OS",
-      "x": "exploited"
-     }
-    ],
-    "flagged_total": 1,
-    "products": 859,
-    "unfixed": 204,
-    "cvss": 9.2,
-    "scores": [
-     {
-      "v": "CVE-2026-109618",
-      "s": 9.2,
-      "e": 0.99999,
-      "k": "2026-10-26"
-     },
-     {
-      "v": "CVE-2026-109619",
-      "s": 9.2,
-      "e": 0.99999,
-      "k": "2026-10-26"
      }
     ]
    }
