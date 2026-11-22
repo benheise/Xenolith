@@ -3,6 +3,53 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-22: Java4Shell recheck
+
+Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 27 new statements and 3
+updated rows (410 Java4Shell statements in all), each read on the vendor's own page.
+
+- **Status changes:** Google's bulletin GCP-2026-082 (updated 20 November) says the patched Java
+  17, 21 and 25 runtimes (17.0.21.1+2, 21.0.13.1+2, 25.0.5.1+2) have rolled out. Google Cloud
+  Buildpacks, App Engine standard environment and Cloud Run move from workaround to fixed: services
+  with automatic base image updates get the new runtime on their own, the rest need a rebuild.
+  Dataproc, Dataflow and the Distroless images stay on the workaround.
+- **New products from vendors already tracked:**
+  - Google: Cloud Run functions, Cloud Functions (1st gen) and App Engine flexible environment
+    fixed (the flexible environment needs a redeploy); Cloud Composer on a workaround.
+  - Apache Kafka (the project's post of 19 November): Kafka runs on the JDK you install, so the fix
+    is the JDK. The apache/kafka images bundle an affected Temurin JRE (every tag so far) and are on
+    the JVM flag until new images ship; apache/kafka-native is not affected. Until now the census
+    had only Calif's report for Kafka.
+- **New vendors:**
+  - DigiCert (page updated 20 November): eight DigiCert-run services, among them CertCentral,
+    DigiCert ONE and Trust Lifecycle Manager, are mitigated with a JVM flag while the Java update is
+    pending; eight others, among them UltraDNS and Constellix, are not affected.
+  - OvalEdge (advisory of 20 November): the self-hosted application and the Bridge run on the
+    customer's Java. The bundled Elasticsearch runs on JDK 26.0.1, which Oracle no longer fixes, so
+    it stays on the JVM flag. OvalEdge's SaaS is affected (its Elasticsearch) and being patched.
+    Next update due 25 November.
+- **No change:** Cisco (still v1.3 of 20 November, every fix TBD), Splunk (20 November), PaperCut
+  (26.0.7 not in the release history yet; still planned for the week of 23 November), Keycloak,
+  Barracuda (18 November), Sophos (v5 of 20 November), Atlassian (patches still wait on Temurin;
+  the newest reply in its thread is from 20 November), Elastic (8.19.26, 9.4.10, 9.5.7 and 9.6.0
+  not released; 9.5.6 is the newest), Jenkins, Citrix (20 November), Hitachi Vantara (20
+  November), Fortinet (19 November), Palo Alto Networks (20 November), Tenable, Quarkus, Apigee.
+- Siemens' SSA-272816 (Industrial Edge Management) arrives through the Siemens CSAF crawl, so it
+  was not added by hand.
+- Exploitation unchanged: not in CISA KEV (1,790 entries, last additions 20 November). GreyNoise
+  sees exploit-shaped requests from seven addresses and no confirmed successful exploitation;
+  Cisco and Sophos report no malicious use.
+- **Not read:** Esri's ArcGIS post, Mimecast's trust center and Jaspersoft's community FAQ (all
+  HTTP 403), and Arista's security advisory 0228 of 19 November (HTTP 406), so none of the four
+  has new rows. Sophos' advisory still drops plain connections; it was read through the search
+  tool's fetcher.
+- **Not added:** Asimily says only that its systems are not affected, without naming a product.
+  Rapid7's and Black Duck's pages are detection guidance. Daily CyberSecurity's affected-products
+  list adds nothing that the vendors' own pages don't already give.
+- Still silent: Ping Identity, JFrog (no product statement; its advisory list was last updated in
+  September), Broadcom's VMware Tanzu and Symantec products, IBM (no Semeru or WebSphere bulletin),
+  Oracle's own products, SAP and SapMachine, JetBrains Runtime and the IDEs.
+
 ## 2026-11-22: Daily watch
 
 First run of the daily watch: scores, new CISA KEV entries, and the vendor pages behind every
