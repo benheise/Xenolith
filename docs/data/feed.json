@@ -48,7 +48,7 @@
      {
       "v": "CVE-2026-123890",
       "s": 9.8,
-      "e": 0.02985,
+      "e": 0.03526,
       "k": "2026-11-20"
      },
      {
@@ -294,7 +294,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/chromium/CVE-2026-125350",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-125350",
    "title": "Google Chromium Use-After-Free",
-   "content_text": "Exploited in the wild: CVE-2026-125350 in Chromium (browser engine: V8, Blink, Skia, ANGLE). In CISA KEV since 2026-11-10. EPSS 1.89%. 4 products have a vendor statement, 1 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-125350 in Chromium (browser engine: V8, Blink, Skia, ANGLE). In CISA KEV since 2026-11-10. EPSS 6.80%. 4 products have a vendor statement, 1 with no fix stated.",
    "date_published": "2026-11-10T00:00:00Z",
    "date_modified": "2026-11-10T00:00:00Z",
    "tags": [
@@ -311,7 +311,7 @@
     "level": "exploited",
     "date": "2026-11-10",
     "kev": "2026-11-10",
-    "epss": 0.0189,
+    "epss": 0.068,
     "flagged": [],
     "flagged_total": 0,
     "products": 4,
@@ -321,7 +321,7 @@
      {
       "v": "CVE-2026-125350",
       "s": 8.8,
-      "e": 0.0189,
+      "e": 0.068,
       "k": "2026-11-10"
      }
     ]
@@ -679,7 +679,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/cisco-asyncos/CVE-2026-76519",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-76519",
    "title": "Cisco Secure Email Gateway Relative Path Traversal",
-   "content_text": "Exploited in the wild: CVE-2026-76519 in Cisco AsyncOS (Secure Email Gateway, Secure Email and Web Manager). In CISA KEV since 2026-10-14. EPSS 6.23%. Products named: Cisco Secure Email Gateway. 2 products have a vendor statement, 0 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-76519 in Cisco AsyncOS (Secure Email Gateway, Secure Email and Web Manager). In CISA KEV since 2026-10-14. EPSS 5.71%. Products named: Cisco Secure Email Gateway. 2 products have a vendor statement, 0 with no fix stated.",
    "date_published": "2026-10-14T00:00:00Z",
    "date_modified": "2026-10-14T00:00:00Z",
    "tags": [
@@ -696,7 +696,7 @@
     "level": "exploited",
     "date": "2026-10-14",
     "kev": "2026-10-14",
-    "epss": 0.06227,
+    "epss": 0.05715,
     "flagged": [
      {
       "k": "cisco/secure-email-gateway",
@@ -713,7 +713,7 @@
      {
       "v": "CVE-2026-76519",
       "s": 9.8,
-      "e": 0.06227,
+      "e": 0.05715,
       "k": "2026-10-14"
      }
     ]

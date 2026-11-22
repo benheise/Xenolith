@@ -59,7 +59,7 @@
     <published>2026-11-10T00:00:00Z</published>
     <updated>2026-11-10T00:00:00Z</updated>
     <category term="exploited"/><category term="chromium"/><category term="CVE-2026-125350"/>
-    <summary>Exploited in the wild: CVE-2026-125350 in Chromium (browser engine: V8, Blink, Skia, ANGLE). In CISA KEV since 2026-11-10. EPSS 1.89%. 4 products have a vendor statement, 1 with no fix stated.</summary>
+    <summary>Exploited in the wild: CVE-2026-125350 in Chromium (browser engine: V8, Blink, Skia, ANGLE). In CISA KEV since 2026-11-10. EPSS 6.80%. 4 products have a vendor statement, 1 with no fix stated.</summary>
   </entry>
   <entry>
     <id>tag:benheise.github.io,2026:xenolith/ivanti-connect-secure/CVE-2026-118527</id>
@@ -131,7 +131,7 @@
     <published>2026-10-14T00:00:00Z</published>
     <updated>2026-10-14T00:00:00Z</updated>
     <category term="exploited"/><category term="cisco-asyncos"/><category term="CVE-2026-76519"/>
-    <summary>Exploited in the wild: CVE-2026-76519 in Cisco AsyncOS (Secure Email Gateway, Secure Email and Web Manager). In CISA KEV since 2026-10-14. EPSS 6.23%. Products named: Cisco Secure Email Gateway. 2 products have a vendor statement, 0 with no fix stated.</summary>
+    <summary>Exploited in the wild: CVE-2026-76519 in Cisco AsyncOS (Secure Email Gateway, Secure Email and Web Manager). In CISA KEV since 2026-10-14. EPSS 5.71%. Products named: Cisco Secure Email Gateway. 2 products have a vendor statement, 0 with no fix stated.</summary>
   </entry>
   <entry>
     <id>tag:benheise.github.io,2026:xenolith/ivanti-connect-secure/CVE-2026-104935</id>

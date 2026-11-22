@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T00:37:31Z",
+ "built": "2026-11-22T14:55:44Z",
  "threats": [
   {
    "c": "vcenter",
@@ -32,7 +32,7 @@
     {
      "v": "CVE-2026-123890",
      "s": 9.8,
-     "e": 0.02985,
+     "e": 0.03526,
      "k": "2026-11-20"
     },
     {
@@ -248,12 +248,12 @@
    "flagged_total": 0,
    "products": 4,
    "unfixed": 1,
-   "epss": 0.0189,
+   "epss": 0.068,
    "scores": [
     {
      "v": "CVE-2026-125350",
      "s": 8.8,
-     "e": 0.0189,
+     "e": 0.068,
      "k": "2026-11-10"
     }
    ],
@@ -555,12 +555,12 @@
    "flagged_total": 1,
    "products": 2,
    "unfixed": 0,
-   "epss": 0.06227,
+   "epss": 0.05715,
    "scores": [
     {
      "v": "CVE-2026-76519",
      "s": 9.8,
-     "e": 0.06227,
+     "e": 0.05715,
      "k": "2026-10-14"
     }
    ],
@@ -601,7 +601,7 @@
    "cvss": 8.6
   }
  ],
- "epss_date": "2026-11-21",
+ "epss_date": "2026-11-22",
  "watching": [
   {
    "c": "openssl",
@@ -677,14 +677,14 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20503,
-  "products_with_data": 8752,
+  "assertions": 20502,
+  "products_with_data": 8751,
   "inventories": 420,
   "inventory_components": 287797,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
-  "spine_products": 16129,
-  "spine_only_shown": 4669,
+  "spine_products": 16269,
+  "spine_only_shown": 4716,
   "components": 91,
   "wanted": 82,
   "wanted_fulfilled": 7
@@ -2218,15 +2218,15 @@
     }
    ],
    "kev": 1,
-   "assertions": 247,
-   "products": 177,
+   "assertions": 246,
+   "products": 176,
    "contains": 226,
    "in_range": 62,
    "verdicts": {
     "present": 136,
     "workaround": 15,
     "fixed": 75,
-    "not_affected": 21
+    "not_affected": 20
    },
    "exploitation": {}
   },
@@ -7566,10 +7566,10 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 5286,
-   "latest": "2026-11-21",
+   "assertions": 5285,
+   "latest": "2026-11-22",
    "publishers": {
-    "Red Hat Product Security": 3245,
+    "Red Hat Product Security": 3244,
     "Siemens ProductCERT": 892,
     "CISA": 681,
     "Cisco": 238,
@@ -7624,7 +7624,7 @@
    "notes": "Vendor/product names from CNA-published CVE records, ranked by CVE and KEV counts. Records for package-ecosystem components are excluded.",
    "assertions": 0,
    "latest": "",
-   "products": 16129
+   "products": 16269
   }
  ],
  "comparables": [
