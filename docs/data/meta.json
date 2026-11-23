@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T22:55:36Z",
+ "built": "2026-11-23T00:36:11Z",
  "threats": [
   {
    "c": "vcenter",
@@ -214,7 +214,7 @@
    ],
    "flagged_total": 2,
    "products": 860,
-   "unfixed": 204,
+   "unfixed": 203,
    "epss": 0.99999,
    "scores": [
     {
@@ -626,8 +626,8 @@
     "CVE-2026-113425"
    ],
    "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.",
-   "products": 61,
-   "unfixed": 16
+   "products": 187,
+   "unfixed": 31
   },
   {
    "c": "tomcat",
@@ -677,8 +677,8 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20530,
-  "products_with_data": 8778,
+  "assertions": 20656,
+  "products_with_data": 8785,
   "inventories": 420,
   "inventory_components": 287797,
   "cpe_linked_clusters": 23,
@@ -840,9 +840,9 @@
    "contains": 536,
    "in_range": 10,
    "verdicts": {
-    "fixed": 242,
+    "fixed": 243,
     "workaround": 7,
-    "affected": 203,
+    "affected": 202,
     "under_investigation": 76,
     "not_affected": 209,
     "present": 84,
@@ -1817,16 +1817,18 @@
     }
    ],
    "kev": 0,
-   "assertions": 185,
-   "products": 76,
-   "contains": 161,
+   "assertions": 311,
+   "products": 200,
+   "contains": 180,
    "in_range": 50,
    "verdicts": {
-    "fixed": 81,
+    "fixed": 85,
+    "workaround": 29,
+    "under_investigation": 68,
+    "not_affected": 53,
     "present": 54,
     "affected": 12,
-    "not_affected": 24,
-    "workaround": 14
+    "absent": 10
    },
    "exploitation": {}
   },
@@ -7607,7 +7609,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 973,
+   "assertions": 1099,
    "latest": "2026-11-21",
    "fv": "community",
    "dp": [

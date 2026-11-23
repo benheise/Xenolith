@@ -236,7 +236,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/php/CVE-2026-109618",
    "url": "https://benheise.github.io/Xenolith/#c=php",
    "title": "PHP2Shell",
-   "content_text": "Exploited in the wild: CVE-2026-109618, CVE-2026-109619 in PHP runtime. In CISA KEV since 2026-10-26. EPSS 100.00%. Products named: Check Point Quantum Security Gateway, Palo Alto Networks PAN-OS. 860 products have a vendor statement, 204 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-109618, CVE-2026-109619 in PHP runtime. In CISA KEV since 2026-10-26. EPSS 100.00%. Products named: Check Point Quantum Security Gateway, Palo Alto Networks PAN-OS. 860 products have a vendor statement, 203 with no fix stated.",
    "date_published": "2026-10-26T00:00:00Z",
    "date_modified": "2026-11-12T00:00:00Z",
    "tags": [
@@ -272,7 +272,7 @@
     ],
     "flagged_total": 2,
     "products": 860,
-    "unfixed": 204,
+    "unfixed": 203,
     "cvss": 9.2,
     "scores": [
      {

@@ -3,6 +3,65 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-23: Daily watch
+
+A quiet day for exploitation: no new CISA KEV entries and no new report of exploitation in a
+watchlist component. The statement work went to NGINX2Root, where vendor advisories are arriving.
+126 new statements and 1 changed (965 in all), each read on the vendor's own page.
+
+- **Status change:** PAN-OS for PHP2Shell (CVE-2026-109618, CVE-2026-109619) moves from affected
+  to fixed. Palo Alto Networks' advisory, last updated 29 October, lists a released hotfix for
+  every supported branch (12.2.4-h1, 12.1.10-h3, 11.2.16-h1, 11.1.16-h4, 10.2.18-h13 and the
+  older maintenance lines); the row now names them. It keeps its exploited level. PHP2Shell has
+  203 products with no fix stated, down from 204.
+- **NGINX2Root (CVE-2026-123007 and four more), new statements.** The incident is on the watching
+  list, not the Threats list, so the daily recheck does not cover it. These were added because
+  the advisories turned up in the vendor feeds read for the exploitation search:
+  - Palo Alto Networks (20 November): PAN-OS and Panorama are affected by CVE-2026-123007 and
+    CVE-2026-123633 only with HTTP/2 turned on, in 12.2 before 12.2.4-h3, 12.1.5 and later before
+    12.1.10-h6 and 11.2.8 and later before 11.2.16-h3. Those three builds are out; hotfixes for
+    the older maintenance lines (12.1.7-h15, 11.2.13-h6, 11.2.10-h19) are due 23 November.
+    Turning HTTP/2 off is the workaround.
+  - Fortinet (FG-IR-26-279, updated 21 November): 27 products confirmed not impacted, among them
+    FortiOS, FortiProxy, FortiMail, FortiSwitch, FortiNAC and FortiPAM; 51 still under
+    investigation, among them FortiManager, FortiAnalyzer, FortiWeb, FortiADC and FortiSIEM.
+  - Barracuda (updated 20 November): 34 products. Content Shield and Security Awareness Training
+    are not affected; 15, among them Email Security Gateway, Web Application Firewall, SecureEdge
+    and Message Archiver, have a mitigation with the fix pending; 17 are under investigation,
+    among them CloudGen Firewall.
+  - Sophos (version 3, 20 November): Taegis XDR and Taegis VDR fixed by Sophos; ten products
+    without the component, among them SG UTM and Sophos Mobile. Sophos Firewall is not in the
+    list yet.
+  - Cisco's nginx advisory of 21 November arrives through the CSAF crawl and was not added by
+    hand.
+  The watching entry goes from 61 to 187 products with a statement.
+- **Exploitation:** none reported for NGINX2Root. CERT-EU (18 November), Barracuda and Palo Alto
+  Networks each say they know of none; it is not in CISA KEV.
+- **No change:** Broadcom's VMSA-2026-0009.1 (20 November); Check Point's sk1000362 (12
+  November), blog advisory (15 November) and research report; Atlassian's CONFSERVER-104610
+  (9.2.28 is still the one fixed Confluence release); Rapid7's Axis report (19 November);
+  Mandiant's vCenter report. The four statements for Chromium CVE-2026-125350 come from the
+  Microsoft and Red Hat CSAF feeds.
+- **Scores:** FIRST.org had not published scores for 23 November when the run started (00:24
+  UTC), so EPSS stays at 22 November. From 21 to 22 November no tracked CVE changed band or
+  crossed 10% or 50%; the largest rise was Chromium CVE-2026-125350, from 1.9% to 6.8%. CISA KEV
+  is unchanged since 20 November (1,790 entries, 392 tracked).
+- **Considered and left out:** OpenSSL CVE-2026-121481 and CVE-2026-107494 (18 November), which
+  one CVE digest scores 9.8 and 9.1. OpenSSL rates both Low and says it knows no way for an
+  attacker to trigger the first.
+- **Still open:**
+  - Nothing rechecks the new nginx rows. Fortinet's 51 and Barracuda's 17 under-investigation
+    products, Barracuda's 15 pending fixes and the PAN-OS hotfixes due 23 November will all
+    move. Either the daily recheck takes in watching-list incidents while vendors are still
+    publishing, or NGINX2Root gets its own recheck as Java4Shell has.
+  - Carried over from 22 November: Apache XML-RPC as a watchlist component, SAP NetWeaver as a
+    vendor engine, and which PHP2Shell vendors a daily run should reopen.
+- **Not read:** N-able's remediation update page and CISA's advisories feed (both HTTP 403).
+  Sophos' advisory drops plain connections; it was read through the search tool's fetcher.
+- **Skipped as secondary only:** weekend news of exploited flaws in GL.iNet's cloud service and
+  Microsoft Entra Connect Health (neither is a watchlist component, and no vendor page was
+  opened).
+
 ## 2026-11-22: Java4Shell recheck
 
 Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 27 new statements and 3
