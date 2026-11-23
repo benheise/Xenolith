@@ -1,5 +1,5 @@
 {
- "built": "2026-11-23T22:52:24Z",
+ "built": "2026-11-23T22:55:22Z",
  "threats": [
   {
    "c": "vcenter",
@@ -680,7 +680,7 @@
   "assertions": 20742,
   "products_with_data": 8824,
   "inventories": 423,
-  "inventory_components": 301362,
+  "inventory_components": 301372,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16269,

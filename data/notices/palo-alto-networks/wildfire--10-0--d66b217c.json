@@ -893,7 +893,7 @@
 "version": "2.2.2. v201501141630"
 },
 {
-"name": "Jetty: Java based HTTP, Servlet, SPDY, WebSocket Server",
+"name": "Jetty: Java based HTTP",
 "version": "8.1.14. v20131031"
 },
 {
@@ -1629,6 +1629,10 @@
 "version": "2.2.2. v201205150955"
 },
 {
+"name": "org.apache.lucene.core",
+"version": "3.5.0.v20120725-1805"
+},
+{
 "name": "org.apache.lucene.core_3.5.0.v20120725-1805.jar",
 "version": "3.5.0. v20120725-1805"
 },
@@ -1759,6 +1763,10 @@
 {
 "name": "org.eclipse.equinox.util",
 "version": "1.0.500. v20130404-1337"
+},
+{
+"name": "org.eclipse.help",
+"version": "3.6.0.v20130326-1254"
 },
 {
 "name": "org.eclipse.help_3.6.0.v20130326-1254.jar",
@@ -2113,6 +2121,10 @@
 "version": "4.0.0-M8"
 },
 {
+"name": "Servlet",
+"version": "8.1.14. v20131031"
+},
+{
 "name": "setup",
 "version": "2.8.71-6.el7"
 },
@@ -2147,6 +2159,10 @@
 {
 "name": "socket.io-browserify",
 "version": "0.9.11"
+},
+{
+"name": "SPDY",
+"version": "8.1.14. v20131031"
 },
 {
 "name": "SQLite",
@@ -2309,6 +2325,10 @@
 "version": "0.4.3.1.0"
 },
 {
+"name": "WebSocket Server",
+"version": "8.1.14. v20131031"
+},
+{
 "name": "Webtoolkit Javascript base64",
 "version": "20090123"
 },
@@ -2349,13 +2369,14 @@
 "https://docs.paloaltonetworks.com/oss-listings"
 ],
 "extractors": [
-"html_table"
+"html_table",
+"jar_names"
 ],
 "found_via": "auto-discovered",
 "kind": "html",
 "product": "WildFire",
-"retrieved": "2026-11-08",
-"sha256": "2ef156df79b6ccdc8bc8e66491682b6295179c28d6cb3be55233cc467894e78c",
+"retrieved": "2026-11-23",
+"sha256": "3bf643146a93d3fdef32ee76c0dac2aa2cd3c11bb8b84c7a2792d21304b71391",
 "supplier": "Palo Alto Networks",
 "url": "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/wildfire-oss-listings/wildfire-10-0-open-source-software-oss-listing.html",
 "version": "10.0"
