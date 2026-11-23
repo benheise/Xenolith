@@ -3,6 +3,72 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-23: Java4Shell recheck
+
+Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 43 new statements and 17
+updated rows (453 Java4Shell statements in all), each read on the vendor's own page.
+
+- **Status changes:**
+  - Elastic shipped its fixes. Elasticsearch 8.19.26, 9.4.10 and 9.5.7 bundle JDK 27.0.1.1;
+    Logstash 8.19.26 and 9.5.7 start the JVM with the Base64 intrinsic off; ECE 4.2.2 and 3.8.7
+    turn it off for the clusters they host. All three move from workaround to fixed (9.6.0 is still
+    to come). The advisory text itself still says "upcoming"; the release notes and the published
+    artifacts say otherwise.
+  - Google: Dataflow (service-side flag on Google-provided workers since 20 November, patched JDK
+    in Beam 2.78.0 worker images) and Cloud Composer (composer-2.18.2-airflow-2.11.1 and three Gen 3
+    builds, release notes of 20 November) move from workaround to fixed. GCP-2026-082 linked both on
+    23 November. Dataproc's images are still in progress.
+  - Barracuda: Data Inspector, WAF-as-a-Service and Active DDoS Protection go from under
+    investigation to not affected, so all 35 products now have a final status. The page still shows
+    18 November as its last update, so the change may have been there since then unnoticed.
+  - Hitachi Vantara (alert updated 23 November): HCP for Cloud Scale is now not affected.
+  - Fortinet FG-IR-26-278 (updated 23 November): 14 FortiAnalyzer models are now not impacted; the
+    FortiAnalyzer 3750G gets its own row, still under investigation. 47 products remain under
+    investigation.
+- **New products from vendors already tracked:**
+  - Cisco advisory v1.4 (23 November): Unified Contact Center Express added as affected (bug
+    CSCwx86840). Every fixed release is still TBD; nothing else changed.
+  - Atlassian (post updated 23 November): Cloud products remediated, new row. The six Data Center
+    rows stay on the workaround: Temurin's fixed builds are out and Atlassian says Data Center
+    releases bundling them follow "in coming days".
+  - Okta: the gateway row now follows Okta's own Access Gateway advisory (20 November): versions
+    before 2026.45.1 run an affected Java 21.
+- **New vendors:**
+  - Arista Networks (Security Advisory 0228, 19 November): 17 not affected, among them EOS,
+    CloudVision as-a-Service, AGNI, the Wi-Fi access points, the NDR platform and VeloCloud; 8 under
+    triage: CloudVision Portal and Appliance, CV-CUE cloud, Converged Cloud Fabric and the four DMF
+    appliances.
+  - Appian (KB-2445): Appian Cloud fixed; self-managed Appian affected, hotfix due 24 November.
+  - KNIME: Business Hub on-premises on a workaround (it uses Keycloak), bugfix releases for 1.17 to
+    1.19 to follow; Business Hub SaaS not affected; Analytics Platform on the JVM flag; KNIME Server
+    runs on the customer's Java. KNIME's statement is undated, so the rows carry the date it was read.
+  - Exalate (18 November): hosted service and Table Grid not affected; the Jira Data Center app
+    follows Jira's Java; the self-hosted node Docker image is on the JVM flag until new images ship.
+  - Esri (ArcGIS Trust Center post, modified 20 November): ArcGIS Web Adaptor (Java Platform) and
+    the ArcGIS Enterprise SDK run on the customer's Java. Esri names no other product yet.
+  - Trend Micro (KA-0025110, status as of 20 November): Deep Discovery Inspector affected, patch due
+    4 December; Deep Discovery Analyzer affected, no date.
+  - N-able: N-central 2026.4 HF4 (21 November) updates its Java package and is fixed.
+- **No change:** Splunk (20 November), PaperCut (26.0.7 still not in the 26.0 release history),
+  Keycloak (Operator still on the workaround), Sophos (v5 of 20 November), Citrix (19 November),
+  Palo Alto Networks (20 November), Jenkins, DigiCert, Tenable, Quarkus, Apache Kafka, Sonatype,
+  BellSoft, Broadcom's EEM article, OvalEdge (next update due 25 November). Dynatrace says its
+  analysis is finished (23 November) with no new products. Okta's main notice was updated on 23
+  November but only points to the gateway advisory.
+- Exploitation unchanged: not in CISA KEV (1,790 entries, last additions 20 November). Cisco (23
+  November), Fortinet (23 November), Arista and Sophos all say they know of no malicious use.
+- **Not read directly:** Mimecast's trust center (HTTP 403), so its row is unchanged. Fortinet's
+  advisory (HTTP 500 and dropped connections), Esri's post (HTTP 403), Arista's advisory (HTTP 406)
+  and Sophos' advisory (dropped connection) were read through the search tool's fetcher.
+- **Not added:** a news aggregator's affected-products table marks Java4Shell as exploited, which no
+  vendor or CERT supports. Check Point's blog covers IPS and WAF protections, Trend Micro's list of
+  "demonstrated RCE targets" repeats Calif's, and ManageEngine's Patch Manager posts are patching
+  guidance; none is a product statement. SAP KBA 3762497 concerns older Java CVEs, not this one.
+- Still silent: Ping Identity, JFrog (no product statement; its advisory page was last updated in
+  September), Broadcom's VMware Tanzu and Symantec products, IBM (none of the WebSphere bulletins
+  found names the CVE), Oracle's own products (the CSPU is still at revision 1 and maps the CVE
+  only to Java SE and GraalVM), SAP and SapMachine, JetBrains Runtime and the IDEs.
+
 ## 2026-11-23: Daily watch
 
 A quiet day for exploitation: no new CISA KEV entries and no new report of exploitation in a

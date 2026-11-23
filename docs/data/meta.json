@@ -1,5 +1,5 @@
 {
- "built": "2026-11-23T18:45:42Z",
+ "built": "2026-11-23T22:52:24Z",
  "threats": [
   {
    "c": "vcenter",
@@ -139,8 +139,8 @@
     }
    ],
    "flagged_total": 11,
-   "products": 457,
-   "unfixed": 94,
+   "products": 500,
+   "unfixed": 97,
    "epss": 0.57324,
    "scores": [
     {
@@ -677,14 +677,14 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20699,
-  "products_with_data": 8786,
+  "assertions": 20742,
+  "products_with_data": 8824,
   "inventories": 423,
   "inventory_components": 301362,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16269,
-  "spine_only_shown": 4716,
+  "spine_only_shown": 4713,
   "components": 91,
   "wanted": 82,
   "wanted_fulfilled": 7
@@ -1694,17 +1694,17 @@
     }
    ],
    "kev": 13,
-   "assertions": 852,
-   "products": 563,
-   "contains": 556,
+   "assertions": 895,
+   "products": 606,
+   "contains": 566,
    "in_range": 35,
    "verdicts": {
-    "fixed": 350,
-    "runtime_dependent": 17,
-    "workaround": 49,
-    "not_affected": 173,
-    "affected": 53,
-    "under_investigation": 75,
+    "fixed": 358,
+    "runtime_dependent": 21,
+    "workaround": 47,
+    "not_affected": 198,
+    "affected": 57,
+    "under_investigation": 79,
     "present": 104,
     "unknown": 1,
     "absent": 30
@@ -7609,8 +7609,8 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 1099,
-   "latest": "2026-11-21",
+   "assertions": 1142,
+   "latest": "2026-11-23",
    "fv": "community",
    "dp": [
     "https://www.atlassian.com/software/bamboo/downloads/binary/atlassian-bamboo-13.0.1.tar.gz",
