@@ -23,7 +23,7 @@
     <published>2026-11-18T00:00:00Z</published>
     <updated>2026-11-18T00:00:00Z</updated>
     <category term="exploited"/><category term="axis1"/><category term="CVE-2026-90436"/>
-    <summary>Exploited in the wild: CVE-2026-90436 in Apache Axis 1.x (SOAP engine). In CISA KEV since 2026-11-18. EPSS 3.81%. Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end of life with no upstream fix; CISA added it to KEV on 18 November 2026. Products named: Atlassian Confluence Data Center, N-able N-central. 3 products have a vendor statement, 1 with no fix stated.</summary>
+    <summary>Exploited in the wild: CVE-2026-90436 in Apache Axis 1.x (SOAP engine). In CISA KEV since 2026-11-18. EPSS 5.87%. Unauthenticated remote class instantiation through a crafted SOAP fault. Axis 1.x is end of life with no upstream fix; CISA added it to KEV on 18 November 2026. Products named: Atlassian Confluence Data Center, N-able N-central. 3 products have a vendor statement, 1 with no fix stated.</summary>
   </entry>
   <entry>
     <id>tag:benheise.github.io,2026:xenolith/openjdk/CVE-2026-114938</id>
@@ -32,7 +32,7 @@
     <published>2026-11-17T00:00:00Z</published>
     <updated>2026-11-17T00:00:00Z</updated>
     <category term="demonstrated_preauth"/><category term="openjdk"/><category term="CVE-2026-114938"/>
-    <summary>Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 45.64%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 454 products have a vendor statement, 91 with no fix stated.</summary>
+    <summary>Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 57.32%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 457 products have a vendor statement, 94 with no fix stated.</summary>
   </entry>
   <entry>
     <id>tag:benheise.github.io,2026:xenolith/check-point-gaia/CVE-2026-123039</id>

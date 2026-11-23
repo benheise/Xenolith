@@ -19,6 +19,26 @@
 "html_table"
 ]
 },
+"https://artifacts.elastic.co/reports/dependencies/dependencies-8.19.26.html": {
+"fetched": "2026-11-23",
+"kind": "html",
+"n": 5252,
+"sha": "db84688f8f9e8715d7104ca1ad0f106c1b514fd35f895fe5020c3f00b6ab8fe1",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
+"https://artifacts.elastic.co/reports/dependencies/dependencies-9.4.10.html": {
+"fetched": "2026-11-23",
+"kind": "html",
+"n": 4155,
+"sha": "c3b84c71e95e8f3f101b571563fec1e4202b49ccba4d1ff72213c54684f47bfb",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
 "https://artifacts.elastic.co/reports/dependencies/dependencies-9.4.9.html": {
 "fetched": "2026-11-08",
 "kind": "html",
@@ -39,8 +59,18 @@
 "html_table"
 ]
 },
+"https://artifacts.elastic.co/reports/dependencies/dependencies-9.5.7.html": {
+"fetched": "2026-11-23",
+"kind": "html",
+"n": 4152,
+"sha": "0def4af1720305f1bfae4b2d0c39f8dc8c66f9cccb1ef3c4491644f41afdf539",
+"status": "ok",
+"via": [
+"html_table"
+]
+},
 "https://assets.new.siemens.com/siemens/assets/api/uuid:17118f27-1442-4bac-8aa2-6993beacb871/readme-for-3rd-party-software-desigo-fire-cloud-apps-modular-con.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 24,
 "sha": "d86ef70716419af4f4a454710fb85807290aa37548700ee3487fbae9687a2d80",
@@ -50,7 +80,7 @@
 ]
 },
 "https://assets.new.siemens.com/siemens/assets/api/uuid:3d6916aa-d8b7-4cdb-b075-c7f9fcd04bf9/Readme-OSS-Desigo-Optic-3.0.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 152,
 "sha": "e45a7dd80577036cb799286c1266d8b2445b1951d99ccc8deb785b0ab8c2c561",
@@ -60,7 +90,7 @@
 ]
 },
 "https://assets.new.siemens.com/siemens/assets/api/uuid:3eb9325c-2f05-4a48-880a-5bebc4939f4a/readme-oss-msib-3-3.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 128,
 "sha": "6352678a4b030f35d918db31a746a68fc22689482540418b28c3eb41b63b2d80",
@@ -70,7 +100,7 @@
 ]
 },
 "https://assets.new.siemens.com/siemens/assets/api/uuid:79e20062-cd0c-4084-ba7d-c2225838996d/Readme-OSS-CT.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 51,
 "sha": "8e65f67ae60430ac92d0b98e860d961381d26a0dcc19a90b3c7830fc9e66f538",
@@ -80,7 +110,7 @@
 ]
 },
 "https://assets.new.siemens.com/siemens/assets/api/uuid:8614afdc-319c-4daa-9949-afc8be5f296d/Readme-OSS-Desigo-Optic-3.1.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 152,
 "sha": "61cc0dce291981a70b19b7f4e16ee208123838f064db680f69c0ee0fbf4d313c",
@@ -296,20 +326,21 @@
 ]
 },
 "https://dl.microfocus.com/documentation/fortify-webinspect/1810/Fortify_OpenSrc_18.10.pdf": {
-"fetched": "2026-11-08",
+"error": "https://dl.microfocus.com/documentation/fortify-webinspect/1810/Fortify_OpenSrc_18.10.pdf: HTTP Error 403: Forbidden",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 169,
 "sha": "742f265db3e25aa784f20584b547523fca8ad0de191556d9606a5638cd384477",
-"status": "ok",
+"status": "error",
 "via": [
 "name_version_lines"
 ]
 },
 "https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom232/Third-party-product-terms-of-use/": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 532,
-"sha": "f59624f98079eb3e5dc5d306d77967f4d7fb110d571bcbf6be25a4cf89473725",
+"sha": "ec1f96c604ff2318a37064f5f767aab59070886923361a12f167e668f79d42c2",
 "status": "ok",
 "via": [
 "jar_names",
@@ -317,10 +348,10 @@
 ]
 },
 "https://docs.helixops.ai/bin/IT-Operations-Management/Operations-Management/BMC-Helix-Operations-Management/bhom233/Third-party-product-terms-of-use/": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 878,
-"sha": "6aefb99f6005722c5265d78cd0d89ae6b9f706af07c076c1b98a6434f3306d3c",
+"sha": "2514114e5bba210ca29e3343b81262c024d215b22cff3678781b702a762cdeea",
 "status": "ok",
 "via": [
 "jar_names",
@@ -339,10 +370,10 @@
 ]
 },
 "https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is252/Third-party-product-terms-of-use/": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 919,
-"sha": "c57f4877ad7e7668833b0d39a7e1158eb31f9963ff9802e69402d4ebdb177a0c",
+"sha": "61ded8d325add7ec879230f34be1677745af93a7fb8a86ab7360f37c1754d79c",
 "status": "ok",
 "via": [
 "html_table",
@@ -350,10 +381,10 @@
 ]
 },
 "https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is261/Third-party-product-terms-of-use/": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 935,
-"sha": "8013186cad58b683d15045dea9e98d7b6e47a17bcdc5352f47af24d85ab9d7c1",
+"sha": "3768ac584fbc39add7fdce0a12e47cfbca7a631170d9376dfb7f983f65c33984",
 "status": "ok",
 "via": [
 "html_table",
@@ -361,10 +392,10 @@
 ]
 },
 "https://docs.helixops.ai/bin/Service-Management/Innovation-Suite/BMC-Helix-Innovation-Suite/is262/Third-party-product-terms-of-use/": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 1108,
-"sha": "defb294c1617b73c0aa1465928f4d0e79fbc6788e48883c53483952d5b14e462",
+"sha": "62cd9a3e68ed9ca48108253bdabf8303faad3cb6e3757cb070e4260f5b2535cf",
 "status": "ok",
 "via": [
 "html_table"
@@ -771,17 +802,17 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/cn-series-oss-listings/cn-series-10-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 172,
-"sha": "854934d631bd74c28dfcfd02c178d14fdf75c3fb3682a24d2484e248e8b74367",
+"sha": "8498d1ea1f27f1e557d406fae3a8cda9a9e29d0aa03d9c159a8839e53345801d",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/cn-series-oss-listings/cn-series-10-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 295,
 "sha": "85c0b14f5e3e9a030bef3c89b350aae3a8c571897db20345767e6fb7794248c7",
@@ -791,17 +822,17 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/cn-series-oss-listings/cn-series-10-2-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 425,
-"sha": "d2eb1a343b6cd02e3a66a407e5093dd18743279f0b9bcb755540b8bb5f6644bf",
+"sha": "24b208d0794a649074efee4259f2d1a7da10b74ec7a5cbbc7612047eb48c69db",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/cn-series-oss-listings/cn-series-11-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 424,
 "sha": "f3e2e7466f33b9316056fb26add5a571af8a5f1a55be4ff48624a486e537ad31",
@@ -811,7 +842,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/cn-series-oss-listings/cn-series-11-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 427,
 "sha": "4519d1fb17c6c9bd9a27863d1705a17beceb14e127c834496699d4aef841f94c",
@@ -821,10 +852,10 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/cn-series-oss-listings/cn-series-11-2-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 426,
-"sha": "981c4161fb5849fc011753f89d4922b0507b26ccc4caf427c06ef1b200934287",
+"sha": "36f21ee66f16f0712fedf11433f0ba7fed51998169eb7bf8a991630deba3b10a",
 "status": "ok",
 "via": [
 "html_table"
@@ -911,17 +942,17 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-10-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 219,
-"sha": "12961c9bff004bfe7a9e3234e5e620ce32eb37d0a339e6a5a8ef3142d57a77c5",
+"sha": "15051e85615b874f5bd510350d3cbaa076826c022918915158d1565101c971b6",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-10-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 321,
 "sha": "1ea9c8ecf7363e7374b4e5a4335c80d1c3d7e15a46574d8ab8402ceb21e0f7f6",
@@ -931,17 +962,17 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-10-2-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 527,
-"sha": "d516614f75040ea29ce684a3e89be90380f5eb37238b4c4865109006f3825097",
+"sha": "078d62aaa4b2a4b24cf6512a1993a3d467e17706f3095745b3720d5480420b9d",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-11-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 523,
 "sha": "81d7ad308086e140709900cea066519ee3c1ebde1fb3cef22335481b5993be24",
@@ -951,7 +982,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-11-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 541,
 "sha": "e9982ade80dcf171ae3270fbaca2a6c2a2835cd2ab60335cfd833262f9b5924d",
@@ -961,17 +992,17 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-11-2-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 532,
-"sha": "b27c1be00c70b10956fcfb46a1375490fe44001f26ed374082f02e84875f2903",
+"sha": "3eeb6ff66bdf9a4153b61333efd20012b4f5fce748e0bdae3d155a06fea1918e",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-12-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 707,
 "sha": "ad8a54a81dd128415725e2bee29714154c89ab710b898a81727d416ca1197e65",
@@ -981,7 +1012,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-12-2-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 842,
 "sha": "b368a50e0dad5fea2452f87c95789c76673d31d566a968a6184b33a6848b48d9",
@@ -991,7 +1022,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-4-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 139,
 "sha": "b3fc311baf18b8751cef6710ed104e3c5c450cd843e1a947452ab34cd42a6014",
@@ -1001,7 +1032,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-4-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 142,
 "sha": "51c06c06e203a06e275264a8dc616989699540d4a37b7924d2e2e95aee51bda0",
@@ -1011,37 +1042,37 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-5-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 152,
-"sha": "3794b1c7b9e038d442e367add5b9f5bcc7a457b481aaf706e862942b63d800df",
+"sha": "9d9a279193a3e3ee6a1b52694b1e87d8d530fe15f7ebb120a9fc957d69bd7359",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-5-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 155,
-"sha": "ee06fa57a0033026594d64f061b1687ce7b8b29ce443474004e451f4d3c85b48",
+"sha": "5835a1d458577d053a1fab4bba28a8ea7566d2f571e733175a9914bc4d253e01",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-6-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 169,
-"sha": "3760d4324b46d53f6802db2f6ef2918b69441ba2b96dbae0061e011da0f6378e",
+"sha": "5732483b1a5f25d37c19c3154999c7053f84d94f2f03b9466c143f34588cd20d",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-6-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 175,
 "sha": "cc9279791f55814fe9596edeaac687459c3c624e09000026267a42506afd063a",
@@ -1051,17 +1082,17 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-7-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 184,
-"sha": "9047e3291843ef123606cc1b0279f17cf6096cf58aaff19adcab284e632bea25",
+"sha": "96dafe42458b0a6274337c3496114a4df9bd6e988df79cf39f08591e1574429a",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-7-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 196,
 "sha": "afc4ca8a784e0139677768f19cb68ed38c79d3d2e37cecb6734b9ae9539508e0",
@@ -1071,7 +1102,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-8-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 218,
 "sha": "1389095a449ffa630c4ff2f995e70a3d7f202a9a60808ae31fce81829b8e3c5b",
@@ -1081,7 +1112,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-8-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 224,
 "sha": "3dece00a5d44834d0615850126017f3a6733d64cebc0ed6472fd91bedc7c55f7",
@@ -1091,27 +1122,27 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-9-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 303,
-"sha": "286f9fbd337cf2a0a1b751d0711196cb2b7af2c15158c16572f07c1d3ae1eb38",
+"sha": "6919652b54e138137fd0e54adc7345ac78be0402ecafcef5b1bbc05a47870609",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/pan-os-oss-listings/pan-os-9-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 304,
-"sha": "ac5685a715997b31ac206be0852b4f3e99ec047b46eeeaeb54cddc7d0d4aa242",
+"sha": "0a5c2e765ad99a458472a3c3dbb115cf03e3bc3b10ab68273966dd803ba6c9c7",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-10-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 471,
 "sha": "0cb92b965dd76ca6acdd3e1cb2c8f31cfdd0225c1bed092c0153334efe8316c6",
@@ -1121,7 +1152,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-10-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 314,
 "sha": "a530e29b4e1cebfba2de476808d810c089b49aedc5112ebd517ccf7abc00e5c4",
@@ -1131,7 +1162,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-10-2-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 456,
 "sha": "105ebe6e5e31f0868b8acb1a4223b3844fe3e059d42e116dd34065f20bef5d86",
@@ -1141,17 +1172,17 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-11-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 458,
-"sha": "c2c51d0a53b634df3ef5bae9467fb3a34dc4c554740a9ba8e3a928384c87cee9",
+"sha": "439083ffd6bc1cc2cb30f81d3cba6254fcfd47a18d4fae601ee62046d224c595",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-11-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 466,
 "sha": "7510e615f3f82c1c6d9eeb05b27062e23e52614966568528b43a755c1f39a242",
@@ -1161,7 +1192,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-11-2-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 466,
 "sha": "6d4c5f29460078279fd45ea94fed7b6555e7ec7ea7005b96f3a9ae343750b91a",
@@ -1171,7 +1202,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-12-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 500,
 "sha": "8fc5e6a573818e1bb201e438bd73d7cadd9d2d8ebe7c1bce3c1849f3aac39253",
@@ -1181,10 +1212,10 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-12-2-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 506,
-"sha": "458888d777a0676de229026a27a4f3414430daf74e25835c643b715ae092b577",
+"sha": "c6b4015b075f15ef05a5200faecfb6958d8eb59cfffdec33ad4fca847aabc31b",
 "status": "ok",
 "via": [
 "html_table"
@@ -1261,7 +1292,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-8-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 196,
 "sha": "99fbc5aa7b960d707082fbd600c4fb80fce53bab168d9e1fd5933e2261de062a",
@@ -1271,7 +1302,7 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-8-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 202,
 "sha": "71e6f2db642eb3e373ddb350cdea8e1c24571a04a2debbf791c7e402e7ce0f1f",
@@ -1281,17 +1312,17 @@
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-9-0-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 470,
-"sha": "caa7c0c4821f47798071f8f3b05a60e1e6a7a1ef050b2f71eb2e95d8d432ed3b",
+"sha": "561d3db218911091e717897505dff90b9063936c88935d50f3f97a056fd8cc46",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://docs.paloaltonetworks.com/content/techdocs/en_US/oss-listings/panorama-oss-listings/panorama-9-1-open-source-software-oss-listing.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 470,
 "sha": "271e27b09b982e56a44971ee9b1685ebfc50924b91c602499c483cb875999905",
@@ -1531,77 +1562,77 @@
 ]
 },
 "https://docs.tenable.com/license-declarations/Content/NNM/NNM_511.htm": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 36,
-"sha": "f475ded19d5531b1865b073cd68235ee945e67a2d95da27a7f27aa9e07a522a5",
+"sha": "4cf0af9923c4a113340abcbc2140ae9b733a4f4aa04493527793f38afe2ff0b7",
 "status": "ok",
 "via": [
 "dropdown_heads"
 ]
 },
 "https://docs.tenable.com/license-declarations/Content/Nessus-Agent/Nessus-Agent-10.htm": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 14,
-"sha": "2c879cd21cd6af8a4ca36ffb8a285173450d0a083603c253a02b33ffcb56d5e7",
+"sha": "4dd90b431dd521d58a570073077c9e76a88e9718b1e9972799e685bc97a23203",
 "status": "ok",
 "via": [
 "dropdown_heads"
 ]
 },
 "https://docs.tenable.com/license-declarations/Content/Nessus/Nessus-10.htm": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 42,
-"sha": "fb71fd229a0ea0113e2ae623cd7f48cc5a2a2e8171cdb9ca07ae5a88da16fa20",
+"sha": "cec1d1fdfeae1bd2d49a8dfbb388e92b525b4ed5491daeba128d7bf65d873d1e",
 "status": "ok",
 "via": [
 "dropdown_heads"
 ]
 },
 "https://docs.tenable.com/license-declarations/Content/SC/security-center-63.htm": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 37,
-"sha": "2193ee97211513680b1a0e58ae862b664a3fd8c696f9823387aa6c96ca9b809f",
+"sha": "a6f95700db409f8da1f632ae0477cab770babc95dafeb6afb7f1099fc9b7653d",
 "status": "ok",
 "via": [
 "dropdown_heads"
 ]
 },
 "https://docs.tenable.com/license-declarations/Content/SC/security-center-64.htm": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 38,
-"sha": "28b27e82587d0a5d8476a621ca029ed92db92b3c393e4cfa6f91c55180aa6fcb",
+"sha": "96317ddf0235dbf62d1aec9f529602187a74a06d0ed4e2de912f2cd3ab6360f8",
 "status": "ok",
 "via": [
 "dropdown_heads"
 ]
 },
 "https://docs.tenable.com/license-declarations/Content/SC/security-center-65.htm": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 41,
-"sha": "74eeba345265817c75bdfbff4b8ff0837f5c37aa3b63fccb34278dd84d2d4a43",
+"sha": "0e3f9001fda3ff489e330a8d077b0bb746b19f92df0cc6e109fa8500c7f60f10",
 "status": "ok",
 "via": [
 "dropdown_heads"
 ]
 },
 "https://documentation.commvault.com/11.42/commcell-console/third_party_applications_installed_by_commvault_installer.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 10,
-"sha": "72b35fc9aa20bcb80d4d4e16e480e13f516adbe8acdd90d6893fef8ade30d98d",
+"sha": "519d7d15b2c96aa1ecb16f7300fe94cdde095168548d6a66bb152401defbaa62",
 "status": "ok",
 "via": [
 "name_version_lines"
 ]
 },
 "https://documentation.commvault.com/2023e/commcell-console/third_party_applications_installed_by_commvault_installer.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 11,
 "sha": "4d35b762a1058e2e49c7ac0b98adcd3f11919d8e3e16f7d6a69271ace6e1866a",
@@ -1611,30 +1642,30 @@
 ]
 },
 "https://documentation.commvault.com/2024e/commcell-console/third_party_applications_installed_by_commvault_installer.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 10,
-"sha": "c62635419a74847671a0782262e01db3a1f52dce85093968240ecde78b8b559d",
+"sha": "47b95804ec8536bb9e2255f30eae78f5879fd27126d88bb5b026876c63a58d3e",
 "status": "ok",
 "via": [
 "name_version_lines"
 ]
 },
 "https://documentation.solarwinds.com/en/Success_Center/dameware/Content/dameware_third_party_software_list.htm": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 17,
-"sha": "09bf8f8a698e833f53a4991da700be29b37938ef7d87f6fa9d2c11580e469fff",
+"sha": "c41d3c440044a1b57a43159940fc88b8f47fba746b383c8c9290bf6ae1b781ac",
 "status": "ok",
 "via": [
 "html_table"
 ]
 },
 "https://documentation.solarwinds.com/en/success_center/servu/content/servu_third_party_software_list.htm": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 11,
-"sha": "8db92f793e030f0a2b2e3896fd2788547c686fedee1b88d2db41887327b0e905",
+"sha": "64809facaff93f19894f356e225b6f891b9d8c32bffda6619f0970ea11af4b30",
 "status": "ok",
 "via": [
 "html_table"
@@ -1651,10 +1682,10 @@
 ]
 },
 "https://download.manageengine.com/products/self-service-password/adselfservice-plus-third-party-apps-list.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
-"n": 124,
-"sha": "715bc233ca4781428f1ce932c2863d9024b6c5ab4e56b7c771de78bdb40736f9",
+"n": 136,
+"sha": "958b100e19b1101694fe8b97cb01ee30490313214af85713f431dbce9df64a80",
 "status": "ok",
 "via": [
 "jar_names"
@@ -2538,7 +2569,7 @@
 ]
 },
 "https://help.ivanti.com/ht/help/en_US/ISM/2024/ITSM_AttributionReport__Q22024.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 89,
 "sha": "a237c4485035382474bb1c6bf65527c8c6a9ac5cee9ecc391bd83525283885a9",
@@ -2548,7 +2579,7 @@
 ]
 },
 "https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions-22.4R1.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 133,
 "sha": "06e54649aee19ec8133eaa30bc8b62acb3756de202dea6f64ad9fa5e33578f55",
@@ -2558,7 +2589,7 @@
 ]
 },
 "https://help.ivanti.com/ps/help/en_US/ICS/22.x/ICS-Attributions.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 149,
 "sha": "ab06d49dee1f1dab86596e2be13362ac0835ca2c16771ebf3597ad8464661e72",
@@ -2568,7 +2599,7 @@
 ]
 },
 "https://help.ivanti.com/ps/help/en_US/ICS/9.1RX/9.1R18.7-Connect-Secure-Attributions.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 131,
 "sha": "5c8eb41b6d3e3f72e90e139585720e66531d0df708c11f8dcdcc8d56b3f2836a",
@@ -2578,7 +2609,7 @@
 ]
 },
 "https://help.ivanti.com/ps/help/en_US/ISAC/22.X/22.8.5Desktop-Client-Attributions.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 59,
 "sha": "4f30e061e944f971fffd845050f352eb6dd5573f79c1b62a946cc30eff7d4bb1",
@@ -2588,7 +2619,7 @@
 ]
 },
 "https://help.ivanti.com/ps/help/en_US/SD/25.x/SD%20Attribution.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 54,
 "sha": "2ef67080bc1d23b90f6c352bd236094cdb01445e7173638eafe2f3027b8fad92",
@@ -3673,7 +3704,7 @@
 ]
 },
 "https://support.axway.com/fr/articles/download-attachment/hash/7331c59682b7507655685cce49664d46-1/kb/194100": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 76,
 "sha": "303dc4c15f24703e517c2c7d1043287990d0cfb2bdf26f51d38ed8b684ae26cd",
@@ -3685,7 +3716,7 @@
 ]
 },
 "https://techdocs.f5.com/en-us/bigip-16-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 290,
 "sha": "7ba9598be058445e62ad18e13aa5e636f28c8a5e2f4ba916bdb02b619409a5c4",
@@ -3695,7 +3726,7 @@
 ]
 },
 "https://techdocs.f5.com/en-us/bigip-17-1-0/big-ip-open-source-notices-and-software-acknowledgments/02.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
 "n": 297,
 "sha": "011134d646a07a766d38e7805b40b0a679faca18af4233a94432710143ae24c0",
@@ -3705,17 +3736,17 @@
 ]
 },
 "https://techdocs.f5.com/en-us/bigip-17-5-0/big-ip-open-source-notices-and-software-acknowledgments/02.html": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "html",
-"n": 307,
-"sha": "1782ad8d8b0470c5576658daabb914d4fe95fa044c6e5a21720ca0cfa0ba0527",
+"n": 301,
+"sha": "43ebf5f11becd86d2ad66ab5b623d6dfdf9d92558dc4b4041068815d586ea692",
 "status": "ok",
 "via": [
 "includes_prose"
 ]
 },
 "https://www.citrix.com/content/dam/citrix/en_us/documents/downloads/netscaler-adc/NetScaler_11.1_Third_Party_Notices.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 266,
 "sha": "d0d6836c275e10963d40d802ecabab7d98984b6af75f0e4b9d0f0c7d2ff4ee08",
@@ -3725,7 +3756,7 @@
 ]
 },
 "https://www.commoncriteriaportal.org/nfs/ccpfiles/files/epfiles/NSCIB-CC-2400012-01-ST_1.8.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 73,
 "sha": "7187b6330feac804958afa3b85ac3f75144bc484b28d44ff76bb188d2dbe8dd3",
@@ -4076,7 +4107,7 @@
 ]
 },
 "https://www.watchguard.com/help/docs/fireware/12/en-US/v12_10_copyright-licensing_guide.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 387,
 "sha": "6c7575faa4de5e41e902f2d2c6765094154f1cf1654b9c6a60014289244efcaf",
@@ -4087,7 +4118,7 @@
 ]
 },
 "https://www.watchguard.com/help/docs/fireware/12/en-US/v12_11_copyright-licensing_guide.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 392,
 "sha": "24396e9a6335eea00e49d4cc09ebc979c8d5cbbbdeac5524a1e80ffeb5d78089",
@@ -4098,7 +4129,7 @@
 ]
 },
 "https://www.watchguard.com/help/docs/fireware/12/en-US/v12_12_copyright-licensing_guide.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 394,
 "sha": "dc7389e78178d34fc25ad72e74315e1ca1041122ba7b5a637e788a2d48ed8185",
@@ -4109,7 +4140,7 @@
 ]
 },
 "https://www.watchguard.com/help/docs/fireware/12/en-US/v12_5_copyright-licensing_guide.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-23",
 "kind": "pdf",
 "n": 342,
 "sha": "6807f2959e16174eafbd805e1282f29c927bd585be19f08283071018c1eac14c",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-23T00:36:11Z",
+ "built": "2026-11-23T18:45:42Z",
  "threats": [
   {
    "c": "vcenter",
@@ -79,12 +79,12 @@
    "flagged_total": 2,
    "products": 3,
    "unfixed": 1,
-   "epss": 0.03813,
+   "epss": 0.05874,
    "scores": [
     {
      "v": "CVE-2026-90436",
      "s": 9.8,
-     "e": 0.03813,
+     "e": 0.05874,
      "k": "2026-11-18"
     }
    ],
@@ -139,14 +139,14 @@
     }
    ],
    "flagged_total": 11,
-   "products": 454,
-   "unfixed": 91,
-   "epss": 0.45636,
+   "products": 457,
+   "unfixed": 94,
+   "epss": 0.57324,
    "scores": [
     {
      "v": "CVE-2026-114938",
      "s": 8.1,
-     "e": 0.45636
+     "e": 0.57324
     }
    ],
    "cvss": 8.1
@@ -601,7 +601,7 @@
    "cvss": 8.6
   }
  ],
- "epss_date": "2026-11-22",
+ "epss_date": "2026-11-23",
  "watching": [
   {
    "c": "openssl",
@@ -627,7 +627,7 @@
    ],
    "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.",
    "products": 187,
-   "unfixed": 31
+   "unfixed": 30
   },
   {
    "c": "tomcat",
@@ -677,10 +677,10 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20656,
-  "products_with_data": 8785,
-  "inventories": 420,
-  "inventory_components": 287797,
+  "assertions": 20699,
+  "products_with_data": 8786,
+  "inventories": 423,
+  "inventory_components": 301362,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16269,
@@ -1089,9 +1089,9 @@
     }
    ],
    "kev": 2,
-   "assertions": 7407,
+   "assertions": 7410,
    "products": 6149,
-   "contains": 2589,
+   "contains": 2592,
    "in_range": 11,
    "verdicts": {
     "not_affected": 4258,
@@ -1100,7 +1100,7 @@
     "fixed": 1357,
     "under_investigation": 159,
     "workaround": 251,
-    "present": 55
+    "present": 58
    },
    "exploitation": {
     "exploited": 1
@@ -1322,12 +1322,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 208,
+   "assertions": 211,
    "products": 90,
-   "contains": 200,
+   "contains": 203,
    "in_range": 26,
    "verdicts": {
-    "present": 144,
+    "present": 147,
     "fixed": 45,
     "not_affected": 4,
     "workaround": 11,
@@ -1433,14 +1433,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 936,
+   "assertions": 939,
    "products": 478,
-   "contains": 605,
+   "contains": 608,
    "in_range": 77,
    "verdicts": {
     "workaround": 263,
     "fixed": 127,
-    "present": 213,
+    "present": 216,
     "not_affected": 82,
     "under_investigation": 1,
     "affected": 2,
@@ -1531,12 +1531,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 97,
+   "assertions": 100,
    "products": 74,
-   "contains": 84,
+   "contains": 87,
    "in_range": 5,
    "verdicts": {
-    "present": 60,
+    "present": 63,
     "under_investigation": 1,
     "fixed": 19,
     "not_affected": 12,
@@ -1694,18 +1694,18 @@
     }
    ],
    "kev": 13,
-   "assertions": 846,
-   "products": 560,
-   "contains": 550,
+   "assertions": 852,
+   "products": 563,
+   "contains": 556,
    "in_range": 35,
    "verdicts": {
     "fixed": 350,
     "runtime_dependent": 17,
-    "workaround": 46,
+    "workaround": 49,
     "not_affected": 173,
     "affected": 53,
     "under_investigation": 75,
-    "present": 101,
+    "present": 104,
     "unknown": 1,
     "absent": 30
    },
@@ -1822,12 +1822,12 @@
    "contains": 180,
    "in_range": 50,
    "verdicts": {
-    "fixed": 85,
-    "workaround": 29,
+    "fixed": 90,
+    "workaround": 25,
     "under_investigation": 68,
     "not_affected": 53,
     "present": 54,
-    "affected": 12,
+    "affected": 11,
     "absent": 10
    },
    "exploitation": {}
@@ -2220,12 +2220,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 247,
+   "assertions": 250,
    "products": 177,
-   "contains": 226,
-   "in_range": 62,
+   "contains": 229,
+   "in_range": 63,
    "verdicts": {
-    "present": 136,
+    "present": 139,
     "workaround": 15,
     "fixed": 75,
     "not_affected": 21
@@ -2902,13 +2902,13 @@
     }
    ],
    "kev": 0,
-   "assertions": 225,
+   "assertions": 228,
    "products": 111,
-   "contains": 225,
+   "contains": 228,
    "in_range": 107,
    "verdicts": {
     "workaround": 5,
-    "present": 164,
+    "present": 167,
     "fixed": 53,
     "affected": 3
    },
@@ -3341,12 +3341,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 138,
+   "assertions": 141,
    "products": 100,
-   "contains": 130,
+   "contains": 133,
    "in_range": 34,
    "verdicts": {
-    "present": 86,
+    "present": 89,
     "affected": 18,
     "not_affected": 8,
     "fixed": 26
@@ -3417,12 +3417,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 174,
+   "assertions": 177,
    "products": 131,
-   "contains": 170,
+   "contains": 173,
    "in_range": 38,
    "verdicts": {
-    "present": 101,
+    "present": 104,
     "fixed": 47,
     "workaround": 12,
     "affected": 10,
@@ -3466,12 +3466,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 159,
+   "assertions": 162,
    "products": 120,
-   "contains": 156,
+   "contains": 159,
    "in_range": 26,
    "verdicts": {
-    "present": 86,
+    "present": 89,
     "fixed": 64,
     "affected": 6,
     "not_affected": 3
@@ -3711,12 +3711,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 37,
+   "assertions": 40,
    "products": 23,
-   "contains": 32,
-   "in_range": 18,
+   "contains": 35,
+   "in_range": 19,
    "verdicts": {
-    "present": 30,
+    "present": 33,
     "fixed": 2,
     "absent": 1,
     "not_affected": 4
@@ -6070,12 +6070,12 @@
     }
    ],
    "kev": 2,
-   "assertions": 47,
+   "assertions": 50,
    "products": 21,
-   "contains": 43,
+   "contains": 46,
    "in_range": 1,
    "verdicts": {
-    "present": 35,
+    "present": 38,
     "fixed": 8,
     "not_affected": 4
    },
@@ -6446,12 +6446,12 @@
     }
    ],
    "kev": 3,
-   "assertions": 39,
+   "assertions": 40,
    "products": 26,
-   "contains": 39,
+   "contains": 40,
    "in_range": 0,
    "verdicts": {
-    "present": 11,
+    "present": 12,
     "workaround": 2,
     "fixed": 21,
     "affected": 5
@@ -6681,12 +6681,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 8,
+   "assertions": 11,
    "products": 5,
-   "contains": 4,
-   "in_range": 2,
+   "contains": 7,
+   "in_range": 3,
    "verdicts": {
-    "present": 4,
+    "present": 7,
     "not_affected": 4
    },
    "exploitation": {}
@@ -7568,11 +7568,11 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 5286,
-   "latest": "2026-11-22",
+   "assertions": 5289,
+   "latest": "2026-11-23",
    "publishers": {
-    "Red Hat Product Security": 3245,
-    "Siemens ProductCERT": 892,
+    "Red Hat Product Security": 3246,
+    "Siemens ProductCERT": 894,
     "CISA": 681,
     "Cisco": 238,
     "Microsoft Security Response Center": 104,
@@ -7595,8 +7595,8 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 2833,
-   "latest": "2026-11-21",
+   "assertions": 2873,
+   "latest": "2026-11-23",
    "fv": "auto-discovered",
    "dp": [
     "https://docs.paloaltonetworks.com/oss-listings"

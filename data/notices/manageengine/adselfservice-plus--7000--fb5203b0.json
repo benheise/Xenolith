@@ -5,6 +5,10 @@
 "version": "23.0.0"
 },
 {
+"name": "antisamy",
+"version": "1.7.7"
+},
+{
 "name": "batik-all",
 "version": "1.16"
 },
@@ -105,6 +109,10 @@
 "version": "1.3.1"
 },
 {
+"name": "esapi",
+"version": "2.7.0.0"
+},
+{
 "name": "failureaccess",
 "version": "1.0.2"
 },
@@ -185,6 +193,26 @@
 "version": "2.21.1"
 },
 {
+"name": "jasperreports",
+"version": "7.0.6"
+},
+{
+"name": "jasperreports-data-adapters",
+"version": "7.0.6"
+},
+{
+"name": "jasperreports-excel-poi",
+"version": "7.0.6"
+},
+{
+"name": "jasperreports-jdt",
+"version": "7.0.6"
+},
+{
+"name": "jasperreports-pdf",
+"version": "7.0.6"
+},
+{
 "name": "java-jwt",
 "version": "4.2.1"
 },
@@ -249,6 +277,10 @@
 "version": "2.0.3"
 },
 {
+"name": "kotlin-stdlib",
+"version": "1.7.21"
+},
+{
 "name": "kryo",
 "version": "4.0.1"
 },
@@ -275,6 +307,10 @@
 {
 "name": "mssql-jdbc",
 "version": "8.4.1.jre8"
+},
+{
+"name": "neko-htmlunit",
+"version": "4.17.0"
 },
 {
 "name": "netty-all",
@@ -421,6 +457,10 @@
 "version": "1.2.1"
 },
 {
+"name": "slf4j-api",
+"version": "2.0.17"
+},
+{
 "name": "smslib",
 "version": "3.5.2"
 },
@@ -457,12 +497,20 @@
 "version": "1.2.5"
 },
 {
+"name": "unboundid-ldapsdk",
+"version": "7.0.4"
+},
+{
 "name": "webauthn4j-core",
 "version": "0.21.8.RELEASE"
 },
 {
 "name": "webauthn4j-util",
 "version": "0.21.8.RELEASE"
+},
+{
+"name": "woodstox-core",
+"version": "7.1.0"
 },
 {
 "name": "xmlbeans",
@@ -506,8 +554,8 @@
 "found_via": "hand-listed",
 "kind": "pdf",
 "product": "ADSelfService Plus",
-"retrieved": "2026-11-08",
-"sha256": "715bc233ca4781428f1ce932c2863d9024b6c5ab4e56b7c771de78bdb40736f9",
+"retrieved": "2026-11-23",
+"sha256": "958b100e19b1101694fe8b97cb01ee30490313214af85713f431dbce9df64a80",
 "supplier": "ManageEngine",
 "url": "https://download.manageengine.com/products/self-service-password/adselfservice-plus-third-party-apps-list.pdf",
 "version": "7000"
