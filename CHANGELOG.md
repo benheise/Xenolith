@@ -3,6 +3,67 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-24: Java4Shell recheck
+
+Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 16 new statements and 13
+updated rows (469 Java4Shell statements in all), each read on the vendor's own page.
+
+- **Status changes:**
+  - PaperCut (advisory updated 24 November): NG/MF 26.0.7 is out with a fixed Java, so the
+    Application Server and Site Server move from workaround to fixed. 25.x has no fix yet and
+    stays on the service.conf mitigation; the rows say so.
+  - Splunk SVD-2026-1102 (updated 24 November) names fixed releases. AppDynamics On-Premises
+    Virtual Appliance (26.7.2), Analytics Agent (26.10.2), Machine Agent (26.8.1) and Database
+    Agent (26.7.2) move from affected to fixed; Events Service and Enterprise Console (26.7.4) from
+    workaround to fixed. Splunk Attack Analyzer goes from affected to workaround: Splunk has
+    deployed a mitigation on the hosted service but names no fix. EUM Server, Private Synthetic
+    Agent, Python Agent and PHP Agent are still in progress.
+  - Appian (KB-2445): self-managed Appian moves from affected to fixed, with a fixed release on each
+    supported line from 24.4.2182.0 to 26.9.257.0.
+- **New products from vendors already tracked:**
+  - Splunk: AppDynamics On-Premises Controller (fixed in 26.7.4) and Splunk Observability Cloud
+    (affected, fix in progress) were added to the affected list on 24 November; Splunk Enterprise
+    Security was added as unaffected. Splunk OpenTelemetry Collector and Synthetics Runner, listed
+    as unaffected on the advisory but missing from the census, are added too.
+  - Hitachi Vantara now has a separate Ops Center alert (Solution 261120170710497, updated 23
+    November). Common Services, Administrator, Configuration Manager and the Analyzer's Virtual
+    Storage Software Agent and Adapter are affected; Hitachi's remedy is to swap in a fixed Amazon
+    Corretto yourself (21.0.13.1.2 or 17.0.21.1.2), and no release bundles one, so they go in as
+    workaround, as Broadcom's EEM did. The Analyzer's Probe and Detail View is affected only on
+    Java 17.0.6 or later and has the JVM flag as a temporary mitigation. The not-affected Automator
+    and Analyzer (Server, RAID Agent, Viewpoint) rows now cite this alert (Corretto 11).
+  - Dynatrace (update of 24 November): an interim JVM flag for private Synthetic locations not yet
+    upgraded; the row stays fixed.
+- **New vendors:**
+  - Paessler (advisory modified 20 November): PRTG Network Monitor, PRTG Enterprise Monitor and
+    PRTG Hosted Monitor not affected.
+  - Hootsuite (trust center notice, 18 November): Hootsuite and Lumen by Talkwalker not affected;
+    the CPU feature the exploit needs isn't in its environments.
+- **No change:** Cisco (still v1.4 of 23 November, every fix TBD), Atlassian (post edited 24
+  November; Data Center releases with the fixed Temurin still "in coming days"), Keycloak (19
+  November; Operator still on the workaround), Fortinet (23 November, 47 under investigation),
+  Arista (rev 1.0), Hitachi Vantara's main alert (23 November), Citrix (20 November), Sophos (v5 of
+  20 November), Trend Micro (20 November), Barracuda, DigiCert, KNIME, Exalate, OvalEdge (next
+  update due 25 November), Elastic (9.6.0 and Cloud Hosted's JDK update still to come), Google
+  GCP-2026-082 (23 November; Dataproc and Distroless still on the mitigation), Okta, Palo Alto
+  Networks, Jenkins, CloudBees, Apache Kafka, Quarkus, BellSoft, Broadcom's EEM article, Tenable,
+  Sonatype.
+- Exploitation unchanged: probing and exploit attempts, no confirmed compromise. Not in CISA KEV
+  (1,795 entries; the 24 November additions are Optimizely, Idunno AntiCsrf and Drupal core).
+  PaperCut (24 November) and Fortinet still report no known exploitation.
+- **Not read:** Mimecast's trust center and Esri's post (HTTP 403), so their rows are unchanged.
+  F5's K000164290 (Oracle Java CVE-2026-114938) is a script-drawn page that neither plain fetching
+  nor the search tool's fetcher renders, so F5 has no Java4Shell statement yet. Sophos' advisory (dropped
+  connection) and Arista's (HTTP 406) were read through the search tool's fetcher.
+- **Not added:** SecurityWeek, SC World, eSecurityPlanet and Previdian reports of exploit attempts
+  (attempts have been noted since 19 November; none confirms a compromise); a news site's affected-products list;
+  GitLab's and Datadog's posts (detection guidance, not statements about their own products);
+  Check Point's IPS protection CPAI-2026-18722; an open Camunda GitHub issue about its 7-to-8
+  Diagram Converter (an issue, not a statement).
+- Still silent: Ping Identity, JFrog (no product statement), Broadcom's VMware Tanzu and Symantec
+  products, IBM (none of the 18 bulletins the search found names the CVE), Oracle's own products
+  (the CSPU is still at revision 1), SAP and SapMachine, JetBrains Runtime and the IDEs.
+
 ## 2026-11-23: Java4Shell recheck
 
 Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 43 new statements and 17
