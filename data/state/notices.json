@@ -120,7 +120,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/MFT/license_MFT_LINUX_mft-4.26.1.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 19,
 "sha": "a16e0b332642c701094bd2ce3bb41c32c32201b668759fa3ed016c6aac974706",
@@ -131,11 +131,11 @@
 },
 "https://content.mellanox.com/Legal/MFT/license_MFT_LINUX_mft-4.30.0.pdf": {
 "error": "https://content.mellanox.com/Legal/MFT/license_MFT_LINUX_mft-4.30.0.pdf: HTTP Error 404: Not Found",
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "status": "error"
 },
 "https://content.mellanox.com/Legal/MLNX_OFED/license_MLNX_OFED_23.10-2.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 22,
 "sha": "b602cfd8403737bff59666dca18766caeb662ead4dbed57f38e17e9a098faaf9",
@@ -145,7 +145,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_ConnectX_Firmware_39.3004.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 2,
 "sha": "3fba2f1322a408cac46ec68343bc2a87ead4da13963deb666e49a6f0b7d232ac",
@@ -155,7 +155,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_ConnectX_Firmware_43.1000.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 2,
 "sha": "dde47eb8829881c1be95b25797b78d7cee9133c093c5d42b798ade003508874b",
@@ -165,7 +165,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_DPCP_1.1.43.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 8,
 "sha": "553c8ab05b3bcae3917684250bdced2eb8dc8b9a33ec789c024d4b5534735ace",
@@ -175,7 +175,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_DPCP_1.1.48.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 8,
 "sha": "97113a3aba2804871490482d7d4353d2008f37611fb2145301e94ec7bb71625b",
@@ -185,7 +185,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_HPCX_clusterkit_hpcx2.17.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 3,
 "sha": "2cb6e4b556633d698b06bb74b3e46dd56f9e3040766cdfa9c26ca0c020d7a412",
@@ -196,11 +196,11 @@
 },
 "https://content.mellanox.com/Legal/license_HPCX_clusterkit_hpcx_v2.21.pdf": {
 "error": "https://content.mellanox.com/Legal/license_HPCX_clusterkit_hpcx_v2.21.pdf: HTTP Error 404: Not Found",
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "status": "error"
 },
 "https://content.mellanox.com/Legal/license_HPCX_hcoll_hpcx2.17.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 48,
 "sha": "312ad94d7f507c7adce57e6a04016abdac8467edba77eb3b9eed5ee48c371558",
@@ -210,7 +210,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_HPCX_hcoll_hpcx_v2.21.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 0,
 "sha": "15f4b02f15ef250f49fff60ef2410f79cb0996af1152a9603baaa2f45a520c08",
@@ -218,7 +218,7 @@
 "via": []
 },
 "https://content.mellanox.com/Legal/license_HPCX_mpi_tests_hpcx2.17.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 5,
 "sha": "be2d9370c148947201c21759624da66c1bb18542ae0dd8dec9ca522b2868fe28",
@@ -228,7 +228,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_HPCX_mpi_tests_hpcx_v2.21.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 2,
 "sha": "1b90cd816c9254bcac8dfd2371cba776dbea0de5a2be5d986a9360656ccdca94",
@@ -238,7 +238,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_HPCX_ompi_hpcx_v2.21.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 3,
 "sha": "e728fde0b4419937d0ad959a233c8c4e5826d04c9173f3074cf45b6a1dae0581",
@@ -248,7 +248,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_HPCX_sharp_hpcx2.17.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 39,
 "sha": "0dc6a645f5dd238cb003642f9ce8dc3e6639b5285d3d218eb020e44aeb9e37e9",
@@ -258,7 +258,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_HPCX_sharp_hpcx_v2.21.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 0,
 "sha": "0ee08231506afc04f120e25f69668c6247a74e23b863ccfc29f8bac3eda24817",
@@ -266,7 +266,7 @@
 "via": []
 },
 "https://content.mellanox.com/Legal/license_HPCX_ucx_hpcx_v2.21.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 2,
 "sha": "d6e1edb4cddf51d670477a554f171fb53c6c58a96eb7bf63cb51457e27aa5882",
@@ -276,7 +276,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_MLNX_OFED_24.10-0.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 19,
 "sha": "d102d2ebd7390d6da4aa1e3641931be8a27038e55a4109c06c18159323d57c98",
@@ -286,7 +286,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_UFM_6.15.4-X.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 13,
 "sha": "99a0ef602e1924beb34478842f98dc6ce5824a33129b272d6bd13bf6a3ad79a2",
@@ -296,7 +296,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_libvma_9.8.60.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 2,
 "sha": "fad2a33376e5a5d0837283d6770f15374f08b777d61293bc9de0049c570e8e29",
@@ -306,7 +306,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_libxlio_3.20.8.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 2,
 "sha": "fb1f221b777227e93772ac514d8e262844416f669fccdd1d98d55c96845648f1",
@@ -316,7 +316,7 @@
 ]
 },
 "https://content.mellanox.com/Legal/license_libxlio_3.30.5.pdf": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 2,
 "sha": "7ed7ca38c85e67ed94b39f1ddb56eab728592749df046f02691c4328c02b8430",
@@ -1792,7 +1792,7 @@
 "via": []
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/1f97e0ca1be94be7b2fbdba712e44a55?v=f0b27619": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 213,
 "sha": "6801cc71e2183d392acd9192cfed3a8dba77df694ef37f91c17ed1f003667c51",
@@ -1822,7 +1822,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/3f6cb944648140e5806ce8aedab0d8ea?v=a974130f": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 13,
 "sha": "dfd21ff3a394de5ecd9620db28aa3cb10d8e0cfb5a9c417d61cee29778ce2c02",
@@ -1863,7 +1863,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/581f266c864a472ab60ab5d4c0a194fa?v=80590889": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 498,
 "sha": "7e71da1343462d115a770582c79b33be84b3c22bca0cf7fbb7b5e89b5fff804a",
@@ -1874,7 +1874,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/59e6403139c94afdb58b7dcba171e23a?v=32b0edbc": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 317,
 "sha": "6055a5ee50b32c0549d0e703435fbe66af5e78de32c43ca8f758c26511fb63a6",
@@ -1895,7 +1895,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/6486e738216a4b5d92faada4819699c0?v=91a7f874": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 499,
 "sha": "d949cd6e3a28464cc404baca17a54076fb4d1dac4f6fb450645494057b7094b8",
@@ -1936,7 +1936,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/67d634179b964d69b2a142d600d2e2b1?v=076dd30d": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 494,
 "sha": "11bc2be37bb240a035e9bf717c9758fdb35fa1ac01c702e3c2e2622885089127",
@@ -1947,7 +1947,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/69db1d7727e6445584fd4dcc5a44f6db?v=c544852a": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 20,
 "sha": "a66a8e49ee2de4fd06c05ed577918f65f868b51723735f5e7bd87de90b492a51",
@@ -2092,7 +2092,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/88510fb7848249c99fbbeb1489cb6f38?v=d0c639bd": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 201,
 "sha": "27f5e8f2535af11a9ea592b9224cfcd0e3c3c6af76c8c246ee34e59cb80f4021",
@@ -2134,7 +2134,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/9504eac65aaf46b5a5ad1dddf41501a9?v=bdfa264e": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 44,
 "sha": "74218e90adb0b02a0a26fc3523adde7b7b316cda74bc2e0c3dc3c1f513593ddf",
@@ -2185,7 +2185,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/a2491dda5bc14f05b38bb89650bf9778?v=75e3c838": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 13,
 "sha": "7023307dff0047c90353037ae8c8f4ef747647757da1d4d4e38c6e8747b9d34c",
@@ -2245,7 +2245,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/abed77c02fc14541af2314af2177ad53?v=a317c294": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 102,
 "sha": "958ada675cf67c97172674f3ad634705d1a1dd4769ae13eaf19d4258041bce8b",
@@ -2255,7 +2255,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/af1f3b57429344ab95746c47458a5509?v=f7437ddd": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 434,
 "sha": "f921f20fd60cabf436baea0169fbe97fbbb8fbddba730cf59ca9249d5827d36a",
@@ -2265,7 +2265,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b0967ba1894b4ce1bb88afcf55de47d6?v=b1d67a9f": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 471,
 "sha": "6e59b958f823ff5e681121d75258ebd0298e5eb16cfebb7aad12e1b990cb0b3f",
@@ -2286,7 +2286,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b2be4ea90a0847b89dd2150e0d3e0c25?v=b5552ff7": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 20,
 "sha": "76469475b0a834fdbc875402dc2c4191a12ee6445d862e2f130627efcc4a6aad",
@@ -2336,7 +2336,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/d368c4e1647e4aac997ef26fab8e7ce1?v=1c757c22": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 116,
 "sha": "f22b5b0461a57393fd30d9cbb8c3d9c286e53051c8e9bb543c9be9073dd42ff6",
@@ -2429,7 +2429,7 @@
 ]
 },
 "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ec140bb810ef4280899693a8aa01d945?v=f55c96e6": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "pdf",
 "n": 808,
 "sha": "a2c497fb133a303f9c172b7ea51e02309743a572ac79668adaf3e82892dc30cc",
@@ -2644,7 +2644,7 @@
 ]
 },
 "https://opensource.apple.com/releases/#ios-26.2": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "apple-release",
 "n": 2,
 "sha": "bbd670a55506918c679ceb52355d64a9315d453d0c668431374354deb57119fa",
@@ -2655,7 +2655,7 @@
 ]
 },
 "https://opensource.apple.com/releases/#ios-26.3": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "apple-release",
 "n": 2,
 "sha": "a76be068e14b19ef18a2ac86c7a43400e53feb5f5324bb2cde9c6f9687f5e7ac",
@@ -2666,7 +2666,7 @@
 ]
 },
 "https://opensource.apple.com/releases/#ios-26.4": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "apple-release",
 "n": 2,
 "sha": "2d6c262585109c28accf0f5a12c7d450af91a9875b8d7f193fa456eee87c5e99",
@@ -2677,7 +2677,7 @@
 ]
 },
 "https://opensource.apple.com/releases/#ios-26.5": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "apple-release",
 "n": 2,
 "sha": "b3df7d17ad49261040d5f6b3c4488d2bfa3d5897623e3948e440313e18a45595",
@@ -2688,7 +2688,7 @@
 ]
 },
 "https://opensource.apple.com/releases/#macos-26.2": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "apple-release",
 "n": 171,
 "sha": "58cc7542bc481e0461ce5ea368f4f7c2dba8f61b67b1e10fb1ecfc23b823ac38",
@@ -2699,7 +2699,7 @@
 ]
 },
 "https://opensource.apple.com/releases/#macos-26.3": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "apple-release",
 "n": 171,
 "sha": "bd747be4149dfb7f0cad927a7d4acb53d523901c2616a4de4619048de0590f6d",
@@ -2710,7 +2710,7 @@
 ]
 },
 "https://opensource.apple.com/releases/#macos-26.4": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "apple-release",
 "n": 171,
 "sha": "5c5d4f84fa1b3b73bd45188ca2016f48308fb4471e797ca0a18d572ad2f82b94",
@@ -2721,7 +2721,7 @@
 ]
 },
 "https://opensource.apple.com/releases/#macos-26.5": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "apple-release",
 "n": 171,
 "sha": "7439e933843209faca2abfe12bf8c75a5dec6e7749a6e7db6388ca79f7ba657f",
@@ -3931,7 +3931,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-ibm-aix-4.6-4.6.0.1762&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 22,
 "sha": "73fe907f804df7f7eea3483c4b7495b81d4ad326d0d05bd1dce006ffc84a8d58",
@@ -3941,7 +3941,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-oracle-solaris-4.6-4.6.0.1762&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 24,
 "sha": "fe83fba14673e0e4efeba9972a36e4888a12613a66fc29657c55bda6feff8bc8",
@@ -3951,7 +3951,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-windows-6.2-6.2.0.115&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 59,
 "sha": "5bb6e39b6b88db3427f4d374bf0493391cb1c3707e9b4f53e78c48efff55b06f",
@@ -3961,7 +3961,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-agent-for-windows-6.3-6.3.0.125&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 58,
 "sha": "24cf459fc58407929bf8572ec8b91c5196d78684a3433b12027ad405aa7ae961",
@@ -3971,7 +3971,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-backup-and-replication-12.3-12.3.0.288&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 1117,
 "sha": "f9d3f0f2824b8f5db36ff598276810cbd9c07d9356ae6294e7549de514ad9e0d",
@@ -3981,7 +3981,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-backup-for-microsoft-365-8.0-13.0.1.43&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 486,
 "sha": "2e865ae566ef9186750babed55d352eff5d2f9edcca494080c99ae2c0f3164f3",
@@ -3991,7 +3991,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-backup-for-salesforce-3.1-3.1.0-2198&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 505,
 "sha": "8296da5f5df902a4eaea8f88eaa376f2b72d10afdcdb2327da1bacad38c9c726",
@@ -4001,7 +4001,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components-export-veeam-one-12.3-12.3.0.4522&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 302,
 "sha": "7e56e9b3bc3161c4a169cdd4bd160b6eae78db62d417f6050a6d512daf672c31",
@@ -4011,7 +4011,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_ovirt_kvm_plug_in_for_veeam_backup_and_replication_12.5&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 240,
 "sha": "870df2bd38487aac29f538bd624720f7208f56122ece113013ca77b3db1b7327",
@@ -4021,7 +4021,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_red_hat_virtualization_plug_in_for_veeam_backup_and_replication_4_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 249,
 "sha": "99844a1f74c6ed37c4d6a5e3a97438fda8ba888b3e1dd59874e978b1918721d5",
@@ -4031,7 +4031,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_ibm_aix_4.5&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 22,
 "sha": "0b20d58a936003ebea1902036e9f4239b15198fe3ed639dbe3cebc23c96cda43",
@@ -4041,7 +4041,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_linux_6_1&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 27,
 "sha": "af3ed2ab724c06d67178f569844018413cc8599a88d9b977e2de421286bdf8b6",
@@ -4051,7 +4051,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_mac_2_1&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 28,
 "sha": "e642ff564880503b4b033bfcd10ac92b6370698de3397293a952b8af885e759d",
@@ -4061,7 +4061,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_agent_for_oracle_solaris_4.5&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 24,
 "sha": "e03f5d62ada1c179b2d1718a09a2a4df92cfd2b1701dc2e90628497f4dfe9887",
@@ -4071,7 +4071,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_aws_7_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 336,
 "sha": "616fcb16d7854771c8c2617331b3aca67ac8e35229c33de18df598f4f8a6134d",
@@ -4081,7 +4081,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_aws_8.0_8.0.0.814&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 375,
 "sha": "438420b6da3690a07fc35deacc7b446099b0befb000cedcbc6cbca705afacf8a",
@@ -4091,7 +4091,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_google_cloud_5_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 366,
 "sha": "0ddcc6b848c89cb243a4985a62cb8d6b45e8b0bbc91f6d540a01de4da9c176a5",
@@ -4101,7 +4101,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_microsoft_azure_6_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 375,
 "sha": "5b869e0c4352f275e42bfcc769171f6475fa65de553043c5db008df84b60181c",
@@ -4111,7 +4111,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_microsoft_azure_7.0_7.0.0.451&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 486,
 "sha": "9bc92eee8c9703af10645f471423dd2cdefe84a19949717fc88ab06939590077",
@@ -4121,7 +4121,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_nutanix_ahv_4_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 191,
 "sha": "d6ed852a13c16f15e4e3fd6c0f765e28d160579c5b5dbd2e58131d2633dca845",
@@ -4131,7 +4131,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_nutanix_ahv_5_1&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 303,
 "sha": "8a5d9123a9e02c42d4f99a7d710a4a3895e47412100151c2b33cbd47167828f4",
@@ -4141,7 +4141,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_backup_for_salesforce_2_1&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 580,
 "sha": "290252d22fb9ab13ed4fec4d41e9985bf444ca8c6a66283aad3114c9255df79b",
@@ -4151,7 +4151,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_recovery-orchestrator_7_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 755,
 "sha": "61f7cb3eedef76be477818e068add1402ec532ce42a2b3872fcf2df4c4d1593d",
@@ -4161,7 +4161,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=components_export_veeam_service_provider_console_8_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 678,
 "sha": "42d8589af1d09c02c1d38ddd4f98f7d4b3998a0185bd1e994b6632cf8da1eaf9",
@@ -4171,7 +4171,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=licenses.vbr_13.0.1.163&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 1067,
 "sha": "32e3fba2f24f232356413c0540a168b032df643d0dd188c2fd213993a81da74b",
@@ -4181,7 +4181,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=licenses.veeamone_rs_13.0.1.5821&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 505,
 "sha": "5a90190d574e57f6ecf872eafb0528231fe94f65084844aef6e3f6d97151d268",
@@ -4191,7 +4191,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=licenses.vro_13.0.0.977&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 1267,
 "sha": "1629f59579710ef90a7058ce993550e168420fb0d6ff56ddac4cb0e8dd5c4f33",
@@ -4201,7 +4201,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=licenses.vspc_9.0.0.2824&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 531,
 "sha": "bf194d230676fe392ccb153cc4b514c0df0cc823cc128f0b471d815d35bd9991",
@@ -4211,7 +4211,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=licenses.vspc_9.1.0.30125&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 417,
 "sha": "2e5466981e6b0cf88825b95dbc066db6ac05e6df4830d2e2baca17dd4d8129b5",
@@ -4221,7 +4221,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=veeam_agent_for_linux_6_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 19,
 "sha": "fa128440f9be4907bef597b0c43340d09c9da6a7c48d50dd8195800ad4fbcffa",
@@ -4231,7 +4231,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=veeam_agent_for_mac_2_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 17,
 "sha": "2cba2ee267548e561c81691f5cff425f5227ff8c84fe77862a1cbaa35b03a131",
@@ -4241,7 +4241,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=veeam_backup_for_google_cloud_platform_4_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 851,
 "sha": "c4bd1d966f2e67f580a22805fbed2f04a26b824683ae5aa5cbd521234e774063",
@@ -4251,7 +4251,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=veeam_backup_for_microsoft_365_7_0&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 79,
 "sha": "905fc8c677a4bdd6f960dcfadf21587e2bd903a8a86f890a62ec6aa5050d98e5",
@@ -4261,7 +4261,7 @@
 ]
 },
 "https://www.veeam.com/services/license/content?file=veeam_management_pack_for_microsoft_system_center_9_0_components_summary&lang=en": {
-"fetched": "2026-11-08",
+"fetched": "2026-11-24",
 "kind": "sbom",
 "n": 4,
 "sha": "68d2c58d51b42802edde97c057381ae8473d4aeb446f4486807b17f12f67fa8d",
