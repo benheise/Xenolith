@@ -9,7 +9,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/vcenter/CVE-2026-123890",
    "url": "https://benheise.github.io/Xenolith/#c=vcenter",
    "title": "vCenter 2026 exploited flaws",
-   "content_text": "Exploited in the wild: CVE-2026-123890, CVE-2026-59310, CVE-2024-37079 in VMware vCenter. In CISA KEV since 2026-01-23 and used in ransomware attacks. EPSS 61.67%. Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), used as a zero-day since early September 2026 according to Mandiant; in KEV since 2026-11-20, a day after publication. Products named: VMware vCenter Server. 5 products have a vendor statement, 0 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-123890, CVE-2026-59310, CVE-2024-37079 in VMware vCenter. In CISA KEV since 2026-01-23 and used in ransomware attacks. EPSS 88.46%. Three flaws reachable by anyone with network access to vCenter, each 9.8 and in CISA KEV. CVE-2026-123890: authentication bypass in the VMware Directory Service (VMSA-2026-0009), used as a zero-day since early September 2026 according to Mandiant; in KEV since 2026-11-20, a day after publication. Products named: VMware vCenter Server. 5 products have a vendor statement, 0 with no fix stated.",
    "date_published": "2026-01-23T00:00:00Z",
    "date_modified": "2026-11-20T00:00:00Z",
    "tags": [
@@ -31,7 +31,7 @@
     "date": "2026-11-20",
     "kev": "2026-01-23",
     "ransomware": true,
-    "epss": 0.61668,
+    "epss": 0.88458,
     "flagged": [
      {
       "k": "vmware/vcenter-server",
@@ -54,7 +54,7 @@
      {
       "v": "CVE-2026-59310",
       "s": 9.8,
-      "e": 0.61668,
+      "e": 0.88458,
       "k": "2026-08-18"
      },
      {
@@ -120,7 +120,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/openjdk/CVE-2026-114938",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-114938",
    "title": "Java4Shell (HotSpot AVX-512 Base64 decoder heap overflow)",
-   "content_text": "Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 57.32%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 500 products have a vendor statement, 97 with no fix stated.",
+   "content_text": "Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 59.27%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 500 products have a vendor statement, 97 with no fix stated.",
    "date_published": "2026-11-17T00:00:00Z",
    "date_modified": "2026-11-17T00:00:00Z",
    "tags": [
@@ -136,7 +136,7 @@
     ],
     "level": "demonstrated_preauth",
     "date": "2026-11-17",
-    "epss": 0.57324,
+    "epss": 0.59265,
     "flagged": [
      {
       "k": "atlassian/confluence-data-center",
@@ -183,7 +183,7 @@
      {
       "v": "CVE-2026-114938",
       "s": 8.1,
-      "e": 0.57324
+      "e": 0.59265
      }
     ]
    }
@@ -493,7 +493,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/brotli/CVE-2026-111497",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-111497",
    "title": "Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)",
-   "content_text": "Exploited in the wild: CVE-2026-111497 in Google Brotli (C library). In CISA KEV since 2026-10-27. EPSS 99.93%. 243 products have a vendor statement, 56 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-111497 in Google Brotli (C library). In CISA KEV since 2026-10-27. EPSS 99.99%. 253 products have a vendor statement, 62 with no fix stated.",
    "date_published": "2026-10-27T00:00:00Z",
    "date_modified": "2026-10-27T00:00:00Z",
    "tags": [
@@ -510,17 +510,17 @@
     "level": "exploited",
     "date": "2026-10-27",
     "kev": "2026-10-27",
-    "epss": 0.99931,
+    "epss": 0.99987,
     "flagged": [],
     "flagged_total": 0,
-    "products": 243,
-    "unfixed": 56,
+    "products": 253,
+    "unfixed": 62,
     "cvss": 9.2,
     "scores": [
      {
       "v": "CVE-2026-111497",
       "s": 9.2,
-      "e": 0.99931,
+      "e": 0.99987,
       "k": "2026-10-27"
      }
     ]

@@ -1,0 +1,4483 @@
+{
+"components": [
+{
+"name": "@babel/runtime",
+"version": "7.13.10"
+},
+{
+"name": "@babel/runtime",
+"version": "7.29.7"
+},
+{
+"name": "@braintree/sanitize-url",
+"version": "7.1.2"
+},
+{
+"name": "@date-fns/tz",
+"version": "1.2.0"
+},
+{
+"name": "@date-fns/utc",
+"version": "2.1.0"
+},
+{
+"name": "@hello-pangea/dnd",
+"version": "16.5.0"
+},
+{
+"name": "@huston007/ts-transformer-shape",
+"version": "0.5.0"
+},
+{
+"name": "@jetbrains/angular-elastic",
+"version": "2.5.1"
+},
+{
+"name": "@jetbrains/icons",
+"version": "4.3.0"
+},
+{
+"name": "@jetbrains/logos",
+"version": "3.0.0-canary.36efb2f.0"
+},
+{
+"name": "@jetbrains/ring-ui",
+"version": "7.0.117"
+},
+{
+"name": "@jetbrains/ring-ui",
+"version": "7.0.133"
+},
+{
+"name": "@jetbrains/websandbox",
+"version": "1.4.2"
+},
+{
+"name": "@mermaid-js/parser",
+"version": "1.2.1"
+},
+{
+"name": "@module-federation/error-codes",
+"version": "2.9.0"
+},
+{
+"name": "@module-federation/runtime",
+"version": "2.9.0"
+},
+{
+"name": "@module-federation/runtime-core",
+"version": "2.9.0"
+},
+{
+"name": "@module-federation/sdk",
+"version": "2.9.0"
+},
+{
+"name": "@module-federation/webpack-bundler-runtime",
+"version": "2.9.0"
+},
+{
+"name": "@msagl/core",
+"version": "1.1.24"
+},
+{
+"name": "@react-dnd/invariant",
+"version": "4.0.2"
+},
+{
+"name": "@react-dnd/shallowequal",
+"version": "4.0.2"
+},
+{
+"name": "@reduxjs/toolkit",
+"version": "2.12.0"
+},
+{
+"name": "@rjsf/core",
+"version": "5.17.1"
+},
+{
+"name": "@rjsf/utils",
+"version": "5.17.1"
+},
+{
+"name": "@rjsf/validator-ajv8",
+"version": "5.17.1"
+},
+{
+"name": "@sentry-internal/browser-utils",
+"version": "9.1.0"
+},
+{
+"name": "@sentry/browser",
+"version": "9.1.0"
+},
+{
+"name": "@sentry/core",
+"version": "9.1.0"
+},
+{
+"name": "@sentry/react",
+"version": "9.1.0"
+},
+{
+"name": "@stepwisehq/prosemirror-collab-commit",
+"version": "1.0.5"
+},
+{
+"name": "@xyflow/react",
+"version": "12.10.1"
+},
+{
+"name": "@xyflow/system",
+"version": "0.0.75"
+},
+{
+"name": "ajv",
+"version": "8.20.0"
+},
+{
+"name": "ajv-formats",
+"version": "2.1.1"
+},
+{
+"name": "ajv-i18n",
+"version": "4.2.0"
+},
+{
+"name": "angular",
+"version": "1.6.10"
+},
+{
+"name": "angular-animate",
+"version": "1.6.10"
+},
+{
+"name": "angular-gettext",
+"version": "2.3.8"
+},
+{
+"name": "angular-i18n",
+"version": "1.6.10"
+},
+{
+"name": "angular-messages",
+"version": "1.6.10"
+},
+{
+"name": "angular-resource",
+"version": "1.6.10"
+},
+{
+"name": "angular-route",
+"version": "1.6.10"
+},
+{
+"name": "angular-sanitize",
+"version": "1.6.10"
+},
+{
+"name": "angular-tab-trap",
+"version": "1.0.5"
+},
+{
+"name": "angular-touch",
+"version": "1.6.10"
+},
+{
+"name": "aopalliance-repackaged",
+"version": "2.4.0.b10"
+},
+{
+"name": "asm",
+"version": "5.0.3"
+},
+{
+"name": "asm-commons",
+"version": "5.0.3"
+},
+{
+"name": "asm-tree",
+"version": "5.0.3"
+},
+{
+"name": "assert",
+"version": "2.1.0"
+},
+{
+"name": "attr-accept",
+"version": "2.2.5"
+},
+{
+"name": "auto-bind",
+"version": "5.0.1"
+},
+{
+"name": "autosize",
+"version": "4.0.2"
+},
+{
+"name": "awesome-phonenumber",
+"version": "2.43.0"
+},
+{
+"name": "aws.sdk.kotlin:aws-config",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:aws-config-jvm",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:aws-core",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:aws-core-jvm",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:aws-endpoint",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:aws-endpoint-jvm",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:aws-http",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:aws-http-jvm",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:bedrockruntime",
+"version": "1.6.72"
+},
+{
+"name": "aws.sdk.kotlin:bedrockruntime-jvm",
+"version": "1.6.72"
+},
+{
+"name": "aws.smithy.kotlin:aws-credentials",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-credentials-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-event-stream",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-event-stream-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-json-protocols",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-json-protocols-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-protocol-core",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-protocol-core-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-signing-common",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-signing-common-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-signing-default",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-signing-default-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-xml-protocols",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:aws-xml-protocols-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-auth",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-auth-api",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-auth-api-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-auth-aws",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-auth-aws-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-auth-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-client",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-client-engine-default",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-client-engine-default-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-client-engine-okhttp",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-client-engine-okhttp-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-client-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:http-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:identity-api",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:identity-api-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:logging-slf4j2",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:logging-slf4j2-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:runtime-core",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:runtime-core-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:serde",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:serde-form-url",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:serde-form-url-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:serde-json",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:serde-json-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:serde-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:serde-xml",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:serde-xml-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:smithy-client",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:smithy-client-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:telemetry-api",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:telemetry-api-jvm",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:telemetry-defaults",
+"version": "1.6.12"
+},
+{
+"name": "aws.smithy.kotlin:telemetry-defaults-jvm",
+"version": "1.6.12"
+},
+{
+"name": "base64-js",
+"version": "1.3.0"
+},
+{
+"name": "batch-processor",
+"version": "1.0.0"
+},
+{
+"name": "charenc",
+"version": "0.0.2"
+},
+{
+"name": "classnames",
+"version": "2.2.5"
+},
+{
+"name": "classnames",
+"version": "2.3.1"
+},
+{
+"name": "classnames",
+"version": "2.5.1"
+},
+{
+"name": "clipboard-js",
+"version": "0.3.2"
+},
+{
+"name": "clipboard-polyfill",
+"version": "2.4.6"
+},
+{
+"name": "clone-deep",
+"version": "2.0.2"
+},
+{
+"name": "cloud.jetbrains.sdk.ml:jbai-nlc-api",
+"version": "0.2.2"
+},
+{
+"name": "cloud.jetbrains.sdk:jbai-gec-api",
+"version": "2.4.1"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-http-client-runtime",
+"version": "13.0.1"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-http-client-runtime-jvm",
+"version": "13.0.1"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-http-shared-runtime",
+"version": "13.0.1"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-http-shared-runtime-jvm",
+"version": "13.0.1"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-json",
+"version": "13.0.1"
+},
+{
+"name": "cloud.jetbrains.sdk:jcp-sdk-json-jvm",
+"version": "13.0.1"
+},
+{
+"name": "clsx",
+"version": "2.1.1"
+},
+{
+"name": "codemirror",
+"version": "5.58.3"
+},
+{
+"name": "com.ackbox:ackbox-totp",
+"version": "1.1.0"
+},
+{
+"name": "com.amazonaws:aws-java-sdk-core",
+"version": "1.12.742"
+},
+{
+"name": "com.amazonaws:aws-java-sdk-kms",
+"version": "1.12.742"
+},
+{
+"name": "com.amazonaws:aws-java-sdk-s3",
+"version": "1.12.742"
+},
+{
+"name": "com.amazonaws:aws-java-sdk-sqs",
+"version": "1.12.742"
+},
+{
+"name": "com.amazonaws:aws-java-sdk-sts",
+"version": "1.12.742"
+},
+{
+"name": "com.amazonaws:jmespath-java",
+"version": "1.12.742"
+},
+{
+"name": "com.amplitude:java-sdk",
+"version": "1.12.0"
+},
+{
+"name": "com.anthropic:anthropic-java",
+"version": "2.1.0"
+},
+{
+"name": "com.anthropic:anthropic-java-client-okhttp",
+"version": "2.1.0"
+},
+{
+"name": "com.anthropic:anthropic-java-core",
+"version": "2.1.0"
+},
+{
+"name": "com.augustcellars.cose:cose-java",
+"version": "1.1.0"
+},
+{
+"name": "com.auth0:java-jwt",
+"version": "4.4.0"
+},
+{
+"name": "com.beust:jcommander",
+"version": "1.82"
+},
+{
+"name": "com.damnhandy:handy-uri-templates",
+"version": "2.1.8"
+},
+{
+"name": "com.ethlo.time:itu",
+"version": "1.14.0"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-annotations",
+"version": "2.21"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-annotations",
+"version": "2.22"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-core",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-core",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-databind",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.core:jackson-databind",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-cbor",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-cbor",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-blackbird",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-kotlin",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson.module:jackson-module-kotlin",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.jackson:jackson-bom",
+"version": "2.21.6"
+},
+{
+"name": "com.fasterxml.jackson:jackson-bom",
+"version": "2.22.1"
+},
+{
+"name": "com.fasterxml.woodstox:woodstox-core",
+"version": "5.2.1"
+},
+{
+"name": "com.github.ben-manes.caffeine:caffeine",
+"version": "3.1.8"
+},
+{
+"name": "com.github.ben-manes.caffeine:caffeine",
+"version": "3.2.3"
+},
+{
+"name": "com.github.bgalek.security.svg:safe-svg",
+"version": "1.2.0"
+},
+{
+"name": "com.github.erosb:everit-json-schema",
+"version": "1.14.4"
+},
+{
+"name": "com.github.jai-imageio:jai-imageio-core",
+"version": "1.4.0"
+},
+{
+"name": "com.github.luben:zstd-jni",
+"version": "1.5.6-10"
+},
+{
+"name": "com.github.penemue:keap",
+"version": "0.3.0"
+},
+{
+"name": "com.github.peteroupc:datautilities",
+"version": "1.1.0"
+},
+{
+"name": "com.github.peteroupc:numbers",
+"version": "1.8.2"
+},
+{
+"name": "com.github.spotbugs:spotbugs-annotations",
+"version": "4.8.6"
+},
+{
+"name": "com.github.stephenc.jcip:jcip-annotations",
+"version": "1.0-1"
+},
+{
+"name": "com.github.virtuald:curvesapi",
+"version": "1.08"
+},
+{
+"name": "com.google.api:api-common",
+"version": "2.47.0"
+},
+{
+"name": "com.google.auth:google-auth-library-credentials",
+"version": "1.33.0"
+},
+{
+"name": "com.google.auth:google-auth-library-oauth2-http",
+"version": "1.33.0"
+},
+{
+"name": "com.google.auto.value:auto-value",
+"version": "1.11.0"
+},
+{
+"name": "com.google.auto.value:auto-value-annotations",
+"version": "1.11.0"
+},
+{
+"name": "com.google.code.findbugs:jsr305",
+"version": "3.0.2"
+},
+{
+"name": "com.google.code.gson:gson",
+"version": "2.10.1"
+},
+{
+"name": "com.google.code.gson:gson",
+"version": "2.12.1"
+},
+{
+"name": "com.google.errorprone:error_prone_annotations",
+"version": "2.36.0"
+},
+{
+"name": "com.google.errorprone:error_prone_annotations",
+"version": "2.43.0"
+},
+{
+"name": "com.google.genai:google-genai",
+"version": "1.8.0"
+},
+{
+"name": "com.google.guava:failureaccess",
+"version": "1.0.1"
+},
+{
+"name": "com.google.guava:failureaccess",
+"version": "1.0.2"
+},
+{
+"name": "com.google.guava:guava",
+"version": "28.2-jre"
+},
+{
+"name": "com.google.guava:guava",
+"version": "33.4.0-jre"
+},
+{
+"name": "com.google.guava:listenablefuture",
+"version": "9999.0-empty-to-avoid-conflict-with-guava"
+},
+{
+"name": "com.google.http-client:google-http-client",
+"version": "1.46.2"
+},
+{
+"name": "com.google.http-client:google-http-client-gson",
+"version": "1.46.2"
+},
+{
+"name": "com.google.j2objc:j2objc-annotations",
+"version": "1.3"
+},
+{
+"name": "com.google.j2objc:j2objc-annotations",
+"version": "3.0.0"
+},
+{
+"name": "com.google.protobuf:protobuf-java",
+"version": "3.22.0"
+},
+{
+"name": "com.google.protobuf:protobuf-java",
+"version": "3.25.6"
+},
+{
+"name": "com.google.re2j:re2j",
+"version": "1.6"
+},
+{
+"name": "com.google.zxing:core",
+"version": "3.5.3"
+},
+{
+"name": "com.google.zxing:javase",
+"version": "3.5.3"
+},
+{
+"name": "com.googlecode.disruptor:disruptor",
+"version": "2.10.3"
+},
+{
+"name": "com.googlecode.owasp-java-html-sanitizer:java10-shim",
+"version": "20260313.1"
+},
+{
+"name": "com.googlecode.owasp-java-html-sanitizer:java8-shim",
+"version": "20260313.1"
+},
+{
+"name": "com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer",
+"version": "20260313.1"
+},
+{
+"name": "com.jetbrains.ml.models:youtrack-articles-ranking-model",
+"version": "0.0.2"
+},
+{
+"name": "com.jetbrains.ml.models:youtrack-document-ranking-model-exp",
+"version": "0.2.0"
+},
+{
+"name": "com.jetbrains.ml.models:youtrack-issues-ranking-model",
+"version": "0.6.0"
+},
+{
+"name": "com.jetbrains.mlapi:catboost-shadow-need-slf4j",
+"version": "1.2.5"
+},
+{
+"name": "com.jetbrains.mlapi:mlapi-catboost",
+"version": "0.2.0"
+},
+{
+"name": "com.jetbrains.mlapi:mlapi-core",
+"version": "0.2.0"
+},
+{
+"name": "com.jetbrains:ai-dev-kit-tracing",
+"version": "1.0.17"
+},
+{
+"name": "com.jetbrains:ai-dev-kit-tracing-jvm",
+"version": "1.0.17"
+},
+{
+"name": "com.jhlabs:filters",
+"version": "2.0.235"
+},
+{
+"name": "com.knuddels:jtokkit",
+"version": "1.1.0"
+},
+{
+"name": "com.lmax:disruptor",
+"version": "4.0.0"
+},
+{
+"name": "com.lowagie:itext",
+"version": "2.1.7"
+},
+{
+"name": "com.mortennobel:java-image-scaling",
+"version": "0.8.4"
+},
+{
+"name": "com.mortennobel:java-image-scaling",
+"version": "0.8.5"
+},
+{
+"name": "com.networknt:json-schema-validator",
+"version": "1.5.9"
+},
+{
+"name": "com.newrelic.agent.java:newrelic-api",
+"version": "8.11.0"
+},
+{
+"name": "com.nimbusds:content-type",
+"version": "2.3"
+},
+{
+"name": "com.nimbusds:lang-tag",
+"version": "1.7"
+},
+{
+"name": "com.nimbusds:nimbus-jose-jwt",
+"version": "10.4.2"
+},
+{
+"name": "com.nimbusds:oauth2-oidc-sdk",
+"version": "11.30"
+},
+{
+"name": "com.nulab-inc:zxcvbn",
+"version": "1.3.1"
+},
+{
+"name": "com.offbytwo.jenkins:jenkins-client",
+"version": "0.3.8"
+},
+{
+"name": "com.onelogin:java-saml",
+"version": "2.9.0"
+},
+{
+"name": "com.onelogin:java-saml-core",
+"version": "2.9.0"
+},
+{
+"name": "com.openai:openai-java",
+"version": "0.34.1"
+},
+{
+"name": "com.openai:openai-java-client-okhttp",
+"version": "0.34.1"
+},
+{
+"name": "com.openai:openai-java-core",
+"version": "0.34.1"
+},
+{
+"name": "com.pgvector:pgvector",
+"version": "0.1.6"
+},
+{
+"name": "com.squareup.moshi:moshi",
+"version": "1.14.0"
+},
+{
+"name": "com.squareup.moshi:moshi-kotlin",
+"version": "1.14.0"
+},
+{
+"name": "com.squareup.okhttp3:logging-interceptor",
+"version": "4.10.0"
+},
+{
+"name": "com.squareup.okhttp3:logging-interceptor",
+"version": "4.12.0"
+},
+{
+"name": "com.squareup.okhttp3:okhttp",
+"version": "4.10.0"
+},
+{
+"name": "com.squareup.okhttp3:okhttp",
+"version": "4.12.0"
+},
+{
+"name": "com.squareup.okhttp3:okhttp-coroutines",
+"version": "5.3.2"
+},
+{
+"name": "com.squareup.okio:okio",
+"version": "3.0.0"
+},
+{
+"name": "com.squareup.okio:okio",
+"version": "3.17.0"
+},
+{
+"name": "com.squareup.okio:okio-jvm",
+"version": "3.0.0"
+},
+{
+"name": "com.squareup.okio:okio-jvm",
+"version": "3.17.0"
+},
+{
+"name": "com.squareup.retrofit2:converter-jackson",
+"version": "2.11.0"
+},
+{
+"name": "com.squareup.retrofit2:retrofit",
+"version": "2.11.0"
+},
+{
+"name": "com.sun.activation:jakarta.activation",
+"version": "2.0.1"
+},
+{
+"name": "com.sun.istack:istack-commons-runtime",
+"version": "3.0.7"
+},
+{
+"name": "com.sun.mail:dsn",
+"version": "2.0.1"
+},
+{
+"name": "com.sun.mail:jakarta.mail",
+"version": "2.0.1"
+},
+{
+"name": "com.sun.mail:jakarta.mail",
+"version": "2.0.2"
+},
+{
+"name": "com.sun.mail:mailapi",
+"version": "2.0.2"
+},
+{
+"name": "com.sun.mail:smtp",
+"version": "2.0.2"
+},
+{
+"name": "com.sun.xml.bind:jaxb-core",
+"version": "3.0.2"
+},
+{
+"name": "com.sun.xml.bind:jaxb-impl",
+"version": "3.0.2"
+},
+{
+"name": "com.sun.xml.fastinfoset:FastInfoset",
+"version": "1.2.15"
+},
+{
+"name": "com.tinder.statemachine:statemachine",
+"version": "0.2.0"
+},
+{
+"name": "com.twelvemonkeys.common:common-image",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.common:common-io",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.common:common-lang",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.imageio:imageio-bmp",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.imageio:imageio-core",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.imageio:imageio-jpeg",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.imageio:imageio-metadata",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.imageio:imageio-pnm",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.imageio:imageio-psd",
+"version": "3.15.2"
+},
+{
+"name": "com.twelvemonkeys.imageio:imageio-tiff",
+"version": "3.15.2"
+},
+{
+"name": "com.typesafe:config",
+"version": "1.4.3"
+},
+{
+"name": "com.typesafe:config",
+"version": "1.4.5"
+},
+{
+"name": "com.unboundid.product.scim2:scim2-sdk-client",
+"version": "2.4.0"
+},
+{
+"name": "com.unboundid.product.scim2:scim2-sdk-common",
+"version": "2.4.0"
+},
+{
+"name": "com.unboundid.product.scim2:scim2-sdk-server",
+"version": "2.4.0"
+},
+{
+"name": "com.upokecenter:cbor",
+"version": "4.5.6"
+},
+{
+"name": "com.yubico:webauthn-server-attestation",
+"version": "1.12.4"
+},
+{
+"name": "com.yubico:webauthn-server-core-minimal",
+"version": "1.12.4"
+},
+{
+"name": "com.yubico:webauthn-server-parent",
+"version": "1.12.4"
+},
+{
+"name": "com.yubico:yubico-util",
+"version": "1.12.4"
+},
+{
+"name": "com.zaxxer:HikariCP",
+"version": "5.0.1"
+},
+{
+"name": "com.zaxxer:HikariCP",
+"version": "6.2.1"
+},
+{
+"name": "com.zaxxer:SparseBitSet",
+"version": "1.3"
+},
+{
+"name": "combokeys",
+"version": "3.0.1"
+},
+{
+"name": "commons-beanutils:commons-beanutils",
+"version": "1.11.0"
+},
+{
+"name": "commons-codec:commons-codec",
+"version": "1.18.0"
+},
+{
+"name": "commons-codec:commons-codec",
+"version": "1.19.0"
+},
+{
+"name": "commons-collections",
+"version": "3.2.1"
+},
+{
+"name": "commons-collections:commons-collections",
+"version": "3.2.2"
+},
+{
+"name": "commons-digester:commons-digester",
+"version": "2.1"
+},
+{
+"name": "commons-exec",
+"version": "1.1"
+},
+{
+"name": "commons-fileupload:commons-fileupload",
+"version": "1.6.0"
+},
+{
+"name": "commons-io",
+"version": "2.4"
+},
+{
+"name": "commons-io:commons-io",
+"version": "2.20.0"
+},
+{
+"name": "commons-lang3",
+"version": "3.1.0"
+},
+{
+"name": "commons-validator",
+"version": "1.4.0"
+},
+{
+"name": "commons-validator:commons-validator",
+"version": "1.10.0"
+},
+{
+"name": "commons-validator:commons-validator",
+"version": "1.7"
+},
+{
+"name": "compute-gcd",
+"version": "1.2.1"
+},
+{
+"name": "compute-lcm",
+"version": "1.1.2"
+},
+{
+"name": "core-js",
+"version": "3.41.0"
+},
+{
+"name": "cose-base",
+"version": "1.0.3"
+},
+{
+"name": "cose-base",
+"version": "2.2.0"
+},
+{
+"name": "crypt",
+"version": "0.0.2"
+},
+{
+"name": "css-element-queries",
+"version": "0.3.2"
+},
+{
+"name": "css-loader",
+"version": "7.1.5"
+},
+{
+"name": "cssfilter",
+"version": "0.0.10"
+},
+{
+"name": "cytoscape",
+"version": "3.34.3"
+},
+{
+"name": "cytoscape-cose-bilkent",
+"version": "4.1.0"
+},
+{
+"name": "cytoscape-fcose",
+"version": "2.2.0"
+},
+{
+"name": "d3",
+"version": "3.5.16"
+},
+{
+"name": "d3",
+"version": "7.9.0"
+},
+{
+"name": "d3-array",
+"version": "3.2.4"
+},
+{
+"name": "d3-color",
+"version": "3.1.0"
+},
+{
+"name": "d3-dispatch",
+"version": "3.0.1"
+},
+{
+"name": "d3-drag",
+"version": "3.0.0"
+},
+{
+"name": "d3-format",
+"version": "3.1.2"
+},
+{
+"name": "d3-interpolate",
+"version": "3.0.1"
+},
+{
+"name": "d3-scale",
+"version": "4.0.2"
+},
+{
+"name": "d3-selection",
+"version": "3.0.0"
+},
+{
+"name": "d3-shape",
+"version": "3.2.0"
+},
+{
+"name": "d3-time",
+"version": "3.1.0"
+},
+{
+"name": "d3-time-format",
+"version": "4.1.0"
+},
+{
+"name": "d3-transition",
+"version": "3.0.1"
+},
+{
+"name": "d3-zoom",
+"version": "3.0.0"
+},
+{
+"name": "dagre-d3-es",
+"version": "7.0.14"
+},
+{
+"name": "date-fns",
+"version": "4.1.0"
+},
+{
+"name": "date-fns-tz",
+"version": "3.2.0"
+},
+{
+"name": "dayjs",
+"version": "1.11.23"
+},
+{
+"name": "decimal.js-light",
+"version": "2.5.1"
+},
+{
+"name": "deep-object-diff",
+"version": "1.1.0"
+},
+{
+"name": "dequal",
+"version": "2.0.3"
+},
+{
+"name": "dev.langchain4j:langchain4j",
+"version": "1.22.0"
+},
+{
+"name": "dev.langchain4j:langchain4j-anthropic",
+"version": "1.22.0"
+},
+{
+"name": "dev.langchain4j:langchain4j-core",
+"version": "1.22.0"
+},
+{
+"name": "dev.langchain4j:langchain4j-google-ai-gemini",
+"version": "1.22.0"
+},
+{
+"name": "dev.langchain4j:langchain4j-http-client",
+"version": "1.22.0"
+},
+{
+"name": "dev.langchain4j:langchain4j-http-client-jdk",
+"version": "1.22.0"
+},
+{
+"name": "dev.langchain4j:langchain4j-open-ai",
+"version": "1.22.0"
+},
+{
+"name": "dev.langchain4j:langchain4j-pgvector",
+"version": "1.22.0-beta32"
+},
+{
+"name": "dev.langchain4j:langchain4j-reactive-streaming",
+"version": "1.22.0-beta32"
+},
+{
+"name": "dev.toonformat:jtoon",
+"version": "1.0.9"
+},
+{
+"name": "diff",
+"version": "5.0.0"
+},
+{
+"name": "dnd-multi-backend",
+"version": "8.1.2"
+},
+{
+"name": "dom4",
+"version": "1.8.3"
+},
+{
+"name": "dompurify",
+"version": "2.5.9"
+},
+{
+"name": "dompurify",
+"version": "3.4.16"
+},
+{
+"name": "dot-wild",
+"version": "3.0.1"
+},
+{
+"name": "draggabilly",
+"version": "2.1.1"
+},
+{
+"name": "element-resize-detector",
+"version": "1.1.14"
+},
+{
+"name": "element-resize-detector",
+"version": "1.2.4"
+},
+{
+"name": "elkjs",
+"version": "0.12.0"
+},
+{
+"name": "elkjs",
+"version": "undefined"
+},
+{
+"name": "entities",
+"version": "3.0.1"
+},
+{
+"name": "entities",
+"version": "4.5.0"
+},
+{
+"name": "es-toolkit",
+"version": "1.52.0"
+},
+{
+"name": "eventemitter3",
+"version": "5.0.4"
+},
+{
+"name": "events",
+"version": "3.3.0"
+},
+{
+"name": "fast-deep-equal",
+"version": "3.1.3"
+},
+{
+"name": "fast-equals",
+"version": "4.0.3"
+},
+{
+"name": "fast-memoize",
+"version": "2.5.2"
+},
+{
+"name": "fast-uri",
+"version": "3.1.8"
+},
+{
+"name": "fastdom",
+"version": "1.0.12"
+},
+{
+"name": "FastInfoset",
+"version": "1.2.12"
+},
+{
+"name": "fecha",
+"version": "4.2.1"
+},
+{
+"name": "file-selector",
+"version": "0.6.0"
+},
+{
+"name": "filesaver.js",
+"version": "0.2.0"
+},
+{
+"name": "FiraCode",
+"version": "0.6"
+},
+{
+"name": "focus-trap",
+"version": "7.5.4"
+},
+{
+"name": "for-in",
+"version": "0.1.8"
+},
+{
+"name": "for-own",
+"version": "1.0.0"
+},
+{
+"name": "fractional-indexing",
+"version": "4.0.0"
+},
+{
+"name": "highlight.js",
+"version": "10.7.1"
+},
+{
+"name": "highlight.js",
+"version": "11.12.0"
+},
+{
+"name": "hk2-api",
+"version": "2.4.0-b10"
+},
+{
+"name": "hk2-locator",
+"version": "2.4.0-b10"
+},
+{
+"name": "hk2-utils",
+"version": "2.4.0-b10"
+},
+{
+"name": "hoist-non-react-statics",
+"version": "3.3.2"
+},
+{
+"name": "idb-keyval",
+"version": "6.2.1"
+},
+{
+"name": "igerman98-dictionary",
+"version": "20161207"
+},
+{
+"name": "immer",
+"version": "10.2.0"
+},
+{
+"name": "immer",
+"version": "7.0.7"
+},
+{
+"name": "io.dropwizard.metrics:metrics-core",
+"version": "4.1.4"
+},
+{
+"name": "io.github.green4j:green-jelly",
+"version": "0.1.7"
+},
+{
+"name": "io.github.microutils:kotlin-logging",
+"version": "3.0.5"
+},
+{
+"name": "io.github.microutils:kotlin-logging-jvm",
+"version": "3.0.5"
+},
+{
+"name": "io.github.oshai:kotlin-logging",
+"version": "8.0.01"
+},
+{
+"name": "io.github.oshai:kotlin-logging-jvm",
+"version": "8.0.01"
+},
+{
+"name": "io.grpc:grpc-api",
+"version": "1.70.0"
+},
+{
+"name": "io.grpc:grpc-context",
+"version": "1.70.0"
+},
+{
+"name": "io.gsonfire:gson-fire",
+"version": "1.8.5"
+},
+{
+"name": "io.ktor:ktor-client-apache5",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-apache5-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-cio",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-cio-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-content-negotiation",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-content-negotiation-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-core",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-client-core",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-core-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-client-core-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-logging",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-logging-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-mock",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-client-mock-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-events",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-events",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-events-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-events-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-http",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-http",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-http-cio",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-http-cio",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-http-cio-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-http-cio-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-http-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-http-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-io",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-io",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-io-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-io-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-network",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-network",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-network-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-network-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-network-tls",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-network-tls-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-serialization",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-jackson",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-serialization-jackson",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-jackson-jvm",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-serialization-jackson-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-serialization-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx-json",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx-json-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-serialization-kotlinx-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-auth",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-auth",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-auth-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-auth-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-cio",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-cio-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-compression",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-server-compression",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-compression-jvm",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-server-compression-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-content-negotiation",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-server-content-negotiation",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-content-negotiation-jvm",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-server-content-negotiation-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-core",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-core",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-core-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-core-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-default-headers",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-default-headers",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-default-headers-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-default-headers-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-host-common",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-host-common-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-jetty",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-server-jetty",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-jetty-jvm",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-server-jetty-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-servlet",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-servlet",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-servlet-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-servlet-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-sessions",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-sessions",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-sessions-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-server-sessions-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-sse",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-sse-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-status-pages",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-server-status-pages",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-server-status-pages-jvm",
+"version": "2.3.11"
+},
+{
+"name": "io.ktor:ktor-server-status-pages-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-sse",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-sse-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-utils",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-utils",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-utils-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-utils-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-websocket-serialization",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-websocket-serialization",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-websocket-serialization-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-websocket-serialization-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-websockets",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-websockets",
+"version": "3.4.3"
+},
+{
+"name": "io.ktor:ktor-websockets-jvm",
+"version": "2.3.12"
+},
+{
+"name": "io.ktor:ktor-websockets-jvm",
+"version": "3.4.3"
+},
+{
+"name": "io.kubernetes:client-java",
+"version": "18.0.1"
+},
+{
+"name": "io.kubernetes:client-java-api",
+"version": "18.0.1"
+},
+{
+"name": "io.kubernetes:client-java-proto",
+"version": "18.0.1"
+},
+{
+"name": "io.micrometer:micrometer-commons",
+"version": "1.14.11"
+},
+{
+"name": "io.micrometer:micrometer-commons",
+"version": "1.17.1"
+},
+{
+"name": "io.micrometer:micrometer-core",
+"version": "1.17.1"
+},
+{
+"name": "io.micrometer:micrometer-observation",
+"version": "1.14.11"
+},
+{
+"name": "io.micrometer:micrometer-observation",
+"version": "1.17.1"
+},
+{
+"name": "io.micrometer:micrometer-registry-prometheus",
+"version": "1.17.1"
+},
+{
+"name": "io.modelcontextprotocol.sdk:mcp",
+"version": "0.12.1"
+},
+{
+"name": "io.netty:netty-buffer",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-buffer",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-codec",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-codec",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-codec-http",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-codec-http",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-codec-http2",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-codec-http2",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-common",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-common",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-handler",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-handler",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-resolver",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-resolver",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-transport",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-transport",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-transport-classes-epoll",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-transport-classes-epoll",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.netty:netty-transport-native-unix-common",
+"version": "4.1.135.Final"
+},
+{
+"name": "io.netty:netty-transport-native-unix-common",
+"version": "4.1.136.Final"
+},
+{
+"name": "io.opencensus:opencensus-api",
+"version": "0.31.1"
+},
+{
+"name": "io.opencensus:opencensus-contrib-http-util",
+"version": "0.31.1"
+},
+{
+"name": "io.opentelemetry.kotlin:api",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:api-ext",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:api-ext-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:api-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:compat",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:compat-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:core",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:core-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:exporters-core",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:exporters-core-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:implementation",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:implementation-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:java-typealiases",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:java-typealiases-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:model",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:model-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:noop",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:noop-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:platform-implementations",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:platform-implementations-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:sdk-api",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:sdk-api-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:sdk-common",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:sdk-common-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:semconv",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.kotlin:semconv-jvm",
+"version": "0.3.0"
+},
+{
+"name": "io.opentelemetry.semconv:opentelemetry-semconv",
+"version": "1.34.0"
+},
+{
+"name": "io.opentelemetry.semconv:opentelemetry-semconv-incubating",
+"version": "1.34.0-alpha"
+},
+{
+"name": "io.opentelemetry:opentelemetry-api",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-bom",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-common",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-context",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-exporter-common",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-exporter-logging",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-exporter-otlp",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-exporter-otlp-common",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-exporter-sender-okhttp",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-extension-kotlin",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-common",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-logs",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-metrics",
+"version": "1.61.0"
+},
+{
+"name": "io.opentelemetry:opentelemetry-sdk-trace",
+"version": "1.61.0"
+},
+{
+"name": "io.projectreactor:reactor-core",
+"version": "3.7.0"
+},
+{
+"name": "io.prometheus:prometheus-metrics-config",
+"version": "1.7.0"
+},
+{
+"name": "io.prometheus:prometheus-metrics-core",
+"version": "1.7.0"
+},
+{
+"name": "io.prometheus:prometheus-metrics-exposition-formats",
+"version": "1.7.0"
+},
+{
+"name": "io.prometheus:prometheus-metrics-exposition-textformats",
+"version": "1.7.0"
+},
+{
+"name": "io.prometheus:prometheus-metrics-model",
+"version": "1.7.0"
+},
+{
+"name": "io.prometheus:prometheus-metrics-tracer-common",
+"version": "1.7.0"
+},
+{
+"name": "io.prometheus:simpleclient",
+"version": "0.15.0"
+},
+{
+"name": "io.prometheus:simpleclient_common",
+"version": "0.15.0"
+},
+{
+"name": "io.prometheus:simpleclient_httpserver",
+"version": "0.15.0"
+},
+{
+"name": "io.prometheus:simpleclient_tracer_common",
+"version": "0.15.0"
+},
+{
+"name": "io.prometheus:simpleclient_tracer_otel",
+"version": "0.15.0"
+},
+{
+"name": "io.prometheus:simpleclient_tracer_otel_agent",
+"version": "0.15.0"
+},
+{
+"name": "io.sentry:sentry",
+"version": "8.60.0"
+},
+{
+"name": "io.sentry:sentry-log4j2",
+"version": "8.60.0"
+},
+{
+"name": "io.smallrye.reactive:mutiny-zero",
+"version": "1.3.1"
+},
+{
+"name": "io.swagger.core.v3:swagger-annotations",
+"version": "2.2.21"
+},
+{
+"name": "io.swagger.core.v3:swagger-annotations",
+"version": "2.2.25"
+},
+{
+"name": "io.swagger.core.v3:swagger-core",
+"version": "2.2.21"
+},
+{
+"name": "io.swagger.core.v3:swagger-core",
+"version": "2.2.25"
+},
+{
+"name": "io.swagger.core.v3:swagger-models",
+"version": "2.2.21"
+},
+{
+"name": "io.swagger.core.v3:swagger-models",
+"version": "2.2.25"
+},
+{
+"name": "io.swagger:swagger-annotations",
+"version": "1.6.9"
+},
+{
+"name": "is-buffer",
+"version": "1.1.6"
+},
+{
+"name": "is-extendable",
+"version": "0.1.1"
+},
+{
+"name": "is-plain-object",
+"version": "2.0.4"
+},
+{
+"name": "isobject",
+"version": "3.0.1"
+},
+{
+"name": "istack-commons-runtime",
+"version": "2.16"
+},
+{
+"name": "it.unimi.dsi:fastutil",
+"version": "8.5.12"
+},
+{
+"name": "it.unimi.dsi:fastutil-core",
+"version": "8.5.11"
+},
+{
+"name": "jackson-annotations",
+"version": "2.2.1"
+},
+{
+"name": "jackson-core",
+"version": "2.2.1"
+},
+{
+"name": "jackson-databind",
+"version": "2.2.1"
+},
+{
+"name": "jackson-jaxrs-base",
+"version": "2.2.1"
+},
+{
+"name": "jackson-jaxrs-json-provider",
+"version": "2.2.1"
+},
+{
+"name": "jackson-module-jaxb-annotations",
+"version": "2.2.1"
+},
+{
+"name": "jakarta.annotation:jakarta.annotation-api",
+"version": "1.3.5"
+},
+{
+"name": "jakarta.annotation:jakarta.annotation-api",
+"version": "2.1.1"
+},
+{
+"name": "jakarta.inject:jakarta.inject-api",
+"version": "2.0.1"
+},
+{
+"name": "jakarta.mail:jakarta.mail-api",
+"version": "2.0.1"
+},
+{
+"name": "jakarta.validation:jakarta.validation-api",
+"version": "2.0.2"
+},
+{
+"name": "jakarta.ws.rs:jakarta.ws.rs-api",
+"version": "2.1.6"
+},
+{
+"name": "jakarta.xml.bind:jakarta.xml.bind-api",
+"version": "2.3.3"
+},
+{
+"name": "jakarta.xml.bind:jakarta.xml.bind-api",
+"version": "3.0.1"
+},
+{
+"name": "javassist",
+"version": "3.18.1-GA"
+},
+{
+"name": "javax.activation:activation",
+"version": "1.1.1"
+},
+{
+"name": "javax.annotation-api",
+"version": "1.2"
+},
+{
+"name": "javax.annotation:javax.annotation-api",
+"version": "1.3.2"
+},
+{
+"name": "javax.inject",
+"version": "2.4.0-b10"
+},
+{
+"name": "javax.servlet-api",
+"version": "3.1.0"
+},
+{
+"name": "javax.servlet:javax.servlet-api",
+"version": "3.1.0"
+},
+{
+"name": "javax.websocket-api",
+"version": "1.0"
+},
+{
+"name": "javax.ws.rs-api",
+"version": "2.0.1"
+},
+{
+"name": "javax.ws.rs:javax.ws.rs-api",
+"version": "2.0.1"
+},
+{
+"name": "javax.xml.bind:jaxb-api",
+"version": "2.3.1"
+},
+{
+"name": "jaxb-api",
+"version": "2.2.7"
+},
+{
+"name": "jaxb-core",
+"version": "2.2.7"
+},
+{
+"name": "jaxb-impl",
+"version": "2.2.7"
+},
+{
+"name": "jaxen:jaxen",
+"version": "1.1.6"
+},
+{
+"name": "jcl-over-slf4j",
+"version": "1.7.5"
+},
+{
+"name": "jersey-client",
+"version": "2.17"
+},
+{
+"name": "jersey-common",
+"version": "2.17"
+},
+{
+"name": "jersey-guava",
+"version": "2.17"
+},
+{
+"name": "jetty-all",
+"version": "9.2.10.v20150310"
+},
+{
+"name": "jetty-annotations",
+"version": "9.2.10.v20150310"
+},
+{
+"name": "jetty-proxy",
+"version": "9.2.10.v20150310"
+},
+{
+"name": "joda-time:joda-time",
+"version": "2.10.6"
+},
+{
+"name": "joda-time:joda-time",
+"version": "2.12.7"
+},
+{
+"name": "jquery",
+"version": "3.5.1"
+},
+{
+"name": "jquery-ui",
+"version": "1.11.4"
+},
+{
+"name": "jquery-ui-touch-punch",
+"version": "0.2.3"
+},
+{
+"name": "js-beautify",
+"version": "1.15.4"
+},
+{
+"name": "jshint",
+"version": "2.13.6"
+},
+{
+"name": "json-schema-compare",
+"version": "0.2.2"
+},
+{
+"name": "json-schema-merge-allof",
+"version": "0.8.1"
+},
+{
+"name": "json-schema-traverse",
+"version": "1.0.0"
+},
+{
+"name": "jsonpointer",
+"version": "5.0.1"
+},
+{
+"name": "jul-to-slf4j",
+"version": "1.7.5"
+},
+{
+"name": "just-debounce-it",
+"version": "3.2.0"
+},
+{
+"name": "katex",
+"version": "0.16.25"
+},
+{
+"name": "khroma",
+"version": "2.1.0"
+},
+{
+"name": "kind-of",
+"version": "5.1.0"
+},
+{
+"name": "konva",
+"version": "9.3.20"
+},
+{
+"name": "layout-base",
+"version": "1.0.2"
+},
+{
+"name": "layout-base",
+"version": "2.0.1"
+},
+{
+"name": "lib0",
+"version": "0.2.114"
+},
+{
+"name": "libavoid-js",
+"version": "0.5.0-beta.5"
+},
+{
+"name": "linked-list-typescript",
+"version": "1.0.15"
+},
+{
+"name": "linkify-it",
+"version": "4.0.1"
+},
+{
+"name": "lite-youtube-embed",
+"version": "0.1.2"
+},
+{
+"name": "lodash",
+"version": "4.18.1"
+},
+{
+"name": "lodash-es",
+"version": "4.18.1"
+},
+{
+"name": "lodash.debounce",
+"version": "4.0.8"
+},
+{
+"name": "lodash.memoize",
+"version": "4.1.2"
+},
+{
+"name": "log4j",
+"version": "1.2"
+},
+{
+"name": "log4j-api",
+"version": "2.10.0"
+},
+{
+"name": "log4j-core",
+"version": "2.10.0"
+},
+{
+"name": "log4j-slf4j-impl",
+"version": "2.10.0"
+},
+{
+"name": "loglevel",
+"version": "1.8.0"
+},
+{
+"name": "lottie-react",
+"version": "3.1.0"
+},
+{
+"name": "lottie-web",
+"version": "5.12.2"
+},
+{
+"name": "lottie-web",
+"version": "5.13.0"
+},
+{
+"name": "lru-cache",
+"version": "6.0.0"
+},
+{
+"name": "markdown-it",
+"version": "13.0.1"
+},
+{
+"name": "markdown-it",
+"version": "14.1.0"
+},
+{
+"name": "markdown-it-anchor",
+"version": "9.2.1"
+},
+{
+"name": "markdown-to-jsx",
+"version": "7.7.17"
+},
+{
+"name": "md5",
+"version": "2.3.0"
+},
+{
+"name": "mdurl",
+"version": "2.1.0"
+},
+{
+"name": "memoize-one",
+"version": "6.0.0"
+},
+{
+"name": "mermaid",
+"version": "11.16.1"
+},
+{
+"name": "mixin-object",
+"version": "2.0.1"
+},
+{
+"name": "mobx",
+"version": "7.0.3"
+},
+{
+"name": "mobx-log",
+"version": "2.3.0"
+},
+{
+"name": "mobx-react-lite",
+"version": "5.0.3"
+},
+{
+"name": "mout",
+"version": "1.2.3"
+},
+{
+"name": "nanoid",
+"version": "3.3.6"
+},
+{
+"name": "net.freeutils:jcharset",
+"version": "2.1"
+},
+{
+"name": "net.i2p.crypto:eddsa",
+"version": "0.3.0"
+},
+{
+"name": "net.minidev:accessors-smart",
+"version": "2.5.2"
+},
+{
+"name": "net.minidev:json-smart",
+"version": "2.5.2"
+},
+{
+"name": "net.sf.ezmorph:ezmorph",
+"version": "1.0.6"
+},
+{
+"name": "net.sf.json-lib:json-lib",
+"version": "2.4"
+},
+{
+"name": "net.shibboleth.utilities:java-support",
+"version": "8.0.0"
+},
+{
+"name": "ng-focus-if",
+"version": "1.0.7"
+},
+{
+"name": "ng-infinite-scroll",
+"version": "1.3.0"
+},
+{
+"name": "nvd3",
+"version": "1.1.19-jb"
+},
+{
+"name": "offo-hyphenation-de",
+"version": "1.2"
+},
+{
+"name": "orderedmap",
+"version": "2.1.1"
+},
+{
+"name": "org.abego.treelayout:org.abego.treelayout.core",
+"version": "1.0.1"
+},
+{
+"name": "org.antlr:antlr-runtime",
+"version": "3.5.2"
+},
+{
+"name": "org.antlr:antlr4",
+"version": "4.5"
+},
+{
+"name": "org.antlr:antlr4-runtime",
+"version": "4.5"
+},
+{
+"name": "org.antlr:ST4",
+"version": "4.0.8"
+},
+{
+"name": "org.apache.avro:avro",
+"version": "1.12.2"
+},
+{
+"name": "org.apache.commons:commons-collections4",
+"version": "4.4"
+},
+{
+"name": "org.apache.commons:commons-compress",
+"version": "1.27.1"
+},
+{
+"name": "org.apache.commons:commons-compress",
+"version": "1.28.0"
+},
+{
+"name": "org.apache.commons:commons-csv",
+"version": "1.5"
+},
+{
+"name": "org.apache.commons:commons-lang3",
+"version": "3.18.0"
+},
+{
+"name": "org.apache.commons:commons-lang3",
+"version": "3.20.0"
+},
+{
+"name": "org.apache.commons:commons-math3",
+"version": "3.6.1"
+},
+{
+"name": "org.apache.commons:commons-text",
+"version": "1.14.0"
+},
+{
+"name": "org.apache.httpcomponents.client5:httpclient5",
+"version": "5.6.1"
+},
+{
+"name": "org.apache.httpcomponents.client5:httpclient5",
+"version": "5.6.2"
+},
+{
+"name": "org.apache.httpcomponents.core5:httpcore5",
+"version": "5.4.2"
+},
+{
+"name": "org.apache.httpcomponents.core5:httpcore5",
+"version": "5.4.3"
+},
+{
+"name": "org.apache.httpcomponents.core5:httpcore5-h2",
+"version": "5.4"
+},
+{
+"name": "org.apache.httpcomponents.core5:httpcore5-h2",
+"version": "5.4.3"
+},
+{
+"name": "org.apache.httpcomponents:httpclient",
+"version": "4.5.14"
+},
+{
+"name": "org.apache.httpcomponents:httpcore",
+"version": "4.4.16"
+},
+{
+"name": "org.apache.httpcomponents:httpmime",
+"version": "4.5.5"
+},
+{
+"name": "org.apache.kafka:kafka-clients",
+"version": "4.3.1"
+},
+{
+"name": "org.apache.logging.log4j:log4j-api",
+"version": "2.20.0"
+},
+{
+"name": "org.apache.logging.log4j:log4j-api",
+"version": "2.24.3"
+},
+{
+"name": "org.apache.logging.log4j:log4j-core",
+"version": "2.20.0"
+},
+{
+"name": "org.apache.logging.log4j:log4j-core",
+"version": "2.24.3"
+},
+{
+"name": "org.apache.logging.log4j:log4j-layout-template-json",
+"version": "2.20.0"
+},
+{
+"name": "org.apache.logging.log4j:log4j-slf4j-impl",
+"version": "2.20.0"
+},
+{
+"name": "org.apache.logging.log4j:log4j-slf4j-impl",
+"version": "2.24.3"
+},
+{
+"name": "org.apache.lucene:lucene-analysis-common",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.lucene:lucene-analysis-morfologik",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.lucene:lucene-analysis-stempel",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.lucene:lucene-backward-codecs",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.lucene:lucene-core",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.lucene:lucene-facet",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.lucene:lucene-queries",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.lucene:lucene-queryparser",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.lucene:lucene-sandbox",
+"version": "10.5.0"
+},
+{
+"name": "org.apache.opennlp:opennlp-tools",
+"version": "2.5.9"
+},
+{
+"name": "org.apache.poi:poi",
+"version": "5.4.1"
+},
+{
+"name": "org.apache.poi:poi-ooxml",
+"version": "5.4.1"
+},
+{
+"name": "org.apache.poi:poi-ooxml-lite",
+"version": "5.4.1"
+},
+{
+"name": "org.apache.santuario:xmlsec",
+"version": "2.2.3"
+},
+{
+"name": "org.apache.tika:tika-core",
+"version": "3.2.3"
+},
+{
+"name": "org.apache.velocity:velocity-engine-core",
+"version": "2.4"
+},
+{
+"name": "org.apache.xmlbeans:xmlbeans",
+"version": "5.3.0"
+},
+{
+"name": "org.apache.xmlgraphics:batik-anim",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-awt-util",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-bridge",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-codec",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-constants",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-css",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-dom",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-ext",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-gvt",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-i18n",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-parser",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-script",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-shared-resources",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-svg-dom",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-svggen",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-transcoder",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-util",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:batik-xml",
+"version": "1.17"
+},
+{
+"name": "org.apache.xmlgraphics:xmlgraphics-commons",
+"version": "2.9"
+},
+{
+"name": "org.bitbucket.b_c:jose4j",
+"version": "0.9.3"
+},
+{
+"name": "org.bouncycastle:bcpkix-jdk18on",
+"version": "1.81.1"
+},
+{
+"name": "org.bouncycastle:bcpkix-jdk18on",
+"version": "1.85"
+},
+{
+"name": "org.bouncycastle:bcprov-jdk18on",
+"version": "1.81.1"
+},
+{
+"name": "org.bouncycastle:bcprov-jdk18on",
+"version": "1.85"
+},
+{
+"name": "org.bouncycastle:bcutil-jdk18on",
+"version": "1.81.1"
+},
+{
+"name": "org.bouncycastle:bcutil-jdk18on",
+"version": "1.85"
+},
+{
+"name": "org.bytedeco:javacpp",
+"version": "1.5.9"
+},
+{
+"name": "org.bytedeco:javacpp-platform",
+"version": "1.5.9"
+},
+{
+"name": "org.bytedeco:leptonica",
+"version": "1.83.0-1.5.9"
+},
+{
+"name": "org.bytedeco:leptonica-platform",
+"version": "1.83.0-1.5.9"
+},
+{
+"name": "org.bytedeco:tesseract",
+"version": "5.3.1-1.5.9"
+},
+{
+"name": "org.bytedeco:tesseract-platform",
+"version": "5.3.1-1.5.9"
+},
+{
+"name": "org.carrot2:morfologik-fsa",
+"version": "2.1.9"
+},
+{
+"name": "org.carrot2:morfologik-polish",
+"version": "2.1.9"
+},
+{
+"name": "org.carrot2:morfologik-stemming",
+"version": "2.1.9"
+},
+{
+"name": "org.checkerframework:checker-qual",
+"version": "2.10.0"
+},
+{
+"name": "org.checkerframework:checker-qual",
+"version": "3.43.0"
+},
+{
+"name": "org.codehaus.woodstox:stax2-api",
+"version": "4.2"
+},
+{
+"name": "org.commonmark:commonmark",
+"version": "0.21.0"
+},
+{
+"name": "org.commonmark:commonmark-ext-autolink",
+"version": "0.21.0"
+},
+{
+"name": "org.commonmark:commonmark-ext-gfm-strikethrough",
+"version": "0.21.0"
+},
+{
+"name": "org.commonmark:commonmark-ext-gfm-tables",
+"version": "0.21.0"
+},
+{
+"name": "org.commonmark:commonmark-ext-heading-anchor",
+"version": "0.21.0"
+},
+{
+"name": "org.commonmark:commonmark-ext-image-attributes",
+"version": "0.21.0"
+},
+{
+"name": "org.cryptacular:cryptacular",
+"version": "1.2.4"
+},
+{
+"name": "org.dom4j:dom4j",
+"version": "2.2.0"
+},
+{
+"name": "org.flywaydb:flyway-core",
+"version": "11.10.2"
+},
+{
+"name": "org.flywaydb:flyway-database-postgresql",
+"version": "11.10.2"
+},
+{
+"name": "org.freemarker:freemarker",
+"version": "2.3.30"
+},
+{
+"name": "org.fusesource.jansi:jansi",
+"version": "2.4.1"
+},
+{
+"name": "org.fusesource.jansi:jansi",
+"version": "2.4.2"
+},
+{
+"name": "org.glassfish.hk2.external:aopalliance-repackaged",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2.external:jakarta.inject",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2:hk2-api",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2:hk2-locator",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2:hk2-utils",
+"version": "2.6.1"
+},
+{
+"name": "org.glassfish.hk2:osgi-resource-locator",
+"version": "1.0.3"
+},
+{
+"name": "org.glassfish.jaxb:jaxb-runtime",
+"version": "2.3.1"
+},
+{
+"name": "org.glassfish.jaxb:txw2",
+"version": "2.3.1"
+},
+{
+"name": "org.glassfish.jersey.connectors:jersey-apache-connector",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.containers:jersey-container-servlet",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.containers:jersey-container-servlet-core",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.core:jersey-client",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.core:jersey-common",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.core:jersey-server",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.ext:jersey-entity-filtering",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.inject:jersey-hk2",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.media:jersey-media-jaxb",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.media:jersey-media-json-jackson",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.media:jersey-media-multipart",
+"version": "2.46"
+},
+{
+"name": "org.glassfish.jersey.media:jersey-media-sse",
+"version": "2.46"
+},
+{
+"name": "org.graalvm.js:js",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.js:js-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.js:js-isolate-darwin-aarch64-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.js:js-isolate-linux-aarch64-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.js:js-isolate-linux-amd64-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.js:js-isolate-windows-amd64-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.js:js-language",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.polyglot:js-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.polyglot:js-isolate-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.polyglot:js-isolate-darwin-aarch64-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.polyglot:js-isolate-linux-aarch64-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.polyglot:js-isolate-linux-amd64-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.polyglot:js-isolate-windows-amd64-community",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.polyglot:polyglot",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.regex:regex",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.sdk:collections",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.sdk:jniutils",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.sdk:nativebridge",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.sdk:nativeimage",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.sdk:word",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.shadowed:icu4j",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.shadowed:json",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.shadowed:xz",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.tools:profiler-tool",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.truffle:truffle-api",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.truffle:truffle-compiler",
+"version": "25.3.4.1"
+},
+{
+"name": "org.graalvm.truffle:truffle-runtime",
+"version": "25.3.4.1"
+},
+{
+"name": "org.hdrhistogram:HdrHistogram",
+"version": "2.2.2"
+},
+{
+"name": "org.htmlparser:htmllexer",
+"version": "2.1"
+},
+{
+"name": "org.htmlparser:htmlparser",
+"version": "2.1"
+},
+{
+"name": "org.java-websocket:Java-WebSocket",
+"version": "1.6.0"
+},
+{
+"name": "org.javassist:javassist",
+"version": "3.30.2-GA"
+},
+{
+"name": "org.jctools:jctools-core",
+"version": "4.0.1"
+},
+{
+"name": "org.jetbrains.exposed:exposed-core",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.exposed:exposed-dao",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.exposed:exposed-java-time",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.exposed:exposed-jdbc",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-bom",
+"version": "2.3.10"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-reflect",
+"version": "2.2.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-reflect",
+"version": "2.3.20"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib",
+"version": "2.2.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib",
+"version": "2.3.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-common",
+"version": "2.2.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-common",
+"version": "2.3.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+"version": "2.2.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+"version": "2.3.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+"version": "2.2.21"
+},
+{
+"name": "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+"version": "2.3.21"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-bom",
+"version": "1.11.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-core",
+"version": "1.11.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm",
+"version": "1.11.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8",
+"version": "1.11.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-coroutines-slf4j",
+"version": "1.11.0"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-datetime-jvm",
+"version": "0.7.1-0.6.x-compat"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-bom",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-core",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-json",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm",
+"version": "1.5.1"
+},
+{
+"name": "org.jetbrains.xodus:dnq",
+"version": "3.0.652"
+},
+{
+"name": "org.jetbrains.xodus:dnq-open-api",
+"version": "3.0.652"
+},
+{
+"name": "org.jetbrains.xodus:dnq-transient-store",
+"version": "3.0.652"
+},
+{
+"name": "org.jetbrains.xodus:entity-browser-app",
+"version": "3.0.107"
+},
+{
+"name": "org.jetbrains.xodus:entity-browser-frontend",
+"version": "3.0.107"
+},
+{
+"name": "org.jetbrains.xodus:xodus-compress",
+"version": "3.1.95"
+},
+{
+"name": "org.jetbrains.xodus:xodus-crypto",
+"version": "3.1.95"
+},
+{
+"name": "org.jetbrains.xodus:xodus-entity-store",
+"version": "3.1.95"
+},
+{
+"name": "org.jetbrains.xodus:xodus-environment",
+"version": "3.1.95"
+},
+{
+"name": "org.jetbrains.xodus:xodus-openAPI",
+"version": "3.1.95"
+},
+{
+"name": "org.jetbrains.xodus:xodus-query",
+"version": "3.1.95"
+},
+{
+"name": "org.jetbrains.xodus:xodus-utils",
+"version": "3.1.95"
+},
+{
+"name": "org.jetbrains:annotations",
+"version": "24.0.0"
+},
+{
+"name": "org.jetbrains:annotations",
+"version": "26.0.2-1"
+},
+{
+"name": "org.jetbrains:marketplace-zip-signer",
+"version": "0.1.45"
+},
+{
+"name": "org.json:json",
+"version": "20231013"
+},
+{
+"name": "org.jsoup:jsoup",
+"version": "1.16.1"
+},
+{
+"name": "org.jspecify:jspecify",
+"version": "1.0.1"
+},
+{
+"name": "org.jvnet.mimepull:mimepull",
+"version": "1.9.15"
+},
+{
+"name": "org.jvnet.staxex:stax-ex",
+"version": "1.8"
+},
+{
+"name": "org.knowm:sundial",
+"version": "2.2.2"
+},
+{
+"name": "org.knowm:sundial",
+"version": "2.3.0"
+},
+{
+"name": "org.kohsuke:github-api",
+"version": "2.0-rc.7"
+},
+{
+"name": "org.lz4:lz4-java",
+"version": "1.8.0"
+},
+{
+"name": "org.nibor.autolink:autolink",
+"version": "0.10.0"
+},
+{
+"name": "org.opensaml:opensaml-core",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-messaging-api",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-profile-api",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-saml-api",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-saml-impl",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-security-api",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-security-impl",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-soap-api",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-soap-impl",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-storage-api",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-xmlsec-api",
+"version": "4.0.1"
+},
+{
+"name": "org.opensaml:opensaml-xmlsec-impl",
+"version": "4.0.1"
+},
+{
+"name": "org.ow2.asm:asm",
+"version": "9.7.1"
+},
+{
+"name": "org.postgresql:postgresql",
+"version": "42.7.12"
+},
+{
+"name": "org.reactivestreams:reactive-streams",
+"version": "1.0.4"
+},
+{
+"name": "org.reflections:reflections",
+"version": "0.10.2"
+},
+{
+"name": "org.slf4j:jcl-over-slf4j",
+"version": "1.7.36"
+},
+{
+"name": "org.slf4j:jul-to-slf4j",
+"version": "1.7.36"
+},
+{
+"name": "org.slf4j:slf4j-api",
+"version": "1.7.36"
+},
+{
+"name": "org.springframework.security:spring-security-crypto",
+"version": "6.5.5"
+},
+{
+"name": "org.springframework:spring-aop",
+"version": "6.2.11"
+},
+{
+"name": "org.springframework:spring-beans",
+"version": "6.2.11"
+},
+{
+"name": "org.springframework:spring-context",
+"version": "6.2.11"
+},
+{
+"name": "org.springframework:spring-context-support",
+"version": "6.2.11"
+},
+{
+"name": "org.springframework:spring-core",
+"version": "6.2.11"
+},
+{
+"name": "org.springframework:spring-expression",
+"version": "6.2.11"
+},
+{
+"name": "org.xerial.snappy:snappy-java",
+"version": "1.1.10.7"
+},
+{
+"name": "org.xhtmlrenderer:flying-saucer-fonts-core",
+"version": "9.1.30"
+},
+{
+"name": "org.xhtmlrenderer:flying-saucer-fonts-pdf",
+"version": "9.1.30"
+},
+{
+"name": "org.yaml:snakeyaml",
+"version": "2.5"
+},
+{
+"name": "osgi-resource-locator",
+"version": "1.0.1"
+},
+{
+"name": "path-browserify",
+"version": "1.0.1"
+},
+{
+"name": "pemistahl:lingua",
+"version": "1.2.2.fork"
+},
+{
+"name": "performant-array-to-tree",
+"version": "1.9.1"
+},
+{
+"name": "prismjs",
+"version": "1.28.0"
+},
+{
+"name": "process",
+"version": "0.11.10"
+},
+{
+"name": "prop-types",
+"version": "15.6.2"
+},
+{
+"name": "prop-types",
+"version": "15.8.1"
+},
+{
+"name": "prosemirror-commands",
+"version": "1.7.1"
+},
+{
+"name": "prosemirror-gapcursor",
+"version": "1.4.0"
+},
+{
+"name": "prosemirror-keymap",
+"version": "1.2.3"
+},
+{
+"name": "prosemirror-markdown",
+"version": "1.13.2"
+},
+{
+"name": "prosemirror-model",
+"version": "1.25.4"
+},
+{
+"name": "prosemirror-schema-list",
+"version": "1.5.1"
+},
+{
+"name": "prosemirror-state",
+"version": "1.4.4"
+},
+{
+"name": "prosemirror-tables",
+"version": "1.8.3"
+},
+{
+"name": "prosemirror-transform",
+"version": "1.10.5"
+},
+{
+"name": "prosemirror-utils",
+"version": "0.9.6"
+},
+{
+"name": "prosemirror-view",
+"version": "1.41.4"
+},
+{
+"name": "queue-typescript",
+"version": "1.0.1"
+},
+{
+"name": "re-resizable",
+"version": "6.9.5"
+},
+{
+"name": "react",
+"version": "19.2.1"
+},
+{
+"name": "react",
+"version": "19.3.0"
+},
+{
+"name": "react-day-picker",
+"version": "7.4.10"
+},
+{
+"name": "react-dnd",
+"version": "16.0.1"
+},
+{
+"name": "react-dnd-html5-backend",
+"version": "16.0.1"
+},
+{
+"name": "react-dnd-multi-backend",
+"version": "8.0.3"
+},
+{
+"name": "react-dnd-touch-backend",
+"version": "16.0.1"
+},
+{
+"name": "react-dom",
+"version": "19.2.1"
+},
+{
+"name": "react-dom",
+"version": "19.3.0"
+},
+{
+"name": "react-draggable",
+"version": "4.4.5"
+},
+{
+"name": "react-dropzone",
+"version": "10.2.2"
+},
+{
+"name": "react-grid-layout",
+"version": "1.4.4"
+},
+{
+"name": "react-is",
+"version": "16.13.1"
+},
+{
+"name": "react-konva",
+"version": "19.0.2"
+},
+{
+"name": "react-modal-promise",
+"version": "1.0.2"
+},
+{
+"name": "react-movable",
+"version": "2.5.4"
+},
+{
+"name": "react-reconciler",
+"version": "0.31.0"
+},
+{
+"name": "react-redux",
+"version": "9.2.0"
+},
+{
+"name": "react-redux",
+"version": "9.3.0"
+},
+{
+"name": "react-resizable",
+"version": "3.0.5"
+},
+{
+"name": "react-slotify",
+"version": "0.2.2"
+},
+{
+"name": "react-virtualized",
+"version": "9.22.6"
+},
+{
+"name": "react-virtualized-auto-sizer",
+"version": "1.0.6"
+},
+{
+"name": "react-waypoint",
+"version": "9.0.1"
+},
+{
+"name": "react-window",
+"version": "1.8.6"
+},
+{
+"name": "react-xarrows",
+"version": "2.0.2"
+},
+{
+"name": "recharts",
+"version": "3.8.1"
+},
+{
+"name": "redux",
+"version": "4.2.1"
+},
+{
+"name": "regexparam",
+"version": "3.0.0"
+},
+{
+"name": "rehype-parse",
+"version": "6.0.2"
+},
+{
+"name": "rehype-remark",
+"version": "8.0.0"
+},
+{
+"name": "remark-stringify",
+"version": "8.0.0"
+},
+{
+"name": "remove-markdown",
+"version": "0.2.2"
+},
+{
+"name": "remove-markdown",
+"version": "0.7.0"
+},
+{
+"name": "reselect",
+"version": "5.1.1"
+},
+{
+"name": "resize-observer-polyfill",
+"version": "1.5.1"
+},
+{
+"name": "rope-sequence",
+"version": "1.3.4"
+},
+{
+"name": "roughjs",
+"version": "4.6.6"
+},
+{
+"name": "scheduler",
+"version": "0.25.0"
+},
+{
+"name": "scheduler",
+"version": "0.28.0"
+},
+{
+"name": "scrollbar-width",
+"version": "3.1.1"
+},
+{
+"name": "semver",
+"version": "7.3.8"
+},
+{
+"name": "shallow-clone",
+"version": "1.0.0"
+},
+{
+"name": "simply-uuid",
+"version": "1.0.1"
+},
+{
+"name": "slf4j-api",
+"version": "1.7.5"
+},
+{
+"name": "slug",
+"version": "8.2.2"
+},
+{
+"name": "sniffr",
+"version": "1.3.1"
+},
+{
+"name": "sniffr",
+"version": "1.4.0"
+},
+{
+"name": "software.amazon.awssdk:annotations",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:annotations",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:apache5-client",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:apache5-client",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:auth",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:auth",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:aws-core",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:aws-core",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:aws-json-protocol",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:aws-query-protocol",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:checksums",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:checksums",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:checksums-spi",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:checksums-spi",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:endpoints-spi",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:endpoints-spi",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:http-auth",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:http-auth",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:http-auth-aws",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:http-auth-aws",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:http-auth-aws-eventstream",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:http-auth-aws-eventstream",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:http-auth-spi",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:http-auth-spi",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:http-client-spi",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:http-client-spi",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:identity-spi",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:identity-spi",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:json-utils",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:json-utils",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:metrics-spi",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:metrics-spi",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:netty-nio-client",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:netty-nio-client",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:profiles",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:profiles",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:protocol-core",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:protocol-core",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:rds",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:regions",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:regions",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:retries",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:retries",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:retries-spi",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:retries-spi",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:sdk-core",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:sdk-core",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:ses",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:sesv2",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:sts",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:third-party-jackson-core",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:third-party-jackson-core",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:url-connection-client",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:utils",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:utils",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.awssdk:utils-lite",
+"version": "2.46.7"
+},
+{
+"name": "software.amazon.awssdk:utils-lite",
+"version": "2.49.0"
+},
+{
+"name": "software.amazon.eventstream:eventstream",
+"version": "1.0.1"
+},
+{
+"name": "software.amazon.jdbc:aws-advanced-jdbc-wrapper",
+"version": "3.2.0"
+},
+{
+"name": "spring-aop",
+"version": "4.0.1.RELEASE"
+},
+{
+"name": "spring-beans",
+"version": "4.0.1.RELEASE"
+},
+{
+"name": "spring-context",
+"version": "4.0.1.RELEASE"
+},
+{
+"name": "spring-core",
+"version": "4.0.1.RELEASE"
+},
+{
+"name": "spring-expression",
+"version": "4.0.1.RELEASE"
+},
+{
+"name": "spring-web",
+"version": "4.0.1.RELEASE"
+},
+{
+"name": "spring-webmvc",
+"version": "4.0.1.RELEASE"
+},
+{
+"name": "stack-typescript",
+"version": "1.0.4"
+},
+{
+"name": "store2",
+"version": "2.3.2"
+},
+{
+"name": "style-loader",
+"version": "4.0.0"
+},
+{
+"name": "tern",
+"version": "0.24.3"
+},
+{
+"name": "tiny-invariant",
+"version": "1.3.3"
+},
+{
+"name": "tools.jackson.core:jackson-core",
+"version": "3.1.0"
+},
+{
+"name": "tools.jackson.core:jackson-databind",
+"version": "3.1.0"
+},
+{
+"name": "tools.jackson.module:jackson-module-blackbird",
+"version": "3.1.0"
+},
+{
+"name": "tools.jackson:jackson-bom",
+"version": "3.1.0"
+},
+{
+"name": "transliteration",
+"version": "2.3.5"
+},
+{
+"name": "ts-dedent",
+"version": "2.3.0"
+},
+{
+"name": "ts-opaque",
+"version": "3.0.1"
+},
+{
+"name": "tslib",
+"version": "2.8.1"
+},
+{
+"name": "ttag",
+"version": "1.8.6"
+},
+{
+"name": "typescript-string-operations",
+"version": "1.6.1"
+},
+{
+"name": "ua-parser-js",
+"version": "0.7.28"
+},
+{
+"name": "ua.net.nlp:morfologik-ukrainian-search",
+"version": "4.9.1"
+},
+{
+"name": "uc.micro",
+"version": "1.0.6"
+},
+{
+"name": "uc.micro",
+"version": "2.1.0"
+},
+{
+"name": "unified",
+"version": "9.0.0"
+},
+{
+"name": "use-debounce",
+"version": "5.2.1"
+},
+{
+"name": "use-sync-external-store",
+"version": "1.7.0"
+},
+{
+"name": "util-deprecate",
+"version": "1.0.2"
+},
+{
+"name": "uuid",
+"version": "11.1.0"
+},
+{
+"name": "uuid",
+"version": "9.0.0"
+},
+{
+"name": "validate.io-array",
+"version": "1.0.6"
+},
+{
+"name": "validate.io-function",
+"version": "1.0.2"
+},
+{
+"name": "validate.io-integer",
+"version": "1.0.5"
+},
+{
+"name": "validate.io-integer-array",
+"version": "1.0.0"
+},
+{
+"name": "validate.io-number",
+"version": "1.0.3"
+},
+{
+"name": "validatorjs",
+"version": "3.22.1"
+},
+{
+"name": "victory-vendor",
+"version": "37.3.6"
+},
+{
+"name": "w3c-keyname",
+"version": "2.2.8"
+},
+{
+"name": "web-vitals",
+"version": "5.0.3"
+},
+{
+"name": "xml-apis:xml-apis",
+"version": "1.4.01"
+},
+{
+"name": "xml-apis:xml-apis-ext",
+"version": "1.3.04"
+},
+{
+"name": "xss",
+"version": "1.0.10"
+},
+{
+"name": "xss",
+"version": "1.0.13"
+},
+{
+"name": "y-websocket",
+"version": "2.1.0"
+},
+{
+"name": "yallist",
+"version": "4.0.0"
+},
+{
+"name": "yjs",
+"version": "13.6.27"
+}
+],
+"discovery_path": [
+"https://www.jetbrains.com/legal/third-party-software/",
+"https://data.services.jetbrains.com/products?code=TC,YTD,HB,IDES,DLE,IIU,PCP,WS,GO,PS,RD,CL,RM,DG,RR,TBA,GW&fields=name,code,releases.version,releases.downloads,releases.type"
+],
+"extractors": [
+"sbom"
+],
+"found_via": "auto-discovered",
+"kind": "sbom",
+"product": "YouTrack",
+"retrieved": "2026-11-24",
+"sha256": "d122443bfd23c9c067147876d2f4643fd80eec0f025904bfc1e06bf061a5efa9",
+"supplier": "JetBrains",
+"url": "https://resources.jetbrains.com/storage/third-party-libraries/youtrack/youtrack-2026.3.20641.json",
+"version": "2026.3.20641"
+}
