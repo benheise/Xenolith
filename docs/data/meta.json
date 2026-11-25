@@ -1,5 +1,5 @@
 {
- "built": "2026-11-25T00:32:16Z",
+ "built": "2026-11-25T17:38:05Z",
  "threats": [
   {
    "c": "check-point-gaia",
@@ -24,12 +24,12 @@
    "flagged_total": 1,
    "products": 2,
    "unfixed": 0,
-   "epss": 0.03517,
+   "epss": 0.80106,
    "scores": [
     {
      "v": "CVE-2026-16232",
      "s": 9.3,
-     "e": 0.03517,
+     "e": 0.80106,
      "k": "2026-07-22"
     }
    ],
@@ -66,7 +66,7 @@
     {
      "v": "CVE-2026-123890",
      "s": 9.8,
-     "e": 0.03526,
+     "e": 0.05009,
      "k": "2026-11-20"
     },
     {
@@ -78,7 +78,7 @@
     {
      "v": "CVE-2024-37079",
      "s": 9.8,
-     "e": 0.22377,
+     "e": 0.02769,
      "k": "2026-01-23"
     }
    ],
@@ -113,12 +113,12 @@
    "flagged_total": 2,
    "products": 3,
    "unfixed": 1,
-   "epss": 0.05874,
+   "epss": 0.02695,
    "scores": [
     {
      "v": "CVE-2026-90436",
      "s": 9.8,
-     "e": 0.05874,
+     "e": 0.02695,
      "k": "2026-11-18"
     }
    ],
@@ -173,8 +173,8 @@
     }
    ],
    "flagged_total": 11,
-   "products": 516,
-   "unfixed": 95,
+   "products": 536,
+   "unfixed": 100,
    "epss": 0.59265,
    "scores": [
     {
@@ -208,12 +208,12 @@
    "flagged_total": 1,
    "products": 6,
    "unfixed": 0,
-   "epss": 0.03269,
+   "epss": 0.00232,
    "scores": [
     {
      "v": "CVE-2026-123039",
      "s": 7.8,
-     "e": 0.03269,
+     "e": 0.00232,
      "k": "2026-11-13"
     }
    ],
@@ -249,18 +249,18 @@
    "flagged_total": 2,
    "products": 860,
    "unfixed": 203,
-   "epss": 0.99999,
+   "epss": 0.45083,
    "scores": [
     {
      "v": "CVE-2026-109618",
      "s": 9.2,
-     "e": 0.99999,
+     "e": 0.45083,
      "k": "2026-10-26"
     },
     {
      "v": "CVE-2026-109619",
      "s": 9.2,
-     "e": 0.99999,
+     "e": 0.20754,
      "k": "2026-10-26"
     }
    ],
@@ -316,12 +316,12 @@
    "flagged_total": 1,
    "products": 1,
    "unfixed": 0,
-   "epss": 0.00991,
+   "epss": 0.00835,
    "scores": [
     {
      "v": "CVE-2026-118527",
      "s": 4.3,
-     "e": 0.00991,
+     "e": 0.00835,
      "k": "2026-10-30"
     }
    ],
@@ -350,12 +350,12 @@
    "flagged_total": 1,
    "products": 1,
    "unfixed": 0,
-   "epss": 0.00803,
+   "epss": 0.00559,
    "scores": [
     {
      "v": "CVE-2026-111357",
      "s": 7.0,
-     "e": 0.00803,
+     "e": 0.00559,
      "k": "2026-10-30"
     }
    ],
@@ -393,12 +393,12 @@
    "flagged_total": 2,
    "products": 16,
    "unfixed": 0,
-   "epss": 0.86688,
+   "epss": 0.08238,
    "scores": [
     {
      "v": "CVE-2026-76418",
      "s": 8.6,
-     "e": 0.08547,
+     "e": 0.00992,
      "k": "2026-10-29"
     },
     {
@@ -410,13 +410,13 @@
     {
      "v": "CVE-2025-20362",
      "s": 6.5,
-     "e": 0.86688,
+     "e": 0.08238,
      "k": "2025-09-25"
     },
     {
      "v": "CVE-2025-20333",
      "s": 9.9,
-     "e": 0.72037,
+     "e": 0.02319,
      "k": "2025-09-25"
     }
    ],
@@ -436,14 +436,14 @@
    "note": "",
    "flagged": [],
    "flagged_total": 0,
-   "products": 253,
-   "unfixed": 62,
-   "epss": 0.99987,
+   "products": 280,
+   "unfixed": 59,
+   "epss": 0.32976,
    "scores": [
     {
      "v": "CVE-2026-111497",
      "s": 9.2,
-     "e": 0.99987,
+     "e": 0.32976,
      "k": "2026-10-27"
     }
    ],
@@ -472,12 +472,12 @@
    "flagged_total": 1,
    "products": 5,
    "unfixed": 0,
-   "epss": 0.01395,
+   "epss": 0.00826,
    "scores": [
     {
      "v": "CVE-2025-61624",
      "s": 5.4,
-     "e": 0.01395,
+     "e": 0.00826,
      "k": "2026-10-16"
     }
    ],
@@ -506,12 +506,12 @@
    "flagged_total": 1,
    "products": 4,
    "unfixed": 0,
-   "epss": 0.2655,
+   "epss": 0.01293,
    "scores": [
     {
      "v": "CVE-2026-94127",
      "s": 9.3,
-     "e": 0.2655,
+     "e": 0.01293,
      "k": "2026-09-22"
     }
    ],
@@ -543,24 +543,24 @@
    "flagged_total": 1,
    "products": 5,
    "unfixed": 0,
-   "epss": 0.96119,
+   "epss": 0.13394,
    "scores": [
     {
      "v": "CVE-2026-0322",
      "s": 8.6,
-     "e": 0.02147,
+     "e": 0.01969,
      "k": "2026-10-14"
     },
     {
      "v": "CVE-2026-0257",
      "s": 7.8,
-     "e": 0.96119,
+     "e": 0.13394,
      "k": "2026-05-29"
     },
     {
      "v": "CVE-2026-0300",
      "s": 9.3,
-     "e": 0.41714,
+     "e": 0.02167,
      "k": "2026-05-06"
     }
    ],
@@ -589,19 +589,19 @@
    "flagged_total": 1,
    "products": 2,
    "unfixed": 0,
-   "epss": 0.05715,
+   "epss": 0.02724,
    "scores": [
     {
      "v": "CVE-2026-76519",
      "s": 9.8,
-     "e": 0.05715,
+     "e": 0.02724,
      "k": "2026-10-14"
     }
    ],
    "cvss": 9.8
   }
  ],
- "epss_date": "2026-11-24",
+ "epss_date": "2026-11-25",
  "watching": [
   {
    "c": "openssl",
@@ -626,7 +626,7 @@
     "CVE-2026-113425"
    ],
    "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.",
-   "products": 188,
+   "products": 189,
    "unfixed": 30
   },
   {
@@ -677,14 +677,14 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20896,
-  "products_with_data": 8846,
+  "assertions": 20948,
+  "products_with_data": 8884,
   "inventories": 440,
   "inventory_components": 309551,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16269,
-  "spine_only_shown": 4711,
+  "spine_only_shown": 4710,
   "components": 91,
   "wanted": 82,
   "wanted_fulfilled": 7
@@ -903,15 +903,15 @@
     }
    ],
    "kev": 1,
-   "assertions": 395,
-   "products": 280,
-   "contains": 344,
+   "assertions": 422,
+   "products": 307,
+   "contains": 352,
    "in_range": 41,
    "verdicts": {
     "present": 66,
-    "fixed": 177,
-    "not_affected": 19,
-    "workaround": 86,
+    "fixed": 188,
+    "not_affected": 38,
+    "workaround": 83,
     "absent": 32,
     "affected": 15
    },
@@ -1694,14 +1694,14 @@
     }
    ],
    "kev": 13,
-   "assertions": 924,
-   "products": 622,
-   "contains": 587,
+   "assertions": 944,
+   "products": 642,
+   "contains": 607,
    "in_range": 48,
    "verdicts": {
-    "fixed": 368,
+    "fixed": 383,
     "runtime_dependent": 21,
-    "workaround": 50,
+    "workaround": 55,
     "not_affected": 206,
     "under_investigation": 79,
     "affected": 52,
@@ -1817,15 +1817,15 @@
     }
    ],
    "kev": 0,
-   "assertions": 316,
-   "products": 201,
-   "contains": 185,
+   "assertions": 321,
+   "products": 202,
+   "contains": 189,
    "in_range": 50,
    "verdicts": {
-    "fixed": 95,
-    "workaround": 25,
+    "fixed": 96,
+    "workaround": 28,
     "under_investigation": 68,
-    "not_affected": 53,
+    "not_affected": 54,
     "present": 54,
     "affected": 11,
     "absent": 10
@@ -7570,16 +7570,16 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 5304,
-   "latest": "2026-11-24",
+   "assertions": 5356,
+   "latest": "2026-11-25",
    "publishers": {
-    "Red Hat Product Security": 3251,
+    "Red Hat Product Security": 3294,
     "Siemens ProductCERT": 904,
     "CISA": 681,
     "Cisco": 238,
     "Microsoft Security Response Center": 104,
     "ABB PSIRT": 70,
-    "Schneider Electric CPCERT": 31,
+    "Schneider Electric CPCERT": 40,
     "SICK PSIRT": 20,
     "Open-Xchange GmbH": 2,
     "Stackable GmbH": 2,
