@@ -3,6 +3,66 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-25: Java4Shell recheck
+
+Last run of the daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 27 new
+statements and 10 updated rows (496 Java4Shell statements in all), each read on the vendor's own
+page.
+
+- **Status changes:**
+  - Atlassian (post updated 25 November) has released Data Center builds with a fixed Java: Jira
+    and Jira Service Management 10.3.28 and 11.3.14, Bitbucket 9.2.28, 10.2.10 and 10.5.3,
+    Confluence 9.2.30, Bamboo 13.0.2, and new Crowd Docker images. All six Data Center rows move
+    from workaround to fixed. Confluence 10.2.x and Bamboo 10.2.x and 12.1.x releases are still to
+    come and stay on the JVM flag until then; Crowd installers run on the customer's Java. Atlassian
+    will publish a security advisory on 1 December.
+  - Splunk SVD-2026-1102 (updated 25 November): AppDynamics Python Agent (26.7.3) and PHP Agent
+    (26.9.1) move from affected to fixed.
+- **New products from vendors already tracked:**
+  - Splunk: AppDynamics Apache Web Server Agent (fixed in 26.9.1) and Splunk UBA (affected, fix in
+    progress) were added to the affected list on 25 November.
+  - JetBrains (security blog, 24 November): updates for the IDEs, ReSharper, Gateway and the
+    Toolbox App turn the vulnerable Base64 intrinsic off by default. These 14 rows are marked fixed,
+    as CloudBees CI and Logstash were for the same approach. JetBrains Runtime itself stays affected
+    until new JBR builds carry the upstream fix; the HTTP Client CLI is named as affected with no
+    update listed.
+  - BellSoft: Liberica Native Image Kit 23.0.14.1, 23.1.13.1 and 25.0.5.1 (24 November) carry the
+    fix.
+  - ManageEngine: its cloud services post (19 November) says the mitigation and patched JDKs are
+    rolled out and customers need do nothing.
+  - Appian's KB-2445 adds 26.10.107.0 to the fixed self-managed releases.
+- **New vendors:**
+  - SonarSource (advisory on Sonar's community forum, posted by Sonar staff, updated 25
+    November): SonarQube Server fixed in 2026.5.6, 2026.1.9 LTA and 2025.4.12 LTA (the images carry
+    a fixed Java; ZIP installs need their own Java updated); Community Build and the MCP Server on
+    the JVM flag; SonarScanner runs on the CI agent's Java.
+  - CloverDX (KB article updated 25 November): Server fixed in Docker images 7.6.2.1, 7.5.1.1,
+    7.4.2.1 and 7.3.1.1 and Marketplace 7.6.2; Designer and the evaluation Server Bundle (fix in
+    7.7.0, due 15 December) on the JVM flag.
+- **No change:** Cisco (v1.4 of 23 November, every fix TBD), Keycloak (19 November; Operator still
+  on the workaround), Elastic (9.6.0 and Cloud Hosted's JDK update not out yet), PaperCut (25.x
+  still without a fix), Sophos (v5 of 20 November), Arista (rev 1.0, eight platforms in triage),
+  Barracuda, Fortinet (23 November, 47 under investigation), Hitachi Vantara (both alerts 23
+  November), Citrix, Trend Micro (Deep Discovery Inspector patch due 4 December), Google
+  GCP-2026-082 (23 November), Palo Alto Networks, Okta, Dynatrace, DigiCert, KNIME, Exalate,
+  Jenkins, CloudBees, Broadcom's EEM article, Oracle's CSPU (still revision 1), Quarkus (now calls
+  the incident closed on its side; builder images stay on the flag), OvalEdge (the update it
+  promised for 25 November had not appeared).
+- Exploitation unchanged: not in CISA KEV (1,795 entries, no additions since 24 November). Sophos
+  notes reported exploit attempts but no confirmed success; Atlassian, JetBrains, Palo Alto
+  Networks, Arista and PaperCut know of no malicious use.
+- **Not read:** Esri's post, Mimecast's trust center and Azul's support article (HTTP 403), so
+  their rows are unchanged; F5's K000164290 (drawn in the browser, not rendered this run); MuleSoft's
+  knowledge article on Salesforce Help (drawn in the browser). Sophos' and Arista's advisories were
+  read through the search tool's fetcher.
+- **Not added:** Salesforce's blog (still assessing, no product named); securityonline.info's
+  affected-products list (secondary; its Siemens entries already come in through Siemens' CSAF
+  feed); Akamai's patch analysis; ManageEngine's Patch Manager guidance posts; the Canadian Cyber
+  Centre's JFrog alert AV26-867 (older Artifactory CVEs, not this one).
+- Still silent: Ping Identity, JFrog (no product statement), Broadcom's VMware Tanzu and Symantec
+  products, IBM (none of the 18 bulletins the search found names the CVE), Oracle's own products,
+  SAP and SapMachine.
+
 ## 2026-11-25: Daily watch
 
 One newly reported compromise in a watchlist component: Check Point management servers, through

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-25T17:38:05Z",
+ "built": "2026-11-25T22:47:19Z",
  "threats": [
   {
    "c": "check-point-gaia",
@@ -173,8 +173,8 @@
     }
    ],
    "flagged_total": 11,
-   "products": 536,
-   "unfixed": 100,
+   "products": 563,
+   "unfixed": 101,
    "epss": 0.59265,
    "scores": [
     {
@@ -677,8 +677,8 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20948,
-  "products_with_data": 8884,
+  "assertions": 20975,
+  "products_with_data": 8898,
   "inventories": 440,
   "inventory_components": 309551,
   "cpe_linked_clusters": 23,
@@ -1694,17 +1694,17 @@
     }
    ],
    "kev": 13,
-   "assertions": 944,
-   "products": 642,
-   "contains": 607,
+   "assertions": 971,
+   "products": 657,
+   "contains": 633,
    "in_range": 48,
    "verdicts": {
-    "fixed": 383,
-    "runtime_dependent": 21,
-    "workaround": 55,
+    "fixed": 410,
+    "runtime_dependent": 22,
+    "workaround": 53,
     "not_affected": 206,
     "under_investigation": 79,
-    "affected": 52,
+    "affected": 53,
     "present": 117,
     "unknown": 1,
     "absent": 30
@@ -7611,8 +7611,8 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 1161,
-   "latest": "2026-11-24",
+   "assertions": 1188,
+   "latest": "2026-11-25",
    "fv": "community",
    "dp": [
     "https://www.atlassian.com/software/bamboo/downloads/binary/atlassian-bamboo-13.0.1.tar.gz",
