@@ -1,5 +1,5 @@
 {
- "built": "2026-11-25T22:47:19Z",
+ "built": "2026-11-25T22:49:56Z",
  "threats": [
   {
    "c": "check-point-gaia",
@@ -173,7 +173,7 @@
     }
    ],
    "flagged_total": 11,
-   "products": 563,
+   "products": 564,
    "unfixed": 101,
    "epss": 0.59265,
    "scores": [
@@ -626,7 +626,7 @@
     "CVE-2026-113425"
    ],
    "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.",
-   "products": 189,
+   "products": 190,
    "unfixed": 30
   },
   {
@@ -677,7 +677,7 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20975,
+  "assertions": 20978,
   "products_with_data": 8898,
   "inventories": 440,
   "inventory_components": 309551,
@@ -1090,7 +1090,7 @@
    ],
    "kev": 2,
    "assertions": 7413,
-   "products": 6149,
+   "products": 6150,
    "contains": 2595,
    "in_range": 11,
    "verdicts": {
@@ -1694,12 +1694,12 @@
     }
    ],
    "kev": 13,
-   "assertions": 971,
-   "products": 657,
-   "contains": 633,
+   "assertions": 972,
+   "products": 658,
+   "contains": 634,
    "in_range": 48,
    "verdicts": {
-    "fixed": 410,
+    "fixed": 411,
     "runtime_dependent": 22,
     "workaround": 53,
     "not_affected": 206,
@@ -1817,12 +1817,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 321,
-   "products": 202,
-   "contains": 189,
+   "assertions": 324,
+   "products": 203,
+   "contains": 192,
    "in_range": 50,
    "verdicts": {
-    "fixed": 96,
+    "fixed": 99,
     "workaround": 28,
     "under_investigation": 68,
     "not_affected": 54,
@@ -2220,15 +2220,15 @@
     }
    ],
    "kev": 1,
-   "assertions": 252,
-   "products": 177,
+   "assertions": 251,
+   "products": 176,
    "contains": 231,
    "in_range": 63,
    "verdicts": {
     "present": 141,
     "workaround": 15,
     "fixed": 75,
-    "not_affected": 21
+    "not_affected": 20
    },
    "exploitation": {}
   },
@@ -7570,10 +7570,10 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 5356,
+   "assertions": 5359,
    "latest": "2026-11-25",
    "publishers": {
-    "Red Hat Product Security": 3294,
+    "Red Hat Product Security": 3297,
     "Siemens ProductCERT": 904,
     "CISA": 681,
     "Cisco": 238,
