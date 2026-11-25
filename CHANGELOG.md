@@ -3,6 +3,54 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-25: Daily watch
+
+One newly reported compromise in a watchlist component: Check Point management servers, through
+an older KEV flaw the watchlist had missed. 3 new statements (1,027 in all), each read on the
+source's own page.
+
+- **Added to the watchlist:** CVE-2026-16232 joins Check Point Gaia's KEV incident. It is an
+  authentication bypass in the SmartConsole login of Security Management and Multi-Domain
+  Security Management servers: anyone who can reach the server, where Trusted Clients are not
+  restricted, gets full admin rights. CISA has listed it since 22 July 2026, but under the
+  product name "SmartConsole", which is likely why it was missing beside the other five Check
+  Point KEV entries. It now tops the Threats list.
+- **Exploitation, new:** GreyNoise (23 November) describes an untracked actor, GT13, that took
+  data from 24 Check Point Security Management servers at 22 organisations between 17 October
+  and 2 November, and at one victim used CVE-2026-16232 to run more than 100 management tasks:
+  copying the firewall database and internal CA, minting a certificate, unloading policies.
+  GreyNoise expects the access is still in use. Quantum Security Management is marked exploited
+  from that report.
+- **New statements (sk185169, last modified 24 September):** Quantum Security Management and
+  Multi-Domain Security Management, fixed in Jumbo Hotfix Take 36 (R82.10), 118 (R82) and 158
+  (R81.20); no fix listed for R81.10, R81 and older. Check Point says the flaw was exploited at a
+  handful of customers but not on which of the two products, so the multi-domain row carries no
+  level. The page is drawn in the browser and was rendered.
+- **KEV entries of 23 and 24 November left off the watchlist:** MONAI Label CVE-2026-133968,
+  N-able Mail Assure CVE-2026-134624 and Optimizely Web Experimentation CVE-2026-132224 (one
+  product each); Drupal core CVE-2026-132165 (no stored inventory lists Drupal); Idunno.AntiCsrf
+  CVE-2026-131914, listed for a decision below.
+- **No change:** Broadcom's VMSA-2026-0009.1 (20 November); Atlassian's CONFSERVER-104610 (17
+  November); Rapid7's Axis report (19 November); Check Point's sk1000362 (12 November) and blog
+  advisory (15 November). GreyNoise also saw GT13 fire exploit scripts at NetScaler, Ivanti
+  Connect Secure and vCenter inside one victim's network; all are old KEV flaws whose products
+  are already marked exploited, so nothing was added.
+- **Scores:** FIRST.org had not published scores for 25 November when the run started (00:24
+  UTC), so EPSS stays at 24 November. Since the last daily watch (22 November scores):
+  Java4Shell CVE-2026-114938 crossed 50% on 23 November (45.6% to 57.3%, now 59.3%); Ivanti
+  Connect Secure CVE-2021-22893 went from 47.5% to 88.8% and NetScaler CVE-2020-8195 from 33.0%
+  to 63.9%, both already in KEV. CISA KEV has 1,795 entries; 393 tracked, the new one being
+  CVE-2026-16232.
+- **Still open:**
+  - Idunno.AntiCsrf: an abandoned ASP.NET anti-CSRF module (last release 2008) that Mandiant
+    (MNDT-2026-0048) saw exploited; CISA notes it may be inside other products. No stored
+    inventory lists it and no vendor has named a product that ships it.
+  - Carried over: Apache XML-RPC as a component, SAP NetWeaver as a vendor engine, which
+    PHP2Shell vendors a daily run should reopen, and a recheck for the NGINX2Root rows.
+- **Not read:** the CVE Brief archive page for 24 November (client error).
+- **Skipped as secondary only:** news reports of the GreyNoise campaign (the GreyNoise post is
+  cited instead) and of the AntiCsrf exploitation (Mandiant's disclosure was read).
+
 ## 2026-11-24: Java4Shell recheck
 
 Daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 16 new statements and 13

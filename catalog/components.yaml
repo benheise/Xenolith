@@ -2563,8 +2563,8 @@ components:
     incidents:
       - name: Exploited flaws (CISA KEV)
         year: 2026
-        cves: [CVE-2024-24919, CVE-2026-50751, CVE-2026-85102, CVE-2026-93616,
-               CVE-2026-123039]
+        cves: [CVE-2024-24919, CVE-2026-16232, CVE-2026-50751, CVE-2026-85102,
+               CVE-2026-93616, CVE-2026-123039]
         note: Every CVE here is one CISA lists as exploited in this product family (2024 to 2026).
         trackers: []
 

@@ -1,5 +1,5 @@
 {
- "tracked": 446,
+ "tracked": 447,
  "cves": {
   "CVE-2004-1464": {
    "added": "2023-05-19",
@@ -2492,6 +2492,13 @@
    "vendor": "Google",
    "product": "Chromium",
    "name": "Google Chromium Use-After-Free Vulnerability"
+  },
+  "CVE-2026-16232": {
+   "added": "2026-07-22",
+   "ransomware": false,
+   "vendor": "Check Point",
+   "product": "SmartConsole",
+   "name": "Check Point SmartConsole Improper Authentication Vulnerability"
   },
   "CVE-2026-19490": {
    "added": "2026-09-09",

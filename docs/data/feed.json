@@ -6,6 +6,50 @@
  "description": "Flaws in widely embedded components and vendor engines with the newest sign of exploitation.",
  "items": [
   {
+   "id": "tag:benheise.github.io,2026:xenolith/check-point-gaia/CVE-2026-16232",
+   "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-16232",
+   "title": "Check Point SmartConsole Improper Authentication",
+   "content_text": "Exploited in the wild: CVE-2026-16232 in Check Point Gaia (Security Gateway and Management). In CISA KEV since 2026-07-22. EPSS 3.52%. Products named: Check Point Quantum Security Management. 2 products have a vendor statement, 0 with no fix stated.",
+   "date_published": "2026-07-22T00:00:00Z",
+   "date_modified": "2026-11-23T00:00:00Z",
+   "tags": [
+    "exploited",
+    "check-point-gaia",
+    "CVE-2026-16232"
+   ],
+   "_xenolith": {
+    "c": "check-point-gaia",
+    "component": "Check Point Gaia (Security Gateway and Management)",
+    "cves": [
+     "CVE-2026-16232"
+    ],
+    "level": "exploited",
+    "date": "2026-11-23",
+    "kev": "2026-07-22",
+    "epss": 0.03517,
+    "flagged": [
+     {
+      "k": "check-point/quantum-security-management",
+      "s": "Check Point",
+      "p": "Quantum Security Management",
+      "x": "exploited"
+     }
+    ],
+    "flagged_total": 1,
+    "products": 2,
+    "unfixed": 0,
+    "cvss": 9.3,
+    "scores": [
+     {
+      "v": "CVE-2026-16232",
+      "s": 9.3,
+      "e": 0.03517,
+      "k": "2026-07-22"
+     }
+    ]
+   }
+  },
+  {
    "id": "tag:benheise.github.io,2026:xenolith/vcenter/CVE-2026-123890",
    "url": "https://benheise.github.io/Xenolith/#c=vcenter",
    "title": "vCenter 2026 exploited flaws",
@@ -715,50 +759,6 @@
       "s": 9.8,
       "e": 0.05715,
       "k": "2026-10-14"
-     }
-    ]
-   }
-  },
-  {
-   "id": "tag:benheise.github.io,2026:xenolith/ivanti-connect-secure/CVE-2026-104935",
-   "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-104935",
-   "title": "Ivanti Connect Secure Authentication Bypass by Spoofing",
-   "content_text": "Exploited in the wild: CVE-2026-104935 in Ivanti Connect Secure, Policy Secure and ZTA gateways. In CISA KEV since 2026-10-13. EPSS 93.10%. Products named: Ivanti Connect Secure. 1 products have a vendor statement, 0 with no fix stated.",
-   "date_published": "2026-10-13T00:00:00Z",
-   "date_modified": "2026-10-13T00:00:00Z",
-   "tags": [
-    "exploited",
-    "ivanti-connect-secure",
-    "CVE-2026-104935"
-   ],
-   "_xenolith": {
-    "c": "ivanti-connect-secure",
-    "component": "Ivanti Connect Secure, Policy Secure and ZTA gateways",
-    "cves": [
-     "CVE-2026-104935"
-    ],
-    "level": "exploited",
-    "date": "2026-10-13",
-    "kev": "2026-10-13",
-    "epss": 0.93096,
-    "flagged": [
-     {
-      "k": "ivanti/connect-secure",
-      "s": "Ivanti",
-      "p": "Connect Secure",
-      "x": "exploited"
-     }
-    ],
-    "flagged_total": 1,
-    "products": 1,
-    "unfixed": 0,
-    "cvss": 8.6,
-    "scores": [
-     {
-      "v": "CVE-2026-104935",
-      "s": 8.6,
-      "e": 0.93096,
-      "k": "2026-10-13"
      }
     ]
    }

@@ -1,6 +1,40 @@
 {
- "built": "2026-11-24T22:50:59Z",
+ "built": "2026-11-25T00:32:16Z",
  "threats": [
+  {
+   "c": "check-point-gaia",
+   "component": "Check Point Gaia (Security Gateway and Management)",
+   "title": "Check Point SmartConsole Improper Authentication",
+   "cves": [
+    "CVE-2026-16232"
+   ],
+   "level": "exploited",
+   "date": "2026-11-23",
+   "kev": "2026-07-22",
+   "kev_cves": 1,
+   "note": "",
+   "flagged": [
+    {
+     "k": "check-point/quantum-security-management",
+     "s": "Check Point",
+     "p": "Quantum Security Management",
+     "x": "exploited"
+    }
+   ],
+   "flagged_total": 1,
+   "products": 2,
+   "unfixed": 0,
+   "epss": 0.03517,
+   "scores": [
+    {
+     "v": "CVE-2026-16232",
+     "s": 9.3,
+     "e": 0.03517,
+     "k": "2026-07-22"
+    }
+   ],
+   "cvss": 9.3
+  },
   {
    "c": "vcenter",
    "component": "VMware vCenter",
@@ -565,40 +599,6 @@
     }
    ],
    "cvss": 9.8
-  },
-  {
-   "c": "ivanti-connect-secure",
-   "component": "Ivanti Connect Secure, Policy Secure and ZTA gateways",
-   "title": "Ivanti Connect Secure Authentication Bypass by Spoofing",
-   "cves": [
-    "CVE-2026-104935"
-   ],
-   "level": "exploited",
-   "date": "2026-10-13",
-   "kev": "2026-10-13",
-   "kev_cves": 1,
-   "note": "",
-   "flagged": [
-    {
-     "k": "ivanti/connect-secure",
-     "s": "Ivanti",
-     "p": "Connect Secure",
-     "x": "exploited"
-    }
-   ],
-   "flagged_total": 1,
-   "products": 1,
-   "unfixed": 0,
-   "epss": 0.93096,
-   "scores": [
-    {
-     "v": "CVE-2026-104935",
-     "s": 8.6,
-     "e": 0.93096,
-     "k": "2026-10-13"
-    }
-   ],
-   "cvss": 8.6
   }
  ],
  "epss_date": "2026-11-24",
@@ -677,7 +677,7 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20893,
+  "assertions": 20896,
   "products_with_data": 8846,
   "inventories": 440,
   "inventory_components": 309551,
@@ -7364,6 +7364,7 @@
      "year": 2026,
      "cves": [
       "CVE-2024-24919",
+      "CVE-2026-16232",
       "CVE-2026-50751",
       "CVE-2026-85102",
       "CVE-2026-93616",
@@ -7373,6 +7374,7 @@
      "trackers": [],
      "kev": {
       "CVE-2024-24919": "2024-05-30",
+      "CVE-2026-16232": "2026-07-22",
       "CVE-2026-50751": "2026-06-08",
       "CVE-2026-85102": "2026-09-22",
       "CVE-2026-93616": "2026-09-22",
@@ -7384,13 +7386,13 @@
      ]
     }
    ],
-   "kev": 5,
-   "assertions": 13,
+   "kev": 6,
+   "assertions": 16,
    "products": 7,
-   "contains": 11,
+   "contains": 14,
    "in_range": 0,
    "verdicts": {
-    "fixed": 11,
+    "fixed": 14,
     "not_affected": 2
    },
    "exploitation": {
@@ -7609,7 +7611,7 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 1158,
+   "assertions": 1161,
    "latest": "2026-11-24",
    "fv": "community",
    "dp": [
