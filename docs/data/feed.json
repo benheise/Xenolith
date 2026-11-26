@@ -9,7 +9,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/check-point-gaia/CVE-2026-16232",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-16232",
    "title": "Check Point SmartConsole Improper Authentication",
-   "content_text": "Exploited in the wild: CVE-2026-16232 in Check Point Gaia (Security Gateway and Management). In CISA KEV since 2026-07-22. EPSS 80.11%. Products named: Check Point Quantum Security Management. 2 products have a vendor statement, 0 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-16232 in Check Point Gaia (Security Gateway and Management). In CISA KEV since 2026-07-22. EPSS 78.94%. Products named: Check Point Quantum Security Management. 2 products have a vendor statement, 0 with no fix stated.",
    "date_published": "2026-07-22T00:00:00Z",
    "date_modified": "2026-11-23T00:00:00Z",
    "tags": [
@@ -26,7 +26,7 @@
     "level": "exploited",
     "date": "2026-11-23",
     "kev": "2026-07-22",
-    "epss": 0.80106,
+    "epss": 0.78945,
     "flagged": [
      {
       "k": "check-point/quantum-security-management",
@@ -43,7 +43,7 @@
      {
       "v": "CVE-2026-16232",
       "s": 9.3,
-      "e": 0.80106,
+      "e": 0.78945,
       "k": "2026-07-22"
      }
     ]
@@ -164,7 +164,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/openjdk/CVE-2026-114938",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-114938",
    "title": "Java4Shell (HotSpot AVX-512 Base64 decoder heap overflow)",
-   "content_text": "Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 59.27%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 564 products have a vendor statement, 101 with no fix stated.",
+   "content_text": "Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 59.27%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 565 products have a vendor statement, 101 with no fix stated.",
    "date_published": "2026-11-17T00:00:00Z",
    "date_modified": "2026-11-17T00:00:00Z",
    "tags": [
@@ -220,7 +220,7 @@
      }
     ],
     "flagged_total": 11,
-    "products": 564,
+    "products": 565,
     "unfixed": 101,
     "cvss": 8.1,
     "scores": [
@@ -537,7 +537,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/brotli/CVE-2026-111497",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-111497",
    "title": "Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)",
-   "content_text": "Exploited in the wild: CVE-2026-111497 in Google Brotli (C library). In CISA KEV since 2026-10-27. EPSS 32.98%. 280 products have a vendor statement, 59 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-111497 in Google Brotli (C library). In CISA KEV since 2026-10-27. EPSS 32.98%. 279 products have a vendor statement, 59 with no fix stated.",
    "date_published": "2026-10-27T00:00:00Z",
    "date_modified": "2026-10-27T00:00:00Z",
    "tags": [
@@ -557,7 +557,7 @@
     "epss": 0.32976,
     "flagged": [],
     "flagged_total": 0,
-    "products": 280,
+    "products": 279,
     "unfixed": 59,
     "cvss": 9.2,
     "scores": [

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-25T22:49:56Z",
+ "built": "2026-11-26T17:31:14Z",
  "threats": [
   {
    "c": "check-point-gaia",
@@ -24,12 +24,12 @@
    "flagged_total": 1,
    "products": 2,
    "unfixed": 0,
-   "epss": 0.80106,
+   "epss": 0.78945,
    "scores": [
     {
      "v": "CVE-2026-16232",
      "s": 9.3,
-     "e": 0.80106,
+     "e": 0.78945,
      "k": "2026-07-22"
     }
    ],
@@ -173,7 +173,7 @@
     }
    ],
    "flagged_total": 11,
-   "products": 564,
+   "products": 565,
    "unfixed": 101,
    "epss": 0.59265,
    "scores": [
@@ -436,7 +436,7 @@
    "note": "",
    "flagged": [],
    "flagged_total": 0,
-   "products": 280,
+   "products": 279,
    "unfixed": 59,
    "epss": 0.32976,
    "scores": [
@@ -601,7 +601,7 @@
    "cvss": 9.8
   }
  ],
- "epss_date": "2026-11-25",
+ "epss_date": "2026-11-26",
  "watching": [
   {
    "c": "openssl",
@@ -677,10 +677,10 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 20978,
-  "products_with_data": 8898,
-  "inventories": 440,
-  "inventory_components": 309551,
+  "assertions": 21016,
+  "products_with_data": 8899,
+  "inventories": 446,
+  "inventory_components": 320424,
   "cpe_linked_clusters": 23,
   "cpe_linked_entries": 25,
   "spine_products": 16269,
@@ -903,14 +903,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 422,
-   "products": 307,
+   "assertions": 421,
+   "products": 306,
    "contains": 352,
    "in_range": 41,
    "verdicts": {
     "present": 66,
     "fixed": 188,
-    "not_affected": 38,
+    "not_affected": 37,
     "workaround": 83,
     "absent": 32,
     "affected": 15
@@ -1089,9 +1089,9 @@
     }
    ],
    "kev": 2,
-   "assertions": 7413,
-   "products": 6150,
-   "contains": 2595,
+   "assertions": 7412,
+   "products": 6148,
+   "contains": 2594,
    "in_range": 11,
    "verdicts": {
     "not_affected": 4258,
@@ -1099,7 +1099,7 @@
     "affected": 926,
     "fixed": 1357,
     "under_investigation": 159,
-    "workaround": 251,
+    "workaround": 250,
     "present": 61
    },
    "exploitation": {
@@ -1186,12 +1186,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 115,
+   "assertions": 119,
    "products": 44,
-   "contains": 108,
+   "contains": 112,
    "in_range": 1,
    "verdicts": {
-    "present": 108,
+    "present": 112,
     "not_affected": 7
    },
    "exploitation": {}
@@ -1322,12 +1322,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 211,
+   "assertions": 215,
    "products": 90,
-   "contains": 203,
+   "contains": 207,
    "in_range": 26,
    "verdicts": {
-    "present": 147,
+    "present": 151,
     "fixed": 45,
     "not_affected": 4,
     "workaround": 11,
@@ -1433,14 +1433,14 @@
     }
    ],
    "kev": 1,
-   "assertions": 940,
+   "assertions": 944,
    "products": 478,
-   "contains": 609,
+   "contains": 613,
    "in_range": 78,
    "verdicts": {
     "workaround": 263,
     "fixed": 127,
-    "present": 217,
+    "present": 221,
     "not_affected": 82,
     "under_investigation": 1,
     "affected": 2,
@@ -1694,12 +1694,12 @@
     }
    ],
    "kev": 13,
-   "assertions": 972,
-   "products": 658,
-   "contains": 634,
+   "assertions": 973,
+   "products": 659,
+   "contains": 635,
    "in_range": 48,
    "verdicts": {
-    "fixed": 411,
+    "fixed": 412,
     "runtime_dependent": 22,
     "workaround": 53,
     "not_affected": 206,
@@ -1817,16 +1817,16 @@
     }
    ],
    "kev": 0,
-   "assertions": 324,
+   "assertions": 328,
    "products": 203,
-   "contains": 192,
-   "in_range": 50,
+   "contains": 196,
+   "in_range": 51,
    "verdicts": {
     "fixed": 99,
     "workaround": 28,
     "under_investigation": 68,
     "not_affected": 54,
-    "present": 54,
+    "present": 58,
     "affected": 11,
     "absent": 10
    },
@@ -2094,13 +2094,13 @@
     }
    ],
    "kev": 6,
-   "assertions": 307,
+   "assertions": 309,
    "products": 130,
-   "contains": 258,
+   "contains": 260,
    "in_range": 37,
    "verdicts": {
     "fixed": 169,
-    "present": 54,
+    "present": 56,
     "workaround": 27,
     "absent": 11,
     "not_affected": 38,
@@ -2220,12 +2220,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 251,
+   "assertions": 255,
    "products": 176,
-   "contains": 231,
+   "contains": 235,
    "in_range": 63,
    "verdicts": {
-    "present": 141,
+    "present": 145,
     "workaround": 15,
     "fixed": 75,
     "not_affected": 20
@@ -3144,12 +3144,12 @@
     }
    ],
    "kev": 0,
-   "assertions": 72,
+   "assertions": 76,
    "products": 34,
-   "contains": 67,
+   "contains": 71,
    "in_range": 3,
    "verdicts": {
-    "present": 62,
+    "present": 66,
     "fixed": 4,
     "affected": 1,
     "not_affected": 5
@@ -3875,14 +3875,14 @@
     }
    ],
    "kev": 0,
-   "assertions": 185,
-   "products": 148,
-   "contains": 176,
+   "assertions": 183,
+   "products": 146,
+   "contains": 174,
    "in_range": 40,
    "verdicts": {
     "present": 65,
-    "fixed": 76,
-    "affected": 15,
+    "fixed": 75,
+    "affected": 14,
     "workaround": 20,
     "absent": 4,
     "not_affected": 5
@@ -6070,12 +6070,12 @@
     }
    ],
    "kev": 2,
-   "assertions": 50,
+   "assertions": 54,
    "products": 21,
-   "contains": 46,
+   "contains": 50,
    "in_range": 1,
    "verdicts": {
-    "present": 38,
+    "present": 42,
     "fixed": 8,
     "not_affected": 4
    },
@@ -6446,12 +6446,12 @@
     }
    ],
    "kev": 3,
-   "assertions": 40,
+   "assertions": 44,
    "products": 26,
-   "contains": 40,
+   "contains": 44,
    "in_range": 0,
    "verdicts": {
-    "present": 12,
+    "present": 16,
     "workaround": 2,
     "fixed": 21,
     "affected": 5
@@ -6481,12 +6481,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 40,
+   "assertions": 44,
    "products": 33,
-   "contains": 39,
+   "contains": 43,
    "in_range": 0,
    "verdicts": {
-    "present": 11,
+    "present": 15,
     "fixed": 27,
     "workaround": 1,
     "absent": 1
@@ -6525,14 +6525,14 @@
     }
    ],
    "kev": 4,
-   "assertions": 20,
+   "assertions": 21,
    "products": 19,
-   "contains": 19,
+   "contains": 20,
    "in_range": 0,
    "verdicts": {
     "present": 1,
     "fixed": 8,
-    "affected": 9,
+    "affected": 10,
     "workaround": 1,
     "not_affected": 1
    },
@@ -6561,12 +6561,12 @@
     }
    ],
    "kev": 1,
-   "assertions": 9,
+   "assertions": 13,
    "products": 2,
-   "contains": 8,
+   "contains": 12,
    "in_range": 0,
    "verdicts": {
-    "present": 8,
+    "present": 12,
     "not_affected": 1
    },
    "exploitation": {}
@@ -7066,15 +7066,15 @@
     }
    ],
    "kev": 13,
-   "assertions": 226,
+   "assertions": 224,
    "products": 58,
-   "contains": 220,
+   "contains": 218,
    "in_range": 0,
    "verdicts": {
     "present": 4,
     "fixed": 205,
     "not_affected": 6,
-    "affected": 9,
+    "affected": 7,
     "workaround": 2
    },
    "exploitation": {
@@ -7570,16 +7570,16 @@
    "url": "https://www.csaf.io/",
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
-   "assertions": 5359,
-   "latest": "2026-11-25",
+   "assertions": 5355,
+   "latest": "2026-11-26",
    "publishers": {
-    "Red Hat Product Security": 3297,
+    "Red Hat Product Security": 3292,
     "Siemens ProductCERT": 904,
     "CISA": 681,
     "Cisco": 238,
     "Microsoft Security Response Center": 104,
     "ABB PSIRT": 70,
-    "Schneider Electric CPCERT": 40,
+    "Schneider Electric CPCERT": 41,
     "SICK PSIRT": 20,
     "Open-Xchange GmbH": 2,
     "Stackable GmbH": 2,
@@ -7597,8 +7597,8 @@
    "url": "https://github.com/benheise/Xenolith/blob/main/catalog/notices.yaml",
    "license": "Per vendor (public documents)",
    "notes": "Component names and versions extracted from vendors' published open source notices. Only the component list is stored, not the license texts. \"Present\" means the vendor lists the component; it says nothing about which CVEs apply.",
-   "assertions": 2993,
-   "latest": "2026-11-24",
+   "assertions": 3035,
+   "latest": "2026-11-26",
    "fv": "auto-discovered",
    "dp": [
     "https://docs.paloaltonetworks.com/oss-listings"

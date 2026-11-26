@@ -471,6 +471,26 @@
 "version_table"
 ]
 },
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.161.41": {
+"fetched": "2026-11-26",
+"kind": "version-table",
+"n": 1,
+"sha": "cb16711f01d903458209513ac5a38e0a7a58fe0870c6e28a7c4e2d935b0c1822",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
+"https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.173.19": {
+"fetched": "2026-11-26",
+"kind": "version-table",
+"n": 1,
+"sha": "cb16711f01d903458209513ac5a38e0a7a58fe0870c6e28a7c4e2d935b0c1822",
+"status": "ok",
+"via": [
+"version_table"
+]
+},
 "https://docs.jfrog.com/releases/docs/about-artifactory-releases#apache-tomcat-7.173.8": {
 "fetched": "2026-11-18",
 "kind": "version-table",
@@ -2512,6 +2532,16 @@
 "sbom"
 ]
 },
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.3/19.3.10-ee.0.json": {
+"fetched": "2026-11-26",
+"kind": "sbom",
+"n": 2713,
+"sha": "4abe75608ffb956395ac5d93f5f2c19539de7bc16af12290b1e06b68bbbad2fa",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.3/19.3.9-ee.0.json": {
 "fetched": "2026-11-18",
 "kind": "sbom",
@@ -2527,6 +2557,16 @@
 "kind": "sbom",
 "n": 2708,
 "sha": "2975c5d38bd1014f529b84b00955354b0b1c5e6a5a748c204980acf371cd3e5b",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.4/19.4.11-ee.0.json": {
+"fetched": "2026-11-26",
+"kind": "sbom",
+"n": 2708,
+"sha": "3ecf0c6dbebd70c61132ea04fd6440f7f5d3da8d0ee1a621edeaea3de8fcba13",
 "status": "ok",
 "via": [
 "sbom"
@@ -2562,6 +2602,16 @@
 "sbom"
 ]
 },
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.5/19.5.9-ee.0.json": {
+"fetched": "2026-11-26",
+"kind": "sbom",
+"n": 2710,
+"sha": "3765db4720d8e59b0ae99e138b2ea954878e5285ba6c84aacc0444c3217a465e",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
 "https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.6/19.6.0-ee.0.json": {
 "fetched": "2026-11-20",
 "kind": "sbom",
@@ -2577,6 +2627,16 @@
 "kind": "sbom",
 "n": 2740,
 "sha": "dfe611cd7f1dc191ac4985ab34e91cc5ff58ffe35456479b8b350e5e65afe135",
+"status": "ok",
+"via": [
+"sbom"
+]
+},
+"https://gitlab-org.gitlab.io/omnibus-gitlab/gitlab-ee/19.6/19.6.2-ee.0.json": {
+"fetched": "2026-11-26",
+"kind": "sbom",
+"n": 2740,
+"sha": "e702694062d2b5516e50d09e65cf40767b94991c2315d71c6a6121c12ff3f931",
 "status": "ok",
 "via": [
 "sbom"
