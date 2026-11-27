@@ -164,7 +164,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/openjdk/CVE-2026-114938",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-114938",
    "title": "Java4Shell (HotSpot AVX-512 Base64 decoder heap overflow)",
-   "content_text": "Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 59.27%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 565 products have a vendor statement, 101 with no fix stated.",
+   "content_text": "Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 72.54%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 564 products have a vendor statement, 100 with no fix stated.",
    "date_published": "2026-11-17T00:00:00Z",
    "date_modified": "2026-11-17T00:00:00Z",
    "tags": [
@@ -180,7 +180,7 @@
     ],
     "level": "demonstrated_preauth",
     "date": "2026-11-17",
-    "epss": 0.59265,
+    "epss": 0.72539,
     "flagged": [
      {
       "k": "atlassian/confluence-data-center",
@@ -220,14 +220,14 @@
      }
     ],
     "flagged_total": 11,
-    "products": 565,
-    "unfixed": 101,
+    "products": 564,
+    "unfixed": 100,
     "cvss": 8.1,
     "scores": [
      {
       "v": "CVE-2026-114938",
       "s": 8.1,
-      "e": 0.59265
+      "e": 0.72539
      }
     ]
    }
@@ -537,7 +537,7 @@
    "id": "tag:benheise.github.io,2026:xenolith/brotli/CVE-2026-111497",
    "url": "https://benheise.github.io/Xenolith/#v=CVE-2026-111497",
    "title": "Brotli decoder RCE (Node2Shell / HTTP2Shell / Broccoli2Shell)",
-   "content_text": "Exploited in the wild: CVE-2026-111497 in Google Brotli (C library). In CISA KEV since 2026-10-27. EPSS 32.98%. 279 products have a vendor statement, 59 with no fix stated.",
+   "content_text": "Exploited in the wild: CVE-2026-111497 in Google Brotli (C library). In CISA KEV since 2026-10-27. EPSS 99.99%. 278 products have a vendor statement, 58 with no fix stated.",
    "date_published": "2026-10-27T00:00:00Z",
    "date_modified": "2026-10-27T00:00:00Z",
    "tags": [
@@ -554,17 +554,17 @@
     "level": "exploited",
     "date": "2026-10-27",
     "kev": "2026-10-27",
-    "epss": 0.32976,
+    "epss": 0.99987,
     "flagged": [],
     "flagged_total": 0,
-    "products": 279,
-    "unfixed": 59,
+    "products": 278,
+    "unfixed": 58,
     "cvss": 9.2,
     "scores": [
      {
       "v": "CVE-2026-111497",
       "s": 9.2,
-      "e": 0.32976,
+      "e": 0.99987,
       "k": "2026-10-27"
      }
     ]
