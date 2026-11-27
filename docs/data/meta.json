@@ -1,5 +1,5 @@
 {
- "built": "2026-11-26T17:31:14Z",
+ "built": "2026-11-27T00:35:48Z",
  "threats": [
   {
    "c": "check-point-gaia",
@@ -7612,7 +7612,7 @@
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
    "assertions": 1188,
-   "latest": "2026-11-25",
+   "latest": "2026-11-26",
    "fv": "community",
    "dp": [
     "https://www.atlassian.com/software/bamboo/downloads/binary/atlassian-bamboo-13.0.1.tar.gz",

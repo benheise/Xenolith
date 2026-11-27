@@ -3,6 +3,58 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-27: Daily watch
+
+No newly exploited flaw in a watchlist component. Three Java4Shell rows and one PHP2Shell note
+updated (1,054 statements in all), each read on the vendor's own page. Java4Shell
+(CVE-2026-114938) is part of this watch now that its separate daily recheck has ended.
+
+- **Status changes, Java4Shell:** Atlassian's Data Center post (updated 26 November) now lists
+  Bamboo 10.2.27 and 12.1.14 beside 13.0.2, so every Bamboo line has a fix, and Confluence
+  10.2.22 beside 9.2.30, with 11.1.0 due next week. It gives the Bitbucket 9.x fix as 9.4.28 (the
+  row said 9.2.28). The security advisory is still planned for 1 December.
+- **PHP2Shell on PAN-OS:** Palo Alto Networks' bulletin PAN-SA-2026-0015 (25 November) says
+  attackers chained PHP2Shell with the Linux kernel flaw Fragnesia (CVE-2026-46300) to get root
+  on firewalls with an internet-facing management interface; a PAN-OS fixed for PHP2Shell is
+  protected. The PAN-OS row (already exploited) now says so. CVE-2026-46300 itself is not added:
+  it is a kernel CVE, and the kernel stays off the watchlist.
+- **KEV entries of 25 November left off the watchlist** (none were added on 26 November; 1,805
+  in all): Juniper Session Smart Conductor and Router CVE-2026-103406 (a flaw in Juniper's own
+  provisioning code; Session Smart is not Junos), Vates Xen Orchestra CVE-2026-133469, Danfoss
+  AK-SM 800A (three) and Mitel MiCollab (five), all one product each.
+- **Scores:** EPSS stays at 26 November; FIRST.org had not published 27 November scores when the
+  run started (00:24 UTC). EPSS fell across the board on 25 November with the same model version
+  (v2026.06.15): CVEs scored 50% or more, over all of EPSS, went from 4,446 to 3,412. Since the
+  last daily watch's 24 November scores, 116 tracked CVEs changed band, all down but one, and
+  tracked CVEs at 50% or more went from 209 to 164 (Ivanti CVE-2025-22457 100% to 41%, PHP2Shell
+  CVE-2026-109618 100% to 45%). The exception is Check Point CVE-2026-16232, 3.5% to 78.9%. No
+  tracked CVE entered KEV (393 of 447).
+- **Still open, for a decision:**
+  - VMSA-2026-0011 (24 November): a second vCenter authentication bypass a week after the
+    exploited one, CVE-2026-123903 (CVSS 9.8, in the VMware Directory Service), plus ESX code
+    execution flaws CVE-2026-123910 and CVE-2026-123911. Broadcom reports no exploitation; the
+    vCenter entry holds exploited flaws, so it is not added yet.
+  - phpAfterShell (CVE-2026-126714, fixed in PHP's 19 November releases): named, and in the
+    default files session handler, but code execution needs a gadget chain in the app or a
+    second, undisclosed bug, and no attacks are reported. It was left out on 19 November with
+    CVE-2026-115560; Google's GCP-2026-090 treats it as critical.
+  - Carried over: Idunno.AntiCsrf, Apache XML-RPC as a component, SAP NetWeaver as a vendor
+    engine, which PHP2Shell vendors to reopen, and a recheck for the NGINX2Root rows.
+- **No change:** Cisco (v1.4 of 23 November), Fortinet (23 November), Citrix (20 November),
+  Arista (rev 1.0), Hitachi Vantara (both alerts 23 November), Keycloak (19 November), Elastic
+  (9.6.0 not out), Google GCP-2026-082 (23 November), Quarkus (25 November, closed on its side),
+  OvalEdge (still 20 November; the update it promised for 25 November has not appeared),
+  SonarSource, CloverDX, Splunk (25 November), Trend Micro, DigiCert, KNIME, Exalate, Tenable,
+  Broadcom's EEM article, Apache Kafka, JetBrains, PaperCut (24 November); Check Point's sk185169
+  and sk1000362, GreyNoise's GT13 post; Broadcom's VMSA-2026-0009.1.
+- **Not read:** Esri's post and Mimecast's trust center (HTTP 403); F5's K000164290 (the page
+  errors in the browser). Atlassian's post, Citrix, Arista, Check Point and Broadcom pages are
+  drawn in the browser and were rendered.
+- **Skipped as secondary or out of scope:** GeoServer exploitation of CVE-2026-120705 (watchTowr
+  quoted by Cyber Daily; GeoServer is in no stored inventory); the new Drupal core flaw
+  CVE-2026-136716 (Drupal is in no stored inventory); the musl-only OpenSSH bug, which GreyNoise
+  still tracks.
+
 ## 2026-11-25: Java4Shell recheck
 
 Last run of the daily recheck of vendors still pending on Java4Shell (CVE-2026-114938). 27 new
