@@ -3,6 +3,70 @@
 Notable changes to the census: new watchlist components, incident passes, new sources and
 site features. Daily data refreshes aren't listed; `git log` has the full history.
 
+## 2026-11-28: Daily watch
+
+No newly exploited flaw in a watchlist component. 33 rows updated and 2 added (1,056 statements in
+all), each read on the vendor's own page; most are NGINX2Root rows, rechecked as carried over
+from earlier runs.
+
+- **Status changes, NGINX2Root:**
+  - Fortinet's FG-IR-26-279 (updated 26 November) moves 20 products from under investigation to
+    not impacted, among them FortiADC, FortiAnalyzer, FortiManager, FortiSandbox, FortiSIEM,
+    FortiNDR and FortiWeb, plus FortiSwitchAX (now listed as FortiSwitchAX-Fixed and -Chassis).
+    FortiEdge Cloud and the newly named FortiVoice Cloud are fixed on Fortinet's side. 29
+    products are still under investigation.
+  - Barracuda (updated 25 November): BarracudaONE, Cloud-to-Cloud Backup, CloudGen Firewall, RMM,
+    Managed Security Awareness Training and Sonian move from under investigation to not
+    affected. Incident Response and Impersonation Protection move from workaround to fixed, since
+    Barracuda says it has fixed the hosted service.
+  - Palo Alto Networks (updated 24 November): all PAN-OS and Panorama fixed builds are out, PAN-OS
+    11.1 and 10.2 are named not affected, and the advisory says the other three NGINX2Root CVEs
+    hit the same versions, so the two rows now carry all five CVEs.
+- **Java4Shell:** Fortinet's FG-IR-26-278 (updated 27 November) adds a list of products on which
+  it says exploitation is "not practically feasible": FortiAnalyzer VM64, added as not affected
+  with that wording in the note, and FortiAnalyzer 3750G, which the same page still lists as
+  under investigation and so keeps that status. The other 46 products under investigation are
+  unchanged.
+- **KEV:** the cisagov/kev-data CSV still ends at 25 November (1,805 entries), but CISA's own
+  JSON feed (1,808, released 27 November) adds GeoServer CVE-2026-120705 and CVE-2026-129243
+  and Drupal core CVE-2026-136716. Neither product is in a stored inventory, so neither is
+  added; the KEV file stays on the CSV until the mirror catches up.
+- **Scores:** EPSS stays at 27 November; FIRST.org had not published 28 November scores when the
+  run started (00:24 UTC). Since the last daily watch's 26 November scores, Brotli
+  CVE-2026-111497 (Node2Shell) rose from 33% to 99.99% and Check Point CVE-2026-93616 from 21% to
+  91.6%; both were already in KEV. Java4Shell rose from 59% to 73% with no exploitation report
+  that names a product. Chromium CVE-2026-11645 fell from medium to low. No tracked CVE entered
+  KEV (393 of 447).
+- **Still open, for a decision:**
+  - Ruby2Shell (CVE-2026-132825, Ruby before 3.3.14, 3.4.13 and 4.0.10): named, and Ruby is in
+    eight stored inventories, but the CVE record scores it 7.4 as a local flaw, it needs text in
+    a legacy encoding, and no attacks are reported. The name "ruby" also needs care, since many
+    gems start with it.
+  - EDK II network boot flaw CVE-2026-97631 (CVSS 4.0 9.5): several firmware vendors have
+    advisories, and EDK II is in two stored inventories (NetApp ONTAP, Extreme ONE OS), but the
+    CVE record has no version data and fixes ship as each vendor's BIOS builds, so a version
+    check would mean little. Not exploited.
+  - Carried over: VMSA-2026-0011's vCenter CVE-2026-123903 (public proof of concept claimed in
+    one report, no exploitation; Google's GCP-2026-091 relays it), phpAfterShell,
+    Idunno.AntiCsrf, Apache XML-RPC as a component, SAP NetWeaver as a vendor engine, and which
+    PHP2Shell vendors to reopen.
+- **No change:** Atlassian's Data Center post (26 November), Cisco (v1.4 of 23 November), Palo
+  Alto Networks' Java4Shell page (20 November), PAN-SA-2026-0015 and the PHP2Shell advisory,
+  Splunk (25 November), Keycloak, PaperCut (24 November), OvalEdge (still 20 November), Trend
+  Micro, Arista (rev 1.0), Citrix (20 November), both Hitachi Vantara alerts (23 November),
+  Elastic, DigiCert, KNIME, Google GCP-2026-082 (23 November), Oracle's CSPU (rev 1), Barracuda's
+  Java page; Broadcom's VMSA-2026-0009.1 (the page shows 26 November, the advisory text is
+  unchanged), Check Point's sk185169, CONFSERVER-104610, Rapid7's Axis report and GreyNoise's GT13
+  post. Atlassian, Cisco, Citrix, Check Point, Broadcom and Fortinet pages were rendered in the
+  browser.
+- **Not read:** F5's K000163926 (renders empty). Esri and Mimecast were not retried.
+- **Skipped as secondary or out of scope:** Java4Shell probes (GreyNoise and a weekly digest
+  report attack-shaped requests and honeypot hits, tied to no product, and a vendor's claim of
+  active exploitation that cites no incident); the Mongoose embedded library flaws (the name
+  collides with the Node.js Mongoose package in the stored inventories, and nothing is
+  exploited); the unpatched Cacti guest-access zero day (no CVE, not exploited, not in a stored
+  inventory).
+
 ## 2026-11-27: Daily watch
 
 No newly exploited flaw in a watchlist component. Three Java4Shell rows and one PHP2Shell note

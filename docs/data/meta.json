@@ -1,5 +1,5 @@
 {
- "built": "2026-11-27T16:59:12Z",
+ "built": "2026-11-28T00:35:36Z",
  "threats": [
   {
    "c": "check-point-gaia",
@@ -173,7 +173,7 @@
     }
    ],
    "flagged_total": 11,
-   "products": 564,
+   "products": 565,
    "unfixed": 100,
    "epss": 0.72539,
    "scores": [
@@ -626,8 +626,8 @@
     "CVE-2026-113425"
    ],
    "note": "CVE-2026-123007 (HTTP/2, unauthenticated) is the remote code execution entry point; the disclosure chains it with an unpatched Linux kernel SCTP bug to reach root.",
-   "products": 192,
-   "unfixed": 30
+   "products": 193,
+   "unfixed": 28
   },
   {
    "c": "tomcat",
@@ -677,8 +677,8 @@
   "demonstrated_postauth"
  ],
  "counts": {
-  "assertions": 21022,
-  "products_with_data": 8901,
+  "assertions": 21024,
+  "products_with_data": 8903,
   "inventories": 446,
   "inventory_components": 320424,
   "cpe_linked_clusters": 23,
@@ -1694,15 +1694,15 @@
     }
    ],
    "kev": 13,
-   "assertions": 972,
-   "products": 658,
+   "assertions": 973,
+   "products": 659,
    "contains": 634,
    "in_range": 48,
    "verdicts": {
     "fixed": 412,
     "runtime_dependent": 22,
     "workaround": 52,
-    "not_affected": 206,
+    "not_affected": 207,
     "under_investigation": 79,
     "affected": 53,
     "present": 117,
@@ -1817,15 +1817,15 @@
     }
    ],
    "kev": 0,
-   "assertions": 336,
-   "products": 205,
-   "contains": 204,
+   "assertions": 337,
+   "products": 206,
+   "contains": 206,
    "in_range": 51,
    "verdicts": {
-    "fixed": 107,
-    "workaround": 28,
-    "under_investigation": 68,
-    "not_affected": 54,
+    "fixed": 111,
+    "workaround": 26,
+    "under_investigation": 40,
+    "not_affected": 81,
     "present": 58,
     "affected": 11,
     "absent": 10
@@ -7611,8 +7611,8 @@
    "url": "https://github.com/benheise/Xenolith/tree/main/community",
    "license": "CC-BY-4.0",
    "notes": "Sourced statements (community/assertions.csv) and contributed CycloneDX SBOMs (community/sboms/), validated on every pull request.",
-   "assertions": 1188,
-   "latest": "2026-11-26",
+   "assertions": 1190,
+   "latest": "2026-11-27",
    "fv": "community",
    "dp": [
     "https://www.atlassian.com/software/bamboo/downloads/binary/atlassian-bamboo-13.0.1.tar.gz",

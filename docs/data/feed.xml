@@ -41,7 +41,7 @@
     <published>2026-11-17T00:00:00Z</published>
     <updated>2026-11-17T00:00:00Z</updated>
     <category term="demonstrated_preauth"/><category term="openjdk"/><category term="CVE-2026-114938"/>
-    <summary>Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 72.54%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 564 products have a vendor statement, 100 with no fix stated.</summary>
+    <summary>Working exploit, no login needed: CVE-2026-114938 in OpenJDK / HotSpot Java runtime (JDK, JRE). EPSS 72.54%. Only on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake and later Xeons and some Core chips, AMD Zen 4 and later); ARM64 is not affected. Also affected: Oracle Java SE 8 Enterprise Performance Pack 8u511b33-perf (fixed in 8u513-perf) and GraalVM Enterprise Edition 21.3.20.0.3. Products named: Atlassian Confluence Data Center, Atlassian Jira Data Center, JFrog Artifactory, Jenkins Project Jenkins, Keycloak, Ping Identity PingFederate and 5 more. 565 products have a vendor statement, 100 with no fix stated.</summary>
   </entry>
   <entry>
     <id>tag:benheise.github.io,2026:xenolith/check-point-gaia/CVE-2026-123039</id>
