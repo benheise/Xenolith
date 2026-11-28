@@ -1,5 +1,5 @@
 {
- "built": "2026-11-28T00:35:36Z",
+ "built": "2026-11-28T15:50:56Z",
  "threats": [
   {
    "c": "check-point-gaia",
@@ -601,7 +601,7 @@
    "cvss": 9.8
   }
  ],
- "epss_date": "2026-11-27",
+ "epss_date": "2026-11-28",
  "watching": [
   {
    "c": "openssl",
@@ -7571,7 +7571,7 @@
    "license": "Per vendor (public TLP:CLEAR advisories)",
    "notes": "Only facts are extracted (product, version, status, link). Advisory documents are not redistributed. See catalog/csaf_providers.yaml for the provider list.",
    "assertions": 5361,
-   "latest": "2026-11-27",
+   "latest": "2026-11-28",
    "publishers": {
     "Red Hat Product Security": 3298,
     "Siemens ProductCERT": 904,
